@@ -79,8 +79,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 				}, {	-- RENOWN 4 --
 					q(71229, {	-- Call of the Plains
-						["provider"] = { "n", 197627 },	-- Roki
 						["description"] = "Spawns Anywhere on Dragon Isles.",
+						["provider"] = { "n", 197627 },	-- Roki
 						["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 					}),
 					q(72763, {	-- Sharing the Bounty
@@ -95,17 +95,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 				}, {	-- RENOWN 5 --
 					q(71231, {	-- Call of the Hunt
-						["provider"] = { "n", 197627 },	-- Roki
 						["description"] = "Spawns Anywhere on Dragon Isles.",
+						["provider"] = { "n", 197627 },	-- Roki
 						["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 					}),
 					q(70501, {	-- License to Hunt
-						["provider"] = { "n", 195454 },	-- Hunt Instructor Basku
 						["sourceQuests"] = {
 							71231,	-- Call of the Hunt
 							DF_ACCOUNT_CAMPAIGN_QUEST,	-- or HQT 72778
 						},
 						["sourceQuestNumRequired"] = 1,
+						["provider"] = { "n", 195454 },	-- Hunt Instructor Basku
 						["coord"] = { 64.0, 41.0, OHNAHRAN_PLAINS },
 					}),
 					q(72761, {	-- Sharing the Bounty
@@ -149,8 +149,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						},
 					}),
 					q(72363, {	-- Good at Doings, Not Understandings
-						["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 						["sourceQuests"] = { 71060 },	-- To Adorn Your Head
+						["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 						["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 					}),
 				}, {	-- RENOWN 8 --

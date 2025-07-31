@@ -68,11 +68,11 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				})),
 				q(10667, {	-- Underworld Loam
-					["qg"] = 21465,	-- David Wayne
 					["sourceQuests"] = {
 						10665,	-- Fresh From the Mechanar
 						10666,	-- The Lexicon Demonica
 					},
+					["qg"] = 21465,	-- David Wayne
 					["coord"] = { 77.4, 38.6, TEROKKAR_FOREST },
 					["lvl"] = lvlsquish(67, 67, 20),
 					["groups"] = {

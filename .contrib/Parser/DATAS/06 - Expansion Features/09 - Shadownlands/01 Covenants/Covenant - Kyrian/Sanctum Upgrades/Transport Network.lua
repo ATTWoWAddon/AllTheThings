@@ -34,8 +34,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 							}),
 							n(QUESTS, {
 								q(63053, {	-- At a Moment's Notice
-									["provider"] = { "n", 175907 },	-- Khamsius
 									["sourceQuests"] = { 63052 },	-- Step of Faith
+									["provider"] = { "n", 175907 },	-- Khamsius
 									["coord"] = { 48.9, 62.7, ARCHONS_RISE },
 								}),
 								q(63052, {	-- Step of Faith

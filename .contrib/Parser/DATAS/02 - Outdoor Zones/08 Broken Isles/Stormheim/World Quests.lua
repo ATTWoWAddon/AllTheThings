@@ -136,11 +136,7 @@ root(ROOTS.Zones, {
 				}),
 				q(46016),	-- Magdrezoth (Invasion wq)
 				petbattle(q(40278)),	-- My Beasts's Bidding
-				q(44943, {	-- Now That's Just Clawful!
-					crit(34847, {	-- Now That's Just Clawful!
-						["achievementID"] = 11427,	-- No Shellfish Endeavor
-					}),
-				}),
+				q(44943),	-- Now That's Just Clawful!
 				petbattle(q(41958)),	-- Oh, Ominitron
 				q(43751, {	-- Oh, Ship! (A)
 					["races"] = ALLIANCE_ONLY,

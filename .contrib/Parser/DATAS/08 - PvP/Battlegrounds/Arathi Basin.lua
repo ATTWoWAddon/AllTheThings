@@ -205,7 +205,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					},
 				}),
 				q(8374, {	-- Claiming Arathi Basin [Level 20]
-					["qg"] = 15351,	-- Alliance Brigadier General
 					["altQuests"] = {
 						8374,	-- Claiming Arathi Basin [Level 20]
 						8384,	-- Claiming Arathi Basin [Level 20]
@@ -218,6 +217,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8396,	-- Claiming Arathi Basin [Level 60]
 						8398,	-- Claiming Arathi Basin [Level 60]
 					},
+					["qg"] = 15351,	-- Alliance Brigadier General
 					["coords"] = {
 						{ 39.4, 82.2, ALTERAC_MOUNTAINS },
 						{ 45.6, 45.8, ARATHI_HIGHLANDS },
@@ -232,7 +232,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["lvl"] = { 20, 29 },
 				}),
 				q(8384, {	-- Claiming Arathi Basin [Level 20]
-					["qg"] = 15351,	-- Alliance Brigadier General
 					["altQuests"] = {
 						8374,	-- Claiming Arathi Basin [Level 20]
 						8384,	-- Claiming Arathi Basin [Level 20]
@@ -245,6 +244,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8396,	-- Claiming Arathi Basin [Level 60]
 						8398,	-- Claiming Arathi Basin [Level 60]
 					},
+					["qg"] = 15351,	-- Alliance Brigadier General
 					["coords"] = {
 						{ 39.4, 82.2, ALTERAC_MOUNTAINS },
 						{ 45.6, 45.8, ARATHI_HIGHLANDS },
@@ -259,7 +259,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["lvl"] = { 20, 29 },
 				}),
 				q(8391, {	-- Claiming Arathi Basin [Level 30]
-					["qg"] = 15351,	-- Alliance Brigadier General
 					["altQuests"] = {
 						8374,	-- Claiming Arathi Basin [Level 20]
 						8384,	-- Claiming Arathi Basin [Level 20]
@@ -272,6 +271,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8396,	-- Claiming Arathi Basin [Level 60]
 						8398,	-- Claiming Arathi Basin [Level 60]
 					},
+					["qg"] = 15351,	-- Alliance Brigadier General
 					["coords"] = {
 						{ 39.4, 82.2, ALTERAC_MOUNTAINS },
 						{ 45.6, 45.8, ARATHI_HIGHLANDS },
@@ -286,7 +286,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["lvl"] = { 30, 39 },
 				}),
 				q(8393, {	-- Claiming Arathi Basin [Level 30]
-					["qg"] = 15351,	-- Alliance Brigadier General
 					["altQuests"] = {
 						8374,	-- Claiming Arathi Basin [Level 20]
 						8384,	-- Claiming Arathi Basin [Level 20]
@@ -299,6 +298,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8396,	-- Claiming Arathi Basin [Level 60]
 						8398,	-- Claiming Arathi Basin [Level 60]
 					},
+					["qg"] = 15351,	-- Alliance Brigadier General
 					["coords"] = {
 						{ 39.4, 82.2, ALTERAC_MOUNTAINS },
 						{ 45.6, 45.8, ARATHI_HIGHLANDS },
@@ -313,7 +313,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["lvl"] = { 30, 39 },
 				}),
 				q(8392, {	-- Claiming Arathi Basin [Level 40]
-					["qg"] = 15351,	-- Alliance Brigadier General
 					["altQuests"] = {
 						8374,	-- Claiming Arathi Basin [Level 20]
 						8384,	-- Claiming Arathi Basin [Level 20]
@@ -326,6 +325,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8396,	-- Claiming Arathi Basin [Level 60]
 						8398,	-- Claiming Arathi Basin [Level 60]
 					},
+					["qg"] = 15351,	-- Alliance Brigadier General
 					["coords"] = {
 						{ 39.4, 82.2, ALTERAC_MOUNTAINS },
 						{ 45.6, 45.8, ARATHI_HIGHLANDS },
@@ -340,7 +340,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["lvl"] = { 40, 49 },
 				}),
 				q(8394, {	-- Claiming Arathi Basin [Level 40]
-					["qg"] = 15351,	-- Alliance Brigadier General
 					["altQuests"] = {
 						8374,	-- Claiming Arathi Basin [Level 20]
 						8384,	-- Claiming Arathi Basin [Level 20]
@@ -353,6 +352,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8396,	-- Claiming Arathi Basin [Level 60]
 						8398,	-- Claiming Arathi Basin [Level 60]
 					},
+					["qg"] = 15351,	-- Alliance Brigadier General
 					["coords"] = {
 						{ 39.4, 82.2, ALTERAC_MOUNTAINS },
 						{ 45.6, 45.8, ARATHI_HIGHLANDS },
@@ -367,7 +367,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["lvl"] = { 40, 49 },
 				}),
 				q(8395, {	-- Claiming Arathi Basin [Level 50]
-					["qg"] = 15351,	-- Alliance Brigadier General
 					["altQuests"] = {
 						8374,	-- Claiming Arathi Basin [Level 20]
 						8384,	-- Claiming Arathi Basin [Level 20]
@@ -380,6 +379,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8396,	-- Claiming Arathi Basin [Level 60]
 						8398,	-- Claiming Arathi Basin [Level 60]
 					},
+					["qg"] = 15351,	-- Alliance Brigadier General
 					["coords"] = {
 						{ 39.4, 82.2, ALTERAC_MOUNTAINS },
 						{ 45.6, 45.8, ARATHI_HIGHLANDS },
@@ -394,7 +394,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["lvl"] = { 50, 59 },
 				}),
 				q(8397, {	-- Claiming Arathi Basin [Level 50]
-					["qg"] = 15351,	-- Alliance Brigadier General
 					["altQuests"] = {
 						8374,	-- Claiming Arathi Basin [Level 20]
 						8384,	-- Claiming Arathi Basin [Level 20]
@@ -407,6 +406,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8396,	-- Claiming Arathi Basin [Level 60]
 						8398,	-- Claiming Arathi Basin [Level 60]
 					},
+					["qg"] = 15351,	-- Alliance Brigadier General
 					["coords"] = {
 						{ 39.4, 82.2, ALTERAC_MOUNTAINS },
 						{ 45.6, 45.8, ARATHI_HIGHLANDS },
@@ -421,7 +421,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["lvl"] = { 50, 59 },
 				}),
 				q(8396, {	-- Claiming Arathi Basin [Level 60]
-					["qg"] = 15351,	-- Alliance Brigadier General
 					["altQuests"] = {
 						8374,	-- Claiming Arathi Basin [Level 20]
 						8384,	-- Claiming Arathi Basin [Level 20]
@@ -434,6 +433,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8396,	-- Claiming Arathi Basin [Level 60]
 						8398,	-- Claiming Arathi Basin [Level 60]
 					},
+					["qg"] = 15351,	-- Alliance Brigadier General
 					["coords"] = {
 						{ 39.4, 82.2, ALTERAC_MOUNTAINS },
 						{ 45.6, 45.8, ARATHI_HIGHLANDS },
@@ -448,7 +448,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["lvl"] = { 60, 69 },
 				}),
 				q(8398, {	-- Claiming Arathi Basin [Level 60]
-					["qg"] = 15351,	-- Alliance Brigadier General
 					["altQuests"] = {
 						8374,	-- Claiming Arathi Basin [Level 20]
 						8384,	-- Claiming Arathi Basin [Level 20]
@@ -461,6 +460,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8396,	-- Claiming Arathi Basin [Level 60]
 						8398,	-- Claiming Arathi Basin [Level 60]
 					},
+					["qg"] = 15351,	-- Alliance Brigadier General
 					["coords"] = {
 						{ 39.4, 82.2, ALTERAC_MOUNTAINS },
 						{ 45.6, 45.8, ARATHI_HIGHLANDS },
@@ -475,7 +475,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["lvl"] = { 60, 69 },
 				}),
 				q(8370, {	-- Conquering Arathi Basin [Level 20]
-					["qg"] = 15350,	-- Horde Warbringer
 					["altQuests"] = {
 						8370,	-- Conquering Arathi Basin [Level 20]
 						8390,	-- Conquering Arathi Basin [Level 20]
@@ -488,6 +487,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8439,	-- Conquering Arathi Basin [Level 60]
 						8443,	-- Conquering Arathi Basin [Level 60]
 					},
+					["qg"] = 15350,	-- Horde Warbringer
 					["coords"] = {
 						{ 63.0, 59.8, ALTERAC_MOUNTAINS },
 						{ 73.6, 29.2, ARATHI_HIGHLANDS },
@@ -502,7 +502,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["lvl"] = { 20, 29 },
 				}),
 				q(8390, {	-- Conquering Arathi Basin [Level 20]
-					["qg"] = 15350,	-- Horde Warbringer
 					["altQuests"] = {
 						8370,	-- Conquering Arathi Basin [Level 20]
 						8390,	-- Conquering Arathi Basin [Level 20]
@@ -515,6 +514,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8439,	-- Conquering Arathi Basin [Level 60]
 						8443,	-- Conquering Arathi Basin [Level 60]
 					},
+					["qg"] = 15350,	-- Horde Warbringer
 					["coords"] = {
 						{ 63.0, 59.8, ALTERAC_MOUNTAINS },
 						{ 73.6, 29.2, ARATHI_HIGHLANDS },
@@ -529,7 +529,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["lvl"] = { 20, 29 },
 				}),
 				q(8436, {	-- Conquering Arathi Basin [Level 30]
-					["qg"] = 15350,	-- Horde Warbringer
 					["altQuests"] = {
 						8370,	-- Conquering Arathi Basin [Level 20]
 						8390,	-- Conquering Arathi Basin [Level 20]
@@ -542,6 +541,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8439,	-- Conquering Arathi Basin [Level 60]
 						8443,	-- Conquering Arathi Basin [Level 60]
 					},
+					["qg"] = 15350,	-- Horde Warbringer
 					["coords"] = {
 						{ 63.0, 59.8, ALTERAC_MOUNTAINS },
 						{ 73.6, 29.2, ARATHI_HIGHLANDS },
@@ -556,7 +556,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["lvl"] = { 30, 39 },
 				}),
 				q(8440, {	-- Conquering Arathi Basin [Level 30]
-					["qg"] = 15350,	-- Horde Warbringer
 					["altQuests"] = {
 						8370,	-- Conquering Arathi Basin [Level 20]
 						8390,	-- Conquering Arathi Basin [Level 20]
@@ -569,6 +568,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8439,	-- Conquering Arathi Basin [Level 60]
 						8443,	-- Conquering Arathi Basin [Level 60]
 					},
+					["qg"] = 15350,	-- Horde Warbringer
 					["coords"] = {
 						{ 63.0, 59.8, ALTERAC_MOUNTAINS },
 						{ 73.6, 29.2, ARATHI_HIGHLANDS },
@@ -583,7 +583,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["lvl"] = { 30, 39 },
 				}),
 				q(8437, {	-- Conquering Arathi Basin [Level 40]
-					["qg"] = 15350,	-- Horde Warbringer
 					["altQuests"] = {
 						8370,	-- Conquering Arathi Basin [Level 20]
 						8390,	-- Conquering Arathi Basin [Level 20]
@@ -596,6 +595,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8439,	-- Conquering Arathi Basin [Level 60]
 						8443,	-- Conquering Arathi Basin [Level 60]
 					},
+					["qg"] = 15350,	-- Horde Warbringer
 					["coords"] = {
 						{ 63.0, 59.8, ALTERAC_MOUNTAINS },
 						{ 73.6, 29.2, ARATHI_HIGHLANDS },
@@ -610,7 +610,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["lvl"] = { 40, 49 },
 				}),
 				q(8441, {	-- Conquering Arathi Basin [Level 40]
-					["qg"] = 15350,	-- Horde Warbringer
 					["altQuests"] = {
 						8370,	-- Conquering Arathi Basin [Level 20]
 						8390,	-- Conquering Arathi Basin [Level 20]
@@ -623,6 +622,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8439,	-- Conquering Arathi Basin [Level 60]
 						8443,	-- Conquering Arathi Basin [Level 60]
 					},
+					["qg"] = 15350,	-- Horde Warbringer
 					["coords"] = {
 						{ 63.0, 59.8, ALTERAC_MOUNTAINS },
 						{ 73.6, 29.2, ARATHI_HIGHLANDS },
@@ -637,7 +637,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["lvl"] = { 40, 49 },
 				}),
 				q(8438, {	-- Conquering Arathi Basin [Level 50]
-					["qg"] = 15350,	-- Horde Warbringer
 					["altQuests"] = {
 						8370,	-- Conquering Arathi Basin [Level 20]
 						8390,	-- Conquering Arathi Basin [Level 20]
@@ -650,6 +649,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8439,	-- Conquering Arathi Basin [Level 60]
 						8443,	-- Conquering Arathi Basin [Level 60]
 					},
+					["qg"] = 15350,	-- Horde Warbringer
 					["coords"] = {
 						{ 63.0, 59.8, ALTERAC_MOUNTAINS },
 						{ 73.6, 29.2, ARATHI_HIGHLANDS },
@@ -664,7 +664,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["lvl"] = { 50, 59 },
 				}),
 				q(8442, {	-- Conquering Arathi Basin [Level 50]
-					["qg"] = 15350,	-- Horde Warbringer
 					["altQuests"] = {
 						8370,	-- Conquering Arathi Basin [Level 20]
 						8390,	-- Conquering Arathi Basin [Level 20]
@@ -677,6 +676,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8439,	-- Conquering Arathi Basin [Level 60]
 						8443,	-- Conquering Arathi Basin [Level 60]
 					},
+					["qg"] = 15350,	-- Horde Warbringer
 					["coords"] = {
 						{ 63.0, 59.8, ALTERAC_MOUNTAINS },
 						{ 73.6, 29.2, ARATHI_HIGHLANDS },
@@ -691,7 +691,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["lvl"] = { 50, 59 },
 				}),
 				q(8439, {	-- Conquering Arathi Basin [Level 60]
-					["qg"] = 15350,	-- Horde Warbringer
 					["altQuests"] = {
 						8370,	-- Conquering Arathi Basin [Level 20]
 						8390,	-- Conquering Arathi Basin [Level 20]
@@ -704,6 +703,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8439,	-- Conquering Arathi Basin [Level 60]
 						8443,	-- Conquering Arathi Basin [Level 60]
 					},
+					["qg"] = 15350,	-- Horde Warbringer
 					["coords"] = {
 						{ 63.0, 59.8, ALTERAC_MOUNTAINS },
 						{ 73.6, 29.2, ARATHI_HIGHLANDS },
@@ -718,7 +718,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["lvl"] = { 60, 69 },
 				}),
 				q(8443, {	-- Conquering Arathi Basin [Level 60]
-					["qg"] = 15350,	-- Horde Warbringer
 					["altQuests"] = {
 						8370,	-- Conquering Arathi Basin [Level 20]
 						8390,	-- Conquering Arathi Basin [Level 20]
@@ -731,6 +730,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8439,	-- Conquering Arathi Basin [Level 60]
 						8443,	-- Conquering Arathi Basin [Level 60]
 					},
+					["qg"] = 15350,	-- Horde Warbringer
 					["coords"] = {
 						{ 63.0, 59.8, ALTERAC_MOUNTAINS },
 						{ 73.6, 29.2, ARATHI_HIGHLANDS },
@@ -745,8 +745,8 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["lvl"] = { 60, 69 },
 				}),
 				q(8115, {	-- Control Five Bases (Alliance)
-					["qg"] = 14983,	-- Field Marshal Oslight
 					["sourceQuest"] = 8114,	-- Control Four Bases (Alliance)
+					["qg"] = 14983,	-- Field Marshal Oslight
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 40.0, 46.7, ARATHI_HIGHLANDS },
@@ -765,7 +765,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					-- #endif
 				}),
 				q(8114, {	-- Control Four Bases (Alliance)
-					["qg"] = 14983,	-- Field Marshal Oslight
 					-- #if BEFORE 5.0.4
 					["sourceQuests"] = {
 						8168,	-- The Battle for Arathi Basin! [Level 20]
@@ -774,6 +773,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8105,	-- The Battle for Arathi Basin! [Level 50]
 					},
 					-- #endif
+					["qg"] = 14983,	-- Field Marshal Oslight
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 40.0, 46.7, ARATHI_HIGHLANDS },
@@ -864,8 +864,8 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				})),
 				-- #endif
 				q(8122, {	-- Take Five Bases (Horde)
-					["qg"] = 15021,	-- Deathmaster Dwire
 					["sourceQuest"] = 8121,	-- Take Four Bases (Horde)
+					["qg"] = 15021,	-- Deathmaster Dwire
 					["coord"] = { 73.3, 29.7, ARATHI_HIGHLANDS },
 					["minReputation"] = { FACTION_THE_DEFILERS, EXALTED },	-- The Defilers, Exalted.
 					["timeline"] = { REMOVED_5_0_4 },
@@ -878,7 +878,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					-- #endif
 				}),
 				q(8121, {	-- Take Four Bases (Horde)
-					["qg"] = 15021,	-- Deathmaster Dwire
 					-- #if BEFORE 5.0.4
 					["sourceQuests"] = {
 						8171,	-- The Battle for Arathi Basin! [Level 20]
@@ -887,6 +886,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8120,	-- The Battle for Arathi Basin! [Level 50]
 					},
 					-- #endif
+					["qg"] = 15021,	-- Deathmaster Dwire
 					["coord"] = { 73.3, 29.7, ARATHI_HIGHLANDS },
 					["minReputation"] = { FACTION_THE_DEFILERS, FRIENDLY },	-- The Defilers, Friendly.
 					["timeline"] = { REMOVED_5_0_4 },
@@ -894,7 +894,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["lvl"] = 60,
 				}),
 				q(8168, {	-- The Battle for Arathi Basin! [Level 20] (Alliance)
-					["qg"] = 14983,	-- Field Marshal Oslight
 					-- #if BEFORE TBC
 					["altQuests"] = {
 						8168,	-- The Battle for Arathi Basin! [Level 20]
@@ -903,6 +902,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8105,	-- The Battle for Arathi Basin! [Level 50]
 					},
 					-- #endif
+					["qg"] = 14983,	-- Field Marshal Oslight
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 40.0, 46.7, ARATHI_HIGHLANDS },
@@ -915,7 +915,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["lvl"] = { 20, 29 },
 				}),
 				q(8167, {	-- The Battle for Arathi Basin! [Level 30] (Alliance)
-					["qg"] = 14983,	-- Field Marshal Oslight
 					-- #if BEFORE TBC
 					["altQuests"] = {
 						8168,	-- The Battle for Arathi Basin! [Level 20]
@@ -924,6 +923,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8105,	-- The Battle for Arathi Basin! [Level 50]
 					},
 					-- #endif
+					["qg"] = 14983,	-- Field Marshal Oslight
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 40.0, 46.7, ARATHI_HIGHLANDS },
@@ -936,7 +936,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["lvl"] = { 30, 39 },
 				}),
 				q(8166, {	-- The Battle for Arathi Basin! [Level 40] (Alliance)
-					["qg"] = 14983,	-- Field Marshal Oslight
 					-- #if BEFORE TBC
 					["altQuests"] = {
 						8168,	-- The Battle for Arathi Basin! [Level 20]
@@ -945,6 +944,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8105,	-- The Battle for Arathi Basin! [Level 50]
 					},
 					-- #endif
+					["qg"] = 14983,	-- Field Marshal Oslight
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 40.0, 46.7, ARATHI_HIGHLANDS },
@@ -957,7 +957,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["lvl"] = { 40, 49 },
 				}),
 				q(8105, {	-- The Battle for Arathi Basin! [Level 50] (Alliance)
-					["qg"] = 14983,	-- Field Marshal Oslight
 					-- #if BEFORE TBC
 					["altQuests"] = {
 						8168,	-- The Battle for Arathi Basin! [Level 20]
@@ -966,6 +965,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8105,	-- The Battle for Arathi Basin! [Level 50]
 					},
 					-- #endif
+					["qg"] = 14983,	-- Field Marshal Oslight
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 40.0, 46.7, ARATHI_HIGHLANDS },
@@ -992,7 +992,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					-- CRIEVE NOTE: This quest was added in TBC, not directly accessible to players. Might be a flag for both factions that this quest was completed. Originally we had to use altQuests to flag them correctly.
 				}),
 				q(8171, {	-- The Battle for Arathi Basin! [Level 20] (Horde)
-					["qg"] = 15021,	-- Deathmaster Dwire
 					-- #if BEFORE TBC
 					["altQuests"] = {
 						8171,	-- The Battle for Arathi Basin! [Level 20]
@@ -1001,13 +1000,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8120,	-- The Battle for Arathi Basin! [Level 50]
 					},
 					-- #endif
+					["qg"] = 15021,	-- Deathmaster Dwire
 					["coord"] = { 73.3, 29.7, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 20, 29 },
 				}),
 				q(8170, {	-- The Battle for Arathi Basin! [Level 30] (Horde)
-					["qg"] = 15021,	-- Deathmaster Dwire
 					-- #if BEFORE TBC
 					["altQuests"] = {
 						8171,	-- The Battle for Arathi Basin! [Level 20]
@@ -1016,13 +1015,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8120,	-- The Battle for Arathi Basin! [Level 50]
 					},
 					-- #endif
+					["qg"] = 15021,	-- Deathmaster Dwire
 					["coord"] = { 73.3, 29.7, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 30, 39 },
 				}),
 				q(8169, {	-- The Battle for Arathi Basin! [Level 40] (Horde)
-					["qg"] = 15021,	-- Deathmaster Dwire
 					-- #if BEFORE TBC
 					["altQuests"] = {
 						8171,	-- The Battle for Arathi Basin! [Level 20]
@@ -1031,13 +1030,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8120,	-- The Battle for Arathi Basin! [Level 50]
 					},
 					-- #endif
+					["qg"] = 15021,	-- Deathmaster Dwire
 					["coord"] = { 73.3, 29.7, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 40, 49 },
 				}),
 				q(8120, {	-- The Battle for Arathi Basin! [Level 50] (Horde)
-					["qg"] = 15021,	-- Deathmaster Dwire
 					-- #if BEFORE TBC
 					["altQuests"] = {
 						8171,	-- The Battle for Arathi Basin! [Level 20]
@@ -1046,6 +1045,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8120,	-- The Battle for Arathi Basin! [Level 50]
 					},
 					-- #endif
+					["qg"] = 15021,	-- Deathmaster Dwire
 					["coord"] = { 73.3, 29.7, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,

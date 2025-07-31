@@ -8,8 +8,8 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 		["groups"] = {
 			-- 2021 5th May until 5th Nov 2021
 			q(63768, {	-- Imp in a Ball
-				["qg"] = 17249,	-- Landro Longshot <The Black Flame>
 				["altQuests"] = { 63767 },	-- Imp in a Ball (Innkeepers)
+				["qg"] = 17249,	-- Landro Longshot <The Black Flame>
 				["coords"] = {
 					-- #if AFTER CATA
 					{ 42.6, 71.6, THE_CAPE_OF_STRANGLETHORN },
@@ -49,8 +49,8 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 			}),
 			-- 2022 13th Feb until 13th Aug 2022
 			q(65285, {	-- Goblin Gumbo Kettle
-				["qg"] = 17249,	-- Landro Longshot <The Black Flame>
 				["altQuests"] = { 65284 },	-- Goblin Gumbo Kettle (Innkeepers)
+				["qg"] = 17249,	-- Landro Longshot <The Black Flame>
 				["coords"] = {
 					-- #if AFTER CATA
 					{ 42.6, 71.6, THE_CAPE_OF_STRANGLETHORN },
@@ -88,8 +88,8 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 			}),
 			-- 2022 14th July until 15th January 2023
 			q(65562, {	-- Tabard of Flame
-				["qg"] = 17249,	-- Landro Longshot <The Black Flame>
 				["altQuests"] = { 65561 },	-- Tabard of Flame (Innkeepers)
+				["qg"] = 17249,	-- Landro Longshot <The Black Flame>
 				["coords"] = {
 					-- #if AFTER CATA
 					{ 42.6, 71.6, THE_CAPE_OF_STRANGLETHORN },
@@ -135,8 +135,8 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 		["timeline"] = { ADDED_3_4_0 },
 		["groups"] = {
 			q(72523, {	-- Festering Emerald Drake [2022 11th November until 15th January 2023]
-				["qg"] = 17249,	-- Landro Longshot <The Black Flame>
 				["altQuests"] = { 72522 },	-- Festering Emerald Drake (Innkeepers)
+				["qg"] = 17249,	-- Landro Longshot <The Black Flame>
 				["coords"] = {
 					-- #if AFTER CATA
 					{ 42.6, 71.6, THE_CAPE_OF_STRANGLETHORN },
@@ -176,8 +176,8 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 				},
 			}),
 			q(74941, {	-- Flurky [2023 17th January until 31st July 2023]
-				["qg"] = 17249,	-- Landro Longshot <The Black Flame>
 				["altQuests"] = { 74940 },	-- Flurky (Innkeepers)
+				["qg"] = 17249,	-- Landro Longshot <The Black Flame>
 				["coords"] = {
 					-- #if AFTER CATA
 					{ 42.6, 71.6, THE_CAPE_OF_STRANGLETHORN },
@@ -212,8 +212,8 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 				},
 			}),
 			q(75492, {	-- Glub [2023 17th January until 31st July 2023]
-				["qg"] = 17249,	-- Landro Longshot <The Black Flame>
 				["altQuests"] = { 75491 },	-- Glub (Innkeepers)
+				["qg"] = 17249,	-- Landro Longshot <The Black Flame>
 				["coords"] = {
 					-- #if AFTER CATA
 					{ 42.6, 71.6, THE_CAPE_OF_STRANGLETHORN },
@@ -250,8 +250,8 @@ root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 				},
 			}),
 			q(70863, {	-- Hoplet [2023 17th January until 31st July 2023]
-				["qg"] = 17249,	-- Landro Longshot <The Black Flame>
 				["altQuests"] = { 70862 },	-- Hoplet (Innkeepers)
+				["qg"] = 17249,	-- Landro Longshot <The Black Flame>
 				["coords"] = {
 					-- #if AFTER CATA
 					{ 42.6, 71.6, THE_CAPE_OF_STRANGLETHORN },

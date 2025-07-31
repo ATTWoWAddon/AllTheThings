@@ -308,9 +308,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				},
 			}),
 			q(48982, {	-- Invasion Point: Aurinor
-				["crs"] = { 125849 },	-- Invasion Point: Aurinor
 				["icon"] = 1450455,
-				["repeatable"] = true,
 				["maps"] = {
 					921,	-- Invasion Point: Aurinor
 					KROKUUN,
@@ -322,15 +320,15 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
+				["repeatable"] = true,
+				["crs"] = { 125849 },	-- Invasion Point: Aurinor
 				["groups"] = {
 					i(153265),	-- Enclave Aspirant's Battleaxe
 					i(153261),	-- Forlorn Artificer's Hammer
 				},
 			}),
 			q(49099, {	-- Invasion Point: Bonich
-				["crs"] = { 126547 },	-- Invasion Point: Bonich
 				["icon"] = 1450455,
-				["repeatable"] = true,
 				["maps"] = {
 					922,	-- Invasion Point: Bonich
 					KROKUUN,
@@ -342,15 +340,15 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
+				["repeatable"] = true,
+				["crs"] = { 126547 },	-- Invasion Point: Bonich
 				["groups"] = {
 					i(153320),	-- Ardent Vindicator's Demolisher
 					i(153295),	-- Spectral Consul's Quickblade
 				},
 			}),
 			q(49098, {	-- Invasion Point: Cen'gar
-				["crs"] = { 126120 },	-- Invasion Point: Cen'gar
 				["icon"] = 1450455,
-				["repeatable"] = true,
 				["maps"] = {
 					923,	-- Invasion Point: Cen'gar
 					KROKUUN,
@@ -362,15 +360,15 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
+				["repeatable"] = true,
+				["crs"] = { 126120 },	-- Invasion Point: Cen'gar
 				["groups"] = {
 					i(153262),	-- Forlorn Artificer's Gavel
 					i(153300),	-- Militant Exarch's Saber
 				},
 			}),
 			q(49096, {	-- Invasion Point: Naigtal
-				["crs"] = { 126593 },	-- Invasion Point: Naigtal
 				["icon"] = 1450455,
-				["repeatable"] = true,
 				["maps"] = {
 					924,	-- Invasion Point: Naigtal
 					KROKUUN,
@@ -382,15 +380,15 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
+				["repeatable"] = true,
+				["crs"] = { 126593 },	-- Invasion Point: Naigtal
 				["groups"] = {
 					i(153264),	-- Enclave Aspirant's Splitter
 					i(153301),	-- Militant Exarch's Slicer
 				},
 			}),
 			q(49097, {	-- Invasion Point: Sangua
-				["crs"] = { 125863 },	-- Invasion Point: Sangua
 				["icon"] = 1450455,
-				["repeatable"] = true,
 				["maps"] = {
 					925,	-- Invasion Point: Sangua
 					KROKUUN,
@@ -402,15 +400,15 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
+				["repeatable"] = true,
+				["crs"] = { 125863 },	-- Invasion Point: Sangua
 				["groups"] = {
 					i(153307),	-- Oronaar Miner's Pickaxe
 					i(153297),	-- Spectral Consul's Broadsword
 				},
 			}),
 			q(49091, {	-- Invasion Point: Val
-				["crs"] = { 126499 },	-- Invasion Point: Val
 				["icon"] = 1450455,
-				["repeatable"] = true,
 				["maps"] = {
 					926,	-- Invasion Point: Val
 					KROKUUN,
@@ -422,6 +420,8 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					THE_VINDICAAR_ANTORAN_WASTES_UPPER,
 					THE_VINDICAAR_ANTORAN_WASTES_LOWER,
 				},
+				["repeatable"] = true,
+				["crs"] = { 126499 },	-- Invasion Point: Val
 				["groups"] = {
 					i(153258),	-- Forlorn Artificer's Mace
 					i(153254),	-- Isolon Anchorite's Mace

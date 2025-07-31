@@ -7,55 +7,12 @@ root(ROOTS.Zones, {
 		n(QUESTS, {
 			["groups"] = {
 				n(ACHIEVEMENTS, {	-- Achievements
-					ach(11427, {	-- No Shellfish Endeavor
+					ach(11427, {	-- No Shellfish Endeavor (automated)
 						i(143660),	-- Mrgrglhjorn (TOY!)
-						crit(34847),	-- Now That's Just Clawful!
-						crit(34846),	-- Oh, the Clawdacity!
-						crit(34848),	-- Claws for Alarm!
 					}),
-					ach(10877, {	-- Pillars of Creation
-						crit(31588, {	-- Aegis of Aggramar
-							["sourceQuest"] = 43349,	-- The Aegis of Aggramar
-						}),
-						crit(31589, {	-- Tidestone of Golganneth
-							["sourceQuest"] = 42213,	-- Eye of Azshara: The Tidestone of Golganneth
-						}),
-						crit(36177, {	-- Eye of Aman'Thul
-							["sourceQuest"] = 45420,	-- The Nighthold: The Eye of Aman'Thul
-						}),
-						crit(31590, {	-- Hammer of Khaz'goroth
-							["sourceQuest"] = 42454,	-- The Hammer of Khaz'goroth
-						}),
-						crit(31591, {	-- Tears of Elune
-							["sourceQuest"] = 40890,	-- The Tears of Elune
-						}),
-					}),
-					ach(11186, {	-- Tehd & Marius' Excellent Adventure
-						crit(32400, {		-- Azsuna
-							["_quests"] = {
-								42367,	-- Arkethrax
-							},
-						}),
-						crit(32401, {		-- Azsuna
-							["_quests"] = {
-								42069,	-- Felwing
-							},
-						}),
-						crit(32402, {		-- Azsuna
-							["_quests"] = {
-								38352,	-- Kazrok
-							},
-						}),
-						crit(32403, {		-- Azsuna
-							["_quests"] = {
-								38212,	-- Brogozog
-							},
-						}),
-						crit(32404),		-- Val'sharah
-						crit(32405),		-- Highmountain
-						crit(32406),		-- Stormheim
-					}),
-					ach(11189),		-- Variety is the Spice of Life
+					ach(10877),	-- Pillars of Creation (automated)
+					ach(11186),	-- Tehd & Marius' Excellent Adventure (automated)
+					ach(11189),	-- Variety is the Spice of Life
 				}),
 				header(HEADERS.Spell, 41341, {	-- Balance of Power
 					["description"] = "The only known requirement to start this questline is the completion of your class campaign.",
@@ -114,11 +71,11 @@ root(ROOTS.Zones, {
 							["coord"] = { 48.0, 25.7, AZSUNA },
 						}),
 						q(43581, {	-- The Wisdom of Patience
-							-- NOTE: This quest was removed when Emerald Nightmare opened
 							["sourceQuests"] = { 43519 },	-- Lucid Strength
 							["provider"] = { "n", 100482 },	-- Senegos
 							["coord"] = { 48.0, 25.7, AZSUNA },
 							["u"] = REMOVED_FROM_GAME,
+							-- NOTE: This quest was removed when Emerald Nightmare opened
 						}),
 						q(43520, {	-- The Emerald Nightmare: In Nightmares
 							["sourceQuests"] = {
@@ -222,6 +179,9 @@ root(ROOTS.Zones, {
 							["provider"] = { "n", 100738 },	-- Ashildir
 							["coord"] = { 62.7, 68.1, STORMHEIM },
 							["maps"] = { 731 },	-- Neltharion's Lair
+							["groups"] = {
+								i(132744),	-- Adamantium Casing Scrap (QI!)
+							},
 						}),
 						q(40615, {	-- Halls of Valor: Odyn's Blessing
 							["sourceQuests"] = {
@@ -239,12 +199,12 @@ root(ROOTS.Zones, {
 							["maps"] = { SURAMAR },
 						}),
 						q(43528, {	-- Planning the Assault
-							-- NOTE: This quest was removed when The Nighthold opened
 							["sourceQuest"] = 43898,	-- Preparing to Move
 							["provider"] = { "n", 111814 },	-- Archmage Kalec
 							["coord"] = { 62.5, 68.2, STORMHEIM },
 							["maps"] = { SURAMAR },
 							["u"] = REMOVED_FROM_GAME,
+							-- NOTE: This quest was removed when The Nighthold opened
 						}),
 						q(43530, {	-- The Nighthold: Delusions of Grandeur
 							["sourceQuests"] = {
@@ -384,21 +344,21 @@ root(ROOTS.Zones, {
 						q(44009, {	-- A Falling Star (non-Paladin)
 							["description"] = "The prerequisite for this quest is recruiting your class's first two champions, doing your first short mission, and recruiting your first troops.",	-- i also sent out my first 1-hour mission after the 2-minute one, not sure if that's required.  not sure whether paladin's requirements are different, so i didn't add the description to their version of the quest.
 							["provider"] = { "n", 90417 },	-- Archmage Khadgar
-							["classes"] = exclude(PALADIN, ALL_CLASSES),
 							["coord"] = { 28.9, 48.4, LEGION_DALARAN },
+							["classes"] = exclude(PALADIN, ALL_CLASSES),
 						}),
 						q(44257, {	-- A Falling Star (Paladin)
 							["sourceQuests"] = { 42866 },	-- A Sign From The Sky
 							["provider"] = { "n", 90417 },	-- Archmage Khadgar
-							["classes"] = { PALADIN },
 							["coord"] = { 28.9, 48.4, LEGION_DALARAN },
+							["classes"] = { PALADIN },
 						}),
 						q(44004, {	-- Bringer of the Light
+							["description"] = "This quest sends you to a scenario involving The Exodar and Prophet Velen. Before you kill the final boss, make sure to do everything contained within!",
 							["sourceQuests"] = {
 								44009,	-- A Falling Star (non-Paladin version)
 								44257,	-- A Falling Star (Paladin version)
 							},
-							["description"] = "This quest sends you to a scenario involving The Exodar and Prophet Velen. Before you kill the final boss, make sure to do everything contained within!",
 							["provider"] = { "n", 112130 },	-- Archmage Khadgar
 							["coord"] = { 27.5, 35.8, AEGWYNNS_GALLERY },
 							["maps"] = { 775, 776 },	-- Scenario: In Defense of the Exodar
@@ -479,25 +439,25 @@ root(ROOTS.Zones, {
 									["description"] = "This quest can only be completed while in the Ravencrest's Legacy scenario.",
 									["sourceQuest"] = 44479,	-- Ravencrest's Legacy
 									["altQuests"] = { 44479 },	-- Ravencrest's Legacy
-									["providers"] = {
-										{ "n", 113361 },	-- Captain Jarod Shadowsong
-										{ "n", 113829 },	-- Captain Jarod Shadowsong
+									["qgs"] = {
+										113361,	-- Captain Jarod Shadowsong
+										113829,	-- Captain Jarod Shadowsong
 									},
 								}),
 								q(44415, {	-- The Red Axe
 									["description"] = "This quest can only be completed while in the Ravencrest's Legacy scenario.",
 									["sourceQuest"] = 44414,	-- Felspawns of Lothros
 									["altQuests"] = { 44479 },	-- Ravencrest's Legacy
-									["providers"] = {
-										{ "n", 113361 },	-- Captain Jarod Shadowsong
-										{ "n", 113829 },	-- Captain Jarod Shadowsong
+									["qgs"] = {
+										113361,	-- Captain Jarod Shadowsong
+										113829,	-- Captain Jarod Shadowsong
 									},
 								}),
 								q(44416, {	-- Hunter of Night
 									["description"] = "This quest can only be completed while in the Ravencrest's Legacy scenario.",
 									["sourceQuest"] = 44415,	-- The Red Axe
-									["provider"] = { "n", 113355 },	-- Broxigar the Red
 									["altQuests"] = { 44479 },	-- Ravencrest's Legacy
+									["provider"] = { "n", 113355 },	-- Broxigar the Red
 									["groups"] = {
 										i(139932),	-- Belt of Shadowsong
 										i(140002),	-- Broxigar's Girdle
@@ -646,8 +606,8 @@ root(ROOTS.Zones, {
 						["coord"] = { 68.6, 73.1, FERALAS },
 					}),
 					q(50247, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 } }, {	-- The Mail Must Flow
-						["sourceQuests"] = { 41395 },	-- Due Reward
 						["description"] = "After you finish performing menial tasks for Johnny Awesome, you'll receive another letter from the Postmaster requesting your presence in the mail room.",
+						["sourceQuests"] = { 41395 },	-- Due Reward
 						["provider"] = { "n", 103976 },	-- The Postmaster
 						["groups"] = {
 							ach(12416),	-- The Total Package

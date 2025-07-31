@@ -298,10 +298,14 @@ InstanceHelper.ExtraLoots = {
 	},
 }
 
-root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+-- add the added patch here once blizzard stops clowning about old LFR content
+local TIMELINE_LFR = { ADDED_10_0_2_LAUNCH, REMOVED_11_0_2 }
+
+root(ROOTS.Instances, expansion(EXPANSION.DF, {
 	inst(1200, {	-- Vault of the Incarnates
 		["isRaid"] = true,
 		["coord"] = { 73.0, 55.7, THALDRASZUS },
+		["timeline"] = { ADDED_10_0_2_LAUNCH },
 		["maps"] = {
 			2119,	-- The Primal Bulwark
 			2120,	-- The Elemental Conclave
@@ -427,100 +431,111 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 				-- Awakened
-				ach(19564, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Awakened Storms
-					crit(64929, {	-- Eranog
-						["_encounter"] = { ERANOG, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
-					}),
-					crit(64930, {	-- The Primal Council
-						["_encounter"] = { THE_PRIMAL_COUNCIL, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
-					}),
-					crit(64931, {	-- Terros
-						["_encounter"] = { TERROS, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
-					}),
-					crit(64932, {	-- Sennarth, the Cold Breath
-						["_encounter"] = { SENNARTH, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
-					}),
-					crit(64933, {	-- Dathea, Ascended
-						["_encounter"] = { DATHEA, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
-					}),
-					crit(64934, {	-- Kurog Grimtotem
-						["_encounter"] = { KUROG, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
-					}),
-					crit(64935, {	-- Broodkeeper Diurna
-						["_encounter"] = { DIURNA, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
-					}),
-					crit(64936, {	-- Raszageth the Storm-Eater
-						["_encounter"] = { RASZAGETH, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
-					}),
-				})),
-				ach(19565, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Heroic: Awakened Storms
-					crit(64937, {	-- Eranog
-						["_encounter"] = { ERANOG, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(64938, {	-- The Primal Council
-						["_encounter"] = { THE_PRIMAL_COUNCIL, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(64939, {	-- Terros
-						["_encounter"] = { TERROS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(64940, {	-- Sennarth, the Cold Breath
-						["_encounter"] = { SENNARTH, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(64941, {	-- Dathea, Ascended
-						["_encounter"] = { DATHEA, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(64942, {	-- Kurog Grimtotem
-						["_encounter"] = { KUROG, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(64943, {	-- Broodkeeper Diurna
-						["_encounter"] = { DIURNA, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-					crit(64944, {	-- Raszageth the Storm-Eater
-						["_encounter"] = { RASZAGETH, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
-					}),
-				})),
-				ach(19566, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Mythic: Awakened Storms
-					crit(64945, {	-- Eranog
-						["_encounter"] = { ERANOG, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(64946, {	-- The Primal Council
-						["_encounter"] = { THE_PRIMAL_COUNCIL, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(64947, {	-- Terros
-						["_encounter"] = { TERROS, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(64948, {	-- Sennarth, the Cold Breath
-						["_encounter"] = { SENNARTH, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(64949, {	-- Dathea, Ascended
-						["_encounter"] = { DATHEA, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(64950, {	-- Kurog Grimtotem
-						["_encounter"] = { KUROG, DIFFICULTY.RAID.MYTHIC },
-					}),
-					crit(64951, {	-- Broodkeeper Diurna
-						["_encounter"] = { DIURNA, DIFFICULTY.RAID.MYTHIC },
-					}),
-					-- Criteria not found in past wagotools tables, typo maybe? Would explain there existing a mysterious extra.
-					-- crit(64952, {	-- Raszageth the Storm-Eater
-					-- 	["_encounter"] = { RASZAGETH, DIFFICULTY.RAID.MYTHIC },
-					-- }),
-					crit(64953, {	-- Raszageth the Storm-Eater (extra criteria??)
-						["_encounter"] = { RASZAGETH, DIFFICULTY.RAID.MYTHIC },
-					}),
-				})),
+				ach(19564, {	-- Awakened Storms
+					["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
+					["groups"] = {
+						crit(64929, {	-- Eranog
+							["_encounter"] = { ERANOG, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+						}),
+						crit(64930, {	-- The Primal Council
+							["_encounter"] = { THE_PRIMAL_COUNCIL, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+						}),
+						crit(64931, {	-- Terros
+							["_encounter"] = { TERROS, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+						}),
+						crit(64932, {	-- Sennarth, the Cold Breath
+							["_encounter"] = { SENNARTH, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+						}),
+						crit(64933, {	-- Dathea, Ascended
+							["_encounter"] = { DATHEA, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+						}),
+						crit(64934, {	-- Kurog Grimtotem
+							["_encounter"] = { KUROG, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+						}),
+						crit(64935, {	-- Broodkeeper Diurna
+							["_encounter"] = { DIURNA, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+						}),
+						crit(64936, {	-- Raszageth the Storm-Eater
+							["_encounter"] = { RASZAGETH, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
+						}),
+					},
+				}),
+				ach(19565, {	-- Heroic: Awakened Storms
+					["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
+					["groups"] = {
+						crit(64937, {	-- Eranog
+							["_encounter"] = { ERANOG, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(64938, {	-- The Primal Council
+							["_encounter"] = { THE_PRIMAL_COUNCIL, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(64939, {	-- Terros
+							["_encounter"] = { TERROS, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(64940, {	-- Sennarth, the Cold Breath
+							["_encounter"] = { SENNARTH, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(64941, {	-- Dathea, Ascended
+							["_encounter"] = { DATHEA, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(64942, {	-- Kurog Grimtotem
+							["_encounter"] = { KUROG, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(64943, {	-- Broodkeeper Diurna
+							["_encounter"] = { DIURNA, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+						crit(64944, {	-- Raszageth the Storm-Eater
+							["_encounter"] = { RASZAGETH, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
+						}),
+					},
+				}),
+				ach(19566, {	-- Mythic: Awakened Storms
+					["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
+					["groups"] = {
+						crit(64945, {	-- Eranog
+							["_encounter"] = { ERANOG, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(64946, {	-- The Primal Council
+							["_encounter"] = { THE_PRIMAL_COUNCIL, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(64947, {	-- Terros
+							["_encounter"] = { TERROS, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(64948, {	-- Sennarth, the Cold Breath
+							["_encounter"] = { SENNARTH, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(64949, {	-- Dathea, Ascended
+							["_encounter"] = { DATHEA, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(64950, {	-- Kurog Grimtotem
+							["_encounter"] = { KUROG, DIFFICULTY.RAID.MYTHIC },
+						}),
+						crit(64951, {	-- Broodkeeper Diurna
+							["_encounter"] = { DIURNA, DIFFICULTY.RAID.MYTHIC },
+						}),
+						-- Criteria not found in past wagotools tables, typo maybe? Would explain there existing a mysterious extra.
+						-- crit(64952, {	-- Raszageth the Storm-Eater
+						-- 	["_encounter"] = { RASZAGETH, DIFFICULTY.RAID.MYTHIC },
+						-- }),
+						crit(64953, {	-- Raszageth the Storm-Eater (extra criteria??)
+							["_encounter"] = { RASZAGETH, DIFFICULTY.RAID.MYTHIC },
+						}),
+					},
+				}),
 				ach(16395),		-- Vaulternative Fashion
 				-- Guild Achievements
 				ach(16356),		-- Vault of the Incarnates Guild Run
 				ach(16357),		-- Heroic: Vault of the Incarnates Guild Run
 			}),
-			o(382621, bubbleDown({ ["timeline"] = { ADDED_10_0_2, REMOVED_11_0_2 } }, {	-- Revival Catalyst Console
+			o(382621, {	-- Revival Catalyst Console
 				["description"] = "The Revival Catalyst is a system that lets you convert LFR Mode Non-set items from the Vault of the Incarnates Raid into your class' LFR Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
 				["coord"] = { 60.6, 53.8, THALDRASZUS },
 				["modelScale"] = 4,
 				["catalystID"] = 3,	-- ItemBonus.Value_0 DF:S1
 				["groups"] = {
-					Difficulty(DIFFICULTY.RAID.LFR, {["upgradeTrackID"]=UPGRADETRACKS.VETERAN}).AddGroups(
+					Difficulty(DIFFICULTY.RAID.LFR, {
+						["upgradeTrackID"]=UPGRADETRACKS.VETERAN,
+						["timeline"] = TIMELINE_LFR}).AddGroups(
 						bubbleDownFiltered({bonusID=451},FILTERFUNC_itemID,
 						ALL_CLASS_TIERS_HELPER(VAULT_OF_THE_INCARNATES_TIER, DIFFICULTY.RAID.LFR))
 					),
@@ -536,7 +551,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						ALL_CLASS_TIERS_HELPER(VAULT_OF_THE_INCARNATES_TIER, DIFFICULTY.RAID.MYTHIC))
 					),
 				},
-			})),
+			}),
 			CommonBossDrops(sharedData({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {
 				i(205962, {	-- Echoing Storm Flightstone
 					["timeline"] = { ADDED_10_1_0 },
@@ -591,7 +606,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					i(201790),	-- Renewed Proto-Drake: Embodiment of the Storm-Eater (MM!)
 				}),
 			}),
-			Difficulty(DIFFICULTY.RAID.LFR).AddGroups(bubbleDown({ ["timeline"] = { ADDED_10_0_2, REMOVED_11_0_2 } }, {
+			Difficulty(DIFFICULTY.RAID.LFR, {["timeline"] = TIMELINE_LFR}).AddGroups({
 				ZoneDrops(),
 				header(HEADERS.Achievement, 17110, {	-- The Primal Bulwark
 					Boss(ERANOG),
@@ -607,7 +622,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					Boss(DIURNA),
 					Boss(RASZAGETH),
 				}),
-			})),
+			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.NORMAL_PLUS).AddGroups({
 				BossOnly(ERANOG, {
 					ach(16335),	-- What Frozen Things Do
@@ -745,73 +760,78 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					}),
 					ach(16358),		-- Mythic: Raszageth the Storm-Eater Guild Run
 					ach(17108, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }}),	-- Cutting Edge: Raszageth the Storm-Eater
-					ach(17116, bubbleDownSelf({["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {	-- Hall of Fame: Raszageth the Storm-Eater (A)
+					ach(17116, {	-- Hall of Fame: Raszageth the Storm-Eater (A)
 						["races"] = ALLIANCE_ONLY,
+						["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
 						["groups"] = {
 							title(487),	-- <Name>, Famed Slayer of Raszageth
 						},
-					})),
-					ach(17118, bubbleDownSelf({["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {	-- Hall of Fame: Raszageth the Storm-Eater (H)
+					}),
+					ach(17118, {	-- Hall of Fame: Raszageth the Storm-Eater (H)
 						["races"] = HORDE_ONLY,
+						["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
 						["groups"] = {
 							title(487),	-- <Name>, Famed Slayer of Raszageth
 						},
-					})),
+					}),
 				}),
 			}),
 		},
 	}),
-})));
+}))
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 	inst(1200, {	-- Vault of the Incarnates
-		q(72264),	-- 'Anicent Vault Artifact' first drop per week
-		q(72612),	-- Volcanius (trash)
-		q(70076),	-- Eranog (N)
-		q(70085),	-- Eranog (N)
-		q(72265),	-- Eranog (N)
-		q(70093),	-- Eranog (H)
-		q(70102),	-- Eranog (M)
-		q(72613),	-- Braekkas (trash)
-		q(72614),	-- Council Gauntlet (trash)
-		q(70080),	-- Terros (N)
-		q(70088),	-- Terros (N)
-		q(72273),	-- Terros (N)
-		q(70096),	-- Terros (H)
-		q(70105),	-- Terros (M)
-		q(70077),	-- The Primal Council (N)
-		q(70086),	-- The Primal Council (N)
-		q(72271),	-- The Primal Council (N)
-		q(70094),	-- The Primal Council (H)
-		q(70103),	-- The Primal Council (M)
-		q(72615),	-- Thondrozus (trash)
-		q(70078),	-- Dathea (N)
-		q(70087),	-- Dathea (N)
-		q(72272),	-- Dathea (N)
-		q(70095),	-- Dathea (H)
-		q(70104),	-- Dathea (M)
-		q(72616),	-- Iskakx (trash)
-		q(72617),	-- Kaurdyth (trash)
-		q(70081),	-- Sennarth (N)
-		q(70089),	-- Sennarth (N)
-		q(72274),	-- Sennarth (N)
-		q(70097),	-- Sennarth (H)
-		q(70106),	-- Sennarth (M)
-		q(70082),	-- Kurog Grimtotem (N)
-		q(70090),	-- Kurog Grimtotem (N)
-		q(72275),	-- Kurog Grimtotem (N)
-		q(70098),	-- Kurog Grimtotem (H)
-		q(70107),	-- Kurog Grimtotem (M)
-		q(72618),	-- Broodguardian Ziruss (trash)
-		q(70083),	-- Broodkeeper Diurna (N)
-		q(70091),	-- Broodkeeper Diurna (N)
-		q(72276),	-- Broodkeeper Diurna (N)
-		q(70099),	-- Broodkeeper Diurna (H)
-		q(70108),	-- Broodkeeper Diurna (M)
-		q(70084),	-- Raszageth the Storm-Eater (N)
-		q(70092),	-- Raszageth the Storm-Eater (N)
-		q(72277),	-- Raszageth the Storm-Eater (N)
-		q(70101),	-- Raszageth the Storm-Eater (H)
-		q(70109),	-- Raszageth the Storm-Eater (M)
+		["timeline"] = { ADDED_10_0_2_LAUNCH },
+		["groups"] = {
+			q(72264),	-- 'Anicent Vault Artifact' first drop per week
+			q(72612),	-- Volcanius (trash)
+			q(70076),	-- Eranog (N)
+			q(70085),	-- Eranog (N)
+			q(72265),	-- Eranog (N)
+			q(70093),	-- Eranog (H)
+			q(70102),	-- Eranog (M)
+			q(72613),	-- Braekkas (trash)
+			q(72614),	-- Council Gauntlet (trash)
+			q(70080),	-- Terros (N)
+			q(70088),	-- Terros (N)
+			q(72273),	-- Terros (N)
+			q(70096),	-- Terros (H)
+			q(70105),	-- Terros (M)
+			q(70077),	-- The Primal Council (N)
+			q(70086),	-- The Primal Council (N)
+			q(72271),	-- The Primal Council (N)
+			q(70094),	-- The Primal Council (H)
+			q(70103),	-- The Primal Council (M)
+			q(72615),	-- Thondrozus (trash)
+			q(70078),	-- Dathea (N)
+			q(70087),	-- Dathea (N)
+			q(72272),	-- Dathea (N)
+			q(70095),	-- Dathea (H)
+			q(70104),	-- Dathea (M)
+			q(72616),	-- Iskakx (trash)
+			q(72617),	-- Kaurdyth (trash)
+			q(70081),	-- Sennarth (N)
+			q(70089),	-- Sennarth (N)
+			q(72274),	-- Sennarth (N)
+			q(70097),	-- Sennarth (H)
+			q(70106),	-- Sennarth (M)
+			q(70082),	-- Kurog Grimtotem (N)
+			q(70090),	-- Kurog Grimtotem (N)
+			q(72275),	-- Kurog Grimtotem (N)
+			q(70098),	-- Kurog Grimtotem (H)
+			q(70107),	-- Kurog Grimtotem (M)
+			q(72618),	-- Broodguardian Ziruss (trash)
+			q(70083),	-- Broodkeeper Diurna (N)
+			q(70091),	-- Broodkeeper Diurna (N)
+			q(72276),	-- Broodkeeper Diurna (N)
+			q(70099),	-- Broodkeeper Diurna (H)
+			q(70108),	-- Broodkeeper Diurna (M)
+			q(70084),	-- Raszageth the Storm-Eater (N)
+			q(70092),	-- Raszageth the Storm-Eater (N)
+			q(72277),	-- Raszageth the Storm-Eater (N)
+			q(70101),	-- Raszageth the Storm-Eater (H)
+			q(70109),	-- Raszageth the Storm-Eater (M)
+		},
 	}),
-})));
+}))

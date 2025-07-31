@@ -87,8 +87,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 				}),
 				cl(WARLOCK, {
 					q(85505, {	-- Soul of Devouring
-						["qg"] = 232802,	-- Doan Karhan
 						["sourceQuest"] = 85486,	-- Soul of Enthralling
+						["qg"] = 232802,	-- Doan Karhan
 						["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
 						["groups"] = {
 							objective(1, {	-- Find Felhunter Area
@@ -108,8 +108,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 						},
 					}),
 					q(85486, {	-- Soul of Enthralling
-						["qg"] = 232802,	-- Doan Karhan
 						["sourceQuest"] = 85485,	-- Soul of the Void
+						["qg"] = 232802,	-- Doan Karhan
 						["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
 						["groups"] = {
 							objective(1, {	--	Use Glowing Scroll of Spatial Mending on Fel Portal
@@ -129,8 +129,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 						},
 					}),
 					q(85468, {	-- Soul of Mischief
-						["qg"] = 6247,	-- Doan Karhan
 						["sourceQuest"] = 85112,	-- The Depleted Scythe
+						["qg"] = 6247,	-- Doan Karhan
 						["coord"] = { 49.2, 57.2, THE_BARRENS },
 						["maps"] = { EASTERN_PLAGUELANDS },
 						["groups"] = {
@@ -149,8 +149,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 						},
 					}),
 					q(85485, {	-- Soul of the Void
-						["qg"] = 232802,	-- Doan Karhan
 						["sourceQuest"] = 85468,	-- Soul of Mischief
+						["qg"] = 232802,	-- Doan Karhan
 						["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
 						["groups"] = {
 							i(231794, {	-- Depleted Scythe of Chaos (Void)
@@ -172,8 +172,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 						["coord"] = { 49.2, 57.2, THE_BARRENS },
 					}),
 					q(85506, {	-- The Final Test
-						["qg"] = 232802,	-- Doan Karhan
 						["sourceQuest"] = 85505,	-- Soul of Devouring
+						["qg"] = 232802,	-- Doan Karhan
 						["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
 						["maps"] = { ASHENVALE },
 						["groups"] = {
@@ -206,6 +206,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(7782, bubbleDownSelf(SOD_REMOVED_1_15_4, {	-- The Lord of Blackrock [A] (2/2)
+					["sourceQuest"] = 7781,	-- The Lord of Blackrock [A]
 					["qgs"] = {
 						-- #if AFTER LEGION
 						107574,	-- Anduin Wrynn
@@ -216,7 +217,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 						1748,	-- Highlord Bolvar Fordragon
 						-- #endif
 					},
-					["sourceQuest"] = 7781,	-- The Lord of Blackrock [A]
 					["coords"] = {
 						-- #if AFTER LEGION
 						{ 85.6, 31.8, STORMWIND_CITY },	-- Anduin Wrynn <King of Stormwind>
@@ -236,8 +236,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 				})),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FIVE, q(85643, bubbleDownSelf({ ["timeline"] = { ADDED_1_15_4 }, }, {	-- The Lord of Blackrock [A] (2/2)
-					["qg"] = 1748,	-- Highlord Bolvar Fordragon
 					["sourceQuest"] = 7781,	-- The Lord of Blackrock [A]
+					["qg"] = 1748,	-- Highlord Bolvar Fordragon
 					["coord"] = { 78.0, 18.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -253,6 +253,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 					["races"] = HORDE_ONLY,
 				}),
 				q(7784, bubbleDownSelf(SOD_REMOVED_1_15_4, {	-- The Lord of Blackrock [H] (2/2)
+					["sourceQuest"] = 7783,	-- The Lord of Blackrock [H]
 					["qgs"] = {
 						-- #if AFTER BFA
 						3144,	-- Eitrigg
@@ -266,7 +267,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 						4949,	-- Thrall <Warchief>
 						-- #endif
 					},
-					["sourceQuest"] = 7783,	-- The Lord of Blackrock [H]
 					["coords"] = {
 						-- #if AFTER BFA
 						{ 49.0, 72.8, ORGRIMMAR },	-- Eitrigg
@@ -285,8 +285,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 				})),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FIVE, q(85644, bubbleDownSelf({ ["timeline"] = { ADDED_1_15_4 }, }, {	-- The Lord of Blackrock [H] (2/2)
-					["qg"] = 4949,	-- Thrall <Warchief>
 					["sourceQuest"] = 7783,	-- The Lord of Blackrock [H]
+					["qg"] = 4949,	-- Thrall <Warchief>
 					["coord"] = { 32, 37.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -572,6 +572,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 					ach(685),	-- Blackwing Lair
 					ach(5057, {	-- Blackwing Lair Guild Run
 						["timeline"] = { ADDED_4_0_3 },
+					}),
+					ach(15333, {	-- Survivor of the Shadow Flame (Season of Mastery)
+						["timeline"] = { ADDED_1_14_1, REMOVED_1_15_0 },	-- Was only available in Season of Mastery
 					}),
 					i(19003, {	-- Head of Nefarian (A)
 						["races"] = ALLIANCE_ONLY,

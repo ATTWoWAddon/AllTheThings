@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, {
 	inst(1298, {	-- Operation: Floodgate
 		["coord"] = { 42.2, 39.6, THE_RINGING_DEEPS },
 		["maps"] = {
@@ -51,7 +51,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					["groups"] = {
 						ach(41339),	-- Operation: Floodgate
 						i(234490),	-- Circuit Breaker
+						-- #if BEFORE 11.2.0
 						i(234507),	-- Electrician's Siphoning Filter
+						-- #endif
 						i(234493),	-- Geezle's Coercive Volt-ohmmeter
 						i(232545),	-- Gigazap's Zap-Cap
 						i(234504),	-- Jumpstarter's Scaffold-Scrapers
@@ -60,11 +62,56 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					},
 				}),
 			}),
+			-- #if AFTER 11.2.0
+			d(DIFFICULTY.DUNGEON.NORMAL, {
+				e(2651, {	-- Geezle Gigazap
+					["crs"] = { 236950 },	-- Geezle Gigazap
+					["groups"] = {
+						i(234507),	-- Electrician's Siphoning Filter
+					},
+				}),
+			}),
+			-- #endif
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
+				-- #if AFTER 11.2.0
+				e(2648, {	-- Big M.O.M.M.A.
+					["crs"] = { 226398 },	-- Big M.O.M.M.A.
+					["groups"] = {
+						i(251880, {	-- Momma's Mega Medallion
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+						i(246278, {	-- Overpressure Platelegs
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+					},
+				}),
+				e(2649, {	-- Demolition Duo
+					["crs"] = {
+						226402,	-- Bront
+						226403,	-- Keeza Quickfuse
+					},
+					["groups"] = {
+						i(246279, {	-- Fizzlefuse Cuffs
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+					},
+				}),
+				e(2650, {	-- Swampface
+					["crs"] = { 226396 },	-- Swampface
+					["groups"] = {
+						i(246277, {	-- Swampface's Oozewalkers
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+					},
+				}),
+				-- #endif
 				e(2651, {	-- Geezle Gigazap
 					["crs"] = { 236950 },	-- Geezle Gigazap
 					["groups"] = {
 						ach(41340),	-- Heroic: Operation: Floodgate
+						i(246274, {	-- Geezle's Zapstep
+							["timeline"] = { ADDED_11_2_0 },
+						}),
 					},
 				}),
 			}),

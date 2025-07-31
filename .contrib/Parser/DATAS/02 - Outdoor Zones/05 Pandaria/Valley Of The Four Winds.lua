@@ -6,24 +6,11 @@ root(ROOTS.Zones, {
 		m(VALLEY_OF_THE_FOUR_WINDS, {
 			["lore"] = "Valley of the Four Winds is a tranquil plain of lush farmland, bordered by dense mysterious jungles along the south and impassible mountains to the north. The valley is considered the breadbasket of Pandaria, but the year's harvest is in jeopardy and a terrible malaise has overcome the pandaren that live along the coast. The valley is also the home of the legendary Stormstout Brewery, where Chen Stormstout and his niece Li Li hope to journey to discover the whereabouts of their long-lost ancestors.",
 			["icon"] = 618317,
-			["maps"] = {
-				377,	-- Cavern of Endless Echoes
-			},
+			["maps"] = { VALLEY_OF_THE_FOUR_WINDS_CAVERN_OF_ENDLESS_ECHOES },
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					ach(7294),	-- A Taste of Things to Come (Halfhill)
 					ach(6969),	-- Explore Valley of the Four Winds
-					ach(7295, {	-- Listen to the Drunk Fish (Halfhill)
-						crit(20536),	-- Juicycrunch Carrot
-						crit(21034),	-- Green Cabbage
-						crit(21037),	-- Scallions
-						crit(21035),	-- Mogu Pumpkin
-						crit(21036),	-- Red Blossom Leek
-						crit(21038),	-- Pink Turnip
-						crit(21039),	-- White Turnip
-					}),
 					ach(6301),	-- Rally the Valley
-					ach(7293),	-- Till the Break of Dawn (Halfhill)
 				}),
 				battlepets({
 					pet(706),	-- Bandicoon (PET!)
@@ -79,999 +66,6 @@ root(ROOTS.Zones, {
 					exploration(5985),	-- Winds' Edge
 					visit_exploration(6417,{coord={42.0,71.2,VALLEY_OF_THE_FOUR_WINDS}}),	-- Yan-Zhe River
 					exploration(6388),	-- Zhu's Descent
-				}),
-				n(FACTIONS, {
-					faction(FACTION_THE_TILLERS, {	-- The Tillers
-						["icon"] = 645198,
-						["groups"] = {
-							n(ACHIEVEMENTS, {
-								ach(6551, {	-- Friend on the Farm
-									["sym"] = {{"partial_achievement",6552}},	-- Friends on the Farm
-								}),
-								ach(6552, {		-- Friends on the Farm
-									crit(19398, {	-- Farmer Fung
-										["_factions"] = { FACTION_FARMER_FUNG },
-									}),
-									crit(19402, {	-- Jogu the Drunk
-										["_factions"] = { FACTION_JOGU_THE_DRUNK },
-									}),
-									crit(19396, {	-- Chee Chee
-										["_factions"] = { FACTION_CHEE_CHEE },
-									}),
-									crit(19404, {	-- Sho
-										["_factions"] = { FACTION_SHO },
-									}),
-									crit(19397, {	-- Ella
-										["_factions"] = { FACTION_ELLA },
-									}),
-									crit(19405, {	-- Tina Mudclaw
-										["_factions"] = { FACTION_TINA_MUDCLAW },
-									}),
-									crit(19403, {	-- Old Hillpaw
-										["_factions"] = { FACTION_OLD_HILLPAW },
-									}),
-									crit(19401, {	-- Haohan Mudclaw
-										["_factions"] = { FACTION_HAOHAN_MUDCLAW },
-									}),
-									crit(19399, {	-- Fish Fellreed
-										["_factions"] = { FACTION_FISH_FELLREED },
-									}),
-									crit(19400, {	-- Gina Mudclaw
-										["_factions"] = { FACTION_GINA_MUDCLAW },
-									}),
-								}),
-								ach(7292, {	-- Green Acres
-									["sourceQuest"] = 30256,	-- Learn and Grow IV: Harvesting (while on this quest)
-								}),
-								ach(6544, {		-- The Tillers
-									title(195),		-- Farmer <Name>
-								}),
-							}),
-							faction(FACTION_CHEE_CHEE, {	-- Chee Chee
-								["cr"] = 58709,	-- Chee Chee
-								["coord"] = { 53.0, 52.0, VALLEY_OF_THE_FOUR_WINDS },
-								["groups"] = sharedData({
-									["qg"] = 58709,	-- Chee Chee
-									["maxReputation"] = { FACTION_CHEE_CHEE, 6 },
-								},{
-									q(31341, {	-- A Wolf In Sheep's Clothing
-										["sourceQuest"] = 31340,	-- Oh Sheepie....
-										["groups"] = {
-											i(86465),	-- Old Sheepskin (QI!)
-										},
-									}),
-									q(31338, {	-- Lost Sheepie
-										["minReputation"] = { FACTION_CHEE_CHEE, 3 },	-- Buddy
-										["groups"] = {
-											i(86446),	-- Sheepie (QI!)
-										},
-									}),
-									q(31339, {	-- Lost Sheepie... Again
-										["sourceQuest"] = 31338,	-- Lost Sheepie
-										["minReputation"] = { FACTION_CHEE_CHEE, 4 },	-- Friend
-										["groups"] = {
-											i(86446),	-- Sheepie (QI!)
-										},
-									}),
-									q(31340, {	-- Oh Sheepie...
-										["sourceQuest"] = 31339,	-- Lost Sheepie... Again
-										["minReputation"] = { FACTION_CHEE_CHEE, 5 },	-- Good Friend
-									}),
-									q(30402, {	-- A Dish for Chee Chee
-										["cost"] = {{"i",74647,5}},	-- Valley Stir Fry
-										["isDaily"] = true,
-									}),
-									q(30471, {	-- A Gift For Chee Chee
-										["qg"] = 64464,	-- Andi
-										["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
-										["isDaily"] = true,
-										["groups"] = {
-											i(79827),	-- Authentic Valley Stir Fry (QI!)
-										},
-									}),
-									q(30324, {	-- Not in Chee-Chee's Backyard
-										["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
-										["isDaily"] = true,
-									}),
-									q(30400, {	-- A Blue Feather for Chee Chee
-										["cost"] = {{"i",79265,1}},	-- Blue Feather
-										["repeatable"] = true,
-									}),
-									q(30399, {	-- A Jade Cat for Chee Chee
-										["cost"] = {{"i",79266,1}},	-- Jade Cat
-										["repeatable"] = true,
-									}),
-									q(30398, {	-- A Lovely Apple for Chee Chee
-										["cost"] = {{"i",79267,1}},	-- Lovely Apple
-										["repeatable"] = true,
-									}),
-									q(30401, {	-- A Marsh Lily for Chee Chee
-										["cost"] = {{"i",79268,1}},	-- Marsh Lily
-										["repeatable"] = true,
-									}),
-									q(30397, {	-- A Ruby Shard for Chee Chee
-										["cost"] = {{"i",79264,1}},	-- Ruby Shard
-										["repeatable"] = true,
-									}),
-								}),
-							}),
-							faction(FACTION_ELLA, {	-- Ella
-								["cr"] = 58647,	-- Ella
-								["coord"] = { 53.0, 51.6, VALLEY_OF_THE_FOUR_WINDS },
-								["groups"] = sharedData({
-									["qg"] = 58647,	-- Ella
-									["maxReputation"] = { FACTION_ELLA, 6 },
-								},{
-									q(31534, {	-- The Beginner's Brew
-										["minReputation"] = { FACTION_ELLA, 3 },	-- Buddy
-										["groups"] = {
-											i(87556),	-- Black Cherries (QI!)
-											i(87555),	-- Fuzzy Peach (QI!)
-											i(87553),	-- Red Radish (QI!)
-											i(87554),	-- Sweet Lakemelon (QI!)
-										},
-									}),
-									q(31537, {	-- Ella's Taste Test
-										["minReputation"] = { FACTION_ELLA, 4 },	-- Friend
-										["groups"] = {
-											i(87558),	-- Ella's Brew (QI!)
-										},
-									}),
-									q(31538, {	-- A Worthy Brew
-										["minReputation"] = { FACTION_ELLA, 5 },	-- Good Friend
-										["groups"] = {
-											i(87763),	-- Ella's Brew (QI!)
-										},
-									}),
-									q(30386, {	-- A Dish for Ella
-										["cost"] = {{"i",74651,5}},	-- Shrimp Dumplings
-										["isDaily"] = true,
-									}),
-									q(30474, {	-- A Gift For Ella
-										["qg"] = 64464,	-- Andi
-										["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
-										["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
-										["isDaily"] = true,
-										["groups"] = {
-											i(79871),	-- Spicy Shrimp Dumplings (QI!)
-										},
-									}),
-									q(30327, {	-- You Have to Burn the Ropes
-										["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
-										["isDaily"] = true,
-									}),
-									q(30382, {	-- A Blue Feather for Ella
-										["cost"] = {{"i",79265,1}},	-- Blue Feather
-										["repeatable"] = true,
-									}),
-									q(30381, {	-- A Jade Cat for Ella
-										["cost"] = {{"i",79266,1}},	-- Jade Cat
-										["repeatable"] = true,
-									}),
-									q(30189, {	-- A Lovely Apple for Ella
-										["cost"] = {{"i",79267,1}},	-- Lovely Apple
-										["repeatable"] = true,
-										["groups"] = {
-											i(79320),	-- Half a Lovely Apple
-										},
-									}),
-									q(30383, {	-- A Marsh Lily for Ella
-										["cost"] = {{"i",79268,1}},	-- Marsh Lily
-										["repeatable"] = true,
-									}),
-									q(30160, {	-- A Ruby Shard for Ella
-										["cost"] = {{"i",79264,1}},	-- Ruby Shard
-										["repeatable"] = true,
-									}),
-								}),
-							}),
-							faction(FACTION_FARMER_FUNG, {	-- Farmer Fung
-								["cr"] = 57298,	-- Farmer Fung
-								["coord"] = { 48.3, 33.9, VALLEY_OF_THE_FOUR_WINDS },
-								["groups"] = sharedData({
-									["qg"] = 57298,	-- Farmer Fung
-									["maxReputation"] = { FACTION_FARMER_FUNG, 6 },
-								},{
-									q(30517, {	-- Farmer Fung's Vote I: Yak Attack
-										["qg"] = 58646,	-- Farmer Yoon
-										["sourceQuest"] = 31946,	-- Mung-Mung's Vote III: The Great Carrot Caper
-										["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
-										["minReputation"] = { FACTION_THE_TILLERS, REVERED + 4500 },	-- The Tillers
-									}),
-									q(30518, {	-- Farmer Fung's Vote II: On the Loose
-										["sourceQuest"] = 30517,	-- Farmer Fung's Vote I: Yak Attack
-									}),
-									q(31947, {	-- Farmer Fung's Vote III: Crazy For Cabbage
-										["sourceQuest"] = 30518,	-- Farmer Fung's Vote II: On the Loose
-									}),
-									q(30421, {	-- A Dish for Farmer Fung
-										["cost"] = {{"i",74654,5}},	-- Wildfowl Roast
-										["isDaily"] = true,
-									}),
-									q(30475, {	-- A Gift For Fung
-										["qg"] = 64464,	-- Andi
-										["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
-										["isDaily"] = true,
-										["groups"] = {
-											i(80232),	-- Bloody Plainshawk Leg (QI!)
-											i(80233),	-- Grilled Plainshawk Leg (QI!)
-										},
-									}),
-									q(30317, {	-- Water, Water Everywhere
-										["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
-										["isDaily"] = true,
-									}),
-									q(30419, {	-- A Blue Feather for Farmer Fung
-										["cost"] = {{"i",79265,1}},	-- Blue Feather
-										["repeatable"] = true,
-									}),
-									q(30418, {	-- A Jade Cat for Farmer Fung
-										["cost"] = {{"i",79266,1}},	-- Jade Cat
-										["repeatable"] = true,
-									}),
-									q(30417, {	-- A Lovely Apple for Farmer Fung
-										["cost"] = {{"i",79267,1}},	-- Lovely Apple
-										["repeatable"] = true,
-									}),
-									q(30420, {	-- A Marsh Lily for Farmer Fung
-										["cost"] = {{"i",79268,1}},	-- Marsh Lily
-										["repeatable"] = true,
-									}),
-									q(30416, {	-- A Ruby Shard for Farmer Fung
-										["cost"] = {{"i",79264,1}},	-- Ruby Shard
-										["repeatable"] = true,
-									}),
-								}),
-							}),
-							faction(FACTION_FISH_FELLREED, {	-- Fish Fellreed
-								["cr"] = 58705,	-- Fish Fellreed
-								["coord"] = { 52.8, 51.8, VALLEY_OF_THE_FOUR_WINDS },
-								["groups"] = sharedData({
-									["qgs"] = {
-										58705,	-- Fish Fellreed
-										59517,	-- Fish Fellreed
-									},
-									["maxReputation"] = { FACTION_FISH_FELLREED, 6 },
-								},{
-									q(30427, {	-- A Dish for Fish
-										["cost"] = {{"i",74655,5}},	-- Twin Fish Platter
-										["isDaily"] = true,
-									}),
-									q(30473, {	-- A Gift For Fish
-										["qgs"] = { 64464 },	-- Andi
-										["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
-										["isDaily"] = true,
-										["groups"] = {
-											i(79828),	-- Yak Statuette (QI!)
-										},
-									}),
-									q(30326, {	-- The Kunzen Legend-Chief
-										["isDaily"] = true,
-										["groups"] = {
-											i(79866),	-- Kunzen Legend-Book (QI!)
-										},
-									}),
-									q(30425, {	-- A Blue Feather for Fish
-										["cost"] = {{"i",79265,1}},	-- Blue Feather
-										["repeatable"] = true,
-									}),
-									q(30424, {	-- A Jade Cat for Fish
-										["cost"] = {{"i",79266,1}},	-- Jade Cat
-										["repeatable"] = true,
-									}),
-									q(30423, {	-- A Lovely Apple for Fish
-										["cost"] = {{"i",79267,1}},	-- Lovely Apple
-										["repeatable"] = true,
-									}),
-									q(30426, {	-- A Marsh Lily for Fish
-										["cost"] = {{"i",79268,1}},	-- Marsh Lily
-										["repeatable"] = true,
-									}),
-									q(30422, {	-- A Ruby Shard for Fish
-										["cost"] = {{"i",79264,1}},	-- Ruby Shard
-										["repeatable"] = true,
-									}),
-								}),
-							}),
-							faction(FACTION_GINA_MUDCLAW, {	-- Gina Mudclaw
-								["cr"] = 58706,	-- Gina Mudclaw
-								["coord"] = { 53.2, 51.8, VALLEY_OF_THE_FOUR_WINDS },
-								["groups"] = sharedData({
-									["qg"] = 58706,	-- Gina Mudclaw
-									["maxReputation"] = { FACTION_GINA_MUDCLAW, 6 },
-								},{
-									q(30257, {	-- Learn and Grow V: Halfhill Market
-										["qg"] = 58646,	-- Farmer Yoon
-										["sourceQuest"] = 30256,	-- Learn and Grow IV: Harvesting
-										["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
-									}),
-									q(31945, {	-- Learn and Grow VI: Gina's Vote
-										["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
-									}),
-									q(30390, {	-- A Dish for Gina
-										["cost"] = {{"i",74644,5}},	-- Swirling Mist Soup
-										["isDaily"] = true,
-									}),
-									q(30479, {	-- A Gift For Gina
-										["qg"] = 64464,	-- Andi
-										["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
-										["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
-										["isDaily"] = true,
-										["groups"] = {
-											i(80231),	-- Goldenfire Orchid (QI!)
-										},
-									}),
-									q(30322, {	-- Money Matters
-										["isDaily"] = true,
-										["groups"] = {
-											i(80215),	-- Innkeeper Lei Lan's Payment (QI!)
-											i(80216),	-- Lolo Lio's Payment (QI!)
-											i(80213),	-- Spicemaster Jin Jao's Payment (QI!)
-											i(80214),	-- Trader Jambeezi's Payment (QI!)
-										},
-									}),
-									q(30388, {	-- A Blue Feather for Gina
-										["cost"] = {{"i",79265,1}},	-- Blue Feather
-										["repeatable"] = true,
-									}),
-									q(30387, {	-- A Jade Cat for Gina
-										["cost"] = {{"i",79266,1}},	-- Jade Cat
-										["repeatable"] = true,
-									}),
-									q(30380, {	-- A Lovely Apple for Gina
-										["cost"] = {{"i",79267,1}},	-- Lovely Apple
-										["repeatable"] = true,
-									}),
-									q(30389, {	-- A Marsh Lily for Gina
-										["cost"] = {{"i",79268,1}},	-- Marsh Lily
-										["repeatable"] = true,
-									}),
-									q(30379, {	-- A Ruby Shard for Gina
-										["cost"] = {{"i",79264,1}},	-- Ruby Shard
-										["repeatable"] = true,
-									}),
-								}),
-							}),
-							faction(FACTION_HAOHAN_MUDCLAW, {	-- Haohan Mudclaw
-								["cr"] = 57402,	-- Haohan Mudclaw
-								["coord"] = { 53.0, 51.7, VALLEY_OF_THE_FOUR_WINDS },
-								["groups"] = sharedData({
-									["qg"] = 57402,	-- Haohan Mudclaw
-									["maxReputation"] = { FACTION_HAOHAN_MUDCLAW, 6 },
-								},{
-									q(30521, {	-- Haohan's Vote I: Bungalow Break-In
-										["qg"] = 58646,	-- Farmer Yoon
-										["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
-										["minReputation"] = { FACTION_THE_TILLERS, REVERED + 16800 },	-- The Tillers
-									}),
-									q(30414, {	-- A Dish for Haohan
-										["cost"] = {{"i",74642,5}},	-- Charbroiled Tiger Steak
-										["isDaily"] = true,
-									}),
-									q(30477, {	-- A Gift For Haohan
-										["qg"] = 64464,	-- Andi
-										["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
-										["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
-										["isDaily"] = true,
-										["groups"] = {
-											i(80228),	-- Enormous Cattail Grouper Tooth (QI!)
-										},
-									}),
-									q(30319, {	-- Pest Problems
-										["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
-										["isDaily"] = true,
-									}),
-									q(30412, {	-- A Blue Feather for Haohan
-										["cost"] = {{"i",79265,1}},	-- Blue Feather
-										["repeatable"] = true,
-									}),
-									q(30411, {	-- A Jade Cat for Haohan
-										["cost"] = {{"i",79266,1}},	-- Jade Cat
-										["repeatable"] = true,
-									}),
-									q(30410, {	-- A Lovely Apple for Haohan
-										["cost"] = {{"i",79267,1}},	-- Lovely Apple
-										["repeatable"] = true,
-									}),
-									q(30413, {	-- A Marsh Lily for Haohan
-										["cost"] = {{"i",79268,1}},	-- Marsh Lily
-										["repeatable"] = true,
-									}),
-									q(30409, {	-- A Ruby Shard for Haohan
-										["cost"] = {{"i",79264,1}},	-- Ruby Shard
-										["repeatable"] = true,
-									}),
-								}),
-							}),
-							faction(FACTION_JOGU_THE_DRUNK, {	-- Jogu the Drunk
-								["cr"] = 58710,	-- Jogu the Drunk
-								["coord"] = { 53.6, 52.6, VALLEY_OF_THE_FOUR_WINDS },
-								["groups"] = sharedData({
-									["qg"] = 58710,	-- Jogu the Drunk
-									["maxReputation"] = { FACTION_JOGU_THE_DRUNK, 6 },
-								},{
-									q(31323, {	-- Buy A Fish A Brewery?
-										["minReputation"] = { FACTION_JOGU_THE_DRUNK, 5 },	-- Good Friend
-									}),
-									q(31320, {	-- Buy A Fish A Drink?
-										["minReputation"] = { FACTION_JOGU_THE_DRUNK, 2 },	-- Acquaintance
-									}),
-									q(31322, {	-- Buy A Fish A Keg?
-										["minReputation"] = { FACTION_JOGU_THE_DRUNK, 4 },	-- Friend
-									}),
-									q(31321, {	-- Buy A Fish A Round?
-										["minReputation"] = { FACTION_JOGU_THE_DRUNK, 3 },	-- Buddy
-									}),
-									q(30439, {	-- A Dish for Jogu
-										["cost"] = {{"i",74643,5}},	-- Sauteed Carrots
-										["isDaily"] = true,
-									}),
-									q(30478, {	-- A Gift For Jogu
-										["qg"] = 64464,	-- Andi
-										["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
-										["isDaily"] = true,
-										["groups"] = {
-											i(80236),	-- Apple-Berry Hooch (QI!)
-											i(80234),	-- Yoon's Apple (QI!)
-											i(80235),	-- Yoon's Craneberry (QI!)
-										},
-									}),
-									q(30321, {	-- Weed War II
-										["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
-										["isDaily"] = true,
-									}),
-									q(30437, {	-- A Blue Feather for Jogu
-										["cost"] = {{"i",79265,1}},	-- Blue Feather
-										["repeatable"] = true,
-									}),
-									q(30436, {	-- A Jade Cat for Jogu
-										["cost"] = {{"i",79266,1}},	-- Jade Cat
-										["repeatable"] = true,
-									}),
-									q(30435, {	-- A Lovely Apple for Jogu
-										["cost"] = {{"i",79267,1}},	-- Lovely Apple
-										["repeatable"] = true,
-									}),
-									q(30438, {	-- A Marsh Lily for Jogu
-										["cost"] = {{"i",79268,1}},	-- Marsh Lily
-										["repeatable"] = true,
-									}),
-									q(30434, {	-- A Ruby Shard for Jogu
-										["cost"] = {{"i",79264,1}},	-- Ruby Shard
-										["repeatable"] = true,
-									}),
-								}),
-							}),
-							faction(FACTION_OLD_HILLPAW, {	-- Old Hillpaw
-								["cr"] = 58707,	-- Old Hillpaw
-								["coord"] = { 53.1, 51.9, VALLEY_OF_THE_FOUR_WINDS },
-								["groups"] = sharedData({
-									["qg"] = 58707,	-- Old Hillpaw
-									["maxReputation"] = { FACTION_OLD_HILLPAW, 6 },
-								},{
-									q(30396, {	-- A Dish for Old Hillpaw
-										["cost"] = {{"i",74649,5}},	-- Braised Turtle
-										["isDaily"] = true,
-									}),
-									q(30476, {	-- A Gift For Old Hillpaw
-										["qg"] = 64464,	-- Andi
-										["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
-										["isDaily"] = true,
-										["groups"] = {
-											i(80229),	-- Blue Freshwater Pearl (QI!)
-										},
-									}),
-									q(30318, {	-- Chasing the Chicken
-										["isDaily"] = true,
-										["groups"] = {
-											i(80223),	-- Old Hillpaw's Prize Chicken (QI!)
-										},
-									}),
-									q(30394, {	-- A Blue Feather for Old Hillpaw
-										["cost"] = {{"i",79265,1}},	-- Blue Feather
-										["repeatable"] = true,
-									}),
-									q(30393, {	-- A Jade Cat for Old Hillpaw
-										["cost"] = {{"i",79266,1}},	-- Jade Cat
-										["repeatable"] = true,
-									}),
-									q(30392, {	-- A Lovely Apple for Old Hillpaw
-										["cost"] = {{"i",79267,1}},	-- Lovely Apple
-										["repeatable"] = true,
-									}),
-									q(30395, {	-- A Marsh Lily for Old Hillpaw
-										["cost"] = {{"i",79268,1}},	-- Marsh Lily
-										["repeatable"] = true,
-									}),
-									q(30391, {	-- A Ruby Shard for Old Hillpaw
-										["cost"] = {{"i",79264,1}},	-- Ruby Shard
-										["repeatable"] = true,
-									}),
-								}),
-							}),
-							faction(FACTION_SHO, {	-- Sho
-								["cr"] = 58708,	-- Sho
-								["coord"] = { 53.1, 52.0, VALLEY_OF_THE_FOUR_WINDS },
-								["groups"] = sharedData({
-									["qg"] = 58708,	-- Sho
-									["maxReputation"] = { FACTION_SHO, 6 },
-								},{
-									q(31531, {	-- Mission: Aerial Threat
-										["description"] = "Must be at least 4200/8400 into \"Friend\" with Sho to start this quest.",
-										["minReputation"] = { FACTION_SHO, 4 },	-- Friend
-									}),
-									q(31529, {	-- Mission: Culling The Vermin
-										["description"] = "Must be at least \"Buddy\" with Sho to start this quest.",
-										["minReputation"] = { FACTION_SHO, 3 },	-- Buddy
-									}),
-									q(31532, {	-- Mission: Predator of the Cliffs
-										["description"] = "Must be at least 4200 into \"Good Friend\" with Sho to start this quest.",
-										["minReputation"] = { FACTION_SHO, 5 },	-- Good Friend
-									}),
-									q(30408, {	-- A Dish for Sho
-										["cost"] = {{"i",74645,5}},	-- Eternal Blossom Fish
-										["isDaily"] = true,
-									}),
-									q(30472, {	-- A Gift For Sho
-										["qg"] = 64464,	-- Andi
-										["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
-										["isDaily"] = true,
-										["groups"] = {
-											i(79870),	-- Yu-Ping Soup (QI!)
-										},
-									}),
-									q(30325, {	-- Where It Counts
-										["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
-										["isDaily"] = true,
-									}),
-									q(30406, {	-- A Blue Feather for Sho
-										["cost"] = {{"i",79265,1}},	-- Blue Feather
-										["repeatable"] = true,
-									}),
-									q(30405, {	-- A Jade Cat for Sho
-										["cost"] = {{"i",79266,1}},	-- Jade Cat
-										["repeatable"] = true,
-									}),
-									q(30404, {	-- A Lovely Apple for Sho
-										["cost"] = {{"i",79267,1}},	-- Lovely Apple
-										["repeatable"] = true,
-									}),
-									q(30407, {	-- A Marsh Lily for Sho
-										["cost"] = {{"i",79268,1}},	-- Marsh Lily
-										["repeatable"] = true,
-									}),
-									q(30403, {	-- A Ruby Shard for Sho
-										["cost"] = {{"i",79264,1}},	-- Ruby Shard
-										["repeatable"] = true,
-									}),
-								}),
-							}),
-							faction(FACTION_TINA_MUDCLAW, {	-- Tina Mudclaw
-								["cr"] = 58761,	-- Tina Mudclaw
-								["coord"] = { 53.0, 51.8, VALLEY_OF_THE_FOUR_WINDS },
-								["groups"] = sharedData({
-									["qg"] = 58761,	-- Tina Mudclaw
-									["maxReputation"] = { FACTION_TINA_MUDCLAW, 6 },
-								},{
-									q(31329, {	-- A Beautiful Brooch
-										["provider"] = { "i", 86436 },	-- Beautiful Brooch
-										["minReputation"] = { FACTION_TINA_MUDCLAW, 5 },	-- Good Friend
-										["crs"] = {
-											59120,	-- Kunzen Rockflinger
-											59126,	-- Jokka-Jokka
-											59128,	-- Jim-Jim
-											59130,	-- Teeku
-											59127,	-- Kon-Kon
-											59129,	-- Maaka
-											59125,	-- Kunzen Soupmaster
-											59123,	-- Kunzen Ritualist
-											59134,	-- Yammo
-											59121,	-- Kunzen Hunter
-											59133,	-- Buk-Buk
-											59131,	-- Lor-Lor
-											59135,	-- Bimba
-											59124,	-- Kunzen Collector
-											59132,	-- Rit-Rit
-											59119,	-- Kunzen Ravager
-											59122,	-- Kunzen Herdskeeper
-										},
-									}),
-									q(31328, {	-- An Exquisite Earring
-										["provider"] = { "i", 86435 },	-- Exquisite Earring
-										["minReputation"] = { FACTION_TINA_MUDCLAW, 4 },	-- Friend
-										["crs"] = {
-											59120,	-- Kunzen Rockflinger
-											59126,	-- Jokka-Jokka
-											59128,	-- Jim-Jim
-											59130,	-- Teeku
-											59127,	-- Kon-Kon
-											59129,	-- Maaka
-											59125,	-- Kunzen Soupmaster
-											59123,	-- Kunzen Ritualist
-											59134,	-- Yammo
-											59121,	-- Kunzen Hunter
-											59133,	-- Buk-Buk
-											59131,	-- Lor-Lor
-											59135,	-- Bimba
-											59124,	-- Kunzen Collector
-											59132,	-- Rit-Rit
-											59119,	-- Kunzen Ravager
-											59122,	-- Kunzen Herdskeeper
-										},
-									}),
-									q(31325, {	-- A Very Nice Necklace
-										["provider"] = { "i", 86433 },	-- Nice Necklace
-										["minReputation"] = { FACTION_TINA_MUDCLAW, 2 },	-- Acquaintance
-										["crs"] = {
-											59120,	-- Kunzen Rockflinger
-											59126,	-- Jokka-Jokka
-											59128,	-- Jim-Jim
-											59130,	-- Teeku
-											59127,	-- Kon-Kon
-											59129,	-- Maaka
-											59125,	-- Kunzen Soupmaster
-											59123,	-- Kunzen Ritualist
-											59134,	-- Yammo
-											59121,	-- Kunzen Hunter
-											59133,	-- Buk-Buk
-											59131,	-- Lor-Lor
-											59135,	-- Bimba
-											59124,	-- Kunzen Collector
-											59132,	-- Rit-Rit
-											59119,	-- Kunzen Ravager
-											59122,	-- Kunzen Herdskeeper
-										},
-									}),
-									q(31326, {	-- Tina's Tasteful Tiara
-										["provider"] = { "i", 86434 },	-- Tasteful Tiara
-										["minReputation"] = { FACTION_TINA_MUDCLAW, 3 },	-- Buddy
-										["crs"] = {
-											59120,	-- Kunzen Rockflinger
-											59126,	-- Jokka-Jokka
-											59128,	-- Jim-Jim
-											59130,	-- Teeku
-											59127,	-- Kon-Kon
-											59129,	-- Maaka
-											59125,	-- Kunzen Soupmaster
-											59123,	-- Kunzen Ritualist
-											59134,	-- Yammo
-											59121,	-- Kunzen Hunter
-											59133,	-- Buk-Buk
-											59131,	-- Lor-Lor
-											59135,	-- Bimba
-											59124,	-- Kunzen Collector
-											59132,	-- Rit-Rit
-											59119,	-- Kunzen Ravager
-											59122,	-- Kunzen Herdskeeper
-										},
-									}),
-									q(30433, {	-- A Dish for Tina
-										["cost"] = {{"i",74652,5}},	-- Fire Spirit Salmon
-										["isDaily"] = true,
-									}),
-									q(30470, {	-- A Gift For Tina
-										["qg"] = 64464,	-- Andi
-										["coord"] = { 52.7, 50.4, VALLEY_OF_THE_FOUR_WINDS },
-										["isDaily"] = true,
-										["groups"] = {
-											i(80134),	-- Uncut Chrysoberyl (QI!)
-										},
-									}),
-									q(30323, {	-- They Don't Even Wear Them
-										["isDaily"] = true,
-										["groups"] = {
-											i(80139),	-- Burglarized Bracelet (QI!)
-											i(80137),	-- Ransacked Ring (QI!)
-											i(80138),	-- Stolen Circlet (QI!)
-										},
-									}),
-									q(30431, {	-- A Blue Feather for Tina
-										["cost"] = {{"i",79265,1}},	-- Blue Feather
-										["repeatable"] = true,
-									}),
-									q(30430, {	-- A Jade Cat for Tina
-										["cost"] = {{"i",79266,1}},	-- Jade Cat
-										["repeatable"] = true,
-									}),
-									q(30429, {	-- A Lovely Apple for Tina
-										["cost"] = {{"i",79267,1}},	-- Lovely Apple
-										["repeatable"] = true,
-									}),
-									q(30432, {	-- A Marsh Lily for Tina
-										["cost"] = {{"i",79268,1}},	-- Marsh Lily
-										["repeatable"] = true,
-									}),
-									q(30428, {	-- A Ruby Shard for Tina
-										["cost"] = {{"i",79264,1}},	-- Ruby Shard
-										["repeatable"] = true,
-									}),
-								}),
-							}),
-							n(QUESTS, {
-								q(30252, {	-- A Helping Hand
-									["qg"] = 58721,	-- Farmer Yoon
-									["coord"] = { 52.0, 48.1, VALLEY_OF_THE_FOUR_WINDS },
-								}),
-								q(32189, {	-- A Shabby New Face
-									["qg"] = 58718,	-- Merchant Greenfield
-									["coord"] = { 52.8, 52.0, VALLEY_OF_THE_FOUR_WINDS },
-									["description"] = "Available only on days where Barnaby Fletcher is in Halfhill.",
-								}),
-								q(30516, {	-- Growing the Farm I: A Little Problem
-									["qg"] = 57385,	-- Gai Lan
-									["sourceQuest"] = 30260,	-- Growing the Farm I: The Weeds
-									["coord"] = { 38.7, 51.7, VALLEY_OF_THE_FOUR_WINDS },
-									["minReputation"] = { FACTION_THE_TILLERS, HONORED },
-									["groups"] = {
-										i(80122),	-- Spideroot (QI!)
-									},
-								}),
-								q(30260, {	-- Growing the Farm I: The Weeds
-									["qg"] = 58646,	-- Farmer Yoon
-									["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
-									["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
-								}),
-								q(30524, {	-- Growing the Farm II: Knock on Wood
-									["qg"] = 58705,	-- Fish Fellreed
-									["sourceQuest"] = 30523,	-- Growing the Farm II: The Broken Wagon
-									["coord"] = { 41.7, 30.1, VALLEY_OF_THE_FOUR_WINDS },
-									["groups"] = {
-										i(80136),	-- Waxed Plank (QI!)
-									},
-								}),
-								q(30523, {	-- Growing the Farm II: The Broken Wagon
-									["qg"] = 58646,	-- Farmer Yoon
-									["sourceQuest"] = 30516,	-- Growing the Farm I: A Little Problem
-									["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
-									["minReputation"] = { FACTION_THE_TILLERS, REVERED },
-								}),
-								q(30529, {	-- Growing the Farm III: The Mossy Boulder
-									["qg"] = 58646,	-- Farmer Yoon
-									["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
-									["description"] = "Must have all Tillers votes collected to start this quest.",
-									["minReputation"] = { FACTION_THE_TILLERS, EXALTED },	-- The Tillers
-									-- TODO: source quests??
-								}),
-								q(30522, {	-- Haohan's Vote II: The Real Culprits
-									["qg"] = 57402,	-- Haohan Mudclaw
-									["sourceQuest"] = 30521,	-- Haohan's Vote I: Bungalow Break-In
-									["coord"] = { 44.7, 34.1, VALLEY_OF_THE_FOUR_WINDS },
-								}),
-								q(30525, {	-- Haohan's Vote III: Pure Poison
-									["qg"] = 58646,	-- Farmer Yoon
-									["sourceQuest"] = 30522,	-- Haohan's Vote II: The Real Culprits
-									["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
-									["groups"] = {
-										i(80140),	-- Bloodbloom (QI!)
-										i(80141),	-- Cave Lily (QI!)
-										i(80142),	-- Ghostcap (QI!)
-										i(80143),	-- Violet Lichen (QI!)
-									},
-								}),
-								q(30527, {	-- Haohan's Vote IV: Melons For Felons
-									["qg"] = 58646,	-- Farmer Yoon
-									["sourceQuest"] = 30525,	-- Haohan's Vote III: Pure Poison
-									["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
-								}),
-								q(30528, {	-- Haohan's Vote V: Chief Yip-Yip
-									["qg"] = 58646,	-- Farmer Yoon
-									["sourceQuest"] = 30527,	-- Haohan's Vote IV: Melons For Felons
-									["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
-								}),
-								q(31313, {	-- Just A Folk Story
-									["qg"] = 58705,	-- Fish Fellreed
-									["sourceQuest"] = 31312,	-- The Old Map
-								}),
-								q(30535, {	-- Learn and Grow I: Seeds
-									["qg"] = 58646,	-- Farmer Yoon
-									["sourceQuest"] = 30252,	-- A Helping Hand
-									["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
-									["groups"] = {
-										i(80295),	-- Packet of Green Cabbage Seeds (QI!)
-									},
-								}),
-								q(30254, {	-- Learn and Grow II: Tilling and Planting
-									["qg"] = 58646,	-- Farmer Yoon
-									["sourceQuest"] = 30535,	-- Learn and Grow I: Seeds
-									["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
-									["groups"] = {
-										i(80302),	-- EZ-Gro Green Cabbage Seeds (QI!)
-									},
-								}),
-								q(30255, {	-- Learn and Grow III: Tending Crops
-									["qg"] = 58646,	-- Farmer Yoon
-									["sourceQuest"] = 30254,	-- Learn and Grow II: Tilling and Planting
-									["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
-								}),
-								q(30256, {	-- Learn and Grow IV: Harvesting
-									["qg"] = 58646,	-- Farmer Yoon
-									["sourceQuest"] = 30255,	-- Learn and Grow III: Tending Crops
-									["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
-									["groups"] = {
-										i(80314),	-- EZ-Gro Green Cabbage (QI!)
-									},
-								}),
-								q(30258, {	-- Mung-Mung's Vote I: A Hozen's Problem
-									["qg"] = 58646,	-- Farmer Yoon
-									["sourceQuest"] = 31945,	-- Learn and Grow VI: Gina's Vote
-									["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
-								}),
-								q(30259, {	-- Mung-Mung's Vote II: Rotten to the Core
-									["qg"] = 57401,	-- Mung-Mung
-									["sourceQuest"] = 30258,	-- Mung-Mung's Vote I: A Hozen's Problem
-									["coord"] = { 44.2, 34.2, VALLEY_OF_THE_FOUR_WINDS },
-									["groups"] = {
-										i(80116),	-- Partially Chewed Carrot (QI!)
-									},
-								}),
-								q(31946, {	-- Mung-Mung's Vote III: The Great Carrot Caper
-									["qg"] = 57401,	-- Mung-Mung
-									["sourceQuest"] = 30258,	-- Mung-Mung's Vote II: Rotten to the Core
-									["coord"] = { 44.2, 34.2, VALLEY_OF_THE_FOUR_WINDS },
-								}),
-								q(30519, {	-- Nana's Vote I: Nana's Secret Recipe
-									["qg"] = 58646,	-- Farmer Yoon
-									["coord"] = { 52.3, 48.8, VALLEY_OF_THE_FOUR_WINDS },
-									["minReputation"] = { FACTION_THE_TILLERS, REVERED + 8400 },	-- The Tillers
-								}),
-								q(31948, {	-- Nana's Vote II: The Sacred Springs
-									["qg"] = 64597,	-- Nana Mudclaw
-									["sourceQuest"] = 30519,	-- Nana's Vote I: Nana's Secret Recipe
-									["coord"] = { 54.7, 47.0, VALLEY_OF_THE_FOUR_WINDS },
-									["groups"] = {
-										i(89902),	-- Empty Pitcher (QI!)
-										i(89903),	-- Thousand-Year Water (QI!)
-									},
-								}),
-								q(31949, {	-- Nana's Vote III: Witchberry Julep
-									["qg"] = 64597,	-- Nana Mudclaw
-									["sourceQuest"] = 31948,	-- Nana's Vote II: The Sacred Springs
-									["coord"] = { 54.7, 47.0, VALLEY_OF_THE_FOUR_WINDS },
-								}),
-								q(31314, {	-- Old Man Thistle's Treasure
-									["qg"] = 58705,	-- Fish Fellreed
-									["sourceQuest"] = 31313,	-- Just a Folk Story
-									["groups"] = {
-										i(86428),	-- Old Man Thistle's Treasure
-									},
-								}),
-								q(32198, {	-- One Magical, Flying Kingdom's Trash...
-									["qg"] = 67565,	-- Barnaby Fletcher
-									["sourceQuest"] = 32189,	-- A Shabby New Face
-									["coord"] = { 53.2, 51.4, VALLEY_OF_THE_FOUR_WINDS },
-									["description"] = "Available only on days where Barnaby Fletcher is in Halfhill.",
-								}),
-								q(31312, {	-- The Old Map
-									["provider"] = { "i", 86404 },	-- Old Map
-									["description"] = "Requires a reputation level of Exalted with The Tillers and Best Friend with all Halfhill farmers to drop.",
-									["minReputation"] = { FACTION_THE_TILLERS, EXALTED },	-- The Tillers
-									["crs"] = { 59639 },	-- Enormous Cattail Grouper
-								}),
-							}),
-							-- Daily
-							n(QUESTS, sharedData({
-								["isDaily"] = true,
-							},{
-								q(30335, {	-- Stalling the Ravage
-									["qg"] = 58646,	-- Farmer Yoon
-									["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
-									["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
-								}),
-								q(30334, {	-- Stealing is Bad... Re-Stealing is OK
-									["qg"] = 58646,	-- Farmer Yoon
-									["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
-									["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
-									["groups"] = {
-										i(79824),	-- Stolen Vegetable (QI!)
-									},
-								}),
-								q(30336, {	-- The Kunzen Hunter-Chief
-									["qg"] = 58646,	-- Farmer Yoon
-									["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
-									["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
-								}),
-								q(31675, {	-- The White Turnip Treatment
-									["qg"] = 58646,	-- Farmer Yoon
-									["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
-									["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
-								--	i did 30336, turned it in, turned in Gina's Vote, then this daily popped up.  not sure if the daily itself is behind Gina's Vote or if doing Gina's Vote unlocks the ability to do more than 1 daily
-								}),
-								q(31671, {	-- Why Not Scallions?
-									["qg"] = 58646,	-- Farmer Yoon
-									["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
-									["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
-								}),
-								q(32642, {	-- Work Order: Dominance Offensive I
-									["provider"] = { "o", 218750 },	-- Work Orders
-									["sourceQuest"] = 32682,	-- Inherit the Earth
-									["coord"] = { 52.3, 48.7, VALLEY_OF_THE_FOUR_WINDS },
-									["races"] = HORDE_ONLY,
-								}),
-								q(32643, {	-- Work Order: Dominance Offensive II
-									["provider"] = { "o", 218750 },	-- Work Orders
-									["sourceQuest"] = 32642,	-- Work Order: Dominance Offensive I
-									["coord"] = { 52.3, 48.7, VALLEY_OF_THE_FOUR_WINDS },
-									["races"] = HORDE_ONLY,
-								}),
-								q(32944, {	-- Work Order: Kirin Tor Offensive I
-									["provider"] = { "o", 218750 },	-- Work Orders
-									["sourceQuest"] = 32682,	-- Inherit the Earth
-									["coord"] = { 52.3, 48.7, VALLEY_OF_THE_FOUR_WINDS },
-									["races"] = ALLIANCE_ONLY,
-								}),
-								q(32945, {	-- Work Order: Kirin Tor Offensive II
-									["provider"] = { "o", 218750 },	-- Work Orders
-									["sourceQuest"] = 32944,	-- Work Order: Kirin Tor Offensive I
-									["coord"] = { 52.3, 48.7, VALLEY_OF_THE_FOUR_WINDS },
-									["races"] = ALLIANCE_ONLY,
-								}),
-								q(32647, {	-- Work Order: Golden Lotus I
-									["provider"] = { "o", 218750 },	-- Work Orders
-									["sourceQuest"] = 32682,	-- Inherit the Earth
-									["coord"] = { 52.3, 48.7, VALLEY_OF_THE_FOUR_WINDS },
-								}),
-								q(32648, {	-- Work Order: Golden Lotus II
-									["provider"] = { "o", 218750 },	-- Work Orders
-									["sourceQuest"] = 32647,	-- Work Order: Golden Lotus I
-									["coord"] = { 52.3, 48.7, VALLEY_OF_THE_FOUR_WINDS },
-								}),
-								q(32645, {	-- Work Order: Operation: Shieldwall I
-									["provider"] = { "o", 218750 },	-- Work Orders
-									["sourceQuest"] = 32682,	-- Inherit the Earth
-									["coord"] = { 52.3, 48.7, VALLEY_OF_THE_FOUR_WINDS },
-									["races"] = ALLIANCE_ONLY,
-								}),
-								q(32646, {	-- Work Order: Operation: Shieldwall II
-									["provider"] = { "o", 218750 },	-- Work Orders
-									["sourceQuest"] = 32645,	-- Work Order: Operation: Shieldwall I
-									["coord"] = { 52.3, 48.7, VALLEY_OF_THE_FOUR_WINDS },
-									["races"] = ALLIANCE_ONLY,
-								}),
-								q(32649, {	-- Work Order: Shado-Pan I
-									["provider"] = { "o", 218750 },	-- Work Orders
-									["sourceQuest"] = 32682,	-- Inherit the Earth
-									["coord"] = { 52.3, 48.7, VALLEY_OF_THE_FOUR_WINDS },
-								}),
-								q(32650, {	-- Work Order: Shado-Pan II
-									["provider"] = { "o", 218750 },	-- Work Orders
-									["sourceQuest"] = 32649,	-- Work Order: Shado-Pan I
-									["coord"] = { 52.3, 48.7, VALLEY_OF_THE_FOUR_WINDS },
-								}),
-								q(32942, {	-- Work Order: Sunreaver Onslaught I
-									["provider"] = { "o", 218750 },	-- Work Orders
-									["sourceQuest"] = 32682,	-- Inherit the Earth
-									["coord"] = { 52.3, 48.7, VALLEY_OF_THE_FOUR_WINDS },
-									["races"] = HORDE_ONLY,
-								}),
-								q(32943, {	-- Work Order: Sunreaver Onslaught II
-									["provider"] = { "o", 218750 },	-- Work Orders
-									["sourceQuest"] = 32942,	-- Work Order: Sunreaver Onslaught I
-									["coord"] = { 52.3, 48.7, VALLEY_OF_THE_FOUR_WINDS },
-									["races"] = HORDE_ONLY,
-								}),
-								q(32653, {	-- Work Order: The August Celestials I
-									["provider"] = { "o", 218750 },	-- Work Orders
-									["sourceQuest"] = 32682,	-- Inherit the Earth
-									["coord"] = { 52.3, 48.7, VALLEY_OF_THE_FOUR_WINDS },
-								}),
-								q(32657, {	-- Work Order: The August Celestials II
-									["provider"] = { "o", 218750 },	-- Work Orders
-									["sourceQuest"] = 32653,	-- Work Order: The August Celestials I
-									["coord"] = { 52.3, 48.7, VALLEY_OF_THE_FOUR_WINDS },
-								}),
-								q(32658, {	-- Work Order: The Klaxxi I
-									["provider"] = { "o", 218750 },	-- Work Orders
-									["sourceQuest"] = 32682,	-- Inherit the Earth
-									["coord"] = { 52.3, 48.7, VALLEY_OF_THE_FOUR_WINDS },
-								}),
-								q(32659, {	-- Work Order: The Klaxxi II
-									["provider"] = { "o", 218750 },	-- Work Orders
-									["sourceQuest"] = 32658,	-- Work Order: The Klaxxi I
-									["coord"] = { 52.3, 48.7, VALLEY_OF_THE_FOUR_WINDS },
-								}),
-							})),
-						},
-					}),
 				}),
 				n(FLIGHT_PATHS, {
 					fp(1052, {	-- Grassy Cline, Valley of the Four Winds
@@ -1210,8 +204,8 @@ root(ROOTS.Zones, {
 								},
 							}),
 							q(30332, {	-- Fatty Goatsteak
-								["qg"] = 58712,	-- Kol Ironpaw
 								["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
+								["qg"] = 58712,	-- Kol Ironpaw
 								["coord"] = { 53.0, 51.3, VALLEY_OF_THE_FOUR_WINDS },
 								["isDaily"] = true,
 								["groups"] = {
@@ -1264,8 +258,8 @@ root(ROOTS.Zones, {
 								["isDaily"] = true,
 							}),
 							q(31535, {	-- Replenishing the Pantry
-								["qg"] = 64395,	-- Nam Ironpaw
 								["sourceQuest"] = 31536,	-- Preserving Freshness
+								["qg"] = 64395,	-- Nam Ironpaw
 								["coord"] = { 53.5, 51.2, VALLEY_OF_THE_FOUR_WINDS },
 								["repeatable"] = true,
 								["groups"] = {
@@ -1290,8 +284,8 @@ root(ROOTS.Zones, {
 								},
 							}),
 							q(30330, {	-- The Truffle Shuffle
-								["qg"] = 58716,	-- Jian Ironpaw
 								["sourceQuest"] = 30257,	-- Learn and Grow V: Halfhill Market
+								["qg"] = 58716,	-- Jian Ironpaw
 								["coord"] = { 53.4, 51.6, VALLEY_OF_THE_FOUR_WINDS },
 								["isDaily"] = true,
 								["groups"] = {
@@ -1300,9 +294,9 @@ root(ROOTS.Zones, {
 								},
 							}),
 							q(31521, {	-- To Be a Master
+								["description"] = "Becomes available on reaching max Pandaria cooking, but you must master all 6 Pandaren cooking ways for this quest to be completed.",
 								["qg"] = 64231,	-- Sungshin Ironpaw
 								["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
-								["description"] = "Becomes available on reaching max Pandaria cooking, but you must master all 6 Pandaren cooking ways for this quest to be completed.",
 							}),
 						},
 					}),
@@ -1310,8 +304,8 @@ root(ROOTS.Zones, {
 						["requireSkill"] = FISHING,
 						["groups"] = {
 							q(32684, {	-- You Want Fish?
-								["qg"] = 64231,	-- Sungshin Ironpaw
 								["sourceQuest"] = 31281,	-- So You Want to be a Chef...
+								["qg"] = 64231,	-- Sungshin Ironpaw
 								["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
 							}),
 							q(32685, {	-- No Fishing Pole Necessary!
@@ -1321,9 +315,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30275, {	-- A Crocolisk Tale
+						["description"] = "Kill Manglemaw at the Pools of Purity to spawn Manglemaw's Mother.",
 						["provider"] = { "i", 79238 },	-- Enormous Crocolisk Tail
 						["coord"] = { 57.7, 25.9, VALLEY_OF_THE_FOUR_WINDS },
-						["description"] = "Kill Manglemaw at the Pools of Purity to spawn Manglemaw's Mother.",
 						["crs"] = {
 							58754,	-- Manglemaw
 							58755,	-- Manglemaw's Mother
@@ -1333,11 +327,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29918, {	-- A Lesson in Bravery
-						["qg"] = 56312,	-- Shang Thunderfoot
 						["sourceQuests"] = {
 							29917,	-- Lupello
 							29916,	-- Piercing Talons and Slavering Jaws
 						},
+						["qg"] = 56312,	-- Shang Thunderfoot
 						["coord"] = { 78.2, 32.8, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
 							i(75208),	-- Rancher's Lariat (QI!)
@@ -1349,37 +343,27 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29915, {	-- A Neighbor's Duty
-						["qg"] = 56205,	-- Liang Thunderfoot
 						["sourceQuests"] = {
 							29914,	-- Back to the Sty
 							29913,	-- The Meat They'll Eat
 						},
+						["qg"] = 56205,	-- Liang Thunderfoot
 						["coord"] = { 75.2, 24.1, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
 							i(76100),	-- Wayward Lamb (QI!)
 						},
 					}),
 					q(29877, {	-- A Poor Grasp of the Basics
-						["qg"] = 56440,	-- Muno the Farmhand
 						["sourceQuest"] = 29907,	-- Chen and Li Li
+						["qg"] = 56440,	-- Muno the Farmhand
 						["coord"] = { 82.7, 21.2, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
 							i(88371),	-- Watermelon Bomb
 						},
 					}),
-					q(31672, {	-- A Pumpkin-y Perfume
-						["qg"] = 58646,	-- Farmer Yoon
-						["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
-						["isDaily"] = true,
-					}),
-					q(30534, {	-- A Second Hand
-						["provider"] = { "o", 215705 },	-- Tillers Shrine
-						["coord"] = { 52.1, 49.0, VALLEY_OF_THE_FOUR_WINDS },
-						["description"] = "Requires reputation level of \"Exalted\" with The Tillers and \"Best Friends\" with whomever you want assisting you on the farm.",
-					}),
 					q(29908, {	-- A Seemingly Endless Nuisance
-						["qg"] = 56204,	-- Pang Thunderfoot
 						["sourceQuest"] = 29907,	-- Chen and Li Li
+						["qg"] = 56204,	-- Pang Thunderfoot
 						["coord"] = { 83.7, 21.1, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
 							i(81769),	-- Silkmaster's Satin Leggings
@@ -1394,8 +378,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29988, {	-- A Taste For Eggs
-						["qg"] = 56714,	-- Master Bruised Paw
 						["sourceQuest"] = 29987,	-- Unyielding Fists: Trial of Wood
+						["qg"] = 56714,	-- Master Bruised Paw
 						["coord"] = { 18.3, 31.3, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
 							o(209953, {	-- Emperor Tern Egg
@@ -1410,13 +394,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29577, {	-- Ashyo's Vision
-						["qg"] = 56113,	-- Clever Ashyo
 						["sourceQuest"] = 29871,	-- Clever Ashyo
+						["qg"] = 56113,	-- Clever Ashyo
 						["coord"] = { 61.2, 34.2, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(29914, {	-- Back to the Sty
-						["qg"] = 56205,	-- Liang Thunderfoot
 						["sourceQuest"] = 29912,	-- The Fabular Miss Fanny
+						["qg"] = 56205,	-- Liang Thunderfoot
 						["coord"] = { 75.2, 24.0, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
 							i(75271),	-- Jian (QI!)
@@ -1425,15 +409,15 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30172, {	-- Barreling Along
+						["sourceQuest"] = 30051,	-- The Great Water Hunt
 						["qgs"] = {
 							56474,	-- Mudmug
 							58785,
 						},
-						["sourceQuest"] = 30051,	-- The Great Water Hunt
 					}),
 					q(30077, {	-- Barrels, Man
-						["qg"] = 56138,	-- Li Li
 						["sourceQuest"] = 30074,	-- Knocking on the Door
+						["qg"] = 56138,	-- Li Li
 						["coord"] = { 32.3, 68.5, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(29757, {	-- Bottletoads
@@ -1444,12 +428,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29952, {	-- Broken Dreams
-						["qg"] = 56133,	-- Chen Stormstout
 						["sourceQuest"] = 29950,	-- Li Li's Day Off
+						["qg"] = 56133,	-- Chen Stormstout
 						["coord"] = { 68.8, 43.4, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(29907, {	-- Chen and Li Li
-						["qg"] = 56133,	-- Chen Stormstout
 						["sourceQuests"] = {
 							32018,	-- His Name Was... Stormstout
 							32019,	-- They Call Him... Stormstout
@@ -1461,15 +444,16 @@ root(ROOTS.Zones, {
 							49557,	-- Hero's Call: Valley of the Four Winds!
 							-- #endif
 						},
+						["qg"] = 56133,	-- Chen Stormstout
 						["coord"] = { 86.0, 22.2, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(30046, {	-- Chen's Resolution
-						["qg"] = 56133,	-- Chen Stormstout
 						["sourceQuests"] = {
 						--	TODO: may also require #29910, Rampaging Rodents (not required for 2 criteria prior to this, but i did it prior to Muddy Water when Broken Dreams alone didn't trigger the availability of Chen's Resolution)
 							29952,	-- Broken Dreams
 							29951,	-- Muddy Water
 						},
+						["qg"] = 56133,	-- Chen Stormstout
 						["coord"] = { 68.9, 43.4, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(32045, {	-- Children of the Water
@@ -1477,12 +461,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 55.1, 47.4, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(30078, {	-- Cleaning House
-						["qg"] = 56133,	-- Chen Stormstout
 						["sourceQuests"] = {
 							30077,	-- Barrels, Man
 							30075,	-- Clear the Way
 							30076,	-- The Fanciest Water
 						},
+						["qg"] = 56133,	-- Chen Stormstout
 						["coord"] = { 83.6, 21.5, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
 							i(81742),	-- Silkmaster's Satin Hood
@@ -1497,8 +481,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30075, {	-- Clear the Way
-						["qg"] = 56133,	-- Chen Stormstout
 						["sourceQuest"] = 30074,	-- Knocking on the Door
+						["qg"] = 56133,	-- Chen Stormstout
 						["coord"] = { 32.1, 68.3, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
 							i(81834),	-- Silkspawn Wing
@@ -1513,8 +497,8 @@ root(ROOTS.Zones, {
 						["coord"] = { 84.0, 21.1, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(29947, {	-- Crouching Carrot, Hidden Turnip
-						["qg"] = 56138,	-- Li Li
 						["sourceQuest"] = 29945,	-- Yellow and Red Make Orange
+						["qg"] = 56138,	-- Li Li
 						["coord"] = { 68.9, 43.3, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
 							i(76370),	-- Orange-Painted Turnip (QI!)
@@ -1522,15 +506,15 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30049, {	-- Doesn't Hold Water
-						["qg"] = 56133,	-- Chen Stormstout
 						["sourceQuest"] = 30046,	-- Chen's Resolution
+						["qg"] = 56133,	-- Chen Stormstout
 						["coord"] = { 55.9, 49.4, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(30054, {	-- Enough is Ookin' Enough
-						["qg"] = 57401,	-- Mung-Mung
-						["sourceQuest"] = 30046,	-- Chen's Resolution
-						["coord"] = { 44.2, 34.2, VALLEY_OF_THE_FOUR_WINDS },
 						["description"] = "Only available as part of the \"Hop Hunting\" quest.",
+						["sourceQuest"] = 30046,	-- Chen's Resolution
+						["qg"] = 57401,	-- Mung-Mung
+						["coord"] = { 44.2, 34.2, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
 							i(77379),	-- Virmen Tooth (QI!)
 						},
@@ -1551,8 +535,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29986, {	-- Fog Wards
-						["qg"] = 56714,	-- Master Bruised Paw
 						["sourceQuest"] = 29984,	-- Unyielding Fists: Trial of Bamboo
+						["qg"] = 56714,	-- Master Bruised Paw
 						["coord"] = { 18.3, 31.2, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
 							i(81814),	-- Necklace of Three Sins
@@ -1563,8 +547,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30182, {	-- Fox Mastery
-						["qg"] = 63822,	-- Tani
 						["sourceQuest"] = 30183,	-- Stalker Mastery
+						["qg"] = 63822,	-- Tani
 						["coord"] = { 16.2, 82.5, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(32035, {	-- Got Silk?
@@ -1573,10 +557,10 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 					}),
 					q(30050, {	-- Gardener Fran and the Watering Can
-						["qg"] = 62377,	-- Gardener Fran
-						["sourceQuest"] = 30046,	-- Chen's Resolution
-						["coord"] = { 48.3, 33.4, VALLEY_OF_THE_FOUR_WINDS },
 						["description"] = "Only available as part of the \"Hop Hunting\" quest.",
+						["sourceQuest"] = 30046,	-- Chen's Resolution
+						["qg"] = 62377,	-- Gardener Fran
+						["coord"] = { 48.3, 33.4, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
 							i(77281),	-- Fran's Watering Can (QI!)
 							i(81844),	-- Gardener's Sickle
@@ -1592,12 +576,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30028, {	-- Grain Recovery
-						["qg"] = 57211,	-- Grainlord Kai
 						["sourceQuests"] = {
 							30030,	-- Out of Sprite
 							30031,	-- Taste Test
 							30029,	-- Wee Little Shenanigans
 						},
+						["qg"] = 57211,	-- Grainlord Kai
 						["coord"] = { 52.7, 62.9, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
 							o_repeated({
@@ -1608,8 +592,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29919, {	-- Great Minds Drink Alike
-						["qg"] = 56133,	-- Chen Stormsout
 						["sourceQuest"] = 29918,	-- A Lesson in Bravery
+						["qg"] = 56133,	-- Chen Stormsout
 						["coord"] = { 75.3, 35.5, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(29758, {	-- Guess Whose Back
@@ -1635,31 +619,21 @@ root(ROOTS.Zones, {
 						["lvl"] = 15,
 					}),
 					q(30053, {	-- Hop Hunting
-						["qg"] = 56133,	-- Chen Stormstout
 						["sourceQuest"] = 30046,	-- Chen's Resolution
+						["qg"] = 56133,	-- Chen Stormstout
 						["coord"] = { 55.9, 49.4, VALLEY_OF_THE_FOUR_WINDS },
 					}),
-					q(32682, {	-- Inherit the Earth
-						["qg"] = 64597,	-- Nana Mudclaw
-						["coord"] = { 54.6, 47.0, VALLEY_OF_THE_FOUR_WINDS },
-						["description"] = "Must be Exalted with The Tillers and have a fully unlocked farm.",
-					}),
 					q(30653, {	-- It Does You No Good In The Keg
-						["qg"] = 56474,	-- Mudmug
 						["sourceQuest"] = 29990,	-- Training and Discipline
+						["qg"] = 56474,	-- Mudmug
 						["coord"] = { 18.1, 55.7, VALLEY_OF_THE_FOUR_WINDS },
 						["races"] = HORDE_ONLY,
 					}),
 					q(30624, {	-- It Does You No Good In The Keg
-						["qg"] = 56474,	-- Mudmug
 						["sourceQuest"] = 29990,	-- Training and Discipline
+						["qg"] = 56474,	-- Mudmug
 						["coord"] = { 18.1, 55.7, VALLEY_OF_THE_FOUR_WINDS },
 						["races"] = ALLIANCE_ONLY,
-					}),
-					q(31942, {	-- It's Melon Time
-						["qg"] = 58646,	-- Farmer Yoon
-						["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
-						["isDaily"] = true,
 					}),
 					q(29874, {	-- Kang Bramblestaff (A)
 						["qg"] = 56110,	-- Xiao
@@ -1679,34 +653,34 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 					}),
 					q(30074, {	-- Knocking on the Door
-						["qg"] = 56133,	-- Chen Stormstout
 						["sourceQuest"] = 30073,	-- The Emperor
+						["qg"] = 56133,	-- Chen Stormstout
 					}),
 					q(29944, {  -- Leaders Among Breeders
-						["qg"] = 56133,	-- Chen Stormsout
 						["sourceQuest"] = 29919,	-- Great Minds Drink Alike
+						["qg"] = 56133,	-- Chen Stormsout
 						["coord"] = { 68.9, 43.2, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
 							i(88375),	-- Turnip Punching Bag (TOY!)
 						},
 					}),
 					q(29949, {	-- Legacy
-						["qg"] = 56133,	-- Chen Stormstout
 						["sourceQuests"] = {
 							29947,	-- Crouching Carrot, Hidden Turnip
 							29946,	-- The Warren-Mother
 							29948,	-- Thieves to the Core
 						},
+						["qg"] = 56133,	-- Chen Stormstout
 						["coord"] = { 68.9, 43.1, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(30048, {	-- Li Li and the Grain
-						["qg"] = 56133,	-- Chen Stormstout
 						["sourceQuest"] = 30046,	-- Chen's Resolution
+						["qg"] = 56133,	-- Chen Stormstout
 						["coord"] = { 55.9, 49.4, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(29950, {	-- Li Li's Day Off
-						["qg"] = 56138,	-- Li Li
 						["sourceQuest"] = 29949,	-- Legacy
+						["qg"] = 56138,	-- Li Li
 						["coord"] = { 68.8, 43.4, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
 							i(76350),	-- Li Li's Wishing-Stone (QI!)
@@ -1718,24 +692,24 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 					}),
 					q(29909, {	-- Low Turnip Turnout
-						["qg"] = 56204,	-- Pang Thunderfoot
 						["sourceQuests"] = {
 							29877,	-- A Poor Grasp of the Basics
 							29908,	-- A Seemingly Endless Nuisance
 						},
+						["qg"] = 56204,	-- Pang Thunderfoot
 						["coord"] = { 83.7, 21.0, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(29917, {	-- Lupello
-						["qg"] = 56208,	-- Francis the Shepherd Boy
 						["sourceQuest"] = 29915,	-- A Neighbor's Duty
+						["qg"] = 56208,	-- Francis the Shepherd Boy
 						["coord"] = { 78.2, 32.9, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(30058, {	-- Mothallus!
-						["qg"] = 57407,	-- Master Goh
 						["sourceQuests"] = {
 							30059,	-- The Moth Rebellion
 							30072,	-- Where Silk Comes From
 						},
+						["qg"] = 57407,	-- Master Goh
 						["coord"] = { 63.6, 58.5, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
 							i(88034),	-- Sunsoaked Vest
@@ -1748,8 +722,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29951, {	-- Muddy Water
-						["qg"] = 56474,	-- Mudmug
 						["sourceQuest"] = 29949,	-- Legacy
+						["qg"] = 56474,	-- Mudmug
 						["coord"] = { 68.7, 43.1, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
 							i(76362),	-- Mudmug's Vial (QI!)
@@ -1772,8 +746,8 @@ root(ROOTS.Zones, {
 						["coord"] = { 16.1, 82.6, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(30184, {	-- Mushan Mastery: Darkhide
-						["qg"] = 58421,	-- Hemet Nesingwary
 						["sourceQuest"] = 30181,	-- Mushan Mastery
+						["qg"] = 58421,	-- Hemet Nesingwary
 						["coord"] = { 16.0, 82.5, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
 							i(79058),	-- Darkhide's Head (QI!)
@@ -1788,12 +762,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30030, {	-- Out of Sprite
-						["qg"] = 57209,	-- Grainer Pan
 						["sourceQuest"] = 30048,	-- Li Li and the Grain
+						["qg"] = 57209,	-- Grainer Pan
 					}),
 					q(30186, {	-- Parental Mastery
-						["qg"] = 58422,	-- Hemet Nesingwary Jr.
 						["sourceQuest"] = 30185,	-- Tortoise Mastery
+						["qg"] = 58422,	-- Hemet Nesingwary Jr.
 						["coord"] = { 19.9, 75.6, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
 							i(81819),	-- Band of the Big Thing o' the Deep
@@ -1804,39 +778,34 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29916, {	-- Piercing Talons and Slavering Jaws
-						["qg"] = 56208,	-- Francis the Shepherd Boy
 						["sourceQuest"] = 29915,	-- A Neighbor's Duty
+						["qg"] = 56208,	-- Francis the Shepherd Boy
 						["coord"] = { 78.2, 32.9, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(29911, {	-- Practically Perfect Produce
-						["qg"] = 56207,	-- Ang Thunderfoot
 						["sourceQuest"] = 29940,	-- Taking a Crop
+						["qg"] = 56207,	-- Ang Thunderfoot
 						["coord"] = { 81.4, 24.9, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
 							i(76110),	-- Crate of Fresh Produce (QI!)
 						},
 					}),
 					q(29910, {	-- Rampaging Rodents
-						["qg"] = 56465,	-- Ana Thunderfoot
 						["sourceQuest"] = 29909,	-- Low Turnip Turnout
+						["qg"] = 56465,	-- Ana Thunderfoot
 						["coord"] = { 82.6, 26.2, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
 							i(88370),	-- Puntable Marmot (TOY!)
 						},
 					}),
-					q(31673, {	-- Red Blossom Leeks, You Make the Croc-in' World Go Down
-						["qg"] = 58646,	-- Farmer Yoon
-						["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
-						["isDaily"] = true,
-					}),
 					q(30626, {	-- Retreat!
-						["qg"] = 57198,	-- Guard Captain Oakenshield
 						["sourceQuest"] = 30625,	-- Students No More
+						["qg"] = 57198,	-- Guard Captain Oakenshield
 						["coord"] = { 11.6, 49.5, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(30057, {	-- Seeing Orange
-						["qg"] = 57408,	-- Mina Mudclaw
 						["sourceQuest"] = 30056,	-- The Farmer's Daughter
+						["qg"] = 57408,	-- Mina Mudclaw
 						["coord"] = { 41.3, 38.2, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
 							i(81751),	-- Silkmaster's Satin Mantle
@@ -1848,14 +817,6 @@ root(ROOTS.Zones, {
 							i(81757),	-- Wild Plains Spaulders
 							i(81758),	-- Thunderfoot Heavy Shoulders
 							i(81759),	-- Sunsong Armored Shoulders
-						},
-					}),
-					q(30337, {	-- Simian Sabotage
-						["qg"] = 58646,	-- Farmer Yoon
-						["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
-						["isDaily"] = true,
-						["groups"] = {
-							i(79885),	-- Barrel of Fireworks (QI!)
 						},
 					}),
 					q(29600, {	-- Snap Judgment
@@ -1873,11 +834,6 @@ root(ROOTS.Zones, {
 							i(81813),	-- Sunsong Armored Bracers
 						},
 					}),
-					q(31941, {	-- Squash Those Foul Odors
-						["qg"] = 58646,	-- Farmer Yoon
-						["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
-						["isDaily"] = true,
-					}),
 					q(30183, {	-- Stalker Mastery
 						["qg"] = 63822,	-- Tani
 						["coord"] = { 16.2, 82.5, VALLEY_OF_THE_FOUR_WINDS },
@@ -1894,21 +850,21 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(32038, {	-- Stag Mastery
-						["qg"] = 58434,	-- Matt "Lucky" Gotcher
 						["sourceQuests"] = {
 							30181,	-- Mushan Mastery
 							30183,	-- Stalker Mastery
 						},
+						["qg"] = 58434,	-- Matt "Lucky" Gotcher
 						["coord"] = { 15.9, 82.2, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(29981, {	-- Stemming the Swarm
-						["qg"] = 56111,	-- Lin Tenderpaw
 						["sourceQuest"] = 29872,	-- Lin Tenderpaw
+						["qg"] = 56111,	-- Lin Tenderpaw
 						["coord"] = { 19.9, 56.9, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(30117, {	-- Stoneplow Thirsts
-						["qg"] = 61026,	-- Emmi
 						["sourceQuest"] = 30078,	-- Cleaning House
+						["qg"] = 61026,	-- Emmi
 						["coord"] = { 36.2, 68.4, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
 							i(81393),	-- Chen's Full Keg (QI!)
@@ -1923,18 +879,18 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30625, {	-- Students No More
-						["qg"] = 57198,	-- Guard Captain Oakenshield
 						["sourceQuests"] = {
 							30624,	-- It Does You No Good In The Keg (A)
 							30653,	-- It Does You No Good In The Keg (H)
 							30623,	-- The Mantidote
 							30622,	-- The Swarm Begins
 						},
+						["qg"] = 57198,	-- Guard Captain Oakenshield
 						["coord"] = { 11.6, 49.5, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(29940, {	-- Taking a Crop
-						["qg"] = 56207,	-- Ang Thunderfoot
 						["sourceQuest"] = 29909,	-- Low Turnip Turnout
+						["qg"] = 56207,	-- Ang Thunderfoot
 						["coord"] = { 81.4, 24.9, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
 							o(209891, {	-- Stolen Turnip
@@ -1955,13 +911,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30031, {	-- Taste Test
-						["qg"] = 56138,	-- Li Li
 						["sourceQuest"] = 30048,	-- Li Li and the Grain
+						["qg"] = 56138,	-- Li Li
 						["coord"] = { 52.7, 62.8, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(29992, {	-- Tenderpaw By Name, Tender Paw By Reputation
-						["qg"] = 56111,	-- Lin Tenderpaw
 						["sourceQuest"] = 29984,	-- Unyielding Fists: Trial of Bamboo
+						["qg"] = 56111,	-- Lin Tenderpaw
 						["coord"] = { 18.1, 31.1, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
 							o(209952, {	-- Jademoon
@@ -1969,38 +925,23 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					q(31670, {	-- That Dangling Carrot
-						["qg"] = 58646,	-- Farmer Yoon
-						["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
-						["isDaily"] = true,
-					}),
-					q(31669, {	-- The Cabbage Test
-						["qg"] = 58646,	-- Farmer Yoon
-						["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
-						["isDaily"] = true,
-					}),
 					q(30047, {	-- The Chen Taste Test
-						["qg"] = 56138,	-- Li Li
 						["sourceQuest"] = 30032,	-- The Quest for Better Barley
+						["qg"] = 56138,	-- Li Li
 						["coord"] = { 52.7, 62.8, VALLEY_OF_THE_FOUR_WINDS },
 					}),
-					q(31938, {	-- The "Earth-Slasher" Master Plow
-						["provider"] = { "i", 89814 },	-- "Earth-Slasher" Master Plow
-						["sourceQuest"] = 30529,	-- Growing the Farm III: The Mossy Boulder
-						["coord"] = { 53.2, 51.8, VALLEY_OF_THE_FOUR_WINDS },
-					}),
 					q(30073, {	-- The Emperor
-						["qg"] = 56133,	-- Chen Stormstout
 						["sourceQuests"] = {
 							30172,	-- Barreling Along
 							30055,	-- Stormstout's Hops
 							30047,	-- The Chen Taste Test
 						},
+						["qg"] = 56133,	-- Chen Stormstout
 						["coord"] = { 55.9, 49.4, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(29912, {	-- The Fabulous Miss Fanny
-						["qg"] = 56204,	-- Pang Thunderfoot
 						["sourceQuest"] = 29911,	-- Practically Perfect Produce
+						["qg"] = 56204,	-- Pang Thunderfoot
 						["coord"] = { 83.7, 21.0, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
 							o(209844, {	-- Ang's Giant Pink Turnip
@@ -2015,29 +956,29 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30076, {	-- The Fanciest Water
-						["qg"] = 56474,	-- Mudmug
 						["sourceQuest"] = 30074,	-- Knocking on the Door
+						["qg"] = 56474,	-- Mudmug
 						["coord"] = { 32.3, 68.3, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
 							i(77471),	-- Spritewater Essence (QI!)
 						},
 					}),
 					q(30056, {	-- The Farmer's Daughter
-						["qg"] = 62385,	-- Den Mudclaw
-						["sourceQuest"] = 30046,	-- Chen's Resolution
-						["coord"] = { 44.3, 34.2, VALLEY_OF_THE_FOUR_WINDS },
 						["description"] = "Only available as part of the \"Hop Hunting\" quest.",
+						["sourceQuest"] = 30046,	-- Chen's Resolution
+						["qg"] = 62385,	-- Den Mudclaw
+						["coord"] = { 44.3, 34.2, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(29581, {	-- The Golden Dream
-						["qg"] = 56802,	-- Zhang Yue
 						["sourceQuest"] = 29577,	-- Ashyo's Vision
+						["qg"] = 56802,	-- Zhang Yue
 						["groups"] = {
 							i(76973),	-- Sprig of Dreamleaf (QI!)
 						},
 					}),
 					q(30628, {	-- The Gratitude of Stoneplow
-						["qg"] = 56720,	-- Loon Mai
 						["sourceQuest"] = 30627,	-- The Gratitude of Stoneplow
+						["qg"] = 56720,	-- Loon Mai
 						["groups"] = {
 							i(81476),	-- Nayeli Treads
 							i(81477),	-- Mortbreath Footguards
@@ -2051,8 +992,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30051, {	-- The Great Water Hunt
-						["qg"] = 56474,	-- Mudmug
 						["sourceQuest"] = 30049,	-- Doesn't Hold Water
+						["qg"] = 56474,	-- Mudmug
 						["groups"] = {
 							i(81839),	-- Embrace of Trees
 							i(81840),	-- Dustback Cloak
@@ -2061,47 +1002,29 @@ root(ROOTS.Zones, {
 							i(81843),	-- Cloak of the Grassy Cline
 						},
 					}),
-					q(31315, {	-- The Heartland Legacy
-						["provider"] = { "o", 213767 },	-- Hidden Treasure
-						["sourceQuest"] = 31314,	-- Old Man Thistle's Treasure
-						["coord"] = { 31.5, 53.3, 377 },
-						["groups"] = {
-							ach(7296),	-- Ain't Lost No More
-						},
-					}),
 					q(29983, {	-- The Hidden Master
-						["qg"] = 56720,	-- Loon Mai
 						["sourceQuests"] = {
 							29981,	-- Stemming the Swarm
 							29982,	-- Evacuation Orders
 						},
+						["qg"] = 56720,	-- Loon Mai
 						["coord"] = { 19.6, 56.8, VALLEY_OF_THE_FOUR_WINDS },
 					}),
-					q(31936, {	-- The "Jinyu Princess" Irrigation System
-						["provider"] = { "i", 89812 },	-- "Jinyu Princess" Irrigation System
-						["sourceQuest"] = 30516,	-- Growing the Farm I: A Little Problem
-						["coord"] = { 53.2, 51.8, VALLEY_OF_THE_FOUR_WINDS },
-					}),
-					q(30333, {	-- The Lesser of Two Evils
-						["qg"] = 58646,	-- Farmer Yoon
-						["coord"] = { 52.3, 48.8, VALLEY_OF_THE_FOUR_WINDS },
-						["isDaily"] = true,
-					}),
 					q(30623, {	-- The Mantidote
-						["qg"] = 59855,	-- Mei Barrelbottom
 						["sourceQuests"] = {
 							29990,	-- Training and Discipline
 							30360,	-- Warn Stoneplow (A)
 							30241,	-- Warn Stoneplow (H)
 						},
+						["qg"] = 59855,	-- Mei Barrelbottom
 						["coord"] = { 18.0, 56.5, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
 							i(80337),	-- Ken-Ken's Mask (QI!)
 						},
 					}),
 					q(29913, {	-- The Meat They'll Eat
-						["qg"] = 56205,	-- Liang Thunderfoot
 						["sourceQuest"] = 29912,	-- The Fabular Miss Fanny
+						["qg"] = 56205,	-- Liang Thunderfoot
 						["coord"] = { 75.2, 24.0, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
 							i(75275),	-- Mushan Shoulder Steak (QI!)
@@ -2121,18 +1044,13 @@ root(ROOTS.Zones, {
 						["qg"] = 57424,	-- Journeyman Chu
 						["coord"] = { 63.5, 58.4, VALLEY_OF_THE_FOUR_WINDS },
 					}),
-					q(31674, {	-- The Pink Turnip Challenge
-						["qg"] = 58646,	-- Farmer Yoon
-						["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
-						["isDaily"] = true,
-					}),
 					q(30032, {	-- The Quest for Better Barley
-						["qg"] = 57211,	-- Grainlord Kai
 						["sourceQuests"] = {
 							30029,	-- Wee Little Shenanigans
 							30030,	-- Out of Spite
 							30031,	-- Taste Test
 						},
+						["qg"] = 57211,	-- Grainlord Kai
 						["coord"] = { 52.7, 63.0, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
 							i(77034),	-- Malted Cave Barley (QI!)
@@ -2148,8 +1066,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30627, {	-- The Savior of Stoneplow
-						["qg"] = 59856,	-- Master Bruised Paw
 						["sourceQuest"] = 30626,	-- Retreat!
+						["qg"] = 59856,	-- Master Bruised Paw
 						["coord"] = { 17.9, 55.7, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
 							ach(7502),	-- Savior of Stoneplow
@@ -2161,7 +1079,6 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 					}),
 					q(30622, {	-- The Swarm Begins
-						["qg"] = 56720,	-- Loon Mai
 						["sourceQuests"] = {
 							30376,	-- Hope Springs Eternal (breadcrumb, neutral)
 							30360,	-- Warn Stoneplow (breadcrumb, A)
@@ -2170,24 +1087,25 @@ root(ROOTS.Zones, {
 							30117,	-- Stoneplow Thirsts
 							29990,	-- Training and Discipline
 						},
+						["qg"] = 56720,	-- Loon Mai
 						["coord"] = { 19.5, 56.9, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(29946, {	-- The Warren-Mother
-						["qg"] = 56133,	-- Chen Stormstout
 						["sourceQuest"] = 29944,	-- Leaders Among Breeders
+						["qg"] = 56133,	-- Chen Stormstout
 						["coord"] = { 68.9, 43.2, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(29985, {	-- They Will Be Mist
-						["qg"] = 56714,	-- Master Bruised Paw
 						["sourceQuest"] = 29984,	-- Unyielding Fists: Trial of Bamboo
+						["qg"] = 56714,	-- Master Bruised Paw
 						["coord"] = { 18.3, 31.2, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(29948, {	-- Thieves to the Core
-						["qg"] = 56474,	-- Mudmug
 						["sourceQuests"] = {
 							29944,	-- Leaders Among Breeders
 							29945,	-- Yellow and Red Make Orange
 						},
+						["qg"] = 56474,	-- Mudmug
 						["coord"] = { 68.7, 43.2, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
 							o(211696, {	-- Stolen Sack of Hops
@@ -2195,36 +1113,31 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					q(31937, {	-- "Thunder King" Pest Repellers
-						["provider"] = { "i", 89813 },	-- "Thunder King" Pest Repellers
-						["sourceQuest"] = 30523,	-- Growing the Farm II: The Broken Wagon
-						["coord"] = { 53.2, 51.8, VALLEY_OF_THE_FOUR_WINDS },
-					}),
 					q(30185, {	-- Tortoise Mastery
-						["qg"] = 58422,	-- Hemet Nesingwary Jr.
 						["sourceQuests"] = {
 							30182,	-- Fox Mastery
 							30184,	-- Mushan Mastery: Darkhide
 							32038,	-- Stag Mastery
 						},
+						["qg"] = 58422,	-- Hemet Nesingwary Jr.
 						["coord"] = { 16.1, 82.6, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
 							i(79059),	-- Intact Tortoise Shell (QI!)
 						},
 					}),
 					q(29990, {	-- Training and Discipline
-						["qg"] = 56111,	-- Lin Tenderpaw
 						["sourceQuest"] = 29989,	-- Unyielding Fists: Trial of Stone
+						["qg"] = 56111,	-- Lin Tenderpaw
 						["coord"] = { 18.1, 31.0, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(29984, {	-- Unyielding Fists: Trial of Bamboo
-						["qg"] = 56714,	-- Master Bruised Paw
 						["sourceQuest"] = 29983,	-- The Hidden Master
+						["qg"] = 56714,	-- Master Bruised Paw
 						["coord"] = { 18.3, 31.2, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(29989, {	-- Unyielding Fists: Trial of Stone
-						["qg"] = 56714,	-- Master Bruised Paw (18.3,31.2)
 						["sourceQuest"] = 29988,	-- A Taste For Eggs
+						["qg"] = 56714,	-- Master Bruised Paw (18.3,31.2)
 						["coord"] = { 18.3, 31.2, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
 							i(81760),	-- Silkmaster's Satin Robe
@@ -2239,12 +1152,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29987, {	-- Unyielding Fists: Trial of Wood
-						["qg"] = 56714,	-- Master Bruised Paw
 						["sourceQuests"] = {
 							29986,	-- Fog Wards
 							29992,	-- Tenderpaw By Name, Tender Paw By Reputation
 							29985,	-- They Will Be Mist
 						},
+						["qg"] = 56714,	-- Master Bruised Paw
 						["coord"] = { 18.3, 31.2, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					warchiefscommand(q(49539, {	-- Warchief's Command: Valley of the Four Winds!
@@ -2262,8 +1175,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30029, {	-- Wee Little Shenanigans
-						["qg"] = 57211,	-- Grainlord Kai
 						["sourceQuest"] = 30048,	-- Li Li and the Grain
+						["qg"] = 57211,	-- Grainlord Kai
 						["coord"] = { 52.7, 63.0, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
 							i(84333),	-- Grainlord's Amulet
@@ -2274,14 +1187,23 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30052, {	-- Weed War
-						["qg"] = 57385,	-- Gai Lan
-						["sourceQuest"] = 30046,	-- Chen's Resolution
-						["coord"] = { 38.6, 51.6, VALLEY_OF_THE_FOUR_WINDS },
 						["description"] = "Only available as part of the \"Hop Hunting\" quest.",
+						["sourceQuest"] = 30046,	-- Chen's Resolution
+						["qg"] = 57385,	-- Gai Lan
+						["coord"] = { 38.6, 51.6, VALLEY_OF_THE_FOUR_WINDS },
+						["groups"] = {
+							objective(1, {	-- 0/100 Weeds pulled
+								["providers"] = {
+									{ "n", 57308 },	-- Nasty Weed
+									{ "n", 57306 },	-- Ugly Weed
+								},
+								["coord"] = { 38.6, 51.6, VALLEY_OF_THE_FOUR_WINDS },
+							}),
+						},
 					}),
 					q(30072, {	-- Where Silk Comes From
-						["qg"] = 57405,	-- Silkmaster Tsai
 						["sourceQuest"] = 32035,	-- Got Silk?
+						["qg"] = 57405,	-- Silkmaster Tsai
 						["coord"] = { 62.7, 59.7, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
 							i(77455),	-- Mulberry Leaves (QI!)
@@ -2293,14 +1215,9 @@ root(ROOTS.Zones, {
 							i(84339),	-- Silkmaster's Shawl
 						},
 					}),
-					q(31943, {	-- Which Berries? Witchberries.
-						["qg"] = 58646,	-- Farmer Yoon
-						["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
-						["isDaily"] = true,
-					}),
 					q(29945, {	-- Yellow and Red Make Orange
-						["qg"] = 56138,	-- Li Li
 						["sourceQuest"] = 29919,	-- Great Minds Drink Alike
+						["qg"] = 56138,	-- Li Li
 						["coord"] = { 68.9, 43.3, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
 							o(209907, {	-- Meadow Marigold
@@ -2422,28 +1339,6 @@ root(ROOTS.Zones, {
 							i(86112),	-- Stolen Amulet of Wisdom
 							i(86113),	-- Stolen Amulet of Might
 							i(86114),	-- Stolen Necklace of Fortitude
-						},
-					}),
-					o(210582, {	-- Dark Soil
-						["coord"] = { 52.8, 48.1, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
-							i(79269),	-- Marsh Lily (QI!)
-						},
-					}),
-					o(210565, {	-- Dark Soil
-						["description"] = "Can be found all around the Tillers area",
-						["coords"] = {
-							{ 42.5, 33.9, VALLEY_OF_THE_FOUR_WINDS },
-							{ 39.5, 49.9, VALLEY_OF_THE_FOUR_WINDS },
-							{ 50.4, 28.5, VALLEY_OF_THE_FOUR_WINDS },
-						},
-						["groups"] = {
-							i(79265),	-- Blue Feather
-							i(79266),	-- Jade Cat
-							i(79267),	-- Lovely Apple
-							i(79268),	-- Marsh Lily
-							i(79269),	-- Marsh Lily (QI!)
-							i(79264),	-- Ruby Shard
 						},
 					}),
 					o(215785, {	-- Embracing the Passions
@@ -4183,58 +3078,6 @@ root(ROOTS.Zones, {
 						["groups"] = {
 						},
 					}),
-					n(58706, {	-- Gina Mudclaw <Tillers Quartermaster>
-						["coord"] = { 53.2, 51.6, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = bubbleDownClassicRep(FACTION_THE_TILLERS, {
-							{		-- Neutral
-								i(89814, {	-- "Earth-Slasher" Master Plow
-									["cost"] = 800000,	-- 80g
-								}),
-								i(89812, {	-- "Jinyu Princess" Irrigation System
-									["cost"] = 800000,	-- 80g
-								}),
-								i(89813, {	-- "Thunder King" Pest Repellers
-									["cost"] = 800000,	-- 80g
-								}),
-								i(90893),	-- Straw Hat - Cloth
-								i(90894),	-- Straw Hat - Leather
-								i(90895),	-- Straw Hat - Mail
-								i(90896),	-- Straw Hat - Plate
-							}, {	-- Friendly
-							}, {	-- Honored
-							}, {	-- Revered
-								i(93226, {	-- Grand Commendation of the Tillers
-									["cost"] = 425000,	-- 42g 50s
-								}),
-								i(89869, {	-- Pandaren Scarecrow (TOY!)
-									["cost"] = 2125000,	-- 212g 50s
-								}),
-							}, {	-- Exalted
-								i(90175, {	-- Gin'Ji Knife Set (TOY!)
-									["cost"] = 2125000,	-- 212g 50s
-								}),
-								i(80914),	-- Mourning Glory
-								i(74657, {	-- Recipe: Spicy Salmon (RECIPE!)
-									["cost"] = 8500,	-- 85s
-								}),
-								i(74658, {	-- Recipe: Spicy Vegetable Chips (RECIPE!)
-									["cost"] = 8500,	-- 85s
-								}),
-								i(89391, {	-- Reins of the Black Riding Goat (MOUNT!)
-									["cost"] = 12750000,	-- 1,275g
-								}),
-								i(89362, {	-- Reins of the Brown Riding Goat (MOUNT!)
-									["cost"] = 4250000,	-- 425g
-								}),
-								i(89390, {	-- Reins of the White Riding Goat (MOUNT!)
-									["cost"] = 27625000,	-- 2,762g 50s
-								}),
-								i(89784, {	-- Tillers Tabard
-									["cost"] = 85000,	-- 8g 50s
-								}),
-							},
-						}),
-					}),
 					n(73143, {	-- Hayden Christophen <Honor Quartermaster> Old Grievous Vendor (neck, etc)
 						["races"] = ALLIANCE_ONLY,
 						["u"] = REMOVED_FROM_GAME,
@@ -5842,17 +4685,6 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					n(58718, {	-- Merchant Greenfield
-						["coord"] = { 52.8, 52.0, VALLEY_OF_THE_FOUR_WINDS },
-						["groups"] = {
-							i(85219, {	-- Ominous Seeds
-								["description"] = "You get this seed by planting any seeds this vendor sells and waiting for it to drop.  Once dropped, then plant it and wait a day to harvest the pet.",
-								["groups"] = {
-									i(85220),	-- Terrible Turnip (PET!)
-								},
-							}),
-						},
-					}),
 					n(64395, {	-- Nam Ironpaw <Stockmaster>
 						["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
@@ -5889,13 +4721,6 @@ root(ROOTS.Zones, {
 							i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 						},
 					}),
-					faction(FACTION_OLD_HILLPAW, {	-- Old Hillpaw
-						["groups"] = {
-							i(90042, {	-- Straw Hat
-								["description"] = "Once you hit Exalted with Old Hillpaw you receive this in the mail.",
-							}),
-						},
-					}),
 					n(55143, {	-- Sally Fizzlefury <Engineering Trainer>
 						["coord"] = { 16.0, 83.0, VALLEY_OF_THE_FOUR_WINDS },
 						["groups"] = {
@@ -5906,14 +4731,6 @@ root(ROOTS.Zones, {
 								["cost"] = 10000000,	-- 1,000g
 							}),
 						},
-					}),
-					faction(FACTION_SHO, {	-- Sho
-						i(85497, {	-- Chirping Package
-							["description"] = "Once you hit Exalted with Sho you receive this in the mail.",
-							["groups"] = {
-								i(85222),	-- Red Cricket (PET!)
-							},
-						}),
 					}),
 					n(78456, {	-- Starlight Sinclair <Prideful Gladiator>
 						["coord"] = { 12.0, 34.0, VALLEY_OF_THE_FOUR_WINDS },
@@ -6608,6 +5425,9 @@ root(ROOTS.Zones, {
 						["sym"] = {{"select","npcID",56705},{"pop"}},	-- Singegruff <Adventuring Supplies>
 					}),
 				}),
+				n(ZONE_DROPS, {
+					i(74842),	-- Mogu Pumpkin
+				}),
 			},
 		}),
 	}),
@@ -6616,69 +5436,6 @@ root(ROOTS.Zones, {
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
 	m(PANDARIA, {
 		m(VALLEY_OF_THE_FOUR_WINDS, {
-			n(FACTIONS, {
-				header(HEADERS.Faction, FACTION_THE_TILLERS, {
-					header(HEADERS.Faction, FACTION_CHEE_CHEE, {
-						q(31344),	-- Tracking Event: Chee Chee Exalted
-						q(30365),	-- Tracking Event: Chee Chee is Farmhand
-					}),
-					header(HEADERS.Faction, FACTION_ELLA, {
-						q(31345),	-- Tracking Event: Ella Exalted
-						q(30366),	-- Tracking Event: Ella is Farmhand
-					}),
-					header(HEADERS.Faction, FACTION_FARMER_FUNG, {
-						q(31346),	-- Tracking Event: Farmer Fung Exalted
-						q(30370),	-- Tracking Event: Farmer Fung is Farmhand
-					}),
-					header(HEADERS.Faction, FACTION_FISH_FELLREED, {
-						q(31347),	-- Tracking Event: Fish Fellreed Exalted
-						q(30372),	-- Tracking Event: Fish Fellreed is Farmhand
-					}),
-					header(HEADERS.Faction, FACTION_GINA_MUDCLAW, {
-						q(31348),	-- Tracking Event: Gina Mudclaw Exalted
-						q(30374),	-- Tracking Event: Gina Mudclaw is Farmhand
-						n(QUESTS, {
-							q(31950),	-- Tracking Quest: Move NPCs to Dais — triggered after turning in "Learn and Grow VI: Gina's Vote" (questID 31945)
-						}),
-					}),
-					header(HEADERS.Faction, FACTION_HAOHAN_MUDCLAW, {
-						q(31349),	-- Tracking Event: Haohan Mudclaw Exalted
-						q(30369),	-- Tracking Event: Haohan Mudclaw is Farmhand
-						n(QUESTS, {
-							q(30566),	-- FLAG - Pest Problems Training — triggered after turning in daily quest "Pest Problems" (questID 30319)
-						}),
-					}),
-					header(HEADERS.Faction, FACTION_JOGU_THE_DRUNK, {
-						q(31350),	-- Tracking Event: Jogu the Drunk Exalted
-						q(30373),	-- Tracking Event: Jogu the Drunk is Farmhand
-						n(QUESTS, {
-							q(30536),	-- FLAG - Weed War Training — triggered after turning in daily quest "Weed War II" (questID 30321)
-						}),
-					}),
-					header(HEADERS.Faction, FACTION_OLD_HILLPAW, {
-						q(31351),	-- Tracking Event: Old Hillpaw Exalted
-						q(30368),	-- Tracking Event: Old Hillpaw is Farmhand
-					}),
-					header(HEADERS.Faction, FACTION_SHO, {
-						q(31352),	-- Tracking Event: Sho Exalted
-						q(30367),	-- Tracking Event: Sho is Farmhand
-					}),
-					header(HEADERS.Faction, FACTION_TINA_MUDCLAW, {
-						q(31353),	-- Tracking Event: Tina Mudclaw Exalted
-						q(30371),	-- Tracking Event: Tina Mudclaw is Farmhand
-					}),
-					n(QUESTS, {
-						q(30531),	-- Tracking Event: Finished First Expansion
-						q(30533),	-- Tracking Event: Finished Second Expansion
-						q(30574),	-- Tracking Event: Finished Third Expansion
-						q(31317),	-- Tracking Event: Found Entrance - triggers during "Old Man Thistle's Treasure" (questID 31314)
-						q(31318),	-- Tracking Event: Found Treasure - triggers during "Old Man Thistle's Treasure" (questID 31314)
-						q(30530),	-- Tracking Event: Started First Expansion — triggers after turning in "Growing the Farm I: A Little Problem" (questID 30516)
-						q(30532),	-- Tracking Event: Started Second Expansion — triggers after turning in "???" (questID ???)	-- TODO
-						q(30573),	-- Tracking Event: Started Third Expansion — triggers after turning in "???" (questID ???)	-- TODO
-					}),
-				}),
-			}),
 			n(QUESTS, {
 				q(30629),	-- FLAG - Player Began Finale - triggered after cutscene prompted by turning in "Stoneplow Thirsts" (questID 30117)
 			}),

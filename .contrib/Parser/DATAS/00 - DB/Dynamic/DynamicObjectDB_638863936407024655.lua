@@ -1,4 +1,4 @@
-﻿local ObjectDB = ObjectDB; for objectID,objectData in pairs({
+local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[504074] = {
 		readable = "Nether Reader",
 		model = 4094671,

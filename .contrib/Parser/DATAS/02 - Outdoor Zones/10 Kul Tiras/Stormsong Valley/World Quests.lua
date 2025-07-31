@@ -388,8 +388,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(52979, {	-- Ritual Cleansing
-				["races"] = ALLIANCE_ONLY,
 				["coord"] = { 53.2, 33.4, STORMSONG_VALLEY },
+				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(162650),	-- Tidal Kris (QI!)
 				},
@@ -616,29 +616,29 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(52391, {	-- Work Order: Contract: Storm's Wake
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = INSCRIPTION,
+				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(162364),	-- Technique: Contract: Storm's Wake [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52367, {	-- Work Order: Electroshock Mount Motivator
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = ENGINEERING,
+				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(162340),	-- Schematic: Electroshock Mount Motivator  [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52353, {	-- Work Order: Enchant Ring - Seal of Haste
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = ENCHANTING,
+				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(162299),	-- Formula: Enchant Ring - Seal of Haste [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52354, {	-- Work Order: Enchant Ring - Seal of Mastery
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = ENCHANTING,
+				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(162300),	-- Formula: Enchant Ring - Seal of Mastery [Rank 3] (RECIPE!)
 				},
@@ -662,19 +662,19 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(52332, {	-- Work Order: Lightfoot Potion
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = ALCHEMY,
+				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(162258),	-- Recipe: Lightfoot Potion [Rank 3] (RECIPE!)
 				},
 			}),
 			q(50996, {	-- Work Order: Mistscale
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = SKINNING,
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(50981, {	-- Work Order: Riverbud
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = HERBALISM,
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(52346, {	-- Work Order: Sailor's Pie
 				["provider"] = { "n", 135793 },	-- Collector Kojo <Tortollan Seekers Emissary>
@@ -687,8 +687,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(50982, {	-- Work Order: Star Moss
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = HERBALISM,
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(50989, {	-- Work Order: Storm Silver Ore
 				["races"] = ALLIANCE_ONLY,
@@ -699,8 +699,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(52402, {	-- Work Order: Viridium
 				["races"] = ALLIANCE_ONLY,
 			}),
-			q(52352, {	-- Zeritarj
-			}),
+			q(52352),	-- Zeritarj
 		})),
 	}),
 })));

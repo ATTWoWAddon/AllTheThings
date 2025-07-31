@@ -61,79 +61,79 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							pet(1977),	-- Bloodgazer Hatchling (PET!)
 							q(44998, {	-- Allies in Azsuna
-								["provider"] = { "n", 115787 },	-- Bloodgazer Hatchling
 								["sourceQuest"] = 44996,	-- Hunting Lesson: Erudite Manafiend
+								["provider"] = { "n", 115787 },	-- Bloodgazer Hatchling
 							}),
 							q(45008, {	-- Bloodgazer Bonding
-								["provider"] = { "n", 115787 },	-- Bloodgazer Hatchling
 								["sourceQuest"] = 45006,	-- The Unfavorable Faction
+								["provider"] = { "n", 115787 },	-- Bloodgazer Hatchling
 								["groups"] = {
 									i(142494),	-- Purple Blossom (TOY!)
 								},
 							}),
 							q(45020, {	-- Bloodgazer Reunion
-								["provider"] = { "n", 115787 },	-- Bloodgazer Hatchling
 								["sourceQuest"] = 45018,	-- Bloodgazer Team Rumble
+								["provider"] = { "n", 115787 },	-- Bloodgazer Hatchling
 								["groups"] = {
 									i(137577),	-- Predatory Bloodgazer (MOUNT!)
 								},
 							}),
 							q(45018, {	-- Bloodgazer Team Rumble
-								["provider"] = { "n", 115787 },	-- Bloodgazer Hatchling
 								["sourceQuest"] = 45016,	-- Teamwork Lesson: Skorpyron
+								["provider"] = { "n", 115787 },	-- Bloodgazer Hatchling
 							}),
 							q(45000, {	-- Bloodgazer Team Up
-								["provider"] = { "n", 115787 },	-- Bloodgazer Hatchling
 								["sourceQuest"] = 44998,	-- Allies in Azsuna
+								["provider"] = { "n", 115787 },	-- Bloodgazer Hatchling
 							}),
 							q(45002, {	-- Dangerous Prey
-								["provider"] = { "n", 115787 },	-- Bloodgazer Hatchling
 								["sourceQuest"] = 45000,	-- Bloodgazer Team Up
+								["provider"] = { "n", 115787 },	-- Bloodgazer Hatchling
 							}),
 							q(44996, {	-- Hunting Lesson: Erudite Manafiend
-								["provider"] = { "n", 115787 },	-- Bloodgazer Hatchling
 								["sourceQuests"] = {
 									44993,	-- The Smell of Blood Elves
 									44991,	-- The Smell of Draenei
 								},
+								["provider"] = { "n", 115787 },	-- Bloodgazer Hatchling
 							}),
 							q(45014, {	-- Hunting Lesson: Felspider
-								["provider"] = { "n", 115787 },	-- Bloodgazer Hatchling
 								["sourceQuest"] = 45012,	-- Teamwork Lesson: Serpentrix
+								["provider"] = { "n", 115787 },	-- Bloodgazer Hatchling
 							}),
 							q(45004, {	-- Hunting Lesson: Fledgling Kingfeather
-								["provider"] = { "n", 115787 },	-- Bloodgazer Hatchling
 								["sourceQuest"] = 45002,	-- Dangerous Prey
+								["provider"] = { "n", 115787 },	-- Bloodgazer Hatchling
 							}),
 							q(45010, {	-- Hunting Lesson: Juvenile Scuttleback
-								["provider"] = { "n", 115787 },	-- Bloodgazer Hatchling
 								["sourceQuest"] = 45008,	-- Bloodgazer Bonding
+								["provider"] = { "n", 115787 },	-- Bloodgazer Hatchling
 							}),
 							q(44990, {	-- Raising Your Bloodgazer
 								["provider"] = { "n", 115787 },	-- Bloodgazer Hatchling
 							}),
 							q(45012, {	-- Teamwork Lesson: Serpentrix
-								["provider"] = { "n", 115787 },	-- Bloodgazer Hatchling
 								["sourceQuest"] = 45010,	-- Hunting Lesson: Juvenile Scuttleback
+								["provider"] = { "n", 115787 },	-- Bloodgazer Hatchling
 							}),
 							q(45016, {	-- Teamwork Lesson: Skorpyron
-								["provider"] = { "n", 115787 },	-- Bloodgazer Hatchling
 								["sourceQuest"] = 45014,	-- Hunting Lesson: Felspider
+								["provider"] = { "n", 115787 },	-- Bloodgazer Hatchling
 								["_drop"] = { "g" },	-- Drop Ultimate Battle-Training Stone
 							}),
 							q(44991, {	-- The Smell of Draenei
+								["sourceQuest"] = 44990,	-- Raising Your Bloodgazer
 								["provider"] = { "n", 115787 },	-- Bloodgazer Hatchling
 								["races"] = ALLIANCE_ONLY,
-								["sourceQuest"] = 44990,	-- Raising Your Bloodgazer
 							}),
 							q(44993, {	-- The Smell of Blood Elves
+								["sourceQuest"] = 44990,	-- Raising Your Bloodgazer
 								["provider"] = { "n", 115787 },	-- Bloodgazer Hatchling
 								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 44990,	-- Raising Your Bloodgazer
 							}),
 							q(45006, {	-- The Unfavorable Faction
-								["provider"] = { "n", 115787 },	-- Bloodgazer Hatchling
 								["sourceQuest"] = 45004,	-- Hunting Lesson: Fledgling Kingfeather
+								["provider"] = { "n", 115787 },	-- Bloodgazer Hatchling
 							}),
 						},
 					})),

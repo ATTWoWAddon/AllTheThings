@@ -30,8 +30,8 @@ root(ROOTS.PetBattles, bubbleDown({ ["timeline"] = { ADDED_7_2_0 } }, {
 			},
 		})),
 		q(58458, bubbleDownSelf({ ["timeline"] = { ADDED_8_3_0 } }, {	-- Pet Battle Challenge: Blackrock Depths
-			["provider"] = { "n", 161782 },	-- Burt Macklyn
 			["sourceQuest"] = 58457,	-- Shadows of Blackrock
+			["provider"] = { "n", 161782 },	-- Burt Macklyn
 			["coord"] = { 33.1, 23.1, BLACKROCK_MOUNTAIN_LEVEL3 },
 			["maps"] = {
 				1578,	-- Pet Dungeon
@@ -42,25 +42,25 @@ root(ROOTS.PetBattles, bubbleDown({ ["timeline"] = { ADDED_7_2_0 } }, {
 					i(174830),	-- Shadowy Disguise (TOY!)
 				}),
 				q(58455, {	-- Shadowy Showdown (A)
-					["provider"] = { "n", 147645 },	-- Tizzy Gearjolt
 					-- ["sourceQuests"] = {  },	-- TODO, this has a source quest... unknown, maybe other pet battle dungeon completion?
+					["provider"] = { "n", 147645 },	-- Tizzy Gearjolt
 					["coord"] = { 50.3, 46.9, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(58456, {	-- Shadowy Showdown (H)
-					["provider"] = { "n", 147641 },	-- Radek Fuselock
 					-- ["sourceQuests"] = {  },	-- TODO, this has a source quest... unknown, maybe other pet battle dungeon completion?
+					["provider"] = { "n", 147641 },	-- Radek Fuselock
 					["coord"] = { 56.3, 30.8, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(58457, {	-- Shadows of Blackrock
-					["provider"] = { "n", 161782 },	-- Burt Macklyn
 					["sourceQuests"] = {
 						58455,	-- Shadowy Showdown (A)
 						58456,	-- Shadowy Showdown (H)
 					},
+					["provider"] = { "n", 161782 },	-- Burt Macklyn
 					["coord"] = { 33.1, 23.1, BLACKROCK_MOUNTAIN_LEVEL3 },
 					["_drop"] = { "g" },	-- Drop Ultimate Battle-Training Stone
 					["groups"] = {
@@ -94,8 +94,8 @@ root(ROOTS.PetBattles, bubbleDown({ ["timeline"] = { ADDED_7_2_0 } }, {
 			},
 		})),
 		q(46292, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_5 } }, {	-- Pet Battle Challenge: Deadmines
-			["provider"] = { "n", 119390 },	-- Marcus "Bagman" Brown
 			["sourceQuest"] = 46291,	-- The Deadmines Strike Back
+			["provider"] = { "n", 119390 },	-- Marcus "Bagman" Brown
 			["coord"] = { 41.6, 71.2, WESTFALL },
 			["maps"] = {
 				835,	-- Pet Dungeon 1
@@ -111,8 +111,8 @@ root(ROOTS.PetBattles, bubbleDown({ ["timeline"] = { ADDED_7_2_0 } }, {
 					["coord"] = { 58.2, 39.4, LEGION_DALARAN },
 				}),
 				q(46291, {	-- The Deadmines Strike Back
-					["provider"] = { "n", 119390 },	-- Marcus "Bagman" Brown
 					["sourceQuest"] = 46293,	-- Deadmines, Part Three?
+					["provider"] = { "n", 119390 },	-- Marcus "Bagman" Brown
 					["coord"] = { 41.6, 71.2, WESTFALL },
 					["_drop"] = { "g" },	-- Drop Ultimate Battle-Training Stone
 					["groups"] = {
@@ -139,8 +139,8 @@ root(ROOTS.PetBattles, bubbleDown({ ["timeline"] = { ADDED_7_2_0 } }, {
 			},
 		})),
 		q(54186, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {	-- Pet Battle Challenge: Gnomeregan
-			["provider"] = { "n", 147070 },	-- Micro Zoox
 			["sourceQuest"] = 54185,	-- Gnomeregan's New Guardians
+			["provider"] = { "n", 147070 },	-- Micro Zoox
 			["coord"] = { 31.2, 37.4, NEW_TINKERTOWN },
 			["maps"] = {
 				NEW_TINKERTOWN_LOWER,
@@ -166,11 +166,11 @@ root(ROOTS.PetBattles, bubbleDown({ ["timeline"] = { ADDED_7_2_0 } }, {
 					["isBreadcrumb"] = true,
 				}),
 				q(54185, {	-- Gnomeregan's New Guardians
-					["provider"] = { "n", 147070 },	-- Micro Zoox
 					["sourceQuests"] = {
 						54184,	-- Trouble in Gnomeregan (A)
 						54276,	-- Trouble in Gnomeregan (H)
 					},
+					["provider"] = { "n", 147070 },	-- Micro Zoox
 					["coord"] = { 31.67, 71.61, NEW_TINKERTOWN_LOWER },
 					["_drop"] = { "g" },	-- Drop Ultimate Battle-Training Stone
 					["groups"] = {
@@ -200,8 +200,8 @@ root(ROOTS.PetBattles, bubbleDown({ ["timeline"] = { ADDED_7_2_0 } }, {
 			},
 		})),
 		q(56492, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } }, {	-- Pet Battle Challenge: Stratholme
-			["provider"] = { "n", 150987 },	-- Sean Wilkers
 			["sourceQuest"] = 56491,	-- Tiny Terrors of Stratholme
+			["provider"] = { "n", 150987 },	-- Sean Wilkers
 			["coord"] = { 43.1, 19.9, EASTERN_PLAGUELANDS },
 			["maps"] = {
 				1505,	-- Pet Dungeon
@@ -236,11 +236,11 @@ root(ROOTS.PetBattles, bubbleDown({ ["timeline"] = { ADDED_7_2_0 } }, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(56491, {	-- Tiny Terrors of Stratholme
-					["provider"] = { "n", 150987 },	-- Sean Wilkers
 					["sourceQuests"] = {
 						56489,	-- Restless Dead (A)
 						56490,	-- Restless Dead (H)
 					},
+					["provider"] = { "n", 150987 },	-- Sean Wilkers
 					["coord"] = { 43.2, 20.0, EASTERN_PLAGUELANDS },
 					["_drop"] = { "g" },	-- Drop Ultimate Battle-Training Stone
 					["groups"] = {
@@ -276,8 +276,8 @@ root(ROOTS.PetBattles, bubbleDown({ ["timeline"] = { ADDED_7_2_0 } }, {
 			},
 		})),
 		q(45539, {	-- Pet Battle Challenge: Wailing Caverns
-			["provider"] = { "n", 116781 },	-- Muyani
 			["sourceQuest"] = 45423,	-- Wailing Critters
+			["provider"] = { "n", 116781 },	-- Muyani
 			["coord"] = { 38.8, 68.2, NORTHERN_BARRENS },
 			["maps"] = {
 				825,	-- Pet Dungeon
@@ -298,8 +298,8 @@ root(ROOTS.PetBattles, bubbleDown({ ["timeline"] = { ADDED_7_2_0 } }, {
 					},
 				}),
 				q(45423, {	-- Wailing Critters
-					["provider"] = { "n", 116781 },	-- Muyani
 					["sourceQuest"] = 45540,	-- A Call from the Caverns
+					["provider"] = { "n", 116781 },	-- Muyani
 					["coord"] = { 38.8, 68.2, NORTHERN_BARRENS },
 					["_drop"] = { "g" },	-- Drop Ultimate Battle-Training Stone
 					["groups"] = {

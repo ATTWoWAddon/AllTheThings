@@ -86,8 +86,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["groups"] = {
 							n(QUESTS, {
 								q(26972, {	-- The Dark Side of the Light (A)
-									["qg"] = 44728,	-- Joseph the Awakened
 									["sourceQuest"] = 26982,	-- The Scarlet Monastery (A)
+									["qg"] = 44728,	-- Joseph the Awakened
 									["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 									["races"] = ALLIANCE_ONLY,
 									["lvl"] = 26,
@@ -116,8 +116,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 									},
 								}),
 								q(26950, {	-- The Dark Side of the Light (H)
-									["qg"] = 44637,	-- Dark Ranger Velonara
 									["sourceQuest"] = 26986,	-- The Scarlet Monastery (H)
+									["qg"] = 44637,	-- Dark Ranger Velonara
 									["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 									["races"] = HORDE_ONLY,
 									["lvl"] = 26,
@@ -343,8 +343,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 									},
 								}),
 								q(1951, {	-- Rituals of Power
-									["qg"] = 6548,	-- Magus Tirth
 									["sourceQuest"] = 1950,	-- Get the Scoop
+									["qg"] = 6548,	-- Magus Tirth
 									["coord"] = { 478.2, 75.8, THOUSAND_NEEDLES },
 									["timeline"] = { REMOVED_4_0_3 },
 									["maps"] = { DUSTWALLOW_MARSH },
@@ -357,8 +357,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 									},
 								}),
 								q(26959, {	-- Stripping Their Defenses
-									["qg"] = 44660,	-- Dark Ranger Velonara
 									["sourceQuest"] = 26987,	-- The Right Way
+									["qg"] = 44660,	-- Dark Ranger Velonara
 									["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 									["races"] = HORDE_ONLY,
 									["lvl"] = 31,
@@ -381,8 +381,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 									},
 								}),
 								q(1160, {	-- Test of Lore (5/6)
-									["qg"] = 4488,	-- Parqual Fintallas
 									["sourceQuest"] = 1159,	-- Test of Lore (4/6)
+									["qg"] = 4488,	-- Parqual Fintallas
 									["coord"] = { 57.8, 65.4, UNDERCITY },
 									["timeline"] = { REMOVED_4_0_3 },
 									["races"] = HORDE_ONLY,
@@ -398,8 +398,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 									},
 								}),
 								q(26973, {	-- The Only True Path
-									["qg"] = 44738,	-- Joseph the Awakened
 									["sourceQuest"] = 26983,	-- Just Close Enough
+									["qg"] = 44738,	-- Joseph the Awakened
 									["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 									["races"] = ALLIANCE_ONLY,
 									["lvl"] = 31,
@@ -524,8 +524,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 									["lvl"] = 34,
 								}),
 								q(26962, {	-- Stripping Their Offense
-									["qg"] = 44690,	-- Dark Ranger Velonara
 									["sourceQuest"] = 26988,	-- Moving Things Along
+									["qg"] = 44690,	-- Dark Ranger Velonara
 									["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 									["races"] = HORDE_ONLY,
 									["lvl"] = 32,
@@ -551,8 +551,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 									},
 								}),
 								q(26974, {	-- The False Champion
-									["qg"] = 44741,	-- Joseph the Crazed
 									["sourceQuest"] = 26984,	-- An Old, Crazed Friend
+									["qg"] = 44741,	-- Joseph the Crazed
 									["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 									["races"] = ALLIANCE_ONLY,
 									["lvl"] = 32,
@@ -635,8 +635,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							-- #if AFTER 4.0.3
 							n(QUESTS, {
 								q(26976, {	-- Battle for the Scarlet Monastery (A)
-									["qg"] = 44746,	-- Joseph the Insane <Scarlet Champion>
 									["sourceQuest"] = 26985,	-- Pitting Madness Against Madness
+									["qg"] = 44746,	-- Joseph the Insane <Scarlet Champion>
 									["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 									["races"] = ALLIANCE_ONLY,
 									["lvl"] = 37,
@@ -659,8 +659,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 									},
 								}),
 								q(26967, {	-- Battle for the Scarlet Monastery (B)
-									["qg"] = 44706,	-- Dark Ranger Velonara
 									["sourceQuest"] = 26991,	-- Enemies Abroad
+									["qg"] = 44706,	-- Dark Ranger Velonara
 									["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 									["races"] = HORDE_ONLY,
 									["lvl"] = 37,
@@ -808,8 +808,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				n(QUESTS, {
 					-- #if SEASON_OF_DISCOVERY
 					applyclassicphase(SOD_PHASE_TWO, q(79946, {	-- A Brother In Need
-						["qg"] = 5492,	-- Katherine the Pure <Paladin Trainer>
 						["sourceQuest"] = 79945,	-- Orders from the Grand Crusader
+						["qg"] = 5492,	-- Katherine the Pure <Paladin Trainer>
 						["coord"] = { 37.8, 31.6, STORMWIND_CITY },
 						["classes"] = { PALADIN },
 						["races"] = ALLIANCE_ONLY,
@@ -824,8 +824,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					})),
 					applyclassicphase(SOD_PHASE_TWO, q(79970, {	-- Aeonas the Vindicated
-						["qg"] = 217996,	-- Aeonas <Former Paladin of the Silver Hand>
 						["sourceQuest"] = 79963,	-- By The Light's Grace
+						["qg"] = 217996,	-- Aeonas <Former Paladin of the Silver Hand>
 						["maps"] = { STORMWIND_CITY },
 						["classes"] = { PALADIN },
 						["races"] = ALLIANCE_ONLY,
@@ -851,8 +851,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					-- #if SEASON_OF_DISCOVERY
 					applyclassicphase(SOD_PHASE_TWO, q(79963, {	-- By The Light's Grace
-						["qg"] = 217996,	-- Aeonas <Former Paladin of the Silver Hand>
 						["sourceQuest"] = 79946,	-- A Brother In Need
+						["qg"] = 217996,	-- Aeonas <Former Paladin of the Silver Hand>
 						["classes"] = { PALADIN },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 26,
@@ -864,8 +864,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					})),
 					-- #endif
 					q(1113, {	-- Hearts of Zeal
-						["qg"] = 2055,	-- Master Apothecary Faranell <Royal Apothecary Society>
 						["sourceQuest"] = 1109,	-- Going, Going, Guano!
+						["qg"] = 2055,	-- Master Apothecary Faranell <Royal Apothecary Society>
 						["coord"] = { 48.82, 69.28, UNDERCITY },
 						["timeline"] = { REMOVED_4_0_3 },
 						["races"] = HORDE_ONLY,
@@ -877,8 +877,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					q(1053, {	-- In the Name of the Light
-						["qg"] = 3980,	-- Raleigh the Devout
 						["sourceQuest"] = 1052,	-- Down the Scarlet Path (2/2)
+						["qg"] = 3980,	-- Raleigh the Devout
 						["coord"] = { 51.5, 58.4, HILLSBRAD_FOOTHILLS },
 						["timeline"] = { REMOVED_4_0_3 },
 						["races"] = ALLIANCE_ONLY,
@@ -976,8 +976,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					q(31514, {	-- Unto Dust Thou Shalt Return
-						["qg"] = 64854,	-- Blade of the Anointed
 						["sourceQuest"] = 31513,	-- Blades of the Anointed
+						["qg"] = 64854,	-- Blade of the Anointed
 						["timeline"] = { ADDED_5_0_4 },
 						["lvl"] = lvlsquish(28, 28, 10),
 						["groups"] = {
@@ -1101,8 +1101,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						q(31516, {	-- Unto Dust Thou Shalt Return
-							["qg"] = 64855,	-- Blade of the Anointed
 							["sourceQuest"] = 31515,	-- Blades of the Anointed
+							["qg"] = 64855,	-- Blade of the Anointed
 							["timeline"] = { ADDED_5_0_4 },
 							["lvl"] = lvlsquish(90, 90, 35),
 							["groups"] = {

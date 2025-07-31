@@ -5484,7 +5484,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		})),
 
 		-- 11.0.5
-		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
+		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_5 } }, {
 			filter(CLOTH, {
 				i(227585),	-- Guardian Serpent Handwraps
 				i(227584),	-- Guardian Serpent Legwraps
@@ -5526,7 +5526,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		})),
 
 		-- 11.0.7
-		expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7 } }, {
+		expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_7 } }, {
 			filter(BACK_F, {
 				i(231751),	-- Earthen Backpack
 			}),
@@ -5536,7 +5536,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		})),
 
 		-- 11.1.0
-		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0 } }, {
+		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_0 } }, {
 			filter(CLOTH, {
 				i(235720, {["sourceID"] = 267067 }),	-- Guardian Serpent Cowl
 				i(235736, {["sourceID"] = 267083 }),	-- Guardian Serpent Crown
@@ -5803,12 +5803,28 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				})),
 			}),
 		})),
+
 		-- 11.1.5
-		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { ADDED_11_1_5 } }, {
-			n(SPECIAL, {	-- Duos
-				-- Hellfire Ramparts
-				i(238934),	-- Boots of the Darkwalker
-			}),
+		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_5 } }, {
+			i(232352, { ["ItemAppearanceModifierID"] = 150 }),	-- Ashjra'kamas, Shroud of Resolve
+			i(238934),	-- Boots of the Darkwalker
+		})),
+
+		-- 11.1.7
+		expansion(EXPANSION.TWW, patch(1,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_7 } }, {
+			i(242743),	-- Durable Information Securing Container [Trinket]
+			i(246757),	-- Miniature Roulette Wheel
+			i(246758),	-- Miniature Roulette Wheel
+			i(246759),	-- Miniature Roulette Wheel
+			i(246760),	-- Miniature Roulette Wheel
+			i(246761),	-- Miniature Roulette Wheel
+			i(246762),	-- Miniature Roulette Wheel
+			i(246763),	-- Miniature Roulette Wheel
+			i(246764),	-- Miniature Roulette Wheel
+			i(246765),	-- Miniature Roulette Wheel
+			i(246766),	-- Miniature Roulette Wheel
+			i(246767),	-- Miniature Roulette Wheel
+			i(246768),	-- Miniature Roulette Wheel
 		})),
 	}),
 }));

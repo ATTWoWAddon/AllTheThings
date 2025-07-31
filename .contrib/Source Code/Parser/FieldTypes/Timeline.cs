@@ -149,8 +149,12 @@ namespace ATT.FieldTypes
             {
                 if (entries[i].IsBeforeOrOn(releaseVersion))
                 {
-                    entryBeforeOrOnReleaseVersion = entries[i];
-                    indexBeforeOrOnReleaseVersion = i;
+                    // ignore repeated changes within the same timeline (typically due to merging of data between multiple files)
+                    if (entries[i].Change != entryBeforeOrOnReleaseVersion?.Change)
+                    {
+                        entryBeforeOrOnReleaseVersion = entries[i];
+                        indexBeforeOrOnReleaseVersion = i;
+                    }
                 }
                 else
                 {

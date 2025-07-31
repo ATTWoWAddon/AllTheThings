@@ -25,21 +25,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 							},
 						}),
 						q(36611, {	-- A True Draenor Angler
-							["provider"] = { "n", 85984 },	-- Nat Pagle
 							["sourceQuests"] = { 36870, 36612 },	-- Luring Nat (A, H)
+							["provider"] = { "n", 85984 },	-- Nat Pagle
 							["requireSkill"] = FISHING,
 						}),
 						q(36517, {	-- Abyssal Gulper Eel
-							["provider"] = { "n", 77733 },	-- Ron Ashton
 							["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
+							["provider"] = { "n", 77733 },	-- Ron Ashton
 							["coord"] = { 54.4, 13.9, LUNARFALL },
 							["requireSkill"] = FISHING,
 							["races"] = ALLIANCE_ONLY,
 							["isDaily"] = true,
 						}),
 						q(35075, {	-- Abyssal Gulper Eel
-							["provider"] = { "n", 79892 },	-- Mak'jin
 							["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
+							["provider"] = { "n", 79892 },	-- Mak'jin
 							["coord"] = { 38.0, 72.2, FROSTWALL },
 							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
@@ -55,16 +55,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 							}
 						}),
 						q(36616, {	-- An Angler on Our Team
-							["provider"] = { "n", 85984 },	-- Nat Pagle
 							["sourceQuests"] = { 36611 },	-- A True Draenor Angler
+							["provider"] = { "n", 85984 },	-- Nat Pagle
 							["requireSkill"] = FISHING,
 							["groups"] = {
 								follower(202),	-- Nat Pagle
 							},
 						}),
 						q(36515, {	-- Blackwater Whiptail
-							["provider"] = { "n", 77733 },	-- Ron Ashton
 							["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
+							["provider"] = { "n", 77733 },	-- Ron Ashton
 							["coord"] = { 54.4, 13.9, LUNARFALL },
 							["requireSkill"] = FISHING,
 							["races"] = ALLIANCE_ONLY,
@@ -74,8 +74,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 							},
 						}),
 						q(35074, {	-- Blackwater Whiptail
-							["provider"] = { "n", 79892 },	-- Mak'jin
 							["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
+							["provider"] = { "n", 79892 },	-- Mak'jin
 							["coord"] = { 38.0, 72.2, FROSTWALL },
 							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
@@ -103,8 +103,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 							}
 						}),
 						q(36514, {	-- Blind Lake Sturgeon
-							["provider"] = { "n", 77733 },	-- Ron Ashton
 							["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
+							["provider"] = { "n", 77733 },	-- Ron Ashton
 							["coord"] = { 54.4, 13.9, LUNARFALL },
 							["requireSkill"] = FISHING,
 							["races"] = ALLIANCE_ONLY,
@@ -114,8 +114,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 							},
 						}),
 						q(35073, {	-- Blind Lake Sturgeon
-							["provider"] = { "n", 79892 },	-- Mak'jin
 							["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
+							["provider"] = { "n", 79892 },	-- Mak'jin
 							["coord"] = { 38.0, 72.2, FROSTWALL },
 							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
@@ -125,8 +125,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 							},
 						}),
 						q(36513, {	-- Fat Sleeper
-							["provider"] = { "n", 77733 },	-- Ron Ashton
 							["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
+							["provider"] = { "n", 77733 },	-- Ron Ashton
 							["coord"] = { 54.4, 13.9, LUNARFALL },
 							["requireSkill"] = FISHING,
 							["races"] = ALLIANCE_ONLY,
@@ -136,8 +136,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 							},
 						}),
 						q(35072, {	-- Fat Sleeper
-							["provider"] = { "n", 79892 },	-- Mak'jin
 							["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
+							["provider"] = { "n", 79892 },	-- Mak'jin
 							["coord"] = { 38.0, 72.2, FROSTWALL },
 							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
@@ -165,15 +165,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 							}
 						})),
 						q(36608, {	-- Finding Nat Pagle
+							["sourceQuests"] = { 36612, 36870 },	-- Luring Nat (both faction versions)
 							["qgs"] = {
 								79917,	-- Rak'jin
 								85708,	-- Segumi
 							},
-							["sourceQuests"] = { 36612, 36870 },	-- Luring Nat (both faction versions)
 						}),
 						q(36510, {	-- Fire Ammonite
-							["provider"] = { "n", 77733 },	-- Ron Ashton
 							["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
+							["provider"] = { "n", 77733 },	-- Ron Ashton
 							["coord"] = { 54.4, 13.9, LUNARFALL },
 							["requireSkill"] = FISHING,
 							["races"] = ALLIANCE_ONLY,
@@ -183,8 +183,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 							},
 						}),
 						q(35066, {	-- Fire Ammonite
-							["provider"] = { "n", 79892 },	-- Mak'jin
 							["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
+							["provider"] = { "n", 79892 },	-- Mak'jin
 							["coord"] = { 38.0, 72.2, FROSTWALL },
 							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
@@ -203,8 +203,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 							}
 						}),
 						q(36511, {	-- Jawless Skulker
-							["provider"] = { "n", 77733 },	-- Ron Ashton
 							["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
+							["provider"] = { "n", 77733 },	-- Ron Ashton
 							["coord"] = { 54.4, 13.9, LUNARFALL },
 							["requireSkill"] = FISHING,
 							["races"] = ALLIANCE_ONLY,
@@ -214,8 +214,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 							},
 						}),
 						q(35071, {	-- Jawless Skulker
-							["provider"] = { "n", 79892 },	-- Mak'jin
 							["sourceQuest"] = 36132,	-- Anglin' In Our Garrison
+							["provider"] = { "n", 79892 },	-- Mak'jin
 							["coord"] = { 38.0, 72.2, FROSTWALL },
 							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
@@ -234,8 +234,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 							}
 						}),
 						q(34194, {	-- Looking For Help
-							["provider"] = { "n", 77733 },	-- Ron Ashton
 							["sourceQuest"] = 36592,	-- Bigger is Better
+							["provider"] = { "n", 77733 },	-- Ron Ashton
 							["coord"] = { 53.9, 13.4, LUNARFALL },	-- lvl 2 garrison
 							["requireSkill"] = FISHING,
 							["races"] = ALLIANCE_ONLY,
@@ -247,13 +247,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 							["races"] = HORDE_ONLY,
 						}),
 						q(36870, {	-- Luring Nat
-							["provider"] = { "n", 85708 },	-- Segumi
 							["description"] = "Requires upgrading your Fishing Shack to level 3 and having at least 100 Draenor Fishing skill (items/buffs included).",
+							["provider"] = { "n", 85708 },	-- Segumi
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(36612, {	-- Luring Nat
-							["provider"] = { "n", 79971 },	-- Rak'jin
 							["description"] = "Requires upgrading your Fishing Shack to level 3 and having at least 100 Draenor Fishing skill (items/buffs included).",
+							["provider"] = { "n", 79971 },	-- Rak'jin
 							["races"] = HORDE_ONLY,
 						}),
 						q(38406, bubbleDownSelf({ ["timeline"] = { ADDED_6_1_0 } }, {	-- Sea Scorpion Lunker

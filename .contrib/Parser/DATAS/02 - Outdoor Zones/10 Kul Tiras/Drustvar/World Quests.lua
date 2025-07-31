@@ -52,8 +52,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 ]]--
 			q(53701, {	-- A Drust Cause (Faction Assault WQ)
-				["isDaily"] = true,
 				["races"] = ALLIANCE_ONLY,
+				["isDaily"] = true,
 			}),
 			q(51616, {	-- A Final Rest
 				["races"] = ALLIANCE_ONLY,
@@ -259,8 +259,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51740),	-- Hunting for Truffle Hunters
 			q(51467),	-- Hyo'gi
 			q(54137, {	-- In Every Dark Corner (Faction Assault WQ)
-				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
 			}),
 			q(54688, {	-- Inquisitor Erik (Faction Assault WQ)
 				["races"] = HORDE_ONLY,
@@ -459,15 +459,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["requireSkill"] = HERBALISM,
 			}),
 			q(52424, {	-- Work Order: Battle Flag: Rallying Swiftness
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = TAILORING,
+				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(162445),	-- Pattern: Battle Flag: Rallying Swiftness [Rank 3] (RECIPE!)
 				},
 			}),
 			q(50991, {	-- Work Order: Blood-Stained Bone
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = SKINNING,
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(52390, {	-- Work Order: Contract: Order of Embers
 				["requireSkill"] = INSCRIPTION,
@@ -477,8 +477,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(52414, {	-- Work Order: Drums of the Maelstrom
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = LEATHERWORKING,
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(52357, {	-- Work Order: Enchant Weapon - Quick Navigation
 				["requireSkill"] = ENCHANTING,
@@ -488,44 +488,44 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(52365, {	-- Work Order: F.R.I.E.D.
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = ENGINEERING,
+				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(162331),	-- Schematic: F.R.I.E.D. [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52407, {	-- Work Order: Golden Beryl
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = JEWELCRAFTING,
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(50987, {	-- Work Order: Monelite Ore
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = MINING,
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(52334, {	-- Work Order: Potion of Concealment
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = ALCHEMY,
+				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(162260),	-- Recipe: Potion of Concealment [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52406, {	-- Work Order: Rubellite
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = JEWELCRAFTING,
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(50986, {	-- Work Order: Sea Stalk
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(50985, {	-- Work Order: Siren's Pollen
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = HERBALISM,
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(50994, {	-- Work Order: Tempest Hide
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(52364, {	-- Work Order: Thermo-Accelerated Plague Spreader
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = ENGINEERING,
+				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(162332),	-- Schematic: Thermo-Accelerated Plague Spreader [Rank 3] (RECIPE!)
 				},

@@ -22,8 +22,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["groups"] = {
 					n(QUESTS, {
 						q(14093, {	-- All Hell Breaks Loose
-							["qg"] = 34913,	-- Prince Liam Greymane
 							["sourceQuest"] = 14091,	-- Something's Amiss
+							["qg"] = 34913,	-- Prince Liam Greymane
 							["coord"] = { 59.81, 22.17, GILNEAS_CITY },
 							["races"] = { WORGEN },
 							["groups"] = {
@@ -37,21 +37,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(14277, {	-- Arcane Inquiries
-							["qg"] = 35840,	-- Gwen Armstead
 							["sourceQuest"] = 14099,	-- Royal Orders
+							["qg"] = 35840,	-- Gwen Armstead
 							["coord"] = { 70.79, 55.05, GILNEAS_CITY },
 							["races"] = { WORGEN },
 							["classes"] = { MAGE },
 						}),
 						q(26129, {	-- Brothers in Arms
-							["qg"] = 35077,	-- Lord Darius Crowley
 							["sourceQuest"] = 14154,	-- By the Skin of His Teeth
+							["qg"] = 35077,	-- Lord Darius Crowley
 							["coord"] = { 55.20, 62.93, GILNEAS_CITY },
 							["races"] = { WORGEN },
 						}),
 						q(14218, {	-- By Blood and Ash
-							["qg"] = 35552,	-- Tobias Mistmantle
 							["sourceQuest"] = 14212,	-- Sacrifies
+							["qg"] = 35552,	-- Tobias Mistmantle
 							["coord"] = { 40.46, 39.37, GILNEAS_CITY },
 							["races"] = { WORGEN },
 							["groups"] = {
@@ -69,8 +69,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(14154, {	-- By the Skin of His Teeth
-							["qg"] = 35077,	-- Lord Darius Crowley
 							["sourceQuest"] = 28850,	-- The Prison Rooftop
+							["qg"] = 35077,	-- Lord Darius Crowley
 							["coord"] = { 55.20, 62.93, GILNEAS_CITY },
 							["races"] = { WORGEN },
 							["groups"] = {
@@ -83,8 +83,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(14266, {	-- Charge
-							["qg"] = 35839,	-- Sergeant Cleese
 							["sourceQuest"] = 14265,	-- Your Instructor
+							["qg"] = 35839,	-- Sergeant Cleese
 							["coord"] = { 67.60, 64.31, GILNEAS_CITY },
 							["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_5_0_4 },
 							["races"] = { WORGEN },
@@ -96,8 +96,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(14274, {	-- Corruption
-							["qg"] = 35869,	-- Vitus Darkwalker
 							["sourceQuest"] = 14273,	-- Shady Associates
+							["qg"] = 35869,	-- Vitus Darkwalker
 							["coord"] = { 71.43, 64.45, GILNEAS_CITY },
 							["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_5_0_4 },
 							["races"] = { WORGEN },
@@ -109,8 +109,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(14098, {	-- Evacuate the Merchant Square
-							["qg"] = 34913,	-- Prince Liam Greymane
 							["sourceQuest"] = 14091,	-- Something's Amiss
+							["qg"] = 34913,	-- Prince Liam Greymane
 							["coord"] = { 59.81, 22.17, GILNEAS_CITY },
 							["races"] = { WORGEN },
 							["groups"] = {
@@ -121,8 +121,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(14272, {	-- Eviscerate
-							["qg"] = 35871,	-- Loren the Fence
 							["sourceQuest"] = 14269,	-- Someone's Looking for You
+							["qg"] = 35871,	-- Loren the Fence
 							["coord"] = { 71.43, 65.78, GILNEAS_CITY },
 							["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_5_0_4 },
 							["races"] = { WORGEN },
@@ -134,11 +134,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(14204, {	-- From the Shadows
+							["sourceQuest"] = 14159,	-- The Rebel Lord's Arsenal
 							["providers"] = {
 								{ "n", 35378 },	-- Lorna Crowley
 								{ "i", 48707 },	-- Gilnean Mastiff Collar
 							},
-							["sourceQuest"] = 14159,	-- The Rebel Lord's Arsenal
 							["coord"] = { 56.87, 81.41, GILNEAS_CITY },
 							["races"] = { WORGEN },
 							["groups"] = {
@@ -152,8 +152,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(14281, {	-- Arcane Missiles [Cata] / Frost Nova [MoP+] (Worgen)
-							["qg"] = 35872,	-- Myriam Spellwalker
 							["sourceQuest"] = 14277,	-- Arcane Inquiries
+							["qg"] = 35872,	-- Myriam Spellwalker
 							["coord"] = { 68.01, 64.68, GILNEAS_CITY },
 							["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_5_0_4 },
 							["races"] = { WORGEN },
@@ -165,17 +165,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(24678, {	-- Knee-Deep
+							["sourceQuest"] = 24920,	-- Slowing the Inevitable
 							["providers"] = {
 								{ "n", 38539 },	-- King Genn Greymane
 								{ "i", 50220 },	-- Half-Burnt Torch
 							},
-							["sourceQuest"] = 24920,	-- Slowing the Inevitable
 							["coord"] = { 32.37, 57.01, GILNEAS_CITY },
 							["races"] = { WORGEN },
 						}),
 						q(14222, {	-- Last Stand
-							["qg"] = 35566,	-- Lord Darius Crowley
 							["sourceQuest"] = 14221,	-- Never Surrender, Sometimes Retreat
+							["qg"] = 35566,	-- Lord Darius Crowley
 							["coord"] = { 48.93, 52.79, GILNEAS_CITY },
 							["races"] = { WORGEN },
 							["groups"] = {
@@ -185,8 +185,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(14279, {	-- Learning the Word
-							["qg"] = 35870,	-- Sister Almyra
 							["sourceQuest"] = 14278,	-- Seek the Sister
+							["qg"] = 35870,	-- Sister Almyra
 							["coord"] = { 70.40, 65.57, GILNEAS_CITY },
 							["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_5_0_4 },
 							["races"] = { WORGEN },
@@ -203,14 +203,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = { WORGEN },
 						}),
 						q(14214, {	-- Message to Greymane
-							["qg"] = 35378,	-- Lorna Crowley
 							["sourceQuest"] = 14204,	-- From the Shadows
+							["qg"] = 35378,	-- Lorna Crowley
 							["coord"] = { 56.87, 81.41, GILNEAS_CITY },
 							["races"] = { WORGEN },
 						}),
 						q(14283, {	-- Moonfire
-							["qg"] = 35873,	-- Celestine of the Harvest
 							["sourceQuest"] = 14280,	-- The Winds Know Your Name... Apparently
+							["qg"] = 35873,	-- Celestine of the Harvest
 							["coord"] = { 70.18, 65.88, GILNEAS_CITY },
 							["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_5_0_4 },
 							["races"] = { WORGEN },
@@ -222,13 +222,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(14221, {	-- Never Surrender, Sometimes Retreat
-							["qg"] = 35552,	-- Tobias Mistmantle
 							["sourceQuest"] = 14218,	-- By Blood and Ash
+							["qg"] = 35552,	-- Tobias Mistmantle
 							["coord"] = { 40.46, 39.37, GILNEAS_CITY },
 							["races"] = { WORGEN },
 						}),
 						q(14157, {	-- Old Divisions
-							["qg"] = 35112,	-- King Geen Greymane
 							["sourceQuests"] = {
 								14285,	-- Safety in Numbers [Rogue]
 								14286,	-- Safety in Numbers [Warrior]
@@ -241,30 +240,31 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								75189,	-- Safety in Numbers [Monk]
 								-- #endif
 							},
+							["qg"] = 35112,	-- King Geen Greymane
 							["coord"] = { 65.83, 77.84, GILNEAS_CITY },
 							["races"] = { WORGEN },
 						}),
 						q(75190, {	-- Ready and Abel
-							["qg"] = 34936,	-- Gwen Armstead
 							["sourceQuest"] = 14099,	-- Royal Orders
+							["qg"] = 34936,	-- Gwen Armstead
 							["coord"] = { 59.57, 26.77, GILNEAS_CITY },
 							["timeline"] = { ADDED_10_0_7 },
 							["races"] = { WORGEN },
 							["classes"] = { MONK },
 						}),
 						q(14099, {	-- Royal Orders
-							["qg"] = 34913,	-- Prince Liam Greymane
 							["sourceQuests"] = {
 								14093,	-- All Hell Breaks Loose
 								14098,	-- Evacuate the Merchant Square
 								14094,	-- Salvage the Supplies
 							},
+							["qg"] = 34913,	-- Prince Liam Greymane
 							["coord"] = { 59.81, 22.17, GILNEAS_CITY },
 							["races"] = { WORGEN },
 						}),
 						q(14212, {	-- Sacrifies
-							["qg"] = 35552,	-- Lord Darius Crowley
 							["sourceQuest"] = 14294,	-- Time to Regroup
+							["qg"] = 35552,	-- Lord Darius Crowley
 							["coord"] = { 31.05, 72.33, GILNEAS_CITY },
 							["races"] = { WORGEN },
 							["groups"] = {
@@ -274,100 +274,100 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(14285, {	-- Safety in Numbers (Rogue)
-							["qg"] = 35871,	-- Loren the Fence
 							["sourceQuests"] = {
 								-- #if BEFORE 9.0.1
 								14272,	-- Eviscerate
 								-- #endif
 								14269,	-- Someone's Looking for You
 							},
+							["qg"] = 35871,	-- Loren the Fence
 							["coord"] = { 71.43, 65.78, GILNEAS_CITY },
 							["races"] = { WORGEN },
 							["classes"] = { ROGUE },
 						}),
 						q(14286, {	-- Safety in Numbers (Warrior)
-							["qg"] = 35839,	-- Sergeant Cleese
 							["sourceQuests"] = {
 								-- #if BEFORE MOP
 								14266,	-- Charge
 								-- #endif
 								14265,	-- Your Instructor
 							},
+							["qg"] = 35839,	-- Sergeant Cleese
 							["coord"] = { 67.60, 64.31, GILNEAS_CITY },
 							["races"] = { WORGEN },
 							["classes"] = { WARRIOR },
 						}),
 						q(14287, {	-- Safety in Numbers (Warlock)
-							["qg"] = 35869,	-- Vitus Darkwalker
 							["sourceQuests"] = {
 								-- #if BEFORE MOP
 								14274,	-- Corruption
 								-- #endif
 								14273,	-- Shady Associates
 							},
+							["qg"] = 35869,	-- Vitus Darkwalker
 							["coord"] = { 71.43, 64.45, GILNEAS_CITY },
 							["races"] = { WORGEN },
 							["classes"] = { WARLOCK },
 						}),
 						q(14288, {	-- Safety in Numbers (Mage)
-							["qg"] = 35872,	-- Myriam Spellwalker
 							["sourceQuests"] = {
 								14277,	-- Arcane Inquiries
 								-- #if BEFORE MOP
 								14281,	-- Frost Nova
 								-- #endif
 							},
+							["qg"] = 35872,	-- Myriam Spellwalker
 							["coord"] = { 68.01, 64.68, GILNEAS_CITY },
 							["races"] = { WORGEN },
 							["classes"] = { MAGE },
 						}),
 						q(14289, {	-- Safety in Numbers (Priest)
-							["qg"] = 35870,	-- Sister Almyra
 							["sourceQuests"] = {
 								14279,	-- Learning the Word
 								14278,	-- Seek the Sister
 							},
+							["qg"] = 35870,	-- Sister Almyra
 							["coord"] = { 70.40, 65.57, GILNEAS_CITY },
 							["races"] = { WORGEN },
 							["classes"] = { PRIEST },
 						}),
 						q(14290, {	-- Safety in Numbers (Hunter)
-							["qg"] = 35874,	-- Huntsman Blake
 							["sourceQuests"] = {
 								14275,	-- Someone's Keeping Track of You
 								-- #if BEFORE MOP
 								14276,	-- Steady Shot
 								-- #endif
 							},
+							["qg"] = 35874,	-- Huntsman Blake
 							["coord"] = { 71.50, 61.33, GILNEAS_CITY },
 							["races"] = { WORGEN },
 							["classes"] = { HUNTER },
 						}),
 						q(14291, {	-- Safety in Numbers (Druid)
-							["qg"] = 35873,	-- Celestine of the Harvest
 							["sourceQuests"] = {
 								-- #if BEFORE MOP
 								14283,	-- Moonfire
 								-- #endif
 								14280,	-- The Winds Know Your Name... Apparently
 							},
+							["qg"] = 35873,	-- Celestine of the Harvest
 							["coord"] = { 70.18, 65.88, GILNEAS_CITY },
 							["races"] = { WORGEN },
 							["classes"] = { DRUID },
 						}),
 						q(75189, {	-- Safety in Numbers (Monk)
-							["qg"] = 203258,	-- Todd Abel
 							["sourceQuests"] = {
 								75190,	-- Ready and Abel
 							},
+							["qg"] = 203258,	-- Todd Abel
 							["coord"] = { 70.40, 65.57, GILNEAS_CITY },
 							["timeline"] = { ADDED_10_0_7 },
 							["races"] = { WORGEN },
 							["classes"] = { MONK },
 						}),
 						q(14094, {	-- Salvage the Supplies
-							["qg"] = 34936,	-- Gwen Armstead
 							["sourceQuest"] = 14078,	-- Lockdown!
+							["qg"] = 34936,	-- Gwen Armstead
 							["coord"] = { 59.57, 26.77, GILNEAS_CITY },
 							["races"] = { WORGEN },
 							["groups"] = {
@@ -382,8 +382,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(14293, {	-- Save Krennan Aranas
-							["qg"] = 35550,	-- King Genn Greymane
 							["sourceQuest"] = 14214,	-- Messsage to Greymane
+							["qg"] = 35550,	-- King Genn Greymane
 							["coord"] = { 59.27, 83.80, GILNEAS_CITY },
 							["races"] = { WORGEN },
 							["groups"] = {
@@ -394,22 +394,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(14278, {	-- Seek the Siter
-							["qg"] = 35840,	-- Gwen Armstead
 							["sourceQuest"] = 14099,	-- Royal Orders
+							["qg"] = 35840,	-- Gwen Armstead
 							["coord"] = { 70.79, 55.05, GILNEAS_CITY },
 							["races"] = { WORGEN },
 							["classes"] = { PRIEST },
 						}),
 						q(14273, {	-- Shady Associates
-							["qg"] = 35840,	-- Gwen Armstead
 							["sourceQuest"] = 14099,	-- Royal Orders
+							["qg"] = 35840,	-- Gwen Armstead
 							["coord"] = { 70.79, 55.05, GILNEAS_CITY },
 							["races"] = { WORGEN },
 							["classes"] = { WARLOCK },
 						}),
 						q(24920, {	-- Slowing the Inevitable
-							["qg"] = 38539,	-- King Genn Greymane
 							["sourceQuest"] = 24903,	-- Vengeance or Survival
+							["qg"] = 38539,	-- King Genn Greymane
 							["coord"] = { 32.37, 57.01, GILNEAS_CITY },
 							["races"] = { WORGEN },
 							["groups"] = {
@@ -425,28 +425,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(14275, {	-- Someone's Keeping Track of You
-							["qg"] = 35840,	-- Gwen Armstead
 							["sourceQuest"] = 14099,	-- Royal Orders
+							["qg"] = 35840,	-- Gwen Armstead
 							["coord"] = { 70.79, 55.05, GILNEAS_CITY },
 							["races"] = { WORGEN },
 							["classes"] = { HUNTER },
 						}),
 						q(14269, {	-- Someone's Looking for You
-							["qg"] = 35840,	-- Gwen Armstead
 							["sourceQuest"] = 14099,	-- Royal Orders
+							["qg"] = 35840,	-- Gwen Armstead
 							["coord"] = { 70.79, 55.05, GILNEAS_CITY },
 							["races"] = { WORGEN },
 							["classes"] = { ROGUE },
 						}),
 						q(14091, {	-- Something's Amiss
-							["qg"] = 34863,	-- Lieutenant Walden
 							["sourceQuest"] = 14078,	-- Lockdown!
+							["qg"] = 34863,	-- Lieutenant Walden
 							["coord"] = { 54.65, 16.75, GILNEAS_CITY },
 							["races"] = { WORGEN },
 						}),
 						q(14276, {	-- Steady Shot
-							["qg"] = 35874,	-- Huntsman Blake
 							["sourceQuest"] = 14275,	-- Someone's Keeping Track of You
+							["qg"] = 35874,	-- Huntsman Blake
 							["coord"] = { 71.50, 61.33, GILNEAS_CITY },
 							["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_5_0_4 },
 							["races"] = { WORGEN },
@@ -458,47 +458,46 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(24902, {	-- The Hunt For Sylvanas
-							["qg"] = 38611,	-- Lorna Crowley
 							["sourceQuest"] = 24904,	-- The Battle For Gilneas City
+							["qg"] = 38611,	-- Lorna Crowley
 							["coord"] = { 38.58, 60.22, GILNEAS_CITY },
 							["races"] = { WORGEN },
 						}),
 						q(28850, {	-- The Prison Rooftop
-							["qg"] = 50371,	-- Captain Broderick
 							["sourceQuest"] = 14157,	-- Old Divisions
+							["qg"] = 50371,	-- Captain Broderick
 							["coord"] = { 57.96, 75.56, GILNEAS_CITY },
 							["races"] = { WORGEN },
 						}),
 						q(14159, {	-- The Rebel Lord's Arsenal
-							["qg"] = 35112,	-- King Geen Greymane
 							["sourceQuests"] = {
 								26129,	-- Brothers in Arms
 								24930,	-- While You're At It
 							},
+							["qg"] = 35112,	-- King Geen Greymane
 							["coord"] = { 65.83, 77.84, GILNEAS_CITY },
 							["races"] = { WORGEN },
 						}),
 						q(14280, {	-- The Winds Know Your Name... Apparently
-							["qg"] = 35840,	-- Gwen Armstead
 							["sourceQuest"] = 14099,	-- Royal Orders
+							["qg"] = 35840,	-- Gwen Armstead
 							["coord"] = { 70.79, 55.05, GILNEAS_CITY },
 							["races"] = { WORGEN },
 							["classes"] = { DRUID },
 						}),
 						q(14294, {	-- Time to Regroup
-							["qg"] = 35906,	-- Lord Godfrey
 							["sourceQuest"] = 14293,	-- Save Krennan Aranas
+							["qg"] = 35906,	-- Lord Godfrey
 							["coord"] = { 55.74, 80.73, GILNEAS_CITY },
 							["races"] = { WORGEN },
 						}),
 						q(24903, {	-- Vengeance or Survival
-							["qg"] = 38611,	-- Lorna Crowley
 							["sourceQuest"] = 24902,	-- The Hunt For Sylvanas
+							["qg"] = 38611,	-- Lorna Crowley
 							["coord"] = { 38.58, 60.22, GILNEAS_CITY },
 							["races"] = { WORGEN },
 						}),
 						q(24930, {	-- While You're At It
-							["qg"] = 35115,	-- Lord Godfrey
 							["sourceQuests"] = {
 								14285,	-- Safety in Numbers [Rogue]
 								14286,	-- Safety in Numbers [Warrior]
@@ -508,6 +507,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								14290,	-- Safety in Numbers [Hunter]
 								14291,	-- Safety in Numbers [Druid]
 							},
+							["qg"] = 35115,	-- Lord Godfrey
 							["coord"] = { 65.41, 77.62, GILNEAS_CITY },
 							["races"] = { WORGEN },
 							["groups"] = {
@@ -526,8 +526,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(14265, {	-- Your Instructor
-							["qg"] = 35840,	-- Gwen Armstead
 							["sourceQuest"] = 14099,	-- Royal Orders
+							["qg"] = 35840,	-- Gwen Armstead
 							["coord"] = { 70.79, 55.05, GILNEAS_CITY },
 							["races"] = { WORGEN },
 							["classes"] = { WARRIOR },
@@ -537,26 +537,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(QUESTS, {
 				q(14467, {	-- Alas, Gilneas!
-					["qg"] = 36743,	-- King Genn Greymane
 					["sourceQuest"] = 14466,	-- The King's Observatory
+					["qg"] = 36743,	-- King Genn Greymane
 					["coord"] = { 41.91, 20.10, 182 },
 					["races"] = { WORGEN },
 				}),
 				q(14313, {	-- Among Humans Again
-					["qg"] = 36170,	-- Lord Godfrey
 					["sourceQuest"] = 14375,	-- Last Chance at Humanity
+					["qg"] = 36170,	-- Lord Godfrey
 					["coord"] = { 36.51, 62.29, GILNEAS },
 					["races"] = { WORGEN },
 				}),
 				q(14396, {	-- As the Land Shatters
-					["qg"] = 36290,	-- Lord Godfrey
 					["sourceQuest"] = 14386,	-- Leader of the Pack
+					["qg"] = 36290,	-- Lord Godfrey
 					["coord"] = { 28.97, 63.93, GILNEAS },
 					["races"] = { WORGEN },
 				}),
 				q(24627, {	-- At Our Doorstep
-					["qg"] = 37195,	-- Lord Darius Crowley
 					["sourceQuest"] = 24617,	-- Tal'doren, the Wild Home
+					["qg"] = 37195,	-- Lord Darius Crowley
 					["coord"] = { 68.69, 73.26, GILNEAS },
 					["races"] = { WORGEN },
 					["groups"] = {
@@ -566,11 +566,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(24592, {	-- Betrayal at Tempest's Reach
+					["sourceQuest"] = 24672,	-- Onwards and Upwards
 					["providers"] = {
 						{ "n", 37874 },	-- Krennan Aranas
 						{ "i", 50218 },	-- Krennan's Potion of Stealth
 					},
-					["sourceQuest"] = 24672,	-- Onwards and Upwards
 					["coord"] = { 72.73, 80.04, GILNEAS },
 					["races"] = { WORGEN },
 					["groups"] = {
@@ -589,30 +589,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26706, {	-- Endgame
-					["qg"] = 43727,	-- Lorna Crowley
 					["sourceQuest"] = 24681,	-- They Have Allies, But So Do We
+					["qg"] = 43727,	-- Lorna Crowley
 					["coord"] = { 41.64, 36.51, GILNEAS },
 					["races"] = { WORGEN },
 				}),
 				q(14405, {	-- Escape By Sea
-					["qg"] = 36456,	-- Sebastian Hayward
+					["description"] = "Given if |cFFFFD700The Hayward Brothers|r questline is completed last.",
 					["sourceQuests"] = {
 						14404,	-- Not Quite Shipshape
 						14412,	-- Washed Up
 					},
+					["qg"] = 36456,	-- Sebastian Hayward
 					["coord"] = { 36.88, 84.18, GILNEAS },
-					["description"] = "Given if |cFFFFD700The Hayward Brothers|r questline is completed last.",
 					["races"] = { WORGEN },
 				}),
 				q(14397, {	-- Evacuation
-					["qg"] = 36451,	-- Prince Liam Greymane
 					["sourceQuest"] = 14395,	-- Gasping for Breath
+					["qg"] = 36451,	-- Prince Liam Greymane
 					["coord"] = { 29.03, 65.06, GILNEAS },
 					["races"] = { WORGEN },
 				}),
 				q(24438, {	-- Exodus
-					["qg"] = 36743,	-- King Genn Greymane
 					["sourceQuest"] = 14467,	-- Alas, Gilneas!
+					["qg"] = 36743,	-- King Genn Greymane
 					["coord"] = { 41.91, 20.10, 182 },
 					["races"] = { WORGEN },
 					["groups"] = {
@@ -622,14 +622,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(24677, {	-- Flank the Forsaken
-					["qg"] = 37876,	-- King Genn Greymane
 					["sourceQuest"] = 24592,	-- Betrayal at Tempest's Reach
+					["qg"] = 37876,	-- King Genn Greymane
 					["coord"] = { 78.27, 72.06, GILNEAS },
 					["races"] = { WORGEN },
 				}),
 				q(14395, {	-- Gasping for Breath
-					["qg"] = 36451,	-- Prince Liam Greymane
 					["sourceQuest"] = 14396,	-- As the Land Shatters
+					["qg"] = 36451,	-- Prince Liam Greymane
 					["coord"] = { 29.03, 65.06, GILNEAS },
 					["races"] = { WORGEN },
 					["groups"] = {
@@ -639,14 +639,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(14398, {	-- Grandma Wahl
-					["qg"] = 36452,	-- Gwen Armstead
 					["sourceQuest"] = 14397,	-- Evacuation
+					["qg"] = 36452,	-- Gwen Armstead
 					["coord"] = { 37.63, 65.20, GILNEAS },
 					["races"] = { WORGEN },
 				}),
 				q(14401, {	-- Grandma's Cat
-					["qg"] = 36458,	-- Grandma Wahl
 					["sourceQuest"] = 14400,	-- I Can't Wear This
+					["qg"] = 36458,	-- Grandma Wahl
 					["coord"] = { 32.52, 75.48, GILNEAS },
 					["races"] = { WORGEN },
 					["groups"] = {
@@ -660,8 +660,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(14399, {	-- Grandma's Lost It Alright
-					["qg"] = 36458,	-- Grandma Wahl
 					["sourceQuest"] = 14398,	-- Grandma Wahl
+					["qg"] = 36458,	-- Grandma Wahl
 					["coord"] = { 32.52, 75.48, GILNEAS },
 					["races"] = { WORGEN },
 					["groups"] = {
@@ -675,8 +675,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(14347, {	-- Hold the Line
-					["qg"] = 36140,	-- Prince Liam Greymane
 					["sourceQuest"] = 14336,	-- Kill or Be Killed
+					["qg"] = 36140,	-- Prince Liam Greymane
 					["coord"] = { 35.75, 66.29, GILNEAS },
 					["races"] = { WORGEN },
 					["groups"] = {
@@ -688,24 +688,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(14366, {	-- Holding Steady
-					["qg"] = 36140,	-- Prince Liam Greymane
 					["sourceQuests"] = {
 						14347,	-- Hold the Line
 						14348,	-- You Can't Take 'Em Alone
 					},
+					["qg"] = 36140,	-- Prince Liam Greymane
 					["coord"] = { 35.75, 66.29, GILNEAS },
 					["races"] = { WORGEN },
 				}),
 				q(14463, {	-- Horses for Duskhaven
-					["qg"] = 36457,	-- Lorna Crowley
-					["sourceQuest"] = 14416,	-- The Hungry Ettin
-					["coord"] = { 37.68, 72.75, GILNEAS },
 					["description"] = "Given if |cFFFFD700The Crowley Orchard|r questline is completed last.",
+					["sourceQuest"] = 14416,	-- The Hungry Ettin
+					["qg"] = 36457,	-- Lorna Crowley
+					["coord"] = { 37.68, 72.75, GILNEAS },
 					["races"] = { WORGEN },
 				}),
 				q(14400, {	-- I Can't Wear This
-					["qg"] = 36458,	-- Grandma Wahl
 					["sourceQuest"] = 14399,	-- Grandma's Lost It Alright
+					["qg"] = 36458,	-- Grandma Wahl
 					["coord"] = { 32.52, 75.48, GILNEAS },
 					["races"] = { WORGEN },
 					["groups"] = {
@@ -719,11 +719,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(14320, {	-- In Need of Ingredients
+					["sourceQuest"] = 14313,	-- Among Humans Again
 					["providers"] = {
 						{ "n",  36132 },	-- Krennan Aranas
 						{ "o", 196394 },	-- Crate of Mandrake Essence
 					},
-					["sourceQuest"] = 14313,	-- Among Humans Again
 					["coords"] = {
 						{ 37.42, 63.23, GILNEAS },
 						{ 32.9, 66.4, GILNEAS },
@@ -731,8 +731,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = { WORGEN },
 				}),
 				q(24472, {	-- Introductions Are In Order
-					["qg"] = 37065,	-- Prince Liam Greymane
 					["sourceQuest"] = 24468,	-- Stranded at the Marsh
+					["qg"] = 37065,	-- Prince Liam Greymane
 					["coord"] = { 51.81, 80.48, GILNEAS },
 					["races"] = { WORGEN },
 					["groups"] = {
@@ -749,26 +749,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(14321, {	-- Invasion
-					["qg"] = 36205,	-- Slain Watchman
 					["sourceQuest"] = 14320,	-- In Need of Ingredients
+					["qg"] = 36205,	-- Slain Watchman
 					["coord"] = { 32.77, 66.14, GILNEAS },
 					["races"] = { WORGEN },
 				}),
 				q(14336, {	-- Kill or Be Killed
-					["qg"] = 34571,	-- Gwen Armstead
 					["sourceQuest"] = 14321,	-- Invasion
+					["qg"] = 34571,	-- Gwen Armstead
 					["coord"] = { 37.42, 63.34, GILNEAS },
 					["races"] = { WORGEN },
 				}),
 				q(24680, {	-- Keel Harbor
-					["qg"] = 38144,	-- Krennan Aranas
 					["sourceQuest"] = 24679,	-- Patriarch's Blessing
+					["qg"] = 38144,	-- Krennan Aranas
 					["coord"] = { 49.83, 56.93, GILNEAS },
 					["races"] = { WORGEN },
 				}),
 				q(24602, {	-- Laid to Rest
-					["qg"] = 38144,	-- Krennan Aranas
 					["sourceQuest"] = 24678,	-- Knee-Deep
+					["qg"] = 38144,	-- Krennan Aranas
 					["coord"] = { 49.83, 56.93, GILNEAS },
 					["races"] = { WORGEN },
 					["groups"] = {
@@ -779,14 +779,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(14375, {	-- Last Chance at Humanity
-					["qg"] = 36332,	-- King Genn Greymane
 					["sourceQuest"] = 14222,	-- Last Stand
+					["qg"] = 36332,	-- King Genn Greymane
 					["coord"] = { 36.41, 61.25, GILNEAS },
 					["races"] = { WORGEN },
 				}),
 				q(24675, {	-- Last Meal
-					["qg"] = 38143,	-- Magda Whitewall
 					["sourceQuest"] = 14466,	-- The King's Observatory (TODO: need to verify if this truly is the start. Could be level-based at 15? Saw the quest offered this source but could be available earlier)
+					["qg"] = 38143,	-- Magda Whitewall
 					["coord"] = { 70.66, 39.71, GILNEAS },
 					["races"] = { WORGEN },
 					["groups"] = {
@@ -797,14 +797,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(14386, {	-- Leader of the Pack
-					["providers"] = {
-						{ "n", 36290 },	-- Lord Godfrey
-						{ "i", 49240 },	-- Mastiff Whistle
-					},
 					["sourceQuests"] = {
 						14368,	-- Save the Children!
 						14382,	-- Two By Sea
 						14369,	-- Unleash the Beast
+					},
+					["providers"] = {
+						{ "n", 36290 },	-- Lord Godfrey
+						{ "i", 49240 },	-- Mastiff Whistle
 					},
 					["coord"] = { 28.97, 63.93, GILNEAS },
 					["races"] = { WORGEN },
@@ -821,8 +821,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(24575, {	-- Liberation Day
-					["qg"] = 37783,	-- Lorna Crowley
 					["sourceQuest"] = 24677,	-- Flank the Forsaken
+					["qg"] = 37783,	-- Lorna Crowley
 					["coord"] = { 70.87, 39.83, GILNEAS },
 					["races"] = { WORGEN },
 					["groups"] = {
@@ -837,8 +837,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(24616, {	-- Losing Your Tail
-					["qg"] = 37822,	-- Belysra Starbreeze
 					["sourceQuest"] = 24578,	-- The Blackwald
+					["qg"] = 37822,	-- Belysra Starbreeze
 					["coord"] = { 63.35, 82.92, GILNEAS },
 					["races"] = { WORGEN },
 					["groups"] = {
@@ -858,8 +858,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(24593, {	-- Neither Human Nor Beast
-					["qg"] = 37195,	-- Lord Darius Crowley
 					["sourceQuest"] = 24646,	-- Take Back What's Ours
+					["qg"] = 37195,	-- Lord Darius Crowley
 					["coord"] = { 68.69, 73.26, GILNEAS },
 					["races"] = { WORGEN },
 					["groups"] = {
@@ -888,8 +888,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(14404, {	-- Not Quite Shipshape
-					["qg"] = 36456,	-- Sebastian Hayward
 					["sourceQuest"] = 14403,	-- The Hayward Brothers
+					["qg"] = 36456,	-- Sebastian Hayward
 					["coord"] = { 36.88, 84.18, GILNEAS },
 					["races"] = { WORGEN },
 					["groups"] = {
@@ -918,14 +918,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(24672, {	-- Onwards and Upwards
-					["qg"] = 37102,	-- Gwen Armstead
 					["sourceQuest"] = 24673,	-- Return to Stormglen
+					["qg"] = 37102,	-- Gwen Armstead
 					["coord"] = { 59.86, 91.70, GILNEAS },
 					["races"] = { WORGEN },
 				}),
 				q(24679, {	-- Patriarch's Blessing
-					["qg"] = 38144,	-- Krennan Aranas
 					["sourceQuest"] = 24602,	-- Laid to Rest
+					["qg"] = 38144,	-- Krennan Aranas
 					["coord"] = { 49.83, 56.93, GILNEAS },
 					["races"] = { WORGEN },
 					["groups"] = {
@@ -939,8 +939,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(24484, {	-- Pest Control
-					["qg"] = 37102,	-- Gwen Armstead
 					["sourceQuest"] = 24483,	-- Stormglen
+					["qg"] = 37102,	-- Gwen Armstead
 					["coord"] = { 59.86, 91.70, GILNEAS },
 					["races"] = { WORGEN },
 					["groups"] = {
@@ -950,8 +950,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(24495, {	-- Pieces of the Past
-					["qg"] = 37815,	-- Lorna Crowley
 					["sourceQuest"] = 24483,	-- Stormglen
+					["qg"] = 37815,	-- Lorna Crowley
 					["coord"] = { 60.27, 91.85, GILNEAS },
 					["races"] = { WORGEN },
 					["groups"] = {
@@ -965,8 +965,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(24628, {	-- Preparations
-					["qg"] = 37873,	-- Vassandra Stormclaw
 					["sourceQuest"] = 24617,	-- Tal'doren, the Wild Home
+					["qg"] = 37873,	-- Vassandra Stormclaw
 					["coord"] = { 69.28, 72.98, GILNEAS },
 					["races"] = { WORGEN },
 					["groups"] = {
@@ -977,12 +977,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(24676, {	-- Push Them Out
-					["qg"] = 37783,	-- Lorna Crowley
 					["sourceQuests"] = {
 						24675,	-- Last Meal
 						24575,	-- Liberation Day
 						24674,	-- Slaves to No One
 					},
+					["qg"] = 37783,	-- Lorna Crowley
 					["coord"] = { 70.87, 39.83, GILNEAS },
 					["races"] = { WORGEN },
 					["groups"] = {
@@ -998,8 +998,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(24501, {	-- Queen-Sized Troubles
-					["qg"] = 37102,	-- Gwen Armstead
 					["sourceQuest"] = 24484,	-- Pest Control
+					["qg"] = 37102,	-- Gwen Armstead
 					["coord"] = { 59.86, 91.70, GILNEAS },
 					["races"] = { WORGEN },
 					["groups"] = {
@@ -1016,27 +1016,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(14402, {	-- Ready to Go
-					["qg"] = 36458,	-- Grandma Wahl
-					["sourceQuest"] = 14401,	-- Grandma's Cat
-					["coord"] = { 32.52, 75.48, GILNEAS },
 					["description"] = "Given if the |cFFFFD700Grandma Wahl|r questline is completed last.",
+					["sourceQuest"] = 14401,	-- Grandma's Cat
+					["qg"] = 36458,	-- Grandma Wahl
+					["coord"] = { 32.52, 75.48, GILNEAS },
 					["races"] = { WORGEN },
 				}),
 				q(24673, {	-- Return to Stormglen
-					["qg"] = 37195,	-- Lord Darius Crowley
 					["sourceQuest"] = 24593,	-- Neither Human Nor Beast
+					["qg"] = 37195,	-- Lord Darius Crowley
 					["coord"] = { 68.69, 73.26, GILNEAS },
 					["races"] = { WORGEN },
 				}),
 				q(14434, {	-- Rut'theran Village
-					["qg"] = 36616,	-- Admiral Nightwind
 					["sourceQuest"] = 26706,	-- Endgame
+					["qg"] = 36616,	-- Admiral Nightwind
 					["coord"] = { 42.58, 35.95, GILNEAS },
 					["races"] = { WORGEN },
 				}),
 				q(14368, {	-- Save the Children!
-					["qg"] = 36291,	-- Melinda Hammond
 					["sourceQuest"] = 14367,	-- The Allen's Storm Caller
+					["qg"] = 36291,	-- Melinda Hammond
 					["coord"] = { 28.93, 64.04, GILNEAS },
 					["races"] = { WORGEN },
 					["groups"] = {
@@ -1060,11 +1060,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(24674, {	-- Slaves to No One
-					["qg"] = 37803,	-- Marcus
 					["sourceQuests"] = {
 						24677,	-- Flank the Forsaken
 						-- 14466,	-- The King's Observatory (TODO: need to verify if this truly is the start. Could be level-based at 15? Saw the quest offered this source but could be available earlier)
 					},
+					["qg"] = 37803,	-- Marcus
 					["coords"] = {
 						{ 70.27, 40.04, GILNEAS },
 						{ 70.64, 40.12, GILNEAS },
@@ -1082,14 +1082,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(24483, {	-- Stormglen
-					["qg"] = 37065,	-- Prince Liam Greymane
 					["sourceQuest"] = 24472,	-- Introductions Are In Order
+					["qg"] = 37065,	-- Prince Liam Greymane
 					["coord"] = { 51.81, 80.48, GILNEAS },
 					["races"] = { WORGEN },
 				}),
 				q(24468, {	-- Stranded at the Marsh
-					["qg"] = 37065,	-- Prince Liam Greymane
 					["sourceQuest"] = 24438,	-- Exodus
+					["qg"] = 37065,	-- Prince Liam Greymane
 					["coord"] = { 51.81, 80.48, GILNEAS },
 					["races"] = { WORGEN },
 					["groups"] = {
@@ -1104,17 +1104,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(24617, {	-- Tal'doren, the Wild Home
-					["qg"] = 37822,	-- Belysra Starbreeze
 					["sourceQuest"] = 24616,	-- Losing Your Tail
+					["qg"] = 37822,	-- Belysra Starbreeze
 					["coord"] = { 63.35, 82.92, GILNEAS },
 					["races"] = { WORGEN },
 				}),
 				q(24646, {	-- Take Back What's Ours
+					["sourceQuest"] = 24627,	-- At Our Doorstep
 					["providers"] = {
 						{ "n", 37195 },	-- Lord Darius Crowley
 						{ "i", 50134 },	-- Horn of Tal'doren
 					},
-					["sourceQuest"] = 24627,	-- At Our Doorstep
 					["coord"] = { 68.69, 73.26, GILNEAS },
 					["races"] = { WORGEN },
 					["groups"] = {
@@ -1128,14 +1128,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(14367, {	-- The Allen's Storm Caller
-					["qg"] = 34571,	-- Gwen Armstead
 					["sourceQuest"] = 14366,	-- Holding Steady
+					["qg"] = 34571,	-- Gwen Armstead
 					["coord"] = { 37.42, 63.34, GILNEAS },
 					["races"] = { WORGEN },
 				}),
 				q(24904, {	-- The Battle For Gilneas City
-					["qg"] = 37783,	-- Lorna Crowley
 					["sourceQuest"] = 24676,	-- Push Them Out
+					["qg"] = 37783,	-- Lorna Crowley
 					["coord"] = { 70.87, 39.83, GILNEAS },
 					["races"] = { WORGEN },
 					["groups"] = {
@@ -1153,29 +1153,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(24578, {	-- The Blackwald
-					["qg"] = 37815,	-- Lorna Crowley
 					["sourceQuests"] = {
 						24495,	-- Pieces of the Past
 						24501,	-- Queen-Sized Troubles
 					},
+					["qg"] = 37815,	-- Lorna Crowley
 					["coord"] = { 60.27, 91.85, GILNEAS },
 					["races"] = { WORGEN },
 				}),
 				q(14406, {	-- The Crowley Orchard
-					["qg"] = 36452,	-- Gwen Armstead
 					["sourceQuest"] = 14397,	-- Evacuation
+					["qg"] = 36452,	-- Gwen Armstead
 					["coord"] = { 37.63, 65.20, GILNEAS },
 					["races"] = { WORGEN },
 				}),
 				q(14403, {	-- The Hayward Brothers
-					["qg"] = 36452,	-- Gwen Armstead
 					["sourceQuest"] = 14397,	-- Evacuation
+					["qg"] = 36452,	-- Gwen Armstead
 					["coord"] = { 37.63, 65.20, GILNEAS },
 					["races"] = { WORGEN },
 				}),
 				q(14416, {	-- The Hungry Ettin
-					["qg"] = 36457,	-- Lorna Crowley
 					["sourceQuest"] = 14406,	-- The Crowley Orchard
+					["qg"] = 36457,	-- Lorna Crowley
 					["coord"] = { 37.68, 72.75, GILNEAS },
 					["races"] = { WORGEN },
 					["groups"] = {
@@ -1187,8 +1187,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(14466, {	-- The King's Observatory
-					["qg"] = 36606,	-- Queen Mia Greymane
 					["sourceQuest"] = 14465,	-- To Greymane Manor
+					["qg"] = 36606,	-- Queen Mia Greymane
 					["coords"] = {
 						{ 28.97, 51.56, GILNEAS },	-- Building Entrance
 						{ 62.22, 49.70, 181 },	-- Queen Mia Location
@@ -1196,8 +1196,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = { WORGEN },
 				}),
 				q(24681, {	-- They Have Allies, But So Do We
-					["qg"] = 38149,	-- Lord Darius Crowley
 					["sourceQuest"] = 24680,	-- Keel Harbor
+					["qg"] = 38149,	-- Lord Darius Crowley
 					["coord"] = { 41.94, 37.62, GILNEAS },
 					["races"] = { WORGEN },
 					["groups"] = {
@@ -1215,19 +1215,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(14465, {	-- To Greymane Manor
-					["qg"] = 36452,	-- Gwen Armstead
+					["description"] = "Only one of the source quests can be turned in, but all become marked completed.",
 					["sourceQuests"] = {
 						14405,	-- Escape By Sea
 						14463,	-- Horses for Duskhaven
 						14402,	-- Ready to Go
 					},
+					["qg"] = 36452,	-- Gwen Armstead
 					["coord"] = { 37.63, 65.20, GILNEAS },
-					["description"] = "Only one of the source quests can be turned in, but all become marked completed.",
 					["races"] = { WORGEN },
 				}),
 				q(14382, {	-- Two By Sea
-					["qg"] = 36290,	-- Lord Godfrey
 					["sourceQuest"] = 14367,	-- The Allen's Storm Caller
+					["qg"] = 36290,	-- Lord Godfrey
 					["coord"] = { 28.97, 63.93, GILNEAS },
 					["races"] = { WORGEN },
 					["groups"] = {
@@ -1247,8 +1247,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(14369, {	-- Unleash the Beast
-					["qg"] = 36290,	-- Lord Godfrey
 					["sourceQuest"] = 14367,	-- The Allen's Storm Caller
+					["qg"] = 36290,	-- Lord Godfrey
 					["coord"] = { 28.97, 63.93, GILNEAS },
 					["races"] = { WORGEN },
 					["groups"] = {
@@ -1265,8 +1265,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(14412, {	-- Washed Up
-					["qg"] = 36456,	-- Sebastian Hayward
 					["sourceQuest"] = 14403,	-- The Hayward Brothers
+					["qg"] = 36456,	-- Sebastian Hayward
 					["coord"] = { 36.88, 84.18, GILNEAS },
 					["races"] = { WORGEN },
 					["groups"] = {
@@ -1281,8 +1281,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(14348, {	-- You Can't Take 'Em Alone
-					["qg"] = 36140,	-- Prince Liam Greymane
 					["sourceQuest"] = 14336,	-- Kill or Be Killed
+					["qg"] = 36140,	-- Prince Liam Greymane
 					["coord"] = { 35.75, 66.29, GILNEAS },
 					["races"] = { WORGEN },
 					["groups"] = {

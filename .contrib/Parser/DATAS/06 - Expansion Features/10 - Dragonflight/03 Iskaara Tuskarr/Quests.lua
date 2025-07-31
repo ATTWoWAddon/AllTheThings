@@ -25,16 +25,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 					------ BoP Sacred Tuskarr Totem ------
 					q(70926, {	-- Stolen Totems
-						["provider"] = { "n", 186448 },	-- Elder Poa
 						["sourceQuests"] = { 70936 },	-- Stolen Tuskaar Totems
+						["provider"] = { "n", 186448 },	-- Elder Poa
 						["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
 						["maxReputation"] = { FACTION_ISKAARA_TUSKARR, 30 },
 						["cost"] = {{ "i", 200071, 1 }},	-- 1x Sacred Tuskarr Totem
 						["repeatable"] = true,
 					}),
 					q(70927, {	-- More Stolen Totems
-						["provider"] = { "n", 186448 },	-- Elder Poa
 						["sourceQuests"] = { 70936 },	-- Stolen Tuskaar Totems
+						["provider"] = { "n", 186448 },	-- Elder Poa
 						["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
 						["maxReputation"] = { FACTION_ISKAARA_TUSKARR, 30 },
 						["cost"] = {{ "i", 200071, 5 }},	-- 5x Sacred Tuskarr Totem
@@ -42,16 +42,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 					------ BoA Sacred Tuskarr Totem ------
 					q(71040, {	-- Stolen Totems
-						["provider"] = { "n", 186448 },	-- Elder Poa
 						["sourceQuests"] = { 70936 },	-- Stolen Tuskaar Totems
+						["provider"] = { "n", 186448 },	-- Elder Poa
 						["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
 						["maxReputation"] = { FACTION_ISKAARA_TUSKARR, 30 },
 						["cost"] = {{ "i", 200449, 1 }},	-- 1x Sacred Tuskarr Totem
 						["repeatable"] = true,
 					}),
 					q(71041, {	-- More Stolen Totems
-						["provider"] = { "n", 186448 },	-- Elder Poa
 						["sourceQuests"] = { 70936 },	-- Stolen Tuskaar Totems
+						["provider"] = { "n", 186448 },	-- Elder Poa
 						["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
 						["maxReputation"] = { FACTION_ISKAARA_TUSKARR, 30 },
 						["cost"] = {{ "i", 200449, 5 }},	-- 5x Sacred Tuskarr Totem
@@ -59,8 +59,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 				}, {	-- RENOWN 3 --
 					q(70938, {	-- Community Feasts
-						["provider"] = { "n", 197631 },	-- Rowie
 						["description"] = "Spawns Anywhere on Dragon Isles.",
+						["provider"] = { "n", 197631 },	-- Rowie
 						["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 					}),
 					q(72385, {	-- Dragon Isles Supplies
@@ -95,8 +95,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
 					}),
 					q(72291, {	-- Story of a Memorable Victory
-						["provider"] = { "i", 201470 },	-- Story of a Memorable Victory
 						-- ["sourceQuests"] = { 70940 },	-- Tuskarr Champion's Tales
+						["provider"] = { "i", 201470 },	-- Story of a Memorable Victory
 						["isWeekly"] = true,
 					}),
 					q(72875, {	-- Dragon Isles Supplies
@@ -164,9 +164,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 				}, {	-- RENOWN 9 --
 					q(70959, {	-- Cute and Cuddly
+						["description"] = "Runs around Iskaara.",
 						["provider"] = { "n", 186564 },	-- Jiq
 						["coord"] = { 13.5, 49.2, THE_AZURE_SPAN },
-						["description"] = "Runs around Iskaara.",
 						["groups"] = {
 							i(193837),	-- Backswimmer Timbertooth (PET!)
 							i(193225),	-- Whiskuk (PET!)
@@ -191,32 +191,32 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 				}, {	-- RENOWN 11 --
 					q(68863, {	-- A Lost Tribe
-						["provider"] = { "n", 197631 },	-- Rowie
 						["description"] = "Spawns Anywhere on Dragon Isles.",
+						["provider"] = { "n", 197631 },	-- Rowie
 						["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 						["isBreadcrumb"] = true,
 					}),
 					q(68640, {	-- Sudden Isolation
-						["provider"] = { "n", 193006 },	-- Murik
 						["sourceQuests"] = { 68863 },	-- A Lost Tribe
+						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
 					}),
 					q(66409, {	-- Pressing Matters
-						["provider"] = { "n", 188301 },	-- Guard Hakota
 						["sourceQuests"] = { 68640 },	-- Sudden Isolation
+						["provider"] = { "n", 188301 },	-- Guard Hakota
 						["coord"] = { 55.1, 38.3, THE_WAKING_SHORES },
 						["groups"] = {
 							i(191855),	-- Qalashi Trophy (QI!)
 						},
 					}),
 					q(66410, {	-- Worst Impressions
-						["provider"] = { "n", 188301 },	-- Guard Hakota
 						["sourceQuests"] = { 66409 },	-- Pressing Matters
+						["provider"] = { "n", 188301 },	-- Guard Hakota
 						["coord"] = { 55.1, 38.3, THE_WAKING_SHORES },
 					}),
 					q(66411, {	-- Troubled Waters
-						["provider"] = { "n", 188283 },	-- Elder Unujaak
 						["sourceQuests"] = { 66410 },	-- Worst Impressions
+						["provider"] = { "n", 188283 },	-- Elder Unujaak
 						["coord"] = { 53.7, 37.9, THE_WAKING_SHORES },
 						["groups"] = {
 							i(192191),	-- Tuskarr Fishing Net (QI!)
@@ -224,8 +224,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						},
 					}),
 					q(66417, {	-- Salvaging Supplies
-						["provider"] = { "n", 188285 },	-- Crafter Kuliqa
 						["sourceQuests"] = { 66410 },	-- Worst Impressions
+						["provider"] = { "n", 188285 },	-- Crafter Kuliqa
 						["coord"] = { 53.6, 38.0, THE_WAKING_SHORES },
 						["groups"] = {
 							i(191863),	-- Waterlogged Wood (QI!)
@@ -233,8 +233,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						},
 					}),
 					q(66413, {	-- Encroaching Heat
-						["provider"] = { "o", 384405 },	-- Half-Boiled Fish
 						["sourceQuests"] = { 66410 },	-- Worst Impressions
+						["provider"] = { "o", 384405 },	-- Half-Boiled Fish
 						["coord"] = { 53.1, 35.3, THE_WAKING_SHORES },
 						["groups"] = {
 							i(201787),	-- Recipe: Filet of Fangs (RECIPE!)
@@ -245,34 +245,34 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						},
 					}),
 					q(66418, {	-- Testing the Tuskaprsenal
-						["provider"] = { "n", 188285 },	-- Crafter Kuliqa
 						["sourceQuests"] = { 66417 },	-- Salvaging Supplies
+						["provider"] = { "n", 188285 },	-- Crafter Kuliqa
 						["coord"] = { 54.3, 38.7, THE_WAKING_SHORES },
 						["groups"] = {
 							i(199830),	-- Tuskarr Training Dummy (TOY!)
 						},
 					}),
 					q(66414, {	-- All But One
-						["provider"] = { "n", 187323 },	-- Tutaqan
 						["sourceQuests"] = {
 							66418,	-- Testing the Tuskaprsenal
 							66411,	-- Troubled Waters
 						},
+						["provider"] = { "n", 187323 },	-- Tutaqan
 						["coord"] = { 53.7, 38.0, THE_WAKING_SHORES },
 					}),
 					q(66440, {	-- Closure
-						["provider"] = { "n", 188283 },	-- Elder Unujaak
 						["sourceQuests"] = { 66414 },	-- All But One
+						["provider"] = { "n", 188283 },	-- Elder Unujaak
 						["coord"] = { 55.0, 36.5, THE_WAKING_SHORES },
 					}),
 					q(66431, {	-- In Mourning
-						["provider"] = { "n", 188283 },	-- Elder Unujaak
 						["sourceQuests"] = { 66440 },	-- Closure
+						["provider"] = { "n", 188283 },	-- Elder Unujaak
 						["coord"] = { 53.6, 39.3, THE_WAKING_SHORES },
 					}),
 					q(66415, {	-- The Only Way Past Is Through
-						["provider"] = { "n", 187323 },	-- Tutaqan
 						["sourceQuests"] = { 66431 },	-- In Mourning
+						["provider"] = { "n", 187323 },	-- Tutaqan
 						["coord"] = { 53.9, 41.3, THE_WAKING_SHORES },
 						["groups"] = {
 							i(200188),	-- Broken Fishing Pole (QI!)
@@ -281,13 +281,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						},
 					}),
 					q(66443, {	-- Calling the Hunting Party
+						["description"] = "Automatically given after the previous quest.",
 						["sourceQuests"] = { 66415 },	-- The Only Way Past Is Through
 						["coord"] = { 53.9, 41.3, THE_WAKING_SHORES },
-						["description"] = "Automatically given after the previous quest.",
 					}),
 					q(66444, {	-- While the Iron Is Hot
-						["provider"] = { "n", 187323 },	-- Tutaqan
 						["sourceQuests"] = { 66443 },	-- Calling the Hunting Party
+						["provider"] = { "n", 187323 },	-- Tutaqan
 						["coord"] = { 53.9, 38.1, THE_WAKING_SHORES },
 						["groups"] = {
 							r(390631),	-- Ottuk Taming (CI!)
@@ -393,8 +393,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
 					}),
 					q(72292, {	-- Story of a Spectacular Victory
-						["provider"] = { "i", 201471 },	-- Story of a Spectacular Victory
 						-- ["sourceQuests"] = { 70978 },	-- Dragon Isles Champion's Tales (inaccurate)
+						["provider"] = { "i", 201471 },	-- Story of a Spectacular Victory
 						["isWeekly"] = true,
 					}),
 					q(72280, {	-- Dragon Isles Supplies
@@ -460,8 +460,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 				}, {	-- RENOWN 19 --
 					q(70956, {	-- Of Azure Scales
-						["provider"] = { "n", 196544 },	-- Norukk
 						["altQuests"] = { 72634 },	-- Dragon Isles Supplies [Renown 19]
+						["provider"] = { "n", 196544 },	-- Norukk
 						["coord"] = { 12.9, 48.6, THE_AZURE_SPAN },
 						-- TODO: this has some source quest? otherwise 72634 is offerred instead
 						["groups"] = {
@@ -474,8 +474,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						},
 					}),
 					q(72634, {	-- Dragon Isles Supplies
-						["provider"] = { "n", 193006 },	-- Murik
 						["altQuests"] = { 70956 },	-- Of Azure Scales [Renown 19]
+						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
 						["timeline"] = { REMOVED_11_0_0 },
 						["DisablePartySync"] = true,
@@ -660,8 +660,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 				}, {	-- RENOWN 29 --
 					q(70977, {	-- Scaps Packs
-						["provider"] = { "n", 187680 },	-- Scaps
 						["sourceQuests"] = { 66223 },	-- Can We Keep It?
+						["provider"] = { "n", 187680 },	-- Scaps
 						["coord"] = { 12.9, 48.6, THE_AZURE_SPAN },
 						["groups"] = {
 							i(198337),	-- Azure Paw Pack

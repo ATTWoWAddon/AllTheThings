@@ -8,9 +8,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 		["groups"] = {
 			n(QUESTS, {
 				q(83099, {	-- Mergers and Acquisitions
-					["providers"] = {
-						{ "n", 216088 },	-- Wenbrandt
-						{ "n", 226409 },	-- Wenbrandt
+					["qgs"] = {
+						216088,	-- Wenbrandt
+						226409,	-- Wenbrandt
 					},
 					["coords"] = {
 						{ 50, 50, 2335 },	-- Cinderbrew Meadery

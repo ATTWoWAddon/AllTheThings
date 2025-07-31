@@ -23,15 +23,15 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 			n(QUESTS, sharedData({ ["isDaily"] = true, ["maxReputation"] = { FACTION_THE_AUGUST_CELESTIALS, EXALTED }, }, {	-- Daily Quests
 				-- Krasarang Wilds
 				q(31378, {	-- Challenge At The Temple of the Red Crane (A)
-					["qg"] = 64032,	-- Sage Whiteheart
 					["sourceQuest"] = 31512,	-- A Witness to History (A)
+					["qg"] = 64032,	-- Sage Whiteheart
 					["coord"] = { 84.6, 63.6, VALE_OF_ETERNAL_BLOSSOMS },
 					["maps"] = { KRASARANG_WILDS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(31379, {	-- Challenge At The Temple of the Red Crane (H)
-					["qg"] = 64001,	-- Sage Lotusbloom
 					["sourceQuest"] = 31511,	-- A Witness to History (H)
+					["qg"] = 64001,	-- Sage Lotusbloom
 					["coord"] = { 62.7, 23.3, VALE_OF_ETERNAL_BLOSSOMS },
 					["maps"] = { KRASARANG_WILDS },
 					["races"] = HORDE_ONLY,
@@ -142,15 +142,15 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 
 				-- Kun-Lai Summit
 				q(31380, {	-- Trial At The Temple of the White Tiger (A)
-					["qg"] = 64032,	-- Sage Whiteheart
 					["sourceQuest"] = 31512,	-- A Witness to History (A)
+					["qg"] = 64032,	-- Sage Whiteheart
 					["coord"] = { 84.6, 63.6, VALE_OF_ETERNAL_BLOSSOMS },
 					["maps"] = { KUN_LAI_SUMMIT },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(31381, {	-- Trial At The Temple of the White Tiger (H)
-					["qg"] = 64001,	-- Sage Lotusbloom
 					["sourceQuest"] = 31511,	-- A Witness to History (H)
+					["qg"] = 64001,	-- Sage Lotusbloom
 					["coord"] = { 62.7, 23.3, VALE_OF_ETERNAL_BLOSSOMS },
 					["maps"] = { KUN_LAI_SUMMIT },
 					["races"] = HORDE_ONLY,
@@ -186,8 +186,8 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(30881, {	-- Round 2: Clever Ashyo & Ken-Ken
-					["qg"] = 60968,	-- Xuen
 					["sourceQuest"] = 30879,	-- Round 1: Brewmaster Chani
+					["qg"] = 60968,	-- Xuen
 					["coord"] = { 70.3, 51.3, KUN_LAI_SUMMIT },
 					["groups"] = {
 						objective(1, {	-- Defeat Clever Ashyo
@@ -201,8 +201,8 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(30882, {	-- Round 2: Kang Bramblestaff
-					["qg"] = 60968,	-- Xuen
 					["sourceQuest"] = 30880,	-- Round 1: The Streetfighter
+					["qg"] = 60968,	-- Xuen
 					["coord"] = { 70.3, 51.3, KUN_LAI_SUMMIT },
 					["groups"] = {
 						objective(1, {	-- Defeat Kang Bramblestaff
@@ -212,8 +212,8 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(30885, {	-- Round 3: Master Boom Boom
-					["qg"] = 60968,	-- Xuen
 					["sourceQuest"] = 30882,	-- Round 2: Kang Bramblestaff
+					["qg"] = 60968,	-- Xuen
 					["coord"] = { 71.7, 45.0, KUN_LAI_SUMMIT },
 					["groups"] = {
 						objective(1, {	-- Defeat Master Boom Boom
@@ -223,8 +223,8 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(30883, {	-- Round 3: The Wrestler
-					["qg"] = 60968,	-- Xuen
 					["sourceQuest"] = 30881,	-- Round 2: Clever Ashyo & Ken-Ken
+					["qg"] = 60968,	-- Xuen
 					["coord"] = { 71.7, 44.9, KUN_LAI_SUMMIT },
 					["groups"] = {
 						objective(1, {	-- Defeat The Wrestler
@@ -234,8 +234,8 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(30902, {	-- Round 4: Master Windfur
-					["qg"] = 60968,	-- Xuen
 					["sourceQuest"] = 30885,	-- Round 3: Master Boom Boom
+					["qg"] = 60968,	-- Xuen
 					["coord"] = { 66.4, 46.3, KUN_LAI_SUMMIT },
 					["groups"] = {
 						objective(1, {	-- Defeat Master Windfur
@@ -245,8 +245,8 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(30907, {	-- Round 4: The P.U.G.
-					["qg"] = 60968,	-- Xuen
 					["sourceQuest"] = 30883,	-- Round 3: The Wrestler
+					["qg"] = 60968,	-- Xuen
 					["coord"] = { 66.5, 46.4, KUN_LAI_SUMMIT },
 					["groups"] = {
 						objective(1, {	-- Defeat Hackiss
@@ -276,15 +276,15 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 
 				-- The Jade Forest
 				q(31376, {	-- Attack At The Temple of the Jade Serpent (A)
-					["qg"] = 64032,	-- Sage Whiteheart
 					["sourceQuest"] = 31512,	-- A Witness to History (A)
+					["qg"] = 64032,	-- Sage Whiteheart
 					["coord"] = { 84.6, 63.6, VALE_OF_ETERNAL_BLOSSOMS },
 					["maps"] = { THE_JADE_FOREST },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(31377, {	-- Attack At The Temple of the Jade Serpent (H)
-					["qg"] = 64001,	-- Sage Lotusbloom
 					["sourceQuest"] = 31511,	-- A Witness to History (H)
+					["qg"] = 64001,	-- Sage Lotusbloom
 					["coord"] = { 62.7, 23.3, VALE_OF_ETERNAL_BLOSSOMS },
 					["maps"] = { THE_JADE_FOREST },
 					["races"] = HORDE_ONLY,
@@ -318,8 +318,8 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(30068, {	-- Flames of the Void
-					["qg"] = 57324,	-- Elder Sage Tai-Feng
 					["sourceQuest"] = 30066,	-- Hidden Power
+					["qg"] = 57324,	-- Elder Sage Tai-Feng
 					["coord"] = { 53.8, 61.8, THE_JADE_FOREST },
 					--	may also require "Saving the Sutras" and "The Darkness Around Us"
 					["groups"] = {
@@ -385,15 +385,15 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 
 				-- Townlong Steppes
 				q(31382, {	-- Defense At Niuzao Temple (A)
-					["qg"] = 64032,	-- Sage Whiteheart
 					["sourceQuest"] = 31512,	-- A Witness to History (A)
+					["qg"] = 64032,	-- Sage Whiteheart
 					["coord"] = { 84.6, 63.6, VALE_OF_ETERNAL_BLOSSOMS },
 					["maps"] = { TOWNLONG_STEPPES },
 					["races"] = ALLIANCE_ONLY
 				}),
 				q(31383, {	-- Defense At Niuzao Temple (H)
-					["qg"] = 64001,	-- Sage Lotusbloom
 					["sourceQuest"] = 31511,	-- A Witness to History (H)
+					["qg"] = 64001,	-- Sage Lotusbloom
 					["coord"] = { 62.7, 23.3, VALE_OF_ETERNAL_BLOSSOMS },
 					["maps"] = { TOWNLONG_STEPPES },
 					["races"] = HORDE_ONLY,

@@ -91,42 +91,42 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				["lvl"] = 85,
 				["groups"] = {
 					a(q(29453, {	-- Your Time Has Come [A]
-						["qg"] = 53115,	-- Molten Lord
 						["description"] = "This quest is auto accepted upon killing a Molten Lord.",
+						["qg"] = 53115,	-- Molten Lord
 						["maps"] = { STORMWIND_CITY },
 						["isBreadcrumb"] = true,    -- for A Legendary Engagement
 					})),
 					h(q(29452, {	-- Your Time Has Come [H]
-						["qg"] = 53115,	-- Molten Lord
 						["description"] = "This quest is auto accepted upon killing a Molten Lord.",
+						["qg"] = 53115,	-- Molten Lord
 						["maps"] = { ORGRIMMAR },
 						["isBreadcrumb"] = true,    -- for A Legendary Engagement
 					})),
 					a(q(29132, {	-- A Legendary Engagement [A]
-						["qg"] = 52408,	-- Coridormi
-						["sourceQuest"] = 29453,	-- Your Time Has Come [A]
-						["coord"] = { 47.2, 91.2, STORMWIND_CITY },
 						["description"] = "Located inside Portal tower.\n\nThis is a really great quest to pick up on a character that you don't plan to ever get the legendary on. So long as you never finish this quest you have a very very convenient port to the heart of the Caverns of Time from Stormwind or Orgrimmar.",
+						["sourceQuest"] = 29453,	-- Your Time Has Come [A]
+						["qg"] = 52408,	-- Coridormi
+						["coord"] = { 47.2, 91.2, STORMWIND_CITY },
 						["maps"] = { CAVERNS_OF_TIME },
 					})),
 					h(q(29129, {	-- A Legendary Engagement [H]
-						["qg"] = 52382,	-- Ziradormi
-						["sourceQuest"] = 29452,	-- Your Time Has Come [H]
-						["coord"] = { 48.8, 70.1, ORGRIMMAR },
 						["description"] = "This is a really great quest to pick up on a character that you don't plan to ever get the legendary on. So long as you never finish this quest you have a very very convenient port to the heart of the Caverns of Time from Stormwind or Orgrimmar.",
+						["sourceQuest"] = 29452,	-- Your Time Has Come [H]
+						["qg"] = 52382,	-- Ziradormi
+						["coord"] = { 48.8, 70.1, ORGRIMMAR },
 						["maps"] = { CAVERNS_OF_TIME },
 					})),
 					q(29134, {	-- A Wrinkle in Time
-						["qg"] = 15192,	-- Anachronos
 						["sourceQuests"] = {
 							29129,	-- A Legendary Engagement [H]
 							29132,	-- A Legendary Engagement [A]
 						},
+						["qg"] = 15192,	-- Anachronos
 						["coord"] = { 41.8, 49.8, CAVERNS_OF_TIME },
 					}),
 					q(29135, {	-- All-Seeing Eye
-						["qg"] = 15192,	-- Anachronos
 						["sourceQuest"] = 29134,	-- A Wrinkle in Time
+						["qg"] = 15192,	-- Anachronos
 						["coord"] = { 41.8, 49.8, CAVERNS_OF_TIME },
 						-- #if NOT OBJECTIVES
 						["cost"] = {
@@ -145,8 +145,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						-- #endif
 					}),
 					q(29193, {	-- On a Wing and a Prayer
-						["qg"] = 15192,	-- Anachronos
 						["sourceQuest"] = 29135,	-- All-Seeing Eye
+						["qg"] = 15192,	-- Anachronos
 						["coord"] = { 41.8, 49.8, CAVERNS_OF_TIME },
 						["groups"] = {
 							objective(1, {	-- Brought Timeless Eye to Coldarra
@@ -158,28 +158,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						},
 					}),
 					q(29194, {	-- Through a Glass, Darkly
-						["qg"] = 52835,	-- Tarecgosa
 						["sourceQuest"] = 29193,	-- On a Wing and a Prayer
+						["qg"] = 52835,	-- Tarecgosa
 						["coord"] = { 34.5, 25.3, BOREAN_TUNDRA },
 						["maps"] = { 370 },		-- The Nexus (Scenario Map)
 					}),
 					q(29225, {	-- Actionable Intelligence
-						["qg"] = 53567,	-- Tarecgosa
 						["sourceQuest"] = 29194,	-- Through a Glass, Darkly
+						["qg"] = 53567,	-- Tarecgosa
 						["maps"] = { 370, MOUNT_HYJAL },		-- The Nexus (Scenario Map)
 					}),
 					q(29234, {	-- Delegation
-						["qg"] = 52995,	-- Kalecgos
-						["providers"] = {
-							{ "o", 209098 },	-- Circle of Thorns Portal
-						},
-						["sourceQuests"] = {
-							29225,	-- Actionable Intelligence
-							-- #IF NOT ANYCLASSIC
-							29432,	-- Delegation Tracker HQT
-							-- #ENDIF
-						},
-						["coord"] = { 62.1, 23.1, MOUNT_HYJAL },
 						["description"] =
 							-- #IF ANYCLASSIC
 							"Defeat Volcanus and recover the Branch of Nordrassil. In order to summon him, you need to open the Circle of Thorns portal. You can do this by completing the Delgation Tracker quest or by having someone else that has previously opened their own portal open the portal for you.\n\nNOTE: You will be locked out of doing the same for others should you choose to go this route.",
@@ -188,6 +177,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							-- but that is a very niche scenario that likely no one would actually perform on purpose so doesn't merit being in the description
 							"Defeat Volcanus and recover the Branch of Nordrassil. In order to summon him, you need to open the Circle of Thorns portal.",
 							-- #ENDIF
+						["sourceQuests"] = {
+							29225,	-- Actionable Intelligence
+							-- #IF NOT ANYCLASSIC
+							29432,	-- Delegation Tracker HQT
+							-- #ENDIF
+						},
+						["qg"] = 52995,	-- Kalecgos
+						["providers"] = {
+							{ "o", 209098 },	-- Circle of Thorns Portal
+						},
+						["coord"] = { 62.1, 23.1, MOUNT_HYJAL },
 						["groups"] = {
 							objective(1, {	-- Branch of Nordrassil
 								["provider"] = { "i", 69646 },	-- Branch of Nordrassil
@@ -208,8 +208,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						},
 					}),
 					q(29239, {	-- Nordrassil's Bough
-						["qg"] = 53009,	-- Kalecgos
 						["sourceQuest"] = 29234,	-- Delegation
+						["qg"] = 53009,	-- Kalecgos
 						["coord"] = { 46.4, 35.4, BOREAN_TUNDRA },
 						["groups"] = {
 							i(71084, {	-- Branch of Nordrassil
@@ -218,13 +218,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						},
 					}),
 					q(29240, {	-- Emergency Extraction
-						["qg"] = 53009,	-- Kalecgos
 						["sourceQuest"] = 29239,	-- Nordrassil's Bough
+						["qg"] = 53009,	-- Kalecgos
 						["coord"] = { 46.4, 35.4, BOREAN_TUNDRA },
 					}),
 					q(29269, {	-- At One
-						["qg"] = 53149,	-- Kalecgos
 						["sourceQuest"] = 29240,	-- Emergency Extraction
+						["qg"] = 53149,	-- Kalecgos
 						["coord"] = { 31, 24, BOREAN_TUNDRA },
 						["groups"] = {
 							objective(1, {	-- Bonded with Tarecgosa's Essence
@@ -236,8 +236,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						},
 					}),
 					q(29270, {	-- Time Grows Short
-						["qg"] = 53210,	-- Kalecgos
 						["sourceQuest"] = 29269,	-- At One
+						["qg"] = 53210,	-- Kalecgos
 						["coord"] = { 31, 24, BOREAN_TUNDRA },
 						["groups"] = {
 							objective(1, {	-- 0/1000 Seething Cinder
@@ -246,8 +246,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						},
 					}),
 					q(29285, {	-- Alignment
-						["qg"] = 53215,	-- Kalecgos
 						["sourceQuest"] = 29270,	-- Time Grows Short
+						["qg"] = 53215,	-- Kalecgos
 						["coord"] = { 23, 30.8, BOREAN_TUNDRA },
 						["groups"] = {
 							objective(1, {	-- Witnessed Kalecgos's Ascension

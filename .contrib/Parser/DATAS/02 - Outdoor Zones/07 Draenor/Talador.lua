@@ -311,148 +311,148 @@ root(ROOTS.Zones, {
 				n(QUESTS, {
 					header(HEADERS.Achievement, 8987, {	-- Arcane Sanctum
 						q(34631, {	-- An Audience With The Archmage
+							["sourceQuest"] = 34558,	-- At Your Command
 							["provider"] = { "n", 79133 },	-- Foreman Eksos
 							["coord"] = { 69.8, 20.8, TALADOR },
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 34558,	-- At Your Command
 						}),
 						q(34632, {	-- An Audience With The Archmage
+							["sourceQuest"] = 34566,	-- At Your Command
 							["provider"] = { "n", 79176 },	-- Foreman Grobash
 							["coord"] = { 71.0, 29.7, TALADOR },
 							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 34566,	-- At Your Command
 						}),
 						q(34609, {	-- Creating the Ink
+							["sourceQuest"] = 34815,	-- Making Acquaintances
 							["provider"] = { "n", 79392 },	-- Magister Serena
 							["coord"] = { 84.9, 30.9, TALADOR },
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 34815,	-- Making Acquaintances
 						}),
 						q(34634, {	-- Creating the Ink
+							["sourceQuest"] = 34814,	-- Making Acquaintances
 							["provider"] = { "n", 79393 },	-- Magister Krelas
 							["coord"] = { 84.1, 30.2, TALADOR },
 							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 34814,	-- Making Acquaintances
 						}),
 						q(34913, {	-- Dropping In
+							["sourceQuest"] = 34908,	-- The Foot of the Fortress
 							["provider"] = { "n", 80607 },	-- Magister Serena
 							["coord"] = { 62.2, 68.2, TALADOR },
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 34908,	-- The Foot of the Fortress
 						}),
 						q(34879, {	-- Dropping In
+							["sourceQuest"] = 34878,	-- The Foot of the Fortress
 							["provider"] = { "n", 80396 },	-- Magister Krelas
 							["coord"] = { 62.2, 68.2, TALADOR },
 							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 34878,	-- The Foot of the Fortress
 						}),
 						q(34711, {	-- Due Cause to Celebrate (A)
+							["sourceQuest"] = 34912,	-- The Final Step
 							["provider"] = { "n", 80617 },	-- Kirin Tor Magus (Magister Serena)
 							["coord"] = { 64.2, 81.8, TALADOR },
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 34912,	-- The Final Step
 						}),
 						q(34712, {	-- Due Cause to Celebrate (H)
+							["sourceQuest"] = 34890,	-- The Final Step
 							["provider"] = { "n", 80389 },	-- Kirin Tor Magus (Magister Krelas)
 							["coord"] = { 64.2, 81.7, TALADOR },
 							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 34890,	-- The Final Step
 						}),
 						q(34612, {	-- Forming the Scroll
+							["sourceQuest"] = 34815,	-- Making Acquaintances
 							["provider"] = { "n", 79392 },	-- Magister Serena
 							["coord"] = { 84.9, 30.9, TALADOR },
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 34815,	-- Making Acquaintances
 						}),
 						q(34635, {	-- Forming the Scroll
+							["sourceQuest"] = 34814,	-- Making Acquaintances
 							["provider"] = { "n", 79393 },	-- Magister Krelas
 							["coord"] = { 84.1, 30.2, TALADOR },
 							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 34814,	-- Making Acquaintances
 						}),
 						q(34619, {	-- Gathering the Spark
+							["sourceQuest"] = 34815,	-- Making Acquaintances
 							["provider"] = { "n", 79392 },	-- Magister Serena
 							["coord"] = { 84.9, 30.9, TALADOR },
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 34815,	-- Making Acquaintances
 						}),
 						q(34636, {	-- Gathering the Spark
+							["sourceQuest"] = 34814,	-- Making Acquaintances
 							["provider"] = { "n", 79393 },	-- Magister Krelas
 							["coord"] = { 84.1, 30.2, TALADOR },
 							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 34814,	-- Making Acquaintances
 						}),
 						q(34993, {	-- Joining the Ranks
+							["sourceQuest"] = 34711,	-- Due Cause to Celebrate
 							["provider"] = { "n", 80672 },	-- Magister Serena
 							["coord"] = { 69.7, 20.8, TALADOR },
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 34711,	-- Due Cause to Celebrate
 							["groups"] = {
 								follower(154),	-- Magister Serena
 							},
 						}),
 						q(34949, {	-- Joining the Ranks
+							["sourceQuest"] = 34712,	-- Due Cause to Celebrate
 							["provider"] = { "n", 80553 },	-- Magister Krelas
 							["coord"] = { 71.2, 29.9, TALADOR },
 							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 34712,	-- Due Cause to Celebrate
 							["groups"] = {
 								follower(154),	-- Magister Krelas
 							},
 						}),
 						q(34814, {	-- Making Acquaintances
+							["sourceQuest"] = 34632,	-- An Audience With The Archmage
 							["provider"] = { "n", 80142 },	-- Archmage Khadgar
 							["coord"] = { 74.9, 31.1, TALADOR },
 							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 34632,	-- An Audience With The Archmage
 						}),
 						q(34815, {	-- Making Acquaintances
+							["sourceQuest"] = 34631,	-- An Audience With The Archmage
 							["provider"] = { "n", 80142 },	-- Archmage Khadgar
 							["coord"] = { 74.9, 31.1, TALADOR },
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 34631,	-- An Audience With The Archmage
 						}),
 						q(34875, {	-- Next Steps
-							["provider"] = { "n", 79392 },	-- Magister Serena
-							["coord"] = { 84.9, 30.9, TALADOR },
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
 								34609,	-- Creating the Ink
 								34612,	-- Forming the Scroll
 								34619,	-- Gathering the Spark
 							},
+							["provider"] = { "n", 79392 },	-- Magister Serena
+							["coord"] = { 84.9, 30.9, TALADOR },
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(34874, {	-- Next Steps
-							["provider"] = { "n", 80193 },	-- Kirin Tor Magus (Magister Krelas)
-							["coord"] = { 84.1, 30.2, TALADOR },
-							["races"] = HORDE_ONLY,
 							["sourceQuests"] = {
 								34634,	-- Creating the Ink
 								34635,	-- Forming the Scroll
 								34636,	-- Gathering the Spark
 							},
+							["provider"] = { "n", 80193 },	-- Kirin Tor Magus (Magister Krelas)
+							["coord"] = { 84.1, 30.2, TALADOR },
+							["races"] = HORDE_ONLY,
 						}),
 						q(34911, {	-- Orbs of Power
+							["sourceQuest"] = 34913,	-- Dropping In
 							["provider"] = { "n", 80608 },	-- Magister Serena
 							["coord"] = { 69.9, 69.4, TALADOR },
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 34913,	-- Dropping In
 						}),
 						q(34889, {	-- Orbs of Power
+							["sourceQuest"] = 34879,	-- Dropping In
 							["provider"] = { "n", 80390 },	-- Magister Krelas
 							["coord"] = { 68.3, 70.3, TALADOR },
 							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 34879,	-- Dropping In
 						}),
 						q(34912, {	-- The Final Step
-							["provider"] = { "n", 80608 },	-- Magister Serena
-							["coord"] = { 68.0, 80.0, TALADOR },
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
 								34911,	-- Orbs of Power
 								34910,	-- Vicious Viziers
 								34909,	-- While We're in the Neighborhood
 							},
+							["provider"] = { "n", 80608 },	-- Magister Serena
+							["coord"] = { 68.0, 80.0, TALADOR },
+							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								i(112521),	-- Auchenai Keeper Hood
 								i(112522),	-- Sha'tari Deadeye Helm
@@ -461,14 +461,14 @@ root(ROOTS.Zones, {
 							},
 						}),
 						q(34890, {	-- The Final Step
-							["provider"] = { "n", 80389 },	-- Kirin Tor Magus (Magister Krelas)
-							["coord"] = { 68.0, 80.0, TALADOR },
-							["races"] = HORDE_ONLY,
 							["sourceQuests"] = {
 								34889,	-- Orbs of Power
 								34888,	-- Vicious Viziers
 								34887,	-- While We're in the Neighborhood
 							},
+							["provider"] = { "n", 80389 },	-- Kirin Tor Magus (Magister Krelas)
+							["coord"] = { 68.0, 80.0, TALADOR },
+							["races"] = HORDE_ONLY,
 							["groups"] = {
 								i(112521),	-- Auchenai Keeper Hood
 								i(112522),	-- Sha'tari Deadeye Helm
@@ -477,189 +477,189 @@ root(ROOTS.Zones, {
 							},
 						}),
 						q(34908, {	-- The Foot of the Fortress
+							["sourceQuest"] = 34875,	-- Next Steps
 							["provider"] = { "n", 80966 },	-- Magister Serena
 							["coord"] = { 69.5, 21.0, TALADOR },
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 34875,	-- Next Steps
 						}),
 						q(34878, {	-- The Foot of the Fortress
+							["sourceQuest"] = 34874,	-- Next Steps
 							["provider"] = { "n", 80965 },	-- Magister Krelas
 							["coord"] = { 71.3, 29.5, TALADOR },
 							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 34874,	-- Next Steps
 						}),
 						q(34910, {	-- Vicious Viziers
+							["sourceQuest"] = 34913,	-- Dropping In
 							["provider"] = { "n", 80608 },	-- Magister Serena
 							["coord"] = { 69.9, 69.4, TALADOR },
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 34913,	-- Dropping In
 						}),
 						q(34888, {	-- Vicious Viziers
+							["sourceQuest"] = 34879,	-- Dropping In
 							["provider"] = { "n", 80390 },	-- Magister Krelas
 							["coord"] = { 68.3, 70.3, TALADOR },
 							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 34879,	-- Dropping In
 						}),
 						q(34909, {	-- While We're in the Neighborhood
+							["sourceQuest"] = 34913,	-- Dropping In
 							["provider"] = { "n", 80608 },	-- Magister Serena
 							["coord"] = { 69.9, 69.4, TALADOR },
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 34913,	-- Dropping In
 						}),
 						q(34887, {	-- While We're in the Neighborhood
+							["sourceQuest"] = 34879,	-- Dropping In
 							["provider"] = { "n", 80390 },	-- Magister Krelas
 							["coord"] = { 68.3, 70.3, TALADOR },
 							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 34879,	-- Dropping In
 						}),
 						n(BONUS_OBJECTIVES, {
 							q(37421, {	-- Kuuro's Claim
-								["coord"] = { 75.1, 23.4, TALADOR },
 								["sourceQuests"] = {
 									34558,	-- At Your Command (A)
 									34566,	-- At Your Command (H)
 								},
+								["coord"] = { 75.1, 23.4, TALADOR },
 							}),
 						}),
 					}),
 					n(ARTILLERY_TOWER, {
 						q(34982, {	-- Armor Up
+							["sourceQuest"] = 34981,	-- The Only Way to Travel
 							["provider"] = { "n", 80968 },	-- Miall
 							["coord"] = { 69.8, 20.7, TALADOR },
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 34981,	-- The Only Way to Travel
 							["groups"] = {
 								follower(155),	-- Miall
 							},
 						}),
 						q(34972, {	-- Armor Up
+							["sourceQuest"] = 34971,	-- The Only Way to Travel
 							["provider"] = { "n", 80623 },	-- Morketh Bladehowl
 							["coord"] = { 71.2, 29.9, TALADOR },
 							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 34971,	-- The Only Way to Travel
 							["groups"] = {
 								follower(155),	-- Morketh Bladehowl
 							},
 						}),
 						q(34976, {	-- Dropping Bombs
+							["sourceQuest"] = 34578,	-- Going to the Gordunni
 							["provider"] = { "n", 80627 },	-- Miall
 							["coord"] = { 62.5, 67.8, TALADOR },
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 34578,	-- Going to the Gordunni
 						}),
 						q(34840, {	-- Dropping Bombs
+							["sourceQuest"] = 34837,	-- Going to the Gordunni
 							["provider"] = { "n", 80229 },	-- Morketh Bladehowl
 							["coord"] = { 62.1, 69.2, TALADOR },
 							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 34837,	-- Going to the Gordunni
 						}),
 						q(34624, {	-- Gas Guzzlers
+							["sourceQuest"] = 35045,	-- In Ared's Memory
 							["provider"] = { "n", 79329 },	-- Miall
 							["coord"] = { 70.1, 20.1, TALADOR },
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 35045,	-- In Ared's Memory
 						}),
 						q(34579, {	-- Gas Guzzlers
+							["sourceQuest"] = 35102,	-- Unleashed Steel
 							["provider"] = { "n", 79356 },	-- Morketh Bladehowl
 							["coord"] = { 70.8, 30.4, TALADOR },
 							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 35102,	-- Unleashed Steel
 						}),
 						q(34578, {	-- Going to the Gordunni
-							["provider"] = { "n", 79329 },	-- Miall
-							["coord"] = { 70.1, 20.1, TALADOR },
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
 								34624,	-- Gas Guzzlers
 								34573,	-- Iridium Recovery
 								34571,	-- Out of Jovite
 							},
+							["provider"] = { "n", 79329 },	-- Miall
+							["coord"] = { 70.1, 20.1, TALADOR },
+							["races"] = ALLIANCE_ONLY,
 						}),
 						q(34837, {	-- Going to the Gordunni
-							["provider"] = { "n", 79356 },	-- Morketh Bladehowl
-							["coord"] = { 70.8, 30.4, TALADOR },
-							["races"] = HORDE_ONLY,
 							["sourceQuests"] = {
 								34579,	-- Gas Guzzlers
 								34576,	-- Iridium Recovery
 								34577,	-- Out of Jovite
 							},
+							["provider"] = { "n", 79356 },	-- Morketh Bladehowl
+							["coord"] = { 70.8, 30.4, TALADOR },
+							["races"] = HORDE_ONLY,
 						}),
 						q(35045, {	-- In Ared's Memory
+							["sourceQuest"] = 34563,	-- The Quarry Quandary
 							["provider"] = { "n", 79159 },	-- Apprentice Miall
 							["coord"] = { 69.2, 19.2, TALADOR },
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 34563,	-- The Quarry Quandary
 						}),
 						q(34573, {	-- Iridium Recovery
+							["sourceQuest"] = 35045,	-- In Ared's Memory
 							["provider"] = { "n", 79329 },	-- Miall
 							["coord"] = { 70.1, 20.1, TALADOR },
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 35045,	-- In Ared's Memory
 						}),
 						q(34576, {	-- Iridium Recovery
+							["sourceQuest"] = 35102,	-- Unleashed Steel
 							["provider"] = { "n", 79356 },	-- Morketh Bladehowl
 							["coord"] = { 70.8, 30.4, TALADOR },
 							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 35102,	-- Unleashed Steel
 						}),
 						q(34571, {	-- Out of Jovite
+							["sourceQuest"] = 35045,	-- In Ared's Memory
 							["provider"] = { "n", 79329 },	-- Miall
 							["coord"] = { 70.1, 20.1, TALADOR },
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 35045,	-- In Ared's Memory
 						}),
 						q(34577, {	-- Out of Jovite
+							["sourceQuest"] = 35102,	-- Unleashed Steel
 							["provider"] = { "n", 79356 },	-- Morketh Bladehowl
 							["coord"] = { 70.8, 30.4, TALADOR },
 							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 35102,	-- Unleashed Steel
 						}),
 						q(34978, {	-- Prized Repossessions
+							["sourceQuest"] = 34976,	-- Dropping Bombs
 							["provider"] = { "n", 80628 },	-- Miall
 							["coord"] = { 69.9, 69.8, TALADOR },
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 34976,	-- Dropping Bombs
 						}),
 						q(34858, {	-- Prized Repossessions
+							["sourceQuest"] = 34840,	-- Dropping Bombs
 							["provider"] = { "n", 80341 },	-- Morketh Bladehowl
 							["coord"] = { 62.1, 69.2, TALADOR },
 							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 34840,	-- Dropping Bombs
 						}),
 						q(34979, {	-- Punching Through
+							["sourceQuest"] = 34976,	-- Dropping Bombs
 							["provider"] = { "n", 80628 },	-- Miall
 							["coord"] = { 69.9, 69.8, TALADOR },
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 34976,	-- Dropping Bombs
 						}),
 						q(34855, {	-- Punching Through
+							["sourceQuest"] = 34840,	-- Dropping Bombs
 							["provider"] = { "n", 80341 },	-- Morketh Bladehowl
 							["coord"] = { 62.1, 69.2, TALADOR },
 							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 34840,	-- Dropping Bombs
 						}),
 						q(34977, {	-- Supply Recovery
+							["sourceQuest"] = 34976,	-- Dropping Bombs
 							["provider"] = { "n", 80628 },	-- Miall
 							["coord"] = { 69.9, 69.8, TALADOR },
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 34976,	-- Dropping Bombs
 						}),
 						q(34860, {	-- Supply Recovery
+							["sourceQuest"] = 34840,	-- Dropping Bombs
 							["provider"] = { "n", 80341 },	-- Morketh Bladehowl
 							["coord"] = { 62.1, 69.2, TALADOR },
 							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 34840,	-- Dropping Bombs
 						}),
 						q(34980, {	-- The Lord of the Gordunni
-							["provider"] = { "n", 80632 },	-- Miall
-							["coord"] = { 67.9, 80.0, TALADOR },
-							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = {
 								34978,	-- Prized Repossessions
 								34979,	-- Punching Through
 								34977,	-- Supply Recovery
 							},
+							["provider"] = { "n", 80632 },	-- Miall
+							["coord"] = { 67.9, 80.0, TALADOR },
+							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								i(112521),	-- Auchenai Keeper Hood
 								i(112522),	-- Sha'tari Deadeye Helm
@@ -668,13 +668,13 @@ root(ROOTS.Zones, {
 							},
 						}),
 						q(34870, {	-- The Lord of the Gordunni
-							["provider"] = { "n", 80341 },	-- Morketh Bladehowl
-							["races"] = HORDE_ONLY,
 							["sourceQuests"] = {
 								34858,	-- Prized Repossessions
 								34855,	-- Punching Through
 								34860,	-- Supply Recovery
 							},
+							["provider"] = { "n", 80341 },	-- Morketh Bladehowl
+							["races"] = HORDE_ONLY,
 							["groups"] = {
 								i(112521),	-- Auchenai Keeper Hood
 								i(112522),	-- Sha'tari Deadeye Helm
@@ -683,42 +683,42 @@ root(ROOTS.Zones, {
 							},
 						}),
 						q(34981, {	-- The Only Way to Travel
+							["sourceQuest"] = 34980,	-- The Lord of the Gordunni
 							["provider"] = { "n", 80630 },	-- Miall
 							["coord"] = { 64.5, 81.7, TALADOR },
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 34980,	-- The Lord of the Gordunni
 						}),
 						q(34971, {	-- The Only Way to Travel
+							["sourceQuest"] = 34870,	-- The Lord of the Gordunni
 							["provider"] = { "n", 80342 },	-- Morketh Bladehowl
 							["coord"] = { 64.4, 81.6, TALADOR },
 							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 34870,	-- The Lord of the Gordunni
 						}),
 						q(34569, {	-- The Quarry Quandary
+							["sourceQuest"] = 34566,	-- At Your Command
 							["provider"] = { "n", 79176 },	-- Foreman Grobash
 							["coord"] = { 71.0, 29.7, TALADOR },
 							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 34566,	-- At Your Command
 						}),
 						q(34563, {	-- The Quarry Quandary
+							["sourceQuest"] = 34558,	-- At Your Command
 							["provider"] = { "n", 79133 },	-- Foreman Eksos
 							["coord"] = { 69.8, 20.8, TALADOR },
 							["races"] = ALLIANCE_ONLY,
-							["sourceQuest"] = 34558,	-- At Your Command
 						}),
 						q(35102, {	-- Unleashed Steel
+							["sourceQuest"] = 34569,	-- The Quarry Quandary
 							["provider"] = { "n", 79210 },	-- Morketh Bladehowl
 							["coord"] = { 71.8, 29.4, TALADOR },
 							["races"] = HORDE_ONLY,
-							["sourceQuest"] = 34569,	-- The Quarry Quandary
 						}),
 						n(BONUS_OBJECTIVES, {
 							q(37422, {	-- Zangarra
-								["coord"] = { 83.4, 28.6, TALADOR },
 								["sourceQuests"] = {
 									34558,	-- At Your Command (A)
 									34566,	-- At Your Command (H)
 								},
+								["coord"] = { 83.4, 28.6, TALADOR },
 							}),
 						}),
 					}),
@@ -733,78 +733,78 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 					q(34096, {	-- An Eye for a Spy
-						["provider"] = { "n", 75874 },	-- Thaelin Darkanvil
-						["coord"] = { 63.0, 26.1, TALADOR },
-						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
 							34959,	-- Dreadpiston
 							34095,	-- Iron Them Out
 							34094,	-- Vol. X Pages ?
 						},
+						["provider"] = { "n", 75874 },	-- Thaelin Darkanvil
+						["coord"] = { 63.0, 26.1, TALADOR },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(33728, {	-- An Eye for a Spy
-						["provider"] = { "n", 75941 },	-- Gazlowe
-						["coord"] = { 55.6, 41.1, TALADOR },
-						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							34950,	-- Dread Piston
 							33736,	-- Iron Them Out
 							33724,	-- Vol. X Pages ?
 						},
+						["provider"] = { "n", 75941 },	-- Gazlowe
+						["coord"] = { 55.6, 41.1, TALADOR },
+						["races"] = HORDE_ONLY,
 					}),
 					q(34414, {	-- An'dure The Giant
-						["provider"] = { "n", 78515 },	-- Manduil Skycaller
-						["coord"] = { 51.6, 50.5, TALADOR },
-						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							34401,	-- Arcane Essence
 							34404,	-- Crystals of Unusual Power
 						},
+						["provider"] = { "n", 78515 },	-- Manduil Skycaller
+						["coord"] = { 51.6, 50.5, TALADOR },
+						["races"] = HORDE_ONLY,
 					}),
 					q(34415, {	-- An'dure The Giant
-						["provider"] = { "n", 78513 },	-- Archmage Elandra
-						["coord"] = { 51.6, 50.5, TALADOR },
-						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
 							34403,	-- Arcane Essence
 							34406,	-- Caught In The Chaos
 						},
+						["provider"] = { "n", 78513 },	-- Archmage Elandra
+						["coord"] = { 51.6, 50.5, TALADOR },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(33944, {	-- And the Elekk Too?!
 						["provider"] = { "o", 226987 },	-- Ricky
 						["coord"] = { 30.9, 70.8, TALADOR },
 					}),
 					q(33967, {	-- Antivenin
+						["sourceQuest"] = 34452,	-- Light's Rest
 						["provider"] = { "n", 78028 },	-- Soulbinder Tuulani
 						["coord"] = { 57.2, 76.9, TALADOR },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 34452,	-- Light's Rest
 					}),
 					q(33971, {	-- Antivenin
+						["sourceQuest"] = 34451,	-- Sunsworn Camp
 						["provider"] = { "n", 78028 },	-- Soulbinder Tuulani
 						["coord"] = { 60.9, 72.5, TALADOR },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 34451,	-- Sunsworn Camp
 					}),
 					q(34403, {	-- Arcane Essence
+						["sourceQuest"] = 34399,	-- Trouble In The Mine
 						["provider"] = { "n", 78513 },	-- Archmage Elandra
 						["coord"] = { 51.6, 50.5, TALADOR },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 34399,	-- Trouble In The Mine
 					}),
 					q(34401, {	-- Arcane Essence
+						["sourceQuest"] = 34399,	-- Trouble In The Mine
 						["provider"] = { "n", 78515 },	-- Manduil Skycaller
 						["coord"] = { 51.6, 50.5, TALADOR },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 34399,	-- Trouble In The Mine
 					}),
 					q(33874, {	-- Aruumel's Rest
-						["provider"] = { "n", 76665 },	-- Seer Malune
-						["coord"] = { 65.4, 50.7, TALADOR },
 						["sourceQuests"] = {
 							33873,	-- Cure of Aruunem
 							33872,	-- Dust of the Dead
 						},
+						["provider"] = { "n", 76665 },	-- Seer Malune
+						["coord"] = { 65.4, 50.7, TALADOR },
 						["groups"] = {
 							i(113033),	-- Auchenai Keeper Handwraps
 							i(113032),	-- Sha'tari Deadeye Mitts
@@ -813,21 +813,18 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(34685, {	-- As the Smoke Rises
-						["provider"] = { "n", 79573 },	-- Kalaam
-						["coord"] = { 69.4, 21.4, TALADOR },
-						["isBreadcrumb"] = true,
-						["sourceQuestNumRequired"] = 1,
 						["sourceQuests"] = {
 							34711,	-- Due Cause to Celebrate (alliance, arcane sanctum)
 							34712,	-- Due Cause to Celebrate (horde, arcane sanctum)
 							34981,	-- The Only Way to Travel (alliance, artillery tower)
 							34971,	-- The Only Way to Travel (horde, artillery tower)
 						},
+						["sourceQuestNumRequired"] = 1,
+						["provider"] = { "n", 79573 },	-- Kalaam
+						["coord"] = { 69.4, 21.4, TALADOR },
+						["isBreadcrumb"] = true,
 					}),
 					q(34558, {	-- At Your Command
-						["provider"] = { "n", 79133 },	-- Foreman Eksos
-						["coord"] = { 69.8, 20.8, TALADOR },
-						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
 							34676,	-- The Critical Path (board)
 							37183,	-- The Critical Path (bodrick grey)
@@ -836,11 +833,11 @@ root(ROOTS.Zones, {
 							-- #endif
 							36495,	-- News From Talador
 						},
+						["provider"] = { "n", 79133 },	-- Foreman Eksos
+						["coord"] = { 69.8, 20.8, TALADOR },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(34566, {	-- At Your Command
-						["provider"] = { "n", 79176 },	-- Foreman Grobash
-						["coord"] = { 71.0, 29.7, TALADOR },
-						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							34681,	-- It's a Matter of Strategy (rokhan)
 							36953,	-- It's a Matter of Strategy (board)
@@ -848,11 +845,12 @@ root(ROOTS.Zones, {
 							49547,	-- Warchief's Command: Talador!
 							-- #endif
 						},
+						["provider"] = { "n", 79176 },	-- Foreman Grobash
+						["coord"] = { 71.0, 29.7, TALADOR },
+						["races"] = HORDE_ONLY,
 					}),
 					q(33761, {	-- Barum's Notes
-						["provider"] = {"o",225778},	-- Barum's Notes
 						["icon"] = 442732,
-						["coord"] = { 76.2, 42.7, TALADOR },
 						["sourceQuests"] = {
 							34566,	-- At Your Command
 							34624,	-- Gas Guzzlers (alliance, artillery tower)
@@ -860,47 +858,49 @@ root(ROOTS.Zones, {
 							34875,	-- Next Steps (alliance, arcane sanctum)
 							34571,	-- Out of Jovite (alliance, artillery tower)
 						},
+						["provider"] = {"o",225778},	-- Barum's Notes
+						["coord"] = { 76.2, 42.7, TALADOR },
 					}),
 					q(34164, {	-- Book Burning
-						["provider"] = { "n", 77629 },	-- Kor'thos Dawnfury
-						["coord"] = { 34.0, 73.9, TALADOR },
 						["sourceQuests"] = {
 							34092,	-- Desperate Measures
 							35227,	-- Ogre Diplomacy (Alliance)
 							34122,	-- Ogre Diplomacy (Horde)
 						},
+						["provider"] = { "n", 77629 },	-- Kor'thos Dawnfury
+						["coord"] = { 34.0, 73.9, TALADOR },
 					}),
 					q(34097, {	-- Born to Shred
+						["sourceQuest"] = 34096,	-- An Eye for a Spy
 						["provider"] = { "n", 75874 },	-- Thaelin Darkanvil
 						["coord"] = { 63.0, 26.1, TALADOR },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 34096,	-- An Eye for a Spy
 					}),
 					q(33729, {	-- Born to Shred
+						["sourceQuest"] = 33728,	-- An Eye for a Spy
 						["provider"] = { "n", 75941 },	-- Gazlowe
 						["coord"] = { 55.6, 41.1, TALADOR },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 33728,	-- An Eye for a Spy
 					}),
 					q(33740, {	-- Burning Sky
-						["provider"] = { "n", 75896 },	-- Crystal-Shaper Barum
-						["coord"] = { 73.0, 38.7, TALADOR },
 						["sourceQuests"] = {
 							34685,	-- As The Smoke Rises (breadcrumb)
 							34711,	-- Due Cause to Celebrate(A)
 							34712,	-- Due Cause to Celebrate(H)
 						},
+						["provider"] = { "n", 75896 },	-- Crystal-Shaper Barum
+						["coord"] = { 73.0, 38.7, TALADOR },
 					}),
 					q(34406, {	-- Caught In The Chaos
+						["sourceQuest"] = 34399,	-- Trouble In The Mine
 						["provider"] = { "n", 78513 },	-- Archmage Elandra
 						["coord"] = { 51.6, 50.5, TALADOR },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 34399,	-- Trouble In The Mine
 					}),
 					q(34326, {	-- Changing the Tide
+						["sourceQuest"] = 33976,	-- The Final Piece
 						["provider"] = { "n", 77082 },	-- Restalaan
 						["coord"] = { 44.8, 90.4, TALADOR },
-						["sourceQuest"] = 33976,	-- The Final Piece
 					}),
 					q(34751, {	-- Clear!
 						["provider"] = { "n", 79870 },	-- Ziz Fizziks
@@ -913,57 +913,57 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(34707, {	-- Come Together
+						["sourceQuest"] = 34154,	-- Destination: Unknown
 						["provider"] = { "n", 77581 },	-- Exarch Maladaar
 						["coord"] = { 45.6, 74.0, TALADOR },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 34154,	-- Destination: Unknown
 					}),
 					q(34706, {	-- Come Together
+						["sourceQuest"] = 34564,	-- Destination: Unknown
 						["provider"] = { "n", 77580 },	-- Lady Liadrin
 						["coord"] = { 45.6, 74.4, TALADOR },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 34564,	-- Destination: Unknown
 					}),
 					q(34404, {	-- Crystals of Unusual Power
+						["sourceQuest"] = 34399,	-- Trouble In The Mine
 						["provider"] = { "n", 78515 },	-- Manduil Skycaller
 						["coord"] = { 51.6, 50.5, TALADOR },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 34399,	-- Trouble In The Mine
 					}),
 					q(33873, {	-- Cure of Aruunem
 						["provider"] = { "n", 76665 },	-- Seer Malune
 						["coord"] = { 65.4, 50.7, TALADOR },
 					}),
 					q(34091, {	-- Decommissioned Mission
-						["coord"] = { 61.7, 27.5, TALADOR },
-						["races"] = ALLIANCE_ONLY,
 						["icon"] = 894222,
-						["provider"] = {"o",225726},	-- Iron Shredder Decommission Orders
 						["sourceQuests"] = {
 							34947,	-- Shredder Manual
 							34087,	-- Through the Looking Glass
 						},
+						["provider"] = {"o",225726},	-- Iron Shredder Decommission Orders
+						["coord"] = { 61.7, 27.5, TALADOR },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(33720, {	-- Decommissioned Mission
-						["coord"] = { 59.9, 16.4, TALADOR },
-						["races"] = HORDE_ONLY,
 						["icon"] = 894222,
-						["provider"] = {"o",225726},	-- Iron Shredder Decommission Orders
 						["sourceQuests"] = {
 							34948,	-- Shredder Manual
 							33754,	-- Through the Looking Glass
 						},
+						["provider"] = {"o",225726},	-- Iron Shredder Decommission Orders
+						["coord"] = { 59.9, 16.4, TALADOR },
+						["races"] = HORDE_ONLY,
 					}),
 					q(34092, {	-- Desperate Measures
+						["sourceQuest"] = 34326,	-- TODO: Changing the Tide (verify if "Never Forget" and "Payback" are also needed)
 						["provider"] = { "n", 77799 },	-- Restalaan
 						["coord"] = { 43.4, 75.9, TALADOR },
-						["sourceQuest"] = 34326,	-- TODO: Changing the Tide (verify if "Never Forget" and "Payback" are also needed)
 					}),
 					q(34154, {	-- Destination: Unknown
+						["sourceQuest"] = 34157,	-- Into the Heart of Madness
 						["provider"] = { "n", 77582 },	-- Soulbinder Nyami
 						["coord"] = { 31.2, 73.6, TALADOR },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 34157,	-- Into the Heart of Madness
 						["groups"] = {
 							i(113015),	-- Auchenai Preserver's Loop
 							i(119069),	-- Auchenai Protector's Seal
@@ -973,10 +973,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(34564, {	-- Destination: Unknown
+						["sourceQuest"] = 34157,	-- Into the Heart of Madness
 						["provider"] = { "n", 77582 },	-- Soulbinder Nyami
 						["coord"] = { 31.2, 73.6, TALADOR },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 34157,	-- Into the Heart of Madness
 						["groups"] = {
 							i(113015),	-- Auchenai Preserver's Loop
 							i(119069),	-- Auchenai Protector's Seal
@@ -986,48 +986,48 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(33917, {	-- Disrupting the Flow
-						["provider"] = { "n", 78482 },	-- Vindicator Nobundo
-						["coord"] = { 56.7, 65.8, TALADOR },
-						["sourceQuestNumRequired"] = 1,
 						["sourceQuests"] = {
 							34711,	-- Due Cause to Celebrate (alliance, arcane sanctum)
 							34712,	-- Due Cause to Celebrate (horde, arcane sanctum)
 							34981,	-- The Only Way to Travel (alliance, artillery tower)
 							34971,	-- The Only Way to Travel (horde, artillery tower)
 						},
+						["sourceQuestNumRequired"] = 1,
+						["provider"] = { "n", 78482 },	-- Vindicator Nobundo
+						["coord"] = { 56.7, 65.8, TALADOR },
 					}),
 					q(34959, {	-- Dreadpiston
+						["sourceQuest"] = 34088,	-- Too Many Irons in the Fire
 						["provider"] = { "n", 75803 },	-- Vindicator Maraad
 						["coord"] = { 63.0, 25.8, TALADOR },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 34088,	-- Too Many Irons in the Fire
 					}),
 					q(34950, {	-- Dreadpiston
-						["provider"] = { "n", 75958 },	-- Durotan
-						["coord"] = { 58.9, 20.2, TALADOR },
-						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							35226,	-- Old Friends, New Enemies
 							33722,	-- Too Many Irons in the Fire
 						},
+						["provider"] = { "n", 75958 },	-- Durotan
+						["coord"] = { 58.9, 20.2, TALADOR },
+						["races"] = HORDE_ONLY,
 					}),
 					q(33872, {	-- Dust of the Dead
-						["provider"] = { "n", 76665 },	-- Seer Malune
-						["coord"] = { 65.4, 50.7, TALADOR },
 						["sourceQuests"] = {
 							33871,	-- Seek Out the Seer
 							34721,	-- Seek Out the Seer
 						},
+						["provider"] = { "n", 76665 },	-- Seer Malune
+						["coord"] = { 65.4, 50.7, TALADOR },
 					}),
 					q(33973, {	-- Dying Wish
 						["provider"] = { "n", 77031 },	-- Ahm
 						["coord"] = { 56.9, 25.9, TALADOR },
 					}),
 					q(34098, {	-- Engineering Her Demise
+						["sourceQuest"] = 34097,	-- Born to Shred
 						["provider"] = { "n", 75968 },	-- Iron Shredder Prototype
 						["coord"] = { 61.0, 38.4, TALADOR },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 34097,	-- Born to Shred
 						["groups"] = {
 							i(113054),	-- Broken Shredder Blade
 							i(113052),	-- Camshaft-Haft Greatcleaver
@@ -1040,10 +1040,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(33730, {	-- Engineering Her Demise
+						["sourceQuest"] = 33729,	-- Born to Shred
 						["provider"] = { "n", 75968 },	-- Iron Shredder Prototype
 						["coord"] = { 61.0, 38.4, TALADOR },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 33729,	-- Born to Shred
 						["groups"] = {
 							i(113054),	-- Broken Shredder Blade
 							i(113052),	-- Camshaft-Haft Greatcleaver
@@ -1068,17 +1068,17 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 					}),
 					q(33581, {	-- Forbidden Knowledge
+						["sourceQuest"] = 33579,	-- What the Draenei Found
 						["provider"] = { "n", 75323 },	-- Darkscryer Raastok
 						["coord"] = { 70.5, 57.3, TALADOR },
-						["sourceQuest"] = 33579,	-- What the Draenei Found
 					}),
 					q(34400, {	-- Frenzied Manafeeders
-						["provider"] = { "n", 78534 },	-- Ageilaa
 						-- #if AFTER 7.0.3
 						["description"] = "High-level players may require |cff0070ddSoft Foam Sword|r to lower creature health to 10%.",
 						-- #endif
-						["crs"] = { 78390 },	-- Frenzied Manafeeder NPC
+						["provider"] = { "n", 78534 },	-- Ageilaa
 						["coord"] = { 49.8, 56.1, TALADOR },
+						["crs"] = { 78390 },	-- Frenzied Manafeeder NPC
 					}),
 					q(34777, {	-- Gatekeepers of Auchindoun
 						["provider"] = { "n", 79979 },	-- Defender Illona
@@ -1102,67 +1102,67 @@ root(ROOTS.Zones, {
 					}),
 					heroscall(q(49565, {	-- Hero's Call: Talador!
 						["timeline"] = { ADDED_7_3_5 },
-						["DisablePartySync"] = true,
 						["isBreadcrumb"] = true,
+						["DisablePartySync"] = true,
 						["lvl"] = 94,
 					})),
 					q(34163, {	-- Hiding in the Shadows
-						["provider"] = {"o",227737},	-- Shadow Council Communicator
-						["coord"] = { 37.2, 79.3, TALADOR },
 						["sourceQuests"] = {
 							34092,	-- Desperate Measures
 							35227,	-- Ogre Diplomacy (Alliance)
 							34122,	-- Ogre Diplomacy (Horde)
 						},
+						["provider"] = {"o",227737},	-- Shadow Council Communicator
+						["coord"] = { 37.2, 79.3, TALADOR },
 					}),
 					q(34407, {	-- Holding the Line
-						["provider"] = { "n", 75119 },	-- Exarch Maladaar
-						["coord"] = { 55.6, 67.7, TALADOR },
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuestNumRequired"] = 1,
 						["sourceQuests"] = {
 							34711,	-- Due Cause to Celebrate (alliance, arcane sanctum)
 							34981,	-- The Only Way to Travel (alliance, artillery tower)
 						},
+						["sourceQuestNumRequired"] = 1,
+						["provider"] = { "n", 75119 },	-- Exarch Maladaar
+						["coord"] = { 55.6, 67.7, TALADOR },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(34418, {	-- Holding the Line
-						["provider"] = { "n", 75121 },	-- Lady Liadrin
-						["coord"] = { 55.4, 67.6, TALADOR },
-						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							34696,	-- The Lady of Light (breadcrumb)
 							34971,	-- The Only Way to Travel
 						},
+						["provider"] = { "n", 75121 },	-- Lady Liadrin
+						["coord"] = { 55.4, 67.6, TALADOR },
+						["races"] = HORDE_ONLY,
 					}),
 					q(34089, {	-- In Short Supply
+						["sourceQuest"] = 34087,	-- Through the Looking Glass
 						["provider"] = { "n", 75804 },	-- Yrel
 						["coord"] = { 63.0, 25.8, TALADOR },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 34087,	-- Through the Looking Glass
 					}),
 					q(33735, {	-- In Short Supply -- missing sourceQuests
 						["provider"] = { "n", 75808 },	-- Draka
-						["races"] = HORDE_ONLY,
 						["coords"] = {
 							{ 62.0, 10.9, TALADOR },
 							{ 62.0, 10.9, TALADOR },
 							{ 55.6, 41.0, TALADOR },
 						},
+						["races"] = HORDE_ONLY,
 					}),
 					q(34157, {	-- Into the Heart of Madness
-						["provider"] = { "n", 75392 },	-- Exarch Maladaar
-						["coord"] = { 42.9, 76.1, TALADOR },
 						["sourceQuests"] = {
 							34092,	-- Desperate Measures
 							35227,	-- Ogre Diplomacy (Alliance)
 							34122,	-- Ogre Diplomacy (Horde)
 						},
+						["provider"] = { "n", 75392 },	-- Exarch Maladaar
+						["coord"] = { 42.9, 76.1, TALADOR },
 					}),
 					q(33958, {	-- Into the Hollow
+						["sourceQuest"] = 34452,	-- Light's Rest
 						["provider"] = { "n", 75256 },	-- Soulbinder Nyami
 						["coord"] = { 57.1, 76.9, TALADOR },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 34452,	-- Light's Rest
 						["groups"] = {
 							i(112528),	-- Auchenai Keeper Robe
 							i(112510),	-- Sha'tari Deadeye Vest
@@ -1171,10 +1171,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(33970, {	-- Into the Hollow
+						["sourceQuest"] = 34451,	-- Sunsworn Camp
 						["provider"] = { "n", 75256 },	-- Soulbinder Nyami
 						["coord"] = { 60.9, 72.4, TALADOR },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 34451,	-- Sunsworn Camp
 						["groups"] = {
 							i(112528),	-- Auchenai Keeper Robe
 							i(112510),	-- Sha'tari Deadeye Vest
@@ -1183,39 +1183,39 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(33988, {	-- Invasion of the Soul Eaters
-						["provider"] = {"o",227069},	-- Hastily Written Note
 						["icon"] = 454060,
-						["coord"] = { 49.1, 88.0, TALADOR },
 						["sourceQuests"] = {
 							34240,	-- Scheduled Pickup (Alliance)
 							34242,	-- Scheduled Pickup (Horde)
 						},
+						["provider"] = {"o",227069},	-- Hastily Written Note
+						["coord"] = { 49.1, 88.0, TALADOR },
 					}),
 					q(33736, {	-- Iron Them Out
-						["provider"] = { "n", 75808 },	-- Draka
-						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 33735,	-- In Short Supply
+						["provider"] = { "n", 75808 },	-- Draka
 						["coords"] = {
 							{ 55.6, 41.0, TALADOR },
 							{ 58.9, 20.3, TALADOR },
 							{ 62.0, 10.9, TALADOR },
 						},
+						["races"] = HORDE_ONLY,
 					}),
 					q(34095, {	-- Iron Them Out
+						["sourceQuest"] = 34089,	-- In Short Supply
 						["provider"] = { "n", 75804 },	-- Yrel
 						["coord"] = { 63.0, 25.8, TALADOR },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 34089,	-- In Short Supply
 					}),
 					q(33882, {	-- Just Peachicky
 						["provider"] = { "n", 76826 },	-- Caleb
 						["coord"] = { 36.1, 65.0, TALADOR },
 					}),
 					q(34448, {	-- Kaelynara Sunchaser
+						["sourceQuest"] = 34415,	-- An'dure The Giant
 						["provider"] = { "n", 78513 },	-- Archmage Elandra
 						["coord"] = { 51.6, 50.5, TALADOR },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 34415,	-- An'dure The Giant
 						["groups"] = {
 							i(113012),	-- Kaelynara's Drape
 							i(119055),	-- Kaelynara's Manaweave Cloak
@@ -1225,10 +1225,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(34447, {	-- Kaelynara Sunchaser
+						["sourceQuest"] = 34414,	-- An'dure The Giant
 						["provider"] = { "n", 78515 },	-- Manduil Skycaller
 						["coord"] = { 51.6, 50.5, TALADOR },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 34414,	-- An'dure The Giant
 						["groups"] = {
 							i(113012),	-- Kaelynara's Drape
 							i(119055),	-- Kaelynara's Manaweave Cloak
@@ -1238,92 +1238,92 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(34963, {	-- Khadgar's Plan
+						["sourceQuest"] = 34098,	-- Engineering Her Demise
 						["provider"] = { "n", 75803 },	-- Vindicator Maraad
 						["coord"] = { 63.0, 25.8, TALADOR },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 34098,	-- Engineering Her Demise
 					}),
 					q(34962, {	-- Khadgar's Plan
+						["sourceQuest"] = 33730,	-- Engineering Her Demise
 						["provider"] = { "n", 75959 },	-- Durotan
 						["coord"] = { 55.5, 40.9, TALADOR },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 33730,	-- Engineering Her Demise
 					}),
 					q(33582, {	-- Kura's Vengeance
+						["sourceQuest"] = 33579,	-- What the Draenei Found
 						["provider"] = { "n", 75324 },	-- Kura the Blind
 						["coord"] = { 70.7, 56.7, TALADOR },
-						["sourceQuest"] = 33579,	-- What the Draenei Found
 					}),
 					q(34452, {	-- Light's Rest
-						["provider"] = { "n", 75119 },	-- Exarch Maladaar
-						["coord"] = { 55.6, 67.7, TALADOR },
-						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = { -- TODO: is The Heart of Auchindoun and Holding the Line required here?
 							33917,	-- Disrupting the Flow
 							33530,	-- Nightmare in the Tomb
 							34351,	-- We Must Construct Additional Pylons
 						},
+						["provider"] = { "n", 75119 },	-- Exarch Maladaar
+						["coord"] = { 55.6, 67.7, TALADOR },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(34766, {	-- Logistical Nightmare
-						["provider"] = { "n", 79921 },	-- Provisioner Naya
-						["coord"] = { 71.1, 29.4, TALADOR },
-						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							34579,	-- Gas Guzzlers (artillery tower)
 							34576,	-- Iridium Recovery (artillery tower)
 							34577,	-- Out of Jovite (artillery tower)
 						},
+						["provider"] = { "n", 79921 },	-- Provisioner Naya
+						["coord"] = { 71.1, 29.4, TALADOR },
+						["races"] = HORDE_ONLY,
 					}),
 					q(34465, {	-- Mystical Hat
-						["coord"] = { 45.2, 37.0, TALADOR },
 						["icon"] = 133167,
 						["provider"] = {"o",229331},	-- A Mystical hat
+						["coord"] = { 45.2, 37.0, TALADOR },
 					}),
 					q(34013, {	-- Never Forget
-						["provider"] = { "n", 78083 },	-- Defender Artaal
-						["coord"] = { 50.5, 87.5, TALADOR },
 						["sourceQuests"] = {
 							34240,	-- Scheduled Pickup (Alliance)
 							34242,	-- Scheduled Pickup (Horde)
 						},
+						["provider"] = { "n", 78083 },	-- Defender Artaal
+						["coord"] = { 50.5, 87.5, TALADOR },
 					}),
 					q(35238, {	-- New Owner
+						["sourceQuest"] = 34751,	-- Clear!
 						["provider"] = { "n", 79853 },	-- Pleasure-Bot 8000
 						["coord"] = { 64.2, 47.8, TALADOR },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 34751,	-- Clear!
 						["groups"] = {
 							follower(171),	-- Pleasure-Bot 8000
 						},
 					}),
 					q(35239, {	-- New Owner
+						["sourceQuest"] = 34761,	-- Clear!
 						["provider"] = { "n", 79853 },	-- Pleasure-Bot 8000
 						["coord"] = { 62.9, 50.5, TALADOR },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 34761,	-- Clear!
 						["groups"] = {
 							follower(171),	-- Pleasure-Bot 8000
 						},
 					}),
 					q(35537, {	-- News from Spires of Arak
-						["isBreadcrumb"] = true,
 						["provider"] = { "n", 79627 },	-- Shadow Hunter Kajassa
 						["coord"] = { 71.2, 29.9, TALADOR },
 						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
 					}),
 					q(35554, {	-- News from Spires of Arak
-						["isBreadcrumb"] = true,
+						["provider"] = { "n", 79618 },	-- Vindicator Icia
 						["coord"] = { 69.7, 21.6, TALADOR },
 						["races"] = ALLIANCE_ONLY,
-						["provider"] = { "n", 79618 },	-- Vindicator Icia
+						["isBreadcrumb"] = true,
 					}),
 					q(33530, {	-- Nightmare in the Tomb
-						["provider"] = { "n", 76790 },	-- Nightmare in the Tomb
-						["coord"] = { 52.1, 38.9, 536 },
 						["sourceQuests"] = {
 							34458,	-- Powering the Defenses (Alliance)
 							35249,	-- Powering the Defenses (Horde)
 						},
+						["provider"] = { "n", 76790 },	-- Nightmare in the Tomb
+						["coord"] = { 52.1, 38.9, 536 },
 						["groups"] = {
 							i(112513),	-- Auchenai Keeper Treads
 							i(112514),	-- Sha'tari Deadeye Sabatons
@@ -1332,10 +1332,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(34804, {	-- Not In Your House
+						["sourceQuest"] = 34773,	-- Why Is The Brew Gone?
 						["provider"] = { "n", 79963 },	-- Quartermaster O'Riley
 						["coord"] = { 69.5, 21.5, TALADOR },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 34773,	-- Why Is The Brew Gone?
 						["groups"] = {
 							i(112525),	-- Auchenai Keeper Leggings
 							i(112526),	-- Sha'tari Deadeye Leggings
@@ -1344,58 +1344,56 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(35227, {	-- Ogre Diplomacy
+						["sourceQuest"] = 34326,	-- Changing the Tide
 						["provider"] = { "n", 75392 },	-- Exarch Maladaar
 						["coord"] = { 42.9, 76.1, TALADOR },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 34326,	-- Changing the Tide
 					}),
 					q(34122, {	-- Ogre Diplomacy
+						["sourceQuest"] = 34326,	-- Changing the Tide
 						["provider"] = { "n", 75389 },	-- Lady Liadrin
 						["coord"] = { 42.9, 76.2, TALADOR },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 34326,	-- Changing the Tide
 					}),
 					q(35226, {	-- Old Friends, New Enemies
+						["sourceQuest"] = 33754,	-- Through the Looking Glass
 						["provider"] = { "n", 75806 },	-- Durotan
 						["coord"] = { 61.5, 10.9, TALADOR },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 33754,	-- Through the Looking Glass
 					}),
 					q(36801, {	-- One Step Ahead (A)
-						["provider"] = { "n", 86442 },	-- Sloan McCoy
-						["coord"] = { 69.6, 20.7, TALADOR },
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuestNumRequired"] = 1,
 						["sourceQuests"] = {
 							34624,	-- Gas Guzzlers (artillery tower)
 							34573,	-- Iridium Recovery (artillery tower)
 							34875,	-- Next Steps (arcane sanctum)
 							34571,	-- Out of Jovite (artillery tower)
 						},
+						["sourceQuestNumRequired"] = 1,
+						["provider"] = { "n", 86442 },	-- Sloan McCoy
+						["coord"] = { 69.6, 20.7, TALADOR },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(34683, {	-- One Step Ahead
-						["provider"] = { "n", 79627 },	-- Shadow Hunter Kajassa
-						["coord"] = { 71.2, 29.9, TALADOR },
-						["races"] = HORDE_ONLY,
-						["sourceQuestNumRequired"] = 1,
 						["sourceQuests"] = {
 							34579,	-- Gas Guzzlers (artillery tower)
 							34576,	-- Iridium Recovery (artillery tower)
 							34874,	-- Next Steps (arcane sanctum)
 							34577,	-- Out of Jovite (artillery tower)
 						},
+						["sourceQuestNumRequired"] = 1,
+						["provider"] = { "n", 79627 },	-- Shadow Hunter Kajassa
+						["coord"] = { 71.2, 29.9, TALADOR },
+						["races"] = HORDE_ONLY,
 					}),
 					q(34234, {	-- Payback
-						["provider"] = { "n", 78082 },	-- Vindicator Kaluud
-						["coord"] = { 50.3, 87.3, TALADOR },
 						["sourceQuests"] = {
 							34240,	-- Scheduled Pickup (Alliance)
 							34242,	-- Scheduled Pickup (Horde)
 						},
+						["provider"] = { "n", 78082 },	-- Vindicator Kaluud
+						["coord"] = { 50.3, 87.3, TALADOR },
 					}),
 					q(33734, {	-- Pieces of Us
-						["provider"] = { "n", 75896 },	-- Crystal-Shaper Barum
-						["coord"] = { 73.0, 38.7, TALADOR },
 						["sourceQuests"] = {
 							34566,	-- At Your Command (horde)
 							34624,	-- Gas Guzzlers (alliance, artillery tower)
@@ -1403,6 +1401,8 @@ root(ROOTS.Zones, {
 							34875,	-- Next Steps (alliance, arcane sanctum)
 							34571,	-- Out of Jovite (alliance, artillery tower)
 						},
+						["provider"] = { "n", 75896 },	-- Crystal-Shaper Barum
+						["coord"] = { 73.0, 38.7, TALADOR },
 						["groups"] = {
 							i(112531),	-- Auchenai Keeper Mantle
 							i(112532),	-- Sha'tari Deadeye Monnion
@@ -1411,24 +1411,22 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(34458, {	-- Powering the Defenses
-						["provider"] = { "n", 81789 },	-- Vindicator Kaluud
-						["coord"] = { 55.6, 67.7, TALADOR },
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuestNumRequired"] = 1,
 						["sourceQuests"] = {
 							34711,	-- Due Cause to Celebrate (alliance, arcane sanctum)
 							34981,	-- The Only Way to Travel (alliance, artillery tower)
 						},
+						["sourceQuestNumRequired"] = 1,
+						["provider"] = { "n", 81789 },	-- Vindicator Kaluud
+						["coord"] = { 55.6, 67.7, TALADOR },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(35249, {	-- Powering the Defenses
+						["sourceQuest"] = 34971,	-- The Only Way to Travel
 						["provider"] = { "n", 78577 },	-- Mehlar Dawnblade
 						["coord"] = { 55.5, 67.0, TALADOR },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 34971,	-- The Only Way to Travel
 					}),
 					q(33578, {	-- Pyrophobia
-						["provider"] = { "n", 75311 },	-- Raksi
-						["coord"] = { 77.7, 43.9, TALADOR },
 						["sourceQuests"] = {
 							-- need to verify horde criteria. Likely the same as alliance
 							34624,	-- Gas Guzzlers (alliance, artillery tower)
@@ -1436,96 +1434,98 @@ root(ROOTS.Zones, {
 							34875,	-- Next Steps (alliance, arcane sanctum)
 							34571,	-- Out of Jovite (alliance, artillery tower)
 						},
+						["provider"] = { "n", 75311 },	-- Raksi
+						["coord"] = { 77.7, 43.9, TALADOR },
 					}),
 					q(34508, {	-- Restalaan, Captain of the Guard
-						["provider"] = { "n", 77869 },	-- Soulbinder Tuulani
-						["coord"] = { 50.4, 87.5, TALADOR },
 						["sourceQuests"] = {
 							34240,	-- Scheduled Pickup (Alliance)
 							34242,	-- Scheduled Pickup (Horde)
 						},
+						["provider"] = { "n", 77869 },	-- Soulbinder Tuulani
+						["coord"] = { 50.4, 87.5, TALADOR },
 					}),
 					q(35254, {	-- Retribution for the Light
-						["provider"] = { "n", 75392 },	-- Exarch Maladaar
-						["coord"] = { 42.9, 76.1, TALADOR },
-						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
 							34092,	-- Desperate Measures
 							35227,	-- Ogre Diplomacy
 						},
+						["provider"] = { "n", 75392 },	-- Exarch Maladaar
+						["coord"] = { 42.9, 76.1, TALADOR },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(34144, {	-- Retribution for the Light
-						["provider"] = { "n", 75389 },	-- Lady Liadrin
-						["coord"] = { 42.9, 76.2, TALADOR },
-						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							34092,	-- Desperate Measures
 							34122,	-- Ogre Diplomacy
 						},
+						["provider"] = { "n", 75389 },	-- Lady Liadrin
+						["coord"] = { 42.9, 76.2, TALADOR },
+						["races"] = HORDE_ONLY,
 					}),
 					q(37191, {	-- Sanketsu, The Burning Blade
+						["sourceQuest"] = 36341,	-- Primal Fury
 						["provider"] = { "n", 87764 },	-- Sanketsu
 						["coord"] = { 69.5, 5.8, TALADOR },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 36341,	-- Primal Fury
 						["groups"] = {
 							i(120313),	-- Sanketsu
 						},
 					}),
 					q(37192, {	-- Sanketsu, The Burning Blade
+						["sourceQuest"] = 36342,	-- Primal Fury
 						["provider"] = { "n", 87764 },	-- Sanketsu
 						["coord"] = { 69.5, 5.8, TALADOR },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 36342,	-- Primal Fury
 						["groups"] = {
 							i(120313),	-- Sanketsu
 						},
 					}),
 					q(34240, {	-- Scheduled Pickup
-						["provider"] = { "n", 75250 },	-- Exarch Maladaar
-						["coord"] = { 57.2, 77.0, TALADOR },
-						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
 							33967,	-- Antivenin
 							33958,	-- Into the Hollow
 							33969,	-- Vile Defilers
 						},
+						["provider"] = { "n", 75250 },	-- Exarch Maladaar
+						["coord"] = { 57.2, 77.0, TALADOR },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(34242, {	-- Scheduled Pickup
-						["provider"] = { "n", 75246 },	-- Lady Liadrin
-						["coord"] = { 61.0, 72.5, TALADOR },
-						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							33971,	-- Antivenin
 							33970,	-- Into the Hollow
 							33972,	-- Vile Defilers
 						},
+						["provider"] = { "n", 75246 },	-- Lady Liadrin
+						["coord"] = { 61.0, 72.5, TALADOR },
+						["races"] = HORDE_ONLY,
 					}),
 					q(34721, {	-- Seek Out the Seer
-						["provider"] = { "n", 79724 },	-- Elumm
-						["races"] = HORDE_ONLY,
 						["description"] = "Travels back and forth on the road.",
-						["isBreadcrumb"] = true,
+						["provider"] = { "n", 79724 },	-- Elumm
 						["coords"] = {
 							{ 69.5, 46.9, TALADOR },
 							{ 67.6, 44.0, TALADOR },
 						},
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
 					}),
 					q(33871, {	-- Seek Out the Seer
-						["provider"] = { "n", 79724 },	-- Elumm
-						["races"] = ALLIANCE_ONLY,
 						["description"] = "Travels back and forth on the road.",
-						["isBreadcrumb"] = true,
+						["provider"] = { "n", 79724 },	-- Elumm
 						["coords"] = {
 							{ 69.5, 46.9, TALADOR },
 							{ 67.6, 44.0, TALADOR },
 						},
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
 					}),
 					q(34803, {	-- Send Them Running
+						["sourceQuest"] = 34766,	-- Logistical Nightmare
 						["provider"] = { "n", 79921 },	-- Provisioner Naya
 						["coord"] = { 71.1, 29.4, TALADOR },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 34766,	-- Logistical Nightmare
 						["groups"] = {
 							i(112525),	-- Auchenai Keeper Leggings
 							i(112526),	-- Sha'tari Deadeye Leggings
@@ -1538,34 +1538,31 @@ root(ROOTS.Zones, {
 						["coord"] = { 36.1, 65.0, TALADOR },
 					}),
 					q(34947, {	-- Shredder Manual
+						["sourceQuest"] = 34090,	-- Thaelin's Quick Fix
 						["provider"] = { "n", 75874 },	-- Thaelin Darkanvil
 						["coord"] = { 63.0, 26.1, TALADOR },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 34090,	-- Thaelin's Quick Fix
 						["isBreadcrumb"] = true,
 					}),
 					q(34948, {	-- Shredder Manual
+						["sourceQuest"] = 33721,	-- Gazlowe's Solution
 						["provider"] = { "n", 75924 },	-- Gazlowe
 						["coord"] = { 59.0, 20.6, TALADOR },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 33721,	-- Gazlowe's Solution
 						["isBreadcrumb"] = true,
 					}),
 					q(34701, {	-- Speaker for the Dead
-						["provider"] = { "n", 79618 },	-- Vindicator Icia
-						["coord"] = { 69.6, 21.6, TALADOR },
-						["races"] = ALLIANCE_ONLY,
-						["isBreadcrumb"] = true,
-						["sourceQuestNumRequired"] = 1,
 						["sourceQuests"] = {
 							34711,	-- Due Cause to Celebrate (arcane sanctum)
 							34981,	-- The Only Way to Travel (artillery tower)
 						},
+						["sourceQuestNumRequired"] = 1,
+						["provider"] = { "n", 79618 },	-- Vindicator Icia
+						["coord"] = { 69.6, 21.6, TALADOR },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
 					}),
 					q(34451, {	-- Sunsworn Camp
-						["provider"] = { "n", 75121 },	-- Sunsworn Camp
-						["coord"] = { 55.4, 67.6, TALADOR },
-						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							33530,	-- Nightmare in the Tomb
 							33917,	-- Disrupting the Flow
@@ -1573,22 +1570,25 @@ root(ROOTS.Zones, {
 							34351,	-- We Must Construct Additional Pylons
 							34418,	-- Holding the Line
 						},
+						["provider"] = { "n", 75121 },	-- Sunsworn Camp
+						["coord"] = { 55.4, 67.6, TALADOR },
+						["races"] = HORDE_ONLY,
 					}),
 					q(34472, {	-- Temporal Juxtaposition
-						["provider"] = { "n", 86949 },	-- Zooti Fizzlefury
-						["coord"] = { 85.0, 31.0, TALADOR },
 						["sourceQuests"] = {
 							34464,	-- Mysterious Boots
 							34465,	-- Mysterious Hat
 							34463,	-- Mysterious Ring
 							34466,	-- Mysterious Staff
 						},
+						["provider"] = { "n", 86949 },	-- Zooti Fizzlefury
+						["coord"] = { 85.0, 31.0, TALADOR },
 					}),
 					q(34090, {	-- Thaelin's Quick Fix
+						["sourceQuest"] = 34087,	-- Through the Looking Glass
 						["provider"] = { "n", 75874 },	-- Thaelin Darkanvil
 						["coord"] = { 63.0, 26.1, TALADOR },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 34087,	-- Through the Looking Glass
 						["groups"] = {
 							i(113024),	-- "Reliable" Threat Assessor
 							i(113025),	-- External Combustion Engine
@@ -1596,10 +1596,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(34099, {	-- The Battle for Shattrath
+						["sourceQuest"] = 34963,	-- Khadgar's Plan
 						["provider"] = { "n", 75805 },	-- Archmage Khadgar
 						["coord"] = { 54.1, 36.4, TALADOR },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 34963,	-- Khadgar's Plan
 						["groups"] = {
 							i(112518),	-- Auchenai Keeper Gloves
 							i(112519),	-- Sha'tari Deadeye Gauntlets
@@ -1608,10 +1608,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(33731, {	-- The Battle for Shattrath
+						["sourceQuest"] = 34962,	-- Khadgar's Plan
 						["provider"] = { "n", 75805 },	-- Archmage Khadgar
 						["coord"] = { 54.1, 36.4, TALADOR },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 34962,	-- Khadgar's Plan
 						["groups"] = {
 							i(112518),	-- Auchenai Keeper Gloves
 							i(112519),	-- Sha'tari Deadeye Gauntlets
@@ -1620,9 +1620,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(33976, {	-- The Final Piece
+						["sourceQuest"] = 34508,	-- Restalaan, Captain of the Guard
 						["provider"] = { "n", 77082 },	-- Restalaan
 						["coord"] = { 44.8, 90.4, TALADOR },
-						["sourceQuest"] = 34508,	-- Restalaan, Captain of the Guard
 						["groups"] = {
 							i(113045),	-- Restalaan's Greatsword
 							i(113047),	-- Restalaan's Longsword
@@ -1635,15 +1635,15 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(33920, {	-- The Heart of Auchindoun
-						["provider"] = { "n", 78519 },	-- Soulbinder Nyami
-						["coord"] = { 56.5, 67.1, TALADOR },
-						["sourceQuestNumRequired"] = 1,
 						["sourceQuests"] = {
 							34711,	-- Due Cause to Celebrate (alliance, arcane sanctum)
 							34712,	-- Due Cause to Celebrate (horde, arcane sanctum)
 							34981,	-- The Only Way to Travel (alliance, artillery tower)
 							34971,	-- The Only Way to Travel (horde, artillery tower)
 						},
+						["sourceQuestNumRequired"] = 1,
+						["provider"] = { "n", 78519 },	-- Soulbinder Nyami
+						["coord"] = { 56.5, 67.1, TALADOR },
 						["groups"] = {
 							i(113031),	-- Eredar Soulchain
 							i(119087),	-- Legion Lord's Gorget
@@ -1653,20 +1653,20 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(34696, {	-- The Lady of Light
-						["provider"] = { "n", 79612 },	-- Knight-Lord Dranarus
-						["coord"] = { 71.8, 29.7, TALADOR },
-						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							34972,	-- Armor Up
 							34949,	-- Joining the Ranks
 						},
 						["sourceQuestNumRequired"] = 1,
+						["provider"] = { "n", 79612 },	-- Knight-Lord Dranarus
+						["coord"] = { 71.8, 29.7, TALADOR },
+						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(33580, {	-- The Purge of Veil Shadar
+						["sourceQuest"] = 33579,	-- What the Draenei Found
 						["provider"] = { "n", 75288 },	-- Shadow-Sage Iskar
 						["coord"] = { 70.4, 56.8, TALADOR },
-						["sourceQuest"] = 33579,	-- What the Draenei Found
 						["groups"] = {
 							i(113028),	-- Shadar Chain Pendant
 							i(119086),	-- Shadar Choker
@@ -1683,130 +1683,130 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 					q(36027, {	-- The Staff of Archmage Vargoth
+						["sourceQuest"] = 34472,	-- Temporal Juxtaposition
 						["provider"] = { "n", 77853 },	-- Image of Archmage Vargoth
 						["coord"] = { 84.6, 31.6, TALADOR },
-						["sourceQuest"] = 34472,	-- Temporal Juxtaposition
 						["groups"] = {
 							follower(190),	-- Image of Archmage Vargoth
 						},
 					}),
 					q(36518, {	-- The True Path
+						["sourceQuest"] = 34776,	-- Gatekeepers of Auchindoun
 						["provider"] = { "n", 79978 },	-- Aeda Brightdawn
 						["coord"] = { 58.1, 53.1, TALADOR },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 34776,	-- Gatekeepers of Auchindoun
 						["groups"] = {
 							follower(207),	-- Aeda Brightdawn
 						},
 					}),
 					q(36519, {	-- The True Path
+						["sourceQuest"] = 34777,	-- Gatekeepers of Auchindoun
 						["provider"] = { "n", 79979 },	-- Defender Illona
 						["coord"] = { 57.4, 51.1, TALADOR },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 34777,	-- Gatekeepers of Auchindoun
 						["groups"] = {
 							follower(207),	-- Defender Illona
 						},
 					}),
 					q(36843, {	-- They Came From Above
-						["provider"] = { "n", 86522 },	-- Akhan
-						["coord"] = { 67.4, 42.2, TALADOR },
-						["lockCriteria"] = { 1, "questID", 33740 },	-- Burning Sky
-						["isBreadcrumb"] = true,
-						["sourceQuestNumRequired"] = 1,
 						["sourceQuests"] = {
 							34579,	-- Gas Guzzlers [H]
 							34875,	-- Next Steps [A]
 						},
+						["sourceQuestNumRequired"] = 1,
+						["provider"] = { "n", 86522 },	-- Akhan
+						["coord"] = { 67.4, 42.2, TALADOR },
+						["lockCriteria"] = { 1, "questID", 33740 },	-- Burning Sky
+						["isBreadcrumb"] = true,
 					}),
 					q(34087, {	-- Through the Looking Glass
-						["provider"] = { "n", 75803 },	-- Vindicator Maraad
-						["coord"] = { 63.0, 25.8, TALADOR },
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuestNumRequired"] = 2,
 						["sourceQuests"] = {
 							34701,	-- Speaker for the Dead (breadcrumb)
 							34711,	-- Due Cause to Celebrate (arcane sanctum)
 							34981,	-- The Only Way to Travel (artillery tower)
 							36801,	-- One Step Ahead (A)
 						},
+						["sourceQuestNumRequired"] = 2,
+						["provider"] = { "n", 75803 },	-- Vindicator Maraad
+						["coord"] = { 63.0, 25.8, TALADOR },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(33754, {	-- Through the Looking Glass
-						-- TODO: based on the Alliance version, this quest is likely missing some sourceQuest info
+						["sourceQuest"] = 34683,	-- One Step Ahead
 						["provider"] = { "n", 75806 },	-- Durotan
 						["coord"] = { 61.4, 10.8, TALADOR },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 34683,	-- One Step Ahead
+						-- TODO: based on the Alliance version, this quest is likely missing some sourceQuest info
 					}),
 					q(36512, {	-- Together We Are Strong
-						["provider"] = { "n", 79434 },	-- Soulbinder Tuulani
-						["coord"] = { 46.3, 74.1, TALADOR },
 						["sourceQuests"] = {
 							34154,	-- Destination: Unknown (Alliance)
 							34564,	-- Destination: Unknown (Horde)
 						},
+						["provider"] = { "n", 79434 },	-- Soulbinder Tuulani
+						["coord"] = { 46.3, 74.1, TALADOR },
 						["groups"] = {
 							follower(205),	-- Soulbinder Tuulani
 						},
 					}),
 					q(34088, {	-- Too Many Irons in the Fire
+						["sourceQuest"] = 34087,	-- Through the Looking Glass
 						["provider"] = { "n", 75803 },	-- Vindicator Maraad
 						["coord"] = { 63.0, 25.8, TALADOR },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 34087,	-- Through the Looking Glass
 					}),
 					q(33722, {	-- Too Many Irons in the Fire
+						["sourceQuest"] = 33754,	-- Through the Looking Glass
 						["provider"] = { "n", 75806 },	-- Durotan
 						["coord"] = { 61.5, 10.9, TALADOR },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 33754,	-- Through the Looking Glass
 					}),
 					q(34399, {	-- Trouble In The Mine
-						["provider"] = { "n", 78534 },	-- Ageilaa
-						["coord"] = { 49.8, 56.1, TALADOR },
 						["sourceQuests"] = {
 							34709,	-- Every Bit Counts (Alliance)
 							34710,	-- Every Bit Counts (Horde)
 						},
+						["provider"] = { "n", 78534 },	-- Ageilaa
+						["coord"] = { 49.8, 56.1, TALADOR },
 					}),
 					q(33969, {	-- Vile Defilers
+						["sourceQuest"] = 34452,	-- Light's Rest
 						["provider"] = { "n", 78102 },	-- Vindicator Namuun
 						["coord"] = { 57.5, 76.6, TALADOR },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 34452,	-- Light's Rest
 					}),
 					q(33972, {	-- Vile Defilers
+						["sourceQuest"] = 34451,	-- Sunsworn Camp
 						["provider"] = { "n", 75249 },	-- Mehlar Dawnblade
 						["coord"] = { 60.5, 72.4, TALADOR },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 34451,	-- Sunsworn Camp
 					}),
 					q(34094, {	-- Vol. X Pages ?
+						["sourceQuest"] = 34091,	-- Decomissioned Mission
 						["provider"] = { "n", 75874 },	-- Thaelin Darkanvil
 						["coord"] = { 63.0, 26.1, TALADOR },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 34091,	-- Decomissioned Mission
 					}),
 					q(33724, {	-- Vol. X Pages ?
-						["provider"] = { "n", 75924 },	-- Gazlowe
-						["coord"] = { 58.9, 20.7, TALADOR },
-						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							33720,	-- Decommissioned Mission (verify if this is needed)
 							33721,	-- Gazlowe's Solution
 						},
+						["provider"] = { "n", 75924 },	-- Gazlowe
+						["coord"] = { 58.9, 20.7, TALADOR },
+						["races"] = HORDE_ONLY,
 					}),
 					q(34104, {	-- Wanted: Hilaani
-						["provider"] = { "n", 80854 },	-- Patrick Messer
-						["coord"] = { 69.4, 21.1, TALADOR },
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuestNumRequired"] = 1,
 						["sourceQuests"] = {
 							34624,	-- Gas Guzzlers (artillery tower)
 							34573,	-- Iridium Recovery (artillery tower)
 							34875,	-- Next Steps (arcane sanctum)
 							34571,	-- Out of Jovite (artillery tower)
 						},
+						["sourceQuestNumRequired"] = 1,
+						["provider"] = { "n", 80854 },	-- Patrick Messer
+						["coord"] = { 69.4, 21.1, TALADOR },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(112586),	-- Riverbeast Femur
 							i(112579),	-- Riverbeast Jawbone
@@ -1817,16 +1817,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(34107, {	-- Wanted: Hilaani
-						["provider"] = { "n", 80833 },	-- Beastmaster Tagh
-						["coord"] = { 70.8, 29.6, TALADOR },
-						["races"] = HORDE_ONLY,
-						["sourceQuestNumRequired"] = 1,
 						["sourceQuests"] = {
 							34579,	-- Gas Guzzlers (artillery tower)
 							34576,	-- Iridium Recovery (artillery tower)
 							34874,	-- Next Steps (arcane sanctum)
 							34577,	-- Out of Jovite (artillery tower)
 						},
+						["sourceQuestNumRequired"] = 1,
+						["provider"] = { "n", 80833 },	-- Beastmaster Tagh
+						["coord"] = { 70.8, 29.6, TALADOR },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(112586),	-- Riverbeast Femur
 							i(112579),	-- Riverbeast Jawbone
@@ -1837,16 +1837,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(34103, {	-- Wanted: Kil'uun
-						["provider"] = { "n", 80854 },	-- Patrick Messer
-						["coord"] = { 69.4, 21.1, TALADOR },
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuestNumRequired"] = 1,
 						["sourceQuests"] = {
 							34624,	-- Gas Guzzlers (artillery tower)
 							34573,	-- Iridium Recovery (artillery tower)
 							34875,	-- Next Steps (arcane sanctum)
 							34571,	-- Out of Jovite (artillery tower)
 						},
+						["sourceQuestNumRequired"] = 1,
+						["provider"] = { "n", 80854 },	-- Patrick Messer
+						["coord"] = { 69.4, 21.1, TALADOR },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(112578),	-- Talador Hunting Rifle
 							i(112624),	-- Talador Spellbarrier
@@ -1857,14 +1857,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(34108, {	-- Wanted: Kil'uun
-						["provider"] = { "n", 80833 },	-- Beastmaster Tagh
-						["coord"] = { 70.8, 29.6, TALADOR },
-						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							34579,	-- Gas Guzzlers (artillery tower)
 							34576,	-- Iridium Recovery (artillery tower)
 							34577,	-- Out of Jovite (artillery tower)
 						},
+						["provider"] = { "n", 80833 },	-- Beastmaster Tagh
+						["coord"] = { 70.8, 29.6, TALADOR },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(112578),	-- Talador Hunting Rifle
 							i(112624),	-- Talador Spellbarrier
@@ -1875,16 +1875,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(34105, {	-- Wanted: Ra'tok the Hammer
-						["provider"] = { "n", 80854 },	-- Patrick Messer
-						["coord"] = { 69.4, 21.1, TALADOR },
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuestNumRequired"] = 1,
 						["sourceQuests"] = {
 							34624,	-- Gas Guzzlers (artillery tower)
 							34573,	-- Iridium Recovery (artillery tower)
 							34875,	-- Next Steps (arcane sanctum)
 							34571,	-- Out of Jovite (artillery tower)
 						},
+						["sourceQuestNumRequired"] = 1,
+						["provider"] = { "n", 80854 },	-- Patrick Messer
+						["coord"] = { 69.4, 21.1, TALADOR },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(112581),	-- Ra'tok's Buckler
 							i(112580),	-- Ra'tok's Painhammer
@@ -1894,14 +1894,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(34106, {	-- Wanted: Ra'tok the Hammer
-						["provider"] = { "n", 80833 },	-- Beastmaster Tagh
-						["coord"] = { 70.8, 29.6, TALADOR },
-						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							34579,	-- Gas Guzzlers (artillery tower)
 							34576,	-- Iridium Recovery (artillery tower)
 							34577,	-- Out of Jovite (artillery tower)
 						},
+						["provider"] = { "n", 80833 },	-- Beastmaster Tagh
+						["coord"] = { 70.8, 29.6, TALADOR },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(112581),	-- Ra'tok's Buckler
 							i(112580),	-- Ra'tok's Painhammer
@@ -1917,29 +1917,29 @@ root(ROOTS.Zones, {
 						["lvl"] = 94,
 					})),
 					q(34351, {	-- We Must Construct Additional Pylons
-						["provider"] = { "n", 77737 },	-- Soulbinder Tuulani
-						["coord"] = { 68.4, 19.3, 536 },
 						["sourceQuests"] = {
 							34458,	-- Powering the Defenses (Alliance)
 							35249,	-- Powering the Defenses (Horde)
 						},
+						["provider"] = { "n", 77737 },	-- Soulbinder Tuulani
+						["coord"] = { 68.4, 19.3, 536 },
 					}),
 					q(33579, {	-- What the Draenei Found
+						["sourceQuest"] = 33578,	-- Pyrophobia
 						["provider"] = { "n", 75311 },	-- Raksi
 						["coord"] = { 77.7, 43.9, TALADOR },
-						["sourceQuest"] = 33578,	-- Pyrophobia
 					}),
 					q(34773, {	-- Why Is The Brew Gone?
-						["provider"] = { "n", 79963 },	-- Quartermaster O'Riley
-						["coord"] = { 69.5, 21.5, TALADOR },
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuestNumRequired"] = 1,
 						["sourceQuests"] = {
 							34624,	-- Gas Guzzlers (artillery tower)
 							34573,	-- Iridium Recovery (artillery tower)
 							34875,	-- Next Steps (arcane sanctum)
 							34571,	-- Out of Jovite (artillery tower)
 						},
+						["sourceQuestNumRequired"] = 1,
+						["provider"] = { "n", 79963 },	-- Quartermaster O'Riley
+						["coord"] = { 69.5, 21.5, TALADOR },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					n(BONUS_OBJECTIVES, {
 						-- TODO: Check SQ

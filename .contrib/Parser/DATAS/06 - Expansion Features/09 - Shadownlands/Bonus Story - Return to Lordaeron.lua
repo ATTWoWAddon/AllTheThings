@@ -17,89 +17,89 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 			["races"] = ALLIANCE_ONLY,
 		}),
 		q(65657, {	-- Assemble the Forsaken
-			["provider"] = { "n", 185512 },	-- Calia Menethil
 			["sourceQuests"] = {
 				65656,	-- Call to Lordaeron
 				65655,	-- Eyes of the Wolf
 			},
+			["provider"] = { "n", 185512 },	-- Calia Menethil
 			["coord"] = { 60.8, 51.4, 2070 },
 		}),
 		q(65658, {	-- This Land is Ours
-			["provider"] = { "n", 185514 },	-- Dark Ranger Velonara
 			["sourceQuest"] = 65657,	-- Assemble the Forsaken
+			["provider"] = { "n", 185514 },	-- Dark Ranger Velonara
 			["coord"] = { 62.0, 50.5, 2070 },
 		}),
 		q(65659, {	-- The Blight Congress
-			["provider"] = { "n", 185513 },	-- Lilian Voss
 			["sourceQuest"] = 65658,	-- This Land is Ours
+			["provider"] = { "n", 185513 },	-- Lilian Voss
 			["coord"] = { 60.9, 51.3, 2070 },
 		}),
 		q(65660, {	-- Walk of Faith
-			["provider"] = { "n", 185797 },	-- Calia Menethil
 			["sourceQuest"] = 65659,	-- The Blight Congress
+			["provider"] = { "n", 185797 },	-- Calia Menethil
 			["coord"] = { 62.0, 55.7, 2070 },
 		}),
 		q(65661, {	-- Consulting Our Allies
-			["provider"] = { "n", 185513 },	-- Lilian Voss
 			["sourceQuest"] = 65660,	-- Walk of Faith
+			["provider"] = { "n", 185513 },	-- Lilian Voss
 			["coord"] = { 61.9, 55.6, 2070 },
 		}),
 		q(65662, {	-- House of Plagues
-			["provider"] = { "n", 177782 },	-- Margrave Sin'dane
 			["sourceQuests"] = { 65661 },	-- Consulting Our Allies
+			["provider"] = { "n", 177782 },	-- Margrave Sin'dane
 			["coord"] = { 74.8, 33.6, MALDRAXXUS },
 		}),
 		q(65664, {	-- Essence of Plague
-			["provider"] = { "n", 185517 },	-- Plague Deviser Marileth
 			["sourceQuests"] = { 65662 },	-- House of Plagues
+			["provider"] = { "n", 185517 },	-- Plague Deviser Marileth
 			["coord"] = { 71.2, 71.5, MALDRAXXUS },
 		}),
 		q(65663, {	-- Feed the Eater
-			["provider"] = { "n", 185803 },	-- Calia Menethil
 			["sourceQuests"] = { 65662 },	-- House of Plagues
+			["provider"] = { "n", 185803 },	-- Calia Menethil
 			["coord"] = { 71.1, 71.4, MALDRAXXUS },
 		}),
 		q(65665, {	-- Embodiment
-			["provider"] = { "n", 185825 },	-- Plague Deviser Marileth
 			["sourceQuests"] = {
 				65663,	-- Feed th Eater
 				65664,	-- Essence of Plague
 			},
+			["provider"] = { "n", 185825 },	-- Plague Deviser Marileth
 			["coord"] = { 68.7, 81.8, MALDRAXXUS },
 		}),
 		q(65666, {	-- Return to Brill
-			["provider"] = { "n", 185829 },	-- Lilian Voss
 			["sourceQuests"] = { 65665 },	-- Embodiment
+			["provider"] = { "n", 185829 },	-- Lilian Voss
 			["coord"] = { 68.6, 81.8, MALDRAXXUS },
 			["groups"] = {
 				i(191029),	-- Lilian's Hearthstone (QI!)
 			},
 		}),
 		q(65667, {	-- The Remedy of Lordaeron
-			["provider"] = { "n", 185839 },	-- Calia Menethil
 			["sourceQuest"] = 65666,	-- Return to Brill
+			["provider"] = { "n", 185839 },	-- Calia Menethil
 			["coord"] = { 65.8, 60.4, 2070 },
 		}),
 		q(65668, {	-- The Desolate Council
-			["provider"] = { "n", 185852 },	-- Lilian Voss
 			["sourceQuest"] = 65667,	-- The Remedy of Lordaeron
+			["provider"] = { "n", 185852 },	-- Lilian Voss
 			["coord"] = { 61.9, 67.7, 2070 },
 		}),
 		q(66090, {	-- Path of the Dark Rangers (A)
-			["provider"] = { "n", 185851 },	-- Dark Ranger Velonara
 			["sourceQuest"] = 65668,	-- The Desolate Council
+			["provider"] = { "n", 185851 },	-- Dark Ranger Velonara
 			["coord"] = { 61.9, 67.8, 2070 },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		q(66091, {	-- Path of the Dark Rangers (H)
-			["provider"] = { "n", 185851 },	-- Dark Ranger Velonara
 			["sourceQuest"] = 65668,	-- The Desolate Council
+			["provider"] = { "n", 185851 },	-- Dark Ranger Velonara
 			["coord"] = { 61.9, 67.8, 2070 },
 			["races"] = HORDE_ONLY,
 		}),
 		q(65788, {	-- A Walk with Ghosts
-			["provider"] = { "n", 185852 },	-- Lilian Voss
 			["sourceQuest"] = 66091,	-- Path of the Dark Rangers (H)
+			["provider"] = { "n", 185852 },	-- Lilian Voss
 			["coord"] = { 61.8, 67.8, 2070 },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
@@ -109,8 +109,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 			},
 		}),
 		q(65669, {	-- Report to Greymane
-			["provider"] = { "n", 185848 },	-- Calia Menethil
 			["sourceQuest"] = 66090,	-- Path of the Dark Rangers (A)
+			["provider"] = { "n", 185848 },	-- Calia Menethil
 			["coord"] = { 61.9, 67.8, 2070 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {

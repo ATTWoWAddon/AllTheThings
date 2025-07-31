@@ -2019,13 +2019,12 @@ i(229988, 466145);	-- Vicious Electro Eel [H]
 i(229936, 466002);	-- Violet Armored Growler
 i(235556, 1217342);	-- Violet Darkmoon Charger
 i(229947, 466021);	-- Violet Goblin Shredder
--- TRADING POST TAG
+--- NYI ---
+i(232523, 460013);	-- G-99 Breakneck
 i(235659, 1218014);	-- Midnight Butterfly
 i(235554, 1217340);	-- Midnight Darkmoon Charger
 i(235557, 1217343);	-- Snowy Darkmoon Charger
 i(235658, 1218013);	-- Spring Butterfly
---- NYI ---
-i(232523, 460013);	-- G-99 Breakneck
 
 ------------------
 -- PATCH 11.1.5 --
@@ -2050,7 +2049,7 @@ i(239563, 1228865);	-- Void-Scarred Lynx
 i(235706, 1218306);	-- Void-Scarred Pack Mother
 i(235707, 1218307);	-- Void-Scarred Windrider
 i(211089, 428068);	-- Voidfire Deathcycle
---- UNSORTED ---
+--- NYI ---
 i(238902, 1226533);	-- Autumn Harvesthog
 i(238968, 1226856);	-- Lavaborn Cormaera
 i(238900, 1226531);	-- Summer Harvesthog
@@ -2061,21 +2060,21 @@ i(238901, 1226532);	-- Winter Harvesthog
 ------------------
 i(238739, 1226144);	-- Chrono Corsair
 i(243594, 1235817);	-- Forsaken's Grotesque Charger
+i(243572, 1235756);	-- Grandmaster's Prophetic Board
+i(243591, 1235803);	-- Grandmaster's Royal Board
 i(246264, 1241429);	-- Inarius' Charger
 i(245694, 1237703);	-- Ivory Savagemane
 i(239076, 1227192);	-- Herald of Sa'Bak
 i(221270, 446352);	-- Kickin' Kezan Waveshredder
 i(245695, 1237631);	-- Moonlit Nightsaber
 i(246237, 1241263);	-- OC91 Chariot
-i(0, 1236262);	-- Shaohao's Sage Serpent
+i(0, 1236262);		-- Shaohao's Sage Serpent
 i(245936, 1240003);	-- Unarmored Deathtusk Felboar
 i(243596, 1235819);	-- Wailing Banshee's Charger
---- UNSORTED ---
+--- NYI ---
 i(243593, 1234859);	-- Banshee's Chilling Charger
 i(243597, 1235820);	-- Banshee's Sickening Charger
 i(243590, 1235763);	-- Grandmaster's Deep Board
-i(243572, 1235756);	-- Grandmaster's Prophetic Board
-i(243591, 1235803);	-- Grandmaster's Royal Board
 i(243592, 1235806);	-- Grandmaster's Smokey Board
 
 ------------------
@@ -2084,6 +2083,7 @@ i(243592, 1235806);	-- Grandmaster's Smokey Board
 i(242730, 1233547);	-- Acidic Void Creeper
 i(232617, 472157);	-- Astral Gladiator's Fel Bat
 i(248248, 1246781);	-- Azure Void Flyer
+i(242733, 1233559);	-- Blue Barry
 i(238051, 1224048);	-- Delver's Mana-Skimmer
 i(242717, 1233518);	-- Lavender K'arroc
 i(250240, 1250578);	-- Phase-Lost Slateback
@@ -2099,7 +2099,6 @@ i(243157, 1234820);	-- Vicious Void Creeper [A]
 i(243159, 1234821);	-- Vicious Void Creeper [H]
 --- UNSORTED ---
 i(247791, 1245357);	-- Adorned Northeron Gryphon
-i(242733, 1233559);	-- Blue Barry
 i(248761, 1247662);	-- Brewfest Barrel Bomber
 i(247793, 1245359);	-- Cinder-Plumed Highland Gryphon
 i(246919, 1244259);	-- Cinder-seared Elekk

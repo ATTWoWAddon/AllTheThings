@@ -260,7 +260,6 @@ local function CreateRunner(name)
 				end
 				-- Yield false to kick the StackRun off the Stack to stop calling this coroutine since it is complete until Run is called again
 				c_yield(false);
-				frameStartTime = Config.DebugFrameTime and GetTimePreciseSec() or nil
 			end
 		end);
 		-- app.PrintDebug("SetRunnerCoroutine",Name)

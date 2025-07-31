@@ -707,14 +707,14 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 		})),
 
 		-- 11.0.5
-		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
+		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_5 } }, {
 			i(232510),	-- Electric Eel
 			i(232511),	-- Electric Eel
 			i(231773),	-- Lost & Found Chest
 		})),
 
 		-- 11.0.7
-		expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7 } }, {
+		expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_7 } }, {
 			i(232654),	-- Compiled Tattered Journal
 			i(231760),	-- Notes on Ancient Treasure
 			i(228095),	-- Scroll of Empowered Time Warp
@@ -722,7 +722,7 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 		})),
 
 		-- 11.1.0
-		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0 } }, {
+		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_0 } }, {
 			i(238395),	-- Barrel of Fireworks
 			i(228822),	-- Burgled Art
 			i(225931),	-- Contract Fee
@@ -739,6 +739,12 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(227386),	-- R.P.E.L
 			i(227540),	-- Skimmed Profits
 			i(230792),	-- X-Plo-Dar 64k
+		})),
+
+		-- 11.1.7
+		expansion(EXPANSION.TWW, patch(1,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_7 } }, {
+			i(231766),	-- Hammerfall Horn
+			i(228964),	-- Scarlet Signet Ring
 		})),
 	}),
 }));

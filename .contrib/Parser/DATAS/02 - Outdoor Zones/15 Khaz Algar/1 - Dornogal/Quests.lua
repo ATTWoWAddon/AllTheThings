@@ -40,14 +40,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			q(86363, {	-- The Better Part of Valorstones
 				--["sourceQuests"] = { XX },	-- ??
 				["provider"] = { "n", 219226 },	-- Vaskarn
-				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
 				["coord"] = { 52.1, 42.2, DORNOGAL },
+				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
 			}),
 			q(86364, {	-- Crests from the Ether
 				["sourceQuests"] = { 86363 },	-- The Better Part of Valorstones
 				["provider"] = { "n", 219226 },	-- Vaskarn
-				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
 				["coord"] = { 52.1, 42.2, DORNOGAL },
+				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
 				["groups"] = {
 					i(236953),	-- Crimson Valorstone
 				},
@@ -55,8 +55,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			q(86365, {	-- Crest Transmutation
 				["sourceQuests"] = { 86363 },	-- The Better Part of Valorstones
 				["provider"] = { "n", 219226 },	-- Vaskarn
-				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
 				["coord"] = { 52.1, 42.2, DORNOGAL },
+				["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
 				["groups"] = {
 					i(236953),	-- Crimson Valorstone
 				},
@@ -65,8 +65,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			q(86401, {	-- Crests Transmutation
 				["sourceQuests"] = { 86399 },	-- Don't Undermine the Crests
 				["provider"] = { "n", 219226 },	-- Vaskarn
-				["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
 				["coord"] = { 52.1, 42.2, DORNOGAL },
+				["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
 				["groups"] = {
 					i(236953),	-- Crimson Valorstone
 					i(231269),	-- Satchel of Carved Undermine Crests
@@ -80,8 +80,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			q(86399, {	-- Don't Undermine the Crests
 				["sourceQuests"] = { 86396 },	-- The Best Part of Valorstones
 				["provider"] = { "n", 219226 },	-- Vaskarn
-				["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
 				["coord"] = { 52.1, 42.2, DORNOGAL },
+				["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
 				["groups"] = {
 					i(236953),	-- Crimson Valorstone
 					i(231269),	-- Satchel of Carved Undermine Crests
@@ -105,13 +105,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			q(86396, {	-- The Best Part of Valorstones
 				["provider"] = { "n", 219226 },	-- Vaskarn
-				["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
 				["coord"] = { 52.1, 42.2, DORNOGAL },
+				["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
 			}),
 			q(82042, {	-- The Better Part of Valorstones
 				["provider"] = { "n", 219226 },	-- Vaskarn
-				["timeline"] = { REMOVED_11_1_0 },
 				["coord"] = { 52.1, 42.2, DORNOGAL },
+				["timeline"] = { REMOVED_11_1_0 },
 			}),
 			q(84490, {	-- The Great Vault
 				["provider"] = { "n", 229336 },	-- Overseer Hyggred
@@ -138,15 +138,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			q(91205, {	-- Ultra Prime Deluxe Turbo-Boost: Powerhouse Challenges
 				["provider"] = { "o", 525434 },	-- Bounty: Liberation of Undermine
 				["coord"] = { 52.4, 45.9, DORNOGAL },
-				["isWeekly"] = true,	-- this quest was also reset by blizz for some reason
 				["timeline"] = { ADDED_11_1_5, REMOVED_11_2_0 },
+				["isWeekly"] = true,	-- this quest was also reset by blizz for some reason
 				["groups"] = { i(237502) },	-- Puzzling Cartel Chip x3
 			}),
 			q(89039, {	-- Turbo-Boost: Powerhouse Challenges
 				["provider"] = { "o", 525434 },	-- Bounty: Liberation of Undermine
 				["coord"] = { 52.4, 45.9, DORNOGAL },
-				["isWeekly"] = true,
 				["timeline"] = { ADDED_11_1_5, REMOVED_11_2_0 },
+				["isWeekly"] = true,
 				["groups"] = { i(237502) },	-- Puzzling Cartel Chip
 			}),
 		}),

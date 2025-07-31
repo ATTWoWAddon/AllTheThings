@@ -26,15 +26,15 @@ root(ROOTS.ExpansionFeatures,
 							["races"] = HORDE_ONLY,
 						}),
 						q(35343, {	-- The Young Alchemist
-							["provider"] = { "n", 82466 },	-- Aenir
 							["sourceQuests"] = { 35342 },	-- The Mysterious Flask
+							["provider"] = { "n", 82466 },	-- Aenir
 							["coord"] = { 47.2, 45.8, LUNARFALL },
 							["requireSkill"] = ALCHEMY,
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(35103, {	-- The Alchemist
-							["provider"] = { "n", 81166 },	-- Refugee Lo'nash
 							["sourceQuests"] = { 35058 },	-- The Mysterious Flask
+							["provider"] = { "n", 81166 },	-- Refugee Lo'nash
 							["coord"] = { 45.4, 50.4, FROSTWALL },
 							["requireSkill"] = ALCHEMY,
 							["races"] = HORDE_ONLY,

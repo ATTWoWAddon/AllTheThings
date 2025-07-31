@@ -206,8 +206,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 50,
 				}),
 				q(26954, {	-- A Different Approach
-					["qg"] = 44456,	-- Adrine Towhide
 					["sourceQuest"] = 26953,	-- Zen'kiki, the Druid
+					["qg"] = 44456,	-- Adrine Towhide
 					["coord"] = { 48.8, 54.7, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -217,8 +217,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27012, {	-- A Gnoll's Resolve
-					["qg"] = 44472,	-- Kelly Dumah
 					["sourceQuest"] = 27013,	-- Too Close for Comfort
+					["qg"] = 44472,	-- Kelly Dumah
 					["coord"] = { 48.4, 31.9, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -289,8 +289,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26999, {	-- A New Era for the Plaguelands
-					["qg"] = 44454,	-- Field Agent Kaartish
 					["sourceQuests"] = { 27175, 27233, 26952 },	-- The Menders' Stead (A/A/H versions)
+					["qg"] = 44454,	-- Field Agent Kaartish
 					["coord"] = { 49.2, 54.9, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -349,23 +349,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 				{	-- A Plague Upon Thee (2/3)
 					["allianceQuestData"] = q(5904, {	-- A Plague Upon Thee (2/3) [A]
+						["sourceQuest"] = 5903,	-- A Plague Upon Thee (1/3)
 						["providers"] = {
 							{ "n",  11616 },	-- Nathaniel Dumah
 							{ "i",  15044 },	-- Barrel of Plagueland Termites
 							{ "o", 177491 },	-- Termite Barrel
 							{ "o", 177490 },	-- Northridge Lumber Mill Crate
 						},
-						["sourceQuest"] = 5903,	-- A Plague Upon Thee (1/3)
 						["coord"] = { 43.4, 84.8, WESTERN_PLAGUELANDS },
 					}),
 					["hordeQuestData"] = q(5902, {	-- A Plague Upon Thee (2/3) [H]
+						["sourceQuest"] = 5901,	-- A Plague Upon Thee (1/3)
 						["providers"] = {
 							{ "n",  11615 },	-- Mickey Levine
 							{ "i",  15044 },	-- Barrel of Plagueland Termites
 							{ "o", 177491 },	-- Termite Barrel
 							{ "o", 177490 },	-- Northridge Lumber Mill Crate
 						},
-						["sourceQuest"] = 5901,	-- A Plague Upon Thee (1/3)
 						["coord"] = { 83.2, 72.4, TIRISFAL_GLADES },
 					}),
 					["timeline"] = { REMOVED_4_0_3 },
@@ -387,8 +387,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 48,
 				},
 				q(5153, {	-- A Strange Historian
-					["qg"] = 10927,	-- Marlene Redpath
 					["sourceQuest"] = 5152,	-- Auntie Marlene
+					["qg"] = 10927,	-- Marlene Redpath
 					["coord"] = { 49.2, 78.4, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
@@ -403,8 +403,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27089, {	-- Ace in the Hole
-					["qg"] = 44451,	-- Lady Sylvanas Windrunner
 					["sourceQuest"] = 27087,	-- Lindsay Ravensun, Revealed
+					["qg"] = 44451,	-- Lady Sylvanas Windrunner
 					["coord"] = { 49.0, 63.7, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -442,13 +442,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				{	-- Alas, Andorhal
 					["allianceQuestData"] = q(211, {	-- Alas, Andorhal [A]
-						["qg"] = 10838,	-- Commander Ashlam Valorfist
 						["sourceQuest"] = 5097,	-- All Along the Watchtowers [A]
+						["qg"] = 10838,	-- Commander Ashlam Valorfist
 						["coord"] = { 42.7, 84.1, WESTERN_PLAGUELANDS },
 					}),
 					["hordeQuestData"] = q(105, {	-- Alas, Andorhal [H]
-						["qg"] = 10837,	-- High Executor Derrington
 						["sourceQuest"] = 5098,	-- All Along the Watchtowers
+						["qg"] = 10837,	-- High Executor Derrington
 						["coord"] = { 83.0, 69.0, TIRISFAL_GLADES },
 					}),
 					["timeline"] = { REMOVED_4_0_3 },
@@ -468,8 +468,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				},
 				q(27206, {	-- Alas, Andorhal
-					["qg"] = 44453,	-- Thassarian
 					["sourceQuest"] = 27204,	-- Aradne
+					["qg"] = 44453,	-- Thassarian
 					["coord"] = { 39.9, 69.4, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -496,13 +496,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				{	-- All Along the Watchtowers
 					["allianceQuestData"] = q(5097, {	-- All Along the Watchtowers [A]
-						["qg"] = 10838,	-- Commander Ashlam Valorfist
 						["sourceQuest"] = 5092,	-- Clear The Way
+						["qg"] = 10838,	-- Commander Ashlam Valorfist
 						["coord"] = { 42.7, 84.1, WESTERN_PLAGUELANDS },
 					}),
 					["hordeQuestData"] = q(5098, {	-- All Along the Watchtowers [H]
-						["qg"] = 10837,	-- High Executor Derrington
 						["sourceQuest"] = 5096,	-- Scarlet Diversions
+						["qg"] = 10837,	-- High Executor Derrington
 						["coord"] = { 83.0, 69.0, TIRISFAL_GLADES },
 					}),
 					["timeline"] = { REMOVED_4_0_3 },
@@ -527,8 +527,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				},
 				q(27171, {	-- Ambushed!
-					["provider"] = { "o", 205258 },	-- Broken Weapons Crate
 					["sourceQuest"] = 27170,	-- The Abandoned Crypt
+					["provider"] = { "o", 205258 },	-- Broken Weapons Crate
 					["coord"] = { 53.7, 80.4, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -562,24 +562,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27002, {	-- An Audience with the Highlord
-					["qg"] = 11616,	-- Nathaniel Dumah
 					["sourceQuest"] = 27001,	-- This Means WAR (Wild Arachnid Roundup)
+					["qg"] = 11616,	-- Nathaniel Dumah
 					["coord"] = { 48.1, 32.3, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(27090, {	-- Andorhal, Once and For All
-					["qg"] = 45129,	-- Lurid
 					["sourceQuest"] = 27089,	-- Ace in the Hole
+					["qg"] = 45129,	-- Lurid
 					["coord"] = { 39.3, 70.5, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27204, {	-- Aradne
-					["qg"] = 44453,	-- Thassarian
 					["sourceQuests"] = {
 						27202,	-- Brother Against Brother
 						27201,	-- Val'kyr Incursion
 					},
+					["qg"] = 44453,	-- Thassarian
 					["coord"] = { 39.9, 69.4, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -591,19 +591,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				{	-- Araj the Summoner
 					["allianceQuestData"] = q(27164, {	-- Araj the Summoner (A)
+						["sourceQuest"] = 27161,	-- The Endless Flow
 						["providers"] = {
 							{ "n", 44467 },	-- Lang Loosegrip
 							{ "i", 60849 },	-- Lang's Hand Grenades
 						},
-						["sourceQuest"] = 27161,	-- The Endless Flow
 						["coord"] = { 41.2, 70.0, WESTERN_PLAGUELANDS },
 					}),
 					["hordeQuestData"] = q(26925, {	-- Araj the Summoner (H)
+						["sourceQuest"] = 26922,	-- The Endless Flow
 						["providers"] = {
 							{ "n", 44462 },	-- Jearl Donald
 							{ "i", 60678 },	-- Jearl's Hand Grenades
 						},
-						["sourceQuest"] = 26922,	-- The Endless Flow
 						["coord"] = { 47.3, 64.4, WESTERN_PLAGUELANDS },
 					}),
 					["timeline"] = { ADDED_4_0_3 },
@@ -636,8 +636,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				},
 				q(27199, {	-- Ashes to Ashes (A)
-					["qg"] = 44453,	-- Thassarian
 					["sourceQuest"] = 27197,	-- The Battle Resumes!
+					["qg"] = 44453,	-- Thassarian
 					["coord"] = { 39.9, 69.4, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -648,8 +648,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27086, {	-- Ashes to Ashes (H)
-					["qg"] = 44452,	-- Koltira Deathweaver
 					["sourceQuest"] = 27083,	-- The Battle Resumes!
+					["qg"] = 44452,	-- Koltira Deathweaver
 					["coord"] = { 46.9, 63.8, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -660,8 +660,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27154, {	-- Bagging Bisp
-					["qg"] = 45147,	-- Daria L'Rayne
 					["sourceQuest"] = 27153,	-- The Good People of Hearthglen
+					["qg"] = 45147,	-- Daria L'Rayne
 					["coord"] = { 42.1, 14.9, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -713,8 +713,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				q(27202, {	-- Brother Against Brother
-					["qg"] = 45165,	-- Thurman Grant
 					["sourceQuest"] = 27205,	-- The Depravity of the Forsaken
+					["qg"] = 45165,	-- Thurman Grant
 					["coord"] = { 39.8, 69.7, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -745,21 +745,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(5210, {	-- Brother Carlin
+					["sourceQuest"] = 5154,	-- The Annals of Darrowshire
 					["providers"] = {
 						{ "n", 10667 },	-- Chromie
 						{ "i", 13202 },	-- Extended Annals of Darrowshire
 					},
-					["sourceQuest"] = 5154,	-- The Annals of Darrowshire
 					["coord"] = { 39.4, 66.8, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 				}),
 				q(27163, {	-- Brute Strength (A)
-					["qg"] = 44453,	-- Thassarian
 					["sourceQuests"] = {
 						27159,	-- Scourge First... Horde Later
 						27160,	-- War Machines
 					},
+					["qg"] = 44453,	-- Thassarian
 					["coord"] = { 41.0, 70.4, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -771,11 +771,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27117, {	-- Brute Strength (H)
-					["qg"] = 44452,	-- Koltira Deathweaver
 					["sourceQuests"] = {
 						26921,	-- Scourge First... Alliance Later
 						26923,	-- War Machines
 					},
+					["qg"] = 44452,	-- Koltira Deathweaver
 					["coord"] = { 47.7, 65.1, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -820,13 +820,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				{	-- Chromatic Mantle of the Dawn
 					["allianceQuestData"] = q(5521, {	-- Chromatic Mantle of the Dawn [A]
-						["qg"] = 10857,	-- Argent Quartermaster Lightspark <The Argent Dawn>
 						["sourceQuest"] = 5507,	-- Mantles of the Dawn
+						["qg"] = 10857,	-- Argent Quartermaster Lightspark <The Argent Dawn>
 						["coord"] = { 42.8, 83.8, WESTERN_PLAGUELANDS },
 					}),
 					["hordeQuestData"] = q(5524, {	-- Chromatic Mantle of the Dawn [H]
-						["qg"] = 10856,	-- Argent Quartermaster Hasana <The Argent Dawn>
 						["sourceQuest"] = 5504,	-- Mantles of the Dawn
+						["qg"] = 10856,	-- Argent Quartermaster Hasana <The Argent Dawn>
 						["coord"] = { 83.2, 68.2, TIRISFAL_GLADES },
 					}),
 					["altQuests"] = {
@@ -844,8 +844,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, q(83935, {	-- Clearing the Path
-					["qg"] = 227672,	-- Squire Cuthbert
 					["sourceQuest"] = 83808,	-- In A Bind
+					["qg"] = 227672,	-- Squire Cuthbert
 					["coord"] = { 47.8, 50.4, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_1_15_3 },
 					["classes"] = { PALADIN },
@@ -867,7 +867,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				q(5092, {	-- Clear the Way
-					["qg"] = 10838,	-- Commander Ashlam Valorfist
 					["sourceQuests"] = {
 						5066,	-- A Call to Arms: The Plaguelands! [Stormwind City]
 						5090,	-- A Call to Arms: The Plaguelands! [Ironforge]
@@ -876,6 +875,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						10373,	-- A Call to Arms: The Plaguelands! [The Exodar]
 						-- #endif
 					},
+					["qg"] = 10838,	-- Commander Ashlam Valorfist
 					["coord"] = { 42.7, 84.1, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -890,8 +890,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27174, {	-- Combat Training (A)
-					["qg"] = 45165,	-- Thurman Grant
 					["sourceQuest"] = 27173,	-- This Is Our Army
+					["qg"] = 45165,	-- Thurman Grant
 					["coord"] = { 53.8, 64.6, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -918,8 +918,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26938, {	-- Combat Training (H)
-					["qg"] = 44466,	-- Lindsay Ravensun
 					["sourceQuest"] = 26937,	-- When Death is Not Enough
+					["qg"] = 44466,	-- Lindsay Ravensun
 					["coord"] = { 40.6, 52.0, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -973,8 +973,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				},
 				q(4972, {	-- Counting Out Time (1/2)
-					["qg"] = 10667,	-- Chromie
 					["sourceQuest"] = 4971,	-- A Matter of Time
+					["qg"] = 10667,	-- Chromie
 					["coord"] = { 39.4, 66.8, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 53,
@@ -992,8 +992,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(4973, {	-- Counting Out Time (2/2)
-					["qg"] = 10667,	-- Chromie
 					["sourceQuest"] = 4972,	-- Counting Out Time (1/2)
+					["qg"] = 10667,	-- Chromie
 					["coord"] = { 39.4, 66.8, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
@@ -1012,11 +1012,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(5221, {	-- Dalson's Tears Cauldron
-					["provider"] = { "o", 177289 },	-- Scourge Cauldron
 					["sourceQuests"] = {
 						5219,	-- Target: Dalson's Tears
 						5231,	-- Target: Dalson's Tears
 					},
+					["provider"] = { "o", 177289 },	-- Scourge Cauldron
 					["coord"] = { 46.2, 52, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -1029,10 +1029,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, q(83936, {	-- Dalton's Quest
-					["qg"] = 227672,	-- Squire Cuthbert
-					["sourceQuest"] = 83822,	-- The Fallen Knight
-					["coord"] = { 47.8, 50.4, WESTERN_PLAGUELANDS },
 					["description"] = "Upon completing this quest, you will have a personal Squire.",
+					["sourceQuest"] = 83822,	-- The Fallen Knight
+					["qg"] = 227672,	-- Squire Cuthbert
+					["coord"] = { 47.8, 50.4, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_1_15_3 },
 					["classes"] = { PALADIN },
 					["lvl"] = 50,
@@ -1042,8 +1042,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				q(9444, {	-- Defiling Uther's Tomb
-					["qg"] = 17099,	-- Mehlar Dawnblade
 					["sourceQuest"] = 9443,	-- The So-Called Mark of the Lightbringer
+					["qg"] = 17099,	-- Mehlar Dawnblade
 					["coord"] = { 26.6, 58.5, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1056,8 +1056,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27054, {	-- Desperate Acts
-					["qg"] = 44454,	-- Field Agent Kaartish
 					["sourceQuest"] = 27057,	-- Return to the Stead
+					["qg"] = 44454,	-- Field Agent Kaartish
 					["coord"] = { 49.2, 54.9, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1069,8 +1069,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8414, {	-- Dispelling Evil
-					["qg"] = 10838,	-- Commander Ashlam Valorfist
 					["sourceQuest"] = 8415,	-- Chillwind Point [TBC+] / Chillwind Camp
+					["qg"] = 10838,	-- Commander Ashlam Valorfist
 					["coord"] = { 42.8, 84.0, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 12840, 20 } },	-- Minion's Scourgestone
@@ -1079,8 +1079,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 50,
 				})),
 				q(27157, {	-- Drudges... <Sigh>
-					["qg"] = 45157,	-- Lieutenant Myner
 					["sourceQuest"] = 27156,	-- It's About Time!
+					["qg"] = 45157,	-- Lieutenant Myner
 					["coord"] = { 43.2, 15.9, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1091,11 +1091,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(5218, {	-- Felstone Field Cauldron
-					["provider"] = { "o", 176361 },	-- Scourge Cauldron
 					["sourceQuests"] = {
 						5216,	-- Target: Felstone Field
 						5229,	-- Target: Felstone Field
 					},
+					["provider"] = { "o", 176361 },	-- Scourge Cauldron
 					["coord"] = { 37.2, 56.9, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -1107,8 +1107,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 50,
 				}),
 				q(26933, {	-- Foes Before Hoes
-					["qg"] = 11055,	-- Shadow Priestess Vandis
 					["sourceQuest"] = 26931,	-- Foxes and Hounds
+					["qg"] = 11055,	-- Shadow Priestess Vandis
 					["coord"] = { 83.3, 69.8, TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1153,11 +1153,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(5227, {	-- Gahrron's Withering Cauldron
-					["provider"] = { "o", 176392 },	-- Scourge Cauldron
 					["sourceQuests"] = {
 						5225,	-- Target: Gahrron's Withering
 						5235,	-- Target: Gahrron's Withering
 					},
+					["provider"] = { "o", 176392 },	-- Scourge Cauldron
 					["coord"] = { 62.5, 58.6, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -1169,13 +1169,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 50,
 				}),
 				q(27053, {	-- Gahrron's Withering Cauldron
-					["qg"] = 44454,	-- Field Agent Kaartish
 					["sourceQuests"] = {
 						26999,	-- A New Era for the Plaguelands
 						27002,	-- An Audience with the Highlord
 						27017,	-- Memories from a Lost Past
 						26957,	-- The Long Trip Home
 					},
+					["qg"] = 44454,	-- Field Agent Kaartish
 					["coord"] = { 49.2, 54.9, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1247,11 +1247,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 50,
 				}),
 				q(5048, {	-- Good Natured Emma
+					["sourceQuest"] = 5022,	-- Better Late Than Never (2/2) [A]
 					["providers"] = {
 						{ "n", 10782 },	-- Royal Factor Bathrilor <Stormwind Census>
 						{ "i", 12724 },	-- Janice's Parcel
 					},
-					["sourceQuest"] = 5022,	-- Better Late Than Never (2/2) [A]
 					["coord"] = { 48.6, 30.6, STORMWIND_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1297,8 +1297,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, q(83808, {	-- In A Bind
-					["qg"] = 227672,	-- Squire Cuthbert
 					["sourceQuest"] = 83756,	-- Bless the Fallen HQT
+					["qg"] = 227672,	-- Squire Cuthbert
 					["coord"] = { 47.8, 50.4, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_1_15_3 },
 					["classes"] = { PALADIN },
@@ -1315,11 +1315,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8416, {	-- Inert Scourgestones
+					["sourceQuest"] = 8414,	-- Dispelling Evil
 					["providers"] = {
 						{ "n", 1854 },	-- High Priest Thel'danis
 						{ "i", 20612 },	-- Inert Scourgestone
 					},
-					["sourceQuest"] = 8414,	-- Dispelling Evil
 					["coord"] = { 52.2, 83.6, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
@@ -1356,13 +1356,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26934, {	-- Latent Disease
-					["qg"] = 11057,	-- Apothecary Dithers
 					["sourceQuests"] = {
 						26930,	-- After the Crusade (reported as inaccurate quest)
 						25007,	-- East... Always to the East (assumed from report)
 						25006,	-- The Grasp Weakens (from Discord report)
 					},
 					["sourceQuestNumRequired"] = 1,
+					["qg"] = 11057,	-- Apothecary Dithers
 					["coord"] = { 83.2, 69.2, TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1379,8 +1379,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27000, {	-- Learning the Ropes
-					["qg"] = 11616,	-- Nathaniel Dumah
 					["sourceQuest"] = 26935,	-- Northridge Lumber Mill
+					["qg"] = 11616,	-- Nathaniel Dumah
 					["coord"] = { 48.1, 32.3, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1393,12 +1393,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27087, {	-- Lindsay Ravensun, Revealed
-					["qg"] = 44452,	-- Koltira Deathweaver
 					["sourceQuests"] = {
 						27086,	-- Ashes to Ashes
 						27085,	-- Supporting the Troops
 						27084,	-- The Farmers' Militia
 					},
+					["qg"] = 44452,	-- Koltira Deathweaver
 					["coord"] = { 46.9, 63.8, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1449,12 +1449,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26936, {	-- Lower the Boom
-					["qg"] = 10837,	-- High Executor Derrington
 					["sourceQuests"] = {
 						26930,	-- After the Crusade
 						26933,	-- Foes Before Hoes
 						26978,	-- Who Needs Cauldrons?
 					},
+					["qg"] = 10837,	-- High Executor Derrington
 					["coord"] = { 83.3, 69.0, TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1475,8 +1475,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 55,
 				},
 				q(27017, {	-- Memories from a Lost Past
-					["qg"] = 44458,	-- Del Gahrron
 					["sourceQuest"] = 26957,	-- The Long Trip Home
+					["qg"] = 44458,	-- Del Gahrron
 					["coord"] = { 50.6, 52.5, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1535,13 +1535,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 				{	-- Mission Accomplished!
 					["allianceQuestData"] = q(5237, {	-- Mission Accomplished! [A]
-						["qg"] = 10838,	-- Commander Ashlam Valorfist
 						["sourceQuest"] = 5226,	-- Return to Chillwind Camp
+						["qg"] = 10838,	-- Commander Ashlam Valorfist
 						["coord"] = { 42.7, 84.1, WESTERN_PLAGUELANDS },
 					}),
 					["hordeQuestData"] = q(5238, {	-- Mission Accomplished! [H]
-						["qg"] = 10837,	-- High Executor Derrington
 						["sourceQuest"] = 5236,	-- Return to the Bulwark
+						["qg"] = 10837,	-- High Executor Derrington
 						["coord"] = { 83.0, 69.0, TIRISFAL_GLADES },
 					}),
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1565,15 +1565,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 52,
 				}),
 				q(26935, {	-- Northridge Lumber Mill
-					["qg"] = 44454,	-- Field Agent Kaartish
 					["sourceQuest"] = 26999,	-- A New Era for the Plaguelands
+					["qg"] = 44454,	-- Field Agent Kaartish
 					["coord"] = { 49.2, 54.9, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,	-- for "Learning the Ropes"
 				}),
 				q(10590, {	-- Prove Your Hatred
-					["qg"] = 17099,	-- Mehlar Dawnblade
 					["sourceQuest"] = 9601,	-- To The Bulwark
+					["qg"] = 17099,	-- Mehlar Dawnblade
 					["coord"] = { 83.2, 71.2, TIRISFAL_GLADES },
 					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["maps"] = { UNDERCITY },
@@ -1583,8 +1583,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 50,
 				}),
 				q(27011, {	-- Redpine Thievery
-					["qg"] = 44472,	-- Kelly Dumah
 					["sourceQuest"] = 27013,	-- Too Close for Comfort
+					["qg"] = 44472,	-- Kelly Dumah
 					["coord"] = { 48.4, 31.9, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1658,16 +1658,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 50,
 				},
 				q(27057, {	-- Return to the Stead
+					["sourceQuest"] = 27053,	-- Gahrron's Withering Cauldron
 					["providers"] = {
 						{ "o", 176392 },	-- Scourge Cauldron
 						{ "i",  13193 },	-- Filled Gahrron's Withering Bottle
 					},
-					["sourceQuest"] = 27053,	-- Gahrron's Withering Cauldron
 					["coord"] = { 62.5, 58.5, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(5096, {	-- Scarlet Diversions
-					["qg"] = 10837,	-- High Executor Derrington
 					["sourceQuests"] = {
 						5093,	-- A Call to Arms: The Plaguelands! [Orgrimmar]
 						5094,	-- A Call to Arms: The Plaguelands! [Undercity]
@@ -1676,6 +1675,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						10374,	-- A Call to Arms: The Plaguelands! [Silvermoon City]
 						-- #endif
 					},
+					["qg"] = 10837,	-- High Executor Derrington
 					["coord"] = { 83.0, 69.0, TIRISFAL_GLADES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1696,11 +1696,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27162, {	-- Scholomancer (A)
-					["qg"] = 44453,	-- Thassarian
 					["sourceQuests"] = {
 						27159,	-- Scourge First... Horde Later
 						27160,	-- War Machines
 					},
+					["qg"] = 44453,	-- Thassarian
 					["coord"] = { 41.0, 70.4, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1730,11 +1730,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26924, {	-- Scholomancer (H)
-					["qg"] = 44452,	-- Koltira Deathweaver
 					["sourceQuests"] = {
 						26921,	-- Scourge First... Alliance Later
 						26923,	-- War Machines
 					},
+					["qg"] = 44452,	-- Koltira Deathweaver
 					["coord"] = { 47.7, 65.1, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1764,13 +1764,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26921, {	-- Scourge First... Alliance Later
-					["qg"] = 44452,	-- Koltira Deathweaver
 					["sourceQuests"] = {
 						28750,	-- The Battle for Andorhal (Arcanist Arman, STV)
 						28508,	-- The Battle for Andorhal (Darkcleric Marnal, Hinterlands)
 						26920,	-- The Battle for Andorhal (High Executor Derrington, Tirisfal Glades)
 						28575,	-- Warchief's Command: Western Plaguelands!
 					},
+					["qg"] = 44452,	-- Koltira Deathweaver
 					["coord"] = { 47.7, 65.2, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1785,13 +1785,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27159, {	-- Scourge First... Horde Later
-					["qg"] = 44453,	-- Thassarian
 					["sourceQuests"] = {
 						28576,	-- Hero's Call: Western Plaguelands!
 						27158,	-- The Battle for Andorhal (Commander Ashlam Valorfist, WPL)
 						28505,	-- The Battle for Andorhal (Gryphon Master Talonaxe, Hinterlands)
 						28749,	-- The Battle for Andorhal (War-Mage Erallier, STV)
 					},
+					["qg"] = 44453,	-- Thassarian
 					["coord"] = { 41.0, 70.4, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1806,19 +1806,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26979, {	-- Strange New Faces
-					["qg"] = 10837,	-- High Executor Derrington
 					["sourceQuest"] = 26936,	-- Lower the Boom
+					["qg"] = 10837,	-- High Executor Derrington
 					["coord"] = { 83.3, 69.0, TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
 				}),
 				q(27055, {	-- Students of Krastinov
+					["sourceQuest"] = 27054,	-- Desperate Acts
 					["providers"] = {
 						{ "n", 44454 },	-- Field Agent Kaartish
 						{ "i", 60772 },	-- Cult Orders
 					},
-					["sourceQuest"] = 27054,	-- Desperate Acts
 					["coord"] = { 49.2, 54.9, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1849,8 +1849,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27198, {	-- Supporting the Troops (A)
-					["qg"] = 44467,	-- Lang Loosegrip
 					["sourceQuest"] = 27197,	-- The Battle Resumes!
+					["qg"] = 44467,	-- Lang Loosegrip
 					["coord"] = { 40.0, 69.1, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1879,8 +1879,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27085, {	-- Supporting the Troops (H)
-					["qg"] = 44462,	-- Jearl Donald
 					["sourceQuest"] = 27083,	-- The Battle Resumes!
+					["qg"] = 44462,	-- Jearl Donald
 					["coord"] = { 46.8, 63.4, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1909,8 +1909,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27151, {	-- Taelan Fordring's Legacy
-					["qg"] = 45147,	-- Daria L'Rayne
 					["sourceQuest"] = 27002,	-- An Audience With the Highlord
+					["qg"] = 45147,	-- Daria L'Rayne
 					["coord"] = { 42.1, 14.9, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1921,13 +1921,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				{	-- Target: Dalson's Tears
 					["allianceQuestData"] = q(5219, {	-- Target: Dalson's Tears [A]
-						["qg"] = 11053,	-- High Priestess MacDonnell
 						["sourceQuest"] = 5217,	-- Return to Chillwind Camp
+						["qg"] = 11053,	-- High Priestess MacDonnell
 						["coord"] = { 43.0, 84.5, WESTERN_PLAGUELANDS },
 					}),
 					["hordeQuestData"] = q(5231, {	-- Target: Dalson's Tears [H]
-						["qg"] = 11055,	-- Shadow Priestess Vandis
 						["sourceQuest"] = 5230,	-- Return to the Bulwark
+						["qg"] = 11055,	-- Shadow Priestess Vandis
 						["coord"] = { 83.0, 71.8, TIRISFAL_GLADES },
 					}),
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1945,13 +1945,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 				{	-- Target: Felstone Field
 					["allianceQuestData"] = q(5216, {	-- Target: Felstone Field [A]
-						["qg"] = 11053,	-- High Priestess MacDonnell
 						["sourceQuest"] = 5215,	-- The Scourge Cauldrons
+						["qg"] = 11053,	-- High Priestess MacDonnell
 						["coord"] = { 43.0, 84.5, WESTERN_PLAGUELANDS },
 					}),
 					["hordeQuestData"] = q(5229, {	-- Target: Felstone Field [H]
-						["qg"] = 11055,	-- Shadow Priestess Vandis
 						["sourceQuest"] = 5228,	-- The Scourge Cauldrons
+						["qg"] = 11055,	-- Shadow Priestess Vandis
 						["coord"] = { 83.0, 71.8, TIRISFAL_GLADES },
 					}),
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1969,13 +1969,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 				{	-- Target: Gahrron's Withering
 					["allianceQuestData"] = q(5225, {	-- Target: Gahrron's Withering [A]
-						["qg"] = 11053,	-- High Priestess MacDonnell
 						["sourceQuest"] = 5223,	-- Return to Chillwind Camp
+						["qg"] = 11053,	-- High Priestess MacDonnell
 						["coord"] = { 43.0, 84.5, WESTERN_PLAGUELANDS },
 					}),
 					["hordeQuestData"] = q(5235, {	-- Target: Gahrron's Withering [H]
-						["qg"] = 11055,	-- Shadow Priestess Vandis
 						["sourceQuest"] = 5234,	-- Return to the Bulwark
+						["qg"] = 11055,	-- Shadow Priestess Vandis
 						["coord"] = { 83.0, 71.8, TIRISFAL_GLADES },
 					}),
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1993,13 +1993,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 				{	-- Target: Writhing Haunt
 					["allianceQuestData"] = q(5222, {	-- Target: Writhing Haunt [A]
-						["qg"] = 11053,	-- High Priestess MacDonnell
 						["sourceQuest"] = 5220,	-- Return to Chillwind Camp
+						["qg"] = 11053,	-- High Priestess MacDonnell
 						["coord"] = { 43.0, 84.5, WESTERN_PLAGUELANDS },
 					}),
 					["hordeQuestData"] = q(5233, {	-- Target: Writhing Haunt [H]
-						["qg"] = 11055,	-- Shadow Priestess Vandis
 						["sourceQuest"] = 5232,	-- Return to the Bulwark
+						["qg"] = 11055,	-- Shadow Priestess Vandis
 						["coord"] = { 83.0, 71.8, TIRISFAL_GLADES },
 					}),
 					["timeline"] = { REMOVED_4_0_3 },
@@ -2016,15 +2016,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				},
 				q(27170, {	-- The Abandoned Crypt
-					["qg"] = 1854,	-- High Priest Thel'danis
 					["sourceQuest"] = 27169,	-- Uther's Blessing
+					["qg"] = 1854,	-- High Priest Thel'danis
 					["coord"] = { 52.1, 83.5, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(5154, {	-- The Annals of Darrowshire
-					["qg"] = 10667,	-- Chromie
 					["sourceQuest"] = 5153,	-- A Strange Historian
+					["qg"] = 10667,	-- Chromie
 					["coord"] = { 39.4, 66.8, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
@@ -2085,18 +2085,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 35,
 				}),
 				q(27197, {	-- The Battle Resumes! (A)
-					["qg"] = 45012,	-- Durnt Brightfalcon
 					["sourceQuest"] = 27174,	-- Combat Training
+					["qg"] = 45012,	-- Durnt Brightfalcon
 					["coord"] = { 50.4, 52.5, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27083, {	-- The Battle Resumes! (H)
+					["sourceQuest"] = 26938,	-- Combat Training
 					["qgs"] = {
 						45013,	-- Damion Steel
 						10837,	-- High Executor Derrington
 					},
-					["sourceQuest"] = 26938,	-- Combat Training
 					["coords"] = {
 						{ 83.3, 69.0, TIRISFAL_GLADES },
 						{ 49.2, 53.1, WESTERN_PLAGUELANDS },
@@ -2105,8 +2105,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(6186, {	-- The Blightcaller Cometh
-					["qg"] = 12425,	-- Flint Shadowmore <SI:7>
 					["sourceQuest"] = 6185,	-- The Eastern Plagues
+					["qg"] = 12425,	-- Flint Shadowmore <SI:7>
 					["coord"] = { 43.6, 84.5, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STORMWIND_CITY },
@@ -2114,18 +2114,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 56,
 				}),
 				q(27205, {	-- The Depravity of the Forsaken
-					["qg"] = 44453,	-- Thassarian
 					["sourceQuests"] = {
 						27199,	-- Ashes to Ashes
 						27198,	-- Supporting the Troops
 					},
+					["qg"] = 44453,	-- Thassarian
 					["coord"] = { 39.9, 69.4, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(6185, {	-- The Eastern Plagues
-					["qg"] = 12425,	-- Flint Shadowmore <SI:7>
 					["sourceQuest"] = 6184,	-- Flint Shadowmore
+					["qg"] = 12425,	-- Flint Shadowmore <SI:7>
 					["coord"] = { 43.6, 84.5, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { EASTERN_PLAGUELANDS },
@@ -2187,8 +2187,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, q(83822, {	-- The Fallen Knight
-					["qg"] = 227672,	-- Squire Cuthbert
 					["sourceQuest"] = 83935,	-- Clearing the Path
+					["qg"] = 227672,	-- Squire Cuthbert
 					["coord"] = { 47.8, 50.4, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_1_15_3 },
 					["classes"] = { PALADIN },
@@ -2203,8 +2203,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				q(27084, {	-- The Farmers' Militia
-					["qg"] = 44452,	-- Koltira Deathweaver
 					["sourceQuest"] = 27083,	-- The Battle Resumes!
+					["qg"] = 44452,	-- Koltira Deathweaver
 					["coord"] = { 46.9, 63.8, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2218,8 +2218,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27153, {	-- The Good People of Hearthglen
-					["qg"] = 45147,	-- Daria L'Rayne
 					["sourceQuest"] = 27152,	-- Unusual Behavior... Even For Gnolls
+					["qg"] = 45147,	-- Daria L'Rayne
 					["coord"] = { 42.1, 14.9, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -2242,11 +2242,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(5049, {	-- The Jeremiah Blues
+					["sourceQuest"] = 5023,	-- Better Late Than Never (2/2) [H]
 					["providers"] = {
 						{ "n", 10781 },	-- Royal Overseer Bauhaus <Undercity Census>
 						{ "i", 12724 },	-- Janice's Parcel
 					},
-					["sourceQuest"] = 5023,	-- Better Late Than Never (2/2) [H]
 					["coord"] = { 69.6, 43.6, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2274,32 +2274,32 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27233, {	-- The Menders' Stead [A]
-					["qg"] = 45165,	-- Thurman Grant
 					["sourceQuest"] = 27174,	-- Combat Training
+					["qg"] = 45165,	-- Thurman Grant
 					["coord"] = { 53.8, 64.6, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(27175, {	-- The Menders' Stead [A]
-					["qg"] = 10840,	-- Argent Officer Pureheart
 					["sourceQuest"] = 27168,	-- Those That Couldn't Let Go
+					["qg"] = 10840,	-- Argent Officer Pureheart
 					["coord"] = { 42.9, 83.5, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(26952, {	-- The Menders' Stead [H]
-					["qg"] = 10839,	-- Argent Officer Garush
 					["sourceQuest"] = 26933,	-- Foes before Hoes
+					["qg"] = 10839,	-- Argent Officer Garush
 					["coord"] = { 83.1, 68.4, TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,	-- for "A New Era for the Plaguelands"
 				}),
 				q(27144, {	-- The Reckoning
-					["qg"] = 44451,	-- Lady Sylvanas Windrunner
 					["sourceQuest"] = 27090,	-- Andorhal, Once and For All
+					["qg"] = 44451,	-- Lady Sylvanas Windrunner
 					["coord"] = { 49.0, 63.7, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2326,13 +2326,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				{	-- The Scourge Cauldrons
 					["allianceQuestData"] = q(5215, {	-- The Scourge Cauldrons [A]
-						["qg"] = 10838,	-- Commander Ashlam Valorfist
 						["sourceQuest"] = 5092,	-- Clear the Way
+						["qg"] = 10838,	-- Commander Ashlam Valorfist
 						["coord"] = { 42.7, 84.1, WESTERN_PLAGUELANDS },
 					}),
 					["hordeQuestData"] = q(5228, {	-- The Scourge Cauldrons [H]
-						["qg"] = 10837,	-- High Executor Derrington
 						["sourceQuest"] = 5096,	-- Scarlet Diversions
+						["qg"] = 10837,	-- High Executor Derrington
 						["coord"] = { 83.0, 69.0, TIRISFAL_GLADES },
 					}),
 					["timeline"] = { REMOVED_4_0_3 },
@@ -2366,8 +2366,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(4985, {	-- The Wildlife Suffers Too (2/2)
-					["qg"] = 10739,	-- Mulgris Deepriver
 					["sourceQuest"] = 4984,	-- The Wildlife Suffers Too (1/2)
+					["qg"] = 10739,	-- Mulgris Deepriver
 					["coord"] = { 53.6, 64.6, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 51,
@@ -2378,18 +2378,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27172, {	-- The Writhing Haunt
+					["sourceQuest"] = 27171,	-- Ambushed!
 					["providers"] = {
 						{ "n", 10838 },	-- Commander Ashlam Valorfist
 						{ "i", 60866 },	-- Battered Weapons and Armor
 					},
-					["sourceQuest"] = 27171,	-- Ambushed!
 					["coord"] = { 42.6, 84.0, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27173, {	-- This Is Our Army
-					["qg"] = 45165,	-- Thurman Grant
 					["sourceQuest"] = 27172,	-- The Writhing Haunt
+					["qg"] = 45165,	-- Thurman Grant
 					["coord"] = { 53.8, 64.6, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2400,8 +2400,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27001, {	-- This Means WAR (Wild Arachnid Roundup)
-					["qg"] = 11616,	-- Nathaniel Dumah
 					["sourceQuest"] = 27000,	-- Learning the Ropes
+					["qg"] = 11616,	-- Nathaniel Dumah
 					["coord"] = { 48.1, 32.3, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -2423,12 +2423,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27168, {	-- Those That Couldn't Let Go
-					["qg"] = 11053,	-- High Priestess MacDonnell
 					["sourceQuests"] = {
 						-- TODO: Verify if "Victory, For Now" (27165) is also needed
 						27167,	-- A Mighty Hunger
 						27166,	-- Go Fletch!
 					},
+					["qg"] = 11053,	-- High Priestess MacDonnell
 					["coord"] = { 43.4, 83.7, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2456,8 +2456,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 50,
 				}),
 				q(9446, {	-- Tomb of the Lightbringer
-					["qg"] = 17238,	-- Anchorite Truuen
 					["sourceQuest"] = 9474,	-- The Mark of the Lightbringer
+					["qg"] = 17238,	-- Anchorite Truuen
 					["coord"] = { 42.9, 84.5, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2474,8 +2474,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27155, {	-- Turning Yourself In
-					["qg"] = 45147,	-- Daria L'Rayne
 					["sourceQuest"] = 27154,	-- Bagging Bisp
+					["qg"] = 45147,	-- Daria L'Rayne
 					["coord"] = { 42.1, 14.9, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -2491,8 +2491,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(5051, {	-- Two Halves Become One
-					["qg"] = 10778,	-- Janice Felstone
 					["sourceQuest"] = 5050,	-- Good Luck Charm
+					["qg"] = 10778,	-- Janice Felstone
 					["coord"] = { 38.4, 54.0, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
@@ -2532,8 +2532,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(6023, {	-- Unfinished Business (2/3)
-					["qg"] = 11610,	-- Kirsta Deepshadow
 					["sourceQuest"] = 6004,	-- Unfinished Business (1/3)
+					["qg"] = 11610,	-- Kirsta Deepshadow
 					["coord"] = { 52, 28, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
@@ -2549,15 +2549,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(6025, {	-- Unfinished Business (3/3)
-					["qg"] = 11610,	-- Kirsta Deepshadow
 					["sourceQuest"] = 6023,	-- Unfinished Business (2/3)
+					["qg"] = 11610,	-- Kirsta Deepshadow
 					["coord"] = { 52, 28, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 				}),
 				q(27152, {	-- Unusual Behavior... Even For Gnolls
-					["qg"] = 45147,	-- Daria L'Rayne
 					["sourceQuest"] = 27151,	-- Taelan Fordring's Legacy
+					["qg"] = 45147,	-- Daria L'Rayne
 					["coord"] = { 42.1, 14.9, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -2568,12 +2568,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27169, {	-- Uther's Blessing
-					["qg"] = 10838,	-- Commander Ashlam Valorfist
 					["sourceQuests"] = {
 						27167,	-- A Mighty Hunger
 						27166,	-- Go Fletch!
 						27165,	-- Victory, For Now
 					},
+					["qg"] = 10838,	-- Commander Ashlam Valorfist
 					["coord"] = { 42.6, 84.0, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2585,8 +2585,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27201, {	-- Val'kyr Incursion
-					["qg"] = 44453,	-- Thassarian
 					["sourceQuest"] = 27205,	-- The Depravity of the Forsaken
+					["qg"] = 44453,	-- Thassarian
 					["coord"] = { 39.9, 69.4, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2597,23 +2597,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27165, {	-- Victory, For Now (A)
-					["qg"] = 44453,	-- Thassarian
 					["sourceQuests"] = {
 						27164,	-- Araj the Summoner
 						27163,	-- Brute Strength
 						27162,	-- Scholomancer
 					},
+					["qg"] = 44453,	-- Thassarian
 					["coord"] = { 41.0, 70.4, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26926, {	-- Victory, For Now (H)
-					["qg"] = 44452,	-- Koltira Deathweaver
 					["sourceQuests"] = {
 						26925,	-- Araj the Summoner
 						27117,	-- Brute Strength
 						26924,	-- Scholomancer
 					},
+					["qg"] = 44452,	-- Koltira Deathweaver
 					["coord"] = { 47.7, 65.1, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2687,8 +2687,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				})),
 				q(26937, {	-- When Death is Not Enough
-					["qg"] = 44466,	-- Lindsay Ravensun
 					["sourceQuest"] = 26979,	-- Strange New Faces
+					["qg"] = 44466,	-- Lindsay Ravensun
 					["coord"] = { 40.6, 52.0, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2699,8 +2699,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26978, {	-- Who Needs Cauldrons?
-					["qg"] = 11057,	-- Apothecary Dithers
 					["sourceQuest"] = 26934,	-- Latent Disease
+					["qg"] = 11057,	-- Apothecary Dithers
 					["coord"] = { 83.2, 69.2, TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2737,11 +2737,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(10592, {	-- Wisdom of the Banshee Queen
+					["sourceQuest"] = 10590,	-- Prove Your Hatred
 					["providers"] = {
 						{ "n", 17099 },	-- Mehlar Dawnblade
 						{ "i", 30700 },	-- Scourgestone Fragments
 					},
-					["sourceQuest"] = 10590,	-- Prove Your Hatred
 					["coord"] = { 83.2, 71.2, TIRISFAL_GLADES },
 					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["maps"] = { UNDERCITY },
@@ -2750,11 +2750,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 50,
 				}),
 				q(5224, {	-- Writhing Haunt Cauldron
-					["provider"] = { "o", 176393 },	-- Scourge Cauldron
 					["sourceQuests"] = {
 						5222,	-- Target: Writhing Haunt
 						5233,	-- Target: Writhing Haunt
 					},
+					["provider"] = { "o", 176393 },	-- Scourge Cauldron
 					["coord"] = { 53, 65.7, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -2781,11 +2781,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26955, {	-- Zen'Kiki and the Cultists
-					["qg"] = 44456,	-- Adrine Towhide
 					["sourceQuests"] = {
 						26954,	-- A Different Approach
 						27057,	-- Return to the Stead
 					},
+					["qg"] = 44456,	-- Adrine Towhide
 					["coord"] = { 48.8, 54.7, WESTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {

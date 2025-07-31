@@ -5,9 +5,9 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_10_1_7 } }, {
 	header(HEADERS.Achievement, 18854, {	-- Seeing Red
 		n(QUESTS, {
 			q(77408, {	-- Prophecy Stirs
-				["providers"] = {
-					{"n", 209790 },	-- Virtos
-					{"n", 209803 },	-- Knight-Lord Dranarus
+				["qgs"] = {
+					209790,	-- Virtos
+					209803,	-- Knight-Lord Dranarus
 				},
 				["coords"] = {
 					{ 77.8, 37.5, STORMWIND_CITY },
@@ -18,44 +18,44 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_10_1_7 } }, {
 				},
 			}),
 			q(77409, {	-- Uncertainty
+				["sourceQuests"] = { 77408 },	-- Prophecy Stirs
 				["provider"] = { "n", 208815 },	-- Prophet Velen
 				["coord"] = { 44.2, 26.4, THE_VINDICAAR },
-				["sourceQuests"] = { 77408 },	-- Prophecy Stirs
 			}),
 			q(77410, {	-- Opening Wounds
+				["sourceQuests"] = { 77409 },	-- Uncertainty
 				["provider"] = { "n", 208830 },	-- Chieftan Hatuun
 				["coord"] = { 53.8, 68.1, KROKUUN },
-				["sourceQuests"] = { 77409 },	-- Uncertainty
 			}),
 			q(77411, {	-- Contrition
+				["sourceQuests"] = { 77410 },	-- Opening Wounds
 				["provider"] = { "n", 208831 },	-- Arzal'kal
 				["coord"] = { 53.7, 68.2, KROKUUN },
-				["sourceQuests"] = { 77410 },	-- Opening Wounds
 				["groups"] = {
 					i(208203),	-- Brilliant Star (QI!)
 				},
 			}),
 			q(77789, {	-- Severing Ties
+				["sourceQuests"] = { 77410 },	-- Opening Wounds
 				["provider"] = { "n", 208858 },	-- Arzal'kal
 				["coord"] = { 63.5, 42.6, KROKUUN },
-				["sourceQuests"] = { 77410 },	-- Opening Wounds
 			}),
 			q(77412, {	-- Proof and Promise
-				["provider"] = { "n", 208836 },	-- Arzal'kal
-				["coord"] = { 73, 32.3, KROKUUN },
 				["sourceQuests"] = {
 					77411,	-- Contrition
 					77789,	-- Severing Ties
 				},
+				["provider"] = { "n", 208836 },	-- Arzal'kal
+				["coord"] = { 73, 32.3, KROKUUN },
 				["groups"] = {
 					ach(18854),	-- Seeing Red
 					i(208658),	-- Mirror of Humility (TOY!)
 				},
 			}),
 			q(77795, {	-- Scavenged Artifacts
+				["sourceQuests"] = { 77412 },	-- Proof and Promise
 				["provider"] = { "n", 125246 },	-- Gaal
 				["coord"] = { 56.7, 68.6, KROKUUN },
-				["sourceQuests"] = { 77412 },	-- Proof and Promise
 			}),
 		}),
 		n(SPECIAL, sharedData({

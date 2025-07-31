@@ -9,10 +9,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				DF_ACCOUNT_CAMPAIGN_QUEST,
 			},
 			["groups"] = sharedData({ ["isWorldQuest"] = true, }, {
-
-				-- q(QUEST, {	-- NAME
-				--	-- ["coord"] = { XX, YY, THE_WAKING_SHORES }
-				-- }),
+				--[[
+				q(QUEST, {	-- NAME
+					["coord"] = { XX, YY, THE_WAKING_SHORES }
+				}),
+				]]--
 				q(70150, {	-- 'Many Whelps, Handle It'
 					["coord"] = { 57.8, 68, THE_WAKING_SHORES },
 				}),

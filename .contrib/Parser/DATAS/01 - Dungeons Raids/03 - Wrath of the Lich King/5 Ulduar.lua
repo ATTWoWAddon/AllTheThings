@@ -33,8 +33,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						["cost"] = { { "i", 45038, 30 } },	-- Fragment of Val'anyr
 					}),
 					q(13629, {	-- Val'anyr, Hammer of Ancient Kings
-						["provider"] = { "o", 194555 },	-- Archivum Console
 						["sourceQuest"] = 13622,	-- Ancient History
+						["provider"] = { "o", 194555 },	-- Archivum Console
 						["groups"] = {
 							objective(1, {	-- 0/1 Reforged Hammer of Ancient Kings
 								["provider"] = { "i", 45897 },	-- Reforged Hammer of Ancient Kings
@@ -431,16 +431,16 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					}),
 					n(QUESTS, {
 						q(13614, {	-- Algalon
-							["qg"] = 33957,	-- Prospector Loren
-							["providers"] = {
-								{ "n", 33957 },	-- Prospector Loren
-								{ "i", 45791 },	-- Sigils of the Watchers
-							},
 							["sourceQuests"] = {
 								13606,	-- Freya's Sigil
 								13609,	-- Hodir's Sigil
 								13611,	-- Mimiron's Sigil
 								13610,	-- Thorim's Sigil
+							},
+							["qg"] = 33957,	-- Prospector Loren
+							["providers"] = {
+								{ "n", 33957 },	-- Prospector Loren
+								{ "i", 45791 },	-- Sigils of the Watchers
 							},
 							["timeline"] = { REMOVED_7_3_5 },
 							["groups"] = {
@@ -469,8 +469,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							["provider"] = { "i", 45506 },	-- Archivum Data Disc
 						}),
 						q(13606, {	-- Freya's Sigil
-							["qg"] = 33957,	-- Prospector Loren
 							["sourceQuest"] = 13607,	-- The Celestial Planetarium
+							["qg"] = 33957,	-- Prospector Loren
 							["timeline"] = { REMOVED_7_3_5 },
 							["groups"] = {
 								objective(1, {	-- 0/1 Freya's Sigil
@@ -480,8 +480,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						q(13609, {	-- Hodir's Sigil
-							["qg"] = 33957,	-- Prospector Loren
 							["sourceQuest"] = 13607,	-- The Celestial Planetarium
+							["qg"] = 33957,	-- Prospector Loren
 							["timeline"] = { REMOVED_7_3_5 },
 							["groups"] = {
 								objective(1, {	-- 0/1 Hodir's Sigil
@@ -491,8 +491,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						q(13611, {	-- Mimiron's Sigil
-							["qg"] = 33957,	-- Prospector Loren
 							["sourceQuest"] = 13607,	-- The Celestial Planetarium
+							["qg"] = 33957,	-- Prospector Loren
 							["timeline"] = { REMOVED_7_3_5 },
 							["groups"] = {
 								objective(1, {	-- 0/1 Mimiron's Sigil
@@ -502,13 +502,13 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						q(13607, {	-- The Celestial Planetarium
-							["qg"] = 33957,	-- Prospector Loren
 							["sourceQuest"] = 13604,	-- Archivum Data Disc
+							["qg"] = 33957,	-- Prospector Loren
 							["timeline"] = { REMOVED_7_3_5 },
 						}),
 						q(13610, {	-- Thorim's Sigil
-							["qg"] = 33957,	-- Prospector Loren
 							["sourceQuest"] = 13607,	-- The Celestial Planetarium
+							["qg"] = 33957,	-- Prospector Loren
 							["timeline"] = { REMOVED_7_3_5 },
 							["groups"] = {
 								objective(1, {	-- 0/1 Thorim's Sigil
@@ -1287,8 +1287,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 								["cost"] = { { "i", 45038, 30 } },	-- Fragment of Val'anyr
 							}),
 							q(13629, {	-- Val'anyr, Hammer of Ancient Kings
-								["provider"] = { "o", 194555 },	-- Archivum Console
 								["sourceQuest"] = 13622,	-- Ancient History
+								["provider"] = { "o", 194555 },	-- Archivum Console
 								["groups"] = {
 									objective(1, {	-- 0/1 Reforged Hammer of Ancient Kings
 										["provider"] = { "i", 45897 },	-- Reforged Hammer of Ancient Kings
@@ -1302,15 +1302,15 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					})),
 					n(QUESTS, {
 						q(13818, {	-- Heroic: Algalon
-							["providers"] = {
-								{ "n", 33957 },	-- Prospector Loren
-								{ "i", 45855 },	-- Sigils of the Watchers
-							},
 							["sourceQuests"] = {
 								13821,	-- Heroic: Freya's Sigil
 								13822,	-- Heroic: Hodir's Sigil
 								13824,	-- Heroic: Mimiron's Sigil
 								13823,	-- Heroic: Thorim's Sigil
+							},
+							["providers"] = {
+								{ "n", 33957 },	-- Prospector Loren
+								{ "i", 45855 },	-- Sigils of the Watchers
 							},
 							["groups"] = {
 								i(45798),	-- Heroic Celestial Planetarium Key
@@ -1342,8 +1342,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							["provider"] = { "i", 45857 },	-- Heroic: Archivum Data Disc
 						}),
 						q(13821, {	-- Heroic: Freya's Sigil
-							["qg"] = 33957,	-- Prospector Loren
 							["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
+							["qg"] = 33957,	-- Prospector Loren
 							["groups"] = {
 								objective(1, {	-- 0/1 Freya's Sigil
 									["provider"] = { "i", 45814 },	-- Freya's Sigil
@@ -1352,8 +1352,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						q(13822, {	-- Heroic: Hodir's Sigil
-							["qg"] = 33957,	-- Prospector Loren
 							["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
+							["qg"] = 33957,	-- Prospector Loren
 							["groups"] = {
 								objective(1, {	-- 0/1 Hodir's Sigil
 									["provider"] = { "i", 45815 },	-- Hodir's Sigil
@@ -1362,8 +1362,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						q(13824, {	-- Heroic: Mimiron's Sigil
-							["qg"] = 33957,	-- Prospector Loren
 							["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
+							["qg"] = 33957,	-- Prospector Loren
 							["groups"] = {
 								objective(1, {	-- 0/1 Mimiron's Sigil
 									["provider"] = { "i", 45816 },	-- Mimiron's Sigil
@@ -1372,12 +1372,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 							},
 						}),
 						q(13816, {	-- Heroic: The Celestial Planetarium
-							["qg"] = 33957,	-- Prospector Loren
 							["sourceQuest"] = 13817,	-- Heroic: Archivum Data Disc
+							["qg"] = 33957,	-- Prospector Loren
 						}),
 						q(13823, {	-- Heroic: Thorim's Sigil
-							["qg"] = 33957,	-- Prospector Loren
 							["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
+							["qg"] = 33957,	-- Prospector Loren
 							["groups"] = {
 								objective(1, {	-- 0/1 Thorim's Sigil
 									["provider"] = { "i", 45817 },	-- Thorim's Sigil
@@ -1988,16 +1988,16 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 			d(DIFFICULTY.RAID.NORMAL, {
 				n(QUESTS, {
 					q(13614, {	-- Algalon
-						["qg"] = 33957,	-- Prospector Loren
-						["providers"] = {
-							{ "n", 33957 },	-- Prospector Loren
-							{ "i", 45791 },	-- Sigils of the Watchers
-						},
 						["sourceQuests"] = {
 							13606,	-- Freya's Sigil
 							13609,	-- Hodir's Sigil
 							13611,	-- Mimiron's Sigil
 							13610,	-- Thorim's Sigil
+						},
+						["qg"] = 33957,	-- Prospector Loren
+						["providers"] = {
+							{ "n", 33957 },	-- Prospector Loren
+							{ "i", 45791 },	-- Sigils of the Watchers
 						},
 						["timeline"] = { REMOVED_7_3_5 },
 						["groups"] = {
@@ -2026,8 +2026,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						["provider"] = { "i", 45506 },	-- Archivum Data Disc
 					}),
 					q(13606, {	-- Freya's Sigil
-						["qg"] = 33957,	-- Prospector Loren
 						["sourceQuest"] = 13607,	-- The Celestial Planetarium
+						["qg"] = 33957,	-- Prospector Loren
 						["timeline"] = { REMOVED_7_3_5 },
 						["groups"] = {
 							objective(1, {	-- 0/1 Freya's Sigil
@@ -2037,8 +2037,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						},
 					}),
 					q(13609, {	-- Hodir's Sigil
-						["qg"] = 33957,	-- Prospector Loren
 						["sourceQuest"] = 13607,	-- The Celestial Planetarium
+						["qg"] = 33957,	-- Prospector Loren
 						["timeline"] = { REMOVED_7_3_5 },
 						["groups"] = {
 							objective(1, {	-- 0/1 Hodir's Sigil
@@ -2048,8 +2048,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						},
 					}),
 					q(13611, {	-- Mimiron's Sigil
-						["qg"] = 33957,	-- Prospector Loren
 						["sourceQuest"] = 13607,	-- The Celestial Planetarium
+						["qg"] = 33957,	-- Prospector Loren
 						["timeline"] = { REMOVED_7_3_5 },
 						["groups"] = {
 							objective(1, {	-- 0/1 Mimiron's Sigil
@@ -2059,13 +2059,13 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						},
 					}),
 					q(13607, {	-- The Celestial Planetarium
-						["qg"] = 33957,	-- Prospector Loren
 						["sourceQuest"] = 13604,	-- Archivum Data Disc
+						["qg"] = 33957,	-- Prospector Loren
 						["timeline"] = { REMOVED_7_3_5 },
 					}),
 					q(13610, {	-- Thorim's Sigil
-						["qg"] = 33957,	-- Prospector Loren
 						["sourceQuest"] = 13607,	-- The Celestial Planetarium
+						["qg"] = 33957,	-- Prospector Loren
 						["timeline"] = { REMOVED_7_3_5 },
 						["groups"] = {
 							objective(1, {	-- 0/1 Thorim's Sigil
@@ -2076,15 +2076,15 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					}),
 
 					q(13818, {	-- Heroic: Algalon
-						["providers"] = {
-							{ "n", 33957 },	-- Prospector Loren
-							{ "i", 45855 },	-- Sigils of the Watchers
-						},
 						["sourceQuests"] = {
 							13821,	-- Heroic: Freya's Sigil
 							13822,	-- Heroic: Hodir's Sigil
 							13824,	-- Heroic: Mimiron's Sigil
 							13823,	-- Heroic: Thorim's Sigil
+						},
+						["providers"] = {
+							{ "n", 33957 },	-- Prospector Loren
+							{ "i", 45855 },	-- Sigils of the Watchers
 						},
 						["groups"] = {
 							i(45798),	-- Heroic Celestial Planetarium Key
@@ -2116,8 +2116,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						["provider"] = { "i", 45857 },	-- Heroic: Archivum Data Disc
 					}),
 					q(13821, {	-- Heroic: Freya's Sigil
-						["qg"] = 33957,	-- Prospector Loren
 						["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
+						["qg"] = 33957,	-- Prospector Loren
 						["groups"] = {
 							objective(1, {	-- 0/1 Freya's Sigil
 								["provider"] = { "i", 45814 },	-- Freya's Sigil
@@ -2126,8 +2126,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						},
 					}),
 					q(13822, {	-- Heroic: Hodir's Sigil
-						["qg"] = 33957,	-- Prospector Loren
 						["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
+						["qg"] = 33957,	-- Prospector Loren
 						["groups"] = {
 							objective(1, {	-- 0/1 Hodir's Sigil
 								["provider"] = { "i", 45815 },	-- Hodir's Sigil
@@ -2136,8 +2136,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						},
 					}),
 					q(13824, {	-- Heroic: Mimiron's Sigil
-						["qg"] = 33957,	-- Prospector Loren
 						["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
+						["qg"] = 33957,	-- Prospector Loren
 						["groups"] = {
 							objective(1, {	-- 0/1 Mimiron's Sigil
 								["provider"] = { "i", 45816 },	-- Mimiron's Sigil
@@ -2146,12 +2146,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						},
 					}),
 					q(13816, {	-- Heroic: The Celestial Planetarium
-						["qg"] = 33957,	-- Prospector Loren
 						["sourceQuest"] = 13817,	-- Heroic: Archivum Data Disc
+						["qg"] = 33957,	-- Prospector Loren
 					}),
 					q(13823, {	-- Heroic: Thorim's Sigil
-						["qg"] = 33957,	-- Prospector Loren
 						["sourceQuest"] = 13816,	-- Heroic: The Celestial Planetarium
+						["qg"] = 33957,	-- Prospector Loren
 						["groups"] = {
 							objective(1, {	-- 0/1 Thorim's Sigil
 								["provider"] = { "i", 45817 },	-- Thorim's Sigil

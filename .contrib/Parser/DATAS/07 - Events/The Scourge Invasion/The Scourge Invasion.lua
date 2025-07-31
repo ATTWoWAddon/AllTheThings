@@ -219,11 +219,11 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				},
 			}),
 			q(9292, {	-- Cracked Necrotic Crystal
+				["description"] = "If you hear the yell across the city that they've invaded the Park, head for the canals between the Keep and the Park, that is where the elite abomination will be (heading from the Park to the Keep on the north side of the canal).\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",
 				["providers"] = {
 					{ "n", 16431 },	-- Cracked Necrotic Crystal
 					{ "i", 22949 },	-- Cracked Necrotic Crystal
 				},
-				["description"] = "If you hear the yell across the city that they've invaded the Park, head for the canals between the Keep and the Park, that is where the elite abomination will be (heading from the Park to the Keep on the north side of the canal).\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",
 				["maps"] = { STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
@@ -234,11 +234,11 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				},
 			}),
 			q(12773, {	-- Darnassus
+				["sourceQuest"] = 12753,	-- A Desperate Alliance
 				["providers"] = {
 					{ "n", 29087 },	-- Bishop Lazaril
 					{ "i", 39698 },	-- Light-Infused Artifact
 				},
-				["sourceQuest"] = 12753,	-- A Desperate Alliance
 				["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
 				["maps"] = { DARNASSUS },
 				["races"] = { NIGHTELF },
@@ -284,11 +284,11 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				["lvl"] = 45,
 			}),
 			q(9310, {	-- Faint Necrotic Crystal
+				["description"] = "If you hear the yell across the city that they've invaded the Sewers, head for the canals between the Sewers and the Royal Quarter, that is where the elite abomination will be.\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",
 				["providers"] = {
 					{ "n", 16531 },	-- Faint Necrotic Crystal
 					{ "i", 22950 },	-- Faint Necrotic Crystal
 				},
-				["description"] = "If you hear the yell across the city that they've invaded the Sewers, head for the canals between the Sewers and the Royal Quarter, that is where the elite abomination will be.\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",
 				["maps"] = { TIRISFAL_GLADES, UNDERCITY },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
@@ -413,22 +413,22 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				},
 			}),
 			q(12771, {	-- Ironforge (Dwarf)
+				["sourceQuest"] = 12753,	-- A Desperate Alliance
 				["providers"] = {
 					{ "n", 29087 },	-- Bishop Lazaril
 					{ "i", 39698 },	-- Light-Infused Artifact
 				},
-				["sourceQuest"] = 12753,	-- A Desperate Alliance
 				["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
 				["maps"] = { IRONFORGE },
 				["races"] = { DWARF },
 				["lvl"] = 65,
 			}),
 			q(12809, {	-- Ironforge (Gnome)
+				["sourceQuest"] = 12808,	-- A Desperate Alliance
 				["providers"] = {
 					{ "n", 29087 },	-- Bishop Lazaril
 					{ "i", 39698 },	-- Light-Infused Artifact
 				},
-				["sourceQuest"] = 12808,	-- A Desperate Alliance
 				["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
 				["maps"] = { IRONFORGE },
 				["races"] = { GNOME },
@@ -535,22 +535,22 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				["lvl"] = 45,
 			}),
 			q(12785, {	-- Orgrimmar (Troll)
+				["sourceQuest"] = 12783,	-- Desperate Research
 				["providers"] = {
 					{ "n", 28318 },	-- Grand Apothecary Putress
 					{ "i", 40482 },	-- Dual-Plagued Brain
 				},
-				["sourceQuest"] = 12783,	-- Desperate Research
 				["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
 				["maps"] = { ORGRIMMAR },
 				["races"] = { TROLL },
 				["lvl"] = 65,
 			}),
 			q(12812, {	-- Orgrimmar (Orc)
+				["sourceQuest"] = 12811,	-- Desperate Research
 				["providers"] = {
 					{ "n", 28318 },	-- Grand Apothecary Putress
 					{ "i", 40482 },	-- Dual-Plagued Brain
 				},
-				["sourceQuest"] = 12811,	-- Desperate Research
 				["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
 				["maps"] = { ORGRIMMAR },
 				["races"] = { ORC },
@@ -577,22 +577,22 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				},
 			}),
 			q(12788, {	-- Silvermoon
+				["sourceQuest"] = 12782,	-- Desperate Research
 				["providers"] = {
 					{ "n", 28318 },	-- Grand Apothecary Putress
 					{ "i", 40482 },	-- Dual-Plagued Brain
 				},
-				["sourceQuest"] = 12782,	-- Desperate Research
 				["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
 				["maps"] = { SILVERMOON_CITY },
 				["races"] = { BLOODELF },
 				["lvl"] = 65,
 			}),
 			q(12774, {	-- Stormwind
+				["sourceQuest"] = 12775,	-- A Desperate Alliance
 				["providers"] = {
 					{ "n", 29087 },	-- Bishop Lazaril
 					{ "i", 39698 },	-- Light-Infused Artifact
 				},
-				["sourceQuest"] = 12775,	-- A Desperate Alliance
 				["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
 				["maps"] = { STORMWIND_CITY },
 				["races"] = { HUMAN },
@@ -627,23 +627,23 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				},
 			}),
 			q(12776, {	-- The Exodar
+				["sourceQuest"] = 12777,	-- A Desperate Alliance
 				["providers"] = {
 					{ "n", 29087 },	-- Bishop Lazaril
 					{ "i", 39698 },	-- Light-Infused Artifact
 				},
-				["sourceQuest"] = 12777,	-- A Desperate Alliance
 				["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
 				["maps"] = { THE_EXODAR },
 				["races"] = { DRAENEI },
 				["lvl"] = 65,
 			}),
 			q(9247, {	-- The Keeper's Call
+				["description"] = "You should receive this in the mail at level 60.",
 				["providers"] = {
 					{ "n", 16281 },	-- Keeper of the Rolls <The Argent Dawn>
 					{ "i", 22723 },	-- A Letter from the Keeper of the Rolls [You get this in the mail.]
 				},
 				["coord"] = { 81.1, 60.5, EASTERN_PLAGUELANDS },
-				["description"] = "You should receive this in the mail at level 60.",
 				["isYearly"] = true,
 				["lvl"] = 60,
 				["groups"] = {
@@ -652,22 +652,22 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				},
 			}),
 			q(12787, {	-- The Undercity
+				["sourceQuest"] = 12752,	-- Desperate Research
 				["providers"] = {
 					{ "n", 28318 },	-- Grand Apothecary Putress
 					{ "i", 40482 },	-- Dual-Plagued Brain
 				},
-				["sourceQuest"] = 12752,	-- Desperate Research
 				["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
 				["maps"] = { UNDERCITY },
 				["races"] = { UNDEAD },
 				["lvl"] = 65,
 			}),
 			q(12786, {	-- Thunder Bluff
+				["sourceQuest"] = 12784,	-- Desperate Research
 				["providers"] = {
 					{ "n", 28318 },	-- Grand Apothecary Putress
 					{ "i", 40482 },	-- Dual-Plagued Brain
 				},
-				["sourceQuest"] = 12784,	-- Desperate Research
 				["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },
 				["maps"] = { THUNDER_BLUFF },
 				["races"] = { TAUREN },

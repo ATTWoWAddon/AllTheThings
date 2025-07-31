@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, {
+root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
 	inst(275, {	-- Halls of Lightning
 		["lore"] = "Upon departing Azeroth, the titans entrusted loyal protectors with safeguarding Ulduar, an enigmatic city nestled in the mountains of the Storm Peaks. Designated supreme among his brethren was the guardian known as Loken, but with the power of the titan complex in his hands, he turned to darkness and plunged the region into chaos.",
 		-- #if NOT ANYCLASSIC
@@ -142,15 +142,15 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					},
 				}),
 				q(29863, {	-- Stormherald Eljrrin
-					["qg"] = 30105,	-- King Jokkum
 					["sourceQuest"] = 13047,	-- The Reckoning
+					["qg"] = 30105,	-- King Jokkum
 					["coord"] = { 65.4, 60.1, THE_STORM_PEAKS },
 					["timeline"] = { ADDED_4_3_0 },
 					["isBreadcrumb"] = true,
 				}),
 				q(13108, {	-- Whatever it Takes!
-					["qg"] = 30105,	-- King Jokkum
 					["sourceQuest"] = 13047,	-- The Reckoning
+					["qg"] = 30105,	-- King Jokkum
 					["coord"] = { 65.4, 60.2, THE_STORM_PEAKS },
 					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(77, 77, 20),
@@ -166,8 +166,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					},
 				}),
 				q(29861, {	-- Whatever it Takes!
-					["qg"] = 56027,	-- Stormherald Eljrrin
 					["sourceQuest"] = 29863,	-- Stormherald Eljrrin
+					["qg"] = 56027,	-- Stormherald Eljrrin
 					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(77, 77, 20),
 					["groups"] = {
@@ -516,7 +516,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			-- #endif
 		},
 	}),
-})));
+}))));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
 	inst(275, {

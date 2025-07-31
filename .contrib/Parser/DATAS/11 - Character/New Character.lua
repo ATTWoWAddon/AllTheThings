@@ -1393,17 +1393,17 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			["timeline"] = { ADDED_9_2_0 },
 			["groups"] = {
 				q(65425, {	-- Whatever You Sayaad (A)
+					["description"] = "Start this quest via your own Sayaad(Succubus/Incubus Pet).",
 					["provider"] = { "n", 184600 },	-- Warlock Minion
 					["coord"] = { 79.5, 69.8, STORMWIND_CITY },
-					["description"] = "Start this quest via your own Sayaad(Succubus/Incubus Pet).",
 					["timeline"] = { ADDED_9_2_0, REMOVED_10_1_5 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARLOCK },
 				}),
 				q(65424, {	-- Whatever You Sayaad (H)
+					["description"] = "Start this quest via your own Sayaad(Succubus/Incubus Pet).",
 					["provider"] = { "n", 184600 },	-- Warlock Minion
 					["coord"] = { 74.6, 47.4, ORGRIMMAR },
-					["description"] = "Start this quest via your own Sayaad(Succubus/Incubus Pet).",
 					["timeline"] = { ADDED_9_2_0, REMOVED_10_1_5 },
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARLOCK },
@@ -1430,41 +1430,41 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 					["isBreadcrumb"] = true,	-- need to confirm
 				}),
 				q(75538, {	-- Beginning Impositions (A)
-					["provider"] = { "n", 204198 },	-- Assistant Phineas
 					["sourceQuests"] = { 76410 },	-- A Dark Summons (?)
+					["provider"] = { "n", 204198 },	-- Assistant Phineas
 					["coord"] = { 43.6, 79.3, STORMWIND_CITY },
 					["timeline"] = { ADDED_10_1_5 },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARLOCK },
 				}),
 				q(75539, {	-- Some Wicked Things This Way Come
-					["provider"] = { "n", 203968 },	-- Madam Shadow
 					["sourceQuests"] = {
 						75538,	-- Beginning Impositions (A)
 						76430,	-- Beingning Impositions (H)
 					},
 					["sourceQuestNumRequired"] = 1,
+					["provider"] = { "n", 203968 },	-- Madam Shadow
 					["coord"] = { 47.4, 78.9, DARKMOON_ISLAND },
 					["timeline"] = { ADDED_10_1_5 },
 					["classes"] = { WARLOCK },
 				}),
 				q(75540, {	-- Hermetic Insurance
-					["provider"] = { "n", 203968 },	-- Madam Shadow
 					["sourceQuests"] = { 75539 },	-- Some Wicked Things This Way Come
+					["provider"] = { "n", 203968 },	-- Madam Shadow
 					["coord"] = { 47.4, 78.9, DARKMOON_ISLAND },
 					["timeline"] = { ADDED_10_1_5 },
 					["classes"] = { WARLOCK },
 				}),
 				q(75541, {	-- Those Who Hesitate
-					["provider"] = { "n", 203968 },	-- Madam Shadow
 					["sourceQuests"] = { 75540 },	-- Hermetic Insurance
+					["provider"] = { "n", 203968 },	-- Madam Shadow
 					["coord"] = { 47.4, 78.9, DARKMOON_ISLAND },
 					["timeline"] = { ADDED_10_1_5 },
 					["classes"] = { WARLOCK },
 				}),
 				q(76155, {	-- A Wolf Among Sheep
-					["provider"] = { "n", 205276 },	-- Initiate Oman
 					["sourceQuests"] = { 75541 },	-- Those Who Hesitate
+					["provider"] = { "n", 205276 },	-- Initiate Oman
 					["coord"] = { 47.4, 78.9, DARKMOON_ISLAND },
 					["timeline"] = { ADDED_10_1_5 },
 					["classes"] = { WARLOCK },
@@ -1474,29 +1474,29 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 					},
 				}),
 				q(75542, {	-- Curses & Cultists
-					["provider"] = { "n", 203968 },	-- Madam Shadow
 					["sourceQuests"] = { 76155 },	-- A Wolf Among Sheep
+					["provider"] = { "n", 203968 },	-- Madam Shadow
 					["coord"] = { 47.4, 78.9, DARKMOON_ISLAND },
 					["timeline"] = { ADDED_10_1_5 },
 					["classes"] = { WARLOCK },
 				}),
 				q(75639, {	-- Fel Suspicions
-					["provider"] = { "n", 205433 },	-- Initiate Oman
 					["sourceQuests"] = { 75542 },	-- Curses & Cultists
+					["provider"] = { "n", 205433 },	-- Initiate Oman
 					["coord"] = { 58.9, 63.1, DARKMOON_ISLAND },
 					["timeline"] = { ADDED_10_1_5 },
 					["classes"] = { WARLOCK },
 				}),
 				q(75543, {	-- Last Rites By Accident
-					["provider"] = { "o", 402609 },	-- Demonic Gateway
 					["sourceQuests"] = { 75639 },	-- Fel Suspicions
+					["provider"] = { "o", 402609 },	-- Demonic Gateway
 					["coord"] = { 59.7, 62.2, DARKMOON_ISLAND },
 					["timeline"] = { ADDED_10_1_5 },
 					["classes"] = { WARLOCK },
 				}),
 				q(75544, {	-- When Revenge Burns Green
-					["provider"] = { "n", 205575 },	-- Initiate Oman
 					["sourceQuests"] = { 75543 },	-- Last Rites By Accident
+					["provider"] = { "n", 205575 },	-- Initiate Oman
 					["coord"] = { 8.4, 36.0, BURNING_STEPPES },
 					["timeline"] = { ADDED_10_1_5 },
 					["classes"] = { WARLOCK },
@@ -1506,9 +1506,9 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 					},
 				}),
 				q(76163, {	-- A Lighter Shade of Fel
-					["provider"] = { "i", 206681 },	-- Letter from Oman (QI!)
-					["sourceQuests"] = { 75544 },	-- When Revenge Burns Green
 					["description"] = "You get this quest in your mailbox next weekly reset after finishing 'When Revenge Burns Green'",
+					["sourceQuests"] = { 75544 },	-- When Revenge Burns Green
+					["provider"] = { "i", 206681 },	-- Letter from Oman (QI!)
 					["timeline"] = { ADDED_10_1_5 },
 					["classes"] = { WARLOCK },
 					["groups"] = {
@@ -2017,8 +2017,8 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			["coord"] = { 43.0, 89.4, THE_WAR_CRECHE },
 		}),
 		q(84424, {	-- Forward, to Adventure!
-			["provider"] = { "n", 229075 },	-- Scalecommander Emberthal
 			["sourceQuests"] = { 84423 },	-- Shaking the Dust Off
+			["provider"] = { "n", 229075 },	-- Scalecommander Emberthal
 			["coord"] = { 43.0, 89.4, THE_WAR_CRECHE },
 			["groups"] = {
 				o(467064, {	-- Quest Journal
@@ -2027,8 +2027,8 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			},
 		}),
 		q(85026, {	-- Where Legends are Made
-			["provider"] = { "n", 167032 },	-- Chromie
 			["sourceQuests"] = { 84424 },	-- Forward, to Adventure!
+			["provider"] = { "n", 167032 },	-- Chromie
 			["coords"] = {
 				{ 40.8, 80.1, ORGRIMMAR },
 				{ 56.2, 17.2, STORMWIND_CITY },

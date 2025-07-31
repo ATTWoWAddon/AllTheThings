@@ -5,8 +5,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 	m(THE_WAKING_SHORES, {
 		petbattles({
 			q(70853, {	-- A Friend for Lubbins
-				["qg"] = 196264,	-- Haniko
 				["sourceQuest"] = 70851,	-- Born to Be Wilder
+				["qg"] = 196264,	-- Haniko
 				["coord"] = { 38.9, 83.3, THE_WAKING_SHORES },
 				["timeline"] = { ADDED_10_0_2_LAUNCH },
 				["_drop"] = { "g" },	-- Drop Polished Pet Charm
@@ -16,8 +16,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}},
 			}),
 			q(70851, {	-- Born to Be Wilder
-				["qg"] = 196264,	-- Haniko
 				["sourceQuest"] = 70849,	-- This Calls for a Specialist
+				["qg"] = 196264,	-- Haniko
 				["coord"] = { 38.9, 83.3, THE_WAKING_SHORES },
 				["timeline"] = { ADDED_10_0_2_LAUNCH },
 				["_drop"] = { "g" },	-- Drop Polished Pet Charm
@@ -26,15 +26,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}},
 			}),
 			q(70854, {	-- So How Did It Go?
-				["qg"] = 196264,	-- Haniko
 				["sourceQuest"] = 70853,	-- A Friend for Lubbins
+				["qg"] = 196264,	-- Haniko
 				["coord"] = { 38.9, 83.3, THE_WAKING_SHORES },
 				["timeline"] = { ADDED_10_0_2_LAUNCH },
+				["_drop"] = { "g" },	-- Drop Ultimate Battle-Training Stone
 				["groups"] = {
 					i(200519),	-- Mister Toots (PET!)
 					ach(16399),	-- Lovin' Lubbins
 				},
-				["_drop"] = { "g" },	-- Drop Ultimate Battle-Training Stone
 			}),
 		}),
 	}),

@@ -9,10 +9,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				DF_ACCOUNT_CAMPAIGN_QUEST,
 			},
 			["groups"] = sharedData({ ["isWorldQuest"] = true, }, {
-
-				-- q(QUEST, {	-- NAME
-					-- ["coord"] = { XX, YY, THALDRASZUS }
-				-- }),
+				--[[
+				q(QUEST, {	-- NAME
+					["coord"] = { XX, YY, THALDRASZUS },
+				}),
+				]]--
 				q(70160, {	-- Alchemical Thesis Defense
 					["coord"] = { 62.3, 36.9, THALDRASZUS },
 				}),
@@ -107,9 +108,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				petbattle(q(71180, {	-- You Have to Start Somewhere
 					["coord"] = { 56.3, 49.2, THALDRASZUS },
 				})),
-				-- q(70934, {	-- Salamanther's Embrace
-				-- 	["coord"] = { 54.9, 35.7, THALDRASZUS }
-				-- }),
+				--[[
+				q(70934, {	-- Salamanther's Embrace
+					["coord"] = { 54.9, 35.7, THALDRASZUS },
+				}),
+				]]--
 			}),
 		}),
 	}),

@@ -61,56 +61,56 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			}),
 			n(QUESTS, {
 				q(81638, {	-- Home Is Where the Hearthstone Is
-					["provider"] = { "n", 65907 },	-- Jiayi Applebloom
 					["sourceQuests"] = { 79440 },	-- Recalling the War (need to confirm) we can use retail errors to confirm
+					["provider"] = { "n", 65907 },	-- Jiayi Applebloom
 					["coord"] = { 44.8, 84.4, THE_JADE_FOREST },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(80012, {	-- Dragonriding
-					["provider"] = { "n", 218468 },	-- Moratari
 					["sourceQuests"] = { 79440 },	-- Recalling the War
+					["provider"] = { "n", 218468 },	-- Moratari
 					["coord"] = { 28.5, 14.0, THE_JADE_FOREST },	-- missing ally coords
 				}),
 				q(80013, {	-- How to Glide with Your Dragon
-					["provider"] = { "n", 218469 },	-- Lord Anderstrasz
 					["sourceQuests"] = { 80012 },	-- Dragonriding
+					["provider"] = { "n", 218469 },	-- Lord Anderstrasz
 					["coord"] = { 65.2, 37.2, THE_JADE_FOREST },
 					["groups"] = {
 						i(216712),	-- Bronze Timepiece (QI!)
 					},
 				}),
 				q(80015, {	-- How to Dive with Your Dragon
-					["provider"] = { "n", 218469 },	-- Lord Anderstrasz
 					["sourceQuests"] = { 80013 },	-- How to Glide with Your Dragon
+					["provider"] = { "n", 218469 },	-- Lord Anderstrasz
 					["coord"] = { 65.2, 37.2, THE_JADE_FOREST },
 					["groups"] = {
 						i(216712),	-- Bronze Timepiece (QI!)
 					},
 				}),
 				q(80016, {	-- The Need For Higher Velocities
-					["provider"] = { "n", 218469 },	-- Lord Anderstrasz
 					["sourceQuests"] = { 80015 },	-- How to Dive with Your Dragon
+					["provider"] = { "n", 218469 },	-- Lord Anderstrasz
 					["coord"] = { 65.2, 37.2, THE_JADE_FOREST },
 					["groups"] = {
 						i(216712),	-- Bronze Timepiece (QI!)
 					},
 				}),
 				q(80017, {	-- The Need For Higher Altitudes
-					["provider"] = { "n", 218469 },	-- Lord Anderstrasz
 					["sourceQuests"] = { 80016 },	-- The Need For Higher Velocities
+					["provider"] = { "n", 218469 },	-- Lord Anderstrasz
 					["coord"] = { 65.2, 37.2, THE_JADE_FOREST },
 					["groups"] = {
 						i(216712),	-- Bronze Timepiece (QI!)
 					},
 				}),
 				q(80018, {	-- Fashionable Flying
-					["provider"] = { "n", 218469 },	-- Lord Anderstrasz
 					["sourceQuests"] = { 80017 },	-- The Need For Higher Altitudes
+					["provider"] = { "n", 218469 },	-- Lord Anderstrasz
 					["coord"] = { 65.2, 37.2, THE_JADE_FOREST },
 				}),
 				q(80349, {	-- Time to Return
-					["provider"] = { "n", 218469 },	-- Lord Anderstrasz
 					["sourceQuests"] = { 80018 },	-- Fashionable Flying
+					["provider"] = { "n", 218469 },	-- Lord Anderstrasz
 					["coord"] = { 65.2, 37.2, THE_JADE_FOREST },
 				}),
 				q(79489, {	-- Gems of Power
@@ -123,40 +123,40 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					["sourceQuests"] = { 80196 },	-- Extract a Gem
 				}),
 				q(78893, {	-- A Scrap of Bronze
-					["provider"] = { "i", 210526 },	-- Unraveling Tunic (QI!)
 					["sourceQuests"] = { 79440 },	-- Recalling the War
+					["provider"] = { "i", 210526 },	-- Unraveling Tunic (QI!)
 					["groups"] = {
 						i(217174),	-- Bronze (QI!)
 					},
 				}),
 				q(81976, {	-- Bazaar, Isn't It?
-					["provider"] = { "n", 222186 },	-- Nostwin
 					--["sourceQuests"] = { xx },	-- TODO: some of level up/turn in HQTs?
+					["provider"] = { "n", 222186 },	-- Nostwin
 					["coord"] = { 45.8, 84.7, THE_JADE_FOREST },	-- missing horde coords
 					["groups"] = {
 						i(217930),	-- Nostwin's Voucher
 					},
 				}),
 				q(78894, {	-- Infinite Growth
-					["provider"] = { "n", 213664 },	-- Momentus
 					--["sourceQuests"] = { 81976 },	-- Bazaar, Isn't It? / unsure since I didn't teleport right after I get voucher
+					["provider"] = { "n", 213664 },	-- Momentus
 					["coord"] = { 42.5, 27.3, THE_JADE_FOREST },
 				}),
 				q(83775, {	-- Infinite Growth II
-					["provider"] = { "n", 213664 },	-- Momentus
 					["sourceQuests"] = { 78894 },	-- Infinite Growth
+					["provider"] = { "n", 213664 },	-- Momentus
 					["coord"] = { 42.5, 27.3, THE_JADE_FOREST },
 					["lvl"] = { 50 },
 				}),
 				q(83776, {	-- Infinite Growth III
-					["provider"] = { "n", 213664 },	-- Momentus
 					["sourceQuests"] = { 83775 },	-- Infinite Growth II
+					["provider"] = { "n", 213664 },	-- Momentus
 					["coord"] = { 42.5, 27.3, THE_JADE_FOREST },
 					["lvl"] = { 60 },
 				}),
 				q(83777, {	-- Infinite Growth IV
-					["provider"] = { "n", 213664 },	-- Momentus
 					["sourceQuests"] = { 83776 },	-- Infinite Growth III
+					["provider"] = { "n", 213664 },	-- Momentus
 					["coord"] = { 42.5, 27.3, THE_JADE_FOREST },
 					["lvl"] = { 70 },
 				}),

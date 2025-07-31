@@ -48,8 +48,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 
 Braghe:
 q(questID, {	-- Quest Name
-	["provider"] = { "n", npcID },	-- Npc Name
 	["sourceQuests"] = { questID },	-- Quest Name
+	["provider"] = { "n", npcID },	-- Npc Name
 	["coord"] = { X, Y, mapID },
 	["groups"] = {
 		i(itemID),	-- Item Name
@@ -85,17 +85,17 @@ Extended Quest
 Braghe:
 q(questID, {	-- Quest Name
 	["name"] = "Quest Name, if the name will NEVER load in game",
-	["provider"] = { "n", npcID },	-- Npc Name
-	["altQuests"] = { questID },	-- Quest Name
+	["description"] = "Text",
 	["sourceQuests"] = { questID },	-- Quest Name
 	["sourceQuestNumRequired"] = number,
+	["altQuests"] = { questID },	-- Quest Name
+	["provider"] = { "n", npcID },	-- Npc Name
 	["coord"] = { X, Y, MAPID_CONSTANT },
-	["description"] = "Text",
 	["timeline"] = { timeline },
 	["maps"] = { MAPID_CONSTANT },
 	["cost"] = { { "i", itemID, number }, },	-- numberxItem Name
-	["classes"] = { classID },
 	["races"] = { raceID },
+	["classes"] = { classID },
 	["lockCriteria"] = { criteriaID },
 	["customCollect"] = { customID },
 	["isBreadcrumb"] = true,

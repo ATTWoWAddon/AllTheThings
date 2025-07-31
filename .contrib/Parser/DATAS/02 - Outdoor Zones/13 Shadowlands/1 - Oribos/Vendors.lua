@@ -168,6 +168,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					}),
 					i(190184, {	-- Incense of Infinity (CI!)
 						["cost"] = 5000000,	-- 500g
+						["sourceAchievement"] = 14834,	-- Bound with Purpose
 						["sym"] = {
 							{"select","expansionID",EXPANSION.SL},	-- Select Shadowlands
 							{"find","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)

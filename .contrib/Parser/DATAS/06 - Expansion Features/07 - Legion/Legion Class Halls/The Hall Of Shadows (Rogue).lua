@@ -16,10 +16,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					cl(ROGUE, OUTLAW, {
 							q(43558, {	-- Bindings of the Windlord
-								["provider"] = { "n", 92218 },	-- Thrymjaris <Mother of the Thorignir>
-								["sourceQuests"] = { 39652 },	-- Where Dragons Rule
-								["coord"] = { 40.8, 80.8, STORMHEIM },
 								["description"] = "You need to first collect the two bindings and then be in Outlaw spec to get this quest.",
+								["sourceQuests"] = { 39652 },	-- Where Dragons Rule
+								["provider"] = { "n", 92218 },	-- Thrymjaris <Mother of the Thorignir>
+								["coord"] = { 40.8, 80.8, STORMHEIM },
 								["cost"] = {
 									{ "i", 139466, 1 },		-- Bindings of the Windlord (Left)
 									{ "i", 139468, 1 },		-- Bindings of the Windlord (Right)
@@ -27,8 +27,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 								},
 							}),
 							q(43560, {	-- Audience with the Windlord
-								["provider"] = { "n", 92218 },	-- Thrymjaris <Mother of the Thorignir>
 								["sourceQuests"] = { 43558 },	-- Bindings of the Windlord
+								["provider"] = { "n", 92218 },	-- Thrymjaris <Mother of the Thorignir>
 								["groups"] = {
 									i(139536, {	-- Emanation of the Winds
 										artifact(881),	-- The Dreadblades [Main Hand]
@@ -79,8 +79,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["maps"] = { LEGION_DALARAN },
 					}),
 					q(40839, {	-- The Final Shadow
-						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["sourceQuest"] = 40832,	-- Call of the Uncrowned
+						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["coord"] = { 41.3, 78.0, THE_HALL_OF_SHADOWS },
 						["groups"] = {
 							i(136786),	-- Uncrowned Insignia
@@ -88,29 +88,29 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					-- Artifact Choosen
 					q(40840, {	-- A Worthy Blade
-						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["sourceQuest"] = 40839,	-- The Final Shadow
+						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["coord"] = { 41.3, 78.1, THE_HALL_OF_SHADOWS },
 					}),
 					q(44034, {	-- Another Worthy Blade
-						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["sourceQuest"] = 40840,	-- A Worthy Blade
+						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["coord"] = { 41.3, 78.1, THE_HALL_OF_SHADOWS },
 					}),
 					q(44375, {	-- The Final Blade
-						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["sourceQuest"] = 44034,	-- Another Worthy Blade
+						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["coord"] = { 41.4, 78.0, THE_HALL_OF_SHADOWS },
 					}),
 					cl(ROGUE, ASSASSINATION, {
 						q(42501, {	-- Finishing the Job
-							["provider"] = { "n", 94138 },	-- Princess Tess Greymane
 							["sourceQuests"] = {
 								40840,	-- A Worthy Blade
 								44034,	-- Another Worthy Blade
 								44375,	-- The Final Blade
 							},
 							["sourceQuestNumRequired"] = 1,
+							["provider"] = { "n", 94138 },	-- Princess Tess Greymane
 							["coord"] = { 42.3, 75.9, THE_HALL_OF_SHADOWS },
 							["groups"] = {
 								i(173531, {	-- Blasted Lands Scroll (QI!)
@@ -120,13 +120,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							},
 						}),
 						q(42502, {	-- No Sanctuary
-							["provider"] = { "n", 94138 },	-- Princess Tess Greymane
 							["sourceQuests"] = {
 								40840,	-- A Worthy Blade
 								44034,	-- Another Worthy Blade
 								44375,	-- The Final Blade
 							},
 							["sourceQuestNumRequired"] = 1,
+							["provider"] = { "n", 94138 },	-- Princess Tess Greymane
 							["coord"] = { 42.3, 75.9, THE_HALL_OF_SHADOWS },
 							["groups"] = {
 								i(173530, {	-- Duskwood Scroll (QI!)
@@ -159,8 +159,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["groups"] = { i(173532) },	-- Elwynn Forest Scroll
 						}),
 						q(42504, {	-- The Unseen Blade (A)
-							["provider"] = { "n", 107979 },	-- Garona Halforcen
 							["sourceQuest"] = 42568,	-- Preparation
+							["provider"] = { "n", 107979 },	-- Garona Halforcen
 							["coord"] = { 36.8, 52.6, ELWYNN_FOREST },
 							["maps"] = { STORMWIND_CITY },
 							["races"] = ALLIANCE_ONLY,
@@ -180,8 +180,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							},
 						}),
 						q(42627, {	-- The Unseen Blade (H)
-							["provider"] = { "n", 107979 },	-- Garona Halforcen
 							["sourceQuest"] = 42568,	-- Preparation
+							["provider"] = { "n", 107979 },	-- Garona Halforcen
 							["coord"] = { 36.8, 52.6, ELWYNN_FOREST },
 							["maps"] = { STORMWIND_CITY },
 							["races"] = HORDE_ONLY,
@@ -203,13 +203,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					cl(ROGUE, OUTLAW, {
 						q(40847, {	-- A Friendly Accord
-							["provider"] = { "n", 94159 },	-- Fleet Admiral Tethys
 							["sourceQuests"] = {
 								40840,	-- A Worthy Blade
 								44034,	-- Another Worthy Blade
 								44375,	-- The Final Blade
 							},
 							["sourceQuestNumRequired"] = 1,
+							["provider"] = { "n", 94159 },	-- Fleet Admiral Tethys
 							["coord"] = { 41.2, 74.3, THE_HALL_OF_SHADOWS },
 							["groups"] = {
 								i(173528, {	-- Gilded Hearthstone (QI!)
@@ -218,8 +218,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							},
 						}),
 						q(40849, {	-- The Dreadblades
-							["provider"] = { "n", 102120 },	-- Fleet Admiral Tethys
 							["sourceQuest"] = 40847,	-- A Friendly Accord
+							["provider"] = { "n", 102120 },	-- Fleet Admiral Tethys
 							["coord"] = { 40.6, 69.2, THE_CAPE_OF_STRANGLETHORN },
 							["groups"] = {
 								i(128872, {	-- The Dreadblades [Main Hand]
@@ -239,33 +239,33 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					cl(ROGUE, SUBTLETY, {
 						q(41919, {	-- The Shadows Reveal
-							["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 							["sourceQuests"] = {
 								40840,	-- A Worthy Blade
 								44034,	-- Another Worthy Blade
 								44375,	-- The Final Blade
 							},
 							["sourceQuestNumRequired"] = 1,
+							["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 							["coord"] = { 40.8, 75.4, THE_HALL_OF_SHADOWS },
 						}),
 						q(41920, {	-- A Matter of Finesse
-							["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 							["sourceQuest"] = 41919,	-- The Shadows Reveal
+							["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 							["coord"] = { 51.6, 70.4, LEGION_DALARAN },
 						}),
 						q(41921, {	-- Closing In
-							["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 							["sourceQuest"] = 41920,	-- A Matter of Finesse
+							["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 							["coord"] = { 67.9, 63.1, LEGION_THE_UNDERBELLY },
 						}),
 						q(41922, {	-- Traitor!
-							["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 							["sourceQuest"] = 41921,	-- Closing In
+							["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 							["coord"] = { 49.4, 41.2, LEGION_DALARAN },
 						}),
 						q(41924, {	-- Fangs of the Devourer
-							["provider"] = { "n", 105464 },	-- Val'zuun
 							["sourceQuest"] = 41922,	-- Traitor!
+							["provider"] = { "n", 105464 },	-- Val'zuun
 							["coord"] = { 67.9, 63.1, LEGION_THE_UNDERBELLY },
 							["maps"] = { 740, 741 },	-- Shadowgore Citadel (Scenario Map)
 							["groups"] = {
@@ -285,15 +285,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						}),
 					}),
 					q(44252, {	-- A Sheath For Every Blade
-						["provider"] = { "n", 105986 },	-- Kelsey Steelspark
 						["sourceQuest"] = 40840,	-- A Worthy Blade
+						["provider"] = { "n", 105986 },	-- Kelsey Steelspark
 						["coord"] = { 26.9, 36.7, THE_HALL_OF_SHADOWS },
 						["groups"] = {
 							i(139742),	-- Mask of the Uncrowned
 						},
 					}),
 					q(40950, {	-- Honoring Success
-						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["sourceQuests"] = {
 							42504,	-- The Unseen Blade (A)
 							42627,	-- The Unseen Blade (H)
@@ -301,23 +300,23 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							41924,	-- Fangs of the Devourer
 						},
 						["sourceQuestNumRequired"] = 1,
+						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["coord"] = { 41.4, 78.0, THE_HALL_OF_SHADOWS },
 					}),
 					q(40994, {	-- Right Tools for the Job
-						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["sourceQuest"] = 40950,	-- Honoring Success
+						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["coord"] = { 41.3, 78.1, THE_HALL_OF_SHADOWS },
 						["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
 					}),
 					q(40995, {	-- Injection of Power
-						["provider"] = { "n", 102594 },	-- Marin Noggenfogger
 						["sourceQuest"] = 40994,	-- Right Tools for the Job
+						["provider"] = { "n", 102594 },	-- Marin Noggenfogger
 						["coord"] = { 30.4, 70.4, THE_HALL_OF_SHADOWS },
 						["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
 					}),
 					-- Start Legion Zone
 					q(40996, {	-- Delegation
-						["provider"] = { "n", 102594 },	-- Marin Noggenfogger
 						["sourceQuests"] = {
 							-- #IF BEFORE 8.0.1
 							40995,	-- Injection of Power
@@ -325,101 +324,102 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							40950,	-- Honoring Success
 							-- #ENDIF
 						},
+						["provider"] = { "n", 102594 },	-- Marin Noggenfogger
 						["coord"] = { 41.3, 78.0, THE_HALL_OF_SHADOWS },
 					}),
 					q(40997, {	-- Lethal Efficiency
-						["provider"] = { "n", 98092 },	-- Nikki the Gossip
 						["sourceQuest"] = 40996,	-- Delegation
+						["provider"] = { "n", 98092 },	-- Nikki the Gossip
 						["coord"] = { 37.7, 44.8, THE_HALL_OF_SHADOWS },
 					}),
 					-- Learn Mission Table & Research
 					q(43007, {	-- Return to the Chamber of Shadows
-						["provider"] = { "n", 112679 },	-- Valeera Sanguinar
 						["sourceQuest"] = 40997,	-- Lethal Efficiency
+						["provider"] = { "n", 112679 },	-- Valeera Sanguinar
 						["maps"] = { LEGION_DALARAN },
 						["isBreadcrumb"] = true,
 					}),
 					q(42139, {	-- Rise, Champions
-						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["sourceQuest"] = 43007,	-- Return to the Chamber of Shadows
+						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["coord"] = { 41.3, 78.1, THE_HALL_OF_SHADOWS },
 					}),
 					q(43261, {	-- Champion: Vanessa VanCleef
-						["provider"] = { "n", 102636 },	-- Vanessa VanCleef
 						["sourceQuest"] = 42139,	-- Rise, Champions
+						["provider"] = { "n", 102636 },	-- Vanessa VanCleef
 						["coord"] = { 42.4, 68.3, THE_HALL_OF_SHADOWS },
 						["groups"] = {
 							follower(591),	-- Vanessa VanCleef
 						},
 					}),
 					q(43262, {	-- Champion: Garona Halforcen
-						["provider"] = { "n", 94141 },	-- Garona Halforcen
 						["sourceQuest"] = 43261,	-- Champion: Vanessa VanCleef
+						["provider"] = { "n", 94141 },	-- Garona Halforcen
 						["coord"] = { 42.4, 74.7, THE_HALL_OF_SHADOWS },
 						["groups"] = {
 							follower(778),	-- Garona Halforcen
 						},
 					}),
 					q(42140, {	-- A More Wretched Hive of Scum and Villainy
-						["provider"] = { "n", 98092 },	-- Nikki the Gossip
 						["sourceQuest"] = 42139,	-- Rise, Champions
+						["provider"] = { "n", 98092 },	-- Nikki the Gossip
 						["coord"] = { 37.7, 44.9, THE_HALL_OF_SHADOWS },
 					}),
 					q(43013, {	-- The School of Roguery
-						["provider"] = { "n", 98092 },	-- Nikki the Gossip
 						["sourceQuest"] = 42140,	-- A More Wretched Hive of Scum and Villainy
+						["provider"] = { "n", 98092 },	-- Nikki the Gossip
 						["coord"] = { 37.7, 44.9, THE_HALL_OF_SHADOWS },
 					}),
 					q(43014, {	-- The Big Bad Wolfe
-						["provider"] = { "n", 98092 },	-- Nikki the Gossip
 						["sourceQuest"] = 43013,	-- The School of Roguery
+						["provider"] = { "n", 98092 },	-- Nikki the Gossip
 						["coord"] = { 37.8, 45.0, THE_HALL_OF_SHADOWS },
 					}),
 					q(43015, {	-- What Winstone Suggests
-						["provider"] = { "n", 98092 },	-- Nikki the Gossip
 						["sourceQuest"] = 43014,	-- The Big Bad Wolfe
+						["provider"] = { "n", 98092 },	-- Nikki the Gossip
 						["coord"] = { 37.8, 44.9, THE_HALL_OF_SHADOWS },
 					}),
 					-- Chap 1
 					q(43958, {	-- A Body of Evidence
-						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["sourceQuest"] = 43015,	-- What Winstone Suggests
+						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["coord"] = { 41.4, 78.0, THE_HALL_OF_SHADOWS },
 					}),
 					q(43829, {	-- Spy vs. Spy
-						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["sourceQuest"] = 43958,	-- A Body of Evidence
+						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["coord"] = { 41.3, 78.1, THE_HALL_OF_SHADOWS },
 					}),
 					q(44041, {	-- The Bloody Truth
-						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["sourceQuest"] = 43829,	-- Spy vs. Spy
+						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["coord"] = { 41.3, 78.1, THE_HALL_OF_SHADOWS },
 						["groups"] = {
 							i(140395),	-- Stylish Spy Glasses (QI!)
 						},
 					}),
 					q(44116, {	-- Mystery at Citrine Bay
-						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["sourceQuest"] = 44041,	-- The Bloody Truth
+						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["coord"] = { 41.3, 78.1, THE_HALL_OF_SHADOWS },
 					}),
 					q(44155, {	-- Searching For Clues
-						["provider"] = { "n", 112959 },	-- Fleet Admiral Tethys
 						["sourceQuest"] = 44116,	-- Mystery at Citrine Bay
+						["provider"] = { "n", 112959 },	-- Fleet Admiral Tethys
 						["coord"] = { 77.2, 55.0, STORMHEIM },
 					}),
 					q(44117, {	-- Time Flies When Yer Havin' Rum!
-						["provider"] = { "n", 112959 },	-- Fleet Admiral Tethys
 						["sourceQuest"] = 44116,	-- Mystery at Citrine Bay
+						["provider"] = { "n", 112959 },	-- Fleet Admiral Tethys
 						["coord"] = { 77.2, 55.0, STORMHEIM },
 					}),
 					q(44177, {	-- Dark Secrets and Shady Deals
-						["provider"] = { "n", 112959 },	-- Fleet Admiral Tethys
 						["sourceQuests"] = {
 							44155,	-- Searching For Clues
 							44117,	-- Time Flies When Yer Havin' Rum!
 						},
+						["provider"] = { "n", 112959 },	-- Fleet Admiral Tethys
 						["coord"] = { 77.2, 55.0, STORMHEIM },
 						["groups"] = {
 							artifact(230),	-- The Kingslayers [Main Hand]
@@ -431,8 +431,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						}
 					}),
 					q(44183, {	-- Champion: Lord Jorach Ravenholdt
-						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["sourceQuest"] = 44177,	-- Dark Secrets and Shady Deals
+						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["coord"] = { 41.4, 78.1, THE_HALL_OF_SHADOWS },
 						["groups"] = {
 							follower(779),	-- Lord Jorach Ravenholdt
@@ -440,101 +440,101 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					-- Chap 2
 					q(43841, {	-- Convincin' Old Yancey
-						["provider"] = { "n", 94159 },	-- Fleet Admiral Tethys
 						["sourceQuest"] = 44177,	-- Dark Secrets and Shady Deals
+						["provider"] = { "n", 94159 },	-- Fleet Admiral Tethys
 						["coord"] = { 41.2, 74.3, THE_HALL_OF_SHADOWS },
 					}),
 					q(43852, {	-- Fancy Lads and Buccaneers
-						["provider"] = { "n", 94159 },	-- Fleet Admiral Tethys
 						["sourceQuest"] = 43841,	-- Convincin' Old Yancey
+						["provider"] = { "n", 94159 },	-- Fleet Admiral Tethys
 						["coord"] = { 41.2, 74.3, THE_HALL_OF_SHADOWS },
 					}),
 					q(44181, {	-- Champion: Fleet Admiral Tethys
-						["provider"] = { "n", 94159 },	-- Fleet Admiral Tethys
 						["sourceQuest"] = 43852,	-- Fancy Lads and Buccaneers
+						["provider"] = { "n", 94159 },	-- Fleet Admiral Tethys
 						["coord"] = { 41.2, 74.3, THE_HALL_OF_SHADOWS },
 						["groups"] = {
 							follower(780),	-- Fleet Admiral Tethys
 						},
 					}),
 					q(42684, {	-- Throwing SI:7 Off the Trail
-						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 						["sourceQuest"] = 44181,	-- Champion: Fleet Admiral Tethys
+						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 						["coord"] = { 40.8, 75.3, THE_HALL_OF_SHADOWS },
 					}),
 					q(42730, {	-- Noggenfogger's Reasonable Request
-						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 						["sourceQuest"] = 44181,	-- Champion: Fleet Admiral Tethys
+						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 						["coord"] = { 40.8, 75.3, THE_HALL_OF_SHADOWS },
 					}),
 					q(44178, {	-- A Particularly Potent Potion
-						["provider"] = { "n", 102594 },	-- Marin Noggenfogger
 						["sourceQuest"] = 42730,	-- Noggenfogger's Reasonable Request
+						["provider"] = { "n", 102594 },	-- Marin Noggenfogger
 						["coord"] = { 30.5, 70.4, THE_HALL_OF_SHADOWS },
 					}),
 					q(44180, {	-- Champion: Marin Noggenfogger
-						["provider"] = { "n", 102594 },	-- Marin Noggenfogger <Baron of Gadgetzan>
 						["sourceQuest"] = 44178,	-- A Particularly Potent Potion
+						["provider"] = { "n", 102594 },	-- Marin Noggenfogger <Baron of Gadgetzan>
 						["coord"] = { 30.5, 70.4, THE_HALL_OF_SHADOWS },
 						["groups"] = {
 							follower(890),	-- Marin Noggenfogger
 						},
 					}),
 					q(43468, {	-- Blood for the Wolfe
-						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 						["sourceQuest"] = 44181,	-- Champion: Fleet Admiral Tethys
+						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 						["coord"] = { 40.8, 75.3, THE_HALL_OF_SHADOWS },
 					}),
 					q(43253, {	-- Maw of Souls: Ancient Vrykul Legends
-						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 						["sourceQuests"] = {
 							42684,	-- Throwing SI:7 Off the Trail
 							43468,	-- Blood for the Wolfe
 							42730,	-- Noggenfogger's Reasonable Request
 						},
+						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 						["coord"] = { 40.9, 75.5, THE_HALL_OF_SHADOWS },
 						["maps"] = { 706, 707, 708 },	-- Maw of Souls
 					}),
 					q(43249, {	-- The Raven's Eye
-						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 						["sourceQuests"] = { 43253 },	-- Maw of Souls: Ancient Vrykul Legends
+						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 						["coord"] = { 40.9, 75.5, THE_HALL_OF_SHADOWS },
 					}),
 					q(43250, {	-- Off to Court
-						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 						["sourceQuests"] = { 43249 },	-- The Raven's Eye
+						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 						["coord"] = { 40.9, 75.5, THE_HALL_OF_SHADOWS },
 					}),
 					q(43252, {	-- Eternal Unrest
-						["provider"] = { "n", 110164 },	-- Valeera Sanguinar
 						["sourceQuests"] = { 43250 },	-- Off to Court
+						["provider"] = { "n", 110164 },	-- Valeera Sanguinar
 						["coord"] = { 40.4, 52.9, VALSHARAH },
 					}),
 					q(43251, {	-- In Search of the Eye
-						["provider"] = { "n", 110164 },	-- Valeera Sanguinar
 						["sourceQuests"] = { 43250 },	-- Off to Court
+						["provider"] = { "n", 110164 },	-- Valeera Sanguinar
 						["coord"] = { 40.4, 52.9, VALSHARAH },
 					}),
 					q(42678, {	-- Black Rook Hold: Into Black Rook Hold
-						["provider"] = { "n", 110164 },	-- Valeera Sanguinar
 						["sourceQuests"] = {
 							43251,	-- In Search of the Eye
 							43252,	-- Eternal Unrest
 						},
+						["provider"] = { "n", 110164 },	-- Valeera Sanguinar
 						["coord"] = { 40.4, 52.9, VALSHARAH },
 						["maps"] = { 751, 752, 753, 754, 755, 756 },	-- Black Rook Hold
 					}),
 					q(42680, {	-- Deciphering the Letter
-						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 						["sourceQuests"] = { 42678 },	-- Black Rook Hold: Into Black Rook Hold
+						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 						["coord"] = { 40.9, 75.5, THE_HALL_OF_SHADOWS },
 						["groups"] = {
 							i(139746),	-- Wristbands of the Uncrowned
 						},
 					}),
 					q(42800, {	-- Champion: Valeera Sanguinar
-						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 						["sourceQuests"] = { 42680 },	-- Deciphering the Letter
+						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 						["coord"] = { 40.9, 75.5, THE_HALL_OF_SHADOWS },
 						["groups"] = {
 							follower(891),	-- Valeera Sanguinar
@@ -542,51 +542,51 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					-- Chap 3
 					q(43470, {	-- Pruning the Garden
-						["provider"] = { "n", 98100 },	-- Taoshi
 						["sourceQuests"] = { 42680 },	-- Deciphering the Letter
+						["provider"] = { "n", 98100 },	-- Taoshi
 						["coord"] = { 40.6, 76.7, THE_HALL_OF_SHADOWS },
 					}),
 					q(43469, {	-- Where In the World is Mathias?
-						["provider"] = { "n", 98100 },	-- Taoshi
 						["sourceQuests"] = { 42680 },	-- Deciphering the Letter
+						["provider"] = { "n", 98100 },	-- Taoshi
 						["coord"] = { 40.6, 76.7, THE_HALL_OF_SHADOWS },
 					}),
 					q(43479, {	-- The World is Not Enough
-						["provider"] = { "n", 98100 },	-- Taoshi
 						["sourceQuests"] = { 43470 },	-- Pruning the Garden
+						["provider"] = { "n", 98100 },	-- Taoshi
 						["coord"] = { 40.6, 76.7, THE_HALL_OF_SHADOWS },
 					}),
 					q(43485, {	-- A Burning Distraction
-						["provider"] = { "n", 98100 },	-- Taoshi
 						["sourceQuests"] = {
 							43469,	-- Where In the World is Mathias?
 							43479,	-- The World is Not Enough
 						},
+						["provider"] = { "n", 98100 },	-- Taoshi
 						["coord"] = { 40.6, 76.7, THE_HALL_OF_SHADOWS },
 					}),
 					q(43508, {	-- The Captive Spymaster
-						["provider"] = { "n", 110714 },	-- Taoshi
 						["sourceQuest"] = 43485,	-- A Burning Distraction
+						["provider"] = { "n", 110714 },	-- Taoshi
 						["coord"] = { 29.8, 79.7, SURAMAR },
 					}),
 					q(37666, {	-- Picking a Fight
-						["provider"] = { "n", 110793 },	-- Taoshi
 						["sourceQuest"] = 43508,	-- The Captive Spymaster
+						["provider"] = { "n", 110793 },	-- Taoshi
 						["coord"] = { 27.0, 89.1, SURAMAR },
 					}),
 					q(37448, {	-- A Simple Plan
-						["provider"] = { "n", 110953 },	-- Master Mathias Shaw
 						["sourceQuest"] = 37666,	-- Picking a Fight
+						["provider"] = { "n", 110953 },	-- Master Mathias Shaw
 						["coord"] = { 40.5, 77.9, THE_HALL_OF_SHADOWS },
 					}),
 					q(37494, {	-- Under Cover of Darkness
-						["provider"] = { "n", 98100 },	-- Taoshi
 						["sourceQuests"] = { 37448 },	-- A Simple Plan
+						["provider"] = { "n", 98100 },	-- Taoshi
 						["coord"] = { 40.6, 77.0, THE_HALL_OF_SHADOWS },
 					}),
 					q(37689, {	-- The Imposter
-						["provider"] = { "n", 111049 },	-- Master Mathias Shaw
 						["sourceQuests"] = { 37494 },	-- Under Cover of Darkness
+						["provider"] = { "n", 111049 },	-- Master Mathias Shaw
 						["coord"] = { 35.6, 60.0, STORMWIND_CITY },
 						["groups"] = {
 							i(139739),	-- Chestguard of the Uncrowned
@@ -594,29 +594,29 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 					}),
 					q(43724, {	-- Champion: Master Mathias Shaw
-						["provider"] = { "n", 110953 },	-- Master Mathias Shaw <Leader of SI:7>
 						["sourceQuest"] = 37689,	-- The Imposter
+						["provider"] = { "n", 110953 },	-- Master Mathias Shaw <Leader of SI:7>
 						["coord"] = { 40.5, 77.9, THE_HALL_OF_SHADOWS },
 						["groups"] = {
 							follower(893),	-- Master Mathias Shaw
 						},
 					}),
 					q(43723, {	-- Champion: Taoshi
-						["provider"] = { "n", 98100 },	-- Taoshi
 						["sourceQuest"] = 37689,	-- The Imposter
+						["provider"] = { "n", 98100 },	-- Taoshi
 						["coord"] = { 40.6, 77.0, THE_HALL_OF_SHADOWS },
 						["groups"] = {
 							follower(892),	-- Taoshi
 						},
 					}),
 					q(44215, {	-- One More Thing...
-						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["sourceQuest"] = 37689,	-- The Imposter
+						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["coord"] = { 41.3, 78.1, THE_HALL_OF_SHADOWS },
 					}),
 					q(43422, {	-- A Hero's Weapon
-						["provider"] = { "n", 113362 },	-- Lord Jorach Ravenholdt
 						["sourceQuest"] = 44215,	-- One More Thing...
+						["provider"] = { "n", 113362 },	-- Lord Jorach Ravenholdt
 						["coord"] = { 38.0, 58.0, THE_HALL_OF_SHADOWS },
 						["groups"] = {
 							artifact(235),	-- The Kingslayers [Main Hand]
@@ -629,36 +629,36 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					-- Interlude
 					q(45991, {	-- An Urgent Warning
-						["provider"] = { "n", 118424 },	-- Injured Bandit
 						["sourceQuest"] = 43422,	-- A Hero's Weapon
+						["provider"] = { "n", 118424 },	-- Injured Bandit
 						["coord"] = { 44.8, 39.8, THE_HALL_OF_SHADOWS },
 						["timeline"] = { ADDED_7_1_5, REMOVED_7_2_0 },
 						["isBreadcrumb"] = true,
 					}),
 					q(45992, {	-- Investigate the Broken Shore
-						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["sourceQuest"] = 45991,	--  An Urgent Warning
+						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["coord"] = { 42.2, 77.0, THE_HALL_OF_SHADOWS },
 						["timeline"] = { ADDED_7_1_5, REMOVED_7_2_0 },
 					}),
 					-- 7.2.0
 					q(45833, {	-- The Pirate's Bay (A)
-						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["sourceQuest"] = 47137,	-- Champions of Legionfall
+						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["coord"] = { 41.3, 78.0, THE_HALL_OF_SHADOWS },
 						["timeline"] = { ADDED_7_2_0 },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(46322, {	-- The Pirate's Bay (H)
-						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["sourceQuest"] = 47137,	-- Champions of Legionfall
+						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["coord"] = { 41.3, 78.0, THE_HALL_OF_SHADOWS },
 						["timeline"] = { ADDED_7_2_0 },
 						["races"] = HORDE_ONLY,
 					}),
 					q(44758, {	-- What's the Cache? (A)
-						["provider"] = { "n", 119821 },	-- Tess Graymane
 						["sourceQuest"] = 45833,	-- The Pirate's Bay
+						["provider"] = { "n", 119821 },	-- Tess Graymane
 						["coord"] = { 57.7, 63.5, AZSUNA },
 						["timeline"] = { ADDED_7_2_0 },
 						["races"] = ALLIANCE_ONLY,
@@ -667,8 +667,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 					}),
 					q(46323, {	-- What's the Cache? (H)
-						["provider"] = { "n", 119822 },	-- Lilian Voss
 						["sourceQuest"] = 46322,	-- The Pirate's Bay
+						["provider"] = { "n", 119822 },	-- Lilian Voss
 						["coord"] = { 57.7, 63.5, AZSUNA },
 						["timeline"] = { ADDED_7_2_0 },
 						["races"] = HORDE_ONLY,
@@ -677,27 +677,26 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 					}),
 					q(45835, {	-- False Orders (A)
-						["provider"] = { "n", 119821 },	-- Tess Graymane
 						["sourceQuest"] = 45833,	-- The Pirate's Bay
+						["provider"] = { "n", 119821 },	-- Tess Graymane
 						["coord"] = { 57.7, 63.5, AZSUNA },
 						["timeline"] = { ADDED_7_2_0 },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(46324, {	-- False Orders (H)
-						["provider"] = { "n", 119822 },	-- Lilian Voss
 						["sourceQuest"] = 46322,	-- The Pirate's Bay
+						["provider"] = { "n", 119822 },	-- Lilian Voss
 						["coord"] = { 57.7, 63.5, AZSUNA },
 						["timeline"] = { ADDED_7_2_0 },
 						["races"] = HORDE_ONLY,
 					}),
 					q(45073, {	-- Loot and Plunder!
-						["provider"] = { "n", 118125 },	-- Fleet Admiral Tethys
 						["sourceQuest"] = 45833,	-- The Pirate's Bay
+						["provider"] = { "n", 118125 },	-- Fleet Admiral Tethys
 						["coord"] = { 57.7, 63.6, AZSUNA },
 						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45848, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Fit For a Pirate
-						["provider"] = { "n", 118126 },	-- Crackers
 						["sourceQuests"] = {
 							45835,	-- False Orders (A)
 							46324,	-- False Orders (H)
@@ -705,79 +704,80 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							44758,	-- What's the Cache? (A)
 							46323,	-- What's the Cache? (H)
 						},
+						["provider"] = { "n", 118126 },	-- Crackers
 						["coord"] = { 57.7, 63.5, AZSUNA },
 						["groups"] = {
 							i(143679),	-- Crackers (PET!)
 						},
 					})),
 					q(45836, {	-- Jorach's Calling (A)
-						["provider"] = { "n", 119821 },	-- Princess Tess Greymane
 						["sourceQuest"] = 45848,	-- Fit For a Pirate
+						["provider"] = { "n", 119821 },	-- Princess Tess Greymane
 						["coord"] = { 57.6, 63.4, AZSUNA },
 						["timeline"] = { ADDED_7_2_0 },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(46326, {	-- Jorach's Calling (H)
-						["provider"] = { "n", 119822 },	-- Lilian Voss
 						["sourceQuest"] = 45848,	-- Fit For a Pirate
+						["provider"] = { "n", 119822 },	-- Lilian Voss
 						["coord"] = { 57.6, 63.4, AZSUNA },
 						["timeline"] = { ADDED_7_2_0 },
 						["races"] = HORDE_ONLY,
 					}),
 					q(45571, {	-- A Bit of Espionage
-						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["sourceQuests"] = {
 							45836,	-- Jorach's Calling (A)
 							46326,	-- Jorach's Calling (H)
 						},
+						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["coord"] = { 41.4, 78.0, THE_HALL_OF_SHADOWS },
 						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45573, {	-- Rise Up (A)
-						["provider"] = { "n", 117259 },	-- Lord Jorach Ravenholdt
 						["sourceQuest"] = 45571,	-- A Bit of Espionage
+						["provider"] = { "n", 117259 },	-- Lord Jorach Ravenholdt
 						["coord"] = { 70.1, 47.0, BROKEN_SHORE },
 						["timeline"] = { ADDED_7_2_0 },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(45576, {	-- Rise Up (H)
-						["provider"] = { "n", 117259 },	-- Lord Jorach Ravenholdt
 						["sourceQuest"] = 45571,	-- A Bit of Espionage
+						["provider"] = { "n", 117259 },	-- Lord Jorach Ravenholdt
 						["coord"] = { 70.1, 47.0, BROKEN_SHORE },
 						["timeline"] = { ADDED_7_2_0 },
 						["races"] = HORDE_ONLY,
 					}),
 					q(45628, {	-- This Time, Leave a Trail (A)
-						["provider"] = { "n", 117262 },	-- Princess Tess Greymane
 						["sourceQuest"] = 45573,	-- Rise Up
+						["provider"] = { "n", 117262 },	-- Princess Tess Greymane
 						["coord"] = { 71.6, 41.9, BROKEN_SHORE },
 						["timeline"] = { ADDED_7_2_0 },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(45629, {	-- This Time, Leave a Trail (H)
-						["provider"] = { "n", 117263 },	-- Lilian Voss
 						["sourceQuest"] = 45576,	-- Rise Up
+						["provider"] = { "n", 117263 },	-- Lilian Voss
 						["coord"] = { 71.6, 41.9, BROKEN_SHORE },
 						["timeline"] = { ADDED_7_2_0 },
 						["races"] = HORDE_ONLY,
 					}),
 					q(46260, {	-- Meld Into the Shadows (A)
-						["provider"] = { "n", 117259 },	-- Lord Jorach Ravenholdt
 						["sourceQuest"] = 45628,	-- This Time, Leave a Trail
+						["provider"] = { "n", 117259 },	-- Lord Jorach Ravenholdt
 						["coord"] = { 76.9, 39.8, BROKEN_SHORE },
 						["timeline"] = { ADDED_7_2_0 },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(46827, {	-- Meld Into the Shadows (H)
-						["provider"] = { "n", 117259 },	-- Lord Jorach Ravenholdt
 						["sourceQuest"] = 45629,	-- This Time, Leave a Trail
+						["provider"] = { "n", 117259 },	-- Lord Jorach Ravenholdt
 						["coord"] = { 76.9, 39.8, BROKEN_SHORE },
 						["timeline"] = { ADDED_7_2_0 },
 						["races"] = HORDE_ONLY,
 					}),
 					q(46058, {	-- Champion: Lilian Voss
-						["provider"] = { "n", 98099 },	-- Lilian Voss
 						["sourceQuest"] = 46827,	-- Meld Into the Shadows
+						["provider"] = { "n", 98099 },	-- Lilian Voss
 						["coord"] = { 42.2, 77.0, THE_HALL_OF_SHADOWS },
 						["timeline"] = { ADDED_7_2_0 },
 						["races"] = HORDE_ONLY,
@@ -786,8 +786,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 					}),
 					q(46059, {	-- Champion: Tess Greymane
-						["provider"] = { "n", 94138 },	-- Princess Tess Greymane
 						["sourceQuest"] = 46260,	-- Meld Into the Shadows
+						["provider"] = { "n", 94138 },	-- Princess Tess Greymane
 						["coord"] = { 42.3, 75.9, THE_HALL_OF_SHADOWS },
 						["timeline"] = { ADDED_7_2_0 },
 						["races"] = ALLIANCE_ONLY,
@@ -796,17 +796,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 					}),
 					q(46103, {	-- Dread Infiltrators
-						["provider"] = { "n", 119259 },	-- Apothecary Keever
 						["sourceQuests"] = {
 							46058,	-- Champion: Lilian Voss
 							46059,	-- Champion: Tess Greymane
 						},
+						["provider"] = { "n", 119259 },	-- Apothecary Keever
 						["coord"] = { 45.0, 64.0, BROKEN_SHORE },
 						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(46089, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Hiding in Plain Sight (A)
-						["provider"] = { "n", 98099 },	-- Lilian Voss
 						["sourceQuest"] = 46103,	-- Dread Infiltrators
+						["provider"] = { "n", 98099 },	-- Lilian Voss
 						["coord"] = { 20.0, 21.4, THE_HALL_OF_SHADOWS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -814,8 +814,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 					})),
 					q(46178, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Hiding in Plain Sight (H)
-						["provider"] = { "n", 98099 },	-- Lilian Voss
 						["sourceQuest"] = 46103,	-- Dread Infiltrators
+						["provider"] = { "n", 98099 },	-- Lilian Voss
 						["coord"] = { 20.0, 21.4, THE_HALL_OF_SHADOWS },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -824,7 +824,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					})),
 					-- Side Quest
 					q(47591, {	-- Wanna Buy a Lamp?
-						["provider"] = { "n", 103792 },	-- Griftah
 						-- TODO: Determine actual sourceQuests 3 Retail-Errors reports with these not being completed
 						-- ["sourceQuests"] = {
 						-- 	42504,	-- The Unseen Blade (A)
@@ -832,61 +831,62 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						-- 	40849,	-- The Dreadblades
 						-- 	41924,	-- Fangs of the Devourer
 						-- },
+						["provider"] = { "n", 103792 },	-- Griftah
 						["coord"] = { 45.4, 27.6, THE_HALL_OF_SHADOWS },
 						["timeline"] = { ADDED_7_2_5 },
 					}),
 					q(47592, {	-- Shine Bright Like a Diamond
-						["provider"] = { "n", 103792 },	-- Griftah
 						["sourceQuest"] = 47591,	-- Wanna Buy a Lamp?
+						["provider"] = { "n", 103792 },	-- Griftah
 						["coord"] = { 45.4, 27.6, THE_HALL_OF_SHADOWS },
 						["timeline"] = { ADDED_7_2_5 },
 					}),
 					q(47603, {	-- The Mysterious, Magnificent Al'Abas
-						["provider"] = { "n", 123087 },	-- Al'Abas
 						["sourceQuest"] = 47592,	-- Shine Bright Like a Diamond
+						["provider"] = { "n", 123087 },	-- Al'Abas
 						["coord"] = { 45.0, 26.8, THE_HALL_OF_SHADOWS },
 						["timeline"] = { ADDED_7_2_5 },
 					}),
 					q(47604, {	-- In the Land of Magic
-						["provider"] = { "n", 123087 },	-- Al'Abas
 						["sourceQuest"] = 47603,	-- The Mysterious, Magnificent Al'Abas
+						["provider"] = { "n", 123087 },	-- Al'Abas
 						["coord"] = { 45.0, 26.8, THE_HALL_OF_SHADOWS },
 						["timeline"] = { ADDED_7_2_5 },
 					}),
 					q(47605, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_5 } }, {	-- Coins of Air
-						["provider"] = { "n", 123087 },	-- Al'Abas
 						["sourceQuest"] = 47604,	-- In the Land of Magic
+						["provider"] = { "n", 123087 },	-- Al'Abas
 						["coord"] = { 45.0, 26.8, THE_HALL_OF_SHADOWS },
 						["groups"] = {
 							i(151131),	-- Lamp of Al'Abas
 						},
 					})),
 					q(47606, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_5 } }, {	-- Loyalty Is Its Own Reward
-						["provider"] = { "n", 123087 },	-- Al'Abas
 						["sourceQuest"] = 47605,	-- Coins of Air
+						["provider"] = { "n", 123087 },	-- Al'Abas
 						["coord"] = { 45.0, 26.8, THE_HALL_OF_SHADOWS },
 						["groups"] = {
 							i(151143),	-- Shining Lamp of Al'Abas
 						},
 					})),
 					q(47607, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_5 } }, {	-- High Fash-Djinn
-						["provider"] = { "n", 123087 },	-- Al'Abas
 						["sourceQuest"] = 47606,	-- Loyalty Is Its Own Reward
+						["provider"] = { "n", 123087 },	-- Al'Abas
 						["coord"] = { 45.0, 26.8, THE_HALL_OF_SHADOWS },
 						["groups"] = {
 							i(151144),	-- Gleaming Lamp of Al'Abas
 						},
 					})),
 					q(47594, {	-- I'll Take Those, Thanks!
-						["provider"] = { "n", 103792 },	-- Griftah
 						["sourceQuest"] = 47605,	-- Coins of Air
+						["provider"] = { "n", 103792 },	-- Griftah
 						["coord"] = { 45.4, 27.6, THE_HALL_OF_SHADOWS },
 						["timeline"] = { ADDED_7_2_5 },
 						["isWeekly"] = true,
 					}),
 					q(47595, {	-- I Don't Need Them, But I'll Take Them
-						["provider"] = { "n", 103792 },	-- Griftah
 						["sourceQuest"] = 47594,	-- I'll Take Those, Thanks!
+						["provider"] = { "n", 103792 },	-- Griftah
 						["coord"] = { 45.4, 27.6, THE_HALL_OF_SHADOWS },
 						["timeline"] = { ADDED_7_2_5 },
 						["repeatable"] = true,
@@ -910,23 +910,23 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["timeline"] = { ADDED_7_0_3, REMOVED_7_3_0 },
 					}),
 					q(46148, {	-- Knowledge is Power
-						["provider"] = { "n", 102641 },	-- Filius Sparkstache <Archivist>
 						["sourceQuest"] = 43885,	-- Hitting the Books
+						["provider"] = { "n", 102641 },	-- Filius Sparkstache <Archivist>
 						["coord"] = { 39.8, 70.2, THE_HALL_OF_SHADOWS },
 						["timeline"] = { ADDED_7_1_5, REMOVED_7_3_0 },
 					}),
 					q(46129, {	-- Furthering Knowledge
-						["provider"] = { "n", 102641 },	-- Filius Sparkstache <Archivist>
 						["sourceQuest"] = 46148,	-- Knowledge is Power
+						["provider"] = { "n", 102641 },	-- Filius Sparkstache <Archivist>
 						["coord"] = { 39.8, 70.2, THE_HALL_OF_SHADOWS },
 						["timeline"] = { ADDED_7_1_5, REMOVED_7_3_0 },
 					}),
 					q(46779, {	-- Further Advancement
-						["provider"] = { "n", 98092 },	-- Nikki the Gossip
 						["sourceQuests"] = {
 							46058,	-- Champion: Lilian Voss
 							46059,	-- Champion: Tess Greymane
 						},
+						["provider"] = { "n", 98092 },	-- Nikki the Gossip
 						["coord"] = { 37.7, 44.8, THE_HALL_OF_SHADOWS },
 						["timeline"] = { ADDED_7_2_0 },
 					}),
@@ -934,8 +934,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 				n(SPECIAL, {
 					gt(443, {	-- Plunder
 						q(44204, {	-- Seal their Fates
-							["provider"] = { "n", 110820 },	-- Scythe
 							["sourceQuest"] = 43015,	-- What Winstone Suggests
+							["provider"] = { "n", 110820 },	-- Scythe
 							["coord"] = { 61.6, 50.6, THE_HALL_OF_SHADOWS },
 						}),
 					}),
@@ -944,8 +944,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["description"] = "|c808080FAYou get these coins from completing missions with Marin Noggenfogger or via pick-pocketing mobs (unique item!) from|r |cFFFFD700The Vault|r |c808080FAclass hall ability that rogues get on Tier 2.|r",
 						}),
 						q(44159, {	-- A Ticket for Marin
-							["provider"] = { "i", 140774 },	-- Vault Ticket
 							["sourceQuest"] = 44180,	-- Champion: Marin Noggenfogger
+							["provider"] = { "i", 140774 },	-- Vault Ticket
 							["coord"] = { 30.5, 70.4, THE_HALL_OF_SHADOWS },
 							["isWeekly"] = true,
 						}),
@@ -992,8 +992,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					gt(444, {	-- Weapons Smuggler
 						q(44195, {	-- Workorders for Armaments
-							["provider"] = { "n", 110348 },	-- Mal
 							["sourceQuest"] = 43015,	-- What Winstone Suggests
+							["provider"] = { "n", 110348 },	-- Mal
 							["coord"] = { 75.1, 56.4, THE_HALL_OF_SHADOWS },
 						}),
 					}),

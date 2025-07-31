@@ -11,9 +11,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				}),
 				n(EMISSARY_QUESTS, {
 					q(62852, {	-- Paragon of the Wild Hunt
-						["minReputation"] = { FACTION_THE_WILD_HUNT, EXALTED },
 						["provider"] = { "n", 158556 },	-- Aithlyn <Wild Hunt Quartermaster>
 						["coord"] = { 48.4, 50.4, ARDENWEALD },
+						["minReputation"] = { FACTION_THE_WILD_HUNT, EXALTED },
 					}),
 					q(61098, bubbleDownSelf({ ["minReputation"] = { FACTION_THE_WILD_HUNT, EXALTED } }, {	-- Supplies from The Wild Hunt
 						["provider"] = { "n", 158556 },	-- Aithlyn <Wild Hunt Quartermaster>
@@ -40,6 +40,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 								i(190644, {	-- Vessel of Profound Possibilities (CI!)
 									["cost"] = {{"c",2009,10000}},	-- 10,000 Cosmic Flux
 									["timeline"] = { ADDED_9_2_0 },
+									["sourceAchievement"] = 14834,	-- Bound with Purpose
 									["sym"] = {
 										{"select","expansionID",EXPANSION.SL},	-- Select Shadowlands
 										{"find","headerID",CONDUITS},{"pop"},	-- grab the main Conduits category (to keep the class grouping)

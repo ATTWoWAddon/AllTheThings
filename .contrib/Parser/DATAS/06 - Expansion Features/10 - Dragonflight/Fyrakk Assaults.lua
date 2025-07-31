@@ -59,11 +59,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["isWeekly"] = IGNORED_VALUE,
 				}),
 				q(75888, {	-- Suffusion Camp
+					["sourceQuest"] = 75887,	-- Fyrakk's Forces
 					["qgs"] = {
 						201648,	-- Somnikus
 						203520,	-- Stellagosa
 					},
-					["sourceQuest"] = 75887,	-- Fyrakk's Forces
 					["coords"] = {
 						{ 75.2, 69.2, OHNAHRAN_PLAINS },
 						{ 58.0, 34.6, THE_AZURE_SPAN },

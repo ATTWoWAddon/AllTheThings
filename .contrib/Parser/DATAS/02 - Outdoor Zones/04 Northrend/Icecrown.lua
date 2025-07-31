@@ -155,11 +155,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(31928, {	-- Grand Master Payne
-						["qg"] = 66675,	-- Major Payne
 						["sourceQuests"] = {
 							31927,	-- Battle Pet Tamers: Northrend (A)
 							31929,	-- Battle Pet Tamers: Northrend (H)
 						},
+						["qg"] = 66675,	-- Major Payne
 						["coord"] = { 77.4, 19.6, ICECROWN },
 						["timeline"] = { ADDED_5_0_4 },
 						["groups"] = {
@@ -171,8 +171,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(31984, {	-- A Brief Reprieve (A)
-						["qg"] = 66675,	-- Major Payne
 						["sourceQuest"] = 31928,	-- Grand Master Payne
+						["qg"] = 66675,	-- Major Payne
 						["coord"] = { 77.4, 19.6, ICECROWN },
 						["timeline"] = { ADDED_5_0_4 },
 						["maps"] = { STORMWIND_CITY },
@@ -180,8 +180,8 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 					}),
 					q(31983, {	-- A Brief Reprieve (H)
-						["qg"] = 66675,	-- Major Payne
 						["sourceQuest"] = 31928,	-- Grand Master Payne
+						["qg"] = 66675,	-- Major Payne
 						["coord"] = { 77.4, 19.6, ICECROWN },
 						["timeline"] = { ADDED_5_0_4 },
 						["maps"] = { ORGRIMMAR },
@@ -191,81 +191,81 @@ root(ROOTS.Zones, {
 				}),
 				n(QUESTS, {
 					q(13286, {	-- ...All the Help We Can Get.
-						["qg"] = 30344,	-- High Captain Justin Bartlett
-						["sourceQuest"] = 13231,	-- The Broken Front
 						["description"] = "On the Skybreaker.",
+						["sourceQuest"] = 13231,	-- The Broken Front
+						["qg"] = 30344,	-- High Captain Justin Bartlett
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13070, {	-- A Cold Front Approaches
-						["qg"] = 28179,	-- Highlord Tirion Fordring
 						["sourceQuest"] = 13045,	-- Into The Wild Green Yonder
+						["qg"] = 28179,	-- Highlord Tirion Fordring
 						["coord"] = { 87.4, 75.8, ICECROWN },
 					}),
 					q(13072, {	-- A Hero Remains
-						["qg"] = 30562,	-- Crusader Bridenbrad
 						["sourceQuest"] = 13068,	-- A Tale of Valor
+						["qg"] = 30562,	-- Crusader Bridenbrad
 						["coord"] = { 79.8, 30.8, ICECROWN },
 						["lvl"] = 67,
 					}),
 					q(13389, {	-- A Short Fuse (A)
-						["provider"] = { "o", 193400 },	-- Saronite Bomb Stack
 						["sourceQuest"] = 13388,	-- Set It Off!
+						["provider"] = { "o", 193400 },	-- Saronite Bomb Stack
 						["coord"] = { 54.3, 86.3, ICECROWN },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13263, {	-- A Short Fuse (H)
-						["provider"] = { "o", 193400 },	-- Saronite Bomb Stack
 						["sourceQuest"] = 13262,	-- Blow it Up!
+						["provider"] = { "o", 193400 },	-- Saronite Bomb Stack
 						["coord"] = { 54.3, 86.2, ICECROWN },
 						["races"] = HORDE_ONLY,
 					}),
 					q(13068, {	-- A Tale of Valor
-						["qg"] = 31044,	-- Highlord Tirion Fordring
-						["sourceQuest"] = 13141,	-- The Battle For Crusaders' Pinnacle
-						["coord"] = { 79.7, 71.7, ICECROWN },
 						["description"] = "For those that didn't know, this quest line was a dedication to a one Brad Bridenbecker, brother to Rob Bridenbecker VP of Online Technologies. Brad had suffered from cancer and was an avid WoW player. His brother requested some memorial be set up for his brother and Chris Metzen, along with others, thought up this quest line to immortalize his battle with cancer within our beloved fantasy realm.\n\nHats off to you, Blizzard, Chris Metzen, and the whole Bridenbecker family. As a childhood cancer survivor myself, you have my utmost respect and loyalty to your honor and vision. You've truly epitomized the struggle of one going through the sickness, the battle, in the most accurate way possible, and bring honor to all of us who have suffered, and have watched those who have suffered, the same battle.\n\nLok'tar, brother Brad. Lok'tar.\n\n—Fellwing on Wowhead",
+						["sourceQuest"] = 13141,	-- The Battle For Crusaders' Pinnacle
+						["qg"] = 31044,	-- Highlord Tirion Fordring
+						["coord"] = { 79.7, 71.7, ICECROWN },
 						["lvl"] = 67,
 					}),
 					q(13152, {	-- A Visit to the Doctor
-						["qg"] = 30631,	-- Darkrider Arly
 						["sourceQuests"] = {
 							13138,	-- I'm Smelting... Smelting!
 							13134,	-- Spilling Their Blood
 							13140,	-- The Runesmiths of Malykriss
 						},
+						["qg"] = 30631,	-- Darkrider Arly
 						["coord"] = { 35.3, 66.3, ICECROWN },
 					}),
 					q(13390, {	-- A Voice in the Dark (A)
-						["provider"] = { "o", 193195 },	-- Pulsing Crystal
 						["sourceQuest"] = 13389,	-- A Short Fuse
+						["provider"] = { "o", 193195 },	-- Pulsing Crystal
 						["coord"] = { 53.9, 87.2, ICECROWN },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13271, {	-- A Voice in the Dark (H)
-						["provider"] = { "o", 193195 },	-- Pulsing Crystal
 						["sourceQuest"] = 13263,	-- A Short Fuse
+						["provider"] = { "o", 193195 },	-- Pulsing Crystal
 						["coord"] = { 53.9, 87.2, ICECROWN },
 						["races"] = HORDE_ONLY,
 					}),
 					q(13294, {	-- Against the Giants (A)
-						["qg"] = 29799,	-- Thassarian
-						["sourceQuest"] = 13287,	-- Poke and Prod
 						["description"] = "On the Skybreaker.",
+						["sourceQuest"] = 13287,	-- Poke and Prod
+						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13277, {	-- Against the Giants (H)
-						["qg"] = 29795,	-- Koltira Deathweaver
-						["sourceQuest"] = 13237,	-- Poke and Prod
 						["description"] = "On Orgrim's Hammer.",
+						["sourceQuest"] = 13237,	-- Poke and Prod
+						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
 					}),
 					q(13174, {	-- Amidst the Confusion
-						["qg"] = 30946,	-- Keritose Bloodblade
 						["sourceQuests"] = {
 							13169,	-- An Undead's Best Friend
 							13171,	-- From Whence They Came
 							13170,	-- Honor is for the Weak
 						},
+						["qg"] = 30946,	-- Keritose Bloodblade
 						["coord"] = { 44.0, 24.5, ICECROWN },
 					}),
 					q(13374, {	-- Amped for Revolt!
@@ -275,69 +275,69 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 					q(13169, {	-- An Undead's Best Friend
-						["qg"] = 30946,	-- Keritose Bloodblade
 						["sourceQuest"] = 13168,	-- Parting Gifts
+						["qg"] = 30946,	-- Keritose Bloodblade
 						["coord"] = { 44.0, 24.5, ICECROWN },
 					}),
 					q(13363, {	-- Argent Aid
-						["qg"] = 29795,	-- Koltira Deathweaver
-						["sourceQuest"] = 13362,	-- Knowledge is a Terrible Burden
 						["description"] = "On Orgrim's Hammer.",
+						["sourceQuest"] = 13362,	-- Knowledge is a Terrible Burden
+						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
 					}),
 					q(13395, {	-- Army of the Damned (A)
-						["qg"] = 32404,	-- Matthias Lehner
 						["sourceQuest"] = 13394,	-- Do Your Worst
+						["qg"] = 32404,	-- Matthias Lehner
 						["coord"] = { 64.5, 43.9, ICECROWN },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13236, {	-- Army of the Damned (H)
-						["qg"] = 32404,	-- Matthias Lehner
 						["sourceQuest"] = 13305,	-- Do Your Worst
+						["qg"] = 32404,	-- Matthias Lehner
 						["coord"] = { 64.5, 43.9, ICECROWN },
 						["races"] = HORDE_ONLY,
 					}),
 					q(13309, {	-- Assault by Air (A)
-						["qg"] = 31808,	-- Ground Commander Koup
 						["sourceQuest"] = 13341,	-- Joining the Assault
+						["qg"] = 31808,	-- Ground Commander Koup
 						["coord"] = { 62.5, 51.3, ICECROWN },
 						["maxReputation"] = { FACTION_VALIANCE_EXPEDITION, EXALTED },	-- Valiance Expedition, Exalted.
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(13310, {	-- Assault by Air (H)
-						["qg"] = 31834,	-- Ground Commander Xutjja
 						["sourceQuest"] = 13340,	-- Joining the Assault
+						["qg"] = 31834,	-- Ground Commander Xutjja
 						["coord"] = { 58.3, 45.9, ICECROWN },
 						["maxReputation"] = { FACTION_WARSONG_OFFENSIVE, EXALTED },	-- Warsong Offensive, Exalted.
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(13284, {	-- Assault by Ground (A)
-						["qg"] = 31737,	-- Skybreaker Squad Leader
 						["sourceQuest"] = 13341,	-- Joining the Assault
+						["qg"] = 31737,	-- Skybreaker Squad Leader
 						["coord"] = { 62.5, 51.1, ICECROWN },
 						["maxReputation"] = { FACTION_VALIANCE_EXPEDITION, EXALTED },	-- Valiance Expedition, Exalted.
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(13301, {	-- Assault by Ground (H)
-						["qg"] = 31833,	-- Kor'kron Squad Leader
 						["sourceQuest"] = 13340,	-- Joining the Assault
+						["qg"] = 31833,	-- Kor'kron Squad Leader
 						["coord"] = { 58.3, 46.1, ICECROWN },
 						["maxReputation"] = { FACTION_WARSONG_OFFENSIVE, EXALTED },	-- Warsong Offensive, Exalted.
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(13230, {	-- Avenge Me!
-						["qg"] = 31273,	-- Dying Berserker
 						["sourceQuest"] = 13228,	-- The Broken Front
+						["qg"] = 31273,	-- Dying Berserker
 						["coord"] = { 68.3, 67.5, ICECROWN },
 						["races"] = HORDE_ONLY,
 					}),
 					q(13142, {	-- Banshee's Revenge
-						["qg"] = 30232,	-- The Bone Witch
 						["sourceQuest"] = 13137,	-- Not-So-Honorable Combat
+						["qg"] = 30232,	-- The Bone Witch
 						["coord"] = { 32.4, 42.9, ICECROWN },
 						["groups"] = {
 							i(44028),	-- Vengance Shiv
@@ -348,9 +348,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13295, {	-- Basic Chemistry (A)
-						["qg"] = 29799,	-- Thassarian
-						["sourceQuest"] = 13294,	-- Against the Giants
 						["description"] = "On the Skybreaker.",
+						["sourceQuest"] = 13294,	-- Against the Giants
+						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(44386),	-- Newt-Eye Ring
@@ -359,9 +359,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13279, {	-- Basic Chemistry (H)
-						["qg"] = 29795,	-- Koltira Deathweaver
-						["sourceQuest"] = 13277,	-- Against the Giants
 						["description"] = "On Orgrim's Hammer.",
+						["sourceQuest"] = 13277,	-- Against the Giants
+						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(44386),	-- Newt-Eye Ring
@@ -370,23 +370,23 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13213, {	-- Battle at Valhalas
-						["qg"] = 30232,	-- The Bone Witch
 						["sourceQuest"] = 13142,	-- Banshee's Revenge
+						["qg"] = 30232,	-- The Bone Witch
 						["coord"] = { 32.4, 42.9, ICECROWN },
 					}),
 					q(13217, {	-- Battle at Valhalas: Carnage!
-						["qg"] = 31135,	-- Geirrvif
 						["sourceQuest"] = 13216,	-- Battle at Valhalas: The Return of Sigrid Iceborn
+						["qg"] = 31135,	-- Geirrvif
 						["coord"] = { 30.7, 28.9, ICECROWN },
 					}),
 					q(13214, {	-- Battle at Valhalas: Fallen Heroes
-						["qg"] = 31135,	-- Geirrvif
 						["sourceQuest"] = 13213,	-- Battle at Valhalas
+						["qg"] = 31135,	-- Geirrvif
 						["coord"] = { 30.7, 28.9, ICECROWN },
 					}),
 					q(13219, {	-- Battle at Valhalas: Final Challenge
-						["qg"] = 31135,	-- Geirrvif
 						["sourceQuest"] = 13218,	-- Battle at Valhalas: Thane Deathblow
+						["qg"] = 31135,	-- Geirrvif
 						["coord"] = { 30.7, 28.9, ICECROWN },
 						["groups"] = {
 							i(44382),	-- Robes of Refrained Celebration
@@ -396,87 +396,87 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13215, {	-- Battle at Valhalas: Khit'rix the Dark Master
-						["qg"] = 31135,	-- Geirrvif
 						["sourceQuest"] = 13214,	-- Battle at Valhalas: Fallen Heroes
+						["qg"] = 31135,	-- Geirrvif
 						["coord"] = { 30.7, 28.9, ICECROWN },
 					}),
 					q(13218, {	-- Battle at Valhalas: Thane Deathblow
-						["qg"] = 31135,	-- Geirrvif
 						["sourceQuest"] = 13217,	-- Battle at Valhalas: Carnage!
+						["qg"] = 31135,	-- Geirrvif
 						["coord"] = { 30.7, 28.9, ICECROWN },
 					}),
 					q(13216, {	-- Battle at Valhalas: The Return of Sigrid Iceborn
-						["qg"] = 31135,	-- Geirrvif
 						["sourceQuest"] = 13215,	-- Battle at Valhalas: Khit'rix the Dark Master
+						["qg"] = 31135,	-- Geirrvif
 						["coord"] = { 30.7, 28.9, ICECROWN },
 					}),
 					q(13335, {	-- Before the Gate of Horror (A)
-						["qg"] = 29799,	-- Thassarian
-						["sourceQuest"] = 13337,	-- The Ironwall Rampart
 						["description"] = "On the Skybreaker.",
+						["sourceQuest"] = 13337,	-- The Ironwall Rampart
+						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13329, {	-- Before the Gate of Horror (H)
-						["qg"] = 29795,	-- Koltira Deathweaver
-						["sourceQuest"] = 13312,	-- The Ironwall Rampart
 						["description"] = "On Orgrim's Hammer.",
+						["sourceQuest"] = 13312,	-- The Ironwall Rampart
+						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
 					}),
 					q(13106, {	-- Blackwatch
-						["qg"] = 29343,	-- Baron Sliver
 						["sourceQuest"] = 12897,	-- If He Cannot Be Turned
+						["qg"] = 29343,	-- Baron Sliver
 						["coord"] = { 42.8, 24.9, ICECROWN },
 						["isBreadcrumb"] = true,
 					}),
 					q(13313, {	-- Blinding the Eyes in the Sky
-						["qg"] = 30824,	-- Sky-Reaver Korm Blackscar
-						["sourceQuest"] = 13306,	-- Raise the Barricades
 						["description"] = "On Orgrim's Hammer.",
+						["sourceQuest"] = 13306,	-- Raise the Barricades
+						["qg"] = 30824,	-- Sky-Reaver Korm Blackscar
 						["races"] = HORDE_ONLY,
 					}),
 					q(12810, {	-- Blood in the Water
-						["qg"] = 29344,	-- Lord-Commander Arete
 						["sourceQuest"] = 12807,	-- The Story Thus Far...
+						["qg"] = 29344,	-- Lord-Commander Arete
 						["coord"] = { 19.5, 48.1, ICECROWN },
 					}),
 					q(13336, {	-- Blood of the Chosen (A)
-						["qg"] = 32302,	-- Knight-Captain Drosche
-						["sourceQuest"] = 13225,	-- The Skybreaker
 						["description"] = "On the Skybreaker.",
+						["sourceQuest"] = 13225,	-- The Skybreaker
+						["qg"] = 32302,	-- Knight-Captain Drosche
 						["maxReputation"] = { FACTION_VALIANCE_EXPEDITION, EXALTED },	-- Valiance Expedition, Exalted.
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(13330, {	-- Blood of the Chosen (H)
-						["qg"] = 32301,	-- Warbringer Davos Rioht
-						["sourceQuest"] = 13224,	-- Orgrim's Hammer
 						["description"] = "On Orgrim's Hammer.",
+						["sourceQuest"] = 13224,	-- Orgrim's Hammer
+						["qg"] = 32301,	-- Warbringer Davos Rioht
 						["maxReputation"] = { FACTION_WARSONG_OFFENSIVE, EXALTED },	-- Warsong Offensive, Exalted.
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(13334, {	-- Bloodspattered Banners (A)
-						["qg"] = 29799,	-- Thassarian
-						["sourceQuest"] = 13332,	-- Raise the Barricades
 						["description"] = "On the Skybreaker.",
+						["sourceQuest"] = 13332,	-- Raise the Barricades
+						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13307, {	-- Bloodspattered Banners (H)
-						["qg"] = 29795,	-- Koltira Deathweaver
-						["sourceQuest"] = 13306,	-- Raise the Barricades
 						["description"] = "On Orgrim's Hammer.",
+						["sourceQuest"] = 13306,	-- Raise the Barricades
+						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
 					}),
 					q(13262, {	-- Blow it Up!
-						["qg"] = 31440,	-- Sergeant Kregga
 						["sourceQuest"] = 13259,	-- Establishing Superiority
+						["qg"] = 31440,	-- Sergeant Kregga
 						["coord"] = { 54.9, 84.1, ICECROWN },
 						["races"] = HORDE_ONLY,
 					}),
 					q(13291, {	-- Borrowed Technology
-						["qg"] = 30345,	-- Chief Engineer Boltwrench
-						["sourceQuest"] = 13290,	-- Your Attention, Please
 						["description"] = "On the Skybreaker.",
+						["sourceQuest"] = 13290,	-- Your Attention, Please
+						["qg"] = 30345,	-- Chief Engineer Boltwrench
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(38736),	-- Smuggler's Bracers
@@ -486,12 +486,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13211, {	-- By Fire Be Purged
-						["qg"] = 30708,	-- Crusader Olakin Sainrith
 						["sourceQuests"] = {
 							13138,	-- I'm Smelting... Smelting!
 							13134,	-- Spill Their BLood
 							13140,	-- The Runesmiths of Malykriss
 						},
+						["qg"] = 30708,	-- Crusader Olakin Sainrith
 						["coord"] = { 35.4, 66.4, ICECROWN },
 						["groups"] = {
 							i(43880),	-- Fair Touch of the Crusader
@@ -502,29 +502,29 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13320, {	-- Cannot Reproduce (A)
-						["qg"] = 29799,	-- Thassarian
-						["sourceQuest"] = 13315,	-- Sneak Preview
 						["description"] = "On the Skybreaker.",
+						["sourceQuest"] = 13315,	-- Sneak Preview
+						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13355, {	-- Cannot Reproduce (H)
-						["qg"] = 29795,	-- Koltira Deathweaver
-						["sourceQuest"] = 13351,	-- Sneak Preview
 						["description"] = "On Orgrim's Hammer.",
+						["sourceQuest"] = 13351,	-- Sneak Preview
+						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
 					}),
 					q(13333, {	-- Capture More Dispatches
-						["qg"] = 29799,	-- Thassarian
-						["sourceQuest"] = 13314,	-- Get the Message
 						["description"] = "On the Skybreaker.",
+						["sourceQuest"] = 13314,	-- Get the Message
+						["qg"] = 29799,	-- Thassarian
 						["maxReputation"] = { FACTION_VALIANCE_EXPEDITION, EXALTED },	-- Valiance Expedition, Exalted.
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(13319, {	-- Chain of Command (A)
-						["qg"] = 29799,	-- Thassarian
-						["sourceQuest"] = 13315,	-- Sneak Preview
 						["description"] = "On the Skybreaker.",
+						["sourceQuest"] = 13315,	-- Sneak Preview
+						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(43882),	-- Cultist's Cowl
@@ -534,13 +534,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13354, {	-- Chain of Command (H)
-						["qg"] = 29795,	-- Koltira Deathweaver
+						["description"] = "On Orgrim's Hammer.",
 						["sourceQuests"] = {
 							13351,	-- Sneak Preview
 							-- TODO:: confirm below:
 							13278,	-- Coprous the Defiled
 						},
-						["description"] = "On Orgrim's Hammer.",
+						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(43882),	-- Cultist's Cowl
@@ -550,21 +550,21 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13298, {	-- Coprous the Defiled (A)
-						["qg"] = 29799,	-- Thassarian
-						["sourceQuest"] = 13294,	-- Against the Giants
 						["description"] = "On the Skybreaker.",
+						["sourceQuest"] = 13294,	-- Against the Giants
+						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13278, {	-- Coprous the Defiled (H)
-						["qg"] = 29795,	-- Koltira Deathweaver
-						["sourceQuest"] = 13277,	-- Against the Giants
 						["description"] = "On Orgrim's Hammer.",
+						["sourceQuest"] = 13277,	-- Against the Giants
+						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
 					}),
 					q(13349, {	-- Cradle of the Frostbrood
-						["qg"] = 29795,	-- Koltira Deathweaver
-						["sourceQuest"] = 13348,	-- Futility
 						["description"] = "On Orgrim's Hammer.",
+						["sourceQuest"] = 13348,	-- Futility
+						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(39115),	-- Axe of Bloodstained Ice
@@ -575,8 +575,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12992, {	-- Crush Dem Vrykuls!
-						["qg"] = 30216,	-- Vile
 						["sourceQuest"] = 12951,	-- Let the Baron Know
+						["qg"] = 30216,	-- Vile
 						["coord"] = { 43.4, 24.5, ICECROWN },
 						["groups"] = {
 							i(43928),	-- Bow of Bone and Sinew
@@ -587,28 +587,28 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13040, {	-- Curing The Incurable
-						["qg"] = 30226,	-- Father Gustav
 						["sourceQuest"] = 13036,	-- Honor Above All Else
+						["qg"] = 30226,	-- Father Gustav
 						["coord"] = { 86.8, 76.6, ICECROWN },
 					}),
 					q(13078, {	-- Dahlia's Tears
-						["qg"] = 26917,	-- Alexstrasza the Life-Binder
 						["sourceQuest"] = 13077,	-- The Touch of an Aspect
+						["qg"] = 26917,	-- Alexstrasza the Life-Binder
 						["coord"] = { 59.8, 54.7, DRAGONBLIGHT },
 					}),
 					q(13120, {	-- Death's Gaze
-						["qg"] = 30631,	-- Darkrider Arly
 						["sourceQuest"] = 13117,	-- Where Are They Coming From?
+						["qg"] = 30631,	-- Darkrider Arly
 						["coord"] = { 35.3, 66.3, ICECROWN },
 					}),
 					q(13042, {	-- Deep in the Bowels of The Underhalls
-						["qg"] = 30232,	-- The Bone Witch
 						["sourceQuest"] = 12999,	-- The Bone Witch
+						["qg"] = 30232,	-- The Bone Witch
 						["coord"] = { 32.5, 42.9, ICECROWN },
 					}),
 					q(13039, {	-- Defending The Vanguard
-						["qg"] = 30224,	-- Crusader Lord Dalfors
 						["sourceQuest"] = 13036,	-- Honor Above All Else
+						["qg"] = 30224,	-- Crusader Lord Dalfors
 						["coord"] = { 86.0, 75.7, ICECROWN },
 						["groups"] = {
 							i(43828),	-- Touch of Light
@@ -618,13 +618,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13119, {	-- Destroying the Altars
-						["qg"] = 30631,	-- Darkrider Arly
 						["sourceQuest"] = 13117,	-- Where Are They Coming From?
+						["qg"] = 30631,	-- Darkrider Arly
 						["coord"] = { 35.3, 66.3, ICECROWN },
 					}),
 					q(13394, {	-- Do Your Worst (A)
-						["qg"] = 32408,	-- Matthias Lehner
 						["sourceQuest"] = 13393,	-- Field Repairs
+						["qg"] = 32408,	-- Matthias Lehner
 						["coord"] = { 68.0, 51.5, ICECROWN },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -636,8 +636,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13305, {	-- Do Your Worst (H)
-						["qg"] = 32408,	-- Mathias Lehner
 						["sourceQuest"] = 13304,	-- Field Repairs
+						["qg"] = 32408,	-- Mathias Lehner
 						["coord"] = { 68.0, 51.5, ICECROWN },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -649,34 +649,34 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13318, {	-- Drag and Drop (A)
-						["qg"] = 29799,	-- Thassarian
-						["sourceQuest"] = 13315,	-- Sneak Preview
 						["description"] = "On the Skybreaker.",
+						["sourceQuest"] = 13315,	-- Sneak Preview
+						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13323, {	-- Drag and Drop (A) (daily)
-						["qg"] = 29799,	-- Thassarian
-						["sourceQuest"] = 13318,	-- Drag and Drop
 						["description"] = "On the Skybreaker.",
+						["sourceQuest"] = 13318,	-- Drag and Drop
+						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(13352, {	-- Drag and Drop (H)
-						["qg"] = 29795,	-- Koltira Deathweaver
-						["sourceQuest"] = 13351,	-- Sneak Preview
 						["description"] = "On Orgrim's Hammer.",
+						["sourceQuest"] = 13351,	-- Sneak Preview
+						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
 					}),
 					q(13353, {	-- Drag and Drop (H) (daily)
-						["qg"] = 29795,	-- Koltira Deathweaver
-						["sourceQuest"] = 13352,	-- Drag and Drop
 						["description"] = "On Orgrim's Hammer.",
+						["sourceQuest"] = 13352,	-- Drag and Drop
+						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(12982, {	-- Ebon Blade Prisoners
-						["qg"] = 30218,	-- Vaelen the Flayed
 						["sourceQuest"] = 13085,	-- Vaelen Has Returned
+						["qg"] = 30218,	-- Vaelen the Flayed
 						["coord"] = { 43.1, 21.0, ICECROWN },
 						["groups"] = {
 							i(43859),	-- Shadow Vault Cowl
@@ -686,8 +686,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12955, {	-- Eliminate the Competition
-						["qg"] = 30074,	-- The Leaper
 						["sourceQuest"] = 12938,	-- The Duke
+						["qg"] = 30074,	-- The Leaper
 						["coord"] = { 43.4, 25.0, ICECROWN },
 						["groups"] = {
 							i(43843),	-- Iron Coffin Lid
@@ -698,8 +698,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13259, {	-- Establishing Superiority
-						["qg"] = 31440,	-- Sergeant Kregga
 						["sourceQuest"] = 13258,	-- Opportunity
+						["qg"] = 31440,	-- Sergeant Kregga
 						["coord"] = { 54.9, 84.1, ICECROWN },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -710,37 +710,37 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13386, {	-- Exploiting an Opening
-						["qg"] = 29799,	-- Thassarian
-						["sourceQuest"] = 13225,	-- The Skybreaker
 						["description"] = "On the Skybreaker.",
+						["sourceQuest"] = 13225,	-- The Skybreaker
+						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13393, {	-- Field Repairs (A)
-						["qg"] = 29799,	-- Thassarian
-						["sourceQuest"] = 13392,	-- Return to the Surface
 						["description"] = "On the Skybreaker.",
+						["sourceQuest"] = 13392,	-- Return to the Surface
+						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13304, {	-- Field Repairs (H)
-						["qg"] = 29795,	-- Koltira Deathweaver
-						["sourceQuest"] = 13282,	-- Return to the Surface
 						["description"] = "On Orgrim's Hammer.",
+						["sourceQuest"] = 13282,	-- Return to the Surface
+						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
 					}),
 					q(13133, {	-- Find the Ancient Hero
-						["qg"] = 30232,	-- The Bone Witch
 						["sourceQuest"] = 13121,	-- Through the Eye
+						["qg"] = 30232,	-- The Bone Witch
 						["coord"] = { 32.4, 42.9, ICECROWN },
 					}),
 					q(13232, {	-- Finish Me!
-						["qg"] = 31304,	-- Dying Soldier
 						["sourceQuest"] = 13231,	-- The Broken Front
+						["qg"] = 31304,	-- Dying Soldier
 						["coord"] = { 68.7, 64.5, ICECROWN },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12893, {	-- Free Your Mind
-						["qg"] = 29804,	-- Baron Sliver
 						["sourceQuest"] = 12891,	-- I Have an Idea, But First...
+						["qg"] = 29804,	-- Baron Sliver
 						["coord"] = { 44.1, 24.6, ICECROWN },
 						["groups"] = {
 							i(43849),	-- Chain of the Sovereign
@@ -755,64 +755,64 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 					q(12813, {	-- From Their Corpses, Rise!
-						["qg"] = 29396,	-- Setaal Darkmender
 						["sourceQuest"] = 12807,	-- The Story Thus Far...
+						["qg"] = 29396,	-- Setaal Darkmender
 						["coord"] = { 19.6, 48.3, ICECROWN },
 						["maxReputation"] = { FACTION_EBON_BLADE, EXALTED },	-- Knights of the Ebon Blade, Exalted.
 						["isDaily"] = true,
 					}),
 					q(13171, {	-- From Whence They Came
-						["qg"] = 30946,	-- Keritose Bloodblade
 						["sourceQuest"] = 13168,	-- Parting Gifts
+						["qg"] = 30946,	-- Keritose Bloodblade
 						["coord"] = { 44.0, 24.5, ICECROWN },
 					}),
 					q(13396, {	-- Futility (A)
-						["qg"] = 32404,	-- Matthias Lehner
 						["sourceQuest"] = 13395,	-- Army of the Damned
+						["qg"] = 32404,	-- Matthias Lehner
 						["coord"] = { 64.5, 43.9, ICECROWN },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13348, {	-- Futility (H)
-						["qg"] = 32404,	-- Matthias Lehner
 						["sourceQuest"] = 13236,	-- Army of the Damned
+						["qg"] = 32404,	-- Matthias Lehner
 						["coord"] = { 64.5, 43.9, ICECROWN },
 						["races"] = HORDE_ONLY,
 					}),
 					q(13146, {	-- Generosity Abounds
-						["qg"] = 30944,	-- Vereth the Cunning
 						["sourceQuest"] = 13145,	-- The Vile Hold
+						["qg"] = 30944,	-- Vereth the Cunning
 						["coord"] = { 54.1, 71.1, ICECROWN },
 					}),
 					q(12949, {	-- Get the Key
-						["qg"] = 30056,	-- Vaelen the Flayed
 						["sourceQuest"] = 12939,	-- Honor Challenge
+						["qg"] = 30056,	-- Vaelen the Flayed
 						["coord"] = { 41.0, 23.8, ICECROWN },
 					}),
 					q(13314, {	-- Get the Message
-						["qg"] = 30344,	-- High Captain Justin Bartlett
-						["sourceQuest"] = 13332,	-- Raise the Barricades
 						["description"] = "On the Skybreaker.",
+						["sourceQuest"] = 13332,	-- Raise the Barricades
+						["qg"] = 30344,	-- High Captain Justin Bartlett
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13296, {	-- Get to Ymirheim! (A)
-						["qg"] = 30345,	-- Chief Engineer Boltwrench
-						["sourceQuest"] = 13225,	-- The Skybreaker
 						["description"] = "On the Skybreaker.",
+						["sourceQuest"] = 13225,	-- The Skybreaker
+						["qg"] = 30345,	-- Chief Engineer Boltwrench
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13293, {	-- Get to Ymirheim! (H)
-						["qg"] = 30825,	-- Chief Engineer Copperclaw
-						["sourceQuest"] = 13224,	-- Orgrim's Hammer
 						["description"] = "On Orgrim's Hammer.",
+						["sourceQuest"] = 13224,	-- Orgrim's Hammer
+						["qg"] = 30825,	-- Chief Engineer Copperclaw
 						["races"] = HORDE_ONLY,
 					}),
 					q(13238, {	-- Good For Something?
-						["qg"] = 30824,	-- Sky-Reaver Korm Blackscar
+						["description"] = "On Orgrim's Hammer.",
 						["sourceQuests"] = {
 							13230,	-- Avenge Me!
 							13228,	-- The Broken Front
 						},
-						["description"] = "On Orgrim's Hammer.",
+						["qg"] = 30824,	-- Sky-Reaver Korm Blackscar
 						["races"] = HORDE_ONLY,
 					}),
 					q(13379, {	-- Green Technology
@@ -821,8 +821,8 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 					q(13212, {	-- He's Gone to Pieces
-						["qg"] = 30631,	-- Darkrider Arly
 						["sourceQuest"] = 13144,	-- Killing Two Scourge With One Skeleton
+						["qg"] = 30631,	-- Darkrider Arly
 						["coord"] = { 35.3, 66.3, ICECROWN },
 					}),
 					heroscall(q(49555, {	-- Hero's Call: Icecrown!
@@ -831,88 +831,88 @@ root(ROOTS.Zones, {
 						["lvl"] = 67,
 					})),
 					q(13036, {	-- Honor Above All Else
-						["qg"] = 28179,	-- Highlord Tirion Fordring
 						["sourceQuests"] = {
 							13226,	-- Judgment Day Comes (A)
 							13227,	-- Judgment Day Comes (H)
 						},
+						["qg"] = 28179,	-- Highlord Tirion Fordring
 						["coord"] = { 87.5, 75.8, ICECROWN },
 					}),
 					q(12939, {	-- Honor Challenge
-						["qg"] = 30002,	-- Duke Lankral
 						["sourceQuest"] = 12938,	-- The Duke
+						["qg"] = 30002,	-- Duke Lankral
 						["coord"] = { 44.6, 20.3, ICECROWN },
 					}),
 					q(13170, {	-- Honor is for the Weak
-						["qg"] = 30946,	-- Keritose Bloodblade
 						["sourceQuest"] = 13168,	-- Parting Gifts
+						["qg"] = 30946,	-- Keritose Bloodblade
 						["coord"] = { 44.0, 24.5, ICECROWN },
 					}),
 					q(13074, {	-- Hope Within the Emerald Nightmare
-						["qg"] = 11832,	-- Keeper Remulos
 						["sourceQuest"] = 13073,	-- The Keeper's Favor
+						["qg"] = 11832,	-- Keeper Remulos
 						["coord"] = { 36.2, 41.8, MOONGLADE },
 					}),
 					q(13080, {	-- Hope Yet Remains
-						["qg"] = 30562,	-- Crusader Bridenbrad
 						["sourceQuest"] = 13079,	-- The Boon of Alexstrasza
+						["qg"] = 30562,	-- Crusader Bridenbrad
 						["coord"] = { 79.8, 30.8, ICECROWN },
 					}),
 					q(12891, {	-- I Have an Idea, But First...
-						["qg"] = 29804,	-- Baron Sliver
 						["sourceQuests"] = {
 							12887,	-- It's All Fun and Games (A)
 							12892,	-- It's All Fun and Games (H)
 						},
+						["qg"] = 29804,	-- Baron Sliver
 						["coord"] = { 44.1, 24.6, ICECROWN },
 					}),
 					q(13221, {	-- I'm Not Dead Yet! (A)
-						["qg"] = 31279,	-- Father Kamaros
 						["sourceQuests"] = {
 							13120,	-- Death's Gaze
 							13119,	-- Destroying the Altars
 						},
+						["qg"] = 31279,	-- Father Kamaros
 						["coord"] = { 31.7, 64.7, ICECROWN },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13229, {	-- I'm Not Dead Yet! (H)
-						["qg"] = 31279,	-- Father Kamaros
 						["sourceQuests"] = {
 							13120,	-- Death's Gaze
 							13119,	-- Destroying the Altars
 						},
+						["qg"] = 31279,	-- Father Kamaros
 						["coord"] = { 31.7, 64.7, ICECROWN },
 						["races"] = HORDE_ONLY,
 					}),
 					q(13138, {	-- I'm Smelting... Smelting!
-						["qg"] = 30708,	-- Crusader Olakin Sainrith
 						["sourceQuest"] = 13136,	-- Jagged Shards
+						["qg"] = 30708,	-- Crusader Olakin Sainrith
 						["coord"] = { 35.4, 66.4, ICECROWN },
 					}),
 					q(12896, {	-- If He Cannot Be Turned (A)
-						["qg"] = 29804,	-- Baron Sliver
 						["sourceQuest"] = 12893,	-- Free Your Mind
+						["qg"] = 29804,	-- Baron Sliver
 						["coord"] = { 44.1, 24.6, ICECROWN },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12897, {	-- If He Cannot Be Turned (H)
-						["qg"] = 29804,	-- Baron Sliver
 						["sourceQuest"] = 12893,	-- Free Your Mind
+						["qg"] = 29804,	-- Baron Sliver
 						["coord"] = { 44.1, 24.6, ICECROWN },
 						["races"] = HORDE_ONLY,
 					}),
 					q(13044, {	-- If There Are Survivors...
-						["qg"] = 30223,	-- Crusade Commander Entari
 						["sourceQuests"] = {
 							13040,	-- Curing The Incurable
 							13039,	-- Defending The Vanguard
 							13008,	-- Scourge Tactics
 						},
+						["qg"] = 30223,	-- Crusade Commander Entari
 						["coord"] = { 87.0, 75.8, ICECROWN },
 					}),
 					q(12840, {	-- In Strict Confidence
-						["qg"] = 29344,	-- Lord-Commander Arete
 						["sourceQuest"] = 12839,	-- The Grand (Admiral's) Plan
+						["qg"] = 29344,	-- Lord-Commander Arete
 						["coord"] = { 19.5, 48.1, ICECROWN },
 						["groups"] = {
 							i(43883),	-- Arete's Command
@@ -923,92 +923,92 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12838, {	-- Intelligence Gathering
-						["qg"] = 29456,	-- Aurochs Grimbane
 						["sourceQuest"] = 12807,	-- The Story Thus Far...
+						["qg"] = 29456,	-- Aurochs Grimbane
 						["coord"] = { 20.0, 47.9, ICECROWN },
 						["maxReputation"] = { FACTION_EBON_BLADE, EXALTED },	-- Knights of the Ebon Blade, Exalted.
 						["isDaily"] = true,
 					}),
 					q(13139, {	-- Into The Frozen Heart Of Northrend
-						["qg"] = 30683,	-- Father Gustav
 						["sourceQuests"] = {
 							13125,	-- The Air Stands Still
 							13135,	-- It Could Kill Us All
 							13110,	-- The Restless Dead
 							13130,	-- The Stone That Started A Revolution
 						},
+						["qg"] = 30683,	-- Father Gustav
 						["coord"] = { 82.8, 72.7, ICECROWN },
 					}),
 					q(13045, {	-- Into The Wild Green Yonder
-						["qg"] = 30227,	-- Penumbrius
 						["sourceQuest"] = 13044,	-- If There Are Survivors...
+						["qg"] = 30227,	-- Penumbrius
 						["coord"] = { 87.0, 79.0, ICECROWN },
 					}),
 					q(13135, {	-- It Could Kill Us All
-						["qg"] = 30714,	-- Crusade Engineer Spitzpatrick
 						["sourceQuests"] = {
 							13104,	-- Once More Unto The Breach, Hero (Non-DK)
 							13105,	-- Once More Unto The Breach, Hero (DK)
 						},
+						["qg"] = 30714,	-- Crusade Engineer Spitzpatrick
 						["coord"] = { 82.9, 73.0, ICECROWN },
 						["maps"] = { CRYSTALSONG_FOREST },
 					}),
 					q(12887, {	-- It's All Fun and Games (A)
-						["qg"] = 29799,	-- Thassarian
 						["description"] = "On the Skybreaker.",
+						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12892, {	-- It's All Fun and Games (H)
-						["qg"] = 29795,	-- Koltira Deathweaver
 						["description"] = "On Orgrim's Hammer.",
+						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
 					}),
 					q(13136, {	-- Jagged Shards
-						["provider"] = { "i", 43242 },	-- Jagged Shard
 						["sourceQuests"] = {
 							13120,	-- Death's Gaze
 							13119,	-- Destroying the Altars
 						},
+						["provider"] = { "i", 43242 },	-- Jagged Shard
 						["cr"] = 30597,	-- Spiked Ghoul
 					}),
 					q(13341, {	-- Joining the Assault (A)
-						["qg"] = 32302,	-- Knight-Captain Drosche
-						["sourceQuest"] = 13225,	-- The Skybreaker
 						["description"] = "On the Skybreaker.",
+						["sourceQuest"] = 13225,	-- The Skybreaker
+						["qg"] = 32302,	-- Knight-Captain Drosche
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13340, {	-- Joining the Assault (H)
-						["qg"] = 31240,	-- Warbringer Davos Rioht
-						["sourceQuest"] = 13224,	-- Orgrim's Hammer
 						["description"] = "On Orgrim's Hammer.",
+						["sourceQuest"] = 13224,	-- Orgrim's Hammer
+						["qg"] = 31240,	-- Warbringer Davos Rioht
 						["races"] = HORDE_ONLY,
 					}),
 					q(13226, {	-- Judgment Day Comes! (A)
-						["qg"] = 31259,	-- Absalan the Pious
 						["description"] = "On the Skybreaker.",
+						["qg"] = 31259,	-- Absalan the Pious
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(13227, {	-- Judgment Day Comes! (H)
-						["qg"] = 31261,	-- Brother Keltan
 						["description"] = "On Orgrim's Hammer.",
+						["qg"] = 31261,	-- Brother Keltan
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(13331, {	-- Keeping the Alliance Blind
-						["qg"] = 30824,	-- Sky-Reaver Korm Blackscar
-						["sourceQuest"] = 13313,	-- Blinding the Eyes in the Sky
 						["description"] = "On Orgrim's Hammer.",
+						["sourceQuest"] = 13313,	-- Blinding the Eyes in the Sky
+						["qg"] = 30824,	-- Sky-Reaver Korm Blackscar
 						["maxReputation"] = { FACTION_WARSONG_OFFENSIVE, EXALTED },	-- Warsong Offensive, Exalted.
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(13144, {	-- Killing Two Scourge With One Skeleton
-						["qg"] = 30631,	-- Darkrider Arly
 						["sourceQuests"] = {
 							13152,	-- A Visit to the Doctor
 							13211,	-- By Fire Be Purged
 						},
+						["qg"] = 30631,	-- Darkrider Arly
 						["coord"] = { 35.3, 66.3, ICECROWN },
 						["groups"] = {
 							i(38739),	-- Fleshwerk Shackles
@@ -1023,30 +1023,30 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13280, {	-- King of the Mountain (A)
-						["qg"] = 30345,	-- Chief Engineer Boltwrench
 						["sourceQuest"] = 13296,	-- Get to Ymirheim!
+						["qg"] = 30345,	-- Chief Engineer Boltwrench
 						["coord"] = { 62.8, 50.5, ICECROWN },
 						["maxReputation"] = { FACTION_VALIANCE_EXPEDITION, EXALTED },	-- Valiance Expedition, Exalted.
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(13283, {	-- King of the Mountain (H)
-						["qg"] = 31781,	-- Blast Thunderbomb
 						["sourceQuest"] = 13293,	-- Get to Ymirheim!
+						["qg"] = 31781,	-- Blast Thunderbomb
 						["coord"] = { 51.9, 57.5, ICECROWN },
 						["maxReputation"] = { FACTION_WARSONG_OFFENSIVE, EXALTED },	-- Warsong Offensive, Exalted.
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(13401, {	-- Knowledge is a Terrible Burden (A)
-						["qg"] = 32497,	-- Matthias Lehner
 						["sourceQuest"] = 13400,	-- The Hunter and the Prince
+						["qg"] = 32497,	-- Matthias Lehner
 						["coord"] = { 49.1, 73.1, ICECROWN },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13362, {	-- Knowledge is a Terrible Burden (H)
-						["qg"] = 32497,	-- Matthias Lehner
 						["sourceQuest"] = 13361,	-- The Hunter and the Prince
+						["qg"] = 32497,	-- Matthias Lehner
 						["coord"] = { 49.1, 73.1, ICECROWN },
 						["races"] = HORDE_ONLY,
 					}),
@@ -1056,38 +1056,38 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12995, {	-- Leave Our Mark
-						["qg"] = 29343,	-- Baron Sliver
 						["sourceQuest"] = 12951,	-- Let the Baron Know
+						["qg"] = 29343,	-- Baron Sliver
 						["coord"] = { 42.8, 25.0, ICECROWN },
 						["maxReputation"] = { FACTION_EBON_BLADE, EXALTED },	-- Knights of the Ebon Blade, Exalted.
 						["isDaily"] = true,
 					}),
 					q(12951, {	-- Let the Baron Know
-						["qg"] = 30056,	-- Vaelen the Flayed
 						["sourceQuest"] = 12949,	-- Get the Key
+						["qg"] = 30056,	-- Vaelen the Flayed
 						["coord"] = { 41.0, 23.8, ICECROWN },
 					}),
 					q(13482, {	-- Let's Get Out of Here! (A)
-						["qg"] = 31279,	-- Father Kamaros
 						["sourceQuests"] = {
 							13120,	-- Death's Gaze
 							13119,	-- Destroying the Altars
 						},
+						["qg"] = 31279,	-- Father Kamaros
 						["coord"] = { 31.7, 64.7, ICECROWN },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13481, {	-- Let's Get Out of Here! (H)
-						["qg"] = 32800,	-- Father Kamaros
 						["sourceQuests"] = {
 							13120,	-- Death's Gaze
 							13119,	-- Destroying the Altars
 						},
+						["qg"] = 32800,	-- Father Kamaros
 						["coord"] = { 31.8, 64.8, ICECROWN },
 						["races"] = HORDE_ONLY,
 					}),
 					q(13083, {	-- Light Within the Darkness
-						["provider"] = { "o", 192833 },	-- Bridenbrad's Possessions
 						["sourceQuest"] = 13082,	-- The Boon of A'day
+						["provider"] = { "o", 192833 },	-- Bridenbrad's Possessions
 						["coord"] = { 79.7, 30.8, ICECROWN },
 						["groups"] = {
 							i(44018),	-- Bridenbrad's Sash
@@ -1098,26 +1098,26 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13234, {	-- Make Them Pay!
-						["qg"] = 30824,	-- Sky-Reaver Korm Blackscar
+						["description"] = "On Orgrim's Hammer.",
 						["sourceQuests"] = {
 							13230,	-- Avenge Me!
 							13228,	-- The Broken Front
 						},
-						["description"] = "On Orgrim's Hammer.",
+						["qg"] = 30824,	-- Sky-Reaver Korm Blackscar
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(13147, {	-- Matchmaker
-						["qg"] = 30944,	-- Vereth the Cunning
 						["sourceQuest"] = 13145,	-- The Vile Hold
+						["qg"] = 30944,	-- Vereth the Cunning
 						["coord"] = { 54.1, 71.1, ICECROWN },
 					}),
 					q(13308, {	-- Mind Tricks
-						["qg"] = 31892,	-- Darkspeaker R'khem
 						["sourceQuests"] = {
 							13224,	-- Orgrim's Hammer (H)
 							13225,	-- The Skybreaker (A)
 						},
+						["qg"] = 31892,	-- Darkspeaker R'khem
 						["coord"] = { 54.4, 59.2, ICECROWN },
 						["groups"] = {
 							i(44021),	-- The Darkspeaker's Footpads
@@ -1127,53 +1127,53 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13345, {	-- Need More Info (A)
-						["qg"] = 29799,	-- Thassarian
-						["sourceQuest"] = 13318,	-- Drag and Drop
 						["description"] = "On the Skybreaker.",
+						["sourceQuest"] = 13318,	-- Drag and Drop
+						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13366, {	-- Need More Info (H)
-						["qg"] = 29795,	-- Koltira Deathweaver
-						["sourceQuest"] = 13352,	-- Drag and Drop
 						["description"] = "On Orgrim's Hammer.",
+						["sourceQuest"] = 13352,	-- Drag and Drop
+						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
 					}),
 					q(13297, {	-- Neutralizing the Plague (A)
-						["qg"] = 29799,	-- Thassarian
-						["sourceQuest"] = 13295,	-- Basic Chemistry
 						["description"] = "On the Skybreaker.",
+						["sourceQuest"] = 13295,	-- Basic Chemistry
+						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(13281, {	-- Neutralizing the Plague (H)
-						["qg"] = 29795,	-- Koltira Deathweaver
-						["sourceQuest"] = 13279,	-- Basic Chemistry
 						["description"] = "On Orgrim's Hammer.",
+						["sourceQuest"] = 13279,	-- Basic Chemistry
+						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(13143, {	-- New Recruit
-						["qg"] = 30944,	-- Vereth the Cunning
 						["sourceQuest"] = 13155,	-- Vereth the Cunning
+						["qg"] = 30944,	-- Vereth the Cunning
 						["coord"] = { 54.1, 71.1, ICECROWN },
 					}),
 					q(12815, {	-- No Fly Zone
-						["qg"] = 29405,	-- Uzo Deathcaller
 						["sourceQuest"] = 12814,	-- You'll Need a Gryphon
+						["qg"] = 29405,	-- Uzo Deathcaller
 						["coord"] = { 19.6, 47.7, ICECROWN },
 						["maxReputation"] = { FACTION_EBON_BLADE, EXALTED },	-- Knights of the Ebon Blade, Exalted.
 						["isDaily"] = true,
 					}),
 					pvp(q(13233, {	-- No Mercy!
-						["qg"] = 30344,	-- High Captain Justin Bartlett
 						["description"] = "On the Skybreaker.",
+						["qg"] = 30344,	-- High Captain Justin Bartlett
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					})),
 					q(13346, {	-- No Rest For The Wicked (A)
-						["qg"] = 29799,	-- Thassarian
-						["sourceQuest"] = 13345,	-- Need More Info
 						["description"] = "On the Skybreaker.",
+						["sourceQuest"] = 13345,	-- Need More Info
+						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(44394),	-- Encrusted Zombie Finger
@@ -1182,16 +1182,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13350, {	-- No Rest For The Wicked (A) (daily)
-						["qg"] = 29799,	-- Thassarian
-						["sourceQuest"] = 13346,	-- No Rest For The Wicked
 						["description"] = "On the Skybreaker.",
+						["sourceQuest"] = 13346,	-- No Rest For The Wicked
+						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(13367, {	-- No Rest For The Wicked (H)
-						["qg"] = 29795,	-- Koltira Deathweaver
-						["sourceQuest"] = 13366,	-- Need More Info
 						["description"] = "On Orgrim's Hammer.",
+						["sourceQuest"] = 13366,	-- Need More Info
+						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(44393),	-- Polished Zombie Exterminator
@@ -1200,16 +1200,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13368, {	-- No Rest For The Wicked (H) (daily)
-						["qg"] = 29795,	-- Koltira Deathweaver
-						["sourceQuest"] = 13367,	-- No Rest For The Wicked
 						["description"] = "On Orgrim's Hammer.",
+						["sourceQuest"] = 13367,	-- No Rest For The Wicked
+						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(13342, {	-- Not a Bug (A)
-						["qg"] = 29799,	-- Thassarian
-						["sourceQuest"] = 13318,	-- Drag and Drop
 						["description"] = "On the Skybreaker.",
+						["sourceQuest"] = 13318,	-- Drag and Drop
+						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(39372),	-- Mantle of the Dark Messenger
@@ -1220,16 +1220,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13344, {	-- Not a Bug (A) (daily)
-						["qg"] = 29799,	-- Thassarian
-						["sourceQuest"] = 13342,	-- Not a Bug
 						["description"] = "On the Skybreaker.",
+						["sourceQuest"] = 13342,	-- Not a Bug
+						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(13358, {	-- Not a Bug (H)
-						["qg"] = 29795,	-- Koltira Deathweaver
-						["sourceQuest"] = 13352,	-- Drag and Drop
 						["description"] = "On Orgrim's Hammer.",
+						["sourceQuest"] = 13352,	-- Drag and Drop
+						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(39372),	-- Mantle of the Dark Messenger
@@ -1240,15 +1240,15 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13365, {	-- Not a Bug (H) (daily)
-						["qg"] = 29795,	-- Koltira Deathweaver
-						["sourceQuest"] = 13358,	-- Not a Bug
 						["description"] = "On Orgrim's Hammer.",
+						["sourceQuest"] = 13358,	-- Not a Bug
+						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(13137, {	-- Not-So-Honorable Combat
-						["qg"] = 30232,	-- The Bone Witch
 						["sourceQuest"] = 13133,	-- Find the Ancient Hero
+						["qg"] = 30232,	-- The Bone Witch
 						["coord"] = { 32.4, 42.9, ICECROWN },
 						["groups"] = {
 							i(44016),	-- Wristguard of the Bone Witch
@@ -1258,26 +1258,26 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13104, {	-- Once More Unto The Breach, Hero (non-DK)
-						["qg"] = 30677,	-- Highlord Tirion Fordring
 						["sourceQuest"] = 13086,	-- The Last Line Of Defense
+						["qg"] = 30677,	-- Highlord Tirion Fordring
 						["coord"] = { 86.0, 75.7, ICECROWN },
 						["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
 					}),
 					q(13105, {	-- Once More Unto The Breach, Hero (DK)
-						["qg"] = 30677,	-- Highlord Tirion Fordring
 						["sourceQuest"] = 13086,	-- The Last Line of Defense
+						["qg"] = 30677,	-- Highlord Tirion Fordring
 						["coord"] = { 86.0, 75.7, ICECROWN },
 						["classes"] = { DEATHKNIGHT },
 					}),
 					q(13258, {	-- Opportunity
-						["qg"] = 29795,	-- Koltira Deathweaver
 						["sourceQuest"] = 12899,	-- The Shadow Vault
+						["qg"] = 29795,	-- Koltira Deathweaver
 						["coord"] = { 65.9, 49.8, ICECROWN },
 						["races"] = HORDE_ONLY,
 					}),
 					q(13224, {	-- Orgrim's Hammer
-						["qg"] = 31240,	-- Warlord Hork Strongbrow
 						["sourceQuest"] = 13157,	-- The Crusaders' Pinnacle
+						["qg"] = 31240,	-- Warlord Hork Strongbrow
 						["coord"] = { 79.4, 72.7, ICECROWN },
 						["races"] = HORDE_ONLY,
 					}),
@@ -1300,9 +1300,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 44.0, 24.5, ICECROWN },
 					}),
 					q(13287, {	-- Poke and Prod (A)
-						["qg"] = 29799,	-- Thassarian
-						["sourceQuest"] = 13286,	-- All the Help We Can Get.
 						["description"] = "On the Skybreaker.",
+						["sourceQuest"] = 13286,	-- All the Help We Can Get.
+						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(43903),	-- Ring of the Fallen Shadow Adept
@@ -1311,9 +1311,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13237, {	-- Poke and Prod (H)
-						["qg"] = 29795,	-- Koltira Deathweaver
-						["sourceQuest"] = 13260,	-- Takes One to Know One
 						["description"] = "On Orgrim's Hammer.",
+						["sourceQuest"] = 13260,	-- Takes One to Know One
+						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(43903),	-- Ring of the Fallen Shadow Adept
@@ -1322,49 +1322,49 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13418, {	-- Preparations for War [A]
-						["qg"] = 31081,	-- Officer Van Rossem
 						-- #if AFTER 7.3.5.25632
 						["sourceQuest"] = 49555,	-- Hero's Call: Icecrown!
 						-- #endif
+						["qg"] = 31081,	-- Officer Van Rossem
 						["coord"] = { 67.7, 47.2, NORTHREND_DALARAN },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13419, {	-- Preparations for War [H]
-						["qg"] = 31085,	-- Sky-Reaver Klum
 						-- #if AFTER 7.3.5.25632
 						["sourceQuest"] = 49537,	-- Warchief's Command: Icecrown!
 						-- #endif
+						["qg"] = 31085,	-- Sky-Reaver Klum
 						["coord"] = { 69.4, 40.7, NORTHREND_DALARAN },
 						["races"] = HORDE_ONLY,
 					}),
 					q(13220, {	-- Putting Olakin Back Together Again
-						["qg"] = 30631,	-- Darkrider Arly
 						["sourceQuest"] = 13212,	-- He's Gone to Pieces
+						["qg"] = 30631,	-- Darkrider Arly
 						["coord"] = { 35.3, 66.3, ICECROWN },
 					}),
 					q(13382, {	-- Putting the Hertz: The Valley of Lost Hope
-						["qg"] = 32444,	-- Kibli Killohertz
 						["sourceQuest"] = 13381,	-- Watts My Target
+						["qg"] = 32444,	-- Kibli Killohertz
 						["coord"] = { 54.0, 42.8, ICECROWN },
 						["timeline"] = { REMOVED_4_1_0 },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(13332, {	-- Raise the Barricades (A)
-						["qg"] = 29799,	-- Thassarian
-						["sourceQuest"] = 13345,	-- Need More Info
 						["description"] = "On the Skybreaker.",
+						["sourceQuest"] = 13345,	-- Need More Info
+						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13306, {	-- Raise the Barricades (H)
-						["qg"] = 29795,	-- Koltira Deathweaver
-						["sourceQuest"] = 13366,	-- Need More Info
 						["description"] = "On Orgrim's Hammer.",
+						["sourceQuest"] = 13366,	-- Need More Info
+						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
 					}),
 					q(13092, {	-- Reading the Bones
-						["qg"] = 30232,	-- The Bone Witch
 						["sourceQuest"] = 12999,	-- The Bone Witch
+						["qg"] = 30232,	-- The Bone Witch
 						["coord"] = { 32.5, 42.9, ICECROWN },
 						["groups"] = {
 							i(43090),	-- Fate Rune of Baneful Intent
@@ -1375,8 +1375,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13093, {	-- Reading the Bones (repeatable)
-						["qg"] = 30232,	-- The Bone Witch
 						["sourceQuest"] = 13092,	-- Reading the Bones
+						["qg"] = 30232,	-- The Bone Witch
 						["coord"] = { 32.5, 42.9, ICECROWN },
 						["repeatable"] = true,
 						["sym"] = {{"select","itemID",
@@ -1388,9 +1388,9 @@ root(ROOTS.Zones, {
 						}},
 					}),
 					q(13321, {	-- Retest Now (A)
-						["qg"] = 30345,	-- Chief Engineer Boltwrench
-						["sourceQuest"] = 13320,	-- Cannot Reproduce
 						["description"] = "On the Skybreaker.",
+						["sourceQuest"] = 13320,	-- Cannot Reproduce
+						["qg"] = 30345,	-- Chief Engineer Boltwrench
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(39134),	-- Bow of Regression
@@ -1403,16 +1403,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13322, {	-- Retest Now (A) (daily)
-						["qg"] = 30345,	-- Chief Engineer Boltwrench
-						["sourceQuest"] = 13321,	-- Retest Now
 						["description"] = "On the Skybreaker.",
+						["sourceQuest"] = 13321,	-- Retest Now
+						["qg"] = 30345,	-- Chief Engineer Boltwrench
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(13356, {	-- Retest Now (H)
-						["qg"] = 30825,	-- Chief Engineer Copperclaw
-						["sourceQuest"] = 13355,	-- Cannot Reproduce
 						["description"] = "On Orgrim's Hammer.",
+						["sourceQuest"] = 13355,	-- Cannot Reproduce
+						["qg"] = 30825,	-- Chief Engineer Copperclaw
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(39134),	-- Bow of Regression
@@ -1425,27 +1425,27 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13357, {	-- Retest Now (H) (daily)
-						["qg"] = 30825,	-- Chief Engineer Copperclaw
-						["sourceQuest"] = 13356,	-- Retest Now
 						["description"] = "On Orgrim's Hammer.",
+						["sourceQuest"] = 13356,	-- Retest Now
+						["qg"] = 30825,	-- Chief Engineer Copperclaw
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(13392, {	-- Return to the Surface (A)
-						["qg"] = 31237,	-- Matthias Lehner
 						["sourceQuest"] = 13391,	-- Time to Hide
+						["qg"] = 31237,	-- Matthias Lehner
 						["coord"] = { 53.8, 86.9, ICECROWN },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13282, {	-- Return to the Surface (H)
-						["qg"] = 31237,	-- Matthias Lehner
 						["sourceQuest"] = 13275,	-- Time to Hide
+						["qg"] = 31237,	-- Matthias Lehner
 						["coord"] = { 53.8, 86.9, ICECROWN },
 						["races"] = HORDE_ONLY,
 					}),
 					q(13059, {	-- Revenge for the Vargul
-						["qg"] = 30406,	-- Bethod Feigr
 						["sourceQuest"] = 12999,	-- The Bone Witch
+						["qg"] = 30406,	-- Bethod Feigr
 						["coord"] = { 36.1, 33.0, ICECROWN },
 						["groups"] = {
 							i(43862),	-- Mantle of the Underhalls
@@ -1456,8 +1456,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13406, {	-- Riding the Wavelength: The Bombardment
-						["qg"] = 32430,	-- Fringe Engineer Tezzla
 						["sourceQuest"] = 13376,	-- Total Ohmage: The Valley of Lost Hope!
+						["qg"] = 32430,	-- Fringe Engineer Tezzla
 						["coord"] = { 54.0, 36.9, ICECROWN },
 						["timeline"] = { REMOVED_4_1_0 },
 						["races"] = HORDE_ONLY,
@@ -1475,18 +1475,18 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13008, {	-- Scourge Tactics
-						["qg"] = 30223,	-- Crusade Commander Entari
 						["sourceQuest"] = 13036,	-- Honor Above All Else
+						["qg"] = 30223,	-- Crusade Commander Entari
 						["coord"] = { 87.0, 75.8, ICECROWN },
 					}),
 					q(12847, {	-- Second Chances
-						["qg"] = 29344,	-- Lord-Commander Arete
 						["sourceQuest"] = 12840,	-- In Strict Confidence
+						["qg"] = 29344,	-- Lord-Commander Arete
 						["coord"] = { 19.5, 48.1, ICECROWN },
 					}),
 					q(13387, {	-- Securing the Perimeter
-						["qg"] = 31444,	-- Captain Kendall
 						["sourceQuest"] = 13386,	-- Exploiting an Opening
+						["qg"] = 31444,	-- Captain Kendall
 						["coord"] = { 51.7, 86.6, ICECROWN },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -1497,12 +1497,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13172, {	-- Seeds of Chaos
-						["qg"] = 30946,	-- Keritose Bloodblade
 						["sourceQuests"] = {
 							13169,	-- An Undead's Best Friend
 							13171,	-- From Whence They Came
 							13170,	-- Honor is for the Weak
 						},
+						["qg"] = 30946,	-- Keritose Bloodblade
 						["coord"] = { 44.0, 24.5, ICECROWN },
 						["groups"] = {
 							i(43872),	-- Weeping Mantle
@@ -1513,14 +1513,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13388, {	-- Set it Off!
-						["qg"] = 31444,	-- Captain Kendall
 						["sourceQuest"] = 13387,	-- Securing the Perimeter
+						["qg"] = 31444,	-- Captain Kendall
 						["coord"] = { 51.7, 86.6, ICECROWN },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12943, {	-- Shadow Vault Decree
-						["qg"] = 30002,	-- Duke Lankral
 						["sourceQuest"] = 12939,	-- Honor Challenge
+						["qg"] = 30002,	-- Duke Lankral
 						["coord"] = { 44.6, 20.3, ICECROWN },
 						["groups"] = {
 							i(43945),	-- Blackened Breastplate of the Vault
@@ -1530,28 +1530,28 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13339, {	-- Shatter the Shards (A)
-						["qg"] = 29799,	-- Thassarian
-						["sourceQuest"] = 13335,	-- Before the Gate of Horror
 						["description"] = "On the Skybreaker.",
+						["sourceQuest"] = 13335,	-- Before the Gate of Horror
+						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13328, {	-- Shatter the Shards (H)
-						["qg"] = 29795,	-- Koltira Deathweaver
-						["sourceQuest"] = 13329,	-- Before the Gate of Horror
 						["description"] = "On Orgrim's Hammer.",
+						["sourceQuest"] = 13329,	-- Before the Gate of Horror
+						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
 					}),
 					q(13069, {	-- Shoot 'Em Up
-						["qg"] = 30074,	-- The Leaper
 						["sourceQuest"] = 12982,	-- Ebon Blade Prisoners
+						["qg"] = 30074,	-- The Leaper
 						["coord"] = { 43.5, 25.1, ICECROWN },
 						["maxReputation"] = { FACTION_EBON_BLADE, EXALTED },	-- Knights of the Ebon Blade, Exalted.
 						["isDaily"] = true,
 					}),
 					q(13397, {	-- Sindragosa's Fall
-						["qg"] = 29799,	-- Thassarian
-						["sourceQuest"] = 13396,	-- Futility
 						["description"] = "On the Skybreaker.",
+						["sourceQuest"] = 13396,	-- Futility
+						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(39115),	-- Axe of Bloodstained Ice
@@ -1562,59 +1562,59 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13300, {	-- Slaves to Saronite (A)
-						["qg"] = 31259,	-- Absalan the Pious
-						["sourceQuest"] = 13225,	-- The Skybreaker
 						["description"] = "On the Skybreaker.",
+						["sourceQuest"] = 13225,	-- The Skybreaker
+						["qg"] = 31259,	-- Absalan the Pious
 						["maxReputation"] = { FACTION_ARGENT_CRUSADE, EXALTED },	-- Argent Crusade, Exalted.
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(13302, {	-- Slaves to Saronite (H)
-						["qg"] = 31261,	-- Brother Keltan
-						["sourceQuest"] = 13224,	-- Orgrim's Hammer
 						["description"] = "On Orgrim's Hammer.",
+						["sourceQuest"] = 13224,	-- Orgrim's Hammer
+						["qg"] = 31261,	-- Brother Keltan
 						["maxReputation"] = { FACTION_ARGENT_CRUSADE, EXALTED },	-- Argent Crusade, Exalted.
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(13315, {	-- Sneak Preview (A)
-						["qg"] = 29799,	-- Thassarian
-						["sourceQuest"] = 13288,	-- That's Abominable!
 						["description"] = "On the Skybreaker.",
+						["sourceQuest"] = 13288,	-- That's Abominable!
+						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13351, {	-- Sneak Preview (H)
-						["qg"] = 29795,	-- Koltira Deathweaver
-						["sourceQuest"] = 13264,	-- That's Abominable!
 						["description"] = "On Orgrim's Hammer.",
+						["sourceQuest"] = 13264,	-- That's Abominable!
+						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
 					}),
 					q(13134, {	-- Spill Their Blood
-						["qg"] = 30631,	-- Darkrider Arly
 						["sourceQuests"] = {
 							13120,	-- Death's Gaze
 							13119,	-- Destroying the Altars
 						},
+						["qg"] = 30631,	-- Darkrider Arly
 						["coord"] = { 35.3, 66.3, ICECROWN },
 					}),
 					q(13160, {	-- Stunning View
-						["qg"] = 30944,	-- Vereth the Cunning
 						["sourceQuest"] = 13145,	-- The Vile Hold
+						["qg"] = 30944,	-- Vereth the Cunning
 						["coord"] = { 54.1, 71.1, ICECROWN },
 					}),
 					q(13260, {	-- Takes One to Know One
-						["qg"] = 30824,	-- Sky-Reaver Korm Blackscar
+						["description"] = "On Orgrim's Hammer.",
 						["sourceQuests"] = {
 							13230,	-- Avenge Me!
 							13228,	-- The Broken Front
 						},
-						["description"] = "On Orgrim's Hammer.",
+						["qg"] = 30824,	-- Sky-Reaver Korm Blackscar
 						["races"] = HORDE_ONLY,
 					}),
 					q(13288, {	-- That's Abominable! (A)
-						["qg"] = 29799,	-- Thassarian
-						["sourceQuest"] = 13287,	-- Poke and Prod
 						["description"] = "On the Skybreaker.",
+						["sourceQuest"] = 13287,	-- Poke and Prod
+						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(39814),	-- Slippers of the Broken Front
@@ -1624,18 +1624,18 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13289, {	-- That's Abominable! (A) (daily)
-						["qg"] = 29799,	-- Thassarian
-						["sourceQuest"] = 13288,	-- That's Abominable!
 						["description"] = "On the Skybreaker.",
+						["sourceQuest"] = 13288,	-- That's Abominable!
+						["qg"] = 29799,	-- Thassarian
 						["timeline"] = { REMOVED_4_1_0 },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 						-- NOTE:: Oddly enough, this doesn't exist for alliance despite the horde version being available
 					}),
 					q(13264, {	-- That's Abominable! (H)
-						["qg"] = 29795,	-- Koltira Deathweaver
-						["sourceQuest"] = 13237,	-- Poke and Prod
 						["description"] = "On Orgrim's Hammer.",
+						["sourceQuest"] = 13237,	-- Poke and Prod
+						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(39814),	-- Slippers of the Broken Front
@@ -1645,16 +1645,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13276, {	-- That's Abominable! (H) (daily)
-						["qg"] = 29795,	-- Koltira Deathweaver
-						["sourceQuest"] = 13264,	-- That's Abominable!
 						["description"] = "On Orgrim's Hammer.",
+						["sourceQuest"] = 13264,	-- That's Abominable!
+						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						-- NOTE:: Oddly enough, this exists for horde despite the alliance version being unavailable
 					}),
 					q(12852, {	-- The Admiral Revealed
-						["qg"] = 29560,	-- Lord-Commander Arete
 						["sourceQuest"] = 12847,	-- Second Chances
+						["qg"] = 29560,	-- Lord-Commander Arete
 						["coord"] = { 9.5, 47.3, ICECROWN },
 						["groups"] = {
 							i(44034),	-- Amulet of the Crusade
@@ -1664,11 +1664,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13125, {	-- The Air Stands Still
-						["qg"] = 30596,	-- The Ebon Watcher
 						["sourceQuests"] = {
 							13118,	-- The Purging Of Scourgeholme
 							13122,	-- The Scourgestone
 						},
+						["qg"] = 30596,	-- The Ebon Watcher
 						["coord"] = { 83.0, 72.9, ICECROWN },
 						["groups"] = {
 							i(43839),	-- Leiah's Footpads
@@ -1678,8 +1678,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13091, {	-- The Art of Being a Water Terror
-						["qg"] = 30232,	-- The Bone Witch
 						["sourceQuest"] = 13043,	-- The Sum is Greater than the Parts
+						["qg"] = 30232,	-- The Bone Witch
 						["coord"] = { 32.4, 42.9, ICECROWN },
 						["groups"] = {
 							i(43863),	-- Pantaloons of the Water Magi
@@ -1689,46 +1689,46 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13141, {	-- The Battle For Crusaders' Pinnacle
-						["qg"] = 30677,	-- Highlord Tirion Fordring
 						["sourceQuest"] = 13139,	-- Into The Frozen Heart of Northrend
+						["qg"] = 30677,	-- Highlord Tirion Fordring
 						["coord"] = { 86.0, 75.7, ICECROWN },
 					}),
 					q(12999, {	-- The Bone Witch
-						["qg"] = 30074,	-- The Leaper
 						["sourceQuest"] = 12955,	-- Eliminate the Competition
+						["qg"] = 30074,	-- The Leaper
 						["coord"] = { 43.4, 25.0, ICECROWN },
 					}),
 					q(13082, {	-- The Boon of A'dal
-						["qg"] = 18481,	-- A'dal
 						["sourceQuest"] = 13081,	-- The Will of the Naaru
+						["qg"] = 18481,	-- A'dal
 						["coord"] = { 53.9, 44.7, ICECROWN },
 						["maps"] = { SHATTRATH_CITY },
 					}),
 					q(13079, {	-- The Boon of Alexstrasza
-						["qg"] = 26917,	-- Alexstrasza the Life-Binder
 						["sourceQuest"] = 13078,	-- Dahlia's Tears
+						["qg"] = 26917,	-- Alexstrasza the Life-Binder
 						["coord"] = { 59.8, 54.7, DRAGONBLIGHT },
 					}),
 					q(13075, {	-- The Boon of Remulos
-						["qg"] = 11832,	-- Keeper Remulos
 						["sourceQuest"] = 13074,	-- Hope Within the Emerald Nightmare
+						["qg"] = 11832,	-- Keeper Remulos
 						["coord"] = { 36.2, 41.8, MOONGLADE },
 					}),
 					q(13231, {	-- The Broken Front (A)
-						["qg"] = 30344,	-- High Captain Justin Bartlett
-						["sourceQuest"] = 13225,	-- The Skybreaker
 						["description"] = "On the Skybreaker.",
+						["sourceQuest"] = 13225,	-- The Skybreaker
+						["qg"] = 30344,	-- High Captain Justin Bartlett
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13228, {	-- The Broken Front (H)
-						["qg"] = 30824,	-- Sky-Reaver Korm Blackscar
-						["sourceQuest"] = 13224,	-- Orgrim's Hammer
 						["description"] = "On Orgrim's Hammer.",
+						["sourceQuest"] = 13224,	-- Orgrim's Hammer
+						["qg"] = 30824,	-- Sky-Reaver Korm Blackscar
 						["races"] = HORDE_ONLY,
 					}),
 					q(13157, {	-- The Crusaders' Pinnacle
-						["qg"] = 30683,	-- Father Gustav
 						["sourceQuest"] = 13141,	-- The Battle For Crusaders' Pinnacle
+						["qg"] = 30683,	-- Father Gustav
 						["coord"] = { 82.8, 72.7, ICECROWN },
 						["groups"] = {
 							i(44019),	-- The Argent Skullcap
@@ -1739,20 +1739,20 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12938, {	-- The Duke
-						["qg"] = 29343,	-- Baron Sliver
 						["sourceQuests"] = {
 							12898,	-- The Shadow Vault (alliance)
 							12899,	-- The Shadow Vault (horde)
 						},
+						["qg"] = 29343,	-- Baron Sliver
 						["coord"] = { 44.1, 24.7, ICECROWN },
 					}),
 					q(13164, {	-- The Fate of Bloodbane
-						["qg"] = 30944,	-- Vereth the Cunning
 						["sourceQuests"] = {
 							13163,	-- The Rider of Blood
 							13162,	-- The Rider of Frost
 							13161,	-- The Rider of the Unholy
 						},
+						["qg"] = 30944,	-- Vereth the Cunning
 						["coord"] = { 54.1, 71.1, ICECROWN },
 						["groups"] = {
 							i(44027),	-- Bloodbane Shroud
@@ -1762,8 +1762,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13235, {	-- The Flesh Giant Champion
-						["qg"] = 30631,	-- Darkrider Arly
 						["sourceQuest"] = 13220,	-- Putting Olakin Back Together Again
+						["qg"] = 30631,	-- Darkrider Arly
 						["coord"] = { 35.3, 66.3, ICECROWN },
 						["groups"] = {
 							i(44378),	-- Mantle of the Flesh Giant
@@ -1773,26 +1773,26 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12839, {	-- The Grand (Admiral's) Plan
-						["provider"] = { "i", 40666 },	-- Note from the Grand Admiral
-						["sourceQuest"] = 12838,	-- Intelligence Gathering -- NOTE: this isn't actually a sourceQuest, but you must have it to start this one
-						["coord"] = { 9.2, 41.0, ICECROWN },
 						["description"] = "Must be in |cFFFFD700Intelligence Gathering|r to loot the quest item from a chest.",
+						["sourceQuest"] = 12838,	-- Intelligence Gathering -- NOTE: this isn't actually a sourceQuest, but you must have it to start this one
+						["provider"] = { "i", 40666 },	-- Note from the Grand Admiral
+						["coord"] = { 9.2, 41.0, ICECROWN },
 					}),
 					q(13338, {	-- The Guardians of Corp'rethar (A)
-						["qg"] = 29799,	-- Thassarian
-						["sourceQuest"] = 13335,	-- Before the Gate of Horror
 						["description"] = "On the Skybreaker.",
+						["sourceQuest"] = 13335,	-- Before the Gate of Horror
+						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13316, {	-- The Guardians of Corp'rethar (H)
-						["qg"] = 29795,	-- Koltira Deathweaver
-						["sourceQuest"] = 13329,	-- Before the Gate of Horror
 						["description"] = "On Orgrim's Hammer.",
+						["sourceQuest"] = 13329,	-- Before the Gate of Horror
+						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
 					}),
 					q(13400, {	-- The Hunter and the Prince (A)
-						["qg"] = 32497,	-- Matthias Lehner
 						["sourceQuest"] = 13399,	-- Time for Answers
+						["qg"] = 32497,	-- Matthias Lehner
 						["coord"] = { 49.1, 73.1, ICECROWN },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -1803,8 +1803,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13361, {	-- The Hunter and the Prince (H)
-						["qg"] = 32497,	-- Matthias Lehner
 						["sourceQuest"] = 13360,	-- Time for Answers
+						["qg"] = 32497,	-- Matthias Lehner
 						["coord"] = { 49.1, 73.1, ICECROWN },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -1815,26 +1815,26 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13337, {	-- The Ironwall Rampart (A)
-						["qg"] = 29799,	-- Thassarian
-						["sourceQuest"] = 13332,	-- Raise the Barricades
 						["description"] = "On the Skybreaker.",
+						["sourceQuest"] = 13332,	-- Raise the Barricades
+						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13312, {	-- The Ironwall Rampart (H)
-						["qg"] = 29795,	-- Koltira Deathweaver
-						["sourceQuest"] = 13306,	-- Raise the Barricades
 						["description"] = "On Orgrim's Hammer.",
+						["sourceQuest"] = 13306,	-- Raise the Barricades
+						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
 					}),
 					q(13073, {	-- The Keeper's Favor
-						["qg"] = 31044,	-- Highlord Tirion Fordring
 						["sourceQuest"] = 13072,	-- A Hero Remains
+						["qg"] = 31044,	-- Highlord Tirion Fordring
 						["coord"] = { 79.7, 71.7, ICECROWN },
 						["maps"] = { MOONGLADE },
 					}),
 					q(13086, {	-- The Last Line Of Defense
-						["qg"] = 30657,	-- Siegemaster Fezzik
 						["sourceQuest"] = 13070,	-- A Cold Front Approaches
+						["qg"] = 30657,	-- Siegemaster Fezzik
 						["coord"] = { 85.6, 76.0, ICECROWN },
 						["groups"] = {
 							i(44013),	-- Cannoneer's Fuselighter
@@ -1843,19 +1843,19 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13118, {	-- The Purging Of Scourgeholme
-						["qg"] = 30596,	-- The Ebon Watcher
 						["sourceQuests"] = {
 							13104,	-- Once More Unto The Breach, Hero (Non-DK)
 							13105,	-- Once More Unto The Breach, Hero (DK)
 						},
+						["qg"] = 30596,	-- The Ebon Watcher
 						["coord"] = { 83.0, 72.9, ICECROWN },
 					}),
 					q(13110, {	-- The Restless Dead
-						["qg"] = 30683,	-- Father Gustav
 						["sourceQuests"] = {
 							13104,	-- Once More Unto The Breach, Hero (Non-DK)
 							13105,	-- Once More Unto The Breach, Hero (DK)
 						},
+						["qg"] = 30683,	-- Father Gustav
 						["coord"] = { 82.8, 72.7, ICECROWN },
 						["groups"] = {
 							i(43833),	-- Blade of Echoes
@@ -1865,12 +1865,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13163, {	-- The Rider of Blood
-						["qg"] = 30944,	-- Vereth the Cunning
 						["sourceQuests"] = {
 							13146,	-- Generosity Abounds
 							13147,	-- Matchmaker
 							13160,	-- Stunning View
 						},
+						["qg"] = 30944,	-- Vereth the Cunning
 						["coord"] = { 54.1, 71.1, ICECROWN },
 						["groups"] = {
 							i(43877),	-- Blood-Forged Circle
@@ -1880,12 +1880,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13162, {	-- The Rider of Frost
-						["qg"] = 30944,	-- Vereth the Cunning
 						["sourceQuests"] = {
 							13146,	-- Generosity Abounds
 							13147,	-- Matchmaker
 							13160,	-- Stunning View
 						},
+						["qg"] = 30944,	-- Vereth the Cunning
 						["coord"] = { 54.1, 71.1, ICECROWN },
 						["groups"] = {
 							i(43899),	-- Sapph's Cleaver
@@ -1895,12 +1895,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13161, {	-- The Rider of the Unholy
-						["qg"] = 30944,	-- Vereth the Cunning
 						["sourceQuests"] = {
 							13146,	-- Generosity Abounds
 							13147,	-- Matchmaker
 							13160,	-- Stunning View
 						},
+						["qg"] = 30944,	-- Vereth the Cunning
 						["coord"] = { 54.1, 71.1, ICECROWN },
 						["groups"] = {
 							i(43904),	-- Discarded Slaughterhouse Gloves
@@ -1910,22 +1910,22 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13140, {	-- The Runesmiths of Malykriss
-						["qg"] = 30708,	-- Crusader Olakin Sainrith
 						["sourceQuest"] = 13136,	-- Jagged Shards
+						["qg"] = 30708,	-- Crusader Olakin Sainrith
 						["coord"] = { 35.4, 66.4, ICECROWN },
 					}),
 					q(13122, {	-- The Scourgestone
-						["qg"] = 30596,	-- The Ebon Watcher
 						["sourceQuests"] = {
 							13104,	-- Once More Unto The Breach, Hero (Non-DK)
 							13105,	-- Once More Unto The Breach, Hero (DK)
 						},
+						["qg"] = 30596,	-- The Ebon Watcher
 						["coord"] = { 83.0, 72.9, ICECROWN },
 					}),
 					q(12898, {	-- The Shadow Vault (A)
-						["qg"] = 29799,	-- Thassarian
-						["sourceQuest"] = 12896,	-- If He Cannot Be Turned
 						["description"] = "On the Skybreaker.",
+						["sourceQuest"] = 12896,	-- If He Cannot Be Turned
+						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(43838),	-- Chuchu's Tiny Box of Horrors
@@ -1934,9 +1934,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12899, {	-- The Shadow Vault (H)
-						["qg"] = 29795,	-- Koltira Deathweaver
-						["sourceQuest"] = 12897,	-- If He Cannot Be Turned
 						["description"] = "On Orgrim's Hammer.",
+						["sourceQuest"] = 12897,	-- If He Cannot Be Turned
+						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(43838),	-- Chuchu's Tiny Box of Horrors
@@ -1945,24 +1945,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13225, {	-- The Skybreaker
-						["qg"] = 31241,	-- Marshal Ivalius
 						["sourceQuest"] = 13157,	-- The Crusaders' Pinnacle
+						["qg"] = 31241,	-- Marshal Ivalius
 						["coord"] = { 79.3, 72.8, ICECROWN },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13292, {	-- The Solution Solution
-						["qg"] = 30345,	-- Chief Engineer Boltwrench
-						["sourceQuest"] = 13291,	-- Borrowed Technology
 						["description"] = "On the Skybreaker.",
+						["sourceQuest"] = 13291,	-- Borrowed Technology
+						["qg"] = 30345,	-- Chief Engineer Boltwrench
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
 					q(13130, {	-- The Stone That Started A Revolution
-						["qg"] = 30686,	-- Crusade Architect Silas
 						["sourceQuests"] = {
 							13104,	-- Once More Unto The Breach, Hero (Non-DK)
 							13105,	-- Once More Unto The Breach, Hero (DK)
 						},
+						["qg"] = 30686,	-- Crusade Architect Silas
 						["coord"] = { 83.0, 73.0, ICECROWN },
 						["maps"] = { CRYSTALSONG_FOREST },
 						["groups"] = {
@@ -1973,13 +1973,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12807, {	-- The Story Thus Far...
-						["qg"] = 29344,	-- Lord-Commander Arete
 						["sourceQuest"] = 12806,	-- To the Rise with all Due haste!
+						["qg"] = 29344,	-- Lord-Commander Arete
 						["coord"] = { 19.5, 48.1, ICECROWN },
 					}),
 					q(13043, {	-- The Sum is Greater than the Parts
-						["provider"] = { "i", 42772 },	-- Dr. Terrible's "Building a Better Flesh Giant"
 						["sourceQuest"] = 12999,	-- The Bone Witch
+						["provider"] = { "i", 42772 },	-- Dr. Terrible's "Building a Better Flesh Giant"
 						["coord"] = { 34.0, 36.3, ICECROWN },
 						["cr"] = 30409,	-- Apprentice Osterkilgr
 						["groups"] = {
@@ -1990,13 +1990,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13077, {	-- The Touch of an Aspect
-						["qg"] = 31044,	-- Highlord Tirion Fordring
 						["sourceQuest"] = 13076,	-- Time Yet Remains
+						["qg"] = 31044,	-- Highlord Tirion Fordring
 						["coord"] = { 79.7, 71.7, ICECROWN },
 					}),
 					q(13145, {	-- The Vile Hold
-						["qg"] = 30944,	-- Vereth the Cunning
 						["sourceQuest"] = 13143,	-- New Recruit
+						["qg"] = 30944,	-- Vereth the Cunning
 						["coord"] = { 54.1, 71.1, ICECROWN },
 						["groups"] = {
 							i(43866),	-- Lithe Stalker's Cord
@@ -2006,30 +2006,30 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13081, {	-- The Will of the Naaru
-						["qg"] = 31044,	-- Highlord Tirion Fordring
 						["sourceQuest"] = 13080,	-- Hope Yet Remains
+						["qg"] = 31044,	-- Highlord Tirion Fordring
 						["coord"] = { 79.7, 71.7, ICECROWN },
 					}),
 					q(13121, {	-- Through the Eye
-						["qg"] = 30232,	-- The Bone Witch
 						["sourceQuest"] = 13091,	-- The Art of Being a Water Terror
+						["qg"] = 30232,	-- The Bone Witch
 						["coord"] = { 32.5, 42.9, ICECROWN },
 					}),
 					q(13399, {	-- Time for Answers (A)
-						["qg"] = 32423,	-- Matthias Lehner
 						["sourceQuest"] = 13398,	-- Where Dragons Fell
+						["qg"] = 32423,	-- Matthias Lehner
 						["coord"] = { 71.5, 37.6, ICECROWN },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13360, {	-- Time for Answers (H)
-						["qg"] = 32423,	-- Matthias Lehner
 						["sourceQuest"] = 13359,	-- Where Dragons Fell
+						["qg"] = 32423,	-- Matthias Lehner
 						["coord"] = { 71.5, 37.6, ICECROWN },
 						["races"] = HORDE_ONLY,
 					}),
 					q(13391, {	-- Time to Hide (A)
-						["qg"] = 31237,	-- Matthias Lehner
 						["sourceQuest"] = 13390,	-- A Voice in the Dark
+						["qg"] = 31237,	-- Matthias Lehner
 						["coord"] = { 53.8, 86.9, ICECROWN },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -2042,8 +2042,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13275, {	-- Time to Hide (H)
-						["qg"] = 31237,	-- Matthias Lehner
 						["sourceQuest"] = 13271,	-- A Voice in the Dark
+						["qg"] = 31237,	-- Matthias Lehner
 						["coord"] = { 53.8, 86.9, ICECROWN },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -2056,13 +2056,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13076, {	-- Time Yet Remains
-						["qg"] = 30562,	-- Crusader Bridenbrad
 						["sourceQuest"] = 13075,	-- The Boon of Remulos
+						["qg"] = 30562,	-- Crusader Bridenbrad
 						["coord"] = { 79.8, 30.8, ICECROWN },
 					}),
 					q(13403, {	-- Tirion's Gambit (A)
-						["qg"] = 31044,	-- Highlord Tirion Fordring
 						["sourceQuest"] = 13402,	-- Tirion's Help
+						["qg"] = 31044,	-- Highlord Tirion Fordring
 						["coord"] = { 79.7, 71.7, ICECROWN },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -2073,8 +2073,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13364, {	-- Tirion's Gambit (H)
-						["qg"] = 31044,	-- Highlord Tirion Fordring
 						["sourceQuest"] = 13363,	-- Argent Aid
+						["qg"] = 31044,	-- Highlord Tirion Fordring
 						["coord"] = { 79.7, 71.7, ICECROWN },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -2085,20 +2085,20 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13402, {	-- Tirion's Help
-						["qg"] = 29799,	-- Thassarian
-						["sourceQuest"] = 13401,	-- Knowledge is a Terrible Burden
 						["description"] = "On the Skybreaker.",
+						["sourceQuest"] = 13401,	-- Knowledge is a Terrible Burden
+						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12806, {	-- To the Rise with all Due Haste!
-						["qg"] = 29343,	-- Baron Sliver
 						["sourceQuest"] = 12982,	-- Ebon Blade Prisoners
+						["qg"] = 29343,	-- Baron Sliver
 						["coord"] = { 42.8, 24.9, ICECROWN },
 						["isBreadcrumb"] = true,
 					}),
 					q(13376, {	-- Total Ohmage: The Valley of Lost Hope!
-						["qg"] = 32430,	-- Fringe Engineer Tezzla
 						["sourceQuest"] = 13374,	-- Amped for Revolt!
+						["qg"] = 32430,	-- Fringe Engineer Tezzla
 						["coord"] = { 54.0, 36.9, ICECROWN },
 						["timeline"] = { REMOVED_4_1_0 },
 						["races"] = HORDE_ONLY,
@@ -2119,34 +2119,34 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13085, {	-- Vaelen Has Returned
-						["qg"] = 29343,	-- Baron Sliver
 						["sourceQuest"] = 12951,	-- Let the Baron Know
+						["qg"] = 29343,	-- Baron Sliver
 						["coord"] = { 42.8, 25.0, ICECROWN },
 					}),
 					q(13084, {	-- Vandalizing Jotunheim
-						["qg"] = 30002,	-- Duke Lankral
 						["sourceQuest"] = 12951,	-- Let the Baron Know
+						["qg"] = 30002,	-- Duke Lankral
 						["coord"] = { 44.6, 20.4, ICECROWN },
 					}),
 					q(13155, {	-- Vereth the Cunning
-						["qg"] = 30946,	-- Keritose Bloodblade
 						["sourceQuests"] = {
 							13174,	-- Amidst the Confusion
 							13172,	-- Seeds of Chaos
 						},
+						["qg"] = 30946,	-- Keritose Bloodblade
 						["coord"] = { 44.0, 24.5, ICECROWN },
 					}),
 					q(13071, {	-- Vile Like Fire!
-						["qg"] = 30216,	-- Vile
 						["sourceQuest"] = 12992,	-- Crush Dem Vrykuls!
+						["qg"] = 30216,	-- Vile
 						["coord"] = { 42.9, 25.5, ICECROWN },
 						["maxReputation"] = { FACTION_EBON_BLADE, EXALTED },	-- Knights of the Ebon Blade, Exalted.
 						["isDaily"] = true,
 					}),
 					q(13239, {	-- Volatility
-						["qg"] = 30825,	-- Chief Engineer Copperclaw
-						["sourceQuest"] = 13238,	-- Sky-Reaver Korm Blackscar
 						["description"] = "On Orgrim's Hammer.",
+						["sourceQuest"] = 13238,	-- Sky-Reaver Korm Blackscar
+						["qg"] = 30825,	-- Chief Engineer Copperclaw
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(38736),	-- Smuggler's Bracers
@@ -2156,9 +2156,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13261, {	-- Volatility (daily)
-						["qg"] = 30825,	-- Chief Engineer Copperclaw
-						["sourceQuest"] = 13239,	-- Volatility
 						["description"] = "On Orgrim's Hammer.",
+						["sourceQuest"] = 13239,	-- Volatility
+						["qg"] = 30825,	-- Chief Engineer Copperclaw
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
@@ -2174,28 +2174,28 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13117, {	-- Where Are They Coming From?
-						["qg"] = 30631,	-- Darkrider Arly
 						["sourceQuests"] = {
 							13106,	-- Blackwatch
 							12899,	-- The Shadow Vault
 						},
+						["qg"] = 30631,	-- Darkrider Arly
 						["coord"] = { 35.3, 66.3, ICECROWN },
 					}),
 					q(13398, {	-- Where Dragons Fell (A)
-						["qg"] = 32423,	-- Matthias Lehner
 						["sourceQuest"] = 13396,	-- Futility
+						["qg"] = 32423,	-- Matthias Lehner
 						["coord"] = { 71.5, 37.6, ICECROWN },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13359, {	-- Where Dragons Fell (H)
-						["qg"] = 32423,	-- Matthias Lehner
 						["sourceQuest"] = 13348,	-- Futility
+						["qg"] = 32423,	-- Matthias Lehner
 						["coord"] = { 71.5, 37.6, ICECROWN },
 						["races"] = HORDE_ONLY,
 					}),
 					q(12814, {	-- You'll Need a Gryphon
-						["qg"] = 29344,	-- Lord-Commander Arete
 						["sourceQuest"] = 12810,	-- Blood in the Water
+						["qg"] = 29344,	-- Lord-Commander Arete
 						["coord"] = { 19.5, 48.1, ICECROWN },
 						["groups"] = {
 							i(43879),	-- Gryphon Rider's Bracers
@@ -2205,9 +2205,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13290, {	-- Your Attention, Please
-						["qg"] = 30344,	-- High Captain Justin Bartlett
-						["sourceQuest"] = 13231,	-- The Broken Front
 						["description"] = "On the Skybreaker.",
+						["sourceQuest"] = 13231,	-- The Broken Front
+						["qg"] = 30344,	-- High Captain Justin Bartlett
 						["races"] = ALLIANCE_ONLY,
 					}),
 				}),

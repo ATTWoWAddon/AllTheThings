@@ -92,8 +92,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 				}, {	-- RENOWN 5 --
 					q(71210, {	-- To Dragonbane Keep!
-						["provider"] = { "n", 197478 },	-- Herald Flaps
 						["description"] = "Spawns Anywhere on Dragon Isles.",
+						["provider"] = { "n", 197478 },	-- Herald Flaps
 						["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 					}),
 					q(72671, {	-- Renown Supplies
@@ -133,8 +133,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 				}, {	-- RENOWN 7 --
 					q(71227, {	-- Aerial Challenges
-						["provider"] = { "n", 197478 },	-- Herald Flaps
 						["description"] = "Spawns Anywhere on Dragon Isles.",
+						["provider"] = { "n", 197478 },	-- Herald Flaps
 						["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 					}),
 					q(72673, {	-- Renown Supplies
@@ -220,55 +220,55 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 				}, {	-- RENOWN 12 --
 					q(68794, {	-- Ally of Dragons
-						["provider"] = { "n", 197478 },	-- Herald Flaps
 						["description"] = "Spawns Anywhere on Dragon Isles.",
+						["provider"] = { "n", 197478 },	-- Herald Flaps
 						["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 					}),
 					header(HEADERS.Quest, 67074, {	-- The Gift of Silver
 						["icon"] = 134319,
 						["groups"] = {
 							q(67074, {	-- The Gift of Silver
-								["provider"] = { "n", 187678 },	-- Alexstrasza the Life-Binder
 								["sourceQuests"] = { 68794 },	-- Ally of Dragons
+								["provider"] = { "n", 187678 },	-- Alexstrasza the Life-Binder
 								["coord"] = { 58.5, 35.7, VALDRAKKEN },
 								["groups"] = {
 									i(197845),	-- Silver Scale (QI!)
 								},
 							}),
 							q(70703, {	-- The Legacy of Tyrhold
-								["provider"] = { "n", 187678 },	-- Alexstrasza the Life-Binder
 								["sourceQuests"] = { 67074 },	-- The Gift of Silver
+								["provider"] = { "n", 187678 },	-- Alexstrasza the Life-Binder
 								["coord"] = { 58.5, 35.7, VALDRAKKEN },
 								["groups"] = {
 									i(197845),	-- Silver Scale (QI!)
 								},
 							}),
 							q(67075, {	-- The Magic Within
-								["provider"] = { "n", 192480 },	-- Watcher Koranos
 								["sourceQuests"] = { 70703 },	-- The Legacy of Tyrhold
+								["provider"] = { "n", 192480 },	-- Watcher Koranos
 								["coord"] = { 58.2, 58.8, THALDRASZUS },
 								["groups"] = {
 									i(198355),	-- Tyrhold Conduit
 								}
 							}),
 							q(67076, {	-- A Spark of Discovery
-								["provider"] = { "n", 192480 },	-- Watcher Koranos
 								["sourceQuests"] = { 67075 },	-- The Magic Within
+								["provider"] = { "n", 192480 },	-- Watcher Koranos
 								["coord"] = { 58.2, 58.8, THALDRASZUS },
 							}),
 							q(67077, {	-- Memories of the Past
-								["provider"] = { "n", 192573 },	-- Alexstrasza the Life-Binder
 								["sourceQuests"] = { 67076 },	-- A Spark of Discovery
+								["provider"] = { "n", 192573 },	-- Alexstrasza the Life-Binder
 								["coord"] = { 62.1, 59.3, THALDRASZUS },
 							}),
 							q(67078, {	-- Parting Instructions
-								["provider"] = { "n", 192496 },	-- Keeper Tyr
 								["sourceQuests"] = { 67077 },	-- Memories of the Past
+								["provider"] = { "n", 192496 },	-- Keeper Tyr
 								["coord"] = { 62.2, 59.2, THALDRASZUS },
 							}),
 							q(67079, {	-- Hard Lock Life
-								["provider"] = { "n", 192480 },	-- Watcher Karanos
 								["sourceQuests"] = { 67078 },	-- Parting Instructions
+								["provider"] = { "n", 192480 },	-- Watcher Karanos
 								["coord"] = { 60.4, 58.9, THALDRASZUS },
 								["groups"] = {
 									i(197862),	-- Primary Security Disc (QI!)
@@ -277,8 +277,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								}
 							}),
 							q(67081, {	-- Halls of Infusion: An Infusion of Materials
-								["provider"] = { "n", 192496 },	-- Keeper Tyr
 								["sourceQuests"] = { 67079 },	-- Hard Lock Life
+								["provider"] = { "n", 192496 },	-- Keeper Tyr
 								["coord"] = { 60.5, 58.6, THALDRASZUS },
 								["maps"] = { 2082, 2083 },	-- Halls of Infusion
 								["groups"] = {
@@ -286,8 +286,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								},
 							}),
 							q(67084, {	-- The Silver Purpose
-								["provider"] = { "n", 192496 },	-- Keeper Tyr
 								["sourceQuests"] = { 67081 },	-- An Infusion of Materials
+								["provider"] = { "n", 192496 },	-- Keeper Tyr
 								["coord"] = { 60.5, 58.6, THALDRASZUS },
 								["groups"] = {
 									i(201781),	-- Memory of Tyr
@@ -299,28 +299,28 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["icon"] = 4638415,
 						["groups"] = {
 							q(72440, {	-- Silver Mettle
-								["provider"] = { "n", 198941 },	-- Nozdormu
 								["sourceQuests"] = { 67084 },	-- The Silver Purpose
+								["provider"] = { "n", 198941 },	-- Nozdormu
 								["coord"] = { 60.4, 58.8, THALDRASZUS },
 							}),
 							q(72441, {	-- Breaching the Tomb
-								["provider"] = { "n", 198947 },	-- Travard
 								["sourceQuests"] = { 72440 },	-- Silver Mettle
+								["provider"] = { "n", 198947 },	-- Travard
 								["coord"] = { 39.2, 41.2, 20 },	-- Keeper's Rest
 							}),
 							q(72442, {	-- The Remains of Tyr
-								["provider"] = { "n", 199114 },	-- Watcher Koranos
 								["sourceQuests"] = { 72441 },	-- Breaching the Tomb
+								["provider"] = { "n", 199114 },	-- Watcher Koranos
 								["coord"] = { 38.0, 54.9, 20 },	-- Keeper's Rest
 							}),
 							q(72526, {	-- Keeper's Rest
-								["provider"] = { "n", 199114 },	-- Watcher Koranos
 								["sourceQuests"] = { 72442 },	-- The Remains of Tyr
+								["provider"] = { "n", 199114 },	-- Watcher Koranos
 								["coord"] = { 38.0, 54.9, 20 },	-- Keeper's Rest
 							}),
 							q(72443, {	-- Tyr's Fall
-								["provider"] = { "n", 200078 },	-- Watcher Koranos
 								["sourceQuests"] = { 72526 },	-- Keeper's Rest
+								["provider"] = { "n", 200078 },	-- Watcher Koranos
 								["coord"] = { 42.1, 85.7, 20 },	-- Keeper's Rest
 								["maps"] = 2146,	-- The Eastern Glades
 								["groups"] = {
@@ -328,8 +328,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								},
 							}),
 							q(72444, {	-- A Sliver of Silver
-								["provider"] = { "n", 200078 },	-- Watcher Koranos
 								["sourceQuests"] = { 72443 },	-- Tyr's Fall
+								["provider"] = { "n", 200078 },	-- Watcher Koranos
 								["coord"] = { 42.1, 85.7, 20 },	-- Keeper's Rest
 								["groups"] = {
 									i(204686),	-- Titan Containment Device (TOY!)
@@ -341,23 +341,23 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["icon"] = 5172995,
 						["groups"] = {
 							q(75632, {	-- A Dislocated Disc
-								["provider"] = { "n", 187669 },	-- Nozdormu
 								["sourceQuests"] = { 72444 },	-- A Sliver of Silver
+								["provider"] = { "n", 187669 },	-- Nozdormu
 								["coord"] = { 61.4, 39.1, VALDRAKKEN },
 							}),
 							q(75633, {	-- We Have the Technology
-								["provider"] = { "n", 204574 },	-- Etenrus
 								["sourceQuests"] = { 75632 },	-- A Dislocated Disc
+								["provider"] = { "n", 204574 },	-- Etenrus
 								["coord"] = { 60.4, 58.9, THALDRASZUS },
 							}),
 							q(75634, {	-- Reforging the Tyr`s Guard
-								["provider"] = { "n", 204577 },	-- Travard
 								["sourceQuests"] = { 75633 },	-- We Have the Technology
+								["provider"] = { "n", 204577 },	-- Travard
 								["coord"] = { 60.4, 58.9, THALDRASZUS },
 							}),
 							q(76171, {	-- Walking the Path of Tyr
-								["provider"] = { "n", 206221 },	-- Travard
 								["sourceQuests"] = { 75634 },	-- Reforging the Tyr`s Guard
+								["provider"] = { "n", 206221 },	-- Travard
 								["coord"] = { 17.5, 31.5, THE_AZURE_SPAN },
 								["groups"] = {
 									i(208198),	-- Tyr's Guard Bulwark
@@ -365,58 +365,58 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								},
 							}),
 							q(75950, {	-- An Exemplar of Order: Hadwin
-								["provider"] = { "n", 204590 },	-- Hadwin
 								["sourceQuests"] = { 76171 },	-- Walking the Path of Tyr
+								["provider"] = { "n", 204590 },	-- Hadwin
 								["coord"] = { 17.6, 31.4, THE_AZURE_SPAN },
 							}),
 							q(75952, {	-- An Exemplar of Order: Nolaki
-								["provider"] = { "n", 204592 },	-- Nolaki
 								["sourceQuests"] = { 76171 },	-- Walking the Path of Tyr
+								["provider"] = { "n", 204592 },	-- Nolaki
 								["coord"] = { 17.5, 31.4, THE_AZURE_SPAN },
 							}),
 							q(75951, {	-- An Exemplar of Order: Talthis
-								["provider"] = { "n", 204593 },	-- Talthis
 								["sourceQuests"] = { 76171 },	-- Walking the Path of Tyr
+								["provider"] = { "n", 204593 },	-- Talthis
 								["coord"] = { 17.5, 31.4, THE_AZURE_SPAN },
 								["groups"] = {
 									i(206204),	-- Recovered Tuskarr Relic (QI!)
 								},
 							}),
 							q(75953, {	-- An Exemplar of Order: Valunei
-								["provider"] = { "n", 204591 },	-- Valunei
 								["sourceQuests"] = { 76171 },	-- Walking the Path of Tyr
+								["provider"] = { "n", 204591 },	-- Valunei
 								["coord"] = { 17.6, 31.3, THE_AZURE_SPAN },
 							}),
 							q(75635, {	-- For Tyr!
-								["provider"] = { "n", 206221 },	-- Travard
 								["sourceQuests"] = {
 									75950,	-- An Exemplar of Order: Hadwin
 									75952,	-- An Exemplar of Order: Nolaki
 									75951,	-- An Exemplar of Order: Talthis
 									75953,	-- An Exemplar of Order: Valunei
 								},
+								["provider"] = { "n", 206221 },	-- Travard
 								["coord"] = { 17.6, 31.5, THE_AZURE_SPAN },
 							}),
 							q(76176, {	-- First Steps
-								["provider"] = { "n", 208968 },	-- Travard
 								["sourceQuests"] = { 75635 },	-- For Tyr!
+								["provider"] = { "n", 208968 },	-- Travard
 								["coord"] = { 59.9, 58.7, THALDRASZUS },
 							}),
 							q(75636, {	-- Tyrangulation
-								["provider"] = { "n", 204667 },	-- Etenrus
 								["sourceQuests"] = { 76176 },	-- First Steps
+								["provider"] = { "n", 204667 },	-- Etenrus
 								["coord"] = { 60.3, 58.8, THALDRASZUS },
 								["maps"] = { THE_STORM_PEAKS },
 							}),
 							q(75637, {	-- The Final Beacon
-								["provider"] = { "n", 206682 },	-- Travard
 								["sourceQuests"] = { 75636 },	-- Tyrangulation
+								["provider"] = { "n", 206682 },	-- Travard
 								["coord"] = { 60.3, 58.7, THALDRASZUS },
 								["maps"] = { 2228 },	-- The Black Empire
 							}),
 							q(75638, {	-- Dislocated Disc Located
-								["provider"] = { "n", 204605 },	-- Travard
 								["sourceQuests"] = { 75637 },	-- The Final Beacon
+								["provider"] = { "n", 204605 },	-- Travard
 								["coord"] = { 60.4, 58.9, THALDRASZUS },
 								["groups"] = {
 									i(208200),	-- Dragon Isles Drakes: Gilded Armor (MM!)
@@ -428,18 +428,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["icon"] = 5245774,
 						["groups"] = {
 							q(77339, {	-- Data Recovery
-								["provider"] = { "n", 208703 },	-- Valunei
 								["sourceQuests"] = { 75638 },	-- Dislocated Disc Located
+								["provider"] = { "n", 208703 },	-- Valunei
 								["coord"] = { 53.8, 61, VALDRAKKEN },
 							}),
 							q(77377, {	-- To Tyrhold! For Tyr!
-								["provider"] = { "n", 208701 },	-- Travard
 								["sourceQuests"] = { 77339 },	-- Data Recovery
+								["provider"] = { "n", 208701 },	-- Travard
 								["coord"] = { 60.6, 63.6, THALDRASZUS },
 							}),
 							q(77340, {	-- Infiltrating the Nighthold
-								["provider"] = { "n", 208832 },	-- Eternus
 								["sourceQuests"] = { 77377 },	-- To Tyrhold! For Tyr!
+								["provider"] = { "n", 208832 },	-- Eternus
 								["coord"] = { 60.4, 59, THALDRASZUS },
 								["maps"] = {
 									2221,	-- The Nighthold (Scenario)
@@ -456,21 +456,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								},
 							}),
 							q(77342, {	-- Disc Delivery
-								["provider"] = { "n", 208834 },	-- Nozdormu
 								["sourceQuests"] = { 77340 },	-- Infiltrating the Nighthold'
+								["provider"] = { "n", 208834 },	-- Nozdormu
 								["coord"] = { 60.4, 58.7, THALDRASZUS },
 								["groups"] = {
 									i(208798),	-- Recorded Memories of Tyr's Guard (TOY!)
 								},
 							}),
 							q(77343, {	-- A Tyrful Reunion
-								["provider"] = { "n", 208833 },	-- Alexstrasza the Life-Binder
 								["sourceQuests"] = { 77342 },	-- Disc Delivery
+								["provider"] = { "n", 208833 },	-- Alexstrasza the Life-Binder
 								["coord"] = { 60.4, 58.6, THALDRASZUS },
 							}),
 							q(77344, {	-- Time to Process
-								["provider"] = { "n", 208800 },	-- Travard
 								["sourceQuests"] = { 77343 },	-- A Tyrful Reunion
+								["provider"] = { "n", 208800 },	-- Travard
 								["coord"] = { 60.4, 58.7, THALDRASZUS },
 								["groups"] = {
 									i(208550),	-- Dragon Isles Drakes: White Scales (MM!)
@@ -483,8 +483,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								},
 							}),
 							q(77341, {	-- Logotyrapy
-								["provider"] = { "i", 208826 },	-- Letter from Valunei (QI!)
 								["sourceQuests"] = { 77344 },	-- Time to Process
+								["provider"] = { "i", 208826 },	-- Letter from Valunei (QI!)
 								["maps"] = { THALDRASZUS },
 								["groups"] = {
 									i(208199),	-- Tabard of the Tyr's Guard
@@ -651,42 +651,42 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 				}, {	-- RENOWN 19 --
 					q(66620, {	-- Emerald Summons
-						["provider"] = { "n", 197478 },	-- Herald Flaps
 						["description"] = "Spawns Anywhere on Dragon Isles.",
+						["provider"] = { "n", 197478 },	-- Herald Flaps
 						["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, VALDRAKKEN },
 					}),
 					q(66178, {	-- A Day in the Groves
-						["provider"] = { "n", 186955 },	-- Merithra
 						["sourceQuests"] = { 66620 },	-- Emerald Summons
+						["provider"] = { "n", 186955 },	-- Merithra
 						["coord"] = { 29.7, 60.0, OHNAHRAN_PLAINS },
 					}),
 					q(66179, {	-- Seeds for the Future
-						["provider"] = { "n", 187525 },	-- Merithra
 						["sourceQuests"] = { 66178 },	-- A Day in the Groves
+						["provider"] = { "n", 187525 },	-- Merithra
 						["coord"] = { 33.2, 51.7, OHNAHRAN_PLAINS },
 						["groups"] = {
 							i(192547),	-- Garden Seed (QI!)
 						},
 					}),
 					q(66180, {	-- Wake the Ancients
-						["provider"] = { "n", 187525 },	-- Merithra
 						["sourceQuests"] = { 66178 },	-- A Day in the Groves
+						["provider"] = { "n", 187525 },	-- Merithra
 						["coord"] = { 33.2, 51.7, OHNAHRAN_PLAINS },
 						["groups"] = {
 							i(192555),	-- Borrowed Breath
 						},
 					}),
 					q(66182, {	-- Gerithus's Reseach
-						["provider"] = { "n", 187525 },	-- Merithra
 						["sourceQuests"] = {
 							66179,	-- Seeds for the Future
 							66180,	-- Wake the Ancients
 						},
+						["provider"] = { "n", 187525 },	-- Merithra
 						["coord"] = { 33.2, 51.7, OHNAHRAN_PLAINS },
 					}),
 					q(66183, {	-- Emerald Tears
-						["provider"] = { "n", 189849 },	-- Gerithus
 						["sourceQuests"] = { 66182 },	-- Gerithus's Reseach
+						["provider"] = { "n", 189849 },	-- Gerithus
 						["coord"] = { 28.4, 48.6, OHNAHRAN_PLAINS },
 						["groups"] = {
 							objective(1, {	-- 0/8 Emerald Tear's
@@ -695,119 +695,119 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						},
 					}),
 					q(66181, {	-- A Frenzied Defender
-						["provider"] = { "n", 189850 },	-- Rymek
 						["sourceQuests"] = { 66182 },	-- Gerithus's Reseach
+						["provider"] = { "n", 189850 },	-- Rymek
 						["coord"] = { 28.4, 48.7, OHNAHRAN_PLAINS },
 					}),
 					q(66184, {	-- Anchors to Life
-						["provider"] = { "n", 189849 },	-- Gerithus
 						["sourceQuests"] = {
 							66183,	-- Emerald Tears
 							66181,	-- A Frenzied Defender
 						},
+						["provider"] = { "n", 189849 },	-- Gerithus
 						["coord"] = { 28.3, 48.6, OHNAHRAN_PLAINS },
 					}),
 					q(66393, {	-- To Somnikus
-						["provider"] = { "n", 187509 },	-- Merithra
 						["sourceQuests"] = { 66184 },	-- Anchors to Life
+						["provider"] = { "n", 187509 },	-- Merithra
 						["coord"] = { 28.3, 48.6, OHNAHRAN_PLAINS },
 					}),
 					q(66395, {	-- The Chittering Rocks
-						["provider"] = { "n", 186469 },	-- Somnikus
 						["sourceQuests"] = { 66393 },	-- To Somnikus
+						["provider"] = { "n", 186469 },	-- Somnikus
 						["coord"] = { 21.9, 50.9, OHNAHRAN_PLAINS },
 					}),
 					q(66396, {	-- Guarded Appreciation
-						["provider"] = { "n", 189857 },	-- Rymek
 						["sourceQuests"] = { 66393 },	-- To Somnikus
+						["provider"] = { "n", 189857 },	-- Rymek
 						["coord"] = { 22.0, 50.8, OHNAHRAN_PLAINS },
 						["groups"] = {
 							i(192744),	-- Rymek's Gift
 						},
 					}),
 					q(66190, {	-- So Close
-						["provider"] = { "n", 189857 },	-- Rymek
 						["sourceQuests"] = {
 							66395,	-- The Chittering Rocks
 							66396,	-- Guarded Appreciation
 						},
+						["provider"] = { "n", 189857 },	-- Rymek
 						["coord"] = { 22.0, 50.8, OHNAHRAN_PLAINS },
 					}),
 					q(66191, {	-- And Yet So Far
-						["provider"] = { "n", 187561 },	-- Merithra
 						["sourceQuests"] = { 66190 },	-- So Close
+						["provider"] = { "n", 187561 },	-- Merithra
 						["coord"] = { 22.0, 49.1, OHNAHRAN_PLAINS },
 					}),
 					q(66392, {	-- Rallying Nature's Allies
-						["provider"] = { "n", 187561 },	-- Merithra
 						["sourceQuests"] = { 66191 },	-- And Yet So Far
+						["provider"] = { "n", 187561 },	-- Merithra
 						["coord"] = { 22.0, 49.2, OHNAHRAN_PLAINS },
 					}),
 					q(66185, {	-- Across the Weald
-						["provider"] = { "n", 187594 },	-- Somnikus
 						["sourceQuests"] = { 66392 },	-- Rallying Nature's Allies
+						["provider"] = { "n", 187594 },	-- Somnikus
 						["coord"] = { 28.4, 57.9, OHNAHRAN_PLAINS },
 					}),
 					q(66186, {	-- The Price
-						["provider"] = { "n", 187634 },	-- Ysera
 						["sourceQuests"] = { 66185 },	-- Across the Weald
+						["provider"] = { "n", 187634 },	-- Ysera
 						["coord"] = { 45.8, 60.9, ARDENWEALD },
 					}),
 					q(66188, {	-- Storm's Rest
-						["provider"] = { "n", 187636 },	-- Malfurion Stormrage
 						["sourceQuests"] = { 66186 },	-- The Price
+						["provider"] = { "n", 187636 },	-- Malfurion Stormrage
 						["coord"] = { 45.8, 60.8, ARDENWEALD },
 					}),
 					q(66189, {	-- Step Into the Life
-						["provider"] = { "n", 188348 },	-- Ysera
 						["sourceQuests"] = { 66188 },	-- Storm's Rest
+						["provider"] = { "n", 188348 },	-- Ysera
 						["coord"] = { 45.2, 63.6, ARDENWEALD },
 						["maps"] = { 2084 },	-- The Emerald Dreamway
 					}),
 					q(66394, {	-- Thin the Veil
-						["provider"] = { "n", 187646 },	-- Ysera
 						["sourceQuests"] = { 66189 },	-- Step Into the Life
+						["provider"] = { "n", 187646 },	-- Ysera
 						["coord"] = { 18.7, 51.8, OHNAHRAN_PLAINS },
 					}),
 					q(66397, {	-- Our Full Strength
-						["provider"] = { "n", 187646 },	-- Ysera
 						["sourceQuests"] = { 66189 },	-- Step Into the Life
+						["provider"] = { "n", 187646 },	-- Ysera
 						["coord"] = { 18.7, 51.8, OHNAHRAN_PLAINS },
 						["groups"] = {
 							i(193221),	-- Volatile Frostfire (QI!)
 						},
 					}),
 					q(66635, {	-- Reunited, Once Again
-						["provider"] = { "n", 187646 },	-- Ysera
 						["sourceQuests"] = {
 							66394,	-- Thin the Veil
 							66397,	-- Our Full Strength
 						},
+						["provider"] = { "n", 187646 },	-- Ysera
 						["coord"] = { 18.7, 51.9, OHNAHRAN_PLAINS },
 					}),
 					q(66398, {	-- The Emerald Dragonflight
-						["provider"] = { "n", 187660 },	-- Merithra
 						["sourceQuests"] = { 66635 },	-- Reunited, Once Again
+						["provider"] = { "n", 187660 },	-- Merithra
 						["coord"] = { 18.8, 51.1, OHNAHRAN_PLAINS },
 					}),
 					q(66399, {	-- We'll Cross the Bridge
-						["provider"] = { "n", 188787 },	-- Gerithus
 						["sourceQuests"] = { 66398 },	-- The Emerald Dragonflight
+						["provider"] = { "n", 188787 },	-- Gerithus
 						["coord"] = { 21.9, 76.0, OHNAHRAN_PLAINS },
 					}),
 					q(66400, {	-- Winter's Fall
-						["provider"] = { "n", 188840 },	-- Somnikus
 						["sourceQuests"] = { 66399 },	-- We'll Cross the Bridge
+						["provider"] = { "n", 188840 },	-- Somnikus
 						["coord"] = { 20.8, 79.7, OHNAHRAN_PLAINS },
 					}),
 					q(66401, {	-- The Dreamer
-						["provider"] = { "n", 188847 },	-- Merithra
 						["sourceQuests"] = { 66400 },	-- Winter's Fall
+						["provider"] = { "n", 188847 },	-- Merithra
 						["coord"] = { 19.7, 81.6, OHNAHRAN_PLAINS },
 					}),
 					q(66402, {	-- Like Mother, Like Daughter
-						["provider"] = { "n", 188850 },	-- Ysera
 						["sourceQuests"] = { 66401 },	-- The Dreamer
+						["provider"] = { "n", 188850 },	-- Ysera
 						["coord"] = { 19.8, 81.6, OHNAHRAN_PLAINS },
 						["groups"] = {
 							i(201779),	-- Merithra's Blessing

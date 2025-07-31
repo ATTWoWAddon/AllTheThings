@@ -1274,6 +1274,59 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 						["coord"] = { 75.8, 34.0, KARESH },
 					}),
 				}),
+				header(HEADERS.AchCriteria, 41808.06, {	-- Hard K'arroc
+					q(87408, {	-- Being Spiritual
+						["sourceQuests"] = { 86607 },	-- The Freedom of Ray-cing
+						["provider"] = { "n", 231820 },	-- Ve'nari
+						["coord"] = { 75.9, 34.2, KARESH },
+						["groups"] = { i(229396), },	-- Flyer Essence (QI!)
+					}),
+					q(87409, {	-- From Death, Life
+						["sourceQuests"] = { 87408 },	-- Being Spiritual
+						["provider"] = { "n", 231820 },	-- Ve'nari
+						["coord"] = { 75.9, 34.2, KARESH },
+					}),
+					q(87410, {	-- Percussive Negotiation
+						["sourceQuests"] = { 87409 },	-- From Death, Life
+						["provider"] = { "n", 235353 },	-- Hemet Nesingwary
+						["coord"] = { 75.8, 34.0, KARESH },
+						["groups"] = { i(237010), },	-- Void Shielding Part (QI!)
+					}),
+					q(87411, {	-- Making Stuff to Look Tough
+						["sourceQuests"] = { 87410 },	-- Percussive Negotiation
+						["provider"] = { "n", 231820 },	-- Ve'nari
+						["coord"] = { 75.9, 34.2, KARESH },
+						["groups"] = {
+							o(517446, {	-- Void Shield
+								["coord"] = { 79.9, 32.4, KARESH },
+								["groups"] = { i(237021), },	-- Void Shield (QI!)
+							}),
+						},
+					}),
+					q(87412, {	-- K'arrocing Photos
+						["sourceQuests"] = { 87411 },	-- Making Stuff to Look Tough
+						["provider"] = { "n", 230736 },	-- Om'talad
+						["coord"] = { 75.8, 34.2, KARESH },
+						["groups"] = { i(237012), },	-- Appropriated Azerothian Camera (PQI!)
+					}),
+					q(87413, {	-- Bird Bath
+						["sourceQuests"] = { 87412 },	-- K'arrocing Photos
+						["provider"] = { "n", 234316 },	-- Rhubarn
+						["coord"] = { 75.9, 34.6, KARESH },
+						["groups"] = { i(237013), },	-- Anima Vacuum (PQI!)
+					}),
+					q(87414, {	-- Medical Maneuvers
+						["sourceQuests"] = { 87413 },	-- Bird Bath
+						["provider"] = { "n", 230736 },	-- Om'talad
+						["coord"] = { 75.8, 34.2, KARESH },
+						["groups"] = { i(237030), },	-- Condenser Disc (PQI!)
+					}),
+					q(87415, {	-- The Skies of K'aresh
+						["sourceQuests"] = { 87414 },	-- Medical Maneuvers
+						["provider"] = { "n", 230736 },	-- Om'talad
+						["coord"] = { 75.8, 34.2, KARESH },
+					}),
+				}),
 			}),
 			header(HEADERS.Achievement, 41811, {	-- Ecological Stability
 				-- Exo Note: These are Achievement criteria. They don't appear as quests when you do /att q: in-game
@@ -1290,41 +1343,35 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				header(HEADERS.AchCriteria, 41809.01, {	-- Honey Bees
 					q(90545, {	-- A Reel Problem
 						["description"] = "Requires Fishing profession.",
-						["sourceQuests"] = { 85262 },	-- The Royal Procession
 						["provider"] = { "n", 230736 },	-- Om'talad
 						["coord"] = { 75.8, 34.2, KARESH },
 						["isDaily"] = true,
 						["groups"] = { i(241352), },	-- Hydrobite (QI!)
 					}),
 					q(85459, {	-- Anima Reclamation Program
-						["sourceQuests"] = { 85262 },	-- The Royal Procession
 						["provider"] = { "n", 231820 },	-- Ve'nari
 						["coord"] = { 75.9, 34.2, KARESH },
 						["isDaily"] = true,
 						["groups"] = { i(229412), },	-- Devourer Anima (QI!)
 					}),
 					q(89209, {	-- Bu-zzz
-						["sourceQuests"] = { 85262 },	-- The Royal Procession
 						["provider"] = { "n", 232385 },	-- Botanist Alaenra
 						["coord"] = { 75.8, 33.9, KARESH },
 						["isDaily"] = true,
 					}),
 					q(85461, {	-- Food Run
-						["sourceQuests"] = { 85262 },	-- The Royal Procession
 						["provider"] = { "n", 231820 },	-- Ve'nari
 						["coord"] = { 75.9, 34.2, KARESH },
 						["isDaily"] = true,
 						["groups"] = { i(231508), },	-- Stolen Food Shipment (QI!)
 					}),
 					q(89195, {	-- Funny Buzzness
-						["sourceQuests"] = { 85262 },	-- The Royal Procession
 						["provider"] = { "n", 232385 },	-- Botanist Alaenra
 						["coord"] = { 75.8, 33.9, KARESH },
 						["isDaily"] = true,
 						["groups"] = { i(238904), },	-- Anima Vacuum (PQI!)
 					}),
 					q(89194, {	-- Shake your Bee-hind
-						["sourceQuests"] = { 85262 },	-- The Royal Procession
 						["provider"] = { "n", 232385 },	-- Botanist Alaenra
 						["coord"] = { 75.8, 33.9, KARESH },
 						["isDaily"] = true,
@@ -1338,9 +1385,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 						["isDaily"] = true,
 						["groups"] = { i(229395), },	-- Slateback Essence (QI!)
 					}),
+					q(85710, {	-- Sizing Them Up
+						["provider"] = { "n", 230736 },	-- Om'talad
+						["coord"] = { 75.8, 34.2, KARESH },
+						["isDaily"] = true,
+						["groups"] = { i(238905), },	-- Condenser Disc (PQI!)
+					}),
 					q(85462),	--
 					q(85481),	--
-					q(85710),	--
 				}),
 				header(HEADERS.AchCriteria, 41809.03, {	-- Fox-strut
 					q(89240, {	--  Dream-Dream-Dream-Dream-Dreameringeding!
@@ -1349,10 +1401,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 						["isDaily"] = true,
 						["groups"] = { i(238912), },	-- Tranquilizing Dart (PQI!)
 					}),
+					q(89057, {	-- Pee-Yew de Foxy
+						["provider"] = { "n", 234316 },	-- Rhubarn
+						["coord"] = { 75.9, 34.6, KARESH },
+						["isDaily"] = true,
+						["groups"] = { i(238911), },	-- Pheromone Disperser (PQI!)
+					}),
 					q(89212),	--
 					q(85465),	--
 					q(85721),	--
-					q(89057),	--
 				}),
 				header(HEADERS.AchCriteria, 41809.04, {	-- Lil' Lapbugs
 					q(89221, {	--  Leafing Things on the Ground
@@ -1381,16 +1438,26 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 						["isDaily"] = true,
 						["groups"] = { i(238915), },	-- Anima Orb (PQI!)
 					}),
+					q(89242, {	--  I Want a Golden Ooze!
+						["provider"] = { "n", 231820 },	-- Ve'nari
+						["coord"] = { 75.9, 34.2, KARESH },
+						["isDaily"] = true,
+						["groups"] = { i(238916), },	-- Anima Vacuum (PQI!)
+					}),
 					q(89197),	--
 					q(89065),	--
-					q(89242),	--
 				}),
 				header(HEADERS.AchCriteria, 41809.06, {	-- Hard K'arroc
 					q(89238),	--
 					q(89192),	--
 					q(89213),	--
 					q(86342),	--
-					q(89198),	--
+					q(89198, {	-- Dry Cleaning
+						["provider"] = { "n", 234316 },	-- Rhubarn
+						["coord"] = { 75.9, 34.6, KARESH },
+						["isDaily"] = true,
+						["groups"] = { i(238909), },	-- Anima Vacuum (PQI!)
+					}),
 				}),
 				header(HEADERS.AchCriteria, 41809.07, {	-- A Slither of Snakes
 					q(88659),	--
@@ -1440,6 +1507,21 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 					["sourceQuests"] = { 89344 },	-- What Doesn't See You
 					["provider"] = { "n", 241624 },	-- Shad'anis
 					["coord"] = { 50.4, 36.3, KARESH },
+				}),
+				q(91093, {	-- More Than Just a Phase
+					["qgs"] = {
+						238255,	-- Constable Zo'ardaz
+						241624,	-- Shad'anis
+					},
+					["coords"] = {
+						{ 48.6, 57.8, KARESH_TAZAVESH },	-- Constable Zo'ardaz
+						{ 50.4, 36.3, KARESH },	-- Shad'anis
+					},
+					["isWeekly"] = true,
+					["groups"] = {
+						-- The only observed source of this currency is this repeatable quest
+						currency(3303),	-- Untethered Coin
+					},
 				}),
 			}),
 			header(HEADERS.Achievement, 42739, {	-- Sojourner of K'aresh
@@ -1640,8 +1722,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 					q(91454, {	-- Phase-Lost Adventurer
 						["sourceQuests"] = { 84967 },	-- The Shadowguard Shattered
 						["provider"] = { "i", 246589 },	-- Half-Digested Journal (QS!)
-						["cr"] = 246608,	-- Phase-Lost Creeper
 						["coord"] = { 56.8, 24.1, KARESH },
+						["cr"] = 246608,	-- Phase-Lost Creeper
 					}),
 				}),
 				header(HEADERS.AchCriteria, 42739.05, {	-- Chasing Echoes
@@ -1931,6 +2013,67 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 					["provider"] = { "n", 238255 },	-- Constable Zo'ardaz
 					["coord"] = { 48.6, 57.8, KARESH_TAZAVESH },
 				}),
+				header(HEADERS.Quest, 87405, {	-- Warrant: Grubber
+					q(87405, {	-- Warrant: Grubber
+						["provider"] = { "n", 238548 },	-- Warrant: Grubber
+						["coord"] = { 48.5, 58.8, KARESH_TAZAVESH },
+						["cost"] = {
+							{ "i", 237352, 1 },	-- A Dozen Veilshards (QI!)
+							{ "i", 236962, 1 },	-- Basket of Zo'kita Fruit (QI!)
+							{ "i", 236966, 1 },	-- Flavorful Scraps (QI!)
+						},
+						["groups"] = { i(236967), },	-- Grubber Lure (QS!)
+					}),
+					q(87548, {	-- A Dozen Veilshards
+						["description"] = "This quest is available during 'Warrant: Grubber'.\nFind and prod a Thieving Scurrier so it will lead you to the stash of Stolen Veilshards.",
+						["provider"] = { "n", 238486 },	-- Citizen Om'sto
+						["coord"] = { 46.6, 50.3, KARESH_TAZAVESH },
+						["repeatable"] = true,
+						["cr"] = 239005,	-- Thieving Scurrier
+						["groups"] = {
+							o(519856, {	-- Stolen Veilshard
+								i(237266),	-- Stolen Veilshard (QI!)
+							}),
+							--
+							i(237352),	-- A Dozen Veilshards (QI!) (Reward, required for the Warrant)
+						},
+					}),
+					q(87420, {	-- Basket of Zo'kita Fruit
+						["description"] = "This quest is available during 'Warrant: Grubber'.",
+						["provider"] = { "n", 238474 },	-- Zo'kita
+						["coord"] = { 52.4, 57.8, KARESH_TAZAVESH },
+						["repeatable"] = true,
+						["groups"] = {
+							i(237009),	-- Zo'kita Safety Gear (PQI!)
+							o(517389, {	-- Zo'kita Fruit
+								i(236972),	-- Freshly Picked Zo'kita (QI!)
+							}),
+							--
+							i(236962),	-- Basket of Zo'kita Fruit (QI!) (Reward, required for the Warrant)
+						},
+					}),
+					q(87426, {	-- Flavorful Scraps
+						["description"] = "This quest is available during 'Warrant: Grubber'.",
+						["provider"] = { "n", 238591 },	-- Zo'nog
+						["coord"] = { 68.6, 42.5, KARESH_TAZAVESH },
+						["repeatable"] = true,
+						["groups"] = {
+							i(237022, {	-- Discarded Items (QI!)
+								["providers"] = {
+									{ "o", 517405 },	-- Tazavesh Trash
+									{ "o", 517407 },	-- Tazavesh Trash
+									{ "o", 517410 },	-- Tazavesh Trash
+									{ "o", 517000 },	-- Tazavesh Trash
+								},
+							}),
+							i(236966),	-- Flavorful Scraps (QI!) (Reward, required for the Warrant)
+						},
+					}),
+					q(90126, {	-- Eliminate Grubber
+						["provider"] = { "i", 236967 },	-- Grubber Lure (QS!)
+						["repeatable"] = true,
+					}),
+				}),
 				header(HEADERS.Quest, 87546, {	-- Warrant: Purple Peat
 					q(87546, {	-- Warrant: Purple Peat
 						["provider"] = { "n", 238919 },	-- Warrant: Purple Peat
@@ -2034,8 +2177,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				}),
 				q(90123),	--
 				q(90124),	--
-				q(90126),	--
 				q(90127),	--
+				n(REWARDS, {
+					-- The only observed source of this currency are Warrants
+					currency(3278),	-- Ethereal Strands
+				}),
 			}),
 			n(BONUS_OBJECTIVES, {
 				q(84966, {	-- Break the Assault
@@ -2076,26 +2222,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				["provider"] = { "i", 238663 },	-- Crystallized Anima (QS!)
 				["isWeekly"] = true,
 			}),
-			-- Temp placement.
-			q(91093, {	-- More Than Just a Phase
-				["qgs"] = {
-					238255,	-- Constable Zo'ardaz
-					241624,	-- Shad'anis
-				},
-				["coords"] = {
-					{ 48.6, 57.8, KARESH_TAZAVESH },	-- Constable Zo'ardaz
-					{ 50.4, 36.3, KARESH },	-- Shad'anis
-				},
-				["repeatable"] = true,
-			}),
 			-- Unsorted
 			--q(86492),	-- TODO: Alex - ach(42736),	-- Ixthar's Legacy
-			q(87415),	--
 			q(88672),	--
 			--q(90954),	--	TODO: Alex - ach(42742) Power of the Reshii / Regalia of the Reshii upgrade, should probably be automated in future?
-			n(REWARDS, {
-				currency(3278),	-- Ethereal Strands
-			}),
 		}),
 	}),
 })));

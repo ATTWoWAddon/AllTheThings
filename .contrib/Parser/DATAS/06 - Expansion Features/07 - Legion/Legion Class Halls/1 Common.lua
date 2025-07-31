@@ -1209,8 +1209,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						un(REMOVED_FROM_GAME, i(141176)),	-- Haunted Ravencrest Keepsake (Mythic)
 					})),
 					q(44865, {	-- Butler to the Great
-						["provider"] = { "n", 115551 },	-- Phantom Valet
 						["sourceQuest"] = 44803,	-- Return to Karazhan: Master of the House
+						["provider"] = { "n", 115551 },	-- Phantom Valet
 						["coord"] = { 39.9, 75.4, DEADWIND_PASS },
 						["timeline"] = { ADDED_7_1_0 },
 						["lvl"] = 110,
@@ -1313,6 +1313,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						un(REMOVED_FROM_GAME, i(141183)),	-- Bag of Confiscated Materials (Mythic)
 					})),
 					q(44058, {  -- Volpin the Elusive
+						["sourceQuest"] = 44057,	-- A "Noble" Event
 						["qgs"] = {
 							96746,	-- Advisor Sevel <The Earthen Ring>
 							110564,	-- Alonsus Faol <Bishop of Secrets>
@@ -1326,7 +1327,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							103023,	-- Tactician Tinderfell <Unseen Path>
 							103732,	-- Tylos Darksight <Illidari Helmsman>
 						},
-						["sourceQuest"] = 44057,	-- A "Noble" Event
 						["coord"] = { 17.4, 31.4, SURAMAR },
 						["groups"] = {
 							i(137573),	-- Llothien Prowler (MOUNT!)

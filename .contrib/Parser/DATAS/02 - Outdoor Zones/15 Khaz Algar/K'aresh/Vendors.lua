@@ -4,6 +4,17 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, {
 	m(KARESH, {
 		n(VENDORS, {
+			n(238291, {	-- Associate Xy'got
+				["description"] = "You need to Phasedive in order to see the Vendor.",
+				["coord"] = { 50.6, 19.3, KARESH },
+				["groups"] = {
+					i(236632, {	-- Pouch of Voidbane Gems
+						["cost"] = { { "g", 3000000 } },	-- 300g
+						--["requireSkill"] = JEWELCRAFTING,
+						-- Exo Note: Flavor Text says: "A hefty pouch with eight gems inside." but gives only a few gold... Is this a troll or do you need JWC as a profession?
+					}),
+				},
+			}),
 			n(235079, {	-- Ba'orr
 				["coord"] = { 41.1, 25.1, KARESH_TAZAVESH },
 				["groups"] = {
@@ -24,7 +35,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 					i(238039),	-- Chronomatic Fiber
 					i(238041),	-- Dexterous Fiber
 					i(238037),	-- Energizing Fiber
-					i(248955),	-- Ethereal Seam Ripper
+					--i(248955),	-- Ethereal Seam Ripper (Looks like this was deleted from the game. You can remove (un-socket) the fibers from the Reshii Wraps manually)
 					i(238040),	-- Precise Fiber
 				},
 			}),
@@ -79,6 +90,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 					}),
 					iensemble(248997, {	-- Ensemble: Untethered Striker's Gear
 						["cost"] = { { "c", 3303, 8 }, },	-- Untethered Coin
+					}),
+				},
+			}),
+			n(236409, {	-- Ta'rex <Rare Materials>
+				["description"] = "|cFFE50D12WARNING:|r Sells junk items. Purchases are not refundable. Selling the items back will get you back only 1/4 of the gold spent.",
+				["coord"] = { 49.5, 39.2, KARESH_TAZAVESH },
+				["groups"] = {
+					i(247689),	-- K'areshi Copper Ingot (JUNK!)
+					i(247691),	-- Slateback Hide (JUNK!)
+					i(247690),	-- Void-Tainted Lotus (JUNK!)
+				},
+			}),
+			n(243801, {	-- Zo'phar <Rare Materials>
+				["coord"] = { 53.2, 54.1, KARESH_TAZAVESH },
+				["groups"] = {
+					i(246811, {	-- Technique: Inspired Writer's Quill (RECIPE!)
+						["cost"] = { { "g", 5000000 } },	-- 500g
+						["requireSkill"] = INSCRIPTION,
 					}),
 				},
 			}),

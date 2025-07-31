@@ -13,8 +13,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["description"] = "Any demon can drop this.",
 						}),
 						q(44083, {	-- The Grimoire of the First Necrolyte
-							["provider"] = { "i", 140764 },	-- Grimoire of the First Necrolyte
 							["description"] = "Only available from rare elite WQs.",
+							["provider"] = { "i", 140764 },	-- Grimoire of the First Necrolyte
 						}),
 						n(112862, {	-- Sataiel
 							["sourceQuest"] = 44083,	-- The Grimoire of the First Necrolyte
@@ -94,39 +94,39 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["maps"] = { LEGION_DALARAN, LEGION_THE_UNDERBELLY },
 					}),
 					q(40729, {	-- The New Blood
-						["provider"] = { "n", 101456 },	-- Ritssyn Flamescowl
 						["sourceQuests"] = { 40716 },	-- The Sixth
+						["provider"] = { "n", 101456 },	-- Ritssyn Flamescowl
 						["coord"] = { 57.3, 60.8, LEGION_THE_UNDERBELLY },
 						["maps"] = { 718 },	-- Dreadscar Rift (Scenario Map)
 					}),
 					-- Artifact
 					q(40684, {	-- The Tome of Blighted Implements
-						["provider"] = { "n", 101097 },	-- Calydus
+						["description"] = "You must complete the Affliction quest line BEFORE completing the Demonology quest line to obtain certain breadcrumb quests.",
 						["sourceQuests"] = {
 							40729,	-- The New Blood
 						},
+						["provider"] = { "n", 101097 },	-- Calydus
 						["coord"] = { 56.3, 65.0, LEGION_THE_UNDERBELLY },
-						["description"] = "You must complete the Affliction quest line BEFORE completing the Demonology quest line to obtain certain breadcrumb quests.",
 					}),
 					q(43984, {	-- The Tome Opens Again
-						["provider"] = { "n", 101097 },	-- Calydus
 						["sourceQuests"] = { 40684 },	-- The Tome of Blighted Implements
+						["provider"] = { "n", 101097 },	-- Calydus
 						["coord"] = { 37.7, 31.8, DREADSCAR_RIFT },
 					}),
 					q(44089, {	-- A Greater Arsenal
-						["provider"] = { "n", 101097 },	-- Calydus
 						["sourceQuests"] = { 43984 },	-- The Tome Opens Again
+						["provider"] = { "n", 101097 },	-- Calydus
 						["coord"] = { 37.6, 31.9, DREADSCAR_RIFT },
 					}),
 					cl(WARLOCK, AFFLICTION, {
 						q(40495, {	-- Ulthalesh, the Deadwind Harvester
-							["provider"] = { "n", 101097 },	-- Calydus
 							["sourceQuests"] = {
 								40684,	-- The Tome of Blighted Implements
 								43984,	-- The Tome Opens Again
 								44089,	-- A Greater Arsenal
 							},
 							["sourceQuestNumRequired"] = 1,
+							["provider"] = { "n", 101097 },	-- Calydus
 							["coords"] = {
 								{ 56.4, 64.6, LEGION_THE_UNDERBELLY },
 								{ 37.7, 31.8, DREADSCAR_RIFT },
@@ -138,31 +138,34 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							},
 						}),
 						q(40588, {	-- Following the Curse
-							["provider"] = { "n", 100323 },	-- Revil Kost
 							["sourceQuest"] = 40495,	-- Ulthalesh, the Deadwind Harvester
+							["provider"] = { "n", 100323 },	-- Revil Kost
 							["coord"] = { 77.4, 36.1, DUSKWOOD },
 						}),
 						q(40604, {	-- Disturbing the Past
-							["provider"] = { "n", 100729 },	-- Revil Kost
 							["sourceQuest"] = 40588,	-- Following the Curse
+							["provider"] = { "n", 100729 },	-- Revil Kost
 							["coord"] = { 52.3, 34.5, DEADWIND_PASS },
 						}),
 						q(40606, {	-- To Point the Way
-							["provider"] = { "o", 245793 },	-- Battered Journal
-							["sourceQuests"] = { 40604 },	-- Disturbing the Past
-							["coord"] = { 52.3, 33.9, DEADWIND_PASS },
 							["icon"] = 953644,
+							["sourceQuests"] = { 40604 },	-- Disturbing the Past
+							["provider"] = { "o", 245793 },	-- Battered Journal
+							["coord"] = { 52.3, 33.9, DEADWIND_PASS },
+							["groups"] = {
+								i(132377),	-- Ariden's Compass (QI!)
+							},
 						}),
 						q(40611, {	-- The Fate of Deadwind
-							["provider"] = { "n", 100729 },	-- Revil Kost
 							["sourceQuests"] = { 40606 },	-- To Point the Way
+							["provider"] = { "n", 100729 },	-- Revil Kost
 							["coord"] = { 52.3, 34.4, DEADWIND_PASS },
 						}),
 						q(40623, {	-- The Dark Riders (Good)
-							["provider"] = { "n", 100812 },	-- Revil Kost
-							["sourceQuests"] = { 40611 },	-- The Fate of Deadwind
-							["coord"] = { 49.4, 74.8, DEADWIND_PASS },
 							["description"] = "Obtainable if you are good to Revil Kost",
+							["sourceQuests"] = { 40611 },	-- The Fate of Deadwind
+							["provider"] = { "n", 100812 },	-- Revil Kost
+							["coord"] = { 49.4, 74.8, DEADWIND_PASS },
 							["groups"] = {
 								i(128942, {	-- Ulthalesh, the Deadwind Harvester
 									["ItemAppearanceModifierID"] = 9,
@@ -173,10 +176,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							},
 						}),
 						q(41155, {	-- The Dark Riders (Bad)
-							["provider"] = { "n", 100812 },	-- Revil Kost
-							["sourceQuests"] = { 40611 },	-- The Fate of Deadwind
-							["coord"] = { 49.4, 74.8, DEADWIND_PASS },
 							["description"] = "Obtainable if you attack Revil Kost",
+							["sourceQuests"] = { 40611 },	-- The Fate of Deadwind
+							["provider"] = { "n", 100812 },	-- Revil Kost
+							["coord"] = { 49.4, 74.8, DEADWIND_PASS },
 							["groups"] = {
 								i(128942, {	-- Ulthalesh, the Deadwind Harvester
 									["ItemAppearanceModifierID"] = 9,
@@ -187,42 +190,48 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							},
 						}),
 						q(40712, {	-- The Power Possessed (Good)
-							["provider"] = { "n", 101282 },	-- Revil Kost
-							["sourceQuests"] = { 40623 },	-- The Dark Riders (Good)
-							["coord"] = { 68.5, 28.7, 46 },	-- Karazhan Catacombs
 							["description"] = "Obtainable if you are good to Revil Kost. This quest cross completes with 41156, and is unobtainable if you complete the Demonology artifact weapon before Affliction.",
+							["sourceQuests"] = { 40623 },	-- The Dark Riders (Good)
+							["provider"] = { "n", 101282 },	-- Revil Kost
+							["coord"] = { 68.5, 28.7, 46 },	-- Karazhan Catacombs
 							["isBreadcrumb"] = true,
 						}),
 						q(41156, {	-- The Power Possessed (Bad)
-							["provider"] = { "n", 101282 },	-- Revil Kost
-							["sourceQuests"] = { 41155 },	-- The Dark Riders (Bad)
-							["coord"] = { 68.5, 28.7, 46 },	-- Karazhan Catacombs
 							["description"] = "Obtainable if you attack Revil Kost. This quest cross completes with 40712, and is unobtainable if you complete the Demonology artifact weapon before Affliction.",
+							["sourceQuests"] = { 41155 },	-- The Dark Riders (Bad)
+							["provider"] = { "n", 101282 },	-- Revil Kost
+							["coord"] = { 68.5, 28.7, 46 },	-- Karazhan Catacombs
 							["isBreadcrumb"] = true,
 						}),
 					}),
 					cl(WARLOCK, DEMONOLOGY, {
 						q(42128, {	-- Ritual Reagents
-							["provider"] = { "n", 101097 },	-- Calydus
 							["sourceQuests"] = {
 								40684,	-- The Tome of Blighted Implements
 								43984,	-- The Tome Opens Again
 								44089,	-- A Greater Arsenal
 							},
 							["sourceQuestNumRequired"] = 1,
+							["provider"] = { "n", 101097 },	-- Calydus
 							["coords"] = {
 								{ 56.4, 64.6, LEGION_THE_UNDERBELLY },
 								{ 37.7, 31.8, DREADSCAR_RIFT },
 							},
+							["groups"] = {
+								i(136987),	-- Aged Snowplum Brandy (QI!)
+								i(136985),	-- Can of Overheated Oil (QI!)
+								i(136983),	-- Grave Dust (QI!)
+								i(136986),	-- Stag Blood Sample (QI!)
+							},
 						}),
 						q(42168, {	-- Looking into the Darkness
-							["provider"] = { "n", 106610 },	-- Calydus
 							["sourceQuests"] = { 42128 },	-- Ritual Reagents
+							["provider"] = { "n", 106610 },	-- Calydus
 							["coord"] = { 54.0, 47.0, LEGION_DALARAN },
 						}),
 						q(42125, {	-- Dark Whispers
-							["provider"] = { "n", 106610 },	-- Calydus
 							["sourceQuests"] = { 42168 },	-- Looking into the Darkness
+							["provider"] = { "n", 106610 },	-- Calydus
 							["coord"] = { 54.0, 47.0, LEGION_DALARAN },
 							["groups"] = {
 								i(128943, {	-- Skull of the Man'ari
@@ -242,13 +251,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					cl(WARLOCK, DESTRUCTION, {
 						q(43100, {	-- Finding the Scepter
-							["provider"] = { "n", 101097 },	-- Calydus
 							["sourceQuests"] = {
 								40684,	-- The Tome of Blighted Implements
 								43984,	-- The Tome Opens Again
 								44089,	-- A Greater Arsenal
 							},
 							["sourceQuestNumRequired"] = 1,
+							["provider"] = { "n", 101097 },	-- Calydus
 							["coords"] = {
 								{ 56.4, 64.6, LEGION_THE_UNDERBELLY },
 								{ 37.7, 31.8, DREADSCAR_RIFT },
@@ -261,14 +270,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							},
 						}),
 						q(43153, {	-- An Eye for a Scepter
-							["provider"] = { "n", 109698 },	-- Calydus
 							["sourceQuest"] = 43100,	-- Finding the Scepter
+							["provider"] = { "n", 109698 },	-- Calydus
 							["coord"] = { 69.2, 79.0, WESTERN_PLAGUELANDS },
 							["maps"] = { 773, 774 },	-- Tol Barad (Scenario Map)
 						}),
 						q(43254, {	-- Ritual Ruination
-							["provider"] = { "n", 109838 },	-- Calydus
 							["sourceQuests"] = { 43153 },	-- An Eye for a Scepter
+							["provider"] = { "n", 109838 },	-- Calydus
 							["coord"] = { 73.8, 42.9, LEGION_DALARAN },
 							["groups"] = {
 								i(128941, {	-- Scepter of Sargeras
@@ -282,7 +291,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					-- Introduction
 					q(40731, {	-- The Heart of the Dreadscar
-						["provider"] = { "n", 101097 },	-- Calydus
 						["sourceQuests"] = {
 							42125,	-- Dark Whispers
 							43254,	-- Ritual Ruination
@@ -292,118 +300,119 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							41156,	-- The Power Possessed (Bad)
 						},
 						["sourceQuestNumRequired"] = 1,
+						["provider"] = { "n", 101097 },	-- Calydus
 						["coord"] = { 56.4, 65.0, LEGION_THE_UNDERBELLY },
 						["maps"] = { 718 },	-- Dreadscar Rift (Scenario Map)
 					}),
 					q(40821, {	-- Power Overwhelming
-						["provider"] = { "n", 101097 },	-- Calydus
 						["sourceQuests"] = { 40731 },	-- The Heart of the Dreadscar
+						["provider"] = { "n", 101097 },	-- Calydus
 						["coord"] = { 37.7, 31.8, DREADSCAR_RIFT },
 						["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
 					}),
 					q(44254, {	-- Gazing Into Oblivion
-						["provider"] = { "n", 112434 },	-- Gigi Gigavoid
 						["sourceQuest"] = 40731,	-- The Heart of the Dreadscar
+						["provider"] = { "n", 112434 },	-- Gigi Gigavoid
 						["coord"] = { 58.7, 32.7, DREADSCAR_RIFT },
 						["groups"] = {
 							i(139765),	-- Visage of the Black Harvest
 						},
 					}),
 					q(40823, {	-- Rebuilding the Council
-						["provider"] = { "n", 101097 },	-- Calydus
 					-- #if BEFORE 8.0.1
 						["sourceQuests"] = { 40821 },	-- Power Overwhelming
 						-- #endif
+						["provider"] = { "n", 101097 },	-- Calydus
 						["coord"] = { 37.7, 31.8, DREADSCAR_RIFT },
 					}),
 					q(44099, {	-- A Mutual Friend
-						["provider"] = { "n", 112693 },	-- Black Harvest Acolyte
 						["sourceQuests"] = { 40824 },	-- The Path of the Dreadscar
+						["provider"] = { "n", 112693 },	-- Black Harvest Acolyte
 						["maps"] = { LEGION_THE_UNDERBELLY },
 						["isBreadcrumb"] = true,
 					}),
 					-- Start Legion Zone
 					q(40824, {	-- The Path of the Dreadscar
-						["provider"] = { "n", 101921 },	-- Ritssyn Flamescowl
 						["sourceQuests"] = { 40823 },	-- Rebuilding the Council
+						["provider"] = { "n", 101921 },	-- Ritssyn Flamescowl
 						["coord"] = { 31.2, 58.8, DREADSCAR_RIFT },
 					}),
 					-- Learn Mission Table & Research
 					q(42608, {	-- Rise, Champions
-						["provider"] = { "n", 101097 },	-- Calydus
 						["sourceQuests"] = { 44099 },	-- A Mutual Friend
+						["provider"] = { "n", 101097 },	-- Calydus
 						["coord"] = { 37.6, 31.8, DREADSCAR_RIFT },
 					}),
 					q(41750, {	-- Champion: Calydus
-						["provider"] = { "n", 101097 },	-- Calydus
 						["sourceQuests"] = { 42608 },	-- Rise, Champions
+						["provider"] = { "n", 101097 },	-- Calydus
 						["coord"] = { 37.6, 31.8, DREADSCAR_RIFT },
 						["groups"] = {
 							follower(616),	-- Calydus
 						},
 					}),
 					q(41748, {	-- Champion: Ritssyn Flamescowl
-						["provider"] = { "n", 104795 },	-- Ritssyn Flamescowl
 						["sourceQuests"] = { 42608 },	-- Rise, Champions
+						["provider"] = { "n", 104795 },	-- Ritssyn Flamescowl
 						["coord"] = { 65.4, 47.3, DREADSCAR_RIFT },
 						["groups"] = {
 							follower(589),	-- Ritssyn Flamescowl
 						},
 					}),
 					q(42603, {	-- Information at Any Cost
-						["provider"] = { "n", 106199 },	-- Gakin the Darkbinder
 						["sourceQuests"] = { 42608 },	-- Rise, Champions
+						["provider"] = { "n", 106199 },	-- Gakin the Darkbinder
 						["coord"] = { 66.3, 46.2, DREADSCAR_RIFT },
 					}),
 					q(41797, {	-- Recruiting The Troops
-						["provider"] = { "n", 106199 },	-- Gakin the Darkbinder
 						["sourceQuests"] = { 42603 },	-- Information at Any Cost
+						["provider"] = { "n", 106199 },	-- Gakin the Darkbinder
 						["coord"] = { 66.3, 46.2, DREADSCAR_RIFT },
 					}),
 					q(42602, {	-- Troops in the Field
-						["provider"] = { "n", 106199 },	-- Gakin the Darkbinder
 						["sourceQuests"] = { 41797 },	-- Recruiting The Troops
+						["provider"] = { "n", 106199 },	-- Gakin the Darkbinder
 						["coord"] = { 66.3, 46.2, DREADSCAR_RIFT },
 					}),
 					q(42601, {	-- Tech It Up A Notch
-						["provider"] = { "n", 106199 },	-- Gakin the Darkbinder
 						["sourceQuests"] = { 42602 },	-- Troops in the Field
+						["provider"] = { "n", 106199 },	-- Gakin the Darkbinder
 						["coord"] = { 66.3, 46.2, DREADSCAR_RIFT },
 					}),
 					-- Chap 1
 					q(42097, {	-- Searching the Archives
-						["provider"] = { "n", 104795 },	-- Ritssyn Flamescowl
 						["sourceQuests"] = { 42601 },	-- Tech It Up A Notch
+						["provider"] = { "n", 104795 },	-- Ritssyn Flamescowl
 						["coord"] = { 65.6, 47.2, DREADSCAR_RIFT },
 					}),
 					q(41759, {	-- An Unlikely Ally
-						["provider"] = { "n", 104795 },	-- Ritssyn Flamescowl
 						["sourceQuests"] = { 42097 },	-- Searching the Archives
+						["provider"] = { "n", 104795 },	-- Ritssyn Flamescowl
 						["coord"] = { 65.9, 47.0, DREADSCAR_RIFT },
 					}),
 					q(39179, {	-- Bloodstone Bandit
-						["provider"] = { "n", 105816 },	-- Kira Iresoul
 						["sourceQuests"] = { 41759 },	-- An Unlikely Ally
+						["provider"] = { "n", 105816 },	-- Kira Iresoul
 						["coord"] = { 60.8, 30.6, AZSUNA },
 					}),
 					q(39389, {	-- It Hungers for Blood
-						["provider"] = { "n", 105816 },	-- Kira Iresoul
 						["sourceQuests"] = { 39179 },	-- Bloodstone Bandit
+						["provider"] = { "n", 105816 },	-- Kira Iresoul
 						["coord"] = { 60.8, 30.6, AZSUNA },
 					}),
 					q(39142, {	-- Testing a Theory
-						["provider"] = { "n", 105816 },	-- Kira Iresoul
 						["sourceQuests"] = { 39389 },	-- It Hungers for Blood
+						["provider"] = { "n", 105816 },	-- Kira Iresoul
 						["coord"] = { 60.8, 30.6, AZSUNA },
 					}),
 					q(40218, {	-- Debt Repaid
-						["provider"] = { "n", 105816 },	-- Kira Iresoul
 						["sourceQuests"] = { 39142 },	-- Testing a Theory
+						["provider"] = { "n", 105816 },	-- Kira Iresoul
 						["coord"] = { 60.8, 30.6, AZSUNA },
 					}),
 					q(41767, {	-- A Daring Rescue
-						["provider"] = { "n", 105018 },	-- Ritssyn Flamescowl
 						["sourceQuests"] = { 40218 },	-- Debt Repaid
+						["provider"] = { "n", 105018 },	-- Ritssyn Flamescowl
 						["coord"] = { 55.2, 37.0, DREADSCAR_RIFT },
 						["maps"] = { 748 },	-- Niskara (Scenario Map)
 						["groups"] = {
@@ -414,16 +423,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 					}),
 					q(41753, {	-- Champion: Jubeka Shadowbreaker
-						["provider"] = { "n", 105922 },	-- Jubeka Shadowbreaker <Council of the Black Harvest>
 						["sourceQuests"] = { 41767 },	-- A Daring Rescue
+						["provider"] = { "n", 105922 },	-- Jubeka Shadowbreaker <Council of the Black Harvest>
 						["coord"] = { 56.6, 34.0, DREADSCAR_RIFT },
 						["groups"] = {
 							follower(619),	-- Jubeka Shadowbreaker
 						},
 					}),
 					q(41752, {	-- Champion: Zinnin Smythe
-						["provider"] = { "n", 105923 },	-- Zinnin Smythe <Council of the Black Harvest>
 						["sourceQuests"] = { 41767 },	-- A Daring Rescue
+						["provider"] = { "n", 105923 },	-- Zinnin Smythe <Council of the Black Harvest>
 						["coord"] = { 57.6, 35.0, DREADSCAR_RIFT },
 						["groups"] = {
 							follower(618),	-- Zinnin Smythe
@@ -431,72 +440,72 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					-- Chap 2
 					q(42098, {	-- Black Rook Hold: An Unclaimed Soul
-						["provider"] = { "n", 105018 },	-- Ritssyn Flamescowl
 						["sourceQuests"] = {
 							41752,	-- Champion: Zinnin Smythe
 							41753,	-- Champion: Jubeka Shadowbreaker
 						},
+						["provider"] = { "n", 105018 },	-- Ritssyn Flamescowl
 						["coord"] = { 55.2, 37.0, DREADSCAR_RIFT },
 						["maps"] = { 751, 752, 753, 754, 755, 756 },	-- Black Rock Hold
 					}),
 					q(42100, {	-- Empowering the Soul
-						["provider"] = { "n", 105018 },	-- Ritssyn Flamescowl
 						["sourceQuests"] = {
 							41752,	-- Champion: Zinnin Smythe
 							41753,	-- Champion: Jubeka Shadowbreaker
 						},
+						["provider"] = { "n", 105018 },	-- Ritssyn Flamescowl
 						["coord"] = { 55.2, 37.0, DREADSCAR_RIFT },
 					}),
 					q(41798, {	-- Recruiting More Troops
-						["provider"] = { "n", 106199 },	-- Ritssyn Flamescowl
 						["sourceQuests"] = {
 							41752,	-- Champion: Zinnin Smythe
 							41753,	-- Champion: Jubeka Shadowbreaker
 						},
+						["provider"] = { "n", 106199 },	-- Ritssyn Flamescowl
 						["coord"] = { 66.3, 46.2, DREADSCAR_RIFT },
 					}),
 					q(41768, {	-- Soul Beacon
-						["provider"] = { "n", 105018 },	-- Ritssyn Flamescowl
 						["sourceQuests"] = {
 							42098,	-- Black Rook Hold: An Unclaimed Soul
 							42100,	-- Empowering the Soul
 						},
+						["provider"] = { "n", 105018 },	-- Ritssyn Flamescowl
 						["coord"] = { 55.3, 37.1, DREADSCAR_RIFT },
 					}),
 					q(41769, {	-- Mad Ernie the Alchemist
-						["provider"] = { "n", 105102 },	-- Ritssyn Flamescowl
 						["sourceQuests"] = { 41768 },	-- Soul Beacon
+						["provider"] = { "n", 105102 },	-- Ritssyn Flamescowl
 						["coord"] = { 54.0, 36.2, 717 },
 					}),
 					q(41781, {	-- Herding Goats
-						["provider"] = { "n", 104824 },	-- Ernest Carlisle
 						["sourceQuest"] = 41769,	-- Mad Ernie the Alchemist
+						["provider"] = { "n", 104824 },	-- Ernest Carlisle
 						["coord"] = { 39.1, 62.6, VALSHARAH },
 					}),
 					q(41780, {	-- Doom and Gloom
-						["provider"] = { "n", 104824 },	-- Ernest Carlisle
 						["sourceQuest"] = 41781,	-- Herding Goats
+						["provider"] = { "n", 104824 },	-- Ernest Carlisle
 						["coord"] = { 39.1, 62.6, VALSHARAH },
 					}),
 					q(41784, {	-- Borrowed Time
-						["provider"] = { "n", 104824 },	-- Ernest Carlisle
 						["sourceQuests"] = { 41780 },	-- Doom and Gloom
+						["provider"] = { "n", 104824 },	-- Ernest Carlisle
 						["coord"] = { 39.1, 62.6, VALSHARAH },
 						["groups"] = {
 							i(139770),	-- Wristbands of the Black Harvest
 						},
 					}),
 					q(41751, {	-- Champion: Kira Iresoul
-						["provider"] = { "n", 104732 },	-- Kira Iresoul
 						["sourceQuests"] = { 41784 },	-- Borrowed Time
+						["provider"] = { "n", 104732 },	-- Kira Iresoul
 						["coord"] = { 54.1, 34.9, DREADSCAR_RIFT },
 						["groups"] = {
 							follower(617),	-- Kira Iresoul
 						},
 					}),
 					q(41754, {	-- Champion: Shinfel Blightsworn
-						["provider"] = { "n", 105140 },	-- Shinfel Blightsworn <Council of the Black Harvest>
 						["sourceQuests"] = { 41784 },	-- Borrowed Time
+						["provider"] = { "n", 105140 },	-- Shinfel Blightsworn <Council of the Black Harvest>
 						["coord"] = { 54.0, 35.5, DREADSCAR_RIFT },
 						["groups"] = {
 							follower(620),	-- Shinfel Blightsworn
@@ -504,69 +513,69 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					-- Chap 3
 					q(42102, {	-- One Who's Worthy
-						["provider"] = { "n", 105102 },	-- Ritssyn Flamescowl
 						["sourceQuests"] = {
 							41751,	-- Champion: Kira Iresoul
 							41754,	-- Champion: Shinfel Blightsworn
 						},
+						["provider"] = { "n", 105102 },	-- Ritssyn Flamescowl
 						["coord"] = { 54.0, 36.2, DREADSCAR_RIFT },
 					}),
 					q(42660, {	-- Vault of the Wardens: Matters of the Heart
-						["provider"] = { "n", 104732 },	-- Kira Iresoul
 						["sourceQuests"] = {
 							41751,	-- Champion: Kira Iresoul
 							-- 41754,	-- Champion: Shinfel Blightsworn - Discord 9-Nov-23
 						},
+						["provider"] = { "n", 104732 },	-- Kira Iresoul
 						["coord"] = { 54.1, 34.9, DREADSCAR_RIFT },
 						["maps"] = { 710, 711, 712 },	-- Vault of the Wardens
 					}),
 					q(42103, {	-- Let it Feed
-						["provider"] = { "n", 104732 },	-- Kira Iresoul
 						["sourceQuests"] = {
 							41751,	-- Champion: Kira Iresoul
 							-- 41754,	-- Champion: Shinfel Blightsworn - Discord 9-Nov-23
 						},
+						["provider"] = { "n", 104732 },	-- Kira Iresoul
 						["coord"] = { 54.1, 34.9, DREADSCAR_RIFT },
 					}),
 					q(44682, {	-- Unparalleled Power
-						["provider"] = { "n", 106199 },	-- Gakin the Darkbinder
 						["sourceQuests"] = {
 							41751,	-- Champion: Kira Iresoul
 							41754,	-- Champion: Shinfel Blightsworn
 						},
+						["provider"] = { "n", 106199 },	-- Gakin the Darkbinder
 						["coord"] = { 67.0, 46.4, DREADSCAR_RIFT },
 					}),
 					q(41785, {	-- Finding Fizzlebang
-						["provider"] = { "n", 105102 },	-- Ritssyn Flamescowl
 						["sourceQuests"] = {
 							42102,	-- One Who's Worthy
 							42660,	-- Vault of the Wardens: Matters of the Heart
 							42103,	-- Let it Feed
 							44682,	-- Unparalleled Power
 						},
+						["provider"] = { "n", 105102 },	-- Ritssyn Flamescowl
 						["coord"] = { 53.9, 36.2, DREADSCAR_RIFT },
 					}),
 					q(41788, {	-- Coercing a Confession
-						["provider"] = { "n", 104855 },	-- Lulubelle Fizzlebang
 						["sourceQuests"] = { 41785 },	-- Finding Fizzlebang
+						["provider"] = { "n", 104855 },	-- Lulubelle Fizzlebang
 						["coord"] = { 39.3, 42.2, STORMHEIM },
 					}),
 					q(41787, {	-- Someone Else's Mess
-						["provider"] = { "n", 104855 },	-- Lulubelle Fizzlebang
 						["sourceQuests"] = { 41785 },	-- Finding Fizzlebang
+						["provider"] = { "n", 104855 },	-- Lulubelle Fizzlebang
 						["coord"] = { 39.3, 42.2, STORMHEIM },
 					}),
 					q(41793, {	-- Lulubelle on Loan
-						["provider"] = { "n", 104855 },	-- Lulubelle Fizzlebang
 						["sourceQuests"] = {
 							41787, -- Someone Else's Mess
 							41788, -- Coercing a Confession
 						},
+						["provider"] = { "n", 104855 },	-- Lulubelle Fizzlebang
 						["coord"] = { 39.3, 42.2, STORMHEIM },
 					}),
 					q(41755, {	-- Champion: Lulubelle Fizzlebang
-						["provider"] = { "n", 105928 },	-- Lulubelle Fizzlebang
 						["sourceQuests"] = { 41793 },	-- Lulubelle on Loan
+						["provider"] = { "n", 105928 },	-- Lulubelle Fizzlebang
 						["coord"] = { 54.4, 39.3, DREADSCAR_RIFT },
 						["groups"] = {
 							follower(590),	-- Lulubelle Fizzlebang
@@ -574,21 +583,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					-- Chap 4
 					q(41795, {	-- Summoning the Sisters
-						["provider"] = { "n", 105815 },	-- Ritssyn Flamescowl
 						["sourceQuests"] = { 41755 },	-- Champion: Lulubelle Fizzlebang
+						["provider"] = { "n", 105815 },	-- Ritssyn Flamescowl
 						["coord"] = { 55.0, 37.4, DREADSCAR_RIFT },
 					}),
 					q(41756, {	-- Champion: Eredar Twins
-						["provider"] = { "n", 106228 },	-- Grand Warlock Alythess
 						["sourceQuests"] = { 41795 },	-- Summoning the Sisters
+						["provider"] = { "n", 106228 },	-- Grand Warlock Alythess
 						["coord"] = { 58.3, 40.8, DREADSCAR_RIFT },
 						["groups"] = {
 							follower(621),	-- Eredar Twins
 						},
 					}),
 					q(41796, {	-- Selecting a Sixth
-						["provider"] = { "n", 105951 },	-- Ritssyn Flamescowl
 						["sourceQuests"] = { 41795 },	-- Summoning the Sisters
+						["provider"] = { "n", 105951 },	-- Ritssyn Flamescowl
 						["coord"] = { 55.0, 37.4, DREADSCAR_RIFT },
 						["groups"] = {
 							i(139767),	-- Robes of the Black Harvest
@@ -596,8 +605,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 					}),
 					q(43414, {	-- A Hero's Weapon
-						["provider"] = { "n", 110488 },	-- Ritssyn Flamescowl
 						["sourceQuests"] = { 41796 },	-- Selecting the Sixth
+						["provider"] = { "n", 110488 },	-- Ritssyn Flamescowl
 						["coord"] = { 36.3, 30.8, DREADSCAR_RIFT },
 						["groups"] = {
 							artifact(334),	-- Ulthalesh, the Deadwind Harvester
@@ -608,102 +617,102 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					-- Interlude
 					q(45989, {	-- An Urgent Warning
-						["provider"] = { "n", 118423 },	-- Injured Invoker
 						["sourceQuest"] = 43414,	-- A Hero's Weapon
+						["provider"] = { "n", 118423 },	-- Injured Invoker
 						["coord"] = { 58.6, 37.6, DREADSCAR_RIFT },
 						["timeline"] = { ADDED_7_1_5, REMOVED_7_2_0 },
 						["isBreadcrumb"] = true,
 					}),
 					q(45990, {	-- Investigate the Broken Shore
-						["provider"] = { "n", 106199 },	-- Gakin the Darkbinder <Mission Strategist>
 						["sourceQuest"] = 45989,	-- An Urgent Warning
+						["provider"] = { "n", 106199 },	-- Gakin the Darkbinder <Mission Strategist>
 						["coord"] = { 66.6, 46.6, DREADSCAR_RIFT },
 						["timeline"] = { ADDED_7_1_5, REMOVED_7_2_0 },
 					}),
 					-- 7.2.0
 					q(45021, {	-- Answers Unknown
-						["provider"] = { "n", 105926 },	-- Shinfel Blightsworn
 						["sourceQuests"] = { 47137 },	-- Champions of Legionfall
+						["provider"] = { "n", 105926 },	-- Shinfel Blightsworn
 						["coord"] = { 57.4, 38.0, DREADSCAR_RIFT },
 						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45024, {	-- Cult Culling
-						["provider"] = { "n", 115863 },	-- Jubeka Shadowbreaker
 						["sourceQuests"] = { 45021 },	-- Answers Unknown
+						["provider"] = { "n", 115863 },	-- Jubeka Shadowbreaker
 						["coord"] = { 30.4, 44.6, AZSUNA },
 						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45025, {	-- Stealing the Source of Power
-						["provider"] = { "n", 115863 },	-- Jubeka Shadowbreaker
 						["sourceQuests"] = { 45021 },	-- Answers Unknown
+						["provider"] = { "n", 115863 },	-- Jubeka Shadowbreaker
 						["coord"] = { 30.4, 44.6, AZSUNA },
 						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45026, {	-- Expending Fel Energy
-						["provider"] = { "n", 115863 },	-- Jubeka Shadowbreaker
 						["sourceQuests"] = {
 							45024,	-- Cult Culling
 							45025,	-- Stealing the Source of Power
 						},
+						["provider"] = { "n", 115863 },	-- Jubeka Shadowbreaker
 						["coord"] = { 30.4, 44.6, AZSUNA },
 						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45794, {	-- Informing the Council
-						["provider"] = { "n", 115863 },	-- Jubeka Shadowbreaker
 						["sourceQuests"] = { 45026 },	-- Expending Fel Energy
+						["provider"] = { "n", 115863 },	-- Jubeka Shadowbreaker
 						["coord"] = { 30.4, 44.6, AZSUNA },
 						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45027, {	-- To the Broken Shore
-						["provider"] = { "n", 105926 },	-- Shinfel Blightsworn
 						["sourceQuests"] = { 45794 },	-- Informing the Council
+						["provider"] = { "n", 105926 },	-- Shinfel Blightsworn
 						["coord"] = { 57.4, 38.0, DREADSCAR_RIFT },
 						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45028, {	-- The Fate of Kanrethad
-						["provider"] = { "n", 115863 },	-- Jubeka Shadowbreaker
 						["sourceQuests"] = { 45027 },	-- To the Broken Shore
+						["provider"] = { "n", 115863 },	-- Jubeka Shadowbreaker
 						["coord"] = { 81.1, 49.6, BROKEN_SHORE },
 						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(46020, {	-- Crystal Containment
-						["provider"] = { "n", 115863 },	-- Jubeka Shadowbreaker
 						["sourceQuests"] = { 45028 },	-- The Fate of Kanrethad
+						["provider"] = { "n", 115863 },	-- Jubeka Shadowbreaker
 						["coord"] = { 78.1, 39.7, BROKEN_SHORE },
 						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(46047, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Champion: Kanrethad Ebonlocke
-						["provider"] = { "n", 118927 },	-- Kanrethad Ebonlocke
 						["sourceQuests"] = { 46020 },	-- Crystal Containment
+						["provider"] = { "n", 118927 },	-- Kanrethad Ebonlocke
 						["coord"] = { 55.8, 34.4, DREADSCAR_RIFT },
 						["groups"] = {
 							follower(997),	-- Kanrethad Ebonlocke
 						},
 					})),
 					q(46316, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Champion: Kanrethad Ebonlocke (If completed Green Fire)
-						["provider"] = { "n", 118927 },	-- Kanrethad Ebonlocke
+						["description"] = "This quest is only available if you completed the Green Fire Questline.",
 						["sourceQuests"] = {
 							46020,	-- Crystal Containment
 							32340,	-- Plunder the Black Temple
 						},
+						["provider"] = { "n", 118927 },	-- Kanrethad Ebonlocke
 						["coord"] = { 55.8, 34.4, DREADSCAR_RIFT },
-						["description"] = "This quest is only available if you completed the Green Fire Questline.",
 						["groups"] = {
 							follower(997),	-- Kanrethad Ebonlocke
 						},
 					})),
 					q(46237, {	-- Bloodbringer's Missive
-						["provider"] = { "n", 117622 },	-- Elithys Firestorm
 						["sourceQuests"] = {
 							46047,	-- Champion: Kanrethad Ebonlocke
 							46316,	-- Champion: Kanrethad Ebonlocke
 						},
+						["provider"] = { "n", 117622 },	-- Elithys Firestorm
 						["coord"] = { 43.9, 63.2, BROKEN_SHORE },
 						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(46239, {	-- Fel to the Core
-						["provider"] = { "n", 119166 },	-- Mor'zul Bloodbringer
 						["sourceQuest"] = 46237,	-- Bloodbringer's Missive
+						["provider"] = { "n", 119166 },	-- Mor'zul Bloodbringer
 						["coord"] = { 35.3, 38.5, DREADSCAR_RIFT },
 						["timeline"] = { ADDED_7_2_0 },
 						["groups"] = {
@@ -711,8 +720,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 					}),
 					q(46240, {	-- Give Me Fuel, Give Me Fire
-						["provider"] = { "n", 119166 },	-- Mor'zul Bloodbringer
 						["sourceQuest"] = 46237,	-- Bloodbringer's Missive
+						["provider"] = { "n", 119166 },	-- Mor'zul Bloodbringer
 						["coord"] = { 35.3, 38.5, DREADSCAR_RIFT },
 						["timeline"] = { ADDED_7_2_0 },
 						["groups"] = {
@@ -720,8 +729,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 					}),
 					q(46238, {	-- If You Build It
-						["provider"] = { "n", 119166 },	-- Mor'zul Bloodbringer
 						["sourceQuest"] = 46237,	-- Bloodbringer's Missive
+						["provider"] = { "n", 119166 },	-- Mor'zul Bloodbringer
 						["coord"] = { 35.3, 38.5, DREADSCAR_RIFT },
 						["timeline"] = { ADDED_7_2_0 },
 						["cost"] = {
@@ -731,12 +740,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 					}),
 					q(46241, {	-- The Minions of Hel'nurath
-						["provider"] = { "n", 119166 },	-- Mor'zul Bloodbringer
 						["sourceQuests"] = {
 							46239,	-- Fel to the Core
 							46240,	-- Give Me Fuel, Give Me Fire
 							46238,	-- If You Build It
 						},
+						["provider"] = { "n", 119166 },	-- Mor'zul Bloodbringer
 						["coord"] = { 35.3, 38.5, DREADSCAR_RIFT },
 						["timeline"] = { ADDED_7_2_0 },
 					}),
@@ -749,8 +758,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 					}),
 					q(46243, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- The Wrathsteed of Xoroth
-						["provider"] = { "n", 119166 },	-- Mor'zul Bloodbringer
 						["sourceQuests"] = { 46242 },	-- The Dreadlord's Calling
+						["provider"] = { "n", 119166 },	-- Mor'zul Bloodbringer
 						["coord"] = { 35.6, 38.4, DREADSCAR_RIFT },
 						["groups"] = {
 							mount(232412),	-- Netherlord's Chaotic Wrathsteed (MOUNT!)
@@ -763,20 +772,20 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["timeline"] = { ADDED_7_0_3, REMOVED_7_3_0 },
 					}),
 					q(46131, {	-- Knowledge is Power
-						["provider"] = { "n", 111740 },	-- Mile Raitheborne <Head Archivist>
 						["sourceQuest"] = 43887,	-- Hitting the Books
+						["provider"] = { "n", 111740 },	-- Mile Raitheborne <Head Archivist>
 						["coord"] = { 57.6, 40.6, DREADSCAR_RIFT },
 						["timeline"] = { ADDED_7_1_5, REMOVED_7_3_0 },
 					}),
 					q(46150, {	-- Furthering Knowledge
-						["provider"] = { "n", 111740 },	-- Mile Raitheborne <Head Archivist>
 						["sourceQuest"] = 46131,	-- Knowledge is Power
+						["provider"] = { "n", 111740 },	-- Mile Raitheborne <Head Archivist>
 						["coord"] = { 57.6, 40.6, DREADSCAR_RIFT },
 						["timeline"] = { ADDED_7_1_5, REMOVED_7_3_0 },
 					}),
 					q(46784, {	-- Further Advancement
-						["provider"] = { "n", 106199 },	-- Gakin the Darkbinder
 						["sourceQuest"] = 46047,	-- Champion: Kanrethad Ebonlocke
+						["provider"] = { "n", 106199 },	-- Gakin the Darkbinder
 						["coord"] = { 67.0, 46.6, DREADSCAR_RIFT },
 						["timeline"] = { ADDED_7_2_0 },
 					}),
@@ -809,8 +818,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 						["groups"] = {
 							q(42517, {	-- Ritual of Doom
-								["provider"] = { "n", 111740 },	-- Mile Raithborne
 								["sourceQuest"] = 42601,	-- Tech It Up A Notch
+								["provider"] = { "n", 111740 },	-- Mile Raithborne
 								["coord"] = { 57.0, 41.0, DREADSCAR_RIFT },
 							}),
 							i(139577, {	-- The Burning Jewel of Sargeras
@@ -832,16 +841,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					gt(367, {	-- Seed of Corruption
 						q(44227, {	-- Unleashing our Wrath
-							["provider"] = { "n", 113371 },	-- Demonia Pickerin
 							["sourceQuest"] = 42601,	-- Tech It Up A Notch
+							["provider"] = { "n", 113371 },	-- Demonia Pickerin
 							["coord"] = { 50.0, 24.4, DREADSCAR_RIFT },
 							["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
 						}),
 					}),
 					gt(364, {	-- Shadow Pact
 						q(44228, {	-- Champion Armaments
-							["provider"] = { "n", 110408 },	-- Murr
 							["sourceQuest"] = 42601,	-- Tech It Up A Notch
+							["provider"] = { "n", 110408 },	-- Murr
 							["coord"] = { 57.6, 52.6, DREADSCAR_RIFT },
 						}),
 					}),

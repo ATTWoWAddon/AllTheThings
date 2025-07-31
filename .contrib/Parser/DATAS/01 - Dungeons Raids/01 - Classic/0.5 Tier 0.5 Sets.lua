@@ -80,13 +80,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				},
 				{	-- Just Compensation
 					["allianceQuestData"] = q(8926, {	-- Just Compensation [A]
-						["qg"] = 16013,	-- Deliana
 						["sourceQuest"] = 8977,	-- Return to Deliana
+						["qg"] = 16013,	-- Deliana
 						["coord"] = { 43.5, 52.6, IRONFORGE },
 					}),
 					["hordeQuestData"] = q(8927, {	-- Just Compensation [H]
-						["qg"] = 16012,	-- Mokvar
 						["sourceQuest"] = 8978,	-- Return to Mokvar
+						["qg"] = 16012,	-- Mokvar
 						["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					}),
 					["maps"] = {
@@ -113,13 +113,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				},
 				{	-- Saving the Best for Last
 					["allianceQuestData"] = q(8999, {	-- Saving the Best for Last [A]
-						["qg"] = 16013,	-- Deliana
 						["sourceQuest"] = 8997,	-- Back to the Beginning [ALLIANCE]
+						["qg"] = 16013,	-- Deliana
 						["coord"] = { 43.5, 52.6, IRONFORGE },
 					}),
 					["hordeQuestData"] = q(9007, {	-- Saving the Best for Last [H]
-						["qg"] = 16012,	-- Mokvar
 						["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
+						["qg"] = 16012,	-- Mokvar
 						["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					}),
 					["maps"] = {
@@ -218,13 +218,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				},
 				{	-- Just Compensation
 					["allianceQuestData"] = q(8931, {	-- Just Compensation [A]
-						["qg"] = 16013,	-- Deliana
 						["sourceQuest"] = 8977,	-- Return to Deliana
+						["qg"] = 16013,	-- Deliana
 						["coord"] = { 43.5, 52.6, IRONFORGE },
 					}),
 					["hordeQuestData"] = q(8938, {	-- Just Compensation [H]
-						["qg"] = 16012,	-- Mokvar
 						["sourceQuest"] = 8978,	-- Return to Mokvar
+						["qg"] = 16012,	-- Mokvar
 						["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					}),
 					["maps"] = {
@@ -249,13 +249,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				},
 				{	-- Saving the Best for Last
 					["allianceQuestData"] = q(9000, {	-- Saving the Best for Last [A]
-						["qg"] = 16013,	-- Deliana
 						["sourceQuest"] = 8997,	-- Back to the Beginning [ALLIANCE]
+						["qg"] = 16013,	-- Deliana
 						["coord"] = { 43.5, 52.6, IRONFORGE },
 					}),
 					["hordeQuestData"] = q(9008, {	-- Saving the Best for Last [H]
-						["qg"] = 16012,	-- Mokvar
 						["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
+						["qg"] = 16012,	-- Mokvar
 						["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					}),
 					["maps"] = {
@@ -345,13 +345,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				},
 				{	-- Just Compensation
 					["allianceQuestData"] = q(8932, {	-- Just Compensation [A]
-						["qg"] = 16013,	-- Deliana
 						["sourceQuest"] = 8977,	-- Return to Deliana
+						["qg"] = 16013,	-- Deliana
 						["coord"] = { 43.5, 52.6, IRONFORGE },
 					}),
 					["hordeQuestData"] = q(8939, {	-- Just Compensation [H]
-						["qg"] = 16012,	-- Mokvar
 						["sourceQuest"] = 8978,	-- Return to Mokvar
+						["qg"] = 16012,	-- Mokvar
 						["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					}),
 					["maps"] = {
@@ -378,13 +378,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				},
 				{	-- Saving the Best for Last
 					["allianceQuestData"] = q(9001, {	-- Saving the Best for Last [A]
-						["qg"] = 16013,	-- Deliana
 						["sourceQuest"] = 8997,	-- Back to the Beginning [ALLIANCE]
+						["qg"] = 16013,	-- Deliana
 						["coord"] = { 43.5, 52.6, IRONFORGE },
 					}),
 					["hordeQuestData"] = q(9014, {	-- Saving the Best for Last [H]
-						["qg"] = 16012,	-- Mokvar
 						["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
+						["qg"] = 16012,	-- Mokvar
 						["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					}),
 					["maps"] = {
@@ -484,13 +484,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				},
 				{	-- Just Compensation
 					["allianceQuestData"] = q(8933, {	-- Just Compensation [A]
-						["qg"] = 16013,	-- Deliana
 						["sourceQuest"] = 8977,	-- Return to Deliana
+						["qg"] = 16013,	-- Deliana
 						["coord"] = { 43.5, 52.6, IRONFORGE },
 					}),
 					["hordeQuestData"] = q(10495, {	-- Just Compensation [H]
-						["qg"] = 16012,	-- Mokvar
 						["sourceQuest"] = 8978,	-- Return to Mokvar
+						["qg"] = 16012,	-- Mokvar
 						["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					}),
 					["maps"] = { BLACKROCK_DEPTHS, STRATHOLME },
@@ -507,13 +507,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				},
 				{	-- Saving the Best for Last
 					["allianceQuestData"] = q(9002, {	-- Saving the Best for Last [A]
-						["qg"] = 16013,	-- Deliana
 						["sourceQuest"] = 8997,	-- Back to the Beginning [ALLIANCE]
+						["qg"] = 16013,	-- Deliana
 						["coord"] = { 43.5, 52.6, IRONFORGE },
 					}),
 					["hordeQuestData"] = q(10499, {	-- Saving the Best for Last [H]
-						["qg"] = 16012,	-- Mokvar
 						["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
+						["qg"] = 16012,	-- Mokvar
 						["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					}),
 					["maps"] = {
@@ -557,8 +557,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 				}),
 				q(8954, {	-- Anthion's Parting Words [A]
-					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
+					["qg"] = 16016,	-- Anthion Harmon
 					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
 					["maps"] = {
 						STRATHOLME,
@@ -585,8 +585,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 				}),
 				q(8933, {	-- Just Compensation [A]
-					["qg"] = 16013,	-- Deliana
 					["sourceQuest"] = 8977,	-- Return to Deliana
+					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
 					["maps"] = { BLACKROCK_DEPTHS, STRATHOLME },
 					["cost"] = {
@@ -602,8 +602,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 				}),
 				q(9002, {	-- Saving the Best for Last [A]
-					["qg"] = 16013,	-- Deliana
 					["sourceQuest"] = 8997,	-- Back to the Beginning [ALLIANCE]
+					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
 					["maps"] = {
 						SCHOLOMANCE,
@@ -704,13 +704,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				},
 				{	-- Just Compensation
 					["allianceQuestData"] = q(8934, {	-- Just Compensation [A]
-						["qg"] = 16013,	-- Deliana
 						["sourceQuest"] = 8977,	-- Return to Deliana
+						["qg"] = 16013,	-- Deliana
 						["coord"] = { 43.5, 52.6, IRONFORGE },
 					}),
 					["hordeQuestData"] = q(8940, {	-- Just Compensation [H]
-						["qg"] = 16012,	-- Mokvar
 						["sourceQuest"] = 8978,	-- Return to Mokvar
+						["qg"] = 16012,	-- Mokvar
 						["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					}),
 					["maps"] = {
@@ -736,13 +736,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				},
 				{	-- Saving the Best for Last
 					["allianceQuestData"] = q(9003, {	-- Saving the Best for Last [A]
-						["qg"] = 16013,	-- Deliana
 						["sourceQuest"] = 8997,	-- Back to the Beginning [ALLIANCE]
+						["qg"] = 16013,	-- Deliana
 						["coord"] = { 43.5, 52.6, IRONFORGE },
 					}),
 					["hordeQuestData"] = q(9009, {	-- Saving the Best for Last [H]
-						["qg"] = 16012,	-- Mokvar
 						["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
+						["qg"] = 16012,	-- Mokvar
 						["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					}),
 					["maps"] = {
@@ -832,13 +832,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				},
 				{	-- Just Compensation
 					["allianceQuestData"] = q(8935, {	-- Just Compensation [A]
-						["qg"] = 16013,	-- Deliana
 						["sourceQuest"] = 8977,	-- Return to Deliana
+						["qg"] = 16013,	-- Deliana
 						["coord"] = { 43.5, 52.6, IRONFORGE },
 					}),
 					["hordeQuestData"] = q(8941, {	-- Just Compensation [H]
-						["qg"] = 16012,	-- Mokvar
 						["sourceQuest"] = 8978,	-- Return to Mokvar
+						["qg"] = 16012,	-- Mokvar
 						["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					}),
 					["maps"] = {
@@ -863,13 +863,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				},
 				{	-- Saving the Best for Last
 					["allianceQuestData"] = q(9004, {	-- Saving the Best for Last [A]
-						["qg"] = 16013,	-- Deliana
 						["sourceQuest"] = 8997,	-- Back to the Beginning [ALLIANCE]
+						["qg"] = 16013,	-- Deliana
 						["coord"] = { 43.5, 52.6, IRONFORGE },
 					}),
 					["hordeQuestData"] = q(9010, {	-- Saving the Best for Last [H]
-						["qg"] = 16012,	-- Mokvar
 						["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
+						["qg"] = 16012,	-- Mokvar
 						["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					}),
 					["maps"] = {
@@ -969,13 +969,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				},
 				{	-- Just Compensation
 					["allianceQuestData"] = q(10494, {	-- Just Compensation [A]
-						["qg"] = 16013,	-- Deliana
 						["sourceQuest"] = 8977,	-- Return to Deliana
+						["qg"] = 16013,	-- Deliana
 						["coord"] = { 43.5, 52.6, IRONFORGE },
 					}),
 					["hordeQuestData"] = q(8942, {	-- Just Compensation [H]
-						["qg"] = 16012,	-- Mokvar
 						["sourceQuest"] = 8978,	-- Return to Mokvar
+						["qg"] = 16012,	-- Mokvar
 						["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					}),
 					["maps"] = {
@@ -1000,13 +1000,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				},
 				{	-- Saving the Best for Last
 					["allianceQuestData"] = q(10498, {	-- Saving the Best for Last [A]
-						["qg"] = 16013,	-- Deliana
 						["sourceQuest"] = 8997,	-- Back to the Beginning [ALLIANCE]
+						["qg"] = 16013,	-- Deliana
 						["coord"] = { 43.5, 52.6, IRONFORGE },
 					}),
 					["hordeQuestData"] = q(9011, {	-- Saving the Best for Last [H]
-						["qg"] = 16012,	-- Mokvar
 						["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
+						["qg"] = 16012,	-- Mokvar
 						["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					}),
 					["maps"] = {
@@ -1057,8 +1057,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 				}),
 				q(8957, {	-- Anthion's Parting Words [H]
-					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
+					["qg"] = 16016,	-- Anthion Harmon
 					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
 					["maps"] = {
 						STRATHOLME,
@@ -1085,8 +1085,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 				}),
 				q(8942, {	-- Just Compensation [H]
-					["qg"] = 16012,	-- Mokvar
 					["sourceQuest"] = 8978,	-- Return to Mokvar
+					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					["maps"] = {
 						BLACKROCK_SPIRE,
@@ -1110,8 +1110,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 				}),
 				q(9011, {	-- Saving the Best for Last [H]
-					["qg"] = 16012,	-- Mokvar
 					["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
+					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					["maps"] = {
 						SCHOLOMANCE,
@@ -1202,13 +1202,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				},
 				{	-- Just Compensation
 					["allianceQuestData"] = q(8936, {	-- Just Compensation [A]
-						["qg"] = 16013,	-- Deliana
 						["sourceQuest"] = 8977,	-- Return to Deliana
+						["qg"] = 16013,	-- Deliana
 						["coord"] = { 43.5, 52.6, IRONFORGE },
 					}),
 					["hordeQuestData"] = q(8943, {	-- Just Compensation [H]
-						["qg"] = 16012,	-- Mokvar
 						["sourceQuest"] = 8978,	-- Return to Mokvar
+						["qg"] = 16012,	-- Mokvar
 						["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					}),
 					["maps"] = { SCHOLOMANCE, STRATHOLME },
@@ -1225,13 +1225,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				},
 				{	-- Saving the Best for Last
 					["allianceQuestData"] = q(9005, {	-- Saving the Best for Last [A]
-						["qg"] = 16013,	-- Deliana
 						["sourceQuest"] = 8997,	-- Back to the Beginning [ALLIANCE]
+						["qg"] = 16013,	-- Deliana
 						["coord"] = { 43.5, 52.6, IRONFORGE },
 					}),
 					["hordeQuestData"] = q(9012, {	-- Saving the Best for Last [H]
-						["qg"] = 16012,	-- Mokvar
 						["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
+						["qg"] = 16012,	-- Mokvar
 						["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					}),
 					["maps"] = {
@@ -1331,13 +1331,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				},
 				{	-- Just Compensation
 					["allianceQuestData"] = q(8937, {	-- Just Compensation [A]
-						["qg"] = 16013,	-- Deliana
 						["sourceQuest"] = 8977,	-- Return to Deliana
+						["qg"] = 16013,	-- Deliana
 						["coord"] = { 43.5, 52.6, IRONFORGE },
 					}),
 					["hordeQuestData"] = q(8944, {	-- Just Compensation [H]
-						["qg"] = 16012,	-- Mokvar
 						["sourceQuest"] = 8978,	-- Return to Mokvar
+						["qg"] = 16012,	-- Mokvar
 						["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					}),
 					["maps"] = {
@@ -1363,13 +1363,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				},
 				{	-- Saving the Best for Last
 					["allianceQuestData"] = q(9006, {	-- Saving the Best for Last [A]
-						["qg"] = 16013,	-- Deliana
 						["sourceQuest"] = 8997,	-- Back to the Beginning [ALLIANCE]
+						["qg"] = 16013,	-- Deliana
 						["coord"] = { 43.5, 52.6, IRONFORGE },
 					}),
 					["hordeQuestData"] = q(9013, {	-- Saving the Best for Last [H]
-						["qg"] = 16012,	-- Mokvar
 						["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
+						["qg"] = 16012,	-- Mokvar
 						["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					}),
 					["maps"] = {
@@ -1396,8 +1396,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 			}),
 			n(QUESTS, bubbleDownFiltered({ ["classes"] = TIER_ZERO_POINT_FIVE_RACES }, (function(t) return t.questID or t.allianceQuestData; end), {
 				q(8925, {	-- A Portable Power Source
-					["qg"] = 16014,	-- Mux Manascrambler
 					["sourceQuest"] = 8924,	-- Hunting for Ectoplasm
+					["qg"] = 16014,	-- Mux Manascrambler
 					["coord"] = { 52.4, 27.2, TANARIS },
 					["maps"] = { BURNING_STEPPES },
 					["lvl"] = 58,
@@ -1410,8 +1410,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 				}),
 				q(8928, {	-- A Shifty Merchant
-					["qg"] = 16014,	-- Mux Manascrambler
 					["sourceQuest"] = 8925,	-- A Portable Power Source
+					["qg"] = 16014,	-- Mux Manascrambler
 					["coord"] = { 52.4, 27.2, TANARIS },
 					["maps"] = { WINTERSPRING },
 					["cost"] = {
@@ -1421,10 +1421,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				}),
 				{	-- A Supernatural Device
 					["allianceQuestData"] = q(8922, {	-- A Supernatural Device [A]
-						["providers"] = {
-							{ "n", 16013 },	-- Deliana
-							{ "i", 21985 },	-- Sealed Blood Container
-						},
 						["sourceQuests"] = {
 							8905,	-- An Earnest Proposition [DRUID]
 							8906,	-- An Earnest Proposition [HUNTER]
@@ -1438,13 +1434,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 							8911,	-- An Earnest Proposition [WARLOCK]
 							8912,	-- An Earnest Proposition [WARRIOR]
 						},
+						["providers"] = {
+							{ "n", 16013 },	-- Deliana
+							{ "i", 21985 },	-- Sealed Blood Container
+						},
 						["coord"] = { 43.5, 52.6, IRONFORGE },
 					}),
 					["hordeQuestData"] = q(8923, {	-- A Supernatural Device [H]
-						["providers"] = {
-							{ "n", 16012 },	-- Mokvar
-							{ "i", 22382 },	-- Sealed Venom Container
-						},
 						["sourceQuests"] = {
 							8913,	-- An Earnest Proposition [DRUID]
 							8914,	-- An Earnest Proposition [HUNTER]
@@ -1458,14 +1454,18 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 							8919,	-- An Earnest Proposition [WARLOCK]
 							8920,	-- An Earnest Proposition [WARRIOR]
 						},
+						["providers"] = {
+							{ "n", 16012 },	-- Mokvar
+							{ "i", 22382 },	-- Sealed Venom Container
+						},
 						["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					}),
 					["maps"] = { TANARIS },
 					["lvl"] = 58,
 				},
 				q(8948, {	-- Anthion's Old Friend
-					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 8947,	-- Anthion's Strange Request
+					["qg"] = 16016,	-- Anthion Harmon
 					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
 					["maps"] = {
 						DIRE_MAUL,
@@ -1480,8 +1480,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["lvl"] = 58,
 				}),
 				q(8947, {	-- Anthion's Strange Request
-					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 8946,	-- Proof of Life
+					["qg"] = 16016,	-- Anthion Harmon
 					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
 					["cost"] = {
 						{ "i", 11371, 3 },	-- Dark Iron Bar
@@ -1504,7 +1504,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				},
 				{	-- Bodley's Unfortunate Fate
 					["allianceQuestData"] = q(8960, {	-- Bodley's Unfortunate Fate [A]
-						["qg"] = 16013,	-- Deliana
 						["sourceQuests"] = {
 							8951,	-- Anthion's Parting Words [ALLIANCE]
 							8952,	-- Anthion's Parting Words [ALLIANCE]
@@ -1518,10 +1517,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 							10496,	-- Anthion's Parting Words [ALLIANCE]
 							-- #endif
 						},
+						["qg"] = 16013,	-- Deliana
 						["coord"] = { 43.53, 52.64, IRONFORGE },
 					}),
 					["hordeQuestData"] = q(9032, {	-- Bodley's Unfortunate Fate [H]
-						["qg"] = 16012,	-- Mokvar
 						["sourceQuests"] = {
 							9016,	-- Anthion's Parting Words [HORDE]
 							9017,	-- Anthion's Parting Words [HORDE]
@@ -1535,6 +1534,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 							10497,	-- Anthion's Parting Words [HORDE]
 							-- #endif
 						},
+						["qg"] = 16012,	-- Mokvar
 						["coord"] = { 34.95, 38.29, ORGRIMMAR },
 					}),
 					["maps"] = {
@@ -1552,8 +1552,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["lvl"] = 58,
 				},
 				q(8962, {	-- Components of Importance [WARRIOR, MAGE]
-					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8961,	-- Three Kings of Flame
+					["qg"] = 16033,	-- Bodley
 					["maps"] = { BLACKROCK_MOUNTAIN, SILITHUS },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
@@ -1574,8 +1574,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 				}),
 				q(8963, {	-- Components of Importance [WARLOCK, DRUID]
-					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8961,	-- Three Kings of Flame
+					["qg"] = 16033,	-- Bodley
 					["maps"] = { BLACKROCK_MOUNTAIN, WINTERSPRING },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
@@ -1593,8 +1593,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 				}),
 				q(8964, {	-- Components of Importance [HUNTER, ROGUE]
-					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8961,	-- Three Kings of Flame
+					["qg"] = 16033,	-- Bodley
 					["maps"] = { BLACKROCK_MOUNTAIN, EASTERN_PLAGUELANDS },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
@@ -1609,8 +1609,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 				}),
 				q(8965, {	-- Components of Importance [PALADIN, PRIEST, SHAMAN]
-					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8961,	-- Three Kings of Flame
+					["qg"] = 16033,	-- Bodley
 					["maps"] = { BLACKROCK_MOUNTAIN, HILLSBRAD_FOOTHILLS },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
@@ -1624,11 +1624,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 				}),
 				q(8945, {	-- Dead Man's Plea
-					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuests"] = {
 						8929,	-- In Search of Anthion [ALLIANCE]
 						8930,	-- In Search of Anthion [HORDE]
 					},
+					["qg"] = 16016,	-- Anthion Harmon
 					["coord"] = { 30.85, 16.75, EASTERN_PLAGUELANDS },
 					["maps"] = { STRATHOLME },
 					["lvl"] = 58,
@@ -1637,8 +1637,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 				}),
 				q(8949, {	-- Falrin's Vendetta
-					["qg"] = 16032,	-- Falrin Treeshaper
 					["sourceQuest"] = 8948,	-- Anthion's Old Friend
+					["qg"] = 16032,	-- Falrin Treeshaper
 					["maps"] = {
 						DIRE_MAUL,
 						235,	-- Gordok Commons
@@ -1663,13 +1663,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 				}),
 				q(8994, {	-- Final Preparations
-					["qg"] = 16033,	-- Bodley
 					["sourceQuests"] = {
 						8990,	-- The Right Piece of Lord Valthalak's Amulet [WARRIOR, ROGUE]
 						8989,	-- The Right Piece of Lord Valthalak's Amulet [DRUID, PALADIN, SHAMAN]
 						8991,	-- The Right Piece of Lord Valthalak's Amulet [PRIEST, MAGE]
 						8992,	-- The Right Piece of Lord Valthalak's Amulet [HUNTER, WARLOCK]
 					},
+					["qg"] = 16033,	-- Bodley
 					["maps"] = {
 						BLACKROCK_MOUNTAIN,
 						BLACKROCK_SPIRE,
@@ -1692,8 +1692,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 				}),
 				q(8924, {	-- Hunting for Ectoplasm
-					["qg"] = 16014,	-- Mux Manascrambler
 					["sourceQuest"] = 8921,	-- The Ectoplasmic Distiller
+					["qg"] = 16014,	-- Mux Manascrambler
 					["coord"] = { 52.4, 27.2, TANARIS },
 					["maps"] = { EASTERN_PLAGUELANDS, SILITHUS, WINTERSPRING },
 					["lvl"] = 58,
@@ -1734,13 +1734,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 				}),
 				q(8970, {	-- I See Alcaz Island In Your Future...
-					["qg"] = 16033,	-- Bodley
 					["sourceQuests"] = {
 						8966,	-- The Left Piece of Lord Valthalak's Amulet [WARRIOR, MAGE]
 						8967,	-- The Left Piece of Lord Valthalak's Amulet [WARLOCK, DRUID]
 						8968,	-- The Left Piece of Lord Valthalak's Amulet [HUNTER, ROGUE]
 						8969,	-- The Left Piece of Lord Valthalak's Amulet [PALADIN, PRIEST, SHAMAN]
 					},
+					["qg"] = 16033,	-- Bodley
 					["maps"] = { BLACKROCK_MOUNTAIN, DUSTWALLOW_MARSH },
 					["lvl"] = 58,
 					["groups"] = {
@@ -1762,7 +1762,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 				}),
 				{	-- In Search of Anthion
 					["allianceQuestData"] = q(8929, {	-- In Search of Anthion [A]
-						["qg"] = 16013,	-- Deliana
 						["sourceQuests"] = {
 							8926,	-- Just Compensation [ALLIANCE]
 							8931,	-- Just Compensation [ALLIANCE]
@@ -1776,10 +1775,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 							10494,	-- Just Compensation [ALLIANCE]
 							-- #endif
 						},
+						["qg"] = 16013,	-- Deliana
 						["coord"] = { 43.53, 52.64, IRONFORGE },
 					}),
 					["hordeQuestData"] = q(8930, {	-- In Search of Anthion [H]
-						["qg"] = 16012,	-- Mokvar
 						["sourceQuests"] = {
 							8927,	-- Just Compensation [HORDE]
 							8938,	-- Just Compensation [HORDE]
@@ -1793,6 +1792,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 							10495,	-- Just Compensation [HORDE]
 							-- #endif
 						},
+						["qg"] = 16012,	-- Mokvar
 						["coord"] = { 34.95, 38.29, ORGRIMMAR },
 					}),
 					["maps"] = { EASTERN_PLAGUELANDS, STRATHOLME },
@@ -1800,8 +1800,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["lvl"] = 58,
 				},
 				q(8995, {	-- Mea Culpa, Lord Valthalak
-					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8994,	-- Final Preparations
+					["qg"] = 16033,	-- Bodley
 					["maps"] = {
 						BLACKROCK_MOUNTAIN,
 						BLACKROCK_SPIRE,
@@ -1820,8 +1820,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["lvl"] = 58,
 				}),
 				q(8985, {	-- More Components of Importance [WARRIOR, ROGUE]
-					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8970,	-- I See Alcaz Island In Your Future...
+					["qg"] = 16033,	-- Bodley
 					["maps"] = { BLACKROCK_MOUNTAIN, WINTERSPRING },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
@@ -1841,8 +1841,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 				}),
 				q(8986, {	-- More Components of Importance [DRUID, PALADIN, SHAMAN]
-					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8970,	-- I See Alcaz Island In Your Future...
+					["qg"] = 16033,	-- Bodley
 					["maps"] = { BLACKROCK_MOUNTAIN, SILITHUS },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
@@ -1865,8 +1865,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 				}),
 				q(8987, {	-- More Components of Importance [PRIEST, MAGE]
-					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8970,	-- I See Alcaz Island In Your Future...
+					["qg"] = 16033,	-- Bodley
 					["maps"] = { BLACKROCK_MOUNTAIN, EASTERN_PLAGUELANDS },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
@@ -1883,8 +1883,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 				}),
 				q(8988, {	-- More Components of Importance [HUNTER, WARLOCK]
-					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8970,	-- I See Alcaz Island In Your Future...
+					["qg"] = 16033,	-- Bodley
 					["maps"] = { BLACKROCK_MOUNTAIN, HILLSBRAD_FOOTHILLS },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
@@ -1905,8 +1905,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 				}),
 				q(8946, {	-- Proof of Life
-					["qg"] = 16031,	-- Ysida Harmon
 					["sourceQuest"] = 8945,	-- Dead Man's Plea
+					["qg"] = 16031,	-- Ysida Harmon
 					["maps"] = { EASTERN_PLAGUELANDS, STRATHOLME },
 					["cost"] = {
 						{ "i", 22139, 1 },	-- Ysida's Locket
@@ -1914,8 +1914,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["lvl"] = 58,
 				}),
 				q(8996, {	-- Return to Bodley
-					["qg"] = 16073,	-- Spirit of Lord Valthalak
 					["sourceQuest"] = 8995,	-- Mea Culpa, Lord Valthalak
+					["qg"] = 16073,	-- Spirit of Lord Valthalak
 					["maps"] = {
 						BLACKROCK_MOUNTAIN,
 						BLACKROCK_SPIRE,
@@ -1953,8 +1953,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					["lvl"] = 58,
 				},
 				q(9015, {	-- The Challenge
-					["qg"] = 16032,	-- Falrin Treeshaper
 					["sourceQuest"] = 8950,	-- The Instigator's Enchantment
+					["qg"] = 16032,	-- Falrin Treeshaper
 					["maps"] = {
 						BLACKROCK_DEPTHS,
 						DIRE_MAUL,
@@ -1978,11 +1978,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 				}),
 				q(8921, {	-- The Ectoplasmic Distiller
-					["qg"] = 16014,	-- Mux Manascrambler
 					["sourceQuests"] = {
 						8922,	-- A Supernatural Device [ALLIANCE]
 						8923,	-- A Supernatural Device [HORDE]
 					},
+					["qg"] = 16014,	-- Mux Manascrambler
 					["coord"] = { 52.4, 27.2, TANARIS },
 					["maps"] = { BURNING_STEPPES },
 					["cost"] = {
@@ -2004,8 +2004,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 				}),
 				q(8950, {	-- The Instigator's Enchantment
-					["qg"] = 16032,	-- Falrin Treeshaper
 					["sourceQuest"] = 8949,	-- Falrin's Vendetta
+					["qg"] = 16032,	-- Falrin Treeshaper
 					["maps"] = {
 						DIRE_MAUL,
 						235,	-- Gordok Commons
@@ -2025,8 +2025,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 				}),
 				q(8966, {	-- The Left Piece of Lord Valthalak's Amulet [WARRIOR, MAGE]
-					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8962,	-- Components of Importance [WARRIOR, MAGE]
+					["qg"] = 16033,	-- Bodley
 					["maps"] = {
 						BLACKROCK_MOUNTAIN,
 						BLACKROCK_SPIRE,
@@ -2053,8 +2053,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 				}),
 				q(8967, {	-- The Left Piece of Lord Valthalak's Amulet [WARLOCK, DRUID]
-					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8963,	-- Components of Importance [WARLOCK, DRUID]
+					["qg"] = 16033,	-- Bodley
 					["maps"] = {
 						BLACKROCK_MOUNTAIN,
 						DIRE_MAUL,
@@ -2076,8 +2076,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 				}),
 				q(8968, {	-- The Left Piece of Lord Valthalak's Amulet [HUNTER, ROGUE]
-					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8964,	-- Components of Importance [HUNTER, ROGUE]
+					["qg"] = 16033,	-- Bodley
 					["maps"] = { BLACKROCK_MOUNTAIN, STRATHOLME },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
@@ -2098,8 +2098,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 				}),
 				q(8969, {	-- The Left Piece of Lord Valthalak's Amulet [PALADIN, PRIEST, SHAMAN]
-					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8965,	-- Components of Importance [PALADIN, PRIEST, SHAMAN]
+					["qg"] = 16033,	-- Bodley
 					["maps"] = { BLACKROCK_MOUNTAIN, SCHOLOMANCE },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
@@ -2117,8 +2117,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 				}),
 				q(8990, {	-- The Right Piece of Lord Valthalak's Amulet [WARRIOR, ROGUE]
-					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8985,	-- More Components of Importance [WARRIOR, ROGUE]
+					["qg"] = 16033,	-- Bodley
 					["maps"] = {
 						BLACKROCK_MOUNTAIN,
 						DIRE_MAUL,
@@ -2145,8 +2145,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 				}),
 				q(8989, {	-- The Right Piece of Lord Valthalak's Amulet [DRUID, PALADIN, SHAMAN]
-					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8986,	-- More Components of Importance [DRUID, PALADIN, SHAMAN]
+					["qg"] = 16033,	-- Bodley
 					["maps"] = {
 						BLACKROCK_MOUNTAIN,
 						BLACKROCK_SPIRE,
@@ -2178,8 +2178,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 				}),
 				q(8991, {	-- The Right Piece of Lord Valthalak's Amulet [PRIEST, MAGE]
-					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8987,	-- More Components of Importance [PRIEST, MAGE]
+					["qg"] = 16033,	-- Bodley
 					["maps"] = { BLACKROCK_MOUNTAIN, STRATHOLME },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
@@ -2205,8 +2205,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 				}),
 				q(8992, {	-- The Right Piece of Lord Valthalak's Amulet [HUNTER, WARLOCK]
-					["qg"] = 16033,	-- Bodley
 					["sourceQuest"] = 8988,	-- More Components of Importance [HUNTER, WARLOCK]
+					["qg"] = 16033,	-- Bodley
 					["maps"] = { BLACKROCK_MOUNTAIN, SCHOLOMANCE },
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
@@ -2229,11 +2229,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 					},
 				}),
 				q(8961, {	-- Three Kings of Flame
-					["qg"] = 16033,	-- Bodley
 					["sourceQuests"] = {
 						8960,	-- Bodley's Unfortunate Fate [ALLIANCE]
 						9032,	-- Bodley's Unfortunate Fate [HORDE]
 					},
+					["qg"] = 16033,	-- Bodley
 					["maps"] = {
 						BLACKROCK_MOUNTAIN,
 						BLACKROCK_DEPTHS,

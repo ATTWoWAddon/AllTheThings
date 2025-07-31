@@ -24,109 +24,109 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 							})),
 							n(QUESTS, {
 								q(57900, {	-- Across the Shadowlands
-									["provider"] = { "n", 160389 },	-- Koros
 									["sourceQuests"] = { 57899 },	-- More Work?
+									["provider"] = { "n", 160389 },	-- Koros
 									["coord"] = { 43.8, 40.7, ARCHONS_RISE },
 									["groups"] = {
 										follower(1259),	-- Pelagos
 									},
 								}),
 								q(61863, {	-- Adventurer: Apolon
-									["provider"] = { "n", 160389 },    -- Koros
-									["sourceQuests"] = { 57900 },	-- Across the Shadowlands
-									["coord"] = { 43.8, 40.7, ARCHONS_RISE },
 									["description"] = "Requires Renown 27.",
+									["sourceQuests"] = { 57900 },	-- Across the Shadowlands
+									["provider"] = { "n", 160389 },    -- Koros
+									["coord"] = { 43.8, 40.7, ARCHONS_RISE },
 									["groups"] = {
 										follower(1276),	-- Apolon
 									},
 								}),
 								q(64463, {	-- Adventurer: Auric Spiritguide
-									["provider"] = { "n", 160389 },    -- Koros
-									["sourceQuests"] = { 57900 },	-- Across the Shadowlands
-									["coord"] = { 43.8, 40.7, ARCHONS_RISE },
 									["description"] = "Requires Renown 71.",
+									["sourceQuests"] = { 57900 },	-- Across the Shadowlands
+									["provider"] = { "n", 160389 },    -- Koros
+									["coord"] = { 43.8, 40.7, ARCHONS_RISE },
 									["groups"] = {
 										follower(1343),	-- Auric Spiritguide
 									},
 								}),
 								q(61864, {	-- Adventurer: Bron
-									["provider"] = { "n", 160389 },    -- Koros
-									["sourceQuests"] = { 57900 },	-- Across the Shadowlands
-									["coord"] = { 43.8, 40.7, ARCHONS_RISE },
 									["description"] = "Requires Renown 33.",
+									["sourceQuests"] = { 57900 },	-- Across the Shadowlands
+									["provider"] = { "n", 160389 },    -- Koros
+									["coord"] = { 43.8, 40.7, ARCHONS_RISE },
 									["groups"] = {
 										follower(1275),	-- Bron
 									},
 								}),
 								q(61862, {	-- Adventurer: Clora
-									["provider"] = { "n", 160389 },    -- Koros
-									["sourceQuests"] = { 57900 },	-- Across the Shadowlands
-									["coord"] = { 43.8, 40.7, ARCHONS_RISE },
 									["description"] = "Requires Renown 17.",
+									["sourceQuests"] = { 57900 },	-- Across the Shadowlands
+									["provider"] = { "n", 160389 },    -- Koros
+									["coord"] = { 43.8, 40.7, ARCHONS_RISE },
 									["groups"] = {
 										follower(1273),	-- Clora
 									},
 								}),
 								q(64462, {	-- Adventurer: Cromas the Mystic
-									["provider"] = { "n", 160389 },    -- Koros
-									["sourceQuests"] = { 57900 },	-- Across the Shadowlands
-									["coord"] = { 43.8, 40.7, ARCHONS_RISE },
 									["description"] = "Requires Renown 62.",
+									["sourceQuests"] = { 57900 },	-- Across the Shadowlands
+									["provider"] = { "n", 160389 },    -- Koros
+									["coord"] = { 43.8, 40.7, ARCHONS_RISE },
 									["groups"] = {
 										follower(1342),	-- Cromas the Mystic
 									},
 								}),
 								q(61865, {	-- Adventurer: Disciple Kosmas
-									["provider"] = { "n", 160389 },    -- Koros
-									["sourceQuests"] = { 57900 },	-- Across the Shadowlands
-									["coord"] = { 43.8, 40.7, ARCHONS_RISE },
 									["description"] = "Requires Renown 38.",
+									["sourceQuests"] = { 57900 },	-- Across the Shadowlands
+									["provider"] = { "n", 160389 },    -- Koros
+									["coord"] = { 43.8, 40.7, ARCHONS_RISE },
 									["groups"] = {
 										follower(1274),	-- Disciple Kosmas
 									},
 								}),
 								q(64461, {	-- Adventurer: Hermestes
-									["provider"] = { "n", 160389 },	-- Koros
-									["sourceQuests"] = { 57900 },	-- Across the Shadowlands
-									["coord"] = { 43.8, 40.7, ARCHONS_RISE },
 									["description"] = "Requires Renown 44.",
+									["sourceQuests"] = { 57900 },	-- Across the Shadowlands
+									["provider"] = { "n", 160389 },	-- Koros
+									["coord"] = { 43.8, 40.7, ARCHONS_RISE },
 									["groups"] = {
 										follower(1341),	-- Hermestes
 									},
 								}),
 								q(61859, {	-- Adventurer: Nemea
-									["provider"] = { "n", 160389 },    -- Koros
-									["altQuests"] = { 61860 },	-- Adenturer: Pelodis
+									["description"] = "Requires Renown 4. Must choose Nemea in the Pride or Unit quest to get this follower.",
 									["sourceQuests"] = {
 										58103,	-- Pride or Unit
 										57900,	-- Across the Shadowlands
 									},
+									["altQuests"] = { 61860 },	-- Adenturer: Pelodis
+									["provider"] = { "n", 160389 },    -- Koros
 									["coord"] = { 43.8, 40.7, ARCHONS_RISE },
-									["description"] = "Requires Renown 4. Must choose Nemea in the Pride or Unit quest to get this follower.",
 									["DisablePartySync"] = true,
 									["groups"] = {
 										follower(1270),	-- Nemea
 									},
 								}),
 								q(61860, {	-- Adventurer: Pelodis
-									["provider"] = { "n", 160389 },    -- Koros
-									["altQuests"] = { 61859 },	-- Adenturer: Nemea
+									["description"] = "Requires Renown 4. Must choose Pelodis in the Pride or Unit quest to get this follower.",
 									["sourceQuests"] = {
 										58103,	-- Pride or Unit
 										57900,	-- Across the Shadowlands
 									},
+									["altQuests"] = { 61859 },	-- Adenturer: Nemea
+									["provider"] = { "n", 160389 },    -- Koros
 									["coord"] = { 43.8, 40.7, ARCHONS_RISE },
-									["description"] = "Requires Renown 4. Must choose Pelodis in the Pride or Unit quest to get this follower.",
 									["DisablePartySync"] = true,
 									["groups"] = {
 										follower(1271),	-- Pelodis
 									},
 								}),
 								q(61861, {	-- Adventurer: Sika
-									["provider"] = { "n", 160389 },    -- Koros
-									["sourceQuests"] = { 57900 },	-- Across the Shadowlands
-									["coord"] = { 43.8, 40.7, ARCHONS_RISE },
 									["description"] = "Requires Renown 12.",
+									["sourceQuests"] = { 57900 },	-- Across the Shadowlands
+									["provider"] = { "n", 160389 },    -- Koros
+									["coord"] = { 43.8, 40.7, ARCHONS_RISE },
 									["groups"] = {
 										follower(1272),	-- Sika
 									},
@@ -136,11 +136,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["coord"] = { 42.6, 53.1, ARCHONS_RISE },
 								}),
 								q(63068, {	-- Settling Disputes
-									["provider"] = { "n", 160389 },    -- Koros
-									["altQuests"] = { 59674 },    -- A Friendly Rivalry
-									["sourceQuests"] = { 57899 },	-- More Work?
-									["coord"] = { 43.8, 40.7, ARCHONS_RISE },
 									["description"] = "Requires Renown 4.",
+									["sourceQuests"] = { 57899 },	-- More Work?
+									["altQuests"] = { 59674 },    -- A Friendly Rivalry
+									["provider"] = { "n", 160389 },    -- Koros
+									["coord"] = { 43.8, 40.7, ARCHONS_RISE },
 									["isBreadcrumb"] = true,
 								--	TODO: is altQuests necessary or do they complete each other?
 								--	quest is unavailable until you build your command table

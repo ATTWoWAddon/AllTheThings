@@ -494,9 +494,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				}),
 				q(77780, {	-- A Blossom Witnessed
 					["sourceQuests"] = { 76401 },	-- Echo of the Firelands
-					-- also requires kill of Fyrakk
 					["provider"] = { "n", 211634 },	-- Tyrande Whisperwind
 					["coord"] = { 27.5, 31.4, EMERALD_DREAM },
+					-- also requires kill of Fyrakk
 				}),
 				q(76276, {	-- A Changed Land
 					["sourceQuests"] = { 77780 },	-- A Blossom Witnessed
@@ -522,8 +522,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				q(77201, {	-- A Personal Offering
 					["sourceQuests"] = { 77329 },	-- Auspicious Gathering (TODO: may be required finishing 76213 in addition?)
 					["provider"] = { "n", 208537 },	-- Tyrande Whisperwind
-					["races"] = { NIGHTELF },
 					["coord"] = { 50.8, 61.4, AMIRDRASSIL },
+					["races"] = { NIGHTELF },
 					["groups"] = {
 						iensemble(209604),	-- Ensemble: Raiment of Amirdrassi
 					},
@@ -584,11 +584,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			-- non-story quests below for now
 			q(76460, {	-- A Dragon in Hand is Worth Two in the Roost
-				--[[["sourceQuests"] = {
+				--[[
+				["sourceQuests"] = {
 					76337,	-- The Ember Still Smolders (TODO: need to confirm)
 					77887,	-- 'World Quest Unlock' (spellID 421687)
 				},
-				["sourceQuestNumRequired"] = 1,]]--
+				["sourceQuestNumRequired"] = 1,
+				]]--
 				["provider"] = { "n", 207350 },	-- Wrathion
 				["coord"] = { 50.8, 62.8, EMERALD_DREAM },
 			}),
@@ -645,11 +647,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			--
 			q(77948, {	-- Burning Out
-				--[[["sourceQuests"] = {
+				--[[
+				["sourceQuests"] = {
 					xx,	-- TODO: no requirement
 					77887,	-- 'World Quest Unlock' (spellID 421687)
 				},
-				["sourceQuestNumRequired"] = 1,]]--
+				["sourceQuestNumRequired"] = 1,
+				]]--
 				["provider"] = { "n", 210196 },	-- Solarys Thorngale
 				["coord"] = { 52.0, 63.6, EMERALD_DREAM },
 				["groups"] = {
@@ -707,10 +711,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				},
 			}),
 			q(78066, {	-- The Answers You've Earned
-				-- Note: the end of the quest makes it seem like there will be more to this questline later
 				["sourceQuests"] = { 78162 },	-- Q'onzu's Distraction
 				["provider"] = { "n", 210524 },	-- Q'onzu
 				["coord"] = { 34.7, 69.3, EMERALD_DREAM },
+				-- Note: the end of the quest makes it seem like there will be more to this questline later
 				["groups"] = {
 					i(210645),	-- Feather of Friends (CI!)
 					i(211374, {	-- Tangled Yarn of Secrets
@@ -728,11 +732,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 			}),
 			--
 			q(78262, {	-- It Starts With a Stone
-				--[[["sourceQuests"] = {
+				--[[
+				["sourceQuests"] = {
 					xx,	-- TODO: no requirement?
 					77887,	-- 'World Quest Unlock' (spellID 421687)
 				},
-				["sourceQuestNumRequired"] = 1,]]--
+				["sourceQuestNumRequired"] = 1,
+				]]--
 				["provider"] = { "n", 211328 },	-- Vaskarn
 				["coord"] = { 49.8, 61.6, EMERALD_DREAM },
 				["timeline"] = { REMOVED_10_2_6_SEASON_FOUR },
@@ -796,7 +802,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(209054),	-- Ritual Remedy (QI!)
 					i(209051),	-- Sleeping Glory (QI!)
 					i(209050),	-- Somnium Bark (QI!)
-
 				},
 			}),
 			--
@@ -879,10 +884,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coord"] = { 53.7, 74.6, EMERALD_DREAM },
 			}),
 			q(76569, {	-- Druid-Guardian Conference
-				-- TODO: Might also require 76567
 				["sourceQuests"] = { 76568 },	-- Pineshrew Panic
 				["provider"] = { "n", 207779 },	-- Ethidris Creekward
 				["coord"] = { 53.7, 74.6, EMERALD_DREAM },
+				-- TODO: Might also require 76567
 				["groups"] = {
 					i(211371),	-- Dryad-Keeper Credentials
 				}

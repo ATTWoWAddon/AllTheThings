@@ -176,11 +176,11 @@ root(ROOTS.Zones, {
 							},{
 								q(32655),	-- A Bold Idea
 								q(32706, {	-- Allies in the Shadows
+									["sourceQuest"] = 32681,	-- The Storm Gathers
 									["qgs"] = {
 										67992,	-- Lady Jaina Proudmoore <Leader of the Kirin Tor>
 										70370,	-- Lady Jaina Proudmoore <Leader of the Kirin Tor>
 									},
-									["sourceQuest"] = 32681,	-- The Storm Gathers
 									["coord"] = { 34.7, 89.5, ISLE_OF_THUNDER },
 								}),
 								q(32599, {    -- Securing A Future
@@ -388,11 +388,11 @@ root(ROOTS.Zones, {
 								["races"] = HORDE_ONLY,
 							},{
 								q(32709, {	-- Allies in the Shadows
+									["sourceQuest"] = 32680,	-- The Storm Gathers
 									["qgs"] = {
 										67990,	-- Lor'themar Theron <Regent Lord of Quel'Thalas>
 										70371,	-- Lor'themar Theron <Regent Lord of Quel'Thalas>
 									},
-									["sourceQuest"] = 32680,	-- The Storm Gathers
 								}),
 								q(32589, {	-- Life Blood (H)
 									["qg"] = 67990,	-- Lor'themar Theron
@@ -420,16 +420,16 @@ root(ROOTS.Zones, {
 								q(32212),	-- The Assault on Zeb'tula (H)
 								q(32277),	-- To the Skies! (H)
 								q(32278, {	-- Decisive Action (H)
-									["qg"] = 7029,	-- Taoshi
 									["sourceQuest"] = 32277,	-- To the Skies (H)
+									["qg"] = 7029,	-- Taoshi
 									["coord"] = { 32.8, 32.6, ISLE_OF_THUNDER },
 									["groups"] = {
 										i(94918),	-- Gatekeeper's Orb (QI!)
 									},
 								}),
 								q(32279, {	-- The Fall of Shan Bu (H)
-									["qg"] = 6799,	-- Lor'themar Theron
 									["sourceQuest"] = 32278,	-- Decisive Action (H)
+									["qg"] = 6799,	-- Lor'themar Theron
 									["coord"] = { 32.5, 35.5, ISLE_OF_THUNDER },
 								}),
 							})),
@@ -601,11 +601,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(32707, {	-- Secrets in the Isle of Thunder
-						["qg"] = 70160,	-- Taran Zhu <Lord of the Shado-Pan>
 						["sourceQuests"] = {
 							32709,	-- Allies in the Shadows [Horde]
 							32706,	-- Allies in the Shadows [Alliance]
 						},
+						["qg"] = 70160,	-- Taran Zhu <Lord of the Shado-Pan>
 						["coord"] = { 51.4, 46.0, ISLE_OF_THUNDER },
 					}),
 					q(32708, {	-- Setting the Trap

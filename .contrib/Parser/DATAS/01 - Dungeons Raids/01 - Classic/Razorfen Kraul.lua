@@ -45,8 +45,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(30, 30, 10),
 				}),
 				q(26905, {	-- Agamaggan's Charge
-					["qg"] = 44415,	-- Spirit of Agamaggan
 					["sourceQuest"] = 26906,	-- Agamaggan
+					["qg"] = 44415,	-- Spirit of Agamaggan
 					["timeline"] = { ADDED_4_0_3 },
 					["lvl"] = lvlsquish(30, 30, 10),
 					["groups"] = {
@@ -74,24 +74,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(6522, {	-- An Unholy Alliance (1/2) (Before Wrathgate?)
-					["provider"] = { "i", 17008 },	-- Small Scroll
 					-- #if BEFORE 4.0.3
 					-- #if AFTER 3.3.0
 					["description"] = "This version of the quest is given to players that HAVE NOT completed The Wrath Gate yet.",
 					-- #endif
 					-- #endif
+					["provider"] = { "i", 17008 },	-- Small Scroll
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 28,
 				}),
 				q(14352, {	-- An Unholy Alliance (1/2) (After Wrathgate?)
-					["provider"] = { "i", 49205 },	-- Small Scroll
 					-- #if BEFORE 4.0.3
 					-- #if AFTER 3.3.0
 					["description"] = "This version of the quest is given to players that HAVE completed The Wrath Gate.",
 					-- #endif
 					-- #endif
+					["provider"] = { "i", 49205 },	-- Small Scroll
 					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 					["maps"] = { UNDERCITY },
 					["races"] = HORDE_ONLY,
@@ -227,8 +227,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(1101, {	-- The Crone of the Kraul
-					["qg"] = 4048,	-- Falfindel Waywarder
 					["sourceQuest"] = 1100,	-- Lonebrow's Journal
+					["qg"] = 4048,	-- Falfindel Waywarder
 					["coord"] = { 89.6, 46.6, FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,

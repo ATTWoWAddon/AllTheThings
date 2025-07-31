@@ -43,15 +43,15 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 					},
 				}),
 				q(48035, {	-- Angling For a Better Strike
-					["provider"] = { "i", 151861 },	-- Empyrium Dust
 					["sourceQuests"] = { 48034 },	-- Empyrium Deposit Chunk
+					["provider"] = { "i", 151861 },	-- Empyrium Dust
 					["groups"] = {
 						r(247849),	-- Empyrium Deposit [Rank 2]
 					},
 				}),
 				q(48036, {	-- Precision Perfected
-					["provider"] = { "i", 151862 },	-- Unusable Empyrium Core
 					["sourceQuests"] = { 48035 },	-- Angling For a Better Strike
+					["provider"] = { "i", 151862 },	-- Unusable Empyrium Core
 					["groups"] = {
 						r(247850),	-- Empyrium Deposit [Rank 3]
 					},
@@ -73,15 +73,15 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 					},
 				}),
 				q(48038, {	-- Don't Just Pick At It
-					["provider"] = { "i", 151864 },	-- Embedded Empyrium Ore
 					["sourceQuests"] = { 48037 },	-- Empyrium Seam Chunk
+					["provider"] = { "i", 151864 },	-- Embedded Empyrium Ore
 					["groups"] = {
 						r(247852),	-- Empyrium Seam [Rank 2]
 					},
 				}),
 				q(48039, {	-- Balancing the Break
-					["provider"] = { "i", 151865 },	-- Empyrium Bits
 					["sourceQuests"] = { 48038 },	-- Don't Just Pick At It
+					["provider"] = { "i", 151865 },	-- Empyrium Bits
 					["groups"] = {
 						r(247853),	-- Empyrium Seam [Rank 3]
 					},
@@ -109,18 +109,18 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 					},
 				}),
 				q(38800, {	-- Rin'thissa's Eye
-					["provider"] = { "i", 124499 },	-- Ore-Bound Eye
 					["sourceQuests"] = {
 						38799,	-- Darkheart Thicket: Nal'ryssa's Sisters
 						38795,	-- Felslate Deposit Sample
 					},
+					["provider"] = { "i", 124499 },	-- Ore-Bound Eye
 					["groups"] = {
 						r(184493),	-- Felslate Deposit [Rank 2]
 					},
 				}),
 				q(38803, {	-- Rin'thissa
-					["provider"] = { "n", 93893 },	-- Rin'thissa
 					["sourceQuests"] = { 38800 },	-- Rin'thissa's Eye
+					["provider"] = { "n", 93893 },	-- Rin'thissa
 					["coord"] = { 31.8, 65.8, SURAMAR },
 					["groups"] = {
 						r(184494),	-- Felslate Deposit [Rank 3]
@@ -146,18 +146,18 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 					},
 				}),
 				q(38801, {	-- Lyrelle's Right Arm
-					["provider"] = { "i", 124500 },	-- Severed Arm
 					["sourceQuests"] = {
 						38799,	-- Darkheart Thicket: Nal'ryssa's Sisters
 						38796,	-- Felslate Seam Sample
 					},
+					["provider"] = { "i", 124500 },	-- Severed Arm
 					["groups"] = {
 						r(184497),	-- Felslate Seam [Rank 2]
 					},
 				}),
 				q(38804, {	-- Lyrelle
-					["provider"] = { "n", 93776 },	-- Lyrelle
 					["sourceQuests"] = { 38801 },	-- Lyrelle's Right Arm
+					["provider"] = { "n", 93776 },	-- Lyrelle
 					["coord"] = { 28.0, 26.4, SURAMAR },
 					["groups"] = {
 						r(184498),	-- Felslate Seam [Rank 3]
@@ -183,7 +183,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 					},
 				}),
 				q(38807, {	-- Infernal Brimstone Analysis
-					["provider"] = { "n", 93189 },	-- Mama Diggs <Mining Trainer>
+					["description"] = "Need Rank 2 in all other mining ranks.",
 					["sourceQuests"] = {
 						38806,	-- Infernal Brimstone Sample
 						38800,	-- Rin'thissa's Eye
@@ -193,8 +193,8 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 						38802,	-- Ondri's Still-Beating Heart
 						38791,	-- Rethu's Horn
 					},
+					["provider"] = { "n", 93189 },	-- Mama Diggs <Mining Trainer>
 					["coord"] = { 46.2, 26.4, LEGION_DALARAN },
-					["description"] = "Need Rank 2 in all other mining ranks.",
 					["groups"] = {
 						r(184505),	-- Infernal Brimstone [Rank 2]
 						i(128392),	-- Deepholm Mineral Analysis (QI!)
@@ -203,29 +203,29 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 					},
 				}),
 				q(39790, {	-- Infernal Brimstone Theory
-					["provider"] = { "n", 93189 },	-- Mama Diggs <Mining Trainer>
 					["sourceQuests"] = { 38807 },	-- Infernal Brimstone Analysis
+					["provider"] = { "n", 93189 },	-- Mama Diggs <Mining Trainer>
 					["coord"] = { 46.2, 26.4, LEGION_DALARAN },
 					["groups"] = {
 						i(128852),	-- Infernal Brimstone Sample (QI!)
 					},
 				}),
 				q(39763, {	-- For Whom the Fel Tolls
-					["provider"] = { "n", 97360 },	-- Matthew Rabis <Feral Warlock>
 					["sourceQuests"] = { 39790 },	-- Infernal Brimstone Theory
+					["provider"] = { "n", 97360 },	-- Matthew Rabis <Feral Warlock>
 					["coord"] = { 47.2, 56.0, LEGION_THE_UNDERBELLY },
 					["groups"] = {
 						i(128813),	-- Fel Energy Core (QI!)
 					},
 				}),
 				q(39817, {	-- The Brimstone's Secret
-					["provider"] = { "n", 97360 },	-- Matthew Rabis <Feral Warlock>
 					["sourceQuests"] = { 39763 },	-- For Whom the Fel Tolls
+					["provider"] = { "n", 97360 },	-- Matthew Rabis <Feral Warlock>
 					["coord"] = { 47.2, 56.0, LEGION_THE_UNDERBELLY },
 				}),
 				q(39830, {	-- Hellfire Citadel: Hellfire and Brimstone
-					["provider"] = { "n", 93189 },	-- Mama Diggs <Mining Trainer>
 					["sourceQuests"] = { 39817 },	-- The Brimstone's Secret
+					["provider"] = { "n", 93189 },	-- Mama Diggs <Mining Trainer>
 					["coord"] = { 46.2, 26.4, LEGION_DALARAN },
 					["maps"] = { 661, 662, 663, 664, 665, 666, 667, 668, 669, 670 },	-- Hellfire Citadel
 					["groups"] = {
@@ -255,18 +255,18 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 					},
 				}),
 				q(38789, {	-- Rethu's Journal
-					["provider"] = { "i", 124492 },	-- Torn Journal Page
 					["sourceQuests"] = {
 						38777,	-- Leystone Deposit Sample
 						38787,	-- The Legend of Rethu Ironhorn
 					},
+					["provider"] = { "i", 124492 },	-- Torn Journal Page
 					["groups"] = {
 						r(184456),	-- Leystone Deposit [Rank 2]
 					},
 				}),
 				q(38792, {	-- Rethu's Lesson
-					["provider"] = { "n", 93735 },	-- Rethu Ironhorn
 					["sourceQuests"] = { 38789 },	-- Rethu's Journal
+					["provider"] = { "n", 93735 },	-- Rethu Ironhorn
 					["coord"] = { 37.8, 48.6, SURAMAR },
 					["groups"] = {
 						r(184457),	-- Leystone Deposit [Rank 3]
@@ -292,18 +292,18 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 					},
 				}),
 				q(38790, {	-- Rethu's Pick
-					["provider"] = { "i", 124493 },	-- Battered Mining Pick
 					["sourceQuests"] = {
 						38784,	-- Leystone Seam Sample
 						38787,	-- The Legend of Rethu Ironhorn
 					},
+					["provider"] = { "i", 124493 },	-- Battered Mining Pick
 					["groups"] = {
 						r(184485),	-- Leystone Seam [Rank 2]
 					},
 				}),
 				q(38793, {	-- Rethu's Experience
-					["provider"] = { "n", 93735 },	-- Rethu Ironhorn
 					["sourceQuests"] = { 38790 },	-- Rethu's Pick
+					["provider"] = { "n", 93735 },	-- Rethu Ironhorn
 					["coord"] = { 37.8, 48.6, SURAMAR },
 					["groups"] = {
 						r(184486),	-- Leystone Seam [Rank 3]
@@ -329,18 +329,18 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 					},
 				}),
 				q(38802, {	-- Ondri's Still-Beating Heart
-					["provider"] = { "i", 124501 },	-- Ore-Choked Heart
 					["sourceQuests"] = {
 						38799,	-- Darkheart Thicket: Nal'ryssa's Sisters
 						38797,	-- Living Felslate Sample
 					},
+					["provider"] = { "i", 124501 },	-- Ore-Choked Heart
 					["groups"] = {
 						r(184501),	-- Living Felslate [Rank 2]
 					},
 				}),
 				q(38805, {	-- Ondri
-					["provider"] = { "n", 93777 },	-- Ondri
 					["sourceQuests"] = { 38802 },	-- Ondri's Still-Beating Heart
+					["provider"] = { "n", 93777 },	-- Ondri
 					["coord"] = { 28.2, 57.0, SURAMAR },
 					["groups"] = {
 						r(184502),	-- Living Felslate [Rank 3]
@@ -370,18 +370,18 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 					},
 				}),
 				q(38791, {	-- Rethu's Horn
-					["provider"] = { "i", 124494 },	-- Chunk of Horn
 					["sourceQuests"] = {
 						38785,	-- Living Leystone Sample
 						38787,	-- The Legend of Rethu Ironhorn
 					},
+					["provider"] = { "i", 124494 },	-- Chunk of Horn
 					["groups"] = {
 						r(184489),	-- Living Leystone [Rank 2]
 					},
 				}),
 				q(38794, {	-- Rethu's Sacrifice
-					["provider"] = { "n", 93735 },	-- Rethu Ironhorn
 					["sourceQuests"] = { 38791 },	-- Rethu's Horn
+					["provider"] = { "n", 93735 },	-- Rethu Ironhorn
 					["groups"] = {
 						r(184490),	-- Living Leystone [Rank 3]
 					},
@@ -390,23 +390,23 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 		}),
 		n(QUESTS, {
 			q(38901, {	-- The Felsmiths
-				["provider"] = { "n", 93189 },	-- Mama Diggs <Mining Trainer>
+				["description"] = "You must complete all of the Rank 1 Felslate mining techniques before this quest will become available.\n\nWARNING: Completion of the chain is required for Rank 2 Quest Items to drop.",
 				["sourceQuests"] = {
 					38795,	-- Felslate Deposit Sample
 					38796,	-- Felslate Seam Sample
 					38797	-- Living Felslate Sample
 				},
+				["provider"] = { "n", 93189 },	-- Mama Diggs <Mining Trainer>
 				["coord"] = { 46.2, 26.4, LEGION_DALARAN },
-				["description"] = "You must complete all of the Rank 1 Felslate mining techniques before this quest will become available.\n\nWARNING: Completion of the chain is required for Rank 2 Quest Items to drop.",
 			}),
 			q(38798, {	-- A Shred of Your Humanity
-				["provider"] = { "n", 92264 },	-- Felsmith Nal'ryssa <Blacksmithing Trainer>
 				["sourceQuests"] = { 38901 },	-- The Felsmiths
+				["provider"] = { "n", 92264 },	-- Felsmith Nal'ryssa <Blacksmithing Trainer>
 				["coord"] = { 30.0, 53.4, SURAMAR },
 			}),
 			q(38799, {	-- Darkheart Thicket: Nal'ryssa's Sisters
-				["provider"] = { "n", 92264 },	-- Felsmith Nal'ryssa <Blacksmithing Trainer>
 				["sourceQuests"] = { 38798 },	-- A Shred of Your Humanity
+				["provider"] = { "n", 92264 },	-- Felsmith Nal'ryssa <Blacksmithing Trainer>
 				["coord"] = { 30.0, 53.4, SURAMAR },
 				["maps"] = { 733 },	-- Darkheart Thicket
 				["groups"] = {
@@ -415,18 +415,18 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 				},
 			}),
 			q(38888, {	-- The Highmountain Tauren
-				["provider"] = { "n", 93189 },	-- Mama Diggs <Mining Trainer>
+				["description"] = "You must complete all of the Rank 1 Leystone mining techniques before this quest will become available.\n\nWARNING: Completion of the chain is required for Rank 2 Quest Items to drop.",
 				["sourceQuests"] = {
 					38777,	-- Leystone Deposit Sample
 					38784,	-- Leystone Seam Sample
 					38785	-- Living Leystone Sample
 				},
+				["provider"] = { "n", 93189 },	-- Mama Diggs <Mining Trainer>
 				["coord"] = { 46.2, 26.4, LEGION_DALARAN },
-				["description"] = "You must complete all of the Rank 1 Leystone mining techniques before this quest will become available.\n\nWARNING: Completion of the chain is required for Rank 2 Quest Items to drop.",
 			}),
 			q(38786, {	-- Where Respect is Due
-				["provider"] = { "n", 93691 },	-- Ronos Ironhorn <Mining Trainer>
 				["sourceQuests"] = { 38888 },	-- The Highmountain Tauren
+				["provider"] = { "n", 93691 },	-- Ronos Ironhorn <Mining Trainer>
 				["maps"] = { 55.0, 84.0, HIGHMOUNTAIN },
 				["groups"] = {
 					i(128769),	-- Glass-Extracted Leystone (QI!)
@@ -434,8 +434,8 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 				},
 			}),
 			q(38787, {	-- The Legend of Rethu Ironhorn
-				["provider"] = { "n", 93691 },	-- Ronos Ironhorn <Mining Trainer>
 				["sourceQuests"] = { 38786 },	-- Where Respect is Due
+				["provider"] = { "n", 93691 },	-- Ronos Ironhorn <Mining Trainer>
 				["maps"] = { 55.0, 84.0, HIGHMOUNTAIN },
 			}),
 		}),
@@ -511,9 +511,9 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 			},
 			["groups"] = {
 				q(48752, {	-- A Need For Coal
+					["description"] = "Requires 50 Kul'Tiran Mining.",
 					["provider"] = { "n", 136091 },	-- Myra Cabot
 					["coord"] = { 75.01, 7.61, BORALUS },
-					["description"] = "Requires 50 Kul'Tiran Mining.",
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						r(253334),	-- Monelite Deposit [Rank 2]
@@ -521,9 +521,9 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 					},
 				}),
 				q(51962, {	-- Lumbering Away
+					["description"] = "Requires 50 Zandalari Mining",
 					["provider"] = { "n", 122694 },	-- Secott the Goldsmith
 					["coord"] = { 44.0, 39.0, DAZARALOR },
-					["description"] = "Requires 50 Zandalari Mining",
 					["requireSkill"] = MINING,
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -532,20 +532,20 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 					},
 				}),
 				q(48761, {	-- Spiderphobia
-					["provider"] = { "n", 136091 },	-- Myra Cabot
-					["sourceQuests"] = { 48752 },	-- A Need For Coal
-					["coord"] = { 75.01, 7.61, BORALUS },
 					["description"] = "Requires 130 Kul'Tiran Mining.",
+					["sourceQuests"] = { 48752 },	-- A Need For Coal
+					["provider"] = { "n", 136091 },	-- Myra Cabot
+					["coord"] = { 75.01, 7.61, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						r(253335),	-- Monelite Deposit [Rank 3]
 					},
 				}),
 				q(51964, {	-- Insufferable Bloodsuckers
-					["provider"] = { "n", 122694 },	-- Secott the Goldsmith
-					["sourceQuests"] = { 51962 },	-- Lumbering Away
-					["coord"] = { 44.0, 39.0, DAZARALOR },
 					["description"] = "Requires 130 Zandalari Mining",
+					["sourceQuests"] = { 51962 },	-- Lumbering Away
+					["provider"] = { "n", 122694 },	-- Secott the Goldsmith
+					["coord"] = { 44.0, 39.0, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						r(253335),	-- Monelite Deposit [Rank 3]
@@ -568,9 +568,9 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 			},
 			["groups"] = {
 				q(48764, {	-- Don't Pick a Fight
+					["description"] = "Requires 50 Kul'Tiran Mining.",
 					["provider"] = { "n", 136091 },	-- Myra Cabot
 					["coord"] = { 75.01, 7.61, BORALUS },
-					["description"] = "Requires 50 Kul'Tiran Mining.",
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						r(253343),	-- Monelite Seam [Rank 2]
@@ -578,9 +578,9 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 					},
 				}),
 				q(51965, {	-- Lending a Hand
+					["description"] = "Requires 50 Zandalari Mining",
 					["provider"] = { "n", 122694 },	-- Secott the Goldsmith
 					["coord"] = { 44.0, 39.0, DAZARALOR },
-					["description"] = "Requires 50 Zandalari Mining",
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						r(253343),	-- Monelite Seam [Rank 2]
@@ -588,19 +588,19 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 					},
 				}),
 				q(48767, {	-- Seams Familiar
-					["provider"] = { "i", 160905 },	-- Lost Anchor Necklace
-					["sourceQuests"] = { 48764 },	-- Don't Pick a Fight
 					["description"] = "This can drop from |cFFFFD700Monelite Seam|r at any mining level.  You can only turn it in at Level 150 Kul Tiran Mining.",
+					["sourceQuests"] = { 48764 },	-- Don't Pick a Fight
+					["provider"] = { "i", 160905 },	-- Lost Anchor Necklace
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						r(253344),	-- Monelite Seam [Rank 3]
 					},
 				}),
 				q(51971, {	-- An Exquisite Brooch
-					["provider"] = { "i", 160944 },	-- An Exquisite Brooch
-					["sourceQuests"] = { 51965 },	-- Lending a Hand
-					["coord"] = { 44.0, 39.0, DAZARALOR },
 					["description"] = "This can drop from |cFFFFD700Monelite Seam|r at any mining level.  You can only turn it in at Level 150 Zandalari Mining.",
+					["sourceQuests"] = { 51965 },	-- Lending a Hand
+					["provider"] = { "i", 160944 },	-- An Exquisite Brooch
+					["coord"] = { 44.0, 39.0, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						r(253344),	-- Monelite Seam [Rank 3]
@@ -669,39 +669,39 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 			},
 			["groups"] = {
 				q(52044, {	-- An Exceptional Platinum Shard [A]
-					["provider"] = { "i", 161078 },	-- Exceptional Platinum Shard [A]
 					["description"] = "This can drop from |cFFFFD700Platinum Deposits|r and |cFFFFD700Rich Platinum Deposits|r at any mining level.  You can only turn it in at Level 150 Kul Tiran Mining.",
+					["provider"] = { "i", 161078 },	-- Exceptional Platinum Shard [A]
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						r(253340),	-- Platinum Deposit [Rank 2]
 					},
 				}),
 				q(52046, {	-- An Exceptional Platinum Shard [H]
-					["provider"] = { "i", 161079 },	-- Exceptional Platinum Shard [H]
 					["description"] = "This can drop from |cFFFFD700Platinum Deposits|r and |cFFFFD700Rich Platinum Deposits|r at any mining level.  You can only turn it in at Level 150 Zandalari Mining.",
+					["provider"] = { "i", 161079 },	-- Exceptional Platinum Shard [H]
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						r(253340),	-- Platinum Deposit [Rank 2]
 					},
 				}),
 				q(52049, {	-- X Marks the Plat!
-					["provider"] = { "i", 161085 },	-- Tattered Map
-					["sourceQuests"] = { 52044 },	-- An Exceptional Platinum Shard [A]
 					["description"] = "This can drop from |cFFFFD700Platinum Deposits|r and |cFFFFD700Rich Platinum Deposits|r at any mining level.  You can only turn it in at Level 150 Kul Tiran Mining.",
+					["sourceQuests"] = { 52044 },	-- An Exceptional Platinum Shard [A]
+					["provider"] = { "i", 161085 },	-- Tattered Map
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(161085),	-- Tattered Map (QI!)
 					},
 				}),
 				q(52053, {	-- The Platinum Map
-					["provider"] = { "i", 161088 },	-- Platinum Map
-					["sourceQuests"] = { 52046 },	-- An Exceptional Platinum Shard [H]
 					["description"] = "This can drop from |cFFFFD700Platinum Deposits|r and |cFFFFD700Rich Platinum Deposits|r at any mining level.  You can only turn it in at Level 150 Zandalari Mining.",
+					["sourceQuests"] = { 52046 },	-- An Exceptional Platinum Shard [H]
+					["provider"] = { "i", 161088 },	-- Platinum Map
 					["races"] = HORDE_ONLY,
 				}),
 				q(52050, {	-- A More Challenging Career
-					["provider"] = { "n", 139746 },		-- First Mate Cinderfuse
 					["sourceQuests"] = { 52049 },	-- X Marks the Plat!
+					["provider"] = { "n", 139746 },		-- First Mate Cinderfuse
 					["coord"] = { 19.76, 44.54, DRUSTVAR },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -710,8 +710,8 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 					},
 				}),
 				q(52055, {	-- An Ore for an Eye
-					["provider"] = { "n", 139792 },	-- Ta'mil Nadu
 					["sourceQuests"] = { 52053 },	-- The Platinum Map
+					["provider"] = { "n", 139792 },	-- Ta'mil Nadu
 					["coord"] = { 27.6, 69.8, VOLDUN },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -739,13 +739,13 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 			},
 			["groups"] = {
 				q(51568, {	-- Ritualistic Preparations [A]
+					["description"] = "Requires 50 Kul'Tiran Mining\n73.4, 8.4 in Boralus is location of the Forge\n41.8, 30.0 in Tiragarde Sound is the location to get the Blessing",
 					["provider"] = { "n", 136091 },	-- Myra Cabot
 					["coords"] = {
 						{ 75.0, 7.6, BORALUS },	-- Trainer Location
 						{ 73.4, 8.4, BORALUS },	-- Forge
 						{ 41.8, 30.0, BORALUS },	-- Ingot Blessing
 					},
-					["description"] = "Requires 50 Kul'Tiran Mining\n73.4, 8.4 in Boralus is location of the Forge\n41.8, 30.0 in Tiragarde Sound is the location to get the Blessing",
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						r(253337),	-- Storm Silver Deposit [Rank 2]
@@ -755,13 +755,13 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 					},
 				}),
 				q(52014, {	-- Ritualistic Prepartions [H]
+					["description"] = "Requires 50 Zandalari Mining\n44.0, 38.3 in Daza'alor is location of the Forge\n52.8, 95.6 in Daza'alor harbor is the location to get the Blessing",
 					["provider"] = { "n", 122694 },	-- Secott the Goldsmith
 					["coords"] = {
 						{ 44.0, 39.0, DAZARALOR },	-- Trainer Location
 						{ 44.0, 38.3, DAZARALOR },	-- Forge
 						{ 52.8, 95.6, DAZARALOR },	-- Ingot Blessing
 					},
-					["description"] = "Requires 50 Zandalari Mining\n44.0, 38.3 in Daza'alor is location of the Forge\n52.8, 95.6 in Daza'alor harbor is the location to get the Blessing",
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						r(253337),	-- Storm Silver Deposit [Rank 2]
@@ -771,10 +771,10 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 					},
 				}),
 				q(48768, {	-- Brined Justice [A]
-					["provider"] = { "n", 136091 },	-- Myra Cabot
-					["sourceQuests"] = { 51568 },	-- Ritualistic Preparations [A]
-					["coord"] = { 75.01, 7.61, BORALUS },
 					["description"] = "Requires 135 Kul'Tiran Mining.",
+					["sourceQuests"] = { 51568 },	-- Ritualistic Preparations [A]
+					["provider"] = { "n", 136091 },	-- Myra Cabot
+					["coord"] = { 75.01, 7.61, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						r(253338),	-- Storm Silver Deposit [Rank 3]
@@ -783,10 +783,10 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 				}),
 
 				q(52015, {	-- Brined Justice [H]
-					["provider"] = { "n", 122694 },	-- Secott the Goldsmith
-					["sourceQuests"] = { 52014 },	-- Ritualistic Preparations [H]
-					["coord"] = { 44.0, 39.0, DAZARALOR },
 					["description"] = "Requires 135 Zandalari Mining",
+					["sourceQuests"] = { 52014 },	-- Ritualistic Preparations [H]
+					["provider"] = { "n", 122694 },	-- Secott the Goldsmith
+					["coord"] = { 44.0, 39.0, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						r(253338),	-- Storm Silver Deposit [Rank 3]
@@ -810,44 +810,45 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 			},
 			["groups"] = {
 				q(48770, {	-- Three Sheets to the Wind [A]
+					["description"] = "Requires 125 Kul'Tiran Mining\n75.25, 14.33 in Boralus is Harold Atkey Location\n75.51, 23.21 in Boralus is Franklin the Drunk Location\nWhen you visit Harold you want to buy \"Brennadam Apple Brand\".",
 					["provider"] = { "n", 136091 },	-- Myra Cabot
 					["coords"] = {
 						{ 75.0, 7.61, BORALUS },	-- Trainer Location
 						{ 75.2, 14.3, BORALUS },	-- Harold Atkey
 						{ 75.5, 23.2, BORALUS },	-- Franklin The Drunk
 					},
-					["description"] = "Requires 125 Kul'Tiran Mining\n75.25, 14.33 in Boralus is Harold Atkey Location\n75.51, 23.21 in Boralus is Franklin the Drunk Location\nWhen you visit Harold you want to buy \"Brennadam Apple Brand\".",
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						r(253346),	-- Storm Silver Seam [Rank 2]
 					},
 				}),
 				q(52016, {	-- Three Sheets to the Wind [H]
+					["description"] = "Requires 125 Zandalari Mining",
 					["provider"] = { "n", 122694 },	-- Secott the Goldsmith
 					["coord"] = { 44.0, 39.0, DAZARALOR },
-					["description"] = "Requires 125 Zandalari Mining",
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						r(253346),	-- Storm Silver Seam [Rank 2]
 					},
 				}),
 				q(51380, {	-- Back to Franklin
-					["provider"] = { "n", 136091 },	-- Myra Cabot
-					["sourceQuests"] = { 48770 },	-- Three Sheets to the Wind [A]
-					["coord"] = { 75.01, 7.61, BORALUS },
 					["description"] = "Requires 150 Kul'Tiran Mining.",
+					["sourceQuests"] = { 48770 },	-- Three Sheets to the Wind [A]
+					["provider"] = { "n", 136091 },	-- Myra Cabot
+					["coord"] = { 75.01, 7.61, BORALUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52017, {	-- Back to Biru
-					["provider"] = { "n", 122694 },	-- Secott the Goldsmith
-					["sourceQuests"] = { 52016 },	-- Three Sheets to the Wind [H]
-					["coord"] = { 44.0, 39.0, DAZARALOR },
 					["description"] = "Requires 150 Zandalari Mining",
+					["sourceQuests"] = { 52016 },	-- Three Sheets to the Wind [H]
+					["provider"] = { "n", 122694 },	-- Secott the Goldsmith
+					["coord"] = { 44.0, 39.0, DAZARALOR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(51889, {	-- The Wrath of Grapes [A]
-					["provider"] = { "n", 139375 },	-- Franklin the Drunk
+					["description"] = "Requires 150 Kul'Tiran Mining.",
 					["sourceQuests"] = { 51380 },	-- Back to Franklin
+					["provider"] = { "n", 139375 },	-- Franklin the Drunk
 					["coords"] = {
 						{ 75.6, 23.5, BORALUS },	-- Franklin the Drunk
 						{ 69.3, 13.0, BORALUS },	-- Hilock of Eggs
@@ -855,7 +856,6 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 						{ 70.4, 9.67, BORALUS },	-- Mountain of Bacon
 						{ 72.5, 11.6, BORALUS },	-- Pile of Sausages
 					},
-					["description"] = "Requires 150 Kul'Tiran Mining.",
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						r(253347),	-- Storm Silver Seam [Rank 3]
@@ -866,10 +866,10 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 					},
 				}),
 				q(52043, {	-- The Wrath of Grapes [H]
-					["provider"] = { "n", 139634 },	-- Biru The Drunk
-					["sourceQuests"] = { 52017 },	-- Back to Biru
-					["coord"] = { 52.7, 84.3, DAZARALOR },
 					["description"] = "Requires 150 Zandalari Mining",
+					["sourceQuests"] = { 52017 },	-- Back to Biru
+					["provider"] = { "n", 139634 },	-- Biru The Drunk
+					["coord"] = { 52.7, 84.3, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						r(253347),	-- Storm Silver Seam [Rank 3]
@@ -1196,8 +1196,8 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 				["coord"] = { 61.4, 76.9, THALDRASZUS },
 			}),
 			q(70192, {	-- Specialized Secrets: Mining
-				["provider"] = { "n", 193110 },	-- Khadin
 				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
+				["provider"] = { "n", 193110 },	-- Khadin
 				["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
 				["cost"] = {{ "i", 191784, 1 }},	-- Dragon Shard of Knowledge
 				["isRepeatable"] = true,
@@ -1242,8 +1242,8 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 			i(199122),	-- Mining Field Notes
 			q(74106, {		-- DF Inscription Order: Mining
 				["name"] = "DF Inscription Order: Mining",
-				["provider"] = { "i", 194708 },	-- Draconic Treatise on Mining
 				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 194708 },	-- Draconic Treatise on Mining
 			}),
 			q(72160, {	-- DF Weekly Mining Knowledgepoint #1
 				["name"] = "DF Weekly Mining Knowledgepoint #1",
@@ -1312,12 +1312,12 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 		})),
 		n(QUESTS, {
 			q(91420, {	-- Swap Meet
+				["description"] = "Obtained the first time you harvest Desolate Deposit.",
 				["providers"] = {
 					{ "i", 246504 },	-- Inscrutable Ore
 					{ "o", 523491 },	-- Desolate Deposit
 					{ "o", 523512 },	-- Rich Desolate Deposit
 				},
-				["description"] = "Obtained the first time you harvest Desolate Deposit.",
 				["timeline"] = { ADDED_11_2_0 }
 			}),
 		}),

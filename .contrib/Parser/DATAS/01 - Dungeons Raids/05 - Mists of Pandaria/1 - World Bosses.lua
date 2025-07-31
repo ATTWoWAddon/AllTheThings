@@ -593,9 +593,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 			applyclassicphase(MOP_PHASE_ONE, e(725, {	-- Saylis's Warband [Galleon]
 				["questID"] = 32098,
 				["coord"] = { 70.79, 63.51, VALLEY_OF_THE_FOUR_WINDS },
-				["maps"] = {	-- all Valley of the Four Winds maps
-					377,	-- Cavern of Endless Echoes
-				},
+				["maps"] = { VALLEY_OF_THE_FOUR_WINDS_CAVERN_OF_ENDLESS_ECHOES },	-- CRIEVE NOTE: TODO: I don't think this is necessary anymore?
 				["crs"] = { 62346 },	-- Galleon
 				["groups"] = {
 					ach(6517),	-- Extinction Event

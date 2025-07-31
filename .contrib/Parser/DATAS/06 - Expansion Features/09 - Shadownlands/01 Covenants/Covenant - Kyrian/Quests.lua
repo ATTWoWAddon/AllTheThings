@@ -51,49 +51,49 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 	n(KYRIAN, {
 		n(QUESTS, {
 			q(63211, {	-- Report to Adrestes
-				["provider"] = { "n", 159478 },	-- Tal-Inara
 				["sourceQuests"] = {
 					-- TODO: confirm
 					57878,	-- Choosing Your Purpose [Story]
 					62000,	-- Choosing Your Purpose [Skip]
 				},
 				["sourceQuestNumRequired"] = 1,
+				["provider"] = { "n", 159478 },	-- Tal-Inara
 				["coord"] = { 39.2, 69.7, ORIBOS },
 				["isBreadcrumb"] = true,
 			}),
 			q(60491, {	-- Among the Kyrian
-				["provider"] = { "n", 171787 },	-- Polemarch Adrestes
 				["sourceQuests"] = {
 					57878,	-- Choosing Your Purpose [Story]
 					62000,	-- Choosing Your Purpose [Skip]
 					63211,	-- Report to Adrestes [Skip]
 				},
 				["sourceQuestNumRequired"] = 1,
+				["provider"] = { "n", 171787 },	-- Polemarch Adrestes
 				["coord"] = { 36.1, 64.1, ORIBOS },
 			}),
 			q(58997, {	-- A Bittersweet Prize
-				["provider"] = { "n", 163328 },	-- Pelagos
 				["sourceQuests"] = { 58995 },	-- I Dreamed A Dream
+				["provider"] = { "n", 163328 },	-- Pelagos
 				["coord"] = { 45.2, 65.4, ARDENWEALD },
 			}),
 			q(62698, {	-- A Call to Service
-				["provider"] = { "n", 176100 },	-- Iona Skyblade
 				["sourceQuests"] = { 62790 },	-- The Path Provides
+				["provider"] = { "n", 176100 },	-- Iona Skyblade
 				["coord"] = { 42.7, 69.8, ARCHONS_RISE },
 			}),
 			q(62795, {	-- A Conduit for Good
-				["provider"] = { "n", 160212 },	-- Soulguide Daelia
 				["sourceQuests"] = { 60504 },	-- Strengthen the Bond
+				["provider"] = { "n", 160212 },	-- Soulguide Daelia
 				["coord"] = { 59.5, 34.2, SANCTUM_OF_BINDING },
 			}),
 			q(58791, {	-- A Day in the Life
-				["provider"] = { "n", 162558 },	-- Alithea
 				["sourceQuests"] = { 58790 },
+				["provider"] = { "n", 162558 },	-- Alithea
 				["coord"] = { 32.5, 39.7, REDRIDGE_MOUNTAINS },
 			}),
 			q(61697, {	-- A New Age
-				["provider"] = { "n", 174177 },	-- Polemarch Adrestes
 				["sourceQuests"] = { 61135 },	-- Heart of the Crest
+				["provider"] = { "n", 174177 },	-- Polemarch Adrestes
 				["coord"] = { 43.7, 66.6, ARCHONS_RISE },
 				["groups"] = {
 					i(180766),	-- Eternal Phalynx of Courage (MOUNT!)
@@ -102,65 +102,65 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 			}),
 			q(58178, {	-- A Partner for Eternity
-				["provider"] = { "n", 160280 },	-- Mikanikos
 				["sourceQuests"] = { 58180 },	-- Phaestus, Genesis of Aeons
+				["provider"] = { "n", 160280 },	-- Mikanikos
 				["coord"] = { 50.1, 20.5, BASTION },
 			}),
 			q(61767, {	-- A Perilous Journey
-				["provider"] = { "n", 154627 },	-- Xandria
 				["sourceQuests"] = { 61785 },	-- An Expected Visitor
+				["provider"] = { "n", 154627 },	-- Xandria
 				["coord"] = { 61.8, 37.5, ARCHONS_RISE },
 			}),
 			q(60492, {	-- A Proper Reception
-				["provider"] = { "n", 168742 },	-- Polemarch Adrestes
 				["sourceQuests"] = { 60491 },	-- Among the Kyrian
+				["provider"] = { "n", 168742 },	-- Polemarch Adrestes
 				["coord"] = { 56.8, 31.4, BASTION },
 			}),
 			q(57122, {	-- A Step Too Far
-				["provider"] = { "n", 170375 },	-- Kleia
 				["sourceQuests"] = { 57121 },	-- The Power of the Maw
+				["provider"] = { "n", 170375 },	-- Kleia
 				["coord"] = { 33.8, 55.7, THE_MAW },
 			}),
 			q(62555, {	-- A Touch of Humility
-				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 				["sourceQuests"] = { 57125 },	-- Time to Reflect
+				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 				["coord"] = { 55.6, 42.0, ARCHONS_RISE },
 			}),
 			q(57905, {	-- A Unique Opportunity
-				["provider"] = { "n", 167745 },	-- Haephus
 				["sourceQuests"] = { 62792 },	-- Into the Reservoir
+				["provider"] = { "n", 167745 },	-- Haephus
 				["coord"] = { 42.6, 53.1, ARCHONS_RISE },
 			}),
 			q(58566, {	-- Actions Speak Louder than Words
-				["provider"] = { "n", 161553 },	-- Mindscorched Alwin
 				["sourceQuests"] = { 58565 },	-- Land of Light
+				["provider"] = { "n", 161553 },	-- Mindscorched Alwin
 				["coord"] = { 31.9, 47.5, REVENDRETH },
 			}),
 			q(61778, {	-- Aerial Advantage
-				["provider"] = { "n", 167810 },	-- Emeni
 				["sourceQuests"] = { 61776 },	-- Trouble on the Western Front
+				["provider"] = { "n", 167810 },	-- Emeni
 				["coord"] = { 28.5, 37.5, MALDRAXXUS },
 				["groups"] = {
 					i(180899),	-- Riding Hook (QI!)
 				},
 			}),
 			q(57114, {	-- Aerial Reconnaissance
-				["provider"] = { "n", 156361 },	-- Kleia
 				["sourceQuests"] = { 57113 },	-- Lysonia's Trail
+				["provider"] = { "n", 156361 },	-- Kleia
 				["coord"] = { 61.8, 43.6, BASTION },
 			}),
 			q(61775, {	-- An Early End
-				["provider"] = { "n", 168743 },	-- Apolon
 				["sourceQuests"] = {
 					61770,	-- The Butchers of Bastion
 					61771,	-- Justice from Above
 					61772,	-- Dark Developments
 				},
+				["provider"] = { "n", 168743 },	-- Apolon
 				["coord"] = { 35.3, 25.9, MALDRAXXUS },
 			}),
 			q(59919, {	-- An Earned Bond
-				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 				["sourceQuests"] = { 58847 },	-- Kyrestia's Grace
+				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 				["coord"] = { 55.6, 42.0, ARCHONS_RISE },
 				["lockCriteria"] = { 1, "questID", 65147 },	-- No Ordinary Steward
 				["groups"] = {
@@ -168,14 +168,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 			}),
 			q(61785, {	-- An Expected Visitor
-				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
-				["sourceQuests"] = { 58181 },	-- Building the Base
-				["coord"] = { 55.6, 42.2, ARCHONS_RISE },
 				["description"] = "Requires Renown 11.",
+				["sourceQuests"] = { 58181 },	-- Building the Base
+				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
+				["coord"] = { 55.6, 42.2, ARCHONS_RISE },
 			}),
 			q(58795, {	-- Ascended
-				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 				["sourceQuests"] = { 58793 },	-- Faith Through the Darkness
+				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 				["coord"] = { 47.8, 53.6, ARCHONS_RISE },
 				["groups"] = {
 					i(178157),	-- Selfless Watcher's Legguards
@@ -185,103 +185,103 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 			}),
 			q(58557, {	-- Assistance from Sinfall
-				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
-				["sourceQuests"] = { 61878 },	-- Creat of Greatness
-				["coord"] = { 45.0, 56.9, ARCHONS_RISE },
 				["description"] = "Requires Renown 13.",
+				["sourceQuests"] = { 61878 },	-- Creat of Greatness
+				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
+				["coord"] = { 45.0, 56.9, ARCHONS_RISE },
 			}),
 			q(58844, {	-- Before the Dawn
-				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 				["sourceQuests"] = { 58854 },	-- Convene the Paragons
+				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 				["coord"] = { 55.6, 42.0, ARCHONS_RISE },
 			}),
 			q(58181, {	-- Building the Base
-				["provider"] = { "n", 160280 },	-- Mikanikos
 				["sourceQuests"] = { 58183 },	-- Friend to the Forgelite
+				["provider"] = { "n", 160280 },	-- Mikanikos
 				["coord"] = { 45.2, 56.7, ARCHONS_RISE },
 				["groups"] = {
 					i(180763),	-- Phalynx of Courage (MOUNT!)
 				},
 			}),
 			q(61774, {	-- Burn Before Reading
-				["provider"] = { "n", 168744 },	-- Artemede
 				["sourceQuests"] = {
 					61770,	-- The Butchers of Bastion
 					61771,	-- Justice from Above
 					61772,	-- Dark Developments
 				},
+				["provider"] = { "n", 168744 },	-- Artemede
 				["coord"] = { 35.1, 26.8, MALDRAXXUS },
 				["groups"] = {
 					i(180845),	-- Stitchflesh Design (QI!)
 				},
 			}),
 			q(58788, {	-- Censers of Guidance
-				["provider"] = { "n", 162542 },	-- Kleia
 				["sourceQuests"] = { 58787 },	-- Trial of Ascension
+				["provider"] = { "n", 162542 },	-- Kleia
 				["coord"] = { 33.2, 26.1, BASTION },
 				["groups"] = {
 					i(174821),	-- Incense of Guidance (QI!)
 				},
 			}),
 			q(61777, {	-- Charging The Blade
-				["provider"] = { "n", 166211 },	-- Alexandros Mograine
 				["sourceQuests"] = { 61776 },	-- Trouble on the Western Front
+				["provider"] = { "n", 166211 },	-- Alexandros Mograine
 				["coord"] = { 28.8, 38.1, MALDRAXXUS },
 			}),
 			q(58562, {	-- Collecting Dust
-				["provider"] = { "n", 161544 },	-- The Curator
 				["sourceQuests"] = {
 					58558,	-- Overhead Intelligence
 					58559,	-- Eyes of the Master
 					58560,	-- Gothic Fashion
 				},
+				["provider"] = { "n", 161544 },	-- The Curator
 				["coord"] = { 56.3, 41.4, REVENDRETH },
 			}),
 			q(57120, {	-- Compassion, Blade of Humility
-				["provider"] = { "o", 353472 },	-- Radiant Sword
 				["sourceQuests"] = { 57114 },	-- Aerial Reconnaissance
+				["provider"] = { "o", 353472 },	-- Radiant Sword
 				["coord"] = { 64.7, 45.6, BASTION },
 			}),
 			q(58854, {	-- Convene the Paragons
-				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
-				["sourceQuests"] = { 62555 },	-- A Touch of Humility
-				["coord"] = { 55.6, 42.0, ARCHONS_RISE },
 				["description"] = "Requires Renown 22.",
+				["sourceQuests"] = { 62555 },	-- A Touch of Humility
+				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
+				["coord"] = { 55.6, 42.0, ARCHONS_RISE },
 			}),
 			q(61878, {	-- Crest of Greatness
-				["provider"] = { "n", 173313 },	-- Xandria
 				["sourceQuests"] = { 61877 },	-- Return to the Hold
+				["provider"] = { "n", 173313 },	-- Xandria
 				["coord"] = { 38.9, 59.8, ARCHONS_RISE },
 				["groups"] = {
 					i(182341),	-- Fleshshaper's Heart (QI!)
 				},
 			}),
 			q(57897, {	-- Dangerous to Go Alone
-				["provider"] = { "n", 167745 },	-- Haephus
 				["sourceQuests"] = { 62794 },	-- Enhancing the Hold
+				["provider"] = { "n", 167745 },	-- Haephus
 				["coord"] = { 42.6, 53.1, ARCHONS_RISE },
 			}),
 			q(63002, {	-- Dangerous to Go Alone
-				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 			--	TODO: verify coordinates and SQs for this version (possibly when you bypass the 'tour' of Elysian Hold and say you already know your way around?)
 			--	["sourceQuests"] = {  },	--
+				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 				["coord"] = { 55.6, 42.0, ARCHONS_RISE },
 			}),
 			q(61772, {	-- Dark Developments
-				["provider"] = { "o", 357246 },	-- Tattered Scroll
 				["sourceQuests"] = { 61769 },	-- Fight and Flight
+				["provider"] = { "o", 357246 },	-- Tattered Scroll
 				["coord"] = { 33.5, 24.1, MALDRAXXUS },
 				["groups"] = {
 					i(181285),	-- Abhorrent Design (QI!)
 				},
 			}),
 			q(61773, {	-- Descended
-				["provider"] = { "n", 166333 },	-- Xandria
 				["sourceQuests"] = {
 					61770,	-- The Butchers of Bastion
 					61771,	-- Justice from Above
 					61772,	-- Dark Developments
 				},
+				["provider"] = { "n", 166333 },	-- Xandria
 				["coord"] = { 35.5, 26.4, MALDRAXXUS },
 				["groups"] = {
 					i(177056),	-- Selfless Bearer's Waist
@@ -291,27 +291,27 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 			}),
 			q(58182, {	-- Dismantling the Opposition
-				["provider"] = { "n", 160280 },	-- Mikanikos
 				["sourceQuests"] = { 58178 },	-- A Partner for Eternity
+				["provider"] = { "n", 160280 },	-- Mikanikos
 				["coord"] = { 50.1, 20.5, BASTION },
 			}),
 			q(57118, {	-- Distorted by the Maw
-				["provider"] = { "n", 156327 },	-- Voitha
 				["sourceQuests"] = {
 					57115,	-- Sacred Scrolls of Humility
 					57116,	-- Succumbing to Pride
 					57120,	-- Compassion, Blade of Humility
 				},
+				["provider"] = { "n", 156327 },	-- Voitha
 				["coord"] = { 66.0, 47.0, BASTION },
 			}),
 			q(57895, {	-- Elysian Hold
-				["provider"] = { "n", 168906 },	-- Polemarch Adrestes
 				["sourceQuests"] = { 60492 },	-- A Proper Reception
+				["provider"] = { "n", 168906 },	-- Polemarch Adrestes
 				["coord"] = { 58.4, 28.9, BASTION },
 			}),
 			q(62794, {	-- Enhancing the Hold
-				["provider"] = { "n", 167745 },    -- Haephus
 				["sourceQuests"] = { 62837 },	-- Hopeful News
+				["provider"] = { "n", 167745 },    -- Haephus
 				["coord"] = { 42.6, 53.1, ARCHONS_RISE },
 				-- TODO: verify SQ.  should be this, or It's All Coming Together
 				-- does not rely on 62796 [Return to Adrestes]
@@ -324,11 +324,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 			}),
 			q(58937, {	-- Evil Grubbies
+				["sourceQuests"] = { 58905 },	-- Picking Up Pelagos
 				["qgs"] = {
 					162392,	-- Willowblossom
 					163060,	-- Willowblossom
 				},
-				["sourceQuests"] = { 58905 },	-- Picking Up Pelagos
 				["coord"] = { 50.5, 68.9, ARDENWEALD },
 				["groups"] = {
 					i(174938),	-- Devourer Essence (QI!)
@@ -339,43 +339,43 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 			}),
 			q(58559, {	-- Eyes of the Master
-				["provider"] = { "n", 161540 },	-- Kleia
 				["sourceQuests"] = { 58557 },	-- Assistance from Sinfall
+				["provider"] = { "n", 161540 },	-- Kleia
 				["coord"] = { 60.2, 60.8, REVENDRETH },
 			}),
 			q(58793, {	-- Faith Through the Darkness
-				["provider"] = { "n", 162542 },	-- Kleia
 				["sourceQuests"] = { 58792 },	-- Where a Soul Belongs
+				["provider"] = { "n", 162542 },	-- Kleia
 				["coord"] = { 43.6, 51.6, 1671 },	-- Oribos
 			}),
 			q(57117, {	-- Fallen to Their Vices
-				["provider"] = { "n", 156327 },	-- Voitha
 				["sourceQuests"] = {
 					57115,	-- Sacred Scrolls of Humility
 					57116,	-- Succumbing to Pride
 					57120,	-- Compassion, Blade of Humility
 				},
+				["provider"] = { "n", 156327 },	-- Voitha
 				["coord"] = { 66.0, 47.0, BASTION },
 				["groups"] = {
 					i(181291),	-- Selfless Sigil of the Archon
 				},
 			}),
 			q(61769, {	-- Fight and Flight
-				["provider"] = { "n", 171483 },	-- Baroness Draka
 				["sourceQuests"] = { 61768 },	-- Stronger Together
+				["provider"] = { "n", 171483 },	-- Baroness Draka
 				["coord"] = { 36.3, 36.6, MALDRAXXUS },
 			}),
 			q(58948, {	-- Food on the Table
-				["provider"] = { "n", 162953 },	-- Sarah Howell
 				["sourceQuests"] = { 58791 },	-- A Day in the Life
+				["provider"] = { "n", 162953 },	-- Sarah Howell
 				["coord"] = { 21.6, 42.0, REDRIDGE_MOUNTAINS },
 				["groups"] = {
 					i(174935),	-- Rabbit Meat (QI!)
 				},
 			}),
 			q(58797, {	-- Forged by Trial
-				["provider"] = { "n", 163650 },	-- Kleia
 				["sourceQuests"] = { 58796 },	-- The Forsworn Onslaught
+				["provider"] = { "n", 163650 },	-- Kleia
 				["coord"] = { 51.6, 47.7, ARCHONS_RISE },
 				["lockCriteria"] = { 1, "questID", 65168 },	-- My Wings Are Yours
 				["groups"] = {
@@ -383,36 +383,36 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 			}),
 			q(58183, {	-- Friend to the Forgelite
-				["provider"] = { "n", 160280 },	-- Mikanikos
 				["sourceQuests"] = { 58182 },	-- Dismantling the Opposition
+				["provider"] = { "n", 160280 },	-- Mikanikos
 				["coord"] = { 50.1, 20.5, BASTION },
 			}),
 			q(62832, {	-- Friends in Dark Places
-				["provider"] = { "n", 160212 },	-- Soulguide Daelia
 				["sourceQuests"] = { 57905 },	-- A Unique Opportunity
+				["provider"] = { "n", 160212 },	-- Soulguide Daelia
 				["coord"] = { 59.5, 34.2, SANCTUM_OF_BINDING },
 			}),
 			q(58816, {	-- Getting Backstage
-				["provider"] = { "n", 162679 },	-- Willowblossom
 				["sourceQuests"] = {
 					58856,	-- Who Are You Fooling?
 					58832,	-- Trinkle Trinkle Little Twerp
 				},
+				["provider"] = { "n", 162679 },	-- Willowblossom
 				["groups"] = {
 					i(174845),	-- Wreath of Night's Veil Flowers (QI!)
 				},
 			}),
 			q(58938, {	-- Gorm Ruin Everything
+				["sourceQuests"] = { 58905 },	-- Picking Up Pelagos
 				["qgs"] = {
 					162392,	-- Willowblossom
 					163060,	-- Willowblossom
 				},
-				["sourceQuests"] = { 58905 },	-- Picking Up Pelagos
 				["coord"] = { 50.5, 68.9, ARDENWEALD },
 			}),
 			q(58560, {	-- Gothic Fashion
-				["provider"] = { "n", 165011 },	-- Pelagos
 				["sourceQuests"] = { 58557 },	-- Assistance from Sinfall
+				["provider"] = { "n", 165011 },	-- Pelagos
 				["coord"] = { 50.6, 52.1, REVENDRETH },
 				["groups"] = {
 					i(174336),	-- Crimson Cravat (QI!)
@@ -423,13 +423,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 			}),
 			q(61779, {	-- Grave Intent
-				["provider"] = { "n", 167173 },	-- Baroness Vashj
 				["sourceQuests"] = { 61776 },	-- Trouble on the Western Front
+				["provider"] = { "n", 167173 },	-- Baroness Vashj
 				["coord"] = { 28.6, 37.6, MALDRAXXUS },
 			}),
 			q(61135, {	-- Heart of the Crest
-				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 				["sourceQuests"] = { 58997 },	-- A Bittersweet Prize
+				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 				["coord"] = { 55.6, 42.0, ARCHONS_RISE },
 				["_drop"] = { "g" },	-- fix Grubby showing up as a reward when it is not a reward for this quest
 				["groups"] = {
@@ -437,11 +437,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 			}),
 			q(57124, {	-- Her Will, Inflicted
-				["provider"] = { "n", 170375 },	-- Kleia
 				["sourceQuests"] = {
 					57122,	-- A Step Too Far
 					57123,	-- Kyrian No More
 				},
+				["provider"] = { "n", 170375 },	-- Kleia
 				["coord"] = { 33.5, 56.4, THE_MAW },
 				["groups"] = {
 					i(177051),	-- Selfless Bearer's Chest
@@ -451,21 +451,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 			}),
 			q(58995, {	-- I Dreamed A Dream
-				["provider"] = { "n", 163328 },	-- Pelagos
 				["sourceQuests"] = { 58857 },	-- Seeds Away!
+				["provider"] = { "n", 163328 },	-- Pelagos
 				["coord"] = { 45.2, 65.4, ARDENWEALD },
 				["groups"] = {
 					i(175153),	-- Vessel of Ardenweald (QI!)
 				},
 			}),
 			q(62792, {	-- Into the Reservoir
-				["provider"] = { "n", 167745 },	-- Haephus
 				["sourceQuests"] = { 62791 },	-- Our Most Precious Resource
+				["provider"] = { "n", 167745 },	-- Haephus
 				["coord"] = { 42.6, 53.1, ARCHONS_RISE },
 			}),
 			q(58179, {	-- Instruments of Perfection
-				["provider"] = { "n", 160648 },	-- Sika
 				["sourceQuests"] = { 58175 },	-- The Eternal Forge
+				["provider"] = { "n", 160648 },	-- Sika
 				["coord"] = { 50.1, 20.6, BASTION },
 				["groups"] = {
 					i(173910),	-- Gracepetal Incense Burner (QI!)
@@ -474,107 +474,107 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 			}),
 			q(62793, {	-- It's All Coming Together
-				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 				["sourceQuests"] = { 62796 },	-- Return to Adrestes
+				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 				["coord"] = { 55.6, 42.0, ARCHONS_RISE },
 				["_drop"] = { "g" },	-- make items stop showing up that are not actually rewarded by this quest
 			}),
 			q(61771, {	-- Justice from Above
-				["provider"] = { "n", 166333 },	-- Xandria
 				["sourceQuests"] = { 61769 },	-- Fight and Flight
+				["provider"] = { "n", 166333 },	-- Xandria
 				["coord"] = { 35.5, 26.4, MALDRAXXUS },
 			}),
 			q(57123, {	-- Kyrian No More
-				["provider"] = { "n", 170375 },	-- Kleia
 				["sourceQuests"] = { 57121 },	-- The Power of the Maw
+				["provider"] = { "n", 170375 },	-- Kleia
 				["coord"] = { 33.8, 55.7, THE_MAW },
 			}),
 			q(63345, {	-- Kyrian Tactician
+				["description"] = "Requires Renown 22.",
 				["provider"] = { "n", 176100 },	-- Iona Skyblade
 				["coord"] = { 42.7, 70.3, ARCHONS_RISE },
-				["description"] = "Requires Renown 22.",
 				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_0 },
 			}),
 			q(64086, {	-- Kyrian Tactician #2
+				["description"] = "Requires Renown 59.",
 				["provider"] = { "n", 176100 },	-- Iona Skyblade
 				["coord"] = { 42.7, 70.3, ARCHONS_RISE },
-				["description"] = "Requires Renown 59.",
 			}),
 			q(63344, {	-- Kyrian Veteran
+				["description"] = "Requires Renown 7.",
 				["provider"] = { "n", 176100 },	-- Iona Skyblade
 				["coord"] = { 42.7, 70.3, ARCHONS_RISE },
-				["description"] = "Requires Renown 7.",
 				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_0 },
 			}),
 			q(64323, {	-- Kyrian Veteran #2
+				["description"] = "Requires Renown 43.",
 				["provider"] = { "n", 176100 },	-- Iona Skyblade
 				["coord"] = { 42.7, 70.3, ARCHONS_RISE },
-				["description"] = "Requires Renown 43.",
 			}),
 			q(58847, {	-- Kyrestia's Grace
-				["provider"] = { "n", 166693 },	-- Polemarch Adrestes
 				["sourceQuests"] = { 58846 },	-- The Greater Good
+				["provider"] = { "n", 166693 },	-- Polemarch Adrestes
 				["coord"] = { 67.4, 15.2, BASTION },
 				["_drop"] = { "g" },	-- make a bunch of vendor items stop showing up that are not actually rewarded by this quest
 				["groups"] = LFR_WEAPON_GROUP,
 			}),
 			q(58951, {	-- Lakeshire's Last Stand
-				["provider"] = { "n", 163111 },	-- Magistrate Solomon
 				["sourceQuests"] = { 58950 },	-- Lumber for Lakeshire
+				["provider"] = { "n", 163111 },	-- Magistrate Solomon
 				["coord"] = { 28.9, 41.1, REDRIDGE_MOUNTAINS },
 			}),
 			q(58565, {	-- Land of Light
-				["provider"] = { "n", 161544 },	-- The Curator
 				["sourceQuests"] = { 58564 },	-- Sins of the Past
+				["provider"] = { "n", 161544 },	-- The Curator
 				["coord"] = { 58.1, 27.5, REVENDRETH },
 			}),
 			q(58568, {	-- Light Respite
-				["provider"] = { "n", 161540 },	-- Kleia
 				["sourceQuests"] = { 58565 },	-- Land of Light
+				["provider"] = { "n", 161540 },	-- Kleia
 				["coord"] = { 31.9, 47.7, REVENDRETH },
 				["groups"] = {
 					i(174497),	-- Brushberry (QI!)
 				},
 			}),
 			q(58950, {	-- Lumber for Lakeshire
-				["provider"] = { "n", 162953 },	-- Sarah Howell
 				["sourceQuests"] = {
 					58948,	-- Food on the Table
 					58949,	-- Millie's Garden
 				},
+				["provider"] = { "n", 162953 },	-- Sarah Howell
 				["coord"] = { 21.6, 42.0, REDRIDGE_MOUNTAINS },
 				["groups"] = {
 					i(174997),	-- Bundle of Lumber (QI!)
 				},
 			}),
 			q(57207, {	-- Lysonia's Plan
-				["provider"] = { "n", 156361 },	-- Kleia
 				["sourceQuests"] = {
 					57118,	-- Distorted by the Maw
 					57117,	-- Fallen to Their Vices
 				},
+				["provider"] = { "n", 156361 },	-- Kleia
 				["coord"] = { 68.3, 41.6, BASTION },
 			}),
 			q(57113, {	-- Lysonia's Trail
-				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
-				["sourceQuests"] = { 61697 },	-- A New Age
-				["coord"] = { 55.6, 42.0, ARCHONS_RISE },
 				["description"] = "Requires Renown 20.",
+				["sourceQuests"] = { 61697 },	-- A New Age
+				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
+				["coord"] = { 55.6, 42.0, ARCHONS_RISE },
 			}),
 			q(58775, {	-- Meet the Queen
-				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
-				["sourceQuests"] = { 58571 },	-- The Seal of Contrition
-				["coord"] = { 55.6, 42.0, ARCHONS_RISE },
 				["description"] = "Requires Renown 17.",
+				["sourceQuests"] = { 58571 },	-- The Seal of Contrition
+				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
+				["coord"] = { 55.6, 42.0, ARCHONS_RISE },
 			}),
 			q(58949, {	-- Millie's Garden
-				["provider"] = { "n", 162953 },	-- Sarah Howell
 				["sourceQuests"] = { 58791 },	-- A Day in the Life
+				["provider"] = { "n", 162953 },	-- Sarah Howell
 				["coord"] = { 21.6, 42.0, REDRIDGE_MOUNTAINS },
 			}),
 			q(58789, {	-- Misguiding Mentors
-				["provider"] = { "n", 162544 },	-- Achillon
 				["sourceQuests"] = { 58787 },	-- Trial of Ascension
+				["provider"] = { "n", 162544 },	-- Achillon
 				["coord"] = { 33.2, 26.2, BASTION },
 				["groups"] = {
 					i(177058),	-- Selfless Bearer's Cloak
@@ -584,8 +584,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 			}),
 			q(65168, {	-- My Wings Are Yours
-				["provider"] = { "n", 183278 },	-- Kleia
 				["sourceQuests"] = { 62795 },	-- A Conduit for Good
+				["provider"] = { "n", 183278 },	-- Kleia
 				["coord"] = { 58.7, 36.2, SANCTUM_OF_BINDING },
 				["timeline"] = { ADDED_9_1_5 },
 				["lockCriteria"] = { 1, "questID", 58797 },	-- Forged by Trial
@@ -594,12 +594,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 			}),
 			q(62237, {	-- Mysterious Soul Mirror
-				["provider"] = { "i", 183054 },	-- Mysterious Soul Mirror
 				["sourceQuests"] = { 57904 },	-- Our Eternal Charge
+				["provider"] = { "i", 183054 },	-- Mysterious Soul Mirror
 			}),
 			q(65147, {	-- No Ordinary Steward
-				["provider"] = { "n", 183192 },	-- Mikanikos
 				["sourceQuests"] = { 62795 },	-- A Conduit for Good
+				["provider"] = { "n", 183192 },	-- Mikanikos
 				["coord"] = { 59.5, 37.4, SANCTUM_OF_BINDING },
 				["timeline"] = { ADDED_9_1_5 },
 				["lockCriteria"] = { 1, "questID", 59919 },	-- An Earned Bond
@@ -608,28 +608,28 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 			}),
 			q(62789, {	-- Of Great Renown
-				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 				["sourceQuests"] = { 57895 },	-- Elysian Hold
+				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 				["coord"] = { 55.5, 42.1, ARCHONS_RISE },
 			}),
 			q(57904, {	-- Our Eternal Charge
-				["provider"] = { "n", 160212 },	-- Soulguide Daelia
 				["sourceQuests"] = { 62795 },	-- A Conduit for Good
+				["provider"] = { "n", 160212 },	-- Soulguide Daelia
 				["coord"] = { 59.5, 34.2, SANCTUM_OF_BINDING },
 			}),
 			q(62791, {	-- Our Most Precious Resource
+				["description"] = "Becomes available after you complete your first Calling quest.",
 				["provider"] = { "n", 160387 },	-- Hermestes
 				["coord"] = { 40.9, 40.9, ARCHONS_RISE },
-				["description"] = "Becomes available after you complete your first Calling quest.",
 			}),
 			q(62557, {	-- Our Realm Reclaimed
-				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 				["sourceQuests"] = { 59919 },	-- An Earned Bond
+				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 				["coord"] = { 55.6, 42.0, ARCHONS_RISE },
 			}),
 			q(58558, {	-- Overhead Intelligence
-				["provider"] = { "n", 161544 },	-- The Curator
 				["sourceQuests"] = { 58557 },	-- Assistance from Sinfall
+				["provider"] = { "n", 161544 },	-- The Curator
 				["coord"] = { 60.3, 60.8, REVENDRETH },
 				["groups"] = {
 					i(176083),	-- A Personal Affront (QI!)
@@ -639,17 +639,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 			}),
 			q(58570, {	-- Parting Words
-				["provider"] = { "n", 161540 },	-- Kleia
 				["sourceQuests"] = { 58569 },	-- The Folly of Envy
+				["provider"] = { "n", 161540 },	-- Kleia
 				["coord"] = { 39.9, 59.0, REVENDRETH },
 			}),
 			q(58180, {	-- Phaestus, Genesis of Aeons
-				["provider"] = { "n", 160280 },	-- Mikanikos
 				["sourceQuests"] = {
 					58179,	-- Instruments of Perfection
 					58177,	-- Refining Ego
 					58176,	-- Stewards of a Feather
 				},
+				["provider"] = { "n", 160280 },	-- Mikanikos
 				["coord"] = { 50.1, 20.5, BASTION },
 				["groups"] = {
 					i(174061),	-- Phaestus, Genesis of Aeons (QI!)
@@ -660,22 +660,22 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 			}),
 			q(58905, {	-- Picking Up Pelagos
-				["provider"] = { "n", 162679 },	-- Willowblossom
 				["sourceQuests"] = { 58816 },	-- Getting Backstage
+				["provider"] = { "n", 162679 },	-- Willowblossom
 				-- no coords, is your 'pet'
 			}),
 			q(61780, {	-- Power of the Chosen
-				["provider"] = { "n", 166211 },	-- Alexandros Mograine
 				["sourceQuests"] = {
 					61778,	-- Aerial Advantage
 					61777,	-- Charging The Blade
 					61779,	-- Grave Intent
 				},
+				["provider"] = { "n", 166211 },	-- Alexandros Mograine
 				["coord"] = { 28.7, 38.1, MALDRAXXUS },
 			}),
 			q(61782, {	-- Pursuit of Justice
-				["provider"] = { "n", 172002 },	-- Xandria
 				["sourceQuests"] = { 61781 },	-- The End is Now
+				["provider"] = { "n", 172002 },	-- Xandria
 				["coord"] = { 31.7, 30.3, MALDRAXXUS },
 				["groups"] = {
 					i(177055),	-- Selfless Bearer's Shoulders
@@ -685,8 +685,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 			}),
 			q(58177, {	-- Refining Ego
-				["provider"] = { "n", 160280 },	-- Mikanikos
 				["sourceQuests"] = { 58175 },	-- The Eternal Forge
+				["provider"] = { "n", 160280 },	-- Mikanikos
 				["coord"] = { 50.1, 20.5, BASTION },
 				["groups"] = {
 					i(173880),	-- Purified Metal (QI!)
@@ -694,8 +694,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 			}),
 			q(61982, {	-- Replenish the Reservoir
-				["provider"] = { "n", 167745 },	-- Haephus
 				["sourceQuests"] = { 57904 },	-- Our Eternal Charge
+				["provider"] = { "n", 167745 },	-- Haephus
 				["coord"] = { 42.6, 53.1, ARCHONS_RISE },
 				["isWeekly"] = true,
 			}),
@@ -706,61 +706,61 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["isWeekly"] = true,
 			}),
 			q(62861, {	-- Return Lost Souls (10 Souls)
+				["description"] = "Requires Renown 15.",
 				["provider"] = { "n", 160212 },	-- Soulguide Daelia
 				["coord"] = { 59.5, 34.2, SANCTUM_OF_BINDING },
-				["description"] = "Requires Renown 15.",
 				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_5 },
 				["isWeekly"] = true,
 			}),
 			q(62862, {	-- Return Lost Souls (15 Souls)
+				["description"] = "Requires Renown 24.",
 				["provider"] = { "n", 160212 },	-- Soulguide Daelia
 				["coord"] = { 59.5, 34.2, SANCTUM_OF_BINDING },
-				["description"] = "Requires Renown 24.",
 				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_5 },
 				["isWeekly"] = true,
 			}),
 			q(62863, {	-- Return Lost Souls (20 Souls)
+				["description"] = "Requires Renown 32.",
 				["provider"] = { "n", 160212 },	-- Soulguide Daelia
 				["coord"] = { 59.5, 34.2, SANCTUM_OF_BINDING },
-				["description"] = "Requires Renown 32.",
 				["isWeekly"] = true,
 			}),
 			q(65103, {	-- Return More Lost Souls
-				["provider"] = { "n", 160212 },	-- Soulguide Daelia
 				["sourceQuests"] = { 62863 },	-- Return Lost Souls
+				["provider"] = { "n", 160212 },	-- Soulguide Daelia
 				["coord"] = { 59.5, 34.2, SANCTUM_OF_BINDING },
 				["repeatable"] = true,
 			}),
 			q(62796, {	-- Return to Adrestes
-				["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 				["sourceQuests"] = { 62837 },	-- Hopeful News
+				["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 				["coord"] = { 39.9, 68.6, ORIBOS },
 			}),
 			q(61877, {	-- Return to the Hold
-				["provider"] = { "n", 173193 },	-- Xandria
 				["sourceQuests"] = { 61876 },	-- Take Heart
+				["provider"] = { "n", 173193 },	-- Xandria
 				["coord"] = { 31.0, 29.1, MALDRAXXUS },
 			}),
 			q(57115, {	-- Sacred Scrolls of Humility
-				["provider"] = { "n", 156327 },	-- Voitha
 				["sourceQuests"] = { 57114 },	-- Aerial Reconnaissance
+				["provider"] = { "n", 156327 },	-- Voitha
 				["coord"] = { 66.0, 47.0, BASTION },
 				["groups"] = {
 					i(170550),	-- Sacred Scroll (QI!)
 				},
 			}),
 			q(58857, {	-- Seeds Away!
-				["provider"] = { "n", 162392 },	-- Willowblossom
 				["sourceQuests"] = { 58939 },	-- The Blue Seed
+				["provider"] = { "n", 162392 },	-- Willowblossom
 				["coord"] = { 50.8, 77.4, ARDENWEALD },
 			}),
 			q(58561, {	-- Shards of the Countess
-				["provider"] = { "n", 161540 },	-- Kleia
 				["sourceQuests"] = {
 					58559,	-- Eyes of the Master
 					58560,	-- Gothic Fashion
 					58558,	-- Overhead Intelligence
 				},
+				["provider"] = { "n", 161540 },	-- Kleia
 				["coord"] = { 56.3, 41.4, REVENDRETH },
 				["groups"] = {
 					i(174359),	-- Shard of the Countess (QI!)
@@ -769,36 +769,36 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 			}),
 			q(58564, {	-- Sins of the Past
-				["provider"] = { "n", 161544 },	-- The Curator
 				["sourceQuests"] = { 58563 },	-- Through Glass
+				["provider"] = { "n", 161544 },	-- The Curator
 				["coord"] = { 77.8, 39.6, REVENDRETH },
 				["groups"] = {
 					i(174454),	-- The Countess's Sinstone (QI!)
 				},
 			}),
 			q(58567, {	-- Skulking in the Darkness
-				["provider"] = { "n", 161540 },	-- Kleia
 				["sourceQuests"] = { 58565 },	-- Land of Light
+				["provider"] = { "n", 161540 },	-- Kleia
 				["coord"] = { 31.9, 47.7, REVENDRETH },
 			}),
 			q(62238, {	-- Soul Led Astray
-				["provider"] = { "n", 173771 },    -- Thenios
 				["sourceQuests"] = { 62237 },    -- Mysterious Soul Mirror
+				["provider"] = { "n", 173771 },    -- Thenios
 				["coord"] = { 40.4, 19.9, BASTION },
 			}),
 			q(57898, {	-- Soul Meets Body
-				["provider"] = { "n", 160212 },	-- Soulguide Daelia
 				["sourceQuests"] = { 57897 },	-- Dangerous to Go Alone
+				["provider"] = { "n", 160212 },	-- Soulguide Daelia
 				["coord"] = { 59.5, 34.2, SANCTUM_OF_BINDING },
 			}),
 			q(58176, {	-- Stewards of a Feather
-				["provider"] = { "n", 160648 },	-- Sika
 				["sourceQuests"] = { 58175 },	-- The Eternal Forge
+				["provider"] = { "n", 160648 },	-- Sika
 				["coord"] = { 50.1, 20.6, BASTION },
 			}),
 			q(60504, {	-- Strengthen the Bond
-				["provider"] = { "n", 160212 },	-- Soulguide Daelia
 				["sourceQuests"] = { 57898 },	-- Soul Meets Body
+				["provider"] = { "n", 160212 },	-- Soulguide Daelia
 				["coord"] = { 59.5, 34.2, SANCTUM_OF_BINDING },
 				["groups"] = appendGroups(CONDUIT_GROUP, {
 					i(181974),	-- Courageous Ascension
@@ -816,90 +816,90 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				}),
 			}),
 			q(61768, {	-- Stronger Together
-				["provider"] = { "n", 173222 },	-- Xandria
 				["sourceQuests"] = { 61767 },	-- A Perilous Journey
+				["provider"] = { "n", 173222 },	-- Xandria
 				["coord"] = { 37.7, 29.4, MALDRAXXUS },
 			}),
 			q(57116, {	-- Succumbing to Pride
-				["provider"] = { "n", 156361 },	-- Kleia
 				["sourceQuests"] = { 57114 },	-- Aerial Reconnaissance
+				["provider"] = { "n", 156361 },	-- Kleia
 				["coord"] = { 65.8, 46.9, BASTION },
 			}),
 			q(61876, {	-- Take Heart
-				["provider"] = { "n", 173193 },	-- Xandria
 				["sourceQuests"] = { 61782 },	-- Pursuit of Justice
+				["provider"] = { "n", 173193 },	-- Xandria
 				["coord"] = { 31.0, 29.1, MALDRAXXUS },
 				["groups"] = {
 					i(182334),	-- Fleshshaper's Heart (QI!)
 				},
 			}),
 			q(58939, {	-- The Blue Seed
-				["provider"] = { "n", 165110 },	-- Pelagos
 				["sourceQuests"] = {
 					58938,	-- Gorm Ruin Everything
 					58937,	-- Evil Grubbies
 				},
+				["provider"] = { "n", 165110 },	-- Pelagos
 				-- no coords, is your 'pet'
 				["groups"] = {
 					i(176446),	-- Ripened Anima Seed (QI!)
 				},
 			}),
 			q(61770, {	-- The Butchers of Bastion
-				["provider"] = { "n", 168743 },	-- Apolon
 				["sourceQuests"] = { 61769 },	-- Fight and Flight
+				["provider"] = { "n", 168743 },	-- Apolon
 				["coord"] = { 35.3, 25.9, MALDRAXXUS },
 			}),
 			q(61781, {	-- The End is Now
-				["provider"] = { "n", 166211 },	-- Alexandros Mograine
 				["sourceQuests"] = { 61780 },	-- Power of the Chosen
+				["provider"] = { "n", 166211 },	-- Alexandros Mograine
 				["coord"] = { 28.8, 38.1, MALDRAXXUS },
 			}),
 			q(58175, {	-- The Eternal Forge
-				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 				["sourceQuests"] = { 58798 },	-- The Spires of Ascension
+				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 				["coord"] = { 55.5, 42.0, ARCHONS_RISE },
 				-- Requires Kyrian, Renown 8
 			}),
 			q(58569, {	-- The Folly of Envy
-				["provider"] = { "n", 161553 },	-- Mindscorched Alwin
 				["sourceQuests"] = {
 					58566,	-- Actions Speak Louder than Words
 					58568,	-- Light Respite
 					58567,	-- Skulking in the Darkness
 				},
+				["provider"] = { "n", 161553 },	-- Mindscorched Alwin
 				["coord"] = { 39.9, 59.0, REVENDRETH },
 				["groups"] = {
 					i(174498),	-- Seal of Contrition (QI!)
 				},
 			}),
 			q(58796, {	-- The Forsworn Onslaught
-				["provider"] = { "n", 163650 },	-- Kleia
 				["sourceQuests"] = { 58795 },	-- Ascended
+				["provider"] = { "n", 163650 },	-- Kleia
 				["coord"] = { 51.6, 47.7, ARCHONS_RISE },
 			}),
 			q(58846, {	-- The Greater Good
-				["provider"] = { "n", 164473 },	-- Polemarch Adrestes
 				["sourceQuests"] = { 58844 },	-- Before the Dawn
+				["provider"] = { "n", 164473 },	-- Polemarch Adrestes
 				["coord"] = { 31.4, 23.4, BASTION },
 			}),
 			q(63029, {	-- The Highlord Calls
-				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 				["sourceQuests"] = { 57904 },	-- Our Eternal Charge
+				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 				["coord"] = { 55.6, 42.0, ARCHONS_RISE },
 			}),
 			q(62790, {	-- The Path Provides
-				["provider"] = { "n", 176100 },	-- Iona Skyblade
 				["sourceQuests"] = { 62789 },	-- Of Great Renown
+				["provider"] = { "n", 176100 },	-- Iona Skyblade
 				["coord"] = { 42.7, 69.8, ARCHONS_RISE },
 			}),
 			q(57121, {	-- The Power of the Maw
-				["provider"] = { "n", 156474 },	-- Chyrus
 				["sourceQuests"] = { 57207 },	-- Lysonia's Plan
+				["provider"] = { "n", 156474 },	-- Chyrus
 				["coord"] = { 69.0, 40.7, BASTION },
 			}),
 			q(58571, {	-- The Seal of Contrition
-				["provider"] = { "n", 162149 },	-- Mikanikos
 				["sourceQuests"] = { 58570 },	-- Parting Words
+				["provider"] = { "n", 162149 },	-- Mikanikos
 				["coord"] = { 45.7, 56.5, ARCHONS_RISE },
 				["groups"] = {
 					i(174498),	-- Seal of Contrition (QI!)
@@ -910,11 +910,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				}
 			}),
 			q(58798, {	-- The Spires of Ascension
+				["sourceQuests"] = { 58797 },	-- Forged by Trial
 				["qgs"] = {
 					163650,	-- Kleia
 					160390,	-- Kleia
 				},
-				["sourceQuests"] = { 58797 },	-- Forged by Trial
 				["coords"] = {
 					{ 38.6, 43.3, ARCHONS_RISE },
 					{ 59.9, 36.2, SANCTUM_OF_BINDING },
@@ -922,11 +922,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["_drop"] = { "g" },	-- drop anima trash
 			}),
 			q(58563, {	-- Through Glass
-				["provider"] = { "n", 161544 },	-- The Curator
 				["sourceQuests"] = {
 					58561,	-- Shards of the Countess
 					58562,	-- Collecting Dust
 				},
+				["provider"] = { "n", 161544 },	-- The Curator
 				["coord"] = { 55.2, 34.7, REVENDRETH },
 				["groups"] = {
 					i(174382),	-- Death Lotus Powder (QI!)
@@ -935,28 +935,28 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 			}),
 			q(57125, {	-- Time to Reflect
-				["provider"] = { "n", 169850 },	-- Uther
 				["sourceQuests"] = { 57124 },	-- Her Will, Inflicted
+				["provider"] = { "n", 169850 },	-- Uther
 				["coord"] = { 25.6, 65.1, THE_MAW },
 			}),
 			q(58790, {	-- To Cross the Veil
-				["provider"] = { "n", 162542 },	-- Kleia
 				["sourceQuests"] = {
 					58788,	-- Censers of Guidance
 					58789,	-- Misguiding Mentors
 				},
+				["provider"] = { "n", 162542 },	-- Kleia
 				["coord"] = { 32.1, 21.2, BASTION },
 			}),
 			q(58787, {	-- Trial of Ascension
+				["description"] = "Requires Renown 5.",
 				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 				["coord"] = { 55.6, 42.0, ARCHONS_RISE },
-				["description"] = "Requires Renown 5.",
 			}),
 			q(58832, {	-- Trinkle Trinkle Little Twerp
-				["provider"] = { "i", 175982 },	-- Sicklethorn To-Do List
-				["sourceQuests"] = { 58775 },	-- Meet the Queen
-				["coord"] = { 40.4, 54.7, ARDENWEALD },
 				["description"] = "Drops from Sicklethorns while doing quest 'Who Are You Fooling?'",
+				["sourceQuests"] = { 58775 },	-- Meet the Queen
+				["provider"] = { "i", 175982 },	-- Sicklethorn To-Do List
+				["coord"] = { 40.4, 54.7, ARDENWEALD },
 				["crs"] = {
 					161878, -- Sicklethorn Slicer
 					163363,	-- Sicklethorn Zapper
@@ -966,25 +966,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				},
 			}),
 			q(61776, {	-- Trouble on the Western Front
-				["provider"] = { "n", 168743 },	-- Apolon
 				["sourceQuests"] = {
 					61775,	-- An Early End
 					61774,	-- Burn Before Reading
 					61773,	-- Descended
 				},
+				["provider"] = { "n", 168743 },	-- Apolon
 				["coord"] = { 35.4, 26.4, MALDRAXXUS },
 			}),
 			q(58792, {	-- Where a Soul Belongs
-				["provider"] = { "n", 162558 },	-- Alithea
 				["sourceQuests"] = { 58951 },	-- Lakeshire's Last Stand
+				["provider"] = { "n", 162558 },	-- Alithea
 				["coord"] = { 32.5, 39.7, REDRIDGE_MOUNTAINS },
 				["groups"] = {
 					i(175011),	-- Vesper of Veilflight (QI!)
 				},
 			}),
 			q(58856, {	-- Who Are You Fooling?
-				["provider"] = { "n", 162392 },	-- Willowblossom
 				["sourceQuests"] = { 58775 },	-- Meet the Queen
+				["provider"] = { "n", 162392 },	-- Willowblossom
 				["coord"] = { 44.0, 51.8, ARDENWEALD },
 				["groups"] = {
 					i(174843),	-- Sicklethorn Trickster Powder (QI!)

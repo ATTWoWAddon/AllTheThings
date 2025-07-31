@@ -176,11 +176,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 12,
 				},
 				q(5647, {	-- A Lack of Fear
-					["qg"] = 11401,	-- Priestess Alathea <Priest Trainer>
 					["altQuests"] = {
 						5641,	-- A Lack of Fear [Ironforge]
 						5645,	-- A Lack of Fear [Stormwind City]
 					},
+					["qg"] = 11401,	-- Priestess Alathea <Priest Trainer>
 					["coord"] = { 39.2, 81, DARNASSUS },
 					["timeline"] = { REMOVED_2_3_0 },
 					["maps"] = { IRONFORGE },
@@ -214,8 +214,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				q(7801, {	-- Additional Runecloth [Darnassus]
-					["qg"] = 14725,	-- Raedon Duskstriker
 					["sourceQuest"] = 7800,	-- A Donation of Runecloth
+					["qg"] = 14725,	-- Raedon Duskstriker
 					["coord"] = { 64.0, 23.0, DARNASSUS },
 					["maxReputation"] = { FACTION_DARNASSUS, EXALTED },	-- Darnassus, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
@@ -243,22 +243,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				-- #if AFTER CATA
 				q(6342, {	-- An Unexpected Gift [CATA+] / Flight to Auberdine
+					["sourceQuest"] = 6341,	-- To Darnassus [CATA+] / The Bounty of Teldrassil
 					["providers"] = {
 						{ "n", 7316 },	-- Sister Aquinne
 						{ "i", 16262 },	-- Sister Aquinne's Note
 					},
-					["sourceQuest"] = 6341,	-- To Darnassus [CATA+] / The Bounty of Teldrassil
 					["coord"] = { 36.0, 53.4, DARNASSUS },
 					["races"] = { NIGHTELF },
 				}),
 				-- #endif
 				-- #if NOT ANYCLASSIC
 				q(5678, {	-- Arcane Feedback [Stormwind City]
-					["qg"] = 11401,	-- Priestess Alathea <Priest Trainer>
 					["altQuests"] = {
 						5676,	-- Arcane Feedback [Stormwind City]
 						5677,	-- Arcane Feedback [Ironforge]
 					},
+					["qg"] = 11401,	-- Priestess Alathea <Priest Trainer>
 					["coord"] = { 40.0, 80.0, DARNASSUS },
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = { HUMAN },
@@ -338,11 +338,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["isBreadcrumb"] = true,
 				})),
 				q(4510, {	-- Calm Before the Storm (2/2)
+					["sourceQuest"] = 4508,	-- Calm Before the Storm (1/2)
 					["providers"] = {
 						{ "n", 7740 },	-- Gracina Spiritmight
 						{ "i", 11843 },	-- Bank Voucher
 					},
-					["sourceQuest"] = 4508,	-- Calm Before the Storm (1/2)
 					["coord"] = { 42.0, 85.8, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -361,7 +361,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if NOT ANYCLASSIC
 				q(5640, {	-- Desperate Prayer
-					["qg"] = 11401,	-- Priestess Alathea <Priest Trainer>
 					["altQuests"] = {
 						5634,	-- Desperate Prayer [Stormwind City #1]
 						5635,	-- Desperate Prayer [Elwynn Forest]
@@ -370,6 +369,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5638,	-- Desperate Prayer [Stormwind City #2]
 						5639,	-- Desperate Prayer [Ironforge]
 					},
+					["qg"] = 11401,	-- Priestess Alathea <Priest Trainer>
 					["coord"] = { 39.6, 80.8, DARNASSUS },
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = { HUMAN, DWARF },
@@ -386,8 +386,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				q(2242, {	-- Destiny Calls
-					["qg"] = 4163,	-- Syurna
 					["sourceQuest"] = 2241,	-- The Apple Falls
+					["qg"] = 4163,	-- Syurna
 					["coord"] = { 37.0, 21.9, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { TELDRASSIL },
@@ -408,14 +408,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if ANYCLASSIC
 				q(5672, {	-- Elune's Grace [Darnassus]
+					["altQuests"] = {
+						5675,	-- Elune's Grace [Ironforge]
+						5673,	-- Elune's Grace [Stormwind City]
+					},
 					["qgs"] = {
 						11401,	-- Priestess Alathea <Priest Trainer>
 						11406,	-- High Priest Rohan <Priest Trainer>
 						376,	-- High Priestess Laurena <Priest Trainer>
-					},
-					["altQuests"] = {
-						5675,	-- Elune's Grace [Ironforge]
-						5673,	-- Elune's Grace [Stormwind City]
 					},
 					["coords"] = {
 						{ 39.2, 81, DARNASSUS },
@@ -438,11 +438,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				-- #if NOT ANYCLASSIC
 				q(5672, {	-- Elune's Grace [Darnassus]
-					["qg"] = 11401,	-- Priestess Alathea <Priest Trainer>
 					["altQuests"] = {
 						5675,	-- Elune's Grace [Ironforge]
 						5673,	-- Elune's Grace [Stormwind City]
 					},
+					["qg"] = 11401,	-- Priestess Alathea <Priest Trainer>
 					["coord"] = { 39.2, 81, DARNASSUS },
 					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
@@ -459,8 +459,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				q(2260, {	-- Erion's Behest
-					["qg"] = 4214,	-- Erion Shadewhisper
 					["sourceQuest"] = 2259,	-- Erion Shadewhisper
+					["qg"] = 4214,	-- Erion Shadewhisper
 					["coord"] = { 34.6, 25.6, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -469,13 +469,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 16,
 				}),
 				q(7671, {	-- Frostsaber Replacement
+					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
 					["qg"] = 4730,	-- Lelanai
 					-- #if AFTER CATA
 					["coord"] = { 42.6, 32.8, DARNASSUS },
 					-- #else
 					["coord"] = { 38.3, 15.3, DARNASSUS },
 					-- #endif
-					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
 					["timeline"] = { REMOVED_1_4_0 },
 					["cost"] = { { "i", 12302, 1 } },	-- Ancient Frostsaber (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
@@ -488,11 +488,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}},
 				}),
 				q(952, {	-- Grove of the Ancients
+					["sourceQuest"] = 940,	-- Teldrassil
 					["providers"] = {
 						{ "n", 3516 },	-- Arch Druid Fandral Staghelm
 						{ "i", 5390 },	-- Fandral's Message
 					},
-					["sourceQuest"] = 940,	-- Teldrassil
 					["coord"] = { 34.8, 8.8, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -533,8 +533,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = lvlsquish(10, 10, 10),
 				}),
 				q(14085, {	-- Learn to Ride in Darnassus
-					["provider"] = { "i", 46876 },	-- Riding Training Pamphlet
 					["description"] = "The pamphlet that starts this quest is sent to Night Elves in their Mailbox upon reaching the specified level.",
+					["provider"] = { "i", 46876 },	-- Riding Training Pamphlet
 					["timeline"] = { ADDED_3_3_0, REMOVED_5_2_0 },
 					["races"] = { NIGHTELF },
 					["lockCriteria"] = { 1,
@@ -547,8 +547,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = lvlsquish(20, 20, 10),
 				}),
 				q(4493, {	-- March of the Silithid (A)
-					["qg"] = 7740,	-- Gracina Spiritmight
 					["sourceQuest"] = 162,	-- Rise of the Silithid (A)
+					["qg"] = 7740,	-- Gracina Spiritmight
 					["coord"] = { 42, 85.8, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { TANARIS },
@@ -556,8 +556,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 50,
 				}),
 				q(1711, {	-- Mathiel's Armor
-					["qg"] = 6142,	-- Mathiel
 					["sourceQuest"] = 1710,	-- Sunscorched Shells
+					["qg"] = 6142,	-- Mathiel
 					["coord"] = { 59.2, 45.4, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },
@@ -589,11 +589,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(3781, {	-- Morrowgrain Research (1/2)
+					["sourceQuest"] = 3764,	-- Un'Goro Soil
 					["providers"] = {
 						{ "n", 3516 },	-- Arch Druid Fandral Staghelm
 						{ "i", 11103 },	-- Seed Voucher
 					},
-					["sourceQuest"] = 3764,	-- Un'Goro Soil
 					["coord"] = { 34.8, 8.8, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -603,8 +603,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(3785, {	-- Morrowgrain Research (2/2)
-					["qg"] = 4217,	-- Mathrengyl Bearwalker
 					["sourceQuest"] = 3781,	-- Morrowgrain Research (1/2)
+					["qg"] = 4217,	-- Mathrengyl Bearwalker
 					["coord"] = { 35.2, 8, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11040, 10 } },	-- Morrowgrain
@@ -615,8 +615,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(3803, {	-- Morrowgrain to Darnassus
-					["qg"] = 4217,	-- Mathrengyl Bearwalker
 					["sourceQuest"] = 3785,	-- Morrowgrain Research (2/2)
+					["qg"] = 4217,	-- Mathrengyl Bearwalker
 					["coord"] = { 35.2, 8, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11040, 10 } },	-- Morrowgrain
@@ -638,13 +638,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				q(7672, {	-- Nightsaber Replacement
+					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
 					["qg"] = 4730,	-- Lelanai
 					-- #if AFTER CATA
 					["coord"] = { 42.6, 32.8, DARNASSUS },
 					-- #else
 					["coord"] = { 38.3, 15.3, DARNASSUS },
 					-- #endif
-					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
 					["timeline"] = { REMOVED_1_4_0 },
 					["cost"] = { { "i", 12303, 1 } },	-- Nightsaber (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
@@ -683,8 +683,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				-- #if AFTER CATA
 				q(6343, {	-- Return to Nyoma [CATA+] / Return to Nessa
-					["qg"] = 40552,	-- Leora
 					["sourceQuest"] = 6342,	-- An Unexpected Gift [CATA+] / Flight to Auberdine
+					["qg"] = 40552,	-- Leora
 					["coord"] = { 36.5, 47.8, DARNASSUS },
 					["maps"] = { TELDRASSIL },
 					["races"] = { NIGHTELF },
@@ -711,8 +711,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				q(2520, {	-- Sathrah's Sacrifice
-					["qg"] = 7313,	-- Priestess A'moora
 					["sourceQuest"] = 2518,	-- Tears of the Moon
+					["qg"] = 7313,	-- Priestess A'moora
 					["coord"] = { 36.4, 86, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -750,10 +750,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, q(78193, {	-- Secrets of the Light (2/2)
-					["qg"] = 211188,	-- Maethra Slagheart
-					["sourceQuest"] = 78192,	-- Secrets of the Light (1/2)
-					["coord"] = { 38.2, 89.2, DARNASSUS },
 					["description"] = "Completing this quest will allow you to meditate in the same manner as the humans and dwarves.",
+					["sourceQuest"] = 78192,	-- Secrets of the Light (1/2)
+					["qg"] = 211188,	-- Maethra Slagheart
+					["coord"] = { 38.2, 89.2, DARNASSUS },
 					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { STORMWIND_CITY },
 					["classes"] = { PRIEST },
@@ -781,11 +781,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				-- #endif
 				q(1692, {	-- Smith Mathiel
+					["sourceQuest"] = 1686,	-- The Shade of Elura
 					["providers"] = {
 						{ "n", 4088 },	-- Elanaria
 						{ "i", 6812 },	-- Case of Elunite
 					},
-					["sourceQuest"] = 1686,	-- The Shade of Elura
 					["coord"] = { 57.4, 34.8, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },
@@ -811,15 +811,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				-- #if ANYCLASSIC
 				q(5627, {	-- Stars of Elune / Returning Home [Darnassus]
-					["qgs"] = {
-						11401,	-- Priestess Alathea <Priest Trainer>
-						3600,	-- Laurna Morninglight <Priest Trainer>
-						1226,	-- Maxan Anvol <Priest Trainer>
-						377,	-- Priestess Josetta <Priest Trainer>
-						5142,	-- Braenna Flintcrag <Priest Trainer>
-						5489,	-- Brother Joshua <Priest Trainer>
-						11397,	-- Nara Meideros <Priest Trainer>
-					},
 					["altQuests"] = {
 						5629,	-- Returning Home [Teldrassil]
 						5630,	-- Returning Home [Dun Morogh]
@@ -828,6 +819,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5631,	-- Returning Home [Stormwind City]
 						5632,	-- Returning Home [Stormwind City]
 						-- NOTE: There is 10534 and 10539 also, but these are for DRAENEI and were never found on TBC Classic, so those two were likely never implemented. Starshards was a Night Elf Priest only spell.
+					},
+					["qgs"] = {
+						11401,	-- Priestess Alathea <Priest Trainer>
+						3600,	-- Laurna Morninglight <Priest Trainer>
+						1226,	-- Maxan Anvol <Priest Trainer>
+						377,	-- Priestess Josetta <Priest Trainer>
+						5142,	-- Braenna Flintcrag <Priest Trainer>
+						5489,	-- Brother Joshua <Priest Trainer>
+						11397,	-- Nara Meideros <Priest Trainer>
 					},
 					["coords"] = {
 						{ 39.2, 81, DARNASSUS },
@@ -854,7 +854,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				-- #if NOT ANYCLASSIC
 				q(5627, {	-- Returning Home [Darnassus]
-					["qg"] = 11401,	-- Priestess Alathea <Priest Trainer>
 					["altQuests"] = {
 						5628,	-- Returning Home [Elwynn Forest]
 						5629,	-- Returning Home [Teldrassil]
@@ -863,6 +862,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						5632,	-- Returning Home [Stormwind City]
 						5633,	-- Returning Home [Ironforge]
 					},
+					["qg"] = 11401,	-- Priestess Alathea <Priest Trainer>
 					["coord"] = { 39.2, 81, DARNASSUS },
 					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
@@ -894,8 +894,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				q(1710, {	-- Sunscorched Shells
-					["qg"] = 6142,	-- Mathiel
 					["sourceQuest"] = 1703,	-- Mathiel
+					["qg"] = 6142,	-- Mathiel
 					["coord"] = { 59.2, 45.4, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THOUSAND_NEEDLES },
@@ -914,8 +914,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if BEFORE CATA
 				q(2518, {	-- Tears of the Moon
-					["qg"] = 7313,	-- Priestess A'moora
 					["sourceQuest"] = 2519,	-- The Temple of the Moon
+					["qg"] = 7313,	-- Priestess A'moora
 					["coord"] = { 36.4, 86, DARNASSUS },
 					["maps"] = { TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
@@ -934,11 +934,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				q(942, {	-- The Absent Minded Prospector (4/5)
+					["sourceQuest"] = 741,	-- The Absent Minded Prospector (3/5) (Darkshore)
 					["providers"] = {
 						{ "n", 2912 },	-- Chief Archaeologist Greywhisker
 						{ "i", 4654 },	-- Mysterious Fossil
 					},
-					["sourceQuest"] = 741,	-- The Absent Minded Prospector (3/5) (Darkshore)
 					["coord"] = { 31.2, 84.2, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { WETLANDS },
@@ -946,8 +946,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 15,
 				}),
 				q(1039, {	-- The Barrens Port
-					["qg"] = 8026,	-- Thyn'tel Bladeweaver
 					["sourceQuest"] = 1038,	-- Velinde's Effects
+					["qg"] = 8026,	-- Thyn'tel Bladeweaver
 					["coord"] = { 61.8, 39.4, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_BARRENS },
@@ -974,8 +974,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				q(1686, {	-- The Shade of Elura
-					["qg"] = 4088,	-- Elanaria
 					["sourceQuest"] = 1683,	-- Vorlus Vilehoof
+					["qg"] = 4088,	-- Elanaria
 					["coord"] = { 57.8, 34.4, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DARKSHORE },
@@ -1032,7 +1032,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 14,
 				}),
 				q(3764, {	-- Un'Goro Soil
-					["qg"] = 3516,	-- Arch Druid Fandral Staghelm
 					["sourceQuests"] = {
 						3763,	-- Assisting Arch Druid Staghelm [Darnassus]
 						3790,	-- Assisting Arch Druid Staghelm [Ironforge]
@@ -1041,6 +1040,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						10520,	-- Assisting Arch Druid Staghelm [The Exodar]
 						-- #endif
 					},
+					["qg"] = 3516,	-- Arch Druid Fandral Staghelm
 					["coord"] = { 35.2, 9.0, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { UNGORO_CRATER },
@@ -1049,8 +1049,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 47,
 				}),
 				q(1038, {	-- Velinde's Effects
-					["qg"] = 8026,	-- Thyn'tel Bladeweaver
 					["sourceQuest"] = 1037,	-- Velinde Starsong (Ashenvale)
+					["qg"] = 8026,	-- Thyn'tel Bladeweaver
 					["coord"] = { 61.8, 39.4, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1067,15 +1067,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(1683, {	-- Vorlus Vilehoof
-					["qg"] = 4088,	-- Elanaria
-					["altQuests"] = {
-						1665,	-- Bartleby's Mug
-						-- #if AFTER TBC
-						9582,	-- Strength of One
-						-- #endif
-						1678,	-- Vejrek
-						--1683,	-- Vorlus Vilehoof
-					},
 					["sourceQuests"] = {
 						1638,	-- A Warrior's Training
 						1684,	-- Elanaria
@@ -1084,6 +1075,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						9582,	-- Strength of One
 						-- #endif
 					},
+					["altQuests"] = {
+						1665,	-- Bartleby's Mug
+						-- #if AFTER TBC
+						9582,	-- Strength of One
+						-- #endif
+						1678,	-- Vejrek
+						--1683,	-- Vorlus Vilehoof
+					},
+					["qg"] = 4088,	-- Elanaria
 					["coord"] = { 57.3, 34.6, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { TELDRASSIL },
@@ -1104,8 +1104,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(1693, {	-- Weapons of Elunite
-					["qg"] = 6142,	-- Mathiel
 					["sourceQuest"] = 1692,	-- Smith Mathiel
+					["qg"] = 6142,	-- Mathiel
 					["coord"] = { 59.2, 45.4, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },

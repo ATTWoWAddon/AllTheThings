@@ -34,16 +34,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 		}),
 		n(DREAM_INFUSION, bubbleDownSelf({ ["minReputation"] = { FACTION_DREAM_WARDENS, 5 } }, {
 			q(78430, {	-- Mean Green Infusion Machine
-				["provider"] = { "n", 211209 },	-- Elianna
 				["sourceQuests"] = { 78386 },	-- Emerald Reawakening (TODO: may be become available without renown after done once?)
+				["provider"] = { "n", 211209 },	-- Elianna
 				["coord"] = { 50.2, 61.8, EMERALD_DREAM },
 				["groups"] = {
 					i(205160),	-- Rithro (PET!)
 				},
 			}),
 			q(78431, {	-- Green Dream Team
-				["provider"] = { "n", 211209 },	-- Elianna
 				["sourceQuests"] = { 78430 },	-- Mean Green Infusion Machine
+				["provider"] = { "n", 211209 },	-- Elianna
 				["coord"] = { 50.2, 61.8, EMERALD_DREAM },
 				["repeatable"] = true,	-- TODO: ShadowBrooks remove repeatable flag once blizzard fixes quest
 				["groups"] = {
@@ -51,8 +51,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				},
 			}),
 			q(78598, {	-- Dream Infusion
-				["provider"] = { "n", 211209 },	-- Elianna
 				["sourceQuests"] = { 78431 },	-- Green Dream Team
+				["provider"] = { "n", 211209 },	-- Elianna
 				["coord"] = { 50.2, 61.8, EMERALD_DREAM },
 				["repeatable"] = true,
 				["groups"] = {
@@ -60,8 +60,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				},
 			}),
 			q(78595, {	-- Dream Infused
-				["provider"] = { "n", 211962 },	-- Merlsysra
 				["description"] = "Requires Renown 18",
+				["provider"] = { "n", 211962 },	-- Merlsysra
 				["groups"] = {
 					currency(CURRENCY_DREAM_INFUSION),
 				},
@@ -129,12 +129,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			n(QUESTS, bubbleDownRep(FACTION_DREAM_WARDENS, {
 				{		-- RENOWN 1 --
 					q(78444, {	-- A Worthy Ally: Dream Wardens
-						["provider"] = { "n", 208143 },	-- Keeper Amrymn
 						["sourceQuests"] = {
 							77283,	-- A Multi-Front Battle
 							77887,	-- 'World Quest Unlock' (spellID 421687)
 						},
 						["sourceQuestNumRequired"] = 1,
+						["provider"] = { "n", 208143 },	-- Keeper Amrymn
 						["coord"] = { 50.2, 61.6, EMERALD_DREAM },
 						["maxReputation"] = { FACTION_DREAM_WARDENS, 20 },
 						["isWeekly"] = true,

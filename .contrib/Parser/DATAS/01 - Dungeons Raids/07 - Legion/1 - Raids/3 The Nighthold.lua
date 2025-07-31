@@ -94,8 +94,8 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			}),
 			n(QUESTS, {
 				q(45417, {	-- The Nighthold: Lord of the Shadow Council
-					["sourceQuests"] = { 44719 },	-- Breaching the Sanctum
 					["description"] = "Click on the Eye of Aman'thul after Gul'dan dies to complete the quest.",
+					["sourceQuests"] = { 44719 },	-- Breaching the Sanctum
 					["provider"] = { "n", 115367 },	-- Archmage Khadgar
 					["coord"] = { 44.1, 60.1, SURAMAR },
 				}),

@@ -28,8 +28,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["provider"] = { "i", 165944 },	-- A Shady Message [A]
 					["groups"] = {
 						q(54424, {	-- A Shady Character
-							["pvp"] = true,
 							["pb"] = true,
+							["pvp"] = true,
 							["groups"] = {
 								i(165946),	-- Token of Shadiness (QI!)
 							},

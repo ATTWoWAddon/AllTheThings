@@ -6,57 +6,57 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 		n(QUESTS, {
 			n(BONUS_OBJECTIVES, {
 				q(84836, {	-- Shuddering Hollow
-					["repeatable"] = true,
 					["coord"] = { 45.5, 41.6, SIREN_ISLE },
+					["repeatable"] = true,
 				}),
 				q(85763, {	-- Shuddering Hollow
-					["repeatable"] = true,
 					["coord"] = { 45.5, 41.6, SIREN_ISLE },
+					["repeatable"] = true,
 				}),
 				q(85764, {	-- Shuddering Hollow
+					["coord"] = { 45.5, 41.6, SIREN_ISLE },
 					["repeatable"] = true,
 					-- TODO: I'm not sure which one of them is 'first'
-					["coord"] = { 45.5, 41.6, SIREN_ISLE },
 				}),
 				q(85765, {	-- Shuddering Hollow
-					["repeatable"] = true,
 					["coord"] = { 45.5, 41.6, SIREN_ISLE },
+					["repeatable"] = true,
 				}),
 				q(84787, {	-- The Drain
-					["repeatable"] = true,
 					["coord"] = { 57.9, 69.3, SIREN_ISLE },
+					["repeatable"] = true,
 				}),
 				q(85755, {	-- The Drain
+					["coord"] = { 56.5, 66.3, SIREN_ISLE },
 					["repeatable"] = true,
 					-- TODO: available one every time after 85753 version is completed
-					["coord"] = { 56.5, 66.3, SIREN_ISLE },
 				}),
 				q(85753, {	-- The Drain
+					["coord"] = { 56.5, 66.3, SIREN_ISLE },
 					["repeatable"] = true,
 					-- TODO: seems like this is first per week version
-					["coord"] = { 56.5, 66.3, SIREN_ISLE },
 				}),
 				q(85754, {	-- The Drain
-					["repeatable"] = true,
 					["coord"] = { 57.9, 69.3, SIREN_ISLE },
+					["repeatable"] = true,
 				}),
 				q(84835, {	-- The Drowned Lair
-					["repeatable"] = true,
 					["coord"] = { 27.4, 62.5, SIREN_ISLE },
+					["repeatable"] = true,
 				}),
 				q(85761, {	-- The Drowned Lair
-					["repeatable"] = true,
 					["coord"] = { 27.4, 62.5, SIREN_ISLE },
+					["repeatable"] = true,
 				}),
 				q(85760, {	-- The Drowned Lair
+					["coord"] = { 27.3, 65.5, SIREN_ISLE },
 					["repeatable"] = true,
 					-- TODO: seems like this is first per week version
-					["coord"] = { 27.3, 65.5, SIREN_ISLE },
 				}),
 				q(85762, {	-- The Drowned Lair
+					["coord"] = { 27.3, 65.5, SIREN_ISLE },
 					["repeatable"] = true,
 					-- TODO: available one every time after 85760 version is completed
-					["coord"] = { 27.3, 65.5, SIREN_ISLE },
 				}),
 				-- Citrines
 				i(228639),	-- Fathomdweller's Runed Citrine
@@ -153,10 +153,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				},
 			}),
 			q(84725, {	-- The Circlet Calls
-				-- TODO: This quest unlock WQs / daily stuff / bonus objectives but it is not account wide in 57361 build
 				["sourceQuests"] = { 84728 },	-- Reforged Anew
 				["provider"] = { "n", 228074 },	-- Angorla
 				["coord"] = { 71.0, 44.1, SIREN_ISLE },
+				-- TODO: This quest unlock WQs / daily stuff / bonus objectives but it is not account wide in 57361 build
 			}),
 			q(84726, {	-- Uncovered Mysteries
 				["sourceQuests"] = { 84725 },	-- The Circlet Calls
@@ -181,11 +181,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				},
 			}),
 			q(84730, {	-- An Armored Charge
-				--TODO: I am not sure with this source quest because I used the alt skip
 				["sourceQuests"] = { 84726 },	-- Uncovered Mysteries
 				["provider"] = { "n", 230242 },	-- Bargus
 				["coord"] = { 67.5, 42.0, SIREN_ISLE },
 				["races"] = { DARKIRON, DWARF, EARTHEN_ALLIANCE, EARTHEN_HORDE },
+				--TODO: I am not sure with this source quest because I used the alt skip
 				["groups"] = {
 					i(234455),	-- Storm-flecked Debris (QI!)
 					sensemble(1215408),	-- Ensemble: Stonebound Earthen Regalia
@@ -202,10 +202,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				},
 			}),
 			q(85876, {	-- Reading the Runes
-				--TODO: I'm still not sure what exactly trigger it. It could be first filled bar for special assigment?
 				["sourceQuests"] = { 84726 },	-- Uncovered Mysteries
 				["provider"] = { "n", 230242 },	-- Bargus
 				["coord"] = { 67.5, 42.0, SIREN_ISLE },
+				--TODO: I'm still not sure what exactly trigger it. It could be first filled bar for special assigment?
 			}),
 			q(85653, {	-- Dipping a Toe
 				["sourceQuests"] = { 84726 },	-- Uncovered Mysteries
@@ -273,10 +273,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 			}),
 			--
 			q(84252, {	-- Peak Precision
-				-- TODO: it look like SHOULD BE same as all weekly quests but it is not marked as such in-game
 				["sourceQuests"] = { 84725 },	-- The Circlet Calls
 				["provider"] = { "n", 232255 },	-- Benny Springjet
 				["coord"] = { 42.3, 49.1, SIREN_ISLE },
+				-- TODO: it look like SHOULD BE same as all weekly quests but it is not marked as such in-game
 				["groups"] = {
 					i(230795),	-- Experimental Go-Pack (QI!)
 				},
@@ -369,26 +369,26 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, 
 				},
 			}),
 			q(86485, {	-- A Loyal Friend
-				-- dialogs do nothing and didn't trigger additional hqts on ptr
 				["sourceQuests"] = { 86484 },	-- Temper Like A Tempest
 				["provider"] = { "n", 235250 },	-- Mature Prismatic Snapdragon
 				["coord"] = { 70.9, 48.6, SIREN_ISLE },
+				-- dialogs do nothing and didn't trigger additional hqts on ptr
 				["groups"] = {
 					i(233489),	-- Prismatic Snapdragon (MOUNT!)
 					i(233493),	-- Teal Snapdragon Treat TODO: need a better way to solve this, since it will (un)flag this item after changing colors.
 				},
 			}),
 			q(86486, {	-- Hungry, Hungry Snapdragon
-				-- available after 24hrs (not on next day!) of turn in previous quest
-				-- require 2 time per growing phase to do it
 				["sourceQuests"] = { 86482 },	-- A Lifeline
-				["providers"] = {
-					{ "n", 235237 },	-- Growing Snapdragon Runt
-					{ "n", 235250 },	-- Mature Prismatic Snapdragon
-					{ "n", 235243 },	-- Maturing Prismatic Snapdragon
+				["qgs"] = {
+					235237,	-- Growing Snapdragon Runt
+					235250,	-- Mature Prismatic Snapdragon
+					235243,	-- Maturing Prismatic Snapdragon
 				},
 				["coord"] = { 70.9, 48.6, SIREN_ISLE },
 				["isDaily"] = true,
+				-- available after 24hrs (not on next day!) of turn in previous quest
+				-- require 2 time per growing phase to do it
 				["groups"] = {
 					i(235368),	-- Mystery Meat Snack (QI!)
 				},

@@ -23,8 +23,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["groups"] = {
 			n(QUESTS, {
 				q(389, {	-- Bazil Thredd
-					["qg"] = 1646,	-- Baros Alexston
 					["sourceQuest"] = 373,	-- The Unsent Letter
+					["qg"] = 1646,	-- Baros Alexston
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 57.7, 47.9, STORMWIND_CITY },
@@ -131,8 +131,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(378, {	-- The Fury Runs Deep
-					["qg"] = 1074,	-- Motley Garmason
 					["sourceQuest"] = 303,	-- The Dark Iron War
+					["qg"] = 1074,	-- Motley Garmason
 					["coord"] = { 49.8, 18.2, WETLANDS },
 					["timeline"] = { REMOVED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
@@ -179,8 +179,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(391, {	-- The Stockade Riots
-					["qg"] = 1719,	-- Warden Thelwater
 					["sourceQuest"] = 389,	-- Bazil Thredd
+					["qg"] = 1719,	-- Warden Thelwater
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 51.6, 69.4, STORMWIND_CITY },

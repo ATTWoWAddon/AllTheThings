@@ -60,9 +60,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(53099, {	-- A Mote of Cosmic Truth
 				["sourceQuests"] = { 50389 },	-- Malign Inspiration
-				["providers"] = {
-					{ "n", 133640 },	-- Wayne the Ancestral (A)
-					{ "n", 143565 },	-- Wayne the Ancestral (H)
+				["qgs"] = {
+					133640,	-- Wayne the Ancestral (A)
+					143565,	-- Wayne the Ancestral (H)
 				},
 				["coord"] = { 78.5, 54.8, STORMSONG_VALLEY },
 				["lvl"] = 120,
@@ -81,10 +81,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(50733, {	-- A New Dawn
 				["sourceQuests"] = { 50824 },	-- Storm's End
-				["isBreadcrumb"] = true,
 				["provider"] = { "n", 137692 },	-- Taelia
 				["coord"] = { 78.2, 28.8, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				["isBreadcrumb"] = true,
 			}),
 			q(50367, {	-- Anger in a Bottle
 				["sourceQuests"] = { 50622 },	-- Deal's Off
@@ -102,10 +102,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(49832, {	-- An Illegible Scroll
-				["isBreadcrumb"] = true,
 				["provider"] = { "o", 280576 },	-- Encased Scroll
 				["coord"] = { 32.2, 40.0, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				["isBreadcrumb"] = true,
 			}),
 			q(50672, {	-- Any Ammo Will Do
 				["sourceQuests"] = {
@@ -175,10 +175,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(50797, {	-- A Turtle's Invitation
 				["sourceQuests"] = { 50753 },	-- Earl-E Bot Gets the Worm
-				["isBreadcrumb"] = true,
 				["provider"] = { "n", 135033 },	-- Maokka
 				["coord"] = { 42.5, 54.3, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				["isBreadcrumb"] = true,
 			}),
 			q(51205, {	-- Aww, Rats!
 				["provider"] = { "n", 136574 },	-- Charles Davenport
@@ -195,12 +195,12 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(50553, {	-- Back to the Lab
-				["provider"] = { "n", 134447 },	-- Lost Farmhand
 				["sourceQuests"] = {	-- popped before turning in 'free the farmhands.'  i turned in 'the bee team' last, but i'm not sure if the other 2 are actually required.
 					50493,	-- Fetching Wrex
 					50165,	-- The Bee Team
 					50534,	-- Wendigo Away
 				},
+				["provider"] = { "n", 134447 },	-- Lost Farmhand
 				["coord"] = { 72.7, 72.2, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
@@ -240,10 +240,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(52070, {	-- Bauer Backup
 				["sourceQuests"] = { 51712 },	-- Eye For an Eye
-				["isBreadcrumb"] = true,	-- for "Freedom for the Sea"
 				["provider"] = { "n", 138735 },	-- Felecia Gladstone
 				["coord"] = { 51.2, 36.9, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				["isBreadcrumb"] = true,	-- for "Freedom for the Sea"
 			}),
 			q(51214, {	-- Be A Dear
 				["sourceQuests"] = { 51218 },	-- Undelivered Package
@@ -271,9 +271,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(50697, {	-- Bomb Beats Rock
 				["sourceQuests"] = { 50675 },	-- Treasure Hunting
-				["providers"] = {
-					{ "n", 134710 },	-- Moxie Lockspinner
-					{ "n", 134882 },	-- Moxie Lockspinner (alternate ID)
+				["qgs"] = {
+					134710,	-- Moxie Lockspinner
+					134882,	-- Moxie Lockspinner (alternate ID)
 				},
 				["coord"] = { 44.4, 55.6, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
@@ -313,8 +313,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51159, {	-- Bring out the Big Gun
 				["sourceQuests"] = { 50909 },	-- Never Outgunned (in log or completed)
 				["provider"] = { "n", 136481 },	-- Cannon
-				["races"] = ALLIANCE_ONLY,
 				["coord"] = { 60.2, 54.5, STORMSONG_VALLEY },
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(51728, {	-- Burn It All Down
 				["sourceQuests"] = {	-- may also require 'get out of here'
@@ -467,9 +467,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(53097, {	-- Despondent Ablutions
 				["sourceQuests"] = { 50386 },	-- Flush Them Out
-				["providers"] = {
-					{ "n", 133640 },	-- Wayne the Ancestral (A)
-					{ "n", 143565 },	-- Wayne the Ancestral (H)
+				["qgs"] = {
+					133640,	-- Wayne the Ancestral (A)
+					143565,	-- Wayne the Ancestral (H)
 				},
 				["coord"] = { 78.5, 54.8, STORMSONG_VALLEY },
 				["lvl"] = 120,
@@ -556,10 +556,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(51540, {	-- Explosive Situation
-				--	SQ needs confirmation
 				["sourceQuests"] = { 51353 },	-- Cave of Ai'twen
 				["provider"] = { "o", 290138 },	-- Bot Buster Bomb
 				["coord"] = { 37.8, 28.5, STORMSONG_VALLEY },
+				--	SQ needs confirmation
 				["groups"] = {
 					o(286954, {	-- Bot Buster Bomb
 						i(160397),	-- Bot Buster Bomb (QI!)
@@ -624,8 +624,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(50493, {	-- Fetching Wrex
-				["provider"] = { "n", 134028 },	-- Sam Robinson
 				["sourceQuests"] = { 50504 },	-- Honey Glazed Sam
+				["provider"] = { "n", 134028 },	-- Sam Robinson
 				["coord"] = { 72.7, 72.2, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -650,17 +650,17 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(50386, {	-- Flush Them Out
 				["sourceQuests"] = { 50417 },	-- Ruin Has Come
-				["providers"] = {
-					{ "n", 133640 },	-- Wayne the Ancestral (A)
-					{ "n", 143565 },	-- Wayne the Ancestral (H)
+				["qgs"] = {
+					133640,	-- Wayne the Ancestral (A)
+					143565,	-- Wayne the Ancestral (H)
 				},
 				["coord"] = { 78.6, 54.8, STORMSONG_VALLEY },
 			}),
 			q(49886, {	-- Follow Your Nose
-				--	UNKNOWN SOURCE.  unavailable prior to doing BFA/zone intro.  first noticed after doing 'heavy artillery' but could just require zone intro.
 				["provider"] = { "n", 131656 },	-- Houndmaster Archibald
 				["coord"] = { 51.0, 70.1, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				--	UNKNOWN SOURCE.  unavailable prior to doing BFA/zone intro.  first noticed after doing 'heavy artillery' but could just require zone intro.
 			}),
 			q(50608, {	-- Forbidden Rites
 				["sourceQuests"] = {
@@ -731,9 +731,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(50696, {	-- Fun With Magnets
 				["sourceQuests"] = { 50675 },	-- Treasure Hunting
-				["providers"] = {
-					{ "n", 134710 },	-- Moxie Lockspinner
-					{ "n", 134882 },	-- Moxie Lockspinner (alternate ID)
+				["qgs"] = {
+					134710,	-- Moxie Lockspinner
+					134882,	-- Moxie Lockspinner (alternate ID)
 				},
 				["coord"] = { 44.4, 55.6, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
@@ -762,10 +762,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(51726, {	-- Get Out of Here
-				--	unknown SQ.  picked up after picking up "having a blast"
 				["provider"] = { "n", 138924 },	-- Holger Nash
 				["coord"] = { 67.5, 38.6, 1182 },	-- Saltstone Mine
 				["races"] = ALLIANCE_ONLY,
+				--	unknown SQ.  picked up after picking up "having a blast"
 			}),
 			q(51720, {	-- Get Shredded
 				["sourceQuests"] = {	-- may also require 'get out of here'
@@ -840,10 +840,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(51711, {	-- Having a Blast
-				--	unknown SQ.  possibly #50909, 'never outgunned'?
 				["provider"] = { "n", 138735 },	-- Felecia Gladstone
 				["coord"] = { 46.9, 47.7, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				--	unknown SQ.  possibly #50909, 'never outgunned'?
 			}),
 			q(49704, {	-- Haywire Harvesters
 				["sourceQuests"] = { 49703 },	-- House Stormsong
@@ -878,13 +878,13 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(52068, {	-- Helping Out, Somewhere Else
+				["description"] = "Without using the Party Sync feature, you cannot complete both this quest and |cffffff00More Fodder|r on the same character.",
 				["sourceQuests"] = { 50742 },	-- All Laid Out For Us
 				["altQuests"] = { 52069 },	-- More Fodder
-				["isBreadcrumb"] = true,
 				["provider"] = { "n", 134720 },	-- Leo Shealds
 				["coord"] = { 43.0, 56.6, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["description"] = "Without using the Party Sync feature, you cannot complete both this quest and |cffffff00More Fodder|r on the same character.",
+				["isBreadcrumb"] = true,
 			}),
 			q(50504, {	-- Honey Glazed Sam
 				["sourceQuests"] = {
@@ -925,9 +925,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(50385, {	-- Indefatigable Purpose
 				["sourceQuests"] = { 53105 },	-- Misplaced Faith
-				["providers"] = {
-					{ "n", 133640 },	-- Wayne the Ancestral (A)
-					{ "n", 143565 },	-- Wayne the Ancestral (H)
+				["qgs"] = {
+					133640,	-- Wayne the Ancestral (A)
+					143565,	-- Wayne the Ancestral (H)
 				},
 				["coord"] = { 78.5, 54.8, STORMSONG_VALLEY },
 				["lvl"] = 50,
@@ -985,10 +985,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(51582, {	-- Make it Mildenhall
-				["isBreadcrumb"] = true,
 				["provider"] = { "o", 290537 },	-- Help Wanted
 				["coord"] = { 66.3, 57.1, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				["isBreadcrumb"] = true,
 			}),
 			q(53369, {	-- Make Loh Go
 				["sourceQuests"] = { 51352 },	-- Don't Play With Matches
@@ -998,9 +998,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(50389, {	-- Malign Inspiration
 				["sourceQuests"] = { 50385 },	-- Indefatigable Purpose
-				["providers"] = {
-					{ "n", 133640 },	-- Wayne the Ancestral (A)
-					{ "n", 143565 },	-- Wayne the Ancestral (H)
+				["qgs"] = {
+					133640,	-- Wayne the Ancestral (A)
+					143565,	-- Wayne the Ancestral (H)
 				},
 				["coord"] = { 78.5, 54.8, STORMSONG_VALLEY },
 				["lvl"] = 120,
@@ -1046,22 +1046,22 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(53105, {	-- Misplaced Faith
 				["sourceQuests"] = { 50388 },	-- The Weight of My Ambition
-				["providers"] = {
-					{ "n", 133640 },	-- Wayne the Ancestral (A)
-					{ "n", 143565 },	-- Wayne the Ancestral (H)
+				["qgs"] = {
+					133640,	-- Wayne the Ancestral (A)
+					143565,	-- Wayne the Ancestral (H)
 				},
 				["coord"] = { 78.5, 54.8, STORMSONG_VALLEY },
 				["lvl"] = 120,
 				["groups"] = { i(163212) },	-- Cleansing Thurible (QI!)
 			}),
 			q(52069, {	-- More Fodder
+				["description"] = "Without using the Party Sync feature, you cannot complete both this quest and |cffffff00Helping Out, Somewhere Else|r on the same character.",
 				["sourceQuests"] = { 49831 },	-- From the Depths
 				["altQuests"] = { 52068 },	-- Helping Out, Somewhere Else
-				["isBreadcrumb"] = true,
 				["provider"] = { "n", 131343 },	-- Williams
 				["coord"] = { 33.2, 45.6, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
-				["description"] = "Without using the Party Sync feature, you cannot complete both this quest and |cffffff00Helping Out, Somewhere Else|r on the same character.",
+				["isBreadcrumb"] = true,
 			}),
 			q(50909, {	-- Never Outgunned
 				["sourceQuests"] = { 52067 },	-- Survivors
@@ -1185,12 +1185,12 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(51554, {	-- Reloading
-				--	may also require 'smells like trouble' and 'dangerous game'
 				["sourceQuests"] = { 50909 },	-- Never Outgunned
-				["isBreadcrumb"] = true,
 				["provider"] = { "n", 135874 },	-- Lea Martinel
 				["coord"] = { 57.9, 55.5, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				["isBreadcrumb"] = true,
+				--	may also require 'smells like trouble' and 'dangerous game'
 			}),
 			q(51221, {	-- Response Required
 				["sourceQuests"] = { 51353 },	-- Cave of Ai'twen
@@ -1232,13 +1232,13 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(50417, {	-- Ruin Has Come
-				--	unsure if this has any SQs or if it just requires being level 120.
 				["provider"] = { "o", 281348 },	-- Crumbling Letter
 				["coords"] = {
 					{ 59.4, 68.3, STORMSONG_VALLEY },	-- Alliance
 					{ 50.0, 31.8, STORMSONG_VALLEY },	-- Horde
 				},
 				["lvl"] = 120,
+				--	unsure if this has any SQs or if it just requires being level 120.
 			}),
 			q(50365, {	-- Run For the Hills
 				["sourceQuests"] = {
@@ -1293,10 +1293,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(49960, {	-- Sic 'Em!
-				--	UNKNOWN SOURCE.  unavailable prior to doing BFA/zone intro.  first noticed after doing 'heavy artillery' but could just require zone intro.
 				["provider"] = { "n", 131656 },	-- Houndmaster Archibald
 				["coord"] = { 51.0, 70.1, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				--	UNKNOWN SOURCE.  unavailable prior to doing BFA/zone intro.  first noticed after doing 'heavy artillery' but could just require zone intro.
 			}),
 			q(50908, {	-- Smells like Trouble
 				["sourceQuests"] = { 52067 },	-- Survivors
@@ -1405,18 +1405,18 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(53045, {	-- Surveying the Wharf
-				["isBreadcrumb"] = true,
 				["sourceQuests"] = { 49831 },	-- From the Depths
 				["provider"] = { "n", 131001 },	-- Lieutenant Harris
 				["coord"] = { 34.7, 47.5, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				["isBreadcrumb"] = true,
 			}),
 			q(52067, {	-- Survivors
 				["sourceQuests"] = { 49755 },	-- Heavy Artillery
-				["isBreadcrumb"] = true,
 				["provider"] = { "n", 130190 },	-- Sergeant Calvin
 				["coord"] = { 57.6, 66.4, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				["isBreadcrumb"] = true,
 			}),
 			q(51343, {	-- Swimming Lessons
 				["sourceQuests"] = {
@@ -1493,7 +1493,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(51552, {	-- The Days Are Just Packed
-				["isBreadcrumb"] = true,
 				["sourceQuests"] = {
 					49792,	-- Bound and Oppressed
 					49791,	-- Lost, Not Forgotten
@@ -1503,6 +1502,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 130786 },	-- Hobbs
 				["coord"] = { 66.7, 56.4, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				["isBreadcrumb"] = true,
 			}),
 			q(51319, {	-- The Final Ascent
 				["sourceQuests"] = {
@@ -1515,6 +1515,14 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(53476, {	-- The Great Sea Scrolls
 				["description"] = "You receive the item that starts this quest from looting any treasure chest.",
 				["provider"] = { "i", 163856 },	-- Ancient Pilgrimage Scrollcasing
+				["maps"] = {
+					NAZMIR,
+					VOLDUN,
+					TIRAGARDE_SOUND,
+					--STORMSONG_VALLEY,
+					ZULDAZAR,
+					DRUSTVAR,
+				},
 				["_drop"] = { "g" },
 				["groups"] = {
 					i(163853),	-- Pilgrimage Scroll (QI!)
@@ -1528,20 +1536,12 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					azewrongItem(180027),	-- Bartered Vrykul Hood
 					azewrongItem(180030),	-- Bartered Vrykul Warhelm
 				},
-				["maps"] = {
-					NAZMIR,
-					VOLDUN,
-					TIRAGARDE_SOUND,
-					--STORMSONG_VALLEY,
-					ZULDAZAR,
-					DRUSTVAR,
-				},
 			}),
 			q(51881, {	-- The Mine Sweeper
-			--	unknown SQ.  picked up after picking up "having a blast"
 				["provider"] = { "n", 146019 },	-- Cracked Mine Sweeper
 				["coord"] = { 48.1, 15.7, 1182 },
 				["races"] = ALLIANCE_ONLY,
+			--	unknown SQ.  picked up after picking up "having a blast"
 			}),
 			q(50139, {	-- The Missing Link
 				["sourceQuests"] = { 49975 },	-- Rest in the Depths
@@ -1560,10 +1560,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(50157, {	-- There's Gold in Them There Fields
 				["sourceQuests"] = { 49755 },	-- Heavy Artillery
-				["isBreadcrumb"] = true,
 				["provider"] = { "n", 130694 },	-- Mayor Roz
 				["coord"] = { 57.5, 66.4, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				["isBreadcrumb"] = true,
 			}),
 			q(49794, {	-- The Rising Tide
 				["sourceQuests"] = {
@@ -1612,9 +1612,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(50388, {	-- The Weight of My Ambition
 				["sourceQuests"] = { 50387 },	-- Trinkets and Baubles
-				["providers"] = {
-					{ "n", 133640 },	-- Wayne the Ancestral (A)
-					{ "n", 143565 },	-- Wayne the Ancestral (H)
+				["qgs"] = {
+					133640,	-- Wayne the Ancestral (A)
+					143565,	-- Wayne the Ancestral (H)
 				},
 				["coord"] = { 78.5, 54.8, STORMSONG_VALLEY },
 				["lvl"] = 120,
@@ -1636,9 +1636,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(50387, {	-- Trinkets and Baubles
 				["sourceQuests"] = { 53097 },	-- Despondent Ablutions
-				["providers"] = {
-					{ "n", 133640 },	-- Wayne the Ancestral (A)
-					{ "n", 143565 },	-- Wayne the Ancestral (H)
+				["qgs"] = {
+					133640,	-- Wayne the Ancestral (A)
+					143565,	-- Wayne the Ancestral (H)
 				},
 				["coord"] = { 78.5, 54.8, STORMSONG_VALLEY },
 				["lvl"] = 120,
@@ -1661,10 +1661,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					49746,	-- Dousing the Flames
 					49745,	-- You Have Their Orders
 				},
-				["isBreadcrumb"] = true,	-- for "A Bit of a Bind" and "Caught in the Net"
 				["provider"] = { "n", 131004 },	-- Squire Augustus III
 				["coord"] = { 59.4, 69.9, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				["isBreadcrumb"] = true,	-- for "A Bit of a Bind" and "Caught in the Net"
 			}),
 			q(50778, {	-- Twisted Intentions
 				["sourceQuests"] = { 50612 },	-- A House Divided
@@ -1679,10 +1679,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(51218, {	-- Undelivered Package
-				["isBreadcrumb"] = true,	-- for "Be a Dear"
 				["provider"] = { "o", 288167 },	-- Marie's Package
 				["coord"] = { 38.4, 62.9, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				["isBreadcrumb"] = true,	-- for "Be a Dear"
 			}),
 			q(49705, {	-- Unnecessary Duress
 				["sourceQuests"] = { 49703 },	-- House Stormsong
@@ -1714,8 +1714,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					{ "o", 297071 },	-- Small Coin Bag
 				},
 				["coord"] = { 43.1, 56.5, STORMSONG_VALLEY },
-				["isWeekly"] = true,
 				["races"] = ALLIANCE_ONLY,
+				["isWeekly"] = true,
 			}),
 			q(51204, {	-- WANTED: Razorclaw Alpha (A)
 				["provider"] = { "o", 287958 },	-- Bulletin Board
@@ -1723,28 +1723,28 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(53330, {	-- WANTED: Razorclaw Alpha (H)
-			--	unknown if this has any SQs
 				["provider"] = { "o", 297492 },	-- Bulletin Board
 				["coord"] = { 51.0, 33.6, STORMSONG_VALLEY },
 				["races"] = HORDE_ONLY,
+			--	unknown if this has any SQs
 				["groups"] = {
 					i(163636),	-- Razorclaw Alpha Pelt (QI!)
 				},
 			}),
 			q(49730, {	-- WANTED: Thundersnout (A)
-			--	unknown SQ
 				["provider"] = { "o", 287958 },	-- Bulletin Board
 				["coord"] = { 30.6, 68.1, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+			--	unknown SQ
 				["groups"] = {
 					i(158300),	-- Thundersnout's Snout (QI!)
 				},
 			}),
 			q(53348, {	-- WANTED: Thundersnout (H)
-			--	unknown if this has any SQs
 				["provider"] = { "o", 297492 },	-- Bulletin Board
 				["coord"] = { 51.0, 33.6, STORMSONG_VALLEY },
 				["races"] = HORDE_ONLY,
+			--	unknown if this has any SQs
 				["groups"] = {
 					i(158300),	-- Thundersnout's Snout (QI!)
 				},
@@ -1803,10 +1803,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					50910, -- Dangerous Game
 					50908, -- Smells Like Trouble
 				},
-				["isBreadcrumb"] = true,
 				["provider"] = { "n", 135682 },	-- Patrick Eckhart
 				["coord"] = { 57.8, 55.3, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				["isBreadcrumb"] = true,
 			}),
 			q(49745, {	-- You Have Their Orders
 				["provider"] = { "n", 130694 },	-- Mayor Roz
@@ -1833,8 +1833,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 			},{
 				q(50779, {	-- A Clean Slate
-					["sourceQuest"] = 50777,	-- The Storm Awakens
 					["description"] = "You must accept |cffffff00The Storm Awakens|r in order for this Bonus Objective to become available.",
+					["sourceQuest"] = 50777,	-- The Storm Awakens
 				}),
 				q(51534, {	-- The Battle for Brennadam
 					["sourceQuest"] = 51401,	-- Carry On

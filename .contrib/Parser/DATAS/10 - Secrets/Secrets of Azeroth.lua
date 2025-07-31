@@ -274,13 +274,13 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 				-- If someone figures this out, please adjust the quest
 			}),
 			q(77203, {	-- Preserving Rarities
-				["qg"] = 206864,	-- Preservationist Kathos
+				["description"] = "Talk to Kathos again to get a Mystery box & open it to receive a Golden Chalice.\nDeliver the Chalice in the Bank in Valdrakken (58.88 54.09).\nYou can rightclick the quest to place all coordinates.",
 				["sourceQuests"] = { 77202 },	-- The Preservationists
+				["qg"] = 206864,	-- Preservationist Kathos
 				["coords"] = {
 					{ 47.4, 48.1, VALDRAKKEN },		-- Preservationist Kathos
 					{ 58.88, 54.09, VALDRAKKEN },	-- Chalice Placement
 				},
-				["description"] = "Talk to Kathos again to get a Mystery box & open it to receive a Golden Chalice.\nDeliver the Chalice in the Bank in Valdrakken (58.88 54.09).\nYou can rightclick the quest to place all coordinates.",
 				-- TODO: does it go away after event?
 				["groups"] = {
 					i(208054, {	-- A Mystery Box
@@ -290,15 +290,15 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 				},
 			}),
 			q(76735, {	-- Rise in Relic Theft
-				["qg"] = 206864,	-- Preservationist Kathos
+				["description"] = "Deliver the Tuskarr Spear to Eldor Poa in Azure Span (12.4 49.2).\nDeliver the newly received Shomko Spear to Elder Ko'nani in Dragonblight (48.0 74.8).\nFinally deliver the spear to the Statue in Borean Tundra (33.63 58.45).\nYou can rightclick the quest to place all coordinates.",
 				["sourceQuests"] = { 77203 },	-- Preserving Rarities
+				["qg"] = 206864,	-- Preservationist Kathos
 				["coords"] = {
 					{ 47.4, 48.1, VALDRAKKEN },			-- Preservationist Kathos
 					{ 12.4, 49.2, THE_AZURE_SPAN },		-- Elder Poa
 					{ 48.0, 74.8, DRAGONBLIGHT },		-- Elder Ko'nani
 					{ 33.63, 58.45, BOREAN_TUNDRA },	-- Statue
 				},
-				["description"] = "Deliver the Tuskarr Spear to Eldor Poa in Azure Span (12.4 49.2).\nDeliver the newly received Shomko Spear to Elder Ko'nani in Dragonblight (48.0 74.8).\nFinally deliver the spear to the Statue in Borean Tundra (33.63 58.45).\nYou can rightclick the quest to place all coordinates.",
 				["repeatable"] = true,
 				["groups"] = {
 					i(207105),	-- Tuskarr Ceremonial Spear
@@ -392,13 +392,13 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 			})),
 			OneTimeAccountLocked(77513,	-- The Tricked-Out Thinking Cap (Account-Wide Lock)
 			q(76504, {	-- The Tricked-Out Thinking Cap
-				["provider"] = { "n", 207697 },	-- Fangli Hoot
+				["description"] = "Use Toy to accept quest. Follow arrows.",
 				["sourceQuest"] = 77237,	-- Unfinished Thinking Cap
+				["provider"] = { "n", 207697 },	-- Fangli Hoot
 				["coords"] = {
 					{ 26.7, 53.9, VALDRAKKEN },	-- Fangli
 					{ 64.6, 53.6, VALDRAKKEN },	-- Solve Riddle
 				},
-				["description"] = "Use Toy to accept quest. Follow arrows.",
 				["cost"] = {{"i",206696,1}},	-- Tricked-Out Thinking Cap (TOY!)
 				["groups"] = {
 					i(206944),	-- A Clue: The Thinking Cap
@@ -407,8 +407,8 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 
 			-- Day 3 --
 			q(77276, {	-- An Inside Job?
-				["qg"] = 207696,	-- Bobby Carlisle
 				["sourceQuest"] = 76504,	-- The Tricked-Out Thinking Cap
+				["qg"] = 207696,	-- Bobby Carlisle
 				["coord"] = { 47.9, 46.8, VALDRAKKEN },
 				["repeatable"] = true,
 				["groups"] = {
@@ -430,8 +430,8 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 			}),
 			OneTimeAccountLocked(77521,	-- Preservationist Cleared (Account-Wide Lock)
 			q(77277, {	-- Preservationist Cleared
-				["qg"] = 208620,	-- "Appraiser" Sazsel Stickyfingers
 				["sourceQuest"] = 77397,	-- Talk with 'Appraiser' Sazsel Stickyfingers
+				["qg"] = 208620,	-- "Appraiser" Sazsel Stickyfingers
 				["coord"] = { 62.8, 72.8, VALDRAKKEN },
 				["groups"] = {
 					i(208130),	-- Maruuk Burial Banner
@@ -440,8 +440,8 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 
 			-- Day 4 --
 			q(77281, {	-- Securing an Artifact
-				["qg"] = 185562,	-- Tithris
 				["sourceQuest"] = 76504,	-- The Tricked-Out Thinking Cap
+				["qg"] = 185562,	-- Tithris
 				["coord"] = { 47.5, 46.2, VALDRAKKEN },
 				["repeatable"] = true,
 				["groups"] = {
@@ -485,10 +485,10 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 			})),
 			OneTimeAccountLocked(77522,	-- The Torch of Pyrreth (Account-Wide Lock)
 			q(77263, {	-- The Torch of Pyrreth
-				["qg"] = 206864,	-- Preservationist Kathos
-				["sourceQuest"] = 77282,	-- Artifact Secured
-				["coord"] = { 47.4, 48.1, VALDRAKKEN },
 				["description"] = "Use Torch of Pyrreth @ 58.5, 23.6 Valdrakken.",
+				["sourceQuest"] = 77282,	-- Artifact Secured
+				["qg"] = 206864,	-- Preservationist Kathos
+				["coord"] = { 47.4, 48.1, VALDRAKKEN },
 				["groups"] = {
 					o(405515, {	-- Enchanted Box
 						["coord"] = { 58.5, 23.6, VALDRAKKEN },
@@ -502,8 +502,8 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 
 			-- Day 5 --
 			q(77284, {	-- A Chilling Ascent
-				["qg"] = 207696,	-- Bobby Carlisle
 				["sourceQuest"] = 77263,	-- The Torch of Pyrreth
+				["qg"] = 207696,	-- Bobby Carlisle
 				["coord"] = { 47.9, 46.8, VALDRAKKEN },
 				["repeatable"] = true,
 				["groups"] = {
@@ -576,16 +576,16 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 			})),
 			OneTimeAccountLocked(77524,	-- Using the Idol (Account-Wide Lock)
 			q(76456, {	-- Using the Idol
-				["qg"] = 206864,	-- Preservationist Kathos
-				["sourceQuest"] = 77304,	-- An Idol in Hand
-				["coord"] = { 47.4, 48.1, VALDRAKKEN },
 				["description"] = "Use the Idol. It points towards objectives.",
+				["sourceQuest"] = 77304,	-- An Idol in Hand
+				["qg"] = 206864,	-- Preservationist Kathos
+				["coord"] = { 47.4, 48.1, VALDRAKKEN },
 			})),
 
 			-- Day 7 --
 			q(76509, {	-- Into the Sands
-				["qg"] = 206864,	-- Preservationist Kathos
 				["sourceQuest"] = 76456,	-- Using the Idol
+				["qg"] = 206864,	-- Preservationist Kathos
 				["coord"] = { 47.4, 48.1, VALDRAKKEN },
 				["repeatable"] = true,
 				["groups"] = {
@@ -640,8 +640,8 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 
 			-- Day 9 --
 			q(77829, {	-- Reforging a Legend
-				["qg"] = 207696,	-- Bobby Carlisle
 				["sourceQuest"] = 77822,	-- A Titanic Mold
+				["qg"] = 207696,	-- Bobby Carlisle
 				["coord"] = { 47.9, 46.8, VALDRAKKEN },
 				["repeatable"] = true,
 				["groups"] = {
@@ -695,8 +695,8 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 
 			-- Day 10 --
 			q(77865, {	-- A Proper Burial
-				["qg"] = 206864,	-- Preservationist Kathos
 				["sourceQuest"] = 77277,	-- Preservationist Cleared [guess]
+				["qg"] = 206864,	-- Preservationist Kathos
 				["coord"] = { 47.4, 48.1, VALDRAKKEN },
 				["repeatable"] = true,
 				["groups"] = {
@@ -780,8 +780,8 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 			}),
 			OneTimeAccountLocked(77579,	-- A Legacy of Secrets (Account-Wide Lock)
 			q(77908, {	-- A Legacy of Secrets
-				["provider"] = { "i", 208889 },
 				["description"] = "Quest takes place in Old Karazhan Raid",
+				["provider"] = { "i", 208889 },
 			})),
 
 			-- Day 12 --
@@ -826,7 +826,7 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 			}),
 			OneTimeAccountLocked(77580,	-- A Complete Inventory (Account-Wide Lock)
 			q(77934, {	-- A Complete Inventory
-				["provider"] = { "i", 208936 },	-- Compiled Report
+				["description"] = "Use your Idol of Ohn'ahra to help find the pages.\n\nQuest begins automatically once all have been found.",
 				["sourceQuests"] = {
 					78053,	-- Auction House Bill of Sale
 					78054,	-- Void Storage Receipt
@@ -835,14 +835,14 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 					78057,	-- Hastily Scrawled Note
 					78058,	-- Note to Kritha
 				},
+				["provider"] = { "i", 208936 },	-- Compiled Report
 				["coord"] = { 44.1, 60.2, VALDRAKKEN },
-				["description"] = "Use your Idol of Ohn'ahra to help find the pages.\n\nQuest begins automatically once all have been found.",
 			})),
 
 			-- Day 13 --
 			q(77953, {	-- A Sphere in Danger
-				["qg"] = 185562,	-- Tithris
 				["sourceQuest"] = 77934,	-- A Complete Inventory
+				["qg"] = 185562,	-- Tithris
 				["coord"] = { 47.5, 46.2, VALDRAKKEN },
 				["repeatable"] = true,
 				["groups"] = {
@@ -897,8 +897,8 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 
 			-- Day 14 --
 			q(77957, {	-- A Treacherous Race
-				["qg"] = 206864,	-- Preservationist Kathos
 				["sourceQuest"] = 77954,	-- A Curious Orb
+				["qg"] = 206864,	-- Preservationist Kathos
 				["coord"] = { 47.4, 48.1, VALDRAKKEN },
 				["repeatable"] = true,
 				["groups"] = {
@@ -1059,12 +1059,12 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 			}),
 			OneTimeAccountLocked(77308,	-- An Ominous Artifact (Account-Wide Lock)
 			q(77977, {	-- An Ominous Artifact
-				["provider"] = { "o", 411936 },	-- Orb Location
 				["sourceQuests"] = {
 					77974,	-- Lock [#1]
 					77975,	-- Lock [#2]
 					77973,	-- Lock [#3]
 				},
+				["provider"] = { "o", 411936 },	-- Orb Location
 				["coord"] = { 60.2, 58.7, THALDRASZUS },
 				["groups"] = {
 					n(210674, {	-- Tithris

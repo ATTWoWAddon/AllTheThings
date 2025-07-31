@@ -13,24 +13,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 		n(QUESTS, {
 			-- These quests need to be done once per account to unlock Island Expeditions. After completing, each character will have completed the flag quest 51994.
 			q(51903, {	-- Island Expedition (1/2) (A)
-				["altQuests"] = { 51994 },	-- Unlock the ability to go on Island Expeditions in search of Azerite
 				["sourceQuest"] = 53061,	-- The Azerite Advantage
+				["altQuests"] = { 51994 },	-- Unlock the ability to go on Island Expeditions in search of Azerite
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(51904, {	-- Island Expedition (2/2) (A)
-				["altQuests"] = { 51994 },	-- Unlock the ability to go on Island Expeditions in search of Azerite
 				["sourceQuest"] = 51903,	-- Island Expedition
+				["altQuests"] = { 51994 },	-- Unlock the ability to go on Island Expeditions in search of Azerite
 				["maps"] = { 1022 },	-- Uncharted Island
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(51870, {	-- Island Expedition (1/2) (H)
-				["altQuests"] = { 51994 },	-- Unlock the ability to go on Island Expeditions in search of Azerite
 				["sourceQuest"] = 53062,	-- The Azerite Advantage
+				["altQuests"] = { 51994 },	-- Unlock the ability to go on Island Expeditions in search of Azerite
 				["races"] = HORDE_ONLY,
 			}),
 			q(51888, {	-- Island Expedition (2/2) (H)
-				["altQuests"] = { 51994 },	-- Unlock the ability to go on Island Expeditions in search of Azerite
 				["sourceQuest"] = 51870,	-- Island Expedition
+				["altQuests"] = { 51994 },	-- Unlock the ability to go on Island Expeditions in search of Azerite
 				["maps"] = { 1022 },	-- Uncharted Island
 				["races"] = HORDE_ONLY,
 			}),
@@ -249,6 +249,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				["coord"] = { 47.8, 68.8, BURNING_STEPPES },	-- TODO: Verify map/npc id
 			}),
 			q(53172, {	-- Venture Co. Business Plan
+				["description"] = "Pats along the road between The Crossroads and Ratchet.",
 				["providers"] = {
 					{ "i", 163479 },	-- Venture Co. Business Plan
 					{ "n", 3658 },	-- Lizzarik
@@ -257,7 +258,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 					{ 50.2, 59.2, NORTHERN_BARRENS },
 					{ 66.8, 72.6, NORTHERN_BARRENS },
 				},
-				["description"] = "Pats along the road between The Crossroads and Ratchet.",
 			}),
 			q(53180, {	-- Vorus'arak's Carapace
 				["providers"] = {
@@ -329,11 +329,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				},
 			}),
 			q(53115, {	-- Island Flotsam (H)
+				["sourceQuests"] = { 51142 },	-- Pests
 				["providers"] = {
 					{ "n", 126334 },	-- Jani
 					{ "i", 163620 },	-- Island Flotsam (H)
 				},
-				["sourceQuests"] = { 51142 },	-- Pests
 				["coord"] = { 35.4, 7.8, THE_GREAT_SEAL },
 				["races"] = HORDE_ONLY,
 				["groups"] = {

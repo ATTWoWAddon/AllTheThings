@@ -58,10 +58,10 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 			n(ACHIEVEMENTS, {
 				ach(13414, {	-- Crucible of Storms
                     crit(44051, {    -- The Restless Cabal
-                        ["_encounter"] = { 2328, DIFFICULTY.RAID.LFR },
+                        ["_encounter"] = { 2328, DIFFICULTY.RAID.MULTI.ALL },
                     }),
                     crit(44052, {    -- Uu'nat, Harbinger of the Void
-                        ["_encounter"] = { 2332, DIFFICULTY.RAID.LFR },
+                        ["_encounter"] = { 2332, DIFFICULTY.RAID.MULTI.ALL },
                     }),
 				}),
 				ach(13420),	-- Crucible of Storms Guild Run
@@ -72,6 +72,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					i(165736),	-- Vantus Rune Technique: Crucible of Storms [Rank 2] (RECIPE!)
 					i(165737),	-- Vantus Rune Technique: Crucible of Storms [Rank 3] (RECIPE!)
 				}),
+				BossOnly(CABAL),
 				BossOnly(UUNAT, {
 					i(167864),	-- Trident of Deep Ocean
 				}),

@@ -19,8 +19,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(52877),	-- Azerite Mining
 			q(51450),	-- Azerite Mining
 			q(54016, {	-- Azerite Transport (Faction Assault WQ)
-				["lvl"] = 45,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 45,
 			}),
 			q(51175),	-- Azerite Wounds
 			q(51642),	-- Beachhead
@@ -28,8 +28,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(54537, {	-- Bilestomper (Faction Assault WQ)
-				["lvl"] = 45,
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 45,
 			}),
 			q(50652, {	-- Biting the Hand that Feeds Them
 				["races"] = HORDE_ONLY,
@@ -38,8 +38,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(54523, {	-- Blinky Gizmospark (Faction Assault WQ)
-				["lvl"] = 45,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 45,
 			}),
 			q(50862),	-- Bloodbulge
 			q(53304, {	-- Blooming Siren's Sting
@@ -60,8 +60,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(54524, {	-- Crate n' Barrel (Faction Assault WQ)
-				["lvl"] = 45,
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 45,
 				["groups"] = {
 					pvp(ach(13439, {	-- Boxing Match (A)
 						["races"] = ALLIANCE_ONLY,
@@ -69,8 +69,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(54516, {	-- Crate n' Barrel (Faction Assault WQ)
-				["lvl"] = 45,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 45,
 				["groups"] = {
 					pvp(ach(13438, {	-- Boxing Match (H)
 						["races"] = HORDE_ONLY,
@@ -95,16 +95,16 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(54513, {	-- Dino Time! (Faction Assault WQ)
-				["lvl"] = 45,
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 45,
 			}),
 			q(54527, {	-- Dinohunter Wildbeard (Faction Assault WQ)
-				["lvl"] = 45,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 45,
 			}),
 			q(54511, {	-- Down with the Death Captains! (Faction Assault WQ)
-				["lvl"] = 45,
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 45,
 			}),
 			q(53329, {	-- Ductile Platinum
 				["requireSkill"] = MINING,
@@ -146,16 +146,16 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(50857),	-- Golrakahn
 			q(54298, {	-- Gravity Matters (Faction Assault WQ)
-				["lvl"] = 45,
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 45,
 				["groups"] = {
 					i(165878),	-- X-52 Delevitator (QI!)
 				},
 			}),
 			q(50874),	-- Hakbi the Risen
 			q(54162, {	-- Hard Landing (Faction Assault WQ)
-				["lvl"] = 45,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 45,
 				["groups"] = {
 					i(165877),	-- BOOM-O-MATIC 9000 (QI!)
 				},
@@ -202,8 +202,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(54508, {	-- No Bridge Too Dire (Faction Assault WQ)
-				["lvl"] = 45,
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 45,
 			}),
 			q(50855, {	-- Old R'gal
 				["races"] = ALLIANCE_ONLY,
@@ -217,8 +217,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["groups"] = { i(163601) },	-- Overgrown Anchor Weed (QI!)
 			}),
 			q(54535, {	-- Portal Keeper Romiir (Faction Assault WQ)
-				["lvl"] = 45,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 45,
 			}),
 			q(50574, {	-- Preservation Methods
 				["races"] = HORDE_ONLY,
@@ -258,20 +258,20 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(54532, {	-- Receding Treeline (Faction Assault WQ)
-				["lvl"] = 45,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 45,
 			}),
 			q(54138, {	-- Ritual Rampage (Faction Assault WQ)
 				["provider"] = { "n", 135446 },	-- Vindicator Jaelaana <7th Legion Emissary>
-				["lvl"] = 45,
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 45,
 			}),
 			q(52250, {	-- Saving Xibala
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(54504, {	-- Scout Captain Grizzleknob (Faction Assault WQ)
-				["lvl"] = 45,
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 45,
 			}),
 			q(50581, {	-- Scrolls and Scales
 				["races"] = HORDE_ONLY,
@@ -288,19 +288,19 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51630),	-- Shell Game
 			q(53883, {	-- Shores of Zuldazar (Faction Assault WQ)
 				["provider"] = { "n", 135447 },	-- Ransa Greyfeather <The Honorbound Emissary>
-				["lvl"] = 45,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 45,
 			}),
 			q(54522, {	-- Short for an Orc (Faction Assault WQ)
-				["lvl"] = 45,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 45,
 			}),
 			petbattle(q(52938, {	-- Small Beginnings
 				["filterID"] = BATTLE_PETS,
 			})),
 			q(54712, {	-- Spell Components (Faction Assault WQ)
-				["lvl"] = 45,
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 45,
 			}),
 			a(q(54498, {	-- Stack on the Tank
 				a(ach(13440)),	-- Pushing the Payload (A)
@@ -326,13 +326,13 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(54685, {	-- They Love Iron (Faction Assault WQ)
-				["lvl"] = 45,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 45,
 			}),
 			q(50850),	-- Tia'Kawan
 			q(54515, {	-- Tidebinder Maka (Faction Assault WQ)
-				["lvl"] = 45,
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 45,
 			}),
 			q(50592),	-- Tiny Terror
 			q(50861),	-- Torraske the Eternal
@@ -358,14 +358,14 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(50872),	-- Warcrawler Karkithiss
 			q(54017, {	-- Wet Work: Warbeast Kraal (Faction Assault WQ)
-				["lvl"] = 45,
 				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 45,
 			}),
 			q(50619),	-- What Goes Up
 			q(50849),	-- Witch Doctor Habra'du
 			q(51010, {	-- Work Order: Coarse Leather
-				["races"] = HORDE_ONLY,
 				["requireSkill"] = SKINNING,
+				["races"] = HORDE_ONLY,
 			}),
 			q(52393, {	-- Work Order: Contract: Tortollan Seekers
 				["requireSkill"] = INSCRIPTION,
@@ -374,22 +374,22 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(52335, {	-- Work Order: Demitri's Draught of Deception
-				["races"] = HORDE_ONLY,
 				["requireSkill"] = ALCHEMY,
+				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(162257),	-- Recipe: Demitri's Draught of Deception (Rank 3)
 				},
 			}),
 			q(52336, {	-- Work Order: Lightfoot Potion
-				["races"] = HORDE_ONLY,
 				["requireSkill"] = ALCHEMY,
+				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(162258),	-- Recipe: Lightfoot Potion [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52342, {	-- Work Order: Monel-Hardened Hoofplates
-				["races"] = HORDE_ONLY,
 				["requireSkill"] = BLACKSMITHING,
+				["races"] = HORDE_ONLY,
 			}),
 			q(52341, {	-- Work Order: Monel-Hardened Stirrups
 				["requireSkill"] = BLACKSMITHING,
@@ -414,8 +414,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(52420, {	-- Work Order: Shimmerscale Diving Suit
-				["races"] = HORDE_ONLY,
 				["requireSkill"] = LEATHERWORKING,
+				["races"] = HORDE_ONLY,
 			}),
 			q(52351, {	-- Work Order: Spiced Snapper
 				["requireSkill"] = COOKING,
@@ -436,8 +436,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(54701, {	-- Wrath of the Ravasaur (Faction Assault WQ)
-				["lvl"] = 45,
 				["races"] = HORDE_ONLY,
+				["lvl"] = 45,
 				["groups"] = {
 					i(166441),	-- Void Elf Head (QI!)
 				},

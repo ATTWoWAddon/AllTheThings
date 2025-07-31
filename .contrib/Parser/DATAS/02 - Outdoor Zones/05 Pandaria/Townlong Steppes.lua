@@ -171,13 +171,12 @@ root(ROOTS.Zones, {
 				}),
 				n(QUESTS, {
 					q(31894, {	-- A Delicate Balance
-						["qg"] = 60864,	-- Yalia Sagewhisper
 						["sourceQuest"] = 30784,	-- The Point of No Return
+						["qg"] = 60864,	-- Yalia Sagewhisper
 						["coord"] = { 82.5, 73.0, TOWNLONG_STEPPES },
 						["isBreadcrumb"] = true,
 					}),
 					q(30814, {	-- A Foot in the Door
-						["qg"] = 60688,	-- Taran Zhu
 						["sourceQuests"] = {
 							-- #if AFTER 7.3.5
 							49560,	-- Hero's Call: Townlong Steppes!
@@ -188,6 +187,7 @@ root(ROOTS.Zones, {
 							30768,	-- My Husband...
 							31695,	-- Beyond the Wall
 						},
+						["qg"] = 60688,	-- Taran Zhu
 						["coord"] = { 71.1, 56.6, TOWNLONG_STEPPES },
 					}),
 					q(31198, {	-- A Morale Victory
@@ -200,31 +200,31 @@ root(ROOTS.Zones, {
 						["coord"] = { 49.1, 71.3, TOWNLONG_STEPPES },
 					}),
 					q(30786, {	-- A Spear Through My Side, A Chain Through My Soul
-						["qg"] = 60857,	-- Orbiss
 						["sourceQuest"] = 31894,	-- A Delicate Balance
+						["qg"] = 60857,	-- Orbiss
 						["coord"] = { 67.9, 67.6, TOWNLONG_STEPPES },
 					}),
 					q(30928, {	-- A Trail of Fear
-						["qg"] = 61585,	-- Yak-Keeper Kyana
 						["sourceQuest"] = 30925,	-- Niuzao's Price
+						["qg"] = 61585,	-- Yak-Keeper Kyana
 						["coord"] = { 39.1, 62.0, TOWNLONG_STEPPES },
 					}),
 					q(30901, {	-- Along the Southern Front
-						["qg"] = 61066,	-- Taran Zhu
 						["sourceQuest"] = 30900,	-- Terror of the Dread Wastes
+						["qg"] = 61066,	-- Taran Zhu
 						["coord"] = { 76.4, 82.4, TOWNLONG_STEPPES },
 					}),
 					q(30789, {	-- Arconiss
-						["qg"] = 60857,	-- Orbiss
 						["sourceQuest"] = 30787,	-- The Torches
+						["qg"] = 60857,	-- Orbiss
 						["coord"] = { 67.9, 67.6, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(81319),	-- Stack of Torches (QI!)
 						},
 					}),
 					q(30791, {	-- Arconiss Thirsts
-						["qg"] = 60857,	-- Orbiss
 						["sourceQuest"] = 30815,	-- The Death Of Me
+						["qg"] = 60857,	-- Orbiss
 						["coord"] = { 67.9, 67.6, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(81260),	-- Clotted Rodent's Blood (QI!)
@@ -241,24 +241,24 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 					}),
 					q(30892, {	-- Back on Their Feet
-						["qg"] = 61470,	-- Septi the Herbalist
 						["sourceQuest"] = 30891,	-- Treatment for the Troops
+						["qg"] = 61470,	-- Septi the Herbalist
 						["coord"] = { 75.8, 83.1, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(82787),	-- Citron-Infused Bandages (QI!)
 						},
 					}),
 					q(30929, {	-- Bad Yak
-						["qg"] = 61161,	-- Bluesaddle
 						["sourceQuests"] = {
 							30923,	-- Set the Mantid Back
 							30921,	-- The Motives of the Mantid
 						},
+						["qg"] = 61161,	-- Bluesaddle
 						["coord"] = { 39.2, 62.0, TOWNLONG_STEPPES },
 					}),
 					q(30884, {	-- Behind the Battlefront
-						["qg"] = 61066,	-- Taran Zhu
 						["sourceQuest"] = 30785,	-- Gao-Ran Battlefront
+						["qg"] = 61066,	-- Taran Zhu
 						["coord"] = { 76.4, 82.4, TOWNLONG_STEPPES },
 					}),
 					q(31895, {	-- Better Off Dread
@@ -272,8 +272,8 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 					}),
 					q(30888, {	-- Breach in the Defenses
-						["qg"] = 61468,	-- Taoshi
 						["sourceQuest"] = 30887,	-- Unwelcome Intruders
+						["qg"] = 61468,	-- Taoshi
 						["coord"] = { 79.4, 84.4, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(81925),	-- Shado-Pan Flare (QI!)
@@ -288,8 +288,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(31065, {	-- Buried Beneath
-						["qg"] = 62274,	-- Taran Zhu
 						["sourceQuests"] = { 30980 },	-- Heroes of the Shado-Pan
+						["qg"] = 62274,	-- Taran Zhu
 						["coord"] = { 54.0, 77.8, TOWNLONG_STEPPES },
 					}),
 					q(31120, {	-- Cheng Bo!
@@ -298,8 +298,8 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 					}),
 					q(31032, {	-- Choking the Skies
-						["qg"] = 62573,	-- Marksman Ye
 						["sourceQuest"] = 30976,	-- Joining the Hunt
+						["qg"] = 62573,	-- Marksman Ye
 						["coord"] = { 51.2, 83.0, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(83768),	-- Wu Kao Torch (QI!)
@@ -307,8 +307,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30898, {	-- Cutting the Swarm
-						["qg"] = 61066,	-- Taran Zhu
 						["sourceQuests"] = { 30895 },	-- Improvised Ammunition
+						["qg"] = 61066,	-- Taran Zhu
 						["coord"] = { 76.4, 82.4, TOWNLONG_STEPPES },
 						["groups"] = {
 							o_repeated({
@@ -333,8 +333,8 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 					}),
 					q(30979, {	-- Devastation Below
-						["qg"] = 61020,	-- Hawkmaster Nurong
 						["sourceQuests"] = { 30978 },	-- Hostile Skies
+						["qg"] = 61020,	-- Hawkmaster Nurong
 						["coord"] = { 51.6, 87.2, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(84587),	-- Farwatch Satin Hood
@@ -349,8 +349,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30778, {	-- Dust to Dust
-						["qg"] = 61261,	-- Ban Bearheart
 						["sourceQuest"] = 30777,	-- In Search of Suna
+						["qg"] = 61261,	-- Ban Bearheart
 						["coord"] = { 82.6, 73.0, TOWNLONG_STEPPES },
 					}),
 					q(31041, {	-- Egg Rescue!
@@ -362,8 +362,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30970, {	-- Enraged By Hatred
-						["qg"] = 62436,	-- Taoshi
 						["sourceQuests"] = { 30901 },	-- Along the Southern Front
+						["qg"] = 62436,	-- Taoshi
 						["coord"] = { 67.3, 80.8, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(83741),	-- Cloak of the Hollow
@@ -374,13 +374,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30932, {	-- Father's Footsteps
-						["qg"] = 61584,	-- Sentinel Commander Qipan
 						["sourceQuest"] = 30931,	-- My Father's Crossbow
+						["qg"] = 61584,	-- Sentinel Commander Qipan
 						["coord"] = { 39.4, 61.9, TOWNLONG_STEPPES },
 					}),
 					q(30769, {	-- First Assault
-						["qg"] = 60688,	-- Taran Zhu
 						["sourceQuest"] = 30814,	-- A Foot in the Door
+						["qg"] = 60688,	-- Taran Zhu
 						["coord"] = { 71.1, 56.6, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(88095),	-- Mistborne Pauldrons
@@ -408,27 +408,27 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30785, {	-- Gao-Ran Battlefront
-						["qg"] = 61261,	-- Ban Beartheart
 						["sourceQuests"] = { 30784 },	-- The Point of No Return
+						["qg"] = 61261,	-- Ban Beartheart
 						["coord"] = { 82.6, 73.0, TOWNLONG_STEPPES },
 						["isBreadcrumb"] = true,	-- Hidden once completed Quests at Gao-Ran Battlefront
 					}),
 					q(30927, {	-- Give Them Peace
-						["qg"] = 61584,	-- Sentinel Commander Qipan
 						["sourceQuest"] = 30925,	-- Niuzao's Price
+						["qg"] = 61584,	-- Sentinel Commander Qipan
 						["coord"] = { 39.4, 61.9, TOWNLONG_STEPPES },
 					}),
 					q(30788, {	-- Golgoss
-						["qg"] = 60857,	-- Orbiss
 						["sourceQuest"] = 30787,	-- The Torches
+						["qg"] = 60857,	-- Orbiss
 						["coord"] = { 67.9, 67.6, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(81319),	-- Stack of Torches (QI!)
 						},
 					}),
 					q(30790, {	-- Golgoss Hungers
-						["qg"] = 60857,	-- Orbiss
 						["sourceQuest"] = 30815,	-- The Death Of Me
+						["qg"] = 60857,	-- Orbiss
 						["coord"] = { 67.9, 67.6, TOWNLONG_STEPPES },
 						["groups"] = {
 							o_repeated({
@@ -444,8 +444,8 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 					}),
 					q(30977, {	-- Grounded Welcome
-						["qg"] = 62278,	-- Rensai Oakhide
 						["sourceQuest"] = 30976,	-- Joining the Hunt
+						["qg"] = 62278,	-- Rensai Oakhide
 						["coord"] = { 53.9, 78.1, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(84596),	-- Farwatch Satin Robe
@@ -460,8 +460,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30783, {	-- Hatred Becomes Us
-						["qg"] = 60864,	-- Yalia Sagewhisper
 						["sourceQuest"] = 30827,	-- What Lies Beneath
+						["qg"] = 60864,	-- Yalia Sagewhisper
 						["coord"] = { 82.5, 73.0, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(81417),	-- Totem of Harmony (QI!)
@@ -475,13 +475,13 @@ root(ROOTS.Zones, {
 						["lvl"] = 83,
 					})),
 					q(30980, {	-- Heroes of the Shado-Pan
-						["qg"] = 62786,	-- Hawkmaster Nurong
 						["sourceQuests"] = { 30979 },	-- Devastation Below
+						["qg"] = 62786,	-- Hawkmaster Nurong
 						["coord"] = { 53.9, 86.9, TOWNLONG_STEPPES },
 					}),
 					q(30978, {	-- Hostile Skies
-						["qg"] = 61020,	-- Hawkmaster Nurong
 						["sourceQuests"] = { 30899 },	-- In Skilled Hands
+						["qg"] = 61020,	-- Hawkmaster Nurong
 						["coord"] = { 51.6, 87.2, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(88590),	-- Nurong's Gun
@@ -493,12 +493,12 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 					}),
 					q(30895, {	-- Improvised Ammunition
-						["qg"] = 61066,	-- Taran Zhu
 						["sourceQuests"] = {
 							30892,	-- Back on Their Feet
 							30894,	-- Rummaging Through the Remains
 							30893,	-- The Endless Swarm
 						},
+						["qg"] = 61066,	-- Taran Zhu
 						["coord"] = { 76.4, 82.4, TOWNLONG_STEPPES },
 						["groups"] = {
 							o(211863, {
@@ -521,13 +521,13 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 					}),
 					q(30777, {	-- In Search of Suna
-						["qg"] = 60687,	-- Ban Bearheart
 						["sourceQuests"] = { 30776 },	-- Jung Duk
+						["qg"] = 60687,	-- Ban Bearheart
 						["coord"] = { 71.0, 56.5, TOWNLONG_STEPPES },
 					}),
 					q(30899, {	-- In Skilled Hands
-						["qg"] = 62274,	-- Taran Zhu
 						["sourceQuests"] = { 30976 },	-- Joining the Hunt
+						["qg"] = 62274,	-- Taran Zhu
 						["coord"] = { 54.0, 78.0, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(83023),	-- Shado-Pan Crossbow Bolt Bundle (QI!)
@@ -544,8 +544,8 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 					}),
 					q(30897, {	-- In the Wrong Hands
-						["qg"] = 61880,	-- Initiate Chao
 						["sourceQuest"] = 30891,	-- Treatment for the Troops
+						["qg"] = 61880,	-- Initiate Chao
 						["coord"] = { 70.3, 86.6, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(82783),	-- Initiate Chao's Sword (QI!)
@@ -553,25 +553,25 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30972, {	-- Joining the Fight
-						["qg"] = 62124,	-- Initiate Pao-Me
 						["sourceQuests"] = {
 							30970,	-- Enraged By Hatred
 							30971,	-- Taking Stock
 						},
+						["qg"] = 62124,	-- Initiate Pao-Me
 						["coord"] = { 67.3, 80.6, TOWNLONG_STEPPES },
 					}),
 					q(30976, {	-- Joining the Hunt
-						["qg"] = 62736,	-- Taran Zhu
 						["sourceQuests"] = { 30975 },	-- The Taking of Dusklight Bridge
+						["qg"] = 62736,	-- Taran Zhu
 						["coord"] = { 61.1, 83.0, TOWNLONG_STEPPES },
 					}),
 					q(30776, {	-- Jung Duk
-						["qg"] = 60684,	-- Suna Silentstrike
 						["sourceQuests"] = {
 							30773,	-- Pitching In
 							30774,	-- Ranger Rescue
 							30772,	-- Seeing Red
 						},
+						["qg"] = 60684,	-- Suna Silentstrike
 						["coord"] = { 67.2, 52.2, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(83689),	-- Mistborne Cord
@@ -586,13 +586,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(31063, {	-- Lao-Chin and Serevex
-						["qg"] = 62274,	-- Taran Zhu
 						["sourceQuest"] = 31065,	-- Buried Beneath
+						["qg"] = 62274,	-- Taran Zhu
 						["coord"] = { 54.0, 77.8, TOWNLONG_STEPPES },
 					}),
 					q(30781, {	-- Last Toll of the Yaungol
-						["qg"] = 60903,	-- Xiao Tu
 						["sourceQuest"] = 30777,	-- In Search of Suna
+						["qg"] = 60903,	-- Xiao Tu
 						["coord"] = { 82.7, 73.1, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(83746),	-- Torch of Noon
@@ -613,12 +613,12 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 					}),
 					q(30793, {	-- Mists' Opportunity
-						["qg"] = 60857,	-- Orbiss
 						["sourceQuests"] = {
 							30791,	-- Arconiss Thirsts
 							30790,	-- Golgoss Hungers
 							30792,	-- Orbiss Fades
 						},
+						["qg"] = 60857,	-- Orbiss
 						["coord"] = { 67.9, 67.6, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(83653),	-- Mistborne Mantle
@@ -638,11 +638,11 @@ root(ROOTS.Zones, {
 						["minReputation"] = { FACTION_SHADO_PAN, EXALTED },
 					}),
 					q(30931, {	-- My Father's Crossbow
-						["qg"] = 61539,	-- Ku-Mo
 						["sourceQuests"] = {	-- [Discord 2023-8-2]
 							30923,	-- Set the Mantid Back
 							30921,	-- The Motives of the Mantid
 						},
+						["qg"] = 61539,	-- Ku-Mo
 						["coord"] = { 43.8, 65.7, TOWNLONG_STEPPES },
 						-- Note: this may be more dependent on phasing than sourceQuest, but this reliably made Ku-mo show up
 						["groups"] = {
@@ -654,8 +654,8 @@ root(ROOTS.Zones, {
 						["coord"] = { 49.1, 71.3, TOWNLONG_STEPPES },
 					}),
 					q(30925, {	-- Niuzao's Price
-						["qg"] = 61581,	-- Ogo the Younger
 						["sourceQuests"] = { 30924 },	-- The Wisdom of Niuzao
+						["qg"] = 61581,	-- Ogo the Younger
 						["coord"] = { 39.3, 62.2, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(83736),	-- Sigil of Compassion
@@ -666,8 +666,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(31064, {	-- Nurong and Rothek
-						["qg"] = 62274,	-- Taran Zhu
 						["sourceQuest"] = 31065,	-- Buried Beneath
+						["qg"] = 62274,	-- Taran Zhu
 						["coord"] = { 54.0, 77.8, TOWNLONG_STEPPES },
 					}),
 					q(31042, {	-- Onyx Hearts
@@ -679,13 +679,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30792, {	-- Orbiss Fades
-						["qg"] = 60857,	-- Orbiss
 						["sourceQuest"] = 30815,	-- The Death Of Me
+						["qg"] = 60857,	-- Orbiss
 						["coord"] = { 67.9, 67.6, TOWNLONG_STEPPES },
 					}),
 					q(30771, {	-- Perfect Pitch
-						["qg"] = 60688,	-- Taran Zhu
 						["sourceQuest"] = 30814,	-- A Foot in the Door
+						["qg"] = 60688,	-- Taran Zhu
 						["coord"] = { 71.1, 56.6, TOWNLONG_STEPPES },
 						["groups"] = {
 							o_repeated({
@@ -696,8 +696,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30930, {	-- Pick a Yak
-						["qg"] = 61161,	-- Bluesaddle
 						["sourceQuest"] = 30929,	-- Bad Yak
+						["qg"] = 61161,	-- Bluesaddle
 						["coord"] = { 35.4, 56.7, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(82467),	-- Ruthers' Harness (TOY!)
@@ -705,12 +705,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30773, {	-- Pitching In
-						["qg"] = 60687,	-- Ban Bearheart
 						["sourceQuests"] = {
 							30769,	-- First Assault
 							30771,	-- Perfect Pitch
 							30770,	-- Running Rampant
 						},
+						["qg"] = 60687,	-- Ban Bearheart
 						["coord"] = { 67.2, 52.2, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(81193),	-- Ban's Explosives (QI!)
@@ -718,23 +718,23 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30774, {	-- Ranger Rescue
-						["qg"] = 60684,	-- Suna Silentstrike
 						["sourceQuests"] = {
 							30769,	-- First Assault
 							30771,	-- Perfect Pitch
 							30770,	-- Running Rampant
 						},
+						["qg"] = 60684,	-- Suna Silentstrike
 						["coord"] = { 67.2, 52.2, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(81178),	-- Stone Key (QI!)
 						},
 					}),
 					q(30960, {	-- Returning from the Pass
-						["qg"] = 61468,	-- Taoshi
 						["sourceQuests"] = {
 							30888,	-- Breach in the Defenses
 							30890,	-- The Restless Watch
 						},
+						["qg"] = 61468,	-- Taoshi
 						["coord"] = { 79.4, 84.4, TOWNLONG_STEPPES },
 					}),
 					q(31061, {	-- Riding the Storm
@@ -751,25 +751,25 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30894, {	-- Rummaging Through the Remains
-						["qg"] = 61470,	-- Septi the Herbalist
 						["sourceQuest"] = 30891,	-- Treatment for the Troops
+						["qg"] = 61470,	-- Septi the Herbalist
 						["coord"] = { 75.8, 83.1, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(88585),	-- Dislodged Stinger
 						},
 					}),
 					q(30770, {	-- Running Rampant
-						["qg"] = 60688,	-- Taran Zhu
 						["sourceQuest"] = 30814,	-- A Foot in the Door
+						["qg"] = 60688,	-- Taran Zhu
 						["coord"] = { 71.1, 56.6, TOWNLONG_STEPPES },
 					}),
 					q(30772, {	-- Seeing Red
-						["qg"] = 60684,	-- Suna Silentstrike
 						["sourceQuests"] = {
 							30769,	-- First Assault
 							30771,	-- Perfect Pitch
 							30770,	-- Running Rampant
 						},
+						["qg"] = 60684,	-- Suna Silentstrike
 						["coord"] = { 67.2, 52.2, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(83671),	-- Mistborne Leggings
@@ -784,18 +784,18 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30933, {	-- Seeking Father
-						["qg"] = 65341,	-- Ku-Mo
-						["sourceQuest"] = 30932,	-- Father's Footsteps
-						["coord"] = { 48.6, 71.0, TOWNLONG_STEPPES },
 						["description"] = "This quest is not always available due to zone phasing issues.",
+						["sourceQuest"] = 30932,	-- Father's Footsteps
+						["qg"] = 65341,	-- Ku-Mo
+						["coord"] = { 48.6, 71.0, TOWNLONG_STEPPES },
 					}),
 					q(30923, {	-- Set the Mantid Back
 						["qg"] = 61482,	-- Tai Ho
 						["coord"] = { 49.1, 71.2, TOWNLONG_STEPPES },
 					}),
 					q(30779, {	-- Slaying the Scavengers
-						["qg"] = 61261,	-- Ban Bearheart
 						["sourceQuest"] = 30777,	-- In Search of Suna
+						["qg"] = 61261,	-- Ban Bearheart
 						["coord"] = { 82.6, 73.0, TOWNLONG_STEPPES },
 					}),
 					q(31116, {	-- Spirit Dust
@@ -807,8 +807,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30782, {	-- Spiteful Spirits
-						["qg"] = 61261,	-- Ban Bearheart
 						["sourceQuest"] = 30827,	-- What Lies Beneath
+						["qg"] = 61261,	-- Ban Bearheart
 						["coord"] = { 82.6, 73.0, TOWNLONG_STEPPES },
 					}),
 					q(31040, {	-- Spiteful Sprites (daily)
@@ -822,8 +822,8 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 					}),
 					q(31277, {	-- Surprise Attack!
-						["qg"] = 63009,	-- Master Snowdrift
 						["sourceQuests"] = { 31266 },	-- Mogu Incursions
+						["qg"] = 63009,	-- Master Snowdrift
 						["coord"] = { 49.5, 70.5, TOWNLONG_STEPPES },
 						["minReputation"] = { FACTION_SHADO_PAN, EXALTED },
 						["groups"] = {
@@ -831,8 +831,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30971, {	-- Taking Stock
-						["qg"] = 62124,	-- Initiate Pao-Me
 						["sourceQuest"] = 30901,	-- Along the Southern Front
+						["qg"] = 62124,	-- Initiate Pao-Me
 						["coord"] = { 67.3, 80.6, TOWNLONG_STEPPES },
 						["groups"] = {
 							o_repeated({
@@ -843,8 +843,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30981, {	-- Taoshi and Korvexxis
-						["qg"] = 62274,	-- Taran Zhu
 						["sourceQuest"] = 31065,	-- Buried Beneath
+						["qg"] = 62274,	-- Taran Zhu
 						["coord"] = { 54.0, 77.8, TOWNLONG_STEPPES },
 					}),
 					q(31204, {	-- Target of Opportunity: Sra'thik Hivelord
@@ -872,8 +872,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30900, {	-- Terror of the Dread Wastes
-						["qg"] = 61021,	-- Taoshi
 						["sourceQuests"] = { 30898 },	-- Cutting the Swarm
+						["qg"] = 61021,	-- Taoshi
 						["coord"] = { 74.2, 85.0, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(83726),	-- Gao-Ran Ring
@@ -894,39 +894,39 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 					}),
 					q(31127, {	-- The Challenger's Ring: Chao the Voice
+						["description"] = "Only available when |cFFFFD700Yaungol|r themed dailies are available.",
 						["qg"] = 63009,	-- Master Snowdrift
 						["coord"] = { 49.5, 70.5, TOWNLONG_STEPPES },
-						["description"] = "Only available when |cFFFFD700Yaungol|r themed dailies are available.",
 						["minReputation"] = { FACTION_SHADO_PAN, HONORED },
 					}),
 					q(31220, {	-- The Challenger's Ring: Hawkmaster Nurong
+						["description"] = "Only available when |cFFFFD700Mantid|r themed dailies are available.",
 						["qg"] = 63614,	-- Ling of the Six Pools
 						["coord"] = { 49.0, 71.3, TOWNLONG_STEPPES },
-						["description"] = "Only available when |cFFFFD700Mantid|r themed dailies are available.",
 						["minReputation"] = { FACTION_SHADO_PAN, HONORED },
 					}),
 					q(31128, {	-- The Challenger's Ring: Lao-Chin the Iron Belly
+						["description"] = "Only available when |cFFFFD700Yaungol|r themed dailies are available.",
 						["qg"] = 63009,	-- Master Snowdrift
 						["coord"] = { 49.5, 70.5, TOWNLONG_STEPPES },
-						["description"] = "Only available when |cFFFFD700Yaungol|r themed dailies are available.",
 						["minReputation"] = { FACTION_SHADO_PAN, REVERED },
 					}),
 					q(31038, {	-- The Challenger's Ring: Snow Blossom
+						["description"] = "Only available when |cFFFFD700Mogu|r themed dailies are available.",
 						["qg"] = 62304,	-- Ban Bearheart
 						["coord"] = { 49.0, 70.4, TOWNLONG_STEPPES },
-						["description"] = "Only available when |cFFFFD700Mogu|r themed dailies are available.",
 						["minReputation"] = { FACTION_SHADO_PAN, HONORED },
 					}),
 					q(31221, {	-- The Challenger's Ring: Tenwu of the Red Smoke
+						["description"] = "Only available when |cFFFFD700Mantid|r themed dailies are available.",
 						["qg"] = 63614,	-- Ling of the Six Pools
 						["coord"] = { 49.0, 71.3, TOWNLONG_STEPPES },
-						["description"] = "Only available when |cFFFFD700Mantid|r themed dailies are available.",
 						["minReputation"] = { FACTION_SHADO_PAN, REVERED },
 					}),
 					q(31104, {	-- The Challenger's Ring: Yalia Sagewhisper
+						["description"] = "Only available when |cFFFFD700Mogu|r themed dailies are available.",
 						["qg"] = 62304,	-- Ban Bearheart
 						["coord"] = { 49.0, 70.4, TOWNLONG_STEPPES },
-						["description"] = "Only available when |cFFFFD700Mogu|r themed dailies are available.",
 						["minReputation"] = { FACTION_SHADO_PAN, REVERED },
 					}),
 					q(31118, {	-- The Deadtalker Cipher
@@ -938,11 +938,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30815, {	-- The Death of Me
-						["qg"] = 60857,	-- Orbiss
 						["sourceQuests"] = {
 							30789,	-- Arconiss
 							30788,	-- Golgoss
 						},
+						["qg"] = 60857,	-- Orbiss
 						["coord"] = { 67.9, 67.6, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(83756),	-- Sumprush Mace
@@ -954,8 +954,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30893, {	-- The Endless Swarm
-						["qg"] = 61066,	-- Taran Zhu
 						["sourceQuests"] = { 30960 },	-- Returning from the Pass
+						["qg"] = 61066,	-- Taran Zhu
 						["coord"] = { 76.4, 82.4, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(83698),	-- Mistborne Gloves
@@ -978,12 +978,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30775, {	-- The Exile
-						["qg"] = 60735,	-- Katak the Defeated
 						["sourceQuests"] = {
 							30769,	-- First Assault
 							30771,	-- Perfect Pitch
 							30770,	-- Running Rampant
 						},
+						["qg"] = 60735,	-- Katak the Defeated
 						["coord"] = { 66.9, 51.4, TOWNLONG_STEPPES },
 					}),
 					q(30963, {	-- The Field Armorer
@@ -1037,11 +1037,11 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 					}),
 					q(30784, {	-- The Point of No Return
-						["qg"] = 61261,	-- Ban Bearheart
 						["sourceQuests"] = {
 							30783,	-- Hatred Becomes Us
 							30782,	-- Spiteful Spirits
 						},
+						["qg"] = 61261,	-- Ban Bearheart
 						["coord"] = { 82.6, 73.0, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(81430),	-- Totem of Harmony (QI!)
@@ -1057,8 +1057,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30890, {	-- The Restless Watch
-						["qg"] = 61468,	-- Taoshi
 						["sourceQuest"] = 30887,	-- Unwelcome Intruders
+						["qg"] = 61468,	-- Taoshi
 						["coord"] = { 79.4, 84.4, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(84610),	-- Ring of Shallowstep Pass
@@ -1069,17 +1069,17 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(31688, {	-- The Search for Restless Leng
-						["qg"] = 62278,	-- Rensai Oakhide
 						["sourceQuest"] = 31065,	-- Buried Beneath
+						["qg"] = 62278,	-- Rensai Oakhide
 						["coord"] = { 53.9, 78.1, TOWNLONG_STEPPES },
 					}),
 					q(30968, {	-- The Sha of Hatred
-						["qg"] = 62275,	-- Taran Zhu
 						["sourceQuests"] = {
 							31063,	-- Lao-Chin and Serevex
 							31064,	-- Nurong and Rothek
 							30981,	-- Taoshi and Korvexxis
 						},
+						["qg"] = 62275,	-- Taran Zhu
 						["coord"] = { 47.4, 78.8, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(83644),	-- Mistborne Hood
@@ -1099,8 +1099,8 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 					}),
 					q(32681, {	-- The Storm Gathers (A)
-						["qg"] = 70360,	-- Vareesa Windrunner
 						["sourceQuest"] = 32679,	-- Thunder Calls (A)
+						["qg"] = 70360,	-- Vareesa Windrunner
 						["coord"] = { 49.8, 69.0, TOWNLONG_STEPPES },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -1108,8 +1108,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(32680, {	-- The Storm Gathers (H)
-						["qg"] = 70358,	-- Scout Captain Elsia
 						["sourceQuest"] = 32678,	-- Thunder Calls (H)
+						["qg"] = 70358,	-- Scout Captain Elsia
 						["coord"] = { 50.7, 73.3, TOWNLONG_STEPPES },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -1117,8 +1117,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30975, {	-- The Taking of Dusklight Bridge
-						["qg"] = 61016,	-- Lao-Chin the Iron Belly
 						["sourceQuest"] = 30973,	-- Up In Flames
+						["qg"] = 61016,	-- Lao-Chin the Iron Belly
 						["coord"] = { 61.5, 79.3, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(83721),	-- Bloodletter Band
@@ -1129,8 +1129,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30926, {	-- The Terrible Truth
-						["qg"] = 61580,	-- Ogo the Elder
 						["sourceQuest"] = 30925,	-- Niuzao's Price
+						["qg"] = 61580,	-- Ogo the Elder
 						["coord"] = { 39.3, 62.2, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(83731),	-- Mark of the Catacombs
@@ -1141,14 +1141,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(31656, {	-- The Threat in the South
-						["qg"] = 62802,	-- Taoshi
 						["sourceQuests"] = { 30968 },	-- The Sha of Hatred
+						["qg"] = 62802,	-- Taoshi
 						["coord"] = { 46.1, 82.4, TOWNLONG_STEPPES },
 						["isBreadcrumb"] = true,
 					}),
 					q(30787, {	-- The Torches
-						["qg"] = 60857,	-- Orbiss
 						["sourceQuests"] = { 30786 },	-- A Spear Through My Side, A Chain Through My Soul
+						["qg"] = 60857,	-- Orbiss
 						["coord"] = { 67.9, 67.6, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(81176),	-- Mist-Shaman's Torch (QI!)
@@ -1160,16 +1160,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30924, {	-- The Wisdom of Niuzao
-						["qg"] = 61482,	-- Tai Ho
 						["sourceQuests"] = {
 							30923,	-- Set the Mantid Back
 							30921,	-- The Motives of the Mantid
 						},
+						["qg"] = 61482,	-- Tai Ho
 						["coord"] = { 49.1, 71.2, TOWNLONG_STEPPES },
 					}),
 					q(30896, {	-- Thieves and Troublemakers
-						["qg"] = 61881,	-- Initiate Feng
 						["sourceQuest"] = 30891,	-- Treatment for the Troops
+						["qg"] = 61881,	-- Initiate Feng
 						["coord"] = { 70.4, 86.3, TOWNLONG_STEPPES },
 						["groups"] = {
 							o_repeated({
@@ -1181,8 +1181,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(31687, {	-- Thinning the Sik'thik
-						["qg"] = 62278,	-- Rensai Oakhide
 						["sourceQuest"] = 31065,	-- Buried Beneath
+						["qg"] = 62278,	-- Rensai Oakhide
 						["coord"] = { 53.9, 78.1, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(83716),	-- Sik'thik Locket
@@ -1200,8 +1200,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30780, {	-- Totemic Research
-						["qg"] = 60864,	-- Yalia Sagewhisper
 						["sourceQuest"] = 30777,	-- In Search of Suna
+						["qg"] = 60864,	-- Yalia Sagewhisper
 						["coord"] = { 82.5, 73.0, TOWNLONG_STEPPES },
 						["groups"] = {
 							o(211566, {	-- Palewind Totem
@@ -1210,8 +1210,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30889, {	-- Trap Setting
-						["qg"] = 61467,	-- Mao the Lookout
 						["sourceQuest"] = 30887,	-- Unwelcome Intruders
+						["qg"] = 61467,	-- Mao the Lookout
 						["coord"] = { 79.3, 84.4, TOWNLONG_STEPPES },
 					}),
 					q(30891, {	-- Treatment for the Troops
@@ -1219,13 +1219,13 @@ root(ROOTS.Zones, {
 						["coord"] = { 75.8, 83.1, TOWNLONG_STEPPES },
 					}),
 					q(30887, {	-- Unwelcome Intruders
-						["qg"] = 61469,	-- Taoshi
 						["sourceQuests"] = { 30884 },	-- Behind the Battlefront
+						["qg"] = 61469,	-- Taoshi
 						["coord"] = { 76.9, 78.7, TOWNLONG_STEPPES },
 					}),
 					q(30973, {	-- Up In Flames
-						["qg"] = 62273,	-- Taran Zhu
 						["sourceQuest"] = 30972,	-- Joining the Fight
+						["qg"] = 62273,	-- Taran Zhu
 						["coord"] = { 61.6, 79.3, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(83136),	-- Quiver of Shado-Pan Fire Arrows (QI!)
@@ -1252,13 +1252,13 @@ root(ROOTS.Zones, {
 						["lvl"] = 83,
 					})),
 					q(30827, {	-- What Lies Beneath
-						["qg"] = 60864,	-- Yalia Sagewhisper
 						["sourceQuests"] = {
 							30778,	-- Dust to Dust
 							30781,	-- Last Toll of the Yaungol
 							30779,	-- Slaying the Scavengers
 							30780,	-- Totemic Research
 						},
+						["qg"] = 60864,	-- Yalia Sagewhisper
 						["coord"] = { 82.5, 73.0, TOWNLONG_STEPPES },
 						["groups"] = {
 							i(81356),	-- Shadow-Pan Torch (QI!)
@@ -1829,6 +1829,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 70.8, 55.8, TOWNLONG_STEPPES },
 						["sym"] = {{"sub","common_vendor",65172}},	-- Len at Arms <Adventuring Supplies>
 					}),
+				}),
+				n(ZONE_DROPS, {
+					i(74849),	-- Pink Turnip
 				}),
 			},
 		}),

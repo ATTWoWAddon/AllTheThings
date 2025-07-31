@@ -1222,8 +1222,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 		}),
 		n(QUESTS, {
 			q(57298, {	-- How Things "Really" Happened...
-				["qg"] = 157113,	-- Chromie
 				["sourceQuest"] = 57249,	-- A Timely Invitation
+				["qg"] = 157113,	-- Chromie
 				["coord"] = { 53.5, 54.7, CAVERNS_OF_TIME },
 				["lvl"] = 60,
 			}),
@@ -1817,16 +1817,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 						["lvl"] = 10,
 					}),
 					q(57730, {	-- Zinfizzlex's Portable Shredder Unit (A)
-						["qg"] = 13377,	-- Master Engineer Zinfizzlex
 						["description"] = "Questgiver is west of Korrak (over the bridge) and you have to escort him to your base. After bringing him to safety he offers the quest.",
+						["qg"] = 13377,	-- Master Engineer Zinfizzlex
 						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
 						["lvl"] = 10,
 						["groups"] = { i(17410) },	-- Zinfizzlex's Portable Shredder Unit
 					}),
 					q(57731, {	-- Zinfizzlex's Portable Shredder Unit (H)
-						["qg"] = 13377,	-- Master Engineer Zinfizzlex
 						["description"] = "Questgiver is west of Korrak (over the bridge) and you have to escort him to your base. After bringing him to safety he offers the quest.",
+						["qg"] = 13377,	-- Master Engineer Zinfizzlex
 						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
 						["lvl"] = 10,
@@ -2463,7 +2463,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			}),
 		}),
 	})),
-	n(WOW_ANNIVERSARY_TWENTY, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } },{
+	n(WOW_ANNIVERSARY_TWENTY, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5, "removed 11.0.7.58238" } },{
 		inst(1301, {	-- Blackrock Depths
 			["isRaid"] = true,
 			--["coord"] = { },
@@ -2925,8 +2925,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				["coord"] = { 62.9, 50.7, TANARIS },
 			}),
 			q(84489, {	-- Shopping Squee!
-				["provider"] = { "n", 223877 },	-- Yllana <Event Coordinator>
 				["sourceQuests"] = { 84254 },	-- Meet and Greet
+				["provider"] = { "n", 223877 },	-- Yllana <Event Coordinator>
 				["coord"] = { 62.9, 50.7, TANARIS },
 			}),
 			q(84616, {	-- Celebrate Good Fun!

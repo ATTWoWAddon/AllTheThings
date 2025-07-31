@@ -549,14 +549,14 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 				["provider"] = { "i", 133887 },	-- Luminous Pearl
 			}),
 			q(40961, {	-- The Dalaran Fountain
-				["qg"] = 90417,	-- Archmage Khadgar
 				["sourceQuest"] = 40960,	-- Luminous Pearl
+				["qg"] = 90417,	-- Archmage Khadgar
 				["coord"] = { 28.8, 48.6, LEGION_DALARAN },
 			}),
 			q(41010, {	-- Fish Frenzy
-				["qg"] = 102639,	-- Nat Pagle
-				["sourceQuest"] = 40961,	-- The Dalaran Fountain
 				["description"] = "If you can't find Nat Pagle to give you this quest, going into the bank just south of the fountain seems to force him to spawn right on you.",
+				["sourceQuest"] = 40961,	-- The Dalaran Fountain
+				["qg"] = 102639,	-- Nat Pagle
 				["maps"] = { LEGION_DALARAN },	-- TODO replace with coord?
 				["groups"] = {
 					artifact(841),	-- Base Skin
@@ -748,18 +748,18 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 		}),
 		n(QUESTS, {
 			q(72252, {	-- Dragon Isles Fishing [A]
-				["provider"] = { "n", 191150 },	-- Danielle Anglers
-				["sourceQuests"] = { 67700 },	-- To the Dragon Isles! [A]
-				["coord"] = { 81.3, 31.3, THE_WAKING_SHORES },
 				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Fishing. You must not have any items in your profession equipment slot.",
+				["sourceQuests"] = { 67700 },	-- To the Dragon Isles! [A]
+				["provider"] = { "n", 191150 },	-- Danielle Anglers
+				["coord"] = { 81.3, 31.3, THE_WAKING_SHORES },
 				["races"] = ALLIANCE_ONLY,
 				["lockCriteria"] = { 1, "spellID", 366253 },	-- Dragon Isles Fishing
 			}),
 			q(72253, {	-- Dragon Isles Fishing [H]
-				["provider"] = { "n", 190524 },	-- Mora Cloudwalker <Fishing Trainer>
-				["sourceQuests"] = { 65444 },	-- To the Dragon Isles! [H]
-				["coord"] = { 81.0, 29.0, THE_WAKING_SHORES },
 				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Fishing. You must not have any items in your profession equipment slot.",
+				["sourceQuests"] = { 65444 },	-- To the Dragon Isles! [H]
+				["provider"] = { "n", 190524 },	-- Mora Cloudwalker <Fishing Trainer>
+				["coord"] = { 81.0, 29.0, THE_WAKING_SHORES },
 				["races"] = HORDE_ONLY,
 				["lockCriteria"] = { 1, "spellID", 366253 },	-- Dragon Isles Fishing
 			}),

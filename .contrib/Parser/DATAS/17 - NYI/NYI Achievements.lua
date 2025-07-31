@@ -1,8 +1,17 @@
 ---------------------------------------------------------------
 --     N E V E R    I M P L E M E N T E D    M O D U L E     --
 ---------------------------------------------------------------
--- #if AFTER WRATH
 root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
+	expansion(EXPANSION.CLASSIC, {
+		-- Used in Season of Mastery to track if you died
+		ach(15329),	-- Has Died
+		ach(15332),	-- [DNT] Survivor (Season of Mastery) (hidden) \\ Survivor
+		ach(15578),	-- <Hidden> Adventure Awaits - Hit 60 with Buff Adventure Awaits
+		-- Used in Season of Discovery to check if you were eligible for the Cata Level 80 Boost
+		ach(42133),	-- [DNT] Balnazzar Defeated
+		ach(42186),	-- [DNT] Balnazzar Defeated (Backup Achievement)
+	}),
+	-- #if AFTER WRATH
 	expansion(EXPANSION.WRATH, {
 		-- 3.x.x
 		n(P3xx, {
@@ -690,5 +699,5 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 			ach(42028),	-- Ashes to Ashes (Temporary home as this will likely return / is planned for Legion Remix, but missing files keeps picking up the commented version)
 		})),
 	}),
+	-- #endif
 }));
--- #endif

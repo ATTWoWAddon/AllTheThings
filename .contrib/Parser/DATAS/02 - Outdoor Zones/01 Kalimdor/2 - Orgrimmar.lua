@@ -115,9 +115,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}
 				}),
 				q(31967, {	-- Battle Pet Tamers: Cataclysm (H)
-					["qg"] = 63626,	-- Varzok
-					-- ["altQuests"] = { 31966 },
 					["sourceQuest"] = 31983,	-- A Brief Reprieve (H)
+					-- ["altQuests"] = { 31966 },
+					["qg"] = 63626,	-- Varzok
 					["coord"] = { 52.6, 59.3, ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["maps"] = { MOUNT_HYJAL, DEEPHOLM, TWILIGHT_HIGHLANDS },
@@ -139,9 +139,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(31903, {	-- Battle Pet Tamers: Eastern Kingdoms (H)
-					["qg"] = 63626,	-- Varzok
-					-- ["altQuests"] = { 31902 },	-- Battle Pet Tamers: Eastern Kingdoms (Alliance version, since only one can be completed per account and Blizz doesn't check it off, apparently)
 					["sourceQuest"] = 31918,	-- A Tamer's Homecoming (H)
+					-- ["altQuests"] = { 31902 },	-- Battle Pet Tamers: Eastern Kingdoms (Alliance version, since only one can be completed per account and Blizz doesn't check it off, apparently)
+					["qg"] = 63626,	-- Varzok
 					["coord"] = { 52.6, 59.3, ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
@@ -170,9 +170,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(31891, {	-- Battle Pet Tamers: Kalimdor (H)
-					["qg"] = 63626,	-- Varzok
-					-- ["altQuests"] = { 31889 },
 					["sourceQuest"] = 31918,	-- A Tamer's Homecoming (H)
+					-- ["altQuests"] = { 31889 },
+					["qg"] = 63626,	-- Varzok
 					["coord"] = { 52.6, 59.3, ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["maps"] = { FERALAS, DUSTWALLOW_MARSH, THOUSAND_NEEDLES, FELWOOD, MOONGLADE },
@@ -202,9 +202,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(31929, {	-- Battle Pet Tamers: Northrend (H)
-					["qg"] = 63626,	-- Varzok
-					-- ["altQuests"] = { 31927 },
 					["sourceQuest"] = 31982,	-- Exceeding Expectations (H)
+					-- ["altQuests"] = { 31927 },
+					["qg"] = 63626,	-- Varzok
 					["coord"] = { 52.6, 59.3, ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["maps"] = { HOWLING_FJORD, CRYSTALSONG_FOREST, DRAGONBLIGHT, ZULDRAK },
@@ -230,12 +230,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(31921, {	-- Battle Pet Tamers: Outland (H)
-					["qg"] = 63626,	-- Varzok
-					-- ["altQuests"] = { 31919 },
 					["sourceQuests"] = {
 						31977,	-- The Returning Champion (H)
 						31980,	-- The Returning Champion (H)
 					},
+					-- ["altQuests"] = { 31919 },
+					["qg"] = 63626,	-- Varzok
 					["coord"] = { 52.6, 59.3, ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["maps"] = { HELLFIRE_PENINSULA, ZANGARMARSH, NAGRAND, SHATTRATH_CITY },
@@ -261,9 +261,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(31952, {	-- Battle Pet Tamers: Pandaria (H)
-					["qg"] = 63626,	-- Varzok
-					-- ["altQuests"] = { 31930 },
 					["sourceQuest"] = 31986,	-- The Triumphant Return (H)
+					-- ["altQuests"] = { 31930 },
+					["qg"] = 63626,	-- Varzok
 					["coord"] = { 52.6, 59.3, ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["maps"] = { THE_JADE_FOREST, VALLEY_OF_THE_FOUR_WINDS, KRASARANG_WILDS, KUN_LAI_SUMMIT, TOWNLONG_STEPPES, DREAD_WASTES },
@@ -297,15 +297,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(31587, {	-- Got one! (Matty)
-					["qg"] = 63086,	-- Matty
 					["sourceQuest"] = 31828,	-- Level Up!
+					["qg"] = 63086,	-- Matty
 					["coord"] = { 36.8, 77.4, ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(31590, {	-- Got one! (Varzok)
-					["qg"] = 63626,	-- Varzok
 					["sourceQuest"] = 31827,	-- Level Up!
+					["qg"] = 63626,	-- Varzok
 					["coord"] = { 52.6, 59.3, ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
@@ -323,22 +323,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(31828, {	-- Level Up! (Matty)
-					["qg"] = 63086,	-- Matty
 					["sourceQuest"] = 31586,	-- On The Mend
+					["qg"] = 63086,	-- Matty
 					["coord"] = { 36.8, 77.4, ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(31827, {	-- Level Up! (Varzok)
-					["qg"] = 63626,	-- Varzok
 					["sourceQuest"] = 31589,	-- On The Mend
+					["qg"] = 63626,	-- Varzok
 					["coord"] = { 52.6, 59.3, ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(31586, {	-- On The Mend (Matty)
-					["qg"] = 63086,	-- Matty
 					["sourceQuest"] = 31585,	-- Learning the Ropes
+					["qg"] = 63086,	-- Matty
 					["coord"] = { 36.8, 77.4, ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
@@ -350,8 +350,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(31589, {	-- On The Mend (Varzok)
-					["qg"] = 63626,	-- Varzok
 					["sourceQuest"] = 31588,	-- Learning the Ropes
+					["qg"] = 63626,	-- Varzok
 					["coord"] = { 52.6, 59.3, ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
@@ -364,13 +364,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- Infamous Breadcrumbs, these are offered at the end of the training quests in each of the starter zones. Can't find any info on which one is appropriate to which map, so this is going to need to be something figured out on an entirely new account that has done none of the pet battle quests
 				q(32009, {	-- Varzok
-					["qg"] = 63626,	-- Varzok
+					["description"] = "|CFFFF0000Do not under any circumstances abandon this quest, you cannot reobtain it.|r",
 					["altQuests"] = {
 						-- Alliance Shared Account-Wide Pet Battle Intro Quests
 						32008,	-- Audrey Burnhep (Will be marked completed if any Audrey Burnhep quest is completed)
 					},
+					["qg"] = 63626,	-- Varzok
 					["coord"] = { 52.6, 59.3, ORGRIMMAR },
-					["description"] = "|CFFFF0000Do not under any circumstances abandon this quest, you cannot reobtain it.|r",
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -421,8 +421,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["DisablePartySync"] = true,
 				}),
 				q(31812, {	-- Zunta, The Pet Tramer
-					["qg"] = 63626,	-- Varzok
 					["sourceQuests"] = { 32009, 31882, 31883, 31884, 31885 },	-- Varzok (all breadcrumbs)
+					["qg"] = 63626,	-- Varzok
 					["coord"] = { 52.6, 59.3, ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["maps"] = { DUROTAR },
@@ -838,8 +838,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = JEWELCRAFTING_AWARD_GROUPS,
 				}),
 				q(50341, {	-- A Recent Discovery
-					["qg"] = 132254,	-- Nathanos Blightcaller
 					["sourceQuest"] = 49977,	-- Summons to Orgrimmar
+					["qg"] = 132254,	-- Nathanos Blightcaller
 					["coord"] = { 49.8, 75.6, ORGRIMMAR },
 					["timeline"] = { ADDED_7_3_5, REMOVED_8_0_1 },
 					["races"] = HORDE_ONLY,
@@ -858,8 +858,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(7832, {	-- Additional Runecloth [Darkspear Trolls]
-					["qg"] = 14726,	-- Rashona Straglash <Horde Cloth Quartermaster>
 					["sourceQuest"] = 7824,	-- A Donation of Runecloth
+					["qg"] = 14726,	-- Rashona Straglash <Horde Cloth Quartermaster>
 					["coord"] = { 63.4, 51.0, ORGRIMMAR },
 					["maxReputation"] = { FACTION_DARKSPEAR_TROLLS, EXALTED },	-- Darkspear Trolls, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
@@ -869,8 +869,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 50,
 				}),
 				q(7837, {	-- Additional Runecloth [Orgrimmar]
-					["qg"] = 14727,	-- Vehena <Horde Cloth Quartermaster>
 					["sourceQuest"] = 7836,	-- A Donation of Runecloth
+					["qg"] = 14727,	-- Vehena <Horde Cloth Quartermaster>
 					["coord"] = { 37.8, 87.6, ORGRIMMAR },
 					["maxReputation"] = { FACTION_ORGRIMMAR, EXALTED },	-- Orgrimmar, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
@@ -888,8 +888,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["isBreadcrumb"] = true,
 				}),
 				q(25264, {	-- Ak'Zeloth
-					["qg"] = 3216,	-- Arnak Fireblade
 					["sourceQuest"] = 25263,	-- Arnak Fireblade
+					["qg"] = 3216,	-- Arnak Fireblade
 					["coord"] = { 58.5, 53.6, ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -920,7 +920,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = { BLOODELF },
 				}),
 				q(2751, {	-- Barbaric Battlements
-					["qg"] = 7790,	-- Orokk Omosh
 					-- #if BEFORE 4.0.3
 					["description"] = "Becomes available at Blacksmithing skill level 140 when character level requirement is met.",
 					["coord"] = { 79.4, 22.4, ORGRIMMAR },
@@ -931,6 +930,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "Becomes available at Blacksmithing skill level 140 when character level requirement is met.",
 					["coord"] = { 76.2, 37.4, ORGRIMMAR },
 					-- #endif
+					["qg"] = 7790,	-- Orokk Omosh
 					["cost"] = {
 						{ "i", 2868, 2 },	-- Patterned Bronze Bracers
 						{ "i", 7957, 2 },	-- Bronze Greatsword
@@ -953,11 +953,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(51443, {	-- Battle For Azeroth: Mission Statement (BfA version)
-					["qgs"] = {
-						121210,	-- Nathanos Blightcaller
-						140176,	-- Nathanos Blightcaller
-						49750,	-- Warchief's Herald
-					},
 					--[[
 					-- available to a level 47, pre-9.0 character during patch 9.0
 					-- these SQs are no longer required, because the heart of azeroth is not mandatory to start bfa content.  you can pick 51443 up immediately
@@ -967,6 +962,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						52428,	-- Infusing the Heart
 					},
 					]]--
+					["qgs"] = {
+						121210,	-- Nathanos Blightcaller
+						140176,	-- Nathanos Blightcaller
+						49750,	-- Warchief's Herald
+					},
 					["coords"] = {
 						{ 58.0, 62.8, ZULDAZAR },	-- Nathanos Blightcaller
 						{ 48.9, 91.4, ORGRIMMAR },	-- Nathanos Blightcaller
@@ -976,11 +976,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(1508, {	-- Blind Cazul
-					["qg"] = 5909,	-- Cazul
 					["sourceQuests"] = {
 						1507,	-- Devourer of Souls [Orgrimmar]
 						1472,	-- Devourer of Souls [Undercity]
 					},
+					["qg"] = 5909,	-- Cazul
 					["coord"] = { 47.2, 46.6, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
@@ -1035,11 +1035,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(2757, {	-- Booty Bay or Bust!
+					["sourceQuest"] = 2756,	-- The Old Ways
 					["providers"] = {
 						{ "n", 7793 },	-- Ox
 						{ "i", 8663 },	-- Mithril Insignia
 					},
-					["sourceQuest"] = 2756,	-- The Old Ways
 					["coord"] = { 80.4, 23.2, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = BLACKSMITHING,
@@ -1069,10 +1069,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				-- #endif
 				q(60961, {	-- Burning Crusade: Onward to Adventure in Outland
-					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
-					["sourceQuest"] = 60123,	-- Burning Crusade: To Outland!
-					["coord"] = { 40.8, 79.9, ORGRIMMAR },
 					["description"] = "Complete the prerequisite quest, switch to another timeline, then switch back to Burning Crusade and you will get this quest.",
+					["sourceQuest"] = 60123,	-- Burning Crusade: To Outland!
+					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
+					["coord"] = { 40.8, 79.9, ORGRIMMAR },
 					["timeline"] = { ADDED_9_0_1 },
 					["races"] = HORDE_ONLY,
 					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
@@ -1087,8 +1087,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["isBreadcrumb"] = true,
 				}),
 				q(4511, {	-- Calm Before the Storm (2/2)
-					["qg"] = 7010,	-- Zilzibin Drumlore
 					["sourceQuest"] = 4509,	-- Calm Before the Storm (1/2)
+					["qg"] = 7010,	-- Zilzibin Drumlore
 					["coord"] = { 56.4, 46.6, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1148,9 +1148,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(1501, {	-- Creature of the Void [Orgrimmar]
-					["qg"] = 5875,	-- Gan'rul Bloodeye
-					["altQuests"] = { 1473 },	-- Creature of the Void [Undercity]
 					["sourceQuest"] = 1506,	-- Gan'rul's Summons
+					["altQuests"] = { 1473 },	-- Creature of the Void [Undercity]
+					["qg"] = 5875,	-- Gan'rul Bloodeye
 					["coord"] = { 48.2, 45.6, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DUROTAR },
@@ -1168,8 +1168,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(32468, {	-- Crystal Clarity (H)
-					["qg"] = 16926,	-- Vivica Starshot
 					["sourceQuest"] = 32471,	-- Light Camera Action (H)
+					["qg"] = 16926,	-- Vivica Starshot
 					["coord"] = { 34.5, 70.8, ORGRIMMAR },
 					["timeline"] = { ADDED_7_3_5 },
 					["races"] = HORDE_ONLY,
@@ -1187,11 +1187,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(2458, {	-- Deep Cover
+					["sourceQuest"] = 2460,	-- The Shattered Salute
 					["providers"] = {
 						{ "n", 3401 },	-- Shenthul
 						{ "i", 8051 },	-- Flare Gun
 					},
-					["sourceQuest"] = 2460,	-- The Shattered Salute
 					["coord"] = { 43, 53.4, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
@@ -1200,11 +1200,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if NOT ANYCLASSIC
 				q(5646, {	-- Devouring Plague [Orgrimmar]
-					["qg"] = 6018,	-- Ur'kyo <Priest Trainer>
 					["altQuests"] = {
 						5679,	-- Devouring Plague [Undercity]
 						5644,	-- Devouring Plague [Thunder Bluff]
 					},
+					["qg"] = 6018,	-- Ur'kyo <Priest Trainer>
 					["coord"] = { 35.6, 87.6, ORGRIMMAR },
 					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
@@ -1221,16 +1221,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				q(49855, {	-- Disaster at Mount Hyjal
-					["qg"] = 45244,	-- Farseer Krogar
 					["sourceQuest"] = 28805,	-- The Eye of the Storm
+					["qg"] = 45244,	-- Farseer Krogar
 					["coord"] = { 50.4, 38.2, ORGRIMMAR },
 					["timeline"] = { ADDED_7_3_5 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(13842, {	-- Dread Head Redemption
-					["qg"] = 3144,	-- Eitrigg
 					["sourceQuest"] = 13841,	-- All Apologies
+					["qg"] = 3144,	-- Eitrigg
 					["coord"] = { 49.2, 72.3, ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1253,8 +1253,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(2378, {	-- Find the Shattered Hand
-					["qg"] = 6467,	-- Mennet Carkad
 					["altQuests"] = { 2380 },	-- To Orgrimmar!
+					["qg"] = 6467,	-- Mennet Carkad
 					["coord"] = { 83.2, 69, UNDERCITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
@@ -1263,15 +1263,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 16,
 				}),
 				q(26804, {	-- Flight to Razor Hill
-					["qg"] = 3310,	-- Doras
 					["sourceQuest"] = 26803,	-- Missing Reports
+					["qg"] = 3310,	-- Doras
 					["coord"] = { 49.4, 59.2, ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { GOBLIN },
 				}),
 				q(27686, {	-- Forged Documents
-					["provider"] = { "i", 63276 },	-- Forged Documents
 					["description"] = "After creating Forged Documents with Inscription, search the city for an NPC to accept them - the quest can end in a variety of different places.",
+					["provider"] = { "i", 63276 },	-- Forged Documents
 					["timeline"] = { ADDED_4_0_3 },
 					["requireSkill"] = INSCRIPTION,
 					["races"] = HORDE_ONLY,
@@ -1309,8 +1309,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(31014, {	-- Hellscream's Gift
-					["qg"] = 62092,	-- Garrosh Hellscream
 					["sourceQuest"] = 31013,	-- The Horde Way
+					["qg"] = 62092,	-- Garrosh Hellscream
 					["coord"] = { 70.6, 30.8, ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 					["maps"] = { 503 },	-- Brawl'gar Arena
@@ -1318,18 +1318,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if ANYCLASSIC
 				q(5652, {	-- Hex of Weakness [Orgrimmar]
+					["altQuests"] = {
+						5654,	-- Hex of Weakness [Durotar]
+						5655,	-- Hex of Weakness [Mulgore]
+						5656,	-- Hex of Weakness [Thunder Bluff]
+						5657,	-- Hex of Weakness [Undercity]
+					},
 					["qgs"] = {
 						6018,	-- Ur'kyo <Priest Trainer>
 						3706,	-- Tai'jin <Priest Trainer>
 						11407,	-- Var'jun
 						3044,	-- Miles Welsh <Priest Trainer>
 						4606,	-- Aelthalyste <Priest Trainer>
-					},
-					["altQuests"] = {
-						5654,	-- Hex of Weakness [Durotar]
-						5655,	-- Hex of Weakness [Mulgore]
-						5656,	-- Hex of Weakness [Thunder Bluff]
-						5657,	-- Hex of Weakness [Undercity]
 					},
 					["coords"] = {
 						{ 35.6, 87.6, ORGRIMMAR },
@@ -1354,13 +1354,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				-- #if NOT ANYCLASSIC
 				q(5652, {	-- Hex of Weakness [Orgrimmar]
-					["qg"] = 6018,	-- Ur'kyo <Priest Trainer>
 					["altQuests"] = {
 						5654,	-- Hex of Weakness [Durotar]
 						5655,	-- Hex of Weakness [Mulgore]
 						5656,	-- Hex of Weakness [Thunder Bluff]
 						5657,	-- Hex of Weakness [Undercity]
 					},
+					["qg"] = 6018,	-- Ur'kyo <Priest Trainer>
 					["coord"] = { 35.6, 87.6, ORGRIMMAR },
 					["timeline"] = { REMOVED_2_4_1 },
 					["classes"] = { PRIEST },
@@ -1394,8 +1394,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(5727, {	-- Hidden Enemies (2/5)
-					["qg"] = 4949,	-- Thrall <Warchief>
 					["sourceQuest"] = 5726,	-- Hidden Enemies (1/5)
+					["qg"] = 4949,	-- Thrall <Warchief>
 					["coord"] = { 32.0, 37.8, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1409,11 +1409,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(2479, {	-- Hinott's Assistance (1/2)
+					["sourceQuest"] = 2478,	-- Mission: Possible But Not Probable
 					["providers"] = {
 						{ "n", 3401 },	-- Shenthul
 						{ "i", 8087 },	-- Sample of Zanzil's Altered Mixture
 					},
-					["sourceQuest"] = 2478,	-- Mission: Possible But Not Probable
 					["coord"] = { 43, 53.4, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
@@ -1421,9 +1421,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 20,
 				}),
 				q(53372, {	-- Battle for Azeroth: Hour of Reckoning
+				--	["description"] = "This quest is automatically offered to Horde players upon reaching level 110.",
 					["qg"] = 14720,	-- High Overlord Saurfang
 					["coord"] = { 48.6, 71.0, ORGRIMMAR },
-				--	["description"] = "This quest is automatically offered to Horde players upon reaching level 110.",
 					["timeline"] = { ADDED_8_0_1, REMOVED_9_0_1 },
 					["races"] = HORDE_ONLY,
 				--	TODO: level is obviously incorrect.  whether this quest is still available is disputed.  potential ways to get, per wowhead comments:
@@ -1456,8 +1456,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["DisablePartySync"] = true,
 				}),
 				q(66323, {	-- Idling Pie
-					["qg"] = 187758,	-- Zaa'je
 					["sourceQuest"] = 66253,	-- Stolen Shipments
+					["qg"] = 187758,	-- Zaa'je
 					["coord"] = { 48.5, 75.9, ORGRIMMAR },
 					["timeline"] = { ADDED_9_2_5, REMOVED_10_0_5 },
 					["races"] = HORDE_ONLY,
@@ -1468,8 +1468,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(2754, {	-- Horns of Frenzy
-					["qg"] = 7790,	-- Orokk Omosh
-					["sourceQuest"] = 2753,	-- Trampled Under Foot
 					-- #if BEFORE 4.0.3
 					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.\n\nPlans: Solid Iron Maul is a 1-in-stock recipe that can either be bought from Muuran at Ghost Walker Post in Desolace, or the Alliance-only vendor Jannos Ironwill at Refuge Pointe in Arathi Highlands.",
 					["coord"] = { 79.4, 22.4, ORGRIMMAR },
@@ -1480,6 +1478,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.\n\nPlans: Solid Iron Maul is a 1-in-stock recipe that can either be bought from Muuran at Ghost Walker Post in Desolace, or the Alliance-only vendor Jannos Ironwill at Refuge Pointe in Arathi Highlands.",
 					["coord"] = { 76.2, 37.4, ORGRIMMAR },
 					-- #endif
+					["sourceQuest"] = 2753,	-- Trampled Under Foot
+					["qg"] = 7790,	-- Orokk Omosh
 					["cost"] = {
 						{ "i", 3851, 2 },	-- Solid Iron Maul
 						{ "i", 3482, 2 },	-- Silvered Bronze Boots
@@ -1502,8 +1502,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(2755, {	-- Joys of Omosh
-					["qg"] = 7790,	-- Orokk Omosh
-					["sourceQuest"] = 2754,	-- Horns of Frenzy
 					-- #if BEFORE 4.0.3
 					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.",
 					["coord"] = { 79.4, 22.4, ORGRIMMAR },
@@ -1514,6 +1512,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.",
 					["coord"] = { 76.2, 37.4, ORGRIMMAR },
 					-- #endif
+					["sourceQuest"] = 2754,	-- Horns of Frenzy
+					["qg"] = 7790,	-- Orokk Omosh
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 140,
 					["races"] = HORDE_ONLY,
@@ -1531,8 +1531,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(1945, {	-- Laughing Sisters
-					["qg"] = 5885,	-- Deino <Mage Trainer>
 					["sourceQuest"] = 1944,	-- Waters of Xavian
+					["qg"] = 5885,	-- Deino <Mage Trainer>
 					["coord"] = { 38.6, 86.0, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ASHENVALE },
@@ -1589,8 +1589,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["DisablePartySync"] = true,
 				}),
 				q(14086, {	-- Learn to Ride in Orgrimmar
-					["provider"] = { "i", 46880 },	-- Riding Training Pamphlet
 					["description"] = "The pamphlet that starts this quest is sent to Orcs in their Mailbox upon reaching the specified level.",
+					["provider"] = { "i", 46880 },	-- Riding Training Pamphlet
 					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 					["races"] = { ORC },
 					["lockCriteria"] = { 1,
@@ -1642,8 +1642,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				q(26293, {	-- Machines of War
-					["qg"] = 3144,	-- Eitrigg
 					["sourceQuest"] = 28717,	-- Warchief's Command: Twilight Highlands!
+					["qg"] = 3144,	-- Eitrigg
 					["coords"] = {
 						{ 48.6, 71.0, ORGRIMMAR },
 						{ 49.1, 72.4, ORGRIMMAR },
@@ -1652,8 +1652,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(4494, {	-- March of the Silithid (H)
-					["qg"] = 7010,	-- Zilzibin Drumlore
 					["sourceQuest"] = 32,	-- Rise of the Silithid (H)
+					["qg"] = 7010,	-- Zilzibin Drumlore
 					["coord"] = { 55.2, 55.8, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { TANARIS },
@@ -1683,8 +1683,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["isBreadcrumb"] = true,
 				}),
 				q(1509, {	-- News of Dogran (1/2)
-					["qg"] = 5910,	-- Zankaja
 					["sourceQuest"] = 1508,	-- Blind Cazul
+					["qg"] = 5910,	-- Zankaja
 					["coord"] = { 37, 59.6, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
@@ -1722,8 +1722,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = JEWELCRAFTING_AWARD_GROUPS,
 				}),
 				q(2752, {	-- On Iron Pauldrons
-					["qg"] = 7790,	-- Orokk Omosh
-					["sourceQuest"] = 2751,	-- Barbaric Battlements
 					-- #if BEFORE 4.0.3
 					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.",
 					["coord"] = { 79.4, 22.4, ORGRIMMAR },
@@ -1734,6 +1732,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.",
 					["coord"] = { 76.2, 37.4, ORGRIMMAR },
 					-- #endif
+					["sourceQuest"] = 2751,	-- Barbaric Battlements
+					["qg"] = 7790,	-- Orokk Omosh
 					["cost"] = {
 						{ "i", 7958, 4 },	-- Bronze Battle Axe
 						{ "i", 7956, 4 },	-- Bronze Warhammer
@@ -1761,8 +1761,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = { GOBLIN },
 				}),
 				q(26840, {	-- Return to the Highlands
-					["qg"] = 3144,	-- Eitrigg
 					["sourceQuest"] = 26830,	-- Traitor's Bait
+					["qg"] = 3144,	-- Eitrigg
 					["coord"] = { 48.6, 71.0, ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
@@ -1777,8 +1777,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 20,
 				}),
 				q(28909, {	-- Sauranok Will Point the Way
-					["qg"] = 3144,	-- Eitrigg
 					["sourceQuest"] = 26294,	-- Weapons of Mass Dysfunction
+					["qg"] = 3144,	-- Eitrigg
 					["coord"] = { 48.6, 71.0, ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1807,17 +1807,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, q(78197, {	-- Secrets of Undeath (2/2)
+					["description"] = "Completing this quest will allow you to meditate in the same manner as the undead.",
+					["sourceQuest"] = 78196,	-- Secrets of Undeath (1/2)
 					["providers"] = {
 						{ "n", 211229 },	-- Dietrich Praice
 						{ "n",   6491 },	-- Spirit Healer
 						{ "i", 210056 },	-- Tincture of Waking Death
 					},
-					["sourceQuest"] = 78196,	-- Secrets of Undeath (1/2)
 					["coords"] = {
 						{ 35.6, 87.8, ORGRIMMAR },
 						{ 56.2, 49.4, TIRISFAL_GLADES },
 					},
-					["description"] = "Completing this quest will allow you to meditate in the same manner as the undead.",
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
@@ -1831,14 +1831,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				-- #if ANYCLASSIC
 				q(5680, {	-- Shadowguard [Orgrimmar]
+					["altQuests"] = {
+						5643,	-- Shadowguard [Undercity]
+						5642,	-- Shadowguard [Thunder Bluff]
+					},
 					["qgs"] = {
 						6018,	-- Ur'kyo <Priest Trainer>
 						4606,	-- Aelthalyste
 						3044,	-- Miles Welsh <Priest Trainer>
-					},
-					["altQuests"] = {
-						5643,	-- Shadowguard [Undercity]
-						5642,	-- Shadowguard [Thunder Bluff]
 					},
 					["coords"] = {
 						{ 35.6, 87.6, ORGRIMMAR },
@@ -1861,11 +1861,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				-- #if NOT ANYCLASSIC
 				q(5680, {	-- Shadowguard [Orgrimmar]
-					["qg"] = 6018,	-- Ur'kyo <Priest Trainer>
 					["altQuests"] = {
 						5643,	-- Shadowguard [Undercity]
 						5642,	-- Shadowguard [Thunder Bluff]
 					},
+					["qg"] = 6018,	-- Ur'kyo <Priest Trainer>
 					["coord"] = { 35.6, 87.6, ORGRIMMAR },
 					["timeline"] = { REMOVED_2_4_1 },
 					["classes"] = { PRIEST },
@@ -1945,11 +1945,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(51796, {	-- The Battle for Lordaeron
+					["sourceQuest"] = 53372,	-- Hour of Reckoning
 					["qgs"] = {
 						14720,	-- High Overlord Saurfang
 						140176,	-- Nathanos Blightcaller
 					},
-					["sourceQuest"] = 53372,	-- Hour of Reckoning
 					["coords"] = {
 						{ 48.5, 70.7, ORGRIMMAR },
 						{ 49.0, 91.6, ORGRIMMAR },
@@ -1959,9 +1959,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if ANYCLASSIC
 				q(65604, {	-- The Binding (Incubus) [Orgrimmar]
-					["qg"] = 5875,	-- Gan'rul Bloodeye
-					["altQuests"] = { 65597 },	-- The Binding (Incubus) [Undercity]
 					["sourceQuest"] = 65610,	-- Wish You Were Here
+					["altQuests"] = { 65597 },	-- The Binding (Incubus) [Undercity]
+					["qg"] = 5875,	-- Gan'rul Bloodeye
 					["coord"] = { 48.2, 45.6, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
@@ -1982,9 +1982,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				q(1513, {	-- The Binding (Succubus) [Orgrimmar]
-					["qg"] = 5875,	-- Gan'rul Bloodeye
-					["altQuests"] = { 1474 },	-- The Binding (Succubus) [Undercity]
 					["sourceQuest"] = 1512,	-- Love's Gift
+					["altQuests"] = { 1474 },	-- The Binding (Succubus) [Undercity]
+					["qg"] = 5875,	-- Gan'rul Bloodeye
 					["coord"] = { 48.2, 45.6, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARLOCK },
@@ -2004,9 +2004,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(1504, {	-- The Binding (Voidwalker) [Orgrimmar]
-					["qg"] = 5875,	-- Gan'rul Bloodeye
-					["altQuests"] = { 1471 },	-- The Binding (Voidwalker) [Undercity]
 					["sourceQuest"] = 1501,	-- Creature of the Void [Orgrimmar]
+					["altQuests"] = { 1471 },	-- The Binding (Voidwalker) [Undercity]
+					["qg"] = 5875,	-- Gan'rul Bloodeye
 					["coord"] = { 48.2, 45.6, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { ORC, TROLL, UNDEAD },
@@ -2023,8 +2023,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(28805, {	-- The Eye of the Storm
-					["qg"] = 45244,	-- Farseer Krogar
 					["sourceQuest"] = 28790,	-- A Personal Summons
+					["qg"] = 45244,	-- Farseer Krogar
 					["coord"] = { 50.4, 38.2, ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
@@ -2036,8 +2036,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(31013, {	-- The Horde Way
-					["qg"] = 39605,	-- Garrosh Hellscream
 					["sourceQuest"] = 31012,	-- Joining the Horde
+					["qg"] = 39605,	-- Garrosh Hellscream
 					["coord"] = { 48.2, 70.6, ORGRIMMAR },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = { PANDAREN_NEUTRAL },
@@ -2052,26 +2052,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = JEWELCRAFTING_AWARD_GROUPS,
 				}),
 				q(53779, {	-- The Lies of a Loa
-					["qg"] = 146630,	-- Restless Spirit
 					["sourceQuest"] = 53777,	-- Where He Died
+					["qg"] = 146630,	-- Restless Spirit
 					["coord"] = { 48.4, 71.4, ORGRIMMAR },
 					["timeline"] = { ADDED_8_1_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(120, 120, 50),
 				}),
 				q(75519, {	-- The Long Hunt
-					["provider"] = { "n", 204250 },	-- Lilian Voss / Dori'thur
+					["description"] = "Probably, Undead need to complete The Hidden Need and I Am Forsaken, while non-Undead only need to complete Most Loyal. Undead are offered this quest in Undercity, while non-Undead are offered this quest in Orgrimmar.",
 					["sourceQuests"] = {
 						57376,	-- The Hidden Need
 						72867,	-- I Am Forsaken
 						57152,	-- Most Loyal
 					},
 					["sourceQuestNumRequired"] = 1,
+					["provider"] = { "n", 204250 },	-- Lilian Voss / Dori'thur
 					["coords"] = {
 						{ 63.0, 68.4, TIRISFAL_GLADES },
 						{ 48.6, 48.6, ORGRIMMAR },
 					},
-					["description"] = "Probably, Undead need to complete The Hidden Need and I Am Forsaken, while non-Undead only need to complete Most Loyal. Undead are offered this quest in Undercity, while non-Undead are offered this quest in Orgrimmar.",
 					["timeline"] = { ADDED_10_1_7 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -2094,8 +2094,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(1963, {	-- The Shattered Hand (1/2)
-					["qg"] = 6446,	-- Therzok
 					["sourceQuest"] = 1859,	-- Therzok
+					["qg"] = 6446,	-- Therzok
 					["coord"] = { 42.74, 53.52, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_BARRENS },
@@ -2111,8 +2111,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(1858, {	-- The Shattered Hand (2/2)
-					["qg"] = 6446,	-- Therzok
 					["sourceQuest"] = 1963,	-- The Shattered Hand (1/2)
+					["qg"] = 6446,	-- Therzok
 					["coord"] = { 42.74, 53.52, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { ORC, TROLL },
@@ -2134,13 +2134,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(2460, {	-- The Shattered Salute
-					["qg"] = 3401,	-- Shenthul
 					["sourceQuests"] = {
 						-- #if AFTER TBC
 						10794,	-- Rogues of the Shattered Hand
 						-- #endif
 						2380,	-- To Orgrimmar!
 					},
+					["qg"] = 3401,	-- Shenthul
 					["coord"] = { 43, 53.4, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
@@ -2148,8 +2148,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 20,
 				}),
 				q(50769, {	-- The Stormwind Extraction
-					["qg"] = 135205,	-- Nathanos Blightcaller
 					["sourceQuest"] = 51443,	-- Mission Statement
+					["qg"] = 135205,	-- Nathanos Blightcaller
 					["coord"] = { 54.4, 78.4, ORGRIMMAR },
 					["timeline"] = { ADDED_8_0_1 },
 					["maps"] = {
@@ -2163,7 +2163,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(6611, {	-- To Gadgetzan You Go!
-					["qg"] = 3399,	-- Zamja
 					-- #if BEFORE 4.0.3
 					["description"] = "Becomes available at Cooking skill level 225 when character level requirement is met.",
 					["coord"] = { 57.4, 53.6, ORGRIMMAR },
@@ -2174,6 +2173,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "Becomes available at Cooking skill level 225 when character level requirement is met.",
 					["coord"] = { 32.2, 69.4, ORGRIMMAR },
 					-- #endif
+					["qg"] = 3399,	-- Zamja
 					["requireSkill"] = COOKING,
 					["learnedAt"] = 225,
 					["races"] = HORDE_ONLY,
@@ -2181,8 +2181,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = lvlsquish(35, 35, 15),
 				}),
 				q(2380, {	-- To Orgrimmar!
-					["qg"] = 3170,	-- Kaplak
 					["altQuests"] = { 2378 },	-- Find the Shattered Hand
+					["qg"] = 3170,	-- Kaplak
 					["coord"] = { 51.98, 43.70, DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2192,13 +2192,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if NOT ANYCLASSIC
 				q(5662, {	-- Touch of Weakness [Orgrimmar]
-					["qg"] = 6018,	-- Ur'kyo <Priest Trainer>
 					["altQuests"] = {
 						5658,	-- Touch of Weakness [Undercity]
 						5660,	-- Touch of Weakness [Durotar]
 						5661,	-- Touch of Weakness [Mulgore]
 						5663,	-- Touch of Weakness [Thunder Bluff]
 					},
+					["qg"] = 6018,	-- Ur'kyo <Priest Trainer>
 					["coord"] = { 35.6, 87.6, ORGRIMMAR },
 					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
@@ -2215,8 +2215,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				q(26830, {	-- Traitor's Bait
-					["qg"] = 3144,	-- Eitrigg
 					["sourceQuest"] = 26798,	-- Saurfang Will be Pleased
+					["qg"] = 3144,	-- Eitrigg
 					["coord"] = { 48.6, 71.0, ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2245,8 +2245,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(2753, {	-- Trampled Under Foot
-					["qg"] = 7790,	-- Orokk Omosh
-					["sourceQuest"] = 2752,	-- On Iron Pauldrons
 					-- #if BEFORE 4.0.3
 					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.",
 					["coord"] = { 79.4, 22.4, ORGRIMMAR },
@@ -2257,6 +2255,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "This questline begins with the quest 'Barbaric Battlements', which requires Blacksmithing skill level 140.",
 					["coord"] = { 76.2, 37.4, ORGRIMMAR },
 					-- #endif
+					["sourceQuest"] = 2752,	-- On Iron Pauldrons
+					["qg"] = 7790,	-- Orokk Omosh
 					["cost"] = {
 						{ "i", 3836, 4 },	-- Green Iron Helm
 						{ "i", 3835, 4 },	-- Green Iron Bracers
@@ -2279,8 +2279,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(26311, {	-- Unfamiliar Waters
-					["qg"] = 42637,	-- Sauranok the Mystic
 					["sourceQuest"] = 28909,	-- Sauranok Will Point the Way
+					["qg"] = 42637,	-- Sauranok the Mystic
 					["coord"] = { 48.0, 71.0, ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
@@ -2297,8 +2297,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(58673, {	-- Warchief of the Horde
-					["qg"] = 162190,	-- Valeera Sanguinar
 					["sourceQuest"] = 58672,	-- A Gathering of Champions
+					["qg"] = 162190,	-- Valeera Sanguinar
 					["coord"] = { 39.4, 79.6, ORGRIMMAR },
 					["timeline"] = { ADDED_8_3_0 },
 					["races"] = HORDE_ONLY,
@@ -2327,8 +2327,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["repeatable"] = true,
 				}),
 				q(1944, {	-- Waters of Xavian
-					["qg"] = 5885,	-- Deino <Mage Trainer>
 					["sourceQuest"] = 1943,	-- Speak with Deino
+					["qg"] = 5885,	-- Deino <Mage Trainer>
 					["coord"] = { 38.6, 86.0, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ASHENVALE },
@@ -2346,6 +2346,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(26324, {	-- Where Is My Warfleet?
+					["sourceQuest"] = 26311,	-- Unfamiliar Waters
 					["qgs"] = {
 						-- #IF AFTER BFA
 						3144,	-- Etrigg
@@ -2353,7 +2354,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						14720,	-- High Overlord Saurfang
 						-- #ENDIF
 					},
-					["sourceQuest"] = 26311,	-- Unfamiliar Waters
 					["coords"] = {
 						-- #IF AFTER BFA
 						{ 49.2, 72.3, ORGRIMMAR },
@@ -2366,9 +2366,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if ANYCLASSIC
 				q(65610, {	-- Wish You Were Here
-					["qg"] = 3363,	-- Magar <Tailoring Trainer>
-					["altQuests"] = { 65593 },	-- Hearts of the Lovers
 					["sourceQuest"] = 65601,	-- Love Hurts
+					["altQuests"] = { 65593 },	-- Hearts of the Lovers
+					["qg"] = 3363,	-- Magar <Tailoring Trainer>
 					["coord"] = { 63.6, 50.0, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ASHENVALE },
@@ -2388,6 +2388,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				q(7660, {	-- Wolf Swapping - Arctic Wolf
+					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
 					["qg"] = 3362,	-- Ogunaro Wolfrunner
 					["coords"] = {
 						-- #if AFTER CATA
@@ -2396,7 +2397,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 69.4, 12.4, ORGRIMMAR },
 						-- #endif
 					},
-					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
 					["timeline"] = { REMOVED_1_4_0 },
 					["cost"] = { { "i", 12351, 1 } },	-- Arctic Wolf
 					["races"] = HORDE_ONLY,
@@ -2405,6 +2405,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sym"] = { { "select", "itemID", 18796, 18798, 18797 } },
 				}),
 				q(7661, {	-- Wolf Swapping - Red Wolf
+					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
 					["qg"] = 3362,	-- Ogunaro Wolfrunner
 					["coords"] = {
 						-- #if AFTER CATA
@@ -2413,7 +2414,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 69.4, 12.4, ORGRIMMAR },
 						-- #endif
 					},
-					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts I'm so sorry.",
 					["timeline"] = { REMOVED_1_4_0 },
 					["cost"] = { { "i", 12330, 1 } },	-- Red Wolf (MOUNT!)
 					["races"] = HORDE_ONLY,
@@ -2422,10 +2422,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sym"] = { { "select", "itemID", 18796, 18798, 18797 } },
 				}),
 				q(60963, {	-- Wrath of the Lich King: Onward to Adventure in Northrend
-					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
-					["sourceQuest"] = 60097,	-- Wrath of the Lich King: To Northrend!
-					["coord"] = { 40.8, 79.9, ORGRIMMAR },
 					["description"] = "Complete the prerequisite quest, switch to another timeline, then switch back to Wrath of the Lich King and you will get this quest.",
+					["sourceQuest"] = 60097,	-- Wrath of the Lich King: To Northrend!
+					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
+					["coord"] = { 40.8, 79.9, ORGRIMMAR },
 					["timeline"] = { ADDED_9_0_1 },
 					["lockCriteria"] = { 1, "lvl", LEVEL_CHROMIETIME_MAX },
 					["repeatable"] = true,
@@ -2438,8 +2438,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["isBreadcrumb"] = true,
 				}),
 				q(2382, {	-- Wrenix of Ratchet
-					["qg"] = 3402,	-- Zando'zan
 					["sourceQuest"] = 2379,	-- Zando'zan
+					["qg"] = 3402,	-- Zando'zan
 					["coord"] = { 42.8, 53, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
@@ -2447,6 +2447,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 16,
 				}),
 				q(6608, {	-- You Too Good.
+					["description"] = "Requires 225 Skill in Classic Fishing",
 					["qg"] = 3332,	-- Lumak <Fishing Trainer>
 					["coords"] = {
 						-- #if AFTER CATA
@@ -2455,7 +2456,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 69.8, 29.6, ORGRIMMAR },
 						-- #endif
 					},
-					["description"] = "Requires 225 Skill in Classic Fishing",
 					["requireSkill"] = FISHING,
 					["learnedAt"] = 225,
 					["races"] = HORDE_ONLY,
@@ -2464,11 +2464,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, q(78304, {	-- You've Got Yourself A Deal [H]
+					["sourceQuest"] = 78288,	-- Let Me Make You An Offer [H]
 					["providers"] = {
 						{ "n",   3408 },	-- Zel'mak <Warrior Trainer>
 						{ "i", 211448 },	-- Signed Procurement Contract
 					},
-					["sourceQuest"] = 78288,	-- Let Me Make You An Offer [H]
 					["coord"] = { 80.2, 29.6, ORGRIMMAR },
 					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { THE_BARRENS },
@@ -2480,11 +2480,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				-- #endif
 				q(2379, {	-- Zando'zan
-					["qg"] = 3401,	-- Shenthul
+					["sourceQuest"] = 2378,	-- Find the Shattered Hand
 					-- #if AFTER TBC
 					["altQuests"] = { 10372 },	-- A Discreet Inquiry
 					-- #endif
-					["sourceQuest"] = 2378,	-- Find the Shattered Hand
+					["qg"] = 3401,	-- Shenthul
 					["coord"] = { 43, 53.4, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { ROGUE },

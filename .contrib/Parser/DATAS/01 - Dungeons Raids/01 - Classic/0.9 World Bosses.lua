@@ -51,8 +51,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["lvl"] = 60,
 						}),
 						q(8447, {	-- Waking Legends
-							["qg"] = 11832,	-- Keeper Remulos
 							["sourceQuest"] = 8446,	-- Shrouded in Nightmare
+							["qg"] = 11832,	-- Keeper Remulos
 							["coord"] = { 36.18, 41.79, MOONGLADE },
 							["lvl"] = 60,
 							["groups"] = {

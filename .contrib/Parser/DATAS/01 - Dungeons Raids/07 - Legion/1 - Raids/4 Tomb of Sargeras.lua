@@ -298,37 +298,37 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			n(ACHIEVEMENTS, {
 				ach(11787, {    -- The Gates of Hell
                     crit(36469, {    -- Goroth
-                        ["_encounter"] = { 1862, DIFFICULTY.RAID.LFR },
+                        ["_encounter"] = { 1862, DIFFICULTY.RAID.MULTI.ALL },
                     }),
                     crit(36470, {    -- Harjatan
-                        ["_encounter"] = { 1856, DIFFICULTY.RAID.LFR },
+                        ["_encounter"] = { 1856, DIFFICULTY.RAID.MULTI.ALL },
                     }),
                     crit(36471, {    -- Mistress Sassz'ine
-                        ["_encounter"] = { 1861, DIFFICULTY.RAID.LFR },
+                        ["_encounter"] = { 1861, DIFFICULTY.RAID.MULTI.ALL },
                     }),
                 }),
 				ach(11788, {    -- Wailing Halls
                     crit(36472, {    -- Demonic Inquisition
-                        ["_encounter"] = { 1867, DIFFICULTY.RAID.LFR },
+                        ["_encounter"] = { 1867, DIFFICULTY.RAID.MULTI.ALL },
                     }),
                     crit(36473, {    -- Sisters of the Moon
-                        ["_encounter"] = { 1903, DIFFICULTY.RAID.LFR },
+                        ["_encounter"] = { 1903, DIFFICULTY.RAID.MULTI.ALL },
                     }),
                     crit(36474, {    -- The Desolate Host
-                        ["_encounter"] = { 1896, DIFFICULTY.RAID.LFR },
+                        ["_encounter"] = { 1896, DIFFICULTY.RAID.MULTI.ALL },
                     }),
                 }),
 				ach(11789, {    -- Chamber of the Avatar
                     crit(36475, {    -- Maiden of Vigilance
-                        ["_encounter"] = { 1897, DIFFICULTY.RAID.LFR },
+                        ["_encounter"] = { 1897, DIFFICULTY.RAID.MULTI.ALL },
                     }),
                     crit(36476, {    -- Fallen Avatar
-                        ["_encounter"] = { 1873, DIFFICULTY.RAID.LFR },
+                        ["_encounter"] = { 1873, DIFFICULTY.RAID.MULTI.ALL },
                     }),
                 }),
 				ach(11790, {    -- Deceiver's Fall
                     crit(36477, {    -- Kil'jaeden
-                        ["_encounter"] = { 1898, DIFFICULTY.RAID.LFR },
+                        ["_encounter"] = { 1898, DIFFICULTY.RAID.MULTI.ALL },
                     }),
                 }),
 				ach(11763, {	-- Glory of the Tomb Raider
@@ -406,6 +406,8 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				BossOnly(GOROTH, {
 					i(146984),	-- Cloak of Stifling Brimstone
 				}),
+				BossOnly(INQUISITION),
+				BossOnly(HARJATAN),
 				BossOnly(SASSZINE, {
 					i(143643),	-- Abyss Worm (MOUNT!)
 					i(213016, {	-- Grimoire of the Abyssal Darkglare (CI!)
@@ -413,6 +415,8 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					}),
 					i(146985),	-- Shroud of the Drowned Adherent
 				}),
+				BossOnly(SISTERS),
+				BossOnly(DESOLATE_HOST),
 				BossOnly(MAIDEN, {
 					i(151524),	-- Hammer of Vigilance
 				}),

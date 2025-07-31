@@ -204,8 +204,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(31870, {	-- Cassandra Kaboom
-					["qg"] = 66372,	-- Merda Stronghoof
 					["sourceQuest"] = 31817,	-- Merda Stronghoof
+					["qg"] = 66372,	-- Merda Stronghoof
 					["coord"] = { 57.2, 45.8, DESOLACE },
 					["timeline"] = { ADDED_5_0_4 },
 					["maps"] = { SOUTHERN_BARRENS },
@@ -221,8 +221,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(QUESTS, {
 				q(14284, {	-- A Revenant's Vengeance
-					["qg"] = 35902,	-- Lord Hydronis
 					["sourceQuest"] = 14292,	-- The Enemy of Our Enemy
+					["qg"] = 35902,	-- Lord Hydronis
 					["coord"] = { 29.1, 8.1, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -258,16 +258,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 30,
 				}),
 				q(1432, {	-- Alliance Relations (2/4)
-					["qg"] = 5640,	-- Keldran
 					["sourceQuest"] = 1431,	-- Alliance Relations (1/4)
+					["qg"] = 5640,	-- Keldran
 					["coord"] = { 22.4, 52.8, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 				}),
 				q(1433, {	-- Alliance Relations (3/4)
-					["qg"] = 5641,	-- Takata Steelblade
 					["sourceQuest"] = 1432,	-- Alliance Relations (2/4)
+					["qg"] = 5641,	-- Takata Steelblade
 					["coord"] = { 52.6, 54.2, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ORGRIMMAR },
@@ -275,11 +275,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 30,
 				}),
 				q(1436, {	-- Alliance Relations (4/4)
-					["qg"] = 5641,	-- Takata Steelblade
 					["sourceQuests"] = {
 						1434,	-- Befouled by Satyr
 						1435,	-- The Burning of Spirits
 					},
+					["qg"] = 5641,	-- Takata Steelblade
 					["coord"] = { 52.6, 54.2, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ORGRIMMAR },
@@ -295,21 +295,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(14380, {	-- An Impactful Discovery
-					["qg"] = 36329,	-- Thargad
 					["sourceQuest"] = 14378,	-- Hunting Brendol
+					["qg"] = 36329,	-- Thargad
 					["coord"] = { 36.7, 71.2, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(14312, {	-- An Introduction Is In Order (is this chain part of Karnum's Glade or Uniting the Tribes?)
-					["qg"] = 36052,	-- Garren Darkwind
 					["sourceQuest"] = 14311,	-- Taking Part
+					["qg"] = 36052,	-- Garren Darkwind
 					["coord"] = { 58.4, 49.8, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(1386, {	-- Assault on the Kolkar
-					["qg"] = 5398,	-- Warug
 					["sourceQuest"] = 1385,	-- Brutal Politics
+					["qg"] = 5398,	-- Warug
 					["coord"] = { 74.8, 68.0, DESOLACE },
 					["minReputation"] = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },	-- Magram Clan Centaur, Friendly.
 					["timeline"] = { REMOVED_4_0_3 },
@@ -328,15 +328,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(14188, {	-- Avenge Furien!
-					["qg"] = 35295,	-- Cerelia
 					["sourceQuest"] = 14184,	-- My Time Has Passed
+					["qg"] = 35295,	-- Cerelia
 					["coord"] = { 44.6, 29.4, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(1434, {	-- Befouled by Satyr
-					["qg"] = 5641,	-- Takata Steelblade
 					["sourceQuest"] = 1432,	-- Alliance Relations (2/4)
+					["qg"] = 5641,	-- Takata Steelblade
 					["coord"] = { 52.6, 54.2, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -357,14 +357,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(14330, {	-- Behind Closed Doors
-					["provider"] = { "i", 38567 },	-- Maraudine Prisoner Manifest
 					["sourceQuest"] = 14328,	-- Three Princes
+					["provider"] = { "i", 38567 },	-- Maraudine Prisoner Manifest
 					["timeline"] = { ADDED_4_0_3 },
 					["crs"] = { 4656 },	-- Maraudine Mauler
 				}),
 				q(14359, {	-- Blessings From Above
-					["provider"] = { "o", 195497 },	-- Elune's Brazier
 					["sourceQuest"] = 14358,	-- Ten Pounds of Flesh
+					["provider"] = { "o", 195497 },	-- Elune's Brazier
 					["coord"] = { 78.7, 23.2, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -388,10 +388,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(14334, {	-- Blubbergut
-					["qg"] = 12031,	-- Mai'Lahii
-					["sourceQuest"] = 14337,	-- Shadowprey Village
-					["coord"] = { 22.6, 71.9, DESOLACE },
 					["description"] = "Blubbergut will only spawn if you walk to the end of the dock to trigger the spawn event.",
+					["sourceQuest"] = 14337,	-- Shadowprey Village
+					["qg"] = 12031,	-- Mai'Lahii
+					["coord"] = { 22.6, 71.9, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -440,8 +440,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(6027, {	-- Book of the Ancients
-					["qg"] = 11863,	-- Azore Aldamort <The Argent Dawn>
 					["sourceQuest"] = 5741,	-- Sceptre of Light
+					["qg"] = 11863,	-- Azore Aldamort <The Argent Dawn>
 					["coord"] = { 38.8, 27.2, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
@@ -464,17 +464,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(14314, {	-- Breakout!
-					["qg"] = 36056,	-- Khan Leh'Prah
 					["sourceQuest"] = 14312,	-- An Introduction is in Order
+					["qg"] = 36056,	-- Khan Leh'Prah
 					["coord"] = { 58.3, 50.1, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(1369, {	-- Broken Tears
-					["qg"] = 5398,	-- Warug
 					["sourceQuests"] = {
 						1386,	-- Assault on the Kolkar
 						1367,	-- Magram Alliance
 					},
+					["qg"] = 5398,	-- Warug
 					["coord"] = { 74.8, 68.0, DESOLACE },
 					["minReputation"] = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },	-- Magram Clan Centaur, Friendly.
 					["timeline"] = { REMOVED_4_0_3 },
@@ -502,18 +502,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 34,
 				}),
 				q(1385, {	-- Brutal Politics
-					["qg"] = 5396,	-- Captain Pentigast
-					["coord"] = { 66.7, 11.0, DESOLACE },
 					-- #if BEFORE 4.0.3
 					["description"] = "Once you complete 'Khan Hratha' for the Gelkis Clan, you can accept and start working on this quest. Bare in mind that it is quite-the-grind to get back to Friendly. Best of luck to you!",
 					-- #endif
+					["qg"] = 5396,	-- Captain Pentigast
+					["coord"] = { 66.7, 11.0, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
 				q(14309, {	-- Calming the Kodo
-					["qg"] = 36048,	-- Thressa Amberglen
 					["sourceQuest"] = 14304,	-- Blood Theory
+					["qg"] = 36048,	-- Thressa Amberglen
 					["coord"] = { 58.8, 46.4, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -547,8 +547,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 				q(14316, {	-- Cenarion Property
-					["qg"] = 36052,	-- Garren Darkwind
 					["sourceQuest"] = 14312,	-- An Introduction is in Order
+					["qg"] = 36052,	-- Garren Darkwind
 					["coord"] = { 58.4, 49.8, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -585,8 +585,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(1366, {	-- Centaur Bounty [H]
-					["qg"] = 5395,	-- Felgur Twocuts
 					["sourceQuest"] = 1365,	-- Khan Dez'hepah
+					["qg"] = 5395,	-- Felgur Twocuts
 					["coord"] = { 56.2, 59.4, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -613,11 +613,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(14335, {	-- Chipping In
-					["qg"] = 11624,	-- Taiga Wisemane
 					["sourceQuests"] = {
 						14334,	-- Blubbergut
 						5421,	-- Fish in a Bucket
 					},
+					["qg"] = 11624,	-- Taiga Wisemane
 					["coord"] = { 25.8, 68.2, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -707,8 +707,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(14381, {	-- Cleansing Our Crevasse (A)
-					["qg"] = 36034,	-- Karnum Marshweaver
 					["sourceQuest"] = 14380,	-- An Impactful Discovery
+					["qg"] = 36034,	-- Karnum Marshweaver
 					["coord"] = { 57.5, 47.7, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -731,8 +731,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(14346, {	-- Cleansing Our Crevasse (H)
-					["qg"] = 36034,	-- Karnum Marshweaver
 					["sourceQuest"] = 14343,	-- Maurin's Concoction
+					["qg"] = 36034,	-- Karnum Marshweaver
 					["coord"] = { 57.5, 47.7, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -755,10 +755,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(14394, {	-- Death to Agogridon
-					["qg"] = 36398,	-- Khan Leh'Prah
-					["sourceQuest"] = 14393,	-- Into the Fray!
-					["coord"] = { 72.3, 67.4, DESOLACE },
 					["description"] = "If you completed this quest prior to 8.0.1, go to Karnum's Glade and speak with Karnum Marshweaver (57.4, 47.6) and he'll grant you the rep.\n\n - Crieve",
+					["sourceQuest"] = 14393,	-- Into the Fray!
+					["qg"] = 36398,	-- Khan Leh'Prah
+					["coord"] = { 72.3, 67.4, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Agogridon Defeated
@@ -779,17 +779,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(14268, {	-- Deep Impact
-					["qg"] = 35827,	-- Valishj
 					["sourceQuest"] = 14264,	-- Wetter than Wet
+					["qg"] = 35827,	-- Valishj
 					["coord"] = { 30.9, 30.9, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(14318, {	-- Delicate Negotiations
-					["qg"] = 36056,	-- Khan Leh'Prah
 					["sourceQuests"] = {
 						14314,	-- Breakout!
 						14316,	-- Cenarion Property
 					},
+					["qg"] = 36056,	-- Khan Leh'Prah
 					["coord"] = { 58.3, 50.1, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -810,8 +810,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(14339, {	-- Delivery Device
-					["qg"] = 4498,	-- Maurin Bonesplitter
 					["sourceQuest"] = 14338,	-- Ghost Walker Post
+					["qg"] = 4498,	-- Maurin Bonesplitter
 					["coord"] = { 52.2, 53.4, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -823,8 +823,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(261, {	-- Down the Scarlet Path (1/2)
-					["qg"] = 1182,	-- Brother Anton <Scarlet Crusade Emissary>
 					["sourceQuest"] = 6141,	-- Brother Anton
+					["qg"] = 1182,	-- Brother Anton <Scarlet Crusade Emissary>
 					["coord"] = { 66.4, 7.8, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -836,11 +836,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(1052, {	-- Down the Scarlet Path (2/2)
+					["sourceQuest"] = 261,	-- Down the Scarlet Path (1/2)
 					["providers"] = {
 						{ "n", 1182 },	-- Brother Anton <Scarlet Crusade Emissary>
 						{ "i", 5539 },	-- Letter of Commendation
 					},
-					["sourceQuest"] = 261,	-- Down the Scarlet Path (1/2)
 					["coord"] = { 66.5, 7.9, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { HILLSBRAD_FOOTHILLS },
@@ -909,8 +909,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(14354, {	-- Elune's Gifts
-					["qg"] = 5642,	-- Vahlarriel Demonslayer
 					["sourceQuest"] = 14387,	-- Lay of the Land
+					["qg"] = 5642,	-- Vahlarriel Demonslayer
 					["coord"] = { 66.4, 11.8, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -930,32 +930,30 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(14365, {	-- Ethel Rethor (A)
-					["qg"] = 5752,	-- Corporal Melkins
 					["sourceQuest"] = 14354,	-- Elune's Gifts
+					["qg"] = 5752,	-- Corporal Melkins
 					["coord"] = { 66.7, 10.9, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(14255, {	-- Ethel Rethor (H)
-					["qg"] = 35295,	-- Cerelia
 					["sourceQuest"] = 14189,	-- Translation
+					["qg"] = 35295,	-- Cerelia
 					["coord"] = { 44.6, 29.4, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(14196, {	-- Firestarter
-					["provider"] = { "o", 195445 },	-- Ancient Vortex Runestone
 					["sourceQuest"] = 14195,	-- All Becoming Clearer
+					["provider"] = { "o", 195445 },	-- Ancient Vortex Runestone
 					["coord"] = { 74.8, 13.2, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = { i(48110) },	-- Vortex Gem (QI!)
 				}),
 				q(5421, {	-- Fish in a Bucket
-					["qg"] = 11317,	-- Jinar'Zillen
-					["coord"] = { 22.4, 73, DESOLACE },
 					-- #if BEFORE CATA
 					-- #if AFTER CLASSIC
 					["description"] = "You must be on the quest 'Catch of the Day' to accept this quest. It becomes unavailable after you turn in that quest as well.",
@@ -965,6 +963,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cost"] = {{ "i", 13545, 5 }},	-- Shellfish
 					["repeatable"] = true,
 					-- #endif
+					["qg"] = 11317,	-- Jinar'Zillen
+					["coord"] = { 22.4, 73, DESOLACE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(25, 25, 10),
 					["groups"] = {
@@ -1003,11 +1003,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(14191, {	-- Furien's Footsteps
+					["sourceQuest"] = 14189,	-- Translation
 					["providers"] = {
 						{ "o", 195438 },	-- Cup of Elune
 						{ "o", 195433 },	-- Ancient Tablets
 					},
-					["sourceQuest"] = 14189,	-- Translation
 					["coord"] = { 69.2, 29.2, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1026,8 +1026,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = lvlsquish(34, 34, 10),
 				}),
 				q(14338, {	-- Ghost Walker Post
-					["qg"] = 36034,	-- Karnum Marshweaver
 					["sourceQuest"] = 14311,	-- Taking Part
+					["qg"] = 36034,	-- Karnum Marshweaver
 					["coord"] = { 57.3, 47.7, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1066,8 +1066,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(1371, {	-- Gizmo for Warug
-					["qg"] = 5398,	-- Warug
 					["sourceQuest"] = 1369,	-- Broken Tears
+					["qg"] = 5398,	-- Warug
 					["coord"] = { 74.8, 68.0, DESOLACE },
 					["minReputation"] = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },	-- Magram Clan Centaur, Friendly.
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1075,8 +1075,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 30,
 				}),
 				q(14260, {	-- Going Deep
-					["qg"] = 35773,	-- Cenarion Researcher Korrah
 					["sourceQuest"] = 14257,	-- Slitherblade Slaughter
+					["qg"] = 35773,	-- Cenarion Researcher Korrah
 					["coord"] = { 38.8, 27.0, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
@@ -1110,8 +1110,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(14254, {	-- Heavy Metal
-					["provider"] = { "o", 195600 },	-- Smouldering Stone
 					["sourceQuest"] = 14247,	-- Stubborn Lands
+					["provider"] = { "o", 195600 },	-- Smouldering Stone
 					["coord"] = { 69.3, 21.2, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["modelScale"] = 6,
@@ -1151,11 +1151,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				-- #endif
 				q(14378, {	-- Hunting Brendol
-					["qg"] = 36329,	-- Thargad
 					["sourceQuests"] = {
 						14373,	-- Infernal Encroachment
 						14374,	-- Portals of the Legion
 					},
+					["qg"] = 36329,	-- Thargad
 					["coord"] = { 36.7, 71.2, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1179,8 +1179,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 28,
 				}),
 				q(14373, {	-- Infernal Encroachment
-					["qg"] = 36329,	-- Thargad
 					["sourceQuest"] = 14372,	-- Thargad's Camp
+					["qg"] = 36329,	-- Thargad
 					["coord"] = { 36.7, 71.2, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1220,8 +1220,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(14393, {	-- Into the Fray!
-					["qg"] = 36398,	-- Khan Leh'Prah
 					["sourceQuest"] = 14332,	-- Time for Change
+					["qg"] = 36398,	-- Khan Leh'Prah
 					["coord"] = { 72.3, 67.4, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1280,8 +1280,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(1380, {	-- Khan Hratha (Gelkis)
-					["qg"] = 5397,	-- Uthek the Wise
 					["sourceQuest"] = 1374,	-- Khan Jehn
+					["qg"] = 5397,	-- Uthek the Wise
 					["coord"] = { 36.2, 79.2, DESOLACE },
 					["minReputation"] = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1302,8 +1302,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(1381, {	-- Khan Hratha (Magram)
-					["qg"] = 5398,	-- Warug
 					["sourceQuest"] = 1375,	-- Khan Shaka
+					["qg"] = 5398,	-- Warug
 					["coord"] = { 74.8, 68.0, DESOLACE },
 					["minReputation"] = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },	-- Magram Clan Centaur, Friendly.
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1324,8 +1324,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(1374, {	-- Khan Jehn
-					["qg"] = 5397,	-- Uthek the Wise
 					["sourceQuest"] = 1373,	-- Ongeku
+					["qg"] = 5397,	-- Uthek the Wise
 					["coord"] = { 36.2, 79.2, DESOLACE },
 					["minReputation"] = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1339,8 +1339,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(1375, {	-- Khan Shaka
-					["qg"] = 5398,	-- Warug
 					["sourceQuest"] = 1371,	-- Gizmo for Warug
+					["qg"] = 5398,	-- Warug
 					["coord"] = { 74.8, 68.0, DESOLACE },
 					["minReputation"] = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },	-- Magram Clan Centaur, Friendly.
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1376,8 +1376,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(14387, {	-- Lay of the Land
-					["qg"] = 5396,	-- Captain Pentigast
 					["sourceQuest"] = 14384,	-- Rerouted!
+					["qg"] = 5396,	-- Captain Pentigast
 					["coord"] = { 66.7, 10.9, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1390,27 +1390,27 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 30,
 				}),
 				q(14343, {	-- Maurin's Concoction
-					["qg"] = 4498,	-- Maurin Bonesplitter
 					["sourceQuest"] = 14339,	-- Delivery Device
+					["qg"] = 4498,	-- Maurin Bonesplitter
 					["coord"] = { 52.2, 53.4, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = { i(49197) },	-- Maurin's Concoction (QI!)
 				}),
 				q(14184, {	-- My Time Has Passed
-					["qg"] = 35286,	-- Furien
 					["sourceQuests"] = {
 						28548,	-- Warchief's Command: Desolace!
 						26134,	-- Nothing Left for You Here
 					},
+					["qg"] = 35286,	-- Furien
 					["coord"] = { 54.7, 8.7, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(14327, {	-- My Word is My Bond
-					["qg"] = 36163,	-- Khan Kammah
 					["sourceQuest"] = 14325,	-- Will Work For Food
+					["qg"] = 36163,	-- Khan Kammah
 					["coords"] = {
 						{ 71.6, 45.6, DESOLACE },
 						{ 73.3, 41.6, DESOLACE },
@@ -1418,10 +1418,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(14282, {	-- Mystery Solved
-					["qg"] = 35773,	-- Cenarion Researcher Korrah
-					["sourceQuest"] = 14268,	-- Deep Impact
-					["coord"] = { 38.8, 27.0, DESOLACE },
 					["description"] = "If you abandon this quest, you can pick it up again from Cenarion Researcher Korrah at Ethel Rethor.",
+					["sourceQuest"] = 14268,	-- Deep Impact
+					["qg"] = 35773,	-- Cenarion Researcher Korrah
+					["coord"] = { 38.8, 27.0, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(55896, {	-- Emblazoned Girdle
@@ -1450,8 +1450,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(14329, {	-- Not So Fast!
-					["qg"] = 36185,	-- Khan Shodo
 					["sourceQuest"] = 14328,	-- Three Princes
+					["qg"] = 36185,	-- Khan Shodo
 					["coord"] = { 40.5, 95.5, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1475,8 +1475,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(14360, {	-- Nothing a Couple of Melons Won't Fix (H)
-					["provider"] = { "o", 195433 },	-- Ancient Tablets
 					["sourceQuest"] = 14191,	-- Furien's Footsteps
+					["provider"] = { "o", 195433 },	-- Ancient Tablets
 					["coord"] = { 77.0, 18.1, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1487,23 +1487,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(14302, {	-- Official Assessment
-					["qg"] = 35773,	-- Cenarion Researcher Korrah
 					["sourceQuest"] = 14301,	-- Return and Report
+					["qg"] = 35773,	-- Cenarion Researcher Korrah
 					["coord"] = { 38.8, 27.0, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_TWO, q(79235, {	-- On The Lam
-					["qg"] = 11438,	-- Bibbly F'utzbuckle
 					["sourceQuest"] = 79229,	-- Highway Robbery
+					["qg"] = 11438,	-- Bibbly F'utzbuckle
 					["coord"] = { 62.2, 38.8, DESOLACE },
 					["timeline"] = { ADDED_1_15_1 },
 					["lvl"] = 30,
 				})),
 				-- #endif
 				q(1373, {	-- Ongeku
-					["qg"] = 5397,	-- Uthek the Wise
 					["sourceQuest"] = 1370,	-- Stealing Supplies
+					["qg"] = 5397,	-- Uthek the Wise
 					["coord"] = { 36.2, 79.2, DESOLACE },
 					["minReputation"] = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1536,8 +1536,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(14361, {	-- Peace of Mind (A)
-					["qg"] = 5396,	-- Captain Pentigast
 					["sourceQuest"] = 14354,	-- Elune's Gifts
+					["qg"] = 5396,	-- Captain Pentigast
 					["coord"] = { 66.7, 10.9, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1548,8 +1548,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(14223, {	-- Peace of Mind (H)
-					["qg"] = 35298,	-- Sorrem
 					["sourceQuest"] = 14189,	-- Translation
+					["qg"] = 35298,	-- Sorrem
 					["coord"] = { 44.9, 29.5, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1560,8 +1560,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(14374, {	-- Portals of the Legion (A)
-					["qg"] = 36329,	-- Thargad
 					["sourceQuest"] = 14372,	-- Thargad's Camp
+					["qg"] = 36329,	-- Thargad
 					["coord"] = { 36.7, 71.2, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1588,6 +1588,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(5581, {	-- Portals of the Legion (H)
+					-- #if BEFORE CATA
+					["sourceQuest"] = 5381,	-- Hand of Iruxos
+					-- #endif
 					["qgs"] = {
 						-- #if AFTER CATA
 						5395,	-- Felgur Twocuts
@@ -1595,9 +1598,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						11624,	-- Taiga Wisemane
 						-- #endif
 					},
-					-- #if BEFORE CATA
-					["sourceQuest"] = 5381,	-- Hand of Iruxos
-					-- #endif
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 56.1, 59.5, DESOLACE },
@@ -1658,10 +1658,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(14364, {	-- Putting Their Heads Together (A)
-					["qg"] = 5396,	-- Captain Pentigast
-					["sourceQuest"] = 14363,	-- You'll Know it When You See It
-					["coord"] = { 66.7, 10.9, DESOLACE },
 					["description"] = "If you abandon this quest, you can pick it up again from Captain Pentigast at Nijel's Point.",
+					["sourceQuest"] = 14363,	-- You'll Know it When You See It
+					["qg"] = 5396,	-- Captain Pentigast
+					["coord"] = { 66.7, 10.9, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1683,8 +1683,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(14227, {	-- Putting Their Heads Together (H)
-					["qg"] = 35298,	-- Sorrem
 					["sourceQuest"] = 14225,	-- You'll Know it When You See It
+					["qg"] = 35298,	-- Sorrem
 					["coord"] = { 44.9, 29.5, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1704,8 +1704,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(1384, {	-- Raid on the Kolkar
-					["qg"] = 5397,	-- Uthek the Wise
 					["sourceQuest"] = 1368,	-- Gelkis Alliance
+					["qg"] = 5397,	-- Uthek the Wise
 					["coord"] = { 36.2, 79.2, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1727,8 +1727,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(1458, {	-- Reagents for Reclaimers Inc. (1/4)
-					["qg"] = 5638,	-- Kreldig Ungor
 					["sourceQuest"] = 1453,	-- Reclaimers' Business in Desolace
+					["qg"] = 5638,	-- Kreldig Ungor
 					["coord"] = { 66.2, 9.6, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1761,8 +1761,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(1459, {	-- Reagents for Reclaimers Inc. (2/4)
-					["qg"] = 5638,	-- Kreldig Ungor
 					["sourceQuest"] = 1458,	-- Reagents for Reclaimers Inc. (1/4)
+					["qg"] = 5638,	-- Kreldig Ungor
 					["coord"] = { 66.2, 9.6, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1783,8 +1783,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(1466, {	-- Reagents for Reclaimers Inc. (3/4)
-					["qg"] = 5638,	-- Kreldig Ungor
 					["sourceQuest"] = 1459,	-- Reagents for Reclaimers Inc. (2/4)
+					["qg"] = 5638,	-- Kreldig Ungor
 					["coord"] = { 66.2, 9.6, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1817,11 +1817,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(1467, {	-- Reagents for Reclaimers Inc. (4/4)
+					["sourceQuest"] = 1466,	-- Reagents for Reclaimers Inc. (3/4)
 					["providers"] = {
 						{ "n", 5638 },	-- Kreldig Ungor
 						{ "i", 6253 },	-- Leftwitch's Package
 					},
-					["sourceQuest"] = 1466,	-- Reagents for Reclaimers Inc. (3/4)
 					["coord"] = { 66.2, 9.6, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1861,18 +1861,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 30,
 				}),
 				q(14384, {	-- Rerouted!
-					["qg"] = 36410,	-- Officer Jankie
 					["sourceQuests"] = {
 						25938,	-- Help for Desolace
 						28531,	-- Hero's Call: Desolace!
 					},
+					["qg"] = 36410,	-- Officer Jankie
 					["coord"] = { 54.2, 9.3, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(14301, {	-- Return and Report
-					["qg"] = 35902,	-- Lord Hydronis
 					["sourceQuest"] = 14284,	-- A Revenant's Vengeance
+					["qg"] = 35902,	-- Lord Hydronis
 					["coord"] = { 29.1, 8.1, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1897,8 +1897,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(1440, {	-- Return to Vahlarriel
-					["qg"] = 5644,	-- Dalinda Malem
 					["sourceQuest"] = 1439,	-- Search for Tyranis
+					["qg"] = 5644,	-- Dalinda Malem
 					["coord"] = { 54.8, 26.2, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1919,8 +1919,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(14198, {	-- Rider on the Storm
-					["provider"] = { "o", 195445 },	-- Ancient Vortex Runestone
 					["sourceQuest"] = 14196,	-- Firestarter
+					["provider"] = { "o", 195445 },	-- Ancient Vortex Runestone
 					["coord"] = { 74.8, 13.2, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1945,11 +1945,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(14379, {	-- Rock Lobstrock!
-					["qg"] = 36378,	-- Dumti
 					["sourceQuests"] = {
 						14373,	-- Infernal Encroachment
 						14374,	-- Portals of the Legion
 					},
+					["qg"] = 36378,	-- Dumti
 					["coord"] = { 36.4, 71.2, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1964,8 +1964,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(14217, {	-- Satyrical Offerings
-					["provider"] = { "o", 195497 },	-- Elune's Brazier
 					["sourceQuest"] = 14213,	-- Ten Pounds of Flesh
+					["provider"] = { "o", 195497 },	-- Elune's Brazier
 					["coord"] = { 78.6, 23.1, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1986,8 +1986,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(1439, {	-- Search for Tyranis
-					["qg"] = 5644,	-- Dalinda Malem
 					["sourceQuest"] = 1438,	-- Vahlarriel's Search (3/3)
+					["qg"] = 5644,	-- Dalinda Malem
 					["coord"] = { 54.8, 26.2, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2001,16 +2001,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(14337, {	-- Shadowprey Village
-					["qg"] = 36034,	-- Karnum Marshweaver
 					["sourceQuest"] = 14327,	-- My Word is My Bond
+					["qg"] = 36034,	-- Karnum Marshweaver
 					["coord"] = { 57.3, 47.7, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(14257, {	-- Slitherblade Slaughter
-					["qg"] = 35773,	-- Cenarion Researcher Korrah
 					["sourceQuest"] = 14256,	-- The Emerging Threat
+					["qg"] = 35773,	-- Cenarion Researcher Korrah
 					["coord"] = { 38.8, 27.0, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -2036,8 +2036,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = { i(49196) },	-- Smeed's Harnesses (QI!)
 				}),
 				q(1370, {	-- Stealing Supplies
-					["qg"] = 5397,	-- Uthek the Wise
 					["sourceQuest"] = 1384,	-- Raid on the Kolkar
+					["qg"] = 5397,	-- Uthek the Wise
 					["coord"] = { 36.2, 79.2, DESOLACE },
 					["minReputation"] = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.
 					["timeline"] = { REMOVED_4_0_3 },
@@ -2070,11 +2070,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(1382, {	-- Strange Alliance
-					["qg"] = 5396,	-- Captain Pentigast
-					["coord"] = { 66.7, 11.0, DESOLACE },
 					-- #if BEFORE 4.0.3
 					["description"] = "Once you complete 'Khan Hratha' for the Magram Clan, you can accept and start working on this quest. Bare in mind that it is quite-the-grind to get back to Friendly. Best of luck to you!",
 					-- #endif
+					["qg"] = 5396,	-- Captain Pentigast
+					["coord"] = { 66.7, 11.0, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
@@ -2095,11 +2095,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(14311, {	-- Taking Part
-					["qg"] = 36060,	-- Botanist Ferrah
 					["sourceQuests"] = {
 						14305,	-- A Time to Reap
 						14306,	-- Pulling Weeds
 					},
+					["qg"] = 36060,	-- Botanist Ferrah
 					["coord"] = { 58.6, 48.7, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = { i(49150) },	-- Cenarion Seeds (QI!)
@@ -2112,16 +2112,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = { i(48857) },	-- Satyr Flesh (QI!)
 				}),
 				q(14213, {	-- Ten Pounds of Flesh (H)
-					["provider"] = { "o", 195497 },	-- Elune's Brazier
 					["sourceQuest"] = 14189,	-- Translation
+					["provider"] = { "o", 195497 },	-- Elune's Brazier
 					["coord"] = { 78.7, 23.2, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = { i(48857) },	-- Satyr Flesh (QI!)
 				}),
 				q(14372, {	-- Thargad's Camp
-					["qg"] = 36034,	-- Karnum Marshweaver
 					["sourceQuest"] = 14327,	-- My Word is My Bond
+					["qg"] = 36034,	-- Karnum Marshweaver
 					["coord"] = { 57.5, 47.7, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2129,11 +2129,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_TWO, q(79939, {	-- The Broken Hammer
+					["sourceQuest"] = 78093,	-- Return to Delgren
 					["providers"] = {
 						{ "i", 215441 },	-- Broken Hammer
 						{ "o", 423703 },	-- Broken Warhammer
 					},
-					["sourceQuest"] = 78093,	-- Return to Delgren
 					["coord"] = { 52.7, 84.8, DESOLACE },
 					["maps"] = { STORMWIND_CITY },
 					["classes"] = { PALADIN },
@@ -2156,8 +2156,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				-- #endif
 				q(1435, {	-- The Burning of Spirits
-					["qg"] = 4498,	-- Maurin Bonesplitter
 					["sourceQuest"] = 1433,	-- Alliance Relations (3/4)
+					["qg"] = 4498,	-- Maurin Bonesplitter
 					["coord"] = { 52.2, 53.4, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2194,8 +2194,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 25,
 				}),
 				q(1481, {	-- The Corrupter (2/5)
-					["qg"] = 4498,	-- Maurin Bonesplitter
 					["sourceQuest"] = 1480,	-- The Corrupter (1/5)
+					["qg"] = 4498,	-- Maurin Bonesplitter
 					["coord"] = { 52.2, 53.4, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2209,8 +2209,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(1482, {	-- The Corrupter (3/5)
-					["qg"] = 4498,	-- Maurin Bonesplitter
 					["sourceQuest"] = 1481,	-- The Corrupter (2/5)
+					["qg"] = 4498,	-- Maurin Bonesplitter
 					["coord"] = { 52.2, 53.4, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2224,16 +2224,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(1484, {	-- The Corrupter (4/5)
-					["qg"] = 4498,	-- Maurin Bonesplitter
 					["sourceQuest"] = 1482,	-- The Corrupter (3/5)
+					["qg"] = 4498,	-- Maurin Bonesplitter
 					["coord"] = { 52.2, 53.4, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
 				}),
 				q(1488, {	-- The Corrupter (5/5)
-					["qg"] = 5641,	-- Takata Steelblade
 					["sourceQuest"] = 1484,	-- The Corrupter (4/5)
+					["qg"] = 5641,	-- Takata Steelblade
 					["coord"] = { 52.6, 54.2, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2255,11 +2255,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(14256, {	-- The Emerging Threat
-					["qg"] = 35773,	-- Cenarion Researcher Korrah
 					["sourceQuests"] = {
 						14365,	-- Ethel Rethor (alliance)
 						14255,	-- Ethel Rethor (horde)
 					},
+					["qg"] = 35773,	-- Cenarion Researcher Korrah
 					["coord"] = { 38.8, 27.0, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -2269,33 +2269,33 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(14292, {	-- The Enemy of Our Enemy
-					["qg"] = 35773,	-- Cenarion Researh Korrah
 					["sourceQuest"] = 14282,	-- Mystery Solved
+					["qg"] = 35773,	-- Cenarion Researh Korrah
 					["coord"] = { 38.8, 27.0, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(1454, {	-- The Karnitol Shipwreck (1/4)
-					["qg"] = 5638,	-- Kreldig Ungor
 					["sourceQuests"] = {
 						1453,	-- Reclaimers' Business in Desolace
 						-- #if AFTER CATA
 						14354,	-- Elune's Gift
 						-- #endif
 					},
+					["qg"] = 5638,	-- Kreldig Ungor
 					["coord"] = { 66.2, 9.6, DESOLACE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(30, 30, 10),
 				}),
 				q(1455, {	-- The Karnitol Shipwreck (2/4)
-					["provider"] = { "o", 35251 },	-- Karnitol's Chest
 					["sourceQuest"] = 1454,	-- The Karnitol Shipwreck (1/4)
+					["provider"] = { "o", 35251 },	-- Karnitol's Chest
 					["coord"] = { 36.1, 30.4, DESOLACE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(30, 30, 10),
 				}),
 				q(1456, {	-- The Karnitol Shipwreck (3/4)
-					["qg"] = 5638,	-- Kreldig Ungor
 					["sourceQuest"] = 1455,	-- The Karnitol Shipwreck (2/4)
+					["qg"] = 5638,	-- Kreldig Ungor
 					["coord"] = { 66.2, 9.6, DESOLACE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(30, 30, 10),
@@ -2322,11 +2322,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(1457, {	-- The Karnitol Shipwreck (4/4)
+					["sourceQuest"] = 1456,	-- The Karnitol Shipwreck (3/4)
 					["providers"] = {
 						{ "n", 5638 },	-- Kreldig Ungor
 						{ "i", 6245 },	-- Karnitol's Satchel
 					},
-					["sourceQuest"] = 1456,	-- The Karnitol Shipwreck (3/4)
 					["coord"] = { 66.2, 9.6, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { IRONFORGE },
@@ -2342,41 +2342,41 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(1362, {	-- The Kolkar of Desolace
-					["qg"] = 3389,	-- Regthar Deathgate
 					["sourceQuest"] = 1361,	-- Regthar Deathgate
+					["qg"] = 3389,	-- Regthar Deathgate
 					["coord"] = { 45.2, 28.4, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 				}),
 				q(14410, {	-- The Wilds of Feralas (A)
-					["qg"] = 36487,	-- Khan Shodo
-					["altQuests"] = {
-						14411,	-- Feralas Breadcrumb [PH]
-						14414,	-- Feralas Breadcrumb [PH]
-					},
 					["sourceQuests"] = {
 						14381,	-- Cleansing Our Crevasse (A)
 						14394,	-- Death to Agogridon
 					},
+					["altQuests"] = {
+						14411,	-- Feralas Breadcrumb [PH]
+						14414,	-- Feralas Breadcrumb [PH]
+					},
+					["qg"] = 36487,	-- Khan Shodo
 					["coord"] = { 73.3, 73.0, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["modelScale"] = 1.5,
 					["isBreadcrumb"] = true,
 				}),
 				q(26589, {	-- The Wilds of Feralas (H)
-					["qg"] = 36487,	-- Khan Shodo
 					["sourceQuests"] = {
 						14346,	-- Cleansing Our Crevasse (H)
 						14394,	-- Death to Agogridon
 					},
+					["qg"] = 36487,	-- Khan Shodo
 					["coord"] = { 73.3, 73.0, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
 				q(14328, {	-- Three Princes
-					["qg"] = 36056,	-- Khan Leh'Prah
 					["sourceQuest"] = 14327,	-- My Word is My Bond
+					["qg"] = 36056,	-- Khan Leh'Prah
 					["coord"] = { 58.3, 50.1, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -2392,8 +2392,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(14332, {	-- Time For Change
-					["qg"] = 36196,	-- Kherrah
 					["sourceQuest"] = 14330,	-- Behind Closed Doors
+					["qg"] = 36196,	-- Kherrah
 					["coord"] = { 13.0, 46.3, 67 },	-- quest starts in Maraudon's mapID
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -2434,8 +2434,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(14219, {	-- To the Hilt! (H)
-					["provider"] = { "o", 195517 },	-- Elune's Handmaiden
 					["sourceQuest"] = 14189,	-- Translation
+					["provider"] = { "o", 195517 },	-- Elune's Handmaiden
 					["coord"] = { 75.9, 26.6, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2457,8 +2457,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(14189, {	-- Translation
-					["qg"] = 35298,	-- Sorrem
 					["sourceQuest"] = 14188,	-- Avenge Furien!
+					["qg"] = 35298,	-- Sorrem
 					["coord"] = { 44.9, 29.5, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -2472,19 +2472,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 30,
 				}),
 				q(1465, {	-- Vahlarriel's Search (2/3)
+					["sourceQuest"] = 1437,	-- Vahlarriel's Search (1/3)
 					["providers"] = {
 						{ "o", 50961 },	-- Malem Chest
 						{ "i", 6479 },	-- Malem Pendant
 					},
-					["sourceQuest"] = 1437,	-- Vahlarriel's Search (1/3)
 					["coord"] = { 56.6, 17.8, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
 				q(1438, {	-- Vahlarriel's Search (3/3)
-					["qg"] = 5642,	-- Vahlarriel Demonslayer
 					["sourceQuest"] = 1465,	-- Vahlarriel's Search (2/3)
+					["qg"] = 5642,	-- Vahlarriel Demonslayer
 					["coord"] = { 66.4, 11.8, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2501,20 +2501,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				})),
 				q(14264, {	-- Wetter Than Wet
-					["qg"] = 35827,	-- Valishj
 					["sourceQuest"] = 14260,	-- Going Deep
+					["qg"] = 35827,	-- Valishj
 					["coord"] = { 30.9, 30.9, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(14333, {	-- While You're Here
-					["provider"] = { "o", 196393 },	-- Broken Relic
 					["sourceQuest"] = 14328,	-- Three Princes
+					["provider"] = { "o", 196393 },	-- Broken Relic
 					["coord"] = { 12.5, 49.3, 67 },	-- quest starts in Maraudon's mapID
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(14325, {	-- Will Work For Food
-					["qg"] = 36163,	-- Khan Kammah
 					["sourceQuest"] = 14318,	-- Delicate Negotiations
+					["qg"] = 36163,	-- Khan Kammah
 					["coord"] = { 71.7, 45.6, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -2525,10 +2525,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(14363, {	-- You'll Know It When You See It (A)
-					["qg"] = 5396,	-- Captain Pentigast
-					["sourceQuest"] = 14361,	-- Peace of Mind
-					["coord"] = { 66.7, 10.9, DESOLACE },
 					["description"] = "If you abandon this quest, you can pick it up again from Captain Pentigast at Nijel's Point.",
+					["sourceQuest"] = 14361,	-- Peace of Mind
+					["qg"] = 5396,	-- Captain Pentigast
+					["coord"] = { 66.7, 10.9, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2542,8 +2542,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(14225, {	-- You'll Know It When You See It (H)
-					["qg"] = 35298,	-- Sorrem
 					["sourceQuest"] = 14223,	-- Peace of Mind
+					["qg"] = 35298,	-- Sorrem
 					["coord"] = { 44.8, 29.4, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,

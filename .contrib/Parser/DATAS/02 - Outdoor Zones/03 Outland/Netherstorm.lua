@@ -104,8 +104,8 @@ root(ROOTS.Zones, {
 				}),
 				n(QUESTS, {
 					q(10197, {	-- A Convincing Disguise
-						["qg"] = 19840,	-- Caledis Brightdawn
 						["sourceQuest"] = 10652,	-- Behind Enemy Lines
+						["qg"] = 19840,	-- Caledis Brightdawn
 						["coord"] = { 48.2, 86.6, NETHERSTORM },
 						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["groups"] = {
@@ -124,14 +124,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10202, {	-- A Defector
-						["qg"] = 19469,	-- Magistrix Larynna
 						["sourceQuest"] = 10341,	-- Kick Them While They're Down
+						["qg"] = 19469,	-- Magistrix Larynna
 						["coord"] = { 32.1, 64.0, NETHERSTORM },
 						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10508, {	-- A Gift for Voren'thal
-						["qg"] = 19468,	-- Spymaster Thalodien
 						["sourceQuest"] = 10432,	-- Damning Evidence
+						["qg"] = 19468,	-- Spymaster Thalodien
 						["coord"] = { 32.0, 64.1, NETHERSTORM },
 						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						-- May also require Shutting Down Manaforge Ara.
@@ -147,11 +147,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11038, {	-- Assist Exarch Orelis
+						["sourceQuest"] = 10551,	-- Allegiance to the Aldor
 						["qgs"] = {
 							23271,	-- Vindicator Kaan
 							23270,	-- Vindicator Aeus
 						},
-						["sourceQuest"] = 10551,	-- Allegiance to the Aldor
 						["coords"] = {
 							{ 35.0, 32.6, SHATTRATH_CITY },
 							{ 47.4, 26.4, SHATTRATH_CITY },
@@ -160,33 +160,33 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,	-- for "Distraction at Manaforge B'naar," unavailable if you did any Netherstorm breadcrumb quest
 					}),
 					q(10264, {	-- Assisting the Consortium (The Scryers)
-						["qg"] = 19468,	-- Spymaster Thalodien
 						["sourceQuest"] = 10186,	-- You're Hired!
+						["qg"] = 19468,	-- Spymaster Thalodien
 						["coord"] = { 32.0, 64.1, NETHERSTORM },
 						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["isBreadcrumb"] = true,
 					}),
 					q(10652, {	-- Behind Enemy Lines
-						["qg"] = 20162,	-- Veronia
 						["sourceQuest"] = 10194,	-- Stealth Flight
+						["qg"] = 20162,	-- Veronia
 						["coord"] = { 33.8, 64.2, NETHERSTORM },
 						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10204, {	-- Bloodgem Crystals
-						["qg"] = 19469,	-- Magistrix Larynna
 						["sourceQuest"] = 10189,	-- Manaforge B'naar
+						["qg"] = 19469,	-- Magistrix Larynna
 						["coord"] = { 32.1, 64.0, NETHERSTORM },
 						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10509, {	-- Bound for Glory
-						["qg"] = 19468,	-- Spymaster Thalodien
 						["sourceQuest"] = 10508,	-- A Gift for Voren'thal
+						["qg"] = 19468,	-- Spymaster Thalodien
 						["coord"] = { 32.0, 64.1, NETHERSTORM },
 						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10432, {	-- Damning Evidence
-						["qg"] = 20920,	-- Magister Theledorn
 						["sourceQuest"] = 10202,	-- A Defector
+						["qg"] = 20920,	-- Magister Theledorn
 						["coord"] = { 26.2, 41.6, NETHERSTORM },
 						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["groups"] = {
@@ -201,8 +201,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10193, {	-- High Value Targets
-						["qg"] = 19468,	-- Spymaster Thalodien
 						["sourceQuest"] = 10189,	-- Manaforge B'naar
+						["qg"] = 19468,	-- Spymaster Thalodien
 						["coord"] = { 32.0, 64.1, NETHERSTORM },
 						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["groups"] = {
@@ -218,8 +218,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10198, {	-- Information Gathering
-						["qg"] = 19840,	-- Caledis Brightdawn
 						["sourceQuest"] = 10197,	-- A Convincing Disguise
+						["qg"] = 19840,	-- Caledis Brightdawn
 						["coord"] = { 48.2, 86.6, NETHERSTORM },
 						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["groups"] = {
@@ -230,8 +230,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10341, {	-- Kick Them While They're Down
-						["qg"] = 19469,	-- Magistrix Larynna
 						["sourceQuest"] = 10330,	-- Shutting Down Manaforge Coruu
+						["qg"] = 19469,	-- Magistrix Larynna
 						["coord"] = { 32.1, 64.0, NETHERSTORM },
 						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["groups"] = {
@@ -251,11 +251,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10189, {	-- Manaforge B'naar
-						["qg"] = 19468,	-- Spymaster Thalodien
 						["sourceQuests"] = {
 							10552,	-- Allegiance to the Scryers
 							11039,	-- Report to Spymaster Thalodien
 						},
+						["qg"] = 19468,	-- Spymaster Thalodien
 						["coord"] = { 32.0, 64.1, NETHERSTORM },
 						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["groups"] = {
@@ -266,11 +266,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11039, {	-- Report to Spymaster Thalodien
+						["sourceQuest"] = 10552,	-- Allegiance to the Scryers
 						["qgs"] = {
 							23273,	-- Arcanist Raestan
 							23272,	-- Arcanist Savan
 						},
-						["sourceQuest"] = 10552,	-- Allegiance to the Scryers
 						["coords"] = {
 							{ 44.6, 76.2, SHATTRATH_CITY },
 							{ 60.6, 63.2, SHATTRATH_CITY },
@@ -279,14 +279,14 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,	-- for Manaforge B'naar
 					}),
 					q(10200, {	-- Return to Thalodien
-						["qg"] = 19840,	-- Caledis Brightdawn
 						["sourceQuest"] = 10330,	-- Shutting Down Manaforge Coruu
+						["qg"] = 19840,	-- Caledis Brightdawn
 						["coord"] = { 48.2, 86.6, NETHERSTORM },
 						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10329, {	-- Shutting Down Manaforge B'naar
-						["qg"] = 19468,	-- Spymaster Thalodien
 						["sourceQuest"] = 10193,	-- High Value Targets
+						["qg"] = 19468,	-- Spymaster Thalodien
 						["coord"] = { 32.0, 64.1, NETHERSTORM },
 						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["groups"] = {
@@ -300,8 +300,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10330, {	-- Shutting Down Manaforge Coruu
-						["qg"] = 19840,	-- Caledis Brightdawn
 						["sourceQuest"] = 10198,	-- Information Gathering
+						["qg"] = 19840,	-- Caledis Brightdawn
 						["coord"] = { 48.2, 86.6, NETHERSTORM },
 						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["groups"] = {
@@ -315,8 +315,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10338, {	-- Shutting Down Manaforge Duro
-						["qg"] = 19468,	-- Spymaster Thalodien
 						["sourceQuest"] = 10200,	-- Return to Thalodien
+						["qg"] = 19468,	-- Spymaster Thalodien
 						["coord"] = { 32.0, 64.1, NETHERSTORM },
 						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["groups"] = {
@@ -330,14 +330,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10194, {	-- Stealth Flight
-						["qg"] = 19468,	-- Spymaster Thalodien
 						["sourceQuest"] = 10329,	-- Shutting Down Manaforge B'naar
+						["qg"] = 19468,	-- Spymaster Thalodien
 						["coord"] = { 32.0, 64.1, NETHERSTORM },
 						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10365, {	-- Shutting Down Manaforge Ara
-						["qg"] = 19468,	-- Spymaster Thalodien
 						["sourceQuest"] = 10338,	-- Shutting Down Manaforge Duro
+						["qg"] = 19468,	-- Spymaster Thalodien
 						["coord"] = { 32.0, 64.0, NETHERSTORM },
 						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["groups"] = {
@@ -353,8 +353,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10507, {	-- Turning Point
-						["qg"] = 18530,	-- Voren'thal the Seer
 						["sourceQuest"] = 10509,	-- Bound for Glory
+						["qg"] = 18530,	-- Voren'thal the Seer
 						["coord"] = { 42.6, 91.4, SHATTRATH_CITY },
 						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["groups"] = {
@@ -381,8 +381,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10970, {	-- A Mission of Mercy
-						["qg"] = 20448,	-- Commander Ameer
 						["sourceQuest"] = 10969,	-- Seek Out Ameer
+						["qg"] = 20448,	-- Commander Ameer
 						["coord"] = { 59.5, 32.4, NETHERSTORM },
 						["minReputation"] = { FACTION_THE_CONSORTIUM, HONORED },
 						["groups"] = {
@@ -412,23 +412,23 @@ root(ROOTS.Zones, {
 						["minReputation"] = { FACTION_THE_CONSORTIUM, REVERED },
 					}),
 					q(10308, {	-- Another Heap of Ethereals
-						["qg"] = 19880,	-- Nether-Stalker Khay'ji
-						["sourceQuest"] = 10262,	-- A Heap of Ethereals
-						["coord"] = { 32.4, 64.2, NETHERSTORM },
 						["description"] = "Gives reputation through Exalted.",
+						["sourceQuest"] = 10262,	-- A Heap of Ethereals
+						["qg"] = 19880,	-- Nether-Stalker Khay'ji
+						["coord"] = { 32.4, 64.2, NETHERSTORM },
 						["repeatable"] = true,
 					}),
 					q(10972, {	-- Ethereum Prisoner I.D. Catalogue
-						["qg"] = 20448,	-- Commander Ameer
 						["sourceQuest"] = 10971,	-- Ethereum Secrets
+						["qg"] = 20448,	-- Commander Ameer
 						["coord"] = { 59.5, 32.4, NETHERSTORM },
 						["maxReputation"] = { FACTION_THE_CONSORTIUM, EXALTED },	-- The Consortium, Exalted.
 						["cost"] = { { "i", 31957, 1 } },	-- Ethereum Prisoner I.D. Tag
 						["repeatable"] = true,
 					}),
 					q(10971, {	-- Ethereum Secrets
-						["qg"] = 20448,	-- Commander Ameer
 						["sourceQuest"] = 10970,	-- A Mission of Mercy
+						["qg"] = 20448,	-- Commander Ameer
 						["coord"] = { 59.5, 32.4, NETHERSTORM },
 					}),
 					q(10969, {	-- Seek Out Ameer
@@ -438,8 +438,8 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,	-- for "A Mission of Mercy"
 					}),
 					q(10974, {	-- Stasis Chambers of Bash'ir
-						["qg"] = 20448,	-- Commander Ameer
 						["sourceQuest"] = 10973,	-- A Thousand Worlds
+						["qg"] = 20448,	-- Commander Ameer
 						["coord"] = { 59.5, 32.4, NETHERSTORM },
 						["maps"] = { BLADES_EDGE_MOUNTAINS },
 						["groups"] = {
@@ -447,8 +447,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10380, {	-- A Dark Pact
-						["qg"] = 20780,	-- Kaylaan
 						["sourceQuest"] = 10431,	-- Outside Assistance
+						["qg"] = 20780,	-- Kaylaan
 						["coord"] = { 34.8, 38.3, NETHERSTORM },
 						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["groups"] = {
@@ -464,8 +464,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10381, {	-- Aldor No More
-						["qg"] = 20780,	-- Kaylaan
 						["sourceQuest"] = 10380,	-- A Dark Pact
+						["qg"] = 20780,	-- Kaylaan
 						["coord"] = { 34.8, 38.3, NETHERSTORM },
 						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["groups"] = {
@@ -476,15 +476,15 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10263, {	-- Assisting the Consortium (The Aldor)
-						["qg"] = 19467,	-- Anchorite Karja
 						["sourceQuest"] = 10186,	-- You're Hired!
+						["qg"] = 19467,	-- Anchorite Karja
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["isBreadcrumb"] = true,
 					}),
 					q(10246, {	-- Attack on Manaforge Coruu
-						["qg"] = 19466,	-- Exarch Orelis
 						["sourceQuest"] = 10299,	-- Shutting Down Manaforge B'naar
+						["qg"] = 19466,	-- Exarch Orelis
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["groups"] = {
@@ -497,14 +497,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10245, {	-- B'naar Console Transcription
-						["provider"] = { "o", 183770 },	-- B'naar Control Console
 						["sourceQuest"] = 10243,	-- Naaru Technology
+						["provider"] = { "o", 183770 },	-- B'naar Control Console
 						["coord"] = { 23.2, 68.2, NETHERSTORM },
 						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10409, {	-- Deathblow to the Legion
-						["qg"] = 18538,	-- Ishanah
 						["sourceQuest"] = 10410,	-- Ishanah's Help
+						["qg"] = 18538,	-- Ishanah
 						["coord"] = { 24.2, 29.8, SHATTRATH_CITY },
 						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["groups"] = {
@@ -516,11 +516,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10241, {	-- Distraction at Manaforge B'naar
-						["qg"] = 19466,	-- Exarch Orelis
 						["sourceQuests"] = {
 							10551,	-- Allegiance to the Aldor
 							11038,	-- Assist Exarch Orelis
 						},
+						["qg"] = 19466,	-- Exarch Orelis
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["groups"] = {
@@ -533,14 +533,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10410, {	-- Ishanah's Help
-						["qg"] = 19467,	-- Anchorite Karja
 						["sourceQuest"] = 10407,	-- Socrethar's Shadow
+						["qg"] = 19467,	-- Anchorite Karja
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10313, {	-- Measuring Warp Energies
-						["qg"] = 19466,	-- Exarch Orelis
 						["sourceQuest"] = 10241,	-- Distraction at Manaforge B'naar
+						["qg"] = 19466,	-- Exarch Orelis
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["groups"] = {
@@ -551,20 +551,20 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10243, {	-- Naaru Technology
-						["qg"] = 19467,	-- Anchorite Karja
 						["sourceQuest"] = 10241,	-- Distraction at Manaforge B'naar
+						["qg"] = 19467,	-- Anchorite Karja
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10431, {	-- Outside Assistance
-						["qg"] = 19466,	-- Exarch Orelis
 						["sourceQuest"] = 10328,	-- Sunfury Briefings
+						["qg"] = 19466,	-- Exarch Orelis
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10323, {	-- Shutting Down Manaforge Ara
-						["qg"] = 19467,	-- Anchorite Karja
 						["sourceQuest"] = 10322,	-- Shutting Down Manaforge Duro
+						["qg"] = 19467,	-- Anchorite Karja
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["groups"] = {
@@ -580,8 +580,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10299, {	-- Shutting Down Manaforge B'naar
-						["qg"] = 19467,	-- Anchorite Karja
 						["sourceQuest"] = 10245,	-- B'naar Console Transcription
+						["qg"] = 19467,	-- Anchorite Karja
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["groups"] = {
@@ -595,8 +595,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10321, {	-- Shutting Down Manaforge Coruu
-						["qg"] = 19467,	-- Anchorite Karja
 						["sourceQuest"] = 10299,	-- Shutting Down Manaforge B'naar
+						["qg"] = 19467,	-- Anchorite Karja
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["groups"] = {
@@ -610,8 +610,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10322, {	-- Shutting Down Manaforge Duro
-						["qg"] = 19467,	-- Anchorite Karja
 						["sourceQuest"] = 10321,	-- Shutting Down Manaforge Coruu
+						["qg"] = 19467,	-- Anchorite Karja
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["groups"] = {
@@ -625,11 +625,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10407, {	-- Socrethar's Shadow
-						["qg"] = 19467,	-- Anchorite Karja
 						["sourceQuests"] = {
 							10323,	-- Shutting Down Manaforge Ara
 							10381,	-- Aldor No More
 						},
+						["qg"] = 19467,	-- Anchorite Karja
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["groups"] = {
@@ -644,8 +644,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10328, {	-- Sunfury Briefings
-						["qg"] = 19466,	-- Exarch Orelis
 						["sourceQuest"] = 10321,	-- Shutting Down Manaforge Coruu
+						["qg"] = 19466,	-- Exarch Orelis
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["groups"] = {
@@ -663,8 +663,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10185, {	-- A Fate Worse Than Death
-						["qg"] = 19488,	-- Custodian Dieworth
 						["sourceQuest"] = 10174,	-- Curse of the Violet Tower
+						["qg"] = 19488,	-- Custodian Dieworth
 						["coord"] = { 57.6, 86.2, NETHERSTORM },
 						["groups"] = {
 							objective(1, {	-- 0/10 Mana Seeker slain
@@ -680,13 +680,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10262, {	-- A Heap of Ethereals
-						["qg"] = 19880,	-- Nether-Stalker Khay'ji
 						["sourceQuest"] = 10265,	-- Consortium Crystal Collection
+						["qg"] = 19880,	-- Nether-Stalker Khay'ji
 						["coord"] = { 32.4, 64.2, NETHERSTORM },
 					}),
 					q(10314, {	-- A Lingering Suspicion
-						["provider"] = { "o", 184300 },	-- Necromantic Focus
 						["sourceQuest"] = 10316,	-- Searching for Evidence
+						["provider"] = { "o", 184300 },	-- Necromantic Focus
 						["coord"] = { 60.3, 78.0, NETHERSTORM },
 						["groups"] = {
 							objective(1, {	-- 0/10 Loathsome Remnant
@@ -713,8 +713,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10272, {	-- A Promising Start
-						["qg"] = 20110,	-- Tyri
 						["sourceQuest"] = 10281,	-- Formal Introductions
+						["qg"] = 20110,	-- Tyri
 						["coord"] = { 71.2, 35.1, NETHERSTORM },
 						["groups"] = {
 							objective(1, {	-- 0/15 Nether Dragonkin Egg
@@ -739,8 +739,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10436, {	-- All Clear!
-						["qg"] = 20913,	-- Tashar
 						["sourceQuest"] = 10430,	-- Testing the Prototype
+						["qg"] = 20913,	-- Tashar
 						["coord"] = { 44.7, 14.6, NETHERSTORM },
 						["groups"] = {
 							objective(1, {	-- 0/12 Scythetooth Raptor slain
@@ -749,13 +749,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10268, {	-- An Audience with the Prince
-						["qg"] = 20066,	-- Gahruj
 						["sourceQuest"] = 10267,	-- Rightful Repossession
+						["qg"] = 20066,	-- Gahruj
 						["coord"] = { 46.7, 56.9, NETHERSTORM },
 					}),
 					q(10176, {	-- Ar'kelos the Guardian
-						["qg"] = 19644,	-- Image of Archmage Vargoth
 						["sourceQuest"] = 10209,	-- Summoner Kanthin's Prize
+						["qg"] = 19644,	-- Image of Archmage Vargoth
 						["groups"] = {
 							objective(1, {	-- 0/1 Ar'kelos slain
 								["provider"] = { "n", 19494 },	-- Ar'kelos
@@ -780,8 +780,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10249, {	-- Back to the Chief!
-						["qg"] = 19832,	-- Doctor Vomisa, Ph.T.
 						["sourceQuest"] = 10248,	-- You, Robot
+						["qg"] = 19832,	-- Doctor Vomisa, Ph.T.
 						["coord"] = { 37.3, 63.6, NETHERSTORM },
 						["groups"] = {
 							i(134021, {	-- X-52 Rocket Helmet (TOY!)
@@ -826,8 +826,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10240, {	-- Building a Perimeter
-						["qg"] = 19489,	-- Lieutenant-Sorcerer Morran
 						["sourceQuest"] = 10239,	-- Potential Energy Source
+						["qg"] = 19489,	-- Lieutenant-Sorcerer Morran
 						["coord"] = { 57.6, 86.3, NETHERSTORM },
 						["groups"] = {
 							i(30398),	-- Boots of the Beneficent
@@ -868,8 +868,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10319, {	-- Capturing the Phylactery
-						["qg"] = 19488,	-- Custodian Dieworth
 						["sourceQuest"] = 10314,	-- A Lingering Suspicion
+						["qg"] = 19488,	-- Custodian Dieworth
 						["coord"] = { 57.5, 86.3, NETHERSTORM },
 						["groups"] = {
 							objective(1, {	-- 0/1 Naberius' Phylactery
@@ -894,11 +894,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10265, {	-- Consortium Crystal Collection
-						["qg"] = 19880,	-- Nether-Stalker Khay'ji
 						["sourceQuests"] = {
 							10263,	-- Assisting the Consortium (The Aldor)
 							10264,	-- Assisting the Consortium (The Scryers)
 						},
+						["qg"] = 19880,	-- Nether-Stalker Khay'ji
 						["coord"] = { 32.4, 64.2, NETHERSTORM },
 						["groups"] = {
 							objective(1, {	-- 0/1 Arklon Crystal Artifact
@@ -908,8 +908,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10427, {	-- Creatures of the Eco-Domes
-						["qg"] = 20871,	-- Aurine Moonblaze
 						["sourceQuest"] = 10426,	-- Flora of the Eco-Domes
+						["qg"] = 20871,	-- Aurine Moonblaze
 						["coord"] = { 42.3, 32.6, NETHERSTORM },
 						["groups"] = {
 							objective(1, {	-- 0/12 Talbuk Tagged
@@ -922,13 +922,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10174, {	-- Curse of the Violet Tower
-						["qg"] = 19217,	-- Ravandwyr
 						["sourceQuest"] = 10300,	-- Rebuilding the Staff
+						["qg"] = 19217,	-- Ravandwyr
 						["coord"] = { 31.4, 66.1, NETHERSTORM },
 					}),
 					q(10418, {	-- Deal With the Saboteurs
-						["qg"] = 20810,	-- Mehrdad
 						["sourceQuest"] = 10417,	-- Run a Diagnostic!
+						["qg"] = 20810,	-- Mehrdad
 						["coord"] = { 46.4, 56.4, NETHERSTORM },
 						["groups"] = {
 							objective(1, {	-- 0/8 Barbscale Crocolisk slain
@@ -941,8 +941,8 @@ root(ROOTS.Zones, {
 						["coord"] = { 34.6, 37.9, NETHERSTORM },
 					}),
 					q(10318, {	-- Dealing with the Overmaster
-						["qg"] = 20393,	-- Foreman Sundown
 						["sourceQuest"] = 10317,	-- Dealing with the Foreman
+						["qg"] = 20393,	-- Foreman Sundown
 						["coord"] = { 26.4, 42.3, NETHERSTORM },
 						["groups"] = {
 							objective(1, {	-- 0/1 Overmaster Grindgarr slain
@@ -955,8 +955,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10235, {	-- Declawing Doomclaw
-						["qg"] = 19728,	-- Mama Wheeler
 						["sourceQuest"] = 10234,	-- One Demon's Trash...
+						["qg"] = 19728,	-- Mama Wheeler
 						["coord"] = { 46.6, 56.5, NETHERSTORM },
 						["groups"] = {
 							objective(1, {	-- 0/1 Doomclaw's Hand
@@ -969,8 +969,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10406, {	-- Delivering the Message
-						["qg"] = 20482,	-- Image of Commander Ameer
 						["sourceQuest"] = 10405,	-- S-A-B-O-T-A-G-E
+						["qg"] = 20482,	-- Image of Commander Ameer
 						["coord"] = { 56.8, 38.7, NETHERSTORM },
 						["groups"] = {
 							i(30335),	-- Druidic Force Boots
@@ -980,8 +980,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10320, {	-- Destroy Naberius!
-						["qg"] = 19488,	-- Custodian Dieworth
 						["sourceQuest"] = 10319,	-- Capturing the Phylactery
+						["qg"] = 19488,	-- Custodian Dieworth
 						["coord"] = { 57.5, 86.3, NETHERSTORM },
 						["groups"] = {
 							objective(1, {	-- 0/1 Naberius slain
@@ -994,13 +994,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10424, {	-- Diagnosis: Critical
-						["qg"] = 20811,	-- Ghabar
 						["sourceQuest"] = 10423,	-- To the Stormspire
+						["qg"] = 20811,	-- Ghabar
 						["coord"] = { 43.5, 35.1, NETHERSTORM },
 					}),
 					q(10439, {	-- Dimensius the All-Devouring
-						["qg"] = 20907,	-- Professor Dabiri
 						["sourceQuest"] = 10438,	-- On Nethery Wings
+						["qg"] = 20907,	-- Professor Dabiri
 						["coord"] = { 60.1, 31.7, NETHERSTORM },
 						["groups"] = {
 							objective(1, {	-- 0/1 Dimensius the All-Devouring slain
@@ -1016,13 +1016,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10247, {	-- Doctor Vomisa, Ph.T.
-						["qg"] = 19570,	-- Rocket-Chief Fuselage
 						["sourceQuest"] = 10237,	-- Warn Area 52!
+						["qg"] = 19570,	-- Rocket-Chief Fuselage
 						["coord"] = { 32.7, 65.0, NETHERSTORM },
 					}),
 					q(10223, {	-- Down With Daellis
-						["qg"] = 19488,	-- Custodian Dieworth
 						["sourceQuest"] = 10222,	-- The Sunfury Garrison
+						["qg"] = 19488,	-- Custodian Dieworth
 						["coord"] = { 57.5, 86.3, NETHERSTORM },
 						["groups"] = {
 							objective(1, {	-- 0/1 Master Daellis Dawnstrike slain
@@ -1035,8 +1035,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10221, {	-- Dr. Boom!
-						["qg"] = 19634,	-- Lead Sapper Blastfizzle
 						["sourceQuest"] = 10203,	-- Invaluable Asset Zapping
+						["qg"] = 19634,	-- Lead Sapper Blastfizzle
 						["coord"] = { 34.2, 68.0, NETHERSTORM },
 						["groups"] = {
 							objective(1, {	-- 0/1 Dr. Boom slain
@@ -1066,8 +1066,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10226, {	-- Elemental Power Extraction
-						["qg"] = 19709,	-- Chief Engineer Trep
 						["sourceQuest"] = 10224,	-- Essence for the Engines
+						["qg"] = 19709,	-- Chief Engineer Trep
 						["coord"] = { 32.4, 66.8, NETHERSTORM },
 						["groups"] = {
 							objective(1, {	-- 0/5 Elemental Power
@@ -1083,9 +1083,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10425, {	-- Escape from the Staging Grounds
+						["description"] = "An Ethereum Gladiator and a Captured Protectorate Vanguard spawns in the middle of the staging grounds every 7 minutes. Kill the Gladiator to obtain the escort quest.",
 						["qg"] = 20763,	-- Captured Protectorate Vanguard
 						["coord"] = { 57.0, 37.6, NETHERSTORM },
-						["description"] = "An Ethereum Gladiator and a Captured Protectorate Vanguard spawns in the middle of the staging grounds every 7 minutes. Kill the Gladiator to obtain the escort quest.",
 						["groups"] = {
 							i(30331),	-- Diviner's Cinch
 							i(30332),	-- Ferocious Bands
@@ -1094,8 +1094,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10224, {	-- Essence for the Engines
-						["qg"] = 19709,	-- Chief Engineer Trep
 						["sourceQuest"] = 10225,	-- Report to Engineering
+						["qg"] = 19709,	-- Chief Engineer Trep
 						["coord"] = { 32.4, 66.8, NETHERSTORM },
 						["groups"] = {
 							objective(1, {	-- 0/7 Mana Wraith Essence
@@ -1108,8 +1108,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10384, {	-- Ethereum Data
-						["qg"] = 20482,	-- Image of Commander Ameer
 						["sourceQuest"] = 10339,	-- The Ethereum
+						["qg"] = 20482,	-- Image of Commander Ameer
 						["coord"] = { 56.8, 38.7, NETHERSTORM },
 						["groups"] = {
 							objective(1, {	-- 0/1 Ethereum Data Cell
@@ -1125,8 +1125,8 @@ root(ROOTS.Zones, {
 						["coord"] = { 44.7, 34.9, NETHERSTORM },
 					}),
 					q(10256, {	-- Finding the Keymaster
-						["qg"] = 19481,	-- Archmage Vargoth
 						["sourceQuest"] = 10176,	-- Ar'kelos the Guardian
+						["qg"] = 19481,	-- Archmage Vargoth
 						["coord"] = { 58.3, 86.4, NETHERSTORM },
 					}),
 					q(10426, {	-- Flora of the Eco-Domes
@@ -1134,13 +1134,13 @@ root(ROOTS.Zones, {
 						["coord"] = { 42.3, 32.6, NETHERSTORM },
 					}),
 					q(10281, {	-- Formal Introductions
-						["qg"] = 20154,	-- Shrouded Figure
 						["sourceQuest"] = 10271,	-- Getting Down to Business
+						["qg"] = 20154,	-- Shrouded Figure
 						["coord"] = { 70.9, 38.8, NETHERSTORM },
 					}),
 					q(10276, {	-- Full Triangle
-						["qg"] = 20112,	-- Wind Trader Tuluman
 						["sourceQuest"] = 10275,	-- Triangulation Point Two
+						["qg"] = 20112,	-- Wind Trader Tuluman
 						["coord"] = { 34.6, 37.9, NETHERSTORM },
 						["groups"] = {
 							objective(1, {	-- 0/1 Ata'mal Crystal
@@ -1150,13 +1150,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10271, {	-- Getting Down to Business
-						["qg"] = 20518,	-- Image of Wind Trader Marid
 						["sourceQuest"] = 10270,	-- A Not-So-Modest Proposal
+						["qg"] = 20518,	-- Image of Wind Trader Marid
 						["coord"] = { 71.1, 39.0, NETHERSTORM },
 					}),
 					q(10333, {	-- Help Mama Wheeler
-						["qg"] = 19645,	-- Papa Wheeler
 						["sourceQuest"] = 10206,	-- Pick Your Part
+						["qg"] = 19645,	-- Papa Wheeler
 						["coord"] = { 33.0, 64.7, NETHERSTORM },
 						["isBreadcrumb"] = true,
 					}),
@@ -1166,8 +1166,8 @@ root(ROOTS.Zones, {
 						["lvl"] = 67,
 					})),
 					q(10293, {	-- Hitting the Motherlode
-						["qg"] = 20067,	-- Zuben Elgenubi
 						["sourceQuest"] = 10290,	-- In Search of Farahlite
+						["qg"] = 20067,	-- Zuben Elgenubi
 						["coord"] = { 44.1, 36.0, NETHERSTORM },
 						["groups"] = {
 							objective(1, {	-- 0/1 Farahlite Core
@@ -1180,8 +1180,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10232, {	-- In A Scrap With The Legion
-						["qg"] = 19645,	-- Papa Wheeler
 						["sourceQuest"] = 10206,	-- Pick Your Part
+						["qg"] = 19645,	-- Papa Wheeler
 						["coord"] = { 33.0, 64.7, NETHERSTORM },
 						["groups"] = {
 							objective(1, {	-- 0/5 Mo'arg Doomsmith slain
@@ -1217,8 +1217,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10203, {	-- Invaluable Asset Zapping
-						["qg"] = 19570,	-- Rocket-Chief Fuselage
 						["sourceQuest"] = 10186,	-- You're Hired!
+						["qg"] = 19570,	-- Rocket-Chief Fuselage
 						["coord"] = { 32.7, 65.0, NETHERSTORM },
 						["groups"] = {
 							objective(1, {	-- 0/1 Hyper Rotational Dig-A-Matic retrieved
@@ -1259,8 +1259,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10192, {	-- Krasus's Compendium
-						["qg"] = 19644,	-- Image of Archmage Vargoth
 						["sourceQuest"] = 10188,	-- The Sigil of Krasus
+						["qg"] = 19644,	-- Image of Archmage Vargoth
 						["groups"] = {
 							objective(1, {	-- 0/1 Krasus' Compendium - Chapter 1
 								["providers"] = {
@@ -1308,8 +1308,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10332, {	-- Master Smith Rhonsus
-						["qg"] = 20463,	-- Apprentice Andrethan
 						["sourceQuest"] = 10331,	-- Indispensable Tools
+						["qg"] = 20463,	-- Apprentice Andrethan
 						["coord"] = { 57.7, 85.2, NETHERSTORM },
 						["groups"] = {
 							objective(1, {	-- 0/1 Rhonsus slain
@@ -1326,8 +1326,8 @@ root(ROOTS.Zones, {
 						["coord"] = { 57.7, 84.9, NETHERSTORM },
 					}),
 					q(10850, {	-- Nether Gas In a Fel Fire Engine
-						["qg"] = 22293,	-- Inactive Fel Reaver
 						["sourceQuest"] = 10855,	-- Fel Reavers, No Thanks!
+						["qg"] = 22293,	-- Inactive Fel Reaver
 						["repeatable"] = true,
 						["groups"] = {
 							objective(1, {	-- 0/5 Condensed Nether Gas
@@ -1337,8 +1337,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10408, {	-- Nexus-King Salhadaar
-						["qg"] = 20482,	-- Image of Commander Ameer
 						["sourceQuest"] = 10406,	-- Delivering the Message
+						["qg"] = 20482,	-- Image of Commander Ameer
 						["coord"] = { 56.8, 38.7, NETHERSTORM },
 						["groups"] = {
 							objective(1, {	-- 0/1 Nexus-King Salhadaar slain
@@ -1380,13 +1380,13 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,	-- for "You're Hired!"
 					}),
 					q(10438, {	-- On Nethery Wings
-						["qg"] = 20907,	-- Professor Dabiri
 						["sourceQuest"] = 10437,	-- Recipe for Destruction
+						["qg"] = 20907,	-- Professor Dabiri
 						["coord"] = { 60.1, 31.7, NETHERSTORM },
 					}),
 					q(10234, {	-- One Demon's Trash...
-						["qg"] = 19728,	-- Mama Wheeler
 						["sourceQuest"] = 10333,	-- Help Mama Wheeler
+						["qg"] = 19728,	-- Mama Wheeler
 						["coord"] = { 46.6, 56.5, NETHERSTORM },
 						["groups"] = {
 							objective(1, {	-- 0/10 Fel Reaver Part
@@ -1398,8 +1398,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10206, {	-- Pick Your Part
-						["qg"] = 19645,	-- Papa Wheeler
 						["sourceQuest"] = 10265,	-- Consortium Crystal Collection
+						["qg"] = 19645,	-- Papa Wheeler
 						["coord"] = { 33.0, 64.7, NETHERSTORM },
 						["groups"] = {
 							objective(1, {	-- 0/10 Ethereal Technology
@@ -1415,8 +1415,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10239, {	-- Potential Energy Source
-						["qg"] = 19489,	-- Lieutenant-Sorcerer Morran
 						["sourceQuest"] = 10343,	-- The Unending Invasion
+						["qg"] = 19489,	-- Lieutenant-Sorcerer Morran
 						["coord"] = { 57.6, 86.3, NETHERSTORM },
 						["groups"] = {
 							objective(1, {	-- 0/10 Energy Isolation Cube
@@ -1428,8 +1428,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10385, {	-- Potential for Brain Damage = High
-						["qg"] = 20482,	-- Image of Commander Ameer
 						["sourceQuest"] = 10384,	-- Ethereum Data
+						["qg"] = 20482,	-- Image of Commander Ameer
 						["coord"] = { 56.8, 38.7, NETHERSTORM },
 						["groups"] = {
 							objective(1, {	-- 0/15 Ethereum Relay Data
@@ -1441,8 +1441,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10300, {	-- Rebuilding the Staff
-						["qg"] = 19217,	-- Ravandwyr
 						["sourceQuest"] = 10173,	-- The Archmage's Staff
+						["qg"] = 19217,	-- Ravandwyr
 						["coord"] = { 31.4, 66.1, NETHERSTORM },
 						["groups"] = {
 							objective(1, {	-- 0/4 Flawless Crystal Shard
@@ -1474,18 +1474,18 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10225, {	-- Report to Engineering
-						["qg"] = 19570,	-- Rocket-Chief Fuselage
 						["sourceQuest"] = 10186,	-- You're Hired!
+						["qg"] = 19570,	-- Rocket-Chief Fuselage
 						["coord"] = { 32.7, 65.0, NETHERSTORM },
 					}),
 					q(10266, {	-- Request for Assistance
-						["qg"] = 19880,	-- Nether-Stalker Khay-ji
 						["sourceQuest"] = 10205,	-- Warp-Raider Nesaad
+						["qg"] = 19880,	-- Nether-Stalker Khay-ji
 						["coord"] = { 32.4, 64.2, NETHERSTORM },
 					}),
 					q(10435, {	-- Retrieving the Goods
-						["qg"] = 20205,	-- Audi the Needle
 						["sourceQuest"] = 10434,	-- The Dynamic Duo
+						["qg"] = 20205,	-- Audi the Needle
 						["coord"] = { 44.7, 36.7, NETHERSTORM },
 						["groups"] = {
 							objective(1, {	-- 0/10 Dome Generator Segment
@@ -1501,8 +1501,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10267, {	-- Rightful Repossession
-						["qg"] = 20066,	-- Gahruj
 						["sourceQuest"] = 10266,	-- Request for Assistance
+						["qg"] = 20066,	-- Gahruj
 						["coord"] = { 46.7, 56.9, NETHERSTORM },
 						["groups"] = {
 							objective(1, {	-- 0/10 Box of Surveying Equipment
@@ -1529,8 +1529,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10405, {	-- S-A-B-O-T-A-G-E
-						["qg"] = 20482,	-- Image of Commander Ameer
 						["sourceQuest"] = 10385,	-- Potential for Brain Damage = High
+						["qg"] = 20482,	-- Image of Commander Ameer
 						["coord"] = { 56.8, 38.7, NETHERSTORM },
 						["groups"] = {
 							objective(1, {	-- 0/1 Prepared Ethereum Wrapping
@@ -1543,8 +1543,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10310, {	-- Sabotage the Warp-Gate!
-						["qg"] = 20281,	-- Drijya
 						["sourceQuest"] = 10311,	-- Drijya Needs Your Help
+						["qg"] = 20281,	-- Drijya
 						["coord"] = { 48.1, 63.5, NETHERSTORM },
 						["groups"] = {
 							i(29978),	-- Consortium Combatant's Robes
@@ -1553,13 +1553,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10316, {	-- Searching for Evidence
-						["qg"] = 19488,	-- Custodian Dieworth
 						["sourceQuest"] = 10312,	-- The Annals of Kirin'Var
+						["qg"] = 19488,	-- Custodian Dieworth
 						["coord"] = { 57.5, 86.3, NETHERSTORM },
 					}),
 					q(10274, {	-- Securing the Celestial Ridge
-						["qg"] = 20110,	-- Tyri
 						["sourceQuest"] = 10273,	-- Troublesome Distractions
+						["qg"] = 20110,	-- Tyri
 						["coord"] = { 71.2, 35.1, NETHERSTORM },
 						["groups"] = {
 							objective(1, {	-- 0/1 Slay Veraku
@@ -1582,10 +1582,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10280, {	-- Special Delivery to Shattrath City
-						["qg"] = 20084,	-- Image of Nexus-Prince Haramad
-						["sourceQuest"] = 10276,	-- Full Triangle
-						["coord"] = { 45.9, 36.0, NETHERSTORM },
 						["description"] = "Items do not show up on quest rewards but appearances are awarded upon turn in to A'dal.",
+						["sourceQuest"] = 10276,	-- Full Triangle
+						["qg"] = 20084,	-- Image of Nexus-Prince Haramad
+						["coord"] = { 45.9, 36.0, NETHERSTORM },
 						["groups"] = {
 							i(30258),	-- Chestplate of A'dal
 							i(30256),	-- Pants of the Naaru
@@ -1593,8 +1593,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10440, {	-- Success!
-						["qg"] = 20913,	-- Tashar
 						["sourceQuest"] = 10436,	-- All Clear!
+						["qg"] = 20913,	-- Tashar
 						["coord"] = { 44.7, 14.6, NETHERSTORM },
 						["groups"] = {
 							i(30520),	-- Gold-Trimmed Cuffs
@@ -1604,8 +1604,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10209, {	-- Summoner Kanthin's Prize
-						["qg"] = 19644,	-- Image of Archmage Vargoth
 						["sourceQuest"] = 10301,	-- Unlocking the Compendium
+						["qg"] = 19644,	-- Image of Archmage Vargoth
 						["groups"] = {
 							objective(1, {	-- 0/1 Stone of Glacius
 								["provider"] = { "i", 28479 },	-- Stone of Glacius
@@ -1623,8 +1623,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10857, {	-- Teleport This!
-						["qg"] = 20471,	-- Nether-Stalker Nauthis
 						["sourceQuest"] = 10856,	-- The Best Defense
+						["qg"] = 20471,	-- Nether-Stalker Nauthis
 						["coord"] = { 44.7, 34.9, NETHERSTORM },
 						["groups"] = {
 							i(31699),	-- Imbued Draenethyst Crystal
@@ -1634,13 +1634,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10430, {	-- Testing the Prototype
-						["qg"] = 20811,	-- Ghabar
 						["sourceQuest"] = 10424,	-- Diagnosis: Critical
+						["qg"] = 20811,	-- Ghabar
 						["coord"] = { 43.5, 35.1, NETHERSTORM },
 					}),
 					q(10199, {	-- That Little Extra Kick
-						["qg"] = 19617,	-- Boots
 						["sourceQuest"] = 10342,	-- Securing the Shaleskin Shale
+						["qg"] = 19617,	-- Boots
 						["coord"] = { 32.3, 63.9, NETHERSTORM },
 						["groups"] = {
 							objective(1, {	-- 0/5 Nether Ray Stinger
@@ -1664,8 +1664,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10856, {	-- The Best Defense
-						["qg"] = 20471,	-- Nether-Stalker Nauthis
 						["sourceQuest"] = 10855,	-- Fel Reavers, No Thanks!
+						["qg"] = 20471,	-- Nether-Stalker Nauthis
 						["coord"] = { 44.7, 34.9, NETHERSTORM },
 						["groups"] = {
 							objective(1, {	-- 0/12 Wrathbringer slain
@@ -1674,8 +1674,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10434, {	-- The Dynamic Duo
-						["qg"] = 20921,	-- Shauly Pore
 						["sourceQuest"] = 10433,	-- Keeping Up Appearances
+						["qg"] = 20921,	-- Shauly Pore
 						["coord"] = { 46.5, 56.0, NETHERSTORM },
 					}),
 					q(10339, {	-- The Ethereum
@@ -1729,8 +1729,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10188, {	-- The Sigil of Krasus
-						["qg"] = 19644,	-- Image of Archmage Vargoth
 						["sourceQuest"] = 10174,	-- Curse of the Violet Tower
+						["qg"] = 19644,	-- Image of Archmage Vargoth
 						["groups"] = {
 							objective(1, {	-- 0/1 Sigil of Krasus
 								["provider"] = { "i", 28368 },	-- Sigil of Krasus
@@ -1743,8 +1743,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10222, {	-- The Sunfury Garrison
-						["qg"] = 19488,	-- Custodian Dieworth
 						["sourceQuest"] = 10188,	-- The Sigil of Krasus
+						["qg"] = 19488,	-- Custodian Dieworth
 						["coord"] = { 57.5, 86.3, NETHERSTORM },
 						["groups"] = {
 							objective(1, {	-- 0/10 Sunfury Archer slain
@@ -1753,8 +1753,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10343, {	-- The Unending Invasion
-						["qg"] = 19489,	-- Lieutenant-Sorcerer Morran
 						["sourceQuest"] = 10174,	-- Curse of the Violet Tower
+						["qg"] = 19489,	-- Lieutenant-Sorcerer Morran
 						["coord"] = { 57.6, 86.3, NETHERSTORM },
 						["groups"] = {
 							objective(1, {	-- 0/1 Mana Bomb Fragment
@@ -1766,8 +1766,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10312, {	-- The Annals of Kirin'Var
-						["qg"] = 19488,	-- Custodian Dieworth
 						["sourceQuest"] = 10184,	-- Malevolent Remnants
+						["qg"] = 19488,	-- Custodian Dieworth
 						["coord"] = { 57.5, 86.3, NETHERSTORM },
 						["groups"] = {
 							objective(1, {	-- 0/1 Annals of Kirin'Var
@@ -1777,28 +1777,28 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10423, {	-- To the Stormspire
-						["qg"] = 20810,	-- Mehrdad
 						["sourceQuest"] = 10418,	-- Deal With the Saboteurs
+						["qg"] = 20810,	-- Mehrdad
 						["coord"] = { 46.4, 56.4, NETHERSTORM },
 					}),
 					q(10233, {	-- Torching Sunfury Hold
-						["qg"] = 19489,	-- Lieutenant-Sorcerer Morran
 						["sourceQuest"] = 10192,	-- Krasus's Compendium
+						["qg"] = 19489,	-- Lieutenant-Sorcerer Morran
 						["coord"] = { 57.6, 86.3, NETHERSTORM },
 					}),
 					q(10269, {	-- Triangulation Point One
-						["qg"] = 20084,	-- Image of Nexus-Prince Haramad
 						["sourceQuest"] = 10268,	-- An Audience With the Prince
+						["qg"] = 20084,	-- Image of Nexus-Prince Haramad
 						["coord"] = { 45.9, 36.0, NETHERSTORM },
 					}),
 					q(10275, {	-- Triangulation Point Two
-						["qg"] = 20092,	-- Dealer Hazzin
 						["sourceQuest"] = 10269,	-- Triangulation Point One
+						["qg"] = 20092,	-- Dealer Hazzin
 						["coord"] = { 58.3, 31.3, NETHERSTORM },
 					}),
 					q(10273, {	-- Troublesome Distractions
-						["qg"] = 20110,	-- Tyri
 						["sourceQuest"] = 10272,	-- A Promising Start
+						["qg"] = 20110,	-- Tyri
 						["coord"] = { 71.2, 35.1, NETHERSTORM },
 						["groups"] = {
 							objective(1, {	-- 0/1 Wind Trader Marid slain
@@ -1807,8 +1807,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10301, {	-- Unlocking the Compendium
-						["qg"] = 19644,	-- Image of Archmage Vargoth
 						["sourceQuest"] = 10192,	-- Krasus's Compendium
+						["qg"] = 19644,	-- Image of Archmage Vargoth
 						["groups"] = {
 							objective(1, {	-- 0/1 Heliotrope Oculus
 								["provider"] = { "i", 28475 },	-- Heliotrope Oculus
@@ -1838,13 +1838,13 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 					})),
 					q(10237, {	-- Warn Area 52!
-						["qg"] = 19728,	-- Mama Wheeler
 						["sourceQuest"] = 10235,	-- Declawing Doomclaw
+						["qg"] = 19728,	-- Mama Wheeler
 						["coord"] = { 46.6, 56.5, NETHERSTORM },
 					}),
 					q(10205, {	-- Warp-Raider Nesaad
-						["qg"] = 19880,	-- Nether-Stalker Khay'ji
 						["sourceQuest"] = 10262,	-- A Heap of Ethereals
+						["qg"] = 19880,	-- Nether-Stalker Khay'ji
 						["coord"] = { 32.4, 64.2, NETHERSTORM },
 						["groups"] = {
 							objective(1, {	-- 0/1 Warp-Raider Nesaad slain
@@ -1856,8 +1856,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10429, {	-- When Nature Goes Too Far
-						["qg"] = 20871,	-- Aurine Moonblaze
 						["sourceQuest"] = 10427,	-- Creatures of the Eco-Domes
+						["qg"] = 20871,	-- Aurine Moonblaze
 						["coord"] = { 42.3, 32.6, NETHERSTORM },
 						["groups"] = {
 							objective(1, {	-- 0/1 Hulking Hydra Heart
@@ -1867,8 +1867,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10337, {	-- When the Cows Come Home
-						["qg"] = 20415,	-- Bessy
 						["sourceQuest"] = 10334,	-- Needs More Cowbell
+						["qg"] = 20415,	-- Bessy
 						["coord"] = { 59.1, 78.8, NETHERSTORM },
 						["groups"] = {
 							i(29806),	-- Cowpoke's Riding Gloves
@@ -1879,12 +1879,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(10248, {	-- You, Robot
-						["qg"] = 19832,	-- Doctor Vomisa, Ph.T.
 						["sourceQuest"] = 10247,	-- Doctor Vomisa, Ph.T.
+						["qg"] = 19832,	-- Doctor Vomisa, Ph.T.
 						["coord"] = { 37.3, 63.6, NETHERSTORM },
 					}),
 					q(10186, {	-- You're Hired!
-						["qg"] = 19570,	-- Rocket-Chief Fuselage
 						["sourceQuests"] = {
 							11042,	-- A Mystifying Vision
 							11037,	-- A Strange Vision
@@ -1898,6 +1897,7 @@ root(ROOTS.Zones, {
 							39201,	-- Warchief's Command: Netherstorm!
 							-- #endif
 						},
+						["qg"] = 19570,	-- Rocket-Chief Fuselage
 						["coord"] = { 32.7, 65.0, NETHERSTORM },
 						["groups"] = {
 							objective(1, {	-- 0/10 Etherlithium Matrix Crystal

@@ -38,29 +38,29 @@ root(ROOTS.Character, n(WARBAND, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 
 			},
 		}),
 		q(83493, {	-- Rift Reader
-			["provider"] = { "n", 226658 },	-- Blue
 			["sourceQuest"] = 83492,	-- Warbanding Together
+			["provider"] = { "n", 226658 },	-- Blue
 			["coord"] = { 52.5, 26.9, TANARIS },
 		}),
 		q(83494, {	-- Space Ghosts by the Coast
-			["provider"] = { "n", 226658 },	-- Blue
 			["sourceQuest"] = 83492,	-- Warbanding Together
+			["provider"] = { "n", 226658 },	-- Blue
 			["coord"] = { 52.5, 26.9, TANARIS },
 			["groups"] = {
 				i(225783),	-- Spetial Residue
 			},
 		}),
 		q(83495, {	-- Twinsposition
-			["provider"] = { "n", 226658 },	-- Blue
 			["sourceQuests"] = {
 				83493,	-- Rift Reader
 				83494,	-- Space Ghosts by the Coast
 			},
+			["provider"] = { "n", 226658 },	-- Blue
 			["coord"] = { 52.5, 26.9, TANARIS },
 		}),
 		q(83496, {	-- Spacetime is Money
-			["provider"] = { "n", 226658 },	-- Blue
 			["sourceQuest"] = 83495,	-- Twinsposition
+			["provider"] = { "n", 226658 },	-- Blue
 			["coord"] = { 48.5, 31.6, TANARIS },
 			["groups"] = {
 				spell(465226),	-- Warband Bank Distance Inhibitor

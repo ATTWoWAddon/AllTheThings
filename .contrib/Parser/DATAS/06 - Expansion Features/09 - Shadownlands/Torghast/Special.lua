@@ -2,8 +2,8 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0 } }, {
-	m(TORGHAST, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
+	m(TORGHAST, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, {
 		n(NIGHT_FAE,  bubbleDown({ ["customCollect"] = "SL_COV_NFA" }, {
 			n(SOULSHAPES, {
 				n(185453, {	-- Lost Soul
@@ -23,5 +23,5 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDownSelf({ ["timelin
 				}),
 			}),
 		})),
-	}),
-})));
+	})),
+}));

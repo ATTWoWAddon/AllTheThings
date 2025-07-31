@@ -211,11 +211,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8287, {	-- A Terrible Purpose
+					["sourceQuest"] = 8279,	-- The Twilight Lexicon
 					["providers"] = {
 						{ "n", 15194 },	-- Hermit Ortell
 						{ "i", 20405 },	-- Decoded Tablet Transcription
 					},
-					["sourceQuest"] = 8279,	-- The Twilight Lexicon
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 68.7, 63.0, SILITHUS },
@@ -259,8 +259,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(8362, {	-- Abyssal Crests
-					["qg"] = 15306,	-- Bor Wildmane
 					["sourceQuest"] = 8361,	-- Abyssal Contacts
+					["qg"] = 15306,	-- Bor Wildmane
 					["coord"] = { 48.6, 37.8, SILITHUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 20513, 3 }},	-- Abyssal Crest
@@ -284,8 +284,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8364, {	-- Abyssal Scepters
-					["qg"] = 15306,	-- Bor Wildmane
 					["sourceQuest"] = 8352,	-- Scepter of the Council
+					["qg"] = 15306,	-- Bor Wildmane
 					["coord"] = { 48.6, 37.8, SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
 					["timeline"] = { REMOVED_4_0_3 },
@@ -310,8 +310,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				q(8363, {	-- Abyssal Signets
-					["qg"] = 15306,	-- Bor Wildmane
 					["sourceQuest"] = 8348,	-- Signet of the Dukes
+					["qg"] = 15306,	-- Bor Wildmane
 					["coord"] = { 48.6, 37.8, SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, FRIENDLY },	-- Cenarion Circle, Friendly.
 					["timeline"] = { REMOVED_4_0_3 },
@@ -352,8 +352,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 60,
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8316, {	-- Armaments of War [WARRIOR]
-					["qg"] = 15183,	-- Geologist Larksbane
 					["sourceQuest"] = 8315,	-- The Calling
+					["qg"] = 15183,	-- Geologist Larksbane
 					["coord"] = { 49.7, 37.5, SILITHUS },
 					["timeline"] = { REMOVED_4_1_0 },
 					["classes"] = { WARRIOR },
@@ -368,8 +368,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8381, {	-- Armaments of War [MAGE / WARLOCK]
-					["qg"] = 15183,	-- Geologist Larksbane
 					["sourceQuest"] = 8315,	-- The Calling
+					["qg"] = 15183,	-- Geologist Larksbane
 					["coord"] = { 49.7, 37.5, SILITHUS },
 					["timeline"] = { REMOVED_4_1_0 },
 					["classes"] = { MAGE, WARLOCK },
@@ -384,8 +384,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8379, {	-- Armaments of War [PRIEST]
-					["qg"] = 15183,	-- Geologist Larksbane
 					["sourceQuest"] = 8315,	-- The Calling
+					["qg"] = 15183,	-- Geologist Larksbane
 					["coord"] = { 49.7, 37.5, SILITHUS },
 					["timeline"] = { REMOVED_4_1_0 },
 					["classes"] = { PRIEST },
@@ -400,8 +400,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8378, {	-- Armaments of War [ROGUE]
-					["qg"] = 15183,	-- Geologist Larksbane
 					["sourceQuest"] = 8315,	-- The Calling
+					["qg"] = 15183,	-- Geologist Larksbane
 					["coord"] = { 49.7, 37.5, SILITHUS },
 					["timeline"] = { REMOVED_4_1_0 },
 					["classes"] = { ROGUE },
@@ -416,8 +416,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8382, {	-- Armaments of War [DRUID]
-					["qg"] = 15183,	-- Geologist Larksbane
 					["sourceQuest"] = 8315,	-- The Calling
+					["qg"] = 15183,	-- Geologist Larksbane
 					["coord"] = { 49.7, 37.5, SILITHUS },
 					["timeline"] = { REMOVED_4_1_0 },
 					["classes"] = { DRUID },
@@ -432,8 +432,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8377, {	-- Armaments of War [HUNTER]
-					["qg"] = 15183,	-- Geologist Larksbane
 					["sourceQuest"] = 8315,	-- The Calling
+					["qg"] = 15183,	-- Geologist Larksbane
 					["coord"] = { 49.7, 37.5, SILITHUS },
 					["timeline"] = { REMOVED_4_1_0 },
 					["classes"] = { HUNTER },
@@ -448,8 +448,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8376, {	-- Armaments of War [PALADIN]
-					["qg"] = 15183,	-- Geologist Larksbane
 					["sourceQuest"] = 8315,	-- The Calling
+					["qg"] = 15183,	-- Geologist Larksbane
 					["coord"] = { 49.7, 37.5, SILITHUS },
 					["timeline"] = { REMOVED_4_1_0 },
 					["classes"] = { PALADIN },
@@ -464,8 +464,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8380, {	-- Armaments of War [SHAMAN]
-					["qg"] = 15183,	-- Geologist Larksbane
 					["sourceQuest"] = 8315,	-- The Calling
+					["qg"] = 15183,	-- Geologist Larksbane
 					["coord"] = { 49.7, 37.5, SILITHUS },
 					["timeline"] = { REMOVED_4_1_0 },
 					["classes"] = { SHAMAN },
@@ -611,8 +611,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8349, {	-- Bor Wildmane
-					["qg"] = 15282,	-- Aurel Goldleaf
 					["sourceQuest"] = 8332,	-- Dukes of the Council
+					["qg"] = 15282,	-- Aurel Goldleaf
 					["coord"] = { 52.0, 38.2, SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, FRIENDLY },	-- Cenarion Circle, Friendly.
 					["timeline"] = { REMOVED_4_0_3 },
@@ -620,8 +620,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 54,
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8351, {	-- Bor Wishes to Speak
-					["qg"] = 15282,	-- Aurel Goldleaf
 					["sourceQuest"] = 8341,	-- Lords of the Council
+					["qg"] = 15282,	-- Aurel Goldleaf
 					["coord"] = { 52.0, 38.2, SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
 					["timeline"] = { REMOVED_4_0_3 },
@@ -654,8 +654,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8310, {	-- Breaking the Code
-					["qg"] = 15171,	-- Frankal Stonebridge
 					["sourceQuest"] = 8304,	-- Dearest Natalia
+					["qg"] = 15171,	-- Frankal Stonebridge
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 46.0, 79.4, SILITHUS },
@@ -719,8 +719,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 60,
 				})),
 				applyclassicphase(PHASE_FIVE, q(8573, {	-- Champion's Battlegear
-					["qg"] = 15176,	-- Vargus
 					["sourceQuest"] = 8800,	-- Cenarion Battlegear
+					["qg"] = 15176,	-- Vargus
 					["coord"] = { 51.2, 38.9, SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
@@ -779,13 +779,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8304, {	-- Dearest Natalia
+					-- #if AFTER 4.1.0
+					["sourceQuest"] = 8321,	-- Vyral the Vile
+					-- #endif
 					["providers"] = {
 						{ "n", 15181 },	-- Commander Mar'alith
 						{ "i", 68032 },	-- Mar'alith's Speaking Shard
 					},
-					-- #if AFTER 4.1.0
-					["sourceQuest"] = 8321,	-- Vyral the Vile
-					-- #endif
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 53.2, 32.5, SILITHUS },
@@ -878,8 +878,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				q(8332, {	-- Dukes of the Council
-					["qg"] = 15282,	-- Aurel Goldleaf
 					["sourceQuest"] = 8331,	-- Aurel Goldleaf
+					["qg"] = 15282,	-- Aurel Goldleaf
 					["coord"] = { 52.0, 38.2, SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, FRIENDLY },	-- Cenarion Circle, Friendly.
 					["timeline"] = { REMOVED_4_0_3 },
@@ -908,8 +908,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8319, {	-- Encrypted Twilight Texts
-					["qg"] = 15306,	-- Bor Wildmane
 					["sourceQuest"] = 8318,	-- Secret Communication
+					["qg"] = 15306,	-- Bor Wildmane
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 53.2, 35.1, SILITHUS },
@@ -1018,11 +1018,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8309, {	-- Glyph Chasing
+					["sourceQuest"] = 8304,	-- Dearest Natalia
 					["providers"] = {
 						{ "n", 15170 },	-- Rutgar Glyphshaper
 						{ "i", 20453 },	-- Geologist's Transcription Kit
 					},
-					["sourceQuest"] = 8304,	-- Dearest Natalia
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 46.4, 79.1, SILITHUS },
@@ -1114,8 +1114,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				})),
 				q(1126, {	-- Hive in the Tower
-					["qg"] = 13220,	-- Layo Starstrike
 					["sourceQuest"] = 1125,	-- The Spirits of Southwind
+					["qg"] = 13220,	-- Layo Starstrike
 					["coord"] = { 81.8, 18.8, SILITHUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 54,
@@ -1190,8 +1190,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8306, {	-- Into The Maw of Madness
-					["qg"] = 15181,	-- Commander Mar'alith
 					["sourceQuest"] = 8304,	-- Dearest Natalia
+					["qg"] = 15181,	-- Commander Mar'alith
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 53.2, 32.5, SILITHUS },
@@ -1215,8 +1215,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8317, {	-- Kitchen Assistance
-					["qg"] = 15174,	-- Calandrath <Innkeeper>
 					["sourceQuest"] = 8313,	-- Sharing the Knowledge
+					["qg"] = 15174,	-- Calandrath <Innkeeper>
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 55.4, 36.6, SILITHUS },
@@ -1230,8 +1230,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = lvlsquish(54, 54, 15),
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8341, {	-- Lords of the Council
-					["qg"] = 15282,	-- Aurel Goldleaf
 					["sourceQuest"] = 8343,	-- Goldleaf's Discovery
+					["qg"] = 15282,	-- Aurel Goldleaf
 					["coord"] = { 52.0, 38.2, SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1247,8 +1247,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				q(8333, {	-- Medallion of Station
-					["qg"] = 15282,	-- Aurel Goldleaf
 					["sourceQuest"] = 8332,	-- Dukes of the Council
+					["qg"] = 15282,	-- Aurel Goldleaf
 					["coord"] = { 52.0, 38.2, SILITHUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -1264,8 +1264,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8278, {	-- Noggle's Last Hope
-					["qg"] = 15189,	-- Beetix Ficklespragg
 					["sourceQuest"] = 8277,	-- Deadly Desert Venom
+					["qg"] = 15189,	-- Beetix Ficklespragg
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 55.4, 36.3, SILITHUS },
@@ -1290,8 +1290,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8282, {	-- Noggle's Lost Satchel
-					["qg"] = 15190,	-- Noggle Ficklespragg
 					["sourceQuest"] = 8278,	-- Noggle's Last Hope
+					["qg"] = 15190,	-- Noggle Ficklespragg
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 55.3, 36.2, SILITHUS },
@@ -1345,8 +1345,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = lvlsquish(53, 53, 15),
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8352, {	-- Scepter of the Council
-					["qg"] = 15306,	-- Bor Wildmane
 					["sourceQuest"] = 8351,	-- Bor Wishes to Speak
+					["qg"] = 15306,	-- Bor Wildmane
 					["coord"] = { 48.6, 37.8, SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1370,8 +1370,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(PHASE_SIX_SILITHYST, q(9419, {	-- Scouring the Desert [ALLIANCE]
-					["qg"] = 17080,	-- Marshal Bluewall
 					["sourceQuest"] = 9415,	-- Report to Marshal Bluewall
+					["qg"] = 17080,	-- Marshal Bluewall
 					["coords"] = {
 						-- #if AFTER 7.2.0
 						{ 39.6, 46.8, SILITHUS },
@@ -1394,8 +1394,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(PHASE_SIX_SILITHYST, q(9422, {	-- Scouring the Desert [HORDE]
-					["qg"] = 17079,	-- General Kirika
 					["sourceQuest"] = 9416,	-- Report to General Kirika
+					["qg"] = 17079,	-- General Kirika
 					["coords"] = {
 						-- #if AFTER 7.2.0
 						{ 54.6, 62.8, SILITHUS },
@@ -1460,7 +1460,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = lvlsquish(57, 57, 15),
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8280, {	-- Securing the Supply Lines
-					["qg"] = 15191,	-- Windcaller Proudhorn
 					["sourceQuests"] = {
 						-- #if AFTER CATA
 						28528,	-- Hero's Call: Silithus!
@@ -1472,6 +1471,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						8276,	-- Taking Back Silithus (H)
 						-- #endif
 					},
+					["qg"] = 15191,	-- Windcaller Proudhorn
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 54.9, 36.0, SILITHUS },
@@ -1487,11 +1487,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8313, {	-- Sharing the Knowledge
+					["sourceQuest"] = 8307,	-- Desert Recipe
 					["providers"] = {
 						{ "o", 180503 },	-- Sandy Cookbook
 						{ "i",  20467 },	-- Torn Recipe Page
 					},
-					["sourceQuest"] = 8307,	-- Desert Recipe
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 43.6, 42.0, SILITHUS },
@@ -1507,8 +1507,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				q(8348, {	-- Signet of the Dukes
-					["qg"] = 15306,	-- Bor Wildmane
 					["sourceQuest"] = 8349,	-- Bor Wildmane
+					["qg"] = 15306,	-- Bor Wildmane
 					["coord"] = { 48.6, 37.8, SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, FRIENDLY },	-- Cenarion Circle, Friendly.
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1535,8 +1535,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				applyclassicphase(PHASE_FIVE, q(8574, {	-- Stalwart's Battlegear
-					["qg"] = 15176,	-- Vargus
 					["sourceQuest"] = 8800,	-- Cenarion Battlegear
+					["qg"] = 15176,	-- Vargus
 					["coord"] = { 51.2, 38.9, SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1564,8 +1564,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8281, {	-- Stepping Up Security
-					["qg"] = 15191,	-- Windcaller Proudhorn
 					["sourceQuest"] = 8280, -- Securing the Supply Lines
+					["qg"] = 15191,	-- Windcaller Proudhorn
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 54.9, 36.0, SILITHUS },
@@ -1581,8 +1581,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8324, {	-- Still Believing
-					["qg"] = 15194,	-- Hermit Ortell
 					["sourceQuest"] = 8323,	-- True Believers
+					["qg"] = 15194,	-- Hermit Ortell
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 68.7, 63.0, SILITHUS },
@@ -1755,8 +1755,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8315, {	-- The Calling
-					["qg"] = 15183,	-- Geologist Larksbane
 					["sourceQuest"] = 8314,	-- Unraveling the Mystery
+					["qg"] = 15183,	-- Geologist Larksbane
 					["coord"] = { 49.7, 37.5, SILITHUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 54,
@@ -1772,11 +1772,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8285, {	-- The Deserter
+					["sourceQuest"] = 8284,	-- The Twilight Mystery
 					["providers"] = {
 						{ "n", 15183 },	-- Geologist Larksbane
 						{ "i", 20401 },	-- Restored Twilight Tablet
 					},
-					["sourceQuest"] = 8284,	-- The Twilight Mystery
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 53.6, 35.3, SILITHUS },
@@ -1787,8 +1787,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = lvlsquish(54, 54, 15),
 				})),
 				q(28859, {	-- The Dunes of Silithus
-					["qg"] = 38269,	-- Zen'Aliri
 					-- ["sourceQuest"] = 24695,	-- Ever Watching From Above [nothing under this entire quest chain is required... maybe something completely different?]
+					["qg"] = 38269,	-- Zen'Aliri
 					["coord"] = { 55.7, 60.6, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
@@ -1888,8 +1888,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["isBreadcrumb"] = true,
 				}),
 				q(1125, {	-- The Spirits of Southwind
-					["qg"] = 13220,	-- Layo Starstrike
 					["sourceQuest"] = 1124,	-- Wasteland
+					["qg"] = 13220,	-- Layo Starstrike
 					["coord"] = { 81.8, 18.8, SILITHUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 54,
@@ -1903,8 +1903,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8279, {	-- The Twilight Lexicon
-					["qg"] = 15194,	-- Hermit Ortell
 					["sourceQuest"] = 8285,	-- The Deserter
+					["qg"] = 15194,	-- Hermit Ortell
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 68.7, 63.0, SILITHUS },
@@ -1969,8 +1969,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8323, {	-- True Believers
-					["qg"] = 15194,	-- Hermit Ortell
 					["sourceQuest"] = 8279,	-- The Twilight Lexicon
+					["qg"] = 15194,	-- Hermit Ortell
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 68.7, 63.0, SILITHUS },
@@ -2028,8 +2028,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8342, {	-- Twilight Ring of Lordship
-					["qg"] = 15282,	-- Aurel Goldleaf
 					["sourceQuest"] = 8341,	-- Lords of the Council
+					["qg"] = 15282,	-- Aurel Goldleaf
 					["coord"] = { 52.0, 38.2, SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
 					["timeline"] = { REMOVED_4_0_3 },
@@ -2046,11 +2046,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				q(6844, {	-- Umber, Archivist
+					["sourceQuest"] = 1126,	-- Hive in the Tower
 					["providers"] = {
 						{ "n", 13220 },	-- Layo Starstrike
 						{ "i", 17346 },	-- Encrusted Silithid Object
 					},
-					["sourceQuest"] = 1126,	-- Hive in the Tower
 					["coord"] = { 81.8, 18.8, SILITHUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { MOONGLADE },
@@ -2087,13 +2087,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8314, {	-- Unraveling the Mystery
-					["providers"] = {
-						{ "n", 15170 },	-- Rutgar Glyphshaper
-						{ "i", 20463 },	-- Glyphed Crystal Prism
-					},
 					["sourceQuests"] = {
 						8310,	-- Breaking the Code
 						8309,	-- Glyph Chasing
+					},
+					["providers"] = {
+						{ "n", 15170 },	-- Rutgar Glyphshaper
+						{ "i", 20463 },	-- Glyphed Crystal Prism
 					},
 					["coords"] = {
 						-- #if AFTER CATA
@@ -2105,8 +2105,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = lvlsquish(58, 58, 15),
 				})),
 				applyclassicphase(PHASE_FIVE, q(8572, {	-- Veteran's Battlegear
-					["qg"] = 15176,	-- Vargus
 					["sourceQuest"] = 8800,	-- Cenarion Battlegear
+					["qg"] = 15176,	-- Vargus
 					["coord"] = { 51.2, 38.9, SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, HONORED },	-- Cenarion Circle, Honored.
 					["timeline"] = { REMOVED_4_0_3 },
@@ -2130,8 +2130,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(PHASE_FIVE, q(8548, {	-- Volunteer's Battlegear
-					["qg"] = 15176,	-- Vargus
 					["sourceQuest"] = 8800,	-- Cenarion Battlegear
+					["qg"] = 15176,	-- Vargus
 					["coord"] = { 51.2, 38.9, SILITHUS },
 					["minReputation"] = { FACTION_CENARION_CIRCLE, FRIENDLY },	-- Cenarion Circle, Friendly.
 					["timeline"] = { REMOVED_4_0_3 },
@@ -2155,8 +2155,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8321, {	-- Vyral the Vile
-					["qg"] = 15270,	-- Huum Wildmane
 					["sourceQuest"] = 8320,	-- Twilight Geolords
+					["qg"] = 15270,	-- Huum Wildmane
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 53.2, 35.2, SILITHUS },

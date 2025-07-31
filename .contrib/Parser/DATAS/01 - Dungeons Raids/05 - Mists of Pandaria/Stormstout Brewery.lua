@@ -27,8 +27,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 			}),
 			n(QUESTS, {
 				q(31324, {	-- Family Secrets
-					["qg"] = 59822,	-- Auntie Stormstout
 					["sourceQuest"] = 30085,	-- Into the Brewery
+					["qg"] = 59822,	-- Auntie Stormstout
 					["coord"] = { 76.2, 36.4, 439 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Stormstout Secrets
@@ -45,14 +45,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 					},
 				}),
 				q(30085, {	-- Into the Brewery
-					["qg"] = 56133,	-- Chen Stormstout
 					["sourceQuest"] = 30078,	-- Cleaning House
+					["qg"] = 56133,	-- Chen Stormstout
 					["coord"] = { 36.0, 69.1, VALLEY_OF_THE_FOUR_WINDS },
 					["isBreadcrumb"] = true,
 				}),
 				q(31327, {	-- Trouble Brewing
-					["qg"] = 59704,	-- Chen Stormstout
 					["sourceQuest"] = 30085,	-- Into the Brewery
+					["qg"] = 59704,	-- Chen Stormstout
 					["coord"] = { 76.6, 36.8, 439 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Yan-Zhu the Uncasked slain

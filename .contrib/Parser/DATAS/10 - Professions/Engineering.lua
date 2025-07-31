@@ -74,10 +74,6 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			["learnedAt"] = 200,
 		}, {
 			q(3634, {	-- Gnome Engineering [A]
-				["providers"] = {
-					{ "n", 3494 },	-- Tinkerwiz <Journeyman Engineer>
-					{ "i", 10789 },	-- Manual of Engineering Disciplines
-				},
 				["altQuests"] = {
 					3526,	-- Goblin Engineering
 					3629,	-- Goblin Engineering
@@ -93,16 +89,16 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 					29477,	-- Gnomish Engineering
 					-- #endif
 				},
+				["providers"] = {
+					{ "n", 3494 },	-- Tinkerwiz <Journeyman Engineer>
+					{ "i", 10789 },	-- Manual of Engineering Disciplines
+				},
 				["coord"] = { 62.6, 36.2, THE_BARRENS },
 				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 30,
 			}),
 			q(3630, {	-- Gnome Engineering [A]
-				["providers"] = {
-					{ "n", 5518 },	-- Lilliam Sparkspindle <Expert Engineer>
-					{ "i", 10789 },	-- Manual of Engineering Disciplines
-				},
 				["altQuests"] = {
 					3526,	-- Goblin Engineering
 					3629,	-- Goblin Engineering
@@ -118,16 +114,16 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 					29477,	-- Gnomish Engineering
 					-- #endif
 				},
+				["providers"] = {
+					{ "n", 5518 },	-- Lilliam Sparkspindle <Expert Engineer>
+					{ "i", 10789 },	-- Manual of Engineering Disciplines
+				},
 				["coord"] = { 55.0, 8.6, STORMWIND_CITY },
 				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 30,
 			}),
 			q(3632, {	-- Gnome Engineering [A]
-				["providers"] = {
-					{ "n", 5174 },	-- Springspindle Fizzlegear <Artisan Engineer>
-					{ "i", 10789 },	-- Manual of Engineering Disciplines
-				},
 				["altQuests"] = {
 					3526,	-- Goblin Engineering
 					3629,	-- Goblin Engineering
@@ -143,16 +139,16 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 					29477,	-- Gnomish Engineering
 					-- #endif
 				},
+				["providers"] = {
+					{ "n", 5174 },	-- Springspindle Fizzlegear <Artisan Engineer>
+					{ "i", 10789 },	-- Manual of Engineering Disciplines
+				},
 				["coord"] = { 68.8, 45.2, IRONFORGE },
 				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 30,
 			}),
 			q(3637, {	-- Gnome Engineering [H]
-				["providers"] = {
-					{ "n", 3494 },	-- Tinkerwiz <Journeyman Engineer>
-					{ "i", 10789 },	-- Manual of Engineering Disciplines
-				},
 				["altQuests"] = {
 					3526,	-- Goblin Engineering
 					3629,	-- Goblin Engineering
@@ -168,16 +164,16 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 					29477,	-- Gnomish Engineering
 					-- #endif
 				},
+				["providers"] = {
+					{ "n", 3494 },	-- Tinkerwiz <Journeyman Engineer>
+					{ "i", 10789 },	-- Manual of Engineering Disciplines
+				},
 				["coord"] = { 62.6, 36.2, THE_BARRENS },
 				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 30,
 			}),
 			q(3635, {	-- Gnome Engineering [H]
-				["providers"] = {
-					{ "n", 4586 },	-- Graham Van Talen <Journeyman Engineer>
-					{ "i", 10789 },	-- Manual of Engineering Disciplines
-				},
 				["altQuests"] = {
 					3526,	-- Goblin Engineering
 					3629,	-- Goblin Engineering
@@ -193,18 +189,16 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 					29477,	-- Gnomish Engineering
 					-- #endif
 				},
+				["providers"] = {
+					{ "n", 4586 },	-- Graham Van Talen <Journeyman Engineer>
+					{ "i", 10789 },	-- Manual of Engineering Disciplines
+				},
 				["coord"] = { 75.6, 74.6, UNDERCITY },
 				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 30,
 			}),
 			q(29477, {	-- Gnomish Engineering
-				["qgs"] = {
-					5518,	-- Lilliam Sparkspindle <Engineering Trainer> [STORMWIND_CITY]
-					5174,	-- Springspindle Fizzlegear <Engineering Trainer> [IRONFORGE]
-					11017,	-- Roxxik <Engineering Trainer> [ORGRIMMAR]
-					52651,	-- Engineer Palehoof [THUNDER_BLUFF]
-				},
 				["altQuests"] = {
 					3526,	-- Goblin Engineering
 					3629,	-- Goblin Engineering
@@ -222,6 +216,12 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 					29477,	-- Gnomish Engineering
 					-- #endif
 				},
+				["qgs"] = {
+					5518,	-- Lilliam Sparkspindle <Engineering Trainer> [STORMWIND_CITY]
+					5174,	-- Springspindle Fizzlegear <Engineering Trainer> [IRONFORGE]
+					11017,	-- Roxxik <Engineering Trainer> [ORGRIMMAR]
+					52651,	-- Engineer Palehoof [THUNDER_BLUFF]
+				},
 				["coords"] = {
 					{ 62.8, 32.0, STORMWIND_CITY },	-- Lilliam Sparkspindle
 					{ 68.8, 45.2, IRONFORGE },	-- Springspindle Fizzlegear
@@ -237,10 +237,6 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				["repeatable"] = true,
 			}),
 			q(3629, {	-- Goblin Engineering [A]
-				["providers"] = {
-					{ "n", 5518 },	-- Lilliam Sparkspindle <Expert Engineer>
-					{ "i", 10789 },	-- Manual of Engineering Disciplines
-				},
 				["altQuests"] = {
 					3526,	-- Goblin Engineering
 					--3629,	-- Goblin Engineering
@@ -256,16 +252,16 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 					29477,	-- Gnomish Engineering
 					-- #endif
 				},
+				["providers"] = {
+					{ "n", 5518 },	-- Lilliam Sparkspindle <Expert Engineer>
+					{ "i", 10789 },	-- Manual of Engineering Disciplines
+				},
 				["coord"] = { 55.0, 8.6, STORMWIND_CITY },
 				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 30,
 			}),
 			q(4181, {	-- Goblin Engineering [A]
-				["providers"] = {
-					{ "n", 5174 },	-- Springspindle Fizzlegear <Artisan Engineer>
-					{ "i", 10789 },	-- Manual of Engineering Disciplines
-				},
 				["altQuests"] = {
 					3526,	-- Goblin Engineering
 					3629,	-- Goblin Engineering
@@ -281,16 +277,16 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 					29477,	-- Gnomish Engineering
 					-- #endif
 				},
+				["providers"] = {
+					{ "n", 5174 },	-- Springspindle Fizzlegear <Artisan Engineer>
+					{ "i", 10789 },	-- Manual of Engineering Disciplines
+				},
 				["coord"] = { 68.8, 45.2, IRONFORGE },
 				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 30,
 			}),
 			q(3633, {	-- Goblin Engineering [H]
-				["providers"] = {
-					{ "n", 3494 },	-- Tinkerwiz <Journeyman Engineer>
-					{ "i", 10789 },	-- Manual of Engineering Disciplines
-				},
 				["altQuests"] = {
 					3526,	-- Goblin Engineering
 					3629,	-- Goblin Engineering
@@ -306,16 +302,16 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 					29477,	-- Gnomish Engineering
 					-- #endif
 				},
+				["providers"] = {
+					{ "n", 3494 },	-- Tinkerwiz <Journeyman Engineer>
+					{ "i", 10789 },	-- Manual of Engineering Disciplines
+				},
 				["coord"] = { 62.6, 36.2, THE_BARRENS },
 				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 30,
 			}),
 			q(3526, {	-- Goblin Engineering [H]
-				["providers"] = {
-					{ "n", 4586 },	-- Graham Van Talen <Journeyman Engineer>
-					{ "i", 10789 },	-- Manual of Engineering Disciplines
-				},
 				["altQuests"] = {
 					--3526,	-- Goblin Engineering
 					3629,	-- Goblin Engineering
@@ -331,18 +327,16 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 					29477,	-- Gnomish Engineering
 					-- #endif
 				},
+				["providers"] = {
+					{ "n", 4586 },	-- Graham Van Talen <Journeyman Engineer>
+					{ "i", 10789 },	-- Manual of Engineering Disciplines
+				},
 				["coord"] = { 75.6, 74.6, UNDERCITY },
 				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 30,
 			}),
 			q(29475, {	-- Goblin Engineering
-				["qgs"] = {
-					5518,	-- Lilliam Sparkspindle <Engineering Trainer> [STORMWIND_CITY]
-					5174,	-- Springspindle Fizzlegear <Engineering Trainer> [IRONFORGE]
-					11017,	-- Roxxik <Engineering Trainer> [ORGRIMMAR]
-					52651,	-- Engineer Palehoof [THUNDER_BLUFF]
-				},
 				["altQuests"] = {
 					3526,	-- Goblin Engineering
 					3629,	-- Goblin Engineering
@@ -355,6 +349,12 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 					4181,	-- Goblin Engineering
 					--29475,	-- Goblin Engineering
 					29477,	-- Gnomish Engineering
+				},
+				["qgs"] = {
+					5518,	-- Lilliam Sparkspindle <Engineering Trainer> [STORMWIND_CITY]
+					5174,	-- Springspindle Fizzlegear <Engineering Trainer> [IRONFORGE]
+					11017,	-- Roxxik <Engineering Trainer> [ORGRIMMAR]
+					52651,	-- Engineer Palehoof [THUNDER_BLUFF]
 				},
 				["coords"] = {
 					{ 62.8, 32.0, STORMWIND_CITY },	-- Lilliam Sparkspindle
@@ -379,8 +379,8 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			["timeline"] = { REMOVED_4_0_3 },
 		}, {
 			q(3647, {	-- Membership Card Renewal [A]
-				["qg"] = 7944,	-- Tinkmaster Overspark <Master Gnome Engineer>
 				["sourceQuest"] = 3641,	-- Show Your Work
+				["qg"] = 7944,	-- Tinkmaster Overspark <Master Gnome Engineer>
 				["coord"] = { 69.8, 50.2, IRONFORGE },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
@@ -390,8 +390,8 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				},
 			}),
 			q(3645, {	-- Membership Card Renewal [H]
-				["qg"] = 7406,	-- Oglethorpe Obnoticus <Master Gnome Engineer>
 				["sourceQuest"] = 3643,	-- Show Your Work
+				["qg"] = 7406,	-- Oglethorpe Obnoticus <Master Gnome Engineer>
 				["coord"] = { 28.2, 76.2, STRANGLETHORN_VALE },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
@@ -401,8 +401,8 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				},
 			}),
 			q(3644, {	-- Membership Card Renewal
-				["qg"] = 8126,	-- Nixx Sprocketspring <Master Goblin Engineer>
 				["sourceQuest"] = 3639,	-- Show Your Work
+				["qg"] = 8126,	-- Nixx Sprocketspring <Master Goblin Engineer>
 				["coord"] = { 54.4, 27.2, TANARIS },
 				["groups"] = {
 					i(10791, {	-- Goblin Engineer Membership Card
@@ -411,8 +411,8 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				},
 			}),
 			q(3646, {	-- Membership Card Renewal
-				["qg"] = 8738,	-- Vazario Linkgrease <Goblin Engineering Trainer>
 				["sourceQuest"] = 3639,	-- Show Your Work
+				["qg"] = 8738,	-- Vazario Linkgrease <Goblin Engineering Trainer>
 				["coord"] = { 62.6, 36.2, THE_BARRENS },
 				["groups"] = {
 					i(10791, {	-- Goblin Engineer Membership Card
@@ -473,23 +473,23 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				},
 			}),
 			q(40854, {	-- Endless Possibilities
-				["provider"] = { "n", 102193 },	-- Filgo Scrapbottom
 				["sourceQuests"] = { 40545 },	-- Aww Scrap!
+				["provider"] = { "n", 102193 },	-- Filgo Scrapbottom
 				["coord"] = { 66.4, 53.4, LEGION_THE_UNDERBELLY },
 			}),
 			q(40855, {	-- Our Man in Azsuna
-				["provider"] = { "n", 93520 },	-- Didi the Wrench
 				["sourceQuests"] = { 40854 },	-- Endless Possibilities
+				["provider"] = { "n", 93520 },	-- Didi the Wrench
 				["coord"] = { 38.6, 25.0, LEGION_DALARAN },
 			}),
 			q(40856, {	-- It'll Cost You
-				["provider"] = { "n", 102195 },	-- Fargo Flintlocke
 				["sourceQuest"] = 40855,	-- Our Man in Azsuna
+				["provider"] = { "n", 102195 },	-- Fargo Flintlocke
 				["coord"] = { 65.2, 24.8, AZSUNA },
 			}),
 			q(40859, {	-- The Latest Fashion: Headguns!
-				["provider"] = { "n", 102195 },	-- Fargo Flintlocke
 				["sourceQuest"] = 40855,	-- Our Man in Azsuna
+				["provider"] = { "n", 102195 },	-- Fargo Flintlocke
 				["coord"] = { 65.2, 24.8, AZSUNA },
 				["groups"] = {
 					r(198939),	-- Blink-Trigger Headgun [Rank 1] (RECIPE!)
@@ -499,27 +499,27 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				},
 			}),
 			q(40858, {	-- The Missing Pieces
-				["provider"] = { "n", 102195 },	-- Fargo Flintlocke
 				["sourceQuests"] = {
 					40856,	-- It'll Cost You
 					40859,	-- The Latest Fashion: Headguns!
 				},
+				["provider"] = { "n", 102195 },	-- Fargo Flintlocke
 				["coord"] = { 65.2, 24.8, AZSUNA },
 				["groups"] = {
 					r(198976),	-- Auto-Hammer [Rank 1] (RECIPE!)
 				},
 			}),
 			q(40863, {	-- Always the Last Thing
-				["provider"] = { "n", 93520 },	-- Didi the Wrench
 				["sourceQuests"] = { 40858 },	-- The Missing Pieces
+				["provider"] = { "n", 93520 },	-- Didi the Wrench
 				["coord"] = { 38.6, 25.0, LEGION_DALARAN },
 				["groups"] = {
 					r(198982),	-- Reaves Battery (RECIPE!)
 				},
 			}),
 			q(40864, {	-- Modular Modifications
-				["provider"] = { "n", 93520 },	-- Didi the Wrench
 				["sourceQuests"] = { 40863 },	-- Always the Last Thing
+				["provider"] = { "n", 93520 },	-- Didi the Wrench
 				["coord"] = { 38.6, 25.0, LEGION_DALARAN },
 				["groups"] = {
 					r(198984),	-- Reaves Module: Repair Mode (RECIPE!)
@@ -527,85 +527,85 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				},
 			}),
 			q(40860, {	-- Resupplying the Line
-				["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
 				["sourceQuests"] = { 40858 },	-- The Missing Pieces
+				["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
 				["coord"] = { 38.6, 25.0, LEGION_DALARAN },
 			}),
 			q(40862, {	-- All Charged Up
-				["provider"] = { "n", 102197 },	-- Fargo Flintlocke
 				["sourceQuests"] = { 40860 },	-- Resupplying the Line
+				["provider"] = { "n", 102197 },	-- Fargo Flintlocke
 				["coord"] = { 59.8, 62.2, VALSHARAH },
 				["groups"] = {
 					r(198973),	-- Gunpowder Charge [Rank 1] (RECIPE!)
 				},
 			}),
 			q(40861, {	-- In My Sights
-				["provider"] = { "n", 102197 },	-- Fargo Flintlocke
 				["sourceQuests"] = { 40860 },	-- Resupplying the Line
+				["provider"] = { "n", 102197 },	-- Fargo Flintlocke
 				["coord"] = { 59.8, 62.2, VALSHARAH },
 				["groups"] = {
 					r(198972),	-- Deployable Bullet Dispenser [Rank 1] (RECIPE!)
 				},
 			}),
 			q(40870, {	-- Here Comes the BOOM!
-				["provider"] = { "n", 93520 },	-- Didi the Wrench
 				["sourceQuests"] = {
 					40862,	-- All Charged Up
 					40861,	-- In My Sights
 				},
+				["provider"] = { "n", 93520 },	-- Didi the Wrench
 				["coord"] = { 38.6, 25.0, LEGION_DALARAN },
 				["groups"] = {
 					r(198987),	-- Reaves Module: Fireworks Display Mode (RECIPE!)
 				},
 			}),
 			q(40869, {	-- Fire and Forget
-				["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
 				["sourceQuests"] = {
 					40862,	-- All Charged Up
 					40861,	-- In My Sights
 				},
+				["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
 				["coord"] = { 38.6, 25.0, LEGION_DALARAN },
 				["groups"] = {
 					r(198974),	-- Pump-Action Bandage Gun [Rank 1] (RECIPE!)
 				},
 			}),
 			q(40865, {	-- It's Not Rocket Science
-				["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
 				["sourceQuests"] = {
 					40862,	-- All Charged Up
 					40861,	-- In My Sights
 				},
+				["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
 				["coord"] = { 38.6, 25.0, LEGION_DALARAN },
 			}),
 			q(40867, {	-- Bubble Baubles
-				["provider"] = { "n", 102198 },	-- Fargo Flintlocke
 				["sourceQuests"] = { 40865 },	-- It's Not Rocket Science
+				["provider"] = { "n", 102198 },	-- Fargo Flintlocke
 				["coord"] = { 78.2, 57.2, STORMHEIM },
 			}),
 			q(40866, {	-- The Shell, You Say?
-				["provider"] = { "n", 102198 },	-- Fargo Flintlocke
 				["sourceQuests"] = { 40865 },	-- It's Not Rocket Science
+				["provider"] = { "n", 102198 },	-- Fargo Flintlocke
 				["coord"] = { 78.2, 57.2, STORMHEIM },
 				["groups"] = {
 					r(200466),	-- Sonic Environment Enhancer (RECIPE!)
 				},
 			}),
 			q(40868, {	-- Wibbly-Wobbly, Timey-Wimey
-				["provider"] = { "n", 102198 },	-- Fargo Flintlocke
 				["sourceQuests"] = {
 					40866,	-- The Shell, You Say?
 					40867,	-- Bubble Baubles
 				},
+				["provider"] = { "n", 102198 },	-- Fargo Flintlocke
 				["coord"] = { 78.2, 57.2, STORMHEIM },
 			}),
 			q(40871, {	-- 'Locke and Load
-				["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
 				["sourceQuests"] = { 40868 },	-- Wibbly-Wobbly, Timey-Wimey
+				["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
 				["coord"] = { 38.6, 25.0, LEGION_DALARAN },
 			}),
 			q(40872, {	-- Going Out With a Bang
-				["provider"] = { "n", 102196 },	-- Fargo Flintlocke
 				["sourceQuests"] = { 40871 },	-- 'Locke and Load
+				["provider"] = { "n", 102196 },	-- Fargo Flintlocke
 				["coord"] = { 43.0, 62.8, AZSUNA },
 				["groups"] = {
 					r(198978),	-- Gunshoes (RECIPE!)
@@ -613,33 +613,33 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				},
 			}),
 			q(40873, {	-- Keep Yer Powder Dry
-				["provider"] = { "n", 102196 },	-- Fargo Flintlocke
 				["sourceQuests"] = { 40872 },	-- Going Out With a Bang
+				["provider"] = { "n", 102196 },	-- Fargo Flintlocke
 				["coord"] = { 43.0, 62.8, AZSUNA },
 				["groups"] = {
 					r(198975),	-- Gunpack [Rank 1] (RECIPE!)
 				},
 			}),
 			q(40874, {	-- I'd Do It Myself, But...
-				["provider"] = { "n", 102196 },	-- Fargo Flintlocke
 				["sourceQuests"] = { 40872 },	-- Going Out With a Bang
+				["provider"] = { "n", 102196 },	-- Fargo Flintlocke
 				["coord"] = { 43.0, 62.8, AZSUNA },
 			}),
 			q(40875, {	-- Going to Waste
-				["provider"] = { "n", 102196 },	-- Fargo Flintlocke
 				["sourceQuests"] = { 40872 },	-- Going Out With a Bang
+				["provider"] = { "n", 102196 },	-- Fargo Flintlocke
 				["coord"] = { 43.0, 62.8, AZSUNA },
 				["groups"] = {
 					r(198977),	-- Failure Detection Pylon [Rank 1] (RECIPE!)
 				},
 			}),
 			q(40876, {	-- 'Locke, Stock and Barrel
-				["provider"] = { "n", 102196 },	-- Fargo Flintlocke
 				["sourceQuests"] = {
 					40873,	-- Keep Yer Powder Dry
 					40874,	-- I'd Do It Myself, But...
 					40875,	-- Going to Waste
 				},
+				["provider"] = { "n", 102196 },	-- Fargo Flintlocke
 				["coord"] = { 43.0, 62.8, AZSUNA },
 				["groups"] = {
 					r(198991),	-- Blink-Trigger Headgun [Rank 2] (RECIPE!)
@@ -649,8 +649,8 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				},
 			}),
 			q(40877, {	-- Halls of Valor: Trigger Happy
-				["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
 				["sourceQuests"] = { 40876 },	-- 'Locke, Stock and Barrel
+				["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
 				["coord"] = { 38.6, 25.0, LEGION_DALARAN },
 				["maps"] = { 703, 704, 705 },	-- Halls of Valor
 				["groups"] = {
@@ -658,8 +658,8 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				},
 			}),
 			q(40878, {	-- Assault on Violet Hold: Cheating Death
-				["provider"] = { "n", 93520 },	-- Didi the Wrench
 				["sourceQuests"] = { 40876 },	-- 'Locke, Stock and Barrel
+				["provider"] = { "n", 93520 },	-- Didi the Wrench
 				["coord"] = { 38.6, 25.0, LEGION_DALARAN },
 				["maps"] = { 732 },	-- Assault of Violet Hold (Legion)
 				["cost"] = {{ "i", 132515, 2 }},	-- 2x Failure Detection Pylon
@@ -668,8 +668,8 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				},
 			}),
 			q(40882, {	-- Court of Stars: Revamping the Recoil
-				["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
 				["sourceQuests"] = { 40877 },	-- Halls of Valor: Trigger Happy
+				["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
 				["coord"] = { 38.6, 25.0, LEGION_DALARAN },
 				["maps"] = { 761, 762, 763 },	-- Court of Stars
 				["groups"] = {
@@ -680,27 +680,27 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				},
 			}),
 			q(40880, {	-- Short Circuit
-				["provider"] = { "n", 93520 },	-- Didi the Wrench
 				["sourceQuests"] = {
 					40877,	-- Halls of Valor: Trigger Happy
 					40878,	-- Assault on Violet Hold: Cheating Death
 				},
+				["provider"] = { "n", 93520 },	-- Didi the Wrench
 				["coord"] = { 38.6, 25.0, LEGION_DALARAN },
 				["groups"] = {
 					r(198980),	-- Blingtron's Circuit Design Tutorial (RECIPE!)
 				},
 			}),
 			q(40881, {	-- Oil Rags to Riches
-				["provider"] = { "o", 246438 },	-- Blingtron Circuit Design
 				["sourceQuests"] = { 40880 },	-- Short Circuit
+				["provider"] = { "o", 246438 },	-- Blingtron Circuit Design
 				["coord"] = { 69.5, 68.4, TANARIS },
 				["groups"] = {
 					i(141849),	-- Schematic: Reaves Module: Bling Mode (RECIPE!)
 				},
 			}),
 			q(40879, {	-- It's On With Automatons
-				["provider"] = { "n", 93520 },	-- Didi the Wrench
 				["sourceQuests"] = { 40881 },	-- Oil Rags to Riches
+				["provider"] = { "n", 93520 },	-- Didi the Wrench
 				["coord"] = { 38.6, 25.0, LEGION_DALARAN },
 				["groups"] = {
 					r(198990),	-- Reaves Module: Piloted Combat Mode (RECIPE!)
@@ -708,16 +708,16 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			}),
 			------ 7.1.5 ------
 			q(46119, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_5 } }, { -- Boon of the Builder
-				["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
 				["sourceQuests"] = { 40882 },	-- Court of Stars: Revamping the Recoil
+				["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
 				["coord"] = { 38.6, 25.0, LEGION_DALARAN },
 				["groups"] = {
 					i(144328),	-- Boon of the Builder
 				},
 			})),
 			q(46128, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_5 } }, {	-- Time for a Recharge
-				["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
 				["sourceQuests"] = { 40864 },	-- Modular Modifications
+				["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
 				["coord"] = { 38.6, 25.0, LEGION_DALARAN },
 				["groups"] = {
 					r(235775),	-- Rechargeable Reaves Battery
@@ -725,14 +725,14 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			})),
 			------ 7.3.0 ------
 			q(48069, {	-- The Wrench Calls
-				["provider"] = { "n", 125525 },	-- Durael
 				["sourceQuests"] = { 46941 },	-- The Path Forward
+				["provider"] = { "n", 125525 },	-- Durael
 				["timeline"] = { ADDED_7_3_0 },
 				["maps"] = { THE_VINDICAAR_EREDATH_LOWER },
 			}),
 			q(48056, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {	-- A Harsh Mistress
-				["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
 				["sourceQuests"] = { 48069 },	-- The Wrench Calls
+				["provider"] = { "n", 93539 },	-- Hobart Grapplehammer
 				["coord"] = { 38.6, 25.0, LEGION_DALARAN },
 				["groups"] = {
 					r(247717),	-- Gravitational Reduction Slippers (RECIPE!)
@@ -740,8 +740,8 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				},
 			})),
 			q(48065, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {	-- Extraterrestrial Exploration
-				["provider"] = { "n", 93520 },	-- Didi the Wrench
 				["sourceQuests"] = { 48069 },	-- The Wrench Calls
+				["provider"] = { "n", 93520 },	-- Didi the Wrench
 				["coord"] = { 38.8, 25.6, LEGION_DALARAN },
 				["groups"] = {
 					r(247744),	-- Wormhole Generator: Argus (RECIPE!)
@@ -771,9 +771,9 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			}),
 			------ Tools of Trade Questline ------
 			q(55028, {	-- It's Scrap Work... [A]
+				["description"] = "Requires 150 Kul Tiran Engineering.",
 				["provider"] = { "n", 136059 },	-- Layla Evenkeel
 				["coord"] = { 77.4, 14.2, BORALUS },
-				["description"] = "Requires 150 Kul Tiran Engineering.",
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
@@ -782,9 +782,9 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				},
 			}),
 			q(55031, {	-- It's Scrap Work... [H]
+				["description"] = "Requires 150 Zandalari Engineering.",
 				["provider"] = { "n", 131840 },	-- Shuga Blastcaps
 				["coord"] = { 45.1, 40.6, DAZARALOR },
-				["description"] = "Requires 150 Zandalari Engineering.",
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
@@ -793,25 +793,25 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				},
 			}),
 			q(53947, {	-- In the Dunes [A]
-				["provider"] = { "n", 136059 },	-- Layla Evenkeel
 				["sourceQuests"] = { 55028 },	-- It's Scrap Work... [A]
+				["provider"] = { "n", 136059 },	-- Layla Evenkeel
 				["coord"] = { 77.4, 14.2, BORALUS },
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(53783, {	-- In the Dunes [H]
-				["provider"] = { "n", 131840 },	-- Shuga Blastcaps
 				["sourceQuests"] = { 55031 },	-- It's Scrap Work... [H]
+				["provider"] = { "n", 131840 },	-- Shuga Blastcaps
 				["coord"] = { 45.1, 40.6, DAZARALOR },
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = HORDE_ONLY,
 			}),
 			q(53802, {	-- Sethrak Persuasion
-				["provider"] = { "n", 145131 },	-- Dataguru Gryzix
 				["sourceQuests"] = {
 					53947,	-- In the Dunes [A]
 					53783,	-- In the Dunes [H]
 				},
+				["provider"] = { "n", 145131 },	-- Dataguru Gryzix
 				["coord"] = { 26.3, 47.3, VOLDUN },
 				["timeline"] = { ADDED_8_1_5 },
 				["groups"] = {
@@ -819,30 +819,30 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				},
 			}),
 			q(53806, {	-- Heavy is the Head
-				["provider"] = { "n", 145131 },	-- Dataguru Gryzix
 				["sourceQuests"] = {
 					53947,	-- In the Dunes [A]
 					53783,	-- In the Dunes [H]
 				},
+				["provider"] = { "n", 145131 },	-- Dataguru Gryzix
 				["coord"] = { 26.3, 47.3, VOLDUN },
 				["timeline"] = { ADDED_8_1_5 },
 			}),
 			q(54930, {	-- Mechanical Liberation
-				["provider"] = { "n", 145131 },	-- Dataguru Gryzix
 				["sourceQuests"] = {
 					53947,	-- In the Dunes [A]
 					53783,	-- In the Dunes [H]
 				},
+				["provider"] = { "n", 145131 },	-- Dataguru Gryzix
 				["coord"] = { 26.3, 47.3, VOLDUN },
 				["timeline"] = { ADDED_8_1_5 },
 			}),
 			q(53848, {	-- Tooling Around Vol'dun
-				["provider"] = { "n", 145131 },	-- Dataguru Gryzix
 				["sourceQuests"] = {
 					53802,	-- Sethrak Persuasion
 					53806,	-- Heavy is the Head
 					54930,	-- Mechanical Liberation
 				},
+				["provider"] = { "n", 145131 },	-- Dataguru Gryzix
 				["coord"] = { 26.3, 47.3, VOLDUN },
 				["timeline"] = { ADDED_8_1_5 },
 				["groups"] = {
@@ -850,8 +850,8 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				},
 			}),
 			q(53948, {	-- Vengeful Venture [A]
-				["provider"] = { "o", 307748 },	-- Venture Co. Letter
 				["sourceQuests"] = { 53848 },	-- Tooling Around Vol'dun
+				["provider"] = { "o", 307748 },	-- Venture Co. Letter
 				["coord"] = { 26.3, 47.3, VOLDUN },
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = ALLIANCE_ONLY,
@@ -862,8 +862,8 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				},
 			}),
 			q(53833, {	-- Vengeful Venture [H]
-				["provider"] = { "o", 307748 },	-- Venture Co. Letter
 				["sourceQuests"] = { 53848 },	-- Tooling Around Vol'dun
+				["provider"] = { "o", 307748 },	-- Venture Co. Letter
 				["coord"] = { 26.3, 47.3, VOLDUN },
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = HORDE_ONLY,
@@ -874,8 +874,8 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				},
 			}),
 			q(53949, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- The Ub3r-Spanner [A]
-				["provider"] = { "n", 136059 },	-- Layla Evenkeel
 				["sourceQuests"] = { 53948 },	-- Vengeful Venture [A]
+				["provider"] = { "n", 136059 },	-- Layla Evenkeel
 				["coord"] = { 77.4, 14.2, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
@@ -886,8 +886,8 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				},
 			})),
 			q(53937, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- The Ub3r-Spanner [H]
-				["provider"] = { "n", 131840 },	-- Shuga Blastcaps
 				["sourceQuests"] = { 53833 },	-- Vengeful Venture [H]
+				["provider"] = { "n", 131840 },	-- Shuga Blastcaps
 				["coord"] = { 45.1, 40.6, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
@@ -992,18 +992,18 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				},
 			}),
 			q(72242, {	-- Dragon Isles Engineering
+				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Engineering.",
 				["provider"] = { "n", 190535 },	-- Quizla Blastcaps
 				["coord"] = { 75.9, 33.2, THE_WAKING_SHORES },
-				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Engineering.",
 				["lockCriteria"] = { 1,
 					"spellID", 366254,	-- Dragon Isles Engineering
 					"questID", 70359,	-- Dragon Isles Engineering
 				},
 			}),
 			q(70359, {	-- Dragon Isles Engineering
+				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Engineering.",
 				["provider"] = { "n", 192165 },	-- Winnie Fingerspring <Engineering Trainer>
 				["coord"] = { 43.0, 66.5, THE_WAKING_SHORES },
-				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Engineering.",
 				["lockCriteria"] = { 1,
 					"spellID", 366254,	-- Dragon Isles Engineering
 					"questID", 72242,	-- Dragon Isles Engineering
@@ -1021,8 +1021,8 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				["coord"] = { 17.7, 21.6, THE_AZURE_SPAN },
 			}),
 			q(70187, {	-- Specialized Secrets: Engineering
-				["provider"] = { "n", 193110 },	-- Khadin
 				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
+				["provider"] = { "n", 193110 },	-- Khadin
 				["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
 				["cost"] = {{ "i", 191784, 1 }},	-- 1x Dragon Shard of Knowledge
 				["isRepeatable"] = true,
@@ -1040,35 +1040,35 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 		},{
 			------ Requires 25 Skill ------
 			q(66942, {	-- Enemy Engineering
+				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
 				["coord"] = { 36.8, 62.8, VALDRAKKEN },
-				["description"] = "Requires 25 Skill.",
 				["groups"] = {
 					i(194437),	-- Primal Ritual (QI!)
 				},
 			}),
 			q(70591, {	-- Engineering Services Requested
+				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 194026 },	-- Azley
 				["coord"] = { 35.6, 58.8, VALDRAKKEN },
-				["description"] = "Requires 25 Skill.",
 			}),
 			q(66891, {	-- Explosive Ash
+				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191001 },	-- Gnoklin Quirkcoil
 				["coord"] = { 36.8, 62.8, VALDRAKKEN },
-				["description"] = "Requires 25 Skill.",
 			}),
 			q(72396, {	-- Horns of Plenty
+				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["coord"] = { 36.6, 62.6, VALDRAKKEN },
-				["description"] = "Requires 25 Skill.",
 				["groups"] = {
 					i(201816),	-- Springy Horns (QI!)
 				},
 			}),
 			q(66890, {	-- Stolen Tools
+				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["coord"] = { 36.6, 62.6, VALDRAKKEN },
-				["description"] = "Requires 25 Skill.",
 				["groups"] = {
 					i(193836),	-- Stolen Tools (QI!)
 				},
@@ -1076,24 +1076,24 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 
 			------ Requires 45 Skill ------
 			q(70540, {	-- An Engineer's Best Friend
+				["description"] = "Requires 45 Skill.",
 				["provider"] = { "n", 185548 },	-- Clinkyclick Shatterboom
 				["coord"] = { 42.2, 48.8, VALDRAKKEN },
-				["description"] = "Requires 45 Skill.",
 			}),
 			q(70539, {	-- And You Thought They Did Nothing
+				["description"] = "Requires 45 Skill.",
 				["provider"] = { "n", 185548 },	-- Clinkyclick Shatterboom
 				["coord"] = { 42.2, 48.8, VALDRAKKEN },
-				["description"] = "Requires 45 Skill.",
 			}),
 			q(70545, {	-- Blingtron 8000...?
+				["description"] = "Requires 45 Skill.",
 				["provider"] = { "n", 185548 },	-- Clinkyclick Shatterboom
 				["coord"] = { 42.2, 48.8, VALDRAKKEN },
-				["description"] = "Requires 45 Skill.",
 			}),
 			q(70557, {	-- No Scopes
+				["description"] = "Requires 45 Skill.",
 				["provider"] = { "n", 185548 },	-- Clinkyclick Shatterboom
 				["coord"] = { 42.2, 48.8, VALDRAKKEN },
-				["description"] = "Requires 45 Skill.",
 			}),
 
 			------ Requires ?? Skill - Patch 10.1.0. ------
@@ -1271,8 +1271,8 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			i(198611),	-- Engineering Details
 			q(74111, {	-- DF Inscription Order: Engineering
 				["name"] = "DF Inscription Order: Engineering",
-				["provider"] = { "i", 198510 },	-- Draconic Treatise on Engineering
 				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 198510 },	-- Draconic Treatise on Engineering
 			}),
 			q(66379, {	-- DF Weekly Engineering Knowledgepoint #1
 				["name"] = "DF Engineering Treasure #1",
@@ -1284,16 +1284,16 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			}),
 			q(70517, {	-- DF Weekly Engineering Knowledgepoint #3
 				["name"] = "DF Engineering Drop #1: Dragon-esque",
+				["description"] = "Drops from any Dragon-kin/Proto Drakes/Dragonlike beasts.\nCoordinates link to the spot(s) we found best.",
 				["provider"] = { "i", 198970 },		-- Infinitely Attachable Pair o' Docks
 				["coord"] = { 49.4, 62.6, THALDRASZUS },
-				["description"] = "Drops from any Dragon-kin/Proto Drakes/Dragonlike beasts.\nCoordinates link to the spot(s) we found best.",
 				["crs"] = { 194656 },	-- Reservoir Dapple
 			}),
 			q(70516, {	-- DF Weekly Engineering Knowledgepoint #4
 				["name"] = "DF Engineering Drop #2: Tyrhold Ancient",
+				["description"] = "Drops from any Tyrhold-esque mob.\nCoordinates link to Tyrhold where almost any mob can drop it.",
 				["provider"] = { "i", 198969 },		-- Keeper's Mark
 				["coord"] = { 57.2, 60.4, THALDRASZUS },
-				["description"] = "Drops from any Tyrhold-esque mob.\nCoordinates link to Tyrhold where almost any mob can drop it.",
 				["crs"] = { 193244 },	-- Titan Defense Matrix
 			}),
 		})),

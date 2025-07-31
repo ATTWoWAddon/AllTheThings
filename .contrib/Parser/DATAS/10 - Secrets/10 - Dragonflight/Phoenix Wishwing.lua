@@ -32,8 +32,8 @@ root(ROOTS.Secrets, header(HEADERS.Item, 193373,	-- Phoenix Wishwing
 			["provider"] = { "i", 199080 },	-- Smoldering Phoenix Ash
 		}),
 		q(72798, {	-- Tale of the Phoenix
-			["provider"] = { "n", 196214 },	-- Tarjin the Blind
 			["sourceQuests"] = { 70779 },	-- Tarjin's Tales [Guessed, will see if error reports]
+			["provider"] = { "n", 196214 },	-- Tarjin the Blind
 			["coord"] = { 16.1, 62.6, THE_WAKING_SHORES },
 			["cost"] = {
 				{ "i", 202062, 20 },	-- Ash Feather

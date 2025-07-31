@@ -26,8 +26,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				["isBreadcrumb"] = true,
 			}),
 			q(77414, {	-- Dreamsurge Investigation
-				["provider"] = { "n", 208649 },	-- Archdruid Hamuul Runetotem
 				["sourceQuests"] = { 77423 },	-- Surging Dreams
+				["provider"] = { "n", 208649 },	-- Archdruid Hamuul Runetotem
 				["coords"] = {
 					{ 51.2, 43.3, THALDRASZUS },
 					{ 58.3, 67.7, THE_WAKING_SHORES },

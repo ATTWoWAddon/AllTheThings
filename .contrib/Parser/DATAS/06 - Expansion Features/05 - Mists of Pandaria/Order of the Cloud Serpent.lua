@@ -29,8 +29,8 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				-- verify if the following dailies exist independent of completion of other dailies:
 					-- Pooped (31716), got credit for this + the 31704 version of "Pooped" when completing 30150, "Sweet as Honey" *** MUST STILL HAVE A HATCHLING ***
 				q(30149, {	-- A Feast for the Senses
-					["qg"] = 58413,	-- Jenova Longeye
 					["sourceQuest"] = 30142,	-- It's A...
+					["qg"] = 58413,	-- Jenova Longeye
 					["coord"] = { 57.3, 45.1, THE_JADE_FOREST },	-- midpoint of NPC's path
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 					--["requireSkill"] = COOKING,	-- CRIEVE NOTE: The Fish Cakes are BOE, doesn't explicitly require Cooking.
@@ -41,8 +41,8 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(31707, {	-- A Tangled Web
-					["qg"] = 58228,	-- Instructor Skythorn
 					["sourceQuest"] = 30142,	-- It's A...
+					["qg"] = 58228,	-- Instructor Skythorn
 					["coord"] = { 57.5, 45.0, THE_JADE_FOREST },
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 					["groups"] = {
@@ -53,12 +53,12 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(30151, {	-- Catch!
+					["sourceQuest"] = 30142,	-- It's A...
 					["qgs"] = {
 						65669,	-- Your Hatchling
 						65670,	-- Your Hatchling
 						65671,	-- Your Hatchling
 					},
-					["sourceQuest"] = 30142,	-- It's A...
 					["coord"] = { 57.5, 45.3, THE_JADE_FOREST },
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 					["groups"] = {
@@ -69,8 +69,8 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(31701, {	-- Dark Huntress
-					["qg"] = 56564,	-- Elder Anli
 					["sourceQuest"] = 30142,	-- It's A...
+					["qg"] = 56564,	-- Elder Anli
 					["coord"] = { 57.8, 44.8, THE_JADE_FOREST },
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 					["groups"] = {
@@ -81,8 +81,8 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(30158, {	-- Disarming the Enemy
-					["qg"] = 58228,	-- Instructor Skythorn
 					["sourceQuest"] = 30142,	-- It's A...
+					["qg"] = 58228,	-- Instructor Skythorn
 					["coord"] = { 57.5, 45.1, THE_JADE_FOREST },
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 					["groups"] = {
@@ -96,8 +96,8 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(30157, {	-- Emptier Nests
-					["qg"] = 58510,	-- Suchi the Sweet
 					["sourceQuest"] = 30142,	-- It's A...
+					["qg"] = 58510,	-- Suchi the Sweet
 					["coord"] = { 58.4, 44.6, THE_JADE_FOREST },
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 					["groups"] = {
@@ -113,6 +113,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(30156, {	-- Feeding Time
+					["sourceQuest"] = 30142,	-- It's A...
 					["qgs"] = {
 						65669,	-- Your Hatchling
 						65670,	-- Your Hatchling
@@ -122,7 +123,6 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						65674,	-- Cloud Serpent
 						65724,	-- Azure Hatchling
 					},
-					["sourceQuest"] = 30142,	-- It's A...
 					["coord"] = { 57.4, 45.3, THE_JADE_FOREST },
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 					["groups"] = {
@@ -139,8 +139,8 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(30147, {	-- Fragments of the Past
-					["qg"] = 58413,	-- Jenova Longeye
 					["sourceQuest"] = 30142,	-- It's A...
+					["qg"] = 58413,	-- Jenova Longeye
 					["coord"] = { 57.3, 45.1, THE_JADE_FOREST },	-- midpoint of NPC's path
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 					["requireSkill"] = ARCHAEOLOGY,
@@ -152,8 +152,8 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(30148, {	-- Just a Flesh Wound
-					["qg"] = 58413,	-- Jenova Longeye
 					["sourceQuest"] = 30142,	-- It's A...
+					["qg"] = 58413,	-- Jenova Longeye
 					["coord"] = { 57.3, 45.1, THE_JADE_FOREST },	-- midpoint of NPC's path
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 					-- #if AFTER BFA
@@ -192,8 +192,8 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(31703, {	-- Madcap Mayhem
-					["qg"] = 58564,	-- Elder Anli
 					["sourceQuest"] = 30142,	-- It's A...
+					["qg"] = 58564,	-- Elder Anli
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 					["groups"] = {
 						objective(1, {	-- Shadowfae Madcap slain
@@ -203,8 +203,8 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(31712, {	-- Monkey Mischief
-					["qg"] = 58228,	-- Instructor Skythorn <Serpent Master>
 					["sourceQuest"] = 30187,	-- Flight Training: In Due Course
+					["qg"] = 58228,	-- Instructor Skythorn <Serpent Master>
 					["coord"] = { 57.6, 45.0, THE_JADE_FOREST },
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, REVERED },
 					["groups"] = {
@@ -219,8 +219,8 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(31705, {	-- Needle Me Not
-					["qg"] = 58564,	-- Elder Anli
 					["sourceQuest"] = 30150,	-- Sweet as Honey
+					["qg"] = 58564,	-- Elder Anli
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 					["groups"] = {
 						objective(1, {	-- Orchard Needler slain
@@ -233,8 +233,8 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(31702, {	-- On The Prowl
-					["qg"] = 58564,	-- Elder Anli
 					["sourceQuest"] = 30142,	-- It's A...
+					["qg"] = 58564,	-- Elder Anli
 					["coord"] = { 57.6, 44.9, THE_JADE_FOREST },
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 					["groups"] = {
@@ -245,13 +245,13 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(31704, {	-- Pooped
+					["sourceQuest"] = 30142,	-- It's A...
 					["qgs"] = {
 						58384,	-- Azure Hatchling
 						65669,	-- Your Hatchling
 						65670,	-- Your Hatchling
 						65671,	-- Your Hatchling
 					},
-					["sourceQuest"] = 30142,	-- It's A...
 					["coord"] = { 57.4, 45.3, THE_JADE_FOREST },
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 					["groups"] = {
@@ -266,13 +266,13 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(31716, {	-- Pooped
+					["sourceQuest"] = 30142,	-- It's A...
 					["qgs"] = {
 						58384,	-- Azure Hatchling
 						65669,	-- Your Hatchling
 						65670,	-- Your Hatchling
 						65671,	-- Your Hatchling
 					},
-					["sourceQuest"] = 30142,	-- It's A...
 					["coord"] = { 57.4, 45.3, THE_JADE_FOREST },
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 					["groups"] = {
@@ -287,8 +287,8 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(30159, {	-- Preservation
-					["qg"] = 58510,	-- Suchi the Sweet
 					["sourceQuest"] = 30142,	-- It's A...
+					["qg"] = 58510,	-- Suchi the Sweet
 					["coord"] = { 58.4, 44.6, THE_JADE_FOREST },
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 					["groups"] = {
@@ -304,8 +304,8 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(30155, {	-- Restoring the Balance
-					["qg"] = 58228,	-- Instructor Skythorn
 					["sourceQuest"] = 30142,	-- It's A...
+					["qg"] = 58228,	-- Instructor Skythorn
 					["coord"] = { 57.5, 45.1, THE_JADE_FOREST },
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 					["groups"] = {
@@ -319,8 +319,8 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(31714, {	-- Saving the Serpents
-					["qg"] = 58511,	-- Qua-Ro Whitebrow
 					["sourceQuest"] = 30187,	-- Flight Training: In Due Course
+					["qg"] = 58511,	-- Qua-Ro Whitebrow
 					["coord"] = { 57.2, 43.6, THE_JADE_FOREST },
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, REVERED },
 					["groups"] = {
@@ -334,8 +334,8 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(31708, {	-- Serpent's Scale
-					["qg"] = 58511,	-- Qua-Ro Whitebrow
 					["sourceQuest"] = 30142,	-- It's A...
+					["qg"] = 58511,	-- Qua-Ro Whitebrow
 					["coord"] = { 57.2, 43.5, THE_JADE_FOREST },
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 					["groups"] = {
@@ -350,8 +350,8 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					}
 				}),
 				q(31194, {	-- Slitherscale Suppression
-					["qg"] = 58564,	-- Elder Anli
 					["sourceQuest"] = 30142,	-- It's A...
+					["qg"] = 58564,	-- Elder Anli
 					["coord"] = { 57.5, 45.1, THE_JADE_FOREST },
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 					["groups"] = {
@@ -362,8 +362,8 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(30146, {	-- Snack Time
-					["qg"] = 58413,	-- Jenova Longeye
 					["sourceQuest"] = 30142,	-- It's A...
+					["qg"] = 58413,	-- Jenova Longeye
 					["coord"] = { 57.3, 45.1, THE_JADE_FOREST },	-- midpoint of NPC's path
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 					["requireSkill"] = FISHING,
@@ -374,8 +374,8 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(31699, {	-- Sprite Fright
-					["qg"] = 58509,	-- Ningna Darkwheel
 					["sourceQuest"] = 30142,	-- It's A...
+					["qg"] = 58509,	-- Ningna Darkwheel
 					["coord"] = { 58.2, 45.0, THE_JADE_FOREST },
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 					["groups"] = {
@@ -386,13 +386,13 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(30150, {	-- Sweet as Honey
+					["sourceQuest"] = 30142,	-- It's A...
 					["qgs"] = {
 						58384,	-- Azure Hatchling
 						65669,	-- Your Hatchling
 						65670,	-- Your Hatchling
 						65671,	-- Your Hatchling
 					},
-					["sourceQuest"] = 30142,	-- It's A...
 					["coord"] = { 57.4, 45.3, THE_JADE_FOREST },
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 					["groups"] = {
@@ -404,8 +404,8 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(31713, {	-- The Big Brew-haha
-					["qg"] = 58506,	-- Ace Longpaw
 					["sourceQuest"] = 30142,	-- It's A...
+					["qg"] = 58506,	-- Ace Longpaw
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 					["groups"] = {
 						objective(1, {	-- 0/100 Stolen Sri-La Stout
@@ -419,8 +419,8 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(31715, {	-- The Big Kah-Oona
-					["qg"] = 58564,	-- Elder Anli
 					["sourceQuest"] = 30187,	-- Flight Training: In Due Course
+					["qg"] = 58564,	-- Elder Anli
 					["coord"] = { 57.5, 44.9, THE_JADE_FOREST },
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, REVERED },
 					["groups"] = {
@@ -431,6 +431,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(30154, {	-- The Easiest Way To A Serpent's Heart
+					["sourceQuest"] = 30142,	-- It's A...
 					["qgs"] = {
 						65669,	-- Your Hatchling
 						65670,	-- Your Hatchling
@@ -442,7 +443,6 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						65723,	-- Jade Hatchling
 						65724,	-- Azure Hatchling
 					},
-					["sourceQuest"] = 30142,	-- It's A...
 					["coord"] = { 57.4, 45.3, THE_JADE_FOREST },
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 					["groups"] = {
@@ -459,8 +459,8 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(31711, {	-- The Seed of Doubt
-					["qg"] = 58564,	-- Elder Anli
 					["sourceQuest"] = 30142,	-- It's A...
+					["qg"] = 58564,	-- Elder Anli
 					["coord"] = { 57.6, 44.9, THE_JADE_FOREST },
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 					["groups"] = {
@@ -471,8 +471,8 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(31700, {	-- The Shoe Is On The Other Foot
-					["qg"] = 58509,	-- Ningna Darkwheel
 					["sourceQuest"] = 30142,	-- It's A...
+					["qg"] = 58509,	-- Ningna Darkwheel
 					["coord"] = { 58.2, 45.1, THE_JADE_FOREST },
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 					["groups"] = {
@@ -489,8 +489,8 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(30152, {	-- The Sky Race
-					["qg"] = 58420,	-- Instructor Windblade
 					["sourceQuest"] = 30144,	-- Flight Training: Ring Round-Up
+					["qg"] = 58420,	-- Instructor Windblade
 					["coord"] = { 58.5, 43.7, THE_JADE_FOREST },
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, REVERED },
 					["groups"] = {
@@ -508,8 +508,8 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(31717, {	-- The Trainer's Challenge: Ace Longpaw
-					["qg"] = 58564,	-- Elder Anli <Serpent Master>
 					["sourceQuest"] = 30144,	-- Flight Training: Ring Round-Up
+					["qg"] = 58564,	-- Elder Anli <Serpent Master>
 					["coord"] = { 57.6, 44.8, THE_JADE_FOREST },
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, REVERED },
 					["groups"] = {
@@ -520,8 +520,8 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(31718, {	-- The Trainer's Challenge: Big Bao
-					["qg"] = 58564,	-- Elder Anli <Serpent Master>
 					["sourceQuest"] = 30144,	-- Flight Training: Ring Round-Up
+					["qg"] = 58564,	-- Elder Anli <Serpent Master>
 					["coord"] = { 57.6, 44.8, THE_JADE_FOREST },
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, REVERED },
 					["groups"] = {
@@ -532,8 +532,8 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(31719, {	-- The Trainer's Challenge: Ningna Darkwheel
-					["qg"] = 58564,	-- Elder Anli <Serpent Master>
 					["sourceQuest"] = 30144,	-- Flight Training: Ring Round-Up
+					["qg"] = 58564,	-- Elder Anli <Serpent Master>
 					["coord"] = { 57.6, 44.8, THE_JADE_FOREST },
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, REVERED },
 					["groups"] = {
@@ -544,8 +544,8 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(31721, {	-- The Trainer's Challenge: Qua-Ro Whitebrow
-					["qg"] = 58564,	-- Elder Anli <Serpent Master>
 					["sourceQuest"] = 30144,	-- Flight Training: Ring Round-Up
+					["qg"] = 58564,	-- Elder Anli <Serpent Master>
 					["coord"] = { 57.6, 44.8, THE_JADE_FOREST },
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, REVERED },
 					["groups"] = {
@@ -556,8 +556,8 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(31720, {	-- The Trainer's Challenge: Suchi the Sweet
-					["qg"] = 58564,	-- Elder Anli <Serpent Master>
 					["sourceQuest"] = 30144,	-- Flight Training: Ring Round-Up
+					["qg"] = 58564,	-- Elder Anli <Serpent Master>
 					["coord"] = { 57.6, 44.8, THE_JADE_FOREST },
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, REVERED },
 					["groups"] = {
@@ -568,8 +568,8 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(31698, {	-- Thinning The Pack
-					["qg"] = 58228,	-- Instructor Skythorn
 					["sourceQuest"] = 30142,	-- It's A...
+					["qg"] = 58228,	-- Instructor Skythorn
 					["coord"] = { 57.5, 45.0, THE_JADE_FOREST },
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 					["groups"] = {
@@ -585,13 +585,13 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(31710, {	-- Tiny Treats
+					["sourceQuest"] = 30142,	-- It's A...
 					["qgs"] = {
 						65672,	-- Your Cloud Serpent
 						65673,	-- Your Cloud Serpent
 						65674,	-- Your Cloud Serpent
 						65724,	-- Azure Hatchling
 					},
-					["sourceQuest"] = 30142,	-- It's A...
 					["coord"] = { 57.5, 45.3, THE_JADE_FOREST },
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 					["groups"] = {
@@ -603,8 +603,8 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(31706, {	-- Weeping Widows
-					["qg"] = 58228,	-- Instructor Skythorn
 					["sourceQuest"] = 30142,	-- It's A...
+					["qg"] = 58228,	-- Instructor Skythorn
 					["coord"] = { 57.5, 45.1, THE_JADE_FOREST },
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 					["groups"] = {
@@ -625,11 +625,11 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["timeline"] = { ADDED_5_4_0 },
 					["cost"] = { { "i", 104286, 1 } },	-- 1x Quivering Firestorm Egg
 					["repeatable"] = true,
-					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestWithCost(1000),
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestClassicReputationWithCost(1000),
 				})),
 				q(30135, {	-- Beating the Odds
-					["qg"] = 58225,	-- Instructor Tong
 					["sourceQuest"] = 30134,	-- Wild Things
+					["qg"] = 58225,	-- Instructor Tong
 					["coord"] = { 65.3, 31.6, THE_JADE_FOREST },
 					["groups"] = {
 						objective(1, {	-- 0/8 Slitherscale saurok slain
@@ -642,12 +642,12 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(30138, {	-- Choosing the One
-					["qg"] = 58225,	-- Instructor Tong
 					["sourceQuests"] = {
 						30135,	-- Beating the Odds
 						30137,	-- Egg Collection
 						30136,	-- Empty Nests
 					},
+					["qg"] = 58225,	-- Instructor Tong
 					["coord"] = { 65.3, 31.6, THE_JADE_FOREST },
 					["groups"] = {
 						i(78962),	-- Blue Serpent Egg (QI!)
@@ -656,8 +656,8 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(30137, {	-- Egg Collection
-					["qg"] = 58225,	-- Instructor Tong
 					["sourceQuest"] = 30134,	-- Wild Things
+					["qg"] = 58225,	-- Instructor Tong
 					["coord"] = { 65.3, 31.6, THE_JADE_FOREST },
 					["groups"] = {
 						objective(1, {	-- 0/8 Serpent Egg
@@ -672,8 +672,8 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(30136, {	-- Empty Nests
-					["qg"] = 58225,	-- Instructor Tong
 					["sourceQuest"] = 30134,	-- Wild Things
+					["qg"] = 58225,	-- Instructor Tong
 					["coord"] = { 65.3, 31.6, THE_JADE_FOREST },
 					["groups"] = {
 						objective(1, {	-- 0/6 Windward Hatchlings returned
@@ -688,14 +688,14 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(30145, {	-- Flight Training: Full Speed Ahead
-					["qg"] = 58420,	-- Instructor Windblade
 					["sourceQuest"] = 30144,	-- Flight Training: Ring Round-Up
+					["qg"] = 58420,	-- Instructor Windblade
 					["coord"] = { 58.5, 43.7, THE_JADE_FOREST },
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, REVERED },
 				}),
 				q(30187, {	-- Flight Training: In Due Course
-					["qg"] = 58420,	-- Instructor Windblade
 					["sourceQuest"] = 30145,	-- Flight Training: Full Speed Ahead
+					["qg"] = 58420,	-- Instructor Windblade
 					["coord"] = { 58.5, 43.7, THE_JADE_FOREST },
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, REVERED },
 					["groups"] = {
@@ -705,8 +705,8 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(30144, {	-- Flight Training: Ring Round-Up
-					["qg"] = 58420,	-- Instructor Windblade
 					["sourceQuest"] = 30143,	-- They Grow Like Weeds
+					["qg"] = 58420,	-- Instructor Windblade
 					["coord"] = { 58.5, 43.7, THE_JADE_FOREST },
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, REVERED },
 					["groups"] = {
@@ -716,12 +716,12 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				}),
 				q(30142, {	-- It's A...
-					["qg"] = 58228,	-- Instructor Skythorn
 					["sourceQuests"] = {
 						30139,	-- The Rider's Journey (blue)
 						30140,	-- The Rider's Journey (green)
 						30141,	-- The Rider's Journey (yellow)
 					},
+					["qg"] = 58228,	-- Instructor Skythorn
 					["coord"] = { 57.5, 45.1, THE_JADE_FOREST },
 				}),
 				q(31784, {	-- Onyx To Goodness
@@ -730,7 +730,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["maxReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, EXALTED },
 					["cost"] = {{ "i", 89155, 1 }},	-- Onyx Egg
 					["repeatable"] = true,
-					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestWithCost(500),
+					["OnUpdate"] = FUNCTION_TEMPLATES.GenerateOnUpdateForRepeatableQuestClassicReputationWithCost(500),
 				}),
 				q(80311, {	-- Order of the Cloud Serpent
 					["qg"] = 63900,	-- Toortle Wider
@@ -739,27 +739,27 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["isBreadcrumb"] = true,
 				}),
 				q(31810, {	-- Riding the Skies (Azure)
+					["description"] = "You will receive the mount that corresponds to the color of egg you selected. To get the other two mounts, you may purchase them from the vendor or do the questline again on another character.",
 					["qg"] = 58564,	-- Elder Anli
 					["coord"] = { 57.7, 45.0, THE_JADE_FOREST },
-					["description"] = "You will receive the mount that corresponds to the color of egg you selected. To get the other two mounts, you may purchase them from the vendor or do the questline again on another character.",
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, EXALTED },
 					["groups"] = {
 						i(85430),	-- Azure Cloud Serpent (MOUNT!)
 					},
 				}),
 				q(31811, {	-- Riding the Skies (Golden)
+					["description"] = "You will receive the mount that corresponds to the color of egg you selected. To get the other two mounts, you may purchase them from the vendor or do the questline again on another character.",
 					["qg"] = 58564,	-- Elder Anli
 					["coord"] = { 57.7, 45.0, THE_JADE_FOREST },
-					["description"] = "You will receive the mount that corresponds to the color of egg you selected. To get the other two mounts, you may purchase them from the vendor or do the questline again on another character.",
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, EXALTED },
 					["groups"] = {
 						i(85429),	-- Golden Cloud Serpent (MOUNT!)
 					},
 				}),
 				q(30188, {	-- Riding the Skies (Jade)
+					["description"] = "You will receive the mount that corresponds to the color of egg you selected. To get the other two mounts, you may purchase them from the vendor or do the questline again on another character.",
 					["qg"] = 58564,	-- Elder Anli
 					["coord"] = { 57.7, 45.0, THE_JADE_FOREST },
-					["description"] = "You will receive the mount that corresponds to the color of egg you selected. To get the other two mounts, you may purchase them from the vendor or do the questline again on another character.",
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, EXALTED },
 					["groups"] = {
 						i(79802),	-- Jade Cloud Serpent (MOUNT!)
@@ -783,40 +783,39 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["isBreadcrumb"] = true,
 				}),
 				q(30139, {	-- The Rider's Journey (blue egg)
+					["sourceQuest"] = 30138,	-- Choosing the One
 					["providers"] = {
 						{ "i", 78962 },	-- Blue Serpent Egg (QI!)
 						{ "n", 58225 },	-- Instructor Tong
 					},
-					["sourceQuest"] = 30138,	-- Choosing the One
 					["coord"] = { 65.3, 31.6, THE_JADE_FOREST },
 				--	picked the blue and got this one, but some notes indicate all colors now grant this quest.
 				--	i picked "wait, i changed my mind about my egg" and switched to green/yellow, and they gave 30140 and 30141, respectively.  swapping back to blue switched the quest back to 30139.
 				--	completing one version of the quest completes them all, so altQuests is unnecessary here.
 				}),
 				q(30140, {	-- The Rider's Journey (green egg)
+					["sourceQuest"] = 30138,	-- Choosing the One
 					["providers"] = {
 						{ "i", 78960 },	-- Green Serpent Egg (QI!)
 						{ "n", 58225 },	-- Instructor Tong
 					},
-					["sourceQuest"] = 30138,	-- Choosing the One
 					["coord"] = { 65.3, 31.6, THE_JADE_FOREST },
 				}),
 				q(30141, {	-- The Rider's Journey (yellow egg)
+					["sourceQuest"] = 30138,	-- Choosing the One
 					["providers"] = {
 						{ "i", 78961 },	-- Yellow Serpent Egg (QI!)
 						{ "n", 58225 },	-- Instructor Tong
 					},
-					["sourceQuest"] = 30138,	-- Choosing the One
 					["coord"] = { 65.3, 31.6, THE_JADE_FOREST },
 				}),
 				q(30143, {	-- They Grow Like Weeds
-					["qg"] = 58564,	-- Elder Anli
 					["sourceQuest"] = 30142,	-- It's A...
+					["qg"] = 58564,	-- Elder Anli
 					["coord"] = { 57.6, 44.9, THE_JADE_FOREST },
 					["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, REVERED },
 				}),
 				q(30134, {	-- Wild Things
-					["qg"] = 58564,	-- Elder Anli
 					["sourceQuests"] = {
 						32461,	-- The Order of the Cloud Serpent
 						31373,	-- The Order of the Cloud Serpent
@@ -825,6 +824,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						80311,	-- Order of the Cloud Serpent (MOP Remix)
 						-- #endif
 					},
+					["qg"] = 58564,	-- Elder Anli
 					["coord"] = { 57.7, 45.0, THE_JADE_FOREST },
 				}),
 			}),

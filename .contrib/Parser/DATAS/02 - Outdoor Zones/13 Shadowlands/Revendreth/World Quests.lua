@@ -153,10 +153,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			q(59643, {	-- It's Race Day in the Ramparts!
+				ach(14765),	-- Ramparts Racer
 				i(177239, {	-- Racing Permit (EC!)
 					["customCollect"] = "SL_COV_VEN",
 				}),
-				ach(14765),	-- Ramparts Racer
 			}),
 			q(61625, {	-- Jewelcrafting: Sinister Choker
 				["requireSkill"] = JEWELCRAFTING,
@@ -208,10 +208,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(59808, {	-- Muck it Up
 				n(166292, {	-- Bog Beast
-					["description"] = "Only available when the |cFFFFD700Muck It Up|r world quest is active.  Loot Primordial Muck from the quest mobs and throw it into the mire for a chance to summon the rare.",
 					["questID"] = 59823,
-					["isDaily"] = true,
+					["description"] = "Only available when the |cFFFFD700Muck It Up|r world quest is active.  Loot Primordial Muck from the quest mobs and throw it into the mire for a chance to summon the rare.",
 					["coord"] = { 35.8, 32.6, REVENDRETH },
+					["isDaily"] = true,
 					["groups"] = {
 						i(180588),	-- Primordial Bogling (PET!)
 						i(177880),	-- Primordial Muck (QI!)
@@ -241,11 +241,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(60656, {	-- Summon Your Sins
 				n(170434, {	-- Amalgamation of Sin
-					["description"] = "At the end of the world quest, you will receive either an |cFFFFFFFFAmalgamation of Sin|r or an |cFF0070ddAmalgamation of Sin|r.  The white version summons a guardian elemental, and the blue version will summon the rare.\n\nSo far, there doesn't seem to be a surefire way to get the rare-summoning item.",
 					["questID"] = 60836,
-					["isDaily"] = true,
+					["description"] = "At the end of the world quest, you will receive either an |cFFFFFFFFAmalgamation of Sin|r or an |cFF0070ddAmalgamation of Sin|r.  The white version summons a guardian elemental, and the blue version will summon the rare.\n\nSo far, there doesn't seem to be a surefire way to get the rare-summoning item.",
 					["coord"] = { 66.0, 33.2, REVENDRETH },
 					["cost"] = { { "i", 180376, 1 } },	-- Amalgamation of Sin
+					["isDaily"] = true,
 					["groups"] = {
 						i(180279),	-- Sinstone Fragment (QI!)
 						i(180281),	-- Sinstone Fragment (QI!)
@@ -286,10 +286,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(60654, {	-- Swarming Souls
 				n(170048, {	-- Manifestation of Wrath
-					["description"] = "Only available when the |cFFFFD700Swarming Souls|r world quest is active.  When turning Lost Souls in to the Avowed Ritualist, there is a chance to spawn the rare.",
 					["questID"] = 60729,
-					["isDaily"] = true,
+					["description"] = "Only available when the |cFFFFD700Swarming Souls|r world quest is active.  When turning Lost Souls in to the Avowed Ritualist, there is a chance to spawn the rare.",
 					["coord"] = { 49.8, 35.0, REVENDRETH },
+					["isDaily"] = true,
 					["crs"] = { 169917 },	-- Avowed Ritualist
 					["groups"] = {
 						i(180585),	-- Wrathling (PET!)

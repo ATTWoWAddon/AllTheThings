@@ -1,4 +1,3 @@
-
 -- Assigns the TierStructures by ClassID which are listed by constant key
 TIER_STRUCTURE_ASSIGN_CLASSIDS = function(tierStructure)
 	tierStructure[DEATHKNIGHT] = tierStructure.DEATHKNIGHT

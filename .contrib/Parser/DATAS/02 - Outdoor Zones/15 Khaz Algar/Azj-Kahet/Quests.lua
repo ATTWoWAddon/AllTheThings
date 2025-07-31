@@ -117,17 +117,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(78234, {	-- Force Your Way
 					["sourceQuests"] = { 78236 },	-- Scrappy Straggler
-					["providers"] = {
-						{ "n", 220051 },	-- Flynn Fairwind
-						{ "n", 211444 },	-- Flynn Fairwind
+					["qgs"] = {
+						220051,	-- Flynn Fairwind
+						211444,	-- Flynn Fairwind
 					},
 					["coord"] = { 63.0, 27.1, AZJ_KAHET },
 				}),
 				q(78383, {	-- Strategic Edge
 					["sourceQuests"] = { 78236 },	-- Scrappy Straggler
-					["providers"] = {
-						{ "n", 220051 },	-- Flynn Fairwind
-						{ "n", 211444 },	-- Flynn Fairwind
+					["qgs"] = {
+						220051,	-- Flynn Fairwind
+						211444,	-- Flynn Fairwind
 					},
 					["coord"] = { 63.0, 27.1, AZJ_KAHET },
 					["groups"] = {
@@ -325,12 +325,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						TEMPORARY_SOURCEQUEST,
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
-					["providers"] = {
-						{ "n", 224729 },	-- Anub'okki
-						{ "n", 229184 },	-- Aspirant Kiipka
+					["sourceQuestNumRequired"] = 1,
+					["qgs"] = {
+						224729,	-- Anub'okki
+						229184,	-- Aspirant Kiipka
 					},
 					["coord"] = { 55.9, 42.4, AZJ_KAHET },
-					["sourceQuestNumRequired"] = 1,
 					["isBreadcrumb"] = true,
 				}),
 				q(79119, {	-- It's Rough to Be a Bug!
@@ -431,9 +431,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						TEMPORARY_SOURCEQUEST,
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
+					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 217565 },	-- Al'kubian
 					["coord"] = { 60.0, 66.2, AZJ_KAHET },
-					["sourceQuestNumRequired"] = 1,
 					["groups"] = {
 						i(222921),	-- Mangled Kobyss Innards (QI!)
 						i(224102),	-- Chunked Kobyss Innards (QI!)
@@ -446,9 +446,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						TEMPORARY_SOURCEQUEST,
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
+					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "o", 443995 },	-- Familiar-Looking Appendage
 					["coord"] = { 55.6, 70.8, AZJ_KAHET },	-- TODO: probably have more spawns?
-					["sourceQuestNumRequired"] = 1,
 					["groups"] = {
 						i(214504),	-- Emerald Necklace (QI!)
 					},
@@ -622,9 +622,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(78898, {	-- Intention vs Instinct
 					["sourceQuests"] = { 83321 },	-- Strange Bats
-					["providers"] = {
-						{ "n", 225629 },	-- Greenspeaker Na'layro
-						{ "n", 211652 },	-- Greenspeaker Na'layro
+					["qgs"] = {
+						225629,	-- Greenspeaker Na'layro
+						211652,	-- Greenspeaker Na'layro
 					},
 					["coord"] = { 42.3, 42.5, AZJ_KAHET },
 					["groups"] = {
@@ -867,9 +867,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						TEMPORARY_SOURCEQUEST,
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
+					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 208782 },	-- Executor Nizrek
 					["coord"] = { 52.9, 46.1, NERUBAR },
-					["sourceQuestNumRequired"] = 1,
 					["isBreadcrumb"] = true
 				}),
 				q(81928, {	-- The Voice of the People
@@ -877,9 +877,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						83324,	-- A Silken Thread
 						81890,	-- Unfulfilled Requests
 					},
+					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 221948 },	-- Sum'latha
 					["coord"] = { 51.4, 63.9, AZJ_KAHET },
-					["sourceQuestNumRequired"] = 1,
 				}),
 				q(81959, {	-- Collecting a Concotion
 					["sourceQuests"] = { 81928 },	-- A Cure for All Problems
@@ -946,9 +946,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(81964, {	-- The Blacksmith's Fate
 					["sourceQuests"] = { 81945 },	-- To Arathi's End
-					["providers"] = {
-						{ "n", 221961 },	-- Faerin Lothar
-						{ "n", 221980 },	-- Faerin Lothar
+					["qgs"] = {
+						221961,	-- Faerin Lothar
+						221980,	-- Faerin Lothar
 					},
 					["coord"] = { 63.8, 17.9, AZJ_KAHET },	-- Faerin and Monte start following on quest accept
 					["groups"] = {
@@ -957,17 +957,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(81965, {	-- Invasion Disruption
 					["sourceQuests"] = { 81945 },	-- To Arathi's End
-					["providers"] = {
-						{ "n", 221961 },	-- Faerin Lothar
-						{ "n", 221980 },	-- Faerin Lothar
+					["qgs"] = {
+						221961,	-- Faerin Lothar
+						221980,	-- Faerin Lothar
 					},
 					["coord"] = { 63.8, 17.9, AZJ_KAHET },	-- Faerin and Monte start following on quest accept
 				}),
 				q(81950, {	-- BOOM Treats!
 					["sourceQuests"] = { 81945 },	-- To Arathi's End
-					["providers"] = {
-						{ "n", 221977 },	-- Monte Gazlowe
-						{ "n", 221982 },	-- Monte Gazlowe
+					["qgs"] = {
+						221977,	-- Monte Gazlowe
+						221982,	-- Monte Gazlowe
 					},
 					["coord"] = { 63.8, 17.9, AZJ_KAHET },	-- Faerin and Monte start following on quest accept
 				}),

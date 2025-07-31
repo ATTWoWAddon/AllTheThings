@@ -15,10 +15,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			-- this question is also in the dazar'alor file, but verify SQ for "the blood gate."  it may become available after "ateena's fall," not "halting the empire's fall."  also, is "halting the empire's fall" (which sends you to baine, who offers this quest) a breadcrumb?  "the blood gate" isn't hidden like quests typically are when you have their breadcrumb in their log, so i'm not sure if "halting" is optional/disappears/becomes unavailable after doing "the blood gate."  also, is it available with *only* having done nazmir, or do you also have to finish the main zuldazar questline as well?
 			q(50934, {	-- A Chance Sighting
 				["sourceQuests"] = { 47696 },	-- Krag'wa the Terrible
-				["isBreadcrumb"] = true,
 				["provider"] = { "n", 131993 },	-- Yash
 				["coord"] = { 66.9, 41.9, NAZMIR },
 				["races"] = HORDE_ONLY,
+				["isBreadcrumb"] = true,
 				["groups"] = { i(153676) },	-- Vial of Liquid (QI!)
 			}),
 			q(47244, {	-- A Culling of Souls
@@ -34,7 +34,6 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(47493, {	-- A Lonely Spirit
-				["isBreadcrumb"] = true,
 				["sourceQuests"] = {
 					49348,	-- A Desecrated Temple
 					47247,	-- That Which Haunts the Dead
@@ -43,6 +42,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 122688 },	-- Bwonsamdi
 				["coord"] = { 39.5, 24.7, NAZMIR },
 				["races"] = HORDE_ONLY,
+				["isBreadcrumb"] = true,
 			}),
 			q(47622, {	-- A Magical Glow
 				["sourceQuests"] = { 47623 },	-- The Last Witch Doctor of Krag'wa
@@ -75,11 +75,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(48402, {	-- A Poisonous Touch
-				--	SQ needs confirmation.  i didn't see it until after i finished "staying hidden" and picked up the next 2 quests for the area, but maybe it opens sooner.  was NOT available with 0 prereqs prior to starting dazar'alor.
 				["sourceQuests"] = { 47525 },	-- Staying Hidden
 				["provider"] = { "n", 126039 },	-- Mag'ash the Poisonous
 				["coord"] = { 69.1, 50.4, NAZMIR },
 				["races"] = HORDE_ONLY,
+				--	SQ needs confirmation.  i didn't see it until after i finished "staying hidden" and picked up the next 2 quests for the area, but maybe it opens sooner.  was NOT available with 0 prereqs prior to starting dazar'alor.
 			}),
 			q(47263, {	-- A Time of Revelation
 				["sourceQuests"] = { 47262 },	-- Ending the Blood Trolls
@@ -440,11 +440,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(50808, {	-- Halting the Empire's Fall
-				--	is this a breadcrumb?
 				["sourceQuests"] = { 51244 },	-- What Rots Beneath
 				["provider"] = { "n", 137113 },	-- Rokhan
 				["coord"] = { 51.8, 65.5, NAZMIR },
 				["races"] = HORDE_ONLY,
+				--	is this a breadcrumb?
 			}),
 			q(47711, {	-- Head of the Viper
 				["sourceQuests"] = {
@@ -521,10 +521,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					47250,	-- We'll Meet Again
 					49082,	-- Upward and Onward
 				},
-				["isBreadcrumb"] = true,
 				["provider"] = { "n", 122795 },	-- Witch Doctor Kejabu
 				["coord"] = { 39.5, 43.8, NAZMIR },
 				["races"] = HORDE_ONLY,
+				["isBreadcrumb"] = true,
 			}),
 			q(47130, {	-- Improper Burial
 				["sourceQuests"] = { 47105 },	-- Into The Darkness
@@ -564,7 +564,6 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(49382, {	-- It Seems You've Made a Friend
-				--	verify whether or not "crawg free zone" is needed
 				["sourceQuests"] = {
 					49380,	-- Bad Juju
 					--	49379,	-- Crawg Free Zone (may be required)
@@ -574,6 +573,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 129164 },	-- Chronicler Jabari
 				["coord"] = { 63.1, 52.7, NAZMIR },
 				["races"] = HORDE_ONLY,
+				--	verify whether or not "crawg free zone" is needed
 				["groups"] = {
 					i(156566),	-- Dart (PET!)
 				},
@@ -737,12 +737,12 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["sourceQuests"] = { 54939 },	-- Stubborn as a Bronzebeard
 				["provider"] = { "n", 149823 },
 				["coord"] = { 47.6, 16.2, 1381 },
-				["maps"] = { 1382 },	-- Uldir (Scenario)
 				["timeline"] = {
 					ADDED_8_1_5,
 					REMOVED_8_2_0,	-- Retired with the implementation of 8.2
 					ADDED_9_2_0,	-- Reported available again 2022-03-21
 				},
+				["maps"] = { 1382 },	-- Uldir (Scenario)
 			}),
 			q(49125, {	-- Negative Blood
 				["sourceQuests"] = { 49120 },	-- Speaking with the Dead
@@ -1036,8 +1036,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(47925, {	-- Shoak's on the Menu
-				["sourceQuests"] = { 47924 },	-- Profanity Filter
 				["description"] = "You must complete this storyline for Shoak to appear in Gloom Hollow.",
+				["sourceQuests"] = { 47924 },	-- Profanity Filter
 				["qgs"] = {
 					125024,	-- Kajosh
 					124933,	-- Kajosh
@@ -1159,10 +1159,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(49477, {	-- Surprise Backup
-				["isBreadcrumb"] = true,
 				["provider"] = { "o", 278577 },	-- Torn Horde Missive
 				["coord"] = { 34.0, 39.6, NAZMIR },
 				["races"] = HORDE_ONLY,
+				["isBreadcrumb"] = true,
 			}),
 			q(50444, {	-- Taking the Loa Road
 				["sourceQuests"] = {
@@ -1265,7 +1265,6 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 39.0, 59.9, NAZMIR },
 			}),
 			q(49432, {	-- The Forlorn Soul
-				--	SQ needs verification.
 				["sourceQuests"] = {
 					47880,	-- A Tribute for Death
 					47493,	-- A Lonely Spirit (breadcrumb)
@@ -1273,6 +1272,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 126588 },	-- Keula
 				["coord"] = { 42.5, 31.3, NAZMIR },
 				["races"] = HORDE_ONLY,
+				--	SQ needs verification.
 			}),
 			q(47623, {	-- The Last Witch Doctor of Krag'wa
 				["sourceQuests"] = {
@@ -1351,11 +1351,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(47248, {	-- 'Til Death Do Us Part
-				--	SQ needs verification.
 				["sourceQuests"] = { 47880 },	-- A Tribute for Death
 				["provider"] = { "n", 122706 },	-- Theurgist Salazae
 				["coord"] = { 36.7, 27.4, NAZMIR },
 				["races"] = HORDE_ONLY,
+				--	SQ needs verification.
 				["groups"] = {
 					o(270991, {	-- Ancient Urn
 						["coord"] = { 40.4, 26.4, NAZMIR },
@@ -1395,10 +1395,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(47918, {	-- To Serve Krag'wa
 				["sourceQuests"] = { 47696 },	-- Krag'wa the Terrible
-				["isBreadcrumb"] = true,
 				["provider"] = { "n", 120551 },	-- Krag'wa the Huge
 				["coord"] = { 75.4, 56.6, NAZMIR },
 				["races"] = HORDE_ONLY,
+				["isBreadcrumb"] = true,
 			}),
 			q(49064, {	-- Torga, the Turtle Loa
 				["sourceQuests"] = { 49185 },	-- Catching Up
@@ -1504,11 +1504,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(51244, {	-- What Rots Beneath
-				--	is this a breadcrumb?
 				["sourceQuests"] = { 50087 },	-- Ateena's Fall
 				["provider"] = { "n", 140656 },	-- Rokhan
 				["coord"] = { 50.5, 58.3, NAZMIR },
 				["races"] = HORDE_ONLY,
+				--	is this a breadcrumb?
 			}),
 			q(49774, {	-- Won't Leaf Him to Die
 				["sourceQuests"] = { 50933 },	-- An Unfortunate Event
@@ -1522,44 +1522,44 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(53781, {	-- Eyir
+				["sourceQuests"] = { 54145 },	-- The Loa of Death
 				["provider"] = { "n", 122688 },	-- Bwonsamdi
-				["lvl"] = 120,
 				["coord"] = { 39.5, 24.6, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["sourceQuests"] = { 54145 },	-- The Loa of Death
+				["lvl"] = 120,
 			}),
 			q(53780, {	-- Jailor of the Damned
+				["sourceQuests"] = { 54145 },	-- The Loa of Death
 				["provider"] = { "n", 122688 },	-- Bwonsamdi
-				["lvl"] = 120,
 				["coord"] = { 39.5, 24.6, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["sourceQuests"] = { 54145 },	-- The Loa of Death
+				["lvl"] = 120,
 			}),
 			q(53782, {	-- Mysteries of Death
-				["provider"] = { "n", 122688 },	-- Bwonsamdi
-				["lvl"] = 120,
-				["coord"] = { 39.5, 24.6, NAZMIR },
-				["races"] = HORDE_ONLY,
 				["sourceQuests"] = {
 					54147,	-- Confront The Val'kyr
 					53780,	-- Jailor of the Damned
 				},
+				["provider"] = { "n", 122688 },	-- Bwonsamdi
+				["coord"] = { 39.5, 24.6, NAZMIR },
+				["races"] = HORDE_ONLY,
+				["lvl"] = 120,
 			}),
 			q(48823, {	-- Projection Destruction
+				["sourceQuests"] = { 48854 },	-- Offer of Power
 				["provider"] = { "n", 127215 },	-- Shadow Hunter Da'jul
 				["coord"] = { 31.0, 52.0, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["sourceQuests"] = { 48854 },	-- Offer of Power
 				["groups"] = {
 					i(152727),	-- Da'jul's Fire Mojo (QI!)
 				},
 			}),
 			q(54145, {	-- The Loa of Death
+				["sourceQuests"] = { 53779 },	-- The Lies of a Loa
 				["provider"] = { "n", 146824 },	-- Princess Talanji
-				["lvl"] = 120,
 				["coord"] = { 39.5, 27.0, NAZMIR },
 				["races"] = HORDE_ONLY,
-				["sourceQuests"] = { 53779 },	-- The Lies of a Loa
+				["lvl"] = 120,
 			}),
 			n(BONUS_OBJECTIVES, sharedData({
 				["lockCriteria"] = { 1, "lvl", 50 },
@@ -1587,8 +1587,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					},
 				}),
 				q(50080, {	-- Raiding the Raiders
-					["sourceQuests"] = { 50083 },	-- The Crawg Ma'da
 					["description"] = "This Bonus Objective pops up after accepting |cffffff00A Message of Blood and Fire|r.",
+					["sourceQuests"] = { 50083 },	-- The Crawg Ma'da
 					["groups"] = {
 						i(157029),	-- Bag of Zandalari Supplies (QI!)
 					},

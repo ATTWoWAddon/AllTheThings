@@ -7,10 +7,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 		n(EMISSARY_QUESTS, {
 			q(54461, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 }, ["minReputation"] = { FACTION_VOLDUNAI, EXALTED } }, {-- Supplies from the Voldunai
 				["provider"] = { "n", 135804 },	-- Hoarder Jena
-				["lvl"] = 120,
 				["coord"] = { 56.68, 49.74, VOLDUN },
 				["races"] = HORDE_ONLY,
 				["repeatable"] = true,
+				["lvl"] = 120,
 				["groups"] = {
 					i(166290, {	-- Voldunai Supplies
 						i(166703),	-- Goldtusk Inn Breakfast Buffet (TOY!)
@@ -20,10 +20,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			})),
 			q(50603, {	-- Voldunai
 				["provider"] = { "n", 135804 },	-- Hoarder Jena
-				["lvl"] = 120,
 				["coord"] = { 56.68, 49.74, VOLDUN },
 				["races"] = HORDE_ONLY,
 				["isWorldQuest"] = true,
+				["lvl"] = 120,
 				["groups"] = {
 					i(165864, {	-- Voldunai Equipment Cache
 						["sym"] = {

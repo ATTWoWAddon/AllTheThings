@@ -97,8 +97,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["coord"] = { 39.6, 55.0, THE_ROOTS },
 								}),
 								q(60723, {	-- The Roots Thirst
-									["provider"] = { "n", 167196 },	-- Sesselie
 									["sourceQuests"] = { 63067 },	-- Root Restoration
+									["provider"] = { "n", 167196 },	-- Sesselie
 									["coord"] = { 50.1, 63.7, THE_ROOTS },
 								}),
 							}),

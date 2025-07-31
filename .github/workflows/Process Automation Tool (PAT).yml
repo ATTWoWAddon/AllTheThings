@@ -1,0 +1,30 @@
+name: Process Automation Tool (PAT)
+
+# Controls when the action will run.
+on:
+  schedule:
+    - cron: '0 7 * * *'   #at 07:00 UTC everyday
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Perform a PATdown
+        timeout-minutes: 5
+        run: |
+          cd .contrib/.tools
+          "Process Automation Tool.exe"
+        shell: cmd
+
+      - name: Commit Changes
+        run: |
+            git config --global user.name 'Process Automation Tool (PAT)'
+            git config --global user.email 'bot@noreply.github.com'
+            git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+            git commit -am "[PAT] Updated source file format based on current standards." && git push || echo "No changes to commit"

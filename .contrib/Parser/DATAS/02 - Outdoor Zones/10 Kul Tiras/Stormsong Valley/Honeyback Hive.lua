@@ -28,8 +28,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 					n(QUESTS, {
 						q(56473, {	-- Envenomed Spider Fang
 							["provider"] = { "i", 169656 },	-- Envenomed Spider Fang
-							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
+							["isWeekly"] = true,
 						--	["cr"] = 155172,	-- Trapdoor Bee Hunter
 							["groups"] = {
 								i(172145),	-- Unremarkable Spider-Fang
@@ -37,8 +37,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 						}),
 						q(56474, {	-- Hivekiller Stinger
 							["provider"] = { "i", 169655 },	-- Hivekiller Stinger
-							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
+							["isWeekly"] = true,
 						--	["cr"] = 155171,	-- The Hivekiller
 							["groups"] = {
 								i(172144),	-- Glittering Stinger
@@ -46,8 +46,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 						}),
 						q(56092, {	-- Hivethief's Jelly Stash
 							["provider"] = { "i", 169657 },	-- Hivethief's Jelly Stash
-							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
+							["isWeekly"] = true,
 						--	["cr"] = 155055,	-- Gurg the Hivethief
 							["groups"] = {
 								i(172147),	-- Nugget Honey
@@ -65,8 +65,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 						}),
 						q(56144, {	-- Old Nasha's Paw
 							["provider"] = { "i", 169659 },	-- Old Nasha's Paw
-							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
+							["isWeekly"] = true,
 						--	["cr"] = 155176,	-- Old Nasha
 							["groups"] = {
 								i(172146),	-- Glazed Bear Meat
@@ -74,8 +74,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 						}),
 						q(56475, {	-- Spiral Yeti Horn
 							["provider"] = { "i", 169654 },	-- Spiral Yeti Horn
-							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
+							["isWeekly"] = true,
 						--	["cr"] = 155059,	-- Yorag the Jelly Feaster
 							["groups"] = {
 								i(172143),	-- Perforated Spiral Horn
@@ -86,13 +86,13 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 								{ "i", 173533 },	-- Collected Tidebloom Honey
 								{ "i", 172383 },	-- Collected Tidebloom Honey (changes to this version after you get your mount)
 							},
-							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
+							["isWeekly"] = true,
 						}),
 						q(56091, {	-- Usurper's Scent Gland
 							["provider"] = { "i", 169658 },	-- Usurper's Scent Gland
-							["isWeekly"] = true,
 							["races"] = ALLIANCE_ONLY,
+							["isWeekly"] = true,
 						--	["cr"] = 155173,	-- Honeyback Usurper
 							["groups"] = {
 								i(172142),	-- Pilfered Beeswax

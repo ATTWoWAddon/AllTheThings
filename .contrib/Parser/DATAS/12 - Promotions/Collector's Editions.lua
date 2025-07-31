@@ -321,8 +321,8 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 		["groups"] = {
 			n(QUESTS, {
 				q(63450, {	-- A Deluxe Delivery (Landro Longshot)
-					["qg"] = 17249,	-- Landro Longshot <The Black Flame>
 					["altQuests"] = { 63448 },	-- A Deluxe Delivery (Cities)
+					["qg"] = 17249,	-- Landro Longshot <The Black Flame>
 					["coord"] = { 28.0, 75.8, STRANGLETHORN_VALE },
 					["maps"] = {
 						THE_EXODAR,
@@ -593,8 +593,8 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 				mount(307932),	-- Ensorcelled Everwyrm (MOUNT!)
 				n(QUESTS, {
 					q(57686, {	-- The Eternal Traveler
-						["qg"] = 158635,	-- Xolartios <Eternal Traveler>
 						["description"] = "You need to purchase Shadowlands Heroic Edition to spawn the questgiver from the guiding orb on the back of Ensorcelled Everwyrm.",
+						["qg"] = 158635,	-- Xolartios <Eternal Traveler>
 						["timeline"] = { ADDED_8_3_7 },	-- Still availble to players that have the mount, able to share quest with others etc.
 						["groups"] = {
 							i(172954),	-- Echo of Mortality (QI!)
@@ -705,8 +705,8 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 							["DisablePartySync"] = true,
 						}),
 						q(77815, {	-- The Storm Race Tour
-							["provider"] = { "n", 193359 },	-- Lord Andestrasz
 							["sourceQuest"] = 77813,	-- Lightning Strikes
+							["provider"] = { "n", 193359 },	-- Lord Andestrasz
 							["coord"] = { 75.2, 55.0, THE_WAKING_SHORES },
 							["groups"] = {
 								iensemble(209417),	-- Ensemble: Thundering Stormrider's Attire
@@ -757,11 +757,11 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = REAL_MONEY
 							["sym"] = {{"select","questID",81993},{"pop"}},	-- The Stormrider's Bond [Dragon Isle Version]
 						})),
 						q(81994, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {	-- A Sacred Connection [Dragon Isles Version]
-							["provider"] = { "n", 222277 },	-- Kurdran Wildhammer
 							["sourceQuests"] = {
 								81993,	-- The Stormrider's Bond [Dragon Isle Version]
 								83024,	-- The Stormrider's Bond [Khaz Algar Version]
 							},
+							["provider"] = { "n", 222277 },	-- Kurdran Wildhammer
 							["coord"] = { 38.3, 94.9, VALDRAKKEN },
 							["groups"] = {
 								i(220708),	-- Frenzied Stormrider's Breastplate

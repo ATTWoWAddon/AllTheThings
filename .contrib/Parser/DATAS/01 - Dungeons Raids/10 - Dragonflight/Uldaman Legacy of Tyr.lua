@@ -12,12 +12,12 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			n(QUESTS, {
 				q(71093, {	-- Legacy of Tyr: Secrets of the Past
 					["description"] = "Given on zoning into the instance on a character that did not do the pre-patch version of this quest.",
-					["_drop"] = { "r" },	-- bad API data
-					["timeline"] = { ADDED_10_0_2_LAUNCH },
 					["altQuests"] = {
 						66458,	-- Legacy of Tyr: Secrets of the Past [A]
 						66586,	-- Legacy of Tyr: Secrets of the Past [H]
 					},
+					["timeline"] = { ADDED_10_0_2_LAUNCH },
+					["_drop"] = { "r" },	-- bad API data
 				}),
 			}),
 			n(ZONE_DROPS, {

@@ -214,44 +214,44 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 							["groups"] = {
 								n(QUESTS, {
 									q(62976, {	-- Artisan Tool Belt
-										["provider"] = { "i", 184578 },	-- Artisan Tool Belt
 										["sourceQuests"] = { 62981 },	-- Blueprint: Artisan Tool Belt
+										["provider"] = { "i", 184578 },	-- Artisan Tool Belt
 									}),
 									q(60945, {	-- Deep Echo Trident
-										["provider"] = { "i", 181499 },	-- Deep Echo Trident
 										["sourceQuests"] = { 60946 },	-- Blueprint: Deep Echo Trident
+										["provider"] = { "i", 181499 },	-- Deep Echo Trident
 									}),
 									q(61714, {	-- Gilded Abacus
-										["provider"] = { "i", 184580 },	-- Gilded Abacus
 										["sourceQuests"] = { 62971 },	-- Blueprint: Gilded Abacus
+										["provider"] = { "i", 184580 },	-- Gilded Abacus
 									}),
 									q(60497, {	-- Herald's Footpads
-										["provider"] = { "n", 168427 },	-- Artemede
 										["sourceQuests"] = { 60496 },	-- Into the Coliseum
+										["provider"] = { "n", 168427 },	-- Artemede
 										["coord"] = { 28.2, 42.4, ARCHONS_RISE },
 										["groups"] = {
 											i(180464),	-- Blueprint: Herald's Footpads
 										},
 									}),
 									q(60974, {	-- Phial of Serenity
-										["provider"] = { "i", 184478 },	-- Phial of Serenity
 										["sourceQuests"] = { 60973 },	-- Blueprint: Phial of Serenity
+										["provider"] = { "i", 184478 },	-- Phial of Serenity
 									}),
 									q(62998, {	-- Ring of Warding
-										["provider"] = { "i", 184481 },	-- Ring of Warding
 										["sourceQuests"] = { 62928 },	-- Blueprint: Ring of Warding
+										["provider"] = { "i", 184481 },	-- Ring of Warding
 									}),
 									q(62995, {	-- Spiritforged Aegis
-										["provider"] = { "i", 184475 },	-- Spiritforged Aegis
 										["sourceQuests"] = { 60975 },	-- Blueprint: Spiritforged Aegis
+										["provider"] = { "i", 184475 },	-- Spiritforged Aegis
 									}),
 									q(62483, {	-- Steward Mail Pouch
-										["provider"] = { "i", 184577 },	-- Steward Mail Pouch
 										["sourceQuests"] = { 62970 },	-- Blueprint: Steward Mail Pouch
+										["provider"] = { "i", 184577 },	-- Steward Mail Pouch
 									}),
 									q(62996, {	-- Vial of Lichfrost
-										["provider"] = { "i", 184477 },	-- Vial of Lichfrost
 										["sourceQuests"] = { 62997 },	-- Blueprint: Vial of Lichfrost
+										["provider"] = { "i", 184477 },	-- Vial of Lichfrost
 									}),
 									q(62986, {	-- Blueprint: Vesper of Calling
 										["provider"] = { "i", 184450 },	-- Blueprint: Vesper of Calling
@@ -587,24 +587,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 							["groups"] = {
 								n(QUESTS, {
 									q(62218, {	-- A Fountain for Fae
-										["provider"] = { "n", 168430 },	-- Dactylis
 										["sourceQuests"] = { 61361 },	-- Nuuminuuru
+										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
 										["groups"] = {
 											i(181275),	-- Fountain of Rejuvenation (QI!)
 										},
 									}),
 									q(60495, {	-- A Suitable Opponent
-										["provider"] = { "n", 168485 },	-- Apolon
 										["sourceQuests"] = { 60494 },	-- Your Friend, Dactylis
+										["provider"] = { "n", 168485 },	-- Apolon
 										["coord"] = { 27.8, 41.7, ARCHONS_RISE },
 										["groups"] = {
 											i(181782),	-- Soul Mirror (QI!)
 										},
 									}),
 									q(61358, {	-- Alderyn and Myn'ir
-										["provider"] = { "n", 168430 },	-- Dactylis
 										["sourceQuests"] = { 60498 },	-- Overcoming the Trial
+										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
 										["cost"] = {
 											{ "i", SOUL_MIRROR, 1 },
@@ -615,17 +615,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										["provider"] = { "i", 182095 },	-- Ascension Calling: Kleia
 									}),
 									q(62223, {	-- Ascension Calling: Mikanikos
-										["provider"] = { "i", 182975 },	-- Ascension Calling: Mikanikos
 										["sourceQuests"] = { 58182 },	-- Dismantling the Opposition
+										["provider"] = { "i", 182975 },	-- Ascension Calling: Mikanikos
 									}),
 									q(61963, {	-- Called to the Hunt
-										["provider"] = { "n", 168430 },	-- Dactylis
 										["sourceQuests"] = { 61358 },	-- Alderyn and Myn'ir
+										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
 									}),
 									q(61362, {	-- Caretaker of Faeries
-										["provider"] = { "n", 173710 },	-- Nuuminuuru
 										["sourceQuests"] = { 62219 },	-- Fanciful Distractions
+										["provider"] = { "n", 173710 },	-- Nuuminuuru
 										["coord"] = { 51.4, 33.7, ARDENWEALD },
 										-- Rewards spell 340388 (Trial: Nuuminuuru)
 										["groups"] = {
@@ -633,17 +633,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										},
 									}),
 									q(61369, {	-- Craven Corinth
+										["description"] = "Available after defeating Kalisthene, Echthra, and Aldryn & Myn'ir on 'Courage' difficulty.",
 										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
-										["description"] = "Available after defeating Kalisthene, Echthra, and Aldryn & Myn'ir on 'Courage' difficulty.",
 										["cost"] = {
 											{ "i", SOUL_MIRROR, 1 },
 											{ "i", 181279, 1 },	-- 1xAshfallen Key
 										},
 									}),
 									q(61356, {	-- Echthra, Dame of Hatred
-										["provider"] = { "n", 168430 },	-- Dactylis
 										["sourceQuests"] = { 60498 },	-- Overcoming the Trial
+										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
 										["cost"] = {
 											{ "i", SOUL_MIRROR, 1 },
@@ -651,16 +651,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										},
 									}),
 									q(62219, {	-- Fanciful Distractions
-										["provider"] = { "n", 173710 },	-- Nuuminuuru
 										["sourceQuests"] = { 62218 },	-- A Fountain for Fae
+										["provider"] = { "n", 173710 },	-- Nuuminuuru
 										["coord"] = { 51.4, 33.7, ARDENWEALD },
 										["groups"] = {
 											i(182974),	-- Riverblossom's Flute (QI!)
 										},
 									}),
 									q(61357, {	-- Hatred Abated
-										["provider"] = { "n", 172515 },	-- Echthra
 										["sourceQuests"] = { 61490 },	-- War of Information
+										["provider"] = { "n", 172515 },	-- Echthra
 										["coord"] = { 56.7, 11.6, MALDRAXXUS },
 										-- Rewards spell 337133 "Trial: Echthra"
 										["groups"] = {
@@ -668,21 +668,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										},
 									}),
 									q(60493, {	-- Humble Gatherer
-										["provider"] = { "n", 168485 },	-- Apolon
 										["sourceQuests"] = { 60489 },	-- The Path of Ascension
+										["provider"] = { "n", 168485 },	-- Apolon
 										["coord"] = { 27.8, 41.7, ARCHONS_RISE },
 									}),
 									q(60496, {	-- Into the Coliseum
-										["provider"] = { "n", 168427 },	-- Artemede
 										["sourceQuests"] = { 60495 },	-- A Suitable Opponent
+										["provider"] = { "n", 168427 },	-- Artemede
 										["coord"] = { 28.2, 42.4, ARCHONS_RISE },
 										["groups"] = {
 											i(180481),	-- Curious Blueprint (QI!)
 										},
 									}),
 									q(61370, {	-- No Other Way
-										["provider"] = { "n", 168430 },	-- Dactylis
 										["sourceQuests"] = { 61369 },	-- Craven Corinth
+										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
 										-- Rewards spell 340105 (Trial: Craven Corinth)
 										["groups"] = {
@@ -691,49 +691,49 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										},
 									}),
 									q(61361, {	-- Nuuminuuru
+										["description"] = "Available after defeating Kalisthene, Echthra, and Aldryn & Myn'ir on 'Courage' difficulty.",
 										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
-										["description"] = "Available after defeating Kalisthene, Echthra, and Aldryn & Myn'ir on 'Courage' difficulty.",
 										["cost"] = {
 											{ "i", SOUL_MIRROR, 1 },
 											{ "i", 181275, 1 },	-- 1xFountain of Rejuvenation
 										},
 									}),
 									q(61489, {	-- Of Hearsay and Heresy
-										["provider"] = { "n", 168430 },	-- Dactylis
 										["sourceQuests"] = { 61356 },	-- Echthre, Dame of Hatred
+										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
 										["groups"] = {
 											i(181706),	-- Anointment Oil (QI!)
 										},
 									}),
 									q(60498, {	-- Overcoming the Trial
-										["provider"] = { "n", 168427 },	-- Artemede
 										["sourceQuests"] = { 61473 },	-- Sourcing Your Own Materials
+										["provider"] = { "n", 168427 },	-- Artemede
 										["coord"] = { 28.2, 42.4, ARCHONS_RISE },
 									}),
 									q(61965, {	-- Piercing the Shell
-										["provider"] = { "n", 173402 },	-- Alderyn
 										["sourceQuests"] = { 61963 },	-- Called to the Hunt
+										["provider"] = { "n", 173402 },	-- Alderyn
 										["coord"] = { 50.6, 69.9, ARDENWEALD },
 									}),
 									q(61473, {	-- Sourcing Your Own Materials
-										["provider"] = { "n", 168430 },	-- Dactylis
 										["sourceQuests"] = { 60497 },	-- Herald's Footpads
+										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
 									}),
 									q(61365, {	-- Splinterbark Nightmare
+										["description"] = "Available after defeating Kalisthene, Echthra, and Aldryn & Myn'ir on 'Courage' difficulty.",
 										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
-										["description"] = "Available after defeating Kalisthene, Echthra, and Aldryn & Myn'ir on 'Courage' difficulty.",
 										["cost"] = {
 											{ "i", SOUL_MIRROR, 1 },
 											{ "i", 181277, 1 },	-- 1xPraetor Resonance Beacon
 										},
 									}),
 									q(61366, {	-- Tactical Operation
-										["provider"] = { "n", 168430 },	-- Dactylis
 										["sourceQuests"] = { 61365 },	-- Splinterbark Nightmare
+										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
 										-- Rewards spell 340108 (Trial: Splinterbark Nightmare)
 										["groups"] = {
@@ -741,8 +741,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										},
 									}),
 									q(61360, {	-- The Hunt's Gratitude
-										["provider"] = { "n", 173403 },	-- Myn'ir
 										["sourceQuests"] = { 61965 },	-- Piercing the Shell
+										["provider"] = { "n", 173403 },	-- Myn'ir
 										["coord"] = { 51.7, 78.8, ARDENWEALD },
 										-- Rewards: spell 339523 "Trial: Alderyn and Myn'ir"
 										["groups"] = {
@@ -754,8 +754,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										["coord"] = { 42.6, 53.1, ARCHONS_RISE },
 									}),
 									q(61490, {	-- War of Information
-										["provider"] = { "n", 172515 },	-- Echthra
 										["sourceQuests"] = { 61489 },	-- Of Hearsay and Heresy
+										["provider"] = { "n", 172515 },	-- Echthra
 										["coord"] = { 56.7, 11.6, MALDRAXXUS },
 										["maps"] = {
 											ARDENWEALD,
@@ -768,8 +768,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										},
 									}),
 									q(60494, {	-- Your Friend, Dactylis
-										["provider"] = { "n", 168485 },	-- Apolon
 										["sourceQuests"] = { 60493 },	-- Humble Gatherer
+										["provider"] = { "n", 168485 },	-- Apolon
 										["coord"] = { 27.8, 41.7, ARCHONS_RISE },
 										["cost"] = {
 											{ "i", SOUL_MIRROR, 1 },
@@ -856,84 +856,84 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 							["groups"] = {
 								n(QUESTS, {
 									q(61371, {	-- Athanos
+										["description"] = "Available after defeating Kalisthene on 'Loyalty' difficulty.",
 										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
-										["description"] = "Available after defeating Kalisthene on 'Loyalty' difficulty.",
 										["cost"] = {
 											{ "i", SOUL_MIRROR, 1 },
 											{ "i", 181280, 1 },	-- 1xHumility's Guard
 										},
 									}),
 									q(61373, {	-- Azaruux, the Realm Ender
+										["description"] = "Available after defeating Athanos, Mad Mortimer, and Thran'tiok on 'Courage' difficulty.",
 										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
-										["description"] = "Available after defeating Athanos, Mad Mortimer, and Thran'tiok on 'Courage' difficulty.",
 										["groups"] = {
 											i(181795),	-- Soul Mirror (QI!)
 										},
 									}),
 									q(61372, {	-- Back to Him
-										["provider"] = { "n", 175295 },	-- Forgelite Sophone
 										["sourceQuests"] = { 61478 },	-- Humble Beginnings
+										["provider"] = { "n", 175295 },	-- Forgelite Sophone
 										["coord"] = { 51.6, 80.9, BASTION },
 										["groups"] = {
 											i(181472),	-- Soul Mirror (QI!)
 										},
 									}),
 									q(62052, {	-- Exiled by Paranoia
-										["provider"] = { "n", 168430 },	-- Dactylis
 										["sourceQuests"] = { 61367 },	-- Thran'tiok
+										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
 									}),
 									q(61436, {	-- Field Trip
-										["provider"] = { "n", 168430 },	-- Dactylis
 										["sourceQuests"] = { 61363 },	-- Mad Mortimer
+										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
 										["groups"] = {
 											i(181470),	-- Catalyst of Creation (QI!)
 										},
 									}),
 									q(61368, {	-- Filching Phylacteries
-										["provider"] = { "n", 173495 },	-- Karaxi the Defector
 										["sourceQuests"] = { 62053 },	-- Necromantic Power
+										["provider"] = { "n", 173495 },	-- Karaxi the Defector
 										["coord"] = { 59.7, 38.0, MALDRAXXUS },
 										["groups"] = {
 											i(182965),	-- Soul Mirror (QI!)
 										},
 									}),
 									q(61478, {	-- Humble Beginnings
-										["provider"] = { "n", 168430 },	-- Dactylis
 										["sourceQuests"] = { 61371 },	-- Athanos
+										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
 										["groups"] = {
 											i(181471),	-- Humility's Guard (QI!)
 										},
 									}),
 									q(61363, {	-- Mad Mortimer
+										["description"] = "Available after defeating Kalisthene on 'Loyalty' difficulty.",
 										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
-										["description"] = "Available after defeating Kalisthene on 'Loyalty' difficulty.",
 										["cost"] = {
 											{ "i", SOUL_MIRROR, 1 },
 											{ "i", 181276, 1 },	-- 1xCatalyst of Creation
 										},
 									}),
 									q(62053, {	-- Necromantic Power
-										["provider"] = { "n", 173495 },	-- Karaxi the Defector
 										["sourceQuests"] = { 62052 },	-- Exiled by Paranoia
+										["provider"] = { "n", 173495 },	-- Karaxi the Defector
 										["coord"] = { 53.8, 48.8, MALDRAXXUS },
 									}),
 									q(61364, {	-- Oozing with Opportunity
-										["provider"] = { "n", 172141 },	-- Mad Mortimer
 										["sourceQuests"] = { 61436 },	-- Field Trip
+										["provider"] = { "n", 172141 },	-- Mad Mortimer
 										["coord"] = { 59.2, 71.9, MALDRAXXUS },
 										["groups"] = {
 											i(181460),	-- Soul Mirror (QI!)
 										},
 									}),
 									q(63169, {	-- Path of Ascension: Alderyn and Myn'ir
-										["provider"] = { "n", 168485 },	-- Apolon
 										-- ["sourceQuests"] = {  },	-- TODO: ?
+										["provider"] = { "n", 168485 },	-- Apolon
 										["coord"] = { 27.8, 41.7, ARCHONS_RISE },
 										["isWeekly"] = true,
 										["groups"] = {
@@ -957,8 +957,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										},
 									}),
 									q(63171, {	-- Path of Ascension: Craven Corinth
-										["provider"] = { "n", 168485 },	-- Apolon
 										-- ["sourceQuests"] = {  },	-- TODO: ?
+										["provider"] = { "n", 168485 },	-- Apolon
 										["coord"] = { 27.8, 41.7, ARCHONS_RISE },
 										["isWeekly"] = true,
 										["groups"] = {
@@ -982,8 +982,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										},
 									}),
 									q(62951, {	-- Path of Ascension: Kleia
-										["provider"] = { "n", 168485 },	-- Apolon
 										-- ["sourceQuests"] = {  },	-- TODO: ?
+										["provider"] = { "n", 168485 },	-- Apolon
 										["coord"] = { 27.8, 41.7, ARCHONS_RISE },
 										["isWeekly"] = true,
 										["groups"] = {
@@ -1015,8 +1015,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										},
 									}),
 									q(62952, {	-- Path of Ascension: Pelagos
-										["provider"] = { "n", 168485 },	-- Apolon
 										-- ["sourceQuests"] = {  },	-- TODO: ?
+										["provider"] = { "n", 168485 },	-- Apolon
 										["coord"] = { 27.8, 41.7, ARCHONS_RISE },
 										["isWeekly"] = true,
 										["groups"] = {
@@ -1040,9 +1040,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										},
 									}),
 									q(61367, {	-- Thran'tiok
+										["description"] = "Available after defeating Kalisthene on 'Loyalty' difficulty.",
 										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
-										["description"] = "Available after defeating Kalisthene on 'Loyalty' difficulty.",
 										["cost"] = {
 											{ "i", SOUL_MIRROR, 1 },
 											{ "i", 181278, 1 },	-- 1xSoulseeker Crystal

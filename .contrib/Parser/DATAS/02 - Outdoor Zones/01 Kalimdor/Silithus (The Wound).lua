@@ -87,37 +87,37 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 					n(PROFESSIONS, {
 						-- Void Focus quests
 						q(57275, {	-- Something in Your Mind
-							["provider"] = { "i", 171320 },	-- Void Focus
 							["description"] = "Can be made with any crafting profession.",
+							["provider"] = { "i", 171320 },	-- Void Focus
 						}),
 						q(57464, {	-- Maintaining Focus (A)
-							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuest"] = 57275,	-- Something in Your Mind
+							["provider"] = { "n", 155496 },	-- Wrathion
 							["coord"] = { 46.1, 63.9, REPAIRED_CHAMBER_OF_HEART },
 							["cost"] = { { "i", 171176, 20 }, },	-- 20x Shred of Insanity
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(57276, {	-- Maintaining Focus (H)
-							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuest"] = 57275,	-- Something in Your Mind
+							["provider"] = { "n", 155496 },	-- Wrathion
 							["coord"] = { 46.1, 63.9, REPAIRED_CHAMBER_OF_HEART },
 							["cost"] = { { "i", 171176, 20 }, },	-- 20x Shred of Insanity
 							["races"] = HORDE_ONLY,
 						}),
 						q(57462, {	-- Dream Catcher
-							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuests"] = { 57276, 57464 },	-- Maintaining Focus (A, H)
+							["provider"] = { "n", 155496 },	-- Wrathion
 							["coord"] = { 46.1, 63.9, REPAIRED_CHAMBER_OF_HEART },
 							["cost"] = { { "i", 171176, 200 }, },	-- 200x Shred of Insanity
 						}),
 					}),
 					n(QUESTS, {
 						q(56401, {	-- A Bolt from the Blue
-							["provider"] = { "n", 152365 },	-- Kalecgos
 							["sourceQuests"] = {
 								56263,	-- Unlocking the Power (A)
 								56260,	-- Unlocking the Power (H)
 							},
+							["provider"] = { "n", 152365 },	-- Kalecgos
 							["coord"] = { 53.1, 70.9, REPAIRED_CHAMBER_OF_HEART },
 							["groups"] = {
 								i(169292),	-- Charged Scale of the Blue Aspect (QI!)
@@ -125,29 +125,29 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							},
 						}),
 						q(54938, {	-- A Brother's Help
+							["description"] = "Once you complete 'The Chamber of Heart' in Silithus, you can pick this quest up from Magni, or it will be automatically offered when you return to your capital city.",
+							["sourceQuest"] = 53406,	-- The Chamber of Heart
 							["qgs"] = {
 								130216,	-- Magni Bronzebeard
 								-- #if AFTER 8.2.0
 								152206,	-- Magni Bronzebeard
 								-- #endif
 							},
-							["sourceQuest"] = 53406,	-- The Chamber of Heart
 							["coords"] = {
 								{ 42.1, 44.3, SILITHUS },
 								{ 50.5, 59.9, REPAIRED_CHAMBER_OF_HEART },
 							},
-							["description"] = "Once you complete 'The Chamber of Heart' in Silithus, you can pick this quest up from Magni, or it will be automatically offered when you return to your capital city.",
 							["timeline"] = { ADDED_8_1_5 },
 							-- This was removed during BfA in 8.2 but is now appearing again for characters leveling up during Shadowlands
 						}),
 						q(55374, {	-- A Disturbance Beneath the Earth
-							["provider"] = { "n", 152194 },	-- MOTHER
 							["sourceQuest"] = 55533,	-- MOTHER Knows Best
+							["provider"] = { "n", 152194 },	-- MOTHER
 							["coord"] = { 48.1, 72.2, REPAIRED_CHAMBER_OF_HEART },
 						}),
 						q(52946, {	-- A Dying World (A)
-							["qg"] = 142930,	-- Halford Wyrmbane
 							["sourceQuest"] = 51795,	-- The Battle for Lordaeron
+							["qg"] = 142930,	-- Halford Wyrmbane
 							["coord"] = { 27.7, 21.5, STORMWIND_CITY },
 							["timeline"] = { ADDED_8_0_1, REMOVED_9_0_1 },
 							["races"] = ALLIANCE_ONLY,
@@ -168,66 +168,67 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							--	used to be able to be picked up in Orgrimmar from Nathanos, but that doesn't seem to be the case anymore.  Nathanos is still in Org, but the only quest he offered to me at 50 was "Battle for Azeroth: Mission Statement," which i think originally took place after players had picked up the HoA - after completing "Mission Statement" i went back and Nathanos was no longer in that location in Orgrimmar
 						}),
 						q(55519, {	-- A Fresh Trauma
-							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
+							["description"] = "Your Heart of Azeroth needs to be 55 to start the questline.",
 							["sourceQuests"] = {
 								56261,	-- Return to the Heart (A)
 								55522,	-- Return to the Heart (H)
 							},
+							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
 							["coord"] = { 50.0, 59.2, REPAIRED_CHAMBER_OF_HEART },
-							["description"] = "Your Heart of Azeroth needs to be 55 to start the questline.",
 						}),
 						q(55497, {	-- A Friendly Face
-							["provider"] = { "n", 152385 },	-- Highmountain Shaman (Ebonhorn)
 							["sourceQuest"] = 55425,	-- Dominating the Indomitable
+							["provider"] = { "n", 152385 },	-- Highmountain Shaman (Ebonhorn)
 							["coord"] = { 18.9, 58.0, 1472 },	-- The Dragon's Spine
 						}),
 						q(56374, {	-- A Titanic Problem
-							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
 							["sourceQuest"] = 58506,	-- Network Diagnostics
+							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
 							["coord"] = { 50.1, 59.1, REPAIRED_CHAMBER_OF_HEART },
 						}),
 						q(57524, {	-- Accessing the Archives
-							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuest"] = 57374,	-- Into the Darkest Depths
+							["provider"] = { "n", 155496 },	-- Wrathion
 							["coord"] = { 46.1, 64.0, REPAIRED_CHAMBER_OF_HEART },
 						}),
 						q(55732, {	-- An Old Scar
-							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
+							["description"] = "Your Heart of Azeroth needs to be 65 to start the questline.",
 							["sourceQuests"] = {
 								56262,	-- Back to the Chamber (A)
 								55739,	-- Back to the Chamber (H)
 								55521,	-- Do It the Azerite Way
 							},
+							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
 							["coord"] = { 50.0, 59.2, REPAIRED_CHAMBER_OF_HEART },
-							["description"] = "Your Heart of Azeroth needs to be 65 to start the questline.",
 							["maps"] = { 1474 },	-- Maelstrom (Scenario)
 						}),
 						q(55737, {	-- At the Azerite Time
-							["provider"] = { "n", 152815 },	-- Magni Bronzebeard
 							["sourceQuest"] = 55735,	--	Defending the Maelstrom
+							["provider"] = { "n", 152815 },	-- Magni Bronzebeard
 							["coord"] = { 33.7, 54.6, 1474 },	-- Maelstrom (Scenario)
 						}),
 						q(56162, {	-- Back Out to Sea (A)
-							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
 							["sourceQuest"] = 57010,	-- Harnessing the Power
+							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
 							["coord"] = { 50.0, 59.1, REPAIRED_CHAMBER_OF_HEART },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(56161, {	-- Back Out to Sea (H)
-							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
 							["sourceQuest"] = 57010,	-- Harnessing the Power
+							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
 							["coord"] = { 50.0, 59.1, REPAIRED_CHAMBER_OF_HEART },
 							["races"] = HORDE_ONLY,
 						}),
 						q(56262, {	-- Back to the Chamber (A)
+							["description"] = "Your Heart of Azeroth needs to be 65 to start the questline.",
 							["provider"] = { "n", 154464 },	-- Earthen Guardian
 							["coord"] = { 74.8, 15.2, BORALUS },
-							["description"] = "Your Heart of Azeroth needs to be 65 to start the questline.",
 							["races"] = ALLIANCE_ONLY,
 							["isBreadcrumb"] = true,
 							["DisablePartySync"] = true,
 						}),
 						q(55739, {	-- Back to the Chamber (H)
+							["description"] = "Your Heart of Azeroth needs to be 65 to start the questline.",
 							["provider"] = { "n", 154465 },	-- Earthen Guardian
 							["coords"] = {
 								-- #if BEFORE SL
@@ -236,19 +237,18 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 								{ 50.4, 41.7, DAZARALOR },
 								-- #endif
 							},
-							["description"] = "Your Heart of Azeroth needs to be 65 to start the questline.",
 							["races"] = HORDE_ONLY,
 							["isBreadcrumb"] = true,
 							["DisablePartySync"] = true,
 						}),
 						q(55397, {	-- Before I Wake
-							["provider"] = { "n", 151825 },	-- Merithra of the Dream
 							["sourceQuest"] = 55465,	-- We Must Go Deeper
+							["provider"] = { "n", 151825 },	-- Merithra of the Dream
 							["coord"] = { 46.5, 39.7, 1475 },	-- The Emerald Dream
 						}),
 						q(57290, {	-- Beginning the Descent
-							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuest"] = 57222,	-- Investigating the Halls
+							["provider"] = { "n", 155496 },	-- Wrathion
 							["coord"] = { 46.1, 64.0, REPAIRED_CHAMBER_OF_HEART },
 							["cost"] = { { "i", 171219, 1 } },	-- Corrupt Black Dragonscales
 							["groups"] = {
@@ -260,8 +260,8 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							},
 						}),
 						q(56187, {	-- Black Winged Shadow
-							["provider"] = { "n", 154500 },	-- Left
 							["sourceQuest"] = 56186,	-- Spies to the Left and Right
+							["provider"] = { "n", 154500 },	-- Left
 							["coord"] = { 54.5, 72.5, THE_VEILED_STAIR },
 							["timeline"] = {
 								ADDED_8_2_5,
@@ -274,28 +274,28 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							},
 						}),
 						q(55407, {	-- Calming the Spine
-							["provider"] = { "n", 151695 },	-- Spiritwalker Ebonhorn
 							["sourceQuest"] = 55400,	-- Take My Hand
+							["provider"] = { "n", 151695 },	-- Spiritwalker Ebonhorn
 							["coord"] = { 27.0, 45.9, 1472 },	-- The Dragon's Spine
 						}),
 						q(58991, {	-- Curious Corruption
-							["altQuests"] = { 59000 },	-- Elements of Corruption
 							["description"] = "Automatically granted when you get your first corrupted item.",
+							["altQuests"] = { 59000 },	-- Elements of Corruption
 							["timeline"] = { REMOVED_9_1_0 },
 						}),
 						q(57362, {	-- Deeper Into the Darkness
-							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuest"] = 57290,	-- Beginning the Descent
+							["provider"] = { "n", 155496 },	-- Wrathion
 							["coord"] = { 46.1, 64.0, REPAIRED_CHAMBER_OF_HEART },
 						}),
 						q(55735, {	-- Defending the Maelstrom
-							["provider"] = { "n", 152815 },	-- Magni Bronzebeard
 							["sourceQuest"] = 55732,	-- An Old Scar
+							["provider"] = { "n", 152815 },	-- Magni Bronzebeard
 							["coord"] = { 33.7, 54.6, 1474 },	-- Maelstrom (Scenario)
 						}),
 						q(57373, {	-- Descending Into Madness
-							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuest"] = 57362,	-- Deeper Into the Darkness
+							["provider"] = { "n", 155496 },	-- Wrathion
 							["coord"] = { 46.1, 64.0, REPAIRED_CHAMBER_OF_HEART },
 							["groups"] = {
 								-- Plate
@@ -311,8 +311,8 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							},
 						}),
 						q(55521, {	-- Do It the Azerite Way
-							["provider"] = { "n", 152095 },	-- Magni Bronzebeard
 							["sourceQuest"] = 55520,	-- Healing Nordrassil
+							["provider"] = { "n", 152095 },	-- Magni Bronzebeard
 							["coord"] = { 62.0, 24.9, MOUNT_HYJAL },
 							["groups"] = {
 								n(152095, {	-- Magni Bronzebeard
@@ -321,51 +321,51 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							},
 						}),
 						q(55425, {	-- Dominating the Indomitable
-							["provider"] = { "n", 152385 },	-- Spiritwalker Ebonhorn
 							["sourceQuest"] = 55407,	-- Calming the Spine
+							["provider"] = { "n", 152385 },	-- Spiritwalker Ebonhorn
 							["coord"] = { 17.5, 62.1, 1472 },	-- The Dragon's Spine
 							["groups"] = {
 								i(167830),	-- Petrified Ebony Scale (QI!)
 							},
 						}),
 						q(55395, {	-- Don't Close Your Eyes
-							["provider"] = { "n", 151704 },	-- Valithria Dreamwalker
 							["sourceQuest"] = 55392,	-- Enter the Dreamway
+							["provider"] = { "n", 151704 },	-- Valithria Dreamwalker
 							["coord"] = { 27.1, 55.9, 1471 },	-- Emerald Dreamway
 						}),
 						q(59000, {	-- Elements of Corruption
-							["provider"] = { "n", 155496 },    -- Wrathion
-							["altQuests"] = { 58991 },	-- Curious Corruption
 							["sourceQuests"] = { 56377 },    -- Forging Onward
+							["altQuests"] = { 58991 },	-- Curious Corruption
+							["provider"] = { "n", 155496 },    -- Wrathion
 							["coord"] = { 46.6, 64.6, REPAIRED_CHAMBER_OF_HEART },
 						}),
 						q(55392, {	-- Enter the Dreamway
-							["provider"] = { "n", 151682 },	-- Merithra of the Dream
 							["sourceQuest"] = 55390,	-- In Darkness, I Dream
+							["provider"] = { "n", 151682 },	-- Merithra of the Dream
 							["coord"] = { 51.6, 57.2, VALSHARAH },
 							["maps"] = { 1471 },	-- Emerald Dreamway
 						}),
 						q(57010, {	-- Harnessing the Power
-							["provider"] = { "n", 152194 },	-- MOTHER
 							["sourceQuest"] = 55618,	-- The Heart Forge
+							["provider"] = { "n", 152194 },	-- MOTHER
 							["coord"] = { 48.0, 72.2, REPAIRED_CHAMBER_OF_HEART },
 							["groups"] = {
 								i(168611),	-- Petrified Ebony Scale [Rank 1] (QI!)
 							},
 						}),
 						q(55520, {	-- Healing Nordrassil
-							["provider"] = { "n", 152095 },	-- Magni Bronzebeard
 							["sourceQuest"] = 55519,	-- A Fresh Trauma
+							["provider"] = { "n", 152095 },	-- Magni Bronzebeard
 							["coord"] = { 62.0, 24.9, MOUNT_HYJAL },
 						}),
 						q(55390, {	-- In Darkness, I Dream
+							["description"] = "Your Heart of Azeroth needs to be 54 to start the questline.",
 							["provider"] = { "n", 152365 },	-- Kalecgos
 							["coord"] = { 52.5, 69.9, REPAIRED_CHAMBER_OF_HEART },
-							["description"] = "Your Heart of Azeroth needs to be 54 to start the questline.",
 						}),
 						q(55657, {	-- In the Shadow of Crimson Wings
-							["provider"] = { "n", 152720 },	-- Kalecgos
 							["sourceQuest"] = 56167,	-- Investigating the Highlands
+							["provider"] = { "n", 152720 },	-- Kalecgos
 							["coord"] = { 36.0, 50.5, TWILIGHT_HIGHLANDS },
 							["maps"] = {
 								1476,	-- Twilight Highlands (Szenario)
@@ -376,11 +376,11 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							},
 						}),
 						q(52428, {	-- Infusing the Heart
+							["sourceQuest"] = 51211,	-- The Heart of Azeroth
 							["qgs"] = {
 								130216,	-- Magni Bronzebeard
 								136907,	-- Magni Bronzebeard
 							},
-							["sourceQuest"] = 51211,	-- The Heart of Azeroth
 							["coords"] = {
 								{ 42.2, 44.3, SILITHUS },
 								{ 50.3, 54.4, CHAMBER_OF_HEART },
@@ -414,27 +414,27 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							},
 						}),
 						q(58631, {	-- Into Dreams
-							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
 							["sourceQuest"] = 58615,	-- Whispers in the Dark
+							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
 							["coord"] = { 50.1, 59.1, REPAIRED_CHAMBER_OF_HEART },
 						}),
 						q(57374, {	-- Into the Darkest Depths
-							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuest"] = 58634,	-- Opening the Gateway
+							["provider"] = { "n", 155496 },	-- Wrathion
 							["coord"] = { 46.1, 64.0, REPAIRED_CHAMBER_OF_HEART },
 							["groups"] = {
 								currency(1719),	-- Corrupted Memento
 							},
 						}),
 						q(56167, {	-- Investigating the Highlands
-							["provider"] = { "n", 152365 },	-- Kalecgos
-							["sourceQuest"] = 55398,	-- The Long Awake
-							["coord"] = { 53.1, 70.9, REPAIRED_CHAMBER_OF_HEART },
 							["description"] = "Your Heart of Azeroth needs to be 60 to start the questline.",
+							["sourceQuest"] = 55398,	-- The Long Awake
+							["provider"] = { "n", 152365 },	-- Kalecgos
+							["coord"] = { 53.1, 70.9, REPAIRED_CHAMBER_OF_HEART },
 						}),
 						q(56536, {	-- It's Never Easy
-							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
 							["sourceQuest"] = 56377,	-- Forging Onward
+							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
 							["coord"] = { 50.1, 59.1, REPAIRED_CHAMBER_OF_HEART },
 						}),
 						q(58876,	-- Lost Flight
@@ -445,37 +445,37 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							},
 						})),
 						q(58737, {	-- Magni's Findings
-							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
 							["sourceQuest"] = 56542,	-- Restored Hope
+							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
 							["coord"] = { 50.1, 59.1, REPAIRED_CHAMBER_OF_HEART },
 						}),
 						q(55533, {	-- MOTHER Knows Best
-							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
 							--["sourceQuest"] = 55851,	-- Essential Empowerment -- available without this, and it isn't a breadcrumb. Possibly tied to "A Way Home" in nazjatar?
+							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
 							["coord"] = { 50.1, 59.1, REPAIRED_CHAMBER_OF_HEART },
 						}),
 						q(58506, {	-- Network Diagnostics
-							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
 							["sourceQuests"] = {
 								58502,	-- Where the Heart Is (A)
 								58583,	-- Where the Heart Is (H)
 							},
+							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
 							["coord"] = { 50.1, 59.1, REPAIRED_CHAMBER_OF_HEART },
 							["timeline"] = { ADDED_8_3_0 },
 						}),
 						q(55393, {	-- Null the Void
-							["provider"] = { "n", 151693 },	-- Merithra of the Dream
 							["sourceQuest"] = 55392,	-- Enter the Dreamway
+							["provider"] = { "n", 151693 },	-- Merithra of the Dream
 							["coord"] = { 44.1, 30.7, 1471 },	-- Emerald Dreamway
 						}),
 						q(58632, {	-- Ny'alotha, the Waking City: The Corruptor's End
-							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
 							["sourceQuest"] = 58631,	-- Into Dreams
+							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
 							["coord"] = { 50.1, 59.1, REPAIRED_CHAMBER_OF_HEART },
 						}),
 						q(56189, {	-- On the Trail of the Black Prince
-							["provider"] = { "n", 154870 },	-- Slain Blacktalon Lookout
 							["sourceQuest"] = 56188,	-- To the Catacombs!
+							["provider"] = { "n", 154870 },	-- Slain Blacktalon Lookout
 							["coord"] = { 47.0, 69.2, DEADWIND_PASS },
 							["timeline"] = {
 								ADDED_8_2_5,
@@ -490,13 +490,13 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							},
 						}),
 						q(58634, {	-- Opening the Gateway
-							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuest"] = 57373,	-- Descending Into Madness
+							["provider"] = { "n", 155496 },	-- Wrathion
 							["coord"] = { 46.1, 64.0, REPAIRED_CHAMBER_OF_HEART },
 						}),
 						q(57220, {	-- Power Protocol Initiation
-							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
 							["sourceQuest"] = 58737,	-- Magni's Findings
+							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
 							["coord"] = { 50.1, 59.1, REPAIRED_CHAMBER_OF_HEART },
 							["groups"] = {
 								o(341445, {	-- Chamber of Heart Relay
@@ -511,13 +511,13 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							},
 						}),
 						q(57221, {	-- Re-Origination
-							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
 							["sourceQuest"] = 57220,	-- Power Protocol Initiation
+							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
 							["coord"] = { 50.1, 59.1, REPAIRED_CHAMBER_OF_HEART },
 						}),
 						q(57394, {	-- Reconstructing "Fear and Flesh" (Rank 7)
-							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuest"] = 57393,	-- Stepping Through the Darkness
+							["provider"] = { "n", 155496 },	-- Wrathion
 							["coord"] = { 46.1, 64.0, REPAIRED_CHAMBER_OF_HEART },
 							["cost"] = { { "i", 174783, 2 } },	-- Torn Page of "Fear and Flesh"
 							["groups"] = {
@@ -525,8 +525,8 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							},
 						}),
 						q(57395, {	-- Reconstructing "Fear and Flesh" (Rank 8)
-							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuest"] = 57394,	-- Reconstructing "Fear and Flesh"
+							["provider"] = { "n", 155496 },	-- Wrathion
 							["coord"] = { 46.1, 64.0, REPAIRED_CHAMBER_OF_HEART },
 							["cost"] = { { "i", 174783, 2 } },	-- Torn Page of "Fear and Flesh"
 							["groups"] = {
@@ -534,8 +534,8 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							},
 						}),
 						q(57396, {	-- Reconstructing "Fear and Flesh" (Rank 9)
-							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuest"] = 57395,	-- Reconstructing "Fear and Flesh"
+							["provider"] = { "n", 155496 },	-- Wrathion
 							["coord"] = { 46.1, 64.0, REPAIRED_CHAMBER_OF_HEART },
 							["cost"] = { { "i", 174783, 4 } },	-- Torn Page of "Fear and Flesh"
 							["groups"] = {
@@ -543,8 +543,8 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							},
 						}),
 						q(57403, {	-- Reconstructing "Fear and Flesh" (Rank 10)
-							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuest"] = 57396,	-- Reconstructing "Fear and Flesh"
+							["provider"] = { "n", 155496 },	-- Wrathion
 							["coord"] = { 46.1, 64.0, REPAIRED_CHAMBER_OF_HEART },
 							["cost"] = { { "i", 174783, 4 } },	-- Torn Page of "Fear and Flesh"
 							["groups"] = {
@@ -552,8 +552,8 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							},
 						}),
 						q(57397, {	-- Reconstructing "Fear and Flesh" (Rank 11)
-							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuest"] = 57403,	-- Reconstructing "Fear and Flesh"
+							["provider"] = { "n", 155496 },	-- Wrathion
 							["coord"] = { 46.1, 64.0, REPAIRED_CHAMBER_OF_HEART },
 							["cost"] = { { "i", 174783, 4 } },	-- Torn Page of "Fear and Flesh"
 							["groups"] = {
@@ -561,8 +561,8 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							},
 						}),
 						q(57391, {	-- Reconstructing "The Curse of Stone" (Rank 3)
-							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuest"] = 57378,	-- Remnants of a Shattered World
+							["provider"] = { "n", 155496 },	-- Wrathion
 							["coord"] = { 46.1, 64.0, REPAIRED_CHAMBER_OF_HEART },
 							["cost"] = { { "i", 171353, 1 } },	-- Torn Page of "The Curse of Stone"
 							["groups"] = {
@@ -570,8 +570,8 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							},
 						}),
 						q(57392, {	-- Reconstructing "The Curse of Stone" (Rank 4)
-							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuest"] = 57391,	-- Reconstructing "The Curse of Stone"
+							["provider"] = { "n", 155496 },	-- Wrathion
 							["coord"] = { 46.1, 64.0, REPAIRED_CHAMBER_OF_HEART },
 							["cost"] = { { "i", 171353, 1 } },	-- Torn Page of "The Curse of Stone"
 							["groups"] = {
@@ -579,8 +579,8 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							},
 						}),
 						q(57402, {	-- Reconstructing "The Curse of Stone" (Rank 5)
-							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuest"] = 57392,	-- Reconstructing "The Curse of Stone"
+							["provider"] = { "n", 155496 },	-- Wrathion
 							["coord"] = { 46.1, 64.0, REPAIRED_CHAMBER_OF_HEART },
 							["cost"] = { { "i", 171353, 1 } },	-- Torn Page of "The Curse of Stone"
 							["groups"] = {
@@ -588,8 +588,8 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							},
 						}),
 						q(57399, {	-- Reconstructing "The Final Truth" (Rank 13)
-							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuest"] = 57398,	-- Walking in the Darkness
+							["provider"] = { "n", 155496 },	-- Wrathion
 							["coord"] = { 46.1, 64.0, REPAIRED_CHAMBER_OF_HEART },
 							["cost"] = { { "i", 174785, 2 } },	-- Torn Page of "The Final Truth"
 							["groups"] = {
@@ -597,8 +597,8 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							},
 						}),
 						q(57400, {	-- Reconstructing "The Final Truth" (Rank 14)
-							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuest"] = 57399,	-- Reconstructing "The Final Truth" (Rank 13)
+							["provider"] = { "n", 155496 },	-- Wrathion
 							["coord"] = { 46.1, 64.0, REPAIRED_CHAMBER_OF_HEART },
 							["cost"] = { { "i", 174785, 2 } },	-- Torn Page of "The Final Truth"
 							["groups"] = {
@@ -606,8 +606,8 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							},
 						}),
 						q(57401, {	-- Reconstructing "The Final Truth" (Rank 15)
-							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuest"] = 57400,	-- Reconstructing "The Final Truth"  (Rank 14)
+							["provider"] = { "n", 155496 },	-- Wrathion
 							["coord"] = { 46.1, 64.0, REPAIRED_CHAMBER_OF_HEART },
 							["cost"] = { { "i", 174785, 2 } },	-- Torn Page of "The Final Truth"
 							["groups"] = {
@@ -615,8 +615,8 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							},
 						}),
 						q(57378, {	-- Remnants of a Shattered World (Rank 2)
-							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuest"] = 57374,	-- Into the Darkest Depths
+							["provider"] = { "n", 155496 },	-- Wrathion
 							["coord"] = { 46.1, 64.0, REPAIRED_CHAMBER_OF_HEART },
 							["cost"] = { { "i", 174777, 1 } },	-- The Curse of Stone
 							["groups"] = {
@@ -624,17 +624,18 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							},
 						}),
 						q(56261, {	-- Return to the Heart (A)
-							["provider"] = { "n", 154464 },	-- Earthen Guardian <Messenger of the Speaker>
-							["sourceQuest"] = 57010,	-- Harnessing the Power
-							["coord"] = { 74.8, 15.2, BORALUS },
 							["description"] = "Your Heart of Azeroth needs to be 55 to start the questline.",
+							["sourceQuest"] = 57010,	-- Harnessing the Power
+							["provider"] = { "n", 154464 },	-- Earthen Guardian <Messenger of the Speaker>
+							["coord"] = { 74.8, 15.2, BORALUS },
 							["races"] = ALLIANCE_ONLY,
 							["isBreadcrumb"] = true,
 							["DisablePartySync"] = true,
 						}),
 						q(55522, {	-- Return to the Heart (H)
-							["provider"] = { "n", 154465 },	-- Earthen Guardian <Messenger of the Speaker>
+							["description"] = "Your Heart of Azeroth needs to be 55 to start the questline.",
 							["sourceQuest"] = 57010,	-- Harnessing the Power
+							["provider"] = { "n", 154465 },	-- Earthen Guardian <Messenger of the Speaker>
 							["coords"] = {
 								-- #if BEFORE SL
 								{ 51.0, 88.8, DAZARALOR },
@@ -642,14 +643,13 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 								{ 50.4, 41.7, DAZARALOR },
 								-- #endif
 							},
-							["description"] = "Your Heart of Azeroth needs to be 55 to start the questline.",
 							["races"] = HORDE_ONLY,
 							["isBreadcrumb"] = true,
 							["DisablePartySync"] = true,
 						}),
 						q(56190, {	-- Save Ebonhorn
-							["provider"] = { "n", 155191 },	-- Potion of Mental Clarity
 							["sourceQuest"] = 56189,	-- On the Trail of the Black Prince
+							["provider"] = { "n", 155191 },	-- Potion of Mental Clarity
 							["coord"] = { 69.4, 16.6, 46 },	-- Karazhan Catacombs
 							["timeline"] = {
 								ADDED_8_2_5,
@@ -661,19 +661,19 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							},
 						}),
 						q(55394, {	-- Shards of Emerald
-							["provider"] = { "n", 151693 },	-- Merithra of the Dream
 							["sourceQuest"] = 55392,	-- Enter the Dreamway
+							["provider"] = { "n", 151693 },	-- Merithra of the Dream
 							["coord"] = { 44.1, 30.7, 1471 },	-- Emerald Dreamway
 							["groups"] = {
 								i(167802),	-- Emerald Shard (QI!)
 							},
 						}),
 						q(56186, {	-- Spies to the Left and Right
-							["provider"] = { "n", 152365 },	-- Kalecgos
 							["sourceQuests"] = {
 								56185,	-- Whispers of N'zoth (A)
 								56267,	-- Whispers of N'zoth (H)
 							},
+							["provider"] = { "n", 152365 },	-- Kalecgos
 							["coord"] = { 52.4, 68.9, REPAIRED_CHAMBER_OF_HEART },
 							["timeline"] = {
 								ADDED_8_2_5,
@@ -685,8 +685,8 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							},
 						}),
 						q(57393, {	-- Stepping Through the Darkness (Rank 6)
-							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuest"] = 57402,	-- Reconstructing "The Curse of Stone"
+							["provider"] = { "n", 155496 },	-- Wrathion
 							["coord"] = { 46.1, 64.0, REPAIRED_CHAMBER_OF_HEART },
 							["cost"] = { { "i", 174782, 1 } },	-- Fear and Flesh
 							["groups"] = {
@@ -697,32 +697,32 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							},
 						}),
 						q(55400, {	-- Take My Hand
-							["provider"] = { "n", 151641 },	-- Spiritwalker Ebonhorn
 							["sourceQuest"] = 55374,	-- A Disurbance Beneath the Earth
+							["provider"] = { "n", 151641 },	-- Spiritwalker Ebonhorn
 							["coord"] = { 49.4, 68.3, HIGHMOUNTAIN },
 						}),
 						q(53406, {	-- The Chamber of Heart (third HoA upgrade)
-							["qg"] = 130216,	-- Magni Bronzebeard
-							["sourceQuest"] = 53405,	-- Unlocking the Heart's Potential
-							["coord"] = { 42.1, 44.3, SILITHUS },
 							["description"] = "This quest awards +15 item levels for your Heart of Azeroth.  You can pick it up once one of your characters reaches Revered with Champions of Azeroth.",
+							["sourceQuest"] = 53405,	-- Unlocking the Heart's Potential
+							["qg"] = 130216,	-- Magni Bronzebeard
+							["coord"] = { 42.1, 44.3, SILITHUS },
 							["timeline"] = { ADDED_8_0_1, REMOVED_8_2_0 },
 							["lvl"] = 120,
 						}),
 						q(55618, {	-- The Heart Forge
-							["provider"] = { "n", 152194 },	-- MOTHER
 							["sourceQuest"] = 55497,	-- A Friendly Face
+							["provider"] = { "n", 152194 },	-- MOTHER
 							["coord"] = { 48.1, 72.4, REPAIRED_CHAMBER_OF_HEART },
 							["groups"] = {
 								i(168611),	-- Petrified Ebony Scale
 							},
 						}),
 						q(51211, {	-- The Heart of Azeroth
-							["qg"] = 130216,	-- Magni Bronzebeard
 							["sourceQuests"] = {
 								52946,	-- A Dying World (A)
 								53028,	-- A Dying World (A/H)
 							},
+							["qg"] = 130216,	-- Magni Bronzebeard
 							["coord"] = { 42.2, 44.2, SILITHUS },
 							["timeline"] = { ADDED_8_0_1 },
 							["groups"] = {
@@ -733,33 +733,33 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							},
 						}),
 						q(50973, {	-- The Heart's Power (first HoA upgrade)
+							["description"] = "This quest awards +15 item levels for your Heart of Azeroth.  You can pick it up once one of your characters reaches Friendly with Champions of Azeroth.",
 							["qg"] = 130216,	-- Magni Bronzebeard
 							["coord"] = { 42.1, 44.3, SILITHUS },
-							["description"] = "This quest awards +15 item levels for your Heart of Azeroth.  You can pick it up once one of your characters reaches Friendly with Champions of Azeroth.",
 							["timeline"] = { ADDED_8_0_1, REMOVED_8_2_0 },
 							["lvl"] = 120,
 						}),
 						q(55398, {	-- The Long Awake
-							["provider"] = { "n", 151887 },	-- Merithra of the Dream
 							["sourceQuest"] = 55396,	-- The Stuff Dreams Are Made Of
+							["provider"] = { "n", 151887 },	-- Merithra of the Dream
 							["coord"] = { 46.5, 39.7, 1475 },	-- The Emerald Dream
 						}),
 						q(56537, {	-- The Mysterious Sigil
-							["provider"] = { "n", 155336 },	-- Mogu Warrior
 							["sourceQuest"] = 56536,	-- It's Never Easy
+							["provider"] = { "n", 155336 },	-- Mogu Warrior
 							["coord"] = { 59.6, 39.1, KUN_LAI_SUMMIT },
 						}),
 						q(51403, {	-- The Speaker's Imperative (A)
-							["provider"] = { "n", 136907 },	-- Magni Bronzebeard
 							["sourceQuest"] = 52428,	-- Infusing the Heart
+							["provider"] = { "n", 136907 },	-- Magni Bronzebeard
 							["coord"] = { 50.1, 53.6, CHAMBER_OF_HEART },
 							["timeline"] = { ADDED_8_0_1, REMOVED_10_1_5 },
 							["races"] = ALLIANCE_ONLY,
 							-- TODO: likely this is technically a breadcrumb as well, if someone tests heading to Stormwind after receiving their neck and not picking this up...
 						}),
 						q(53031, {	-- The Speaker's Imperative (H)
-							["provider"] = { "n", 136907 },	-- Magni Bronzebeard
 							["sourceQuest"] = 52428,	-- Infusing the Heart
+							["provider"] = { "n", 136907 },	-- Magni Bronzebeard
 							["coord"] = { 50.1, 53.6, CHAMBER_OF_HEART },
 							["timeline"] = { ADDED_8_0_1, REMOVED_10_1_5 },
 							["races"] = HORDE_ONLY,
@@ -767,8 +767,8 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							-- was unable to enter the chamber to acquire this quest once i left the chamber of heart after receiving my neck
 						}),
 						q(55396, {	-- The Stuff Dreams Are Made Of
-							["provider"] = { "n", 151825 },	-- Merithra of the Dream
 							["sourceQuest"] = 55397,	-- Before I Wake
+							["provider"] = { "n", 151825 },	-- Merithra of the Dream
 							["coord"] = { 46.5, 39.7, 1475 },	-- The Emerald Dream
 							["groups"] = {
 								i(167831),	-- Emerald Shards (QI!)
@@ -777,28 +777,28 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							},
 						}),
 						q(61872, {	-- To Current Matters (A)
-							["provider"] = { "n", 136907 },	-- Magni Bronzebeard
-							["sourceQuests"] = { 54964 },	-- A One-Way Ticket to the Heart
-							["coord"] = { 50.1, 53.6, CHAMBER_OF_HEART },
 							["description"] = "This quest becomes available after completing 'A One-Way Ticket to the Heart' and unlocking the three outposts through the War Campaign, and becomes unavailable after setting foot in Nazjatar.",
+							["sourceQuests"] = { 54964 },	-- A One-Way Ticket to the Heart
+							["provider"] = { "n", 136907 },	-- Magni Bronzebeard
+							["coord"] = { 50.1, 53.6, CHAMBER_OF_HEART },
 							["timeline"] = { ADDED_9_0_2_LAUNCH },
 							["lockCriteria"] = { 1, "questID", 56043 },	-- Send the Fleet
 							["isBreadcrumb"] = true,
 							["DisablePartySync"] = true,
 						}),
 						q(61871, {	-- To Current Matters (H)
-							["provider"] = { "n", 136907 },	-- Magni Bronzebeard
-							["sourceQuests"] = { 54964 },	-- A One-Way Ticket to the Heart
-							["coord"] = { 50.1, 53.6, CHAMBER_OF_HEART },
 							["description"] = "This quest becomes available after completing 'A One-Way Ticket to the Heart' and unlocking the three outposts through the War Campaign, and becomes unavailable after setting foot in Nazjatar.",
+							["sourceQuests"] = { 54964 },	-- A One-Way Ticket to the Heart
+							["provider"] = { "n", 136907 },	-- Magni Bronzebeard
+							["coord"] = { 50.1, 53.6, CHAMBER_OF_HEART },
 							["timeline"] = { ADDED_9_0_2_LAUNCH },
 							["lockCriteria"] = { 1, "questID", 56044 },	-- Send the Fleet
 							["isBreadcrumb"] = true,
 							["DisablePartySync"] = true,
 						}),
 						q(56188, {	-- To the Catacombs!
-							["provider"] = { "n", 154874 },	-- Blacktalon Watcher
 							["sourceQuest"] = 56187,	-- Black Winged Shadow
+							["provider"] = { "n", 154874 },	-- Blacktalon Watcher
 							["coord"] = { 47.8, 68.8, EASTERN_KINGDOMS },	-- Burning Steppes, outside BWD
 							["timeline"] = {
 								ADDED_8_2_5,
@@ -810,22 +810,23 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							},
 						}),
 						q(53405, {	-- Unlocking the Heart's Potential (second HoA upgrade)
-							["qg"] = 130216,	-- Magni Bronzebeard
-							["sourceQuest"] = 50973,	-- The Heart's Power
-							["coord"] = { 42.1, 44.3, SILITHUS },
 							["description"] = "This quest awards +15 item levels for your Heart of Azeroth.  You can pick it up once one of your characters reaches Honored with Champions of Azeroth.",
+							["sourceQuest"] = 50973,	-- The Heart's Power
+							["qg"] = 130216,	-- Magni Bronzebeard
+							["coord"] = { 42.1, 44.3, SILITHUS },
 							["timeline"] = { ADDED_8_0_1, REMOVED_8_2_0 },
 							["lvl"] = 120,
 						}),
 						q(56263, {	-- Unlocking the Power (A)
+							["description"] = "Your Heart of Azeroth needs to be 70 to start the questline.",
 							["provider"] = { "n", 154464 },	-- Earthen Guardian
 							["coord"] = { 74.8, 15.2, BORALUS },
-							["description"] = "Your Heart of Azeroth needs to be 70 to start the questline.",
 							["races"] = ALLIANCE_ONLY,
 							["isBreadcrumb"] = true,
 							["DisablePartySync"] = true,
 						}),
 						q(56260, {	-- Unlocking the Power (H)
+							["description"] = "Your Heart of Azeroth needs to be 70 to start the questline.",
 							["provider"] = { "n", 154465 },	-- Earthen Guardian
 							["coords"] = {
 								-- #if BEFORE SL
@@ -834,7 +835,6 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 								{ 50.4, 41.7, DAZARALOR },
 								-- #endif
 							},
-							["description"] = "Your Heart of Azeroth needs to be 70 to start the questline.",
 							["races"] = HORDE_ONLY,
 							["isBreadcrumb"] = true,
 							["DisablePartySync"] = true,
@@ -848,8 +848,8 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							},
 						}),
 						q(57398, {	-- Walking in the Darkness (Rank 12)
-							["provider"] = { "n", 155496 },	-- Wrathion
 							["sourceQuest"] = 57397,	-- Reconstructing "Fear and Flesh"
+							["provider"] = { "n", 155496 },	-- Wrathion
 							["coord"] = { 46.1, 64.0, REPAIRED_CHAMBER_OF_HEART },
 							["cost"] = { { "i", 174784, 1 } },	-- The Final Truth
 							["groups"] = {
@@ -860,12 +860,12 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							},
 						}),
 						q(55465, {	-- We Must Go Deeper
-							["provider"] = { "n", 151693 },	-- Merithra of the Dream
 							["sourceQuests"] = {
 								55393,	-- Null the Void
 								55394,	-- Shards of Emerald
 								55395,	-- Don't Close Your Eyes
 							},
+							["provider"] = { "n", 151693 },	-- Merithra of the Dream
 							["coord"] = { 44.1, 30.7, 1471 },	-- Emerald Dreamway
 							["maps"] = {
 								1475,	-- The Emerald Dream
@@ -875,8 +875,8 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							},
 						}),
 						q(55752, {	-- We Stand United
-							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
 							["sourceQuest"] = 56401,	-- A Bolt from the Blue
+							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
 							["coord"] = { 33.7, 54.6, 1474 },
 							["groups"] = {
 								i(169768),	-- Heart of a Champion (TOY!)
@@ -884,11 +884,15 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							},
 						}),
 						q(58615, {	-- Whispers in the Dark
-							["provider"] = { "n", 161805 },	-- Magni Bronzebeard
 							["sourceQuest"] = 57374,	-- Into the Darkest Depths
+							["provider"] = { "n", 161805 },	-- Magni Bronzebeard
 							["coord"] = { 50.1, 59.1, REPAIRED_CHAMBER_OF_HEART },	-- technicaly 1604?
 						}),
 						q(56185, {	-- Whispers of N'zoth (A)
+							-- #if BEFORE 9.2
+							["sourceQuest"] = 57002,	-- Old Soldier
+							["description"] = "This quest requires finishing the War Campaign and defeating Azshara on any difficulty.",
+							-- #ENDIF
 							["qgs"] = {
 								-- #IF AFTER 9.2
 								155496,	-- Wrathion
@@ -896,10 +900,6 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 								154464,	-- Earthen Guardian
 								-- #ENDIF
 							},
-							-- #if BEFORE 9.2
-							["sourceQuest"] = 57002,	-- Old Soldier
-							["description"] = "This quest requires finishing the War Campaign and defeating Azshara on any difficulty.",
-							-- #ENDIF
 							["coords"] = {
 								-- #IF AFTER 9.2
 								{ 46.1, 64.0, REPAIRED_CHAMBER_OF_HEART },
@@ -916,13 +916,9 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(56267, {	-- Whispers of N'zoth (H)
-							["qgs"] = {
-								-- #IF AFTER 9.2
-								155496,	-- Wrathion
-								-- #ELSE
-								154465,	-- Earthen Guardian
-								-- #ENDIF
-							},
+							-- #IF BEFORE 9.2
+							["description"] = "This quest requires finishing the War Campaign and defeating Azshara on any difficulty.",
+							-- #ENDIF
 							-- #if BEFORE 9.2
 							["sourceQuests"] = {
 								-- #IF AFTER 9.2
@@ -940,6 +936,13 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 								-- #ENDIF
 							},
 							-- #endif
+							["qgs"] = {
+								-- #IF AFTER 9.2
+								155496,	-- Wrathion
+								-- #ELSE
+								154465,	-- Earthen Guardian
+								-- #ENDIF
+							},
 							["coords"] = {
 								-- #IF AFTER 9.2
 								{ 46.1, 64.0, REPAIRED_CHAMBER_OF_HEART },
@@ -947,9 +950,6 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 								{ 51.0, 88.8, DAZARALOR },
 								-- #ENDIF
 							},
-							-- #IF BEFORE 9.2
-							["description"] = "This quest requires finishing the War Campaign and defeating Azshara on any difficulty.",
-							-- #ENDIF
 							["timeline"] = {
 								ADDED_8_2_5,
 								REMOVED_8_3_0,	-- (removed with 8.3)
@@ -958,8 +958,8 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["races"] = HORDE_ONLY,
 						}),
 						q(56504, {	-- Wrathion's Journal
-							["provider"] = { "n", 151964 },	-- Spiritwalker Ebonhorn
 							["sourceQuest"] = 56190,	-- Save Ebonhorn
+							["provider"] = { "n", 151964 },	-- Spiritwalker Ebonhorn
 							["coord"] = { 46.3, 67.2, REPAIRED_CHAMBER_OF_HEART },
 							["timeline"] = {
 								ADDED_8_2_5,
@@ -1165,8 +1165,8 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 			}),
 			n(QUESTS, {
 				q(50373, {	-- A Recent Arrival
-					["qg"] = 131963,	-- Nolan Speed
 					["sourceQuest"] = 50228,	-- The Twilight Survivor
+					["qg"] = 131963,	-- Nolan Speed
 					["coord"] = { 69.4, 17.6, SILITHUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -1178,23 +1178,23 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 					},
 				}),
 				q(50372, {	-- Desert Research (A)
-					["qg"] = 131963,	-- Nolan Speed
 					["sourceQuests"] = {
 						50047,	-- Free Samples
 						50046,	-- It's a Sabotage
 					},
+					["qg"] = 131963,	-- Nolan Speed
 					["coord"] = { 69.4, 17.6, SILITHUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(50358, {	-- Desert Research (H)
-					["qg"] = 132147,	-- Grol Warblade
 					["sourceQuest"] = 50053,	-- Lazy Prospectors
+					["qg"] = 132147,	-- Grol Warblade
 					["coord"] = { 65.9, 54.7, SILITHUS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(50047, {	-- Free Samples
-					["qg"] = 131963,	-- Nolan Speed
 					["sourceQuest"] = 49981,	-- Witness to the Wound
+					["qg"] = 131963,	-- Nolan Speed
 					["coord"] = { 69.4, 17.6, SILITHUS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1202,22 +1202,22 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 					},
 				}),
 				q(50046, {	-- It's a Sabotage
-					["qg"] = 130030,	-- Kelsey Steelspark
 					-- #if BEFORE 8.0.1
 					["sourceQuest"] = 49981,	-- Witness to the Wound
 					-- #endif
+					["qg"] = 130030,	-- Kelsey Steelspark
 					["coord"] = { 69.4, 17.6, SILITHUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(50360, {	-- Khadgar's Request
-					["qg"] = 132147,	-- Grol Warblade
 					["sourceQuest"] = 50232,	-- The Twilight Survivor
+					["qg"] = 132147,	-- Grol Warblade
 					["coord"] = { 65.9, 54.7, SILITHUS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(50227, {	-- Larvae By The Dozen (A)
-					["qg"] = 132606,	-- Tammy Tinkspinner
 					["sourceQuest"] = 50372,	-- Desert Research (A)
+					["qg"] = 132606,	-- Tammy Tinkspinner
 					["coord"] = { 69.4, 19.0, SILITHUS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1225,8 +1225,8 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 					},
 				}),
 				q(50231, {	-- Larvae By The Dozen (H)
-					["qg"] = 132040,	-- Pixni Rustbomb
 					["sourceQuest"] = 50358,	-- Desert Research (H)
+					["qg"] = 132040,	-- Pixni Rustbomb
 					["coord"] = { 66.9, 56.5, SILITHUS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1234,35 +1234,35 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 					},
 				}),
 				q(50053, {	-- Lazy Prospectors
-					["qg"] = 132147,	-- Grol Warblade
 					["sourceQuest"] = 49982,	-- Witness to the Wound
+					["qg"] = 132147,	-- Grol Warblade
 					["coord"] = { 65.9, 54.7, SILITHUS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(50052, {	-- No Spies Allowed
-					["qg"] = 132045,	-- Gizmax Greasebolt
 					["sourceQuest"] = 49982,	-- Witness to the Wound
+					["qg"] = 132045,	-- Gizmax Greasebolt
 					["coord"] = { 66.9, 56.5, SILITHUS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(50374, {	-- The Blood of Azeroth (A)
-					["qg"] = 130216,	-- Magni Bronzebeard
 					["sourceQuest"] = 50049,	-- The Speaker's Perspective (A)
+					["qg"] = 130216,	-- Magni Bronzebeard
 					["coord"] = { 42.2, 44.2, SILITHUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(50364, {	-- The Blood of Azeroth (H)
-					["qg"] = 130216,	-- Magni Bronzebeard
 					["sourceQuest"] = 50055,	-- The Speaker's Perspective (H)
+					["qg"] = 130216,	-- Magni Bronzebeard
 					["coord"] = { 42.5, 44.2, SILITHUS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(50057, {	-- The Power in Our Hands
-					["qg"] = 133388,	-- Magni Bronzebeard
 					["sourceQuests"] = {
 						50300,	-- The Speaker's Call
 						50056,	-- The Speaker's Call
 					},
+					["qg"] = 133388,	-- Magni Bronzebeard
 					["timeline"] = { ADDED_7_3_5, REMOVED_8_0_1 },
 					["groups"] = {
 						ach(12071, {	-- Crucible's Promise
@@ -1283,8 +1283,8 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 					["u"] = REMOVED_FROM_GAME,	-- TODO: Check this, notes are saying "do Antorus" and it will become available.
 				}),
 				q(50226, {	-- The Source of Power (A)
-					["qg"] = 132606,	-- Tammy Tinkspinner
 					["sourceQuest"] = 50372,	-- Desert Research (A)
+					["qg"] = 132606,	-- Tammy Tinkspinner
 					["coord"] = { 69.4, 19.0, SILITHUS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1292,8 +1292,8 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 					},
 				}),
 				q(50230, {	-- The Source of Power (H)
-					["qg"] = 132040,	-- Pixni Rustbomb
 					["sourceQuest"] = 50358,	-- Desert Research (H)
+					["qg"] = 132040,	-- Pixni Rustbomb
 					["coord"] = { 66.9, 56.5, SILITHUS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1301,36 +1301,36 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 					},
 				}),
 				q(50056, {	-- The Speaker's Call (A)
-					["qg"] = 131963,	-- Nolan Speed
 					["sourceQuest"] = 50374,	-- The Blood of Azeroth (A)
+					["qg"] = 131963,	-- Nolan Speed
 					["coord"] = { 69.4, 17.6, SILITHUS },
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(50300, {	-- The Speaker's Call (H)
-					["qg"] = 132147,	-- Grol Warblade
 					["sourceQuest"] = 50364,	-- The Blood of Azeroth (H)
+					["qg"] = 132147,	-- Grol Warblade
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(50049, {	-- The Speaker's Perspective (A)
-					["qg"] = 130032,	-- Archmage Khadgar
 					["sourceQuest"] = 50373,	-- A Recent Arrival
+					["qg"] = 130032,	-- Archmage Khadgar
 					["coord"] = { 68.9, 19.2, SILITHUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(50055, {	-- The Speaker's Perspective (H)
-					["qg"] = 130033,	-- Archmage Khadgar
 					["sourceQuest"] = 50360,	-- Khadgar's Request
+					["qg"] = 130033,	-- Archmage Khadgar
 					["coord"] = { 66.4, 56.8, SILITHUS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(50228, {	-- The Twilight Survivor (A)
-					["qg"] = 131963,	-- Nolan Speed
 					["sourceQuests"] = {
 						50047,	-- Free Samples
 						50046,	-- It's a Sabotage
 					},
+					["qg"] = 131963,	-- Nolan Speed
 					["coord"] = { 69.4, 17.6, SILITHUS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1338,8 +1338,8 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 					},
 				}),
 				q(50232, {	-- The Twilight Survivor (H)
-					["qg"] = 132147,	-- Grol Warblade
 					["sourceQuest"] = 50053,	-- Lazy Prospectors
+					["qg"] = 132147,	-- Grol Warblade
 					["coord"] = { 65.9, 54.7, SILITHUS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1347,15 +1347,15 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 					},
 				}),
 				q(49981, {	-- Witness to the Wound (A)
-					["qg"] = 132255,	-- Master Mathias Shaw
 					["sourceQuest"] = 49976,	-- Gifts of the Fallen
+					["qg"] = 132255,	-- Master Mathias Shaw
 					["coord"] = { 39.0, 62.6, STORMWIND_CITY },
 					["timeline"] = { ADDED_7_3_5, REMOVED_8_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(49982, {	-- Witness to the Wound (H)
-					["qg"] = 132254,	-- Nathanos Blightcaller
 					["sourceQuest"] = 50341,	-- A Recent Discovery
+					["qg"] = 132254,	-- Nathanos Blightcaller
 					["coord"] = { 49.8, 75.6, ORGRIMMAR },
 					["timeline"] = { ADDED_7_3_5, REMOVED_8_0_1 },
 					["races"] = HORDE_ONLY,

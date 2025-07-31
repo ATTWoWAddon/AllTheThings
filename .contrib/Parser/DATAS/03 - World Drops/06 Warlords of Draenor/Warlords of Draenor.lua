@@ -878,8 +878,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { AD
 	}),
 	filter(RECIPES, {
 		q(36239, {	-- A Mysterious Satchel
-			["provider"] = { "i", 114984 },	-- Mysterious Satchel
 			["description"] = "This item can drop from any Draenor mob.",
+			["provider"] = { "i", 114984 },	-- Mysterious Satchel
 			["maps"] = {
 				FROSTFIRE_RIDGE,
 				GORGROND,
@@ -893,8 +893,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { AD
 			["lvl"] = 90,
 		}),
 		q(36435, {	-- Unintelligible Intelligence
-			["provider"] = { "i", 115593 },	-- Illegible Sootstained Notes
 			["description"] = "This item can drop from any Draenor mob.",
+			["provider"] = { "i", 115593 },	-- Illegible Sootstained Notes
 			["maps"] = {
 				FROSTFIRE_RIDGE,
 				GORGROND,

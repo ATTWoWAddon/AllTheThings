@@ -406,6 +406,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 			["isMonthly"] = true,
 		}, {
 			q(76308, {	-- The Trial of Style
+				["description"] = "Blizzard messed up here, this should've been the second quest and not breadcrumb.",
 				["providers"] = {
 					{ "n", 206252 },	-- Primo
 					{ "n", 206383 },	-- Don'a
@@ -420,14 +421,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 					{ 45.7, 52.7, DORNOGAL },
 					-- #endif
 				},
-				["description"] = "Blizzard messed up here, this should've been the second quest and not breadcrumb.",
 				["isBreadcrumb"] = true,
 			}),
 			q(76361, {	-- Fashion Week
-				["provider"] = { "n", 199261 },	-- Holiday Enthusiast
-				["sourceQuest"] = 76308,	-- The Trial of Style
-				["coord"] = { 31.5, 63.1, VALDRAKKEN },
 				["description"] = "Blizzard messed up here, this should've been the first quest and breadcrumb.",
+				["sourceQuest"] = 76308,	-- The Trial of Style
+				["provider"] = { "n", 199261 },	-- Holiday Enthusiast
+				["coord"] = { 31.5, 63.1, VALDRAKKEN },
 			}),
 			q(76214, {	-- Work It
 				["provider"] = { "n", 205914 },	-- Cataloger Alexia

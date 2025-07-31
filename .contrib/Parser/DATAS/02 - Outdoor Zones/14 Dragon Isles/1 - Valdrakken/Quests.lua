@@ -59,9 +59,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 					q(70930, {	-- All Tea, No Shadeleaf
 						["sourceQuests"] = { 71238 },	-- The Ruby Feast!
+						["altQuests"] = { 72258 },	-- Daily Lockout
 						["provider"] = { "n", 189479 },	-- Rumiastrasza
 						["coord"] = { 61.5, 11.8, VALDRAKKEN },
-						["altQuests"] = { 72258 },	-- Daily Lockout
 					}),
 					q(67047, {	-- Warm Away These Shivers
 						["sourceQuests"] = { 70930 },	-- All Tea, No Shadeleaf
@@ -77,9 +77,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					------ Day 2 ------
 					q(70932, {	-- The Life of Spice
 						["sourceQuests"] = { 67047 },	-- Warm Away These Shivers
+						["altQuests"] = { 72258 },	-- Daily Lockout
 						["provider"] = { "n", 189479 },	-- Rumiastrasza
 						["coord"] = { 61.5, 11.8, VALDRAKKEN },
-						["altQuests"] = { 72258 },	-- Daily Lockout
 					}),
 					q(67063, {	-- 10,000 Years of Roasting
 						["sourceQuests"] = { 70932 },	-- The Life of Spice
@@ -95,9 +95,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					------ Day 3 ------
 					q(70957, {	-- The Sea Out West
 						["sourceQuests"] = { 67063 },	-- 10,000 Years of Roasting
+						["altQuests"] = { 72258 },	-- Daily Lockout
 						["provider"] = { "n", 189479 },	-- Rumiastrasza
 						["coord"] = { 61.5, 11.8, VALDRAKKEN },
-						["altQuests"] = { 72258 },	-- Daily Lockout
 					}),
 					q(67064, {	-- Rambling Delight
 						["sourceQuests"] = { 70957 },	-- The Sea Out West
@@ -113,9 +113,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					------ Day 4 ------
 					q(70958, {	-- Finest Fungi at the Feast
 						["sourceQuests"] = { 67064 },	-- Rambling Delight
+						["altQuests"] = { 72258 },	-- Daily Lockout
 						["provider"] = { "n", 189479 },	-- Rumiastrasza
 						["coord"] = { 61.5, 11.8, VALDRAKKEN },
-						["altQuests"] = { 72258 },	-- Daily Lockout
 					}),
 					q(67065, {	-- Future-Fresh Fungi
 						["sourceQuests"] = { 70958 },	-- Finest Fungi at the Feast
@@ -131,9 +131,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					------ Day 5 ------
 					q(70981, {	-- Savory Seas
 						["sourceQuests"] = { 67065 },	-- Future-Fresh Fungi
+						["altQuests"] = { 72258 },	-- Daily Lockout
 						["provider"] = { "n", 189479 },	-- Rumiastrasza
 						["coord"] = { 61.5, 11.8, VALDRAKKEN },
-						["altQuests"] = { 72258 },	-- Daily Lockout
 					}),
 					q(67066, {	-- Delights to Delve For
 						["sourceQuests"] = { 70981 },	-- Savory Seas
@@ -149,9 +149,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					------ Day 6 ------
 					q(70987, {	-- Hearts of Starch
 						["sourceQuests"] = { 67066 },	-- Delights to Delve For
+						["altQuests"] = { 72258 },	-- Daily Lockout
 						["provider"] = { "n", 189479 },	-- Rumiastrasza
 						["coord"] = { 61.5, 11.8, VALDRAKKEN },
-						["altQuests"] = { 72258 },	-- Daily Lockout
 					}),
 					q(67067, {	-- Navigating the Leapmaize
 						["sourceQuests"] = { 70987 },	-- Hearts of Starch
@@ -167,9 +167,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					------ Day 7 ------
 					q(70988, {	-- The Egg's the Thing
 						["sourceQuests"] = { 67067 },	-- Navigating the Leapmaize
+						["altQuests"] = { 72258 },	-- Daily Lockout
 						["provider"] = { "n", 189479 },	-- Rumiastrasza
 						["coord"] = { 61.5, 11.8, VALDRAKKEN },
-						["altQuests"] = { 72258 },	-- Daily Lockout
 					}),
 					q(67068, {	-- Anything But a Breeze
 						["sourceQuests"] = { 70988 },	-- The Egg's the Thing
@@ -185,9 +185,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					------ Day 8 ------
 					q(67071, {	-- What a Long, Sweet Trip It's Been
 						["sourceQuests"] = { 67068 },	-- Anything But a Breeze
+						["altQuests"] = { 72258 },	-- Daily Lockout
 						["provider"] = { "n", 189479 },	-- Rumiastrasza
 						["coord"] = { 61.5, 11.8, VALDRAKKEN },
-						["altQuests"] = { 72258 },	-- Daily Lockout
 						["groups"] = {
 							i(198132),	-- Recipe: Hoard of Draconic Delicacies (RECIPE!)
 							i(202013),	-- Ruby Recipe Journal VIII (QI!)
@@ -221,9 +221,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["sourceQuests"] = { 67094 },	-- A Dryad's Work Is Never Done
 				["provider"] = { "n", 192522 },	-- Thalendra
 				["coord"] = { 72.8, 66.2, VALDRAKKEN },
+				["timeline"] = { ADDED_10_0_5 },
 				["cost"] = { { "i", 197769, 1 }, },	-- 1x Tasty Hatchling's Treat
 				["isDaily"] = true,
-				["timeline"] = { ADDED_10_0_5 },
 				["groups"] = {
 					title(467, {	-- <Name>, Honorary Dryad
 						["collectible"] = false,
@@ -234,9 +234,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["sourceQuests"] = { 67094 },	-- A Dryad's Work Is Never Done
 				["provider"] = { "n", 192522 },	-- Thalendra
 				["coord"] = { 72.8, 66.2, VALDRAKKEN },
+				["timeline"] = { ADDED_10_0_5 },
 				["cost"] = { { "i", 197766, 1 }, },	-- 1x Snow in a Cone
 				["isDaily"] = true,
-				["timeline"] = { ADDED_10_0_5 },
 				["groups"] = {
 					title(467, {	-- <Name>, Honorary Dryad
 						["collectible"] = false,
@@ -247,9 +247,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["sourceQuests"] = { 67094 },	-- A Dryad's Work Is Never Done
 				["provider"] = { "n", 192522 },	-- Thalendra
 				["coord"] = { 72.8, 66.2, VALDRAKKEN },
+				["timeline"] = { ADDED_10_0_5 },
 				["cost"] = { { "i", 197767, 1 }, },	-- 1x Blubbery Muffin
 				["isDaily"] = true,
-				["timeline"] = { ADDED_10_0_5 },
 				["groups"] = {
 					title(467, {	-- <Name>, Honorary Dryad
 						["collectible"] = false,
@@ -260,9 +260,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["sourceQuests"] = { 67094 },	-- A Dryad's Work Is Never Done
 				["provider"] = { "n", 192522 },	-- Thalendra
 				["coord"] = { 72.8, 66.2, VALDRAKKEN },
+				["timeline"] = { ADDED_10_0_5 },
 				["cost"] = { { "i", 197768, 1 }, },	-- 1x Tasty Hatchling's Treat
 				["isDaily"] = true,
-				["timeline"] = { ADDED_10_0_5 },
 				["groups"] = {
 					title(467, {	-- <Name>, Honorary Dryad
 						["collectible"] = false,

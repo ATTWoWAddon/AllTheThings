@@ -188,7 +188,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 			}),
 			n(QUESTS, {
 				q(1193, {	-- A Broken Trap
-					["provider"] = { "o", 179485 },	-- Broken Trap
 					-- #if BEFORE 4.0.3
 					["description"] = "Use the items on the Broken Trap to trap Guard Slip'kik. It takes a few seconds to finish fixing the trap.\n\nYou must activate this trap in order to do the Tribute Run.",
 					["cost"] = {
@@ -196,14 +195,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						{ "i", 3829, 1 },	-- Frost Oil
 					},
 					-- #endif
+					["provider"] = { "o", 179485 },	-- Broken Trap
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = GORDOK_COMMONS_MAPS,
 					["repeatable"] = true,
 					["lvl"] = lvlsquish(56, 56, 15),
 				}),
 				q(27118, {	-- A Broken Trap
-					["provider"] = { "o", 179485 },	-- Broken Trap
 					["description"] = "You must trap Guard Slip'kik in order to qualify for the full Tribute loot table.",
+					["provider"] = { "o", 179485 },	-- Broken Trap
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = GORDOK_COMMONS_MAPS,
 					["repeatable"] = true,
@@ -309,11 +309,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					},
 				}),
 				q(7631, {	-- Dreadsteed of Xoroth
+					["sourceQuest"] = 7629,	-- Imp Delivery
 					["providers"] = {
 						{ "n", 14436 },	-- Mor'zul Bloodbringer
 						{ "i", 18818 },	-- Mor'zul's Instructions
 					},
-					["sourceQuest"] = 7629,	-- Imp Delivery
 					["coord"] = { 12.6, 31.6, BURNING_STEPPES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = CAPITAL_GARDENS_MAPS,
@@ -468,22 +468,22 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["lvl"] = 54,
 				}),
 				q(5525, {	-- Free Knot!
-					["qg"] = 14338,	-- Knot Thimblejack
 					-- #if BEFORE 4.0.3
 					["description"] = "Freeing him gets you access to his Cache.\n\nNOTE: Do not free him until after you have finished your Tribute Run!",
 					["cost"] = { { "i", 18250, 1 } },	-- Gordok Shackle Key
 					-- #endif
+					["qg"] = 14338,	-- Knot Thimblejack
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = GORDOK_COMMONS_MAPS,
 					["lvl"] = 54,
 				}),
 				q(7429, {	-- Free Knot! (repeatable)
-					["qg"] = 14338,	-- Knot Thimblejack
-					["sourceQuest"] = 5525,	-- Free Knot!
 					-- #if BEFORE 4.0.3
 					["description"] = "Freeing him gets you access to his Cache.\n\nNOTE: Do not free him until after you have finished your Tribute Run!",
 					["cost"] = { { "i", 18250, 1 } },	-- Gordok Shackle Key
 					-- #endif
+					["sourceQuest"] = 5525,	-- Free Knot!
+					["qg"] = 14338,	-- Knot Thimblejack
 					["maxReputation"] = { FACTION_STEAMWHEEDLE_CARTEL, EXALTED },	-- Steamwheedle Cartel, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = GORDOK_COMMONS_MAPS,
@@ -606,8 +606,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					},
 				}),
 				q(7488, {	-- Lethtendris's Web [Alliance]
-					["qg"] = 7877,	-- Latronicus Moonspear
 					["sourceQuest"] = 7494,	-- Feathermoon Stronghold
+					["qg"] = 7877,	-- Latronicus Moonspear
 					["coord"] = { 30.4, 46.2, FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = WARPWOOD_QUARTER_MAPS,
@@ -623,8 +623,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					},
 				}),
 				q(7489, {	-- Lethtendris's Web [Horde]
-					["qg"] = 7776,	-- Talo Thornhoof
 					["sourceQuest"] = 7492,	-- Camp Mojache
+					["qg"] = 7776,	-- Talo Thornhoof
 					["coord"] = { 76.2, 43.8, FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = WARPWOOD_QUARTER_MAPS,
@@ -651,11 +651,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					},
 				}),
 				q(7484, {	-- Libram of Focus
-					["qg"] = 14368,	-- Lorekeeper Lydros
 					["sourceQuests"] = {
 						7481,	-- Elven Legends
 						7482,	-- Elven Legends
 					},
+					["qg"] = 14368,	-- Lorekeeper Lydros
 					["maxReputation"] = { FACTION_SHENDRALAR, EXALTED },	-- Shen'dralar, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = CAPITAL_GARDENS_MAPS,
@@ -674,11 +674,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					},
 				}),
 				q(7485, {	-- Libram of Protection
-					["qg"] = 14368,	-- Lorekeeper Lydros
 					["sourceQuests"] = {
 						7481,	-- Elven Legends
 						7482,	-- Elven Legends
 					},
+					["qg"] = 14368,	-- Lorekeeper Lydros
 					["maxReputation"] = { FACTION_SHENDRALAR, EXALTED },	-- Shen'dralar, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = CAPITAL_GARDENS_MAPS,
@@ -697,11 +697,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					},
 				}),
 				q(7483, {	-- Libram of Rapidity
-					["qg"] = 14368,	-- Lorekeeper Lydros
 					["sourceQuests"] = {
 						7481,	-- Elven Legends
 						7482,	-- Elven Legends
 					},
+					["qg"] = 14368,	-- Lorekeeper Lydros
 					["maxReputation"] = { FACTION_SHENDRALAR, EXALTED },	-- Shen'dralar, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = CAPITAL_GARDENS_MAPS,
@@ -881,8 +881,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					},
 				}),
 				q(5519, {	-- The Gordok Ogre Suit
-					["qg"] = 14338,	-- Knot Thimblejack
 					["sourceQuest"] = 5518,	-- The Gordok Ogre Suit
+					["qg"] = 14338,	-- Knot Thimblejack
 					["maxReputation"] = { FACTION_STEAMWHEEDLE_CARTEL, EXALTED },	-- Steamwheedle Cartel, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = GORDOK_COMMONS_MAPS,
@@ -909,8 +909,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					},
 				}),
 				q(27120, {	-- The Gordok Ogre Suit
-					["qg"] = 14338,	-- Knot Thimblejack
 					["sourceQuest"] = 27119,	-- The Gordok Ogre Suit
+					["qg"] = 14338,	-- Knot Thimblejack
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = GORDOK_COMMONS_MAPS,
 					["cost"] = { { "i", 18240, 1 } },	-- Ogre Tannin
@@ -921,8 +921,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					},
 				}),
 				q(5528, {	-- The Gordok Taste Test
-					["qg"] = 14322,	-- Stomper Kreeg <The Drunk>
 					["description"] = "With Stomper Kreeg left alive, kill |cFFFFD700King Gordok|r to become king, and then return to the courtyard.\n\nHe sells these items after you have completed the quest and if you are Friendly with him.",
+					["qg"] = 14322,	-- Stomper Kreeg <The Drunk>
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = GORDOK_COMMONS_MAPS,
 					["lvl"] = 56,
@@ -932,8 +932,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					},
 				}),
 				q(27114, {	-- The Gordok Taste Test
-					["qg"] = 14322,	-- Stomper Kreeg <The Drunk>
 					["description"] = "With Stomper Kreeg left alive, kill |cFFFFD700King Gordok|r to become king, and then return to the courtyard.\n\nHe sells these items after you have completed the quest and if you are Friendly with him.",
+					["qg"] = 14322,	-- Stomper Kreeg <The Drunk>
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = GORDOK_COMMONS_MAPS,
 					["lvl"] = lvlsquish(42, 42, 15),
@@ -1044,11 +1044,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["lvl"] = lvlsquish(39, 39, 15),
 				}),
 				q(7877, {	-- The Treasure of the Shen'dralar
+					["sourceQuest"] = 7461,	-- The Madness Within
 					["providers"] = {
 						{ "n",  14358 },	-- Shen'dralar Ancient
 						{ "o", 179517 },	-- Treasure of the Shen'dralar
 					},
-					["sourceQuest"] = 7461,	-- The Madness Within
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = CAPITAL_GARDENS_MAPS,
 					["lvl"] = 57,
@@ -1065,11 +1065,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					},
 				}),
 				q(27111, {	-- The Treasure of the Shen'dralar
+					["sourceQuest"] = 27110,	-- The Madness Within
 					["providers"] = {
 						{ "n",  14358 },	-- Shen'dralar Ancient
 						{ "o", 179517 },	-- Treasure of the Shen'dralar
 					},
-					["sourceQuest"] = 27110,	-- The Madness Within
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = CAPITAL_GARDENS_MAPS,
 					["lvl"] = lvlsquish(39, 39, 15),
@@ -1081,8 +1081,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					},
 				}),
 				q(7703, {	-- Unfinished Gordok Business
-					["qg"] = 14325,	-- Captain Kromcrush
 					["description"] = "Kill |cFFFFD700King Gordok|r, and then return to the courtyard.",
+					["qg"] = 14325,	-- Captain Kromcrush
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = merge(WARPWOOD_QUARTER_MAPS, GORDOK_COMMONS_MAPS, CAPITAL_GARDENS_MAPS),
 					["lvl"] = 60,
@@ -1099,8 +1099,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					-- #endif
 				}),
 				q(27124, {	-- Unfinished Gordok Business
-					["qg"] = 14325,	-- Captain Kromcrush
 					["description"] = "Kill |cFFFFD700King Gordok|r, and then return to the courtyard.",
+					["qg"] = 14325,	-- Captain Kromcrush
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = GORDOK_COMMONS_MAPS,
 					["lvl"] = lvlsquish(42, 42, 15),
@@ -1570,8 +1570,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					})),
 					n(QUESTS, bubbleDown({ ["timeline"] = { ADDED_10_1_5 } }, {
 						q(77194, {	-- Free Knot!
-							["qg"] = 14338,	-- Knot Thimblejack
 							["description"] = "This quest becomes obtainable once a Gordok Shackle Key is looted. Completing it increases your reputation with the Steamwheedle Cartel whitout lowering your reputation with the Bloodsail Buccaneers.",
+							["qg"] = 14338,	-- Knot Thimblejack
 							["cost"] = {
 								{ "i", 18250, 1 },	-- Gordok Shackle Key
 							},

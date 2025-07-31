@@ -274,9 +274,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 65.0, 83.2, DRUSTVAR },
 				["groups"] = {
 					q(52061, {	-- Taptaf the Pig!
+						["description"] = "Killing Idej the Wise will cause Taptaf to spawn and give you the quest.",
 						["provider"] = { "n", 139380 },	-- Taptaf
 						["coord"] = { 65.0, 83.2, DRUSTVAR },
-						["description"] = "Killing Idej the Wise will cause Taptaf to spawn and give you the quest.",
 						["groups"] = {
 							i(161081),	-- Taptaf (PET!)
 						},

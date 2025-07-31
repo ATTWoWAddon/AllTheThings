@@ -250,15 +250,14 @@ local EncounterToLoot = {
 
 ------ Zone Drops ----------
 local ZoneDropLoot = {
-	i(232661),	-- Bootleg Wrynn Shoulderplates
-	i(232658),	-- Firebug's Anklegear
-	i(232662),	-- Globlin-Fused Greatbelt
-	i(232659),	-- Loyalist's Holdout Hood
-	i(232657),	-- Mechgineer's Blowtorch Cover
-	i(232660),	-- Midnight Lounge Cummerbund
-	i(232656),	-- Psychopath's Ravemantle
-	i(232663),	-- Undermine Merc's Dog Tags
-	i(232655),	-- Vatwork Janitor's Wasteband
+	i(238032),	-- Acolyte's Infused Leggings
+	i(238028),	-- Bone-Melted Faceplate
+	i(238027),	-- Harvested Creephide Cord
+	i(238034),	-- Jak'tull's Intruder Stompers
+	i(243048),	-- Technomancer's Service Sandals
+	i(238031),	-- Veiled Manta Vest
+	i(238030),	-- Voidhound Trainer's Boots
+	i(238033),	-- Zadus's Liturgical Hat
 };
 
 ------ Boss Functions ------
@@ -272,7 +271,7 @@ InstanceHelper.UpgradeMapping = {
 	[DIFFICULTY.RAID.HEROIC] = 6,
 };
 
-root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART } }, {
+root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_2_0_SEASONSTART } }, {
 	inst(1302, {	-- Manaforge Omega
 		["isRaid"] = true,
 		["coord"] = { 41.9, 21.5, KARESH },
@@ -644,6 +643,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.HEROIC_PLUS).AddGroups({
+				n(QUESTS, {
+					i(246445),	-- Royal Voidwing (MOUNT!)
+				}),
 				Boss(PLEXUS),
 				Boss(LOOMITHAR),
 				Boss(NAAZINDHRI),

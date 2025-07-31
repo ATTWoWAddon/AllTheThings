@@ -104,13 +104,12 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9550, {	-- A Map to Where?
-					["provider"] = { "i", 23837 },	-- Weathered Treasure Map
 					["sourceQuest"] = 9549,	-- Artifacts of the Blacksilt
+					["provider"] = { "i", 23837 },	-- Weathered Treasure Map
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(13, 13, 1),
 				}),
 				q(9634, {	-- Alien Predators
-					["qg"] = 17586,	-- Vorkhan the Elekk Herder
 					-- #if AFTER CATA
 					["sourceQuests"] = {
 						28559,	-- Hero's Call: Bloodmyst Isle!
@@ -119,6 +118,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					-- #else
 					["sourceQuest"] = 9625,	-- Elekks Are Serious Business
 					-- #endif
+					["qg"] = 17586,	-- Vorkhan the Elekk Herder
 					["coord"] = { 63.0, 87.9, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(8, 8, 1),
@@ -136,12 +136,12 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9549, {	-- Artifacts of the Blacksilt
-					["qg"] = 17421,	-- Clopper Wizbang
 					-- #if AFTER CATA
 					["sourceQuest"] = 10063,	-- Explorers' League, Is That Something for Gnomes?
 					-- #else
 					["sourceQuest"] = 9548,	-- Pilfered Equipment
 					-- #endif
+					["qg"] = 17421,	-- Clopper Wizbang
 					["coord"] = { 42.1, 21.2, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(13, 13, 1),
@@ -161,8 +161,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9698, {	-- Audience with the Prophet
-					["qg"] = 17825,	-- Interrogator Elysia
 					["sourceQuest"] = 9696,	-- Translations...
+					["qg"] = 17825,	-- Interrogator Elysia
 					["coord"] = { 54.4, 54.4, BLOODMYST_ISLE },
 					["maps"] = { THE_EXODAR },
 					["cost"] = { { "i", 24323, 1 } },	-- Translated Sunhawk Missive
@@ -180,8 +180,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				-- #endif
 				q(9694, {	-- Blood Watch
-					["qg"] = 17684,	-- Vindicator Boros
 					["sourceQuest"] = 9693,	-- What Argus Means to Me
+					["qg"] = 17684,	-- Vindicator Boros
 					["coord"] = { 55.4, 55.2, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(10, 10, 1),
@@ -222,12 +222,12 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = 20,
 				}),
 				q(9501, {	-- Call of Water (2/6)
-					["qg"] = 17204,	-- Farseer Nobundo <Shaman Trainer>
 					["sourceQuests"] = {
 						9500,	-- Call of Water (1/6) (Azuremyst Isle)
 						10490,	-- Call of Water (1/6) (Stormwind City)
 						9502,	-- Call of Water (1/6) (The Exodar)
 					},
+					["qg"] = 17204,	-- Farseer Nobundo <Shaman Trainer>
 					["coord"] = { 30.0, 32.4, THE_EXODAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { SHAMAN },
@@ -238,8 +238,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9503, {	-- Call of Water (3/6)
-					["qg"] = 17275,	-- Aqueous
 					["sourceQuest"] = 9501,	-- Call of Water (2/6)
+					["qg"] = 17275,	-- Aqueous
 					["coord"] = { 32.4, 16.2, BLOODMYST_ISLE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { SHAMAN },
@@ -253,8 +253,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9504, {	-- Call of Water (4/6)
-					["qg"] = 17275,	-- Aqueous
 					["sourceQuest"] = 9503,	-- Call of Water (3/6)
+					["qg"] = 17275,	-- Aqueous
 					["coord"] = { 32.4, 16.2, BLOODMYST_ISLE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ASHENVALE },
@@ -270,8 +270,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9508, {	-- Call of Water (5/6)
-					["qg"] = 17275,	-- Aqueous
 					["sourceQuest"] = 9504,	-- Call of Water (4/6)
+					["qg"] = 17275,	-- Aqueous
 					["coord"] = { 32.4, 16.2, BLOODMYST_ISLE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { SHAMAN },
@@ -287,11 +287,11 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9509, {	-- Call of Water (6/6)
+					["sourceQuest"] = 9508,	-- Call of Water (5/6)
 					["providers"] = {
 						{ "n", 17275 },	-- Aqueous
 						{ "i", 23752 },	-- Flask of Purest Water
 					},
-					["sourceQuest"] = 9508,	-- Call of Water (5/6)
 					["coord"] = { 32.4, 16.2, BLOODMYST_ISLE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { SHAMAN },
@@ -327,8 +327,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9761, {	-- Clearing the Way
-					["qg"] = 17986,	-- Vindicator Corin
 					["sourceQuest"] = 9760,	-- Vindicator's Rest
+					["qg"] = 17986,	-- Vindicator Corin
 					["coord"] = { 30.7, 46.8, BLOODMYST_ISLE },
 					-- #if BEFORE CATA
 					["races"] = { DRAENEI },
@@ -364,8 +364,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9569, {	-- Containing the Threat
-					["qg"] = 17433,	-- Vindicator Aalesia
 					["sourceQuest"] = 9567,	-- Know Thine Enemy
+					["qg"] = 17433,	-- Vindicator Aalesia
 					["coord"] = { 55.0, 57.9, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(13, 13, 1),
@@ -405,8 +405,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(9, 9, 1),
 				}),
 				q(9647, {	-- Culling the Flutterers
-					["qg"] = 17642,	-- Tracker Lyceon
 					["sourceQuest"] = 9643,	-- Constrictor Vines
+					["qg"] = 17642,	-- Tracker Lyceon
 					["coord"] = { 55.8, 57.0, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(14, 14, 1),
@@ -423,10 +423,10 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(10065, {	-- Cutting a Path
-					["qg"] = 17927,	-- Scout Jorli
 					-- #if BEFORE CATA
 					["sourceQuest"] = 10064,	-- Talk to the Hand [TODO: Confirm if this is required or not, it might not be.]
 					-- #endif
+					["qg"] = 17927,	-- Scout Jorli
 					["coord"] = { 30.2, 45.9, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(16, 16, 1),
@@ -437,18 +437,18 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9557, {	-- Deciphering the Book
+					["sourceQuest"] = 9550,	-- A Map to Where?
 					["providers"] = {
 						{ "o", 181756 },	-- Battered Ancient Book
 						{ "i",  23851 },	-- Battered Journal
 					},
-					["sourceQuest"] = 9550,	-- A Map to Where?
 					["coord"] = { 61.1, 41.8, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(13, 13, 1),
 				}),
 				q(9666, {	-- Declaration of Power
-					["qg"] = 17649,	-- Kessel
 					["sourceQuest"] = 9663,	-- The Kessel Run
+					["qg"] = 17649,	-- Kessel
 					["coord"] = { 62.9, 87.5, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(10, 10, 1),
@@ -467,8 +467,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9748, {	-- Don't Drink the Water
-					["qg"] = 17844,	-- Vindicator Aesom
 					["sourceQuest"] = 9703,	-- The Cryo-Core
+					["qg"] = 17844,	-- Vindicator Aesom
 					["coord"] = { 55.5, 55.3, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(16, 16, 1),
@@ -481,21 +481,21 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9625, {	-- Elekks Are Serious Business
-					["qg"] = 17584,	-- Torallius the Pack Handler
+					["sourceQuest"] = 9623,	-- Coming of Age
 					-- #if AFTER CATA
 					["altQuests"] = { 28559 },	-- Hero's Call: Bloodmyst Isle!
 					["coord"] = { 81.5, 51.5, THE_EXODAR },
 					-- #else
 					["coord"] = { 35.3, 43.1, AZUREMYST_ISLE },
 					-- #endif
-					["sourceQuest"] = 9623,	-- Coming of Age
+					["qg"] = 17584,	-- Torallius the Pack Handler
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,	-- TODO: Double check this is actually a breadcrumb. If you finish Alien Predators, does this diappear? [Not required for Alien Predators, Discord 2023-07-29]
 					["lvl"] = lvlsquish(10, 10, 1),
 				}),
 				q(9683, {	-- Ending the Bloodcurse
-					["qg"] = 17712,	-- Captain Edward Hanes
 					["sourceQuest"] = 9682,	-- The Hopeless Ones...
+					["qg"] = 17712,	-- Captain Edward Hanes
 					["coord"] = { 79.1, 22.6, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(15, 15, 1),
@@ -511,7 +511,6 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9759, {	-- Ending Their World
-					["qg"] = 17982,	-- Demolitionist Legoso
 					-- #if BEFORE CATA
 					["sourceQuest"] = 9761,	-- Clearing the Way
 					["races"] = { DRAENEI },
@@ -519,6 +518,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["sourceQuest"] = 9760,	-- Vindicator's Rest
 					["races"] = ALLIANCE_ONLY,
 					-- #endif
+					["qg"] = 17982,	-- Demolitionist Legoso
 					["coord"] = { 30.8, 46.6, BLOODMYST_ISLE },
 					["lvl"] = lvlsquish(18, 18, 1),
 					["groups"] = {
@@ -564,8 +564,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9579, {	-- Galaen's Fate
-					["qg"] = 17508,	-- Galaen's Corpse
 					["sourceQuest"] = 9578,	-- Searching for Galaen
+					["qg"] = 17508,	-- Galaen's Corpse
 					["coord"] = { 37.4, 61.2, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(15, 15, 1),
@@ -583,15 +583,15 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9706, {	-- Galaen's Journal - The Fate of Vindicator Saruan
-					["providers"] = {
-						{ "o", 182032 },	-- Galaen's Journal
-						{ "i",  24237 },	-- Galaen's Journal
-					},
 					-- #if BEFORE CATA
 					["sourceQuest"] = 9694,	-- Blood Watch
 					-- #else
 					["sourceQuest"] = 9779,	-- Intercepting the Message
 					-- #endif
+					["providers"] = {
+						{ "o", 182032 },	-- Galaen's Journal
+						{ "i",  24237 },	-- Galaen's Journal
+					},
 					["coord"] = { 37.5, 61.2, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(15, 15, 1),
@@ -607,8 +607,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					-- #endif
 				})),
 				q(9700, {	-- I Shoot Magic Into the Darkness
-					["qg"] = 17684,	-- Vindicator Boros
 					["sourceQuest"] = 9699,	-- Truth or Fiction
+					["qg"] = 17684,	-- Vindicator Boros
 					["coord"] = { 55.4, 55.2, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(14, 14, 1),
@@ -626,8 +626,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9779, {	-- Intercepting the Message
-					["qg"] = 17684,	-- Vindicator Boros
 					["sourceQuest"] = 9694,	-- Blood Watch
+					["qg"] = 17684,	-- Vindicator Boros
 					["coord"] = { 55.4, 55.2, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(14, 14, 1),
@@ -645,8 +645,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9688, {	-- Into the Dream
-					["qg"] = 17674,	-- Prince Toreth
 					["sourceQuest"] = 9687,	-- Restoring Sanctity
+					["qg"] = 17674,	-- Prince Toreth
 					["coord"] = { 74.0, 34.7, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(16, 16, 1),
@@ -709,8 +709,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9746, {	-- Limits of Physical Exhaustion
-					["qg"] = 17844,	-- Vindicator Aesom
 					["sourceQuest"] = 9748,	-- Don't Drink the Water
+					["qg"] = 17844,	-- Vindicator Aesom
 					["coord"] = { 55.5, 55.4, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(16, 16, 1),
@@ -769,8 +769,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9711, {	-- Matis the Cruel
-					["qg"] = 17843,	-- Vindicator Kuros
 					["sourceQuest"] = 9706,	-- Galaen's Journal - The Fate of Vindicator Saruan
+					["qg"] = 17843,	-- Vindicator Kuros
 					["coord"] = { 55.6, 55.2, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(15, 15, 1),
@@ -789,8 +789,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9642, {	-- More Irradiated Crystal Shards
-					["qg"] = 17684,    -- Vindicator Boros
 					["sourceQuest"] = 9641,	-- Irradiated Crystal Shards
+					["qg"] = 17684,    -- Vindicator Boros
 					["coord"] = { 55.4, 55.2, BLOODMYST_ISLE },
 					["cost"] = { { "i", 23984, 10 } },	-- Irradiated Crystal Shard
 					["races"] = ALLIANCE_ONLY,
@@ -811,8 +811,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(15, 15, 1),
 				}),
 				q(9561, {	-- Nolkai's Words
-					["qg"] = 17424,	-- Anchorite Paetheus
 					["sourceQuest"] = 9557,	-- Deciphering the Book
+					["qg"] = 17424,	-- Anchorite Paetheus
 					["coord"] = { 54.6, 53.9, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(13, 13, 1),
@@ -850,8 +850,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				-- #if BEFORE CATA
 				-- This quest was moved from Azuremyst Isle after Cataclysm.
 				q(9604, {	-- On the Wings of a Hippogryph
-					["qg"] = 17554,	-- Laando
 					["sourceQuest"] = 9603,	-- Beds, Bandages, and Beyond
+					["qg"] = 17554,	-- Laando
 					["coord"] = { 57.7, 53.9, BLOODMYST_ISLE },
 					["cost"] = { { "i", 23902, 1 } },	-- Topher's List
 					["races"] = { DRAENEI },
@@ -859,8 +859,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				-- #endif
 				q(9548, {	-- Pilfered Equipment
-					["qg"] = 17421,	-- Clopper Wizbang
 					["sourceQuest"] = 10063,	-- Explorers' League, Is That Something for Gnomes?
+					["qg"] = 17421,	-- Clopper Wizbang
 					["coord"] = { 42.1, 21.2, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(13, 13, 1),
@@ -877,8 +877,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9689, {	-- Razormaw
-					["qg"] = 17674,	-- Prince Toreth
 					["sourceQuest"] = 9688,	-- Into the Dream
+					["qg"] = 17674,	-- Prince Toreth
 					["coord"] = { 74.0, 34.7, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(19, 19, 1),
@@ -897,8 +897,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9668, {	-- Report to Exarch Admetius
-					["qg"] = 17649,	-- Kessel
 					["sourceQuest"] = 9666,	-- Declaration of Power
+					["qg"] = 17649,	-- Kessel
 					["coord"] = { 62.9, 87.5, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(10, 10, 1),
@@ -918,8 +918,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9628, {	-- Salvaging the Data
-					["qg"] = 17600,	-- Draenei Cartographer
 					["sourceQuest"] = 9620,	-- The Missing Survey Team
+					["qg"] = 17600,	-- Draenei Cartographer
 					["coord"] = { 61.2, 48.3, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(10, 10, 1),
@@ -935,12 +935,12 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9667, {	-- Saving Princess Stillpine
-					["qg"] = 17682,	-- Princess Stillpine
 					-- #if AFTER CATA
 					["sourceQuest"] = 9559,	-- Stillpine Hold
 					-- #else
 					["sourceQuest"] = 9538,	-- Learning the Language
 					-- #endif
+					["qg"] = 17682,	-- Princess Stillpine
 					["coord"] = { 68.2, 81.0, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(10, 10, 1),
@@ -996,29 +996,29 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9672, {	-- The Bloodcurse Legacy [Mailbox]
-					["provider"] = { "i", 24132 },	-- A Letter from the Admiral
-					["altQuests"] = { 9751 },	-- The Bloodcurse Legacy [Abandoned Other Quest]
-					["sourceQuest"] = 9671,	-- Urgent Delivery
 					["description"] = "The letter is mailed to you when you complete the |cFFFFD700Urgent Delivery|r quest. If you abandon it, you can get it at |cFFFFD700Odesyus' Landing|r in |cFFFFD700Azuremyst Isle|r.",
+					["sourceQuest"] = 9671,	-- Urgent Delivery
+					["altQuests"] = { 9751 },	-- The Bloodcurse Legacy [Abandoned Other Quest]
+					["provider"] = { "i", 24132 },	-- A Letter from the Admiral
 					["maps"] = { AZUREMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(15, 15, 1),
 				}),
 				q(9751, {	-- The Bloodcurse Legacy [Abandoned Other Quest]
-					["qg"] = 17240,	-- Admiral Odesyus
-					["altQuests"] = { 9672 },	-- The Bloodcurse Legacy [Mailbox]
-					["sourceQuest"] = 9671,	-- Urgent Delivery
-					["coord"] = { 47.0, 70.2, AZUREMYST_ISLE },
 					["description"] = "This quest is offered to you if you don't receive the 'A Letter from the Admiral' in the mail or you destroy it and abandon the quest.",
+					["sourceQuest"] = 9671,	-- Urgent Delivery
+					["altQuests"] = { 9672 },	-- The Bloodcurse Legacy [Mailbox]
+					["qg"] = 17240,	-- Admiral Odesyus
+					["coord"] = { 47.0, 70.2, AZUREMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(15, 15, 1),
 				}),
 				q(9674, {	-- The Bloodcursed Naga
-					["qg"] = 17712,	-- Captain Edward Hanes
 					["sourceQuests"] = {
 						9751,	-- The Bloodcurse Legacy [Abandoned Other Quest]
 						9672,	-- The Bloodcurse Legacy [Mailbox]
 					},
+					["qg"] = 17712,	-- Captain Edward Hanes
 					["coord"] = { 79.1, 22.6, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(15, 15, 1),
@@ -1029,8 +1029,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9703, {	-- The Cryo-Core
-					["qg"] = 17843,	-- Vindicator Kuros
 					["sourceQuest"] = 9700,	-- I Shoot Magic Into the Darkness
+					["qg"] = 17843,	-- Vindicator Kuros
 					["coord"] = { 55.4, 55.2, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(15, 15, 1),
@@ -1045,8 +1045,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9585, {	-- The Final Sample
-					["qg"] = 17423,	-- Harbinger Mikolaas
 					["sourceQuest"] = 9584,	-- The Second Sample
+					["qg"] = 17423,	-- Harbinger Mikolaas
 					["coord"] = { 52.5, 53.2, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(10, 10, 1),
@@ -1059,8 +1059,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9682, {	-- The Hopeless Ones...
-					["qg"] = 17712,	-- Captain Edward Hanes
 					["sourceQuest"] = 9674,	-- The Bloodcursed Naga
+					["qg"] = 17712,	-- Captain Edward Hanes
 					["coord"] = { 79.1, 22.6, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(15, 15, 1),
@@ -1111,15 +1111,15 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9620, {	-- The Missing Survey Team
-					["qg"] = 17423,	-- Harbinger Mikolaas
 					["sourceQuest"] = 9581,	-- Learning from the Crystals
+					["qg"] = 17423,	-- Harbinger Mikolaas
 					["coord"] = { 52.5, 53.2, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(10, 10, 1),
 				}),
 				q(9584, {	-- The Second Sample
-					["qg"] = 17423,	-- Harbinger Mikolaas
 					["sourceQuest"] = 9628,	-- Salvaging the Data
+					["qg"] = 17423,	-- Harbinger Mikolaas
 					["coord"] = { 52.5, 53.2, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(10, 10, 1),
@@ -1135,8 +1135,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9740, {	-- The Sun Gate
-					["qg"] = 17844,	-- Vindicator Aesom
 					["sourceQuest"] = 9746,	-- Limits of Physical Exhaustion
+					["qg"] = 17844,	-- Vindicator Aesom
 					["coord"] = { 55.5, 55.4, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(16, 16, 1),
@@ -1147,8 +1147,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9762, {	-- The Unwritten Prophecy
-					["qg"] = 17468,	-- Prophet Velen
 					["sourceQuest"] = 9759,	-- Ending Their World
+					["qg"] = 17468,	-- Prophet Velen
 					["coords"] = {
 						{ 54.0, 55.4, BLOODMYST_ISLE },
 						{ 32.6, 54.2, THE_EXODAR },
@@ -1162,8 +1162,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9633, {	-- The Way to Auberdine
-					["qg"] = 17614,	-- Huntress Kella Nightbow
 					["sourceQuest"] = 9632,	-- Newfound Allies
+					["qg"] = 17614,	-- Huntress Kella Nightbow
 					["coord"] = { 54.6, 53.9, AZUREMYST_ISLE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DARKSHORE },
@@ -1172,8 +1172,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(15, 15, 1),
 				}),
 				q(9670, {	-- They're Alive! Maybe...
-					["qg"] = 17686,	-- Researcher Cornelius
 					["altQuests"] = { 9749 },	-- They're Alive! Maybe... (duplicate, never went live)
+					["qg"] = 17686,	-- Researcher Cornelius
 					["coord"] = { 24.8, 34.3, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(16, 16, 1),
@@ -1186,34 +1186,34 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9696, {	-- Translations...
-					["qg"] = 17684,	-- Vindicator Boros
 					["sourceQuest"] = 9779,	-- Intercepting the Message
+					["qg"] = 17684,	-- Vindicator Boros
 					["coord"] = { 55.4, 55.2, BLOODMYST_ISLE },
 					["cost"] = { { "i", 24399, 1 } },	-- Sunhawk Missive
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(14, 14, 1),
 				}),
 				q(9699, {	-- Truth or Fiction
-					["qg"] = 17468,	-- Prophet Velen
 					["sourceQuest"] = 9698,	-- Audience with the Prophet
+					["qg"] = 17468,	-- Prophet Velen
 					["coord"] = { 32.6, 54.2, THE_EXODAR },
 					["cost"] = { { "i", 24230, 1 } },	-- Velen's Orders
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(14, 14, 1),
 				}),
 				q(9671, {	-- Urgent Delivery
-					["qg"] = 17703,	-- Messenger Hermesius
-					["altQuests"] = { 9750 },	-- UNUSED Urgent Delivery
 					-- #if BEFORE CATA
 					["sourceQuest"] = 9602,	-- Deliver Them From Evil...
 					-- #endif
+					["altQuests"] = { 9750 },	-- UNUSED Urgent Delivery
+					["qg"] = 17703,	-- Messenger Hermesius
 					["coord"] = { 54.9, 54.6, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(18, 18, 1),
 				}),
 				q(9574, {	-- Victims of Corruption
-					["qg"] = 17434,	-- Morae
 					["sourceQuest"] = 9629,	-- Catch and Release
+					["qg"] = 17434,	-- Morae
 					["coord"] = { 53.2, 57.7, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(10, 10, 1),
@@ -1225,8 +1225,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9760, {	-- Vindicator's Rest
-					["qg"] = 17658,	-- Exarch Admetius
 					["sourceQuest"] = 9756,	-- What We Don't Know...
+					["qg"] = 17658,	-- Exarch Admetius
 					["coord"] = { 52.6, 53.2, BLOODMYST_ISLE },
 					-- #if BEFORE CATA
 					["races"] = { DRAENEI },
@@ -1257,8 +1257,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(10, 10, 1),
 				}),
 				q(9756, {	-- What We Don't Know...
-					["qg"] = 17658,	-- Exarch Admetius
 					["sourceQuest"] = 9753,	-- What We Know...
+					["qg"] = 17658,	-- Exarch Admetius
 					["coord"] = { 52.6, 53.2, BLOODMYST_ISLE },
 					-- #if BEFORE CATA
 					["races"] = { DRAENEI },
@@ -1268,10 +1268,10 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(18, 18, 1),
 				}),
 				q(9753, {	-- What We Know...
-					["qg"] = 17844,	-- Vindicator Aesom
 					-- #if BEFORE CATA
 					["sourceQuest"] = 9740,	-- The Sun Gate
 					-- #endif
+					["qg"] = 17844,	-- Vindicator Aesom
 					["coord"] = { 55.5, 55.4, BLOODMYST_ISLE },
 					-- #if BEFORE CATA
 					["races"] = { DRAENEI },
@@ -1281,8 +1281,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(18, 18, 1),
 				}),
 				q(9649, {	-- Ysera's Tears
-					["qg"] = 17663,	-- Maatparm
 					["sourceQuest"] = 9648,	-- Eredath Mushroom Menagerie
+					["qg"] = 17663,	-- Maatparm
 					["coord"] = { 56.4, 56.8, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(15, 15, 1),

@@ -1973,8 +1973,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			})),
 			applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, pvp(q(29761, {	-- Master Pit Fighter
-				["qg"] = 55402,	-- Korgol Crushskull
 				["sourceQuest"] = 29760,	-- Pit Fighter
+				["qg"] = 55402,	-- Korgol Crushskull
 				["coord"] = { 47.3, 78.9, DARKMOON_ISLAND },
 				["timeline"] = { ADDED_4_3_0 },
 				["cost"] = { { "i", 74034, 12 } },	-- Pit Fighter
@@ -2011,8 +2011,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			}),
 			q(7941, {	-- More Armor Kits [Tier 5] (Not Really)
-				["qg"] = 14833,	-- Chronos <He Who Never Forgets!>
 				["sourceQuest"] = 7885,	-- Armor Kits
+				["qg"] = 14833,	-- Chronos <He Who Never Forgets!>
 				-- #if AFTER 4.3.0
 				["coord"] = { 55.0, 71.6, DARKMOON_ISLAND },
 				-- #else
@@ -2033,8 +2033,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			}),
 			q(7943, {	-- More Bat Eyes [Tier 5] (Not Really)
-				["qg"] = 14829,	-- Yebb Neblegear
 				["sourceQuest"] = 7903,	-- Evil Bat Eyes
+				["qg"] = 14829,	-- Yebb Neblegear
 				-- #if AFTER 4.3.0
 				["coord"] = { 51.6, 81.8, DARKMOON_ISLAND },
 				-- #else
@@ -2055,8 +2055,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			}),
 			q(7939, {	-- More Dense Grinding Stones [Tier 5] (Not Really)
-				["qg"] = 14832,	-- Kerri Hicks <The Strongest Woman Alive!>
 				["sourceQuest"] = 7893,	-- Rituals of Strength
+				["qg"] = 14832,	-- Kerri Hicks <The Strongest Woman Alive!>
 				-- #if AFTER 4.3.0
 				["coord"] = { 48.2, 67.6, DARKMOON_ISLAND },
 				-- #else
@@ -2077,8 +2077,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			}),
 			q(8223, {	-- More Glowing Scorpid Blood [Tier 5] (Not Really)
-				["qg"] = 14829,	-- Yebb Neblegear
 				["sourceQuest"] = 8222,	-- Glowing Scorpid Blood
+				["qg"] = 14829,	-- Yebb Neblegear
 				-- #if AFTER 4.3.0
 				["coord"] = { 51.6, 81.8, DARKMOON_ISLAND },
 				-- #else
@@ -2099,8 +2099,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			}),
 			q(7942, {	-- More Thorium Widgets [Tier 5] (Not Really)
-				["qg"] = 14841,	-- Rinling
 				["sourceQuest"] = 7898,	-- Thorium Widget
+				["qg"] = 14841,	-- Rinling
 				-- #if AFTER 4.3.0
 				["coord"] = { 49.6, 60.8, DARKMOON_ISLAND },
 				-- #else
@@ -2376,6 +2376,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			}),
 			q(7946, {	-- Spawn of Jubjub
+				["description"] = "You need to throw down a Dark Iron Ale mug near Morja in Darkmoon Faire, and wait for the jubling to come hopping to it. This might take a while. Then she'll offer the quest 'Spawn of Jubjub', which requires another mug of Dark Iron Ale. This can only be done once per character.",
 				["qg"] = 14871,	-- Morja
 				-- #if AFTER 4.3.0
 				["coord"] = { 55.9, 70.7, DARKMOON_ISLAND },
@@ -2388,7 +2389,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					-- #endif
 				},
 				-- #endif
-				["description"] = "You need to throw down a Dark Iron Ale mug near Morja in Darkmoon Faire, and wait for the jubling to come hopping to it. This might take a while. Then she'll offer the quest 'Spawn of Jubjub', which requires another mug of Dark Iron Ale. This can only be done once per character.",
 				["cost"] = { { "i", 11325, 2 } },	-- Dark Iron Ale Mug
 				["isMonthly"] = true,
 				["lvl"] = 10,
@@ -2875,15 +2875,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 		}),
 		n(QUESTS, {	-- TODO: Move into mini game section.
 			q(33756, {	-- Let's Keep Racing
-				["qg"] = 74056,	-- Malle Earnhard
 				["sourceQuest"] = 37910,	-- Welcome to the Darkmoon Races
+				["qg"] = 74056,	-- Malle Earnhard
 				["coord"] = { 48.9, 88.3, DARKMOON_ISLAND },
 				["timeline"] = { ADDED_6_0_2 },
 				["isDaily"] = true,
 			}),
 			q(37868, {	-- More Big Racing!
-				["qg"] = 90473,	-- Patti Earnhard
 				["sourceQuest"] = 37911,	-- The Real Big Race
+				["qg"] = 90473,	-- Patti Earnhard
 				["coord"] = { 53.2, 87.6, DARKMOON_ISLAND },
 				["timeline"] = { ADDED_6_0_2 },
 				["isDaily"] = true,
@@ -2924,8 +2924,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			}),
 			q(37911, {	-- The Real Big Race
-				["qg"] = 90473,	-- Patti Earnhard
 				["sourceQuest"] = 37819,	-- Welcome to the Darkmoon Races
+				["qg"] = 90473,	-- Patti Earnhard
 				["coord"] = { 53.2, 87.6, DARKMOON_ISLAND },
 				["timeline"] = { ADDED_6_0_2 },
 				["isDaily"] = true,
@@ -2976,8 +2976,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			}),
 			q(37910, {	-- The Real Race
-				["qg"] = 74056,	-- Malle Earnhard
 				["sourceQuest"] = 37819,	-- Welcome to the Darkmoon Races
+				["qg"] = 74056,	-- Malle Earnhard
 				["coord"] = { 48.9, 88.3, DARKMOON_ISLAND },
 				["timeline"] = { ADDED_6_0_2 },
 				["isDaily"] = true,

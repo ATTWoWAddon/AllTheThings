@@ -293,9 +293,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 				q(72915, {	-- Alliance of Convenience
 					["sourceQuests"] = { 72914 },	-- Rushing Quality
-					["providers"] = {
-						{ "n", 199950 },	-- Sabellian
-						{ "n", 201647 },	-- Sabellian
+					["qgs"] = {
+						199950,	-- Sabellian
+						201647,	-- Sabellian
 					},
 					["coord"] = { 33.2, 50.8, ZARALEK_CAVERN },
 					["groups"] = {
@@ -307,9 +307,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 				q(72916, {	-- Shut Them Down
 					["sourceQuests"] = { 72914 },	-- Rushing Quality
-					["providers"] = {
-						{ "n", 201581 },	-- Ebyssian
-						{ "n", 201646 },	-- Ebyssian
+					["qgs"] = {
+						201581,	-- Ebyssian
+						201646,	-- Ebyssian
 					},
 					["coord"] = { 33.1, 50.9, ZARALEK_CAVERN },
 				}),
@@ -517,9 +517,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 				q(74521, {	-- A Flame, Extinguished
 					["sourceQuests"] = { 72930 },	-- Stopping Sarkareth
-					-- also requires kill of Sarkareth
 					["provider"] = { "n", 201727 },	-- Ebyssian
 					["coord"] = { 48.0, 11.8, ZARALEK_CAVERN },
+					-- also requires kill of Sarkareth
 				}),
 				q(74522, {	-- Remnants
 					["sourceQuests"] = { 74521 },	-- A Flame, Extinguished
@@ -696,9 +696,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			}),
 			q(74859, {	-- Sporemoth Exterminator
 				["sourceQuests"] = { 74857 },	-- Mouse Detective
-				["providers"] = {
-					{ "n", 202600 },	-- Agrul
-					{ "n", 204573 },	-- Agrul
+				["qgs"] = {
+					202600,	-- Agrul
+					204573,	-- Agrul
 				},
 				["coord"] = { 50.4, 76.4, ZARALEK_CAVERN },
 			}),

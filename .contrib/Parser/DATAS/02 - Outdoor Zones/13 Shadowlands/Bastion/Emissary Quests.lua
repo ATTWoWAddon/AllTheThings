@@ -5,9 +5,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 	m(BASTION, {
 		n(EMISSARY_QUESTS, {
 			q(62850, {	-- Paragon of the Ascended
-				["minReputation"] = { FACTION_THE_ASCENDED, EXALTED },
 				["provider"] = { "n", 160470 },	-- Adjutant Nikos
 				["coord"] = { 52.2, 47.0, BASTION },
+				["minReputation"] = { FACTION_THE_ASCENDED, EXALTED },
 			}),
 			q(61097, bubbleDownSelf({ ["minReputation"] = { FACTION_THE_ASCENDED, EXALTED } }, {	-- Supplies from The Ascended
 				["provider"] = { "n", 160470 },	-- Adjutant Nikos

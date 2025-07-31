@@ -127,9 +127,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 							85463,	-- The Cartels of Undermine Renown Unlock
 						},
 						["sourceQuestNumRequired"] = 1,
-						["providers"] = {
-							{ "n", 237659 },	-- Carlo Greasegrind
-							{ "n", 231409 },	-- Smaks Topskimmer
+						["qgs"] = {
+							237659,	-- Carlo Greasegrind
+							231409,	-- Smaks Topskimmer
 						},
 						["coords"] = {
 							{ 26.6, 37.2, UNDERMINE },	-- Carlo Greasegrind

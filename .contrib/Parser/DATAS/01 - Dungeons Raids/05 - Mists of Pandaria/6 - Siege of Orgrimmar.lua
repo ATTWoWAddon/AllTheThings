@@ -309,8 +309,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					--["coord"] = { <coords>, <mapID> },    -- Siege of Orgrimmar
 				}),
 				q(33138, {    -- Why Do We Fight?
-					["provider"] = { "n", 73318 },    -- Lorewalker Cho
 					["sourceQuests"] = { 33147 },    -- The Last Gasp of Y'Shaarj
+					["provider"] = { "n", 73318 },    -- Lorewalker Cho
 					--["coord"] = { <coords>, <mapID> },    -- Siege of Orgrimmar
 				}),
 			}),

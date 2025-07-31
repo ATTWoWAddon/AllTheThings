@@ -21,7 +21,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 			ach(41029),	-- Combatant II: The War Within Season 3
 			ach(41030),	-- Challenger I: The War Within Season 3
 			ach(41031),	-- Challenger II: The War Within Season 3
-			ach(41026),	-- Duelist: The War Within Season 3
+			ach(41026, {	-- Duelist: The War Within Season 3
+				i(244234),	-- Astral Gladiator's Prestigious Cloak
+			}),
 			ach(41027),	-- Elite: The War Within Season 3
 			ach(41049, {	-- Gladiator: The War Within Season 3
 				i(232617),	-- Astral Gladiator's Fel Bat (MOUNT!)
@@ -73,7 +75,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 						bloody(525, i(230695)),	-- Astral Warmonger's Cape
 						bloody(525, i(230697)),	-- Astral Warmonger's Cloak
 						bloody(525, i(230698)),	-- Astral Warmonger's Drape
-						bloody(525, i(230696)),	-- Astral Warmonger's Shawl 
+						bloody(525, i(230696)),	-- Astral Warmonger's Shawl
 					}),
 					filter(CLOTH, {
 						bloody(525, i(230669)),	-- Astral Warmonger's Bindings
@@ -87,7 +89,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { A
 					}),
 					filter(LEATHER, {
 						bloody(700, i(230675)),	-- Astral Warmonger's Belt
-						bloody(700, i(230671)),	-- Astral Warmonger's Boots 
+						bloody(700, i(230671)),	-- Astral Warmonger's Boots
 						bloody(875, i(230674)),	-- Astral Warmonger's Breeches
 						bloody(700, i(230672)),	-- Astral Warmonger's Handwraps
 						bloody(875, i(230673)),	-- Astral Warmonger's Hood

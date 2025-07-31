@@ -157,116 +157,116 @@ root(ROOTS.ExpansionFeatures,
 								["provider"] = { "i", 127989 },	-- Waterlogged Manifest
 							}),
 							q(39665, {	-- A True Naval Commander
-								["provider"] = { "n", 93812 },	-- Salty Jorren <Naval Equipment Specialist>
 								["sourceQuest"] = 39666,	-- Equipping Our Fleet
+								["provider"] = { "n", 93812 },	-- Salty Jorren <Naval Equipment Specialist>
 								["coord"] = { 28.6, 10.8, DRAENOR_SHADOWMOON_VALLEY },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(39676, {	-- A True Naval Commander
-								["provider"] = { "n", 94801 },	-- Kronk Rustspark <Naval Equipment Specialist>
 								["sourceQuest"] = 39675,	-- Equipping Our Fleet
+								["provider"] = { "n", 94801 },	-- Kronk Rustspark <Naval Equipment Specialist>
 								["coord"] = { 40.0, 72.2, FROSTFIRE_RIDGE },
 								["races"] = HORDE_ONLY,
 							}),
 							q(39404, {	-- Destroying the Competition
-								["provider"] = { "n", 93822 },	-- Merreck Vonder
 								["sourceQuest"] = 39056,	-- Naval Commander
+								["provider"] = { "n", 93822 },	-- Merreck Vonder
 								["coord"] = { 28.2, 11.6, DRAENOR_SHADOWMOON_VALLEY },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(39401, {	-- Destroying the Competition
-								["provider"] = { "n", 94789 },	-- Rolosh Wavechaser
 								["sourceQuest"] = 39243,	-- Naval Commander
+								["provider"] = { "n", 94789 },	-- Rolosh Wavechaser
 								["coord"] = { 41.6, 72.3, FROSTFIRE_RIDGE },
 								["races"] = HORDE_ONLY,
 							}),
 							q(39666, {	-- Equipping Our Fleet
-								["provider"] = { "n", 93822 },	-- Merreck Vonder
 								["sourceQuest"] = 39655,	-- If At First You Fail, Try Again!
+								["provider"] = { "n", 93822 },	-- Merreck Vonder
 								["coord"] = { 28.2, 11.6, DRAENOR_SHADOWMOON_VALLEY },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(39675, {	-- Equipping Our Fleet
-								["provider"] = { "n", 94789 },	-- Rolosh Wavechaser
 								["sourceQuest"] = 39674,	-- If At First You Fail, Try Again!
+								["provider"] = { "n", 94789 },	-- Rolosh Wavechaser
 								["coord"] = { 41.6, 72.3, FROSTFIRE_RIDGE },
 								["races"] = HORDE_ONLY,
 							}),
 							q(39601, {	-- I Sunk Your Battleship
-								["provider"] = { "n", 93822 },	-- Merreck Vonder
 								["sourceQuest"] = 39665,	-- A True Naval Commander
+								["provider"] = { "n", 93822 },	-- Merreck Vonder
 								["coord"] = { 28.2, 11.6, DRAENOR_SHADOWMOON_VALLEY },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(39604, {	-- I Sunk Your Battleship
-								["provider"] = { "n", 94789 },	-- Rolosh Wavechaser
 								["sourceQuest"] = 39676,	-- A True Naval Commander
+								["provider"] = { "n", 94789 },	-- Rolosh Wavechaser
 								["coord"] = { 41.6, 72.3, FROSTFIRE_RIDGE },
 								["races"] = HORDE_ONLY,
 							}),
 							q(39655, {	-- If At First You Fail, Try Again!
-								["provider"] = { "n", 93822 },	-- Merreck Vonder
 								["sourceQuest"] = 39404,	-- Destroying the Competition
+								["provider"] = { "n", 93822 },	-- Merreck Vonder
 								["coord"] = { 28.2, 11.6, DRAENOR_SHADOWMOON_VALLEY },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(39674, {	-- If At First You Fail, Try Again!
-								["provider"] = { "n", 94789 },	-- Rolosh Wavechaser
 								["sourceQuest"] = 39401,	-- Destroying the Competition
+								["provider"] = { "n", 94789 },	-- Rolosh Wavechaser
 								["coord"] = { 41.6, 72.3, FROSTFIRE_RIDGE },
 								["races"] = HORDE_ONLY,
 							}),
 							q(39082, {	-- Let's Get To Work
-								["provider"] = { "n", 93822 },	-- Merreck Vonder
 								["sourceQuest"] = 38259,	-- All Hands on Deck
+								["provider"] = { "n", 93822 },	-- Merreck Vonder
 								["coord"] = { 28.1, 10.6, DRAENOR_SHADOWMOON_VALLEY },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(39236, {	-- Let's Get To Work
-								["provider"] = { "n", 94789 },	-- Rolosh Wavechaser
 								["sourceQuest"] = 38259,	-- All Hands on Deck
+								["provider"] = { "n", 94789 },	-- Rolosh Wavechaser
 								["coord"] = { 41.6, 72.3, FROSTFIRE_RIDGE },
 								["races"] = HORDE_ONLY,
 							}),
 							q(39056, {	-- Naval Commander
-								["provider"] = { "n", 93822 },	-- Merreck Vonder
 								["sourceQuest"] = 39422,	-- Shipyard Report
+								["provider"] = { "n", 93822 },	-- Merreck Vonder
 								["coord"] = { 28.2, 10.6, DRAENOR_SHADOWMOON_VALLEY },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(39243, {	-- Naval Commander
-								["provider"] = { "n", 94789 },	-- Rolosh Wavechaser
 								["sourceQuest"] = 39423,	-- Shipyard Report
+								["provider"] = { "n", 94789 },	-- Rolosh Wavechaser
 								["coord"] = { 41.6, 72.3, FROSTFIRE_RIDGE },
 								["races"] = HORDE_ONLY,
 							}),
 							q(39068, {	-- Naval Domination
-								["provider"] = { "n", 93822 },	-- Merreck Vonder
 								["sourceQuest"] = 39067,	-- Upgrading The Fleet
+								["provider"] = { "n", 93822 },	-- Merreck Vonder
 								["coord"] = { 28.2, 11.6, DRAENOR_SHADOWMOON_VALLEY },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(39246, {	-- Naval Domination
-								["provider"] = { "n", 94789 },	-- Rolosh Wavechaser
 								["sourceQuest"] = 39245,	-- Upgrading The Fleet
+								["provider"] = { "n", 94789 },	-- Rolosh Wavechaser
 								["coord"] = { 41.6, 72.3, FROSTFIRE_RIDGE },
 								["races"] = HORDE_ONLY,
 							}),
 							q(39055, {	-- Ship Shape
-								["provider"] = { "n", 95002 },	-- Yanas Seastrike
 								["sourceQuest"] = 39276,	-- Strange Tools
+								["provider"] = { "n", 95002 },	-- Yanas Seastrike
 								["coord"] = { 29.8, 10.6, DRAENOR_SHADOWMOON_VALLEY },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(39242, {	-- Ship Shape
-								["provider"] = { "n", 94429 },	-- Solog Roark
 								["sourceQuest"] = 39241,	-- Shipbuilding
+								["provider"] = { "n", 94429 },	-- Solog Roark
 								["coord"] = { 40.8, 70.2, FROSTFIRE_RIDGE },
 								["races"] = HORDE_ONLY,
 							}),
 							q(39054, {	-- Shipbuilding
-								["provider"] = { "n", 94429 },	-- Solog Roark
 								["sourceQuest"] = 39082,	-- Let's Get To Work
+								["provider"] = { "n", 94429 },	-- Solog Roark
 								["coord"] = { 29.7, 10.6, DRAENOR_SHADOWMOON_VALLEY },
 								["races"] = ALLIANCE_ONLY,
 								["groups"] = {
@@ -274,8 +274,8 @@ root(ROOTS.ExpansionFeatures,
 								},
 							}),
 							q(39241, {	-- Shipbuilding
-								["provider"] = { "n", 94429 },	-- Solog Roark
 								["sourceQuest"] = 39236,	-- Let's Get To Work
+								["provider"] = { "n", 94429 },	-- Solog Roark
 								["coord"] = { 40.8, 70.2, FROSTFIRE_RIDGE },
 								["races"] = HORDE_ONLY,
 								["groups"] = {
@@ -283,32 +283,32 @@ root(ROOTS.ExpansionFeatures,
 								},
 							}),
 							q(39276, {	-- Strange Tools
-								["provider"] = { "n", 94429 },	-- Solog Roark
 								["sourceQuest"] = 39054,	-- Shipbuilding
+								["provider"] = { "n", 94429 },	-- Solog Roark
 								["coord"] = { 29.7, 10.6, DRAENOR_SHADOWMOON_VALLEY },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(38435, {	-- The Invasion of Tanaan
-								["provider"] = { "n", 95002 },	-- Yanas Seastrike
 								["sourceQuest"] = 39055,	-- Ship Shape
+								["provider"] = { "n", 95002 },	-- Yanas Seastrike
 								["coord"] = { 29.8, 10.6, DRAENOR_SHADOWMOON_VALLEY },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(37889, {	-- The Invasion of Tanaan
-								["provider"] = { "n", 94429 },	-- Solog Roark
 								["sourceQuest"] = 39242,	-- Ship Shape
+								["provider"] = { "n", 94429 },	-- Solog Roark
 								["coord"] = { 40.8, 70.2, FROSTFIRE_RIDGE },
 								["races"] = HORDE_ONLY,
 							}),
 							q(39067, {	-- Upgrading The Fleet
-								["provider"] = { "n", 93822 },	-- Merreck Vonder
 								["sourceQuest"] = 39665,	-- A True Naval Commander
+								["provider"] = { "n", 93822 },	-- Merreck Vonder
 								["coord"] = { 28.2, 11.6, DRAENOR_SHADOWMOON_VALLEY },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(39245, {	-- Upgrading The Fleet
-								["provider"] = { "n", 94789 },	-- Rolosh Wavechaser
 								["sourceQuest"] = 39676,	-- A True Naval Commander
+								["provider"] = { "n", 94789 },	-- Rolosh Wavechaser
 								["coord"] = { 42.1, 71.0, FROSTFIRE_RIDGE },
 								["races"] = HORDE_ONLY,
 							}),

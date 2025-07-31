@@ -1835,7 +1835,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 11.0.7
-		expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7 } }, {
+		expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_7 } }, {
 			i(224258),	-- [DNT] Flower
 			i(234313),	-- [DNT] Item
 			i(234969),	-- Archivist Chassis
@@ -1856,7 +1856,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 11.1.0
-		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0 } }, {
+		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_0 } }, {
 			i(235667),	-- Add Keystone Affix: Xal'atath's Bargain: Pulsar
 			i(232076),	-- Adventurer's Warbound Battlegear Drop
 			i(232069),	-- Adventurer's Warbound Boots
@@ -1880,17 +1880,62 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(228798),	-- Gob-Glider
 			i(235559),	-- Hidden Trove
 			i(230017),	-- Master Blaster's Insignia
+			i(238207),	-- Nanny's Surge Dividend
 			i(234618),	-- Omega Oyster Outbreak
 			i(231291),	-- Radar
 			i(235627),	-- Scribbles' Favorite Candies
 			i(230990),	-- Set Keystone Map: Operation: Floodgate
 			i(231787),	-- Vigilante's Disposable Falling Shadow Grapple Gun
+			i(236651),	-- Vince's Old Left Shoe
+			i(229810),	-- Vintage Kaja'Cola Can
 			i(236956),	-- Void-Touched Valorstone
+			i(235713),	-- Weird Sand
 			i(233054),	-- Wonder Ball
 			i(225766),	-- Zoom-Zoom Boosters
 			i(232929),	-- [DNT] Large Surge Chest
 			i(232928),	-- [DNT] Medium Surge Chest
 			i(232927),	-- [DNT] Small Surge Chest
+		})),
+
+		-- 11.1.5
+		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_5 } }, {
+			i(237509),	-- Bottle of Invisibility
+			i(237508),	-- Can of Amps
+			i(235804),	-- Concentrated Potion of Celerity
+			i(235844),	-- Concentrated Potion of Revivification
+			i(235817),	-- Concentrated Potion of Swiftstrike
+			i(235837),	-- Concentrated Potion of Tenacity
+			i(235798),	-- Diluted Potion of Celerity
+			i(235842),	-- Diluted Potion of Revivification
+			i(235815),	-- Diluted Potion of Swiftstrike
+			i(235839),	-- Diluted Potion of Tenacity
+			i(235274),	-- Echo of N'zoth
+			i(235284),	-- Echo of N'zoth
+			i(235285),	-- Echo of N'zoth
+			i(243245),	-- Gears Grabbed
+			i(237510),	-- Goblet
+			i(243249),	-- Khaz Algar Adventurer Pack
+			i(240187),	-- Refulgent Crystal Shards
+			i(237511),	-- Vial of Healing
+			i(242318),	-- Wooden Orgrimmar Shield
+			i(236939),	-- [DNT] TEST
+			i(236958),	-- [NOT USED] Empty Mysterious Potion
+			i(236941),	-- [NOT USED] Mysterious Accessories Satchel
+			i(236943),	-- [NOT USED] Mysterious Accessories Satchel
+			i(236946),	-- [NOT USED] Mysterious Accessories Satchel
+			i(235631),	-- [NOT USED] Mysterious Large Satchel of Goodies
+			i(236940),	-- [NOT USED] Mysterious Outfitters Satchel
+			i(236942),	-- [NOT USED] Mysterious Outfitters Satchel
+			i(236945),	-- [NOT USED] Mysterious Outfitters Satchel
+		})),
+
+		-- 11.1.7
+		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_7 } }, {
+			n(ARMOR, {
+				i(246114),	-- Catalyst Elixir
+				i(238740),	-- Distilled Knowledge of Timeways
+				i(246730),	-- Landro's Loot Box
+			}),
 		})),
 	}),
 }));

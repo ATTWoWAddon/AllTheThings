@@ -182,8 +182,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(QUESTS, {
 				q(38396, {	-- A Curious Oddity
-					["qg"] = 6294,	-- Krom Stoutarm
 					["sourceQuest"] = 38394,	-- Completionism
+					["qg"] = 6294,	-- Krom Stoutarm
 					["coord"] = { 74.6, 9.8, IRONFORGE },
 					["timeline"] = {
 						ADDED_6_1_0,
@@ -281,16 +281,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				q(686, {	-- A King's Tribute (1/3)
-					["qg"] = 2784,	-- King Magni Bronzebeard
 					["sourceQuest"] = 683,	-- Sara Balloo's Plea
+					["qg"] = 2784,	-- King Magni Bronzebeard
 					["coord"] = { 39.4, 55.8, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
 				}),
 				q(689, {	-- A King's Tribute (2/3)
-					["qg"] = 2790,	-- Grand Mason Marblesten
 					["sourceQuest"] = 686,	-- A King's Tribute (1/3)
+					["qg"] = 2790,	-- Grand Mason Marblesten
 					["coord"] = { 38.6, 87, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { HILLSBRAD_FOOTHILLS },
@@ -307,8 +307,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(700, {	-- A King's Tribute (3/3)
-					["qg"] = 2790,	-- Grand Mason Marblesten
 					["sourceQuest"] = 689,	-- A King's Tribute (2/3)
+					["qg"] = 2790,	-- Grand Mason Marblesten
 					["coord"] = { 38.6, 87, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -320,11 +320,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(5641, {	-- A Lack of Fear
-					["qg"] = 11406,	-- High Priest Rohan <Priest Trainer>
 					["altQuests"] = {
 						5647,	-- A Lack of Fear [Darnassus]
 						5645,	-- A Lack of Fear [Stormwind City]
 					},
+					["qg"] = 11406,	-- High Priest Rohan <Priest Trainer>
 					["coord"] = { 25, 8.2, IRONFORGE },
 					["timeline"] = { REMOVED_2_3_0 },
 					["classes"] = { PRIEST },
@@ -362,8 +362,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(4513, {	-- A Little Slime Goes a Long Way (2/2)
-					["qg"] = 9616,	-- Laris Geardawdle
 					["sourceQuest"] = 4512,	-- A Little Slime Goes a Long Way (1/2)
+					["qg"] = 9616,	-- Laris Geardawdle
 					["coord"] = { 75.4, 23.4, IRONFORGE },
 					["maps"] = { UNGORO_CRATER },
 					["races"] = ALLIANCE_ONLY,
@@ -405,8 +405,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				q(7806, {	-- Additional Runecloth [Ironforge]
-					["qg"] = 14723,	-- Mistina Steelshield
 					["sourceQuest"] = 7805,	-- A Donation of Runecloth
+					["qg"] = 14723,	-- Mistina Steelshield
 					["coord"] = { 43.2, 31.9, IRONFORGE },
 					["maxReputation"] = { FACTION_IRONFORGE, EXALTED },	-- Ironforge, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
@@ -416,8 +416,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 50,
 				}),
 				q(7812, {	-- Additional Runecloth [Gnomeregan Exiles]
-					["qg"] = 14724,	-- Bubulo Acerbus
 					["sourceQuest"] = 7811,	-- A Donation of Runecloth
+					["qg"] = 14724,	-- Bubulo Acerbus
 					["coord"] = { 74.1, 48.1, IRONFORGE },
 					["maxReputation"] = { FACTION_GNOMEREGAN, EXALTED },	-- Gnomeregan Exiles, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
@@ -427,8 +427,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 50,
 				}),
 				q(3450, {	-- An Easy Pickup
-					["qg"] = 8507,	-- Tymor
 					["sourceQuest"] = 3448,	-- Passing the Burden
+					["qg"] = 8507,	-- Tymor
 					["coord"] = { 31.2, 4.6, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -436,11 +436,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if NOT ANYCLASSIC
 				q(5677, {	-- Arcane Feedback [Ironforge]
-					["qg"] = 11406,	-- High Priest Rohan <Priest Trainer>
 					["altQuests"] = {
 						5676,	-- Arcane Feedback [Stormwind City]
 						5678,	-- Arcane Feedback [Darnassus]
 					},
+					["qg"] = 11406,	-- High Priest Rohan <Priest Trainer>
 					["coord"] = { 26.4, 7.6, IRONFORGE },
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = { HUMAN },
@@ -457,11 +457,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				q(3449, {	-- Arcane Runes
-					["qg"] = 8507,	-- Tymor
 					["sourceQuests"] = {
 						3448,	-- Passing the Burden
 						3451,	-- Signal for Pickup (1/2)
 					},
+					["qg"] = 8507,	-- Tymor
 					["coord"] = { 31.2, 4.6, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { AZSHARA },
@@ -501,8 +501,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 42, 64, AZSHARA },
 						}),
 						q(3451, {	-- Signal for Pickup (1/2)
-							["qg"] = 8517,	-- Xiggs Fuselighter
 							["sourceQuest"] = 3450,	-- An Easy Pickup
+							["qg"] = 8517,	-- Xiggs Fuselighter
 							["coord"] = { 71, 94.2, IRONFORGE },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
@@ -517,8 +517,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(3483, {	-- Signal for Pickup (2/2)
-							["qg"] = 8517,	-- Xiggs Fuselighter
 							["sourceQuest"] = 3451,	-- Signal for Pickup (1/2)
+							["qg"] = 8517,	-- Xiggs Fuselighter
 							["coord"] = { 71, 94.2, IRONFORGE },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
@@ -603,8 +603,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				q(38394, {	-- Completionism
-					["qg"] = 6294,	-- Krom Stoutarm
 					["sourceQuest"] = 38345,	-- Numismatics
+					["qg"] = 6294,	-- Krom Stoutarm
 					["coord"] = { 74.6, 9.8, IRONFORGE },
 					["timeline"] = {
 						ADDED_6_1_0,
@@ -619,11 +619,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if NOT ANYCLASSIC
 				q(5675, {	-- Elune's Grace [Ironforge]
-					["qg"] = 11406,	-- High Priest Rohan <Priest Trainer>
 					["altQuests"] = {
 						5672,	-- Elune's Grace [Darnassus]
 						5673,	-- Elune's Grace [Stormwind City]
 					},
+					["qg"] = 11406,	-- High Priest Rohan <Priest Trainer>
 					["coord"] = { 25, 8.2, IRONFORGE },
 					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
@@ -641,7 +641,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				-- #if NOT ANYCLASSIC
 				q(5639, {	-- Desperate Prayer
-					["qg"] = 11406,	-- High Priest Rohan <Priest Trainer>
 					["altQuests"] = {
 						5634,	-- Desperate Prayer [Stormwind City #1]
 						5635,	-- Desperate Prayer [Elwynn Forest]
@@ -650,6 +649,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5638,	-- Desperate Prayer [Stormwind City #2]
 						5640,	-- Desperate Prayer [Darnassus]
 					},
+					["qg"] = 11406,	-- High Priest Rohan <Priest Trainer>
 					["coord"] = { 26.4, 7.6, IRONFORGE },
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = { HUMAN, DWARF },
@@ -709,8 +709,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(1682, {	-- Grey Iron Weapons
-					["qg"] = 6031,	-- Tormus Deepforge
 					["sourceQuest"] = 1681,	-- Ironband's Compound
+					["qg"] = 6031,	-- Tormus Deepforge
 					["coord"] = { 49, 42.6, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },
@@ -732,11 +732,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(6388, {	-- Gryth Thurden
+					["sourceQuest"] = 6391,	-- Ride to Ironforge
 					["providers"] = {
 						{ "n", 4256 },	-- Golnir Bouldertoe
 						{ "i", 16311 },	-- Honorary Picks
 					},
-					["sourceQuest"] = 6391,	-- Ride to Ironforge
 					["coord"] = { 51, 26, IRONFORGE },
 					["races"] = { DARKIRON, DWARF, GNOME },
 					-- #if BEFORE 4.0.3
@@ -744,9 +744,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				q(6609, {	-- I Got Nothin' Left!
+					["description"] = "Requires 225 Fishing to start this quest.",
 					["qg"] = 5161,	-- Grimnur Stonebrand <Fishing Trainer>
 					["coord"] = { 48.2, 6.6, IRONFORGE },
-					["description"] = "Requires 225 Fishing to start this quest.",
 					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
@@ -780,8 +780,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				q(1073, {	-- Ineptitude + Chemicals = Fun (1/2)
-					["qg"] = 4081,	-- Lomac Gearstrip
 					["sourceQuest"] = 1072,	-- An Old Colleague
+					["qg"] = 4081,	-- Lomac Gearstrip
 					["coord"] = { 71.9, 51.9, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STONETALON_MOUNTAINS },
@@ -793,11 +793,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 17,
 				}),
 				q(1074, {	-- Ineptitude + Chemicals = Fun (2/2)
+					["sourceQuest"] = 1073,	-- Ineptitude + Chemicals = Fun (1/2)
 					["providers"] = {
 						{ "n", 4081 },	-- Lomac Gearstrip
 						{ "i", 5732 },	-- NG-5
 					},
-					["sourceQuest"] = 1073,	-- Ineptitude + Chemicals = Fun (1/2)
 					["coord"] = { 71.9, 51.9, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STONETALON_MOUNTAINS },
@@ -805,8 +805,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 17,
 				}),
 				q(1708, {	-- Iron Coral
-					["qg"] = 6169,	-- Klockmort Spannerspan
 					["sourceQuest"] = 1704,	-- Klockmort Spannerspan
+					["qg"] = 6169,	-- Klockmort Spannerspan
 					["coord"] = { 68.2, 46.2, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { WETLANDS },
@@ -832,8 +832,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 30,
 				}),
 				q(1681, {	-- Ironband's Compound
-					["qg"] = 6031,	-- Tormus Deepforge
 					["sourceQuest"] = 1680,	-- Tormus Deepforge
+					["qg"] = 6031,	-- Tormus Deepforge
 					["coord"] = { 49, 42.6, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DUN_MOROGH },
@@ -878,8 +878,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				q(2298, {	-- Kingly Shakedown
-					["qg"] = 5165,	-- Hulfdan Blackbeard
 					["sourceQuest"] = 2299,	-- To Hulfdan!
+					["qg"] = 5165,	-- Hulfdan Blackbeard
 					["coord"] = { 51.6, 14.8, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
@@ -888,8 +888,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 16,
 				}),
 				q(1709, {	-- Klockmort's Creation
-					["qg"] = 6169,	-- Klockmort Spannerspan
 					["sourceQuest"] = 1708,	-- Iron Coral
+					["qg"] = 6169,	-- Klockmort Spannerspan
 					["coord"] = { 68.2, 46.2, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },
@@ -923,9 +923,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				q(1880,	{	-- Mage-tastic Gizmonitor
-					["qg"] = 5144,	-- Bink <Mage Trainer>
-					["altQuests"] = { 1861 },	-- Mirror Lake
 					["sourceQuest"] = 1879,	-- Speak with Bink
+					["altQuests"] = { 1861 },	-- Mirror Lake
+					["qg"] = 5144,	-- Bink <Mage Trainer>
 					["coord"] = { 27.3, 8.3, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DUN_MOROGH },
@@ -949,8 +949,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(38345, {	-- Numismatics
-					["qg"] = 6294,	-- Krom Stoutarm
 					["sourceQuest"] = 38344,	-- Mystery Notebook
+					["qg"] = 6294,	-- Krom Stoutarm
 					["coord"] = { 74.6, 9.8, IRONFORGE },
 					["timeline"] = {
 						ADDED_6_1_0,
@@ -1022,11 +1022,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(6392, {	-- Return to Brock / Return to Gremlock [CATA+]
+					["sourceQuest"] = 6388,	-- Gryth Thurden
 					["providers"] = {
 						{ "n", 1573 },	-- Gryth Thurden
 						{ "i", 16311 },	-- Honorary Picks
 					},
-					["sourceQuest"] = 6388,	-- Gryth Thurden
 					["coords"] = {
 						-- #if AFTER 4.0.3
 						{ 55.8, 47.8, IRONFORGE },
@@ -1047,11 +1047,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				q(3461, {	-- Return to Tymor
+					["sourceQuest"] = 3449,	-- Arcane Runes
 					["providers"] = {
 						{ "n", 8392 },	-- Pilot Xiggs Fuselighter
 						{ "i", 10445 },	-- Drawing Kit
 					},
-					["sourceQuest"] = 3449,	-- Arcane Runes
 					["coord"] = { 77.8, 91.4, AZSHARA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1067,7 +1067,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if NOT ANYCLASSIC
 				q(5633, {	-- Returning Home [Ironforge]
-					["qg"] = 5142,	-- Braenna Flintcrag <Priest Trainer>
 					["altQuests"] = {
 						5627,	-- Returning Home [Darnassus]
 						5628,	-- Returning Home [Elwynn Forest]
@@ -1076,6 +1075,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5631,	-- Returning Home [Stormwind City]
 						5632,	-- Returning Home [Stormwind City]
 					},
+					["qg"] = 5142,	-- Braenna Flintcrag <Priest Trainer>
 					["coord"] = { 24.6, 9.2, IRONFORGE },
 					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
@@ -1092,22 +1092,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				q(683, {	-- Sara Balloo's Plea
+					["sourceQuest"] = 637,	-- Sully Balloo's Letter
 					["providers"] = {
 						{ "n", 2695 },	-- Sara Balloo
 						{ "i", 4514 },	-- Sara Balloo's Plea
 					},
-					["sourceQuest"] = 637,	-- Sully Balloo's Letter
 					["coord"] = { 63.5, 67.2, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
 				}),
 				applyclassicphase(CATA_PHASE_ONE, q(26118, {	-- Seize the Ambassador
+					["sourceQuest"] = 26112,	-- Demanding Answers
 					["providers"] = {
 						{ "n", 42129 },	-- Moira Thaurissan
 						{ "i", 56837 },	-- Sturdy Manacles (PQI!)
 					},
-					["sourceQuest"] = 26112,	-- Demanding Answers
 					["coord"] = { 39.8, 57.2, IRONFORGE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1133,9 +1133,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				q(3641, {	-- Show Your Work
-					["qg"] = 7944,	-- Tinkmaster Overspark <Master Gnome Engineer>
-					["altQuests"] = { 3639, 3643 },	-- Show Your Work
 					["sourceQuest"] = 3640,	-- The Pledge of Secrecy
+					["altQuests"] = { 3639, 3643 },	-- Show Your Work
+					["qg"] = 7944,	-- Tinkmaster Overspark <Master Gnome Engineer>
 					["coord"] = { 69.8, 50.2, IRONFORGE },
 					["timeline"] = { REMOVED_3_0_2 },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
 					["cost"] = {
@@ -1152,8 +1152,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(2238, {	-- Simple Subterfugin'
-					["qg"] = 5165,	-- Hulfdan Blackbeard
 					["sourceQuest"] = 2218,	-- Road to Salvation
+					["qg"] = 5165,	-- Hulfdan Blackbeard
 					["coord"] = { 51.6, 14.8, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1216,13 +1216,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				q(3640, {	-- The Pledge of Secrecy
-					["qg"] = 7944,	-- Tinkmaster Overspark <Master Gnome Engineer>
-					["altQuests"] = { 3638, 3642 },	-- The Pledge of Secrecy
 					["sourceQuests"] = {
 						3630,	-- Gnome Engineering
 						3630,	-- Gnome Engineering
 						3630,	-- Gnome Engineering
 					},
+					["altQuests"] = { 3638, 3642 },	-- The Pledge of Secrecy
+					["qg"] = 7944,	-- Tinkmaster Overspark <Master Gnome Engineer>
 					["coord"] = { 69.8, 50.2, IRONFORGE },
 					["timeline"] = { REMOVED_3_0_2 },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
 					["requireSkill"] = ENGINEERING,
@@ -1237,8 +1237,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(38402, {	-- The Same, But Different
-					["qg"] = 6294,	-- Krom Stoutarm
 					["sourceQuest"] = 38396,	-- A Curious Oddity
+					["qg"] = 6294,	-- Krom Stoutarm
 					["coord"] = { 74.6, 9.8, IRONFORGE },
 					["timeline"] = {
 						ADDED_6_1_0,
@@ -1252,8 +1252,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(1715, {	-- The Slaughtered Lamb
-					["qg"] = 6120,	-- Lago Blackwrench
 					["altQuests"] = { 1685 },	-- Gakin's Summons (Voidwalker)
+					["qg"] = 6120,	-- Lago Blackwrench
 					["coord"] = { 47.6, 9.6, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { HUMAN, GNOME },
@@ -1289,13 +1289,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 12,
 				}),
 				q(1645, {	-- The Tome of Divinity (1a/8)
-					["qg"] = 6179,	-- Tiza Battleforge
-					["altQuests"] = { 1646 },	-- The Tome of Divinity (2/8)
 					["sourceQuests"] = {
 						2997,	-- The Tome of Divinity [Dun Morogh]
 						2999,	-- The Tome of Divinity [Ironforge]
 						3000,	-- The Tome of Divinity [Stormwind City]
 					},
+					["altQuests"] = { 1646 },	-- The Tome of Divinity (2/8)
+					["qg"] = 6179,	-- Tiza Battleforge
 					["coord"] = { 27.4, 12, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
@@ -1306,16 +1306,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(1646, {	-- The Tome of Divinity (1b/8)
-					["provider"] = { "i", 6916 },	-- Tome of Divinity
 					["sourceQuest"] = 1645,	-- The Tome of Divinity (1a/8)
+					["provider"] = { "i", 6916 },	-- Tome of Divinity
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
 					["classes"] = { PALADIN },
 					["lvl"] = 12,
 				}),
 				q(1647, {	-- The Tome of Divinity (2/8)
-					["qg"] = 6179,	-- Tiza Battleforge
 					["sourceQuest"] = 1646,	-- The Tome of Divinity (1b/8)
+					["qg"] = 6179,	-- Tiza Battleforge
 					["coord"] = { 27.4, 12, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
@@ -1323,8 +1323,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 12,
 				}),
 				q(1648, {	-- The Tome of Divinity (3/8)
-					["qg"] = 6175,	-- John Turner
 					["sourceQuest"] = 1647,	-- The Tome of Divinity (2/8)
+					["qg"] = 6175,	-- John Turner
 					["coord"] = { 27.6, 70.6, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 2589, 10 } },	-- Linen Cloth
@@ -1333,8 +1333,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 12,
 				}),
 				q(1778, {	-- The Tome of Divinity (4/8)
-					["qg"] = 6175,	-- John Turner
 					["sourceQuest"] = 1648,	-- The Tome of Divinity (3/8)
+					["qg"] = 6175,	-- John Turner
 					["coord"] = { 27.6, 70.6, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
@@ -1342,11 +1342,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 12,
 				}),
 				q(1779, {	-- The Tome of Divinity (5/8)
+					["sourceQuest"] = 1778,	-- The Tome of Divinity (4/8)
 					["providers"] = {
 						{ "n", 6179 },	-- Tiza Battleforge
 						{ "i", 6866 },	-- Symbol of Life
 					},
-					["sourceQuest"] = 1778,	-- The Tome of Divinity (4/8)
 					["coord"] = { 27.4, 12, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
@@ -1354,8 +1354,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 12,
 				}),
 				q(1783, {	-- The Tome of Divinity (6/8)
-					["qg"] = 6178,	-- Muiredon Battleforge
 					["sourceQuest"] = 1779,	-- The Tome of Divinity (5/8)
+					["qg"] = 6178,	-- Muiredon Battleforge
 					["coord"] = { 23.6, 8.6, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
@@ -1377,8 +1377,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(1784, {	-- The Tome of Divinity (7/8)
-					["qg"] = 6177,	-- Narm Faulk
 					["sourceQuest"] = 1783,	-- The Tome of Divinity (6/8)
+					["qg"] = 6177,	-- Narm Faulk
 					["coord"] = { 78.2, 58.0, DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
@@ -1393,8 +1393,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(1785, {	-- The Tome of Divinity (8/8)
-					["qg"] = 6178,	-- Muiredon Battleforge
 					["sourceQuest"] = 1784,	-- The Tome of Divinity (7/8)
+					["qg"] = 6178,	-- Muiredon Battleforge
 					["coord"] = { 23.6, 8.6, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { DWARF },
@@ -1407,8 +1407,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				q(1680, {	-- Tormus Deepforge
-					["qg"] = 6114,	-- Muren Stormpike
 					["sourceQuest"] = 1678,	-- Vejrek
+					["qg"] = 6114,	-- Muren Stormpike
 					["coord"] = { 70.6, 90.4, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },
@@ -1417,15 +1417,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 10,
 				}),
 				q(1678, {	-- Vejrek
-					["qg"] = 6114,	-- Muren Stormpike
-					["altQuests"] = {
-						1665,	-- Bartleby's Mug
-						-- #if AFTER TBC
-						9582,	-- Strength of One
-						-- #endif
-						--1678,	-- Vejrek
-						1683,	-- Vorlus Vilehoof
-					},
 					["sourceQuests"] = {
 						1638,	-- A Warrior's Training
 						1684,	-- Elanaria
@@ -1434,6 +1425,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						9582,	-- Strength of One
 						-- #endif
 					},
+					["altQuests"] = {
+						1665,	-- Bartleby's Mug
+						-- #if AFTER TBC
+						9582,	-- Strength of One
+						-- #endif
+						--1678,	-- Vejrek
+						1683,	-- Vorlus Vilehoof
+					},
+					["qg"] = 6114,	-- Muren Stormpike
 					["coord"] = { 70.6, 90.4, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { DUN_MOROGH },

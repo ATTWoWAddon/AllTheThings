@@ -52,79 +52,79 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							pet(1975),	-- Direbeak Hatchling (PET!)
 							q(44977, {	-- Allies in Stormheim
-								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 								["sourceQuest"] = 44976,	-- Hunting Lesson: Rose Taipan
+								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 							}),
 							q(44982, {	-- Direbeak Bonding
-								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 								["sourceQuest"] = 44981,	-- The Unkindly Faction
+								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 								["groups"] = {
 									i(142495),	-- Fake Teeth (TOY!)
 								},
 							}),
 							q(44988, {	-- Direbeak Reunion
-								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 								["sourceQuest"] = 44987,	-- Direbeak Team Rumble
+								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 								["groups"] = {
 									i(137579),	-- Brilliant Direbeak (MOUNT!)
 								},
 							}),
 							q(44979, {	-- Dire Prey
-								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 								["sourceQuest"] = 44978,	-- Direbeak Team Up
+								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 							}),
 							q(44987, {	-- Direbeak Team Rumble
-								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 								["sourceQuest"] = 44986,	-- Teamwork Lesson: Krosus
+								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 							}),
 							q(44978, {	-- Direbeak Team Up
-								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 								["sourceQuest"] = 44977,	-- Allies in Stormheim
+								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 							}),
 							q(44983, {	-- Hunting Lesson: Golden Eaglet
-								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 								["sourceQuest"] = 44982,	-- Direbeak Bonding
+								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 							}),
 							q(44976, {	-- Hunting Lesson: Rose Taipan
-								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 								["sourceQuests"] = {
 									44974,	-- The Smell of Dwarves
 									44975,	-- The Smell of Tauren
 								},
+								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 							}),
 							q(44985, {	-- Hunting Lesson: Stormstruck Beaver
-								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 								["sourceQuest"] = 44984,	-- Teamwork Lesson: Fenryr
+								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 							}),
 							q(44980, {	-- Hunting Lesson: Tiny Apparition
-								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 								["sourceQuest"] = 44979,	-- Dire Prey
+								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 							}),
 							q(44973, {	-- Raising Your Direbeak
 								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 							}),
 							q(44984, {	-- Teamwork Lesson: Fenryr
-								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 								["sourceQuest"] = 44983,	-- Hunting Lesson: Golden Eaglet
+								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 							}),
 							q(44986, {	-- Teamwork Lesson: Krosus
-								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 								["sourceQuest"] = 44985,	-- Hunting Lesson: Stormstruck Beaver
+								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 								["_drop"] = { "g" },	-- Drop Ultimate Battle-Training Stone
 							}),
 							q(44974, {	-- The Smell of Dwarves
+								["sourceQuest"] = 44973,	-- Raising Your Direbeak
 								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 								["races"] = ALLIANCE_ONLY,
-								["sourceQuest"] = 44973,	-- Raising Your Direbeak
 							}),
 							q(44975, {	-- The Smell of Tauren
+								["sourceQuest"] = 44973,	-- Raising Your Direbeak
 								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 								["races"] = HORDE_ONLY,
-								["sourceQuest"] = 44973,	-- Raising Your Direbeak
 							}),
 							q(44981, {	-- The Unkindly Faction
-								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 								["sourceQuest"] = 44980,	-- Hunting Lesson: Tiny Apparition
+								["provider"] = { "n", 115785 },	-- Direbeak Hatchling
 							}),
 						},
 					})),

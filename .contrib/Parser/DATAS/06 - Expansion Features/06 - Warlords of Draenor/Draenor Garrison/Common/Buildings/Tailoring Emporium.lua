@@ -9,8 +9,8 @@ root(ROOTS.ExpansionFeatures,
 				garrisonBuilding(128, {	-- Enchanter's Study (rank 1: 94, rank 2: 127, rank 3: 128)
 					n(QUESTS, {
 						q(36262, {	-- Ameeka, Master Tailor
-							["provider"] = { "n", 84776 },	-- Aerun
 							["sourceQuests"] = { 36236 },	-- The Cryptic Tome of Tailoring
+							["provider"] = { "n", 84776 },	-- Aerun
 							["requireSkill"] = TAILORING,
 							["races"] = ALLIANCE_ONLY,
 						}),

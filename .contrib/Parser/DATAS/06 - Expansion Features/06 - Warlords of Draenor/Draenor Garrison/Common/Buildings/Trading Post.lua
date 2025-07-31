@@ -30,8 +30,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				}),
 				n(QUESTS, {
 					q(36948, {	-- Auctioning for Parts
-						["provider"] = { "n", 87206 },	-- Ancient Trading Mechanism
 						["description"] = "Completing this quest grants you the ability to access the Auction House from your Garrison.",
+						["provider"] = { "n", 87206 },	-- Ancient Trading Mechanism
 						["cost"] = {
 							{ "i", 118375, 1 },	-- 1x Arcane Crystal Module
 							{ "i", 118376, 1 },	-- 1x Auction Control Module
@@ -41,8 +41,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(37014, {	-- Auctioning for Parts
-						["provider"] = { "n", 86806 },	-- Ancient Trading Mechanism
 						["description"] = "Completing this quest grants you the ability to access the Auction House from your Garrison.",
+						["provider"] = { "n", 86806 },	-- Ancient Trading Mechanism
 						["cost"] = {
 							{ "i", 118375, 1 },	-- 1x Arcane Crystal Module
 							{ "i", 118376, 1 },	-- 1x Auction Control Module

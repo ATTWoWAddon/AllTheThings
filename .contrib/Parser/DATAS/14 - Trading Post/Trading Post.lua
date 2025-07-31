@@ -1,7 +1,6 @@
 -------------------------------------
 --     T R A D I N G   P O S T     --
 -------------------------------------
-local TRADERS_TENDER = 2032;
 FILLED_TRAVELERS_LOG = createHeader({
 	readable = "Filled Travelers Log",
 	icon = 4696085,
@@ -3446,10 +3445,56 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = TR
 				}),
 			}),
 		})),
+		n(AUGUST, bubbleDownSelf({ ["timeline"] = { "added 11.1.7.61609", "removed 11.1.7.99999" } }, {	-- TODO: Timeline in/out correctly
+			n(FILLED_TRAVELERS_LOG, {
+				i(243572),	-- Grandmaster's Prophetic Board (MOUNT!)
+			}),
+			filter(MOUNTS, {
+				traderstender(700, i(243591)),	-- Grandmaster's Royal Board (MOUNT!)
+				traderstender(600, i(223469)),	-- Sentinel War Wolf (MOUNT!)
+				traderstender(600, i(223449)),	-- Kor'kron Warsaber (MOUNT!)
+			}),
+			filter(BATTLE_PETS, {
+				traderstender(300, i(223474)),	-- Worgli the Apprehensive (PET!)
+			}),
+			filter(COSMETIC, {
+				traderstender(20, i(233169)),	-- Banded Midnight War Slippers
+				traderstender(20, i(233152)),	-- Banded Midnight War Wraps
+				traderstender(20, i(233184)),	-- Banded Snowy War Slippers
+				traderstender(20, i(233167)),	-- Banded Snowy War Wraps
+				traderstender(50, i(246015)),	-- Classic Midnight Eye Patch
+				traderstender(50, i(246016)),	-- Classic Snowy Eye Patch
+				traderstender(75, i(212627)),	-- Dueler's Azure Shoulder Cape
+				traderstender(75, i(212617)),	-- Dueler's Crimson Shoulder Cape
+				traderstender(550, iensemble(243258)),	-- Ensemble: Grandmaster's Prophetic Attire
+				traderstender(550, iensemble(243277)),	-- Ensemble: Grandmaster's Royal Attire
+				traderstender(300, iensemble(242455)),	-- Ensemble: Midnight Sweatsuit
+				traderstender(300, iensemble(242489)),	-- Ensemble: Snowy Sweatsuit
+				traderstender(150, i(242525)),	-- Grandmaster's Prophetic Axe
+				traderstender(100, i(242372)),	-- Grandmaster's Prophetic Bulwark
+				traderstender(175, i(242539)),	-- Grandmaster's Prophetic Mace
+				traderstender(175, i(242357)),	-- Grandmaster's Prophetic Stave
+				traderstender(150, i(242527)),	-- Grandmaster's Royal Axe
+				traderstender(100, i(242374)),	-- Grandmaster's Royal Bulwark
+				traderstender(175, i(242541)),	-- Grandmaster's Royal Mace
+				traderstender(175, i(242359)),	-- Grandmaster's Royal Stave
+				traderstender(40, i(233096)),	-- Long Midnight War Skirt
+				traderstender(50, i(233135)),	-- Long Midnight War Skirt and Leg Wraps
+				traderstender(40, i(233111)),	-- Long Snowy War Skirt
+				traderstender(50, i(233150)),	-- Long Snowy War Skirt and Leg Wraps
+				traderstender(40, i(233079)),	-- Short Midnight War Skirt
+				traderstender(50, i(233116)),	-- Short Midnight War Skirt and Leg Wraps
+				traderstender(40, i(233094)),	-- Short Snowy War Skirt
+				traderstender(50, i(233133)),	-- Short Snowy War Skirt and Leg Wraps
+				traderstender(50, i(235019)),	-- Vigilante's Midnight Mask
+				traderstender(50, i(235035)),	-- Vigilante's Snowy Mask
+			}),
+		})),
 	}),
 }));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = NEVER_IMPLEMENTED, }, {	-- Is this tagged with NEVER_IMPLEMENTED incorrectly?
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF,
+sharedData({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = NEVER_IMPLEMENTED, }, {
 	-- These don't trigger when using ensembles, but they are listed on Wowhead
 	q(65718),	-- Ensemble: Slumbering Caldera Regalia
 	q(72081),	-- Ensemble: Val'sharah Protector's Battleplate

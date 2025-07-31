@@ -1,4 +1,4 @@
-﻿local ObjectDB = ObjectDB; for objectID,objectData in pairs({
+local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[73940] = {
 		readable = "Ooze Covered Silver Vein",
 		model = 219553,

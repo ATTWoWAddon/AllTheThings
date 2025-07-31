@@ -134,8 +134,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					--["sourceQuestNumRequired"] = 1
 					["provider"] = { "n", 212797 },	-- Talisa Whisperbloom
 					["coord"] = { 49.7, 62.1, EMERALD_DREAM },
-					["isWeekly"] = true,
 					["maxReputation"] = { FACTION_DREAM_WARDENS, 20 },
+					["isWeekly"] = true,
 					["groups"] = {
 						i(SEEDBLOOM, {
 							["description"] = "Any item bought via Seedbloom's can also be obtained randomly from The Emerald Bounty event while planting or contributing a Small Dreamseed, Plump Dreamseed, or Gigantic Dreamseed.",

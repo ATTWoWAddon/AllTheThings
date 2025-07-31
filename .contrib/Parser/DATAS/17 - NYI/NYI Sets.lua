@@ -12852,7 +12852,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 		})),
 
 		-- 11.0.5
-		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
+		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_5 } }, {
 			i(225021),	-- Dragonstalker's Eternal Belt
 			i(225020),	-- Dragonstalker's Eternal Bracers
 			i(225027),	-- Dragonstalker's Eternal Breastplate

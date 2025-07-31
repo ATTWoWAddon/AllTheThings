@@ -18,9 +18,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			})),
 			q(50604, {	-- Tortollan Seekers
 				["provider"] = { "n", 135793 },	-- Collector Kojo
-				["lvl"] = 120,
 				["coord"] = { 40.54, 36.41, STORMSONG_VALLEY },
 				["isWorldQuest"] = true,
+				["lvl"] = 120,
 				["sym"] = {{"select","itemID",
 					165680,	-- Igneous Winterskorn Loop
 					165679,	-- Ornate Elun'dris Ring
@@ -37,10 +37,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(50601, {	-- Storm's Wake
 				["provider"] = { "n", 135800 },	-- Sister Lilyana
-				["lvl"] = 120,
 				["coord"] = { 59.29, 69.33, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
 				["isWorldQuest"] = true,
+				["lvl"] = 120,
 				["groups"] = {
 					i(165868, {	-- Storm's Wake Equipment Cache
 						["sym"] = {
@@ -67,8 +67,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(54457, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 }, ["minReputation"] = { FACTION_STORMS_WAKE, EXALTED } }, {	-- Supplies from Storm's Wake
 				["provider"] = { "n", 135800 },	-- Sister Lilyana
-				["races"] = ALLIANCE_ONLY,
 				["coord"] = { 59.29, 69.33, STORMSONG_VALLEY },
+				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["groups"] = {
 					i(166294, {	-- Storm's Wake Supplies

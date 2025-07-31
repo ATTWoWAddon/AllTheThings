@@ -30,11 +30,7 @@ root(ROOTS.Zones, {
 					["requireSkill"] = MINING,
 				}),
 				petbattle(q(41990)),	-- Chopped
-				q(45307, {	-- Claws for Alarm!
-					crit(34848, {	-- Claws for Alarm!
-						["achievementID"] = 11427,	-- No Shellfish Endeavor
-					}),
-				}),
+				q(45307),	-- Claws for Alarm!
 				petbattle(q(41914)),	-- Clear the Catacombs
 				q(42151),	-- Clear the Skies
 				q(44067, {	-- Consolidating Power
@@ -239,9 +235,9 @@ root(ROOTS.Zones, {
 				q(44012),	-- WANTED: Siegemaster Aedrin
 				q(44023),	-- WANTED: Siegemaster Aedrin (rare wq)
 				q(43943, {	-- Withered Army Training
-					["providers"] = {
-						{ "n", 97140 },	-- First Arcanist Thalyssra (Frail)
-						{ "n", 115736 },	-- First Arcanist Thalyssra (Kinda Hot)
+					["qgs"] = {
+						97140,	-- First Arcanist Thalyssra (Frail)
+						115736,	-- First Arcanist Thalyssra (Kinda Hot)
 					},
 					["maps"] = {
 						692,	-- Falanaar Arcway

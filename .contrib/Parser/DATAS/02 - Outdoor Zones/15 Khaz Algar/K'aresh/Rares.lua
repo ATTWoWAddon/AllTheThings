@@ -4,6 +4,30 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, {
 	m(KARESH, {
 		n(RARES, {
+			n(COMMON_BOSS_DROPS, {	-- Using this header as temp. Can These drop from all rares or is each one specific? //Braghe
+				i(239448),	-- Reshii Magi's Vestments
+				i(239449),	-- Reshii Magi's Slippers
+				i(239452),	-- Reshii Magi's Leggings
+				i(239454),	-- Reshii Magi's Cord
+				i(239456),	-- Reshii Scout's Jerkin
+				i(239457),	-- Reshii Scout's Soles
+				i(239458),	-- Reshii Scout's Grips
+				i(239459),	-- Reshii Scout's Hood
+				i(239461),	-- Reshii Scout's Shoulderpads
+				i(239462),	-- Reshii Scout's Belt
+				i(239465),	-- Reshii Skirmisher's Boots
+				i(239466),	-- Reshii Skirmisher's Gauntlets
+				i(239468),	-- Reshii Skirmisher's Legguards
+				i(239470),	-- Reshii Skirmisher's Sash
+				i(239471),	-- Reshii Skirmisher's Armguards
+				i(239472),	-- Reshii Brute's Breastplate
+				i(239473),	-- Reshii Brute's Sollerets
+				i(239474),	-- Reshii Brute's Handguards
+				i(239475),	-- Reshii Brute's Helmet
+				i(239476),	-- Reshii Brute's Greaves
+				i(246064),	-- Reshii Magi's Pendant
+				i(246065),	-- Reshii Magi's Band
+			}),
 			n(232098, {	-- "Chowdar" <Escaped Auction Parcel #8675308>
 				["coords"] = {	-- Runs between the coordinates
 					{ 81.9, 75.6, KARESH_TAZAVESH },
@@ -19,11 +43,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				},
 			}),
 			n(241956, {	-- Arcana-Monger So'zer
+				["description"] = "Rare can be summoned and killed only when someone is doing a Warrant quest.",
 				--["coord"] = { x, y, KARESH },
 				--["questID"] = ,
 			}),
 			n(238540, {	-- Grubber
-				["coord"] = { 71.1, 57.2, KARESH_TAZAVESH },
+				["description"] = "Rare can be summoned and killed only when someone is doing a Warrant quest.",
+				["coord"] = { 71.2, 57.2, KARESH_TAZAVESH },
 				["questID"] = 90698,
 			}),
 			n(245998, {	-- Heka'tamos <the Elemental Disjunction>
@@ -33,6 +59,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				["groups"] = {
 					i(245272),	-- Heka'Tarnos, Bringer of Discord (PET!)
 				},
+			}),
+			n(238536, {	-- Hollowbane
+				["description"] = "Rare can be summoned and killed only when someone is doing a Warrant quest.",
+				--["coord"] = { x, y, KARESH },
+				--["questID"] = ,
 			}),
 			n(232128, {	-- Ixthar the Unblinking
 				["description"] = "You need to Phasedive in order to see the Rare Creature.",
@@ -115,7 +146,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				},
 			}),
 			n(241920, {	-- Purple Peat
-				["description"] = "Rare can be summoned and killed only during a Warrant quest.",
+				["description"] = "Rare can be summoned and killed only when someone is doing a Warrant quest.",
 				["coord"] = { 42.5, 57.5, KARESH },
 				["questID"] = 90692,
 			}),
@@ -138,6 +169,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				["groups"] = {
 					i(239469),	-- Reshii Skirmisher's Pauldrons
 				},
+			}),
+			n(238135, {	-- Shatterpulse
+				["description"] = "Rare can be summoned and killed only when someone is doing a Warrant quest.",
+				--["coord"] = { x, y, KARESH },
+				--["questID"] = ,
 			}),
 			n(232193, {	-- Stalker of the Wastes
 				["description"] = "You need to Phasedive in order to see the Rare Creature.",
@@ -172,7 +208,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 			}),
 			n(235104, {	-- The Wallbreaker
 				["description"] = "Rare can be summoned and killed only during the 'Devourer Attack: Tazavesh'.",
-				--["coord"] = { ?, ?, KARESH_TAZAVESH },
+				["coord"] = { 27.5, 72.3, KARESH_TAZAVESH },
 				["questID"] = 91312,
 				["groups"] = {
 					i(238665),	-- Crystallized Anima (QS!)
@@ -193,7 +229,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				},
 			}),
 			n(238384, {	-- Xy'vox the Twisted
-				["description"] = "Rare can be summoned and killed only during a Warrant quest.",
+				["description"] = "Rare can be summoned and killed only when someone is doing a Warrant quest.",
 				["coord"] = { 31.2, 57.8, KARESH },
 				["questID"] = 90694,
 				["groups"] = {

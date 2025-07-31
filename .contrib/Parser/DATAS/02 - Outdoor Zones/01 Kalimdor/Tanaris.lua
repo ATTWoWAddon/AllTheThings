@@ -2934,8 +2934,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(QUESTS, {
 				q(2750, {	-- A Bad Egg
-					["qg"] = 7763,	-- Curgle Cranklehop
 					["sourceQuest"] = 2741,	-- The Super Egg-O-Matic
+					["qg"] = 7763,	-- Curgle Cranklehop
 					["coord"] = { 52.2, 26.8, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 8646, 1 }},	-- Bad Egg
@@ -2943,13 +2943,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 42,
 				}),
 				q(7652, {	-- A Blue Light Bargain
-					["qg"] = 14567,	-- Derotain Mudsipper
 					-- #if AFTER TBC
 					["sourceQuests"] = {
 						10891,	-- Imperial Plate Armor [A]
 						10892,	-- Imperial Plate Armor [H]
 					},
 					-- #endif
+					["qg"] = 14567,	-- Derotain Mudsipper
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 					["requireSkill"] = BLACKSMITHING,
@@ -2957,11 +2957,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 50,
 				}),
 				q(25072, {	-- A Few Good Goblins
-					["qg"] = 38706,	-- Zeke Bootscuff
 					["sourceQuests"] = {
 						25103,	-- Bootlegger Outpost
 						26889,	-- All Cheered Out
 					},
+					["qg"] = 38706,	-- Zeke Bootscuff
 					["coord"] = { 55.6, 60.8, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -2983,8 +2983,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(2748, {	-- A Fine Egg
-					["qg"] = 7763,	-- Curgle Cranklehop
 					["sourceQuest"] = 2741,	-- The Super Egg-O-Matic
+					["qg"] = 7763,	-- Curgle Cranklehop
 					["coord"] = { 52.2, 26.8, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 8644, 1 }},	-- Fine Egg
@@ -2995,8 +2995,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(2771, {	-- A Good Head On Your Shoulders
-					["qg"] = 7804,	-- Trenton Lighthammer
 					["sourceQuest"] = 2764,	-- Galvan's Finest Pupil
+					["qg"] = 7804,	-- Trenton Lighthammer
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -3013,8 +3013,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24951, {	-- A Great Idea
-					["qg"] = 38706,	-- Zeke Bootscuff
 					["sourceQuest"] = 24933,	-- Chicken of the Desert
+					["qg"] = 38706,	-- Zeke Bootscuff
 					["coord"] = { 55.6, 60.8, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -3025,15 +3025,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(26889, {	-- All Cheered Out
-					["qg"] = 38704,	-- Kelsey Steelspark
 					["sourceQuest"] = 25166,	-- Captain Dreadbeard (A)
+					["qg"] = 38704,	-- Kelsey Steelspark
 					["coord"] = { 72.2, 45.2, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(2747, {	-- An Extraordinary Egg
-					["qg"] = 7763,	-- Curgle Cranklehop
 					["sourceQuest"] = 2741,	-- The Super Egg-O-Matic
+					["qg"] = 7763,	-- Curgle Cranklehop
 					["coord"] = { 52.2, 26.8, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 8643, 1 }},	-- Extraordinary Egg
@@ -3044,8 +3044,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(2749, {	-- An Ordinary Egg
-					["qg"] = 7763,	-- Curgle Cranklehop
 					["sourceQuest"] = 2741,	-- The Super Egg-O-Matic
+					["qg"] = 7763,	-- Curgle Cranklehop
 					["coord"] = { 52.2, 26.8, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 8645, 1 }},	-- Ordinary Egg
@@ -3056,8 +3056,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25420, {	-- Ancient Obstacles (A)
-					["qg"] = 40109,	-- Prospector Gunstan
 					["sourceQuest"] = 28881,	-- Prospector Gunstan
+					["qg"] = 40109,	-- Prospector Gunstan
 					["coord"] = { 40.1, 77.0, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -3077,11 +3077,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25017, {	-- Ancient Obstacles (H)
-					["qg"] = 38922,	-- Examiner Andoren Dawnrise
 					["sourceQuests"] = {
 						25020,	-- Fragments of Language (H)
 						25019,	-- Laying Claim (H)
 					},
+					["qg"] = 38922,	-- Examiner Andoren Dawnrise
 					["coord"] = { 33.2, 77.0, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -3101,10 +3101,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25018, {	-- Andoren Will Know
-					["qg"] = 38849,	-- Megs Dreadshredder
 					["sourceQuests"] = {
 						25014,	-- Sandscraper's Treasure
 					},
+					["qg"] = 38849,	-- Megs Dreadshredder
 					["coord"] = { 44.5, 52.6, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -3125,8 +3125,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25115, {	-- Blisterpaw Butchery
-					["qg"] = 39178,	-- Driz Plunkbow
 					["sourceQuest"] = 25111,	-- Scavengers Scavenged
+					["qg"] = 39178,	-- Driz Plunkbow
 					["coord"] = { 52.3, 28.1, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
@@ -3146,15 +3146,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25103, {	-- Bootlegger Outpost
-					["qg"] = 38703,	-- Megs Dreadshredder
 					["sourceQuest"] = 24950,	-- Captain Dreadbeard (H)
+					["qg"] = 38703,	-- Megs Dreadshredder
 					["coord"] = { 71.8, 45.4, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(24949, {	-- Booty Duty
-					["qg"] = 38703,	-- Megs Dreadshredder
 					["sourceQuest"] = 24910,	-- Rocket Rescue (H)
+					["qg"] = 38703,	-- Megs Dreadshredder
 					["coord"] = { 71.8, 45.4, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -3171,11 +3171,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(4496, {	-- Bungle in the Jungle
-					["qg"] = 5594,	-- Alchemist Pestlezugg
 					["sourceQuests"] = {
 						4494,	-- March of the Silithid [Horde]
 						4493,	-- March of the Silithid [Alliance]
 					},
+					["qg"] = 5594,	-- Alchemist Pestlezugg
 					["coord"] = { 50.8, 27.0, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { UNGORO_CRATER },
@@ -3218,12 +3218,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
                     ["lvl"] = 50,
 				},
 				q(25166, {	-- Captain Dreadbeard (A)
-					["qg"] = 38704,	-- Kelsey Steelspark
 					["sourceQuests"] = {
 						26887,	-- Filling Our Pockets
 						26886,	-- Going Off-Task
 						25053,	-- To The Ground!
 					},
+					["qg"] = 38704,	-- Kelsey Steelspark
 					["coord"] = { 72.2, 45.2, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -3246,12 +3246,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24950, {	-- Captain Dreadbeard (H)
-					["qg"] = 38703,	-- Megs Dreadshredder
 					["sourceQuests"] = {
 						25541,	-- Filling Our Pockets
 						25534,	-- Going Off-Task
 						24928,	-- To The Ground!
 					},
+					["qg"] = 38703,	-- Megs Dreadshredder
 					["coord"] = { 71.8, 45.4, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -3274,8 +3274,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24933, {	-- Chicken of the Desert
-					["qg"] = 38706,	-- Zeke Bootscuff
 					["sourceQuest"] = 24932,	-- Cutting Losses
+					["qg"] = 38706,	-- Zeke Bootscuff
 					["coord"] = { 55.6, 60.8, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -3286,25 +3286,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(6610, {	-- Clamlette Surprise
-					["qgs"] = {
-						-- #if AFTER 4.0.3
-						40589,	-- Dirge Quikcleave
-						-- #else
-						8125,	-- Dirge Quikcleave
-						-- #endif
-					},
-					["altQuests"] = { 13825 },	-- Clamlette Surprise
-					["sourceQuests"] = {
-						6611,	-- To Gadgetzan You Go!
-						6612,	-- I Know A Guy...
-					},
-					["coords"] = {
-						-- #if AFTER 4.0.3
-						{ 52.4, 29.0, TANARIS },
-						-- #else
-						{ 52.6, 28.1, TANARIS },
-						-- #endif
-					},
 					["description"] =
 						-- #if AFTER 8.0.1
 						"Becomes available at Classic Cooking skill level 225 when character level requirement is met.\n\nThe Horde breadcrumb for this quest is called 'To Gadgetzan You Go!' and is picked up from cooking trainer Zamja in Orgrimmar. Sadly the Alliance breadcrumb from Ironforge named 'I Know A Guy...' is unobtainable.",
@@ -3313,6 +3294,25 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #else
 						"Becomes available at Cooking skill level 225 when character level requirement is met.\n\nThe Alliance breadcrumb for this quest is called 'I Know A Guy...' and is picked up from cooking trainer Daryl Riknussun in Ironforge. The Horde breadcrumb for this quest is called 'To Gadgetzan You Go!' and is picked up from cooking trainer Zamja in Orgrimmar.",
 						-- #endif
+					["sourceQuests"] = {
+						6611,	-- To Gadgetzan You Go!
+						6612,	-- I Know A Guy...
+					},
+					["altQuests"] = { 13825 },	-- Clamlette Surprise
+					["qgs"] = {
+						-- #if AFTER 4.0.3
+						40589,	-- Dirge Quikcleave
+						-- #else
+						8125,	-- Dirge Quikcleave
+						-- #endif
+					},
+					["coords"] = {
+						-- #if AFTER 4.0.3
+						{ 52.4, 29.0, TANARIS },
+						-- #else
+						{ 52.6, 28.1, TANARIS },
+						-- #endif
+					},
 					["cost"] = {
 						{ "i", 12207, 12 },	-- Giant Egg
 						{ "i", 7974, 10 },	-- Zesty Clam Meat
@@ -3336,11 +3336,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(13825, {	-- Clamlette Surprise
-					["qg"] = 8125,	-- Dirge Quikcleave
 					["sourceQuests"] = {
 						6611,	-- To Gadgetzan You Go!
 						6612,	-- I Know A Guy...
 					},
+					["qg"] = 8125,	-- Dirge Quikcleave
 					["coord"] = { 52.63, 28.12, TANARIS },
 					["timeline"] = { ADDED_3_1_0, REMOVED_4_0_3 },
 					["requireSkill"] = COOKING,
@@ -3393,11 +3393,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24932, {	-- Cutting Losses
-					["qg"] = 38706,	-- Zeke Bootscuff
 					["sourceQuests"] = {
 						25103,	-- Bootlegger Outpost
 						26889,	-- All Cheered Out
 					},
+					["qg"] = 38706,	-- Zeke Bootscuff
 					["coord"] = { 55.6, 60.8, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -3415,8 +3415,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25026, {	-- Darkest Mojo
-					["qg"] = 38927,	-- Mazoga
 					["sourceQuest"] = 25025,	-- Sang'thraze the Deflector
+					["qg"] = 38927,	-- Mazoga
 					["coord"] = { 42.3, 23.8, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -3430,8 +3430,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25052, {	-- Dead Man's Chest (A)
-					["qg"] = 38704,	-- Kelsey Steelspark
 					["sourceQuest"] = 25050,	-- Rocket Rescue (A)
+					["qg"] = 38704,	-- Kelsey Steelspark
 					["coord"] = { 72.2, 45.2, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -3459,8 +3459,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24927, {	-- Dead Man's Chest (H)
-					["qg"] = 38703,	-- Megs Dreadshredder
 					["sourceQuest"] = 24910,	-- Rocket Rescue (H)
+					["qg"] = 38703,	-- Megs Dreadshredder
 					["coord"] = { 71.8, 45.4, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -3488,8 +3488,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25060, {	-- Define "Crazy"
-					["qg"] = 39059,	-- Kelsey Steelspark
 					["sourceQuest"] = 25061,	-- Land's End
+					["qg"] = 39059,	-- Kelsey Steelspark
 					["coord"] = { 50.0, 82.9, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -3500,21 +3500,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(2661, {	-- Delivery for Marin
+					["sourceQuest"] = 2641,	-- Sprinkle's Secret Ingredient
 					["providers"] = {
 						{ "n", 7583 },	-- Sprinkle
 						{ "i", 8528 },	-- Violet Powder
 					},
-					["sourceQuest"] = 2641,	-- Sprinkle's Secret Ingredient
 					["coord"] = { 51, 26.8, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 44,
 				}),
 				q(2874, {	-- Deliver to MacKinley
+					["sourceQuest"] = 2873,	-- Stoley's Shipment
 					["providers"] = {
 						{ "n", 7881 },	-- Stoley
 						{ "i", 9245 },	-- Stoley's Bottle
 					},
-					["sourceQuest"] = 2873,	-- Stoley's Shipment
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STRANGLETHORN_VALE },
 					["lvl"] = 40,
@@ -3528,12 +3528,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(3321, {	-- Did You Lose This?
-					["qg"] = 7804,	-- Trenton Lighthammer
 					["sourceQuests"] = {
 						2771,	-- A Good Head On Your Shoulders
 						2773,	-- The Mithril Kid
 						2772,	-- The World At Your Feet
 					},
+					["qg"] = 7804,	-- Trenton Lighthammer
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = BLACKSMITHING,
@@ -3547,8 +3547,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_THREE, q(81877, {	-- Fight Night
-					["qg"] = 220984,	-- Fizbuz Mithril
 					["sourceQuest"] = 81801,	-- Return to the Arena
+					["qg"] = 220984,	-- Fizbuz Mithril
 					["coord"] = { 51.6, 27.6, TANARIS },
 					["timeline"] = { ADDED_1_15_2 },
 					["classes"] = { WARRIOR },
@@ -3568,11 +3568,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				-- #endif
 				q(26887, {	-- Filling Our Pockets (A)
-					["qg"] = 38704,	-- Kelsey Steelspark
 					["sourceQuests"] = {
 						25053,	-- To The Ground!
 						25054,	-- Lootin' Plunder
 					},
+					["qg"] = 38704,	-- Kelsey Steelspark
 					["coord"] = { 72.2, 45.2, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -3589,8 +3589,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25541, {	-- Filling Our Pockets (H)
-					["qg"] = 38703,	-- Megs Dreadshredder
 					["sourceQuest"] = 24949,	-- Booty Duty
+					["qg"] = 38703,	-- Megs Dreadshredder
 					["coord"] = { 71.8, 45.4, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -3607,13 +3607,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(351, {	-- Find OOX-17/TN!
-					["provider"] = { "i", 8623 },	-- OOX-17/TN Distress Beacon
 					["description"] = "The item that starts this quest can be found as a zone drop in Tanaris or in Zul'Farrak.",
+					["provider"] = { "i", 8623 },	-- OOX-17/TN Distress Beacon
 					["lvl"] = lvlsquish(43, 43, 15),
 				}),
 				q(25565, {	-- Fragments of Language (A)
-					["qg"] = 40109,	-- Prospector Gunstan
 					["sourceQuest"] = 28881,	-- Prospector Gunstan
+					["qg"] = 40109,	-- Prospector Gunstan
 					["coord"] = { 40.1, 77.0, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -3677,8 +3677,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25522, {	-- Gargantapid
-					["qg"] = 40580,	-- Gus Rustflutter
 					["sourceQuest"] = 25521,	-- I'm With Scorpid
+					["qg"] = 40580,	-- Gus Rustflutter
 					["coord"] = { 42.5, 24.3, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -3698,8 +3698,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24931, {	-- Gazer Tag
-					["qg"] = 11811,	-- Narain Soothfancy
 					["sourceQuest"] = 24932,	-- Cutting Losses
+					["qg"] = 11811,	-- Narain Soothfancy
 					["coord"] = { 55.2, 60.3, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -3710,8 +3710,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24957, {	-- Get The Centipaarty Started
-					["qg"] = 38849,	-- Megs Dreadshredder
 					["sourceQuest"] = 24955,	-- Un-Chartered
+					["qg"] = 38849,	-- Megs Dreadshredder
 					["coord"] = { 44.5, 52.6, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -3730,8 +3730,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(26886, {	-- Going Off-Task (A)
-					["qg"] = 38704,	-- Kelsey Steelspark
 					["sourceQuest"] = 25052,	-- Dead Man's Chest (A)
+					["qg"] = 38704,	-- Kelsey Steelspark
 					["coord"] = { 72.2, 45.2, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -3742,8 +3742,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25534, {	-- Going Off-Task (H)
-					["qg"] = 38703,	-- Megs Dreadshredder
 					["sourceQuest"] = 24927,	-- Dead Man's Chest (H)
+					["qg"] = 38703,	-- Megs Dreadshredder
 					["coord"] = { 71.8, 45.4, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -3765,8 +3765,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 42,
 				}),
 				q(53821, {	-- He's Dead, Jastor
-					["qg"] = 151130,	-- Grizzek Fizzwrench
 					["sourceQuest"] = 53819,	-- Return to the Nest
+					["qg"] = 151130,	-- Grizzek Fizzwrench
 					["coord"] = { 27.2, 60.1, TANARIS },
 					["timeline"] = { ADDED_8_1_5 },
 					["races"] = HORDE_ONLY,
@@ -3822,8 +3822,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 50,
 				}),
 				q(7653, {	-- Imperial Plate Belt
-					["qg"] = 14567,	-- Derotain Mudsipper
 					["sourceQuest"] = 7652,	-- A Blue Light Bargain
+					["qg"] = 14567,	-- Derotain Mudsipper
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -3839,8 +3839,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(7654, {	-- Imperial Plate Boots
-					["qg"] = 14567,	-- Derotain Mudsipper
 					["sourceQuest"] = 7652,	-- A Blue Light Bargain
+					["qg"] = 14567,	-- Derotain Mudsipper
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -3856,8 +3856,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(7655, {	-- Imperial Plate Bracer
-					["qg"] = 14567,	-- Derotain Mudsipper
 					["sourceQuest"] = 7652,	-- A Blue Light Bargain
+					["qg"] = 14567,	-- Derotain Mudsipper
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -3873,8 +3873,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(7656, {	-- Imperial Plate Chest
-					["qg"] = 14567,	-- Derotain Mudsipper
 					["sourceQuest"] = 7652,	-- A Blue Light Bargain
+					["qg"] = 14567,	-- Derotain Mudsipper
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -3890,8 +3890,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(7657, {	-- Imperial Plate Helm
-					["qg"] = 14567,	-- Derotain Mudsipper
 					["sourceQuest"] = 7652,	-- A Blue Light Bargain
+					["qg"] = 14567,	-- Derotain Mudsipper
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -3907,8 +3907,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(7658, {	-- Imperial Plate Leggings
-					["qg"] = 14567,	-- Derotain Mudsipper
 					["sourceQuest"] = 7652,	-- A Blue Light Bargain
+					["qg"] = 14567,	-- Derotain Mudsipper
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -3924,8 +3924,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(7659, {	-- Imperial Plate Shoulders
-					["qg"] = 14567,	-- Derotain Mudsipper
 					["sourceQuest"] = 7652,	-- A Blue Light Bargain
+					["qg"] = 14567,	-- Derotain Mudsipper
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -3941,35 +3941,35 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(2606, {	-- In Good Taste
+					["sourceQuest"] = 2605,	-- The Thirsty Goblin
 					["providers"] = {
 						{ "n", 7564 },	-- Marin Noggenfogger
 						{ "i", 8603 },	-- Thistleshrub Dew
 					},
-					["sourceQuest"] = 2605,	-- The Thirsty Goblin
 					["coord"] = { 51.8, 28.6, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 44,
 				}),
 				q(110, {	-- Insect Part Analysis (1/2)
-					["qg"] = 7724,	-- Senior Surveyor Fizzledowser
 					["sourceQuest"] = 10,	-- The Scrimshank Redemption
+					["qg"] = 7724,	-- Senior Surveyor Fizzledowser
 					["coord"] = { 50.2, 27.5, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 39,
 				}),
 				q(113, {	-- Insect Part Analysis (2/2)
+					["sourceQuest"] = 110,	-- Insect Part Analysis (1/2)
 					["providers"] = {
 						{ "n", 5594 },	-- Alchemist Pestlezugg <Alchemy Supplies>
 						{ "i", 8594 },	-- Insect Analysis Report
 					},
-					["sourceQuest"] = 110,	-- Insect Part Analysis (1/2)
 					["coord"] = { 50.9, 27.0, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 39,
 				}),
 				q(24953, {	-- Just Trying to Kill Some Bugs
-					["qg"] = 38706,	-- Zeke Bootscuff
 					["sourceQuest"] = 24951,	-- A Great Idea
+					["qg"] = 38706,	-- Zeke Bootscuff
 					["coord"] = { 55.6, 60.8, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -3988,16 +3988,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25061, {	-- Land's End
-					["qg"] = 11811,	-- Narain Soothfancy
 					["sourceQuest"] = 24953,	-- Just Trying to Kill Some Bugs
+					["qg"] = 11811,	-- Narain Soothfancy
 					["coord"] = { 55.2, 60.3, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(25559, {	-- Laying Claim (A)
-					["qg"] = 40109,	-- Prospector Gunstan
 					["sourceQuest"] = 28881,	-- Prospector Gunstan
+					["qg"] = 40109,	-- Prospector Gunstan
 					["coord"] = { 40.1, 77.0, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -4008,8 +4008,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25019, {	-- Laying Claim (H)
-					["qg"] = 38922,	-- Examiner Andoren Dawnrise
 					["sourceQuest"] = 25018,	-- Andoren Will Know
+					["qg"] = 38922,	-- Examiner Andoren Dawnrise
 					["coord"] = { 33.2, 77.0, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -4020,19 +4020,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(3914, {	-- Linken's Sword
+					["sourceQuest"] = 3913,	-- A Grave Situation
 					["providers"] = {
 						{ "o", 148504 },	-- A Conspicuous Gravestone
 						{ "i",  11162 },	-- Linken's Superior Sword
 					},
-					["sourceQuest"] = 3913,	-- A Grave Situation
 					["coord"] = { 53.9, 29.0, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { UNGORO_CRATER },
 					["lvl"] = 47,
 				}),
 				q(25054, {	-- Lootin' Plunder
-					["qg"] = 38704,	-- Kelsey Steelspark
 					["sourceQuest"] = 25050,	-- Rocket Rescue (A)
+					["qg"] = 38704,	-- Kelsey Steelspark
 					["coord"] = { 72.2, 45.2, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -4049,8 +4049,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24963, {	-- Maul 'Em With Kindness
-					["qg"] = 38849,	-- Megs Dreadshredder
 					["sourceQuest"] = 24957,	-- Get The Centiparty Started
+					["qg"] = 38849,	-- Megs Dreadshredder
 					["coord"] = { 44.5, 52.6, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -4068,24 +4068,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25121, {	-- Momentum (A)
-					["qg"] = 38535,	-- Kelsey Steelspark
 					["sourceQuest"] = 25050,	-- Rocket Rescue (A)
+					["qg"] = 38535,	-- Kelsey Steelspark
 					["coord"] = { 51.2, 29.9, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(24947, {	-- Momentum (H)
-					["qg"] = 38534,	-- Megs Dreadshredder
 					["sourceQuest"] = 24910,	-- Rocket Rescue (H)
+					["qg"] = 38534,	-- Megs Dreadshredder
 					["coord"] = { 51.2, 29.9, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(1691, {	-- More Wastewander Justice
-					["qg"] = 7407,	-- Chief Engineer Bilgewhizzle
 					["sourceQuest"] = 1690,	-- Wastewander Justice
+					["qg"] = 7407,	-- Chief Engineer Bilgewhizzle
 					["coord"] = { 52.5, 28.5, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 40,
@@ -4102,8 +4102,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(2662, {	-- Noggenfogger Elixir
-					["qg"] = 7564,	-- Marin Noggenfogger
 					["sourceQuest"] = 2661,	-- Delivery for Marin
+					["qg"] = 7564,	-- Marin Noggenfogger
 					["coord"] = { 51.8, 28.6, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 44,
@@ -4112,8 +4112,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(82, {	-- Noxious Lair Investigation
-					["qg"] = 7724,	-- Senior Surveyor Fizzledowser
 					["sourceQuest"] = 992,	-- Gadgetzan Water Survey
+					["qg"] = 7724,	-- Senior Surveyor Fizzledowser
 					["coord"] = { 50.2, 27.5, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 39,
@@ -4132,8 +4132,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(4507, {	-- Pawn Captures Queen
-					["qg"] = 5594,	-- Alchemist Pestlezugg <Alchemy Supplies>
 					["sourceQuest"] = 4496,	-- Bungle in the Jungle
+					["qg"] = 5594,	-- Alchemist Pestlezugg <Alchemy Supplies>
 					["coord"] = { 50.9, 27.0, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { UNGORO_CRATER },
@@ -4171,16 +4171,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(28881, {	-- Prospector Gunstan
-					["qg"] = 39059,	-- Kelsey Steelspark
 					["sourceQuest"] = 25065,	-- You Too, Brute?
+					["qg"] = 39059,	-- Kelsey Steelspark
 					["coord"] = { 50.0, 82.9, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(25049, {	-- Puddle Stomping (A)
-					["qg"] = 38535,	-- Kelsey Steelspark
 					["sourceQuest"] = 28507,	-- Hero's Call: Tanaris!
+					["qg"] = 38535,	-- Kelsey Steelspark
 					["coord"] = { 51.2, 29.9, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -4191,8 +4191,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24907, {	-- Puddle Stomping (H)
-					["qg"] = 38534,	-- Megs Dreadshredder
 					["sourceQuest"] = 28509,	-- Warchief's Command: Tanaris!
+					["qg"] = 38534,	-- Megs Dreadshredder
 					["coord"] = { 51.2, 29.9, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -4203,16 +4203,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(53818, {	-- Re-parrot / Programming On The Fly
-					["qg"] = 151132,	-- Feathers
 					["sourceQuest"] = 53816,	-- Some Reassembly Required
+					["qg"] = 151132,	-- Feathers
 					["coord"] = { 62.1, 45.3, TANARIS },
 					["timeline"] = { ADDED_8_1_5 },
 					["lvl"] = 120,
 					-- Quest shows up in-game as "Re-parrot" currently, but Wowhead redirects to the second quest name listed
 				}),
 				q(648, {	-- Rescue OOX-17/TN!
-					["qg"] = 7784,	-- Homing Robot OOX-17/TN
 					["sourceQuest"] = 351,	-- Find OOX-17/TN!
+					["qg"] = 7784,	-- Homing Robot OOX-17/TN
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 59.7, 64.0, TANARIS },
@@ -4227,11 +4227,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(864, {	-- Return to Apothecary Zinge
+					["sourceQuest"] = 654,	-- Tanaris Field Sampling
 					["providers"] = {
 						{ "n", 7407 },	-- Chief Engineer Bilgewhizzle <Gadgetzan Water Co.>
 						{ "i", 8527 },	-- Sealed Field Testing Kit
 					},
-					["sourceQuest"] = 654,	-- Tanaris Field Sampling
 					["coord"] = { 52.4, 28.4, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { UNDERCITY },
@@ -4250,15 +4250,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(53819, {	-- Return to the Nest
-					["qg"] = 151132,	-- Feathers
 					["sourceQuest"] = 53818,	-- Re-parrot / Programming On The Fly
+					["qg"] = 151132,	-- Feathers
 					["coord"] = { 62.1, 45.3, TANARIS },
 					["timeline"] = { ADDED_8_1_5 },
 					["lvl"] = 120,
 				}),
 				q(24905, {	-- Returning a Favor
-					["qg"] = 38706,	-- Zeke Bootscuff
 					["sourceQuest"] = 24953,	-- Just Trying to Kill Some Bugs
+					["qg"] = 38706,	-- Zeke Bootscuff
 					["coord"] = { 55.6, 60.8, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -4278,11 +4278,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 39,
 				},
 				q(25050, {	-- Rocket Rescue (A)
-					["qg"] = 38535,	-- Kelsey Steelspark
 					["sourceQuests"] = {
 						25049,	-- Puddle Stomping (A)
 						25048,	-- Seaside Salvage (A)
 					},
+					["qg"] = 38535,	-- Kelsey Steelspark
 					["coord"] = { 51.2, 29.9, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -4302,11 +4302,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24910, {	-- Rocket Rescue (H)
-					["qg"] = 38534,	-- Megs Dreadshredder
 					["sourceQuests"] = {
 						24907,	-- Puddle Stomping (H)
 						24906,	-- Seaside Salvage (H)
 					},
+					["qg"] = 38534,	-- Megs Dreadshredder
 					["coord"] = { 51.2, 29.9, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -4326,8 +4326,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25001, {	-- Sandscraper
-					["qg"] = 38849,	-- Megs Dreadshredder
 					["sourceQuest"] = 24963,	-- Maul 'Em With Kindness
+					["qg"] = 38849,	-- Megs Dreadshredder
 					["coord"] = { 44.5, 52.6, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -4360,14 +4360,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = { i(52047) },	-- Sandscraper's Scarab (QI!)
 				}),
 				q(25091, {	-- Sandsorrow Watch
-					["qg"] = 39178,	-- Driz Plunkbow
 					["sourceQuest"] = 25115,	-- Blisterpaw Butchery
+					["qg"] = 39178,	-- Driz Plunkbow
 					["coord"] = { 52.3, 28.1, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(25025, {	-- Sang'thraze the Deflector
-					["qg"] = 38927,	-- Mazoga
 					["sourceQuest"] = 25021,	-- Blood to Thrive
+					["qg"] = 38927,	-- Mazoga
 					["coord"] = { 42.3, 23.8, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -4390,8 +4390,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25111, {	-- Scavengers Scavenged
-					["qg"] = 39178,	-- Driz Plunkbow
 					["sourceQuest"] = 25112,	-- Butcherbot
+					["qg"] = 39178,	-- Driz Plunkbow
 					["coord"] = { 52.3, 28.1, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
@@ -4415,8 +4415,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25048, {	-- Seaside Salvage (A)
-					["qg"] = 38535,	-- Kelsey Steelspark
 					["sourceQuest"] = 27446,	-- Tanaris is Calling [A]
+					["qg"] = 38535,	-- Kelsey Steelspark
 					["coord"] = { 51.2, 29.9, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -4430,8 +4430,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24906, {	-- Seaside Salvage (H)
-					["qg"] = 38534,	-- Megs Dreadshredder
 					["sourceQuest"] = 27447,	-- Tanaris is Calling [H]
+					["qg"] = 38534,	-- Megs Dreadshredder
 					["coord"] = { 51.2, 29.9, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -4445,8 +4445,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25032, {	-- Secrets in the Oasis
-					["qg"] = 38927,	-- Mazoga
 					["sourceQuest"] = 25026,	-- Darkest Mojo
+					["qg"] = 38927,	-- Mazoga
 					["coord"] = { 42.3, 23.8, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -4472,8 +4472,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(53820, {	-- She's in a Happier Place
-					["qg"] = 151129,	-- Sapphronetta Flavvers
 					["sourceQuest"] = 53819,	-- Return to the Nest
+					["qg"] = 151129,	-- Sapphronetta Flavvers
 					["coord"] = { 27.1, 60.0, TANARIS },
 					["timeline"] = { ADDED_8_1_5 },
 					["races"] = ALLIANCE_ONLY,
@@ -4489,12 +4489,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 40,
 				}),
 				q(3639, {	-- Show Your Work
-					["qg"] = 8126,	-- Nixx Sprocketspring <Master Goblin Engineer>
+					["sourceQuest"] = 3638,	-- The Pledge of Secrecy
 					["altQuests"] = {
 						3641,	-- Show Your Work
 						3643,	-- Show Your Work
 					},
-					["sourceQuest"] = 3638,	-- The Pledge of Secrecy
+					["qg"] = 8126,	-- Nixx Sprocketspring <Master Goblin Engineer>
 					["coord"] = { 54.4, 27.2, TANARIS },
 					["timeline"] = { REMOVED_3_0_2 },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
 					["cost"] = {
@@ -4507,8 +4507,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 30,
 				}),
 				q(379, {	-- Slake That Thirst
-					["qg"] = 7407,	-- Chief Engineer Bilgewhizzle <Gadgetzan Water Co.>
 					["sourceQuest"] = 243,	-- Into the Field
+					["qg"] = 7407,	-- Chief Engineer Bilgewhizzle <Gadgetzan Water Co.>
 					["coord"] = { 52.4, 28.4, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 8483, 5 }},	-- Wastewander Water Pouch
@@ -4521,11 +4521,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(53816, {	-- Some Reassembly Required
-					["qg"] = 151132,	-- Feathers
 					["sourceQuests"] = {
 						53815,	-- Whatever Happened to Saffy Flivvers?
 						53817,	-- Whatever Happened to Grizzek Fizzwrench?
 					},
+					["qg"] = 151132,	-- Feathers
 					["coord"] = { 62.1, 45.3, TANARIS },
 					["timeline"] = { ADDED_8_1_5 },
 					["lvl"] = 50,
@@ -4568,8 +4568,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(2641, {	-- Sprinkle's Secret Ingredient
-					["qg"] = 7583,	-- Sprinkle
 					["sourceQuest"] = 2606,	-- In Good Taste
+					["qg"] = 7583,	-- Sprinkle
 					["coord"] = { 51.1, 26.9, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_HINTERLANDS },
@@ -4592,8 +4592,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 40,
 				}),
 				q(2873, {	-- Stoley's Shipment
-					["qg"] = 7881,	-- Stoley
 					["sourceQuest"] = 2872,	-- Stoley's Debt
+					["qg"] = 7881,	-- Stoley
 					["coord"] = { 67.1, 24.0, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 40,
@@ -4626,13 +4626,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(654, {	-- Tanaris Field Sampling
-					["providers"] = {
-						{ "i", 8524 },	-- Model 4711-FTZ Power Source
-						{ "i", 8523 },	-- Field Testing Kit
-					},
 					["sourceQuests"] = {
 						379,	-- Slake That Thirst
 						-- 841,	-- Another Power Source?	-- Not required in 30403
+					},
+					["providers"] = {
+						{ "i", 8524 },	-- Model 4711-FTZ Power Source
+						{ "i", 8523 },	-- Field Testing Kit
 					},
 					["coord"] = { 52.4, 28.4, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -4691,11 +4691,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["isBreadcrumb"] = true,
 				}),
 				q(25063, {	-- Terrapination
-					["qg"] = 39059,	-- Kelsey Steelspark
 					["sourceQuests"] = {
 						25060,	-- Define "Crazy"
 						25062,	-- What We Came For
 					},
+					["qg"] = 39059,	-- Kelsey Steelspark
 					["coord"] = { 50.0, 82.9, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -4707,8 +4707,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25068, {	-- The Crumbling Past
-					["qg"] = 38922,	-- Examiner Andoren Dawnrise
 					["sourceQuest"] = 25017,	-- Ancient Obstacles
+					["qg"] = 38922,	-- Examiner Andoren Dawnrise
 					["coord"] = { 33.2, 77.0, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -4783,8 +4783,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(2773, {	-- The Mithril Kid
-					["qg"] = 7804,	-- Trenton Lighthammer
 					["sourceQuest"] = 2764,	-- Galvan's Finest Pupil
+					["qg"] = 7804,	-- Trenton Lighthammer
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -4811,17 +4811,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				-- #endif
 				q(3638, {	-- The Pledge of Secrecy
-					["qg"] = 8126,	-- Nixx Sprocketspring <Master Goblin Engineer>
-					["altQuests"] = {
-						3640,	-- The Pledge of Secrecy
-						3642,	-- The Pledge of Secrecy
-					},
 					["sourceQuests"] = {
 						3526,	-- Goblin Engineering
 						3629,	-- Goblin Engineering
 						3633,	-- Goblin Engineering
 						4181,	-- Goblin Engineering
 					},
+					["altQuests"] = {
+						3640,	-- The Pledge of Secrecy
+						3642,	-- The Pledge of Secrecy
+					},
+					["qg"] = 8126,	-- Nixx Sprocketspring <Master Goblin Engineer>
 					["coord"] = { 54.4, 27.2, TANARIS },
 					["timeline"] = { REMOVED_3_0_2 },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
 					["requireSkill"] = ENGINEERING,
@@ -4835,8 +4835,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(10, {	-- The Scrimshank Redemption
-					["qg"] = 7724,	-- Senior Surveyor Fizzledowser
 					["sourceQuest"] = 82,	-- Noxious Lair Investigation
+					["qg"] = 7724,	-- Senior Surveyor Fizzledowser
 					["coord"] = { 50.2, 27.5, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 39,
@@ -4851,27 +4851,27 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25566, {	-- The Secrets of Uldum (A)
-					["qg"] = 40109,	-- Prospector Gunstan
-					["sourceQuest"] = 25420,	-- Ancient Obstacles
-					["coord"] = { 40.1, 77.0, TANARIS },
 					["description"] = "If chest disappears for you, go to Zidormi in Uldum and ask her to return you back in time.",
+					["sourceQuest"] = 25420,	-- Ancient Obstacles
+					["qg"] = 40109,	-- Prospector Gunstan
+					["coord"] = { 40.1, 77.0, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25069, {	-- The Secrets of Uldum (H)
-					["qg"] = 38922,	-- Examiner Andoren Dawnrise
-					["sourceQuest"] = 25017,	-- Ancient Obstacles
-					["coord"] = { 33.2, 77.0, TANARIS },
 					["description"] = "If chest disappears for you, go to Zidormi in Uldum and ask her to return you back in time.",
+					["sourceQuest"] = 25017,	-- Ancient Obstacles
+					["qg"] = 38922,	-- Examiner Andoren Dawnrise
+					["coord"] = { 33.2, 77.0, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(3444, {	-- The Stone Circle
-					["qg"] = 7771,	-- Marvon Rivetseeker
 					["sourceQuests"] = {
 						3445,	-- The Sunken Temple [Alliance]
 						3380,	-- The Sunken Temple [Horde]
 					},
+					["qg"] = 7771,	-- Marvon Rivetseeker
 					["coord"] = { 52.6, 45.8, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_BARRENS },
@@ -4927,8 +4927,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(8893, {	-- The Super Egg-O-Matic
-					["provider"] = { "o", 142071 },	-- Egg-O-Matic
 					["sourceQuest"] = 2741,	-- The Super Egg-O-Matic
+					["provider"] = { "o", 142071 },	-- Egg-O-Matic
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { FERALAS },
 					["cost"] = {{ "i", 8564, 1 }},	-- Hippogryph Egg
@@ -4955,8 +4955,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(2944, {	-- The Super Snapper FX
-					["qg"] = 7763,	-- Curgle Cranklehop
 					["sourceQuest"] = 2941,	-- The Borrower
+					["qg"] = 7763,	-- Curgle Cranklehop
 					["coord"] = { 52.2, 26.8, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_HINTERLANDS, TELDRASSIL },
@@ -5001,8 +5001,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["isBreadcrumb"] = true,
 				}),
 				q(2772, {	-- The World At Your Feet
-					["qg"] = 7804,	-- Trenton Lighthammer
 					["sourceQuest"] = 2764,	-- Galvan's Finest Pupil
+					["qg"] = 7804,	-- Trenton Lighthammer
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -5032,11 +5032,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25591, {	-- Thunderdrome: Grudge Match! (A)
-					["qg"] = 39034,	-- Dr. Dealwell
 					["sourceQuests"] = {
 						25001,	-- Sandscraper
 						25095,	-- Thunderdrome: Sarinexx!
 					},
+					["qg"] = 39034,	-- Dr. Dealwell
 					["coord"] = { 51.7, 28.0, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -5053,11 +5053,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25513, {	-- Thunderdrome: Grudge Match! (H)
-					["qg"] = 39034,	-- Dr. Dealwell
 					["sourceQuests"] = {
 						25095,	-- Thunderdrome: Sarinexx!
 						25065,	-- You Too, Brute?
 					},
+					["qg"] = 39034,	-- Dr. Dealwell
 					["coord"] = { 51.8, 28.1, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -5074,37 +5074,37 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25095, {	-- Thunderdrome: Sarinexx!
-					["qg"] = 39034,	-- Dr. Dealwell
 					["sourceQuest"] = 25094,	-- Thunderdrome: Zumonga!
+					["qg"] = 39034,	-- Dr. Dealwell
 					["coord"] = { 51.8, 28.1, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(25067, {	-- Thunderdrome: The Ginormus!
-					["qg"] = 39034,	-- Dr. Dealwell
 					["sourceQuests"] = {
 						26895,	-- The Thunderdrome! (A)
 						26896,	-- The Thunderdrome! (H)
 					},
+					["qg"] = 39034,	-- Dr. Dealwell
 					["coord"] = { 51.8, 28.1, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(25094, {	-- Thunderdrome: Zumonga!
-					["qg"] = 39034,	-- Dr. Dealwell
 					["sourceQuest"] = 25067,	-- Thunderdrome: The Ginormus!
+					["qg"] = 39034,	-- Dr. Dealwell
 					["coord"] = { 51.8, 28.1, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(25053, {	-- To The Ground! (A)
-					["qg"] = 38704,	-- Kelsey Steelspark
 					["sourceQuest"] = 24910,	-- Rocket Rescue (A)
+					["qg"] = 38704,	-- Kelsey Steelspark
 					["coord"] = { 72.2, 45.2, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = { i(51547) },	-- Burning Rum (QI!)
 				}),
 				q(24928, {	-- To The Ground! (H)
-					["qg"] = 38703,	-- Megs Dreadshredder
 					["sourceQuest"] = 24910,	-- Rocket Rescue (H)
+					["qg"] = 38703,	-- Megs Dreadshredder
 					["coord"] = { 71.8, 45.4, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -5136,8 +5136,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 40,
 				}),
 				q(24955, {	-- Un-Chartered
-					["qg"] = 38849,	-- Megs Dreadshredder
 					["sourceQuest"] = 24905,	-- Returning a Favor
+					["qg"] = 38849,	-- Megs Dreadshredder
 					["coord"] = { 44.5, 52.6, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -5233,8 +5233,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(1878, {	-- Water Pouch Bounty
-					["qg"] = 7408,	-- Spigot Operator Luglunket
 					["sourceQuest"] = 1707,	-- Water Pouch Bounty
+					["qg"] = 7408,	-- Spigot Operator Luglunket
 					["coord"] = { 52.4, 28.4, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 8483, 5 }},	-- Wastewander Water Pouch
@@ -5245,11 +5245,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25070, {	-- What Lies Within
-					["provider"] = { "o", 202474 },	-- Antediluvean Chest
 					["sourceQuests"] = {
 						25566,	-- The Secrets of Uldum
 						25069,	-- The Secrets of Uldum
 					},
+					["provider"] = { "o", 202474 },	-- Antediluvean Chest
 					["coord"] = { 37.8, 84.1, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -5259,8 +5259,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25062, {	-- What We Came For
-					["qg"] = 39059,	-- Kelsey Steelspark
 					["sourceQuest"] = 24953,	-- Just Trying to Kill Some Bugs
+					["qg"] = 39059,	-- Kelsey Steelspark
 					["coord"] = { 50.0, 82.9, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -5274,8 +5274,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25065, {	-- You Too, Brute?
-					["qg"] = 39059,	-- Kelsey Steelspark
 					["sourceQuest"] = 25063,	-- Terrapination
+					["qg"] = 39059,	-- Kelsey Steelspark
 					["coord"] = { 50.0, 82.9, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,

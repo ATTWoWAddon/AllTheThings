@@ -543,8 +543,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 			q(63823, {	-- Night Fae Assault
 				["sourceQuests"] = { 63902 },	-- Good News, Everyone!
 				["provider"] = { "n", 178828 },	-- Lord Herne
-				["isWeekly"] = true,
 				["coord"] = { 22.4, 43.3, THE_MAW },
+				["isWeekly"] = true,
 				["groups"] = {
 					i(185991, {	-- War Chest of the Wild Hunt
 						["sym"] = {
@@ -768,16 +768,16 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 			}),
 			q(64554, {	-- Venthyr Assault (as reported via the world quest API, sometimes?)
 				["sourceQuests"] = { 63902 },	-- Good News, Everyone!
+				["altQuests"] = { 63822 },	-- Venthyr Assault
 				["provider"] = { "n", 178006 },	-- Prince Renathal
 				["coord"] = { 29.9, 17.1, THE_MAW },
-				["altQuests"] = { 63822 },	-- Venthyr Assault
 				["isWeekly"] = true,
 			}),
 			q(63822, {	-- Venthyr Assault
 				["sourceQuests"] = { 63902 },	-- Good News, Everyone!
+				["altQuests"] = { 64554 },	-- Venthyr Assault (as reported via the world quest API)
 				["provider"] = { "n", 178006 },	-- Prince Renathal
 				["coord"] = { 29.9, 17.1, THE_MAW },
-				["altQuests"] = { 64554 },	-- Venthyr Assault (as reported via the world quest API)
 				["isWeekly"] = true,
 				["groups"] = {
 					i(185990, {	-- Harvester's War Chest

@@ -31,9 +31,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						--	above definitely required; unclear if these are
 						--	27028,	-- Hornet Hunting
 						--	27030,	-- Foxtails by the Handful
-						
+
 						-- #if AFTER 5.0.4
-						-- Patch 5.0.4 (2012-08-28): Merged with Wetlands quests. 
+						-- Patch 5.0.4 (2012-08-28): Merged with Wetlands quests.
 						25734,	-- Down in Thelgen Rock
 						25733,	-- Get Out of Here, Stalkers
 						25735,	-- Incendicite Ore
@@ -140,22 +140,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 16,
 				}),
 				q(199, {	-- A Dark Threat Looms (2/7)
+					["sourceQuest"] = 250,	-- A Dark Threat Looms (1/7)
 					["providers"] = {
 						{ "o", 257 },	-- Suspicious Barrel
 						{ "i", 2563 },	-- Strange Smelling Powder
 					},
-					["sourceQuest"] = 250,	-- A Dark Threat Looms (1/7)
 					["coord"] = { 56.1, 13.3, LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
 				}),
 				q(161, {	-- A Dark Threat Looms (3/7)
+					["sourceQuest"] = 199,	-- A Dark Threat Looms (2/7)
 					["providers"] = {
 						{ "n", 1093 },	-- Chief Engineer Hinderweir VII
 						{ "i", 2563 },	-- Strange Smelling Powder
 					},
-					["sourceQuest"] = 199,	-- A Dark Threat Looms (2/7)
 					["coord"] = { 46, 13.6, LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { WETLANDS },
@@ -163,19 +163,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 16,
 				}),
 				q(274, {	-- A Dark Threat Looms (4/7)
+					["sourceQuest"] = 161,	-- A Dark Threat Looms (3/7)
 					["providers"] = {
 						{ "n", 1073 },	-- Ashlan Stonesmirk
 						{ "i", 2609 },	-- Disarming Colloid
 					},
-					["sourceQuest"] = 161,	-- A Dark Threat Looms (3/7)
 					["coord"] = { 50, 18.2, WETLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
 				}),
 				q(278, {	-- A Dark Threat Looms (5/7)
-					["qg"] = 1093,	-- Chief Engineer Hinderweir VII
 					["sourceQuest"] = 274,	-- A Dark Threat Looms (4/7)
+					["qg"] = 1093,	-- Chief Engineer Hinderweir VII
 					["coord"] = { 46, 13.6, LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -211,19 +211,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(280, {	-- A Dark Threat Looms (6/7)
+					["sourceQuest"] = 278,	-- A Dark Threat Looms (5/7)
 					["providers"] = {
 						{ "n", 1093 },	-- Chief Engineer Hinderweir VII
 						{ "i", 2610 },	-- Disarming Mixture
 					},
-					["sourceQuest"] = 278,	-- A Dark Threat Looms (5/7)
 					["coord"] = { 46, 13.6, LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
 				}),
 				q(283, {	-- A Dark Threat Looms (7/7)
-					["provider"] = { "o", 1585 },	-- Explosive Charge
 					["sourceQuest"] = 280,	-- A Dark Threat Looms (6/7)
+					["provider"] = { "o", 1585 },	-- Explosive Charge
 					["coord"] = { 50.6, 14.4, LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -238,8 +238,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26148, {	-- A Decisive Strike
-					["qg"] = 1092,	-- Captain Rugelfuss
 					["sourceQuest"] = 26146,	-- In Defense of the King's Lands
+					["qg"] = 1092,	-- Captain Rugelfuss
 					["coord"] = { 23.4, 75.0, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -286,8 +286,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(258, {	-- A Hunter's Challenge
-					["qg"] = 1187,	-- Daryl the Youngling
 					["sourceQuest"] = 257,	-- A Hunter's Boast
+					["qg"] = 1187,	-- Daryl the Youngling
 					["coord"] = { 83.4, 65.2, LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -314,8 +314,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26929, {	-- A Load of Croc
-					["qg"] = 44345,	-- Cannary Caskshot
 					["sourceQuest"] = 26927,	-- Suddenly, Murlocs!
+					["qg"] = 44345,	-- Cannary Caskshot
 					["coord"] = { 34.7, 49.1, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -327,8 +327,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26846, {	-- A Nasty Exploit
-					["qg"] = 44200,	-- Scout Dorli
 					["sourceQuest"] = 26844,	-- Kobold and Kobolder
+					["qg"] = 44200,	-- Scout Dorli
 					["coord"] = { 25.5, 17.9, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -339,8 +339,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26843, {	-- A Tiny, Clever Commander
-					["qg"] = 1343,	-- Mountaineer Stormpike
 					["sourceQuest"] = 13636,	-- Stormpike's Orders
+					["qg"] = 1343,	-- Mountaineer Stormpike
 					["coord"] = { 25.4, 17.9, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -351,16 +351,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(454, {	-- After the Ambush
-					["qg"] = 2057,	-- Huldar
 					["sourceQuest"] = 273,	-- Resupplying the Excavation
+					["qg"] = 2057,	-- Huldar
 					["coord"] = { 52.2, 69.2, LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 				}),
 				q(704, {	-- Agmond's Fate
-					["qg"] = 1344,	-- Prospector Ironband
 					["sourceQuest"] = 739,	-- Murdaloc
+					["qg"] = 1344,	-- Prospector Ironband
 					["coord"] = { 65.9, 65.6, LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { BADLANDS, ULDAMAN },
@@ -380,15 +380,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27115, {	-- Ando's Call
-					["qg"] = 1073,	-- Ashlan Stonesmirk
 					["sourceQuest"] = 27078,	-- Gor'kresh
+					["qg"] = 1073,	-- Ashlan Stonesmirk
 					["coord"] = { 64.1, 26.6, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26868, {	-- Axis of Awful
-					["qg"] = 44345,	-- Cannary Caskshot
 					["sourceQuest"] = 26928,	-- Smells Like a Plan
+					["qg"] = 44345,	-- Cannary Caskshot
 					["coord"] = { 34.7, 49.1, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -433,8 +433,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(2501, {	-- Badlands Reagent Run II
-					["qg"] = 1470,	-- Ghak Healtouch
 					["sourceQuest"] = 17,	-- Uldaman Reagent Run
+					["qg"] = 1470,	-- Ghak Healtouch
 					["coord"] = { 37.07, 49.38, LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { BADLANDS },
@@ -456,8 +456,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26147, {	-- Bigger and Uglier
-					["qg"] = 1090,	-- Mountaineer Wallbang
 					["sourceQuest"] = 26146,	-- In Defense of the King's Lands
+					["qg"] = 1090,	-- Mountaineer Wallbang
 					["coord"] = { 23.3, 75.1, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -483,8 +483,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(2038, {	-- Bingles' Missing Supplies
-					["qg"] = 6577,	-- Bingles Blastenheimer
 					["sourceQuest"] = 2039,	-- Find Bingles
+					["qg"] = 6577,	-- Bingles Blastenheimer
 					["coord"] = { 63.6, 47.8, LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -533,15 +533,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27032, {	-- Bird is the Word
-					["qg"] = 6577,	-- Bingles Blastenheimer
 					["sourceQuest"] = 27031,	-- Wing Nut
+					["qg"] = 6577,	-- Bingles Blastenheimer
 					["coord"] = { 81.6, 64.7, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26932, {	-- Buzz Off
-					["qg"] = 1340,	-- Mountaineer Kadrell
 					["sourceQuest"] = 26927,	-- Suddenly, Murlocs!
+					["qg"] = 1340,	-- Mountaineer Kadrell
 					["coord"] = { 35.0, 46.5, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -559,8 +559,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isBreadcrumb"] = true,
 				}),
 				q(27077, {	-- Clutching at Chaos
-					["qg"] = 1073,	-- Ashlan Stonesmirk
 					["sourceQuest"] = 27074,	-- Fight the Hammer
+					["qg"] = 1073,	-- Ashlan Stonesmirk
 					["coord"] = { 64.1, 26.6, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -611,8 +611,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27026, {	-- Defcon: Bobcat
-					["qg"] = 44859,	-- Safety Warden Pipsy
 					["sourceQuest"] = 27025,	-- Thistle While You Work
+					["qg"] = 44859,	-- Safety Warden Pipsy
 					["coord"] = { 82.7, 63.4, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -624,8 +624,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_TWO, q(79975, {	-- Eagle's Fist
-					["provider"] = { "o", 424007 },	-- Carved Figurine
 					["sourceQuest"] = 79974,	-- Wet Job
+					["provider"] = { "o", 424007 },	-- Carved Figurine
 					["coord"] = { 49.5, 12.8, LOCH_MODAN },
 					["timeline"] = { ADDED_1_15_1 },
 					["maps"] = { ARATHI_HIGHLANDS },
@@ -679,8 +679,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27074, {	-- Fight the Hammer
-					["qg"] = 44870,	-- Ando Blastenheimer
 					["sourceQuest"] = 27035,	-- Standing Up
+					["qg"] = 44870,	-- Ando Blastenheimer
 					["coord"] = { 58.5, 29.1, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -710,8 +710,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26863, {	-- Filthy Paws
-					["qg"] = 1343,	-- Mountaineer Stormpike
 					["sourceQuest"] = 26844,	-- Kobold and Kobolder
+					["qg"] = 1343,	-- Mountaineer Stormpike
 					["coord"] = { 25.4, 17.9, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -734,8 +734,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(738, {	-- Find Agmond
-					["qg"] = 1344,	-- Prospector Ironband
 					["sourceQuest"] = 707,	-- Ironband Wants You!
+					["qg"] = 1344,	-- Prospector Ironband
 					["coord"] = { 65.93, 65.62, LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -766,12 +766,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(297, {	-- Gathering Idols
-					["qg"] = 1345,	-- Magmar Fellhew
-					["sourceQuest"] = 436,	-- Ironband's Excavation
-					["coord"] = { 64.9, 66.7, LOCH_MODAN },
 					-- #if AFTER 4.0.3
 					["description"] = "This quest gets marked as completed when you complete the quest 'Gathering Idols' (26961).",
 					-- #endif
+					["sourceQuest"] = 436,	-- Ironband's Excavation
+					["qg"] = 1345,	-- Magmar Fellhew
+					["coord"] = { 64.9, 66.7, LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 13,
@@ -824,11 +824,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27078, {	-- Gor'kresh
-					["qg"] = 1073,	-- Ashlan Stonesmirk
 					["sourceQuests"] = {
 						27077,	-- Clutching at Chaos
 						27075,	-- Servants of Cho'gall
 					},
+					["qg"] = 1073,	-- Ashlan Stonesmirk
 					["coord"] = { 64.1, 26.6, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -839,7 +839,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(13661, {	-- Heartfelt Appreciation
-					["qg"] = 1153,	-- Torren Squarejaw
 					["sourceQuests"] = {
 						13656,	-- Explorers' League Document (1 of 6)
 						13655,	-- Explorers' League Document (2 of 6)
@@ -848,6 +847,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						13660,	-- Explorers' League Document (5 of 6)
 						13659,	-- Explorers' League Document (6 of 6)
 					},
+					["qg"] = 1153,	-- Torren Squarejaw
 					["coord"] = { 37.3, 47.8, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -870,8 +870,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27034, {	-- He's That Age
-					["qg"] = 6577,	-- Bingles Blastenheimer
 					["sourceQuest"] = 27033,	-- Skystrider's Heart
+					["qg"] = 6577,	-- Bingles Blastenheimer
 					["coord"] = { 81.6, 64.7, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -928,8 +928,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(237, {	-- In Defense of the King's Lands (2/4)
-					["qg"] = 1091,	-- Mountaineer Gravelgaw
 					["sourceQuest"] = 224,	-- In Defense of the King's Lands (1/4)
+					["qg"] = 1091,	-- Mountaineer Gravelgaw
 					["coord"] = { 23.4, 76.2, LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -944,8 +944,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(263, {	-- In Defense of the King's Lands (3/4)
-					["qg"] = 1090,	-- Mountaineer Wallbang
 					["sourceQuest"] = 237,	-- In Defense of the King's Lands (2/4)
+					["qg"] = 1090,	-- Mountaineer Wallbang
 					["coord"] = { 23.4, 74.6, LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -961,11 +961,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(217, {	-- In Defense of the King's Lands (4/4)
-					["qg"] = 1092,	-- Captain Rugelfuss
 					["sourceQuests"] = {
 						263,	-- In Defense of the King's Lands (3/4)
 						267,	-- The Trogg Threat
 					},
+					["qg"] = 1092,	-- Captain Rugelfuss
 					["coord"] = { 23.2, 73.8, LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1029,26 +1029,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 13,
 				}),
 				q(13647, {	-- Joining the Hunt
-					["qg"] = 1345,	-- Magmar Felhew
 					["sourceQuests"] = {
 						26961,	-- Gathering Idols
 						13650,	-- Keep Your Hands Off The Goods!
 					},
+					["qg"] = 1345,	-- Magmar Felhew
 					["coord"] = { 64.9, 66.5, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(13650, {	-- Keep Your Hands Off The Goods!
-					["qg"] = 1344,	-- Prospector Ironband
 					["sourceQuest"] = 309,	-- Protecting the Shipment
+					["qg"] = 1344,	-- Prospector Ironband
 					["coord"] = { 65.2, 66.1, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26844, {	-- Kobold and Kobolder
-					["qg"] = 1343,	-- Mountaineer Stormpike
 					["sourceQuest"] = 26843,	-- A Tiny, Clever Commander
+					["qg"] = 1343,	-- Mountaineer Stormpike
 					["coord"] = { 25.4, 17.9, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1114,16 +1114,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 9,
 				}),
 				q(26176, {	-- Onward to Thelsamar
-					["qg"] = 1092,	-- Captain Rugelfuss
 					["sourceQuest"] = 26148,	-- A Decisive Strike
+					["qg"] = 1092,	-- Captain Rugelfuss
 					["coord"] = { 23.4, 75.0, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(26842, {	-- Out of Gnoll-where
-					["qg"] = 1340,	-- Mountaineer Kadrell
 					["sourceQuest"] = 26176,	-- Onward to Thelsamar
+					["qg"] = 1340,	-- Mountaineer Kadrell
 					["coord"] = { 35.1, 46.6, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1139,26 +1139,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(302, {	-- Powder to Ironband
-					["qg"] = 1356,	-- Prospector Stormpike
 					["sourceQuest"] = 301,	-- Report to Ironforge
+					["qg"] = 1356,	-- Prospector Stormpike
 					["coord"] = { 74.4, 12, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 				}),
 				q(309, {	-- Protecting the Shipment
-					["qgs"] = {
-						-- #if AFTER CATA
-						2057,	-- Huldar
-						-- #else
-						1379,	-- Miran
-						-- #endif
-					},
 					["sourceQuests"] = {
 						-- #if AFTER CATA
 						13639,	-- Resupplying the Excavation
 						-- #else
 						454,	-- After the Ambush
+						-- #endif
+					},
+					["qgs"] = {
+						-- #if AFTER CATA
+						2057,	-- Huldar
+						-- #else
+						1379,	-- Miran
 						-- #endif
 					},
 					["coords"] = {
@@ -1231,11 +1231,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isBreadcrumb"] = true,
 				}),
 				q(301, {	-- Report to Ironforge
+					["sourceQuest"] = 298,	-- Excavation Progress Report
 					["providers"] = {
 						{ "n", 1105 },	-- Jern Hornhelm
 						{ "i", 2637 },	-- Ironbrand's Progress Report
 					},
-					["sourceQuest"] = 298,	-- Excavation Progress Report
 					["coord"] = { 37.2, 47.4, LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1250,35 +1250,35 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 19,
 				}),
 				q(273, {	-- Resupplying the Excavation
-					["qg"] = 1105,	-- Jern Hornhelm
 					["sourceQuest"] = 302,	-- Powder to Ironband
+					["qg"] = 1105,	-- Jern Hornhelm
 					["coord"] = { 37.2, 47.4, LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 				}),
 				q(13639, {	-- Resupplying the Excavation
-					["qg"] = 1105,	-- Jern Hornhelm
 					["sourceQuest"] = 26868,	-- Axis of Awful
+					["qg"] = 1105,	-- Jern Hornhelm
 					["coord"] = { 37.2, 47.4, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				-- #if BEFORE 4.0.3
 				q(6391, {	-- Ride to Ironforge
+					["sourceQuest"] = 6387,	-- Honor Students
 					["providers"] = {
 						{ "n", 1572 },	-- Thorgrum Borrelson
 						{ "i", 16310 },	-- Brock's List
 					},
-					["sourceQuest"] = 6387,	-- Honor Students
 					["coord"] = { 33.9, 50.9, LOCH_MODAN },
 					["races"] = { DWARF, GNOME },
 					["lvl"] = 10,
 				}),
 				-- #endif
 				q(27075, {	-- Servants of Cho'gall
-					["qg"] = 1073,	-- Ashlan Stonesmirk
 					["sourceQuest"] = 27074,	-- Fight the Hammer
+					["qg"] = 1073,	-- Ashlan Stonesmirk
 					["coord"] = { 64.1, 26.6, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1293,26 +1293,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27033, {	-- Skystrider's Heart
-					["qg"] = 44618,	-- Rusted Skystrider
 					["sourceQuest"] = 27032,	-- Bird is the Word
+					["qg"] = 44618,	-- Rusted Skystrider
 					["coord"] = { 78.5, 76.2, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13635, {	-- South Gate Status Report
+					["sourceQuest"] = 26855,	-- A Pilot's Revenge
 					["providers"] = {
 						{ "n",  1960 },	-- Pilot Hammerfoot
 						{ "i", 60494 },	-- South Gate Status Report (PQI!)
 					},
-					["sourceQuest"] = 26855,	-- A Pilot's Revenge
 					["coord"] = { 14.0, 56.5, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(26928, {	-- Smells Like A Plan
-					["qg"] = 44345,	-- Cannary Caskshot
 					["sourceQuest"] = 26927,	-- Suddenly, Murlocs!
+					["qg"] = 44345,	-- Cannary Caskshot
 					["coord"] = { 34.7, 49.1, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1329,8 +1329,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27035, {	-- Standing Up
-					["qg"] = 44870,	-- Ando Blastenheimer
 					["sourceQuest"] = 27034,	-- He's That Age
+					["qg"] = 44870,	-- Ando Blastenheimer
 					["coord"] = { 58.5, 29.1, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1341,33 +1341,38 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(1338, {	-- Stormpike's Order
+					["sourceQuest"] = 1339,	-- Mountaineer Stormpike's Task
 					["providers"] = {
 						{ "n", 1343 },	-- Mountaineer Stormpike
 						{ "i", 5998 },	-- Stormpike's Request
 					},
-					["sourceQuest"] = 1339,	-- Mountaineer Stormpike's Task
 					["coord"] = { 24.7, 18.3, LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 9,
 				}),
-				q(13636, {	-- Stormpike's Orders [TODO: confirm if breadcrumb]
+				q(13636, {	-- Stormpike's Orders
 					["qg"] = 1340,	-- Mountaineer Kadrell
 					["coord"] = { 35.1, 46.6, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["lockCriteria"] = { 1,
+						"questID", 26843,	-- A Tiny, Clever Commander
+						"questID", 26844,	-- Kobold and Kobolder
+					},
+					["isBreadcrumb"] = true,
 				}),
 				q(26927, {	-- Suddenly, Murlocs!
-					["qg"] = 1340,	-- Mountaineer Kadrell
 					["sourceQuest"] = 26864,	-- The Bearer of Gnoll-edge
+					["qg"] = 1340,	-- Mountaineer Kadrell
 					["coord"] = { 35.0, 46.5, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(455, {	-- The Algaz Gauntlet
-					["qg"] = 1342,	-- Mountaineer Rockgar
 					["sourceQuest"] = 468,	-- Report to Mountaineer Rockgar
+					["qg"] = 1342,	-- Mountaineer Rockgar
 					["coord"] = { 25.5, 10.5, LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { WETLANDS },
@@ -1383,8 +1388,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26864, {	-- The Bearer of Gnoll-edge
-					["qg"] = 1343,	-- Mountaineer Stormpike
 					["sourceQuest"] = 26845,	-- Who's in Charge Here?
+					["qg"] = 1343,	-- Mountaineer Stormpike
 					["coord"] = { 25.4, 17.9, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1423,8 +1428,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26145, {	-- The Trogg Threat
-					["qg"] = 1089,	-- Mountaineer Cobbleflint
 					["sourceQuest"] = 13635,	-- South Gate Status Report
+					["qg"] = 1089,	-- Mountaineer Cobbleflint
 					["coord"] = { 23.3, 74.9, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1445,8 +1450,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27116, {	-- The Winds of Loch Modan
-					["qg"] = 44870,	-- Ando Blastenheimer
 					["sourceQuest"] = 27115,	-- Ando's Call
+					["qg"] = 44870,	-- Ando Blastenheimer
 					["coord"] = { 58.5, 29.1, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1495,8 +1500,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(17, {	-- Uldaman Reagent Run
-					["qg"] = 1470,	-- Ghak Healtouch
 					["sourceQuest"] = 2500,	-- Badlands Reagent Run
+					["qg"] = 1470,	-- Ghak Healtouch
 					["coord"] = { 37.07, 49.38, LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { BADLANDS, ULDAMAN },
@@ -1512,12 +1517,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(271, {	-- Vyrin's Revenge (1/2)
-					["qg"] = 1156,	-- Vyrin Swiftwind
-					["sourceQuest"] = 258,	-- A Hunter's Challenge
-					["coord"] = { 81.8, 64.2, LOCH_MODAN },
 					-- #if AFTER 4.0.3
 					["description"] = "This quest gets marked as completed when you complete the quest 'Vyrin's Revenge (1/2)' (27036).",
 					-- #endif
+					["sourceQuest"] = 258,	-- A Hunter's Challenge
+					["qg"] = 1156,	-- Vyrin Swiftwind
+					["coord"] = { 81.8, 64.2, LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 15,
@@ -1530,11 +1535,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(531, {	-- Vyrin's Revenge (2/2)
+					["sourceQuest"] = 271,	-- Vyrin's Revenge (1/2)
 					["providers"] = {
 						{ "n", 1187 },	-- Daryl the Youngling
 						{ "i", 2713 },	-- Ol' Sooty's Head
 					},
-					["sourceQuest"] = 271,	-- Vyrin's Revenge (1/2)
 					["coord"] = { 83.4, 65.2, LOCH_MODAN },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1549,8 +1554,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27036, {	-- Vyrin's Revenge (1/2)
-					["qg"] = 1156,	-- Vyrin Swiftwind
 					["sourceQuest"] = 27016,	-- The Joy of Boar Hunting
+					["qg"] = 1156,	-- Vyrin Swiftwind
 					["coord"] = { 81.9, 64.6, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1562,8 +1567,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27037, {	-- Vyrin's Revenge (2/2)
-					["qg"] = 1187,	-- Daryl the Youngling
 					["sourceQuest"] = 27036,	-- Vyrin's Revenge (1/2)
+					["qg"] = 1187,	-- Daryl the Youngling
 					["coord"] = { 83.4, 65.4, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1626,8 +1631,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26845, {	-- Who's In Charge Here?
-					["qg"] = 1343,	-- Mountaineer Stormpike
 					["sourceQuest"] = 26844,	-- Kobold and Kobolder
+					["qg"] = 1343,	-- Mountaineer Stormpike
 					["coord"] = { 25.4, 17.9, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1639,8 +1644,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27031, {	-- Wing Nut
-					["qg"] = 6577,	-- Bingles Blastenheimer
 					["sourceQuest"] = 2039,	-- Find Bingles
+					["qg"] = 6577,	-- Bingles Blastenheimer
 					["coord"] = { 81.6, 64.7, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,

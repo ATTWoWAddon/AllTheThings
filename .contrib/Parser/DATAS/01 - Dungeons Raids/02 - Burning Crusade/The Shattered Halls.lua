@@ -43,8 +43,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["lvl"] = lvlsquish(66, 66, 20),
 				}),
 				q(10763, {	-- Dumphry's Request
-					["qg"] = 21209,	-- Dumphry <Master Blacksmithing Trainer>
 					["sourceQuest"] = 10762,	-- Grand Master Dumphry
+					["qg"] = 21209,	-- Dumphry <Master Blacksmithing Trainer>
 					["coord"] = { 51.1, 60.3, HELLFIRE_PENINSULA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -113,8 +113,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					-- #endif
 				}),
 				q(10762, {	-- Grand Master Dumphry
-					["qg"] = 16819,	-- Force Commander Danath Trollbane
 					["sourceQuest"] = 10754,	-- Entry Into the Citadel [Alliance]
+					["qg"] = 16819,	-- Force Commander Danath Trollbane
 					["coord"] = { 56.6, 66.7, HELLFIRE_PENINSULA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -126,8 +126,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(10756, {	-- Grand Master Rohok
-					["qg"] = 3230,	-- Nazgrel
 					["sourceQuest"] = 10755,	-- Entry Into the Citadel [Horde]
+					["qg"] = 3230,	-- Nazgrel
 					["coord"] = { 55.0, 36.0, HELLFIRE_PENINSULA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -156,8 +156,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(10764, bubbleDown({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Hotter than Hell [Alliance]
-					["qg"] = 21209,	-- Dumphry <Master Blacksmithing Trainer>
 					["sourceQuest"] = 10763,	-- Dumphry's Request
+					["qg"] = 21209,	-- Dumphry <Master Blacksmithing Trainer>
 					["coord"] = { 51.1, 60.3, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(68, 68, 10),
@@ -170,8 +170,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				})),
 				q(10758, bubbleDown({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Hotter than Hell [Horde]
-					["qg"] = 16583,	-- Rohok
 					["sourceQuest"] = 10757,	-- Rohok's Request
+					["qg"] = 16583,	-- Rohok
 					["coord"] = { 53.1, 38.2, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(68, 68, 10),
@@ -200,15 +200,15 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				applyclassicphase(TBC_PHASE_FOUR, q(9524, {	-- Imprisoned in the Citadel [Alliance]
-					["qg"] = 17288,	-- Randy Whizzlesprocket
 					["description"] = "This quest can only be completed on Heroic Difficulty.",
+					["qg"] = 17288,	-- Randy Whizzlesprocket
 					["timeline"] = { REMOVED_4_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 70,
 				})),
 				applyclassicphase(TBC_PHASE_FOUR, q(9525, {	-- Imprisoned in the Citadel [Horde]
-					["qg"] = 17294,	-- Drisella
 					["description"] = "This quest can only be completed on Heroic Difficulty.",
+					["qg"] = 17294,	-- Drisella
 					["timeline"] = { REMOVED_4_3_0 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 70,
@@ -278,8 +278,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(10757, {	-- Rohok's Request
-					["qg"] = 16583,	-- Rohok
 					["sourceQuest"] = 10756,	-- Grand Master Rohok
+					["qg"] = 16583,	-- Rohok
 					["coord"] = { 53.1, 38.2, HELLFIRE_PENINSULA },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -297,11 +297,11 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(10670, {	-- Tear of the Earthmother
-					["qg"] = 21465,	-- David Wayne
 					["sourceQuests"] = {
 						10665,	-- Fresh From the Mechanar
 						10666,	-- The Lexicon Demonica
 					},
+					["qg"] = 21465,	-- David Wayne
 					["coord"] = { 77.4, 38.6, TEROKKAR_FOREST },
 					["lvl"] = lvlsquish(67, 67, 25),
 					["groups"] = {
@@ -344,8 +344,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(10884, {	-- Trial of the Naaru: Mercy
-					["qg"] = 18481,	-- A'dal
 					["sourceQuest"] = 10883,	-- The Tempest Key
+					["qg"] = 18481,	-- A'dal
 					["coord"] = { 54.0, 44.8, SHATTRATH_CITY },
 					["lvl"] = lvlsquish(70, 70, 20),
 					["groups"] = {

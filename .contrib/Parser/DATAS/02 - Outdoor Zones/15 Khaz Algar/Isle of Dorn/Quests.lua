@@ -14,55 +14,55 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["DisablePartySync"] = true,
 				}),
 				q(78717, {	-- A Mysterious Warning
+					["sourceQuests"] = { 81966 },	-- Slept like a Rock
 					["qg"] = 213624,	-- Magni Bronzebeard
 					["coords"] = {
 						{ 45.3, 57.4, LEGION_DALARAN },
 						{ 45.7, 56.1, 629 },	-- Legion Dalaran, Aegwynn's Gallery
 					},
-					["sourceQuests"] = { 81966 },	-- Slept like a Rock
 				}),
 				q(78719, {	-- Citizens of Dalaran
+					["sourceQuests"] = { 78717 },	-- A Mysterious Warning
 					["qg"] = 213627,	-- Archmage Khadgar
 					["coord"] = { 41.2, 62.3, LEGION_DALARAN },
-					["sourceQuests"] = { 78717 },	-- A Mysterious Warning
 				}),
 				q(78721, {	-- Meet the Team
+					["sourceQuests"] = { 78717 },	-- A Mysterious Warning
 					["qg"] = 214669,	-- Brann Bronzebeard
 					["coord"] = { 47.0, 49.1, LEGION_DALARAN },
-					["sourceQuests"] = { 78717 },	-- A Mysterious Warning
 				}),
 				q(78718, {	-- Strengthen the Wards
+					["sourceQuests"] = { 78717 },	-- A Mysterious Warning
 					["qg"] = 214665,	-- Archmage Drenden
 					["coord"] = { 56.4, 33.2, LEGION_DALARAN },
-					["sourceQuests"] = { 78717 },	-- A Mysterious Warning
 					["groups"] = {
 						i(220483),	-- Tuning Wand (QI!)
 					},
 				}),
 				q(78722, {	-- To Khaz Algar!
-					["qg"] = 213627,	-- Archmage Khadgar
-					["coord"] = { 41.2, 62.3, LEGION_DALARAN },
 					["sourceQuests"] = {
 						78719,	-- Citizens of Dalaran
 						78721,	-- Meet the Team
 						78718,	-- Strengthen the Wards
 					},
+					["qg"] = 213627,	-- Archmage Khadgar
+					["coord"] = { 41.2, 62.3, LEGION_DALARAN },
 				}),
 				q(79105, {	-- Breach
+					["sourceQuests"] = { 78722 },	-- To Khaz Algar!
 					["qg"] = 214908,	-- Alleria Windrunner
 					["coord"] = { 50.4, 50.4, 2305 },	-- Quest Dalaran
-					["sourceQuests"] = { 78722 },	-- To Khaz Algar!
 				}),
 				q(79106, {	-- Rupture
+					["sourceQuests"] = { 79105 },	-- Breach
 					["qg"] = 214908,	-- Alleria Windrunner
 					["coord"] = { 35.7, 71.3, 2305 },	-- Quest Dalaran
-					["sourceQuests"] = { 79105 },	-- Breach
 					["maps"] = { 2307, 2306, },	-- Dalaran
 				}),
 				q(80321, {	-- Departure
+					["sourceQuests"] = { 79106 },	-- Rupture
 					["qg"] = 219885,	-- Anduin Wrynn
 					["coord"] = { 72.6, 57.7, 2307 },	-- Quest Dalaran
-					["sourceQuests"] = { 79106 },	-- Rupture
 					["groups"] = {
 						i(220379),	-- City Guard's Chainmail (doesn't load ingame?)
 						i(224455),	-- City Guard's Chainmail
@@ -73,9 +73,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				------ Chapter 1 ------
 				q(78529, {	-- Violent Impact
+					["sourceQuests"] = { 80321 },	-- Departure
 					["qg"] = 217930,	-- Pile of Rubble
 					["coord"] = { 28.8, 54.5, ISLE_OF_DORN },
-					["sourceQuests"] = { 80321 },	-- Departure
 				}),
 				q(78530, {	-- Slay the Saboteurs
 					["sourceQuests"] = { 78529 },	-- Violet Impact
@@ -93,8 +93,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						78531,	-- Urgent Recovery
 					},
 					["provider"] = { "n", 211994 },	-- Lady Jaina Proudmoore
-					["lockCriteria"] = { 1, "questID", 78532 },	-- Erratic Artifacts
 					["coord"] = { 29.5, 55.0, ISLE_OF_DORN },
+					["lockCriteria"] = { 1, "questID", 78532 },	-- Erratic Artifacts
 					["isBreadcrumb"] = true,
 				}),
 				q(78532, {	-- Erratic Artifacts
@@ -306,10 +306,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				q(80022, {	-- Calling the Stormriders
-					--dungeon quest which queue you into follower dungeon
 					["sourceQuests"] = { 78538 },	-- Group Effort
 					["provider"] = { "n", 212747 },	-- Baelgrim
 					["coord"] = { 36.0, 52.8, DORNOGAL },
+					--dungeon quest which queue you into follower dungeon
 				}),
 				q(78539, {	-- Lasting Repairs
 					["sourceQuests"] = { 80022 },	-- Calling the Stormriders
@@ -510,9 +510,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(79543, {	-- Dornogal's Benefactor
 					["sourceQuests"] = { 79542 },	-- The Councilward's Summons
-					["providers"] = {
-						{ "n", 217068 },	-- Merrix
-						{ "n", 217069 },	-- Merrix
+					["qgs"] = {
+						217068,	-- Merrix
+						217069,	-- Merrix
 					},
 					["coord"] = { 55.2, 6.2, DORNOGAL },
 				}),
@@ -545,9 +545,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(79546, {	-- The Machine Speakeasy
 					["sourceQuests"] = { 79176 },	-- Opals and Runes
-					["providers"] = {
-						{ "n", 219126 },	-- Merrix
-						{ "n", 217097 },	-- Merrix
+					["qgs"] = {
+						219126,	-- Merrix
+						217097,	-- Merrix
 					},
 					["coord"] = { 60.5, 33.1, DORNOGAL },
 				}),

@@ -13,24 +13,24 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 		["groups"] = {
 			n(QUESTS, {
 				q(31030, {	-- Into the Monastery
-					["provider"] = { "n", 62227 },	-- Ban Bearheart
 					["sourceQuest"] = 30752,	-- Unbelievable!
+					["provider"] = { "n", 62227 },	-- Ban Bearheart
 					["coord"] = { 36.6, 47.7, KUN_LAI_SUMMIT },
 					["isBreadcrumb"] = true,
 				}),
 				q(31031, {	-- Into the Monastery
-					["provider"] = { "n", 62227 },	-- Ban Bearheart
-					["sourceQuest"] = 30752,	-- Unbelievable!
-					["coord"] = { 35.3, 49.5, KUN_LAI_SUMMIT },
 					["description"] = "This version is available if you abandon the other version.",
+					["sourceQuest"] = 30752,	-- Unbelievable!
+					["provider"] = { "n", 62227 },	-- Ban Bearheart
+					["coord"] = { 35.3, 49.5, KUN_LAI_SUMMIT },
 					["isBreadcrumb"] = true,
 				}),
 				q(30757, {	-- Lord of the Shado-Pan
-					["provider"] = { "n", 62236 },	-- Ban Bearheart
 					["sourceQuests"] = {
 						31030,	-- Into the Monastery
 						31031,	-- Into the Monastery
 					},
+					["provider"] = { "n", 62236 },	-- Ban Bearheart
 					["coord"] = { 84.8, 56.0, 444 },
 					["groups"] = {
 						i(87319),	-- Antagonist's Headwrap

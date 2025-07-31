@@ -273,11 +273,11 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 				["cr"] = 64337,	-- Nomi (Child)
 			}),
 			q(31820, {	-- A Present for Teacher
+				["description"] = "To get this quest you must Master all six of the Ways, complete the quest 'To Be a Master,' buy the Cooking School Bell for 50 Ironpaw Tokens, then max out your rep with Nomi.",
 				["providers"] = {
 					{ "n", 64337 },	-- Nomi
 					{ "i", 86425 },	-- Cooking School Bell
 				},
-				["description"] = "To get this quest you must Master all six of the Ways, complete the quest 'To Be a Master,' buy the Cooking School Bell for 50 Ironpaw Tokens, then max out your rep with Nomi.",
 				["minReputation"] = { 1357, 6 },	-- Level 6, Best Friend
 				["groups"] = {
 					i(86468),	-- Apron
@@ -291,14 +291,14 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 				["cost"] = {{ "i", 86057, 5 }},	-- 5x Sliced Peaches
 			}),
 			q(31302, {	-- Ready for Greatness
-				["provider"] = { "n", 64231 },	-- Sungshin Ironpaw
 				["sourceQuests"] = { 31281 },	-- So You Want to be a Chef...
+				["provider"] = { "n", 64231 },	-- Sungshin Ironpaw
 				["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
 				["cost"] = {{ "i", 86069, 5 }},	-- 5x Rice Pudding
 			}),
 			q(31479, {	-- Way of the Brew
-				["provider"] = { "n", 64231 },	-- Sungshin Ironpaw
 				["sourceQuests"] = { 31302 },	-- Ready for Greatness
+				["provider"] = { "n", 64231 },	-- Sungshin Ironpaw
 				["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
 				["cost"] = {{ "i", 74845, 1 }},	-- 1x Ginseng
 				["groups"] = {
@@ -306,14 +306,14 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 				},
 			}),
 			q(31480, {	-- Have a Drink
-				["provider"] = { "n", 58717 },	-- Bobo Ironpaw
 				["sourceQuests"] = { 31479 },	-- Way of the Brew
+				["provider"] = { "n", 58717 },	-- Bobo Ironpaw
 				["coord"] = { 53.2, 52.2, VALLEY_OF_THE_FOUR_WINDS },
 				["cost"] = {{ "i", 75026, 1 }},	-- 1x Ginseng Tea
 			}),
 			q(31311, {	-- Way of the Grill
-				["provider"] = { "n", 64231 },	-- Sungshin Ironpaw
 				["sourceQuests"] = { 31302 },	-- Ready for Greatness
+				["provider"] = { "n", 64231 },	-- Sungshin Ironpaw
 				["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
 				["cost"] = {{ "i", 74833, 5 }},	-- 5x Raw Tiger Steak
 				["groups"] = {
@@ -321,14 +321,14 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 				},
 			}),
 			q(31467, {	-- Strong as a Tiger
-				["provider"] = { "n", 58712 },	-- Kol Ironpaw
 				["sourceQuests"] = { 31311 },	-- Way of the Grill
+				["provider"] = { "n", 58712 },	-- Kol Ironpaw
 				["coord"] = { 53.0, 51.3, VALLEY_OF_THE_FOUR_WINDS },
 				["cost"] = {{ "i", 74642, 5 }},	-- 5x Charbroiled Tiger Steak
 			}),
 			q(31478, {	-- Way of the Oven
-				["provider"] = { "n", 64231 },	-- Sungshin Ironpaw
 				["sourceQuests"] = { 31302 },	-- Ready for Greatness
+				["provider"] = { "n", 64231 },	-- Sungshin Ironpaw
 				["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
 				["cost"] = {{ "i", 74839, 5 }},	-- 5x Wildfowl Breast
 				["groups"] = {
@@ -336,14 +336,14 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 				},
 			}),
 			q(31477, {	-- Endurance
-				["provider"] = { "n", 58716 },	-- Jian Ironpaw
 				["sourceQuests"] = { 31478 },	-- Way of the Oven
+				["provider"] = { "n", 58716 },	-- Jian Ironpaw
 				["coord"] = { 53.4, 51.6, VALLEY_OF_THE_FOUR_WINDS },
 				["cost"] = {{ "i", 74654, 5 }},	-- 5x Wildfowl Roast
 			}),
 			q(31472, {	-- Way of the Pot
-				["provider"] = { "n", 64231 },	-- Sungshin Ironpaw
 				["sourceQuests"] = { 31302 },	-- Ready for Greatness
+				["provider"] = { "n", 64231 },	-- Sungshin Ironpaw
 				["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
 				["cost"] = {{ "i", 74856, 5 }},	-- 5x Jade Lungfish
 				["groups"] = {
@@ -351,14 +351,14 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 				},
 			}),
 			q(31474, {	-- The Soup of Contemplation
-				["provider"] = { "n", 58714 },	-- Mei Mei Ironpaw
 				["sourceQuests"] = { 31472 },	-- Way of the Pot
+				["provider"] = { "n", 58714 },	-- Mei Mei Ironpaw
 				["coord"] = { 52.5, 51.6, VALLEY_OF_THE_FOUR_WINDS },
 				["cost"] = {{ "i", 74644, 5 }},	-- 5x Swirling Mist Soup
 			}),
 			q(31475, {	-- Way of the Steamer
-				["provider"] = { "n", 64231 },	-- Sungshin Ironpaw
 				["sourceQuests"] = { 31302 },	-- Ready for Greatness
+				["provider"] = { "n", 64231 },	-- Sungshin Ironpaw
 				["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
 				["cost"] = {{ "i", 74857, 5 }},	-- 5x Giant Mantis Shrimp
 				["groups"] = {
@@ -366,14 +366,14 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 				},
 			}),
 			q(31476, {	-- The Spirit of Cooking
-				["provider"] = { "n", 58715 },	-- Yan Ironpaw
 				["sourceQuests"] = { 31475 },	-- Way of the Steamer
+				["provider"] = { "n", 58715 },	-- Yan Ironpaw
 				["coord"] = { 52.5, 51.7, VALLEY_OF_THE_FOUR_WINDS },
 				["cost"] = {{ "i", 74651, 5 }},	-- 5x Shrimp Dumplings
 			}),
 			q(31470, {	-- Way of the Wok
-				["provider"] = { "n", 64231 },	-- Sungshin Ironpaw
 				["sourceQuests"] = { 31302 },	-- Ready for Greatness
+				["provider"] = { "n", 64231 },	-- Sungshin Ironpaw
 				["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
 				["cost"] = {{ "i", 74841, 5 }},	-- 5x Juicycrunch Carrot
 				["groups"] = {
@@ -381,13 +381,12 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 				},
 			}),
 			q(31471, {	-- Agile as a Tiger
-				["provider"] = { "n", 58713 },	-- Anthea Ironpaw
 				["sourceQuests"] = { 31470 },	-- Way of the Wok
+				["provider"] = { "n", 58713 },	-- Anthea Ironpaw
 				["coord"] = { 52.7, 52.0, VALLEY_OF_THE_FOUR_WINDS },
 				["cost"] = {{ "i", 74643, 5 }},	-- 5x Sauteed Carrots
 			}),
 			q(31536, {	-- Preserving Freshness
-				["provider"] = { "n", 64395 },	-- Nam Ironpaw
 				["sourceQuests"] = {
 					31471,	-- Agile as a Tiger
 					31477,	-- Endurance
@@ -396,12 +395,12 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 					31474,	-- The Soup of Contemplation
 					31476,	-- The Spirit of Cooking
 				},
+				["provider"] = { "n", 64395 },	-- Nam Ironpaw
 				["coord"] = { 53.5, 51.2, VALLEY_OF_THE_FOUR_WINDS },
 				["cost"] = {{ "i", 87658, 1 }},	-- 1x Empty Raw Tiger Steak Container
 			}),
 			header(HEADERS.Spell, 145062, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {
 				q(33018, {	-- Noodle Secrets Long Forgotten
-					["provider"] = { "o", 221376 },	-- Old Sign Fragment
 					["sourceQuests"] = {
 						31471,	-- Agile as a Tiger
 						31477,	-- Endurance
@@ -410,37 +409,38 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 						31474,	-- The Soup of Contemplation
 						31476,	-- The Spirit of Cooking
 					},
+					["provider"] = { "o", 221376 },	-- Old Sign Fragment
 					["coord"] = { 52.1, 46.5, TIMELESS_ISLE },
 				}),
 				q(33020, {	-- The Lost Secret of the Secret Ingredient
-					["provider"] = { "n", 72426 },	-- Lin Chao-Wei
 					["sourceQuests"] = { 33018 },	-- Noodle Secrets Long Forgotten
+					["provider"] = { "n", 72426 },	-- Lin Chao-Wei
 					["coord"] = { 41.2, 73.4, TIMELESS_ISLE },
 					["maps"] = { 429, 430 },	-- Temple of the Jade Serpent
 				}),
 				q(33107, {	-- Bad Feeling, Worse Result
-					["provider"] = { "o", 221413 },	-- Lin Family Scroll
 					["sourceQuests"] = { 33020 },	-- The Lost Secret of the Secret Ingredient
+					["provider"] = { "o", 221413 },	-- Lin Family Scroll
 					["coord"] = { 68.8, 58.4, 429 },	-- Temple of the Jade Serpent
 					["maps"] = { 430 },	-- Temple of the Jade Serpent
 					["modelScale"] = 2,
 				}),
 				q(33021, {	-- Secrets Lost, Forever?
-					["provider"] = { "n", 64231 },	-- Sungshin Ironpaw
 					["sourceQuests"] = { 33107 },	-- Bad Feeling, Worse Result
+					["provider"] = { "n", 64231 },	-- Sungshin Ironpaw
 					["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
 				}),
 				q(33022, {	-- Catch and Carry
-					["provider"] = { "n", 64231 },	-- Sungshin Ironpaw
 					["sourceQuests"] = { 33021 },	-- Secrets Lost, Forever?
+					["provider"] = { "n", 64231 },	-- Sungshin Ironpaw
 					["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
 					["groups"] = {
 						r(145038),	-- Noodle Cart Kit
 					},
 				}),
 				q(33024, {	-- Is That A Real Measurement?
-					["provider"] = { "n", 64231 },	-- Sungshin Ironpaw
 					["sourceQuests"] = { 33022 },	-- Catch and Carry
+					["provider"] = { "n", 64231 },	-- Sungshin Ironpaw
 					["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
 					["maps"] = { 439, 440, 441, 442 },	-- Stormstout Brewery
 					["cost"] = {{ "i", 101661, 1 }},	-- 1x Noodle Cart Kit
@@ -449,14 +449,14 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 					},
 				}),
 				q(33026, {	-- These Aren't Your Fatty Goatsteaks
-					["provider"] = { "n", 64231 },	-- Sungshin Ironpaw
 					["sourceQuests"] = { 33024 },	-- Is That a Real Measurement?
+					["provider"] = { "n", 64231 },	-- Sungshin Ironpaw
 					["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
 					["cost"] = {{ "i", 101661, 1 }},	-- 1x Deluxe Noodle Cart Kit
 				}),
 				q(33027, {	-- The Secret Ingredient Is...
-					["provider"] = { "n", 64231 },	-- Sungshin Ironpaw
 					["sourceQuests"] = { 33026 },	-- These Aren't Your Fatty Goatsteaks
+					["provider"] = { "n", 64231 },	-- Sungshin Ironpaw
 					["coord"] = { 53.6, 51.2, VALLEY_OF_THE_FOUR_WINDS },
 					["groups"] = {
 						r(145062),	-- Pandaren Treasure Noodle Cart Kit
@@ -487,16 +487,16 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 		}),
 		n(QUESTS, {
 			q(40990, {	-- A Good Recipe List
-				["provider"] = { "n", 101846 },	-- Nomi
 				["sourceQuests"] = {
 					40988,	-- Too Many Cooks
 					40989,	-- The Prodigal Sous Chef
 				},
+				["provider"] = { "n", 101846 },	-- Nomi
 				["coord"] = { 69.8, 38.8, LEGION_DALARAN },
 			}),
 			q(40991, {	-- Opening the Test Kitchen
-				["provider"] = { "n", 101846 },	-- Nomi
 				["sourceQuests"] = { 40990 },	-- A Good Recipe List
+				["provider"] = { "n", 101846 },	-- Nomi
 				["groups"] = {
 					ach(10591),	-- All Grown Up
 				},
@@ -508,15 +508,15 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 				},
 			}),
 			q(40989, {	-- The Prodigal Sous Chef
-				["provider"] = { "n", 102546 },	-- Nomi
 				["description"] = "If you cooked with Nomi while questing in Pandaria, you will receive this quest instead of 'Too Many Chefs'.",
+				["provider"] = { "n", 102546 },	-- Nomi
 				["groups"] = {
 					i(133826),	-- Recipe: Dried Mackerel Strips [Rank 1] (RECIPE!)
 				},
 			}),
 			q(40988, {	-- Too Many Chefs
-				["provider"] = { "n", 102546 },	-- Nomi
 				["description"] = "If you did not cook with Nomi while questing in Pandaria, you will receive this quest instead of 'The Prodigal Sous Chef'.",
+				["provider"] = { "n", 102546 },	-- Nomi
 				["groups"] = {
 					i(133826),	-- Recipe: Dried Mackerel Strips [Rank 1] (RECIPE!)
 				},
@@ -586,15 +586,15 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 		}),
 		n(QUESTS, {
 			q(72251, {	-- Dragon Isles Cooking
+				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Cooking.",
 				["provider"] = { "n", 193121 },	-- Head Chef Stacks
 				["coord"] = { 47.1, 82.7, THE_WAKING_SHORES },
-				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Cooking.",
 				["lockCriteria"] = { 1, "spellID", 366256 },	-- Dragon Isles Cooking
 			}),
 			q(72250, {	-- Dragon Isles Cooking
+				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Cooking.",
 				["provider"] = { "n", 198094 },	-- Head Chef Stacks
 				["coord"] = { 76.4, 35.7, THE_WAKING_SHORES },
-				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Cooking.",
 				["lockCriteria"] = { 1, "spellID", 366256 },	-- Dragon Isles Cooking
 			}),
 		}),

@@ -20,9 +20,9 @@ root(ROOTS.Secrets, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED
 					ko = "|cFFFFFFFFStep 1:|r 눈에 띄는 쪽지",
 					cn = "|cFFFFFFFF步骤1:|r 不起眼的纸条",
 				}),
+				["description"] = "|cFFFFFFFFStep 1:|r Head to Nazmir.  The note is high up on the side of the temple in the middle of the zone.  If you don't have flying, you can access the top of the temple via a bridge that starts at |cFFFFFFFF46.3, 53.9|r.\n\nThe note reads: \"Begin at the beginning\"\n",
 				["provider"] = { "o", 293849 },	-- Conspicious Note
 				["coord"] = { 51.8, 59.0, NAZMIR },
-				["description"] = "|cFFFFFFFFStep 1:|r Head to Nazmir.  The note is high up on the side of the temple in the middle of the zone.  If you don't have flying, you can access the top of the temple via a bridge that starts at |cFFFFFFFF46.3, 53.9|r.\n\nThe note reads: \"Begin at the beginning\"\n",
 			}),
 			o(293837, {	-- Step 2: First Ordinary Pebble
 				["description"] = "|cFFFFFFFFStep 2:|r Head to Broken Shore.  At the coordinates provided, there is a small stone table with various non-interactable objects — some candles, parchment, a quill, a purple crystal ball, and some scattered grey pebbles.  One of the pebbles is pale, almost the same color as the table, and it's the only thing on the table you can interact with.  You may need to zoom in to see it.\n\nThe text reads: \"<An ordinary pebble, unremarkable in every way.>\"\n",

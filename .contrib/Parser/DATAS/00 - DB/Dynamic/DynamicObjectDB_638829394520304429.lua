@@ -1,4 +1,4 @@
-﻿local ObjectDB = ObjectDB; for objectID,objectData in pairs({
+local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[525434] = {
 		readable = "Bounty: Liberation of Undermine",
 		model = 6212460,

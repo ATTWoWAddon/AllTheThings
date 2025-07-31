@@ -27,13 +27,13 @@ root(ROOTS.ExpansionFeatures,
 					}),
 					n(QUESTS, {
 						q(37420, {	-- Fully Armed and Operational
-							["provider"] = { "n", 84286 },	-- Zee
 							["description"] = "Requires Gnomish Gearworks Rank 3.",
+							["provider"] = { "n", 84286 },	-- Zee
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(37418, {	-- Fully Armed and Operational
-							["provider"] = { "n", 85369 },	-- Vee
 							["description"] = "Requires Goblin Workshop Rank 3.",
+							["provider"] = { "n", 85369 },	-- Vee
 							["races"] = HORDE_ONLY,
 						}),
 						q(37091, {	-- Unconventional Inventions

@@ -220,9 +220,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(78700, {	-- Controlled Demolition
 					["sourceQuests"] = { 78697 },	-- Ghost of a Company Town
-					["providers"] = {
-						{ "n", 216479 },	-- Magni Bronzebeard (static ID)
-						{ "n", 214890 },	-- Magni Bronzebeard (when near player)
+					["qgs"] = {
+						216479,	-- Magni Bronzebeard (static ID)
+						214890,	-- Magni Bronzebeard (when near player)
 					},
 					["coord"] = { 66.2, 58.4, THE_RINGING_DEEPS },
 					["groups"] = {
@@ -232,9 +232,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(78701, {	-- The Truth in Chalk
 					["sourceQuests"] = { 78697 },	-- Ghost of a Company Town
-					["providers"] = {
-						{ "n", 216480 },	-- Dagran Thaurissan II (static ID)
-						{ "n", 214892 },	-- Dagran Thaurissan II (when near player)
+					["qgs"] = {
+						216480,	-- Dagran Thaurissan II (static ID)
+						214892,	-- Dagran Thaurissan II (when near player)
 					},
 					["coord"] = { 66.1, 58.3, THE_RINGING_DEEPS },
 				}),
@@ -327,10 +327,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 47.2, 34.1, THE_RINGING_DEEPS },
 				}),
 				q(81689, {	-- Orientation: Gundargaz
-					--also look like not story quest, tbf... Very Weird...
 					["sourceQuests"] = { 79354 },	-- The Machine Speakers
 					["provider"] = { "n", 212742 },	-- Moira Thaurissan
 					["coord"] = { 47.2, 34.1, THE_RINGING_DEEPS },
+					--also look like not story quest, tbf... Very Weird...
 				}),
 			}),
 			header(HEADERS.AchCriteria, 40799.01, {	-- The Caretaker of Brunwin's Terrace
@@ -339,8 +339,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						TEMPORARY_SOURCEQUEST,
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
-					["provider"] = { "n", 219784 },	-- Batzvara
 					["sourceQuestNumRequired"] = 1,
+					["provider"] = { "n", 219784 },	-- Batzvara
 					["coord"] = { 51.3, 30.2, THE_RINGING_DEEPS },
 				}),
 				q(80408, {	-- Shimmermist Falls
@@ -416,8 +416,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						78838,	-- Cogs in the Machine
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
-					["provider"] = { "n", 212695 },	-- Machinist Kittrin
 					["sourceQuestNumRequired"] = 1,
+					["provider"] = { "n", 212695 },	-- Machinist Kittrin
 					["coord"] = { 48.2, 33.4, THE_RINGING_DEEPS },
 					["groups"] = {
 						o(411622, {	-- Machinist Plinth
@@ -454,9 +454,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						TEMPORARY_SOURCEQUEST,
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
+					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 224602 },	-- Speaker Danagh
 					["coord"] = { 59.0, 64.2, THE_RINGING_DEEPS },
-					["sourceQuestNumRequired"] = 1,
 					["groups"] = {
 						i(224271),	-- Galvanic Gland (QI!)
 					},
@@ -509,8 +509,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						TEMPORARY_SOURCEQUEST,
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
-					["provider"] = { "n", 222234 },	-- Scrit
 					["sourceQuestNumRequired"] = 1,
+					["provider"] = { "n", 222234 },	-- Scrit
 					["coord"] = { 62.6, 45.6, THE_RINGING_DEEPS },
 				}),
 				q(80509, {	-- A Suit of Slime
@@ -575,8 +575,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						TEMPORARY_SOURCEQUEST,
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
-					["provider"] = { "n", 215737 },	-- Nebb
 					["sourceQuestNumRequired"] = 1,
+					["provider"] = { "n", 215737 },	-- Nebb
 					["coord"] = { 65.9, 42.6, THE_RINGING_DEEPS },
 					["groups"] = {
 						i(217116),	-- Bundle of Candles (QI!)
@@ -703,9 +703,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						TEMPORARY_SOURCEQUEST,
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
+					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 221043 },	-- Noli Marlen
 					["coord"] = { 58.4, 62.3, THE_RINGING_DEEPS },
-					["sourceQuestNumRequired"] = 1,
 				}),
 				q(81557, {	-- Fog Tags
 					["sourceQuests"] = { 81556 },	-- Foreign Fog
@@ -736,8 +736,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						TEMPORARY_SOURCEQUEST,
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
-					["provider"] = { "n", 225582 },	-- Foreman Duinth
 					["sourceQuestNumRequired"] = 1,
+					["provider"] = { "n", 225582 },	-- Foreman Duinth
 					["coord"] = { 41.1, 21.4, THE_RINGING_DEEPS },
 				}),
 				q(83160, {	-- Cinderbrew Reserve
@@ -745,8 +745,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						TEMPORARY_SOURCEQUEST,
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
-					["provider"] = { "n", 225616 },	-- Cogwin
 					["sourceQuestNumRequired"] = 1,
+					["provider"] = { "n", 225616 },	-- Cogwin
 					["coord"] = { 41.4, 22.5, THE_RINGING_DEEPS },
 				}),
 				q(83152, {	-- Magmamagement
@@ -754,8 +754,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						TEMPORARY_SOURCEQUEST,
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
-					["provider"] = { "n", 225582 },	-- Foreman Duinth
 					["sourceQuestNumRequired"] = 1,
+					["provider"] = { "n", 225582 },	-- Foreman Duinth
 					["coord"] = { 41.1, 21.4, THE_RINGING_DEEPS },
 				}),
 				q(83153, {	-- Sampling Steam
@@ -763,8 +763,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						TEMPORARY_SOURCEQUEST,
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
-					["provider"] = { "n", 225583 },	-- Machinist Kilton
 					["sourceQuestNumRequired"] = 1,
+					["provider"] = { "n", 225583 },	-- Machinist Kilton
 					["coord"] = { 41.1, 21.4, THE_RINGING_DEEPS },
 					["groups"] = {
 						i(219464),	-- Earthen Traveler's Boomstick
@@ -785,39 +785,39 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			header(HEADERS.AchCriteria, 40799.09, {	-- Kobold Candles
 				q(82946, {	-- Rollin' Down In the Deeps
-					["isDaily"] = true,
 					["sourceQuests"] = {
 						80082,	-- Back to Gundargaz
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
+					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 216164 },	-- Gnawbles
 					["coord"] = { 47.7, 35.3, THE_RINGING_DEEPS },
-					["sourceQuestNumRequired"] = 1,
+					["isDaily"] = true,
 					["groups"] = {
 						i(227792),	-- Everyday Cache
 					},
 				}),
 				q(79343, {	-- Everyday I'm Snufflin'
-					["isDaily"] = true,
+					["description"] = "Strange Lump of Wax is a somewhat rare drop from the continent of Khaz Algar",
 					["sourceQuests"] = {
 						80082,	-- Back to Gundargaz
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
+					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "i", 228228 },	-- Strange Lump of Wax
 					["coord"] = { 47.7, 35.3, THE_RINGING_DEEPS },
-					["sourceQuestNumRequired"] = 1,
-					["description"] = "Strange Lump of Wax is a somewhat rare drop from the continent of Khaz Algar",
+					["isDaily"] = true,
 				}),
 				q(79683, {	-- Home is Where the Candle Is
 					["sourceQuests"] = {
 						80082,	-- Back to Gundargaz
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
-					["providers"] = {
-						{ "n", 222803 },	-- Skitter
-						{ "n", 213152 },	-- Skitter
-					},
 					["sourceQuestNumRequired"] = 1,
+					["qgs"] = {
+						222803,	-- Skitter
+						213152,	-- Skitter
+					},
 					["coord"] = { 47.1, 33.3, THE_RINGING_DEEPS },
 					["groups"] = {
 						i(223625),	-- Cinderwold Sizzlestinger (PET!)
@@ -915,8 +915,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						TEMPORARY_SOURCEQUEST,
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
-					["provider"] = { "n", 216438 },	-- Granny Scribbles
 					["sourceQuestNumRequired"] = 1,
+					["provider"] = { "n", 216438 },	-- Granny Scribbles
 					["coord"] = { 48.0, 35.7, THE_RINGING_DEEPS },
 					-- Instance ID 2601
 					--["maps"] = { x },	-- could be scenario mapID but it is not here?
@@ -984,8 +984,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						TEMPORARY_SOURCEQUEST,
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
-					["provider"] = { "n", 215208 },	-- Orsenth
 					["sourceQuestNumRequired"] = 1,
+					["provider"] = { "n", 215208 },	-- Orsenth
 					["coord"] = { 51.0, 14.9, THE_RINGING_DEEPS },
 					["groups"] = {
 						i(218356),	-- Healing Clay (QI!)
@@ -996,8 +996,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						TEMPORARY_SOURCEQUEST,
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
-					["provider"] = { "n", 215234 },	-- Ferdagor
 					["sourceQuestNumRequired"] = 1,
+					["provider"] = { "n", 215234 },	-- Ferdagor
 					["coord"] = { 51.4, 14.3, THE_RINGING_DEEPS },
 				}),
 				q(79679, {	-- Muddled Mind in the Mine
@@ -1041,8 +1041,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						TEMPORARY_SOURCEQUEST,
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
-					["provider"] = { "n", 225608 },	-- Prospera Cogwall
 					["sourceQuestNumRequired"] = 1,
+					["provider"] = { "n", 225608 },	-- Prospera Cogwall
 					["coord"] = { 63.7, 79.2, THE_RINGING_DEEPS },
 				}),
 				q(83159, {	-- A Little Off the Top
@@ -1065,8 +1065,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						TEMPORARY_SOURCEQUEST,
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
-					["provider"] = { "n", 220417 },	-- Kagfritha
 					["sourceQuestNumRequired"] = 1,
+					["provider"] = { "n", 220417 },	-- Kagfritha
 					["coord"] = { 62.2, 46.9, THE_RINGING_DEEPS },
 					["groups"] = {
 						i(219493),	-- Juicy Krolusk Meat (QI!)
@@ -1095,8 +1095,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						TEMPORARY_SOURCEQUEST,
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
-					["provider"] = { "n", 220600 },	-- Haimaz
 					["sourceQuestNumRequired"] = 1,
+					["provider"] = { "n", 220600 },	-- Haimaz
 					["coord"] = { 60.4, 45.7, THE_RINGING_DEEPS },
 				}),
 				q(80676, {	-- Defragmenting Memory
@@ -1131,9 +1131,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						82224,	-- Check on the Compiler
 						81613,	-- Let's Not Worry Her
 					},
+					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 220597 },	-- Brennok
 					["coord"] = { 61.9, 45.5, THE_RINGING_DEEPS },
-					["sourceQuestNumRequired"] = 1,
 					["groups"] = {
 						i(221472),	-- Miner's Clothes (QI!)
 					},
@@ -1173,8 +1173,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						TEMPORARY_SOURCEQUEST,
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
-					["provider"] = { "n", 220415 },	-- Hrandaz
 					["sourceQuestNumRequired"] = 1,
+					["provider"] = { "n", 220415 },	-- Hrandaz
 					["coord"] = { 62.4, 48.0, THE_RINGING_DEEPS },
 				}),
 				q(81712, {	-- Lisky Business
@@ -1232,8 +1232,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					TEMPORARY_SOURCEQUEST,
 					TWW_ACCOUNT_CAMPAIGN_QUEST,
 				},
-				["provider"] = { "n", 224966 },	-- Mindi Maxlof
 				["sourceQuestNumRequired"] = 1,
+				["provider"] = { "n", 224966 },	-- Mindi Maxlof
 				["coord"] = { 53.8, 43.8, THE_RINGING_DEEPS },
 				["groups"] = {
 					i(224417),	-- Stack of Flyers (QI!)
@@ -1252,8 +1252,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					TEMPORARY_SOURCEQUEST,
 					TWW_ACCOUNT_CAMPAIGN_QUEST,
 				},
-				["provider"] = { "o", 443532 },	-- Rusted Lever
 				["sourceQuestNumRequired"] = 1,
+				["provider"] = { "o", 443532 },	-- Rusted Lever
 				["coord"] = { 53.3, 44.6, THE_RINGING_DEEPS },
 				["groups"] = {
 					i(221970),	-- Pure Crawler Extract (QI!)
@@ -1318,8 +1318,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					TEMPORARY_SOURCEQUEST,
 					TWW_ACCOUNT_CAMPAIGN_QUEST,
 				},
-				["provider"] = { "n", 213840 },	-- Inkeeper Brax
 				["sourceQuestNumRequired"] = 1,
+				["provider"] = { "n", 213840 },	-- Inkeeper Brax
 				["coord"] = { 48.0, 32.2, THE_RINGING_DEEPS },
 				["groups"] = {
 					i(211493),	-- Brax's Brass Knuckles (QI!)
@@ -1335,8 +1335,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					78838,	-- Cogs in the Machine
 					TWW_ACCOUNT_CAMPAIGN_QUEST,
 				},
-				["provider"] = { "n", 213869 },	-- Watcher Toki
 				["sourceQuestNumRequired"] = 1,
+				["provider"] = { "n", 213869 },	-- Watcher Toki
 				["coord"] = { 48.0, 34.8, THE_RINGING_DEEPS },
 			}),
 			q(82226, {	-- Papers? Please!
@@ -1344,8 +1344,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					TEMPORARY_SOURCEQUEST,
 					TWW_ACCOUNT_CAMPAIGN_QUEST,
 				},
-				["provider"] = { "n", 223184 },	-- Garv Gearwhistle
 				["sourceQuestNumRequired"] = 1,
+				["provider"] = { "n", 223184 },	-- Garv Gearwhistle
 				["coord"] = { 64.9, 78.6, THE_RINGING_DEEPS },
 			}),
 			q(83331, {	-- Preserve and Pretend

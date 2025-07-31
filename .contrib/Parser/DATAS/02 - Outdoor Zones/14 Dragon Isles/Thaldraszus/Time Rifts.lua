@@ -295,10 +295,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					q(77679, {	-- To Soridormi's Aid
 						["provider"] = { "n", 197574 },	-- Mairadormi
 						["coord"] = { 72.5, 47.4, VALDRAKKEN },
-						["isBreadcrumb"] = true,
-						["lockCriteria"] = { 1, "questID", 77680 },	-- my main is not able to accept this, not even in party-sync, but alt can (have not done any rift with alt yet).
-						["DisablePartySync"] = true,	-- TODO: confirm with character who has 77680 incomplete
 						["timeline"] = { ADDED_10_1_5 },
+						["lockCriteria"] = { 1, "questID", 77680 },	-- my main is not able to accept this, not even in party-sync, but alt can (have not done any rift with alt yet).
+						["isBreadcrumb"] = true,
+						["DisablePartySync"] = true,	-- TODO: confirm with character who has 77680 incomplete
 					}),
 					-- ideally want the Object with coords with provider Item inside...
 					q(76548, {	-- A Fishy Gift
@@ -382,12 +382,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["coord"] = { 71.2, 70.2, 2199 },	-- Tyrhold Reservoir (Scenario Map)
 					}),
 					q(77236, {	-- When Time Needs Mending
+						["description"] = "Can be completed once per Account per week.\n\nNote: Having this quest active will block picking up 'To Soridormi's Aid' (77679) on any character which logs in while this quest is active.",
+						["sourceQuest"] = 77679,	-- To Soridormi's Aid
 						["provider"] = { "n", 204450 },	-- Soridormi
 						["coord"] = { 51.1, 57.1, THALDRASZUS },
 						["maxReputation"] = { FACTION_SORIDORMI, 5 },
-						["description"] = "Can be completed once per Account per week.\n\nNote: Having this quest active will block picking up 'To Soridormi's Aid' (77679) on any character which logs in while this quest is active.",
 						["isWeekly"] = true,
-						["sourceQuest"] = 77679,	-- To Soridormi's Aid
 						["groups"] = {
 							i(208090, {	-- Contained Paracausality
 								i(207030, {	-- Dilated Time Capsule (10.1.5)

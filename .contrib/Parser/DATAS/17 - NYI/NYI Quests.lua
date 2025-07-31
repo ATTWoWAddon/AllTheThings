@@ -3346,8 +3346,8 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 				},
 			}),
 			q(48653, {	-- A Bejeweled Prison
-				["provider"] = { "i", 152655 },	-- Restored Eye of Obsidian (QS!)
 				["description"] = "Area: |cFFf09f26Nazmir|r",
+				["provider"] = { "i", 152655 },	-- Restored Eye of Obsidian (QS!)
 				["cost"] = {{ "i", 152656, 5 },},	-- Eye of Obsidian Fragment
 				["races"] = HORDE_ONLY,
 				["lvl"] = 20,
@@ -4908,26 +4908,26 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(56129),	-- Heroic: Battle for Stromgarde
 			q(56206),	-- Heroic: Battle for Stromgarde
 			q(56164, {	-- Desperate Need (A)
-				["provider"] = { "n", 151763 },	-- Isla
 				["sourceQuest"] = 56156,	-- A Tempered Blade
+				["provider"] = { "n", 151763 },	-- Isla
 				["coord"] = { 37.7, 55.3, NAZJATAR },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(56176, {	-- Desperate Need (H)
-				["provider"] = { "n", 154208 },	-- Jonah Lowtide
 				["sourceQuest"] = 55500,	-- Save a Friend
+				["provider"] = { "n", 154208 },	-- Jonah Lowtide
 				["coord"] = { 50.5, 66.2, NAZJATAR },
 				["races"] = HORDE_ONLY,
 			}),
 			q(56166, {	-- The Needs of the People
-				["provider"] = { "n", 151763 },	-- Isla
 				["sourceQuest"] = 56164,	-- Desperate Need
+				["provider"] = { "n", 151763 },	-- Isla
 				["coord"] = { 37.7, 55.3, NAZJATAR },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(56179, {	-- The Needs of the People
-				["provider"] = { "n", 154208 },	-- Jonah Lowtide
 				["sourceQuest"] = 56176,	-- Desperate Need
+				["provider"] = { "n", 154208 },	-- Jonah Lowtide
 				["coord"] = { 50.5, 66.2, NAZJATAR },
 				["races"] = HORDE_ONLY,
 			}),

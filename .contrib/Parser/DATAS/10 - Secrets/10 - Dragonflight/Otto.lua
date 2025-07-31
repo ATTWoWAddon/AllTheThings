@@ -10,8 +10,8 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 		["groups"] = {
 			q(72676, {	-- Step 1: Dance, Dance 'Til You're Dead
 				["name"] = "Step 1: Dance, Dance 'Til You're Dead",
-				["coord"] = { 19.6, 36.5, THE_WAKING_SHORES },
 				["description"] = "Head to The Bubble Bath Dive Bar, off the coast of The Waking Shores. While wearing the Aquatic Shades, find an empty dance floor and walk onto it; you'll receive the debuff Dance Dance 'Til You're Dead. Stay on the dance floor until this debuff wears off.",
+				["coord"] = { 19.6, 36.5, THE_WAKING_SHORES },
 			}),
 			o(385001, {	-- Step 2: Empty Fish Barrel
 				["description"] = "Once you wake up from your dance hangover, loot the Empty Fish Barrel. It's directly in front of you.",
@@ -49,8 +49,8 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			q(72808, {	-- Step 5: One Last Fish
 				["name"] = "Step 5: One Last Fish",
-				["sourceQuests"] = { 72676 },	-- Step 1: Dance, Dance 'Til You're Dead
 				["description"] = "Only one fish to go! Top it off with an epic fish from Algeth'ar Academy.",
+				["sourceQuests"] = { 72676 },	-- Step 1: Dance, Dance 'Til You're Dead
 				["cost"] = { { "i", 202074, 1 } },	-- 1x Kingfin, the Wise Whiskerfish
 				["requireSkill"] = FISHING,
 				["groups"] = {
@@ -68,8 +68,8 @@ root(ROOTS.Secrets, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			q(72738, {	-- Step 7: The Way to an Otto's Heart
 				["name"] = "Step 7: The Way to an Otto's Heart",
-				["provider"] = { "n", 199563 },	-- Otto
 				["sourceQuests"] = { 72808 },	-- Step 5: One Last Fish
+				["provider"] = { "n", 199563 },	-- Otto
 				["coord"] = { 20, 40, THE_WAKING_SHORES },
 				["groups"] = {
 					i(198870),	-- Otto (Mount!!)

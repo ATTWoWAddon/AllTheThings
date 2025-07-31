@@ -1112,7 +1112,7 @@ end");
                     data.Append("root(\"Items.SOURCES\",");
                     ATT.Export.AddTableNewLines = true;
                     data.AppendLine(ATT.Export.ExportCompressedLua(Items.AllItemSourceIDs).ToString());
-                    data.Append(");");
+                    data.Append(");\r\n");
 
                     string content = data.ToString();
                     if (!string.IsNullOrEmpty(DATA_REQUIREMENTS)) content = $"if not ({DATA_REQUIREMENTS}) then return; end \n{content}";

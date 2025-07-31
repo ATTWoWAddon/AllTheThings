@@ -26,6 +26,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 						},
 						["groups"] = {
 							i(242734),	-- Curious Slateback (MOUNT!)
+							i(244907),	-- Dread Horrorling (PET!)
 							i(245252),	-- Graceful Cosmic Ray Pup (PET!)
 							i(244909),	-- Impartial Watcher (PET!)
 							i(245253),	-- Inquisitive Cosmic Ray Pup (PET!)

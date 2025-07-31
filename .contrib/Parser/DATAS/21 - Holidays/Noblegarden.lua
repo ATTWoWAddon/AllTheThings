@@ -654,16 +654,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["isYearly"] = true,
 		}),
 		q(13480, {	-- The Great Egg Hunt (A)
-			["qgs"] = {
-				32799,	-- Spring Collector
-				-- #if AFTER TWW
-				215033,	-- Spring Sorter
-				-- #endif
-			},
 			["sourceQuests"] = {
 				13484,	-- Spring Gathers (A)
 				-- #if AFTER DF
 				74120,	-- A Spring Awakening (A)
+				-- #endif
+			},
+			["qgs"] = {
+				32799,	-- Spring Collector
+				-- #if AFTER TWW
+				215033,	-- Spring Sorter
 				-- #endif
 			},
 			["coords"] = {
@@ -695,17 +695,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			},
 		}),
 		q(13479, {	-- The Great Egg Hunt (H)
-			["qgs"] = {
-				32798,	-- Spring Gatherer
-				-- #IF AFTER TWW
-				215033, -- Spring Sorter
-				-- #ENDIF
-			},
 			["sourceQuests"] = {
 				13483,	-- Spring Gathers (H)
 				-- #if AFTER DF
 				74875,	-- A Spring Awakening (H)
 				-- #endif
+			},
+			["qgs"] = {
+				32798,	-- Spring Gatherer
+				-- #IF AFTER TWW
+				215033, -- Spring Sorter
+				-- #ENDIF
 			},
 			["coords"] = {
 				-- #if AFTER CATA
@@ -802,22 +802,22 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			},
 		}),
 		q(79323, {	-- A Fowl Concoction (A)
-			["qg"] = 211646,	-- Zinnia Brooks
 			["sourceQuest"] = 79322,	-- What the Duck? (A)
+			["qg"] = 211646,	-- Zinnia Brooks
 			["coord"] = { 42.0, 65.0, ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
 		}),
 		q(79576, {	-- A Fowl Concoction (H)
-			["qg"] = 217125,	-- Sylnaria Fareflame
 			["sourceQuest"] = 79575,	-- What the Duck? (H)
+			["qg"] = 217125,	-- Sylnaria Fareflame
 			["coord"] = { 52.6, 41.2, DUROTAR },
 			["races"] = HORDE_ONLY,
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
 		}),
 		q(79330, {	-- Duck Tales (A)
-			["qg"] = 216129,	-- Emmery Fiske
 			["sourceQuest"] = 79323,	-- A Fowl Concoction (A)
+			["qg"] = 216129,	-- Emmery Fiske
 			["coord"] = { 42.0, 64.9, ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
@@ -826,8 +826,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			},
 		}),
 		q(79577, {	-- Duck Tales (H)
-			["qg"] = 217147,	-- Tethris Dewgazer
 			["sourceQuest"] = 79576,	-- A Fowl Concoction (H)
+			["qg"] = 217147,	-- Tethris Dewgazer
 			["coord"] = { 52.6, 41.1, DUROTAR },
 			["races"] = HORDE_ONLY,
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
@@ -836,8 +836,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			},
 		}),
 		q(79331, {	-- Just a Waddle Away (A)
-			["qg"] = 211646,	-- Zinnia Brooks
 			["sourceQuest"] = 79330,	-- Duck Tales (A)
+			["qg"] = 211646,	-- Zinnia Brooks
 			["coord"] = { 42.0, 65.0, ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
@@ -857,8 +857,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			},
 		}),
 		q(79578, {	-- Just a Waddle Away (H)
-			["qg"] = 217125,	-- Sylnaria Fareflame
 			["sourceQuest"] = 79577,	-- Duck Tales (H)
+			["qg"] = 217125,	-- Sylnaria Fareflame
 			["coord"] = { 52.6, 41.2, DUROTAR },
 			["races"] = HORDE_ONLY,
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
@@ -883,15 +883,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 		["isDaily"] = true,
 	},FILTERFUNC_questID,{
 		q(78274, {	-- Quacking Down (A)
-			["qg"] = 211646,	-- Zinnia Brooks
 			["sourceQuest"] = 79331,	-- Just a Waddle Away (A)
+			["qg"] = 211646,	-- Zinnia Brooks
 			["coord"] = { 42.0, 65.0, ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
 		}),
 		q(79135, {	-- Quacking Down (H)
-			["qg"] = 217125,	-- Sylnaria Fareflame
 			["sourceQuest"] = 79578,	-- Just a Waddle Away (H)
+			["qg"] = 217125,	-- Sylnaria Fareflame
 			["coord"] = { 52.6, 41.2, DUROTAR },
 			["races"] = HORDE_ONLY,
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg

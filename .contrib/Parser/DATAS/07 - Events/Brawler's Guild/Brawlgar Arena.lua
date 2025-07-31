@@ -180,46 +180,46 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 		}),
 		n(QUESTS, {
 			q(36702, {	-- Meatball
-				["qg"] = 86272,	-- Meatball
 				["description"] = "Reach Rank 5 in the arena.",
+				["qg"] = 86272,	-- Meatball
 				["groups"] = {
 					follower(203),	-- Meatball
 				},
 			}),
 			q(53914, {	-- Murder at the Brawl'gar Arena
+				["description"] = "This quest can be accepted after you successfully complete any (or your first) Brawl.",
 				["qg"] = 68364,	-- Paul North
 				["coord"] = { 48.4, 29.2, 503 },
-				["description"] = "This quest can be accepted after you successfully complete any (or your first) Brawl.",
 				["races"] = HORDE_ONLY,
 			}),
 			q(53915, {	-- Put Up Your Dukes
-				["qg"] = 145581,	-- Commander Arlu Ravenhide
 				["sourceQuest"] = 53914,	-- Murder at the Brawl'gar Arena
+				["qg"] = 145581,	-- Commander Arlu Ravenhide
 				["coord"] = { 43.4, 97.0, 503 },
 				["races"] = HORDE_ONLY,
 			}),
 			q(53917, {	-- Undercover Agent: Sharisanda
-				["qg"] = 145581,	-- Commander Arlu Ravenhide
 				["sourceQuest"] = 53915,	-- Put Up Your Dukes
+				["qg"] = 145581,	-- Commander Arlu Ravenhide
 				["coord"] = { 43.4, 97.0, 503 },
 				["races"] = HORDE_ONLY,
 			}),
 			q(53918, {	-- The Financial Participation Incentive
-				["qg"] = 145582,	-- Sharisanda
 				["sourceQuest"] = 53917,	-- Undercover Agent: Sharisanda
+				["qg"] = 145582,	-- Sharisanda
 				["coord"] = { 48.8, 79.8, 503 },
 				["cost"] = { { "i", 142318, 1, } },	-- High Roller's Contract
 				["races"] = HORDE_ONLY,
 			}),
 			q(53920, {	-- A Favor for Your Ol' Pal Buxdoggle
-				["qg"] = 68372,	-- Pit Boss Buxdoggle
 				["sourceQuest"] = 53918,	-- The Financial Participation Incentive
+				["qg"] = 68372,	-- Pit Boss Buxdoggle
 				["coord"] = { 49.2, 68.0, 503 },
 				["races"] = HORDE_ONLY,
 			}),
 			q(53921, {	-- The Pit Boss's Debts
-				["qg"] = 68372,	-- Pit Boss Buxdoggle
 				["sourceQuest"] = 53920,	-- A Favor for Your Ol' Pal Buxdoggle
+				["qg"] = 68372,	-- Pit Boss Buxdoggle
 				["coord"] = { 49.2, 68.0, 503 },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
@@ -227,8 +227,8 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 				},
 			}),
 			q(53922, {	-- Evidence Packet: Pit Boss Buxdoggle
-				["qg"] = 145582,	-- Sharisanda
 				["sourceQuest"] = 53921,	-- The Pit Boss's Debts
+				["qg"] = 145582,	-- Sharisanda
 				["coord"] = { 48.8, 79.8, 503 },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
@@ -236,24 +236,24 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 				},
 			}),
 			q(53923, {	-- Undercover Agent: Stone Guard Mollivox
-				["qg"] = 145581,	-- Commander Arlu Ravenhide
 				["sourceQuest"] = 53922,	-- Evidence Packet: Pit Boss Buxdoggle
+				["qg"] = 145581,	-- Commander Arlu Ravenhide
 				["coord"] = { 43.4, 97.0, 503 },
 				["races"] = HORDE_ONLY,
 			}),
 			q(53924, {	-- Soul Splinters
-				["qg"] = 145691,	-- Shadowmaster Skrizzik
-				["sourceQuest"] = 53923,	-- Undercover Agent: Stone Guard Mollivox
-				["coord"] = { 37.4, 33.0, 503 },
 				["description"] = "You can save previously earned Brawler's Purses and open them while on this quest - Each Brawler's Purse gives 10 - 12 Soul Splinters, so you will need 9 - 10 Brawler's Purses to complete this quest.",
+				["sourceQuest"] = 53923,	-- Undercover Agent: Stone Guard Mollivox
+				["qg"] = 145691,	-- Shadowmaster Skrizzik
+				["coord"] = { 37.4, 33.0, 503 },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(164928),	-- Soul Splinter (QI!)
 				},
 			}),
 			q(53925, {	-- Super Soul Splinters
-				["qg"] = 145691,	-- Shadowmaster Skrizzik
 				["sourceQuest"] = 53924,	-- Soul Splinters
+				["qg"] = 145691,	-- Shadowmaster Skrizzik
 				["coord"] = { 37.4, 33.0, 503 },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
@@ -265,8 +265,8 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 				["races"] = HORDE_ONLY,
 			}),
 			q(53927, {	-- The Precious 13-Tooth Gogglegear
-				["qg"] = 145583,	-- Stone Guard Mollivox
 				["sourceQuest"] = 53926,	-- Cause for Concern
+				["qg"] = 145583,	-- Stone Guard Mollivox
 				["coord"] = { 50.0, 12.4, 503 },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
@@ -274,8 +274,8 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 				},
 			}),
 			q(53928, {	-- The Mollivox Goggle Experiment
-				["qg"] = 145583,	-- Stone Guard Mollivox
 				["sourceQuest"] = 53927,	-- The Precious 13-Tooth Gogglegear
+				["qg"] = 145583,	-- Stone Guard Mollivox
 				["coord"] = { 50.0, 12.4, 503 },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
@@ -283,8 +283,8 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 				},
 			}),
 			q(53929, {	-- Evidence Packet: Shadowmaster Skrizzik
-				["qg"] = 145583,	-- Stone Guard Mollivox
 				["sourceQuest"] = 53928,	-- The Mollivox Goggle Experiment
+				["qg"] = 145583,	-- Stone Guard Mollivox
 				["coord"] = { 50.0, 12.4, 503 },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
@@ -292,22 +292,22 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 				},
 			}),
 			q(53930, {	-- Undercover Agent: Nugg Lumbo
-				["qg"] = 145581,	-- Commander Arlu Ravenhide
 				["sourceQuest"] = 53929,	-- Evidence Packet: Shadowmaster Skrizzik
+				["qg"] = 145581,	-- Commander Arlu Ravenhide
 				["coord"] = { 43.4, 97.0, 503 },
 				["cost"] = { { "i", 143759, 1, } },	-- VIP Room Rental Form
 				["races"] = HORDE_ONLY,
 			}),
 			q(53931, {	-- Flaunt It If You Got It
-				["qg"] = 70716,	-- Libbiara Blightrunner
 				["sourceQuest"] = 53930,	-- Undercover Agent: Nugg Lumbo
+				["qg"] = 70716,	-- Libbiara Blightrunner
 				["coord"] = { 31.2, 54.0, 503 },
 				["cost"] = { { "i", 142311, 1, } },	-- Free Drinks Voucher
 				["races"] = HORDE_ONLY,
 			}),
 			q(53952, {	-- Simply Dying of Boredom
-				["qg"] = 70716,	-- Libbiara Blightrunner
 				["sourceQuest"] = 53931,	-- Flaunt It If You Got It
+				["qg"] = 70716,	-- Libbiara Blightrunner
 				["coord"] = { 31.2, 54.0, 503 },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
@@ -315,8 +315,8 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 				},
 			}),
 			q(53932, {	-- Evidence Packet: Libbiara Blightrunner
-				["qg"] = 145584,	-- Nugg Lumbo
 				["sourceQuest"] = 53952,	-- Simply Dying of Boredom
+				["qg"] = 145584,	-- Nugg Lumbo
 				["coord"] = { 29.8, 50.0, 503 },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
@@ -324,20 +324,20 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 				},
 			}),
 			q(53933, {	-- The Brawl'gar Trial
-				["qg"] = 145581,	-- Commander Arlu Ravenhide
 				["sourceQuest"] = 53932,	-- Evidence Packet: Libbiara Blightrunner
+				["qg"] = 145581,	-- Commander Arlu Ravenhide
 				["coord"] = { 43.4, 97.0, 503 },
 				["races"] = HORDE_ONLY,
 			}),
 			q(53934, {	-- A Clue from Area 52
-				["qg"] = 145581,	-- Commander Arlu Ravenhide
 				["sourceQuest"] = 53933,	-- The Brawl'gar Trial
+				["qg"] = 145581,	-- Commander Arlu Ravenhide
 				["coord"] = { 43.4, 97.0, 503 },
 				["races"] = HORDE_ONLY,
 			}),
 			q(53935, {	-- Solving the Mystery
-				["qg"] = 149808,	-- Boss Bazzelflange
 				["sourceQuest"] = 53934,	-- A Clue from Area 52
+				["qg"] = 149808,	-- Boss Bazzelflange
 				["maps"] = { NETHERSTORM },
 				["races"] = HORDE_ONLY,
 				["lvl"] = 120,

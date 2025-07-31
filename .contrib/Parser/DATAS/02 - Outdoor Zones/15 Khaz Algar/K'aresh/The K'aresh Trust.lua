@@ -31,7 +31,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				}, {	-- RENOWN 9 --
 					q(90635),	-- Valorstones
 				}, {	-- RENOWN 10 --
-					i(245968),	-- Tabard of the Trust
+					q(91142, {	-- Tabard for the Trusted
+						i(245968),	-- Tabard of the Trust
+					}),
 				}, {	-- RENOWN 11 --
 				}, {	-- RENOWN 12 --
 				}, {	-- RENOWN 13 --
@@ -51,29 +53,70 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				},
 			}))),
 			n(QUESTS, {
-				q(90663, {	-- Stealing What is Ours
-					["provider"] = { "n", 238016 },	-- Ba'eth
-					["coord"] = { 57.6, 58.1, KARESH_TAZAVESH },
+				header(HEADERS.Item, 242733, bubbleDownSelf({ 	-- Blue Barry (Ba'eth's Request Storyline)
 					["minReputation"] = { FACTION_THE_KARESH_TRUST, 9 },	-- The K'aresh Trust Renown 9
-					["groups"] = {
-						i(242535, {	-- Missing Imports (QI!)
-							["coord"] = { 46.8, 35.7, KARESH_TAZAVESH },
-							["providers"] = {
-								{ "o", 532317 },	-- Shadowtrade Imports
-								{ "o", 532318 },	-- Shadowtrade Imports
-								{ "o", 532321 },	-- Shadowtrade Imports
-								{ "o", 532322 },	-- Shadowtrade Imports
-								{ "o", 532323 },	-- Shadowtrade Imports
-							},
-						}),
-					},
-				}),
-				q(90729, {	-- Win-Win Situation
-					["sourceQuests"] = { 90663 },	-- Stealing What is Ours
-					["provider"] = { "n", 238016 },	-- Ba'eth
-					["coord"] = { 57.6, 58.1, KARESH_TAZAVESH },
-					["minReputation"] = { FACTION_THE_KARESH_TRUST, 9 },	-- The K'aresh Trust Renown 9
-				}),
+				},{
+					-- Exo Note: On PTR, quests are locked behind a daily HQT, I suspect this will be changed to a weekly lockout when patch goes Live
+					-- Day 1: 1st; Day 2: 2nd; Day 3: 3rd and 4th; Day 4: 5th and 6th	When confirmed or disproven, remove the note (and set a proper description?)
+					q(90663, {	-- Stealing What is Ours
+						["provider"] = { "n", 238016 },	-- Ba'eth
+						["coord"] = { 57.6, 58.1, KARESH_TAZAVESH },
+						["groups"] = {
+							i(242535, {	-- Missing Imports (QI!)
+								["coord"] = { 46.8, 35.7, KARESH_TAZAVESH },
+								["providers"] = {
+									{ "o", 532317 },	-- Shadowtrade Imports
+									{ "o", 532318 },	-- Shadowtrade Imports
+									{ "o", 532321 },	-- Shadowtrade Imports
+									{ "o", 532322 },	-- Shadowtrade Imports
+									{ "o", 532323 },	-- Shadowtrade Imports
+								},
+							}),
+						},
+					}),
+					q(90729, {	-- Win-Win Situation
+						["sourceQuests"] = { 90663 },	-- Stealing What is Ours
+						["provider"] = { "n", 238016 },	-- Ba'eth
+						["coord"] = { 57.6, 58.1, KARESH_TAZAVESH },
+					}),
+					q(90747, {	-- The Wrong Bluecephalus
+						["sourceQuests"] = { 90729 },	-- Win-Win Situation
+						["provider"] = { "n", 243291 },	-- Xy'dax
+						["coord"] = { 46.9, 36.8, KARESH_TAZAVESH },
+					}),
+					q(90773, {	-- Meat my Business
+						["sourceQuests"] = { 90747 },	-- The Wrong Bluecephalus
+						["provider"] = { "n", 243926 },	-- Chef Xy'Zin
+						["coord"] = { 48.3, 41.5, KARESH_TAZAVESH },
+						["groups"] = {
+							i(242794),	-- Dustback Flank (QI!)
+							i(243053),	-- Expired Luck Potion (QI!)
+							i(242796),	-- Siltwing Tail (QI!)
+							o(536867, {	-- Swoopwing Egg
+								i(242797),	-- Swoopwing Egg (QI!)
+							}),
+						},
+					}),
+					q(90770, {	-- The Grift
+						["sourceQuests"] = { 90773 },	-- Meat my Business
+						["provider"] = { "n", 243915 },	-- Graftah
+						["coord"] = { 48.7, 41.5, KARESH_TAZAVESH },
+						["groups"] = {
+							i(243050),	-- Backfire Wish Bracelet (QI!)
+							i(243054),	-- Coin of Endless Debt (QI!)
+							i(243055),	-- Mismatched Shoes of Balance (QI!)
+							o(537690, {	-- Prosperity Pebble
+								i(243049),	-- Prosperity Pebble (QI!)
+							}),
+						},
+					}),
+					q(90769, {	-- A Blue for You
+						["sourceQuests"] = { 90770 },	-- The Grift
+						["provider"] = { "n", 243915 },	-- Graftah
+						["coord"] = { 48.7, 41.5, KARESH_TAZAVESH },
+						["groups"] = { i(242733), },	-- Blue Barry (MOUNT!)
+					}),
+				})),
 			}),
 			n(VENDORS, {
 				n(235252, {	-- Om'sirik <Renown Quartermaster>
@@ -235,7 +278,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 	m(KHAZ_ALGAR, {
 		m(KARESH, {
 			n(QUESTS, {	-- Exo Note to Senior Contrib(s): I think this structure should be different but dunno how to structure it. Please fix and remove comment.
-				q(90725),	-- Triggered at the completion of 'Stealing What is Ours' (90663) and 'Win-Win Situation' (90729)
+				q(90725),	-- Daily(?) Lockout, triggered at the completion of quests starting with 'Stealing What is Ours' (90663)
 			}),
 		}),
 	}),

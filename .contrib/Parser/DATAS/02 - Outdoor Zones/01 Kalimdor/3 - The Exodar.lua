@@ -104,8 +104,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = 12,
 				},
 				q(10358, {	-- Additional Runecloth
-					["qg"] = 20604,	-- Dugiru <Alliance Cloth Quartermaster>
 					["sourceQuest"] = 10357,	-- A Donation of Runecloth
+					["qg"] = 20604,	-- Dugiru <Alliance Cloth Quartermaster>
 					["coord"] = { 63.5, 67.7, THE_EXODAR },
 					["maxReputation"] = { FACTION_EXODAR, EXALTED },	-- Exodar, Exalted.
 					["timeline"] = { REMOVED_4_0_3},
@@ -142,12 +142,12 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = 30,
 				}),
 				q(9552, {	-- Call of Air (2/4)
-					["qg"] = 17204,	-- Farseer Nobundo <Shaman Trainer>
 					["sourceQuests"] = {
 						9551,	-- Call of Air (1/4) [The Exodar]
 						9547,	-- Call of Air (1/4) [Ironforge]
 						10491,	-- Call of Air (1/4) [Stormwind City]
 					},
+					["qg"] = 17204,	-- Farseer Nobundo <Shaman Trainer>
 					["coord"] = { 31, 27.8, THE_EXODAR },
 					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["maps"] = { AZUREMYST_ISLE },
@@ -156,8 +156,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = 30,
 				}),
 				q(9553, {	-- Call of Air (3/4)
-					["qg"] = 17431,	-- Velaada
 					["sourceQuest"] = 9552,	-- Call of Air (2/4)
+					["qg"] = 17431,	-- Velaada
 					["coord"] = { 24.8, 35.8, AZUREMYST_ISLE },
 					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = { DRAENEI },
@@ -165,11 +165,11 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = 30,
 				}),
 				q(9554, {	-- Call of Air (4/4)
+					["sourceQuest"] = 9553,	-- Call of Air (3/4)
 					["providers"] = {
 						{ "n", 17435 },	-- Susurrus
 						{ "i", 23843 },	-- Whorl of Air
 					},
-					["sourceQuest"] = 9553,	-- Call of Air (3/4)
 					["coord"] = { 22.4, 32.6, AZUREMYST_ISLE },
 					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = { DRAENEI },
@@ -182,8 +182,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9605, {	-- Hippogryph Master Stephanos
-					["qg"] = 16768,	-- Nurguni
 					["sourceQuest"] = 9604,	-- On the Wings of a Hippogryph
+					["qg"] = 16768,	-- Nurguni
 					["coord"] = { 56.8, 49.8, THE_EXODAR },
 					["maps"] = {
 						-- #if AFTER CATA
@@ -207,9 +207,9 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(12, 12, 10),
 				}),
 				q(32661, {	-- Learn To Ride
+					["description"] = "This quest is automatically offered to Draenei upon reaching the specified level.",
 					["qg"] = 20914,	-- Aalun <Riding Trainer>
 					["coord"] = { 81.4, 52.6, THE_EXODAR },
-					["description"] = "This quest is automatically offered to Draenei upon reaching the specified level.",
 					["timeline"] = { ADDED_5_2_0, REMOVED_10_1_5 },
 					["maps"] = { AZUREMYST_ISLE },
 					["races"] = { DRAENEI },
@@ -225,8 +225,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(20, 20, 10),
 				}),
 				q(14082, {	-- Learn to Ride at the Exodar
-					["provider"] = { "i", 46879 },	-- Riding Training Pamphlet
 					["description"] = "The pamphlet that starts this quest is sent to Draenei in their Mailbox upon reaching the specified level.",
+					["provider"] = { "i", 46879 },	-- Riding Training Pamphlet
 					["timeline"] = { ADDED_3_3_0, REMOVED_5_2_0 },
 					["races"] = { DRAENEI },
 					["lockCriteria"] = { 1,
@@ -239,8 +239,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(20, 20, 10),
 				}),
 				q(9598, {	-- Redemption (1/2)
-					["qg"] = 17509,	-- Jol <Paladin Trainer>
 					["sourceQuest"] = 10366,	-- Jol
+					["qg"] = 17509,	-- Jol <Paladin Trainer>
 					["coord"] = { 38.4, 82.2, THE_EXODAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -251,8 +251,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(12, 12, 10),
 				}),
 				q(9600, {	-- Redemption (2/2)
-					["qg"] = 17509,	-- Jol <Paladin Trainer>
 					["sourceQuest"] = 9598,	-- Redemption (1/2)
+					["qg"] = 17509,	-- Jol <Paladin Trainer>
 					["coord"] = { 38.4, 82.2, THE_EXODAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { BLOODMYST_ISLE },
@@ -271,8 +271,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9606, {	-- Return to Caregiver Chellan
-					["qg"] = 17555,	-- Stephanos
 					["sourceQuest"] = 9605,	-- Hippogryph Master Stephanos
+					["qg"] = 17555,	-- Stephanos
 					["coord"] = { 54.8, 35.8, THE_EXODAR },
 					["maps"] = {
 						-- #if AFTER CATA

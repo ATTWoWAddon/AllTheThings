@@ -79,12 +79,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					["questID"] = 76262,
 				}),
 				q(76263, {	-- The Dread Citadel - Naxxramas [Honored]
-					["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos
+					["sourceQuests"] = { 76262 },	-- Archmage Angela Dosantos
 					["altQuests"] = {
 						76264,	-- The Dread Citadel - Naxxramas [Revered]
 						76265,	-- The Dread Citadel - Naxxramas [Exalted]
 					},
-					["sourceQuests"] = { 76262 },	-- Archmage Angela Dosantos
+					["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos
 					["coord"] = { 75.5, 52.8, EASTERN_PLAGUELANDS },
 					["minReputation"] = { FACTION_ARGENT_DAWN, HONORED },
 					["maxReputation"] = { FACTION_ARGENT_DAWN, REVERED },
@@ -98,12 +98,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					},
 				}),
 				q(76264, {	-- The Dread Citadel - Naxxramas [Revered]
-					["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos
+					["sourceQuests"] = { 76262 },	-- Archmage Angela Dosantos
 					["altQuests"] = {
 						76263,	-- The Dread Citadel - Naxxramas [Honored]
 						76265,	-- The Dread Citadel - Naxxramas [Exalted]
 					},
-					["sourceQuests"] = { 76262 },	-- Archmage Angela Dosantos
+					["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos
 					["coord"] = { 75.5, 52.8, EASTERN_PLAGUELANDS },
 					["minReputation"] = { FACTION_ARGENT_DAWN, REVERED },
 					["maxReputation"] = { FACTION_ARGENT_DAWN, EXALTED },
@@ -116,12 +116,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					},
 				}),
 				q(76265, {	-- The Dread Citadel - Naxxramas [Exalted]
-					["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos
+					["sourceQuests"] = { 76262 },	-- Archmage Angela Dosantos
 					["altQuests"] = {
 						76263,	-- The Dread Citadel - Naxxramas [Honored]
 						76264,	-- The Dread Citadel - Naxxramas [Revered]
 					},
-					["sourceQuests"] = { 76262 },	-- Archmage Angela Dosantos
+					["provider"] = { "n", 16116 },	-- Archmage Angela Dosantos
 					["coord"] = { 75.5, 52.8, EASTERN_PLAGUELANDS },
 					["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },
 					["groups"] = {
@@ -202,8 +202,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			})),
 			n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 				q(76395, {	-- Corruptor's Scourgestones
-					["provider"] = { "n", 206572 },	-- Zackett Skullsmash
 					["sourceQuests"] = { 76390 },	-- Inconvenience Fee
+					["provider"] = { "n", 206572 },	-- Zackett Skullsmash
 					["cost"] = {{ "i", 206375, 1 }},	-- 1x Corruptor's Scourgestone
 					["repeatable"] = true,
 					["groups"] = {
@@ -211,8 +211,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					},
 				}),
 				q(76390, {	-- Inconvenience Fee
-					["provider"] = { "n", 206572 },	-- Zackett Skullsmash
 					["sourceQuests"] = { 76307 },	-- Makeshift Grappling Hook
+					["provider"] = { "n", 206572 },	-- Zackett Skullsmash
 					["cost"] = {
 						{ "i", 206374, 20 },	-- 20x Invader's Scourgestone
 						{ "i", 206375, 5 },		-- 5x Corruptor's Scourgestone
@@ -228,8 +228,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					},
 				}),
 				q(76396, {	-- Invader's Scourgestones
-					["provider"] = { "n", 206572 },	-- Zackett Skullsmash
 					["sourceQuests"] = { 76390 },	-- Inconvenience Fee
+					["provider"] = { "n", 206572 },	-- Zackett Skullsmash
 					["cost"] = {{ "i", 206374, 10 }},	-- 10x Invader's Scourgestone
 					["repeatable"] = true,
 					["groups"] = {
@@ -237,8 +237,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					},
 				}),
 				q(77244, {	-- Many Corruptor's Scourgestones
-					["provider"] = { "n", 206572 },	-- Zackett Skullsmash
 					["sourceQuests"] = { 76390 },	-- Inconvenience Fee
+					["provider"] = { "n", 206572 },	-- Zackett Skullsmash
 					["cost"] = {{ "i", 206375, 5 }},	-- 5x Corruptor's Scourgestone
 					["repeatable"] = true,
 					["groups"] = {
@@ -246,8 +246,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					},
 				}),
 				q(77245, {	-- Many Invader's Scourgestones
-					["provider"] = { "n", 206572 },	-- Zackett Skullsmash
 					["sourceQuests"] = { 76390 },	-- Inconvenience Fee
+					["provider"] = { "n", 206572 },	-- Zackett Skullsmash
 					["cost"] = {{ "i", 206374, 50 }},	-- 50x Invader's Scourgestone
 					["repeatable"] = true,
 					["groups"] = {
@@ -255,13 +255,13 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					},
 				}),
 				q(76290, {	-- Omarion's Second Handbook
-					["provider"] = { "i", 206449 },	-- Omarion's Second Handbook
 					["sourceQuests"] = {
 						76263,	-- The Dread Citadel - Naxxramas [Honored]
 						76264,	-- The Dread Citadel - Naxxramas [Revered]
 						76265,	-- The Dread Citadel - Naxxramas [Exalted]
 					},
 					["sourceQuestNumRequired"] = 1,
+					["provider"] = { "i", 206449 },	-- Omarion's Second Handbook
 				}),
 			})),
 			n(SPECIAL, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {

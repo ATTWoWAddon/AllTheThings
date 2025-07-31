@@ -15,16 +15,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"]
 						["isDaily"] = true,
 					}),
 					q(36310, {	-- The Arakkoan Enchanter [A]
-						["provider"] = { "n", 83491 },	-- Eileese Shadowsong
 						["sourceQuests"] = { 36308 },	-- Enchanted Highmaul Bracer
+						["provider"] = { "n", 83491 },	-- Eileese Shadowsong
 						["coord"] = { 45.4, 53.4, LUNARFALL },
 						["requireSkill"] = ENCHANTING,
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = { i(115350) },	-- Enchanted Highmaul Bracer (QI!)
 					}),
 					q(36256, {	-- The Arakkoan Enchanter [H]
-						["provider"] = { "n", 83482 },	-- Yu'rina the Mystic
 						["sourceQuests"] = { 36255 },	-- Enchanted Highmaul Bracer
+						["provider"] = { "n", 83482 },	-- Yu'rina the Mystic
 						["coord"] = { 47.6, 38.7, FROSTWALL },
 						["requireSkill"] = ENCHANTING,
 						["races"] = HORDE_ONLY,

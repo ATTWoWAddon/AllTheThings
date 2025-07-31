@@ -6,7 +6,7 @@ root(ROOTS.Unsorted, {
 	expansion(EXPANSION.TWW, {
 		expansion(EXPANSION.TWW, patch(2,0), bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0 } }, {
 			n(ARMOR, {
-				-- Unknown
+				-- Unknown (PvP Appearance?)
 				i(237997),	-- Ethereal Handchopper
 				i(237998),	-- Void Assassin's Ritual Blade
 				i(237999),	-- Battered Matter Destabilizer
@@ -18,83 +18,10 @@ root(ROOTS.Unsorted, {
 				i(238005),	-- Void-Steeped Falchion
 				i(238006),	-- Soulbearer's Censer
 				i(238008),	-- Wastelander's Folly
-				i(238027),	-- Harvested Creephide Cord
-				i(238028),	-- Bone-Melted Faceplate
-				i(238029),	-- 11.2 Raid - Cloth - Waist
-				i(238030),	-- Voidhound Trainer's Boots
-				i(238031),	-- Veiled Manta Vest
-				i(238032),	-- Acolyte's Infused Leggings
-				i(238033),	-- Zadus's Liturgical Hat
-				i(238034),	-- Jak'tull's Intruder Stompers
-				i(238036),	-- Entropy
 
-				-- Zone Rewards?
-				i(239448),	-- Reshii Magi's Vestments
-				i(239449),	-- Reshii Magi's Slippers
-				i(239452),	-- Reshii Magi's Leggings
-				i(239454),	-- Reshii Magi's Cord
-				i(239456),	-- Reshii Scout's Jerkin
-				i(239457),	-- Reshii Scout's Soles
-				i(239458),	-- Reshii Scout's Grips
-				i(239459),	-- Reshii Scout's Hood
-				i(239461),	-- Reshii Scout's Shoulderpads
-				i(239462),	-- Reshii Scout's Belt
-				i(239465),	-- Reshii Skirmisher's Boots
-				i(239466),	-- Reshii Skirmisher's Gauntlets
-				i(239468),	-- Reshii Skirmisher's Legguards
-				i(239470),	-- Reshii Skirmisher's Sash
-				i(239471),	-- Reshii Skirmisher's Armguards
-				i(239472),	-- Reshii Brute's Breastplate
-				i(239473),	-- Reshii Brute's Sollerets
-				i(239474),	-- Reshii Brute's Handguards
-				i(239475),	-- Reshii Brute's Helmet
-				i(239476),	-- Reshii Brute's Greaves
-
-				-- Zone Drops
-				i(244473),	-- Worn Shadowguard Band
-				i(244474),	-- Worn Shadowguard Signet
-				i(244475),	-- Worn Shadowguard Loop
-				i(244476),	-- Worn Shadowguard Pendant
-				i(244509),	-- Worn Shadowguard Cleaver
-				i(244510),	-- Worn Shadowguard Carver
-				i(244514),	-- Worn Shadowguard Mace
-				i(244515),	-- Worn Shadowguard Warmace
-				i(244516),	-- Worn Shadowguard Falchion
-				i(244517),	-- Worn Shadowguard Longsword
-				i(244518),	-- Worn Shadowguard Blaster
-				i(244519),	-- Worn Shadowguard Spear
-				i(244520),	-- Worn Shadowguard Bident
-				i(244521),	-- Worn Shadowguard Pole
-				i(244522),	-- Worn Shadowguard Staff
-				i(244524),	-- Worn Shadowguard Blade
-				i(244525),	-- Worn Shadowguard Censer
-				i(244527),	-- Worn Shadowguard Warglaive
-
-				-- Rare
-				i(246064),	-- Reshii Magi's Pendant
-				i(246065),	-- Reshii Magi's Band
-				-- Rare?
-				i(246273),	-- Vest of Refracted Shadows
-				i(246275),	-- Codebreaker's Cunning Handwraps
-				i(246276),	-- Sinlight Shoulderpads
-				i(246280),	-- Boots of Titanic Deconversion
-				i(246281),	-- Ring of the Panoply
-				i(246282),	-- Order Bashers
-				i(246283),	-- Crown of Absolute Command
-				i(246284),	-- Nathrian Reliquary
-				i(246285),	-- Fluxphase Culottes
-				i(246286),	-- Spaulders of Unleashed Pride
-				i(246287),	-- Improvisational Girdle
-				-- Floodgate more loot?
-				i(246274),	-- Geezle's Zapstep Boots
-				i(246277),	-- Swampface's Oozewalkers
-				i(246278),	-- Overpressure Platelegs
-				i(246279),	-- Fizzlefuse Cuffs
 				-- Epic wep
 				i(246071),	-- Mana-Seamster's Arcane-Needle
-				i(246086),	-- Fate Weaver
 				-- Delve Armor?
-				i(246344),	-- Cursed Stone Idol
 				i(246825),	-- Chaotic Nethergate
 				i(246939),	-- Essence-Hunter's Eyeglass
 				i(246940),	-- Manaforged Aethercell
@@ -109,12 +36,10 @@ root(ROOTS.Unsorted, {
 			filter(BATTLE_PETS, {
 				i(244467),	-- Veridian Thorntail
 				i(244468),	-- Scrappy Thorntail
-				i(244907),	-- Dread Horrorling
 				i(244914),	-- Xanthous Siphonmite
 				i(244916),	-- Cyan Siphonmite
 				i(245215),	-- Shimmering Inchshifter
 				i(245256),	-- Sao'rhon
-				i(245269),	-- Mr. Long-Legs
 				i(245273),	-- Copper Lapbug
 				i(245274),	-- Cerulean Lapbug
 				i(246337),	-- Rustyroot Fel Snooter
@@ -142,18 +67,6 @@ root(ROOTS.Unsorted, {
 
 				-- Cosmetic from karesh with grey replacements
 				-- Greys if you already looted cosmetic?
-				i(243014),	-- Light-Dimmed Cleaver
-				i(243015),	-- Spear of Forgotten Memories
-				i(243016),	-- Efrat's Totally Abandonded Bulwark
-				i(243017),	-- Tulwar of the Pyrite Guard
-				i(243018),	-- Petrified Twig of the Fennad
-				i(243021),	-- Shadowguard Bonker
-				i(243022),	-- Sufaadi Skiff Candle
-				i(243154),	-- Korgorath's Broken Nail
-				i(245668),	-- Warglaive of the Subdued Tracker
-				i(245670),	-- P.O.S.T. Employee's Backup Stamp
-				i(245672),	-- Blade of the Void Swamp
-				i(245674),	-- Rifle of Leaden Movement
 				i(246293),	-- Buckler of the Last Stand
 				i(246294),	-- Shattered Buckler of the Last Stand
 				-- Reputation Cosmetic
@@ -165,17 +78,12 @@ root(ROOTS.Unsorted, {
 				i(248785),	-- Ensemble: Void-Scarred Striker's Battlegear
 				i(248786),	-- Ensemble: Void-Scarred Blade's Attire
 				i(248787),	-- Ensemble: Void-Scarred Seer's Wrappings
-				i(248917),	-- Untethered Blade's Mantle
-				i(248918),	-- Untethered Striker's Shroud
-				i(248919),	-- Untethered Captain's Capote
 				i(246319),	-- Festering Scythe
 				i(246915),	-- Arsenal: Ethereal Weaponry
 				i(245523),	-- Shadowguard Credentials
 				i(245526),	-- Bloodmarked Phasebound Visor
 				i(245527),	-- Consortium's Phasebound Visor
 				i(245528),	-- Wastlander's Phasebound Visor
-				i(245529),	-- Hal'hadar's Phasebound Visor
-
 				i(244806),	-- Renowned Explorer's Versatile Vest
 
 				-- Trading Post?
@@ -338,8 +246,8 @@ root(ROOTS.Unsorted, {
 				i(248397),	-- Bronzbeard's Ritualistic Mantle
 			}),
 			header(HEADERS.LFGDungeon, 2805, {	-- Manaforge Omega
-				-- Cosmetic/Raid?
-				i(243048),	-- Technomancer's Service Sandals
+				i(238029),	-- 11.2 Raid - Cloth - Waist
+				i(238036),	-- Entropy
 				--[[
 				n(CLASSES, {
 					-- Save Tier Sets if Darkal Needs them
@@ -499,8 +407,6 @@ root(ROOTS.Unsorted, {
 				--]]
 			}),
 			filter(MISC, {
-				i(234389),	-- Shadowguard Translocator (Weird reuse??! /Braghe)
-				i(236632),	-- Pouch of Voidbane Gems
 				i(238808),	-- Celeste-Touched Fin
 				i(238810),	-- Mana-Blessed Fin
 				i(238849),	-- Ominous Unblinking Eye
@@ -535,12 +441,8 @@ root(ROOTS.Unsorted, {
 				i(246844),	-- I Have Become Void!
 				i(246904),	-- Unseen Path of the Phase Stalker
 				i(246906),	-- Locus Console
-				i(247689),	-- K'areshi Copper Ingot
-				i(247690),	-- Void-Tainted Lotus
-				i(247691),	-- Slateback Hide
 				i(247926),	-- Muted Mana-Stone
 				i(247927),	-- Humming Mana-Stone
-				i(248200),	-- The Brothers' Not-So-Final Present
 				i(248970),	-- Nexus-Princess Ky'veza
 				-- Box/Weekly Box
 				i(230032),	-- Overflowing K'aresh Trust Trove
@@ -595,7 +497,6 @@ root(ROOTS.Unsorted, {
 			filter(MOUNTS, {
 				i(186639),	-- Xy Trustee's Gearglider
 				i(242713),	-- Resplendent K'arroc
-				i(242733),	-- Blue Barry
 				i(246067),	-- Pearlescent Krolusk
 				i(246159),	-- Translocated Gorger
 				i(246160),	-- Sthaarbs's Last Lunch
@@ -614,7 +515,7 @@ root(ROOTS.Unsorted, {
 				i(247794),	-- Darkfeather Eclipse
 				i(247795),	-- Ornery Breezestrider
 				i(248761),	-- Brewfest Barrel Bomber
-				i(238051),	-- Delver's Mana-Skimmer
+
 
 				-- Mount Mods
 				i(238182),	-- Delver's Mana-Skimmer Schematic: Hyperdrive
@@ -626,8 +527,6 @@ root(ROOTS.Unsorted, {
 				i(231774),	-- Nascent Weathered Ethereal Crest
 				i(231775),	-- Nascent Gilded Ethereal Crest
 				i(231776),	-- Nascent Runed Ethereal Crest
-				i(246811),	-- Technique: Inspired Writer's Quill
-				i(246584),	-- A Steamy Romance Novel: Devouring Love
 				i(246816),	-- A Steamy Romance Novel: Nightborne of the Living Dead
 				i(246817),	-- A Steamy Romance Novel: Of Elven Bondage
 				i(246818),	-- A Steamy Romance Novel: Waves of Desire
@@ -638,6 +537,8 @@ root(ROOTS.Unsorted, {
 				i(244849),	-- Fleeting Invigorating Healing Potion+++
 			}),
 			n(PVP, {
+				i(232600),	-- Astral Gladiator's Weapon Token
+				i(232616),	-- Astral Gladiator's Coin Pouch
 				i(230722),	-- Astral Equipment Chest
 				i(230814),	-- [11.2 PVP] Gladiator's Axe <TEMPLATE>
 				i(230815),	-- [11.2 PVP] Gladiator's Dagger <TEMPLATE>
@@ -663,10 +564,10 @@ root(ROOTS.Unsorted, {
 				i(230836),	-- [11.2 PVP] Gladiator's Placeholder <TEMPLATE>
 				i(231629),	-- zzOld
 				i(231636),	-- zzOld
-				i(232600),	-- Astral Gladiator's Weapon Token
-				i(232616),	-- Astral Gladiator's Coin Pouch
-				i(232790),	-- Cracked Medal of Conquest
-				i(232791),	-- Medal of Conquest
+				i(248342),	-- Astral Gladiator's Axe
+				i(248344),	-- Astral Gladiator's Gun
+				i(248354),	-- Astral Gladiator's Bulwark
+				-- Ensembles/Arsenals
 				i(232808),	-- Ensemble: Astral Aspirant's Cloth Armor
 				i(232809),	-- Ensemble: Astral Aspirant's Leather Armor
 				i(232810),	-- Ensemble: Astral Aspirant's Mail Armor
@@ -700,11 +601,6 @@ root(ROOTS.Unsorted, {
 				i(232870),	-- Arsenal: Astral Aspirant's Weapons
 				i(232871),	-- Arsenal: Astral Gladiator's Weapons
 				i(232872),	-- Arsenal: Elite Astral Gladiator's Weapons
-				i(244234),	-- Astral Gladiator's Prestigious Cloak
-				i(248342),	-- Astral Gladiator's Axe
-				i(248344),	-- Astral Gladiator's Gun
-				i(248354),	-- Astral Gladiator's Bulwark
-				i(248364),	-- Astral Gladiator's Axe
 			}),
 			filter(QUEST_ITEMS, {
 				i(229166),	-- Void Stuffs
@@ -717,7 +613,6 @@ root(ROOTS.Unsorted, {
 				i(229405),	-- Entropic Core
 				i(229406),	-- Codex of The Exchange
 				i(229898),	-- Capture Device
-				i(230284),	-- Artisan's Consortium Pamphlet
 				i(231094),	-- Unused - Tranquilizing Dart [DNT]
 				i(231790),	-- Small Stone Tablet
 				i(231801),	-- Well-Worn Coin
@@ -747,16 +642,6 @@ root(ROOTS.Unsorted, {
 				i(236679),	-- Essence Scanner
 				i(236688),	-- Umbral Facade
 				i(236957),	-- Hollowbane Portal Key
-				i(236962),	-- Basket of Zo'kita Fruit
-				i(236966),	-- Flavorful Scraps
-				i(236967),	-- Grubber Lure
-				i(236972),	-- Freshly Picked Zo'kita
-				i(237012),	-- Appropriated Azerothian Camera
-				i(237013),	-- Anima Vacuum
-				i(237022),	-- Discarded Items
-				i(237030),	-- Condenser Disc
-				i(237266),	-- Stolen Veilshard
-				i(237352),	-- A Dozen Veilshards
 				i(237353),	-- Om'sto's Veilshards
 				i(237354),	-- A Bag of Veilshards
 				i(237356),	-- Vermin Attuned Optic-Visualizer
@@ -767,19 +652,14 @@ root(ROOTS.Unsorted, {
 				i(237898),	-- Hemet's Waterin' Can
 				i(238216),	-- Hemet's Soothin' Flute
 				i(238242),	-- K'arroc Egg
-				i(238254),	-- Nuts and Bolts
 				i(238296),	-- Phase Disruptor
 				i(238903),	-- Appropriated Azerothian Camera
-				i(238905),	-- Condenser Disc
 				i(238906),	-- Appropriated Azerothian Camera
 				i(238907),	-- Anima Orb
 				i(238908),	-- Appropriated Azerothian Camera
-				i(238909),	-- Anima Vacuum
 				i(238910),	-- Lasso
-				i(238911),	-- Pheromone Disperser
 				i(238913),	-- Condenser Disc
 				i(238914),	-- Hemet's Soothin' Flute
-				i(238916),	-- Anima Vacuum
 				i(238933),	-- Appropriated S.E.L.F.I.E. Camera
 				i(239314),	-- Arcane Lure
 				i(239446),	-- Uncharged Cyrstal
@@ -795,9 +675,6 @@ root(ROOTS.Unsorted, {
 				i(241353),	-- Hydrobite
 				i(242547),	-- Cracked Keystone
 				i(242654),	-- Shadowtrade Overstock
-				i(242794),	-- Dustback Flank
-				i(242796),	-- Siltwing Tail
-				i(242797),	-- Swoopwing Egg
 				i(244064),	-- Pretzel
 				i(245740),	-- Etched Fragment
 				i(245743),	-- A Curious Crystalline Fragment
@@ -813,53 +690,6 @@ root(ROOTS.Unsorted, {
 				i(242636),	-- Astral Legend's Pennant
 				i(245946),	-- Brewer's Balloon
 			}),
-			i(243532),	-- Wastelander's Gilded Cleaver
-			i(243533),	-- Wastelander's Gilded Carver
-			i(243534),	-- Wastelander's Gilded Chopper
-			i(243535),	-- Wastelander's Gilded Stiletto
-			i(243536),	-- Wastelander's Gilded Kris
-			i(243537),	-- Wastelander's Gilded Mace
-			i(243538),	-- Wastelander's Gilded Warmace
-			i(243541),	-- Wastelander's Gilded Blaster
-			i(243543),	-- Wastelander's Gilded Bident
-			i(243544),	-- Wastelander's Gilded Pole
-			i(243545),	-- Wastelander's Gilded Staff
-			i(243546),	-- Wastelander's Gilded Greatsword
-			i(243547),	-- Wastelander's Gilded Blade
-			i(243548),	-- Wastelander's Gilded Censer
-			i(243549),	-- Wastelander's Gilded Bastion
-			i(244267),	-- Untethered Seer's Vestments
-			i(244268),	-- Untethered Seer's Slippers
-			i(244269),	-- Untethered Seer's Gloves
-			i(244270),	-- Untethered Seer's Crown
-			i(244271),	-- Untethered Seer's Leggings
-			i(244272),	-- Untethered Seer's Spines
-			i(244273),	-- Untethered Seer's Cord
-			i(244274),	-- Untethered Seer's Bands
-			i(244275),	-- Untethered Blade's Jerkin
-			i(244276),	-- Untethered Blade's Soles
-			i(244277),	-- Untethered Blade's Grips
-			i(244278),	-- Untethered Blade's Hood
-			i(244279),	-- Untethered Blade's Breeches
-			i(244280),	-- Untethered Blade's Shoulderpads
-			i(244281),	-- Untethered Blade's Belt
-			i(244282),	-- Untethered Blade's Bracers
-			i(244283),	-- Untethered Striker's Brigandine
-			i(244284),	-- Untethered Striker's Boots
-			i(244285),	-- Untethered Striker's Gauntlets
-			i(244286),	-- Untethered Striker's Cowl
-			i(244287),	-- Untethered Striker's Legguards
-			i(244288),	-- Untethered Striker's Pauldrons
-			i(244289),	-- Untethered Striker's Sash
-			i(244290),	-- Untethered Striker's Armguards
-			i(244291),	-- Untethered Captain's Breastplate
-			i(244292),	-- Untethered Captain's Sollerets
-			i(244293),	-- Untethered Captain's Handguards
-			i(244294),	-- Untethered Captain's Helmet
-			i(244295),	-- Untethered Captain' s Greaves
-			i(244296),	-- Untethered Captain's Epaulettes
-			i(244297),	-- Untethered Captain's Greatbelt
-			i(244298),	-- Untethered Captain's Vambraces
 			i(246504),	-- Inscrutable Ore
 			i(246582),	-- Inscrutable Flora
 			i(248916),	-- Untethered Seer's Capelet
@@ -882,7 +712,6 @@ root(ROOTS.Unsorted, {
 			i(249711),	-- Cartel Ba Cypher
 			i(249712),	-- Cartel Om Cypher
 			i(249713),	-- Cartel Transmorpher
-			i(233799),	-- Submerged Bottle
 			i(249857),	-- Brewer's Blue Belt
 			i(249858),	-- Brewer's Basic Belt
 			i(249859),	-- Brewer's Green Belt
@@ -890,46 +719,10 @@ root(ROOTS.Unsorted, {
 			i(250082),	-- T'uure, Remnant of the Naaru
 			i(250104),	-- Soulbinder's Nethermantle
 			i(244913),	-- Looker Gaz'kreth Jr.
-			i(245255),	-- Starlight
-			i(246445),	-- Reins of the Royal Voidwing
-			i(250269),	-- Phase-Lost Longsword
-			i(250272),	-- Phase-Lost Cudgel
-			i(250278),	-- Phase-Lost Great Mace
-			i(250280),	-- Phase-Lost Chopper
-			i(250281),	-- Phase-Lost Battleaxe
-			i(250284),	-- Phase-Lost Spire
-			i(250285),	-- Phase-Lost Shillelagh
-			i(250286),	-- Phase-Lost Blunderbuss
-			i(250287),	-- Phase-Lost Longbow
-			i(250288),	-- Phase-Lost Baselard
-			i(250289),	-- Phase-Lost Dirk
-			i(250294),	-- Phase-Lost Katar
-			i(250295),	-- Phase-Lost Claw
-			i(250297),	-- Phase-Lost Beacon
-			i(250298),	-- Phase-Lost Bulwark
-			i(250299),	-- Phase-Lost Pavise
-			i(250301),	-- Phase-Lost Wand
-			i(250430),	-- Darkened Shoulderguards of the Wastelander Seer
-			i(250431),	-- Golden Shoulderguards of the Wastelander Seer
-			i(250432),	-- Violet Shoulderguards of the Wastelander Seer
-			i(250433),	-- Crimson Shoulderguards of the Wastelander Seer
-			i(250434),	-- Verdant Shoulderguards of the Wastelander Seer
-			i(250435),	-- Loamy Shoulderguards of the Wastelander Seer
-			i(250436),	-- Capelet of the Reshii
-			i(250437),	-- Cloak of the Reshii
-			i(250438),	-- Serape of the Reshii
-			i(250439),	-- Stole of the Reshii
 			i(250706),	-- The Horseman's Hallowed Cowl
 			i(250707),	-- The Horseman's Burning Cowl
 			i(250708),	-- The Horseman's Ghoulish Cowl
 			i(250709),	-- The Horseman's Chilling Cowl
-			i(250763),	-- Theater Troupe's Trove
-			i(250764),	-- Nanny's Surge Dividends
-			i(250765),	-- Awakened Mechanical Cache
-			i(250766),	-- Radiant Cache
-			i(250767),	-- The General's War Chest
-			i(250768),	-- The Vizier's Capital
-			i(250769),	-- The Weaver's Gratuity
 			i(250975),	-- Hellcaller Chest
 			i(242534),	-- Azure Sea Skiff
 			i(244228),	-- Sash of the Tipsy Sage
@@ -937,432 +730,14 @@ root(ROOTS.Unsorted, {
 			i(244230),	-- Strawhat of Frosted Currents
 			i(244231),	-- Ensemble: Stillwater Fisher Attire
 			i(244352),	-- Cloak of the Veiled Paws
-			i(251529),	-- Void-Scarred Striker's Cloak
-			i(251530),	-- Void-Scarred Captain's Cape
-			i(251531),	-- Void-Scarred Seer's Shawl
-			i(251532),	-- Void-Scarred Blade's Serape
 			i(251543),	-- Cracked Keystone
 		})),
-		expansion(EXPANSION.TWW, patch(1,7), bubbleDownSelf({ ["timeline"] = { ADDED_11_1_7 } }, {
-			filter(QUEST_ITEMS, {
-				i(228964),	-- Scarlet Signet Ring
-				i(231766),	-- Hammerfall Horn
-			}),
-			n(TIMEWALKING_HEADER, {
-				i(238740),	-- Distilled Knowledge of Timeways
-			}),
-			filter(MISC, {
-				-- Delves
-				i(242743),	-- Durable Information Securing Container [Trinket]
-			}),
-			filter(COSMETIC, {
-				i(242324),	-- Squall Braced Galoshes
-				i(242325),	-- Girded Mist Galoshes
-				i(242326),	-- Rainy Day Galoshes
-				i(242327),	-- Waterproof Galoshes
-				i(242328),	-- Squall Braced Belt
-				i(242329),	-- Girded Mist Belt
-				i(242330),	-- Rainy Day Belt
-				i(242331),	-- Waterproof Belt
-				i(242332),	-- Squall Braced Pants
-				i(242333),	-- Girded Mist Pants
-				i(242334),	-- Rainy Day Pants
-				i(242335),	-- Waterproof Pants
-				i(242336),	-- Squall Braced Coat
-				i(242337),	-- Girded Mist Coat
-				i(242338),	-- Rainy Day Coat
-				i(242339),	-- Waterproof Coat
-				i(242340),	-- Squall Braced Hood
-				i(242341),	-- Girded Mist Hood
-				i(242342),	-- Rainy Day Hood
-				i(242343),	-- Waterproof Hood
-				i(242344),	-- Ensemble: Squall Braced Attire
-				i(242345),	-- Ensemble: Girded Mist Attire
-				i(242346),	-- Ensemble: Rainy Day Attire
-				i(242347),	-- Ensemble: Waterproof Attire
-				i(242348),	-- Chilling Forsaken Mace
-				i(242351),	-- Sickly Forsaken Mace
-				i(242352),	-- Chilling Forsaken Warglaives
-				i(242355),	-- Sickly Forsaken Warglaives
-				i(242357),	-- Grandmaster's Fire Grip Stave
-				i(242358),	-- Grandmaster's Blue Stave
-				i(242359),	-- Grandmaster's Royal Stave
-				i(242360),	-- Grandmaster's White Stave
-				i(242372),	-- Grandmaster's Fire Marked Bulwark
-				i(242373),	-- Grandmaster's Blue Bulwark
-				i(242374),	-- Grandmaster's Royal Bulwark
-				i(242375),	-- Grandmaster's White Bulwark
-				i(242376),	-- Chilling Forsaken Longbow
-				i(242379),	-- Sickly Forsaken Longbow
-				i(242381),	-- Chilling Forsaken Quiver
-				i(242384),	-- Sickly Forsaken Quiver
-				i(242385),	-- Chilling Forsaken Wand
-				i(242389),	-- Sickly Forsaken Wand
-				i(242407),	-- Midnight Sweatpants
-				i(242408),	-- Azure Sweatshirt
-				i(242409),	-- Sepia Sweatshirt
-				i(242410),	-- Grassy Sweatshirt
-				i(242411),	-- Cloudy Sweatshirt
-				i(242412),	-- Deep Sweatshirt
-				i(242413),	-- Camo Sweatshirt
-				i(242414),	-- Brick Sweatshirt
-				i(242416),	-- Faded Sweatshirt
-				i(242417),	-- Carrot Sweatshirt
-				i(242418),	-- Rosy Sweatshirt
-				i(242420),	-- Crimson Sweatshirt
-				i(242421),	-- Violet Sweatshirt
-				i(242422),	-- Aquatic Sweatshirt
-				i(242423),	-- Snowy Sweatshirt
-				i(242424),	-- Sunny Sweatshirt
-				i(242437),	-- Azure Sweatpants
-				i(242438),	-- Sepia Sweatpants
-				i(242439),	-- Grassy Sweatpants
-				i(242440),	-- Cloudy Sweatpants
-				i(242441),	-- Deep Sweatpants
-				i(242442),	-- Camo Sweatpants
-				i(242443),	-- Brick Sweatpants
-				i(242445),	-- Faded Sweatpants
-				i(242446),	-- Carrot Sweatpants
-				i(242447),	-- Rosy Sweatpants
-				i(242449),	-- Crimson Sweatpants
-				i(242450),	-- Violet Sweatpants
-				i(242451),	-- Aquatic Sweatpants
-				i(242452),	-- Snowy Sweatpants
-				i(242453),	-- Sunny Sweatpants
-				i(242454),	-- Midnight Sweatshirt
-				i(242455),	-- Ensemble: Midnight Sweatsuit
-				i(242456),	-- Ensemble: Azure Sweatsuit
-				i(242457),	-- Ensemble: Sepia Sweatsuit
-				i(242458),	-- Ensemble: Grassy Sweatsuit
-				i(242459),	-- Ensemble: Cloudy Sweatsuit
-				i(242460),	-- Ensemble: Deep Sweatsuit
-				i(242461),	-- Ensemble: Camo Sweatsuit
-				i(242462),	-- Ensemble: Brick Sweatsuit
-				i(242467),	-- Ensemble: Faded Sweatsuit
-				i(242469),	-- Ensemble: Carrot Sweatsuit
-				i(242471),	-- Ensemble: Rosy Sweatsuit
-				i(242478),	-- Ensemble: Crimson Sweatsuit
-				i(242480),	-- Ensemble: Violet Sweatsuit
-				i(242485),	-- Ensemble: Aquatic Sweatsuit
-				i(242489),	-- Ensemble: Snowy Sweatsuit
-				i(242492),	-- Ensemble: Sunny Sweatsuit
-				i(242521),	-- Chiling Forsaken Cauldron
-				i(242524),	-- Sickening Forsaken Cauldron
-				i(242525),	-- Grandmaster's Fire Grip Axe
-				i(242526),	-- Grandmaster's Blue Axe
-				i(242527),	-- Grandmaster's Royal Axe
-				i(242528),	-- Grandmaster's White Axe
-				i(242539),	-- Grandmaster's Fire Grip Mace
-				i(242540),	-- Grandmaster's Blue Mace
-				i(242541),	-- Grandmaster's Royal Mace
-				i(242542),	-- Grandmaster's White Mace
-				i(242627),	-- Chilling Forsaken Blade
-				i(242630),	-- Sickly Forsaken Blade
-				i(242631),	-- Chilling Forsaken Great Blade
-				i(242634),	-- Sickly Forsaken Great Blade
-
-				-- Feels like Dastarly Dou??? Cosmetics or Trading Post
-				i(243250),	-- Grandmaster's Fire Tunic
-				i(243251),	-- Grandmaster's Fire Boots
-				i(243252),	-- Grandmaster's Fire Gloves
-				i(243253),	-- Grandmaster's Fire Helm
-				i(243254),	-- Grandmaster's Fire Pants
-				i(243255),	-- Grandmaster's Fire Mantle
-				i(243256),	-- Grandmaster's Fire Belt
-				i(243257),	-- Grandmaster's Fire Cloak
-				i(243258),	-- Ensemble: Grandmaster's Fire Attire
-				i(243259),	-- Grandmaster's Deep Cloak
-				i(243260),	-- Grandmaster's Deep Belt
-				i(243261),	-- Grandmaster's Deep Mantle
-				i(243262),	-- Grandmaster's Deep Pants
-				i(243263),	-- Grandmaster's Deep Helm
-				i(243264),	-- Grandmaster's Deep Gloves
-				i(243265),	-- Grandmaster's Deep Boots
-				i(243267),	-- Grandmaster's Deep Tunic
-				i(243268),	-- Ensemble: Grandmaster's Deep Attire
-				i(243269),	-- Grandmaster's Royal Tunic
-				i(243270),	-- Grandmaster's Royal Boots
-				i(243271),	-- Grandmaster's Royal Gloves
-				i(243272),	-- Grandmaster's Royal Helm
-				i(243273),	-- Grandmaster's Royal Pants
-				i(243274),	-- Grandmaster's Royal Mantle
-				i(243275),	-- Grandmaster's Royal Belt
-				i(243276),	-- Grandmaster's Royal Cloak
-				i(243277),	-- Ensemble: Grandmaster's Royal Attire
-				i(243278),	-- Grandmaster's Smoke Cloak
-				i(243279),	-- Grandmaster's Smoke Belt
-				i(243280),	-- Grandmaster's Smoke Mantle
-				i(243281),	-- Grandmaster's Smoke Pants
-				i(243282),	-- Grandmaster's Smoke Helm
-				i(243283),	-- Grandmaster's Smoke Gloves
-				i(243284),	-- Grandmaster's Smoke Boots
-				i(243285),	-- Grandmaster's Smoke Tunic
-				i(243286),	-- Ensemble: Grandmaster's Smoke Attire
-
-				-- Cosmetic Trading Post?? or Greedy Emissary?
-				i(244180),	-- Banshee's Chilling Veil
-				i(244183),	-- Banshee's Sickly Veil
-				i(244184),	-- Chilling Epaulets of the Banshee
-				i(244187),	-- Sickly Epaulets of the Banshee
-				i(244188),	-- Chilling Leggings of the Banshee
-				i(244191),	-- Sickly Leggings of the Banshee
-				i(244198),	-- Banshee's Chilling Grip
-				i(244201),	-- Banshee's Sickly Grip
-				i(244202),	-- Banshee's Chilling Vestment
-				i(244205),	-- Banshee's Sickly Vestment
-				i(244206),	-- Banshee's Chilling Chestplate
-				i(244209),	-- Banshee's Sickly Chestplate
-				i(244210),	-- Chilling Shroud of the Banshee
-				i(244213),	-- Sickly Shroud of the Banshee
-				i(244215),	-- Chilling Banshee Boots
-				i(244218),	-- Sickly Banshee Boots
-				i(244219),	-- Chilling Banshee Cinch
-				i(244222),	-- Sickly Banshee Cinch
-				i(244223),	-- Ensemble: Banshee's Chilling Collection
-				i(244227),	-- Ensemble: Banshee's Sickly Collection
-				i(244540),	-- Charred Flamewake Sprout
-				i(244541),	-- Zin-Azshari Court Scepter
-				i(244542),	-- Chronosmith's Temporal Safeguard
-				i(244543),	-- Scimitar of the Crocolisk God
-				i(244544),	-- Forest Watcher's Rune-Axe
-				i(244546),	-- Forgotten Bow of the Banshee
-				i(244548),	-- Shattered Highvale Staff
-				i(244549),	-- Light's Dawn Cryptblade
-				i(244550),	-- Sunwalker's Ashen Warmaul
-				i(244551),	-- Time-Lost Worldbreaker
-				i(244646),	-- Seared Root of Regrowth
-				i(244647),	-- Crook of the White Flame
-				i(244648),	-- Scipture of the Scarlet High Priest
-				i(244649),	-- Shadowforge Senator's Ledger
-				i(244650),	-- Fort Triumph Longbow
-				i(244651),	-- Forest Ranger's Buckler
-				i(244652),	-- Prayer Beacon of the Goddess
-				i(244680),	-- Morchie's Desynchronized Chime
-				i(244681),	-- Pyrewood Silver Blade
-			}),
-			filter(MOUNTS, {
-				i(243590),	-- Grandmaster's Deep Board
-				i(243572),	-- Grandmaster's Prophetic Board
-				i(243591),	-- Grandmaster's Royal Board
-				i(243592),	-- Grandmaster's Smokey Board
-				i(243593),	-- Banshee's Chilling Charger
-				i(243597),	-- Banshee's Sickening Charger
-			}),
-
-			i(246015),	-- Classic Midnight Eye Patch
-			i(246016),	-- Classic Snowy Eye Patch
-			i(246114),	-- Catalyst Elixir
-			i(246730),	-- Landro's Loot Box
-			i(246757),	-- Miniature Roulette Wheel
-			i(246758),	-- Miniature Roulette Wheel
-			i(246759),	-- Miniature Roulette Wheel
-			i(246760),	-- Miniature Roulette Wheel
-			i(246761),	-- Miniature Roulette Wheel
-			i(246762),	-- Miniature Roulette Wheel
-			i(246763),	-- Miniature Roulette Wheel
-			i(246764),	-- Miniature Roulette Wheel
-			i(246765),	-- Miniature Roulette Wheel
-			i(246766),	-- Miniature Roulette Wheel
-			i(246767),	-- Miniature Roulette Wheel
-			i(246768),	-- Miniature Roulette Wheel
-		})),
-		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { ADDED_11_1_5 } }, {
-			n(SPECIAL, {	-- Horrific Revisited
-				i(232352, { ["ItemAppearanceModifierID"] = 150 }),	-- Ashjra'kamas, Shroud of Resolve
-				i(235274),	-- Echo of N'zoth
-				i(235284),	-- Echo of N'zoth
-				i(235285),	-- Echo of N'zoth
-			}),
-			n(SPECIAL, {	-- Duos
-				-- Hellfire Ramprats (didnt make it)
-				i(238934),	-- Boots of the Darkwalker
-			}),
-			n(SPECIAL, {	-- Mysterious???
-				-- Nothing load atm
-				i(235631),	-- [NOT USED] Mysterious Large Satchel of Goodies
-				i(235798),	-- Diluted Potion of Celerity
-				i(235804),	-- Concentrated Potion of Celerity
-				i(235815),	-- Diluted Potion of Swiftstrike
-				i(235817),	-- Concentrated Potion of Swiftstrike
-				i(235837),	-- Concentrated Potion of Tenacity
-				i(235839),	-- Diluted Potion of Tenacity
-				i(235842),	-- Diluted Potion of Revivification
-				i(235844),	-- Concentrated Potion of Revivification
-				i(236939),	-- [DNT] TEST
-				i(236940),	-- [NOT USED] Mysterious Outfitters Satchel
-				i(236941),	-- [NOT USED] Mysterious Accessories Satchel
-				i(236942),	-- [NOT USED] Mysterious Outfitters Satchel
-				i(236943),	-- [NOT USED] Mysterious Accessories Satchel
-				i(236945),	-- [NOT USED] Mysterious Outfitters Satchel
-				i(236946),	-- [NOT USED] Mysterious Accessories Satchel
-				i(236958),	-- [NOT USED] Empty Mysterious Potion
-			}),
-			filter(COSMETIC, {
-				i(235986),	-- Evil King's Half Shell
-				i(236403),	-- Deathwarder's Grove Stave
-				i(236404),	-- Deathwarder's Twilight Stave
-				i(236628),	-- Deathwarder's Grove Blade
-				i(236629),	-- Deathwarder's Twilight Blade
-				i(237177),	-- Deathwarder's Grove Fist
-				i(237178),	-- Deathwarder's Twilight Fist
-				i(237181),	-- Deathwarder's Grove Fetish
-				i(237182),	-- Deathwarder's Twilight Fetish
-				i(237191),	-- Woodland Vestments of the Grey Wolf
-				i(237193),	-- Woodland Vestments of the Gilneas Fox
-				i(237195),	-- Woodland Boots of the Grey Wolf
-				i(237198),	-- Woodland Boots of the Gilneas Fox
-				i(237201),	-- Woodland Gloves of the Grey Wolf
-				i(237203),	-- Woodland Gloves of the Gilneas Fox
-				i(237206),	-- Woodland Cowl of the Grey Wolf
-				i(237208),	-- Woodland Cowl of the Gilneas Fox
-				i(237210),	-- Woodland Pants of the Grey Wolf
-				i(237212),	-- Woodland Pants of the Gilneas Fox
-				i(237214),	-- Woodland Mantle of the Grey Wolf
-				i(237216),	-- Woodland Mantle of the Gilneas Fox
-				i(237218),	-- Woodland Belt of the Grey Wolf
-				i(237220),	-- Woodland Belt of the Gilneas Fox
-				i(237223),	-- Ensemble: Woodland Attire of the Grey Wolf
-				i(237225),	-- Ensemble: Woodland Attire of the Gilneas Fox
-				i(237227),	-- Woodland Cloak of the Grey Wolf
-				i(237229),	-- Woodland Cloak of the Gilneas Fox
-				i(237374),	-- Stormstout's Tunic
-				i(237375),	-- Stormstout's Hat
-				i(237376),	-- Stormstout's Belt
-				i(237377),	-- Stormstout's Pants
-				i(237378),	-- Stormstout's Boots
-				i(237379),	-- Ensemble: Stormstout's Collection
-				i(237855),	-- Shadowmoon Flame's Bardiche
-				i(237857),	-- Sunwell Flame's Bardiche
-				i(238398),	-- Lavaborn Emerald Chopper \\ Lavaborn Emerald Choper
-				i(238400),	-- Lavaborn Citrine Chopper \\ Lavaborn Citrine Choper
-				i(238439),	-- Lavaborn Citrine Cinch
-				i(238440),	-- Lavaborn Citrine Mantle
-				i(238441),	-- Lavaborn Citrine Pants
-				i(238442),	-- Lavaborn Citrine Helm
-				i(238443),	-- Lavaborn Citrine Glove
-				i(238444),	-- Lavaborn Citrine Chestguard
-				i(238445),	-- Lavaborn Citrine Bracer
-				i(238446),	-- Lavaborn Citrine Cloak
-				i(238447),	-- Ensemble: Lavaborn Citrine Attire
-				i(238448),	-- Lavaborn Citrine Treads
-				i(238620),	-- Darkfuse Pinchzapper
-				i(238621),	-- Blackwater Pinchzapper
-				i(238622),	-- Steamweedle Pinchzapper
-				i(238623),	-- Undermine City Pinchzapper
-				i(238893),	-- Lavaborn Emerald Blade
-				i(238895),	-- Lavaborn Citrine Blade
-				i(238949),	-- Inferno Helm \\ Yellow Inferno Helm
-				i(238952),	-- Green Flame Burner
-				i(238955),	-- Yellow Flame Burner
-				i(238957),	-- Deathwarder's Great Grove Blade
-				i(238958),	-- Deathwarder's Great Twilight Blade
-			}),
-			filter(MISC, {
-				i(238896),	-- Macho's Magnificent "Fish" Tacos
-			}),
-			filter(MOUNTS, {
-				i(238900),	-- Summer Harvesthog
-				i(238901),	-- Winter Harvesthog
-				i(238902),	-- Autumn Harvesthog
-				i(238968),	-- Lavaborn Cormaera \\ Lavaborn Citrine Chimaera
-				-- Mount Parts!
-				i(240187),	-- Refulgent Crystal Shards
-			}),
-			n(WEEKLY_HOLIDAYS, {	-- Childrens Week
-				i(242318),	-- Wooden Orgrimmar Shield
-			}),
-			i(237508),	-- Can of Amps
-			i(237509),	-- Bottle of Invisibility
-			i(237510),	-- Goblet
-			i(237511),	-- Vial of Healing
-			i(243245),	-- Gears Grabbed
-			i(243249),	-- Khaz Algar Adventurer Pack \\ Khaz Algar Gift Pack
-		})),
 		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0 } }, {
+			-- Left Remaining To Darkal --
 			n(ARMOR, {
 				-- Darkal Check Later
 				i(238243),	-- Hidden Boots
 			}),
-			filter(MISC, {	-- More known
-				i(238207),	-- Nanny's Surge Dividend
-				i(229810),	-- Vintage Kaja'Cola Can
-			}),
-			n(PVP, {	-- See Later...
-				i(232886),	-- Ensemble: Algari Warmonger's Cloth Armor
-				i(232887),	-- Ensemble: Algari Warmonger's Leather Armor
-				i(232888),	-- Ensemble: Algari Warmonger's Mail Armor
-				i(232889),	-- Ensemble: Algari Warmonger's Plate Armor
-				i(232890),	-- Arsenal: Algari Warmonger's Weapons
-				i(232664),	-- Ensemble: Forged Aspirant's Cloth Armor
-				i(232665),	-- Ensemble: Forged Aspirant's Leather Armor
-				i(232666),	-- Ensemble: Forged Aspirant's Mail Armor
-				i(232667),	-- Ensemble: Forged Aspirant's Plate Armor
-				i(232668),	-- Ensemble: Forged Gladiator's Death Knight Armor
-				i(232669),	-- Ensemble: Forged Gladiator's Demon Hunter Armor
-				i(232670),	-- Ensemble: Forged Gladiator's Druid Armor
-				i(232671),	-- Ensemble: Forged Gladiator's Evoker Armor
-				i(232672),	-- Ensemble: Forged Gladiator's Hunter Armor
-				i(232673),	-- Ensemble: Forged Gladiator's Mage Armor
-				i(232674),	-- Ensemble: Forged Gladiator's Monk Armor
-				i(232675),	-- Ensemble: Forged Gladiator's Paladin Armor
-				i(232676),	-- Ensemble: Forged Gladiator's Priest Armor
-				i(232677),	-- Ensemble: Forged Gladiator's Rogue Armor
-				i(232678),	-- Ensemble: Forged Gladiator's Shaman Armor
-				i(232679),	-- Ensemble: Forged Gladiator's Warlock Armor
-				i(232680),	-- Ensemble: Forged Gladiator's Warrior Armor
-				i(232681),	-- Ensemble: Elite Forged Gladiator's Death Knight Armor
-				i(232682),	-- Ensemble: Elite Forged Gladiator's Demon Hunter Armor
-				i(232683),	-- Ensemble: Elite Forged Gladiator's Druid Armor
-				i(232684),	-- Ensemble: Elite Forged Gladiator's Evoker Armor
-				i(232685),	-- Ensemble: Elite Forged Gladiator's Hunter Armor
-				i(232686),	-- Ensemble: Elite Forged Gladiator's Mage Armor
-				i(232687),	-- Ensemble: Elite Forged Gladiator's Monk Armor
-				i(232688),	-- Ensemble: Elite Forged Gladiator's Paladin Armor
-				i(232689),	-- Ensemble: Elite Forged Gladiator's Priest Armor
-				i(232690),	-- Ensemble: Elite Forged Gladiator's Rogue Armor
-				i(232691),	-- Ensemble: Elite Forged Gladiator's Shaman Armor
-				i(232692),	-- Ensemble: Elite Forged Gladiator's Warlock Armor
-				i(232693),	-- Ensemble: Elite Forged Gladiator's Warrior Armor
-				i(232695),	-- Ensemble: Prized Aspirant's Cloth Armor
-				i(232696),	-- Ensemble: Prized Aspirant's Leather Armor
-				i(232697),	-- Ensemble: Prized Aspirant's Mail Armor
-				i(232698),	-- Ensemble: Prized Aspirant's Plate Armor
-				i(232699),	-- Ensemble: Prized Gladiator's Death Knight Armor
-				i(232700),	-- Ensemble: Prized Gladiator's Demon Hunter Armor
-				i(232701),	-- Ensemble: Prized Gladiator's Druid Armor
-				i(232702),	-- Ensemble: Prized Gladiator's Evoker Armor
-				i(232703),	-- Ensemble: Prized Gladiator's Hunter Armor
-				i(232704),	-- Ensemble: Prized Gladiator's Mage Armor
-				i(232705),	-- Ensemble: Prized Gladiator's Monk Armor
-				i(232706),	-- Ensemble: Prized Gladiator's Paladin Armor
-				i(232707),	-- Ensemble: Prized Gladiator's Priest Armor
-				i(232708),	-- Ensemble: Prized Gladiator's Rogue Armor
-				i(232709),	-- Ensemble: Prized Gladiator's Shaman Armor
-				i(232710),	-- Ensemble: Prized Gladiator's Warlock Armor
-				i(232711),	-- Ensemble: Prized Gladiator's Warrior Armor
-				i(232712),	-- Ensemble: Elite Prized Gladiator's Death Knight Armor
-				i(232713),	-- Ensemble: Elite Prized Gladiator's Demon Hunter Armor
-				i(232714),	-- Ensemble: Elite Prized Gladiator's Druid Armor
-				i(232715),	-- Ensemble: Elite Prized Gladiator's Evoker Armor
-				i(232716),	-- Ensemble: Elite Prized Gladiator's Hunter Armor
-				i(232717),	-- Ensemble: Elite Prized Gladiator's Mage Armor
-				i(232718),	-- Ensemble: Elite Prized Gladiator's Monk Armor
-				i(232719),	-- Ensemble: Elite Prized Gladiator's Paladin Armor
-				i(232720),	-- Ensemble: Elite Prized Gladiator's Priest Armor
-				i(232721),	-- Ensemble: Elite Prized Gladiator's Rogue Armor
-				i(232722),	-- Ensemble: Elite Prized Gladiator's Shaman Armor
-				i(232723),	-- Ensemble: Elite Prized Gladiator's Warlock Armor
-				i(232724),	-- Ensemble: Elite Prized Gladiator's Warrior Armor
-				i(232864),	-- Arsenal: Forged Aspirant's Weapons
-				i(232865),	-- Arsenal: Forged Gladiator's Weapons
-				i(232866),	-- Arsenal: Elite Forged Gladiator's Weapons
-				i(232867),	-- Arsenal: Prized Aspirant's Weapons
-				i(232868),	-- Arsenal: Prized Gladiator's Weapons
-				i(232869),	-- Arsenal: Elite Prized Gladiator's Weapons
-			}),
-			i(235713),	-- Weird Sand
-			i(236651),	-- Vince's Old Left Shoe
-			i(236921),	-- Triumphant Satchel of Carved Harbinger Crests
 		})),
 		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
 			-- Left Remaining To Darkal --
@@ -2254,11 +1629,9 @@ root(ROOTS.Unsorted, {
 				i(161384),	-- Farraki Fritters
 				i(162117),	-- Marie's Famous Cookies
 				i(159750),	-- Tangy Haw'liday Cider
-				i(162545),	-- Razordog
 				i(162546),	-- Boiled Mire Whelk
 				i(162547),	-- Raw Nazmani Mineral Water
 				i(162550),	-- Brutoburger
-				i(162554),	-- Rootway Papaya
 				i(162555),	-- Zocalo Cheddar
 				i(162556),	-- Zeb'ahari Kiwi \\ Zeb'Ahri Kiwi
 				i(162557),	-- Salted Frog Legs
@@ -2462,7 +1835,6 @@ root(ROOTS.Unsorted, {
 				i(162689),	-- Scroll of Town Portal
 				i(162773),	-- REUSE ME
 				i(162974),	-- Gently Shaken Gift
-				i(162981),	-- A Steamy Romance Novel: Stormy Seas
 				i(162982),	-- A Steamy Romance Novel: Stormy Seas
 				i(163017),	-- Pitch-Soaked Torch
 				i(163029),	-- Misplaced Funereal Offering
@@ -2695,7 +2067,6 @@ root(ROOTS.Unsorted, {
 				i(158852),	-- PH Flavor - Unused \\ PH Flavor - Fox
 				i(158853),	-- Bony Skullplate \\ PH Flavor - Naga Brute
 				i(158854),	-- PH Flavor - Unused \\ PH Flavor - Goat
-				i(158857),	-- Untainted Wicker \\ PH Flavor - Porcupine
 				i(158867),	-- Needlepoint Bill \\ PH Flavor - Ranishu
 				i(158873),	-- Crystalline Honeymead \\ PH Flavor - Dire Troll Female - Blood Troll
 				i(158727),	-- Decayed Equipment
@@ -3479,8 +2850,6 @@ root(ROOTS.Unsorted, {
 			i(168021),	-- Nullifier Transport Relay
 			i(168187),	-- Highborne Relic
 			i(168188),	-- Sage Agate
-			i(168190),	-- Lava Lazuli
-			i(168191),	-- Sea Currant
 			i(168232),	-- Murloco's "Fish" Tacos
 			i(168237),	-- Coral Root Chunk
 			i(168242),	-- Angel Scale Starfish

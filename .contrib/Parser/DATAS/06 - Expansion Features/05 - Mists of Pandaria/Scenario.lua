@@ -775,11 +775,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 				["description"] = "Quests may only be completed ONCE per character. Items you receive from the Cache of Treasures are class and spec specific. Not all items are available to all classes able to equip them.|r",
 				["groups"] = {
 					q(32806, {	-- The King and the Council
+						["sourceQuests"] = { 32892 },	-- War is Coming
 						["qgs"] = {
 							61962,	-- Lorewalker Cho
 							63577,	-- Lorewalker Cho
 						},
-						["sourceQuests"] = { 32892 },	-- War is Coming
 						["coord"] = { 83.2, 29.6, VALE_OF_ETERNAL_BLOSSOMS },
 						["maps"] = { 523 },	-- Dun Morogh (Blood in the Snow scenario)
 						["groups"] = {
@@ -787,8 +787,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 						},
 					}),
 					q(32807, {	-- The Warchief and the Darkness
-						["provider"] = { "n", 61962 },	-- Lorewalker Cho
 						["sourceQuests"] = { 32806 },	-- The King and the Council
+						["provider"] = { "n", 61962 },	-- Lorewalker Cho
 						["coord"] = { 83.2, 29.6, VALE_OF_ETERNAL_BLOSSOMS },
 						["maps"] = { 520, 521 },	-- Vale of Eternal Blossoms (Dark Heart of Pandaria scenario)
 						["groups"] = {

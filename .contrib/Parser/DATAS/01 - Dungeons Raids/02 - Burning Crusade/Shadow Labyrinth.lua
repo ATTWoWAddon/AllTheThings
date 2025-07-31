@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
-	inst(253, {	-- Shadow Labyrinth
+	inst(253, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {	-- Shadow Labyrinth
 		["lore"] = "Auchindoun is a former draenei holy site and Horde fortress in the middle of the Bone Wastes in Outland's Terokkar Forest. It was a hallowed ground until the Shadow Council took over, summoned an extremely powerful demon as old as time itself, and destroyed half of Terokkar Forest in the process. Different factions now vie for power in this magical spot: Ethereals suck the arcane energy from the Mana-Tombs, the Burning Legion harvests souls inside the Auchenai Crypts, arakkoa zealots work dark magic in the Sethekk Halls, and the Shadow Council plots its domination of Outland from within the Shadow Labyrinth.",
 		-- #if BEFORE MOP
 		["zone-text-areaID"] = 3789,	-- Shadow Labyrinth
@@ -42,8 +42,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["lvl"] = lvlsquish(67, 67, 20),
 				}),
 				q(10095, {	-- Into the Heart of the Labyrinth
-					["provider"] = { "o", 182947 },	-- The Codex of Blood
 					["sourceQuest"] = 10094,	-- The Codex of Blood
+					["provider"] = { "o", 182947 },	-- The Codex of Blood
 					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(68, 68, 20),
 					["groups"] = {
@@ -57,8 +57,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(29644, {	-- Into the Heart of the Labyrinth
-					["provider"] = { "o", 182947 },	-- The Codex of Blood
 					["sourceQuest"] = 29643,	-- The Codex of Blood
+					["provider"] = { "o", 182947 },	-- The Codex of Blood
 					["timeline"] = { ADDED_4_3_0 },
 					["groups"] = {
 						objective(1, {	-- Murmur slain
@@ -71,8 +71,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(10649, {	-- The Book of Fel Names
-					["qg"] = 18417,	-- Altruis
 					["sourceQuest"] = 10646,	-- Illidan's Pupil
+					["qg"] = 18417,	-- Altruis
 					["coord"] = { 27.3, 43.0, NAGRAND },
 					["lvl"] = lvlsquish(68, 68, 25),
 					["groups"] = {
@@ -82,8 +82,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(10094, {	-- The Codex of Blood
-					["qg"] = 19542,	-- Field Commander Mahfuun
 					["sourceQuest"] = 10177,	-- Trouble at Auchindoun
+					["qg"] = 19542,	-- Field Commander Mahfuun
 					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(68, 68, 20),
 				}),
@@ -94,8 +94,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["lvl"] = lvlsquish(68, 68, 20),
 				}),
 				q(10666, {	-- The Lexicon Demonica
-					["qg"] = 21465,	-- David Wayne
 					["sourceQuest"] = 10664,	-- Additional Materials
+					["qg"] = 21465,	-- David Wayne
 					["coord"] = { 77.4, 38.6, TEROKKAR_FOREST },
 					["lvl"] = lvlsquish(67, 67, 25),
 					["groups"] = {
@@ -105,8 +105,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(10091, {	-- The Soul Devices
-					["qg"] = 18891,	-- Spy To'gun
 					["sourceQuest"] = 10178,	-- Find Spy To'gun
+					["qg"] = 18891,	-- Spy To'gun
 					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(68, 68, 20),
 					["groups"] = {
@@ -123,8 +123,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(29641, {	-- The Soul Devices
-					["qg"] = 18891,	-- Spy To'gun
 					["sourceQuest"] = 29640,	-- Find Spy To'gun
+					["qg"] = 18891,	-- Spy To'gun
 					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(68, 68, 20),
 					["groups"] = {
@@ -141,8 +141,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(10885, {	-- Trial of the Naaru: Strength
-					["qg"] = 18481,	-- A'dal
 					["sourceQuest"] = 10883,	-- The Tempest Key
+					["qg"] = 18481,	-- A'dal
 					["coord"] = { 54.0, 44.8, SHATTRATH_CITY },
 					["maps"] = { COILFANG_RESERVOIR_STEAMVAULT },
 					["lvl"] = lvlsquish(70, 70, 30),
@@ -163,10 +163,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["lvl"] = lvlsquish(68, 68, 20),
 				}),
 				q(29642, {	-- Trouble at Auchindoun
-					["qg"] = 18893,	-- Spymistress Mehlisah Highcrown
 					["altQuests"] = {
 						10094,	-- The Codex of Blood (pre 4.0.3)
 					},
+					["qg"] = 18893,	-- Spymistress Mehlisah Highcrown
 					["coord"] = { 50.2, 45.4, SHATTRATH_CITY },
 					["timeline"] = { ADDED_4_3_0 },
 					-- ["isBreadcrumb"] = true,
@@ -378,7 +378,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				},
 			}),
 		},
-	}),
+	})),
 })));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {

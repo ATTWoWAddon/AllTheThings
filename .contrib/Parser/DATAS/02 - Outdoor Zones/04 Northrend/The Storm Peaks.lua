@@ -385,8 +385,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13006, {	-- A Viscous Cleaning
-						["provider"] = { "o", 192080 },	-- Hodir's Helm
 						["sourceQuest"] = 12987,	-- Placing Hodir's Helm
+						["provider"] = { "o", 192080 },	-- Hodir's Helm
 						["coord"] = { 64.2, 59.6, THE_STORM_PEAKS },
 						["maxReputation"] = { FACTION_THE_SONS_OF_HODIR, EXALTED },	-- The Sons of Hodir, Exalted.
 						["isDaily"] = true,
@@ -396,16 +396,16 @@ root(ROOTS.Zones, {
 						["minReputation"] = { FACTION_THE_SONS_OF_HODIR, FRIENDLY },	-- The Sons of Hodir, Friendly.
 					}),
 					q(13421, {	-- Remember Everfrost!
-						["qg"] = 32594,	-- Calder <Blacksmithing Supplies>
 						["sourceQuest"] = 13420,	-- Everfrost
+						["qg"] = 32594,	-- Calder <Blacksmithing Supplies>
 						["coord"] = { 67.0, 60.8, THE_STORM_PEAKS },
 						["maxReputation"] = { FACTION_THE_SONS_OF_HODIR, EXALTED },	-- The Sons of Hodir, Exalted.
 						["cost"] = { { "i", 44724, 1 } },	-- Everfrost Chip
 						["repeatable"] = true,
 					}),
 					q(12977, {	-- Hodir's Call
-						["provider"] = { "o", 192078 },	-- Hodir's Horn
 						["sourceQuest"] = 12976,	-- A Monument to the Fallen
+						["provider"] = { "o", 192078 },	-- Hodir's Horn
 						["coord"] = { 64.1, 64.7, THE_STORM_PEAKS },
 						["maxReputation"] = { FACTION_THE_SONS_OF_HODIR, EXALTED },	-- The Sons of Hodir, Exalted.
 						["isDaily"] = true,
@@ -418,8 +418,8 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 					}),
 					q(12981, {	-- Hot and Cold
-						["provider"] = { "o", 192071 },	-- Fjorn's Anvil
 						["sourceQuest"] = 12967,	-- Battling the Elements
+						["provider"] = { "o", 192071 },	-- Fjorn's Anvil
 						["coord"] = { 63.2, 63.0, THE_STORM_PEAKS },
 						["maxReputation"] = { FACTION_THE_SONS_OF_HODIR, EXALTED },	-- The Sons of Hodir, Exalted.
 						["isDaily"] = true,
@@ -432,8 +432,8 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 					}),
 					q(13003, {	-- How to Slay Your Dragon
-						["provider"] = { "o", 192079 },	-- Hodir's Spear
 						["sourceQuest"] = 13001,	-- Raising Hodir's Spear
+						["provider"] = { "o", 192079 },	-- Hodir's Spear
 						["coord"] = { 65.0, 60.9, THE_STORM_PEAKS },
 						["minReputation"] = { FACTION_THE_SONS_OF_HODIR, HONORED },	-- The Sons of Hodir, Honored.
 						["maxReputation"] = { FACTION_THE_SONS_OF_HODIR, EXALTED },	-- The Sons of Hodir, Exalted.
@@ -448,26 +448,26 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12908, {	-- A Certain Prisoner
-						["qg"] = 29885,	-- Mildred the Cruel
 						["sourceQuest"] = 12907,	-- Examples to be Made
+						["qg"] = 29885,	-- Mildred the Cruel
 						["coord"] = { 44.4, 68.9, THE_STORM_PEAKS },
 					}),
 					q(12921, {	-- A Change of Scenery
-						["qg"] = 29481,	-- Lok'lira the Crone
 						["sourceQuest"] = 12908,	-- A Certain Prisoner
+						["qg"] = 29481,	-- Lok'lira the Crone
 						["coord"] = { 42.8, 68.8, THE_STORM_PEAKS },
 					}),
 					q(12993, {	-- A Colossal Threat
-						["qg"] = 29801,	-- Bouldercrag the Rockshaper
 						["sourceQuests"] = {
 							12988,	-- Destroy the Forges! (probably required)
 							12991,	-- Hit Them Where it Hurts (definitely required)
 						},
+						["qg"] = 29801,	-- Bouldercrag the Rockshaper
 						["coord"] = { 31.4, 38.0, THE_STORM_PEAKS },
 					}),
 					q(12820, {	-- A Delicate Touch
-						["qg"] = 29428,	-- Ricket
 						["sourceQuest"] = 12826,	-- Slightly Unstable
+						["qg"] = 29428,	-- Ricket
 						["coord"] = { 40.9, 85.3, THE_STORM_PEAKS },
 						["groups"] = {
 							i(42787),	-- Ironwool Bindings
@@ -477,46 +477,46 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12823, {	-- A Flawless Plan
-						["qg"] = 29432,	-- Gino
 						["sourceQuest"] = 12821,	-- Cell Block Tango
+						["qg"] = 29432,	-- Gino
 						["coord"] = { 50.0, 81.7, THE_STORM_PEAKS },
 					}),
 					q(12976, {	-- A Monument to the Fallen
+						["sourceQuest"] = 12975,	-- In Memoriam
 						["providers"] = {
 							{ "n", 30105 },	-- King Jokkum
 							{ "i", 42163 },	-- Horn Fragments
 						},
-						["sourceQuest"] = 12975,	-- In Memoriam
 						["coord"] = { 65.4, 60.1, THE_STORM_PEAKS },
 					}),
 					q(13009, {	-- A New Beginning
-						["qg"] = 30127,	-- Njormeld
 						["sourceQuest"] = 12967,	-- Battling the Elements
+						["qg"] = 30127,	-- Njormeld
 						["coord"] = { 63.2, 63.2, THE_STORM_PEAKS },
 					}),
 					q(12956, {	-- A Spark of Hope
-						["provider"] = { "o", 192060 },	-- Fjorn's Anvil
 						["sourceQuest"] = 12922,	-- The Refiner's Fire
+						["provider"] = { "o", 192060 },	-- Fjorn's Anvil
 						["coord"] = { 77.1, 62.9, THE_STORM_PEAKS },
 						["maxReputation"] = { FACTION_THE_SONS_OF_HODIR, EXALTED },	-- Sons of Hodir, Exalted
 					}),
 					q(12925, {	-- Aberrations
-						["qg"] = 30041,	-- Thyra Kvinnshal
 						["sourceQuest"] = 12841,	-- The Crone's Bargain
+						["qg"] = 30041,	-- Thyra Kvinnshal
 						["coord"] = { 48.4, 72.1, THE_STORM_PEAKS },
 					}),
 					q(12871, {	-- Aid from the Explorers' League
-						["qg"] = 29579,	-- Brann Bronzebeard
-						["sourceQuest"] = 12872,	-- Norgannon's Shell
 						["description"] = "Use Brann's Communicator to pick this quest up.",
+						["sourceQuest"] = 12872,	-- Norgannon's Shell
+						["qg"] = 29579,	-- Brann Bronzebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12828, {	-- Ample Inspiration
-						["qg"] = 29428,	-- Ricket
 						["sourceQuests"] = {
 							12836,	-- Expression of Gratitude
 							12827,	-- Reclaimed Rations
 						},
+						["qg"] = 29428,	-- Ricket
 						["coord"] = { 40.9, 85.3, THE_STORM_PEAKS },
 						["groups"] = {
 							i(42785),	-- Mammoth Sinew Cinch
@@ -539,29 +539,29 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 					q(12875, {	-- An Experienced Guide
-						["qg"] = 29593,	-- Yorg Stormheart
 						["sourceQuest"] = 12874,	-- Fervor of the Frostborn
+						["qg"] = 29593,	-- Yorg Stormheart
 						["coord"] = { 30.2, 74.7, THE_STORM_PEAKS },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12979, {	-- Armor of Darkness
-						["provider"] = { "i", 42203 },	-- Dark Armor Plate
 						["sourceQuests"] = {
 							12957,	-- Slaves of the Stormforged
 							12964,	-- The Dark Ore
 						},
+						["provider"] = { "i", 42203 },	-- Dark Armor Plate
 						["coord"] = { 25.0, 45.2, THE_STORM_PEAKS },
 						["crs"] = { 29380 },	-- Stormforged War Golem
 					}),
 					q(12867, {	-- Baby Stealers
-						["qg"] = 29732,	-- Fjorlin Frostbrow
 						["sourceQuest"] = 12865,	-- Loyal Companions
+						["qg"] = 29732,	-- Fjorlin Frostbrow
 						["coord"] = { 29.8, 75.7, THE_STORM_PEAKS },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13424, {	-- Back to the Pit
-						["qg"] = 29796,	-- Gretta the Arbiter
 						["sourceQuest"] = 13061,	-- Into the Pit
+						["qg"] = 29796,	-- Gretta the Arbiter
 						["coord"] = { 50.8, 65.6, THE_STORM_PEAKS },
 						["isDaily"] = true,
 						["groups"] = {
@@ -575,13 +575,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12967, {	-- Battling the Elements
-						["qg"] = 30099,	-- Njormeld
 						["sourceQuest"] = 12966,	-- You Can't Miss Him
+						["qg"] = 30099,	-- Njormeld
 						["coord"] = { 75.3, 63.5, THE_STORM_PEAKS },
 					}),
 					q(12832, {	-- Bitter Departure
-						["qg"] = 29434,	-- Injured Goblin Miner
 						["sourceQuest"] = 12831,	-- Only Partly Forgotten
+						["qg"] = 29434,	-- Injured Goblin Miner
 						["coords"] = {	-- Can be picked up from the same NPC in multiple locations
 							{ 41.4, 74.8, THE_STORM_PEAKS },
 							{ 42.2, 74.0, THE_STORM_PEAKS },
@@ -598,23 +598,23 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12920, {	-- Catching up with Brann
-						["qg"] = 29651,	-- Boktar Bloodfury
 						["sourceQuest"] = 12917,	-- Speaking with the Wind's Voice
+						["qg"] = 29651,	-- Boktar Bloodfury
 						["coord"] = { 37.3, 49.6, THE_STORM_PEAKS },
 						["races"] = HORDE_ONLY,
 					}),
 					q(13055, {	-- Cave Medicine
-						["qg"] = 30469,	-- Tracker Val'zij
 						["sourceQuest"] = 13054,	-- The Missing Tracker
+						["qg"] = 30469,	-- Tracker Val'zij
 						["coord"] = { 48.5, 54.3, THE_STORM_PEAKS },
 						["races"] = HORDE_ONLY,
 					}),
 					q(13058, {	-- Changing the Wind's Course
-						["qg"] = 30381,	-- Xarantaur
 						["sourceQuests"] = {
 							13049,	-- The Hero's Arms
 							13048,	-- Where Time Went Wrong
 						},
+						["qg"] = 30381,	-- Xarantaur
 						["coord"] = { 65.7, 51.4, THE_STORM_PEAKS },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -633,30 +633,30 @@ root(ROOTS.Zones, {
 						["coord"] = { 41.0, 86.4, THE_STORM_PEAKS },
 					}),
 					q(12856, {	-- Cold Hearted
-						["qg"] = 29592,	-- Brijana
 						["sourceQuest"] = 12851,	-- Bearly Hanging On
+						["qg"] = 29592,	-- Brijana
 						["coord"] = { 53.1, 65.7, THE_STORM_PEAKS },
 					}),
 					q(12860, {	-- Data Mining (A)
-						["qg"] = 29579,	-- Brann Bronzebeard
-						["sourceQuest"] = 12858,	-- Pieces to the Puzzle
 						["description"] = "Use Brann's Communicator to pick this quest up.",
+						["sourceQuest"] = 12858,	-- Pieces to the Puzzle
+						["qg"] = 29579,	-- Brann Bronzebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12927, {	-- Data Mining (H)
-						["qg"] = 29579,	-- Brann Bronzebeard
-						["sourceQuest"] = 12926,	-- Pieces of the Puzzle
 						["description"] = "Use Brann's Communicator to pick this quest up.",
+						["sourceQuest"] = 12926,	-- Pieces of the Puzzle
+						["qg"] = 29579,	-- Brann Bronzebeard
 						["races"] = HORDE_ONLY,
 					}),
 					q(13063, {	-- Deemed Worthy
-						["qg"] = 29592,	-- Brijana
 						["sourceQuest"] = 12856,	-- Cold Hearted
+						["qg"] = 29592,	-- Brijana
 						["coord"] = { 53.1, 65.7, THE_STORM_PEAKS },
 					}),
 					q(13423, {	-- Defending Your Title
-						["qg"] = 29796,	-- Gretta the Arbiter
 						["sourceQuest"] = 12971,	-- Taking on All Challengers
+						["qg"] = 29796,	-- Gretta the Arbiter
 						["coord"] = { 50.8, 65.6, THE_STORM_PEAKS },
 						["isDaily"] = true,
 						["groups"] = {
@@ -664,8 +664,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12824, {	-- Demolitionist Extraordinaire
-						["qg"] = 29432,	-- Gino
 						["sourceQuest"] = 12823,	-- A Flawless Plan
+						["qg"] = 29432,	-- Gino
 						["coord"] = { 50.0, 81.7, THE_STORM_PEAKS },
 						["groups"] = {
 							i(42790),	-- K3 Surgeon's Gloves
@@ -676,13 +676,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12988, {	-- Destroy the Forges!
-						["qg"] = 29801,	-- Bouldercrag the Rockshaper
 						["sourceQuest"] = 12984,	-- Valduran the Stormborn
+						["qg"] = 29801,	-- Bouldercrag the Rockshaper
 						["coord"] = { 31.4, 38.0, THE_STORM_PEAKS },
 					}),
 					q(12906, {	-- Discipline
-						["qg"] = 29885,	-- Mildred the Cruel
 						["sourceQuest"] = 12905,	-- Mildred the Cruel
+						["qg"] = 29885,	-- Mildred the Cruel
 						["coord"] = { 44.4, 68.9, THE_STORM_PEAKS },
 						["groups"] = {
 							i(42843),	-- Mildred's Cowl
@@ -692,8 +692,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13038, {	-- Distortions in Time
-						["qg"] = 30395,	-- Chieftain Swiftspear
 						["sourceQuest"] = 13034,	-- The Witness and the Hero
+						["qg"] = 30395,	-- Chieftain Swiftspear
 						["coord"] = { 61.1, 38.9, THE_STORM_PEAKS },
 						["races"] = HORDE_ONLY,
 					}),
@@ -714,8 +714,8 @@ root(ROOTS.Zones, {
 						-- Not required for "Defending K3" criteria.
 					}),
 					q(12907, {	-- Examples to be Made
-						["qg"] = 29885,	-- Mildred the Cruel
 						["sourceQuest"] = 12906,	-- Discipline
+						["qg"] = 29885,	-- Mildred the Cruel
 						["coord"] = { 44.4, 68.9, THE_STORM_PEAKS },
 					}),
 					q(12836, {	-- Expression of Gratitude
@@ -723,16 +723,16 @@ root(ROOTS.Zones, {
 						["coord"] = { 40.9, 85.3, THE_STORM_PEAKS },
 					}),
 					q(12978, {	-- Facing the Storm
-						["qg"] = 30152,	-- Bruor Ironbane
 						["sourceQuests"] = {
 							12957,	-- Slaves of the Stormforged (probably required)
 							12964,	-- The Dark Ore (definitely required)
 						},
+						["qg"] = 30152,	-- Bruor Ironbane
 						["coord"] = { 31.2, 38.1, THE_STORM_PEAKS },
 					}),
 					q(12986, {	-- Fate of the Titans
-						["qg"] = 30052,	-- Creteus
 						["sourceQuest"] = 12877,	-- The Lonesome Watcher
+						["qg"] = 30052,	-- Creteus
 						["coord"] = { 39.2, 59.6, THE_STORM_PEAKS },	-- approximate, as NPC patrols a short path back and forth
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -743,8 +743,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12874, {	-- Fervor of the Frostborn
-						["qg"] = 29593,	-- Yorg Stormheart
 						["sourceQuest"] = 12873,	-- The Frostborn King
+						["qg"] = 29593,	-- Yorg Stormheart
 						["coord"] = { 30.2, 74.7, THE_STORM_PEAKS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -755,13 +755,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12931, {	-- Fighting Back
-						["qg"] = 29801,	-- Bouldercrag the Rockshaper
 						["sourceQuest"] = 12930,	-- Rare Earth
+						["qg"] = 29801,	-- Bouldercrag the Rockshaper
 						["coord"] = { 31.4, 38.0, THE_STORM_PEAKS },
 					}),
 					q(12985, {	-- Forging a Head
-						["qg"] = 30127,	-- Njormeld
 						["sourceQuest"] = 12967,	-- Battling the Elements
+						["qg"] = 30127,	-- Njormeld
 						["coord"] = { 63.2, 63.2, THE_STORM_PEAKS },
 						["minReputation"] = { FACTION_THE_SONS_OF_HODIR, FRIENDLY },	-- The Sons of Hodir, Friendly.
 						["groups"] = {
@@ -780,13 +780,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12924, {	-- Forging an Alliance
-						["qg"] = 29445,	-- Thorim
+						["description"] = "To progress through this quest, pick up the quest 'You Can't Miss Him' from King Jokkum.",
 						["sourceQuests"] = {
 							12956,	-- A Spark of Hope
 							12915,	-- Mending Fences
 						},
+						["qg"] = 29445,	-- Thorim
 						["coord"] = { 33.4, 58.0, THE_STORM_PEAKS },
-						["description"] = "To progress through this quest, pick up the quest 'You Can't Miss Him' from King Jokkum.",
 						["groups"] = {
 							i(42792),	-- Vestments of Dun Niffelem
 							i(42805),	-- Njormeld's Pauldrons
@@ -819,9 +819,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13285, {	-- Forging the Keystone
-						["qg"] = 29579,	-- Brann Bronzebeard
-						["sourceQuest"] = 13274,	-- The Core's Keeper
 						["description"] = "Use Brann's Communicator to pick this quest up.",
+						["sourceQuest"] = 13274,	-- The Core's Keeper
+						["qg"] = 29579,	-- Brann Bronzebeard
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(43189),	-- Amberglow Signet
@@ -831,20 +831,20 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12879, {	-- Fury of the Frostborn King
-						["qg"] = 30548,	-- The Guardian's Charge (looks like an object, but is actually an NPC)
 						["sourceQuest"] = 12878,	-- The Hidden Relic
+						["qg"] = 30548,	-- The Guardian's Charge (looks like an object, but is actually an NPC)
 						["coord"] = { 44.5, 64.5, THE_STORM_PEAKS },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13273, {	-- Going After the Core
-						["qg"] = 29579,	-- Brann Bronzebeard
-						["sourceQuest"] = 12928,	-- Norgannon's Shell
 						["description"] = "Use Brann's Communicator to pick this quest up.",
+						["sourceQuest"] = 12928,	-- Norgannon's Shell
+						["qg"] = 29579,	-- Brann Bronzebeard
 						["races"] = HORDE_ONLY,
 					}),
 					q(12851, {	-- Bearly Hanging On
-						["qg"] = 29592,	-- Brijana
 						["sourceQuest"] = 12972,	-- You'll Need a Bear
+						["qg"] = 29592,	-- Brijana
 						["coord"] = { 53.1, 65.7, THE_STORM_PEAKS },
 					}),
 					heroscall(q(49554, {	-- Hero's Call: Storm Peaks!
@@ -854,13 +854,13 @@ root(ROOTS.Zones, {
 						["lvl"] = 67,
 					})),
 					q(12991, {	-- Hit Them Where it Hurts
-						["qg"] = 30152,	-- Bruor Ironbane
 						["sourceQuest"] = 12984,	-- Valduran the Stormborn
+						["qg"] = 30152,	-- Bruor Ironbane
 						["coord"] = { 31.2, 38.1, THE_STORM_PEAKS },
 					}),
 					q(12975, {	-- In Memoriam
-						["qg"] = 30105,	-- King Jokkum
 						["sourceQuest"] = 12924,	-- Forging an Alliance	-- SQ needs verification
+						["qg"] = 30105,	-- King Jokkum
 						["coord"] = { 65.4, 60.1, THE_STORM_PEAKS },
 						["groups"] = {
 							objective(1, {	-- 0/8 Horn Fragment
@@ -874,28 +874,28 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12997, {	-- Into the Pit
-						["qg"] = 29839,	-- Astrid Bjornrittar
 						["sourceQuest"] = 12996,	-- The Warm-Up
+						["qg"] = 29839,	-- Astrid Bjornrittar
 						["coord"] = { 49.7, 71.7, THE_STORM_PEAKS },
 					}),
 					q(12969, {	-- Is That Your Goblin?
-						["qg"] = 29975,	-- Lok'lira the Crone
 						["sourceQuest"] = 12921,	-- A Change of Scenery
+						["qg"] = 29975,	-- Lok'lira the Crone
 						["coord"] = { 47.4, 69.0, THE_STORM_PEAKS },
 					}),
 					q(12819, {	-- Just Around the Corner
-						["qg"] = 29431,	-- Jeer Sparksocket
 						["sourceQuest"] = 12818,	-- Clean Up
+						["qg"] = 29431,	-- Jeer Sparksocket
 						["coord"] = { 41.0, 86.4, THE_STORM_PEAKS },
 					}),
 					q(12822, {	-- Know No Fear
-						["qg"] = 29428,	-- Ricket
 						["sourceQuest"] = 12821,	-- Cell Block Tango
+						["qg"] = 29428,	-- Ricket
 						["coord"] = { 40.9, 85.3, THE_STORM_PEAKS },
 					}),
 					q(13010, {	-- Krolmir, Hammer of Storms
-						["qg"] = 29445,	-- Thorim
 						["sourceQuest"] = 13051,	-- Territorial Trespass
+						["qg"] = 29445,	-- Thorim
 						["coord"] = { 33.4, 57.9, THE_STORM_PEAKS },
 						["groups"] = {
 							i(42793),	-- Locket of Snowcrest
@@ -905,23 +905,23 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12846, {	-- Leave No Goblin Behind
-						["qg"] = 29473,	-- Gretchen Fizzlespark
 						["sourceQuest"] = 12843,	-- They Took Our Men!
+						["qg"] = 29473,	-- Gretchen Fizzlespark
 						["coord"] = { 41.1, 86.1, THE_STORM_PEAKS },
 					}),
 					q(13035, {	-- Loken's Lackeys
-						["qg"] = 30295,	-- Thorim
 						["sourceQuest"] = 13057,	-- The Terrace of the Makers
+						["qg"] = 30295,	-- Thorim
 						["coord"] = { 56.2, 51.3, THE_STORM_PEAKS },
 					}),
 					q(13062, {	-- Lok'lira's Parting Gift
-						["qg"] = 29975,	-- Lok'lira the Crone
 						["sourceQuest"] = 13061,	-- Prepare for Glory
+						["qg"] = 29975,	-- Lok'lira the Crone
 						["coord"] = { 47.4, 69.0, THE_STORM_PEAKS },
 					}),
 					q(12865, {	-- Loyal Companions
-						["qg"] = 29732,	-- Fjorlin Frostbrow
 						["sourceQuest"] = 12863,	-- Offering Thanks
+						["qg"] = 29732,	-- Fjorlin Frostbrow
 						["coord"] = { 29.8, 75.7, THE_STORM_PEAKS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -932,19 +932,19 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12853, {	-- Luxurious Getaway!
-						["qg"] = 30490,	-- Rin Duoctane
 						-- #if AFTER 7.3.5.25600
 						["sourceQuests"] = {
 							49554,	-- Hero's Call: Storm Peaks!
 							49536,	-- Warchief's Command: Storm Peaks!
 						},
 						-- #endif
+						["qg"] = 30490,	-- Rin Duoctane
 						["coord"] = { 31.2, 49.6, NORTHREND_THE_UNDERBELLY },
 						["maps"] = { NORTHREND_DALARAN },
 					}),
 					q(13422, {	-- Maintaining Discipline
-						["qg"] = 29796,	-- Gretta the Arbiter
 						["sourceQuest"] = 12906,	-- Discipline
+						["qg"] = 29796,	-- Gretta the Arbiter
 						["coord"] = { 50.8, 65.6, THE_STORM_PEAKS },
 						["isDaily"] = true,
 						["groups"] = {
@@ -958,8 +958,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12900, {	-- Making a Harness
-						["qg"] = 29839,	-- Astrid Bjornrittar
 						["sourceQuest"] = 13063,	-- Deemed Worthy
+						["qg"] = 29839,	-- Astrid Bjornrittar
 						["coord"] = { 49.7, 71.8, THE_STORM_PEAKS },
 						["groups"] = {
 							i(42845),	-- Brunnhildar Runed Ring
@@ -969,41 +969,41 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13037, {	-- Memories of Stormhoof
-						["qg"] = 30381,	-- Xarantaur
 						["sourceQuest"] = 13034,	-- The Witness and the Hero
+						["qg"] = 30381,	-- Xarantaur
 						["coord"] = { 65.7, 51.4, THE_STORM_PEAKS },
 						["races"] = HORDE_ONLY,
 					}),
 					q(12915, {	-- Mending Fences
-						["qg"] = 29445,	-- Thorim
 						["sourceQuest"] = 13064,	-- Sibling Rivalry
+						["qg"] = 29445,	-- Thorim
 						["coord"] = { 33.4, 58.0, THE_STORM_PEAKS },
 						["maxReputation"] = { FACTION_THE_SONS_OF_HODIR, EXALTED },	-- Sons of Hodir, Exalted
 					}),
 					q(12905, {	-- Mildred the Cruel
-						["qg"] = 29481,	-- Lok'lira the Crone
 						["sourceQuest"] = 12841,	-- The Crone's Bargain
+						["qg"] = 29481,	-- Lok'lira the Crone
 						["coord"] = { 42.8, 68.8, THE_STORM_PEAKS },
 					}),
 					q(12864, {	-- Missing Scouts
-						["qg"] = 29727,	-- Glorthal Stiffbeard
 						["sourceQuest"] = 12863,	-- Offering Thanks
+						["qg"] = 29727,	-- Glorthal Stiffbeard
 						["coord"] = { 29.1, 74.9, THE_STORM_PEAKS },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12987, {	-- Placing Hodir's Helm
-						["qg"] = 30127,	-- Njormeld
 						["sourceQuest"] = 12985,	-- Forging A Head
+						["qg"] = 30127,	-- Njormeld
 						["coord"] = { 63.2, 63.2, THE_STORM_PEAKS },
 					}),
 					q(12829, {	-- Moving In
-						["qg"] = 29430,	-- Tore Rumblewrench
 						["sourceQuest"] = 12827,	-- Reclaimed Rations
+						["qg"] = 29430,	-- Tore Rumblewrench
 						["coord"] = { 41.6, 80.0, THE_STORM_PEAKS },
 					}),
 					q(12872, {	-- Norgannon's Shell (A)
-						["provider"] = { "o", 191760 },	-- Inventor's Library Console
 						["sourceQuest"] = 13415,	-- The Library Console
+						["provider"] = { "o", 191760 },	-- Inventor's Library Console
 						["coord"] = { 37.4, 46.7, THE_STORM_PEAKS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -1015,8 +1015,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12928, {	-- Norgannon's Shell (H)
-						["provider"] = { "o", 191760 },	-- Inventor's Library Console
 						["sourceQuest"] = 13416,	-- The Library Console
+						["provider"] = { "o", 191760 },	-- Inventor's Library Console
 						["coord"] = { 37.4, 46.8, THE_STORM_PEAKS },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -1033,8 +1033,8 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12942, {	-- Off With Their Black Wings
-						["qg"] = 29997,	-- Iva the Vengeful
 						["sourceQuest"] = 12841,	-- The Crone's Bargain
+						["qg"] = 29997,	-- Iva the Vengeful
 						["coord"] = { 48.3, 72.1, THE_STORM_PEAKS },
 						["groups"] = {
 							i(42849),	-- Flowing Valkyrion Robes
@@ -1050,6 +1050,7 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12831, {	-- Only Partly Forgotten
+						["description"] = "You can pick up this quest from any of the Injured Goblin Miners inside the mine.",
 						["qg"] = 29434,	-- Injured Goblin Miner
 						["coords"] = {	-- Can be picked up from the same NPC in multiple locations
 							{ 41.4, 74.8, THE_STORM_PEAKS },
@@ -1059,43 +1060,42 @@ root(ROOTS.Zones, {
 							{ 43.6, 74.6, THE_STORM_PEAKS },
 							{ 43.4, 75.2, THE_STORM_PEAKS },
 						},
-						["description"] = "You can pick up this quest from any of the Injured Goblin Miners inside the mine.",
 					}),
 					q(12821, {	-- Cell Block Tango
-						["qg"] = 29428,	-- Ricket
 						["sourceQuests"] = {
 							12820,	-- A Delicate Touch
 							12828,	-- Ample Inspiration
 							12832,	-- Bitter Departure
 						},
+						["qg"] = 29428,	-- Ricket
 						["coord"] = { 40.9, 85.3, THE_STORM_PEAKS },
 					}),
 					q(12830, {	-- Ore Repossession
-						["qg"] = 29430,	-- Tore Rumblewrench
 						["sourceQuest"] = 12827,	-- Reclaimed Rations
+						["qg"] = 29430,	-- Tore Rumblewrench
 						["coord"] = { 41.6, 80.0, THE_STORM_PEAKS },
 					}),
 					q(12833, {	-- Overstock
-						["qg"] = 29428,	-- Ricket
 						["sourceQuest"] = 12824,	-- Demolitionist Extraordinaire
+						["qg"] = 29428,	-- Ricket
 						["coord"] = { 40.9, 85.3, THE_STORM_PEAKS },
 						["isDaily"] = true,
 					}),
 					q(12858, {	-- Pieces to the Puzzle (A)
-						["qg"] = 29579,	-- Brann Bronzebeard
-						["sourceQuest"] = 12855,	-- Sniffing Out the Perpetrator
 						["description"] = "Use Brann's Communicator to pick this quest up.",
+						["sourceQuest"] = 12855,	-- Sniffing Out the Perpetrator
+						["qg"] = 29579,	-- Brann Bronzebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12926, {	-- Pieces of the Puzzle (H)
-						["qg"] = 29651,	-- Boktar Bloodfury
 						["sourceQuest"] = 12920,	-- Catching up with Brann
+						["qg"] = 29651,	-- Boktar Bloodfury
 						["coord"] = { 37.3, 49.6, THE_STORM_PEAKS },
 						["races"] = HORDE_ONLY,
 					}),
 					q(13061, {	-- Prepare for Glory
-						["qg"] = 29839,	-- Astrid Bjornrittar
 						["sourceQuest"] = 12997,	-- Into the Pit
+						["qg"] = 29839,	-- Astrid Bjornrittar
 						["coord"] = { 49.7, 71.7, THE_STORM_PEAKS },
 					}),
 					q(12869, {	-- Pushed Too Far
@@ -1107,11 +1107,11 @@ root(ROOTS.Zones, {
 						-- this quest appeared for me after turning in "the brother's bronzebeard," which was the last quest i did for its criteria + the overall zone.  i'm not sure if the quest itself is a prerequisite or if it's based on reputation, because i also hit friendly with alliance vanguard when turning it in.  some wowhead comments said it had different requirements, so i'm not sure what to put for SQ or a description.
 					}),
 					q(12930, {	-- Rare Earth
-						["qg"] = 29801,	-- Bouldercrag the Rockshaper
 						["sourceQuests"] = {
 							12929,	-- The Earthen of Ulduar
 							12885,	-- The Exiles of Ulduar
 						},
+						["qg"] = 29801,	-- Bouldercrag the Rockshaper
 						["coord"] = { 31.4, 38.0, THE_STORM_PEAKS },
 					}),
 					q(12827, {	-- Reclaimed Rations
@@ -1119,8 +1119,8 @@ root(ROOTS.Zones, {
 						["coord"] = { 40.9, 85.3, THE_STORM_PEAKS },
 					}),
 					q(12937, {	-- Relief for the Fallen
-						["qg"] = 29801,	-- Bouldercrag the Rockshaper
 						["sourceQuest"] = 12930,	-- Rare Earth
+						["qg"] = 29801,	-- Bouldercrag the Rockshaper
 						["coord"] = { 31.4, 38.0, THE_STORM_PEAKS },
 					}),
 					q(12888, {	-- SCRAP-E
@@ -1130,13 +1130,13 @@ root(ROOTS.Zones, {
 						["requireSkill"] = ENGINEERING,
 					}),
 					q(13064, {	-- Sibling Rivalry
-						["qg"] = 29445,	-- Thorim
 						["sourceQuest"] = 12886,	-- The Drakkensryd
+						["qg"] = 29445,	-- Thorim
 						["coord"] = { 33.4, 58.0, THE_STORM_PEAKS },
 					}),
 					q(12868, {	-- Sirana Iceshriek
-						["qg"] = 29727,	-- Glorthal Stiffbeard
 						["sourceQuest"] = 12866,	-- Stemming the Aggressors
+						["qg"] = 29727,	-- Glorthal Stiffbeard
 						["coord"] = { 29.1, 74.9, THE_STORM_PEAKS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -1151,51 +1151,51 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12957, {	-- Slaves of the Stormforged
-						["qg"] = 29801,	-- Bouldercrag the Rockshaper
 						["sourceQuests"] = {
 							12931,	-- Fighting Back (possibly required)
 							12937,	-- Relief for the Fallen (definitely required)
 						},
+						["qg"] = 29801,	-- Bouldercrag the Rockshaper
 						["coord"] = { 31.4, 38.0, THE_STORM_PEAKS },
 					}),
 					q(12826, {	-- Slightly Unstable
-						["qg"] = 29431,	-- Jeer Sparksocket
 						["sourceQuest"] = 12819,	-- Just Around the Corner
+						["qg"] = 29431,	-- Jeer Sparksocket
 						["coord"] = { 41.0, 86.4, THE_STORM_PEAKS },
 					}),
 					q(12855, {	-- Sniffing Out the Perpetrator (A)
-						["qg"] = 29650,	-- Archaeologist Andorin
 						["sourceQuest"] = 12854,	-- On Brann's Trail
+						["qg"] = 29650,	-- Archaeologist Andorin
 						["coord"] = { 29.6, 74.0, THE_STORM_PEAKS },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12910, {	-- Sniffing Out the Perpetrator (H)
-						["qg"] = 29855,	-- Khaliisi
 						["sourceQuest"] = 12909,	-- The Nose Knows
+						["qg"] = 29855,	-- Khaliisi
 						["coord"] = { 40.8, 51.2, THE_STORM_PEAKS },
 						["races"] = HORDE_ONLY,
 					}),
 					q(12913, {	-- Speak Orcish, Man!
-						["qg"] = 29579,	-- Brann Bronzebeard
 						["sourceQuest"] = 12910,	-- Sniffing Out the Perpetrator
+						["qg"] = 29579,	-- Brann Bronzebeard
 						["coord"] = { 48.5, 60.8, THE_STORM_PEAKS },
 						["races"] = HORDE_ONLY,
 					}),
 					q(12917, {	-- Speaking with the Wind's Voice
-						["qg"] = 29937,	-- Moteha Windborn
 						["sourceQuest"] = 12913,	-- Speak Orcish, Man!
+						["qg"] = 29937,	-- Moteha Windborn
 						["coord"] = { 37.2, 49.7, THE_STORM_PEAKS },
 						["races"] = HORDE_ONLY,
 					}),
 					q(12866, {	-- Stemming the Aggressors
-						["qg"] = 29727,	-- Glorthal Stiffbeard
 						["sourceQuest"] = 12864,	-- Missing Scouts
+						["qg"] = 29727,	-- Glorthal Stiffbeard
 						["coord"] = { 29.1, 74.9, THE_STORM_PEAKS },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12971, {	-- Taking on All Challengers
-						["qg"] = 29975,	-- Lok'lira the Crone
 						["sourceQuest"] = 12970,	-- The Hyldsmeet
+						["qg"] = 29975,	-- Lok'lira the Crone
 						["coord"] = { 47.4, 69.0, THE_STORM_PEAKS },
 						["groups"] = {
 							i(43204),	-- Hyldnir Runeweaver's Garb
@@ -1205,8 +1205,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13051, {	-- Territorial Trespass
-						["qg"] = 29445,	-- Thorim
 						["sourceQuest"] = 13050,	-- Veranus
+						["qg"] = 29445,	-- Thorim
 						["coord"] = { 33.4, 57.9, THE_STORM_PEAKS },
 						["groups"] = {
 							i(42859),	-- Thorim's Crusher
@@ -1217,8 +1217,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13425, {	-- The Aberrations Must Die
-						["qg"] = 29796,	-- Gretta the Arbiter
 						["sourceQuest"] = 12925,	-- Aberrations
+						["qg"] = 29796,	-- Gretta the Arbiter
 						["coord"] = { 50.8, 65.6, THE_STORM_PEAKS },
 						["isDaily"] = true,
 						["groups"] = {
@@ -1226,13 +1226,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12980, {	-- The Armor's Secrets
-						["qg"] = 30152,	-- Bruor Ironbane
 						["sourceQuest"] = 12979,	-- Armor of Darkness
+						["qg"] = 30152,	-- Bruor Ironbane
 						["coord"] = { 31.2, 38.1, THE_STORM_PEAKS },
 					}),
 					q(12973, {	-- The Brothers Bronzebeard
-						["qg"] = 30382,	-- Brann Bronzebeard
 						["sourceQuest"] = 12880,	-- The Master Explorer
+						["qg"] = 30382,	-- Brann Bronzebeard
 						["coord"] = { 39.5, 56.3, THE_STORM_PEAKS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -1243,27 +1243,27 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13274, {	-- The Core's Keeper
-						["qg"] = 29579,	-- Brann Bronzebeard
-						["sourceQuest"] = 13273,	-- Going After the Core
 						["description"] = "Use Brann's Communicator to pick this quest up.",
+						["sourceQuest"] = 13273,	-- Going After the Core
+						["qg"] = 29579,	-- Brann Bronzebeard
 						["races"] = HORDE_ONLY,
 					}),
 					q(12841, {	-- The Crone's Bargain
-						["qg"] = 29481,	-- Lok'lira the Crone
 						["sourceQuest"] = 12846,	-- Leave No Goblin Behind
+						["qg"] = 29481,	-- Lok'lira the Crone
 						["coord"] = { 42.8, 68.8, THE_STORM_PEAKS },
 					}),
 					q(12964, {	-- The Dark Ore
-						["qg"] = 29801,	-- Bouldercrag the Rockshaper
 						["sourceQuests"] = {
 							12931,	-- Fighting Back (possibly required)
 							12937,	-- Relief for the Fallen (definitely required)
 						},
+						["qg"] = 29801,	-- Bouldercrag the Rockshaper
 						["coord"] = { 31.4, 38.0, THE_STORM_PEAKS },
 					}),
 					q(12886, {	-- The Drakkensryd
-						["qg"] = 29796,	-- Gretta the Arbiter
 						["sourceQuest"] = 13062,	-- Lok'lira's Parting Gift
+						["qg"] = 29796,	-- Gretta the Arbiter
 						["coord"] = { 50.8, 65.6, THE_STORM_PEAKS },
 						["groups"] = {
 							i(42841),	-- Leggings of the Frozen Wastes
@@ -1276,12 +1276,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13005, {	-- The Earthen Oath
-						["qg"] = 30295,	-- Thorim
 						["sourceQuests"] = {
 							--12872,	-- Norgannon's Shell (A)
 							--12928,	-- Norgannon's Shell (H)
 							13057,	-- The Terrace of the Makers (Probably)
 						},
+						["qg"] = 30295,	-- Thorim
 						["coord"] = { 56.2, 51.3, THE_STORM_PEAKS },
 						["groups"] = {
 							i(42847),	-- Terrace Gazer's Gloves
@@ -1291,35 +1291,35 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12929, {	-- The Earthen of Ulduar
-						["qg"] = 29579,	-- Brann Bronzebeard
+						["description"] = "Use Brann's Communicator to pick this quest up.",
 						["sourceQuests"] = {
 							12926,	-- Pieces of the Puzzle
 							12872,	-- Norgannon's Shell (A)
 							12928,	-- Norgannon's Shell (H)
 						},
-						["description"] = "Use Brann's Communicator to pick this quest up.",
+						["qg"] = 29579,	-- Brann Bronzebeard
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(12885, {	-- The Exiles of Ulduar
-						["qg"] = 29579,	-- Brann Bronzebeard
-						["sourceQuest"] = 12872,	-- Norgannon's Shell
 						["description"] = "Use Brann's Communicator to pick this quest up.",
+						["sourceQuest"] = 12872,	-- Norgannon's Shell
+						["qg"] = 29579,	-- Brann Bronzebeard
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(12873, {	-- The Frostborn King
-						["qg"] = 29743,	-- Lagnus
 						["sourceQuest"] = 12871,	-- Aid From the Explorers' League
+						["qg"] = 29743,	-- Lagnus
 						["coord"] = { 29.4, 73.7, THE_STORM_PEAKS },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12965, {	-- The Gifts of Loken
-						["qg"] = 29801,	-- Bouldercrag the Rockshaper
 						["sourceQuests"] = {
 							12957,	-- Slaves of the Stormforged (probably required)
 							12964,	-- The Dark Ore (definitely required)
 						},
+						["qg"] = 29801,	-- Bouldercrag the Rockshaper
 						["coord"] = { 31.4, 38.0, THE_STORM_PEAKS },
 						["groups"] = {
 							i(42795),	-- Leggings of Renewed Hope
@@ -1329,33 +1329,33 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12998, {	-- The Heart of the Storm
-						["qg"] = 29801,	-- Bouldercrag the Rockshaper
 						["sourceQuest"] = 12993,	-- A Colossal Threat
+						["qg"] = 29801,	-- Bouldercrag the Rockshaper
 						["coord"] = { 31.4, 38.0, THE_STORM_PEAKS },
 					}),
 					q(13049, {	-- The Hero's Arms
-						["qg"] = 30381,	-- Xarantaur
 						["sourceQuests"] = {
 							13038,	-- Distortions in Time
 							13037,	-- Memories of Stormhoof
 						},
+						["qg"] = 30381,	-- Xarantaur
 						["coord"] = { 65.7, 51.4, THE_STORM_PEAKS },
 						["races"] = HORDE_ONLY,
 					}),
 					q(12878, {	-- The Hidden Relic
-						["qg"] = 30052,	-- Creteus
 						["sourceQuest"] = 12986,	-- Fate of the Titans
+						["qg"] = 30052,	-- Creteus
 						["coord"] = { 39.2, 59.6, THE_STORM_PEAKS },	-- approximate, as NPC patrols a short path back and forth
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12970, {	-- The Hyldsmeet
-						["qg"] = 29975,	-- Lok'lira the Crone
 						["sourceQuest"] = 12969,	-- Is That Your Goblin?
+						["qg"] = 29975,	-- Lok'lira the Crone
 						["coord"] = { 47.4, 69.0, THE_STORM_PEAKS },
 					}),
 					q(13007, {	-- The Iron Colossus
-						["qg"] = 29801,	-- Bouldercrag the Rockshaper
 						["sourceQuest"] = 12998,	-- The Heart of the Storm
+						["qg"] = 29801,	-- Bouldercrag the Rockshaper
 						["coord"] = { 31.4, 38.0, THE_STORM_PEAKS },
 						["groups"] = {
 							i(43200),	-- Snowdrift Pantaloons
@@ -1365,31 +1365,31 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12983, {	-- The Last of Her Kind
-						["qg"] = 29839,	-- Astrid Bjornrittar
 						["sourceQuest"] = 12900,	-- Making a Harness
+						["qg"] = 29839,	-- Astrid Bjornrittar
 						["coord"] = { 49.7, 71.7, THE_STORM_PEAKS },
 					}),
 					q(13415, {	-- The Library Console (A)
-						["qg"] = 29579,	-- Brann Bronzebeard
-						["sourceQuest"] = 12860,	-- Data Mining
 						["description"] = "Use Brann's Communicator to pick this quest up.",
+						["sourceQuest"] = 12860,	-- Data Mining
+						["qg"] = 29579,	-- Brann Bronzebeard
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13416, {	-- The Library Console (H)
-						["qg"] = 29579,	-- Brann Bronzebeard
-						["sourceQuest"] = 12927,	-- Data Mining
 						["description"] = "Use Brann's Communicator to pick this quest up.",
+						["sourceQuest"] = 12927,	-- Data Mining
+						["qg"] = 29579,	-- Brann Bronzebeard
 						["races"] = HORDE_ONLY,
 					}),
 					q(12877, {	-- The Lonesome Watcher
-						["qg"] = 29751,	-- Drom Frostgrip
 						["sourceQuest"] = 12875,	-- An Experienced Guide
+						["qg"] = 29751,	-- Drom Frostgrip
 						["coord"] = { 25.2, 68.4, THE_STORM_PEAKS },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12880, {	-- The Master Explorer
-						["qg"] = 30082,	-- Creteus
 						["sourceQuest"] = 12879,	-- Fury of the Frostborn King
+						["qg"] = 30082,	-- Creteus
 						["coord"] = { 38.2, 61.7, THE_STORM_PEAKS },
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -1404,14 +1404,14 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 					q(12909, {	-- The Nose Knows
-						["qg"] = 29651,	-- Boktar Bloodfury
 						["sourceQuest"] = 12895,	-- The Missing Bronzebeard
+						["qg"] = 29651,	-- Boktar Bloodfury
 						["coord"] = { 37.2, 49.6, THE_STORM_PEAKS },
 						["races"] = HORDE_ONLY,
 					}),
 					q(12889, {	-- The Prototype Console
-						["qg"] = 29806,	-- SCRAP-E
 						["sourceQuest"] = 12888,	-- SCRAP-E
+						["qg"] = 29806,	-- SCRAP-E
 						["coord"] = { 37.6, 46.4, THE_STORM_PEAKS },
 						["requireSkill"] = ENGINEERING,
 						["groups"] = {
@@ -1419,11 +1419,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13047, {	-- The Reckoning
-						["qg"] = 30295,	-- Thorim
 						["sourceQuests"] = {
 							13005,	-- The Earthen Oath (probably required)
 							13035,	-- Loken's Lackeys (definitely required)
 						},
+						["qg"] = 30295,	-- Thorim
 						["coord"] = { 56.2, 51.3, THE_STORM_PEAKS },
 						["groups"] = {
 							i(43210),	-- Globes of the Servant
@@ -1433,14 +1433,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12922, {	-- The Refiner's Fire
-						["provider"] = { "i", 41556 },	-- Slag Covered Metal
-						["sourceQuest"] = 13064,	-- Sibling Rivalry (guessed by last quest completed prior)
 						["description"] = "The giants that drop this quest item spawn on and around the ice patch east of Dun Niffelem.",
+						["sourceQuest"] = 13064,	-- Sibling Rivalry (guessed by last quest completed prior)
+						["provider"] = { "i", 41556 },	-- Slag Covered Metal
 						["crs"] = { 29375 },	-- Stormforged Iron Giant
 					}),
 					q(13843, {	-- The Scrapbot Construction Kit
-						["provider"] = { "o", 191761 },	-- Prototype Console
 						["sourceQuest"] = 12889,	-- The Prototype Console
+						["provider"] = { "o", 191761 },	-- Prototype Console
 						["coord"] = { 37.6, 46.8, THE_STORM_PEAKS },
 						["requireSkill"] = ENGINEERING,
 						["repeatable"] = true,
@@ -1448,8 +1448,8 @@ root(ROOTS.Zones, {
 						-- not sure how to list reward/what quest it comes from, or if the questline has changed, so i guess an engineer needs to check it out
 					}),
 					q(12989, {	-- The Slithering Darkness
-						["qg"] = 29839,	-- Astrid Bjornrittar
 						["sourceQuest"] = 12900,	-- Making a Harness
+						["qg"] = 29839,	-- Astrid Bjornrittar
 						["coord"] = { 49.7, 71.7, THE_STORM_PEAKS },
 						["groups"] = {
 							i(42846),	-- Jormungar Galoshes
@@ -1460,24 +1460,24 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13057, {	-- The Terrace of the Makers
-						["qg"] = 30390,	-- Thorim
 						["sourceQuest"] = 13010,	-- Krolmir, Hammer of the Storms
+						["qg"] = 30390,	-- Thorim
 						["coord"] = { 71.3, 48.8, THE_STORM_PEAKS },
 					}),
 					q(12996, {	-- The Warm-Up
-						["qg"] = 29839,	-- Astrid Bjornrittar
 						["sourceQuest"] = 12983,	-- The Last of Her Kind
+						["qg"] = 29839,	-- Astrid Bjornrittar
 						["coord"] = { 49.7, 71.7, THE_STORM_PEAKS },
 					}),
 					q(13034, {	-- The Witness and the Hero
-						["qg"] = 30381,	-- Xarantaur
 						["sourceQuest"] = 13426,	-- Xarantaur, the Witness
+						["qg"] = 30381,	-- Xarantaur
 						["coord"] = { 65.7, 51.4, THE_STORM_PEAKS },
 						["races"] = HORDE_ONLY,
 					}),
 					q(13056, {	-- There's Always Time for Revenge
-						["qg"] = 30469,	-- Tracker Val'zij
 						["sourceQuest"] = 13055,	-- Cave Medicine
+						["qg"] = 30469,	-- Tracker Val'zij
 						["coord"] = { 48.5, 54.3, THE_STORM_PEAKS },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -1499,8 +1499,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12984, {	-- Valduran the Stormborn
-						["qg"] = 29801,	-- Bouldercrag the Rockshaper
 						["sourceQuest"] = 12980,	-- The Armor's Secrets
+						["qg"] = 29801,	-- Bouldercrag the Rockshaper
 						["coord"] = { 31.4, 38.0, THE_STORM_PEAKS },
 						["groups"] = {
 							i(42796),	-- Lantern of Enchanted Flame
@@ -1510,14 +1510,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12876, {	-- Unwelcome Guests
-						["qg"] = 29732,	-- Fjorlin Frostbrow
 						["sourceQuest"] = 12874,	-- Fervor of the Frostborn
+						["qg"] = 29732,	-- Fjorlin Frostbrow
 						["coord"] = { 29.8, 75.7, THE_STORM_PEAKS },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12953, {	-- Valkyrion Must Burn
-						["provider"] = { "o", 192072 },	-- Harpoon Crate
 						["sourceQuest"] = 12841,	-- The Crone's Bargain
+						["provider"] = { "o", 192072 },	-- Harpoon Crate
 						["coord"] = { 24.0, 61.7, THE_STORM_PEAKS },
 						["groups"] = {
 							i(42850),	-- Flamebringer's Crown
@@ -1527,8 +1527,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13050, {	-- Veranus
-						["qg"] = 29445,	-- Thorim
 						["sourceQuest"] = 13009,	-- A New Beginning
+						["qg"] = 29445,	-- Thorim
 						["coord"] = { 33.4, 58.0, THE_STORM_PEAKS },
 					}),
 					warchiefscommand(q(49536, {	-- Warchief's Command: Storm Peaks!
@@ -1537,53 +1537,53 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 					})),
 					q(12862, {	-- When All Else Fails (A)
-						["qg"] = 29428,	-- Ricket
 						["sourceQuests"] = {
 							12824,	-- Demolitionist Extraordinaire
 							12822,	-- Know No Fear
 						},
+						["qg"] = 29428,	-- Ricket
 						["coord"] = { 40.9, 85.3, THE_STORM_PEAKS },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13060, {	-- When All Else Fails (H)
-						["qg"] = 29428,	-- Ricket
 						["sourceQuests"] = {
 							12824,	-- Demolitionist Extraordinaire
 							12822,	-- Know No Fear
 						},
+						["qg"] = 29428,	-- Ricket
 						["coord"] = { 40.9, 85.3, THE_STORM_PEAKS },
 						["races"] = HORDE_ONLY,
 					}),
 					q(13048, {	-- Where Time Went Wrong
-						["qg"] = 30381,	-- Xarantaur
 						["sourceQuests"] = {
 							13038,	-- Distortions in Time
 							13037,	-- Memories of Stormhoof
 						},
+						["qg"] = 30381,	-- Xarantaur
 						["coord"] = { 65.7, 51.4, THE_STORM_PEAKS },
 						["races"] = HORDE_ONLY,
 					}),
 					q(13426, {	-- Xarantaur, the Witness
-						["qg"] = 29651,	-- Boktar Bloodfury
 						["sourceQuest"] = 13285,	-- Forging the Keystone
+						["qg"] = 29651,	-- Boktar Bloodfury
 						["coord"] = { 37.3, 49.6, THE_STORM_PEAKS },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(12966, {	-- You Can't Miss Him
-						["qg"] = 30105,	-- King Jokkum
-						["sourceQuest"] = 12924,	-- Forging an Alliance
-						["coord"] = { 65.3, 60.1, THE_STORM_PEAKS },
 						["description"] = "This questline is required to progress on the 'Forging the Alliance' quest.",
+						["sourceQuest"] = 12924,	-- Forging an Alliance
+						["qg"] = 30105,	-- King Jokkum
+						["coord"] = { 65.3, 60.1, THE_STORM_PEAKS },
 					}),
 					q(12972, {	-- You'll Need a Bear
-						["qg"] = 29975,	-- Lok'lira the Crone
 						["sourceQuest"] = 12971,	-- Taking on All Challengers
+						["qg"] = 29975,	-- Lok'lira the Crone
 						["coord"] = { 47.4, 69.0, THE_STORM_PEAKS },
 					}),
 					q(12968, {	-- Yulda's Folly
-						["qg"] = 29997,	-- Iva the Vengeful
 						["sourceQuest"] = 12841,	-- The Crone's Bargain
+						["qg"] = 29997,	-- Iva the Vengeful
 						["coord"] = { 48.3, 72.1, THE_STORM_PEAKS },
 					}),
 				}),

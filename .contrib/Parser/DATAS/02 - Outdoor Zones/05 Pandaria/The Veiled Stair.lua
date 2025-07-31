@@ -38,12 +38,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(31611, {	-- The Kun-Lai Kicker
+						["description"] = "If you don't see questgiver in The Veiled Stair, look in the Binan Village to the north.",
 						["qg"] = 63367,	-- Brewmaster Boof
 						["coords"] = {
 							{ 72.6, 93.0, KUN_LAI_SUMMIT },
 							{ 51.90, 43.73, THE_VEILED_STAIR },
 						},
-						["description"] = "If you don't see questgiver in The Veiled Stair, look in the Binan Village to the north.",
 					}),
 					q(31285, {	-- The Spring Drifter
 						["qg"] = 63367,	-- Brewmaster Boof

@@ -1573,9 +1573,11 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			i(231627, {	-- Black Cave Crab (PET!)
 				["displayID"] = 120695,
 			}),
+			-- #if BEFORE 11.2.0
 			i(231757, {	-- Cauldrone (PET!)
 				["displayID"] = 47711,
 			}),
+			-- #endif
 			i(231760, {	-- Crunchy (PET!)
 				["displayID"] = 54848,
 			}),

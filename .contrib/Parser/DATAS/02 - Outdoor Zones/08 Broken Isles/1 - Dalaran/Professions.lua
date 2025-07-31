@@ -539,9 +539,9 @@ root(ROOTS.Zones, {
 					}),
 					n(WORLD_QUESTS, {
 						q(41668, {	-- Vantus Rune Work Order: Il'gynoth, The Heart of Corruption
-							["lvl"] = { 45 },
-							["isWorldQuest"] = true,
 							["requireSkill"] = INSCRIPTION,
+							["isWorldQuest"] = true,
+							["lvl"] = { 45 },
 							["groups"] = {
 								i(137769),	-- Vantus Rune Technique: Il'gynoth, The Heart of Corruption [Rank 3] (RECIPE!)
 							},

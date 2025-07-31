@@ -70,16 +70,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			n(QUESTS, {
 				------ RENOWN 4 ------
 				q(70941, {	-- Fishing Holes
+					["description"] = "Spawns Anywhere on Dragon Isles.",
 					["provider"] = { "n", 197631 },	-- Rowie
 					["coord"] = { 45.8, 55.2, VALDRAKKEN },
-					["description"] = "Spawns Anywhere on Dragon Isles.",
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				}),
 				------ RENOWN 5 ------
 				q(71230, {	-- Tuskarr Fishing Gear
+					["description"] = "Spawns Anywhere on Dragon Isles.",
 					["provider"] = { "n", 197631 },	-- Rowie
 					["coord"] = { 45.8, 55.2, VALDRAKKEN },
-					["description"] = "Spawns Anywhere on Dragon Isles.",
 					["minReputation"] = { FACTION_ISKAARA_TUSKARR, 5 },
 					["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				}),
@@ -93,8 +93,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					},
 				}),
 				q(72584, {	-- Setting Your Very Own Net
-					["provider"] = { "n", 195935 },	-- Tavio
 					["sourceQuests"] = { 70871 },	-- Iskaaran Fishing Net
+					["provider"] = { "n", 195935 },	-- Tavio
 					["coord"] = { 12.8, 49.2, THE_AZURE_SPAN },
 					["minReputation"] = { FACTION_ISKAARA_TUSKARR, 5 },
 				}),

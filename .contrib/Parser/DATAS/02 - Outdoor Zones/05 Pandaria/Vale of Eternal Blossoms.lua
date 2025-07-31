@@ -154,55 +154,55 @@ root(ROOTS.Zones, {
 					["description"] = "The following will be mailed to you upon completion of respective achievements.",
 					["groups"] = {
 						q(31055, {	-- Between a Saurok and a Hard Place
+							["sourceAchievement"] = 6716,	-- Between a Saurok and a Hard Place
 							["providers"] = {
 								{ "i", 83769 },	-- Between a Saurok and a Hard Place
 								{ "i", 83076 },	-- Between a Saurok and a Hard Place
 							},
-							["sourceAchievement"] = 6716,	-- Between a Saurok and a Hard Place
 						}),
 						q(31094, {	-- Fish Tales
-							["provider"] = { "i", 83771 },	-- Fish Tales
 							["sourceAchievement"] = 6846,	-- Fish Tales
+							["provider"] = { "i", 83771 },	-- Fish Tales
 						}),
 						q(32602, {	-- Gods and Monsters
-							["provider"] = { "i", 94199 },	-- Gods and Monsters
 							["sourceAchievement"] = 8051,	-- Gods and Monsters
+							["provider"] = { "i", 94199 },	-- Gods and Monsters
 						}),
 						q(31097, {	-- Heart of the Mantid Swarm
-							["provider"] = { "i", 83773 },	-- Heart of the Mantid Swarm
 							["sourceAchievement"] = 6857,	-- Heart of the Mantid Swarm
+							["provider"] = { "i", 83773 },	-- Heart of the Mantid Swarm
 						}),
 						q(31093, {	-- Hozen in the Mist
-							["provider"] = { "i", 83770 },	-- Hozen in the Mist
 							["sourceAchievement"] = 6850,	-- Hozen in the Mist
+							["provider"] = { "i", 83770 },	-- Hozen in the Mist
 						}),
 						q(32601, {	-- Rumbles of Thunder
-							["provider"] = { "i", 94198 },	-- Rumbles of Thunder
 							["sourceAchievement"] = 8050,	-- Rumbles of Thunder
+							["provider"] = { "i", 94198 },	-- Rumbles of Thunder
 						}),
 						q(31103, {	-- The Ballad of Liu Lang
-							["provider"] = { "i", 83780 },	-- The Ballad of Liu Lang
 							["sourceAchievement"] = 6856,	-- Ballad of Liu Lang
+							["provider"] = { "i", 83780 },	-- The Ballad of Liu Lang
 						}),
 						q(31095, {	-- The Dark Heart of the Mogu
-							["provider"] = { "i", 83772 },	-- The Dark Heart of the Mogu
 							["sourceAchievement"] = 6754,	-- The Dark Heart of the Mogu
+							["provider"] = { "i", 83772 },	-- The Dark Heart of the Mogu
 						}),
 						q(31102, {	-- The Seven Burdens of Shaohao
-							["provider"] = { "i", 83779 },	-- The Seven Burdens of Shaohao
 							["sourceAchievement"] = 6855,	-- The Seven Burdens of Shaohao
+							["provider"] = { "i", 83779 },	-- The Seven Burdens of Shaohao
 						}),
 						q(31100, {	-- The Song of the Yaungol
-							["provider"] = { "i", 83777 },	-- The Song of the Yaungol
 							["sourceAchievement"] = 6847,	-- The Song of the Yaungol
+							["provider"] = { "i", 83777 },	-- The Song of the Yaungol
 						}),
 						q(32600, {	-- The Zandalari Prophecy
-							["provider"] = { "i", 94197 },	-- The Zandalari Prophecy
 							["sourceAchievement"] = 8049,	-- The Zandalari Prophecy
+							["provider"] = { "i", 94197 },	-- The Zandalari Prophecy
 						}),
 						q(31096, {	-- What is Worth Fighting For
-							["provider"] = { "i", 83774 },	-- What is Worth Fighting For
 							["sourceAchievement"] = 6858,	-- What Is Worth Fighting For
+							["provider"] = { "i", 83774 },	-- What is Worth Fighting For
 						}),
 					},
 				}),
@@ -228,11 +228,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(31951, {	-- Grand Master Aki
-						["qg"] = 66741,	-- Aki the Chosen
 						["sourceQuests"] = {
 							31930,	-- Battle Pet Tamers: Pandaria (A)
 							31952,	-- Battle Pet Tamers: Pandaria (H)
 						},
+						["qg"] = 66741,	-- Aki the Chosen
 						["coords"] = {
 							{ 31.2, 74.2, VALE_OF_ETERNAL_BLOSSOMS },
 							-- #if AFTER 8.3.0
@@ -324,8 +324,8 @@ root(ROOTS.Zones, {
 							["coord"] = { 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
 							["maps"] = { THE_JADE_FOREST, KUN_LAI_SUMMIT, 391 },	-- Shrine of Two Moons
 						},
-						["sourceQuest"] = 32603,	-- Beasts of Fable
 						["description"] = "Account-Wide Daily Quest. Must have completed the quest |cffffff00Beasts of Fable.|r",
+						["sourceQuest"] = 32603,	-- Beasts of Fable
 						["timeline"] = { ADDED_5_2_0 },
 						["isDaily"] = true,
 						["groups"] = {
@@ -359,8 +359,8 @@ root(ROOTS.Zones, {
 							["coord"] = { 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
 							["maps"] = { VALLEY_OF_THE_FOUR_WINDS, KRASARANG_WILDS, 391 },	-- Shrine of Two Moons
 						},
-						["sourceQuest"] = 32603,	-- Beasts of Fable
 						["description"] = "Account-Wide Daily Quest. Must have completed the quest |cffffff00Beasts of Fable.|r",
+						["sourceQuest"] = 32603,	-- Beasts of Fable
 						["timeline"] = { ADDED_5_2_0 },
 						["isDaily"] = true,
 						["groups"] = {
@@ -390,8 +390,8 @@ root(ROOTS.Zones, {
 							["coord"] = { 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
 							["maps"] = { DREAD_WASTES, TOWNLONG_STEPPES, 391 },	-- Shrine of Two Moons
 						},
-						["sourceQuest"] = 32603,	-- Beasts of Fable
 						["description"] = "Account-Wide Daily Quest. Must have completed the quest |cffffff00Beasts of Fable.|r",
+						["sourceQuest"] = 32603,	-- Beasts of Fable
 						["timeline"] = { ADDED_5_2_0 },
 						["isDaily"] = true,
 						["groups"] = {
@@ -421,8 +421,8 @@ root(ROOTS.Zones, {
 							["coord"] = { 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
 							["maps"] = { TOWNLONG_STEPPES, KUN_LAI_SUMMIT, THE_JADE_FOREST, DREAD_WASTES, 391 },	-- Shrine of Two Moons
 						},
-						["sourceAchievement"] = 7499,	-- Taming the World
 						["description"] = "These pets can be found in the Pandaren Spirit Pet Supplies received from the four Pandaren Spirit Tamers in their individual Daily Quests once you complete this quest.",
+						["sourceAchievement"] = 7499,	-- Taming the World
 						["timeline"] = { ADDED_5_0_4 },
 						["groups"] = {
 							objective(1, {	-- Defeat Burning Pandaren Spirit
@@ -519,12 +519,20 @@ root(ROOTS.Zones, {
 						["timeline"] = { ADDED_5_3_0 },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
+						-- Supposedly accidentally removed since 11.0.0?
+						-- #if NOT ANYCLASSIC
+						["u"] = REMOVED_FROM_GAME,
+						-- #endif
 					})),
 					q(33230, applyclassicphase(MOP_PHASE_ESCALATION, {	-- A Flash of Bronze... (H)
 						["qg"] = 73691,	-- Chromie <The Timewalkers>
 						["timeline"] = { ADDED_5_3_0 },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
+						-- Supposedly accidentally removed since 11.0.0?
+						-- #if NOT ANYCLASSIC
+						["u"] = REMOVED_FROM_GAME,
+						-- #endif
 					})),
 					q(30284, {	-- A Thousand Pointy Teeth
 						["qg"] = 59343,	-- Ren Firetongue
@@ -608,8 +616,8 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 					q(30634, {	-- Barring Entry
-						["qg"] = 58471,	-- Kun Autumnlight
 						["sourceQuests"] = { 30632 },	-- The Ruins of Guo-Lai
+						["qg"] = 58471,	-- Kun Autumnlight
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
 						-- #if MOP
@@ -620,8 +628,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30642, {	-- Battle Axe of the Thunder King
-						["qg"] = 59905,	-- Zhi the Harmonious
 						["sourceQuests"] = { 30641 },	-- Battle Helm of the Thunder King
+						["qg"] = 59905,	-- Zhi the Harmonious
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
 						-- #if MOP
@@ -640,8 +648,8 @@ root(ROOTS.Zones, {
 						}),
 					}),
 					q(30641, {	-- Battle Helm of the Thunder King
-						["qg"] = 59905,	-- Zhi the Harmonious
 						["sourceQuests"] = { 30640 },	-- Battle Spear of the Thunder King
+						["qg"] = 59905,	-- Zhi the Harmonious
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
 						-- #if MOP
@@ -649,8 +657,8 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 					q(30640, {	-- Battle Spear of the Thunder King
-						["qg"] = 59905,	-- Zhi the Harmonious
 						["sourceQuests"] = { 30639 },	-- The Secrets of Guo-Lai
+						["qg"] = 59905,	-- Zhi the Harmonious
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
 						-- #if MOP
@@ -895,32 +903,32 @@ root(ROOTS.Zones, {
 					}),
 					-- Wouter TODO: are these in the game?
 					q(30630, {	-- Into the Vale (A)
-						["qg"] = 59964,	-- Pako the Speaker
 						["sourceQuests"] = { 31512 },	-- A Witness to History (A)
+						["qg"] = 59964,	-- Pako the Speaker
 						["races"] = ALLIANCE_ONLY,
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(33008, {	-- Into the Vale (H)
-						["qg"] = 59964,	-- Pako the Speaker
 						["sourceQuests"] = { 31511 },	-- A Witness to History (H)
+						["qg"] = 59964,	-- Pako the Speaker
 						["races"] = HORDE_ONLY,
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(33231, applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, {	-- Journey to the Timeless Isle
-						["qg"] = 73691,	-- Chromie <The Timewalkers>
 						["sourceQuests"] = {
 							33229,	-- A Flash of Bronze...	(Alliance)
 							33230,	-- A Flash of Bronze...	(Horde)
 						},
+						["qg"] = 73691,	-- Chromie <The Timewalkers>
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,	-- Possible to skip if you just fly to the Isle after picking up Flash of Bronze
 					})),
 					q(33232, applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, {	-- Journey to the Timeless Isle
-						["qg"] = 73691,	-- Chromie <The Timewalkers>
 						["sourceQuests"] = {
 							33229,	-- A Flash of Bronze...	(Alliance)
 							33230,	-- A Flash of Bronze...	(Horde)
 						},
+						["qg"] = 73691,	-- Chromie <The Timewalkers>
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,	-- Possible to skip if you just fly to the Isle after picking up Flash of Bronze
 						["groups"] = {
@@ -928,11 +936,11 @@ root(ROOTS.Zones, {
 						},
 					})),
 					q(30635, {	-- Killing the Quilen
-						["qg"] = 58465,	-- Anji Autumnlight
 						["sourceQuests"] = {
 							30633,	-- Out with the Scouts
 							30634,	-- Barring Entry
 						},
+						["qg"] = 58465,	-- Anji Autumnlight
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
 						-- #if MOP
@@ -958,13 +966,13 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 					q(30638, {	-- Leaving an Opening
-						["qg"] = 58465,	-- Anji Autumnlight
 						["sourceQuests"] = {
 							30635,	-- Killing the Quilen
 							30636,	-- Stones of Power
 							30637,	-- The Guo-Lai Halls
 							30654,	-- The Guo-Lai Halls
 						},
+						["qg"] = 58465,	-- Anji Autumnlight
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
 						-- #if MOP
@@ -1004,14 +1012,14 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 					q(32246, applyclassicphase(MOP_PHASE_ONE, {	-- Meet the Scout (A)
-						["qg"] = 64610,	-- Lyalia
 						["sourceQuests"] = { 31483 },	-- Incoming...
+						["qg"] = 64610,	-- Lyalia
 						["coord"] = { 84.0, 58.7, VALE_OF_ETERNAL_BLOSSOMS },
 						["races"] = ALLIANCE_ONLY,
 					})),
 					q(32249, applyclassicphase(MOP_PHASE_ONE, {	-- Meet the Scout (H)
-						["qg"] = 64566,	-- Sunwalker Dezco
 						["sourceQuests"] = { 31483 },	-- Incoming...
+						["qg"] = 64566,	-- Sunwalker Dezco
 						["coord"] = { 62.8, 27.9, VALE_OF_ETERNAL_BLOSSOMS },
 						["races"] = HORDE_ONLY,
 					})),
@@ -1130,8 +1138,8 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 					q(30633, {	-- Out with the Scouts
-						["qg"] = 58465,	-- Anji Autumnlight
 						["sourceQuests"] = { 30632 },	-- The Ruins of Guo-Lai
+						["qg"] = 58465,	-- Anji Autumnlight
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
 						-- #if MOP
@@ -1322,11 +1330,11 @@ root(ROOTS.Zones, {
 						-- #endifss
 					}),
 					q(30636, {	-- Stones of Power
-						["qg"] = 58465,	-- Anji Autumnlight
 						["sourceQuests"] = {
 							30633,	-- Out with the Scouts
 							30634,	-- Barring Entry
 						},
+						["qg"] = 58465,	-- Anji Autumnlight
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
 						-- #if MOP
@@ -1435,8 +1443,8 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 					q(30646, {	-- The Final Power
-						["qg"] = 59906,	-- Sinan the Dreamer
 						["sourceQuests"] = { 30645 },	-- The Might of Three
+						["qg"] = 59906,	-- Sinan the Dreamer
 						["coord"] = { 74.2, 41.8, VALE_OF_ETERNAL_BLOSSOMS },
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
 						-- #if MOP
@@ -1463,8 +1471,8 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 					}),
 					q(30637, {	-- The Guo-Lai Halls
-						["qg"] = 58465,	-- Anji Autumnlight
 						["sourceQuests"] = { 30632 },	-- The Ruins of Guo-Lai
+						["qg"] = 58465,	-- Anji Autumnlight
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
 						-- #if MOP
@@ -1472,8 +1480,8 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 					q(30654, {	-- The Guo-Lai Halls
-						["qg"] = 58465,	-- Anji Autumnlight
 						["sourceQuests"] = { 30632 },	-- The Ruins of Guo-Lai
+						["qg"] = 58465,	-- Anji Autumnlight
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
 						-- #if MOP
@@ -1531,8 +1539,8 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 					}),
 					q(30645, {	-- The Might of Three
-						["qg"] = 58468,	-- Sun Tenderheart
 						["sourceQuests"] = { 30644 },	-- What Comes to Pass
+						["qg"] = 58468,	-- Sun Tenderheart
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
 						-- #if MOP
@@ -1540,8 +1548,8 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 					q(30643, {	-- The Mogu's Message
-						["qg"] = 58408,	-- Leven Dawnblade
 						["sourceQuests"] = { 30642 },	-- Battle Axe of the Thunder King
+						["qg"] = 58408,	-- Leven Dawnblade
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
 						-- #if MOP
@@ -1558,8 +1566,8 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 					q(32815, applyclassicphase(MOP_PHASE_ESCALATION, {	-- The Old Seer
-						["qg"] = 61962,	-- Lorewalker Cho
 						["sourceQuests"] = { 32807 },	-- The Warchief and the Darkness
+						["qg"] = 61962,	-- Lorewalker Cho
 						["timeline"] = { ADDED_5_3_0 },
 					})),
 					q(30237, {	-- The Pandaren Uprising Relived
@@ -1572,13 +1580,13 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 					q(30632, {	-- The Ruins of Guo-Lai
-						["qg"] = 58408,	-- Leven Dawnblade
 						["sourceQuests"] = {
 							31512,	-- A Witness to History (A)
 							31511,	-- A Witness to History (H)
 							30631,	-- The Shrine of Seven Stars (A)
 							30649,	-- The Shrine of Two Moons (H)
 						},
+						["qg"] = 58408,	-- Leven Dawnblade
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
 						-- #if MOP
@@ -1613,13 +1621,13 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 					q(30639, {	-- The Secrets of Guo-Lai
-						["qg"] = 58408,	-- Leven Dawnblade
 						["sourceQuests"] = {
 							30635,	-- Killing the Quilen
 							30636,	-- Stones of Power
 							30637,	-- The Guo-Lai Halls
 							30654,	-- The Guo-Lai Halls
 						},
+						["qg"] = 58408,	-- Leven Dawnblade
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
 						-- #if MOP
@@ -1646,8 +1654,8 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 					}),
 					q(30631, {	-- The Shrine of Seven Stars
-						["qg"] = 58468,	-- Sun Tenderheart
 						["sourceQuests"] = { 30630 },	-- Into the Vale (A)
+						["qg"] = 58468,	-- Sun Tenderheart
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
 						["races"] = ALLIANCE_ONLY,
@@ -1656,8 +1664,8 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 					q(30649, {	-- The Shrine of Two Moons
-						["qg"] = 58468,	-- Sun Tenderheart
 						["sourceQuests"] = { 33008 },	-- Into the Vale (H)
+						["qg"] = 58468,	-- Sun Tenderheart
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
 						["races"] = HORDE_ONLY,
@@ -1803,8 +1811,8 @@ root(ROOTS.Zones, {
 						["repeatable"] = true,
 					})),
 					q(30644, {	-- What Comes to Pass
-						["qg"] = 59905,	-- Zhi the Harmonious
 						["sourceQuests"] = { 30643 },	-- The Mogu's Message
+						["qg"] = 59905,	-- Zhi the Harmonious
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
 						-- #if MOP
@@ -1839,13 +1847,13 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 					q(31015, {	-- Your Private Collection
-						["qgs"] = {
-							61962,	-- Lorewalker Cho
-							63577,	-- Lorewalker Cho
-						},
 						["sourceQuests"] = {
 							31367,	-- The Lorewalkers (A)
 							31368,	-- The Lorewalkers (H)
+						},
+						["qgs"] = {
+							61962,	-- Lorewalker Cho
+							63577,	-- Lorewalker Cho
 						},
 						["coord"] = { 83.2, 29.6, VALE_OF_ETERNAL_BLOSSOMS },
 					}),

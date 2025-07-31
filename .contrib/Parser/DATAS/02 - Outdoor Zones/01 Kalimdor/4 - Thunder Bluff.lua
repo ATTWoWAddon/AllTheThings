@@ -176,8 +176,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 12,
 				}),
 				q(7825, {	-- Additional Runecloth [Thunder Bluff]
-					["qg"] = 14728,	-- Rumstag Proudstrider
 					["sourceQuest"] = 7823,	-- A Donation of Runecloth
+					["qg"] = 14728,	-- Rumstag Proudstrider
 					["coord"] = { 43.2, 42.8, THUNDER_BLUFF },
 					["maxReputation"] = { FACTION_THUNDER_BLUFF, EXALTED },	-- Thunder Bluff, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
@@ -211,8 +211,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 47,
 				}),
 				q(1845, {	-- Brutal Helm
-					["qg"] = 6410,	-- Orm Stonehoof
 					["sourceQuest"] = 1844,	-- Chimaeric Horn
+					["qg"] = 6410,	-- Orm Stonehoof
 					["coord"] = { 39, 55.8, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },
@@ -246,8 +246,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				-- #endif
 				q(1844, {	-- Chimaeric Horn
-					["qg"] = 6410,	-- Orm Stonehoof
 					["sourceQuest"] = 1840,	-- Orm Stonehoof and the Brutal Helm
+					["qg"] = 6410,	-- Orm Stonehoof
 					["coord"] = { 39, 55.8, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STONETALON_MOUNTAINS },
@@ -301,11 +301,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if NOT ANYCLASSIC
 				q(5644, {	-- Devouring Plague [Thunder Bluff]
-					["qg"] = 3044,	-- Miles Welsh <Priest Trainer>
 					["altQuests"] = {
 						5646,	-- Devouring Plague [Orgrimmar]
 						5679,	-- Devouring Plague [Undercity]
 					},
+					["qg"] = 3044,	-- Miles Welsh <Priest Trainer>
 					["coord"] = { 26.0, 15.8, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
@@ -322,19 +322,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				q(1064, {	-- Forsaken Aid
-					["qg"] = 4046,	-- Magatha Grimtotem
 					["sourceQuest"] = 1063,	-- The Elder Crone
+					["qg"] = 4046,	-- Magatha Grimtotem
 					["coord"] = { 69.85, 30.91, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 13,
 				}),
 				q(1136, {	-- Frostmaw
+					["sourceQuest"] = 1131,	-- Steelsnap
 					["providers"] = {
 						{ "n", 3441 },	-- Melor Stonehoof
 						{ "i", 5838 },	-- Kodo Skin Scroll
 					},
-					["sourceQuest"] = 1131,	-- Steelsnap
 					["coord"] = { 61.52, 80.88, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { ALTERAC_MOUNTAINS },
@@ -366,13 +366,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(768, {	-- Gathering Leather
-					["qg"] = 3050,	-- Veren Tallstrider
-					["coord"] = { 44.0, 44.6, THUNDER_BLUFF },
 					-- #if BEFORE 8.0.1
 					["description"] = "This quest becomes available at Skinning skill level 1 when the character level requirement is met.",
 					-- #else
 					["description"] = "This quest becomes available at Classic Skinning skill level 1 when the character level requirement is met.",
 					-- #endif
+					["qg"] = 3050,	-- Veren Tallstrider
+					["coord"] = { 44.0, 44.6, THUNDER_BLUFF },
 					["cost"] = { { "i", 2318, 12 } },	-- Light Leather
 					["requireSkill"] = SKINNING,
 					["races"] = HORDE_ONLY,
@@ -390,13 +390,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if NOT ANYCLASSIC
 				q(5656, {	-- Hex of Weakness [Thunder Bluff]
-					["qg"] = 3044,	-- Miles Welsh <Priest Trainer>
 					["altQuests"] = {
 						5652,	-- Hex of Weakness [Orgrimmar]
 						5654,	-- Hex of Weakness [Durotar]
 						5655,	-- Hex of Weakness [Mulgore]
 						5657,	-- Hex of Weakness [Undercity]
 					},
+					["qg"] = 3044,	-- Miles Welsh <Priest Trainer>
 					["coord"] = { 26.0, 15.8, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_2_4_1 },
 					["classes"] = { PRIEST },
@@ -413,13 +413,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				q(769, {	-- Kodo Hide Bag
-					["qg"] = 3050,	-- Veren Tallstrider
-					["coord"] = { 44, 44.6, THUNDER_BLUFF },
 					-- #if BEFORE 8.0.1
 					["description"] = "This quest becomes available at Leatherworking skill level 10 when the character level requirement is met.",
 					-- #else
 					["description"] = "This quest becomes available at Classic Leatherworking skill level 10 when the character level requirement is met.",
 					-- #endif
+					["qg"] = 3050,	-- Veren Tallstrider
+					["coord"] = { 44, 44.6, THUNDER_BLUFF },
 					["requireSkill"] = LEATHERWORKING,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
@@ -442,19 +442,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 20,
 				}),
 				q(3782, {	-- Morrowgrain Research (1/2)
+					["sourceQuest"] = 3761,	-- Un'Goro Soil
 					["providers"] = {
 						{ "n", 5769 },	-- Arch Druid Hamuul Runetotem
 						{ "i", 11103 },	-- Seed Voucher
 					},
-					["sourceQuest"] = 3761,	-- Un'Goro Soil
 					["coord"] = { 78.4, 28.4, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 47,
 				}),
 				q(3786, {	-- Morrowgrain Research (2/2)
-					["qg"] = 9087,	-- Bashana Runetotem
 					["sourceQuest"] = 3782,	-- Morrowgrain Research (1/2)
+					["qg"] = 9087,	-- Bashana Runetotem
 					["coord"] = { 70.8, 33.8, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11040, 10 } },	-- Morrowgrain
@@ -465,8 +465,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(3804, {	-- Morrowgrain to Thunder Bluff
-					["qg"] = 9087,	-- Bashana Runetotem
 					["sourceQuest"] = 3786,	-- Morrowgrain Research (2/2)
+					["qg"] = 9087,	-- Bashana Runetotem
 					["coord"] = { 70.8, 33.8, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "i", 11040, 10 } },	-- Morrowgrain
@@ -553,11 +553,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(6364, {	-- Return to Jahan / Return to Varg [CATA+]
+					["sourceQuest"] = 6363,	-- Tal the Wind Rider Master
 					["providers"] = {
 						{ "n", 2995 },	-- Tal
 						{ "i", 16283 },	-- Ahanu's Leather Goods
 					},
-					["sourceQuest"] = 6363,	-- Tal the Wind Rider Master
 					["coord"] = { 46.8, 50, THUNDER_BLUFF },
 					["maps"] = {
 						-- #if AFTER CATA
@@ -570,6 +570,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = lvlsquish(10, 10, 1),
 				}),
 				q(6362, {	-- Ride to Thunder Bluff
+					["sourceQuest"] = 6361,	-- A Bundle of Hides
 					["providers"] = {
 						-- #if AFTER CATA
 						{ "n", 40809 },	-- Tak
@@ -578,7 +579,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 						{ "i", 16282 },	-- Bundle of Hides
 					},
-					["sourceQuest"] = 6361,	-- A Bundle of Hides
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 47.4, 58.6, MULGORE },
@@ -591,11 +591,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if NOT ANYCLASSIC
 				q(5642, {	-- Shadowguard [Thunder Bluff]
-					["qg"] = 3044,	-- Miles Welsh <Priest Trainer>
 					["altQuests"] = {
 						5643,	-- Shadowguard [Undercity]
 						5680,	-- Shadowguard [Orgrimmar]
 					},
+					["qg"] = 3044,	-- Miles Welsh <Priest Trainer>
 					["coord"] = { 26.0, 15.8, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_2_4_1 },
 					["classes"] = { PRIEST },
@@ -646,8 +646,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, q(76160, {	-- Stalk With The Earthmother (2/3)
-					["qg"] = 205729,	-- Boarton Shadetotem <Rogue Trainer?>
 					["sourceQuest"] = 76156,	-- Stalk With The Earthmother (1/3)
+					["qg"] = 205729,	-- Boarton Shadetotem <Rogue Trainer?>
 					["coord"] = { 39.6, 65.6, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { MULGORE },
@@ -670,8 +670,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, q(76240, {	-- Stalk With The Earthmother (3/3)
-					["qg"] = 205729,	-- Boarton Shadetotem <Rogue Trainer?>
 					["sourceQuest"] = 76160,	-- Stalk With The Earthmother (2/3)
+					["qg"] = 205729,	-- Boarton Shadetotem <Rogue Trainer?>
 					["coord"] = { 39.6, 65.6, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { SHAMAN },
@@ -696,8 +696,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				-- #endif
 				q(1131, {	-- Steelsnap
-					["qg"] = 3441,	-- Melor Stonehoof
 					["sourceQuest"] = 1130,	-- Melor Sends Word
+					["qg"] = 3441,	-- Melor Stonehoof
 					["coord"] = { 61.51, 80.88, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THOUSAND_NEEDLES },
@@ -712,11 +712,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(6363, {	-- Tal the Wind Rider Master
+					["sourceQuest"] = 6362,	-- Ride to Thunder Bluff
 					["providers"] = {
 						{ "n", 8359 },	-- Ahanu
 						{ "i", 16283 },	-- Ahanu's Leather Goods
 					},
-					["sourceQuest"] = 6362,	-- Ride to Thunder Bluff
 					["coord"] = { 45.74, 55.86, THUNDER_BLUFF },
 					["maps"] = {
 						-- #if AFTER CATA
@@ -729,8 +729,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = lvlsquish(10, 10, 1),
 				}),
 				q(1086, {	-- The Flying Machine Airport
-					["qg"] = 3419,	-- Apothecary Zamah
 					["sourceQuest"] = 1067,	-- Return to Thunder Bluff
+					["qg"] = 3419,	-- Apothecary Zamah
 					["coord"] = { 22.85, 20.90, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STONETALON_MOUNTAINS },
@@ -789,11 +789,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(1196, {	-- The Sacred Flame (2/3)
+					["sourceQuest"] = 1195,	-- The Sacred Flame (1/3)
 					["providers"] = {
 						{ "n", 4721 },	-- Zangen Stonehoof
 						{ "i", 5868 },	-- Filled Etched Phial
 					},
-					["sourceQuest"] = 1195,	-- The Sacred Flame (1/3)
 					["coord"] = { 54.97, 51.32, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THOUSAND_NEEDLES },
@@ -801,11 +801,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 20,
 				}),
 				q(1197, {	-- The Sacred Flame (3/3)
+					["sourceQuest"] = 1196,	-- The Sacred Flame (2/3)
 					["providers"] = {
 						{ "n", 4722 },	-- Rau Cliffrunner
 						{ "i", 5868 },	-- Filled Etched Phial
 					},
-					["sourceQuest"] = 1196,	-- The Sacred Flame (2/3)
 					["coord"] = { 46.13, 51.69, THOUSAND_NEEDLES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -831,13 +831,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if NOT ANYCLASSIC
 				q(5663, {	-- Touch of Weakness [Thunder Bluff]
-					["qg"] = 3044,	-- Miles Welsh <Priest Trainer>
 					["altQuests"] = {
 						5658,	-- Touch of Weakness [Undercity]
 						5660,	-- Touch of Weakness [Durotar]
 						5661,	-- Touch of Weakness [Mulgore]
 						5662,	-- Touch of Weakness [Orgrimmar]
 					},
+					["qg"] = 3044,	-- Miles Welsh <Priest Trainer>
 					["coord"] = { 26.0, 15.8, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
@@ -854,12 +854,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				q(3761, {	-- Un'Goro Soil
-					["qg"] = 5769,	-- Arch Druid Hamuul Runetotem
 					["sourceQuests"] = {
 						936,	-- Assisting Arch Druid Runetotem [Orgrimmar]
 						3762,	-- Assisting Arch Druid Runetotem [Thunder Bluff]
 						3784,	-- Assisting Arch Druid Runetotem [Undercity]
 					},
+					["qg"] = 5769,	-- Arch Druid Hamuul Runetotem
 					["coord"] = { 78.4, 28.4, THUNDER_BLUFF },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { UNGORO_CRATER },
@@ -878,16 +878,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 12,
 				}),
 				q(26397, {	-- Walk With The Earth Mother
-					["qg"] = 36648,	-- Baine Bloodhoof <High Chieftain>
-					["altQuests"] = { 26398 },	-- Walk With The Earth Mother
 					["sourceQuest"] = 24540,	-- War Dance
+					["altQuests"] = { 26398 },	-- Walk With The Earth Mother
+					["qg"] = 36648,	-- Baine Bloodhoof <High Chieftain>
 					["coord"] = { 60.3, 51.7, THUNDER_BLUFF },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { TAUREN },
 				}),
 				q(24540, {	-- War Dance
-					["qg"] = 36648,	-- Baine Bloodhoof
 					["sourceQuest"] = 24550,	-- Journey into Thunder Bluff
+					["qg"] = 36648,	-- Baine Bloodhoof
 					["coord"] = { 60.3, 51.7, THUNDER_BLUFF },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { TAUREN },

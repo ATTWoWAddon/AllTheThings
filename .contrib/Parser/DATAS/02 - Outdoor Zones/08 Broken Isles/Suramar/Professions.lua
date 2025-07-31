@@ -44,9 +44,9 @@ root(ROOTS.Zones, {
 				}),
 				prof(TAILORING, {
 					q(44741, {	-- Return to Karazhan: The Big Bag Theory
-						["requireSkill"] = TAILORING,
-						["coord"] = { 40.4, 69.4, SURAMAR },
 						["provider"] = { "n", 93969 },	-- Leyweaver Tytallo
+						["coord"] = { 40.4, 69.4, SURAMAR },
+						["requireSkill"] = TAILORING,
 						["groups"] = {
 							i(142076),	-- Pattern: Imbued Silkweave Bag (Rank 1)
 						},

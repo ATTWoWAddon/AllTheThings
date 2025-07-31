@@ -431,22 +431,22 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					q(39502, {	-- The Fel Spire (Normal)
 						["description"] = "Finishing this quest will grant you immediate access to the Destructor's Rise on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
 						["sourceQuests"] = { 39499 },	-- Well of Souls (Normal)
+						["provider"] = { "n", 95659 },	-- Archmage Khadgar
 						["lockCriteria"] = { 1,
 							"questID", 39504,	-- The Fel Spire (Heroic)
 							"questID", 39505,	-- The Fel Spire (Mythic)
 						},
 						["DisablePartySync"] = true,
-						["provider"] = { "n", 95659 },	-- Archmage Khadgar
 						["groups"] = { i(128419) },	-- Fel Essence (QI!)
 					}),
 					q(39499, {	-- Well of Souls (Normal)
 						["description"] = "Finishing this quest will grant you immediate access to the Upper Citadel on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r\n",
+						["provider"] = { "n", 95659 },	-- Archmage Khadgar
 						["lockCriteria"] = { 1,
 							"questID", 39500,	-- Well of Souls (Heroic)
 							"questID", 39501,	-- Well of Souls (Mythic)
 						},
 						["DisablePartySync"] = true,
-						["provider"] = { "n", 95659 },	-- Archmage Khadgar
 						["groups"] = { i(128416) },	-- Soul Remnant (QI!)
 					}),
 				}),
@@ -929,8 +929,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 			d(DIFFICULTY.RAID.HEROIC, {
 				n(QUESTS, {
 					q(40962, {	-- Dark Waters
-						["qg"] = 102432,	-- Malfurion Stormrage
 						["sourceQuest"] = 40904,	-- Shadow of the Defiler
+						["qg"] = 102432,	-- Malfurion Stormrage
 						["coord"] = { 36.4, 41.6, MOONGLADE },
 						["timeline"] = { REMOVED_7_0_3 },
 						["lvl"] = 100,
@@ -948,16 +948,16 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					q(39504, {	-- The Fel Spire (Heroic)
 						["description"] = "Finishing this quest will grant you immediate access to the Destructor's Rise on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
 						["sourceQuests"] = { 39500 },	-- Well of Souls (Heroic)
+						["provider"] = { "n", 95659 },	-- Archmage Khadgar
 						["lockCriteria"] = { 1, "questID", 39505 },	-- The Fel Spire (Mythic)
 						["DisablePartySync"] = true,
-						["provider"] = { "n", 95659 },	-- Archmage Khadgar
 						["groups"] = { i(128420) },	-- Fel Essence (QI!)
 					}),
 					q(39500, {	-- Well of Souls (Heroic)
 						["description"] = "Finishing this quest will grant you immediate access to the Upper Citadel on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
+						["provider"] = { "n", 95659 },	-- Archmage Khadgar
 						["lockCriteria"] = { 1, "questID", 39501 },	-- Well of Souls (Mythic)
 						["DisablePartySync"] = true,
-						["provider"] = { "n", 95659 },	-- Archmage Khadgar
 						["groups"] = { i(128417) },	-- Soul Remnant (QI!)
 					}),
 				}),
@@ -1444,14 +1444,14 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 			d(DIFFICULTY.RAID.MYTHIC, {
 				n(QUESTS, {
 					q(39505, {	-- The Fel Spire (Mythic)
-						["provider"] = { "n", 95659 },	-- Archmage Khadgar
-						["sourceQuests"] = { 39501 },	-- Well of Souls (Mythic)
 						["description"] = "Finishing this quest will grant you immediate access to the Destructor's Rise on Mythic difficulty each week.",
+						["sourceQuests"] = { 39501 },	-- Well of Souls (Mythic)
+						["provider"] = { "n", 95659 },	-- Archmage Khadgar
 						["groups"] = { i(128421) },	-- Fel Essence (QI!)
 					}),
 					q(39501, {	-- Well of Souls (Mythic)
-						["provider"] = { "n", 95659 },	-- Archmage Khadgar
 						["description"] = "Finishing this quest will grant you immediate access to the Upper Citadel on Mythic difficulty each week.",
+						["provider"] = { "n", 95659 },	-- Archmage Khadgar
 						["groups"] = { i(128418) },	-- Soul Remnant (QI!)
 					}),
 				}),

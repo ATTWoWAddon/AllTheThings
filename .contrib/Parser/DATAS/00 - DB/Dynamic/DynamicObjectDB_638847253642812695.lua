@@ -1,4 +1,4 @@
-﻿local ObjectDB = ObjectDB; for objectID,objectData in pairs({
+local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[516414] = {
 		readable = "Red Dawn Oaths of Loyalty",
 		model = 2026834,

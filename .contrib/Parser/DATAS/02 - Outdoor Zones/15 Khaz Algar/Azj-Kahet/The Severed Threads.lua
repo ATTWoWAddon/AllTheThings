@@ -164,14 +164,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						q(83276, {	-- Saving Private Spindle
 							--["sourceQuests"] = {  },
 							["provider"] = { "n", 207471 },	-- Widow Arak'nai
-							["minReputation"] = { FACTION_THE_WEAVER, 4 },
 							["coord"] = { 55.6, 43.9, AZJ_KAHET },
+							["minReputation"] = { FACTION_THE_WEAVER, 4 },
 						}),
 						q(83277, {	-- Personal Pilfering
 							["sourceQuests"] = { 83276 },	-- Saving Private Spindle
 							["provider"] = { "n", 226019 },	-- Spindle
-							["minReputation"] = { FACTION_THE_WEAVER, 4 },
 							["coord"] = { 87.7, 59.3, NERUBAR },
+							["minReputation"] = { FACTION_THE_WEAVER, 4 },
 							["groups"] = {
 								i(225341),	-- Incriminating Dagger (QI!)
 								i(225344),	-- Incriminating Evidence (QI!)
@@ -182,14 +182,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						q(79532, {	-- Tinker, Tailor, Soldier, Spider
 							["sourceQuests"] = { 83277 },	-- Personal Pilfering
 							["provider"] = { "n", 207471 },	-- Widow Arak'nai
-							["minReputation"] = { FACTION_THE_WEAVER, 7 },
 							["coord"] = { 55.6, 43.9, AZJ_KAHET },
+							["minReputation"] = { FACTION_THE_WEAVER, 7 },
 						}),
 						q(79627, {	-- Wine and Die
 							["sourceQuests"] = { 79532 },	-- Tinker, Tailor, Soldier, Spider
 							["provider"] = { "n", 227428 },	-- Widow Arak'nai
-							["minReputation"] = { FACTION_THE_WEAVER, 7 },
 							["coord"] = { 62.9, 12.1, NERUBAR_LOWER },
+							["minReputation"] = { FACTION_THE_WEAVER, 7 },
 							["groups"] = {
 								o(453716, {	-- Cache of Expensive Libations
 									["coord"] = { 78.0, 53.0, NERUBAR },
@@ -202,8 +202,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						q(79633, {	-- The Weaver's Legacy
 							["sourceQuests"] = { 79627 },	-- Wine and Die
 							["provider"] = { "n", 216298 },	-- Meesk the Venomtongue
-							["minReputation"] = { FACTION_THE_WEAVER, 7 },
 							["coord"] = { 62.8, 22.9, NERUBAR },
+							["minReputation"] = { FACTION_THE_WEAVER, 7 },
 							["groups"] = {
 								ach(40832),	-- Leave it to Weaver
 								i(226103),	-- The Weaver's Trove
@@ -213,14 +213,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					header(HEADERS.Achievement, 40833, {	-- The General's Salute
 						q(82338, {	-- Absent Errand
 							["provider"] = { "n", 224345 },	-- Anub'azal <Lord of Heritage Forces>
-							["minReputation"] = { FACTION_THE_GENERAL, 4 },
 							["coord"] = { 55.0, 41.1, AZJ_KAHET },
+							["minReputation"] = { FACTION_THE_GENERAL, 4 },
 						}),
 						q(82339, {	-- An Honorless Kill
 							["sourceQuests"] = { 82338 },	-- Absent Errand
 							["provider"] = { "n", 223760 },	-- Ukos'via <Historical Spinner>
-							["minReputation"] = { FACTION_THE_GENERAL, 4 },
 							["coord"] = { 40.9, 33.5, NERUBAR },
+							["minReputation"] = { FACTION_THE_GENERAL, 4 },
 							["groups"] = {
 								i(225637),	-- Poisoned Dagger (QI!)
 								i(225635),	-- Zev'kall's Attrition Log (QI!)
@@ -229,20 +229,20 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						q(82121, {	-- Demand Satisfaction
 							["sourceQuests"] = { 82339 },	-- An Honorless Kill
 							["provider"] = { "n", 224345 },	-- Anub'azal <Lord of Heritage Forces>
-							["minReputation"] = { FACTION_THE_GENERAL, 7 },
 							["coord"] = { 55.0, 41.1, AZJ_KAHET },
+							["minReputation"] = { FACTION_THE_GENERAL, 7 },
 						}),
 						q(82122, {	-- Duel of the Fates
 							["sourceQuests"] = { 82121 },	-- Demand Satisfaction
 							["provider"] = { "n", 222788 },	-- Anub'azal <Lord of Heritage Forces>
-							["minReputation"] = { FACTION_THE_GENERAL, 7 },
 							["coord"] = { 46.0, 24.2, AZJ_KAHET },
+							["minReputation"] = { FACTION_THE_GENERAL, 7 },
 						}),
 						q(82123, {	-- The General's Conviction
 							["sourceQuests"] = { 82122 },	-- Duel of the Fates
 							["provider"] = { "n", 224547 },	-- Anub'azal <Lord of Heritage Forces>
-							["minReputation"] = { FACTION_THE_GENERAL, 7 },
 							["coord"] = { 46.0, 24.2, AZJ_KAHET },
+							["minReputation"] = { FACTION_THE_GENERAL, 7 },
 							["groups"] = {
 								ach(40833),	-- The General's Salute
 								i(226045),	-- The General's Trove
@@ -252,8 +252,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					header(HEADERS.Achievement, 40835, {	-- Vizier than Ever
 						q(83177, {	-- Socialized Medicine
 							["provider"] = { "n", 208782 },	-- Executor Nizrek
-							["minReputation"] = { FACTION_THE_VIZIER, 4 },
 							["coord"] = { 52.9, 46.2, NERUBAR },
+							["minReputation"] = { FACTION_THE_VIZIER, 4 },
 							["groups"] = {
 								i(224799),	-- Nizrek's potion (QI!)
 							},
@@ -261,20 +261,20 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						q(83178, {	-- Rules and Consequences
 							["sourceQuests"] = { 83177 },	-- Socialized Medicine
 							["provider"] = { "n", 208782 },	-- Executor Nizrek
-							["minReputation"] = { FACTION_THE_VIZIER, 4 },
 							["coord"] = { 52.9, 46.2, NERUBAR },
+							["minReputation"] = { FACTION_THE_VIZIER, 4 },
 						}),
 						q(82954, {	-- Knives in the Dark
 							["sourceQuests"] = { 83178 },	-- Rules and Consequences
 							["provider"] = { "n", 208782 },	-- Executor Nizrek
-							["minReputation"] = { FACTION_THE_VIZIER, 7 },
 							["coord"] = { 52.9, 46.1, NERUBAR },
+							["minReputation"] = { FACTION_THE_VIZIER, 7 },
 						}),
 						q(82953, {	-- A Cordial Invitation
 							["sourceQuests"] = { 83178 },	-- Rules and Consequences
 							["provider"] = { "n", 208782 },	-- Executor Nizrek
-							["minReputation"] = { FACTION_THE_VIZIER, 7 },
 							["coord"] = { 52.9, 46.1, NERUBAR },
+							["minReputation"] = { FACTION_THE_VIZIER, 7 },
 						}),
 						q(82955, {	-- The Vizier's Resolve
 							["sourceQuests"] = {
@@ -282,8 +282,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 								82953,	-- A Cordial Invitation
 							},
 							["provider"] = { "n", 225024 },	-- Executor Nizrek
-							["minReputation"] = { FACTION_THE_VIZIER, 7 },
 							["coord"] = { 54.7, 33.2, NERUBAR },
+							["minReputation"] = { FACTION_THE_VIZIER, 7 },
 							["groups"] = {
 								ach(40835),	-- Vizier than Ever
 								i(226100),	-- The Vizier's Trove
@@ -634,12 +634,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							84682,	-- Of Pacts and Patrons
 							TWW_ACCOUNT_CAMPAIGN_QUEST,
 						},
-						["providers"] = {
-							{ "n", 223750 },	-- Lady Vinazian
-							{ "n", 220867 },	-- Y'tekhi
+						["sourceQuestNumRequired"] = 1,
+						["qgs"] = {
+							223750,	-- Lady Vinazian
+							220867,	-- Y'tekhi
 						},
 						["coord"] = { 55.2, 41, AZJ_KAHET },
-						["sourceQuestNumRequired"] = 1,
 					}),
 					q(80671, {	-- Blade of the General
 						["sourceQuests"] = {
@@ -647,11 +647,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							80592,	-- Forge a Pact
 						},
 						["sourceQuestNumRequired"] = 1,
-						["providers"] = {
-							{ "n", 224729 },	-- Anub'okki
-							{ "n", 229184 },	-- Aspirant Kiipka
-							{ "n", 223750 },	-- Lady Vinazian
-							{ "n", 220867 },	-- Y'tekhi
+						["qgs"] = {
+							224729,	-- Anub'okki
+							229184,	-- Aspirant Kiipka
+							223750,	-- Lady Vinazian
+							220867,	-- Y'tekhi
 						},
 						["coords"] = {
 							{ 55.2, 41, AZJ_KAHET },
@@ -669,7 +669,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							}),
 							i(239122, {	-- The General's War Chest (S2)
 								["sym"] = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Khaz Algar Zone Rewards content]
-								["timeline"] = { ADDED_11_1_0_SEASONSTART },
+								["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
+								["groups"] = {
+									i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace (RECIPE!)
+									i(223135),	-- Formula: Illusory Adornment: Shadow (RECIPE!)
+									i(227281),	-- Recipe: Feast of the Midnight Masquerade (RECIPE!)
+								},
+							}),
+							i(250767, {	-- The General's War Chest (S3)
+								["sym"] = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Khaz Algar Zone Rewards content]
+								["timeline"] = { ADDED_11_2_0_SEASONSTART },
 								["groups"] = {
 									i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace (RECIPE!)
 									i(223135),	-- Formula: Illusory Adornment: Shadow (RECIPE!)
@@ -684,9 +693,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							80592,	-- Forge a Pact
 						},
 						["sourceQuestNumRequired"] = 1,
-						["providers"] = {
-							{ "n", 223750 },	-- Lady Vinazian
-							{ "n", 220867 },	-- Y'tekhi
+						["qgs"] = {
+							223750,	-- Lady Vinazian
+							220867,	-- Y'tekhi
 						},
 						["coord"] = { 55.2, 41, AZJ_KAHET },
 						["groups"] = {
@@ -701,7 +710,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							}),
 							i(239124, {	-- The Vizier's Capital (S2)
 								["sym"] = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Khaz Algar Zone Rewards content]
-								["timeline"] = { ADDED_11_1_0_SEASONSTART },
+								["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
+								["groups"] = {
+									i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace (RECIPE!)
+									i(223135),	-- Formula: Illusory Adornment: Shadow (RECIPE!)
+									i(227281),	-- Recipe: Feast of the Midnight Masquerade (RECIPE!)
+								},
+							}),
+							i(250768, {	-- The Vizier's Capital (S3)
+								["sym"] = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Khaz Algar Zone Rewards content]
+								["timeline"] = { ADDED_11_2_0_SEASONSTART },
 								["groups"] = {
 									i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace (RECIPE!)
 									i(223135),	-- Formula: Illusory Adornment: Shadow (RECIPE!)
@@ -716,9 +734,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							80592,	-- Forge a Pact
 						},
 						["sourceQuestNumRequired"] = 1,
-						["providers"] = {
-							{ "n", 223750 },	-- Lady Vinazian
-							{ "n", 220867 },	-- Y'tekhi
+						["qgs"] = {
+							223750,	-- Lady Vinazian
+							220867,	-- Y'tekhi
 						},
 						["coord"] = { 55.2, 41, AZJ_KAHET },
 						["groups"] = {
@@ -733,7 +751,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							}),
 							i(239125, {	-- The Weaver's Gratuity (S2)
 								["sym"] = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Khaz Algar Zone Rewards content]
-								["timeline"] = { ADDED_11_1_0_SEASONSTART },
+								["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
+								["groups"] = {
+									i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace (RECIPE!)
+									i(223135),	-- Formula: Illusory Adornment: Shadow (RECIPE!)
+									i(227281),	-- Recipe: Feast of the Midnight Masquerade (RECIPE!)
+								},
+							}),
+							i(250769, {	-- The Weaver's Gratuity (S3)
+								["sym"] = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Khaz Algar Zone Rewards content]
+								["timeline"] = { ADDED_11_2_0_SEASONSTART },
 								["groups"] = {
 									i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace (RECIPE!)
 									i(223135),	-- Formula: Illusory Adornment: Shadow (RECIPE!)
@@ -1367,50 +1394,50 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			-- Quest Givers or "Rumor Givers" are Eirzay <Agent of the General>, Ghos'opp <Agent of the Vizier>, Ru'murh <Agent of the Weaver>
 			-- Different rumors can trigger the same HQTs as commented below. They are not triggered until you talk to the NPC that gives you the rumor
 			q(82581, {	-- Ru'murh  (n: 224199 @ 45.6, 51.0), starts questID 81483 (Infiltration: Production Blocker)
+				["name"] = "You heard a rumor. Go and investigate.",
 					-- Ghos'opp (n: 224183 @ 64.5, 87.3), starts questID 81481 (Sabotage: Transformatory Vessels)
 					-- Ru'murh  (n: 224192 @ 79.7, 56.8), starts questID 81500 (Wet Work: Step Into Their Parlor)
 					-- Ru'murh  (n: 224191 @ 68.6, 51.1), starts questID 81484 (Wet Work: Death of a Salesman)
 					-- Ru'murh  (n: 224193 @ 55.0, 26.6), starts questID 80573 (Dropping Eaves: Spoils of War)
 					-- Ghos'opp (n: 224187 @ 50.6, 47.1), starts questID 81482 (Testing Formulae: Gelatinous Unguent)
 					-- Ru'murh  (n: 224196 @ 77.8, 53.7), starts questID 81473 (Information Control: The Right Side of History)
-				["name"] = "You heard a rumor. Go and investigate.",
 			}),
 			q(82640, {	-- Ru'murh  (n: 224190 @ 41.5, 22.4), starts questID 81555 (Wet Work: Tithe to Kill)
+				["name"] = "You heard a rumor. Go and investigate.",
 					-- Ghos'opp (n: 224186 @ 54.5, 15.5), starts questID 81506 (Sabotage: Alchemical Instruments)
 					-- Ghos'opp (n: 224178 @ 64.2, 21.2), starts questID 81495 (Requisitions: Brightblooms)
 					-- Ghos'opp (n: 224188 @ 47.9,  9.7), starts questID 81501 (Testing Formulae: Roiling Elixir)
 					-- Ru'murh  (n: 224194 @ 70.3, 31.8), starts questID 81470 (Dropping Eaves: Thieving Weave)
 					-- Ghos'opp (n: 224177 @ 52.0, 16.6), starts questID 81479 (Requisitions: Umbrashrooms)
 					-- Ru'murh  (n: 224198 @ 54.8, 34.5), starts questID 81499 (Information Control: Ascended Intrigue)
-				["name"] = "You heard a rumor. Go and investigate.",
 			}),
 			q(82642, {	-- Eirzay   (n: 224161 @ 43.0, 47.2), starts questID 81475 (Breaking the Phalanx: Royal Appointments)
+				["name"] = "You heard a rumor. Go and investigate.",
 					-- Ghos'opp (n: 224189 @ 30.9, 23.0), starts questID 81502 (Testing Formulae: Malodorous Philter)
 					-- Eirzay   (n: 224162 @ 33.3, 49.1), starts questID 81487 (Breaking the Phalanx: Threadblades)
 					-- Eirzay   (n: 224163 @ 27.9, 56.7), starts questID 81488 (Breaking the Phalanx: Schismatic Sages)
 					-- Eirzay   (n: 224167 @ 15.6, 45.7), starts questID 81489 (Bounty: Zorikal the Patron)
 					-- Ghos'opp (n: 224184 @ 39.5, 51.4), starts questID 81505 (Sabotage: Venomancers)
 					-- Ru'murh  (n: 224195 @ 73.3, 50.9), starts questID 81471 (Dropping Eaves: Saving the Past)
-				["name"] = "You heard a rumor. Go and investigate.",
 			}),
 			q(82644, {	-- Ru'murh  (n: 224197 @ 55.7, 47.8), starts questID 81472 (Information Control: Ansurek's Truth)
+				["name"] = "You heard a rumor. Go and investigate.",
 					-- Ghos'opp (n: 224179 @ 49.2, 51.8), starts questID 81496 (Requisitions: Fangpetals)
 					-- Eirzay   (n: 224166 @ 50.4, 74.0), starts questID 81476 (Bounty: Chitinous Goliath)
 					-- Eirzay   (n: 224168 @ 49.7, 44.3), starts questID 81490 (Bounty: Balaxir the Bully)
 					-- Eirzay   (n: 224171 @ 61.3, 36.2), starts questID 81491 (Armaments: Arbalests)
-				["name"] = "You heard a rumor. Go and investigate.",
 			}),
 			q(82646, {	-- Eirzay   (n: 224172 @ 54.5, 63.6), starts questID 81492 (Armaments: Smithing Tools)
+				["name"] = "You heard a rumor. Go and investigate.",
 					-- Eirzay   (n: 224176 @ 61.4, 24.1), starts questID 81494 (Relics of War: Rak-Zakaz)
 					-- Eirzay   (n: 224173 @ 36.4, 49.2), starts questID 81478 (Relics of War: The Ruptured Lake)
 					-- Ru'murh  (n: 224201 @ 77.5, 42.9), starts questID 81504 (Infiltration: Hidden Figures)
-				["name"] = "You heard a rumor. Go and investigate.",
 			}),
 			q(82648, {	-- Ru'murh  (n: 224200 @ 64.2, 75.3), starts questID 81503 (Infiltration: Terror Made Manifest)
+				["name"] = "You heard a rumor. Go and investigate.",
 					-- Ghos'opp (n: 224182 @ 65.1, 78.8), starts questID 81480 (Wild Reagents: Maddening Deep)
 					-- Ghos'opp (n: 224180 @ 47.2, 58.8), starts questID 81498 (Wild Reagents: Twitching Gorge)
 					-- Ghos'opp (n: 224181 @ 61.1, 74.4), starts questID 81497 (Wild Reagents: Salien Gutters)
-				["name"] = "You heard a rumor. Go and investigate.",
 			}),
 			q(79698),	-- Triggered after completing questID 79627 (Wine and Die)
 			-- q(80688),	-- triggered after completing task for a 'Rumor' (re-capture and narrow down)

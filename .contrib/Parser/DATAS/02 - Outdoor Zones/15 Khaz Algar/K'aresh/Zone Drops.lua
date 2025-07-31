@@ -4,6 +4,7 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, {
 	m(KARESH, {
 		n(ZONE_DROPS, {
+			-- * Means not confirmed yet
 			filter(CLOTH, {
 				i(244484),	-- Worn Shadowguard Seer's Bands
 				i(244483),	-- Worn Shadowguard Seer's Cord
@@ -13,6 +14,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				i(244478),	-- Worn Shadowguard Seer's Slippers
 				i(244482),	-- Worn Shadowguard Seer's Spines
 				i(244477),	-- Worn Shadowguard Seer's Vestments
+			}),
+			filter(FINGER_F, {
+				i(244473),	-- Worn Shadowguard Band*
+				i(244475),	-- Worn Shadowguard Loop*
+				i(244474),	-- Worn Shadowguard Signet*
 			}),
 			filter(LEATHER, {
 				i(244491),	-- Worn Shadowguard Blade's Belt
@@ -34,6 +40,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				i(244498),	-- Worn Shadowguard Striker's Pauldrons
 				i(244499),	-- Worn Shadowguard Striker's Sash
 			}),
+			filter(NECK_F, {
+				i(244476),	-- Worn Shadowguard Pendant*
+			}),
 			filter(PLATE, {
 				i(244501),	-- Worn Shadowguard Captain's Breastplate
 				i(244506),	-- Worn Shadowguard Captain's Epaulettes
@@ -45,26 +54,25 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				i(244508),	-- Worn Shadowguard Captain's Vambraces
 			}),
 			n(WEAPONS, {
-				--TODO: uncomment what is confirmed & clear from unsorted
 				i(244526),	-- Worn Shadowguard Bastion
-				--i(244520),	-- Worn Shadowguard Bident
-				--i(244524),	-- Worn Shadowguard Blade
-				--i(244518),	-- Worn Shadowguard Blaster
-				--i(244510),	-- Worn Shadowguard Carver
-				--i(244525),	-- Worn Shadowguard Censer
+				i(244520),	-- Worn Shadowguard Bident
+				i(244524),	-- Worn Shadowguard Blade*
+				i(244518),	-- Worn Shadowguard Blaster*
+				i(244510),	-- Worn Shadowguard Carver*
+				i(244525),	-- Worn Shadowguard Censer*
 				i(244511),	-- Worn Shadowguard Chopper
-				--i(244509),	-- Worn Shadowguard Cleaver
-				--i(244516),	-- Worn Shadowguard Falchion
+				i(244509),	-- Worn Shadowguard Cleaver*
+				i(244516),	-- Worn Shadowguard Falchion*
 				i(244523),	-- Worn Shadowguard Greatsword
 				i(244513),	-- Worn Shadowguard Kris
-				--i(244517),	-- Worn Shadowguard Longsword
-				--i(244514),	-- Worn Shadowguard Mace
-				--i(244521),	-- Worn Shadowguard Pole
-				--i(244519),	-- Worn Shadowguard Spear
-				--i(244522),	-- Worn Shadowguard Staff
+				i(244517),	-- Worn Shadowguard Longsword*
+				i(244514),	-- Worn Shadowguard Mace*
+				i(244521),	-- Worn Shadowguard Pole*
+				i(244519),	-- Worn Shadowguard Spear*
+				i(244522),	-- Worn Shadowguard Staff*
 				i(244512),	-- Worn Shadowguard Stiletto
-				--i(244527),	-- Worn Shadowguard Warglaive
-				--i(244515),	-- Worn Shadowguard Warmace
+				i(244527),	-- Worn Shadowguard Warglaive*
+				i(244515),	-- Worn Shadowguard Warmace*
 			}),
 		}),
 	}),

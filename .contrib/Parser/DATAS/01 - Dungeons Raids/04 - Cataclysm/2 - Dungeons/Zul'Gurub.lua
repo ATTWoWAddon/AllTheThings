@@ -242,9 +242,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 								},
 							}),
 							q(74576, {	-- Restored Hakkari Bijou
+								["description"] = " Collect both, combine them & deliver them to Rin'wosho in Zandalar at 55.0 86.8",
 								["provider"] = { "i", 203737 },	-- Restored Hakkari Bijou
 								["coord"] = { 55.0, 86.8, DAZARALOR },
-								["description"] = " Collect both, combine them & deliver them to Rin'wosho in Zandalar at 55.0 86.8",
 							}),
 							q(74697, {	-- Sandfury, Skullsplitter, and Bloodscalp Coins
 								["qg"] = 143138,	-- Rin'wosho the Trader
@@ -603,13 +603,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 				}),
 				n(QUESTS, {
 					q(29155, {	-- A Shiny Reward
-						["qgs"] = {
-							2496,	-- Baron Revilgaz
-							53151,	-- Overseer Blingbang
-						},
 						["sourceQuests"] = {
 							29153,	-- Booty Bay's Interests
 							29154,	-- Booty Bay's Interests
+						},
+						["qgs"] = {
+							2496,	-- Baron Revilgaz
+							53151,	-- Overseer Blingbang
 						},
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -625,13 +625,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						},
 					}),
 					q(29253, {	-- A Shiny Reward
-						["qgs"] = {
-							2496,	-- Baron Revilgaz
-							53151,	-- Overseer Blingbang
-						},
 						["sourceQuests"] = {
 							29251,	-- Booty Bay's Interests
 							29252,	-- Booty Bay's Interests
+						},
+						["qgs"] = {
+							2496,	-- Baron Revilgaz
+							53151,	-- Overseer Blingbang
 						},
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -647,11 +647,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						},
 					}),
 					q(29208, {	-- An Old Friend
-						["qg"] = 52877,	-- Lashtail Hatchling
 						["sourceQuests"] = {
 							26775,	-- Be Raptor [Alliance]
 							26362,	-- Be Raptor [Horde]
 						},
+						["qg"] = 52877,	-- Lashtail Hatchling
 						["groups"] = {
 							i(69251, {	-- Lashtail Hatchling (PET!)
 								["timeline"] = { ADDED_4_1_0 },
@@ -682,8 +682,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						["qg"] = 53023,	-- Bloodslayer T'ara
 					}),
 					q(29262, {	-- Zul'Gurub Voodoo
-						["provider"] = { "o", 208550 },	-- Voodoo Pile
 						["description"] = "You need 425 Archaeology and a Troll Tablet to activate the \"Call of the Raptor\" buff which summons raptor hatchlings to attack your enemies.",
+						["provider"] = { "o", 208550 },	-- Voodoo Pile
 						["isDaily"] = true,
 					}),
 				}),

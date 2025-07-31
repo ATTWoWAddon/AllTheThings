@@ -8,8 +8,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				q(63199, {	-- Hunt: Alpha Devourers
 					["name"] = "Hunt: Alpha Devourers",
 					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
-					["crs"] = { 175851 },	-- Alpha Anima Devourer
 					["isWeekly"] = true,
+					["crs"] = { 175851 },	-- Alpha Anima Devourer
 					["groups"] = {
 						i(184586),	-- Sky Chain
 					},
@@ -17,14 +17,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				q(63198, {	-- Hunt: Death Elementals
 					["name"] = "Hunt: Death Elementals",
 					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
-					["crs"] = { 172962 },	-- Tempered Stygia
 					["isWeekly"] = true,
+					["crs"] = { 172962 },	-- Tempered Stygia
 				}),
 				q(63180, {	-- Hunt: Shadehounds
 					["name"] = "Hunt: Shadehounds",
 					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
-					["crs"] = { 174861 },	-- Gorged Shadehound
 					["isWeekly"] = true,
+					["crs"] = { 174861 },	-- Gorged Shadehound
 					["groups"] = {
 						n(174861, {	-- Gorged Shadehound
 							["isWeekly"] = true,
@@ -39,9 +39,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				}),
 				q(63194, {	-- Hunt: Winged Soul Eaters
 					["name"] = "Hunt: Winged Soul Eaters",
-					["crs"] = { 173195 },	-- Undying Soulbinder
 					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
 					["isWeekly"] = true,
+					["crs"] = { 173195 },	-- Undying Soulbinder
 				}),
 			}),
 			header(HEADERS.Quest, 64305, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- The Tormentors of Torghast

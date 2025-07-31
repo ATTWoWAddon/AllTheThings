@@ -21,6 +21,9 @@ timeFormatter:Init(1, SecondsFormatter.Abbreviation.Truncate);
 local GetRelativeValue, SearchForField, SearchForObject = app.GetRelativeValue, app.SearchForField, app.SearchForObject
 local distance = app.distance
 local Callback = app.CallbackHandlers.Callback
+local function CleanColor(text)
+	return text:gsub("|c%x%x%x%x%x%x%x%x",""):gsub("|r","")
+end
 
 -- Module locals (can be set via OnLoad if they do not change during Session but are not yet defined)
 local SearchForLink, GetPlayerPosition
@@ -40,91 +43,88 @@ local function OnLoad_CacheObjectNames()
 		end
 	end
 end
-local function GetObjectIDsByName(name)
-	if not name then return end
-	return objectNamesToIDs[name:trim():lower()]
-end
 local GetBestObjectIDForName;
 if app.IsRetail then
 	local InGame = app.Modules.Filter.Filters.InGame
 	GetBestObjectIDForName = function(name)
 		-- Uses a provided 'name' and scans the ObjectDB to find potentially matching ObjectID's,
 		-- then correlate those search results by closest distance to the player's current position
-		local o = GetObjectIDsByName(name)
-		if o and #o > 0 then
-			local mapID, px, py = GetPlayerPosition();
-			-- if we don't know where the player is, we have literally no way to reduce the set of matching objects by name
-			if not mapID then
-				return o[1]
-			end
-			local closestDistance = 99999
-			local closestObjectID, mappedObjectID, unmappedObjectID, dist, searchCoord
-			-- app.PrintDebug("Checking objects",#o,mapID,px,py)
-			for i,objectID in ipairs(o) do
-				-- SFO includes baked-in accessibility filtering/prioritization of the results
-				local searchResults = SearchForObject("objectID", objectID, "any", true);
-				if searchResults and #searchResults > 0 then
-					-- app.PrintDebug("Checking results",#searchResults,objectID)
-					for j,searchResult in ipairs(searchResults) do
-						if InGame(searchResult) then
-							searchCoord = searchResult.coord;
-							if searchCoord then
-								if searchCoord[3] == mapID then
-									dist = distance(px, py, searchCoord[1], searchCoord[2]);
+		name = name:trim():lower()
+		local o = objectNamesToIDs[name] or objectNamesToIDs[CleanColor(name)]
+		if not o or #o == 0 then return end
+
+		local mapID, px, py = GetPlayerPosition();
+		-- if we don't know where the player is, we have literally no way to reduce the set of matching objects by name
+		if not mapID then
+			return o[1]
+		end
+		local closestDistance = 99999
+		local closestObjectID, mappedObjectID, unmappedObjectID, dist, searchCoord
+		-- app.PrintDebug("Checking objects",#o,mapID,px,py)
+		for i,objectID in ipairs(o) do
+			-- SFO includes baked-in accessibility filtering/prioritization of the results
+			local searchResults = SearchForObject("objectID", objectID, "any", true);
+			if searchResults and #searchResults > 0 then
+				-- app.PrintDebug("Checking results",#searchResults,objectID)
+				for j,searchResult in ipairs(searchResults) do
+					if InGame(searchResult) then
+						searchCoord = searchResult.coord;
+						if searchCoord then
+							if searchCoord[3] == mapID then
+								dist = distance(px, py, searchCoord[1], searchCoord[2]);
+								if dist and dist < closestDistance then
+									closestDistance = dist;
+									closestObjectID = objectID;
+								end
+							end
+						elseif searchResult.coords then
+							for k,coord in ipairs(searchResult.coords) do
+								if coord[3] == mapID then
+									dist = distance(px, py, coord[1], coord[2]);
 									if dist and dist < closestDistance then
 										closestDistance = dist;
 										closestObjectID = objectID;
 									end
 								end
-							elseif searchResult.coords then
-								for k,coord in ipairs(searchResult.coords) do
-									if coord[3] == mapID then
-										dist = distance(px, py, coord[1], coord[2]);
-										if dist and dist < closestDistance then
-											closestDistance = dist;
-											closestObjectID = objectID;
-										end
-									end
+							end
+						end
+						-- if we haven't found any object by coord-distance, we can check the hierarchy for matching Location-based mapID
+						if not closestObjectID and not mappedObjectID then
+							-- check the parent hierarchy for a map or maps
+							local hierarchyMaps
+							local hierarchyMapID = app.GetRelativeValue(searchResult, "mapID")
+							-- app.PrintDebug("Check hierarchy map",app:SearchLink(searchResult),hierarchyMapID)
+							if hierarchyMapID == mapID then
+								-- app.PrintDebug("Object by hierarchy map",app:SearchLink(searchResult),hierarchyMapID)
+								mappedObjectID = objectID
+							else
+								hierarchyMaps = app.GetRelativeValue(searchResult, "maps")
+								-- app.PrintDebug("Check hierarchy maps",app:SearchLink(searchResult),hierarchyMaps and #hierarchyMaps)
+								if hierarchyMaps and app.contains(hierarchyMaps, mapID) then
+									-- app.PrintDebug("Object by hierarchy maps",app:SearchLink(searchResult),hierarchyMapID)
+									mappedObjectID = objectID
 								end
 							end
-							-- if we haven't found any object by coord-distance, we can check the hierarchy for matching Location-based mapID
-							if not closestObjectID and not mappedObjectID then
-								-- check the parent hierarchy for a map or maps
-								local hierarchyMaps
-								local hierarchyMapID = app.GetRelativeValue(searchResult, "mapID")
-								-- app.PrintDebug("Check hierarchy map",app:SearchLink(searchResult),hierarchyMapID)
-								if hierarchyMapID == mapID then
-									-- app.PrintDebug("Object by hierarchy map",app:SearchLink(searchResult),hierarchyMapID)
-									mappedObjectID = objectID
-								else
-									hierarchyMaps = app.GetRelativeValue(searchResult, "maps")
-									-- app.PrintDebug("Check hierarchy maps",app:SearchLink(searchResult),hierarchyMaps and #hierarchyMaps)
-									if hierarchyMaps and app.contains(hierarchyMaps, mapID) then
-										-- app.PrintDebug("Object by hierarchy maps",app:SearchLink(searchResult),hierarchyMapID)
-										mappedObjectID = objectID
-									end
-								end
-								-- if we also haven't found any map-based object, then this object is unmapped
-								-- but only save as unmapped if the checked object also has no known map relationship
-								if not hierarchyMaps and not hierarchyMapID then
-									unmappedObjectID = objectID
-								end
+							-- if we also haven't found any map-based object, then this object is unmapped
+							-- but only save as unmapped if the checked object also has no known map relationship
+							if not hierarchyMaps and not hierarchyMapID then
+								unmappedObjectID = objectID
 							end
 						end
 					end
 				end
 			end
-			-- When player has a valid position, only return valid objects or if there's an unmapped object which matches
-			-- app.PrintDebug(closestObjectID, mappedObjectID, unmappedObjectID)
-			return closestObjectID or mappedObjectID or unmappedObjectID;
 		end
+		-- When player has a valid position, only return valid objects or if there's an unmapped object which matches
+		-- app.PrintDebug(closestObjectID, mappedObjectID, unmappedObjectID)
+		return closestObjectID or mappedObjectID or unmappedObjectID;
 	end
 else
 	GetBestObjectIDForName = function(name)
 		-- Uses a provided 'name' and scans the ObjectDB to find potentially matching ObjectID's,
 		-- then correlate those search results by closest distance to the player's current position
 		--print("GetBestObjectIDForName:", "'" .. (name or RETRIEVING_DATA) .. "'");
-		local o = GetObjectIDsByName(name)
+		local o = objectNamesToIDs[name:trim():lower()]
 		if o and #o > 0 then
 			local objects = {};
 			local mapID, px, py = GetPlayerPosition();

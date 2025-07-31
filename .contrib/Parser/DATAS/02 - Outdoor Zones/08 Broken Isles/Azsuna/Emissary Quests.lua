@@ -7,8 +7,8 @@ root(ROOTS.Zones, {
 		m(AZSUNA, {
 			n(EMISSARY_QUESTS, {
 				q(42420, {	-- Court of Farondis
-					["isWorldQuest"] = true,
 					["provider"] = { "n", 107376 },	-- Veridis Fallon <Court of Farondis Emissary>
+					["isWorldQuest"] = true,
 					["groups"] = {
 						i(157825, {	-- Farondis Lockbox
 							["sym"] = {
@@ -45,8 +45,8 @@ root(ROOTS.Zones, {
 					},
 				}),
 				q(46745, bubbleDownSelf({ ["minReputation"] = { FACTION_COURT_OF_FARONDIS, EXALTED }}, {	-- Supplies from the Court
-					["repeatable"] = true,
 					["provider"] = { "n", 107376 },	-- Veridis Fallon <Court of Farondis Emissary>
+					["repeatable"] = true,
 					["groups"] = {
 						i(152102, {	-- Farondis Chest
 							i(147806),	-- Cloudwing Hippogryph (MOUNT!)
@@ -60,8 +60,8 @@ root(ROOTS.Zones, {
 					},
 				})),
 				q(46749, bubbleDownSelf({ ["minReputation"] = { FACTION_THE_WARDENS, EXALTED }}, {	-- Supplies From the Wardens
-					["repeatable"] = true,
 					["provider"] = { "n", 107379 },	-- Marin Bladewing <Wardens Emissary>
+					["repeatable"] = true,
 					["groups"] = {
 						i(152107, {	-- Warden's Supply Kit
 							i(147843),	-- Sira's Extra Cloak (TOY!)
@@ -75,8 +75,8 @@ root(ROOTS.Zones, {
 					},
 				})),
 				q(42422, {	-- The Wardens
-					["repeatable"] = true,
 					["provider"] = { "n", 107379 },	-- Marin Bladewing <Wardens Emissary>
+					["repeatable"] = true,
 					["groups"] = {
 						i(157827, {	-- Warden's Field Kit
 							["sym"] = {

@@ -6,22 +6,22 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 	m(THE_AZURE_SPAN, {
 		petbattles({
 			q(70732, {	-- A Practice Bout
-				["qg"] = 196069,	-- Patchu
 				["sourceQuest"] = 70722,	-- What Lubbins Needs
+				["qg"] = 196069,	-- Patchu
 				["coord"] = { 13.9, 49.8, THE_AZURE_SPAN },
 				["timeline"] = { ADDED_10_0_2_LAUNCH },
 				["_drop"] = { "g" },	-- Drop Ultimate Battle-Training Stone
 			}),
 			q(70849, {	-- This Calls for a Specialist
-				["qg"] = 196069,	-- Patchu
 				["sourceQuest"] = 70732,	-- A Practice Bout
+				["qg"] = 196069,	-- Patchu
 				["coord"] = { 13.9, 49.8, THE_AZURE_SPAN },
 				["timeline"] = { ADDED_10_0_2_LAUNCH },
 				["maps"] = { THE_WAKING_SHORES },
 			}),
 			q(70722, {	-- What Lubbins Needs
-				["qg"] = 196069,	-- Patchu
 				["sourceQuest"] = 70697,	-- An Expert Opinion
+				["qg"] = 196069,	-- Patchu
 				["coord"] = { 13.9, 49.8, THE_AZURE_SPAN },
 				["timeline"] = { ADDED_10_0_2_LAUNCH },
 				["_drop"] = { "g" },	-- Drop Polished Pet Charm

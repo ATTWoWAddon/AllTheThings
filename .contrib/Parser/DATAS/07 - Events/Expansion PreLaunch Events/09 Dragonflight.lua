@@ -32,20 +32,20 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 		}),
 		n(QUESTS, {
 			q(70050, {	-- Chasing Storms [A]
-				["provider"] = { "n", 189077 },	-- Toddy Whiskers
 				["sourceQuests"] = { 66596 },	-- Whispers in the Winds [A]
+				["provider"] = { "n", 189077 },	-- Toddy Whiskers
 				["coord"] = { 22.8, 55.8, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(69944, {	-- Chasing Storms [H]
-				["provider"] = { "n", 197279 },	-- Naleidea Rivergleam
 				["sourceQuests"] = { 65439 },	-- Whispers in the Winds [H]
+				["provider"] = { "n", 197279 },	-- Naleidea Rivergleam
 				["coord"] = { 55.8, 12.6, DUROTAR },
 				["races"] = HORDE_ONLY,
 			}),
 			q(70048, {	-- A Primal Threat [A]
-				["provider"] = { "n", 193450 },	-- Archmage Khadgar
 				["sourceQuests"] = { 66596 },	-- Whispers in the Winds [A]
+				["provider"] = { "n", 193450 },	-- Archmage Khadgar
 				["coord"] = { 23.0, 56.0, STORMWIND_CITY },
 				["groups"] = {
 					i(192493),	-- Mote of Primal Energy (QI!)
@@ -54,8 +54,8 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				},
 			}),
 			q(69923, {	-- A Primal Threat [H]
-				["provider"] = { "n", 193450 },	-- Archmage Khadgar
 				["sourceQuests"] = { 65439 },	-- Whispers in the Winds [H]
+				["provider"] = { "n", 193450 },	-- Archmage Khadgar
 				["coord"] = { 55.9, 12.6, DUROTAR },
 				["groups"] = {
 					i(192493),	-- Mote of Primal Energy (QI!)
@@ -64,22 +64,22 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				},
 			}),
 			q(70055, {	-- Sigil of Storms [A]
-				["provider"] = { "i", 198352 },	-- Sigil of Storms [A]
 				["sourceQuests"] = { 70050 },	-- Chasing Storms [A]
+				["provider"] = { "i", 198352 },	-- Sigil of Storms [A]
 				["groups"] = {
 					i(199211),	-- Primeval Essence
 				},
 			}),
 			q(69992, {	-- Sigil of Storms [H]
-				["provider"] = { "i", 198080 },	-- Sigil of Storms [H]
 				["sourceQuests"] = { 69944 },	-- Chasing Storms [H]
+				["provider"] = { "i", 198080 },	-- Sigil of Storms [H]
 				["groups"] = {
 					i(199211),	-- Primeval Essence
 				},
 			}),
 			q(70049, {	-- Calming the Storms [A]
-				["provider"] = { "n", 193450 },	-- Archmage Khadgar
 				["sourceQuests"] = { 70048 },	-- A Primal Threat [A]
+				["provider"] = { "n", 193450 },	-- Archmage Khadgar
 				["coord"] = { 23.0, 56.0, STORMWIND_CITY },
 				["isDaily"] = true,
 				["groups"] = {
@@ -87,8 +87,8 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				},
 			}),
 			q(69925, {	-- Calming the Storms [H]
-				["provider"] = { "n", 193450 },	-- Archmage Khadgar
 				["sourceQuests"] = { 69923 },	-- A Primal Threat [H]
+				["provider"] = { "n", 193450 },	-- Archmage Khadgar
 				["coord"] = { 55.9, 12.6, DUROTAR },
 				["isDaily"] = true,
 				["groups"] = {
@@ -96,8 +96,8 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				},
 			}),
 			q(66458, {	-- Legacy of Tyr: Secrets of the Past [A]
-				["provider"] = { "n", 189569 },	-- Wrathion <The Black Prince>
 				["sourceQuests"] = { 66596 },	-- Whispers on the Winds [A]
+				["provider"] = { "n", 189569 },	-- Wrathion <The Black Prince>
 				["coord"] = { 22.9, 56.0, STORMWIND_CITY },
 				["groups"] = {
 					i(201303),	-- Beheader's Poleaxe
@@ -111,8 +111,8 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				},
 			}),
 			q(66586, {	-- Legacy of Tyr: Secrets of the Past [H]
-				["provider"] = { "n", 190239 },	-- Ebyssian
 				["sourceQuests"] = { 65439 },	-- Whispers in the Winds [H]
+				["provider"] = { "n", 190239 },	-- Ebyssian
 				["coord"] = { 55.8, 12.1, DUROTAR },
 				["groups"] = {
 					i(201303),	-- Beheader's Poleaxe

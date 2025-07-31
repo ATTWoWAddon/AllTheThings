@@ -817,8 +817,8 @@ root(ROOTS.ExpansionFeatures,
 							}),
 							n(QUESTS, {	-- Questlines
 								q(54050, {	-- Aftermath
-									["provider"] = { "n", 146601 },	-- Sira Moonwarden
 									["sourceQuest"] = 54049,	-- The Dead of Night
+									["provider"] = { "n", 146601 },	-- Sira Moonwarden
 									["coord"] = { 54.6, 20.8, 1333 },
 									["races"] = HORDE_ONLY,
 									["groups"] = {
@@ -826,16 +826,16 @@ root(ROOTS.ExpansionFeatures,
 									},
 								}),
 								q(54006, {	-- A New Hope (A)
-									["provider"] = { "n", 149418 },	-- Maiev Shadowsong
 									["sourceQuest"] = 54871,	-- We Are Coming
+									["provider"] = { "n", 149418 },	-- Maiev Shadowsong
 									["races"] = ALLIANCE_ONLY,
 									["groups"] = {
 										i(166525),	-- Nightwreathed Egg
 									},
 								}),
 								q(54044, {	-- Black Moon Rising
-									["provider"] = { "n", 146323 },	-- Nathanos Blightcaller
 									["sourceQuest"] = 54042,	-- Trouble in Darkshore
+									["provider"] = { "n", 146323 },	-- Nathanos Blightcaller
 									["coord"] = { 53.6, 20.4, 1333 },
 									["races"] = HORDE_ONLY,
 								}),
@@ -850,8 +850,8 @@ root(ROOTS.ExpansionFeatures,
 									["races"] = HORDE_ONLY,
 								}),
 								q(54043, {	-- Dark Ranger Round-Up
-									["provider"] = { "n", 146323 },	-- Nathanos Blightcaller
 									["sourceQuest"] = 54042,	-- Trouble in Darkshore
+									["provider"] = { "n", 146323 },	-- Nathanos Blightcaller
 									["coord"] = { 53.6, 20.4, 1333 },
 									["races"] = HORDE_ONLY,
 									["groups"] = {
@@ -859,8 +859,8 @@ root(ROOTS.ExpansionFeatures,
 									},
 								}),
 								q(54045, {	-- Quit Vining!
-									["provider"] = { "n", 146325 },	-- Shredmaster Blix
 									["sourceQuest"] = 54042,	-- Trouble in Darkshore
+									["provider"] = { "n", 146325 },	-- Shredmaster Blix
 									["coord"] = { 54.6, 21.9, 1333 },
 									["races"] = HORDE_ONLY,
 								}),
@@ -887,34 +887,34 @@ root(ROOTS.ExpansionFeatures,
 									["races"] = HORDE_ONLY,
 								}),
 								q(54049, {	-- The Dead of Night
+									["sourceQuest"] = 54047,	-- Where Hope Dies
 									["qgs"] = {
 										147187,	-- Nathanos Blightcaller
 										149143,	-- Nathanos Blightcaller
 									},
-									["sourceQuest"] = 54047,	-- Where Hope Dies
 									["coord"] = { 47.8, 21.2, 1333 },
 									["races"] = HORDE_ONLY,
 								}),
 								q(54059, {	-- The Night Warrior
-									["provider"] = { "n", 146323 },	-- Nathanos Blightcaller
 									["sourceQuest"] = 54046,	-- We're Not Out of the Woods Yet
+									["provider"] = { "n", 146323 },	-- Nathanos Blightcaller
 									["coord"] = { 53.6, 20.4, 1333 },
 									["races"] = HORDE_ONLY,
 								}),
 								q(54416, {	-- Warfront Preparations
-									["provider"] = { "n", 146323 },	-- Nathanos Blightcaller
 									["sourceQuest"] = 54050,	-- Aftermath
+									["provider"] = { "n", 146323 },	-- Nathanos Blightcaller
 									["coord"] = { 51.7, 21.6, 1333 },
 									["races"] = HORDE_ONLY,
 								}),
 								q(54046, {	-- We're Not Out of the Woods Yet
-									["provider"] = { "n", 146536 },	-- Lost Wisp
 									["sourceQuest"] = 54044,	-- Black Moon Rising
+									["provider"] = { "n", 146536 },	-- Lost Wisp
 									["races"] = HORDE_ONLY,
 								}),
 								q(54047, {	-- Where Hope Dies
-									["provider"] = { "n", 146323 },	-- Nathanos Blightcaller
 									["sourceQuest"] = 54059,	-- The Night Warrior
+									["provider"] = { "n", 146323 },	-- Nathanos Blightcaller
 									["coord"] = { 53.6, 20.4, 1333 },
 									["races"] = HORDE_ONLY,
 								}),
@@ -927,8 +927,8 @@ root(ROOTS.ExpansionFeatures,
 									["lvl"] = 120,
 								}),
 								q(53976, {	-- Iron in Hand
-									["provider"] = { "n", 145770 },	-- Thisalee Crow
 									["sourceQuest"] = 53977,	-- The War Chest (A)
+									["provider"] = { "n", 145770 },	-- Thisalee Crow
 									["coord"] = { 51.0, 56.8, 1203 },
 									["races"] = ALLIANCE_ONLY,
 									["lvl"] = 120,
@@ -942,56 +942,56 @@ root(ROOTS.ExpansionFeatures,
 									},
 								}),
 								q(54436, {	-- Wisp'd Into Shape
-									["provider"] = { "n", 145770 },	-- Thisalee Crow
 									["sourceQuest"] = 53977,	-- The War Chest (A)
+									["provider"] = { "n", 145770 },	-- Thisalee Crow
 									["coord"] = { 51.0, 56.8, 1203 },
 									["races"] = ALLIANCE_ONLY,
 									["lvl"] = 120,
 								}),
 								q(53957, {	-- Darkshore Recruits (A)
-									["provider"] = { "n", 145770 },	-- Thisalee Crow
 									["sourceQuests"] = {
 										53976,	-- Iron in Hand
 										54436,	-- Wisp'd Into Shape
 									},
+									["provider"] = { "n", 145770 },	-- Thisalee Crow
 									["coord"] = { 51.0, 56.8, 1203 },
 									["races"] = ALLIANCE_ONLY,
 									["lvl"] = 120,
 								}),
 								q(53959, {	-- Armor for Armies
-									["provider"] = { "n", 145783 },	-- Lorna Crowley
 									["sourceQuest"] = 53957,	-- Darkshore Recruits (A)
+									["provider"] = { "n", 145783 },	-- Lorna Crowley
 									["coord"] = { 51.0, 57.6, 1203 },
 									["races"] = ALLIANCE_ONLY,
 									["lvl"] = 120,
 								}),
 								q(53960, {	-- The Altar of Elders
-									["provider"] = { "n", 145783 },	-- Lorna Crowley
 									["sourceQuest"] = 53959,	-- Armor for Armies
+									["provider"] = { "n", 145783 },	-- Lorna Crowley
 									["coord"] = { 51.0, 57.6, 1203 },
 									["races"] = ALLIANCE_ONLY,
 									["lvl"] = 120,
 								}),
 								q(53974, {	-- Druids of Gloomtide
-									["provider"] = { "n", 145779 },	-- Celestine of the Harvest
 									["sourceQuest"] = 53957,	-- Darkshore Recuits (A)
+									["provider"] = { "n", 145779 },	-- Celestine of the Harvest
 									["coord"] = { 51.8, 55.4, 1203 },
 									["races"] = ALLIANCE_ONLY,
 									["lvl"] = 120,
 								}),
 								q(53961, {	-- Glaiveworks For Me
-									["provider"] = { "n", 145784 },	-- Princess Tess Greymane
 									["sourceQuests"] = {
 										53960,	-- The Altar of Elders
 										53974,	-- Druids of Gloomtide
 									},
+									["provider"] = { "n", 145784 },	-- Princess Tess Greymane
 									["coord"] = { 51.0, 57.4, 1203 },
 									["races"] = ALLIANCE_ONLY,
 									["lvl"] = 120,
 								}),
 								q(53975, {	-- Flying at Night
-									["provider"] = { "n", 144786 },	-- Archmage Mordent Evenshade
 									["sourceQuest"] = 53957,	-- Darkshore Recruits (A)
+									["provider"] = { "n", 144786 },	-- Archmage Mordent Evenshade
 									["coord"] = { 49.4, 34.6, 1203 },
 									["races"] = ALLIANCE_ONLY,
 									["lvl"] = 120,
@@ -1007,8 +1007,8 @@ root(ROOTS.ExpansionFeatures,
 									["lvl"] = 120,
 								}),
 								q(54654, {	-- An Explosive Situation
-									["provider"] = { "n", 148479 },	-- Dark Ranger Velonara
 									["sourceQuest"] = 54652,	-- The War Chest (H)
+									["provider"] = { "n", 148479 },	-- Dark Ranger Velonara
 									["coord"] = { 51.4, 56.2, 1332 },
 									["races"] = HORDE_ONLY,
 									["lvl"] = 120,
@@ -1020,8 +1020,8 @@ root(ROOTS.ExpansionFeatures,
 									},
 								}),
 								q(54655, {	-- Lumbering Along
-									["provider"] = { "n", 148479 },	-- Dark Ranger Velonara
 									["sourceQuest"] = 54652,	-- The War Chest (H)
+									["provider"] = { "n", 148479 },	-- Dark Ranger Velonara
 									["coord"] = { 51.4, 56.2, 1332 },
 									["races"] = HORDE_ONLY,
 									["lvl"] = 50,
@@ -1031,49 +1031,49 @@ root(ROOTS.ExpansionFeatures,
 									},
 								}),
 								q(54656, {	-- Darkshore Recruits (H)
-									["provider"] = { "n", 148479 },	-- Dark Ranger Velonara
 									["sourceQuests"] = {
 										54654,	-- An Explosive Situation
 										54655,	-- Lumbering Along
 									},
+									["provider"] = { "n", 148479 },	-- Dark Ranger Velonara
 									["coord"] = { 51.4, 56.2, 1332 },
 									["races"] = HORDE_ONLY,
 									["lvl"] = 120,
 								}),
 								q(54657, {	-- Arms and Armor
-									["provider"] = { "n", 148482 },	-- Apothecary Keever
 									["sourceQuest"] = 54656,	-- Darkshore Recruits (H)
+									["provider"] = { "n", 148482 },	-- Apothecary Keever
 									["coord"] = { 51.8, 58, 1332 },
 									["races"] = HORDE_ONLY,
 									["lvl"] = 120,
 								}),
 								q(54658, {	-- The Altar of Storms
-									["provider"] = { "n", 148482 },	-- Apothecary Keever
 									["sourceQuest"] = 54657,	-- Arms and Armor (H)
+									["provider"] = { "n", 148482 },	-- Apothecary Keever
 									["coord"] = { 51.8, 58, 1332 },
 									["races"] = HORDE_ONLY,
 									["lvl"] = 120,
 								}),
 								q(54659, {	-- An Alchemist for Everything
-									["provider"] = { "n", 148478 },	-- Apothecary Zinge
 									["sourceQuest"] = 54656,	-- Darkshore Recruits (H)
+									["provider"] = { "n", 148478 },	-- Apothecary Zinge
 									["coord"] = { 52.0, 59.0, 1332 },
 									["races"] = HORDE_ONLY,
 									["lvl"] = 120,
 								}),
 								q(54660, {	-- Throwing Blight
-									["provider"] = { "n", 146590 },	-- Master Apothecary Faranell
 									["sourceQuests"] = {
 										54658,	-- The Altar of Storms
 										54659,	-- An Alchemist for Everything
 									},
+									["provider"] = { "n", 146590 },	-- Master Apothecary Faranell
 									["coord"] = { 51.7, 58.0, 1332 },
 									["races"] = HORDE_ONLY,
 									["lvl"] = 120,
 								}),
 								q(54661, {	-- Echolocation
-									["provider"] = { "n", 145554 },	-- Base Cap'n Crankshot
 									-- ["sourceQuest"] = 54660,	-- Throwing Blight
+									["provider"] = { "n", 145554 },	-- Base Cap'n Crankshot
 									["coord"] = { 49.6, 35.0, 1203 },
 									["races"] = HORDE_ONLY,
 									["lvl"] = 120,

@@ -12,8 +12,8 @@ root(ROOTS.ExpansionFeatures,
 				["groups"] = {
 					n(QUESTS, {
 						q(36483, {	-- Battle Pet Roundup
-							["provider"] = { "n", 85418 },	-- Lio the Lioness
 							["sourceQuest"] = 36423,	-- Pets Versus Pests
+							["provider"] = { "n", 85418 },	-- Lio the Lioness
 							["coords"] = {
 								{ 28.4, 39.92, LUNARFALL },
 								{ 29.2, 40.4, LUNARFALL },
@@ -23,13 +23,13 @@ root(ROOTS.ExpansionFeatures,
 							["_drop"] = { "g" },	-- Drop Shiny Pet Charm
 						}),
 						q(40329, {	-- Battle Pet Tamers: Warlords
-							["qgs"] = {
-								85418,	-- Lio the Lioness
-								79858,	-- Serr'ah
-							},
 							["sourceQuests"] = {
 								36592,	-- Bigger is Better [A]
 								36567,	-- Bigger is Better [H]
+							},
+							["qgs"] = {
+								85418,	-- Lio the Lioness
+								79858,	-- Serr'ah
 							},
 							["coords"] = {
 								{ 28.3, 38.8, LUNARFALL },	-- lvl 2/3 garrison
@@ -121,8 +121,8 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						q(36423, {	-- Pets Versus Pests
-							["provider"] = { "n", 85418 },	-- Lio the Lioness
 							["sourceQuest"] = 38241,	-- Unearthed Magic
+							["provider"] = { "n", 85418 },	-- Lio the Lioness
 							["coords"] = {
 								{ 28.4, 39.92, LUNARFALL },
 								{ 29.2, 40.4, LUNARFALL },
@@ -133,8 +133,8 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						q(36469, {	-- Pets Versus Pests
-							["provider"] = { "n", 79858 },	-- Serr'ah
 							["sourceQuest"] = 38242,	-- Unearthed Magic
+							["provider"] = { "n", 79858 },	-- Serr'ah
 							["coord"] = { 32.6, 39.8, FROSTWALL },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
@@ -142,16 +142,16 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						q(36662, {	-- Scrappin'
-							["provider"] = { "n", 79858 },	-- Serr'ah
 							["sourceQuest"] = 36469,	-- Pets Versus Pests
+							["provider"] = { "n", 79858 },	-- Serr'ah
 							["coord"] = { 32.6, 39.8, FROSTWALL },
 							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
 							["_drop"] = { "g" },	-- Drop Shiny Pet Charm
 						}),
 						q(38241, {	-- Unearthed Magic
-							["provider"] = { "n", 85418 },	-- Lio the Lioness
 							["sourceQuests"] = { 36615 },	-- My Very Own Castle
+							["provider"] = { "n", 85418 },	-- Lio the Lioness
 							["coords"] = {
 								{ 28.4, 39.92, LUNARFALL },
 								{ 29.2, 40.4, LUNARFALL },
@@ -162,8 +162,8 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						q(38242, {	-- Unearthed Magic
-							["provider"] = { "n", 79858 },	-- Serr'ah
 							["sourceQuests"] = { 36614 },	-- My Very Own Fortress
+							["provider"] = { "n", 79858 },	-- Serr'ah
 							["coord"] = { 32.6, 39.8, FROSTWALL },
 							["races"] = HORDE_ONLY,
 							["groups"] = {

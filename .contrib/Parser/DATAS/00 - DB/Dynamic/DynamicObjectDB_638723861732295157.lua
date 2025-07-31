@@ -1,4 +1,4 @@
-﻿local ObjectDB = ObjectDB; for objectID,objectData in pairs({
+local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[499605] = {
 		readable = "Rocket Drill Safety Manual",
 		model = 949611,

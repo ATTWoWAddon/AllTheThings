@@ -66,8 +66,8 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				},
 			}),
 			q(48654, {	-- Beneath Oronaar
-				["provider"] = { "n", 121230 },	-- Alleria Windrunner
 				["sourceQuests"] = { 48445 },	-- The Ruins of Oronaar
+				["provider"] = { "n", 121230 },	-- Alleria Windrunner
 				["coords"] = {
 					{ 45.6, 24.5, THE_VINDICAAR_EREDATH_UPPER },
 					{ 38.8, 25.5, THE_VINDICAAR_KROKUUN_UPPER },
@@ -144,10 +144,10 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				},
 			}),
 			q(48635, {	-- More Void Inoculation
+				["sourceQuest"] = 48911,	-- Void Inoculation
+				["provider"] = { "n", 127037 },	-- Nabiru
 				["coord"] = { 44.0, 60.9, EREDATH },
 				["repeatable"] = true,
-				["provider"] = { "n", 127037 },	-- Nabiru
-				["sourceQuest"] = 48911,	-- Void Inoculation
 				["groups"] = {
 					i(152096, {	-- Void-Purged Krokul
 						follower(1057, {	-- Void-Purged Krokul (Temporary Troop)
@@ -243,8 +243,8 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				},
 			}),
 			q(48445, {	-- The Ruins of Oronaar
-				["provider"] = { "n", 121230 },	-- Alleria Windrunner
 				["sourceQuests"] = { 48443 },	-- Supplying Krokuun
+				["provider"] = { "n", 121230 },	-- Alleria Windrunner
 				["coords"] = {
 					{ 45.5, 24.6, THE_VINDICAAR_EREDATH_UPPER },
 					{ 38.8, 25.6, THE_VINDICAAR_KROKUUN_UPPER },
@@ -266,12 +266,12 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["coord"] = { 35.4, 59.6, EREDATH },
 			}),
 			q(48911, {	-- Void Inoculation
-				["coord"] = { 44.0, 60.9, EREDATH },
-				["isWeekly"] = true,
-				["provider"] = { "n", 127037 },	-- Nabiru
 				["sourceQuests"] = {
 					48654,	-- Beneath Oronaar
 				},
+				["provider"] = { "n", 127037 },	-- Nabiru
+				["coord"] = { 44.0, 60.9, EREDATH },
+				["isWeekly"] = true,
 				["groups"] = {
 					i(152096, {	-- Void-Purged Krokul
 						follower(1057, {	-- Void-Purged Krokul (Temporary Troop)

@@ -121,49 +121,49 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 							["icon"] = 2000859,
 						}),
 						q(53572, {	-- Power Increased to Level 2
-							["sourceQuests"] = { 53571 },	-- Power Increased to Level 1
 							["name"] = "Power Increased to Level 2",
 							["icon"] = 2000859,
+							["sourceQuests"] = { 53571 },	-- Power Increased to Level 1
 						}),
 						q(53573, {	-- Power Increased to Level 3
-							["sourceQuests"] = { 53572 },	-- Power Increased to Level 2
 							["name"] = "Power Increased to Level 3",
 							["icon"] = 2000859,
+							["sourceQuests"] = { 53572 },	-- Power Increased to Level 2
 						}),
 						q(53574, {	-- Power Increased to Level 4
-							["sourceQuests"] = { 53573 },	-- Power Increased to Level 3
 							["name"] = "Power Increased to Level 4",
 							["icon"] = 2000859,
+							["sourceQuests"] = { 53573 },	-- Power Increased to Level 3
 						}),
 						q(53575, {	-- Power Increased to Level 5
-							["sourceQuests"] = { 53574 },	-- Power Increased to Level 4
 							["name"] = "Power Increased to Level 5",
 							["icon"] = 2000859,
+							["sourceQuests"] = { 53574 },	-- Power Increased to Level 4
 						}),
 						q(53576, {	-- Power Increased to Level 6
-							["sourceQuests"] = { 53575 },	-- Power Increased to Level 5
 							["name"] = "Power Increased to Level 6",
 							["icon"] = 2000859,
+							["sourceQuests"] = { 53575 },	-- Power Increased to Level 5
 						}),
 						q(53577, {	-- Power Increased to Level 7
-							["sourceQuests"] = { 53576 },	-- Power Increased to Level 6
 							["name"] = "Power Increased to Level 7",
 							["icon"] = 2000859,
+							["sourceQuests"] = { 53576 },	-- Power Increased to Level 6
 						}),
 						q(53578, {	-- Power Increased to Level 8
-							["sourceQuests"] = { 53577 },	-- Power Increased to Level 7
 							["name"] = "Power Increased to Level 8",
 							["icon"] = 2000859,
+							["sourceQuests"] = { 53577 },	-- Power Increased to Level 7
 						}),
 						q(53579, {	-- Power Increased to Level 9
-							["sourceQuests"] = { 53578 },	-- Power Increased to Level 8
 							["name"] = "Power Increased to Level 9",
 							["icon"] = 2000859,
+							["sourceQuests"] = { 53578 },	-- Power Increased to Level 8
 						}),
 						q(53580, {	-- Power Increased to Level 10
-							["sourceQuests"] = { 53579 },	-- Power Increased to Level 9
 							["name"] = "Power Increased to Level 10",
 							["icon"] = 2000859,
+							["sourceQuests"] = { 53579 },	-- Power Increased to Level 9
 						}),
 					},
 				}),

@@ -132,8 +132,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				q(74282, {	-- Authentic Authorization
 					["sourceQuests"] = { 74381 },	-- Hidden Legacies
 					["provider"] = { "n", 201180 },	-- Sealed Letter to Neltharion
-					["isWeekly"] = true,
 					["coord"] = { 29.2, 52.8, THE_FORBIDDEN_REACH },
+					["isWeekly"] = true,
 					["groups"] = {
 						i(203381),	-- Sealed Letter to Neltharion
 					},

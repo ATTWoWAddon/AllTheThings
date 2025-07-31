@@ -18,10 +18,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			})),
 			q(50602, {	-- Talanji's Expedition
 				["provider"] = { "n", 135459 },	-- Provisioner Lija
-				["lvl"] = 120,
 				["coord"] = { 39.11, 79.47, NAZMIR },
 				["races"] = HORDE_ONLY,
 				["isWorldQuest"] = true,
+				["lvl"] = 120,
 				["groups"] = {
 					i(165865, {	-- Nazmir Expeditionary Equipment Cache
 						["sym"] = {

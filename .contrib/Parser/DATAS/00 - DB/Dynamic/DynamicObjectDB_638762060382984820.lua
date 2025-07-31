@@ -1,4 +1,4 @@
-﻿local ObjectDB = ObjectDB; for objectID,objectData in pairs({
+local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[479594] = {
 		readable = "Depleted Hotrod Battery",
 		model = 5900868,

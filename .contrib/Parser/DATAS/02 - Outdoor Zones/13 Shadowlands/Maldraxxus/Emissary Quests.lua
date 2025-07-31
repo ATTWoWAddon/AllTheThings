@@ -5,9 +5,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 	m(MALDRAXXUS, {
 		n(EMISSARY_QUESTS, {
 			q(62851, {	-- Paragon of the Undying Army
-				["minReputation"] = { FACTION_THE_UNDYING_ARMY, EXALTED },
 				["provider"] = { "n", 173003 },	-- Nalcorn Talsen
 				["coord"] = { 50.6, 53.4, MALDRAXXUS },
+				["minReputation"] = { FACTION_THE_UNDYING_ARMY, EXALTED },
 			}),
 			q(61095, bubbleDownSelf({ ["minReputation"] = { FACTION_THE_UNDYING_ARMY, EXALTED } }, {	-- Supplies from the Undying Army
 				["provider"] = { "n", 173003 },	-- Nalcorn Talsen

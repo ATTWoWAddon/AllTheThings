@@ -418,17 +418,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 				header(HEADERS.AchCriteria, 40900.04, {	-- Chapter 4: Breaking the Shackles
 					q(83126, {	-- Ethereal Invasion
 						["sourceQuests"] = { 83125 },	-- Price Hike
-						["providers"] = {
-							{ "n", 225669 },	-- Alleria Windrunner
-							{ "n", 232660 },	-- Alleria Windrunner (mobile)
+						["qgs"] = {
+							225669,	-- Alleria Windrunner
+							232660,	-- Alleria Windrunner (mobile)
 						},
 						["coord"] = { 29.4, 69.4, UNDERMINE },
 					}),
 					q(85449, {	-- Phase Shift
 						["sourceQuests"] = { 83125 },	-- Price Hike
-						["providers"] = {
-							{ "n", 225669 },	-- Alleria Windrunner
-							{ "n", 232660 },	-- Alleria Windrunner (mobile)
+						["qgs"] = {
+							225669,	-- Alleria Windrunner
+							232660,	-- Alleria Windrunner (mobile)
 						},
 						["coord"] = { 29.4, 69.4, UNDERMINE },
 					}),
@@ -1313,9 +1313,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						84301,	-- Mineral Madness
 						84300,	-- Refine, Repair, Repeat
 					},
-					["providers"] = {
-						{ "n", 229204 },	-- Jazz Mokkitz	// TODO: PTR quest giver id is different?
-						{ "n", 228566 },	-- Jazz Mokkitz
+					["qgs"] = {
+						229204,	-- Jazz Mokkitz	// TODO: PTR quest giver id is different?
+						228566,	-- Jazz Mokkitz
 					},
 					["coord"] = { 22.5, 59.3, ZULDAZAR },
 				}),

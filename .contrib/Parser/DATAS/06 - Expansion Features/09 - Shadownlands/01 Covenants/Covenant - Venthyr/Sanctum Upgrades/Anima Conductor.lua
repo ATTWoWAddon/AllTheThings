@@ -12,9 +12,9 @@ local HARIKA_THE_HORRID = n(165290, {	-- Harika the Horrid
 	["coord"] = { 45.8, 79.0, REVENDRETH },
 	["groups"] = {
 		q(59607, {	-- Takin' Down the Beast
+			["description"] = "This quest is offered in order to make Harika attackable.\n\nSeek out a Dredhollow Bolt in Dredhollow north-east from here.\nAfter completing the quest, talk to Wingsmash and tell him to Smash.",
 			["provider"] = { "n", 165327 },	-- Wingsmash
 			["coord"] = { 46.30, 77.7, REVENDRETH },
-			["description"] = "This quest is offered in order to make Harika attackable.\n\nSeek out a Dredhollow Bolt in Dredhollow north-east from here.\nAfter completing the quest, talk to Wingsmash and tell him to Smash.",
 			["cost"] = { { "i", 176397, 1 } },	-- 1x Dredhollow Bolt
 			["repeatable"] = true,
 		}),
@@ -71,8 +71,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									["coord"] = { 55.4, 27.0, SINFALL_REACHES },
 								}),
 								q(60721, {	-- The Anima Must Flow
-									["provider"] = { "n", 164739 },	-- Devahia
 									["sourceQuests"] = { 63066 },	-- Sanctum Upgrade: Anima Conductor
+									["provider"] = { "n", 164739 },	-- Devahia
 									["coord"] = { 48.3, 56.3, SINFALL_DEPTHS },
 								}),
 							}),
@@ -102,16 +102,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						n(TIER_TWO, {
 							n(QUESTS, sharedData({ ["isDaily"] = true }, {
 								q(61735, {	-- Awaken Our Allies
-									["provider"] = { "n", 173038 },	-- John the Reanimator
 									-- ["sourceQuests"] = { ? },	--
+									["provider"] = { "n", 173038 },	-- John the Reanimator
 									["coord"] = { 71.5, 76.3, REVENDRETH },
 									["groups"] = {
 										i(182291),	-- Anima Cage (QI!)
 									},
 								}),
 								q(61733, {	-- Big Bag of Creepers
-									["provider"] = { "n", 173127 },	-- Thinman
 									-- ["sourceQuests"] = { ? },	--
+									["provider"] = { "n", 173127 },	-- Thinman
 									["coord"] = { 71.4, 74.4, REVENDRETH },
 									["groups"] = {
 										i(182583),	-- Mire Creeper (QI!)
@@ -129,18 +129,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									},
 								}),
 								q(61846, {	-- Edict of Doom: Dredbats
-									["provider"] = { "n", 173251 },	-- Edict of Doom: Dredbats
 									-- ["sourceQuests"] = { ? },	--
+									["provider"] = { "n", 173251 },	-- Edict of Doom: Dredbats
 									["coord"] = { 71.6, 76.9, REVENDRETH },
 								}),
 								q(61848, {	-- Edict of Doom: Sinstone Golems
-									["provider"] = { "n", 173629 },	-- Edict of Doom: Sinstone Golems
 									-- ["sourceQuests"] = { ? },	--
+									["provider"] = { "n", 173629 },	-- Edict of Doom: Sinstone Golems
 									["coord"] = { 71.6, 76.8, REVENDRETH },
 								}),
 								q(61845, {	-- Edict of Doom: Devourers
-									["provider"] = { "n", 173247 },	-- Edict of Doom: Devourers
 									-- ["sourceQuests"] = { ? },	--
+									["provider"] = { "n", 173247 },	-- Edict of Doom: Devourers
 									["coord"] = { 71.6, 76.8, REVENDRETH },
 								}),
 								q(61732, {	-- Old Habits Never Die

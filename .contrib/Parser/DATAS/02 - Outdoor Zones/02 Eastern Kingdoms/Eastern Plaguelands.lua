@@ -45,23 +45,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["classes"] = { DEATHKNIGHT },
 						["groups"] = {
 							q(12738, {	-- A Cry For Vengeance!
-								["qg"] = 28913,	-- Thassarian
 								["sourceQuests"] = {
 									12727,	-- Bloody Breakout
 									12724,	-- The Path of the Righteous Crusader
 								},
+								["qg"] = 28913,	-- Thassarian
 								["coord"] = { 56.2, 80.1, THE_SCARLET_ENCLAVE },
 							}),
 							q(12755, {	-- A Meeting With Fate
+								["sourceQuest"] = 12754,	-- Ambush at the Overlook
 								["providers"] = {
 									{ "n", 28914 },	-- Orbaz Bloodbane
 									{ "i", 39647 },	-- Scarlet Courier's Message
 								},
-								["sourceQuest"] = 12754,	-- Ambush at the Overlook
 								["coord"] = { 56.2, 79.8, THE_SCARLET_ENCLAVE },
 							}),
 							q(12751, {	-- A Sort of Homecoming
-								["qg"] = 29053,	-- Knight Commander Plaguefist
 								["sourceQuests"] = {
 									12739,	-- A Special Surprise
 									12742,	-- A Special Surprise
@@ -78,14 +77,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									28650,	-- A Special Surprise
 									-- #endif
 								},
+								["qg"] = 29053,	-- Knight Commander Plaguefist
 								["coord"] = { 52.6, 81.0, THE_SCARLET_ENCLAVE },
 								["groups"] = {
 									i(38675),	-- Signet of the Dark Brotherhood
 								},
 							}),
 							q(12739, {	-- A Special Surprise
-								["qg"] = 29053,	-- Knight Commander Plaguefist
 								["sourceQuest"] = 12738,	-- A Cry For Vengeance!
+								["qg"] = 29053,	-- Knight Commander Plaguefist
 								["coord"] = { 52.6, 81.0, THE_SCARLET_ENCLAVE },
 								["races"] = { TAUREN },
 								["groups"] = {
@@ -96,8 +96,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								},
 							}),
 							q(12742, {	-- A Special Surprise
-								["qg"] = 29053,	-- Knight Commander Plaguefist
 								["sourceQuest"] = 12738,	-- A Cry For Vengeance!
+								["qg"] = 29053,	-- Knight Commander Plaguefist
 								["coord"] = { 52.6, 81.0, THE_SCARLET_ENCLAVE },
 								["races"] = { HUMAN },
 								["groups"] = {
@@ -108,8 +108,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								},
 							}),
 							q(12743, {	-- A Special Surprise
-								["qg"] = 29053,	-- Knight Commander Plaguefist
 								["sourceQuest"] = 12738,	-- A Cry For Vengeance!
+								["qg"] = 29053,	-- Knight Commander Plaguefist
 								["coord"] = { 52.6, 81.0, THE_SCARLET_ENCLAVE },
 								["races"] = { NIGHTELF },
 								["groups"] = {
@@ -120,8 +120,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								},
 							}),
 							q(12744, {	-- A Special Surprise
-								["qg"] = 29053,	-- Knight Commander Plaguefist
 								["sourceQuest"] = 12738,	-- A Cry For Vengeance!
+								["qg"] = 29053,	-- Knight Commander Plaguefist
 								["coord"] = { 52.6, 81.0, THE_SCARLET_ENCLAVE },
 								["races"] = { DWARF },
 								["groups"] = {
@@ -132,8 +132,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								},
 							}),
 							q(12745, {	-- A Special Surprise
-								["qg"] = 29053,	-- Knight Commander Plaguefist
 								["sourceQuest"] = 12738,	-- A Cry For Vengeance!
+								["qg"] = 29053,	-- Knight Commander Plaguefist
 								["coord"] = { 52.6, 81.0, THE_SCARLET_ENCLAVE },
 								["races"] = { GNOME },
 								["groups"] = {
@@ -144,8 +144,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								},
 							}),
 							q(12746, {	-- A Special Surprise
-								["qg"] = 29053,	-- Knight Commander Plaguefist
 								["sourceQuest"] = 12738,	-- A Cry For Vengeance!
+								["qg"] = 29053,	-- Knight Commander Plaguefist
 								["coord"] = { 52.6, 81.0, THE_SCARLET_ENCLAVE },
 								["races"] = { DRAENEI },
 								["groups"] = {
@@ -156,8 +156,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								},
 							}),
 							q(12747, {	-- A Special Surprise
-								["qg"] = 29053,	-- Knight Commander Plaguefist
 								["sourceQuest"] = 12738,	-- A Cry For Vengeance!
+								["qg"] = 29053,	-- Knight Commander Plaguefist
 								["coord"] = { 52.6, 81.0, THE_SCARLET_ENCLAVE },
 								["races"] = { BLOODELF },
 								["groups"] = {
@@ -168,8 +168,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								},
 							}),
 							q(12748, {	-- A Special Surprise
-								["qg"] = 29053,	-- Knight Commander Plaguefist
 								["sourceQuest"] = 12738,	-- A Cry For Vengeance!
+								["qg"] = 29053,	-- Knight Commander Plaguefist
 								["coord"] = { 52.6, 81.0, THE_SCARLET_ENCLAVE },
 								["races"] = { ORC, MAGHAR },
 								["groups"] = {
@@ -180,8 +180,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								},
 							}),
 							q(12749, {	-- A Special Surprise
-								["qg"] = 29053,	-- Knight Commander Plaguefist
 								["sourceQuest"] = 12738,	-- A Cry For Vengeance!
+								["qg"] = 29053,	-- Knight Commander Plaguefist
 								["coord"] = { 52.6, 81.0, THE_SCARLET_ENCLAVE },
 								["races"] = { TROLL },
 								["groups"] = {
@@ -192,8 +192,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								},
 							}),
 							q(12750, {	-- A Special Surprise
-								["qg"] = 29053,	-- Knight Commander Plaguefist
 								["sourceQuest"] = 12738,	-- A Cry For Vengeance!
+								["qg"] = 29053,	-- Knight Commander Plaguefist
 								["coord"] = { 52.6, 81.0, THE_SCARLET_ENCLAVE },
 								["races"] = { UNDEAD },
 								["groups"] = {
@@ -204,8 +204,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								},
 							}),
 							q(28649, {	-- A Special Surprise
-								["qg"] = 29053,	-- Knight Commander Plaguefist
 								["sourceQuest"] = 12738,	-- A Cry For Vengeance!
+								["qg"] = 29053,	-- Knight Commander Plaguefist
 								["coord"] = { 52.6, 81.0, THE_SCARLET_ENCLAVE },
 								["timeline"] = { ADDED_4_0_3 },
 								["races"] = { WORGEN },
@@ -217,8 +217,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								},
 							}),
 							q(28650, {	-- A Special Surprise
-								["qg"] = 29053,	-- Knight Commander Plaguefist
 								["sourceQuest"] = 12738,	-- A Cry For Vengeance!
+								["qg"] = 29053,	-- Knight Commander Plaguefist
 								["coord"] = { 52.6, 81.0, THE_SCARLET_ENCLAVE },
 								["timeline"] = { ADDED_4_0_3 },
 								["races"] = { GOBLIN },
@@ -239,8 +239,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								},
 							}),
 							q(12754, {	-- Ambush at the Overlook
-								["qg"] = 28914,	-- Orbaz Bloodbane
 								["sourceQuest"] = 12751,	-- A Sort of Homecoming
+								["qg"] = 28914,	-- Orbaz Bloodbane
 								["coord"] = { 56.2, 79.8, THE_SCARLET_ENCLAVE },
 								["groups"] = {
 									objective(1, {	-- 0/1 Scarlet Courier's Belongings
@@ -257,13 +257,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								},
 							}),
 							q(12700, {	-- An Attack of Opportunity
-								["qg"] = 28658,	-- Gothik the Harvester
 								["sourceQuest"] = 12698,	-- The Gift That Keeps On Giving
+								["qg"] = 28658,	-- Gothik the Harvester
 								["coord"] = { 54.0, 35.0, THE_SCARLET_ENCLAVE },
 							}),
 							q(12779, {	-- An End To All Things...
-								["qg"] = 25462,	-- The Lich King
 								["sourceQuest"] = 12778,	-- The Scarlet Apocalypse
+								["qg"] = 25462,	-- The Lich King
 								["coord"] = { 53.5, 36.8, THE_SCARLET_ENCLAVE },
 								["groups"] = {
 									objective(1, {	-- 0/150 Scarlet Soldier Proxy slain
@@ -278,13 +278,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								},
 							}),
 							q(12723, {	-- Behind Scarlet Lines
-								["qg"] = 28911,	-- Prince Keleseth
 								["sourceQuest"] = 12720,	-- How to Win Friends and Influence Enemies
+								["qg"] = 28911,	-- Prince Keleseth
 								["coord"] = { 54.2, 57.3, THE_SCARLET_ENCLAVE },
 							}),
 							q(12727, {	-- Bloody Breakout
-								["qg"] = 28912,	-- Koltira Deathweaver
 								["sourceQuest"] = 12725,	-- Brothers in Death
+								["qg"] = 28912,	-- Koltira Deathweaver
 								["coord"] = { 62.8, 68.0, THE_SCARLET_ENCLAVE },
 								["groups"] = {
 									objective(1, {	-- 0/1 Valroth's Head
@@ -296,13 +296,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								},
 							}),
 							q(12725, {	-- Brothers in Death
-								["qg"] = 28913,	-- Thassarian
 								["sourceQuest"] = 12723,	-- Behind Scarlet Lines
+								["qg"] = 28913,	-- Thassarian
 								["coord"] = { 56.2, 80.1, THE_SCARLET_ENCLAVE },
 							}),
 							q(12641, {	-- Death Comes From On High
-								["qg"] = 25462,	-- The Lich King
 								["sourceQuest"] = 12636,	-- The Eye of Acherus
+								["qg"] = 25462,	-- The Lich King
 								["coord"] = { 51.3, 35.2, THE_SCARLET_ENCLAVE },
 								["groups"] = {
 									objective(1, {	-- 0/1 New Avalon Town Hall Analyzed
@@ -320,8 +320,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								},
 							}),
 							q(12733, {	-- Death's Challenge
-								["qg"] = 29047,	-- Olrun the Battlecaller
 								["sourceQuest"] = 12670,	-- The Scarlet Harvest
+								["qg"] = 29047,	-- Olrun the Battlecaller
 								["coord"] = { 54.4, 34.1, THE_SCARLET_ENCLAVE },
 								["groups"] = {
 									objective(1, {	-- 0/5 Death Knights defeated in a duel
@@ -331,18 +331,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								},
 							}),
 							q(12697, {	-- Gothik the Harvester
-								["qg"] = 28377,	-- Prince Valanar
 								["sourceQuests"] = {
 									12678,	-- If Chaos Drives, Let Suffering Hold the Reins
 									12679,	-- Tonight We Dine In Havenshire
 									12733,	-- Death's Challenge
 									12687,	-- Into the Realm of Shadows
 								},
+								["qg"] = 28377,	-- Prince Valanar
 								["coord"] = { 52.2, 33.9, THE_SCARLET_ENCLAVE },
 							}),
 							q(12680, {	-- Grand Theft Palomino
-								["qg"] = 28653,	-- Salanar the Horseman
 								["sourceQuest"] = 12670,	-- The Scarlet Harvest
+								["qg"] = 28653,	-- Salanar the Horseman
 								["coord"] = { 52.4, 34.5, THE_SCARLET_ENCLAVE },
 								["groups"] = {
 									objective(1, {	-- Horse Successfully Stolen
@@ -351,8 +351,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								},
 							}),
 							q(12720, {	-- How to Win Friends and Influence Enemies
-								["qg"] = 28911,	-- Prince Keleseth
 								["sourceQuest"] = 12719,	-- Nowhere to Run and Nowhere to Hide
+								["qg"] = 28911,	-- Prince Keleseth
 								["coord"] = { 54.3, 57.3, THE_SCARLET_ENCLAVE },
 								["groups"] = {
 									objective(1, {	-- "Crimson Dawn" Revealed
@@ -371,8 +371,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								},
 							}),
 							q(12678, {	-- If Chaos Drives, Let Suffering Hold The Reins
-								["qg"] = 28377,	-- Prince Valanar
 								["sourceQuest"] = 12670,	-- The Scarlet Harvest
+								["qg"] = 28377,	-- Prince Valanar
 								["coord"] = { 52.2, 33.9, THE_SCARLET_ENCLAVE },
 								["groups"] = {
 									objective(1, {	-- 0/10 Scarlet Crusader slain
@@ -392,8 +392,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								["coord"] = { 51.3, 35.1, THE_SCARLET_ENCLAVE },
 							}),
 							q(12687, {	-- Into the Realm of Shadows
-								["qg"] = 28653,	-- Salanar the Horseman
 								["sourceQuest"] = 12680,	-- Grand Theft Palomino
+								["qg"] = 28653,	-- Salanar the Horseman
 								["coord"] = { 52.2, 34.8, THE_SCARLET_ENCLAVE },
 								["groups"] = {
 									objective(1, {	-- The Horseman's Challenge
@@ -408,79 +408,79 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								},
 							}),
 							q(12722, {	-- Lambs To The Slaughter
-								["qg"] = 28910,	-- Baron Rivendare
 								["sourceQuest"] = 12715,	-- The Crypt of Remembrance
+								["qg"] = 28910,	-- Baron Rivendare
 								["coord"] = { 54.6, 57.4, THE_SCARLET_ENCLAVE },
 								["groups"] = {
 									i(38670),	-- Greaves of the Slaughter
 								},
 							}),
 							q(12701, {	-- Massacre At Light's Point
-								["qg"] = 28377,	-- Prince Valanar
 								["sourceQuest"] = 12700,	-- An Attack of Opportunity
+								["qg"] = 28377,	-- Prince Valanar
 								["coord"] = { 52.2, 33.9, THE_SCARLET_ENCLAVE },
 								["groups"] = {
 									i(38666),	-- Plated Saronite Bracers
 								},
 							}),
 							q(12718, {	-- More Skulls For Brew
-								["provider"] = { "o", 190936 },	-- Plague Cauldron
 								["sourceQuest"] = 12717,	-- Noth's Special Brew
+								["provider"] = { "o", 190936 },	-- Plague Cauldron
 								["coord"] = { 56.2, 52.0, THE_SCARLET_ENCLAVE },
 								["repeatable"] = true,
 							}),
 							q(12717, {	-- Noth's Special Brew
-								["qg"] = 28919,	-- Noth the Plaguebringer
 								["sourceQuest"] = 12716,	-- The Plaguebringer's Request
+								["qg"] = 28919,	-- Noth the Plaguebringer
 								["coord"] = { 55.8, 52.3, THE_SCARLET_ENCLAVE },
 							}),
 							q(12719, {	-- Nowhere to Run And Nowhere to Hide
-								["qg"] = 28911,	-- Prince Keleseth
 								["sourceQuest"] = 12715,	-- The Crypt of Remembrance
+								["qg"] = 28911,	-- Prince Keleseth
 								["coord"] = { 54.3, 57.2, THE_SCARLET_ENCLAVE },
 							}),
 							q(12850, {	-- Report to Scourge Commander Thalanor
-								["qg"] = 28444,	-- Highlord Darion Mograine
 								["sourceQuest"] = 12657,	-- The Might of the Scourge
+								["qg"] = 28444,	-- Highlord Darion Mograine
 								["coord"] = { 48.8, 29.7, THE_SCARLET_ENCLAVE },
 							}),
 							q(12842, {	-- Runeforging: Preparation For Battle
-								["qg"] = 28357,	-- Instructor Razuvious
 								["sourceQuest"] = 12619,	-- The Emblazoned Runeblade
+								["qg"] = 28357,	-- Instructor Razuvious
 								["coord"] = { 47.5, 28.7, THE_SCARLET_ENCLAVE },
 							}),
 							q(13189, {	-- Saurfang's Blessing
-								["qg"] = 31084,	-- Highlord Darion Mograine
 								["sourceQuest"] = 13166,	-- The Battle For The Ebon Hold
+								["qg"] = 31084,	-- Highlord Darion Mograine
 								["coord"] = { 83.4, 49.4, THE_SCARLET_ENCLAVE },
 								["races"] = HORDE_ONLY,
 							}),
 							q(12757, {	-- Scarlet Armies Approach
-								["qg"] = 28914,	-- Orbaz Bloodbane
 								["sourceQuest"] = 12756,	-- The Scarlet Onslaught Emerges
+								["qg"] = 28914,	-- Orbaz Bloodbane
 								["coord"] = { 56.2, 79.8, THE_SCARLET_ENCLAVE },
 								["groups"] = {
 									i(38663),	-- Blood-Soaked Saronite Plated Spaulders
 								},
 							}),
 							q(13165, {	-- Taking Back Acherus
-								["qg"] = 29173,	-- Highlord Darion Mograine
 								["sourceQuest"] = 12801,	-- The Light of Dawn
+								["qg"] = 29173,	-- Highlord Darion Mograine
 								["coord"] = { 39.1, 39.1, THE_SCARLET_ENCLAVE },
 							}),
 							q(13166, {	-- The Battle For The Ebon Hold
-								["qg"] = 31084,	-- Highlord Darion Mograine
 								["sourceQuest"] = 13165,	-- Taking Back Acherus
+								["qg"] = 31084,	-- Highlord Darion Mograine
 								["coord"] = { 83.4, 49.4, THE_SCARLET_ENCLAVE },
 							}),
 							q(12715, {	-- The Crypt of Remembrance
-								["qg"] = 28907,	-- Prince Valanar
 								["sourceQuest"] = 12714,	-- The Will of the Lich King
+								["qg"] = 28907,	-- Prince Valanar
 								["coord"] = { 53.4, 36.5, THE_SCARLET_ENCLAVE },
 							}),
 							q(12619, {	-- The Emblazoned Runeblade (grants Runeforging, spellID 53431)
-								["qg"] = 28357,	-- Instructor Razuvious
 								["sourceQuest"] = 12593,
+								["qg"] = 28357,	-- Instructor Razuvious
 								["coord"] = { 47.7, 29.4, THE_SCARLET_ENCLAVE },
 								["groups"] = {
 									i(38707),	-- Runed Soulblade
@@ -490,31 +490,31 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								},
 							}),
 							q(12848, {	-- The Endless Hunger
-								["qg"] = 28357,	-- Instructor Razuvious
 								["sourceQuest"] = 12842,	-- Runeforging: Preparation For Battle
+								["qg"] = 28357,	-- Instructor Razuvious
 								["coord"] = { 47.6, 29.5, THE_SCARLET_ENCLAVE },
 							}),
 							q(12636, {	-- The Eye of Acherus
-								["qg"] = 28357,	-- Instructor Razuvious
 								["sourceQuest"] = 12848,	-- The Endless Hunger
+								["qg"] = 28357,	-- Instructor Razuvious
 								["coord"] = { 48.4, 28.0, THE_SCARLET_ENCLAVE },
 							}),
 							q(12698, {	-- The Gift That Keeps On Giving
-								["qg"] = 28658,	-- Gothik the Harvester
 								["sourceQuest"] = 12697,	-- Gothik the Harvester
+								["qg"] = 28658,	-- Gothik the Harvester
 								["coord"] = { 54.0, 35.0, THE_SCARLET_ENCLAVE },
 								["groups"] = {
 									i(38674),	-- Soul Harvester's Charm
 								},
 							}),
 							q(12800, {	-- The Lich King's Command
-								["qg"] = 29110,	-- The Lich King
 								["sourceQuest"] = 12779,	-- An End To All Things...
+								["qg"] = 29110,	-- The Lich King
 								["coord"] = { 53.5, 36.9, THE_SCARLET_ENCLAVE },
 							}),
 							q(12801, {	-- The Light of Dawn
-								["qg"] = 31082,	-- Scourge Commander Thalanor
 								["sourceQuest"] = 12800,	-- The Lich King's Command
+								["qg"] = 31082,	-- Scourge Commander Thalanor
 								["coord"] = { 34.0, 30.3, THE_SCARLET_ENCLAVE },
 								["groups"] = {
 									i(38633),	-- Greataxe of the Ebon Blade
@@ -525,57 +525,57 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								},
 							}),
 							q(12657, {	-- The Might of the Scourge
-								["qg"] = 25462,	-- The Lich King
 								["sourceQuest"] = 12641,	-- Death Comes From On High
+								["qg"] = 25462,	-- The Lich King
 								["coord"] = { 51.3, 35.2, THE_SCARLET_ENCLAVE },
 								["groups"] = {
 									i(38662),	-- Bladed Ebon Amulet
 								},
 							}),
 							q(12724, {	-- The Path Of The Righteous Crusader
-								["qg"] = 28914,	-- Orbaz Bloodbane
 								["sourceQuest"] = 12723,	-- Behind Scarlet Lines
+								["qg"] = 28914,	-- Orbaz Bloodbane
 								["coord"] = { 56.2, 79.8, THE_SCARLET_ENCLAVE },
 								["groups"] = {
 									i(38667),	-- Bloodbane's Gauntlets of Command
 								},
 							}),
 							q(12716, {	-- The Plaguebringer's Request
-								["qg"] = 28919,	-- Noth the Plaguebringer
 								["sourceQuest"] = 12714,	-- The Will of the Lich King
+								["qg"] = 28919,	-- Noth the Plaguebringer
 								["coord"] = { 55.9, 52.4, THE_SCARLET_ENCLAVE },
 								["groups"] = {
 									i(38668),	-- The Plaguebringer's Girdle
 								},
 							}),
 							q(12849, {	-- The Power of Blood, Frost and Unholy
-								["qg"] = 28472,	-- Lord Thorval
 								["sourceQuest"] = 12657,	-- The Might of the Scourge
+								["qg"] = 28472,	-- Lord Thorval
 								["coord"] = { 47.5, 26.5, THE_SCARLET_ENCLAVE },
 							}),
 							q(12778, {	-- The Scarlet Apocalypse
-								["qg"] = 28444,	-- Highlord Darion Mograine
 								["sourceQuest"] = 12757,	-- Scarlet Armies Approach
+								["qg"] = 28444,	-- Highlord Darion Mograine
 								["coord"] = { 48.8, 29.7, THE_SCARLET_ENCLAVE },
 							}),
 							q(12670, {	-- The Scarlet Harvest
-								["qg"] = 28510,	-- Scourge Commander Thalanor
 								["sourceQuest"] = 12850,	-- Report to Scourge Commander Thalanor
+								["qg"] = 28510,	-- Scourge Commander Thalanor
 								["coord"] = { 50.6, 34.9, THE_SCARLET_ENCLAVE },
 							}),
 							q(12756, {	-- The Scarlet Onslaught Emerges
-								["qg"] = 29077,	-- High General Abbendis
 								["sourceQuest"] = 12755,	-- A Meeting With Fate
+								["qg"] = 29077,	-- High General Abbendis
 								["coord"] = { 65.6, 83.8, THE_SCARLET_ENCLAVE },
 							}),
 							q(12714, {	-- The Will of the Lich King
-								["qg"] = 28444,	-- Highlord Darion Mograine
 								["sourceQuest"] = 12706,	-- Victory At Death's Breach!
+								["qg"] = 28444,	-- Highlord Darion Mograine
 								["coord"] = { 48.8, 29.7, THE_SCARLET_ENCLAVE },
 							}),
 							q(12679, {	-- Tonight We Dine In Havenshire
-								["qg"] = 28647,	-- Orithos the Sky Darkener
 								["sourceQuest"] = 12670,	-- The Scarlet Harvest
+								["qg"] = 28647,	-- Orithos the Sky Darkener
 								["coord"] = { 53.6, 36.3, THE_SCARLET_ENCLAVE },
 								["groups"] = {
 									i(39320),	-- Sky Darkener's Shroud of Blood
@@ -584,16 +584,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								},
 							}),
 							q(12706, {	-- Victory At Death's Breach!
-								["qg"] = 28377,	-- Prince Valanar
 								["sourceQuest"] = 12701,	-- Massacre At Light's Point
+								["qg"] = 28377,	-- Prince Valanar
 								["coord"] = { 52.2, 33.9, THE_SCARLET_ENCLAVE },
 								["groups"] = {
 									i(38669),	-- Engraved Saronite Legplates
 								},
 							}),
 							q(13188, {	-- Where Kings Walk
-								["qg"] = 31084,	-- Highlord Darion Mograine
 								["sourceQuest"] = 13166,	-- The Battle For The Ebon Hold
+								["qg"] = 31084,	-- Highlord Darion Mograine
 								["coord"] = { 83.4, 49.4, THE_SCARLET_ENCLAVE },
 								["races"] = ALLIANCE_ONLY,
 							}),
@@ -977,14 +977,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(QUESTS, {
 				q(27463, {	-- A Boyhood Dream
-					["qg"] = 45431,	-- Gidwin Goldbraids
 					["sourceQuest"] = 27455,	-- Boys Will Be Boys
+					["qg"] = 45431,	-- Gidwin Goldbraids
 					["coord"] = { 74.4, 53.3, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(27533, {	-- A Fate Worse Than Butchery
-					["qg"] = 12384,	-- Augustus the Touched
 					["sourceQuest"] = 27535,	-- Just a Little Touched
+					["qg"] = 12384,	-- Augustus the Touched
 					["coord"] = { 11.3, 28.6, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1006,10 +1006,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27372, {	-- A Gift For Fiona
-					["qg"] = 45429,	-- Tarenar Sunstrike
-					["sourceQuest"] = 27371,	-- What I Do Best
-					["coord"] = { 8.9, 66.5, EASTERN_PLAGUELANDS },
 					["description"] = "If you abandon this quest, you can pick it up again at Fiona's Caravan at the zone entrance on the border with Western Plaguelands.",
+					["sourceQuest"] = 27371,	-- What I Do Best
+					["qg"] = 45429,	-- Tarenar Sunstrike
+					["coord"] = { 8.9, 66.5, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/10 Plaguehound Blood
@@ -1043,18 +1043,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27386, {	-- A Strange Historian
+					["sourceQuest"] = 27385,	-- "Little Pamela"
 					["providers"] = {
 						{ "n", 11063 },	-- Carlin Redpath
 						{ "i", 60987 },	-- Joseph's Hunting Blade
 					},
-					["sourceQuest"] = 27385,	-- "Little Pamela"
 					["coord"] = { 35.6, 68.9, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, q(84332, {	-- A Thane's Gratitude
-					["provider"] = { "o", 462236 },	-- Mysterious Chest
 					["sourceQuest"] = 84414,	-- Send Me On Me Way!
+					["provider"] = { "o", 462236 },	-- Mysterious Chest
 					["coord"] = { 27.4, 85.8, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_1_15_3 },
 					["classes"] = { PALADIN },
@@ -1080,11 +1080,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, q(84330, {	-- A Wee Bit O' Necromancy
+					["sourceQuest"] = 84319,	-- Oh No Ye Don't!
 					["providers"] = {
 						{ "i", 227687 },	-- Orthas' Favorite Gold Tooth
 						{ "n", 228619 },	-- Orthas <Dwarven Spirit>
 					},
-					["sourceQuest"] = 84319,	-- Oh No Ye Don't!
 					["coord"] = { 33.8, 28.8, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_1_15_3 },
 					["maps"] = { STRATHOLME },
@@ -1156,17 +1156,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27457, {	-- An Opportune Alliance
-					["qg"] = 16134,	-- Rimblat Earthshatter
 					["sourceQuests"] = {
 						27465,	-- Argent Call: The Noxious Glade
 						27456,	-- Gathering Some Grub(s)
 					},
+					["qg"] = 16134,	-- Rimblat Earthshatter
 					["coord"] = { 73.8, 51.9, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(27466, {	-- Argent Call: Northdale
-					["qg"] = 45729,	-- Tarenar Sunstrike
 					["sourceQuest"] = 27465,	-- Argent Call: The Noxious Glade
+					["qg"] = 45729,	-- Tarenar Sunstrike
 					["coords"] = {
 						-- #if AFTER LEGION
 						{ 42.5, 91.3, LIGHTS_HOPE_CHAPEL },
@@ -1177,8 +1177,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(27465, {	-- Argent Call: The Noxious Glade
-					["qg"] = 11034,	-- Lord Maxwell Tyrosus
 					["sourceQuest"] = 27464,	-- Argent Call: The Trial of the Crypt
+					["qg"] = 11034,	-- Lord Maxwell Tyrosus
 					["coords"] = {
 						-- #if AFTER LEGION
 						{ 43.4, 87.3, LIGHTS_HOPE_CHAPEL },
@@ -1205,8 +1205,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27464, {	-- Argent Call: The Trial of the Crypt
-					["qg"] = 11034,	-- Lord Maxwell Tyrosus
 					["sourceQuest"] = 27463,	-- A Boyhood Dream
+					["qg"] = 11034,	-- Lord Maxwell Tyrosus
 					["coords"] = {
 						-- #if AFTER LEGION
 						{ 43.4, 87.3, LIGHTS_HOPE_CHAPEL },
@@ -1242,19 +1242,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27618, {	-- Argent Upheaval
-					["qg"] = 16112,	-- Crusade Commander Korfax
 					["sourceQuests"] = {
 						27614,	-- Scarlet Salvage
 						27615,	-- The Wrathcaster
 						27616,	-- The Huntsman
 						27619,	-- The Commander
 					},
+					["qg"] = 16112,	-- Crusade Commander Korfax
 					["coord"] = { 75.3, 76.2, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(27560, {	-- Argus' Journal
-					["qg"] = 45400,	-- Fiona's Caravan
 					["sourceQuest"] = 27381,	-- Traveling Companions
+					["qg"] = 45400,	-- Fiona's Caravan
 					["coords"] = {
 						{ 35.0, 69.3, EASTERN_PLAGUELANDS },
 						{ 53.0, 53.2, EASTERN_PLAGUELANDS },
@@ -1307,8 +1307,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(5152, {	-- Auntie Marlene
-					["qg"] = 10926,	-- Pamela Redpath
 					["sourceQuest"] = 5149,	-- Pamela's Doll
+					["qg"] = 10926,	-- Pamela Redpath
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 32.6, 83.8, EASTERN_PLAGUELANDS },
@@ -1320,8 +1320,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 50,
 				}),
 				q(27522, {	-- Beat it Out of Them
-					["qg"] = 45729,	-- Tarenar Sunstrike
 					["sourceQuest"] = 27489,	-- Nobody to Blame but Myself
+					["qg"] = 45729,	-- Tarenar Sunstrike
 					["coord"] = { 50.4, 20.1, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1347,11 +1347,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["repeatable"] = true,
 				}),
 				q(27617, {	-- Befouled No More
-					["qg"] = 16115,	-- Crusade Commander Eligor Dawnbringer
 					["sourceQuests"] = {
 						27613,	-- The Assassin
 						27612,	-- Victory From Within
 					},
+					["qg"] = 16115,	-- Crusade Commander Eligor Dawnbringer
 					["coord"] = { 76.7, 73.1, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
@@ -1378,8 +1378,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				})),
 				q(27524, {	-- Blind Fury
-					["qg"] = 45417,	-- Fiona
 					["sourceQuest"] = 27522,	-- Beat it Out of Them
+					["qg"] = 45417,	-- Fiona
 					["coord"] = { 50.5, 20.2, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
@@ -1428,8 +1428,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				applyclassicphase(PHASE_SIX, q(9127, {	-- Bone Fragments
-					["qg"] = 16131,	-- Rohan the Assassin
 					["sourceQuest"] = 9126,	-- Bonescythe Digs
+					["qg"] = 16131,	-- Rohan the Assassin
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 75.6, 52.6, EASTERN_PLAGUELANDS },
@@ -1474,14 +1474,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				})),
 				q(27455, {	-- Boys Will Be Boys
-					["qg"] = 45417,	-- Fiona
 					["sourceQuest"] = 27448,	-- The Trek Continues
+					["qg"] = 45417,	-- Fiona
 					["coord"] = { 52.9, 53.1, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(27467, {	-- Buried Blades
-					["qg"] = 16365,	-- Master Craftsman Omarion
 					["sourceQuest"] = 27464,	-- Argent Call: The Trial of the Crypt
+					["qg"] = 16365,	-- Master Craftsman Omarion
 					["coords"] = {
 						-- #if AFTER LEGION
 						{ 41.5, 88.0, LIGHTS_HOPE_CHAPEL },
@@ -1530,13 +1530,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27453, {	-- Catalysm
-					["qg"] = 11035,	-- Betina Bigglezink
+					["description"] = "If you abandon this quest, you can pick it up again from Betina Bigglezink at Light's Shield Tower.",
 					["sourceQuests"] = {
 						27452,	-- Dark Garb
 						27451,	-- To Kill With Purpose
 					},
+					["qg"] = 11035,	-- Betina Bigglezink
 					["coord"] = { 53.2, 54.6, EASTERN_PLAGUELANDS },
-					["description"] = "If you abandon this quest, you can pick it up again from Betina Bigglezink at Light's Shield Tower.",
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/8 Active Liquid Plague Agent
@@ -1552,20 +1552,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27544, {	-- Cenarion Tenacity
-					["qg"] = 45500,	-- Urk Gagbaz
 					["sourceQuest"] = 27386,	-- A Strange Historian
+					["qg"] = 45500,	-- Urk Gagbaz
 					["coord"] = { 35.0, 68.2, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
 				q(5517, {	-- Chromatic Mantle of the Dawn
-					["qg"] = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
+					["sourceQuest"] = 5513,	-- Mantles of the Dawn
 					["altQuests"] = {
 						5517,	-- Chromatic Mantle of the Dawn
 						5521,	-- Chromatic Mantle of the Dawn
 						5524,	-- Chromatic Mantle of the Dawn
 					},
-					["sourceQuest"] = 5513,	-- Mantles of the Dawn
+					["qg"] = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 75.8, 54.0, EASTERN_PLAGUELANDS },
@@ -1582,8 +1582,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				applyclassicphase(PHASE_SIX, q(9129, {	-- Core of Elements
-					["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
 					["sourceQuest"] = 9128,	-- The Elemental Equation
+					["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 75.6, 52.4, EASTERN_PLAGUELANDS },
@@ -1634,8 +1634,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				q(27531, {	-- Counter-Plague Research
-					["qg"] = 45828,	-- Argent Apotehcary Judkins
 					["sourceQuest"] = 27532,	-- The Plaguewood Tower
+					["qg"] = 45828,	-- Argent Apotehcary Judkins
 					["coord"] = { 17.6, 27.8, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1675,8 +1675,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				applyclassicphase(PHASE_SIX, q(9142, {	-- Craftsman's Writ
-					["qg"] = 16212,	-- Dispatch Commander Metz <The Argent Dawn>
 					["sourceQuest"] = 9141,	-- They Call Me "The Rooster"
+					["qg"] = 16212,	-- Dispatch Commander Metz <The Argent Dawn>
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 75.2, 51.8, EASTERN_PLAGUELANDS },
@@ -1695,8 +1695,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				applyclassicphase(PHASE_SIX, q(9125, {	-- Crypt Fiend Parts
-					["qg"] = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
 					["sourceQuest"] = 9124,	-- Cryptstalker Armor Doesn't Make Itself...
+					["qg"] = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 75.6, 52.6, EASTERN_PLAGUELANDS },
@@ -1762,8 +1762,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				applyclassicphase(PHASE_SIX, q(9132, {	-- Dark Iron Scraps
-					["qg"] = 16112,	-- Korfax, Champion of the Light
 					["sourceQuest"] = 9131,	-- Binding the Dreadnaught
+					["qg"] = 16112,	-- Korfax, Champion of the Light
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 75.8, 52.2, EASTERN_PLAGUELANDS },
@@ -1786,8 +1786,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				})),
 				q(5211, {	-- Defenders of Darrowshire
-					["qg"] = 11063,	-- Carlin Redpath
 					["sourceQuest"] = 5241,	-- Uncle Carlin
+					["qg"] = 11063,	-- Carlin Redpath
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 75.6, 53.8, EASTERN_PLAGUELANDS },
@@ -1847,12 +1847,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(6135, {	-- Duskwing, Oh How I Hate Thee...
-					["qg"] = 11878,	-- Nathanos Blightcaller <Champion of the Banshee Queen>
 					["sourceQuests"] = {
 						6133,	-- The Ranger Lord's Behest
 						6022,	-- To Kill With Purpose
 						6042,	-- Un-Life's Little Annoyances
 					},
+					["qg"] = 11878,	-- Nathanos Blightcaller <Champion of the Banshee Queen>
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 23.0, 68.2, EASTERN_PLAGUELANDS },
@@ -2093,11 +2093,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				q(27555, {	-- Fiona's Lucky Charm
-					["qg"] = 45400,	-- Fiona's Caravan
 					["sourceQuests"] = {
 						27372,	-- A Gift For Fiona
 						27369,	-- Greasing the Wheel
 					},
+					["qg"] = 45400,	-- Fiona's Caravan
 					["coords"] = {
 						{ 8.8, 66.6, EASTERN_PLAGUELANDS },
 						{ 35.0, 69.3, EASTERN_PLAGUELANDS },
@@ -2110,8 +2110,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["repeatable"] = true,
 				}),
 				q(5246, {	-- Fragments of the Past (1/2)
-					["qg"] = 10304,	-- Aurora Skycaller
 					["sourceQuest"] = 5245,	-- Troubled Spirits of Kel'Theril
+					["qg"] = 10304,	-- Aurora Skycaller
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 48.8, 17.6, EASTERN_PLAGUELANDS },
@@ -2134,8 +2134,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(5247, {	-- Fragments of the Past (2/2)
-					["qg"] = 10304,	-- Aurora Skycaller
 					["sourceQuest"] = 5246,	-- Fragments of the Past (1/2)
+					["qg"] = 10304,	-- Aurora Skycaller
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 48.8, 17.6, EASTERN_PLAGUELANDS },
@@ -2223,22 +2223,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27367, {	-- Gidwin Goldbraids
-					["qg"] = 45417,	-- Fiona
 					["sourceQuests"] = {
 						27683,	-- Into the Woods
 						27684,	-- Visitors
 						28578,	-- Hero's Call: Eastern Plaguelands!
 						28577,	-- Warchief's Command: Eastern Plaguelands!
 					},
+					["qg"] = 45417,	-- Fiona
 					["coord"] = { 9.0, 66.5, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(27526, {	-- Gidwin's Fate Revealed
-					["qg"] = 45729,	-- Tarenar Sunstrike
 					["sourceQuests"] = {
 						27524,	-- Blind Fury
 						27551,	-- The Baroness' Missive
 					},
+					["qg"] = 45729,	-- Tarenar Sunstrike
 					["coord"] = { 27.6, 21.2, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -2249,11 +2249,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27556, {	-- Gidwin's Weapon Oil
-					["qg"] = 45400,	-- Fiona's Caravan
 					["sourceQuests"] = {
 						27372,	-- A Gift For Fiona
 						27369,	-- Greasing the Wheel
 					},
+					["qg"] = 45400,	-- Fiona's Caravan
 					["coords"] = {
 						{ 8.8, 66.6, EASTERN_PLAGUELANDS },
 						{ 35.0, 69.3, EASTERN_PLAGUELANDS },
@@ -2266,8 +2266,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["repeatable"] = true,
 				}),
 				q(27369, {	-- Greasing the Wheel
-					["qg"] = 45431,	-- Gidwin Goldbraids
 					["sourceQuest"] = 27368,	-- Just Encased
+					["qg"] = 45431,	-- Gidwin Goldbraids
 					["coord"] = { 4.1, 36.0, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -2296,8 +2296,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27525, {	-- Guardians of Stratholme
-					["qg"] = 45729,	-- Tarenar Sunstrike
 					["sourceQuest"] = 27524,	-- Blind Fury
+					["qg"] = 45729,	-- Tarenar Sunstrike
 					["coord"] = { 27.6, 21.2, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -2358,8 +2358,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				})),
 				q(5168, {	-- Heroes of Darrowshire
-					["qg"] = 11063,	-- Carlin Redpath
 					["sourceQuest"] = 5210,	-- Brother Carlin
+					["qg"] = 11063,	-- Carlin Redpath
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 75.6, 53.8, EASTERN_PLAGUELANDS },
@@ -2388,8 +2388,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27388, {	-- Heroes of Darrowshire
-					["qg"] = 10667,	-- Chromie
 					["sourceQuest"] = 27386,	-- "A Strange Historian"
+					["qg"] = 10667,	-- Chromie
 					["coord"] = { 35.2, 68.1, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -2415,12 +2415,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(5942, {	-- Hidden Treasures
+					["sourceQuest"] = 5721,	-- The Battle of Darrowshire
 					["providers"] = {
 						{ "n",  10926 },	-- Pamela Redpath
 						{ "o", 177544 },	-- Joseph's Chest
 						{ "i",  15328 },	-- Joseph's Key
 					},
-					["sourceQuest"] = 5721,	-- The Battle of Darrowshire
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 32.6, 83.8, EASTERN_PLAGUELANDS },
@@ -2443,12 +2443,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27391, {	-- Hidden Treasures
+					["sourceQuest"] = 27390,	-- The Battle of Darrowshire
 					["providers"] = {
 						{ "n",  10926 },	-- Pamela Redpath
 						{ "o", 177544 },	-- Joseph's Chest
 						{ "i",  15328 },	-- Joseph's Key
 					},
-					["sourceQuest"] = 27390,	-- The Battle of Darrowshire
 					["coord"] = { 32.4, 83.5, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -2470,8 +2470,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27449, {	-- Honor and Strength
-					["qg"] = 45574,	-- Vex'tul
 					["sourceQuest"] = 27432,	-- Zaeldarr the Outcast
+					["qg"] = 45574,	-- Vex'tul
 					["coord"] = { 52.8, 51.4, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -2481,8 +2481,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27392, {	-- I'm Not Supposed to Tell You This
-					["qg"] = 10926,	-- Pamela Redpath
 					["sourceQuest"] = 27383,	-- "Little Pamela"
+					["qg"] = 10926,	-- Pamela Redpath
 					["coord"] = { 32.4, 83.6, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -2503,8 +2503,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27488, {	-- Impatience
-					["qg"] = 45729,	-- Tarenar Sunstrike
 					["sourceQuest"] = 27487,	-- Ix'lar the Underlord
+					["qg"] = 45729,	-- Tarenar Sunstrike
 					["coord"] = { 61.6, 43.2, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -2518,13 +2518,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27482, {	-- Into the Flames
-					["qg"] = 45574,	-- Vex'tul (mobileNPC)
+					["description"] = "If you abandon this quest, you can pick it up again from Vex'tul at Eastwall Tower.",
 					["sourceQuest"] = 27481,	-- Out of the Ziggurat
+					["qg"] = 45574,	-- Vex'tul (mobileNPC)
 					["coords"] = {	-- Walks back-and-forth between these two points
 						{ 60.6, 43.3, EASTERN_PLAGUELANDS },
 						{ 61.8, 41.0, EASTERN_PLAGUELANDS },
 					},
-					["description"] = "If you abandon this quest, you can pick it up again from Vex'tul at Eastwall Tower.",
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- Warlord Thresh'jin's Body burned
@@ -2585,8 +2585,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				q(27487, {	-- Ix'lar the Underlord
-					["qg"] = 45729,	-- Tarenar Sunstrike
 					["sourceQuest"] = 27466,	-- Argent Call: Northdale
+					["qg"] = 45729,	-- Tarenar Sunstrike
 					["coord"] = { 61.6, 43.2, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -2615,11 +2615,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27527, {	-- Journey's End
+					["sourceQuest"] = 27526,	-- Gidwin's Fate Revealed
 					["providers"] = {
 						{ "n", 45730 },	-- Gidwin Goldbraids
 						{ "i", 61379 },	-- Gidwin's Hearthstone
 					},
-					["sourceQuest"] = 27526,	-- Gidwin's Fate Revealed
 					["coord"] = { 28.5, 25.9, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -2641,10 +2641,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27454, {	-- Just a Drop in the Bucket
-					["qg"] = 11035,	-- Betina Bigglezink
-					["sourceQuest"] = 27453,	-- Catalysm
-					["coord"] = { 53.2, 54.6, EASTERN_PLAGUELANDS },
 					["description"] = "If you abandon this quest, you can pick it up again from Betina Bigglezink at Light's Shield Tower.",
+					["sourceQuest"] = 27453,	-- Catalysm
+					["qg"] = 11035,	-- Betina Bigglezink
+					["coord"] = { 53.2, 54.6, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- Disturb Mereldar Plague Cauldron
@@ -2678,8 +2678,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isBreadcrumb"] = true,
 				}),
 				q(27368, {	-- Just Encased
-					["qg"] = 45428,	-- Gidwin Goldbraids
 					["sourceQuest"] = 27367,	-- Gidwin Goldbraids
+					["qg"] = 45428,	-- Gidwin Goldbraids
 					["coord"] = { 4.1, 36.0, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -2695,11 +2695,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27620, {	-- Like Rats
-					["qg"] = 16116,	-- Archmage Angela Dosantos
 					["sourceQuests"] = {
 						27618,	-- Argent Upheaval
 						27617,	-- Befouled No More
 					},
+					["qg"] = 16116,	-- Archmage Angela Dosantos
 					["coord"] = { 76.1, 75.3, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -2768,12 +2768,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				q(5206, {	-- Marauders of Darrowshire
-					["qg"] = 11063,	-- Carlin Redpath
 					["sourceQuests"] = {
 						5181,	-- Villains of Darrowshire
 						5168,	-- Heroes of Darrowshire
 						5154,	-- The Annals of Darrowshire
 					},
+					["qg"] = 11063,	-- Carlin Redpath
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 75.6, 53.8, EASTERN_PLAGUELANDS },
@@ -2795,8 +2795,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27389, {	-- Marauders of Darrowshire
-					["qg"] = 10667,	-- Chromie
 					["sourceQuest"] = 27386,	-- "A Strange Historian"
+					["qg"] = 10667,	-- Chromie
 					["coord"] = { 35.2, 68.1, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -2830,7 +2830,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(6146, {	-- Nathanos' Ruse
-					["qg"] = 11878,	-- Nathanos Blightcaller <Champion of the Banshee Queen>
 					["sourceQuests"] = {
 						-- #if AFTER 3.3.0
 						14350,	-- The Crimson Courier
@@ -2838,6 +2837,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						6145,	-- The Crimson Courier
 						-- #endif
 					},
+					["qg"] = 11878,	-- Nathanos Blightcaller <Champion of the Banshee Queen>
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 23.0, 68.2, EASTERN_PLAGUELANDS },
@@ -2859,8 +2859,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27489, {	-- Nobody to Blame but Myself
-					["qg"] = 45729,	-- Tarenar Sunstrike
 					["sourceQuest"] = 27488,	-- Impatience
+					["qg"] = 45729,	-- Tarenar Sunstrike
 					["coord"] = { 61.6, 43.2, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -2891,11 +2891,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_FOUR, q(84319, {	-- Oh No Ye Don't!
+					["sourceQuest"] = 84318,	-- Oi!
 					["providers"] = {
 						{ "i", 227687 },	-- Orthas' Favorite Gold Tooth
 						{ "n", 228619 },	-- Orthas <Dwarven Spirit>
 					},
-					["sourceQuest"] = 84318,	-- Oi!
 					["coord"] = { 61.3, 69.2, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_1_15_3 },
 					["classes"] = { PALADIN },
@@ -2913,11 +2913,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				q(27373, {	-- Onward, to Light's Hope Chapel
-					["qg"] = 45417,	-- Fiona
 					["sourceQuests"] = {
 						27372,	-- A Gift For Fiona
 						27369,	-- Greasing the Wheel
 					},
+					["qg"] = 45417,	-- Fiona
 					["coord"] = { 9.0, 66.5, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -2927,11 +2927,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27481, {	-- Out of the Ziggurat
-					["qg"] = 45574,	-- Vex'tul (mobileNPC)
 					["sourceQuests"] = {
 						27465,	-- Argent Call: The Noxious Glade
 						27449,	-- Honor and Strength
 					},
+					["qg"] = 45574,	-- Vex'tul (mobileNPC)
 					["coords"] = {	-- Walks back-and-forth between these two points
 						{ 60.6, 43.3, EASTERN_PLAGUELANDS },
 						{ 61.8, 41.0, EASTERN_PLAGUELANDS },
@@ -2946,11 +2946,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(5149, {	-- Pamela's Doll
-					["qg"] = 10926,	-- Pamela Redpath
 					["sourceQuests"] = {
 						5142,	-- Little Pamela
 						5601,	-- Sister Pamela
 					},
+					["qg"] = 10926,	-- Pamela Redpath
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 32.6, 83.8, EASTERN_PLAGUELANDS },
@@ -2972,8 +2972,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27384, {	-- Pamela's Doll
-					["qg"] = 10926,	-- Pamela Redpath
 					["sourceQuest"] = 27383,	-- "Little Pamela"
+					["qg"] = 10926,	-- Pamela Redpath
 					["coord"] = { 32.4, 83.6, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -2988,8 +2988,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27558, {	-- Pamela's Doll
-					["qg"] = 45400,	-- Fiona's Caravan
 					["sourceQuest"] = 27390,	-- The Battle of Darrowshire
+					["qg"] = 45400,	-- Fiona's Caravan
 					["coords"] = {
 						{ 35.0, 69.3, EASTERN_PLAGUELANDS },
 						{ 53.0, 53.2, EASTERN_PLAGUELANDS },
@@ -3001,8 +3001,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["repeatable"] = true,
 				}),
 				q(27420, {	-- Postponing the Inevitable
-					["qg"] = 16135,	-- Rayne <Cenarion Circle>
 					["sourceQuest"] = 27544,	-- Cenarion Tenacity
+					["qg"] = 16135,	-- Rayne <Cenarion Circle>
 					["coord"] = { 30.2, 56.9, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -3020,11 +3020,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(5941, {	-- Return to Chromie
+					["sourceQuest"] = 5206,	-- Marauders of Darrowshire
 					["providers"] = {
 						{ "n", 11063 },	-- Carlin Redpath
 						{ "i", 15314 },	-- Bundle of Relics
 					},
-					["sourceQuest"] = 5206,	-- Marauders of Darrowshire
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 75.6, 53.8, EASTERN_PLAGUELANDS },
@@ -3036,8 +3036,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 50,
 				}),
 				q(6147, {	-- Return to Nathanos
-					["qg"] = 11898,	-- Crusader Lord Valdelmar
 					["sourceQuest"] = 6146,	-- Nathanos' Ruse
+					["qg"] = 11898,	-- Crusader Lord Valdelmar
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 81.0, 78.4, EASTERN_PLAGUELANDS },
@@ -3067,15 +3067,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27561, {	-- Rimblat's Stone
-					["qg"] = 45400,	-- Fiona's Caravan
 					["sourceQuest"] = 27457,	-- An Opportune Alliance
+					["qg"] = 45400,	-- Fiona's Caravan
 					["coord"] = { 73.6, 51.9, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["repeatable"] = true,
 				}),
 				q(27382, {	-- Rough Roads
-					["qg"] = 45451,	-- Argus Highbeacon (mobileNPC)
 					["sourceQuest"] = 27373,	-- Onward, to Light's Hope Chapel
+					["qg"] = 45451,	-- Argus Highbeacon (mobileNPC)
 					["coord"] = { 35.7, 68.9, EASTERN_PLAGUELANDS },	-- Walks around on top of the Crown Guard Tower
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -3126,8 +3126,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				})),
 				applyclassicphase(PHASE_SIX, q(9137, {	-- Savage Fronds
-					["qg"] = 16135,	-- Rayne <Cenarion Circle>
 					["sourceQuest"] = 9136,	-- Savage Flora
+					["qg"] = 16135,	-- Rayne <Cenarion Circle>
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 75.6, 53.2, EASTERN_PLAGUELANDS },
@@ -3153,8 +3153,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				})),
 				q(27614, {	-- Scarlet Salvage
-					["qg"] = 16112,	-- Crusade Commander Korfax
 					["sourceQuest"] = 27462,	-- To Take the Barracks
+					["qg"] = 16112,	-- Crusade Commander Korfax
 					["coord"] = { 75.3, 76.2, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -3203,8 +3203,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, q(84414, {	-- Send Me On Me Way!
-					["qg"] = 229018,	-- Rotting Dwarf Corpse
 					["sourceQuest"] = 84330,	-- A Wee Bit O' Necromancy
+					["qg"] = 229018,	-- Rotting Dwarf Corpse
 					["coord"] = { 27.6, 86.0, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_1_15_3 },
 					["classes"] = { PALADIN },
@@ -3230,8 +3230,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27460, {	-- Soft Landing
-					["qg"] = 16116,	-- Archmage Angela Dosantos
 					["sourceQuest"] = 27459,	-- The Brotherhood of Light
+					["qg"] = 16116,	-- Archmage Angela Dosantos
 					["coord"] = { 72.6, 74.8, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -3408,11 +3408,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(27557, {	-- Tarenar's Talisman
-					["qg"] = 45400,	-- Fiona's Caravan
 					["sourceQuests"] = {
 						27372,	-- A Gift For Fiona
 						27369,	-- Greasing the Wheel
 					},
+					["qg"] = 45400,	-- Fiona's Caravan
 					["coords"] = {
 						{ 8.80, 66.6, EASTERN_PLAGUELANDS },
 						{ 35.0, 69.3, EASTERN_PLAGUELANDS },
@@ -3443,8 +3443,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 54,
 				}),
 				q(27613, {	-- The Assassin
-					["qg"] = 16115,	-- Crusade Commander Eligor Dawnbringer
 					["sourceQuest"] = 27461,	-- To Take the Abbey
+					["qg"] = 16115,	-- Crusade Commander Eligor Dawnbringer
 					["coord"] = { 76.7, 73.1, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -3465,11 +3465,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, q(84590, {	-- The Balance of Light and Shadow
+					["sourceQuest"] = 7621,	-- A Warning
 					["providers"] = {
 						{ "n",  14494 },	-- Eris Havenfire
 						{ "i", 228749 },	-- Splinter of Nordrassil
 					},
-					["sourceQuest"] = 7621,	-- A Warning
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 17.6, 14.1, EASTERN_PLAGUELANDS },
@@ -3499,11 +3499,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				q(7622, {	-- The Balance of Light and Shadow
+					["sourceQuest"] = 7621,	-- A Warning
 					["providers"] = {
 						{ "n", 14494 },	-- Eris Havenfire
 						{ "i", 18659 },	-- Splinter of Nordrassil
 					},
-					["sourceQuest"] = 7621,	-- A Warning
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 17.6, 14.1, EASTERN_PLAGUELANDS },
@@ -3550,11 +3550,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27551, {	-- The Baroness' Missive
+					["sourceQuest"] = 27525,	-- Guardians of Stratholme
 					["providers"] = {
 						{ "i", 61378 },	-- The Baroness' Missive
 						{ "i", 61377 },	-- The Baroness' Missive
 					},
-					["sourceQuest"] = 27525,	-- Guardians of Stratholme
 					["coord"] = { 29.4, 19.6, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["crs"] = {
@@ -3563,8 +3563,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(5721, {	-- The Battle of Darrowshire
-					["qg"] = 10667,	-- Chromie
 					["sourceQuest"] = 5941,	-- Return to Chromie
+					["qg"] = 10667,	-- Chromie
 					["coord"] = { 39.4, 66.8, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
@@ -3580,12 +3580,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27390, {	-- The Battle of Darrowshire
-					["qg"] = 10667,	-- Chromie
 					["sourceQuests"] = {
 						27388,	-- Heroes of Darrowshire
 						27389,	-- Marauders of Darrowshire
 						27387,	-- Villains of Darrowshire
 					},
+					["qg"] = 10667,	-- Chromie
 					["coord"] = { 35.2, 68.0, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -3609,8 +3609,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27459, {	-- The Brotherhood of Light
-					["qg"] = 11036,	-- Leonid Barthalomew the Revered
 					["sourceQuest"] = 27463,	-- A Boyhood Dream
+					["qg"] = 11036,	-- Leonid Barthalomew the Revered
 					["coords"] = {
 						-- #if AFTER LEGION
 						{ 41.0, 87.9, LIGHTS_HOPE_CHAPEL },
@@ -3621,6 +3621,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(6144, {	-- The Call to Command
+					-- #if AFTER 3.3.0
+					["description"] = "This version of the quest is only available to those that have not yet completed the Wrath Gate.",
+					-- #endif
 					["qg"] = 11878,	-- Nathanos Blightcaller <Champion of the Banshee Queen>
 					["coords"] = {
 						-- #if AFTER WRATH
@@ -3629,9 +3632,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 26.6, 74.8, EASTERN_PLAGUELANDS },
 						-- #endif
 					},
-					-- #if AFTER 3.3.0
-					["description"] = "This version of the quest is only available to those that have not yet completed the Wrath Gate.",
-					-- #endif
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { UNDERCITY },
 					["races"] = HORDE_ONLY,
@@ -3659,8 +3659,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 54,
 				}),
 				q(27619, {	-- The Commander
-					["qg"] = 16112,	-- Crusade Commander Korfax
 					["sourceQuest"] = 27462,	-- To Take the Barracks
+					["qg"] = 16112,	-- Crusade Commander Korfax
 					["coord"] = { 75.3, 76.2, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -3680,12 +3680,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27530, {	-- The Corpsebeasts
-					["qg"] = 45831,	-- Crusader Kevin Frost
 					["sourceQuests"] = {
 						27539,	-- Add 'em to the Pile
 						27529,	-- Defenders of Darrowshire
 						27528,	-- Scourged Mass
 					},
+					["qg"] = 45831,	-- Crusader Kevin Frost
 					["coord"] = { 27.7, 20.9, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -3754,6 +3754,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(6145, {	-- The Crimson Courier
+					-- #if AFTER 3.3.0
+					["description"] = "This version of the quest is only available to those that have not yet completed the Wrath Gate.",
+					-- #endif
+					["sourceQuest"] = 6144,	-- The Call to Command
 					["qgs"] = {
 						-- #if AFTER 3.3.0
 						10181,	-- Lady Sylvanas Windrunner <Banshee Queen>
@@ -3761,7 +3765,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2425,	-- Varimathras
 						-- #endif
 					},
-					["sourceQuest"] = 6144,	-- The Call to Command
 					["coords"] = {
 						-- #if AFTER 3.3.0
 						{ 57.8, 92.0, UNDERCITY },
@@ -3769,9 +3772,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 56.2, 92.6, UNDERCITY },
 						-- #endif
 					},
-					-- #if AFTER 3.3.0
-					["description"] = "This version of the quest is only available to those that have not yet completed the Wrath Gate.",
-					-- #endif
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 56,
@@ -3783,8 +3783,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(14350, {	-- The Crimson Courier
-					["qg"] = 10181,	-- Lady Sylvanas Windrunner <Banshee Queen>
 					["sourceQuest"] = 14349,	-- The Call to Command
+					["qg"] = 10181,	-- Lady Sylvanas Windrunner <Banshee Queen>
 					["coord"] = { 57.8, 92.0, UNDERCITY },
 					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -3819,8 +3819,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				})),
 				q(27616, {	-- The Huntsman
-					["qg"] = 16112,	-- Crusade Commander Korfax
 					["sourceQuest"] = 27462,	-- To Take the Barracks
+					["qg"] = 16112,	-- Crusade Commander Korfax
 					["coord"] = { 75.3, 76.2, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -3853,16 +3853,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				q(27532, {	-- The Plaguewood Tower
+					["description"] = "Position of Argus Highbeacon depends on the position of Fionas Caravan and the order of quests you completed.",
+					["sourceQuest"] = 27522,	-- Beat it Out of Them
 					["providers"] = {
 						{ "n", 45451 },	-- Argus Highbeacon
 						{ "i", 61362 },	-- Highbeacon's Parcel
 					},
-					["sourceQuest"] = 27522,	-- Beat it Out of Them
 					["coords"] = {
 						{ 28.3, 25.8, EASTERN_PLAGUELANDS },
 						{ 50.5, 20.2, EASTERN_PLAGUELANDS },
 					},
-					["description"] = "Position of Argus Highbeacon depends on the position of Fionas Caravan and the order of quests you completed.",
 					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
@@ -3898,8 +3898,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(6148, {	-- The Scarlet Oracle, Demetria
-					["qg"] = 11878,	-- Nathanos Blightcaller <Champion of the Banshee Queen>
 					["sourceQuest"] = 6147,	-- Return to Nathanos
+					["qg"] = 11878,	-- Nathanos Blightcaller <Champion of the Banshee Queen>
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 23.0, 68.2, EASTERN_PLAGUELANDS },
@@ -3948,11 +3948,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				q(27448, {	-- The Trek Continues
-					["qg"] = 45417,	-- Fiona
 					["sourceQuests"] = {
 						27382,	-- Rough Roads
 						27381,	-- Traveling Companion
 					},
+					["qg"] = 45417,	-- Fiona
 					["coord"] = { 34.9, 69.1, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -3962,8 +3962,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27615, {	-- The Wrathcaster
-					["qg"] = 16112,	-- Crusade Commander Korfax
 					["sourceQuest"] = 27462,	-- To Take the Barracks
+					["qg"] = 16112,	-- Crusade Commander Korfax
 					["coord"] = { 75.3, 76.2, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -4047,23 +4047,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27461, {	-- To Take the Abbey
-					["provider"] = { "o", 205875 },	-- Crusader's Flare
 					["sourceQuest"] = 27460,	-- Soft Landing
+					["provider"] = { "o", 205875 },	-- Crusader's Flare
 					["coord"] = { 77.6, 79.4, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(27462, {	-- To Take the Barracks
-					["provider"] = { "o", 205875 },	-- Crusader's Flare
 					["sourceQuest"] = 27460,	-- Soft Landing
+					["provider"] = { "o", 205875 },	-- Crusader's Flare
 					["coord"] = { 77.6, 79.4, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(5248, {	-- Tormented By the Past
+					["sourceQuest"] = 5247,	-- Fragments of the Past
 					["providers"] = {
 						{ "n", 10304 },	-- Aurora Skycaller
 						{ "i", 13347 },	-- Crystal of Zin-Malor
 					},
-					["sourceQuest"] = 5247,	-- Fragments of the Past
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 48.8, 17.6, EASTERN_PLAGUELANDS },
@@ -4076,8 +4076,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 53,
 				}),
 				q(27381, {	-- Traveling Companions
-					["qg"] = 45429,	-- Tarenar Sunstrike
 					["sourceQuest"] = 27373,	-- Onward, to Light's Hope Chapel
+					["qg"] = 45429,	-- Tarenar Sunstrike
 					["coord"] = { 35.3, 68.9, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -4109,8 +4109,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(5241, {	-- Uncle Carlin
-					["qg"] = 10926,	-- Pamela Redpath
 					["sourceQuest"] = 5149,	-- Pamela's Doll
+					["qg"] = 10926,	-- Pamela Redpath
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 32.6, 83.8, EASTERN_PLAGUELANDS },
@@ -4122,20 +4122,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 50,
 				}),
 				q(27385, {	-- Uncle Carlin
-					["providers"] = {
-						{ "n", 10926 },	-- Pamela Redpath
-						{ "i", 60987 },	-- Joseph's Hunting Blade
-					},
 					["sourceQuests"] = {
 						27392,	-- I'm Not Supposed to Tell You This
 						27384,	-- Pamela's Doll
+					},
+					["providers"] = {
+						{ "n", 10926 },	-- Pamela Redpath
+						{ "i", 60987 },	-- Joseph's Hunting Blade
 					},
 					["coord"] = { 32.4, 83.6, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(27559, {	-- Vex'tul's Armbands
-					["qg"] = 45400,	-- Fiona's Caravan
 					["sourceQuest"] = 27449,	-- Honor and Strength
+					["qg"] = 45400,	-- Fiona's Caravan
 					["coords"] = {
 						{ 53.0, 53.2, EASTERN_PLAGUELANDS },
 						{ 61.6, 42.6, EASTERN_PLAGUELANDS },
@@ -4146,8 +4146,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["repeatable"] = true,
 				}),
 				q(27612, {	-- Victory From Within
-					["qg"] = 16115,	-- Crusade Commander Eligor Dawnbringer
 					["sourceQuest"] = 27461,	-- To Take the Abbey
+					["qg"] = 16115,	-- Crusade Commander Eligor Dawnbringer
 					["coord"] = { 76.7, 73.1, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -4162,8 +4162,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(5181, {	-- Villains of Darrowshire
-					["qg"] = 11063,	-- Carlin Redpath
 					["sourceQuest"] = 5210,	-- Brother Carlin
+					["qg"] = 11063,	-- Carlin Redpath
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 75.6, 53.8, EASTERN_PLAGUELANDS },
@@ -4191,8 +4191,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27387, {	-- Villians of Darrowshire
-					["qg"] = 10667,	-- Chromie
 					["sourceQuest"] = 27386,	-- "A Strange Historian"
+					["qg"] = 10667,	-- Chromie
 					["coord"] = { 35.2, 68.1, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -4241,8 +4241,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				})),
 				q(27371, {	-- What I Do Best
-					["qg"] = 45429,	-- Tarenar Sunstrike
 					["sourceQuest"] = 27370,	-- Tarenar Sunstrike
+					["qg"] = 45429,	-- Tarenar Sunstrike
 					["coord"] = { 18.4, 74.8, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -4253,8 +4253,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(6041, {	-- When Smokey Sings, I Get Violent
-					["qg"] = 11033,	-- Smokey LaRue
 					["sourceQuest"] = 6026,	-- That's Asking A Lot
+					["qg"] = 11033,	-- Smokey LaRue
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 74.8, 52.2, EASTERN_PLAGUELANDS },
@@ -4298,6 +4298,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				applyclassicphase(PHASE_SIX, q(9165, {	-- Writ of Safe Passage
+					["description"] = "Twice per day, Guard Didier starts a caravan westward. Simply protect him and the mules, but if any of them die, it's over. After the caravan arrives at its destination, he will offer this quest.",
 					["qg"] = 16226,	-- Guard Didier <Brotherhood of the Light>
 					["coords"] = {
 						-- #if AFTER WRATH
@@ -4306,7 +4307,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 80.0, 58.0, EASTERN_PLAGUELANDS },
 						-- #endif
 					},
-					["description"] = "Twice per day, Guard Didier starts a caravan westward. Simply protect him and the mules, but if any of them die, it's over. After the caravan arrives at its destination, he will offer this quest.",
 					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 55,

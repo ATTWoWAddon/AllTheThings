@@ -320,14 +320,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["cost"] = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
 					}),
 					q(2952, {	-- The Sparklematic 5200!
-						["provider"] = { "o", 142487 },	-- The Sparklematic 5200
 						["sourceQuest"] = 2951,	-- The Sparklematic 5200!
+						["provider"] = { "o", 142487 },	-- The Sparklematic 5200
 						["cost"] = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
 						["groups"] = {
 							i(9363),	-- Sparklematic-Wrapped Box
 						},
 					}),
 					q(4605, {	-- The Sparklematic 5200!
+						["sourceQuest"] = 4601,	-- The Sparklematic 5200!
 						["providers"] = {
 							-- #if AFTER LEGION
 							{ "o", 175084 },	-- The Sparklematic 5200
@@ -335,13 +336,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							{ "o", 15084 },	-- The Sparklematic 5200
 							-- #endif
 						},
-						["sourceQuest"] = 4601,	-- The Sparklematic 5200!
 						["cost"] = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
 						["groups"] = {
 							i(9363),	-- Sparklematic-Wrapped Box
 						},
 					}),
 					q(4606, {	-- The Sparklematic 5200!
+						["sourceQuest"] = 4602,	-- The Sparklematic 5200!
 						["providers"] = {
 							-- #if AFTER LEGION
 							{ "o", 175085 },	-- The Sparklematic 5200
@@ -349,15 +350,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							{ "o", 15085 },	-- The Sparklematic 5200
 							-- #endif
 						},
-						["sourceQuest"] = 4602,	-- The Sparklematic 5200!
 						["cost"] = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
 						["groups"] = {
 							i(9363),	-- Sparklematic-Wrapped Box
 						},
 					}),
 					q(2953, {	-- More Sparklematic Action
-						["provider"] = { "o", 142487 },	-- The Sparklematic 5200
 						["sourceQuest"] = 2952,	-- The Sparklematic 5200!
+						["provider"] = { "o", 142487 },	-- The Sparklematic 5200
 						["cost"] = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
 						["repeatable"] = true,
 						["groups"] = {
@@ -365,6 +365,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					q(4603, {	-- More Sparklematic Action
+						["sourceQuest"] = 4605,	-- The Sparklematic 5200!
 						["providers"] = {
 							-- #if AFTER LEGION
 							{ "o", 175084 },	-- The Sparklematic 5200
@@ -372,7 +373,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							{ "o", 15084 },	-- The Sparklematic 5200
 							-- #endif
 						},
-						["sourceQuest"] = 4605,	-- The Sparklematic 5200!
 						["cost"] = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
 						["repeatable"] = true,
 						["groups"] = {
@@ -380,6 +380,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					q(4604, {	-- More Sparklematic Action
+						["sourceQuest"] = 4606,	-- The Sparklematic 5200!
 						["providers"] = {
 							-- #if AFTER LEGION
 							{ "o", 175085 },	-- The Sparklematic 5200
@@ -387,7 +388,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							{ "o", 15085 },	-- The Sparklematic 5200
 							-- #endif
 						},
-						["sourceQuest"] = 4606,	-- The Sparklematic 5200!
 						["cost"] = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
 						["repeatable"] = true,
 						["groups"] = {
@@ -420,9 +420,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = 25,
 				}),
 				q(2842, {	-- Chief Engineer Scooty
+					["description"] = "You cannot get this quest until you accept the Rig Wars quest. Accept Rig Wars, then this guy gives you the quest to get to Gnomer safely...",
 					["qg"] = 3413,	-- Sovik <Engineering Supplies>
 					["coord"] = { 75.6, 25.2, ORGRIMMAR },
-					["description"] = "You cannot get this quest until you accept the Rig Wars quest. Accept Rig Wars, then this guy gives you the quest to get to Gnomer safely...",
 					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
 					["maps"] = { STRANGLETHORN_VALE },
@@ -431,8 +431,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = 20,
 				}),
 				q(2930, {	-- Data Rescue
-					["qg"] = 7950,	-- Master Mechanic Castpipe
 					["sourceQuest"] = 2931,	-- Castpipe's Task
+					["qg"] = 7950,	-- Master Mechanic Castpipe
 					["coord"] = { 70.2, 48.4, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -450,8 +450,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(2924, {	-- Essential Artificials
-					["qg"] = 6169,	-- Klockmort Spannerspan
 					["sourceQuest"] = 2925,	-- Klockmort's Essentials
+					["qg"] = 6169,	-- Klockmort Spannerspan
 					["coord"] = { 68.2, 46.2, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -467,8 +467,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(26944, {	-- Exploring Gnomeregan
-					["qg"] = 44018,	-- Wulfred Harrys
 					["altQuests"] = { 26943 },	-- Home Sweet Gnome
+					["qg"] = 44018,	-- Wulfred Harrys
 					["coord"] = { 53.3, 66.2, NORTHERN_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -476,8 +476,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(26, 26, 10),
 				}),
 				q(2926, {	-- Gnogaine
-					["qg"] = 1268,	-- Ozzie Togglevolt
 					["sourceQuest"] = 2927,	-- The Day After
+					["qg"] = 1268,	-- Ozzie Togglevolt
 					["coord"] = { 45.8, 49.2, DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -491,8 +491,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(2948, {	-- Gnome Improvement
-					["qg"] = 6826,	-- Talvash del Kissel
 					["sourceQuest"] = 2947,	-- Return of the Ring [Alliance]
+					["qg"] = 6826,	-- Talvash del Kissel
 					["coord"] = { 36.2, 3.8, IRONFORGE },
 					["cost"] = {
 						{ "i", 9362, 1 },	-- Brilliant Gold Ring
@@ -507,8 +507,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(2843, {	-- Gnomer-gooooone!
-					["qg"] = 7853,	-- Scooty <Chief Engineer>
 					["sourceQuest"] = 2842,	-- Chief Engineer Scooty
+					["qg"] = 7853,	-- Scooty <Chief Engineer>
 					["coord"] = { 27.6, 77.4, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -520,8 +520,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(2945, {	-- Grime-Encrusted Ring
-					["provider"] = { "i", 9326 },	-- Grime-Encrusted Ring
 					["description"] = "Take this to The Sparklematic 5200.",
+					["provider"] = { "i", 9326 },	-- Grime-Encrusted Ring
 					["lvl"] = lvlsquish(24, 24, 10),
 					["groups"] = {
 						i(9362),	-- Brilliant Gold Ring
@@ -552,8 +552,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(26943, {	-- Home Sweet Gnome
-					["qg"] = 2789,	-- Skuerto
 					["altQuests"] = { 26944 },	-- Exploring Gnomeregan
+					["qg"] = 2789,	-- Skuerto
 					["coord"] = { 40.3, 49.1, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -569,8 +569,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = 24,
 				}),
 				q(2950, {	-- Nogg's Ring Redo
-					["qg"] = 3412,	-- Nogg <Expert Engineer>
 					["sourceQuest"] = 2949,	-- Return of the Ring [Horde]
+					["qg"] = 3412,	-- Nogg <Expert Engineer>
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 56.7, 57.0, ORGRIMMAR },
@@ -591,8 +591,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(2947, {	-- Return of the Ring [Alliance]
-					["provider"] = { "o", 142487 },	-- The Sparklematic 5200
 					["sourceQuest"] = 2945,	-- Grime-Encrusted Ring
+					["provider"] = { "o", 142487 },	-- The Sparklematic 5200
 					["maps"] = { IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(28, 28, 10),
@@ -601,8 +601,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(2949, {	-- Return of the Ring [Horde]
-					["provider"] = { "o", 142487 },	-- The Sparklematic 5200
 					["sourceQuest"] = 2945,	-- Grime-Encrusted Ring
+					["provider"] = { "o", 142487 },	-- The Sparklematic 5200
 					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(28, 28, 10),
@@ -639,8 +639,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(2922, {	-- Save Techbot's Brain!
-					["qg"] = 7944,	-- Tinkmaster Overspark <Master Gnome Engineer>
 					["sourceQuest"] = 2923,	-- Tinkmaster Overspark
+					["qg"] = 7944,	-- Tinkmaster Overspark <Master Gnome Engineer>
 					["coord"] = { 70.4, 49.4, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -681,13 +681,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(26939, {	-- The G-Team (1/3) [Alliance]
-					["providers"] = {
-						{ "n", 44556 },	-- Murd Doc
-						{ "i", 60680 },	-- S.A.F.E. "Parachute"
-					},
 					["sourceQuests"] = {
 						26943,	-- Home Sweet Gnome
 						26944,	-- Exploring Gnomeregan
+					},
+					["providers"] = {
+						{ "n", 44556 },	-- Murd Doc
+						{ "i", 60680 },	-- S.A.F.E. "Parachute"
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -699,11 +699,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(26941, {	-- The G-Team (2/3) [Alliance]
+					["sourceQuest"] = 26939,	-- The G-Team (1/3) [Alliance]
 					["providers"] = {
 						{ "n", 44560 },	-- B.E Barechus <S.A.F.E.>
 						{ "i", 60680 },	-- S.A.F.E. "Parachute"
 					},
-					["sourceQuest"] = 26939,	-- The G-Team (1/3) [Alliance]
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(24, 24, 10),
@@ -714,8 +714,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(26942, {	-- The G-Team (3/3) [Alliance]
-					["qg"] = 44561,	-- Face <S.A.F.E.>
 					["sourceQuest"] = 26941,	-- The G-Team (2/3) [Alliance]
+					["qg"] = 44561,	-- Face <S.A.F.E.>
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(24, 24, 10),
@@ -751,11 +751,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(50337, {	-- The G-Team (2/3) [Horde]
+					["sourceQuest"] = 50338,	-- The G-Team (1/3) [Horde]
 					["providers"] = {
 						{ "n", 44560 },	-- B.E Barechus <S.A.F.E.>
 						{ "i", 60680 },	-- S.A.F.E. "Parachute"
 					},
-					["sourceQuest"] = 50338,	-- The G-Team (1/3) [Horde]
 					["timeline"] = { ADDED_7_3_5 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(24, 24, 10),
@@ -766,8 +766,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(50336, {	-- The G-Team (3/3) [Horde]
-					["qg"] = 44561,	-- Face <S.A.F.E.>
 					["sourceQuest"] = 50337,	-- The G-Team (2/3) [Horde]
+					["qg"] = 44561,	-- Face <S.A.F.E.>
 					["timeline"] = { ADDED_7_3_5 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(24, 24, 10),
@@ -789,8 +789,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(2962, {	-- The Only Cure is More Green Glow
-					["qg"] = 1268,	-- Ozzie Togglevolt
 					["sourceQuest"] = 2926,	-- Gnogaine
+					["qg"] = 1268,	-- Ozzie Togglevolt
 					["coord"] = { 45.8, 49.2, DUN_MOROGH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1024,8 +1024,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						q(80136, {	-- Essential Artificials
-							["qg"] = 6169,	-- Klockmort Spannerspan
 							["sourceQuest"] = 80135,	-- Klockmort's Essentials
+							["qg"] = 6169,	-- Klockmort Spannerspan
 							["coord"] = { 68.2, 46.2, IRONFORGE },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 40,
@@ -1040,8 +1040,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						q(80139, {	-- Gnogaine
-							["qg"] = 1268,	-- Ozzie Togglevolt
 							["sourceQuest"] = 2927,	-- The Day After
+							["qg"] = 1268,	-- Ozzie Togglevolt
 							["coord"] = { 45.8, 49.2, DUN_MOROGH },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 40,
@@ -1054,8 +1054,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						q(80131, {	-- Gnome Improvement
-							["qg"] = 6826,	-- Talvash del Kissel
 							["sourceQuest"] = 79987,	-- Return of the Ring [Alliance]
+							["qg"] = 6826,	-- Talvash del Kissel
 							["coord"] = { 36.2, 3.8, IRONFORGE },
 							["cost"] = {
 								{ "i", 216662, 1 },	-- Brilliant Gold Ring
@@ -1070,8 +1070,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						q(80134, {	-- Gnomer-gooooone!
-							["qg"] = 7853,	-- Scooty <Chief Engineer>
 							["sourceQuest"] = 80133,	-- Chief Engineer Scooty
+							["qg"] = 7853,	-- Scooty <Chief Engineer>
 							["coord"] = { 27.6, 77.4, STRANGLETHORN_VALE },
 							["races"] = HORDE_ONLY,
 							["lvl"] = 40,
@@ -1082,8 +1082,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						q(79986, {	-- Grime-Encrusted Ring
-							["provider"] = { "i", 216661 },	-- Grime-Encrusted Ring
 							["description"] = "Take this to The Sparklematic 5200.",
+							["provider"] = { "i", 216661 },	-- Grime-Encrusted Ring
 							["lvl"] = 40,
 							["groups"] = {
 								i(216662),	-- Brilliant Gold Ring
@@ -1116,8 +1116,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["lvl"] = 40,
 						}),
 						q(80160, {	-- More Sparklematic Action
-							["provider"] = { "o", 175084 },	-- The Sparklematic 5200
 							["sourceQuest"] = 80153,	-- The Sparklematic 5200!
+							["provider"] = { "o", 175084 },	-- The Sparklematic 5200
 							["cost"] = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
 							["repeatable"] = true,
 							["groups"] = {
@@ -1125,8 +1125,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						q(80155, {	-- More Sparklematic Action
-							["provider"] = { "o", 142487 },	-- The Sparklematic 5200
 							["sourceQuest"] = 80158,	-- The Sparklematic 5200!
+							["provider"] = { "o", 142487 },	-- The Sparklematic 5200
 							["cost"] = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
 							["repeatable"] = true,
 							["groups"] = {
@@ -1134,8 +1134,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						q(80141, {	-- Nogg's Ring Redo
-							["qg"] = 3412,	-- Nogg <Expert Engineer>
 							["sourceQuest"] = 80140,	-- Return of the Ring [Horde]
+							["qg"] = 3412,	-- Nogg <Expert Engineer>
 							["coords"] = {
 								-- #if AFTER CATA
 								{ 56.7, 57.0, ORGRIMMAR },
@@ -1156,10 +1156,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						q(79984, {	-- Quadrangulation
-							["qg"] = 7853,	-- Scooty <Chief Engineer>
-							["sourceQuest"] = 79981,	-- The Corroded Core
-							["coord"] = { 27.6, 77.4, STRANGLETHORN_VALE },
 							["description"] = "You can technically skip this quest if you get summoned to the next one... But you're a Completionist, right? Right?!",
+							["sourceQuest"] = 79981,	-- The Corroded Core
+							["qg"] = 7853,	-- Scooty <Chief Engineer>
+							["coord"] = { 27.6, 77.4, STRANGLETHORN_VALE },
 							["maps"] = {
 								DUSTWALLOW_MARSH,
 								DESOLACE,
@@ -1187,21 +1187,21 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						q(79987, {	-- Return of the Ring [Alliance]
+							["sourceQuest"] = 79986,	-- Grime-Encrusted Ring
 							["providers"] = {
 								{ "i", 216662 },	-- Brilliant Gold Ring
 								{ "o", 142487 },	-- The Sparklematic 5200
 							},
-							["sourceQuest"] = 79986,	-- Grime-Encrusted Ring
 							["maps"] = { IRONFORGE },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 40,
 						}),
 						q(80140, {	-- Return of the Ring [Horde]
+							["sourceQuest"] = 79986,	-- Grime-Encrusted Ring
 							["providers"] = {
 								{ "i", 216662 },	-- Brilliant Gold Ring
 								{ "o", 142487 },	-- The Sparklematic 5200
 							},
-							["sourceQuest"] = 79986,	-- Grime-Encrusted Ring
 							["maps"] = { ORGRIMMAR },
 							["races"] = HORDE_ONLY,
 							["lvl"] = 40,
@@ -1228,8 +1228,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						q(79705, {	-- Salvaging the Salvagematic
-							["qg"] = 217689,	-- Ziri "The Wrench" Littlesprocket <Gearhead>
 							["sourceQuest"] = 79626,	-- The Salvagematic 9000!
+							["qg"] = 217689,	-- Ziri "The Wrench" Littlesprocket <Gearhead>
 							["cost"] = {
 								{ "i", 3860, 10 },	-- Mithril Bar
 								{ "i", 11135, 5 },	-- Greater Mystic Essence
@@ -1239,8 +1239,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["lvl"] = 40,
 						}),
 						q(80137, {	-- Save Techbot's Brain!
-							["qg"] = 7944,	-- Tinkmaster Overspark <Master Gnome Engineer>
 							["sourceQuest"] = 80138,	-- Tinkmaster Overspark
+							["qg"] = 7944,	-- Tinkmaster Overspark <Master Gnome Engineer>
 							["coord"] = { 70.4, 49.4, IRONFORGE },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 40,
@@ -1303,8 +1303,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						q(80182, {	-- The Only Cure is More Green Glow
-							["qg"] = 1268,	-- Ozzie Togglevolt
 							["sourceQuest"] = 80139,	-- Gnogaine
+							["qg"] = 1268,	-- Ozzie Togglevolt
 							["coord"] = { 45.8, 49.2, DUN_MOROGH },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 40,
@@ -1325,8 +1325,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["lvl"] = 40,
 						}),
 						q(79704, {	-- The Salvagematic 9000!
-							["provider"] = { "o", 422483 },	-- The Salvagematic 9000
 							["sourceQuest"] = 79705,	-- Salvaging the Salvagematic
+							["provider"] = { "o", 422483 },	-- The Salvagematic 9000
 							["cost"] = {
 								{ "i", 213427, 1 },	-- Grime-Encrusted Salvage
 								{ "g", 3000 },	-- 30s
@@ -1353,8 +1353,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						q(80153, {	-- The Sparklematic 5200!
-							["provider"] = { "o", 175084 },	-- The Sparklematic 5200
 							["sourceQuest"] = 80161,	-- The Sparklematic 5200!
+							["provider"] = { "o", 175084 },	-- The Sparklematic 5200
 							["cost"] = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
 							["lvl"] = 40,
 							["groups"] = {
@@ -1370,8 +1370,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 						q(80158, {	-- The Sparklematic 5200!
-							["provider"] = { "o", 142487 },	-- The Sparklematic 5200
 							["sourceQuest"] = 80157,	-- The Sparklematic 5200!
+							["provider"] = { "o", 142487 },	-- The Sparklematic 5200
 							["cost"] = { { "i", 9308, 1 } },	-- Grime-Encrusted Object
 							["lvl"] = 40,
 							["groups"] = {
@@ -1393,8 +1393,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["lvl"] = 40,
 						}),
 						q(79982, {	-- Warranty Claim
-							["qg"] = 218237,	-- Wirdal Wondergear <Gnomeregan Refugee>
 							["sourceQuest"] = 79981,	-- The Corroded Core
+							["qg"] = 218237,	-- Wirdal Wondergear <Gnomeregan Refugee>
 							["coord"] = { 84.2, 43.8, FERALAS },
 							["lvl"] = 40,
 							["groups"] = {

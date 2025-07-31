@@ -131,8 +131,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					}),
 					q(82161),	-- Special Assignment: Bombs from Behind [Trigger]
 					q(82531, {	-- Special Assignment: Bombs from Behind
-						-- ["coord"] = { XX, YY, AZJ_KAHET }
 						["sourceQuests"] = { 82161 },	-- Special Assignment: Bombs from Behind [Trigger]
+						-- ["coord"] = { XX, YY, AZJ_KAHET }
 					}),
 				}),
 			}),

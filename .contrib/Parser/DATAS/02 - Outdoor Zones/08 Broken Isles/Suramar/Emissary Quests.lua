@@ -7,11 +7,11 @@ root(ROOTS.Zones, {
 		m(SURAMAR, {
 			n(EMISSARY_QUESTS, {
 				q(42421, {	-- The Nightfallen
-					["isWorldQuest"] = true,
-					["providers"] = {
-						{ "n", 97140 },	-- Thalyssra
-						{ "n", 115736 },	-- First Arcanist Thalyssra
+					["qgs"] = {
+						97140,	-- Thalyssra
+						115736,	-- First Arcanist Thalyssra
 					},
+					["isWorldQuest"] = true,
 					["groups"] = {
 						i(157826, {	-- Nightfallen Hoard
 							["sym"] = {
@@ -49,11 +49,11 @@ root(ROOTS.Zones, {
 					},
 				}),
 				q(46748, bubbleDownSelf({ ["minReputation"] = { FACTION_THE_NIGHTFALLEN, EXALTED }}, {		-- Supplies From the Nightfallen
-					["repeatable"] = true,
-					["providers"] = {
-						{ "n", 97140 },	-- Thalyssra
-						{ "n", 115736 },	-- First Arcanist Thalyssra
+					["qgs"] = {
+						97140,	-- Thalyssra
+						115736,	-- First Arcanist Thalyssra
 					},
+					["repeatable"] = true,
 					["groups"] = {
 						i(152105, {	-- Nightfallen Cache
 							i(143764),	-- Leywoven Flying Carpet (MOUNT!)

@@ -462,6 +462,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						},
 					}),
 					q(77838, {	-- Tattered Dreamleaf
+						["description"] = "Appears that ANY class can be given this quest by another player with the Tattered Dreamleaf.",
 						["sourceQuests"] = {
 							77833,	-- Handling It: Concentrated Sophic Vellum
 							77835,	-- Handling It: Rune of Shadowbinding
@@ -470,7 +471,6 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						["sourceQuestNumRequired"] = 1,
 						["provider"] = { "i", 210199 },	-- Tattered Dreamleaf
 						["classes"] = IGNORED_VALUE,	-- prevent bubbleDown... this was given to my Hunter
-						["description"] = "Appears that ANY class can be given this quest by another player with the Tattered Dreamleaf.",
 						["groups"] = {
 							i(211927),	-- Tattered Dreamleaf
 							i(208587),	-- Budding Restoration Mote (QI!)
@@ -572,12 +572,12 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						["sourceQuests"] = { 78159 },	-- Handling It: Glowspore Grip
 						["provider"] = { "n", 194842 },	-- Erden
 						["coord"] = { 82.4, 50.6, OHNAHRAN_PLAINS },
-						["isDaily"] = true,
 						["cost"] = {
 							{ "i", 190329, 5 },		-- Awakened Frost
 							{ "i", 208212, 1 },		-- Dreaming Essence
 							{ "i", 204460, 100 },	-- Zaralek Glowspores
 						},
+						["isDaily"] = true,
 						["groups"] = {
 							i(210918),	-- Adaptive Cooling Salve (QI!)
 						},
@@ -1449,8 +1449,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						["provider"] = { "i", 210430 },	-- Twisted Dreaming Essence (QI!)
 					}),
 					q(78421, {	-- The Power of Dreams
-						["provider"] = { "n", 210039 },	-- Merithra
 						["sourceQuest"] = 78355,	-- Essence of a Broken Dream (QI!)
+						["provider"] = { "n", 210039 },	-- Merithra
 						["groups"] = {
 							i(210470),	-- Echoed Ephemera (QI!)
 							i(210472),	-- Igira's Cruel Nightmare (QI!)
@@ -1460,8 +1460,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 						},
 					}),
 					q(78429, {	-- The Power of Dreams, Awoken
-						["provider"] = { "n", 210039 },	-- Merithra
 						["sourceQuest"] = 78421,	-- The Power of Dreams
+						["provider"] = { "n", 210039 },	-- Merithra
 						["groups"] = {
 							i(210498, {	-- Fused Essence
 								i(210494),	-- Incandescent Essence
@@ -1470,8 +1470,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 					}),
 					q(78473, {	-- The Power of Dreams, Lost
 						["description"] = "This quest allows a player to recover their Incandescent Essence if it was deleted.",
-						["provider"] = { "n", 210039 },	-- Merithra
 						["sourceQuest"] = 78429,	-- The Power of Dreams, Awoken
+						["provider"] = { "n", 210039 },	-- Merithra
 						["repeatable"] = true,
 						["groups"] = {
 							i(210494),	-- Incandescent Essence

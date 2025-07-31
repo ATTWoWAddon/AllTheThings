@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, {
+root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
 	inst(271, {	-- Ahn'kahet: The Old Kingdom
 		["mapID"] = AHNKAHET_THE_OLD_KINGDOM,
 		["coord"] = { 28.3, 51.6, DRAGONBLIGHT },
@@ -134,8 +134,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					},
 				}),
 				q(29826, {	-- Reclaiming Ahn'Kahet
-					["qg"] = 55658,	-- Seer Ixit
 					["sourceQuest"] = 29825,	-- Pupil No More
+					["qg"] = 55658,	-- Seer Ixit
 					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(71, 71, 15),
 					["groups"] = {
@@ -503,7 +503,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			-- #endif
 		},
 	}),
-})));
+}))));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
 	inst(271, {

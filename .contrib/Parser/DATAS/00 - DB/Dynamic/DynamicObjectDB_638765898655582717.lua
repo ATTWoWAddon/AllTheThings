@@ -1,4 +1,4 @@
-﻿local ObjectDB = ObjectDB; for objectID,objectData in pairs({
+local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[509567] = {
 		readable = "The Undermine Guide to Authentic Cooking",
 		model = 4323821,

@@ -80,32 +80,32 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					},
 				}),
 				q(79433, {	-- Seeking Expert Advice
-					["provider"] = { "n", 216591 },	-- Eternus
 					["sourceQuests"] = { 79432 },	-- It's About Time
+					["provider"] = { "n", 216591 },	-- Eternus
 					["coord"] = { 24.5, 52.2, TIMELESS_ISLE },
 				}),
 				q(79434, {	-- Weave It To Me
-					["provider"] = { "n", 216594 },	-- Moratari
 					["sourceQuests"] = { 79433 },	-- Seeking Expert Advice
+					["provider"] = { "n", 216594 },	-- Moratari
 					["coord"] = { 25.7, 51.6, TIMELESS_ISLE },
 					["groups"] = {
 						i(213571),	-- Thread of Time (QI!)
 					},
 				}),
 				q(79437, {	-- Knot My Problem
-					["provider"] = { "n", 216594 },	-- Moratari
 					["sourceQuests"] = { 79433 },	-- Seeking Expert Advice
+					["provider"] = { "n", 216594 },	-- Moratari
 					["coord"] = { 25.7, 51.6, TIMELESS_ISLE },
 					["groups"] = {
 						i(215110),	-- Chronostablizer (QI!)
 					},
 				}),
 				q(79435, {	-- What's Hours Is yours
-					["provider"] = { "n", 216594 },	-- Moratari
 					["sourceQuests"] = {
 						79437,	-- Knot My Problem
 						79434,	-- Weave It To Me
 					},
+					["provider"] = { "n", 216594 },	-- Moratari
 					["coord"] = { 25.7, 51.6, TIMELESS_ISLE },
 					["groups"] = {
 						i(210333, {	-- Cloak of Infinite Potential
@@ -116,18 +116,18 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					},
 				}),
 				q(80380, {	-- Cloak and Needle
-					["provider"] = { "n", 216594 },	-- Moratari
 					["sourceQuests"] = { 79435 },	-- What's Hours Is yours
+					["provider"] = { "n", 216594 },	-- Moratari
 					["coord"] = { 25.7, 51.6, TIMELESS_ISLE },
 				}),
 				q(79438, {	-- Goodbyes Are Hard When You Live Forever
-					["provider"] = { "n", 216594 },	-- Moratari
 					["sourceQuests"] = { 80380 },	-- Cloak and Needle
+					["provider"] = { "n", 216594 },	-- Moratari
 					["coord"] = { 25.7, 51.6, TIMELESS_ISLE },
 				}),
 				q(79440, {	-- Recalling the War
-					["provider"] = { "n", 218129 },	-- Moratari
 					["sourceQuests"] = { 79438 },	-- Goodbyes Are Hard When You Live Forever
+					["provider"] = { "n", 218129 },	-- Moratari
 					["coord"] = { 26.4, 54.3, TIMELESS_ISLE },
 				}),
 			}),

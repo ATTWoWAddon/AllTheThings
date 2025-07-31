@@ -36,7 +36,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					},
 				}),
 				q(74847, {	-- Emberthal Awaits
-					["timeline"] = { REMOVED_10_1_0 },
 					["sourceQuests"] = {
 						75050,	-- An Eclectic Accord
 						74769,	-- Stemming the Irontide
@@ -44,6 +43,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					},
 					["provider"] = { "n", 199201 },	-- Scalecommander Viridia
 					["coord"] = { 34.6, 57.7, THE_FORBIDDEN_REACH },
+					["timeline"] = { REMOVED_10_1_0 },
 					["groups"] = {
 						i(204276),	-- Untapped Forbidden Knowledge
 					},
@@ -294,8 +294,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			}),
 			-- Augmentation Evoker questline
 			q(72513, {	-- Our Destiny
-				["timeline"] = { ADDED_10_1_5 },
 				["description"] = "You get this anywhere in the Dragon Isles when you specialize in Augmentation for the first time.",
+				["timeline"] = { ADDED_10_1_5 },
 			}),
 			q(72514, {	-- The High Creche
 				["sourceQuests"] = { 72513 },	-- Our Destiny

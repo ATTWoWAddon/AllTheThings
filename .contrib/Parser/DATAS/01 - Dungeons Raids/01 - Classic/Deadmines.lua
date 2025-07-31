@@ -49,8 +49,8 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				},
 			}),
 			q(44930, {	-- Deadmines: Sea'in Red
-				["qg"] = 115818,	-- Captain Bramblebeard
 				["description"] = "|cff3399ffSTEP 1:|r Must be playing a Rogue in Outlaw Specialization, and you must have a Green Wing Macaw pet.\n|cff3399ffSTEP 2:|r Go to Ironclad Cove, near the end of the dungeon (the area with the dock and ship).\n|cff3399ffSTEP 3:|r Locate the Ghostly Parrot (36.5, 17.0).\n|cff3399ffSTEP 4:|r Summon your Green Wing Macaw.  An Extra Action Button will appear, allowing you to grapple up the wall.\n|cff3399ffSTEP 5:|r Accept the quest and kill pirates to collect 100 bandanas.\n|cff3399ffSTEP 6:|r Repeat the process to get back to questgiver to turn it in.",
+				["qg"] = 115818,	-- Captain Bramblebeard
 				["timeline"] = { ADDED_7_1_0 },
 				["classes"] = { ROGUE },
 				["groups"] = {
@@ -64,9 +64,9 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				},
 			}),
 			q(27848, {	-- Good Intentions...Poor Execution
-				["qg"] = 46889,	-- Kagtha
 				["sourceQuest"] = 27847,	-- Not Quite There
 				["sourceQuestNumRequired"] = 0,	-- Auto-accepted when getting close to Admiral Ripsnarl
+				["qg"] = 46889,	-- Kagtha
 				["timeline"] = { ADDED_4_0_3 },
 				["races"] = HORDE_ONLY,
 				["lvl"] = lvlsquish(15, 15, 7),
@@ -77,9 +77,9 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				},
 			}),
 			q(27847, {	-- Not Quite There
-				["qg"] = 46902,	-- Miss Mayhem
 				["sourceQuest"] = 27844,	-- Traitors!!!
 				["sourceQuestNumRequired"] = 0,	-- Auto-accepted when getting close to Foe Reaper 5000
+				["qg"] = 46902,	-- Miss Mayhem
 				["timeline"] = { ADDED_4_0_3 },
 				["races"] = HORDE_ONLY,
 				["lvl"] = lvlsquish(15, 15, 7),
@@ -111,8 +111,8 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				},
 			}),
 			q(27842, {	-- Only the Beginning
-				["qg"] = 46889,	-- Kagtha
 				--["sourceQuest"] = 28004,	-- Adventurers Wanted: The Deadmines [Horde]
+				["qg"] = 46889,	-- Kagtha
 				["timeline"] = { ADDED_4_0_3 },
 				["races"] = HORDE_ONLY,
 				["lvl"] = lvlsquish(15, 15, 7),
@@ -124,8 +124,8 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				},
 			}),
 			q(214, {	-- Red Silk Bandanas
-				["qg"] = 820,	-- Scout Riell <The People's Militia>
 				["sourceQuest"] = 153,	-- Red Leather Bandanas
+				["qg"] = 820,	-- Scout Riell <The People's Militia>
 				["coord"] = { 56.7, 47.4, WESTFALL },
 				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
@@ -152,8 +152,8 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				},
 			}),
 			q(27785, {	-- The Admiral
-				["qg"] = 46612,	-- Lieutenant Horatio Laine
 				["sourceQuest"] = 27781,	-- The Machination
+				["qg"] = 46612,	-- Lieutenant Horatio Laine
 				["timeline"] = { ADDED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = lvlsquish(15, 15, 7),
@@ -164,8 +164,8 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				},
 			}),
 			q(27758, {	-- The Carpenter
-				["qg"] = 46612,	-- Lieutenant Horatio Laine
 				["sourceQuest"] = 27756,	-- The Foreman
+				["qg"] = 46612,	-- Lieutenant Horatio Laine
 				["timeline"] = { ADDED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = lvlsquish(15, 15, 7),
@@ -176,8 +176,8 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				},
 			}),
 			q(166, {	-- The Defias Brotherhood (7/7)
-				["qg"] = 234,	-- Gryan Stoutmantle <The People's Militia>
 				["sourceQuest"] = 155,	-- The Defias Brotherhood (6/7)
+				["qg"] = 234,	-- Gryan Stoutmantle <The People's Militia>
 				["coord"] = { 56.3, 47.5, WESTFALL },
 				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
@@ -198,8 +198,8 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				},
 			}),
 			q(27790, {	-- The Defias Kingpin [Alliance]
-				["qg"] = 46612,	-- Lieutenant Horatio Laine
 				["sourceQuest"] = 27785,	-- The Admiral
+				["qg"] = 46612,	-- Lieutenant Horatio Laine
 				["timeline"] = { ADDED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = lvlsquish(15, 15, 7),
@@ -213,8 +213,8 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				},
 			}),
 			q(27850, {	-- The Defias Kingpin [Horde]
-				["qg"] = 46889,	-- Kagtha
 				["sourceQuest"] = 27848,	-- Good Intentions...Poor Execution
+				["qg"] = 46889,	-- Kagtha
 				["timeline"] = { ADDED_4_0_3 },
 				["races"] = HORDE_ONLY,
 				["lvl"] = lvlsquish(15, 15, 7),
@@ -228,11 +228,11 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				},
 			}),
 			q(27756, {	-- The Foreman
+				--["sourceQuest"] = 28005,	-- Adventurers Wanted: The Deadmines [Alliance]
 				["providers"] = {
 					{ "n", 46612 },	-- Lieutenant Horatio Laine
 					{ "i", 62334 },	-- Stormwind Communicator Mk. II
 				},
-				--["sourceQuest"] = 28005,	-- Adventurers Wanted: The Deadmines [Alliance]
 				["timeline"] = { ADDED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = lvlsquish(15, 15, 7),
@@ -244,8 +244,8 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				},
 			}),
 			q(27781, {	-- The Machination
-				["qg"] = 46612,	-- Lieutenant Horatio Laine
 				["sourceQuest"] = 27758,	-- The Carpenter
+				["qg"] = 46612,	-- Lieutenant Horatio Laine
 				["timeline"] = { ADDED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = lvlsquish(15, 15, 7),
@@ -256,6 +256,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				},
 			}),
 			q(373, {	-- The Unsent Letter
+				["description"] = "Drops from VanCleef. Deliver it to Baros Alexston in Stormwind City.",
 				["providers"] = {
 					{ "i", 2874 },	-- An Unsent Letter
 					{ "n", 1646 },	-- Baros Alexston <City Architect>
@@ -267,15 +268,14 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 					{ 49, 30.2, STORMWIND_CITY },
 					-- #endif
 				},
-				["description"] = "Drops from VanCleef. Deliver it to Baros Alexston in Stormwind City.",
 				["timeline"] = { REMOVED_4_0_3 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 16,
 			}),
 			q(27844, {	-- Traitors!!!
-				["qg"] = 46906,	-- Slinky Sharpshiv
 				["sourceQuest"] = 27842,	-- Only the Beginning
 				["sourceQuestNumRequired"] = 0,	-- Auto-accepted when getting close to Helix Gearbreaker
+				["qg"] = 46906,	-- Slinky Sharpshiv
 				["timeline"] = { ADDED_4_0_3 },
 				["races"] = HORDE_ONLY,
 				["lvl"] = lvlsquish(15, 15, 7),
@@ -286,8 +286,8 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				},
 			}),
 			q(2040, {	-- Underground Assault
-				["qg"] = 6579,	-- Shoni the Shilent
 				["sourceQuest"] = 2041,	-- Speak with Shoni
+				["qg"] = 6579,	-- Shoni the Shilent
 				["coords"] = {
 					-- #if AFTER WRATH
 					{ 62.8, 34.8, STORMWIND_CITY },

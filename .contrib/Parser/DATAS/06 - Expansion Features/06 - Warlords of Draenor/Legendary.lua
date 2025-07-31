@@ -63,8 +63,8 @@ root(ROOTS.ExpansionFeatures,
 					},
 				}),
 				q(36157, {	-- Spires of the Betrayer
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["sourceQuests"] = { 35988 },	-- Call of the Archmage
+					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["coord"] = { 85.2, 31.6, TALADOR },
 					["timeline"] = {
 						ADDED_6_0_2,
@@ -72,8 +72,8 @@ root(ROOTS.ExpansionFeatures,
 					},
 				}),
 				q(35989, {	-- Khadgar's Task
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["sourceQuests"] = { 36157 },	-- Spires of the Betrayer
+					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["coord"] = { 85.2, 31.6, TALADOR },
 					["timeline"] = {
 						ADDED_6_0_2,
@@ -89,8 +89,8 @@ root(ROOTS.ExpansionFeatures,
 				}),
 				-- Part 1
 				q(35990, {	-- Core of Flame
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["sourceQuests"] = { 35989 },	-- Khadgar's Task
+					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["coord"] = { 85.2, 31.6, TALADOR },
 					["timeline"] = {
 						ADDED_6_0_2,
@@ -98,8 +98,8 @@ root(ROOTS.ExpansionFeatures,
 					},
 				}),
 				q(35991, {	-- Core of Iron
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["sourceQuests"] = { 35989 },	-- Khadgar's Task
+					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["coord"] = { 85.2, 31.6, TALADOR },
 					["timeline"] = {
 						ADDED_6_0_2,
@@ -107,8 +107,8 @@ root(ROOTS.ExpansionFeatures,
 					},
 				}),
 				q(35992, {	-- Core of Life
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["sourceQuests"] = { 35989 },	-- Khadgar's Task
+					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["coord"] = { 85.2, 31.6, TALADOR },
 					["timeline"] = {
 						ADDED_6_0_2,
@@ -116,8 +116,8 @@ root(ROOTS.ExpansionFeatures,
 					},
 				}),
 				q(36158, {	-- Draenor's Secret Power
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["sourceQuests"] = { 35989 },	-- Khadgar's Task
+					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["coord"] = { 85.2, 31.6, TALADOR },
 					["timeline"] = {
 						ADDED_6_0_2,
@@ -126,12 +126,12 @@ root(ROOTS.ExpansionFeatures,
 					["cost"] = { { "c", 823, 4986}, },	-- 4986 Apexis Crystal
 				}),
 				q(35993, {	-- Tackling Teron'gor
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["sourceQuests"] = {
 						35990,	-- Core of Flame
 						35991,	-- Core of Iron
 						35992,	-- Core of Life
 					},
+					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["coord"] = { 85.2, 31.6, TALADOR },
 					["timeline"] = {
 						ADDED_6_0_2,
@@ -139,11 +139,11 @@ root(ROOTS.ExpansionFeatures,
 					},
 				}),
 				q(35994, {	-- Eyes of the Archmage
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["sourceQuests"] = {
 						35993,	-- Tackling Teron'gor
 						36158,	-- Draenor's Secret Power
 					},
+					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["coord"] = { 85.2, 31.6, TALADOR },
 					["timeline"] = {
 						ADDED_6_0_2,
@@ -151,8 +151,8 @@ root(ROOTS.ExpansionFeatures,
 					},
 				}),
 				q(36000, {	-- Fugitive Dragon
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["sourceQuests"] = { 35994 },	-- Eyes of the Archmage
+					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["coord"] = { 85.2, 31.6, TALADOR },
 					["timeline"] = {
 						ADDED_6_0_2,
@@ -160,8 +160,8 @@ root(ROOTS.ExpansionFeatures,
 					},
 				}),
 				q(36206, {	-- The Dragon's Tale
-					["provider"] = { "n", 84702 },	-- Archmage Khadgar <Sons of Lothar>
 					["sourceQuests"] = { 35994 },	-- Eyes of the Archmage
+					["provider"] = { "n", 84702 },	-- Archmage Khadgar <Sons of Lothar>
 					["coord"] = { 77.2, 36.8, DRAENOR_NAGRAND },
 					["timeline"] = {
 						ADDED_6_0_2,
@@ -169,8 +169,8 @@ root(ROOTS.ExpansionFeatures,
 					},
 				}),
 				q(35995, {	-- Tarnished Bronze
-					["provider"] = { "n", 84702 },	-- Archmage Khadgar <Sons of Lothar>
 					["sourceQuests"] = { 36206 },	-- The Dragon's Tale
+					["provider"] = { "n", 84702 },	-- Archmage Khadgar <Sons of Lothar>
 					["coord"] = { 92.4, 31.4, DRAENOR_NAGRAND },
 					["timeline"] = {
 						ADDED_6_0_2,
@@ -181,8 +181,8 @@ root(ROOTS.ExpansionFeatures,
 					},
 				}),
 				q(36004, {	-- Power Unleashed
-					["provider"] = { "n", 84702 },	-- Archmage Khadgar <Sons of Lothar>
 					["sourceQuests"] = { 35995 },	-- Tarnished Bronze
+					["provider"] = { "n", 84702 },	-- Archmage Khadgar <Sons of Lothar>
 					["coord"] = { 92.4, 31.4, DRAENOR_NAGRAND },
 					["timeline"] = {
 						ADDED_6_0_2,
@@ -198,11 +198,11 @@ root(ROOTS.ExpansionFeatures,
 				}),
 				-- Part 2
 				q(35997, {	-- Empire's Fall
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["sourceQuests"] = {
 						36004,	-- Power Unleashed
 						39022,	-- Call of the Archmage <<-Check this
 					},
+					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["coord"] = { 85.2, 31.6, TALADOR },
 					["timeline"] = {
 						ADDED_6_0_2,
@@ -218,11 +218,11 @@ root(ROOTS.ExpansionFeatures,
 					},
 				}),
 				q(35998, {	-- Legacy of the Sorcerer Kings
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["sourceQuests"] = {
 						36004,	-- Power Unleashed
 						39022,	-- Call of the Archmage <<--Check this
 					},
+					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["coord"] = { 85.2, 31.6, TALADOR },
 					["timeline"] = {
 						ADDED_6_0_2,
@@ -256,8 +256,8 @@ root(ROOTS.ExpansionFeatures,
 					},
 				}),
 				q(40235, {	-- Abrogator Arbitrator
-					["provider"] = { "n", 99180 },	-- Kluk'kluk <Highmaul Turncoat>
 					["sourceQuests"] = { 35998 },	-- Legacy of the Sorcerer Kings
+					["provider"] = { "n", 99180 },	-- Kluk'kluk <Highmaul Turncoat>
 					["coords"] = {
 						{ 57.0, 58.6, TANAAN_JUNGLE },
 						{ 59.6, 46.2, TANAAN_JUNGLE },
@@ -270,11 +270,11 @@ root(ROOTS.ExpansionFeatures,
 					["isWeekly"] = true,
 				}),
 				q(36005, {	-- The Scrying Game
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["sourceQuests"] = {
 						35997,	-- Empire's Fall
 						35998,	-- Legacy of the Sorcerer Kings
 					},
+					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["coord"] = { 85.2, 31.6, TALADOR },
 					["timeline"] = {
 						ADDED_6_0_3_LAUNCH,
@@ -282,8 +282,8 @@ root(ROOTS.ExpansionFeatures,
 					},
 				}),
 				q(36006, {	-- Hunter: Hunted
-					["provider"] = { "n", 83929 },	-- Cordana Felsong <Warden>
 					["sourceQuests"] = { 36005 },	-- The Scrying Game
+					["provider"] = { "n", 83929 },	-- Cordana Felsong <Warden>
 					["coord"] = { 84.8, 31.4, TALADOR },
 					["timeline"] = {
 						ADDED_6_0_3_LAUNCH,
@@ -294,8 +294,8 @@ root(ROOTS.ExpansionFeatures,
 					},
 				}),
 				q(36007, {	-- Touch of the Kirin-Tor
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["sourceQuests"] = { 36006 },	-- Hunter: Hunted
+					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["coord"] = { 85.2, 31.6, TALADOR },
 					["timeline"] = {
 						ADDED_6_0_3_LAUNCH,
@@ -311,8 +311,8 @@ root(ROOTS.ExpansionFeatures,
 				}),
 				-- Part 3
 				q(36013, {	-- Might of the Elemental Lords
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["sourceQuests"] = { 36007 },	-- Touch of the Kirin-Tor
+					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["coord"] = { 85.2, 31.6, TALADOR },
 					["timeline"] = {
 						ADDED_6_0_3_LAUNCH,
@@ -323,8 +323,8 @@ root(ROOTS.ExpansionFeatures,
 					},
 				}),
 				q(36009, {	-- Heart of the Fury
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["sourceQuests"] = { 36007 },	-- Touch of the Kirin-Tor
+					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["coord"] = { 85.2, 31.6, TALADOR },
 					["timeline"] = {
 						ADDED_6_0_3_LAUNCH,
@@ -332,8 +332,8 @@ root(ROOTS.ExpansionFeatures,
 					},
 				}),
 				q(36010, {	-- Flamebender's Tome
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["sourceQuests"] = { 36007 },	-- Touch of the Kirin-Tor
+					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["coord"] = { 85.2, 31.6, TALADOR },
 					["timeline"] = {
 						ADDED_6_0_3_LAUNCH,
@@ -341,8 +341,8 @@ root(ROOTS.ExpansionFeatures,
 					},
 				}),
 				q(36012, {	-- Reverse Piracy
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["sourceQuests"] = { 36007 },	-- Touch of the Kirin-Tor
+					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["coord"] = { 85.2, 31.6, TALADOR },
 					["timeline"] = {
 						ADDED_6_0_3_LAUNCH,
@@ -350,8 +350,8 @@ root(ROOTS.ExpansionFeatures,
 					},
 				}),
 				q(40237, {	-- Work Work Stoppage
-					["provider"] = { "n", 99183 },	-- Renegade Ironworker <Blackrock Foundry Strike Organizer>
 					["sourceQuests"] = { 36013 },	-- Might of the Elemental Lords
+					["provider"] = { "n", 99183 },	-- Renegade Ironworker <Blackrock Foundry Strike Organizer>
 					["coords"] = {
 						{ 58.0, 58.6, TANAAN_JUNGLE },
 						{ 59.8, 46.2, TANAAN_JUNGLE },
@@ -364,13 +364,13 @@ root(ROOTS.ExpansionFeatures,
 					["isWeekly"] = true,
 				}),
 				q(36014, {	-- Blackhand's Secret
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["sourceQuests"] = {
 						36010,	-- Flamebender's Tome
 						36009,	-- Heart of the Fury
 						36013,	-- Might of the Elemental Lords
 						36012,	-- Reverse Piracy
 					},
+					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["coord"] = { 85.2, 31.6, TALADOR },
 					["timeline"] = {
 						ADDED_6_1_0,
@@ -381,13 +381,13 @@ root(ROOTS.ExpansionFeatures,
 					},
 				}),
 				q(36016, {	-- The Unbroken Circle
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["sourceQuests"] = {
 						36010,	-- Flamebender's Tome
 						36009,	-- Heart of the Fury
 						36013,	-- Might of the Elemental Lords
 						36012,	-- Reverse Piracy
 					},
+					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["coord"] = { 85.2, 31.6, TALADOR },
 					["timeline"] = {
 						ADDED_6_1_0,
@@ -403,11 +403,11 @@ root(ROOTS.ExpansionFeatures,
 				}),
 				-- Garona
 				q(36018, {	-- We're Not Finished...
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["sourceQuests"] = {
 						36014,	-- Blackhand's Secret
 						36016,	-- The Unbroken Circle
 					},
+					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["coord"] = { 85.2, 31.6, TALADOR },
 					["timeline"] = {
 						ADDED_6_0_3_LAUNCH,
@@ -428,13 +428,13 @@ root(ROOTS.ExpansionFeatures,
 					-- Can't find provider
 				}),
 				q(36017, {	-- Prisoner of the Mind
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["sourceQuests"] = {
 						36014,	-- Blackhand's Secret
 						36016,	-- The Unbroken Circle
 						36018,	-- We're Not Finished...
 						39023,	-- Call of the Archmage
 					},
+					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["coord"] = { 85.2, 31.6, TALADOR },
 					["timeline"] = {
 						ADDED_6_1_0,
@@ -442,8 +442,8 @@ root(ROOTS.ExpansionFeatures,
 					},
 				}),
 				q(37835, {	-- The Shadow War
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["sourceQuests"] = { 36017 },	-- Prisoner of the Mind
+					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["coord"] = { 85.2, 31.6, TALADOR },
 					["timeline"] = {
 						ADDED_6_1_0,
@@ -451,8 +451,8 @@ root(ROOTS.ExpansionFeatures,
 					},
 				}),
 				q(37834, {	-- Orb of Dominion
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["sourceQuests"] = { 36017 },	-- Prisoner of the Mind
+					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["coord"] = { 85.2, 31.6, TALADOR },
 					["timeline"] = {
 						ADDED_6_1_0,
@@ -460,8 +460,8 @@ root(ROOTS.ExpansionFeatures,
 					},
 				}),
 				q(37836, {	-- Breaking Badness
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["sourceQuests"] = { 37834 },	-- Orb of Dominion
+					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["coord"] = { 85.2, 31.6, TALADOR },
 					["timeline"] = {
 						ADDED_6_1_0,
@@ -469,8 +469,8 @@ root(ROOTS.ExpansionFeatures,
 					},
 				}),
 				q(37964, {	-- To Gul'dan!
-					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["sourceQuests"] = { 37836 },	-- Breaking Badness
+					["provider"] = { "n", 83823 },	-- Archmage Khadgar <Sons of Lothar>
 					["coord"] = { 85.2, 31.6, TALADOR },
 					["timeline"] = {
 						ADDED_6_1_0,
@@ -478,8 +478,8 @@ root(ROOTS.ExpansionFeatures,
 					},
 				}),
 				q(37837, {	-- An Inside Job
-					["provider"] = { "n", 90233 },	-- Archmage Khadgar <Sons of Lothar>
 					["sourceQuests"] = { 37964 },	-- To Gul'dan!
+					["provider"] = { "n", 90233 },	-- Archmage Khadgar <Sons of Lothar>
 					["coord"] = { 67.4, 6.6, TALADOR },
 					["timeline"] = {
 						ADDED_6_1_0,
@@ -487,8 +487,8 @@ root(ROOTS.ExpansionFeatures,
 					},
 				}),
 				q(37838, {	-- My Garona
-					["provider"] = { "n", 90237 },	-- Garona Halforcen
 					["sourceQuests"] = { 37837 },	-- An Inside Job
+					["provider"] = { "n", 90237 },	-- Garona Halforcen
 					["coord"] = { 67.4, 6.6, TALADOR },
 					["timeline"] = {
 						ADDED_6_1_0,
@@ -499,8 +499,8 @@ root(ROOTS.ExpansionFeatures,
 					},
 				}),
 				q(37841, {	-- The Final Assault
-					["provider"] = { "n", 90233 },	-- Archmage Khadgar <Sons of Lothar>
 					["sourceQuests"] = { 37837 },	-- An Inside Job
+					["provider"] = { "n", 90233 },	-- Archmage Khadgar <Sons of Lothar>
 					["coord"] = { 67.4, 6.6, TALADOR },
 					["timeline"] = {
 						ADDED_6_1_0,
@@ -518,11 +518,11 @@ root(ROOTS.ExpansionFeatures,
 					-- Can't find provider
 				}),
 				q(39057, {	-- Command of the Seas
-					["provider"] = { "n", 92213 },	-- Archmage Khadgar <Sons of Lothar>
 					["sourceQuests"] = {
 						39024,	-- Call of the Archmage
 						37841,	-- The Final Assault
 					},
+					["provider"] = { "n", 92213 },	-- Archmage Khadgar <Sons of Lothar>
 					["coords"] = {
 						{ 46.0, 50.6, LUNARFALL },
 						{ 52.0, 40.0, FROSTWALL },
@@ -533,8 +533,8 @@ root(ROOTS.ExpansionFeatures,
 					},
 				}),
 				q(39697, {	-- Master vs. Commander
-					["provider"] = { "n", 92213 },	-- Archmage Khadgar <Sons of Lothar>
 					["sourceQuests"] = { 39057 },	-- Command of the Seas
+					["provider"] = { "n", 92213 },	-- Archmage Khadgar <Sons of Lothar>
 					["coords"] = {
 						{ 46.0, 50.6, LUNARFALL },
 						{ 52.0, 40.0, FROSTWALL },
@@ -548,11 +548,11 @@ root(ROOTS.ExpansionFeatures,
 					},
 				}),
 				q(39000, {	-- We Don't Need No Library Card
-					["provider"] = { "n", 92213 },	-- Archmage Khadgar <Sons of Lothar>
 					["sourceQuests"] = {
 						39024,	-- Call of the Archmage
 						37841,	-- The Final Assault
 					},
+					["provider"] = { "n", 92213 },	-- Archmage Khadgar <Sons of Lothar>
 					["coords"] = {
 						{ 46.0, 50.6, LUNARFALL },
 						{ 52.0, 40.0, FROSTWALL },
@@ -564,8 +564,8 @@ root(ROOTS.ExpansionFeatures,
 					},
 				}),
 				q(39003, {	-- Cooking the Books
-					["provider"] = { "n", 92213 },	-- Archmage Khadgar <Sons of Lothar>
 					["sourceQuests"] = { 39000 },	-- We Don't Need No Library Card
+					["provider"] = { "n", 92213 },	-- Archmage Khadgar <Sons of Lothar>
 					["coords"] = {
 						{ 46.0, 50.6, LUNARFALL },
 						{ 52.0, 40.0, FROSTWALL },
@@ -576,11 +576,11 @@ root(ROOTS.ExpansionFeatures,
 					},
 				}),
 				q(37839, {	-- Light Be With You
-					["provider"] = { "n", 92213 },	-- Archmage Khadgar
 					["sourceQuests"] = {
 						39697,	-- Master vs. Commander
 						39003,	-- Cooking the Books
 					},
+					["provider"] = { "n", 92213 },	-- Archmage Khadgar
 					["coord"] = { 46.0, 50.6, LUNARFALL },
 					["timeline"] = {
 						ADDED_6_2_2,
@@ -597,11 +597,11 @@ root(ROOTS.ExpansionFeatures,
 					},
 				}),
 				q(37840, {	-- Draenor's Blessing
-					["provider"] = { "n", 92213 },	-- Archmage Khadgar
 					["sourceQuests"] = {
 						39697,	-- Master vs. Commander
 						39003,	-- Cooking the Books
 					},
+					["provider"] = { "n", 92213 },	-- Archmage Khadgar
 					["coord"] = { 52.0, 40.0, FROSTWALL },
 					["timeline"] = {
 						ADDED_6_2_2,
@@ -618,11 +618,11 @@ root(ROOTS.ExpansionFeatures,
 					},
 				}),
 				q(39004, {	-- Darkness Incarnate
-					["provider"] = { "n", 92213 },	-- Archmage Khadgar <Sons of Lothar>
 					["sourceQuests"] = {
 						37839,	-- Light Be With You
 						37840,	-- Draenor's Blessing
 					},
+					["provider"] = { "n", 92213 },	-- Archmage Khadgar <Sons of Lothar>
 					["coords"] = {
 						{ 46.0, 50.6, LUNARFALL },
 						{ 52.0, 40.0, FROSTWALL },

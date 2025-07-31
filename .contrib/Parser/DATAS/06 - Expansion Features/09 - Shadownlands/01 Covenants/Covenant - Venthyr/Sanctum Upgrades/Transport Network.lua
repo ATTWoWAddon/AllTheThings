@@ -51,24 +51,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						n(TIER_ONE, {
 							n(QUESTS, {
 								q(60051,{	-- A Master of Their Craft
-									["provider"] = { "n", 158653 },	-- Prince Renathal
 									["sourceQuests"] = { 63056 },	-- Sanctum Upgrade: Mirror Network
+									["provider"] = { "n", 158653 },	-- Prince Renathal
 									["coord"] = { 51.1, 38.0, SINFALL_REACHES },
 									["isBreadcrumb"] = true,
 								}),
 								q(60060, {	-- Mirror Attunement: Pridefall Hamlet
-									["provider"] = { "n", 167160 },	-- Laurent
 									["sourceQuests"] = { 57536 },	-- Mirror Making, Not Breaking
+									["provider"] = { "n", 167160 },	-- Laurent
 									["coord"] = { 47.2, 57.3, SINFALL_REACHES },
 								}),
 								q(60147, {	-- Mirror Attunement: The Eternal Terrace
-									["provider"] = { "n", 167160 },	-- Laurent
 									["sourceQuests"] = { 57536 },	-- Mirror Making, Not Breaking
+									["provider"] = { "n", 167160 },	-- Laurent
 									["coord"] = { 47.2, 57.3, SINFALL_REACHES },
 								}),
 								q(63056, {	-- Sanctum Upgrade: Mirror Network
-									["provider"] = { "n", 172605 },	-- Foreman Flatfinger
 									["sourceQuests"] = { 62915 },	-- Home Improvement
+									["provider"] = { "n", 172605 },	-- Foreman Flatfinger
 									["coord"] = { 55.3, 27.1, SINFALL_REACHES },
 								}),
 							}),
@@ -76,13 +76,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						n(TIER_TWO, {
 							n(QUESTS, {
 								q(60159, {	-- Mirror Attunement: Halls of Atonement
-									["provider"] = { "n", 167160 },	-- Laurent
 									["sourceQuests"] = { 57536 },	-- Mirror Making, Not Breaking
+									["provider"] = { "n", 167160 },	-- Laurent
 									["coord"] = { 47.6, 57.3, SINFALL_REACHES },
 								}),
 								q(60160, {	-- Mirror Attunement: The Banewood
-									["provider"] = { "n", 167160 },	-- Laurent
 									["sourceQuests"] = { 57536 },	-- Mirror Making, Not Breaking
+									["provider"] = { "n", 167160 },	-- Laurent
 									["coord"] = { 47.6, 57.3, SINFALL_REACHES },
 								}),
 							}),
@@ -269,17 +269,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								}),
 								n(QUESTS, {
 									q(60164, {	-- Mirror Attunement: Dominance Keep
-										["provider"] = { "n", 167160 },	-- Laurent
 										["sourceQuests"] = { 57536 },	-- Mirror Making, Not Breaking
+										["provider"] = { "n", 167160 },	-- Laurent
 										["coord"] = { 47.3, 57.5, SINFALL_REACHES },
 									}),
 									q(60165, {	-- Mirror Attunement: Feeders' Thicket
-										["provider"] = { "n", 167160 },	-- Laurent
 										["sourceQuests"] = { 57536 },	-- Mirror Making, Not Breaking
+										["provider"] = { "n", 167160 },	-- Laurent
 										["coord"] = { 47.3, 57.5, SINFALL_REACHES },
 									}),
 									q(59740, {	-- Repair and Restore
-										["provider"] = { "n", 167160 },	-- Laurent
+										["description"] = "Requires completing 2 of the pre-requisite quests.",
 										["sourceQuests"] = {
 											60060,	-- Mirror Attunement: Pridefall Hamlet
 											60147,	-- Mirror Attunement: The Eternal Terrace
@@ -288,8 +288,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 											60164,	-- Mirror Attunement: Dominance Keep
 											60165,	-- Mirror Attunement: Feeders' Thicket
 										},
+										["provider"] = { "n", 167160 },	-- Laurent
 										["coord"] = { 47.3, 57.5, SINFALL_REACHES },
-										["description"] = "Requires completing 2 of the pre-requisite quests.",
 										["groups"] = {
 											i(182112),	-- Handcrafted Mirror Repair Kit (QI!)
 										},

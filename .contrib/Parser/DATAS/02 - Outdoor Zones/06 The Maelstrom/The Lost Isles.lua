@@ -38,8 +38,8 @@ root(ROOTS.Zones, {
 				})),
 				n(QUESTS, {
 					q(24817, {	-- A Goblin in Shark's Clothing
-						["qg"] = 38124,	-- Assistant Greely
 						["sourceQuest"] = 24816,	-- Who's Top of the Food Chain Now?
+						["qg"] = 38124,	-- Assistant Greely
 						["coord"] = { 45.2, 65.5, THE_LOST_ISLES },
 						["groups"] = {
 							i(52952),	-- The Hammer
@@ -47,13 +47,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(14303, {	-- Back to Aggra
-						["qg"] = 35893,	-- Kilag Gorefang
 						["sourceQuest"] = 14236,	-- Weed Whacker
+						["qg"] = 35893,	-- Kilag Gorefang
 						["coord"] = { 35.4, 75.7, THE_LOST_ISLES },
 					}),
 					q(24858, {	-- Bilgewater Cartel Represent
-						["qg"] = 38432,	-- Megs Dreadshredder
 						["sourceQuest"] = 24856,	-- Invasion Imminent!
+						["qg"] = 38432,	-- Megs Dreadshredder
 						["coord"] = { 52.2, 73.1, THE_LOST_ISLES },
 						["groups"] = {
 							i(52953),	-- Banner Cloak
@@ -61,23 +61,23 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(25099, {	-- Borrow Bastia
-						["qg"] = 38935,	-- Thrall
 						["sourceQuest"] = 25098,	-- The Warchief Wants You
+						["qg"] = 38935,	-- Thrall
 						["coord"] = { 36.7, 43.1, THE_LOST_ISLES },
 					}),
 					q(14031, {	-- Capturing the Unknown
-						["qg"] = 35769,	-- Foreman Dampwick
 						["sourceQuest"] = 14248,	-- Help Wanted
+						["qg"] = 35769,	-- Foreman Dampwick
 						["coord"] = { 31.2, 79.2, THE_LOST_ISLES },
 					}),
 					q(24954, {	-- Children of a Turtle God
-						["qg"] = 38120,	-- Hobart Grapplehammer
 						["sourceQuest"] = 24952,	-- Rocket Boot Boost
+						["qg"] = 38120,	-- Hobart Grapplehammer
 						["coord"] = { 68.9, 46.4, THE_LOST_ISLES },
 					}),
 					q(24671, {	-- Cluster Cluck
-						["qg"] = 38120,	-- Hobart Grapplehammer
 						["sourceQuest"] = 27139,	-- Hobart Needs You
+						["qg"] = 38120,	-- Hobart Grapplehammer
 						["coord"] = { 45.3, 65.2, THE_LOST_ISLES },
 						["groups"] = {
 							i(52904),	-- Broken Plunger
@@ -85,13 +85,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(14239, {	-- Don't Go Into the Light!
-						["qg"] = 36608,	-- Doc Zapnozzle
 						-- ["sourceQuest"] = 14126,	-- Life Savings   NOTE: CRIEVE SAID TO UNLINK FROM KEZAN SINCE YOU HAVE NO CHOICE BUT TO GO TO LOST ISLES FROM KEZAN.
+						["qg"] = 36608,	-- Doc Zapnozzle
 						["coord"] = { 24.6, 77.9, THE_LOST_ISLES },
 					}),
 					q(25214, {	-- Escape Velocity
-						["qg"] = 38120,	-- Hobart Grapplehammer
 						["sourceQuest"] = 25213,	-- The Slave Pits
+						["qg"] = 38120,	-- Hobart Grapplehammer
 						["coord"] = { 43.8, 25.2, THE_LOST_ISLES },
 						["groups"] = {
 							i(52923),	-- Rocket-Fuel Soaked Bracers
@@ -101,37 +101,37 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(14445, {	-- Farewell, For Now
-						["qg"] = 36188,	-- Thrall
 						["sourceQuest"] = 14243,	-- Warchief's Revenge
+						["qg"] = 36188,	-- Thrall
 						["coord"] = { 35.9, 66.7, THE_LOST_ISLES },
 					}),
 					q(25251, {	-- Final Confrontation
-						["qg"] = 38387,	-- Sassy Hardwrench
 						["sourceQuests"] = {
 							25214,	-- Escape Velocity
 							25243,	-- She Loves Me, She Loves Me NOT! [Male Version]
 							25244,	-- What Kind of Name is Candy, Anyway? [Female Version]
 						},
+						["qg"] = 38387,	-- Sassy Hardwrench
 						["coord"] = { 43.6, 25.3, THE_LOST_ISLES },
 					}),
 					q(14237, {	-- Forward Movement
-						["qg"] = 35875,	-- Aggra
 						["sourceQuest"] = 14303,	-- Back to Aggra
+						["qg"] = 35875,	-- Aggra
 						["coord"] = { 37.6, 78.0, THE_LOST_ISLES },
 					}),
 					q(24925, {	-- Free the Captives
-						["qg"] = 38647,	-- Izzy
 						["sourceQuest"] = 24924,	-- Oomlot Village
+						["qg"] = 38647,	-- Izzy
 						["coord"] = { 56.5, 71.9, THE_LOST_ISLES },
 					}),
 					q(24897, {	-- Get Back to Town
-						["qg"] = 38432,	-- Megs Dreadshredder
 						["sourceQuest"] = 24868,	-- Surrender or Else!
+						["qg"] = 38432,	-- Megs Dreadshredder
 						["coord"] = { 52.2, 73.1, THE_LOST_ISLES },
 					}),
 					q(14014, {	-- Get Our Stuff Back!
-						["qg"] = 35650,	-- Sassy Hardwrench
 						["sourceQuest"] = 14001,	-- Goblin Escape Pods
+						["qg"] = 35650,	-- Sassy Hardwrench
 						["coord"] = { 27.8, 75.5, THE_LOST_ISLES },
 						["groups"] = {
 							o(195201, {	-- Crate of Tools
@@ -140,8 +140,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(14241, {	-- Get to the Gyrochoppa
-						["qg"] = 36112,	-- Scout Brax
 						["sourceQuest"] = 14240,	-- Get to the Gyrochoppa
+						["qg"] = 36112,	-- Scout Brax
 						["coord"] = { 25.2, 59.8, THE_LOST_ISLES },
 						["groups"] = {
 							i(52949),	-- Gyrochoppa Seat Belt
@@ -153,13 +153,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(14001, {	-- Goblin Escape Pods
-						["qg"] = 36600,	-- Geargrinder Gizmo
 						["sourceQuest"] = 14239,	-- Don't Go Into the Light!
+						["qg"] = 36600,	-- Geargrinder Gizmo
 						["coord"] = { 24.6, 77.9, THE_LOST_ISLES },
 					}),
 					q(25207, {	-- Good-bye, Sweet Oil
-						["provider"] = { "o", 202613 },	-- Platform Control Panel
 						["sourceQuest"] = 25204,	-- Release the Valves
+						["provider"] = { "o", 202613 },	-- Platform Control Panel
 						["coord"] = { 51.4, 13.0, THE_LOST_ISLES },
 						["groups"] = {
 							i(52922),	-- Demolitionist's Boots
@@ -168,22 +168,22 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(14248, {	-- Help Wanted
-						["qg"] = 35650,	-- Sassy Hardwrench
 						["sourceQuests"] = {
 							14014,	-- Get Our Stuff Back!
 							14473,	-- It's Our Problem Now
 							14019,	-- Monkey Business
 						},
+						["qg"] = 35650,	-- Sassy Hardwrench
 						["coord"] = { 27.8, 75.5, THE_LOST_ISLES },
 					}),
 					q(27139, {	-- Hobart Needs You
-						["qg"] = 36471,	-- Foreman Dampwick
 						["sourceQuest"] = 14245,	-- It's a Town-In-A-Box
+						["qg"] = 36471,	-- Foreman Dampwick
 						["coord"] = { 45.3, 64.7, THE_LOST_ISLES },
 					}),
 					q(14238, {	-- Infrared = Infradead
-						["qg"] = 35917,	-- Kilag Gorefang
 						["sourceQuest"] = 14237,	-- Forward Movement
+						["qg"] = 35917,	-- Kilag Gorefang
 						["coord"] = { 34.6, 66.8, THE_LOST_ISLES },
 						["groups"] = {
 							i(52900),	-- Spy Choker Cord
@@ -192,32 +192,32 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(24856, {	-- Invasion Imminent!
-						["qg"] = 38120,	-- Hobart Grapplehammer
 						["sourceQuest"] = 24817,	-- A Goblin in Shark's Clothing
+						["qg"] = 38120,	-- Hobart Grapplehammer
 						["coord"] = { 45.3, 65.2, THE_LOST_ISLES },
 					}),
 					q(24864, {	-- Irresistible Pool Pony
-						["qg"] = 38432,	-- Megs Dreadshredder
 						["sourceQuests"] = {
 							24858,	-- Bilgewater Cartel Represent
 							24859,	-- Naga Hide
 						},
+						["qg"] = 38432,	-- Megs Dreadshredder
 						["coord"] = { 52.2, 73.1, THE_LOST_ISLES },
 						["groups"] = { i(50602) },	-- Irresistible Pool Pony (QI!)
 					}),
 					q(14245, {	-- It's a Town-In-A-Box
-						["qg"] = 36470,	-- Foreman Dampwick
 						["sourceQuest"] = 14244,	-- Up, Up, & Away!
+						["qg"] = 36470,	-- Foreman Dampwick
 						["coord"] = { 44.5, 64.3, THE_LOST_ISLES },
 					}),
 					q(14473, {	-- It's Our Problem Now
-						["qg"] = 35786,	-- Maxx Avalanche
 						["sourceQuest"] = 14001,	-- Goblin Escape Pods
+						["qg"] = 35786,	-- Maxx Avalanche
 						["coord"] = { 27.8, 74.2, THE_LOST_ISLES },
 					}),
 					q(25110, {	-- Kaja'Cola Gives you IDEAS!™
-						["qg"] = 38124,	-- Assistant Greely
 						["sourceQuest"] = 25109,	-- The Gallywix Labor Mine
+						["qg"] = 38124,	-- Assistant Greely
 						["coord"] = { 53.1, 36.5, THE_LOST_ISLES },
 						["groups"] = {
 							o_repeated({
@@ -229,29 +229,29 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(25100, {	-- Let's Ride
-						["qg"] = 39066,	-- Kilag Gorefang
 						["sourceQuest"] = 25099,	-- Borrow Bastia
+						["qg"] = 39066,	-- Kilag Gorefang
 						["coord"] = { 33.7, 38.7, THE_LOST_ISLES },
 					}),
 					q(25125, {	-- Light at the End of the Tunnel
-						["qg"] = 39199,	-- Assistant Greely
 						["sourceQuests"] = { 25122, 25123 },	-- Morale Boost / Throw It On the Ground!
+						["qg"] = 39199,	-- Assistant Greely
 						["coord"] = { 53.1, 36.5, THE_LOST_ISLES },
 					}),
 					q(14326, {	-- Meet Me Up Top
-						["qg"] = 36145,	-- Thrall
 						["sourceQuest"] = 14242,	-- Precious Cargo
+						["qg"] = 36145,	-- Thrall
 						["coord"] = { 11.8, 62.7, THE_LOST_ISLES },
 					}),
 					q(25058, {	-- Mine Disposal, the Goblin Way
-						["qg"] = 38387,	-- Sassy Hardwrench
 						["sourceQuest"] = 25024,	-- Old Friends
+						["qg"] = 38387,	-- Sassy Hardwrench
 						["coord"] = { 37.3, 41.9, THE_LOST_ISLES },
 						["groups"] = { i(52280) },	-- Satchel of Grenades (QI!)
 					}),
 					q(14021, {  -- Miner Troubles
-						["qg"] = 35769,	-- Foreman Dampwick
 						["sourceQuest"] = 14248,	-- Help Wanted
+						["qg"] = 35769,	-- Foreman Dampwick
 						["coord"] = { 31.2, 79.2, THE_LOST_ISLES },
 						["groups"] = {
 							i(55885),	-- Dampwick's "Best" Robes
@@ -262,8 +262,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(14019, {	-- Monkey Business
-						["qg"] = 35758,	-- Bamm Megabomb
 						["sourceQuest"] = 14001,	-- Goblin Escape Pods
+						["qg"] = 35758,	-- Bamm Megabomb
 						["coord"] = { 27.9, 74.4, THE_LOST_ISLES },
 						["groups"] = {
 							i(52928),	-- Banana Holder
@@ -275,71 +275,71 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(25122, {	-- Morale Boost
-						["qg"] = 39199,	-- Assistant Greely
 						["sourceQuest"] = 25110,	-- Kaja'Cola Gives you IDEAS!™
+						["qg"] = 39199,	-- Assistant Greely
 						["coord"] = { 53.1, 36.5, THE_LOST_ISLES },
 					}),
 					q(24859, {	-- Naga Hide
-						["qg"] = 38381,	-- Brett "Coins" McQuid
 						["sourceQuest"] = 24856,	-- Invasion Imminent!
+						["qg"] = 38381,	-- Brett "Coins" McQuid
 						["coord"] = { 52.2, 73.2, THE_LOST_ISLES },
 					}),
 					q(25023, {	-- Old Friends
-						["qg"] = 38928,	-- Sassy Hardwrench
 						["sourceQuest"] = 24958,	-- Volcanoth!
+						["qg"] = 38928,	-- Sassy Hardwrench
 						["coord"] = { 62.5, 50.0, 176 },
 					}),
 					q(24937, {	-- Oomlot Dealt With
-						["qg"] = 38647,	-- Izzy
 						["sourceQuest"] = 24929,	-- Send a Message
+						["qg"] = 38647,	-- Izzy
 						["coord"] = { 56.5, 71.9, THE_LOST_ISLES },
 					}),
 					q(24924, {	-- Oomlot Village
-						["qg"] = 38387,	-- Sassy Hardwrench
 						["sourceQuest"] = 24901,	-- Town-In-A-Box: Under Attack
+						["qg"] = 38387,	-- Sassy Hardwrench
 						["coord"] = { 45.1, 64.9, THE_LOST_ISLES },
 					}),
 					q(14233, {	-- Orcs Can Write?
-						["qg"] = 35837,	-- Dead Orc Scout
 						["sourceQuest"] = 14248,	-- Help Wanted
+						["qg"] = 35837,	-- Dead Orc Scout
 						["coord"] = { 41.5, 25.7, 175 },	-- Kaja'mite Cavern
 					}),
 					q(14242, {	-- Precious Cargo
-						["qg"] = 36127,	-- Gyrochoppa
 						["sourceQuest"] = 14241,	-- Get to the Gyrochoppa
+						["qg"] = 36127,	-- Gyrochoppa
 						["coord"] = { 23.2, 67.5, THE_LOST_ISLES },
 					}),
 					q(25204, {	-- Release the Valves
-						["qg"] = 38124,	-- Assistant Greely
 						["sourceQuests"] = {
 							25200,	-- Shredder Shutdown
 							25201,	-- The Ultimate Footbomb Uniform
 						},
+						["qg"] = 38124,	-- Assistant Greely
 						["coord"] = { 54.3, 16.9, THE_LOST_ISLES },
 					}),
 					q(25024, {	-- Repel the Paratroopers
-						["qg"] = 38935,	-- Thrall
 						["sourceQuest"] = 25023,	-- Old Friends
+						["qg"] = 38935,	-- Thrall
 						["coord"] = { 36.7, 43.1, THE_LOST_ISLES },
 					}),
 					q(24952, {	-- Rocket Boot Boost
-						["qg"] = 38738,	-- Coach Crosscheck
 						["sourceQuests"] = {
 							24942,	-- Zombies vs Super Booster Rocket Boots
 							24945,	-- Three Little Pygmies
 							24946,	-- Rockin' Powder
 						},
+						["qg"] = 38738,	-- Coach Crosscheck
 						["coord"] = { 51.7, 47.0, THE_LOST_ISLES },
 					}),
 					q(24946, {	-- Rockin' Powder
-						["qg"] = 38124,	-- Assistant Greely
 						["sourceQuest"] = 24940,	-- Up the Volcano
+						["qg"] = 38124,	-- Assistant Greely
 						["coord"] = { 51.7, 47.3, THE_LOST_ISLES },
 						["groups"] = { i(52024) },	-- Rockin' Powder (QI!)
 					}),
 					q(24929, {	-- Send a Message
-						["qg"] = 38647,	-- Izzy
 						["sourceQuest"] = 24924,	-- Oomlot Village
+						["qg"] = 38647,	-- Izzy
 						["coord"] = { 56.5, 71.9, THE_LOST_ISLES },
 						["groups"] = {
 							i(52956),	-- Oomlot Staff
@@ -349,10 +349,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(25243, {	-- She Loves Me, She Loves Me NOT! [Male Version]
-						["qg"] = 38387,	-- Sassy Hardwrench
-						["sourceQuest"] = 25213,	-- The Slave Pits
-						["coord"] = { 43.6, 25.3, THE_LOST_ISLES },
 						["description"] = "This quest is a character gender-specific quest only available for male/\nbody type 1 characters. Female/body type 2 characters will in this place get\nthe quest 'What Kind of Name is Candy, Anyway?'.\n\nThe quest rewards are also rewarded from the female/body type 2 version of\nthis quest named 'The Fastest Way to His Heart', which is given in place of\nthe male/body type 1 quest 'What Kind of Name is Chip, Anyway?'.",
+						["sourceQuest"] = 25213,	-- The Slave Pits
+						["qg"] = 38387,	-- Sassy Hardwrench
+						["coord"] = { 43.6, 25.3, THE_LOST_ISLES },
 						["groups"] = {
 							i(52920),	-- Cardio-Extractor Gloves
 							i(131835, {	-- Cardio-Extractor Handguards
@@ -367,13 +367,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(25200, {	-- Shredder Shutdown
-						["qg"] = 38124,	-- Assistant Greely
 						["sourceQuest"] = 25184,	-- Wild Mine Cart Ride
+						["qg"] = 38124,	-- Assistant Greely
 						["coord"] = { 54.3, 16.9, THE_LOST_ISLES },
 					}),
 					q(24868, {	-- Surrender or Else!
-						["qg"] = 38432,	-- Megs Dreadshredder
 						["sourceQuest"] = 24864,	-- Irresistible Pool Pony
+						["qg"] = 38432,	-- Megs Dreadshredder
 						["coord"] = { 52.2, 73.1, THE_LOST_ISLES },
 						["groups"] = {
 							i(52954),	-- Hatchling Prodder
@@ -382,8 +382,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(24744, {	-- The Biggest Egg Ever
-						["qg"] = 38120,	-- Hobart Grapplehammer
 						["sourceQuest"] = 24741,	-- Trading Up
+						["qg"] = 38120,	-- Hobart Grapplehammer
 						["coord"] = { 45.3, 65.2, THE_LOST_ISLES },
 						["groups"] = {
 							o(201977, {	-- The Biggest Egg Ever
@@ -396,12 +396,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(14234, {	-- The Enemy of My Enemy
-						["qg"] = 35650,	-- Sassy Hardwrench
 						["sourceQuests"] = {
 							14021,	-- Miner Troubles
 							14031,	-- Capturing the Unknown
 							14233,	-- The Enemy of My Enemy
 						},
+						["qg"] = 35650,	-- Sassy Hardwrench
 						["coord"] = { 27.8, 75.5, THE_LOST_ISLES },
 						["groups"] = {
 							i(52931),	-- Orcish Scout Boots
@@ -413,13 +413,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(25202, {	-- The Fastest Way to His Heart [Female Version]
-						["qg"] = 38647,	-- Izzy
+						["description"] = "This quest is a character gender-specific quest only available for female/\nbody type 2 characters. Male/body type 1 characters will in this place get\nthe quest 'What Kind of Name is Chip, Anyway?'.\n\nThe quest rewards are also rewarded from the male/body type 1 version of\nthis quest named 'She Loves Me, She Loves Me NOT!', which is given in place of\nthe female/body type 2 quest 'What Kind of Name is Candy, Anyway?'.",
 						["sourceQuests"] = {
 							25200,	-- Shredder Shutdown
 							25201,	-- The Ultimate Footbomb Uniform
 						},
+						["qg"] = 38647,	-- Izzy
 						["coord"] = { 54.0, 17.0, THE_LOST_ISLES },
-						["description"] = "This quest is a character gender-specific quest only available for female/\nbody type 2 characters. Male/body type 1 characters will in this place get\nthe quest 'What Kind of Name is Chip, Anyway?'.\n\nThe quest rewards are also rewarded from the male/body type 1 version of\nthis quest named 'She Loves Me, She Loves Me NOT!', which is given in place of\nthe female/body type 2 quest 'What Kind of Name is Candy, Anyway?'.",
 						["groups"] = {
 							i(52920),	-- Cardio-Extractor Gloves
 							i(131835, {	-- Cardio-Extractor Handguards
@@ -430,8 +430,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(25109, {	-- The Gallywix Labor Mine
-						["qg"] = 38517,	-- Slinky Sharpshiv
 						["sourceQuest"] = 25100,	-- Let's Ride
+						["qg"] = 38517,	-- Slinky Sharpshiv
 						["coord"] = { 53.7, 34.9, THE_LOST_ISLES },
 						["groups"] = {
 							i(52962),	-- Greely's Spare Dagger
@@ -439,8 +439,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(25093, {	-- The Heads of the SI:7
-						["qg"] = 39065,	-- Aggra
 						["sourceQuest"] = 25024,	-- Old Friends
+						["qg"] = 39065,	-- Aggra
 						["coord"] = { 36.2, 43.3, THE_LOST_ISLES },
 						["groups"] = {
 							i(52349),	-- Alexi Silenthowl's Head (QI!)
@@ -452,12 +452,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(25066, {	-- The Pride of Kezan
-						["qg"] = 38387,	-- Sassy Hardwrench
 						["sourceQuests"] = {
 							25024,	-- Repel the Paratroopers
 							25093,	-- The Heads of SI:7
 							25058,	-- Mine Disposal, the Goblin Way
 						},
+						["qg"] = 38387,	-- Sassy Hardwrench
 						["coord"] = { 37.3, 41.9, THE_LOST_ISLES },
 						["groups"] = {
 							i(52961),	-- Gnomish Parachute Scrap
@@ -466,17 +466,17 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(25213, {	-- The Slave Pits
-						["qg"] = 38124,	-- Assistant Greely
 						["sourceQuests"] = {
 							25207,	-- Good-bye, Sweet Oil
 							25202,	-- The Fastest Way to His Heart [Female Version]
 							25203,	-- What Kind of name is Chip, Anyway? [Male Version]
 						},
+						["qg"] = 38124,	-- Assistant Greely
 						["coord"] = { 54.3, 16.9, THE_LOST_ISLES },
 					}),
 					q(25201, {	-- The Ultimate Footbomb Uniform
-						["qg"] = 38738,	-- Coach Crosscheck
 						["sourceQuest"] = 25184,	-- Wild Mine Cart Ride
+						["qg"] = 38738,	-- Coach Crosscheck
 						["coord"] = { 54.4, 16.9, THE_LOST_ISLES },
 						["groups"] = {
 							o_repeated({
@@ -487,18 +487,18 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(14235, {	-- The Vicious Vale
-						["qg"] = 35875,	-- Aggra
 						["sourceQuest"] = 14234,	-- The Enemy of My Enemy
+						["qg"] = 35875,	-- Aggra
 						["coord"] = { 37.6, 78.0, THE_LOST_ISLES },
 					}),
 					q(25098, {	-- The Warchief Wants You
-						["qg"] = 38387,	-- Sassy Hardwrench
 						["sourceQuest"] = 25066,	-- The Pride of Kezan
+						["qg"] = 38387,	-- Sassy Hardwrench
 						["coord"] = { 37.3, 41.9, THE_LOST_ISLES },
 					}),
 					q(24945, {	-- Three Little Pygmies
-						["qg"] = 36471,	-- Foreman Dampwick
 						["sourceQuest"] = 24940,	-- Up the Volcano
+						["qg"] = 36471,	-- Foreman Dampwick
 						["coord"] = { 51.8, 47.1, THE_LOST_ISLES },
 						["groups"] = {
 							i(52913),	-- Witchdoctor Leggings
@@ -507,8 +507,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(25123, {	-- Throw It On the Ground!
-						["qg"] = 39199,	-- Assistant Greely
 						["sourceQuest"] = 25110,	-- Kaja'Cola Gives you IDEAS!™
+						["qg"] = 39199,	-- Assistant Greely
 						["coord"] = { 53.1, 36.5, THE_LOST_ISLES },
 						["groups"] = {
 							o(202574, {		-- Blastshadow's Soulstone
@@ -522,13 +522,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(14240, {	-- To the Cliffs
-						["qg"] = 35917,	-- Kilag Gorefang
 						["sourceQuest"] = 14238,	-- Infrared = Infradead
+						["qg"] = 35917,	-- Kilag Gorefang
 						["coord"] = { 34.6, 66.8, THE_LOST_ISLES },
 					}),
 					q(24901, {	-- Town-In-A-Box: Under Attack
-						["qg"] = 38387,	-- Sassy Hardwrench
 						["sourceQuest"] = 24897,	-- Get Back to Town
+						["qg"] = 38387,	-- Sassy Hardwrench
 						["coord"] = { 45.1, 64.9, THE_LOST_ISLES },
 						["groups"] = {
 							i(52955),	-- Town-In-A-Box Lid Fragment
@@ -536,8 +536,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(24741, {	-- Trading Up
-						["qg"] = 38122,	-- Bamm Megabomb
 						["sourceQuest"] = 24671,	-- Cluster Cluck
+						["qg"] = 38122,	-- Bamm Megabomb
 						["coord"] = { 45.2, 64.8, THE_LOST_ISLES },
 						["groups"] = {
 							o(201974, {	-- Raptor Egg
@@ -546,18 +546,18 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(14244, {	-- Up, Up & Away!
-						["qg"] = 36425,	-- Sassy Hardwrench
 						["sourceQuest"] = 14445,	-- Farewell, For Now
+						["qg"] = 36425,	-- Sassy Hardwrench
 						["coord"] = { 36.0, 67.5, THE_LOST_ISLES },
 					}),
 					q(24940, {	-- Up the Volcano
-						["qg"] = 38387,	-- Sassy Hardwrench
 						["sourceQuest"] = 24937,	-- Oomlot Dealt With
+						["qg"] = 38387,	-- Sassy Hardwrench
 						["coord"] = { 45.1, 64.9, THE_LOST_ISLES },
 					}),
 					q(25265, {	-- Victory!
-						["qg"] = 38387,	-- Sassy Hardwrench
 						["sourceQuest"] = 25251,	-- Final Confrontation
+						["qg"] = 38387,	-- Sassy Hardwrench
 						["coord"] = { 43.6, 25.3, THE_LOST_ISLES },
 						["groups"] = {
 							i(52927),	-- Victor's Robes
@@ -569,8 +569,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(24958, {	-- Volcanoth!
-						["qg"] = 38120,	-- Hobart  Grapplehammer
 						["sourceQuest"] = 24954,	-- Children of a Turtle God
+						["qg"] = 38120,	-- Hobart  Grapplehammer
 						["coord"] = { 68.9, 46.4, THE_LOST_ISLES },
 						["groups"] = {
 							i(52914),	-- Rescue Ladder Cord
@@ -578,16 +578,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(25266, {	-- Warchief's Emissary
-						["qg"] = 38935,	-- Thrall
 						["sourceQuest"] = 25265,	-- Victory!
+						["qg"] = 38935,	-- Thrall
 						["coord"] = { 42.1, 17.3, THE_LOST_ISLES },
 						["isBreadcrumb"] = true,
 						-- apparently not necessary for follow up quest 2022-04-17
 						["groups"] = { i(52582) },	-- Sealed Package (QI!)
 					}),
 					q(14243, {	-- Warchief's Revenge
-						["qg"] = 36161,	-- Thrall
 						["sourceQuest"] = 14326,	-- Meet Me Up Top
+						["qg"] = 36161,	-- Thrall
 						["coord"] = { 12.4, 63.1, THE_LOST_ISLES },
 						["groups"] = {
 							i(52947),	-- Cyclone Staff
@@ -595,8 +595,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(14236, {	-- Weed Whacker
-						["qg"] = 35893,	-- Kilag Gorefang
 						["sourceQuest"] = 14235,	-- The Vicious Vale
+						["qg"] = 35893,	-- Kilag Gorefang
 						["coord"] = { 35.4, 75.7, THE_LOST_ISLES },
 						["groups"] = {
 							i(52929),	-- Kilag's Vest
@@ -608,14 +608,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(25244, {	-- What Kind of Name is Candy, Anyway? [Female Version]
-						["qg"] = 38387,	-- Sassy Hardwrench
-						["sourceQuest"] = 25213,	-- The Slave Pits
-						["coord"] = { 43.6, 25.3, THE_LOST_ISLES },
 						-- #if BEFORE 10.2.5
 						["description"] = "This quest is a character gender-specific quest only available for female/\nbody type 2 characters. Male/body type 1 characters will in this place\nget the quest 'She Loves Me, She Loves Me NOT!'.\n\nThe quest rewards have shared apperances with the rewards from the male/\nbody type 1 version of this quest named 'What Kind of Name is Chip, Anyway?',\nbut the latter are different items and can might only be obtained by doing these\ntwo gender-specific quests seperately on different characters if logging out from\nthe game does not work.",
 						-- #else
 						["description"] = "This quest is a character gender-specific quest only available for female/\nbody type 2 characters. Male/body type 1 characters will in this place\nget the quest 'She Loves Me, She Loves Me NOT!'.\n\nThe quest rewards have shared apperances with the rewards from the male/\nbody type 1 version of this quest named 'What Kind of Name is Chip, Anyway?',\nwhich too will be collected after logging out from the game.",
 						-- #endif
+						["sourceQuest"] = 25213,	-- The Slave Pits
+						["qg"] = 38387,	-- Sassy Hardwrench
+						["coord"] = { 43.6, 25.3, THE_LOST_ISLES },
 						["groups"] = {
 							i(52972),	-- Ex-Stealer's Gloves
 							i(52970),	-- Fickle Belt
@@ -624,17 +624,17 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(25203, {	-- What Kind of Name is Chip, Anyway? [Male Version]
-						["qg"] = 38441,	-- Ace
-						["sourceQuests"] = {
-							25200,	-- Shredder Shutdown
-							25201,	-- The Ultimate Footbomb Uniform
-						},
-						["coord"] = { 54.1, 17.2, THE_LOST_ISLES },
 						-- #if BEFORE 10.2.5
 						["description"] = "This quest is a character gender-specific quest only available for male/\nbody type 1 characters.\nFemale/body type 2 characters will in this place\nget the quest 'The Fastest Way to His Heart'.\n\nThe quest rewards have shared apperances with the rewards from the female/\nbody type 2 version of this quest named 'What Kind of Name is Candy, Anyway?',\nbut the latter are different items and can might only be obtained by doing these\ntwo gender-specific quests seperately on different characters if logging out from\nthe game does not work.",
 						-- #else
 						["description"] = "This quest is a character gender-specific quest only available for male/\nbody type 1 characters. Female/body type 2 characters will in this place\nget the quest 'The Fastest Way to His Heart'.\n\nThe quest rewards have shared apperances with the rewards from the female/\nbody type 2 version of this quest named 'What Kind of Name is Candy, Anyway?',\nwhich too will be collected after logging out from the game.",
 						-- #endif
+						["sourceQuests"] = {
+							25200,	-- Shredder Shutdown
+							25201,	-- The Ultimate Footbomb Uniform
+						},
+						["qg"] = 38441,	-- Ace
+						["coord"] = { 54.1, 17.2, THE_LOST_ISLES },
 						["groups"] = {
 							i(131844),	-- Fickle Cord
 							i(52921),	-- Ex-Stealer's Gloves
@@ -643,13 +643,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(24816, {	-- Who's Top of the Food Chain Now?
-						["qg"] = 38120,	-- Hobart Grapplehammer
 						["sourceQuest"] = 24744,	-- The Biggest Egg Ever
+						["qg"] = 38120,	-- Hobart Grapplehammer
 						["coord"] = { 45.3, 65.2, THE_LOST_ISLES },
 					}),
 					q(25184, {	-- Wild Mine Cart Ride
-						["qg"] = 39341,	-- Mine Cart
 						["sourceQuest"] = 25125,	-- Light at the End of the Tunnel
+						["qg"] = 39341,	-- Mine Cart
 						["coord"] = { 56.2, 27.3, THE_LOST_ISLES },
 						["groups"] = {
 							i(52919),	-- Oxidizing Axe
@@ -657,8 +657,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(24942, {	-- Zombies vs Super Booster Rocket Boots
-						["qg"] = 38738,	-- Coach Crosscheck
 						["sourceQuest"] = 24940,	-- Up the Volcano
+						["qg"] = 38738,	-- Coach Crosscheck
 						["coord"] = { 51.7, 47.1, THE_LOST_ISLES },
 						["groups"] = {
 							i(52912),	-- S.B.R.B. Prototype 1

@@ -787,9 +787,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						DF_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["sourceQuestNumRequired"] = 1,
-					["providers"] = {
-						{ "n", 183997 },	-- Gnoll Mon-Ark
-						{ "n", 185749 },	-- Gnoll Mon-Ark [Follows you Around]
+					["qgs"] = {
+						183997,	-- Gnoll Mon-Ark
+						185749,	-- Gnoll Mon-Ark [Follows you Around]
 					},
 					["coord"] = { 16.2, 20.9, THE_AZURE_SPAN },
 				}),
@@ -799,9 +799,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						DF_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["sourceQuestNumRequired"] = 1,
-					["providers"] = {
-						{ "n", 183997 },	-- Gnoll Mon-Ark
-						{ "n", 185749 },	-- Gnoll Mon-Ark [Follows you Around]
+					["qgs"] = {
+						183997,	-- Gnoll Mon-Ark
+						185749,	-- Gnoll Mon-Ark [Follows you Around]
 					},
 					["coord"] = { 16.2, 20.9, THE_AZURE_SPAN },
 					["groups"] = {
@@ -1272,8 +1272,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 65849 },	-- To Iskaara
 					["provider"] = { "n", 193877 },	-- Lukoturukk
 					["coord"] = { 14.1, 49.4, THE_AZURE_SPAN },
-					["requireSkill"] = FISHING,
 					["cost"] = { { "i", 194967, 5 }, },	-- 5xAileron Seamoth
+					["requireSkill"] = FISHING,
 				}),
 			}),
 			header(HEADERS.AchCriteria, 16580.07, {	-- The Weave of a Tale
@@ -1420,8 +1420,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 				}),
 				q(72921, {	-- On the Trail Again
-					["provider"] = { "n", 199923 },	-- Senegos
 					["sourceQuests"] = { 72900 },	-- Keeper of the Ossuary
+					["provider"] = { "n", 199923 },	-- Senegos
 					["coord"] = { 62.2, 17.9, THALDRASZUS },
 					["groups"] = {
 						i(202240),	-- Tome of Fanciful Spheres
@@ -1430,59 +1430,58 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 				}),
 				q(72933, {	-- Rolling Out
-					["provider"] = { "n", 199961 },	-- Senegos
 					["sourceQuests"] = { 72921 },	-- On the Trail Again
+					["provider"] = { "n", 199961 },	-- Senegos
 					["coord"] = { 63.9, 12.3, THALDRASZUS },
 				}),
 				q(72934, {	-- Lest We Forget
-					["provider"] = { "n", 199969 },	-- Senegos
 					["sourceQuests"] = { 72933 },	-- Rolling Out
+					["provider"] = { "n", 199969 },	-- Senegos
 					["coord"] = { 66.7, 12.0, THALDRASZUS },
 				}),
 				q(73069, {	-- Sindragosa and Malygos's Rest
-					["provider"] = { "n", 200447 },	-- Senegos
 					["sourceQuests"] = { 72934 },	-- Lest We Forget
+					["provider"] = { "n", 200447 },	-- Senegos
 					["coord"] = { 67.1, 11.8, THALDRASZUS },
 				}),
 				q(75023, {	-- Memories of Sindragosa and Malygos
-					["provider"] = { "n", 200447 },	-- Senegos
 					["sourceQuests"] = { 73069 },	-- Sindragosa and Malygos's Rest
+					["provider"] = { "n", 200447 },	-- Senegos
 					["coord"] = { 67.1, 11.8, THALDRASZUS },
 				}),
 				q(72935, {	-- Archives Return
-					["provider"] = { "n", 200447 },	-- Senegos
 					["sourceQuests"] = { 75023 },	-- Memories of Sindragosa and Malygos
+					["provider"] = { "n", 200447 },	-- Senegos
 					["coord"] = { 67.1, 11.8, THALDRASZUS },
 				}),
 				q(72936, {	-- Azuregos's Support
-					["provider"] = { "n", 190000 },	-- Kalecgos
 					["sourceQuests"] = { 72935 },	-- Archives Return
+					["provider"] = { "n", 190000 },	-- Kalecgos
 					["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
 				}),
 				q(72937, {	-- Unusual Desruptions
-					["provider"] = { "n", 199976 },	-- Azuregos
 					["sourceQuests"] = { 72936 },	-- Azuregos's Support
+					["provider"] = { "n", 199976 },	-- Azuregos
 					["coord"] = { 22.5, 23.8, BOREAN_TUNDRA },
 					["groups"] = {
 						i(205931),	-- Azuregos's Staff
 					},
 				}),
 				q(72938, {	-- Archival Arrival
-					["provider"] = { "n", 199976 },	-- Azuregos
 					["sourceQuests"] = { 72937 },	-- Unusual Desruptions
+					["provider"] = { "n", 199976 },	-- Azuregos
 					["coord"] = { 22.5, 23.8, BOREAN_TUNDRA },
 				}),
 					--- Quests to select next zone (Blizzard made them incompletable. They disapear once you choose any of the zones)
 				q(72940, {	-- Where in the World is a Lost Blue Dragon?
-					["provider"] = { "n", 190000 },	-- Kalecgos
 					["sourceQuests"] = {
 						72938,	-- Archival Arrival [First questchain part]
 					},
+					["provider"] = { "n", 190000 },	-- Kalecgos
 					["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
 					["collectible"] = false,	-- Blizzard....
 				}),
 				q(73399, {	-- The Search for Blue Dragons
-					["provider"] = { "n", 190000 },	-- Kalecgos
 					["sourceQuests"] = {
 						74335,	-- A Moment of Reflection [Theramore]
 						74356,	-- Back with the Blues [Winterspring]
@@ -1491,11 +1490,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						73181,	-- Zeroing Debt [Booty Bay]
 					},
 					["sourceQuestNumRequired"] = 1,
+					["provider"] = { "n", 190000 },	-- Kalecgos
 					["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
 					["collectible"] = false,	-- Blizzard....
 				}),
 				q(73404, {	-- Lost Blue Dragons
-					["provider"] = { "n", 190000 },	-- Kalecgos
 					["sourceQuests"] = {
 						74335,	-- A Moment of Reflection [Theramore]
 						74356,	-- Back with the Blues [Winterspring]
@@ -1504,11 +1503,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						73181,	-- Zeroing Debt [Booty Bay]
 					},
 					["sourceQuestNumRequired"] = 2,
+					["provider"] = { "n", 190000 },	-- Kalecgos
 					["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
 					["collectible"] = false,	-- Blizzard....
 				}),
 				q(73405, {	-- A Pair of Blue Dragons
-					["provider"] = { "n", 190000 },	-- Kalecgos
 					["sourceQuests"] = {
 						74335,	-- A Moment of Reflection [Theramore]
 						74356,	-- Back with the Blues [Winterspring]
@@ -1517,11 +1516,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						73181,	-- Zeroing Debt [Booty Bay]
 					},
 					["sourceQuestNumRequired"] = 3,
+					["provider"] = { "n", 190000 },	-- Kalecgos
 					["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
 					["collectible"] = false,	-- Blizzard....
 				}),
 				q(73406, {	-- The Last Missing Blue Dragon
-					["provider"] = { "n", 190000 },	-- Kalecgos
 					["sourceQuests"] = {
 						74335,	-- A Moment of Reflection [Theramore]
 						74356,	-- Back with the Blues [Winterspring]
@@ -1530,12 +1529,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						73181,	-- Zeroing Debt [Booty Bay]
 					},
 					["sourceQuestNumRequired"] = 4,
+					["provider"] = { "n", 190000 },	-- Kalecgos
 					["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
 					["collectible"] = false,	-- Blizzard....
 				}),
 				header(HEADERS.Quest, 73026, {	-- Booty Bay
 					q(73026, {	-- Booty Bay
-						["provider"] = { "n", 199991 },	-- Dragon Locator
 						["sourceQuests"] = {
 							72940,	-- Where in the World is a Lost Blue Dragon?
 							73399,	-- The Search for Blue Dragons
@@ -1544,45 +1543,46 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							73406,	-- The Last Missing Blue Dragon
 						},
 						["sourceQuestNumRequired"] = 0,	-- Source quest is never completed due to Blizzard design
+						["provider"] = { "n", 199991 },	-- Dragon Locator
 						["coord"] = { 39.5, 63.0, THE_AZURE_SPAN },
 					}),
 					q(72988, {	-- The Booty Bay Journal
-						["provider"] = { "n", 186240 },	-- Senegos
 						["sourceQuests"] = { 73026 },	-- Booty Bay
+						["provider"] = { "n", 186240 },	-- Senegos
 						["coord"] = { 39.5, 63.0, THE_AZURE_SPAN },
 					}),
 					q(72527, {	-- No Such Thing as Bad Luck
-						["provider"] = { "n", 199185 },	-- Zeros
 						["sourceQuests"] = { 72988 },	-- The Booty Bay Journal
+						["provider"] = { "n", 199185 },	-- Zeros
 						["coord"] = { 41.3, 73.1, THE_CAPE_OF_STRANGLETHORN },
 					}),
 					q(72529, {	-- Information is King
-						["provider"] = { "n", 2846 },	-- Blixrez Goodstitch
 						["sourceQuests"] = { 72527 },	-- No Such Thing as Bad Luck
+						["provider"] = { "n", 2846 },	-- Blixrez Goodstitch
 						["coord"] = { 42.8, 74.1, THE_CAPE_OF_STRANGLETHORN },
 						["groups"] = {
 							i(201986),	-- Crocolisk Skin
 						},
 					}),
 					q(72530, {	-- Anyway, I Started Bribing
-						["provider"] = { "n", 199185 },	-- Zeros
 						["sourceQuests"] = { 72529 },	-- Information is King
+						["provider"] = { "n", 199185 },	-- Zeros
 						["coord"] = { 42.8, 74.0, THE_CAPE_OF_STRANGLETHORN },
 						["groups"] = {
 							i(202271),	-- Pouch of Gold Coins (QI!)
 						},
 					}),
 					q(72532, {	-- Money, Money, Money!
-						["provider"] = { "n", 199185 },	-- Zeros
 						["sourceQuests"] = { 72530 },	-- Anyway, I Started Bribing
+						["provider"] = { "n", 199185 },	-- Zeros
 						["coord"] = { 42.3, 77.4, THE_CAPE_OF_STRANGLETHORN },
 						["groups"] = {
 							i(204705),	-- Gold Coins
 						},
 					}),
 					q(72533, {	-- Crystals Shmystals
-						["provider"] = { "n", 199185 },	-- Zeros
 						["sourceQuests"] = { 72530 },	-- Anyway, I Started Bribing
+						["provider"] = { "n", 199185 },	-- Zeros
 						["coord"] = { 42.3, 77.4, THE_CAPE_OF_STRANGLETHORN },
 						["groups"] = {
 							i(202281),	-- Gold Ingot
@@ -1590,22 +1590,21 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						},
 					}),
 					q(72534, {	-- Settled With the Baron
-						["provider"] = { "n", 199185 },	-- Zeros
 						["sourceQuests"] = {
 							72533,	-- Crystals Shmystals
 							72532,	-- Money, Money, Money!
 						},
+						["provider"] = { "n", 199185 },	-- Zeros
 						["coord"] = { 42.3, 77.4, THE_CAPE_OF_STRANGLETHORN },
 					}),
 					q(73181, {	-- Zeroing Debt
-						["provider"] = { "n", 200478 },	-- Senegos
 						["sourceQuests"] = { 72534 },	-- Settled With the Baron
+						["provider"] = { "n", 200478 },	-- Senegos
 						["coord"] = { 42.0, 77.6, THE_CAPE_OF_STRANGLETHORN },
 					}),
 				}),
 				header(HEADERS.Quest, 73091, {	-- Crystalsong Forest
 					q(73091, {	-- Crystalsong Forest
-						["provider"] = { "n", 200478 },	-- Senegos
 						["sourceQuests"] = {
 							72940,	-- Where in the World is a Lost Blue Dragon?
 							73399,	-- The Search for Blue Dragons
@@ -1614,43 +1613,43 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							73406,	-- The Last Missing Blue Dragon
 						},
 						["sourceQuestNumRequired"] = 0,	-- Source quest is never completed due to Blizzard design
+						["provider"] = { "n", 200478 },	-- Senegos
 						["coord"] = { 39.5, 63.0, THE_AZURE_SPAN },
 					}),
 					q(73090, {	-- Regrets in Crystal
-						["provider"] = { "n", 190000 },	-- Kalecgos
 						["sourceQuests"] = { 73091 },	-- Crystalsong Forest
+						["provider"] = { "n", 190000 },	-- Kalecgos
 						["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
 					}),
 					q(72670, {	-- Those We Left Behind
-						["provider"] = { "n", 199184 },	-- Lanigosa
 						["sourceQuests"] = { 73090 },	-- Regrets in Crystal
+						["provider"] = { "n", 199184 },	-- Lanigosa
 						["coord"] = { 91.3, 57.2, CRYSTALSONG_FOREST },
 					}),
 					q(72674, {	-- A Shattered Legacy
-						["provider"] = { "n", 199184 },	-- Lanigosa
 						["sourceQuests"] = { 73090 },	-- Regrets in Crystal
+						["provider"] = { "n", 199184 },	-- Lanigosa
 						["coord"] = { 91.3, 57.2, CRYSTALSONG_FOREST },
 						["groups"] = {
 							i(202044),	-- Crystal Focus Fragment
 						},
 					}),
 					q(72679, {	-- An Arcane Requiem
-						["provider"] = { "n", 199184 },	-- Lanigosa
 						["sourceQuests"] = {
 							72674,	-- A Shattered Legacy
 							72670,	-- Those We Left Behind
 						},
+						["provider"] = { "n", 199184 },	-- Lanigosa
 						["coord"] = { 91.3, 57.2, CRYSTALSONG_FOREST },
 					}),
 					q(74783, {	-- The Sounds of Silence
-						["provider"] = { "n", 199184 },	-- Lanigosa
 						["sourceQuests"] = { 72679 },	-- An Arcane Requiem
+						["provider"] = { "n", 199184 },	-- Lanigosa
 						["coord"] = { 91.3, 57.2, CRYSTALSONG_FOREST },
 					}),
 				}),
 				header(HEADERS.Quest, 73227, {	-- Jade Forest
 					q(73227, {	-- Jade Forest
-						["provider"] = { "n", 199991 },	-- Dragon Locator
 						["sourceQuests"] = {
 							72940,	-- Where in the World is a Lost Blue Dragon?
 							73399,	-- The Search for Blue Dragons
@@ -1659,56 +1658,56 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							73406,	-- The Last Missing Blue Dragon
 						},
 						["sourceQuestNumRequired"] = 0,	-- Source quest is never completed due to Blizzard design
+						["provider"] = { "n", 199991 },	-- Dragon Locator
 						["coord"] = { 39.5, 63.0, THE_AZURE_SPAN },
 					}),
 					q(72650, {	-- Warm Winds and Water
-						["provider"] = { "n", 190000 },	-- Kalecgos
 						["sourceQuests"] = { 73227 },	-- Jade Forest
+						["provider"] = { "n", 190000 },	-- Kalecgos
 						["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
 					}),
 					q(72651, {	-- Carp Care
-						["provider"] = { "n", 199361 },	-- Kirygosa
 						["sourceQuests"] = { 72650 },	-- Warm Winds and Water
+						["provider"] = { "n", 199361 },	-- Kirygosa
 						["coord"] = { 46.5, 44.5, THE_JADE_FOREST },
 						["groups"] = {
 							i(203182),	-- Fish Food
 						},
 					}),
 					q(72653, {	-- Local Deliveries
-						["provider"] = { "n", 199361 },	-- Kirygosa
 						["sourceQuests"] = { 72650 },	-- Warm Winds and Water
+						["provider"] = { "n", 199361 },	-- Kirygosa
 						["coord"] = { 46.5, 44.5, THE_JADE_FOREST },
 						["groups"] = {
 							i(203228),	-- Wild Blue Yonders
 						},
 					}),
 					q(72654, {	-- Up, Up, and Home
-						["provider"] = { "n", 199361 },	-- Kirygosa
 						["sourceQuests"] = {
 							72651,	-- Carp Care
 							72653,	-- Local Deliveries
 						},
+						["provider"] = { "n", 199361 },	-- Kirygosa
 						["coord"] = { 46.5, 44.5, THE_JADE_FOREST },
 					}),
 					q(72652, {	-- Self Care
-						["provider"] = { "n", 201019 },	-- Kalecgos
 						["sourceQuests"] = { 72654 },	-- Up, Up, and Home
+						["provider"] = { "n", 201019 },	-- Kalecgos
 						["coord"] = { 49.2, 42.5, THE_JADE_FOREST },
 					}),
 					q(72655, {	-- A Drink With Kalecgos
-						["provider"] = { "n", 201019 },	-- Kalecgos
 						["sourceQuests"] = { 72652 },	-- Self Care
+						["provider"] = { "n", 201019 },	-- Kalecgos
 						["coord"] = { 49.2, 42.5, THE_JADE_FOREST },
 					}),
 					q(74291, {	-- Blue is My Favorite Color
-						["provider"] = { "n", 201019 },	-- Kalecgos
 						["sourceQuests"] = { 72655 },	-- A Drink With Kalecgos
+						["provider"] = { "n", 201019 },	-- Kalecgos
 						["coord"] = { 45.9, 43.6, THE_JADE_FOREST },
 					}),
 				}),
 				header(HEADERS.Quest, 72939, {	-- Theramore
 					q(72939, {	-- Theramore
-						["provider"] = { "n", 199991 },	-- Dragon Locator
 						["sourceQuests"] = {
 							72940,	-- Where in the World is a Lost Blue Dragon?
 							73399,	-- The Search for Blue Dragons
@@ -1717,40 +1716,40 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							73406,	-- The Last Missing Blue Dragon
 						},
 						["sourceQuestNumRequired"] = 0,	-- Source quest is never completed due to Blizzard design
+						["provider"] = { "n", 199991 },	-- Dragon Locator
 						["coord"] = { 39.5, 63.0, THE_AZURE_SPAN },
 					}),
 					q(73188, {	-- The Sullied Banner
-						["provider"] = { "n", 190000 },	-- Kalecgos
 						["sourceQuests"] = { 72939 },	-- Theramore
+						["provider"] = { "n", 190000 },	-- Kalecgos
 						["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
 					}),
 					q(72832, {	-- Aftershocks
-						["provider"] = { "n", 199736 },	-- Surigosa
 						["sourceQuests"] = { 73188 },	-- The Sullied Banner
+						["provider"] = { "n", 199736 },	-- Surigosa
 						["coord"] = { 62.9, 49.7, DUSTWALLOW_MARSH },
 					}),
 					q(72831, {	-- Creative Solutions
-						["provider"] = { "n", 199737 },	-- Kalecgos
 						["sourceQuests"] = { 73188 },	-- The Sullied Banner
+						["provider"] = { "n", 199737 },	-- Kalecgos
 						["coord"] = { 62.8, 49.7, DUSTWALLOW_MARSH },
 					}),
 					q(72833, {	-- Breaking the Cycle
-						["provider"] = { "n", 199736 },	-- Surigosa
 						["sourceQuests"] = {
 							72832,	-- Aftershocks
 							72831,	-- Creative Solutions
 						},
+						["provider"] = { "n", 199736 },	-- Surigosa
 						["coord"] = { 67.0, 54.6, DUSTWALLOW_MARSH },
 					}),
 					q(74335, {	-- A Moment of Reflection
-						["provider"] = { "n", 199736 },	-- Surigosa
 						["sourceQuests"] = { 72833 },	-- Breaking the Cycle
+						["provider"] = { "n", 199736 },	-- Surigosa
 						["coord"] = { 67.0, 54.6, DUSTWALLOW_MARSH },
 					}),
 				}),
 				header(HEADERS.Quest, 72656, {	-- Winterspring
 					q(72656, {	-- Winterspring
-						["provider"] = { "n", 199991 },	-- Dragon Locator
 						["sourceQuests"] = {
 							72940,	-- Where in the World is a Lost Blue Dragon?
 							73399,	-- The Search for Blue Dragons
@@ -1759,45 +1758,45 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							73406,	-- The Last Missing Blue Dragon
 						},
 						["sourceQuestNumRequired"] = 0,	-- Source quest is never completed due to Blizzard design
+						["provider"] = { "n", 199991 },	-- Dragon Locator
 						["coord"] = { 39.5, 63.0, THE_AZURE_SPAN },
 					}),
 					q(72657, {	-- A Protector of Magic
-						["provider"] = { "n", 186188 },	-- Sindragosa
 						["sourceQuests"] = { 72656 },	-- Winterspring
+						["provider"] = { "n", 186188 },	-- Sindragosa
 						["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
 					}),
 					q(74354, {	-- Artifacts Abound
-						["provider"] = { "n", 199370 },	-- Haleh
 						["sourceQuests"] = { 72657 },	-- A Protector of Magic
+						["provider"] = { "n", 199370 },	-- Haleh
 						["coord"] = { 48.1, 59.1, WINTERSPRING },
 						["groups"] = {
 							i(203459),	-- Totemic Ruins
 						},
 					}),
 					q(72659, {	-- Test Subject
-						["provider"] = { "n", 199370 },	-- Haleh
 						["sourceQuests"] = { 74354 },	-- Artifacts Abound
+						["provider"] = { "n", 199370 },	-- Haleh
 						["coord"] = { 48.1, 59.1, WINTERSPRING },
 					}),
 					q(72660, {	-- Owl of a Sudden
-						["provider"] = { "n", 199370 },	-- Haleh
 						["sourceQuests"] = { 72659 },	-- Test Subject
+						["provider"] = { "n", 199370 },	-- Haleh
 						["coord"] = { 48.1, 59.1, WINTERSPRING },
 					}),
 					q(72661, {	-- A Wyrm Rest
-						["provider"] = { "n", 199404 },	-- Sindragosa
 						["sourceQuests"] = { 72660 },	-- Owl of a Sudden
+						["provider"] = { "n", 199404 },	-- Sindragosa
 						["coord"] = { 47.5, 60.2, WINTERSPRING },
 					}),
 					q(74356, {	-- Back with the Blues
-						["provider"] = { "n", 199404 },	-- Sindragosa
 						["sourceQuests"] = { 72661 },	-- A Wyrm Rest
+						["provider"] = { "n", 199404 },	-- Sindragosa
 						["coord"] = { 32.3, 49.1, WINTERSPRING },
 					}),
 				}),
 				header(HEADERS.Quest, 75244, {	-- Reunited Again
 					q(75244, {	-- Reunited Again
-						["provider"] = { "n", 190000 },	-- Kalecgos
 						["sourceQuests"] = {
 							74335,	-- A Moment of Reflection [Theramore]
 							74356,	-- Back with the Blues [Winterspring]
@@ -1805,29 +1804,30 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							74783,	-- The Sounds of Silence [Crystalsong Forest]
 							73181,	-- Zeroing Debt [Booty Bay]
 						},
+						["provider"] = { "n", 190000 },	-- Kalecgos
 						["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
 					}),
 					q(72942, {	-- Veiled Trouble
-						["provider"] = { "n", 190000 },	-- Kalecgos
 						["sourceQuests"] = { 75244 },	-- Reunited Again
+						["provider"] = { "n", 190000 },	-- Kalecgos
 						["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
 					}),
 					q(72946, {	-- Veiled Ossuary Chaos
-						["provider"] = { "n", 200019 },	-- Azuregos
 						["sourceQuests"] = { 72942 },	-- Veiled Trouble
+						["provider"] = { "n", 200019 },	-- Azuregos
 						["coord"] = { 66.2, 12.3, THALDRASZUS },
 					}),
 					q(72947, {	-- Memories of Old
-						["provider"] = { "n", 200019 },	-- Azuregos
 						["sourceQuests"] = { 72942 },	-- Veiled Trouble
+						["provider"] = { "n", 200019 },	-- Azuregos
 						["coord"] = { 66.2, 12.3, THALDRASZUS },
 					}),
 					q(72948, {	-- What Still Remains
-						["provider"] = { "n", 200019 },	-- Azuregos
 						["sourceQuests"] = {
 							72947,	-- Memories of Old
 							72946,	-- Veiled Ossuary Chaos
 						},
+						["provider"] = { "n", 200019 },	-- Azuregos
 						["coord"] = { 66.2, 12.3, THALDRASZUS },
 						["groups"] = {
 							i(203184),	-- Malygos's Lingering Essence
@@ -1835,13 +1835,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						},
 					}),
 					q(72949, {	-- Swiftly to the Archives
-						["provider"] = { "n", 201061 },	-- Azuregos
 						["sourceQuests"] = { 72948 },	-- What Still Remains
+						["provider"] = { "n", 201061 },	-- Azuregos
 						["coord"] = { 67.1, 11.8, THALDRASZUS },
 					}),
 					q(72950, {	-- The Last Conflict
-						["provider"] = { "n", 186188 },	-- Sindragosa
 						["sourceQuests"] = { 72949 },	-- Swiftly to the Archives
+						["provider"] = { "n", 186188 },	-- Sindragosa
 						["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
 						["maps"] = { 2183 },	-- The Azure Vault
 						["groups"] = {
@@ -1849,8 +1849,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						},
 					}),
 					q(72951, {	-- A Peaceful Farewell
-						["provider"] = { "n", 201125 },	-- Senegos
 						["sourceQuests"] = { 72950 },	-- The Last Conflict
+						["provider"] = { "n", 201125 },	-- Senegos
 						["coord"] = { 39.3, 63.6, THE_AZURE_SPAN },
 						["groups"] = {
 							ach(17773, {	-- A Blue Dawn
@@ -1867,25 +1867,25 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				header(HEADERS.Quest, 73196, sharedData({ ["classes"] = { DRUID, EVOKER, MAGE, PRIEST, SHAMAN, WARLOCK }, }, {	-- Tarecgosa's Rest
 					q(73196, {	-- Tarecgosa's Rest
-						["provider"] = { "n", 190000 },	-- Kalecgos
 						["sourceQuests"] = {
 							72951,	-- A Peaceful Farewell
 							29309,	-- The Stuff of Legends [H]
 							29312,	-- The Stuff of Legends [A]
 						},
+						["provider"] = { "n", 190000 },	-- Kalecgos
 						["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
 					}),
 					q(73197, {	-- Love Unending
-						["provider"] = { "n", 190000 },	-- Kalecgos
 						["sourceQuests"] = { 73196 },	-- Tarecgosa's Rest
+						["provider"] = { "n", 190000 },	-- Kalecgos
 						["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
 						["groups"] = {
 							i(202703),	-- Ephemeral Sand
 						},
 					}),
 					q(73198, {	-- Forget Her Not
-						["provider"] = { "n", 190000 },	-- Kalecgos
 						["sourceQuests"] = { 73196 },	-- Tarecgosa's Rest
+						["provider"] = { "n", 190000 },	-- Kalecgos
 						["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
 						["groups"] = {
 							i(203913),	-- Blossoming Manaheart
@@ -1893,11 +1893,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						},
 					}),
 					q(73199, {	-- Rhapsody in Blue
-						["provider"] = { "n", 200979 },	-- Kalecgos
 						["sourceQuests"] = {
 							73198,	-- Forget Her Not
 							73197,	-- Love Unending
 						},
+						["provider"] = { "n", 200979 },	-- Kalecgos
 						["coord"] = { 65.7, 12.6, THALDRASZUS },
 						["groups"] = {
 							i(206162),	-- Tarecgosa's Visage (MOUNT!)
@@ -2128,9 +2128,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 			}),
 			q(71139, {	-- Glowing Arcane Jewel
+				["description"] = "Requires 2 players (or solo if you time it perfectly). Kill the Lost Elemental, then each player needs to click on a different Lava Orb to open a nearby cave. Kill the Stranded Soul inside the cave and loot the quest item.",
 				["provider"] = { "i", 200528 },	-- Glowing Arcane Jewel
 				["coord"] = { 75.8, 24.2, THE_AZURE_SPAN },
-				["description"] = "Requires 2 players (or solo if you time it perfectly). Kill the Lost Elemental, then each player needs to click on a different Lava Orb to open a nearby cave. Kill the Stranded Soul inside the cave and loot the quest item.",
 				["groups"] = {
 					i(197141),	-- Highland Drake: Scaled Pattern (MM!)
 					i(197137),	-- Highland Drake: Spined Nose (MM!)
@@ -2197,9 +2197,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 70.1, 33.2, THE_AZURE_SPAN },
 				}),
 				q(67173, {	-- Thieving Gnolls
-					["providers"] = {
-						{"n", 192747 },	-- Larivi (vignette)
-						{"n", 192749 },	-- Sharpfang
+					["qgs"] = {
+						192747,	-- Larivi (vignette)
+						192749,	-- Sharpfang
 					},
 					["coord"] = { 36.8, 32.5, THE_AZURE_SPAN },
 				}),

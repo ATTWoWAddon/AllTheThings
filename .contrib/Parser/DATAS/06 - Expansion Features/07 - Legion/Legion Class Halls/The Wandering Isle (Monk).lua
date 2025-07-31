@@ -85,40 +85,40 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						-- Available, last check: 8.3
 					}),
 					q(40236, {	-- The Dawning Light
-						["provider"] = { "n", 99181 },	-- Fearsome Jang
 						["sourceQuests"] = { 12103 },	-- Before The Storm
+						["provider"] = { "n", 99181 },	-- Fearsome Jang
 						["coord"] = { 51.3, 54.4, THE_WANDERING_ISLE },
 					}),
 					-- Artifact
 					q(40636, {	-- Prepare To Strike
-						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["sourceQuests"] = { 40236 },	-- The Dawning Light
+						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["coord"] = { 51.4, 48.4, THE_WANDERING_ISLE },
 					}),
 					q(43973, {	-- Two Paths, Two Weapons
-						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["sourceQuests"] = { 40636 },	-- Prepare to Strike
+						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["coord"] = { 51.4, 48.5, THE_WANDERING_ISLE },
 					}),
 					q(44424, {	-- Three Paths, Three Weapons
-						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["sourceQuests"] = { 43973 },	-- Two Paths, Two Weapons
+						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["coord"] = { 51.4, 48.4, THE_WANDERING_ISLE },
 					}),
 					cl(MONK, BREWMASTER, {
 						q(42762, {	-- The Wanderer's Companion
-							["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 							["sourceQuests"] = {
 								40636,	-- Prepare To Strike
 								43973,	-- Two Paths, Two Weapons
 								44424,	-- Three Paths, Three Weapons
 							},
 							["sourceQuestNumRequired"] = 1,
+							["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 							["coord"] = { 51.4, 48.5, THE_WANDERING_ISLE },
 						}),
 						q(42768, {	-- The Riddle of Purity
-							["provider"] = { "n", 108700 },	-- The Monkey King
 							["sourceQuests"] = { 42762 },	-- The Wanderer's Companion
+							["provider"] = { "n", 108700 },	-- The Monkey King
 							["coord"] = { 41.6, 27.4, THE_JADE_FOREST },
 							["groups"] = {
 								i(138477),	-- Pure Water Core (QI!)
@@ -126,13 +126,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							},
 						}),
 						q(42766, {	-- The Riddle of the Barrel
-							["provider"] = { "n", 108700 },	-- The Monkey King
 							["sourceQuests"] = { 42762 },	-- The Wanderer's Companion
+							["provider"] = { "n", 108700 },	-- The Monkey King
 							["coord"] = { 41.6, 27.4, THE_JADE_FOREST },
 						}),
 						q(42767, {	-- The Riddle of the Land
-							["provider"] = { "n", 108700 },	-- The Monkey King
 							["sourceQuests"] = { 42762 },	-- The Wanderer's Companion
+							["provider"] = { "n", 108700 },	-- The Monkey King
 							["coord"] = { 41.6, 27.4, THE_JADE_FOREST },
 							["groups"] = {
 								i(173704, {	-- Granary Jug (QI!)
@@ -142,12 +142,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							},
 						}),
 						q(42957, {	-- Journey to the East
-							["provider"] = { "n", 109049 },	-- The Monkey King
 							["sourceQuests"] = {
 								42766,	-- The Riddle of the Barrel
 								42767,	-- The Riddle of the Land
 								42768,	-- The Riddle of Purity
 							},
+							["provider"] = { "n", 109049 },	-- The Monkey King
 							["maps"] = { VALLEY_OF_THE_FOUR_WINDS },
 							["groups"] = {
 								i(173706, {	-- Jade Jug (QI!)
@@ -156,13 +156,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							},
 						}),
 						q(42868, {	-- The Monkey King's Challenge
-							["provider"] = { "n", 109187 },	-- The Monkey King
 							["sourceQuests"] = { 42957 },	-- Journey to the East
+							["provider"] = { "n", 109187 },	-- The Monkey King
 							["coord"] = { 55.3, 58.1, THE_JADE_FOREST },
 						}),
 						q(42765, {	-- The Trial at the Temple
-							["provider"] = { "n", 109187 },	-- The Monkey King
 							["sourceQuests"] = { 42868 },	-- The Monkey King's Challenge
+							["provider"] = { "n", 109187 },	-- The Monkey King
 							["coord"] = { 55.4, 58.3, THE_JADE_FOREST },
 							["maps"] = { 791, 792 },	-- Temple of the Jade Serpent (Scenario Map)
 							["groups"] = {
@@ -177,13 +177,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					cl(MONK, MISTWEAVER, {
 						q(41003, {	-- The Emperor's Gift
-							["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 							["sourceQuests"] = {
 								40636,	-- Prepare To Strike
 								43973,	-- Two Paths, Two Weapons
 								44424,	-- Three Paths, Three Weapons
 							},
 							["sourceQuestNumRequired"] = 1,
+							["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 							["coord"] = { 51.4, 48.4, THE_WANDERING_ISLE },
 							["maps"] = { 728 },	-- Terrace of Endless Spring (Scenario Map)
 							["groups"] = {
@@ -198,29 +198,29 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					cl(MONK, WINDWALKER, {
 						q(40569, {	-- The Legend of the Sands
-							["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 							["sourceQuests"] = {
 								40636,	-- Prepare To Strike
 								43973,	-- Two Paths, Two Weapons
 								44424,	-- Three Paths, Three Weapons
 							},
 							["sourceQuestNumRequired"] = 1,
+							["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 							["coord"] = { 51.4, 48.5, THE_WANDERING_ISLE },
 						}),
 						q(40633, {	-- Off To Adventure!
-							["provider"] = { "n", 100475 },	-- Li Li Stormstout
 							["sourceQuests"] = { 40569 },	-- The Legend of the Sands
+							["provider"] = { "n", 100475 },	-- Li Li Stormstout
 							["coord"] = { 49.2, 58.6, THE_WANDERING_ISLE },
 						}),
 						q(40634, {	-- Thunder on the Sands
-							["provider"] = { "n", 47684 },	-- King Phaoris
 							["sourceQuests"] = { 40633 },	-- Off To Adventure!
+							["provider"] = { "n", 47684 },	-- King Phaoris
 							["coord"] = { 54.9, 32.8, ULDUM },
 							["groups"] = { i(132560) },	-- Essence of the Whirlwind (QI!)
 						}),
 						q(40570, {	-- Into The Heavens
-							["provider"] = { "n", 47684 },	-- King Phaoris
 							["sourceQuests"] = { 40634 },	-- Thunder on the Sands
+							["provider"] = { "n", 47684 },	-- King Phaoris
 							["coord"] = { 54.9, 32.8, ULDUM },
 							["maps"] = { 716 },	-- Skywall (Scenario Map)
 							["groups"] = {
@@ -241,37 +241,36 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						}),
 					}),
 					q(44249, {	-- Inner Sanctuary
-						["provider"] = { "n", 112338 },	-- Caydori Brightstar
 						["sourceQuests"] = {
 							42765,	-- The Trial at the Temple
 							41003,	-- The Emperor's Gift
 							40570,	-- Into The Heavens
 						},
 						["sourceQuestNumRequired"] = 1,
+						["provider"] = { "n", 112338 },	-- Caydori Brightstar
 						["coord"] = { 50.3, 59.0, THE_WANDERING_ISLE },
 						["groups"] = {
 							i(139734),	-- Grandmaster's Crown
 						},
 					}),
 					q(40793, {	-- A Matter of Planning
-						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["sourceQuests"] = {
 							42765,	-- The Trial at the Temple
 							41003,	-- The Emperor's Gift
 							40570,	-- Into The Heavens
 						},
 						["sourceQuestNumRequired"] = 1,
+						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["coord"] = { 51.4, 48.5, THE_WANDERING_ISLE },
 					}),
 					q(40698, {	-- Purity of Form
-						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["sourceQuests"] = { 40793 },	-- A Matter of Planning
+						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["coord"] = { 51.4, 48.5, THE_WANDERING_ISLE },
 						["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },
 					}),
 					-- Start Zone
 					q(40795, {	-- The Fight Begins
-						["provider"] = { "n", 99179 },	-- Master Hsu
 						["sourceQuests"] = {
 							-- #if BEFORE BFA
 							40698,	-- Purity of Form
@@ -279,101 +278,102 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							40793,	-- A Matter of Planning
 							-- #endif
 						},
+						["provider"] = { "n", 99179 },	-- Master Hsu
 						["coord"] = { 52.8, 59.7, THE_WANDERING_ISLE },
 					}),
 					-- Learn Mission Table & Research
 					q(42186, {	-- Growing Power
-						["provider"] = { "n", 112696 },	-- Initiate Da-Nel
 						["sourceQuests"] = { 40795 },	-- The Fight Begins
+						["provider"] = { "n", 112696 },	-- Initiate Da-Nel
 						["maps"] = { LEGION_DALARAN },
 						["isBreadcrumb"] = true,
 					}),
 					q(42187, {	-- Rise, Champions
-						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["sourceQuests"] = { 42186 },	-- Growing Power
+						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["coord"] = { 51.4, 48.5, THE_WANDERING_ISLE },
 					}),
 					q(41115, {	-- Champion: Chen Stormstout
-						["provider"] = { "n", 102820 },	-- Chen Stormstout
 						["sourceQuests"] = { 42187 },	-- Rise, Champions
+						["provider"] = { "n", 102820 },	-- Chen Stormstout
 						["coord"] = { 55.2, 57.1, THE_WANDERING_ISLE },
 						["groups"] = {
 							follower(596),	-- Chen Stormstout
 						},
 					}),
 					q(40704, {	-- Champion: Li Li Stormstout
-						["provider"] = { "n", 101046 },	-- Li Li Stormstout
 						["sourceQuests"] = { 42187 },	-- Rise, Champions
+						["provider"] = { "n", 101046 },	-- Li Li Stormstout
 						["coord"] = { 49.1, 58.6, THE_WANDERING_ISLE },
 						["groups"] = {
 							follower(588),	-- Li Li Stormstout
 						},
 					}),
 					q(41945, {	-- Tianji of the Ox
-						["provider"] = { "n", 99179 },	-- Master Hsu
 						["sourceQuests"] = {
 							40704,	-- Champion: Li Li Stormstout
 							41115,	-- Champion: Chen Stormstout
 						},
+						["provider"] = { "n", 99179 },	-- Master Hsu
 						["coord"] = { 52.7, 59.6, THE_WANDERING_ISLE },
 					}),
 					q(41946, {	-- Building our Troops
-						["provider"] = { "n", 99179 },	-- Master Hsu
 						["sourceQuests"] = { 41945 },	-- Tianji of the Ox
+						["provider"] = { "n", 99179 },	-- Master Hsu
 						["coord"] = { 52.8, 59.6, THE_WANDERING_ISLE },
 					}),
 					q(42210, {	-- Scrolls of Knowledge
-						["provider"] = { "n", 99179 },	-- Master Hsu
 						["sourceQuests"] = { 41946 },	-- Building Our Troops
+						["provider"] = { "n", 99179 },	-- Master Hsu
 						["coord"] = { 52.8, 59.7, THE_WANDERING_ISLE },
 					}),
 					q(42191, {	-- Tech It Up A Notch
-						["provider"] = { "n", 99179 },	-- Master Hsu
 						["sourceQuests"] = { 42210 },	-- Scrolls of Knowledge
+						["provider"] = { "n", 99179 },	-- Master Hsu
 						["coord"] = { 52.8, 59.6, THE_WANDERING_ISLE },
 					}),
 					-- Chap 1
 					q(41905, {	-- Report from Tian Monastery
-						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["sourceQuests"] = { 42191 },	-- Tech It Up a Notch
+						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["coord"] = { 51.4, 48.5, THE_WANDERING_ISLE },
 						["groups"] = {
 							i(140483),	-- Jade Fragment
 						},
 					}),
 					q(41728, {	-- The Defense of Tian Monastery
-						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["sourceQuests"] = { 41905 },	-- Report From Tian Monastery
+						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["coord"] = { 51.4, 48.4, THE_WANDERING_ISLE },
 					}),
 					q(41729, {	-- Slowing the Spread
-						["provider"] = { "n", 104745 },	-- Instructor Myang
-						["sourceQuests"] = { 41905 },	-- Report from Tian Monastery
-						["coord"] = { 38.3, 25.8, THE_JADE_FOREST },
 						["description"] = "You can get this quest after taking the flight to Tian Monastery during |cffffff00The Defense of Tian Monastery|r.",
+						["sourceQuests"] = { 41905 },	-- Report from Tian Monastery
+						["provider"] = { "n", 104745 },	-- Instructor Myang
+						["coord"] = { 38.3, 25.8, THE_JADE_FOREST },
 					}),
 					q(41730, {	-- Desperate Strike
-						["provider"] = { "n", 104784 },	-- Taran Zhu
 						["sourceQuests"] = { 41728 },	-- The Defense of Tian Monastery
+						["provider"] = { "n", 104784 },	-- Taran Zhu
 						["coord"] = { 38.9, 25.1, THE_JADE_FOREST },
 					}),
 					q(41731, {	-- Storm, Earth, and Fire
-						["provider"] = { "n", 104784 },	-- Taran Zhu
 						["sourceQuests"] = { 41728 },	-- The Defense of Tian Monastery
+						["provider"] = { "n", 104784 },	-- Taran Zhu
 						["coord"] = { 38.9, 25.1, THE_JADE_FOREST },
 					}),
 					q(41732, {	-- The Hand of Keletress
-						["provider"] = { "n", 104850 },	-- The Monkey King
 						["sourceQuests"] = {
 							41730,	-- Desperate Strike
 							41729,	-- Slowing the Spread
 							41731,	-- Storm, Earth, and Fire
 						},
+						["provider"] = { "n", 104850 },	-- The Monkey King
 						["coord"] = { 42.0, 25.5, THE_JADE_FOREST },
 					}),
 					q(41733, {	-- Rebuilding the Order
-						["provider"] = { "n", 104744 },	-- High Elder Cloudfall
 						["sourceQuests"] = { 41732 },	-- The Hand of Keletress
+						["provider"] = { "n", 104744 },	-- High Elder Cloudfall
 						["coord"] = { 45.4, 25.0, THE_JADE_FOREST },
 						["groups"] = {
 							artifact(342),	-- Fu Zan, the Wanderer's Companion
@@ -383,21 +383,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 					}),
 					q(43319, {	-- The Way of the Tiger
-						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["sourceQuests"] = { 41733 },	-- Rebuilding the Order
+						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["coord"] = { 51.4, 48.4, THE_WANDERING_ISLE },
 					}),
 					q(41734, {	-- Champion: Taran Zhu
-						["provider"] = { "n", 104984 },	-- Taran Zhu <Lord of the Shado-Pan>
 						["sourceQuests"] = { 43319 },	-- The Way of the Tiger
+						["provider"] = { "n", 104984 },	-- Taran Zhu <Lord of the Shado-Pan>
 						["coord"] = { 51.1, 49.5, THE_WANDERING_ISLE },
 						["groups"] = {
 							follower(603),	-- Taran Zhu
 						},
 					}),
 					q(41735, {	-- Champion: The Monkey King
-						["provider"] = { "n", 102902 },	-- The Monkey King
 						["sourceQuests"] = { 43319 },	-- The Way of the Tiger
+						["provider"] = { "n", 102902 },	-- The Monkey King
 						["coord"] = { 51.1, 49.5, THE_WANDERING_ISLE },
 						["groups"] = {
 							follower(602),	-- The Monkey King
@@ -405,104 +405,104 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					-- Chap 2
 					q(43062, {	-- Further Training
-						["provider"] = { "n", 104744 },	-- High Elder Cloudfall
 						["sourceQuests"] = { 41733 },	-- Rebuilding the Order
+						["provider"] = { "n", 104744 },	-- High Elder Cloudfall
 						["coord"] = { 52.5, 57.8, THE_WANDERING_ISLE },
 					}),
 					q(41907, {	-- Appropriations
-						["provider"] = { "n", 104744 },	-- High Elder Cloudfall
 						["sourceQuests"] = { 41733 },	-- Rebuilding the Order
+						["provider"] = { "n", 104744 },	-- High Elder Cloudfall
 						["coord"] = { 52.5, 57.8, THE_WANDERING_ISLE },
 					}),
 					q(41909, {	-- Tracking the Tideskorn
-						["provider"] = { "n", 104744 },	-- High Elder Cloudfall
 						["sourceQuests"] = { 41733 },	-- Rebuilding the Order
+						["provider"] = { "n", 104744 },	-- High Elder Cloudfall
 						["coord"] = { 52.5, 57.8, THE_WANDERING_ISLE },
 					}),
 					q(43054, {	-- An Ample Stockpile
-						["provider"] = { "n", 98945 },	-- Lao Shu
 						["sourceQuests"] = { 41907 },	-- Appropriations
+						["provider"] = { "n", 98945 },	-- Lao Shu
 						["coord"] = { 49.0, 58.3, THE_WANDERING_ISLE },
 					}),
 					q(43061, {	-- Silkweave Bandages
-						["provider"] = { "n", 98945 },	-- Lao Shu
 						["altQuests"] = { 43054 },	-- An Ample Stockpile
+						["provider"] = { "n", 98945 },	-- Lao Shu
 						["coord"] = { 49.0, 58.4, THE_WANDERING_ISLE },
 						["repeatable"] = true,	--	repeatable quest during "An Ample Stockpile"
 					}),
 					q(43058, {	-- Spiced Rib Roast
-						["provider"] = { "n", 98945 },	-- Lao Shu
 						["altQuests"] = { 43054 },	-- An Ample Stockpile
+						["provider"] = { "n", 98945 },	-- Lao Shu
 						["coord"] = { 49.0, 58.4, THE_WANDERING_ISLE },
 						["repeatable"] = true,	--	repeatable quest during "An Ample Stockpile"
 					}),
 					q(43060, {	-- Highmountain Salmon
-						["provider"] = { "n", 98945 },	-- Lao Shu
 						["altQuests"] = { 43054 },	-- An Ample Stockpile
+						["provider"] = { "n", 98945 },	-- Lao Shu
 						["coord"] = { 49.0, 58.4, THE_WANDERING_ISLE },
 						["repeatable"] = true,	--	repeatable quest during "An Ample Stockpile"
 					}),
 					--- Chap 3
 					q(41849, {	-- The Iron Fist
-						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["sourceQuests"] = {
 							43062,	-- Further Training
 							41909,	-- Tracking the Tideskorn
 							43054,	-- An Ample Stockpile
 						},
+						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["coord"] = { 51.4, 48.4, THE_WANDERING_ISLE },
 					}),
 					q(41850, {	-- The Master of Swords
-						["provider"] = { "n", 105045 },	-- Angus Ironfist
 						["sourceQuests"] = { 41849 },	-- The Iron Fist
+						["provider"] = { "n", 105045 },	-- Angus Ironfist
 						["coord"] = { 62.9, 59.5, STORMHEIM },
 					}),
 					q(41851, {	-- Quelling the Tide
-						["provider"] = { "n", 105088 },	-- Sylara Steelsong
 						["sourceQuests"] = { 41850 },	-- The Master of Swords
+						["provider"] = { "n", 105088 },	-- Sylara Steelsong
 						["coord"] = { 64.2, 57.0, STORMHEIM },
 					}),
 					q(41852, {	-- No Monk Left Behind
-						["provider"] = { "n", 105072 },	-- Angus Ironfist
 						["sourceQuests"] = { 41850 },	-- The Master of Swords
+						["provider"] = { "n", 105072 },	-- Angus Ironfist
 						["coord"] = { 64.2, 57.0, STORMHEIM },
 					}),
 					q(41853, {	-- Zero to Hiro
-						["provider"] = { "n", 105072 },	-- Angus Ironfist
 						["sourceQuests"] = { 41850 },	-- The Master of Swords
+						["provider"] = { "n", 105072 },	-- Angus Ironfist
 						["coord"] = { 64.2, 57.0, STORMHEIM },
 					}),
 					q(41854, {	-- Brick by Brick
-						["provider"] = { "n", 105152 },	-- Hiro
 						["sourceQuests"] = {
 							41851,	-- Quelling the Tide
 							41852,	-- No Monk Left Behind
 							41853,	-- Zero to Hiro
 						},
+						["provider"] = { "n", 105152 },	-- Hiro
 						["maps"] = { STORMHEIM },
 						["groups"] = {
 							i(139738),	-- Grandmaster's Cuffs
 						},
 					}),
 					q(41737, {	-- Champion: Hiro
-						["provider"] = { "n", 105058 },	-- Hiro
 						["sourceQuests"] = { 41854 },	-- Brick by Brick
+						["provider"] = { "n", 105058 },	-- Hiro
 						["coord"] = { 51.8, 49.6, THE_WANDERING_ISLE },
 						["groups"] = {
 							follower(606),	-- Hiro
 						},
 					}),
 					q(41738, {	-- Champion: Sylara Steelsong
-						["provider"] = { "n", 105056 },	-- Sylara Steelsong
 						["sourceQuests"] = { 41854 },	-- Brick by Brick
+						["provider"] = { "n", 105056 },	-- Sylara Steelsong
 						["coord"] = { 51.8, 49.6, THE_WANDERING_ISLE },
 						["groups"] = {
 							follower(604),	-- Sylara Steelsong
 						},
 					}),
 					q(41736, {	-- Champion: Angus Ironfist
-						["provider"] = { "n", 105046 },	-- Angus Ironfist
 						["sourceQuests"] = { 41854 },	-- Brick by Brick
+						["provider"] = { "n", 105046 },	-- Angus Ironfist
 						["coord"] = { 51.8, 49.6, THE_WANDERING_ISLE },
 						["groups"] = {
 							follower(605),	-- Angus Ironfist
@@ -510,68 +510,68 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					-- Chap 4
 					q(41038, {	-- The Mead Master
-						["provider"] = { "n", 41736 },	-- Iron-Body Ponshu
 						["sourceQuests"] = {
 							41736,	-- Champion: Angus Ironfist
 							41737,	-- Champion: Hiro
 							41738,	-- Champion: Sylara Steelsong
 						},
+						["provider"] = { "n", 41736 },	-- Iron-Body Ponshu
 						["coord"] = { 51.4, 48.4, THE_WANDERING_ISLE },
 					}),
 					q(41039, {	-- Stolen Knowledge
-						["provider"] = { "n", 102843 },	-- Aegira
 						["sourceQuests"] = { 41038 },	-- The Mead Master
+						["provider"] = { "n", 102843 },	-- Aegira
 						["coord"] = { 62.1, 20.2, STORMHEIM },
 						["groups"] = {
 							i(133995),	-- Storm Brew Recipe (QI!)
 						},
 					}),
 					q(41910, {	-- Freya's Spring
-						["provider"] = { "n", 102843 },	-- Aegira (Broken Temple Brewmaster)
 						["sourceQuests"] = { 41039 },	-- Stolen Knowledge
+						["provider"] = { "n", 102843 },	-- Aegira (Broken Temple Brewmaster)
 						["maps"] = { STORMHEIM },
 					}),
 					q(41040, {	-- Halls of Valor: The Brewmaster
-						["provider"] = { "n", 102843 },	-- Aegira (Broken Temple Brewmaster)
 						["sourceQuests"] = { 41039 },	-- Stolen Knowledge
+						["provider"] = { "n", 102843 },	-- Aegira (Broken Temple Brewmaster)
 						["maps"] = { 703, 704, 705 },	-- Halls of Valor
 					}),
 					q(41911, {	-- Amaranthine Hops
-						["provider"] = { "n", 102996 },	-- Aegira (Broken Temple Brewmaster)
 						["sourceQuests"] = { 41039 },	-- Stolen Knowledge
+						["provider"] = { "n", 102996 },	-- Aegira (Broken Temple Brewmaster)
 						["maps"] = { STORMHEIM },
 						["groups"] = {
 							i(139033),	-- Amaranthine Hops (QI!)
 						},
 					}),
 					q(41086, {	-- A Peaceful World
-						["provider"] = { "n", 102820 },	-- Chen Stormstout
 						["sourceQuests"] = { 41911 },	-- Amaranthine Hops
+						["provider"] = { "n", 102820 },	-- Chen Stormstout
 						["coord"] = { 55.2, 57.0, THE_WANDERING_ISLE },
 					}),
 					q(43151, {	-- Making a Trade
-						["provider"] = { "n", 109738 },	-- Fleuris Asterleaf
 						["sourceQuests"] = { 41911 },	-- Amaranthine Hops (technically part of this quest)
+						["provider"] = { "n", 109738 },	-- Fleuris Asterleaf
 						["maps"] = { VALSHARAH },
 						["cost"] = { { "i", 124113, 20 } },	-- 20x Stonehide Leather
 					}),
 					q(41059, {	-- Halls of Valor: Odyn's Cauldron
-						["provider"] = { "n", 103049 },	-- Melba
 						["sourceQuests"] = { 41040 },	-- Halls of Valor: The Brewmaster
+						["provider"] = { "n", 103049 },	-- Melba
 						["maps"] = { 703, 704, 705 },	-- Halls of Valor
 					}),
 					q(32442, {	-- Impending Danger
-						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["sourceQuests"] = {
 							41059,	-- Halls of Valor: Odyn's Cauldron
 							41086,	-- A Peaceful World
 							41910,	-- Freya's Spring
 						},
+						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["coord"] = { 51.4, 48.4, THE_WANDERING_ISLE },
 					}),
 					q(41087, {	-- Storm Brew
-						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["sourceQuests"] = { 32442 },	-- Impending Danger
+						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["coord"] = { 51.4, 48.4, THE_WANDERING_ISLE },
 						["groups"] = {
 							title(329),	-- Grandmaster <Name>
@@ -599,8 +599,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 					}),
 					q(43359, {	-- A Hero's Weapon
-						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["sourceQuests"] = { 41087 },	-- Storm Brew
+						["provider"] = { "n", 100438 },	-- Iron-Body Ponshu
 						["coord"] = { 51.4, 48.5, THE_WANDERING_ISLE },
 						["groups"] = {
 							artifact(337),	-- Fu Zan, the Wanderer's Companion
@@ -611,21 +611,20 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 					-- Interlude
 					q(46024, {	-- An Urgent Warning
-						["provider"] = { "n", 118430 },	-- Injured Initiate
 						["sourceQuest"] = 43359,	-- A Hero's Weapon
+						["provider"] = { "n", 118430 },	-- Injured Initiate
 						["coord"] = { 51.2, 58.8, THE_WANDERING_ISLE },
 						["timeline"] = { ADDED_7_1_5, REMOVED_7_2_0 },
 						["isBreadcrumb"] = true,
 					}),
 					q(46025, {	-- Investigate the Broken Shore
-						["provider"] = { "n", 99179 },	-- Master Hsu <Mission Master>
 						["sourceQuest"] = 46024,	-- An Urgent Warning
+						["provider"] = { "n", 99179 },	-- Master Hsu <Mission Master>
 						["coord"] = { 52.8, 59.6, THE_WANDERING_ISLE },
 						["timeline"] = { ADDED_7_1_5, REMOVED_7_2_0 },
 					}),
 					-- 7.2.0
 					q(45440, {	-- A Brewing Situation
-						["provider"] = { "n", 116929 },	-- Brewmaster Blancee
 						["sourceQuests"] = {
 							47137,	-- Champions of Legionfall
 							-- #IF AFTER 7.2.0
@@ -634,25 +633,26 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							46025,	-- Investigate the Broken Shore
 							-- #ENDIF
 						},
+						["provider"] = { "n", 116929 },	-- Brewmaster Blancee
 						["coord"] = { 51.4, 48.6, THE_WANDERING_ISLE },
 						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45404, {	-- Panic at the Brewery
-						["provider"] = { "n", 119664 },	-- Brewmaster Almai
 						["sourceQuests"] = { 45440 },	-- A Brewing Situation
+						["provider"] = { "n", 119664 },	-- Brewmaster Almai
 						["coord"] = { 51.3, 48.5, THE_WANDERING_ISLE },
 						["timeline"] = { ADDED_7_2_0 },
 						["maps"] = { 872, 873, 874 },	-- Stormstout Brewery (Scenario Map)
 					}),
 					q(45459, {	-- Storming the Legion
-						["provider"] = { "n", 119765 },	-- Spirit of Brewmaster Blanche
 						["sourceQuests"] = { 45404 },	-- Panic at the Brewery
+						["provider"] = { "n", 119765 },	-- Spirit of Brewmaster Blanche
 						["coord"] = { 51.5, 48.5, THE_WANDERING_ISLE },
 						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45574, {	-- Fel Ingredients
-						["provider"] = { "n", 117305 },	-- Brewmaster Almai
 						["sourceQuests"] = { 45459 },	-- Storming the Legion
+						["provider"] = { "n", 117305 },	-- Brewmaster Almai
 						["coord"] = { 53.6, 53.3, BROKEN_SHORE },
 						["timeline"] = { ADDED_7_2_0 },
 						["groups"] = {
@@ -662,75 +662,75 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 					}),
 					q(45545, {	-- Barrel Toss
-						["provider"] = { "n", 117305 },	-- Brewer Almai
 						["sourceQuests"] = { 45459 },	-- Storming the Legion
+						["provider"] = { "n", 117305 },	-- Brewer Almai
 						["coord"] = { 53.6, 53.3, BROKEN_SHORE },
 						["timeline"] = { ADDED_7_2_0 },
 						["groups"] = { i(146308) },	-- Barrel of Storm Brew (QI!)
 					}),
 					q(45449, {	-- Alchemist Koryla
-						["provider"] = { "n", 117305 },	-- Brewer Almai
 						["sourceQuests"] = { 45459 },	-- Storming the Legion
+						["provider"] = { "n", 117305 },	-- Brewer Almai
 						["coord"] = { 53.6, 53.3, BROKEN_SHORE },
 						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(46320, {	-- Hope For a Cure
-						["provider"] = { "n", 117305 },	-- Brewer Almai
 						["sourceQuests"] = {
 							45574,	-- Fel Ingredients
 							45449,	-- Alchemist Koryla
 							45545,	-- Barrel Toss
 						},
+						["provider"] = { "n", 117305 },	-- Brewer Almai
 						["coord"] = { 53.6, 53.4, BROKEN_SHORE },
 						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45442, {	-- Not Felling Well
-						["provider"] = { "n", 119765 },	-- Spirit of Brewmaster Blanche
 						["sourceQuests"] = { 46320 },	-- Hope For a Cure
+						["provider"] = { "n", 119765 },	-- Spirit of Brewmaster Blanche
 						["coord"] = { 50.5, 57.8, THE_WANDERING_ISLE },
 						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45771, {	-- A Time for Everything
-						["provider"] = { "n", 119765 },	-- Spirit of Brewmaster Blanche
 						["sourceQuests"] = { 45442 },	-- Not Felling Well
+						["provider"] = { "n", 119765 },	-- Spirit of Brewmaster Blanche
 						["coord"] = { 50.5, 57.8, THE_WANDERING_ISLE },
 						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(45790, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Champion: Almai
-						["provider"] = { "n", 117504 },	-- Brewer Almai
 						["sourceQuests"] = { 45771 },	-- A Time for Everything
+						["provider"] = { "n", 117504 },	-- Brewer Almai
 						["coord"] = { 51.6, 48.5, THE_WANDERING_ISLE },
 						["groups"] = {
 							follower(998),	-- Brewer Almai
 						},
 					})),
 					q(46353, {	-- Master Who?
-						["provider"] = { "n", 118214 },	-- Yiska
 						["sourceQuest"] = 45790,	-- Champion: Almai
+						["provider"] = { "n", 118214 },	-- Yiska
 						["coord"] = { 44.9, 62.0, BROKEN_SHORE },
 						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(46341, {	-- The Tale of Ban-Lu
-						["provider"] = { "n", 120758 },	-- Master Bu
 						["sourceQuests"] = { 46353 },	-- Master Who?
+						["provider"] = { "n", 120758 },	-- Master Bu
 						["coord"] = { 32.3, 43.3, THE_WANDERING_ISLE },
 						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(46342, {	-- Return to the Broken Peak
-						["provider"] = { "n", 120758 },	-- Master Bu
 						["sourceQuests"] = { 46341 },	-- The Tale of Ban-Lu
+						["provider"] = { "n", 120758 },	-- Master Bu
 						["coord"] = { 32.3, 43.3, THE_WANDERING_ISLE },
 						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(46343, {	-- The Trail of Ban-Lu
-						["provider"] = { "n", 120722 },	-- Master Bu
 						["sourceQuests"] = { 46342 },	-- Return to the Broken Peak
+						["provider"] = { "n", 120722 },	-- Master Bu
 						["coord"] = { 47.3, 41.7, KUN_LAI_SUMMIT },
 						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(46344, {	-- Smelly's Luckydo
-						["provider"] = { "n", 120744 },	-- Smelly Mountaintop
 						["sourceQuests"] = { 46343 },	-- The Trail of Ban-Lu
+						["provider"] = { "n", 120744 },	-- Smelly Mountaintop
 						["coord"] = { 47.9, 49.0, KUN_LAI_SUMMIT },
 						["timeline"] = { ADDED_7_2_0 },
 						["groups"] = {
@@ -738,26 +738,26 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 					}),
 					q(46346, {	-- The Shadow of Ban-Lu
-						["provider"] = { "n", 120722 },	-- Master Bu
 						["sourceQuests"] = { 46344 },	-- Smelly's Luckydo
+						["provider"] = { "n", 120722 },	-- Master Bu
 						["coord"] = { 47.9, 48.8, KUN_LAI_SUMMIT },
 						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(46347, {	-- Clean-up on Aisle Sha
-						["provider"] = { "n", 120722 },	-- Master Bu
 						["sourceQuests"] = { 46346 },	-- The Shadow of Ban-Lu
+						["provider"] = { "n", 120722 },	-- Master Bu
 						["coord"] = { 36.5, 48.2, KUN_LAI_SUMMIT },
 						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(46348, {	-- The River to Ban-Lu
-						["provider"] = { "n", 120722 },	-- Master Bu
 						["sourceQuests"] = { 46347 },	-- Clean-up on Aisle Sha
+						["provider"] = { "n", 120722 },	-- Master Bu
 						["coord"] = { 36.5, 48.3, KUN_LAI_SUMMIT },
 						["timeline"] = { ADDED_7_2_0 },
 					}),
 					q(46349, {	-- Lilies for Ryuli
-						["provider"] = { "n", 120726 },	-- Waterspeaker Ryuli
 						["sourceQuests"] = { 46348 },	-- The River to Ban-Lu
+						["provider"] = { "n", 120726 },	-- Waterspeaker Ryuli
 						["coord"] = { 74.4, 88.7, KUN_LAI_SUMMIT },
 						["timeline"] = { ADDED_7_2_0 },
 						["groups"] = {
@@ -765,8 +765,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						},
 					}),
 					q(46350, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- The Trial of Ban-Lu
-						["provider"] = { "n", 120726 },	-- Waterspeaker Ryuli
 						["sourceQuests"] = { 46349 },	-- Lilies for Ryuli
+						["provider"] = { "n", 120726 },	-- Waterspeaker Ryuli
 						["coord"] = { 73.9, 88.9, KUN_LAI_SUMMIT },
 						["groups"] = {
 							mount(229385),	-- Ban-Lu, Grandmaster's Companion (MOUNT!)
@@ -779,20 +779,20 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						["timeline"] = { ADDED_7_0_3, REMOVED_7_3_0 },
 					}),
 					q(46144, {	-- Knowledge is Power
-						["provider"] = { "n", 106942 },	-- Lorewalker Cho <Head Archivist>
 						["sourceQuest"] = 43881,	-- Hitting the Books
+						["provider"] = { "n", 106942 },	-- Lorewalker Cho <Head Archivist>
 						["coord"] = { 46.8, 46.8, THE_WANDERING_ISLE },
 						["timeline"] = { ADDED_7_1_5, REMOVED_7_3_0 },
 					}),
 					q(46157, {	-- Furthering Knowledge
-						["provider"] = { "n", 106942 },	-- Lorewalker Cho <Head Archivist>
 						["sourceQuest"] = 46144,	-- Knowledge is Power
+						["provider"] = { "n", 106942 },	-- Lorewalker Cho <Head Archivist>
 						["coord"] = { 46.8, 46.8, THE_WANDERING_ISLE },
 						["timeline"] = { ADDED_7_1_5, REMOVED_7_3_0 },
 					}),
 					q(46785, {	-- Further Advancement
-						["provider"] = { "n", 99179 },	-- Master Hsu
 						["sourceQuests"] = { 45771 },	-- A Time for Everything
+						["provider"] = { "n", 99179 },	-- Master Hsu
 						["coord"] = { 52.8, 59.6, THE_WANDERING_ISLE },
 						["timeline"] = { ADDED_7_2_0 },
 					}),
@@ -800,15 +800,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 				n(SPECIAL,{
 					gt(257, {	-- Celestial Favor
 						q(44239, {	-- Echo of a Celestial
-							["provider"] = { "n", 106538 },	-- Tianili
 							["sourceQuests"] = { 42191 },	-- Tech It Up a Notch
+							["provider"] = { "n", 106538 },	-- Tianili
 							["coord"] = { 54.4, 58.8, THE_WANDERING_ISLE },
 						}),
 					}),
 					gt(256, {	-- One with Destiny
 						q(44238, {	-- Meditations on Fate
-							["provider"] = { "n", 110817 },	-- Yushi
 							["sourceQuests"] = { 42191 },	-- Tech It Up a Notch
+							["provider"] = { "n", 110817 },	-- Yushi
 							["coord"] = { 53.4, 57.8, THE_WANDERING_ISLE },
 						}),
 					}),

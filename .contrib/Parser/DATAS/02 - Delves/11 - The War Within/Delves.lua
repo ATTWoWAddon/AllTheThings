@@ -252,9 +252,15 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			["coord"] = { 38.5, 51.1, KARESH_TAZAVESH },
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					ach(42190),	-- Let Me Solo Her: Nexus-Princess Ky'veza
-					ach(42193),	-- My Stab-Happy Nemesis
-					ach(42194),	-- Pruning the Princess
+					ach(42190, {	-- Let Me Solo Her: Nexus-Princess Ky'veza
+						i(238182),	-- Delver's Mana-Skimmer Schematic: Hyperdrive (MM!)
+					}),
+					ach(42193, {	-- My Stab-Happy Nemesis
+						i(245529),	-- Hal'hadar's Phasebound Visor (COSMETIC!)
+					}),
+					ach(42194, {	-- Pruning the Princess
+						title(639),	-- Contract Killer %s
+					}),
 				}),
 			},
 		})),
@@ -1354,6 +1360,13 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 					})),
 					n(DELVES_TWW_S3, bubbleDown({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 } }, {
 						i(238007),	-- Bulwark of the Great Dark
+						i(246086, {	-- Fate Weaver
+							["description"] = "Fly to Fate Weaver's Spool in Azj-Kahet to perform the ritual, coords 64.2, 74.8",
+							["groups"] = {
+								i(219941),	-- Fateweaved Mallet
+								i(219382),	-- Fateweaved Needle
+							},
+						}),
 					})),
 				}),
 			},
@@ -1844,31 +1857,31 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			},
 		}),
 		q(81514, {	-- Bountiful Delves
-			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["sourceQuests"] = { 83315 },	-- Preparing for the Unknown
+			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["coord"] = { 47.4, 44.4, DORNOGAL },
 		}),
 		q(81510, {	-- Ship It!
-			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["sourceQuests"] = { 81514 },	-- Bountiful Delves
+			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["coord"] = { 47.4, 44.4, DORNOGAL },
 			["groups"] = {
 				i(219391),	-- Delver's Dirigible (MOUNT!)
 			},
 		}),
 		q(81593, {	-- Maximum Potential
-			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["sourceQuests"] = { 81510 },	-- Ship It!
+			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["coord"] = { 47.4, 44.4, DORNOGAL },
 			["timeline"] = { REMOVED_11_1_0 },
 		}),
 		q(81595, {	-- Seasonal Start
-			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["sourceQuests"] = {
 				81510,	-- Ship It!
 				84365,	-- Something on the Horizon
 			},
 			["sourceQuestNumRequired"] = 1,
+			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["coord"] = { 47.4, 44.4, DORNOGAL },
 			["timeline"] = { REMOVED_11_1_0 },
 		}),
@@ -1879,14 +1892,14 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			["timeline"] = { REMOVED_11_1_0 },
 		}),
 		q(81596, {	-- Delve Hunter
-			["provider"] = { "n", 226763 },	-- Naleidea Rivergleam
 			["sourceQuests"] = { 81595 },	-- Seasonal Start
+			["provider"] = { "n", 226763 },	-- Naleidea Rivergleam
 			["coord"] = { 47.8, 44.5, DORNOGAL },
 			["timeline"] = { REMOVED_11_1_0 },
 		}),
 		q(83500, {	-- Zekvir, Hand of the Harbinger
-			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["sourceQuests"] = { 81596 },	-- Delve Hunter
+			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["coord"] = { 47.4, 44.4, DORNOGAL },
 			["timeline"] = { REMOVED_11_1_0 },
 			["groups"] = { i(225547) },	-- Toxic Victory (TOY!)
@@ -1903,15 +1916,15 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			["maps"] = ALL_REGULAR_DELVES,	-- s2 delves or all delves?
 		}),
 		q(88947, {	-- Undermined Delves
-			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			--["sourceQuests"] = { xx },	-- ??
+			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["coord"] = { 47.6, 44.3, DORNOGAL },
 			["timeline"] = { ADDED_11_1_0_SEASONSTART },
 			["isBreadcrumb"] = true,
 		}),
 		q(85242, {	-- Seasonal Refresher
-			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["sourceQuests"] = { 88947 },	-- Undermined Delves
+			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["coord"] = { 47.4, 44.4, DORNOGAL },
 			["timeline"] = { ADDED_11_1_0_SEASONSTART },
 			["groups"] = {
@@ -1922,8 +1935,8 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			},
 		}),
 		q(85243, {	-- I Want My Hat Back
-			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["sourceQuests"] = { 85242 },	-- Seasonal Refresher
+			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["coord"] = { 47.4, 44.4, DORNOGAL },
 			["timeline"] = { ADDED_11_1_0_SEASONSTART },
 			["groups"] = {
@@ -1937,8 +1950,8 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			},
 		}),
 		q(85244, {	-- Defeating the Underpin
-			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["sourceQuests"] = { 85243 },	-- I Want My Hat Back
+			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["coord"] = { 47.4, 44.4, DORNOGAL },
 			["timeline"] = { ADDED_11_1_0_SEASONSTART },
 			["groups"] = {
@@ -1956,14 +1969,14 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			["isBreadcrumb"] = true,
 		}),
 		q(90969, {	-- Titan Consoles
-			["provider"] = { "n", 245191 },	-- Dagran Thaurissan II (can also be picked up from journal)
 			["sourceQuests"] = { 90968 },	-- Titanic Rumblings
+			["provider"] = { "n", 245191 },	-- Dagran Thaurissan II (can also be picked up from journal)
 			["coord"] = { 48.0, 43.4, DORNOGAL },
 			["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 },
 		}),
 		q(90970, {	-- Titan Disc-Count
-			["provider"] = { "n", 235490 },	-- Overcharged Titan Console
 			["sourceQuests"] = { 90969 },	-- Titan Consoles
+			["provider"] = { "n", 235490 },	-- Overcharged Titan Console
 			["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 },
 			["maps"] = OVERCHARGED_DELVES,
 			["groups"] = {
@@ -1971,12 +1984,13 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			},
 		}),
 		q(90971, {	-- Overcharged Console
-			["provider"] = { "n", 235490 },	-- Overcharged Titan Console
 			["sourceQuests"] = { 90970 },	-- Titan Disc-Count
+			["provider"] = { "n", 235490 },	-- Overcharged Titan Console
 			["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 },
 			["maps"] = OVERCHARGED_DELVES,
 		}),
 		q(91009, {	-- Durable Information Storage Container
+			["sourceQuests"] = { 90971 },	-- Overcharged Console (TODO: with 11.2 ptr this quest exist but I will test out chain next time)
 			["qgs"] = {
 				-- #if BEFORE 11.2.0
 				235490,	-- Overcharged Titan Console
@@ -1985,7 +1999,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 				249592,	-- Titan Console
 				-- #endif
 			},
-			["sourceQuests"] = { 90971 },	-- Overcharged Console (TODO: with 11.2 ptr this quest exist but I will test out chain next time)
 			["coord"] = { 48.0, 43.4, DORNOGAL },
 			["timeline"] = { ADDED_11_1_7 },
 			["groups"] = {
@@ -1997,11 +2010,11 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			},
 		}),
 		q(91026, {	-- Gathering an Upgrade
+			["sourceQuests"] = { 91009 },	-- Durable Information Storage Container
 			["qgs"] = {
 				245191,	-- Dagran Thaurissan II
 				235490,	-- Overcharged Titan Console
 			},
-			["sourceQuests"] = { 91009 },	-- Durable Information Storage Container
 			["coord"] = { 48.0, 43.4, DORNOGAL },
 			["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 },
 			["groups"] = {
@@ -2011,8 +2024,8 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			},
 		}),
 		q(91030, {	-- New Titan Directives
-			["provider"] = { "n", 245191 },	-- Dagran Thaurissan II
 			["sourceQuests"] = { 91026 },	-- Gathering an Upgrade
+			["provider"] = { "n", 245191 },	-- Dagran Thaurissan II
 			["coord"] = { 48.0, 43.4, DORNOGAL },
 			["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 },
 			["groups"] = {
@@ -2020,8 +2033,8 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			},
 		}),
 		q(91031, {	-- Pushing it to the Limit
-			["provider"] = { "n", 245191 },	-- Dagran Thaurissan II
 			["sourceQuests"] = { 91030 },	-- New Titan Directives
+			["provider"] = { "n", 245191 },	-- Dagran Thaurissan II
 			["coord"] = { 48.0, 43.4, DORNOGAL },
 			["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 },
 			["groups"] = {
@@ -2030,8 +2043,8 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			},
 		}),
 		q(91033, {	-- Monitoring 'Construct'ing
-			["provider"] = { "n", 245191 },	-- Dagran Thaurissan II
 			["sourceQuests"] = { 91031 },	-- Pushing it to the Limit
+			["provider"] = { "n", 245191 },	-- Dagran Thaurissan II
 			["coord"] = { 48.0, 43.4, DORNOGAL },
 			["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 },
 			["groups"] = {
@@ -2039,8 +2052,8 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			},
 		}),
 		q(91035, {	-- Construct De-Escalation
-			["provider"] = { "n", 245191 },	-- Dagran Thaurissan II
 			["sourceQuests"] = { 91033 },	-- Monitoring 'Construct'ing
+			["provider"] = { "n", 245191 },	-- Dagran Thaurissan II
 			["coord"] = { 48.0, 43.4, DORNOGAL },
 			["timeline"] = { ADDED_11_1_7, REMOVED_11_2_0 },
 			["groups"] = {
@@ -2063,8 +2076,8 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			-- auto pop on login
 		}),
 		q(91781, {	-- Seasonal Reminder
-			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["sourceQuests"] = { 91780 },	-- Ethereal Delves
+			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["coord"] = { 47.4, 44.4, DORNOGAL },
 			["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
 			["groups"] = {
@@ -2073,8 +2086,8 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			},
 		}),
 		q(91782, {	-- Repossessed!
-			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["sourceQuests"] = { 91781 },	-- Seasonal Reminder
+			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["coord"] = { 47.4, 44.4, DORNOGAL },
 			["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
 			["groups"] = {
@@ -2092,8 +2105,8 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			},
 		}),
 		q(91089, {	-- Defeating Ky'veza
-			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["sourceQuests"] = { 91782 },	-- Repossessed!
+			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["coord"] = { 47.4, 44.4, DORNOGAL },
 			["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
 			["groups"] = {

@@ -114,13 +114,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(7066, {	-- Seed of Life
+					-- #if BEFORE 4.0.3
+					["description"] = "This quest becomes available after you defeat Princess Theradras.",
+					-- #endif
 					["providers"] = {
 						{ "n", 12238 },	-- Zaetar's Spirit
 						{ "i", 17760 },	-- Seed of Life
 					},
-					-- #if BEFORE 4.0.3
-					["description"] = "This quest becomes available after you defeat Princess Theradras.",
-					-- #endif
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { MOONGLADE },
 					["lvl"] = 39,
@@ -235,8 +235,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(7046, {	-- The Scepter of Celebras
-					["qg"] = 13716,	-- Celebras the Redeemed
 					["sourceQuest"] = 7044,	-- Legends of Maraudon
+					["qg"] = 13716,	-- Celebras the Redeemed
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 41,
 					["groups"] = {

@@ -39,8 +39,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 			}),
 			n(QUESTS, {
 				q(9725, {	-- A Demonstration of Loyalty
-					["qg"] = 25223,	-- Lord Solanar Bloodwrath
 					["sourceQuest"] = 9723,	-- A Gesture of Commitment
+					["qg"] = 25223,	-- Lord Solanar Bloodwrath
 					["coord"] = { 92.0, 38.8, SILVERMOON_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { EASTERN_PLAGUELANDS },
@@ -101,11 +101,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = 12,
 				}),
 				q(9723, {	-- A Gesture of Commitment
+					["sourceQuest"] = 9722,	-- The Master's Path
 					["providers"] = {
 						{ "n", 25223 },	-- Lord Solanar Bloodwrath
 						{ "i", 24277 },	-- Items for Magister Astalor Bloodsworn
 					},
-					["sourceQuest"] = 9722,	-- The Master's Path
 					["coord"] = { 92.0, 38.8, SILVERMOON_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -120,8 +120,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(60, 60, 1),
 				}),
 				q(9681, {	-- A Study in Power
-					["qg"] = 17717,	-- Knight-Lord Bloodvalor
 					["sourceQuest"] = 9678,	-- The First Trial
+					["qg"] = 17717,	-- Knight-Lord Bloodvalor
 					["coord"] = { 89.3, 35.2, SILVERMOON_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
@@ -137,8 +137,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(60, 60, 1),
 				}),
 				q(10363, {	-- Additional Runecloth
-					["qg"] = 20612,	-- Sorim Lightsong
 					["sourceQuest"] = 10362,	-- A Donation of Runecloth
+					["qg"] = 20612,	-- Sorim Lightsong
 					["coord"] = { 56.6, 52.5, SILVERMOON_CITY },
 					["timeline"] = { REMOVED_4_0_3},
 					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
@@ -147,6 +147,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = 50,
 				}),
 				q(9627, {	-- Allegiance to the Horde [Blood Elf Only]
+					["sourceQuest"] = 9626,	-- Meeting the Orcs
 					["qgs"] = {
 						-- #if AFTER LEGION
 						14720,	-- High Overlord Saurfang
@@ -158,7 +159,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						4949,	-- Thrall <Warchief>
 						-- #endif
 					},
-					["sourceQuest"] = 9626,	-- Meeting the Orcs
 					["coords"] = {
 						-- #if AFTER LEGION
 						{ 48.6, 71.0, ORGRIMMAR },	-- High Overlord Saurfang
@@ -174,8 +174,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(15, 15, 1),
 				}),
 				q(9684, bubbleDown({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Claiming the Light
-					["qg"] = 17718,	-- Magister Astalor Bloodsworn
 					["sourceQuest"] = 9681,	-- A Study in Power
+					["qg"] = 17718,	-- Magister Astalor Bloodsworn
 					["coord"] = { 89.3, 35.2, SILVERMOON_CITY },
 					["classes"] = { PALADIN },
 					["races"] = { BLOODELF },
@@ -192,33 +192,33 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				})),
 				q(9621, {	-- Envoy to the Horde [Blood Elf Only]
+					["sourceQuest"] = 9328,	-- Hero of the Sin'dorei
 					["providers"] = {
 						{ "n", 16802 },	-- Lor'themar Theron
 						{ "i", 23929 },	-- Letter from Lor'themar Theron
 					},
-					["sourceQuest"] = 9328,	-- Hero of the Sin'dorei
 					["coord"] = { 54.0, 20.4, SILVERMOON_CITY },
 					["maps"] = { UNDERCITY },
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(15, 15, 1),
 				}),
 				q(9812, {	-- Envoy to the Horde [Non-Blood Elf Only]
+					["sourceQuest"] = 9811,	-- Friend of the Sin'dorei
 					["providers"] = {
 						{ "n", 16802 },	-- Lor'themar Theron
 						{ "i", 23929 },	-- Letter from Lor'themar Theron
 					},
-					["sourceQuest"] = 9811,	-- Friend of the Sin'dorei
 					["coord"] = { 54.0, 20.4, SILVERMOON_CITY },
 					["maps"] = { UNDERCITY },
 					["races"] = exclude(BLOODELF, HORDE_ONLY),
 					["lvl"] = lvlsquish(15, 15, 1),
 				}),
 				q(9707, {	-- Forging the Weapon
+					["sourceQuest"] = 9692,	-- The Path of the Adept
 					["providers"] = {
 						{ "n", 17717 },	-- Knight-Lord Bloodvalor
 						{ "i", 24239 },	-- Crate of Materials
 					},
-					["sourceQuest"] = 9692,	-- The Path of the Adept
 					["coord"] = { 89.3, 35.2, SILVERMOON_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
@@ -226,30 +226,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(20, 20, 1),
 				}),
 				q(9626, {	-- Meeting the Orcs [Blood Elf Only]
+					["sourceQuest"] = 9621,	-- Envoy to the Horde [Blood Elf Only]
 					["providers"] = {
 						{ "n", 10181 },	-- Lady Sylvanas Windrunner <Warchief>
 						{ "i", 23930 },	-- Letter Sealed by Sylvanas
 					},
-					["sourceQuest"] = 9621,	-- Envoy to the Horde [Blood Elf Only]
 					["coord"] = { 57.8, 91.6, UNDERCITY },
 					["maps"] = { ORGRIMMAR },
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(15, 15, 1),
 				}),
 				q(9813, {	-- Meeting the Orcs [Non-Blood Elf Only]
+					["sourceQuest"] = 9812,	-- Envoy to the Horde [Non-Blood Elf Only]
 					["providers"] = {
 						{ "n", 10181 },	-- Lady Sylvanas Windrunner <Warchief>
 						{ "i", 23930 },	-- Letter Sealed by Sylvanas
 					},
-					["sourceQuest"] = 9812,	-- Envoy to the Horde [Non-Blood Elf Only]
 					["coord"] = { 57.8, 91.6, UNDERCITY },
 					["maps"] = { ORGRIMMAR },
 					["races"] = exclude(BLOODELF, HORDE_ONLY),
 					["lvl"] = lvlsquish(15, 15, 1),
 				}),
 				q(9685, {	-- Redeeming the Dead
-					["qg"] = 17717,	-- Knight-Lord Bloodvalor
 					["sourceQuest"] = 9684,	-- Claiming the Light
+					["qg"] = 17717,	-- Knight-Lord Bloodvalor
 					["coord"] = { 89.3, 35.2, SILVERMOON_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
@@ -286,11 +286,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				-- #if BEFORE WRATH
 				-- Before Wrath, this quest chain was in the Ghostlands and has a higher level requirement.
 				q(9134, {	-- Skymistress Gloaming
+					["sourceQuest"] = 9133,	-- Fly to Silvermoon City
 					["providers"] = {
 						{ "n", 16191 },	-- Sathren Azuredawn
 						{ "i", 22550 },	-- Quartermaster Lymel's Goods
 					},
-					["sourceQuest"] = 9133,	-- Fly to Silvermoon City
 					["coord"] = { 53.9, 71.0, SILVERMOON_CITY },
 					["maps"] = { EVERSONG_WOODS },
 					["races"] = { BLOODELF },
@@ -298,11 +298,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				-- #else
 				q(9134, {	-- Skymistress Gloaming
+					["sourceQuest"] = 9133,	-- Fly to Silvermoon City
 					["providers"] = {
 						{ "n", 16191 },	-- Sathren Azuredawn
 						{ "i", 22550 },	-- Sathiel's Goods
 					},
-					["sourceQuest"] = 9133,	-- Fly to Silvermoon City
 					["coord"] = { 53.9, 71.0, SILVERMOON_CITY },
 					["maps"] = { EVERSONG_WOODS },
 					["races"] = { BLOODELF },
@@ -310,8 +310,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				-- #endif
 				q(9710, {	-- The Blood-Tempered Ranseur
-					["qg"] = 16669,	-- Bemarrin
 					["sourceQuest"] = 9707,	-- Forging the Weapon
+					["qg"] = 16669,	-- Bemarrin
 					["coord"] = { 79.4, 38.6, SILVERMOON_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
@@ -324,8 +324,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9678, {	-- The First Trial
-					["qg"] = 17717,	-- Knight-Lord Bloodvalor
 					["sourceQuest"] = 9677,	-- Summons from Knight-Lord Bloodvalor
+					["qg"] = 17717,	-- Knight-Lord Bloodvalor
 					["coord"] = { 89.3, 35.2, SILVERMOON_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { GHOSTLANDS },
@@ -340,8 +340,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9722, {	-- The Master's Path
-					["qg"] = 25223,	-- Lord Solanar Bloodwrath
 					["sourceQuest"] = 9721,	-- A Summons from Lord Solanar
+					["qg"] = 25223,	-- Lord Solanar Bloodwrath
 					["coord"] = { 92.0, 38.8, SILVERMOON_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
@@ -349,8 +349,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(60, 60, 1),
 				}),
 				q(9692, {	-- The Path of the Adept
-					["qg"] = 17717,	-- Knight-Lord Bloodvalor
 					["sourceQuest"] = 9691,	-- Return to Silvermoon
+					["qg"] = 17717,	-- Knight-Lord Bloodvalor
 					["coord"] = { 89.3, 35.2, SILVERMOON_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { BLACKFATHOM_DEEPS, GHOSTLANDS, RAGEFIRE_CHASM, SHADOWFANG_KEEP },
@@ -388,8 +388,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9619, {	-- The Rune of Summoning
-					["provider"] = { "o", 181698 },	-- Voidstone
 					["sourceQuest"] = 9529,	-- The Stone
+					["provider"] = { "o", 181698 },	-- Voidstone
 					["coord"] = { 42.6, 15.7, GHOSTLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { BLOODELF },
@@ -415,8 +415,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(20, 20, 1),
 				}),
 				q(9529, {	-- The Stone
-					["qg"] = 16647,	-- Talionia <Warlock Trainer>
 					["sourceQuest"] = 10788,	-- Return to Talionia
+					["qg"] = 16647,	-- Talionia <Warlock Trainer>
 					["coord"] = { 74.4, 47.2, SILVERMOON_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { GHOSTLANDS },
@@ -425,8 +425,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(10, 10, 1),
 				}),
 				q(9735, {	-- True Masters of the Light (1/3)
-					["qg"] = 25223,	-- Lord Solanar Bloodwrath
 					["sourceQuest"] = 9725,	-- A Demonstration of Loyalty
+					["qg"] = 25223,	-- Lord Solanar Bloodwrath
 					["coord"] = { 92.0, 38.8, SILVERMOON_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { EASTERN_PLAGUELANDS },
@@ -444,8 +444,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9736, {	-- True Masters of the Light (2/3)
-					["qg"] = 25223,	-- Lord Solanar Bloodwrath
 					["sourceQuest"] = 9735,	-- True Masters of the Light (1/3)
+					["qg"] = 25223,	-- Lord Solanar Bloodwrath
 					["coord"] = { 92.0, 38.8, SILVERMOON_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -471,8 +471,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9737, {	-- True Masters of the Light (3/3)
-					["qg"] = 25223,	-- Lord Solanar Bloodwrath
 					["sourceQuest"] = 9736,	-- True Masters of the Light (2/3)
+					["qg"] = 25223,	-- Lord Solanar Bloodwrath
 					["coord"] = { 92.0, 38.8, SILVERMOON_CITY },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STRATHOLME },

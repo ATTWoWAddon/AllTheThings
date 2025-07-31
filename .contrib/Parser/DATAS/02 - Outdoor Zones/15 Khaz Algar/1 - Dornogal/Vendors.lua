@@ -99,7 +99,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
 					}),
 					i(232386, {	-- S.A.D.
-						["cost"] = {{"i", ALGARI_TOKEN_OF_MERIT_S2, 2}},
+						["cost"] = {{"i", ALGARI_TOKEN_OF_MERIT_S2, 6}},
 						["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
 					}),
 					-- Season 3
@@ -266,7 +266,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					})
 				),
 			}),
-			n(248341, {	-- Dip Stickshift <Memories-R-Us>				
+			n(248341, {	-- Dip Stickshift <Memories-R-Us>
 				["coord"] = { 48.1, 45.4, DORNOGAL },
 				["timeline"] = { ADDED_11_2_0 },
 				["groups"] = {

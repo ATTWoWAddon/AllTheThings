@@ -358,15 +358,15 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					},
 				}),
 				q(65375, {	-- Schematic Reassimilation: Pale Regal Cervid
-					-- Quest item is now buyable from the vendor after 11.0.7
+					["provider"] = { "i", 189455 },	-- Schematic: Pale Regal Cervid
+					["timeline"] = { ADDED_11_0_2 },	-- Added few years later as a fix for not auto-receiving the recipe
 					-- #if BEFORE 11.0.7
+					-- Quest item is now buyable from the vendor after 11.0.7
 					["lockCriteria"] = { 1,
 						"spellID", 365040,	-- Pale Regal Cervid (RECIPE!)
 						"achID", 15402,	-- Cyphers of the First Ones
 					},
 					-- #endif
-					["provider"] = { "i", 189455 },	-- Schematic: Pale Regal Cervid
-					["timeline"] = { ADDED_11_0_2 },	-- Added few years later as a fix for not auto-receiving the recipe
 					["groups"] = {
 						recipe(365040),	-- Pale Regal Cervid
 					},

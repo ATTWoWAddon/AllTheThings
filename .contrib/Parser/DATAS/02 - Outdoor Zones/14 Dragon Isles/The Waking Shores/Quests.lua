@@ -7,16 +7,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			header(HEADERS.Achievement, 16334, {	-- Waking Hope
 				------ Prologue ------
 				q(70197, {	-- The Call of the Isles [A]
+					["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_TWW_LAUNCH },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
-					["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_TWW_LAUNCH },
 				}),
 				q(70198, {	-- The Call of the Isles [H]
+					["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_TWW_LAUNCH },
 					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
-					["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_TWW_LAUNCH },
 				}),
 				q(67700, {	-- To The Dragon Isles! [A]
 					["sourceQuests"] = {
@@ -291,8 +291,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(77345, {	-- The Need For Higher Velocities
 					["sourceQuests"] = { 65133 },	-- How to Use Momentum with Your Dragon
 					["provider"] = { "n", 193287 },	-- Lord Andestrasz
-					["timeline"] = { ADDED_10_1_7 },
 					["coord"] = { 57.7, 66.9, THE_WAKING_SHORES },
+					["timeline"] = { ADDED_10_1_7 },
 					["groups"] = {
 						i(208182),	-- Bronze Timepiece (QI!)
 					},
@@ -1015,10 +1015,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 				}),
 				q(70241, {	-- The Bitter End
-					-- TODO: Requirement to continue?? Next Day/Time/Finish Chap 3/4?
 					["sourceQuests"] = { 70240 },	-- Pain Management
 					["provider"] = { "n", 194801 },	-- Kolgar Flameguard
 					["coord"] = { 56.8, 64.5, THE_WAKING_SHORES },
+					-- TODO: Requirement to continue?? Next Day/Time/Finish Chap 3/4?
 				}),
 				q(70242, {	-- Life After Life
 					["sourceQuests"] = { 70241 },	-- The Bitter End
@@ -1068,10 +1068,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 				}),
 				q(70268, {	-- Memories Revived
+					["description"] = "To obtain this quest, you must enter the vault located at 27, 61. Once inside, head down the stairs and take a left, and then another left into the room. This room will have a bookshelf on it with the item to start this quest.",
 					["sourceQuests"] = { 70134 },	-- Memories
 					["provider"] = { "i", 198661 },	-- Partially Destroyed Diary
 					["coord"] = { 23, 60, THE_WAKING_SHORES },
-					["description"] = "To obtain this quest, you must enter the vault located at 27, 61. Once inside, head down the stairs and take a left, and then another left into the room. This room will have a bookshelf on it with the item to start this quest.",
 				}),
 			}),
 			header(HEADERS.Achievement, 16409, {	-- Let's Get Quacking
@@ -1249,9 +1249,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					70125,	-- Where is Wrathion? (A)
 					69910,	-- Where is Wrathion? (H)
 				},
+				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "n", 193838 },	-- Vish the Sneak
 				["coord"] = { 76.6, 33.6, THE_WAKING_SHORES },
-				["sourceQuestNumRequired"] = 1,
 				["classes"] = { ROGUE },
 				["groups"] = {
 					i(198133),	-- Golden Expedition Compass (QI!
@@ -1399,13 +1399,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 81.3, 37.7, THE_WAKING_SHORES },
 				}),
 				q(70196, {	-- Pruning the Preserve
-					["sourceQuestNumRequired"] = 1,
 					["sourceQuests"] = {
 						66079,	-- Wrathion Awaits
 						DF_ACCOUNT_CAMPAIGN_QUEST,
 					},
-					["DisablePartySync"] = true,	-- TODO: Figure out what Quest blocks it
+					["sourceQuestNumRequired"] = 1,
 					["coord"] = { 44.4, 82.1, THE_WAKING_SHORES },
+					["DisablePartySync"] = true,	-- TODO: Figure out what Quest blocks it
 				}),
 				q(70751, {	-- Terillod the Devout
 					["provider"] = { "n", 193171 },	-- Terillod the Devout
@@ -1559,8 +1559,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 						69901,	-- Bring In the Expert
 						69900,	-- Identifying the Source
 					},
-					["provider"] = { "n", 192298 },	-- Tyrgon
-					["coord"] = { 46.0, 81.5, THE_WAKING_SHORES },
 					["altQuests"] = {
 						-- 72178,	-- Theory in Practice: Baron von Swoopenbite
 						72174,	-- Theory in Practice: Bob
@@ -1568,6 +1566,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 						72177,	-- Theory in Practice: Mr.Nibbles
 						72176,	-- Theory in Practice: Toughscale
 					},
+					["provider"] = { "n", 192298 },	-- Tyrgon
+					["coord"] = { 46.0, 81.5, THE_WAKING_SHORES },
 				}),
 				q(72174, {	-- Theory in Practice: Bob
 					["name"] = "Theory in Practice: Bob",
@@ -1575,8 +1575,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 						69901,	-- Bring In the Expert
 						69900,	-- Identifying the Source
 					},
-					["provider"] = { "n", 192298 },	-- Tyrgon
-					["coord"] = { 46.0, 81.5, THE_WAKING_SHORES },
 					["altQuests"] = {
 						72178,	-- Theory in Practice: Baron von Swoopenbite
 						-- 72174,	-- Theory in Practice: Bob
@@ -1584,6 +1582,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 						72177,	-- Theory in Practice: Mr.Nibbles
 						72176,	-- Theory in Practice: Toughscale
 					},
+					["provider"] = { "n", 192298 },	-- Tyrgon
+					["coord"] = { 46.0, 81.5, THE_WAKING_SHORES },
 				}),
 				q(72179, {	-- Theory in Practice: Lord Firegiggle
 					["name"] = "Theory in Practice: Lord Firegiggle",
@@ -1591,8 +1591,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 						69901,	-- Bring In the Expert
 						69900,	-- Identifying the Source
 					},
-					["provider"] = { "n", 192298 },	-- Tyrgon
-					["coord"] = { 46.0, 81.5, THE_WAKING_SHORES },
 					["altQuests"] = {
 						72178,	-- Theory in Practice: Baron von Swoopenbite
 						72174,	-- Theory in Practice: Bob
@@ -1600,6 +1598,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 						72177,	-- Theory in Practice: Mr.Nibbles
 						72176,	-- Theory in Practice: Toughscale
 					},
+					["provider"] = { "n", 192298 },	-- Tyrgon
+					["coord"] = { 46.0, 81.5, THE_WAKING_SHORES },
 				}),
 				q(72177, {	-- Theory in Practice: Mr.Nibbles
 					["name"] = "Theory in Practice: Mr.Nibbles",
@@ -1607,8 +1607,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 						69901,	-- Bring In the Expert
 						69900,	-- Identifying the Source
 					},
-					["provider"] = { "n", 192298 },	-- Tyrgon
-					["coord"] = { 46.0, 81.5, THE_WAKING_SHORES },
 					["altQuests"] = {
 						72178,	-- Theory in Practice: Baron von Swoopenbite
 						72174,	-- Theory in Practice: Bob
@@ -1616,6 +1614,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 						-- 72177,	-- Theory in Practice: Mr.Nibbles
 						72176,	-- Theory in Practice: Toughscale
 					},
+					["provider"] = { "n", 192298 },	-- Tyrgon
+					["coord"] = { 46.0, 81.5, THE_WAKING_SHORES },
 				}),
 				q(72176, {	-- Theory in Practice: Toughscale
 					["name"] = "Theory in Practice: Toughscale",
@@ -1623,8 +1623,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 						69901,	-- Bring In the Expert
 						69900,	-- Identifying the Source
 					},
-					["provider"] = { "n", 192298 },	-- Tyrgon
-					["coord"] = { 46.0, 81.5, THE_WAKING_SHORES },
 					["altQuests"] = {
 						72178,	-- Theory in Practice: Baron von Swoopenbite
 						72174,	-- Theory in Practice: Bob
@@ -1632,6 +1630,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timel
 						72177,	-- Theory in Practice: Mr.Nibbles
 						-- 72176,	-- Theory in Practice: Toughscale
 					},
+					["provider"] = { "n", 192298 },	-- Tyrgon
+					["coord"] = { 46.0, 81.5, THE_WAKING_SHORES },
 				}),
 				q(72089, {	-- To Skytop Observatory
 					["name"] = "To Skytop Observatory",

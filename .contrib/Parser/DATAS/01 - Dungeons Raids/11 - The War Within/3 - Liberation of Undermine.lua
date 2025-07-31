@@ -266,7 +266,7 @@ InstanceHelper.UpgradeMapping = {
 	[DIFFICULTY.RAID.HEROIC] = 6,
 };
 
-root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART } }, {
+root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_1_0_SEASONSTART } }, {
 	inst(1296, {	-- Liberation of Undermine
 		["isRaid"] = true,
 		["coord"] = { 42.0, 50.2, UNDERMINE },

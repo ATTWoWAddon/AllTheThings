@@ -27,14 +27,14 @@ root(ROOTS.Zones, {
 				}),
 				n(QUESTS, {
 					q(31450, {	-- A New Fate
-						["qg"] = 56013,	-- Spirit of Master Shang Xi
 						["sourceQuest"] = 29800,	-- New Allies
+						["qg"] = 56013,	-- Spirit of Master Shang Xi
 						["coord"] = { 51.4, 48.3, THE_WANDERING_ISLE_STARTING_ZONE },
 						["maps"] = { ORGRIMMAR, STORMWIND_CITY },
 					}),
 					q(29679, {	-- A New Friend
-						["qg"] = 54975,	-- Aysa Cloudsinger
 						["sourceQuest"] = 29678,	-- Shu, the Spirit of Water
+						["qg"] = 54975,	-- Aysa Cloudsinger
 						["coord"] = { 79.8, 39.3, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- Play with the Spirit of Water
@@ -51,12 +51,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29798, {	-- An Ancient Evil
-						["qg"] = 55940,	-- Jojo Ironbrow
 						["sourceQuests"] = {
 							29665,	-- From Bad to Worse
 							29794,	-- None Left Behind
 							29797,	-- Medical Supplies
 						},
+						["qg"] = 55940,	-- Jojo Ironbrow
 						["coord"] = { 42.3, 86.4, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- Vordraka, the Deep Sea Nightmare slain
@@ -66,22 +66,22 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29410, {	-- Aysa of the Tushui
-						["qg"] = 53566,	-- Master Shang Xi
 						["sourceQuest"] = 29409,	-- The Disciple's Challenge
+						["qg"] = 53566,	-- Master Shang Xi
 						["coord"] = { 56.7, 18.2, THE_WANDERING_ISLE_STARTING_ZONE },
 					}),
 					q(29784, {	-- Balanced Perspective
-						["qg"] = 65558,	-- Huojin Monk
 						["sourceQuests"] = {
 							29779, 	-- The Direct Solution
 							29780,	-- Do No Evil
 							29781,	-- MOnkey Advisory Warning
 						},
+						["qg"] = 65558,	-- Huojin Monk
 						["coord"] = { 30.8, 36.8, THE_WANDERING_ISLE_STARTING_ZONE },
 					}),
 					q(29786, {	-- Battle for the Skies
-						["qg"] = 55595,	-- Aysa Cloudsinger
 						["sourceQuest"] = 29785,	-- Dafeng, the Spirit of Air
+						["qg"] = 55595,	-- Aysa Cloudsinger
 						["coord"] = { 24.8, 69.8, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- Zhao-Ren slain
@@ -92,8 +92,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29792, {	-- Bidden to Greatness
-						["qg"] = 56012,	-- Elder Shaopai
 						["sourceQuest"] = 29791,	-- The Suffering of Shen-zin Su
+						["qg"] = 56012,	-- Elder Shaopai
 						["coord"] = { 51.3, 48.3, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- Open Mandori Village Gate
@@ -107,11 +107,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29785, {	-- Dafeng, the Spirit of Air
-						["qg"] = 55595,	-- Aysa Cloudsinger
 						["sourceQuests"] = {
 							29782,	-- Stronger Than Bone
 							29784,	-- Balanced Perspective
 						},
+						["qg"] = 55595,	-- Aysa Cloudsinger
 						["coord"] = { 32.9, 35.6, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- Locate Dafeng
@@ -121,12 +121,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29780, {	-- Do No Evil
-						["qg"] = 55583,	-- Ji Firepaw
 						["sourceQuests"] = {
 							29777,	-- Tools of the Enemy
 							29778,	-- Rewritten Wisdoms
 							29783,	-- Stronger Than Stone
 						},
+						["qg"] = 55583,	-- Ji Firepaw
 						["coord"] = { 31.0, 36.7, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- Ruk-Ruk slain
@@ -139,8 +139,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29793, {	-- Evil from the Seas
-						["qg"] = 55942,	-- Ji Firepaw
 						["sourceQuest"] = 30589,	-- Wrecking the Wreck
+						["qg"] = 55942,	-- Ji Firepaw
 						["coord"] = { 36.4, 72.5, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- 0/8 Darkened Horrors or Darkened Terrors slain
@@ -159,8 +159,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29523, {	-- Fanning the Flames
-						["qg"] = 54568,	-- Ji Firepaw
 						["sourceQuest"] = 29417,	-- The Way of the Huojin
+						["qg"] = 54568,	-- Ji Firepaw
 						["coord"] = { 50.2, 21.3, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- 0/1 Fluttering Breeze
@@ -181,20 +181,20 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29676, {	-- Finding an Old Friend
-						["providers"] = {
-							{ "n", 54975 },	-- Aysa Cloudsinger
-							{ "i", 73183 },	-- Snowblossom Petals (QI!)
-						},
 						["sourceQuests"] = {
 							29661,	-- The Lesson of Dry Fur
 							29662,	-- Stronger Than Reeds
 							29663,	-- The Lesson of the Balanced Rock
 						},
+						["providers"] = {
+							{ "n", 54975 },	-- Aysa Cloudsinger
+							{ "i", 73183 },	-- Snowblossom Petals (QI!)
+						},
 						["coord"] = { 65.6, 42.6, THE_WANDERING_ISLE_STARTING_ZONE },
 					}),
 					q(29665, {	-- From Bad to Worse
-						["qg"] = 55940,	-- Jojo Ironbrow
 						["sourceQuest"] = 29796,	-- Urgent News
+						["qg"] = 55940,	-- Jojo Ironbrow
 						["coord"] = { 42.3, 86.4, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- 0/8 Deepscale Tormentor slain
@@ -204,8 +204,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30590, {	-- Handle With Care
-						["qg"] = 60055,	-- Makael Bay
 						["sourceQuest"] = 30589,	-- Wrecking the Wreck
+						["qg"] = 60055,	-- Makael Bay
 						["coord"] = { 36.3, 72.4, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- 0/6 Packed Explosion Charge
@@ -235,8 +235,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29422, {	-- Huo, the Spirit of Fire
-						["qg"] = 54135,	-- Master Li Fei
 						["sourceQuest"] = 29421,	-- Only the Worthy Shall Pass
+						["qg"] = 54135,	-- Master Li Fei
 						["coord"] = { 38.8, 25.5, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- Reignite the Spirit of Fire
@@ -249,8 +249,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29424, {	-- Items of Utmost Importance
-						["qg"] = 54943,	-- Merchant Lorvo
 						["sourceQuest"] = 29410,	-- Aysa of the Ushui
+						["qg"] = 54943,	-- Merchant Lorvo
 						["coord"] = { 55.1, 32.8, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- 0/6 Stolen Training Supplies
@@ -261,13 +261,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29522, {	-- Ji of the Huojin
-						["qg"] = 54608,	-- Master Shang Xi
 						["sourceQuest"] = 29414,	-- The Way of the Tushui
+						["qg"] = 54608,	-- Master Shang Xi
 						["coord"] = { 57.5, 34.7, THE_WANDERING_ISLE_STARTING_ZONE },
 					}),
 					q(29418, {	-- Kindling the Fire
-						["qg"] = 54568,	-- Ji Firepaw
 						["sourceQuest"] = 29417,	-- The Way of the Huojin
+						["qg"] = 54568,	-- Ji Firepaw
 						["coord"] = { 50.2, 21.3, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- 0/5 Dry Dogwood Root
@@ -281,8 +281,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29797, {	-- Medical Supplies
-						["qg"] = 55944,	-- Delora Lionheart
 						["sourceQuest"] = 29796,	-- Urgent News
+						["qg"] = 55944,	-- Delora Lionheart
 						["coord"] = { 42.2, 86.5, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- 0/8 Alliance Medical Supplies
@@ -310,11 +310,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29768, {	-- Missing Mallet
-						["qg"] = 55477,	-- Ji Firepaw
 						["sourceQuests"] = {
 							29769,	-- Rascals
 							29770,	-- Still Good!
 						},
+						["qg"] = 55477,	-- Ji Firepaw
 						["coord"] = { 68.9, 65.0, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- 0/1 Dai-Lo Recess Mallet
@@ -333,12 +333,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29781, {	-- Monkey Advisory Warning
-						["qg"] = 55583,	-- Ji Firepaw
 						["sourceQuests"] = {
 							29777,	-- Tools of the Enemy
 							29778,	-- Rewritten Wisdoms
 							29783,	-- Stronger Than Stone
 						},
+						["qg"] = 55583,	-- Ji Firepaw
 						["coord"] = { 31.0, 36.7, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- 0/1 Stolen Firework Bundle
@@ -367,8 +367,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29776, {	-- Morning Breeze Village
-						["qg"] = 54786,	-- Master Shang Xi
 						["sourceQuest"] = 29775,	-- The Spirit and Body of Shen-zin Su
+						["qg"] = 54786,	-- Master Shang Xi
 						["coord"] = { 51.6, 48.3, THE_WANDERING_ISLE_STARTING_ZONE },
 					}),
 					q(30039, {	-- Much to Learn (Monk)
@@ -414,8 +414,8 @@ root(ROOTS.Zones, {
 						["classes"] = { WARRIOR },
 					}),
 					q(29800, {	-- New Allies
-						["qg"] = 57739,	-- Ji Firepaw
 						["sourceQuest"] = 29799,	-- The Healing of Shen-zin Su
+						["qg"] = 57739,	-- Ji Firepaw
 						["coord"] = { 38.8, 86.3, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- Delivery Cart taken to the Template
@@ -425,8 +425,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29794, {	-- None Left Behind
-						["qg"] = 55944,	-- Delora Lionheart
 						["sourceQuest"] = 29796,	-- Urgent News
+						["qg"] = 55944,	-- Delora Lionheart
 						["coord"] = { 42.2, 86.5, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- 0/3 Injured Sailors rescued
@@ -442,11 +442,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29774, {	-- Not In the Face!
-						["qg"] = 55477,	-- Ji Firepaw
 						["sourceQuests"] = {
 							29771,	-- Stronger Than Wood
 							29772,	-- Raucous Rousing
 						},
+						["qg"] = 55477,	-- Ji Firepaw
 						["coord"] = { 68.9, 65.0, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- Ask Shu for help
@@ -460,8 +460,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29421, {	-- Only the Worthy Shall Pass
-						["qg"] = 54135,	-- Master Li Fei
 						["sourceQuest"] = 29664,	-- The Challenger's Fires
+						["qg"] = 54135,	-- Master Li Fei
 						["coord"] = { 38.8, 25.5, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- Defeat Master Li Fei
@@ -475,11 +475,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29790, {	-- Passing Wisdom
-						["qg"] = 55672,	-- Master Shang Xi
 						["sourceQuests"] = {
 							29788,	-- Unwelcome Nature
 							29789,	-- Small, but Significant
 						},
+						["qg"] = 55672,	-- Master Shang Xi
 						["coord"] = { 19.5, 51.2, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							i(74599),	-- Cinch of Grieving
@@ -491,8 +491,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30591, {	-- Preying on the Predators
-						["qg"] = 55943,	-- Wei Palerage
 						["sourceQuest"] = 29792,	-- Bidden to Greatness
+						["qg"] = 55943,	-- Wei Palerage
 						["coord"] = { 50.1, 76.6, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- 0/9 Pei-Wu Tiger slain
@@ -502,8 +502,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29769, {	-- Rascals
-						["qg"] = 55477,	-- Ji Firepaw
 						["sourceQuest"] = 29680,	-- The Source of Our Livelihood
+						["qg"] = 55477,	-- Ji Firepaw
 						["coord"] = { 68.9, 65.0, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- 0/10 Plump Virmen slain
@@ -516,8 +516,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29772, {	-- Raucous Rousing
-						["qg"] = 55477,	-- Ji Firepaw
 						["sourceQuest"] = 29768,	-- Missing Mallet
+						["qg"] = 55477,	-- Ji Firepaw
 						["coord"] = { 68.9, 65.0, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- Ring the town gong
@@ -527,8 +527,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29778, {	-- Rewritten Wisdoms
-						["qg"] = 55583,	-- Ji Firepaw
 						["sourceQuest"] = 29776,	-- Morning Breeze Village
+						["qg"] = 55583,	-- Ji Firepaw
 						["coord"] = { 31.0, 36.7, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- 0/5 Defaced Scroll of Wisdom burned
@@ -549,8 +549,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30767, {	-- Risking It All
-						["qg"] = 56416,	-- Aysa Cloudsinger
 						["sourceQuest"] = 29798,	-- An Ancient Evil
+						["qg"] = 56416,	-- Aysa Cloudsinger
 						["coord"] = { 36.5, 84.2, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- Shen-zin Su's Thorn Removed
@@ -560,11 +560,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29678, {	-- Shu, the Spirit of Water
-						["qg"] = 55020,	-- Old Man Liang
 						["sourceQuests"] = {
 							29666,	-- The Sting of Learning
 							29677,	-- The Sun Pearl
 						},
+						["qg"] = 55020,	-- Old Man Liang
 						["coord"] = { 78.4, 43, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- Cross to the Pool of Reflection
@@ -581,8 +581,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29789, {	-- Small, But Significant
-						["qg"] = 55672,	-- Master Shang Xi
 						["sourceQuest"] = 29787,	-- Worthy of Passing
+						["qg"] = 55672,	-- Master Shang Xi
 						["coord"] = { 19.5, 51.2, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- 0/8 Kun-Pai Ritual Charm
@@ -596,8 +596,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29770, {	-- Still Good!
-						["qg"] = 55479,	-- Gao Summerdraft
 						["sourceQuest"] = 29680,	-- The Source of Our Livelihood
+						["qg"] = 55479,	-- Gao Summerdraft
 						["coord"] = { 68.1, 66.4, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- 0/3 Uprooted Turnip
@@ -666,8 +666,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29795, {	-- Stocking Stalks
-						["qg"] = 60042,	-- Korga Strongmane
 						["sourceQuest"] = 29792,	-- Bidden to Greatness
+						["qg"] = 60042,	-- Korga Strongmane
 						["coord"] = { 50.2, 76.6, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- 0/10 Broken Bamboo Stalk
@@ -685,11 +685,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29782, {	-- Stronger Than Bone
+						["sourceQuest"] = 29778,	-- Rewritten Wisdoms
 						["providers"] = {
 							{ "o", 209673 },	-- Jade Tiger Pillar
 							{ "i",  76174 },	-- Jade Tiger Pillar (QI!)
 						},
-						["sourceQuest"] = 29778,	-- Rewritten Wisdoms
 						["coord"] = { 26.4, 33.7, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							i(157020, {	-- Humble Cudgel
@@ -702,8 +702,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29662, {	-- Stronger Than Reeds
-						["qg"] = 55021,	-- Jojo Ironbrow
 						["sourceQuest"] = 29521,	-- The Singing Pools
+						["qg"] = 55021,	-- Jojo Ironbrow
 						["coord"] = { 63.5, 41.9, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- 0/8 Hard Tearwood Reed
@@ -716,8 +716,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29783, {	-- Stronger Than Stone
-						["qg"] = 55585,	-- Jojo Ironbrow
 						["sourceQuest"] = 29776,	-- Morning Breeze Village
+						["qg"] = 55585,	-- Jojo Ironbrow
 						["coord"] = { 29.9, 39.8, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- 0/12 Abandoned Stone Blocks
@@ -730,11 +730,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29771, {	-- Stronger Than Wood
-						["qg"] = 55478,	-- Jojo Ironbrow
 						["sourceQuests"] = {
 							29769,	-- Rascals
 							29770,	-- Still Good!
 						},
+						["qg"] = 55478,	-- Jojo Ironbrow
 						["coord"] = { 69.2, 66.7, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- 0/12 Discarded Wood Plank
@@ -756,8 +756,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29664, {	-- The Challenger's Fires
-						["qg"] = 54135,	-- Master Li Fei
 						["sourceQuest"] = 29420,	-- The Spirit's Guardian
+						["qg"] = 54135,	-- Master Li Fei
 						["coord"] = { 38.8, 25.5, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- Challenger Torch lit
@@ -791,12 +791,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29779, {	-- The Direct Solution
-						["qg"] = 55583,	-- Ji Firepaw
 						["sourceQuests"] = {
 							29777,	-- Tools of the Enemy
 							29778,	-- Rewritten Wisdoms
 							29783,	-- Stronger Than Stone
 						},
+						["qg"] = 55583,	-- Ji Firepaw
 						["coord"] = { 31.0, 36.7, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- 0/20  slain
@@ -810,8 +810,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29409, {	-- The Disciple's Challenge
-						["qg"] = 53566,	-- Master Shang Xi
 						["sourceQuest"] = 29408,	-- The Lesson of the Burning Scroll
+						["qg"] = 53566,	-- Master Shang Xi
 						["coord"] = { 59.7, 19.1, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- Defeat Jaomin Ro
@@ -827,8 +827,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29799, {	-- The Healing of Shen-zin Su
-						["qg"] = 56418,	-- Ji Firepaw
 						["sourceQuest"] = 30767,	-- Risking it All
+						["qg"] = 56418,	-- Ji Firepaw
 						["coord"] = { 39.3, 86.2, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- Protect the healers
@@ -844,8 +844,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29661, {	-- The Lesson of Dry Fur
-						["qg"] = 54975,	-- Aysa Cloudsinger
 						["sourceQuest"] = 29521,	-- The Singing Pools
+						["qg"] = 54975,	-- Aysa Cloudsinger
 						["coord"] = { 65.6, 42.6, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- Ring the Training Bell
@@ -861,8 +861,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29524, {	-- The Lesson of Stifled Pride
-						["qg"] = 53566,	-- Master Shang Xi
 						["sourceQuest"] = 29406,	-- The Lesson of the Sandy Fist
+						["qg"] = 53566,	-- Master Shang Xi
 						["coord"] = { 56.7, 18.2, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- 0/6 Sparring Trainees defeated
@@ -883,8 +883,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29663, {	-- The Lesson of the Balanced Rock
-						["qg"] = 54975,	-- Aysa Cloudsinger
 						["sourceQuest"] = 29521,	-- The Singing Pools
+						["qg"] = 54975,	-- Aysa Cloudsinger
 						["coord"] = { 65.6, 42.6, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- 0/6 Defeat Tushui Monks
@@ -894,8 +894,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29408, {	-- The Lesson of the Burning Scroll
-						["qg"] = 53566,	-- Master Shang Xi
 						["sourceQuest"] = 29524,	-- The Lesson of Stifled Pride
+						["qg"] = 53566,	-- Master Shang Xi
 						["coord"] = { 59.7, 19.1, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- Snatch the Master's Flame
@@ -915,10 +915,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30034, {	-- The Lesson of the Iron Bough (Hunter)
-						["qg"] = 53566,	-- Master Shang Xi
 						-- #if BEFORE LEGION
 						["sourceQuest"] = 30041,	-- Much to Learn (Hunter)
 						-- #endif
+						["qg"] = 53566,	-- Master Shang Xi
 						["coord"] = { 56.7, 18.2, THE_WANDERING_ISLE_STARTING_ZONE },
 						["classes"] = { HUNTER },
 						["groups"] = {
@@ -928,10 +928,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30038, {	-- The Lesson of the Iron Bough (Warrior)
-						["qg"] = 53566,	-- Master Shang Xi
 						-- #if BEFORE LEGION
 						["sourceQuest"] = 30045,	-- Much to Learn (Warrior)
 						-- #endif
+						["qg"] = 53566,	-- Master Shang Xi
 						["coord"] = { 56.7, 18.2, THE_WANDERING_ISLE_STARTING_ZONE },
 						["classes"] = { WARRIOR },
 						["groups"] = {
@@ -950,10 +950,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30033, {	-- The Lesson of the Iron Bough (Mage, Warlock)
-						["qg"] = 53566,	-- Master Shang Xi
 						-- #if BEFORE LEGION
 						["sourceQuest"] = 30040,	-- Much to Learn (Mage)
 						-- #endif
+						["qg"] = 53566,	-- Master Shang Xi
 						["coord"] = { 56.7, 18.2, THE_WANDERING_ISLE_STARTING_ZONE },
 						["classes"] = {
 							MAGE,
@@ -971,10 +971,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30035, {	-- The Lesson of the Iron Bough (Priest)
-						["qg"] = 53566,	-- Master Shang Xi
 						-- #if BEFORE LEGION
 						["sourceQuest"] = 30042,	-- Much to Learn (Priest)
 						-- #endif
+						["qg"] = 53566,	-- Master Shang Xi
 						["coord"] = { 56.7, 18.2, THE_WANDERING_ISLE_STARTING_ZONE },
 						["classes"] = { PRIEST },
 						["groups"] = {
@@ -987,10 +987,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30027, {	-- The Lesson of the Iron Bough (Monk)
-						["qg"] = 53566,	-- Master Shang Xi
 						-- #if BEFORE LEGION
 						["sourceQuest"] = 30039,	-- Much to Learn (Monk)
 						-- #endif
+						["qg"] = 53566,	-- Master Shang Xi
 						["coord"] = { 56.7, 18.2, THE_WANDERING_ISLE_STARTING_ZONE },
 						["classes"] = { MONK },
 						["groups"] = {
@@ -1000,10 +1000,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30036, {	-- The Lesson of the Iron Bough (Rogue)
-						["qg"] = 53566,	-- Master Shang Xi
 						-- #if BEFORE LEGION
 						["sourceQuest"] = 30043,	-- Much to Learn (Rogue)
 						-- #endif
+						["qg"] = 53566,	-- Master Shang Xi
 						["coord"] = { 56.7, 18.2, THE_WANDERING_ISLE_STARTING_ZONE },
 						["classes"] = { ROGUE },
 						["groups"] = {
@@ -1016,10 +1016,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30037, {	-- The Lesson of the Iron Bough (Shaman)
-						["qg"] = 53566,	-- Master Shang Xi
 						-- #if BEFORE LEGION
 						["sourceQuest"] = 30044,	-- Much to Learn (Shaman)
 						-- #endif
+						["qg"] = 53566,	-- Master Shang Xi
 						["coord"] = { 56.7, 18.2, THE_WANDERING_ISLE_STARTING_ZONE },
 						["classes"] = { SHAMAN },
 						["groups"] = {
@@ -1032,7 +1032,6 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29406, {	-- The Lesson of the Sandy Fist
-						["qg"] = 53566,	-- Master Shang Xi
 						["sourceQuests"] = {
 							30027,	-- The Lesson of the Iron Bough (Monk)
 							30033,	-- The Lesson of the Iron Bough (Mage, Warlock)
@@ -1042,6 +1041,7 @@ root(ROOTS.Zones, {
 							30037,	-- The Lesson of the Iron Bough (Shaman)
 							30038,	-- The Lesson of the Iron Bough (Warrior)
 						},
+						["qg"] = 53566,	-- Master Shang Xi
 						["coord"] = { 56.7, 18.2, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- 0/5 Training Targets destroyed
@@ -1060,8 +1060,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29419, {	-- The Missing Driver
-						["qg"] = 54943,	-- Merchant Lorvo
 						["sourceQuest"] = 29410,	-- Aysa of the Ushui
+						["qg"] = 54943,	-- Merchant Lorvo
 						["coord"] = { 55.1, 32.8, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- Rescue the Cart Driver
@@ -1073,8 +1073,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29423, {	-- The Passion of Shen-zin Su
-						["qg"] = 54787,	-- Huo
 						["sourceQuest"] = 29422,	-- Huo, the Spirit of Fire
+						["qg"] = 54787,	-- Huo
 						["coord"] = { 39.4, 29.5, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- Bring the Spirit of Fire to the Temple of Five Dawns
@@ -1088,13 +1088,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29521, {	-- The Singing Pools
-						["qg"] = 54786,	-- Master Shang Xi
 						["sourceQuest"] = 29423,	-- The Passion of Shen-zin Su
+						["qg"] = 54786,	-- Master Shang Xi
 						["coord"] = { 51.4, 46.4, THE_WANDERING_ISLE_STARTING_ZONE },
 					}),
 					q(29680, {	-- The Source of Our Livelihood
-						["qg"] = 54975,	-- Aysa Cloudsinger
 						["sourceQuest"] = 29679,	-- A New Friend
+						["qg"] = 54975,	-- Aysa Cloudsinger
 						["coord"] = { 79.8, 39.3, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- Delivery Cart taken to the Dai-Lo Farmstead
@@ -1104,8 +1104,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29775, {	-- The Spirit and Body of Shen-zin Su
-						["qg"] = 55477,	-- Ji Firepaw
 						["sourceQuest"] = 29774,	-- Not in the Face!
+						["qg"] = 55477,	-- Ji Firepaw
 						["coord"] = { 68.9, 65.0, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- Delivery Cart taken to the Temple
@@ -1121,13 +1121,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29420, {	-- The Spirit's Guardian
-						["qg"] = 54609,	-- Master Shang Xi
 						["sourceQuests"] = { 29418, 29523 },	-- Kindling the Fire, Fanning the Flames
+						["qg"] = 54609,	-- Master Shang Xi
 						["coord"] = { 50.3, 21.5, THE_WANDERING_ISLE_STARTING_ZONE },
 					}),
 					q(29666, {	-- The Sting of Learning
-						["qg"] = 55020,	-- Old Man Liang
 						["sourceQuest"] = 29676,	-- Finding an Old Friend
+						["qg"] = 55020,	-- Old Man Liang
 						["coord"] = { 70.6, 38.7, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- 0/6 Water Pincer slain
@@ -1137,8 +1137,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29791, {	-- The Suffering of Shen-zin Su
-						["qg"] = 56662,	-- Aysa Cloudsinger
 						["sourceQuest"] = 29790,	-- Passing Wisdom
+						["qg"] = 56662,	-- Aysa Cloudsinger
 						["coord"] = { 15.8, 49.1, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- Board the Hot Air Balloon
@@ -1152,8 +1152,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29677, {	-- The Sun Pearl
-						["qg"] = 55020,	-- Old Man Liang
 						["sourceQuest"] = 29676,	-- Finding an Old Friend
+						["qg"] = 55020,	-- Old Man Liang
 						["coord"] = { 70.6, 38.7, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- 0/1 Sun Pearl
@@ -1172,8 +1172,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29417, {	-- The Way of the Huojin
-						["qg"] = 54568,	-- Ji Firepaw
 						["sourceQuest"] = 29522,	-- Ji of the Huojin
+						["qg"] = 54568,	-- Ji Firepaw
 						["coord"] = { 50.2, 21.3, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- 0/8 Fe-Feng attackers slain
@@ -1194,8 +1194,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29414, {	-- The Way of the Tushui
-						["qg"] = 54567,	-- Aysa Cloudsinger
 						["sourceQuests"] = { 29419, 29424 },	-- The Missing Driver, Items of Utmost Importance
+						["qg"] = 54567,	-- Aysa Cloudsinger
 						["coord"] = { 55.1, 32.6, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- Protect Aysa while she meditates
@@ -1214,8 +1214,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29777, {	-- Tools of the Enemy
-						["qg"] = 55588,	-- Elder Shaopai
 						["sourceQuest"] = 29776,	-- Morning Breeze Village
+						["qg"] = 55588,	-- Elder Shaopai
 						["coord"] = { 31.8, 39.7, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- 0/8 Paint Soaked Brush
@@ -1226,8 +1226,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29788, {	-- Unwelcome Nature
-						["qg"] = 55672,	-- Master Shang Xi
 						["sourceQuest"] = 29787,	-- Worthy of Passing
+						["qg"] = 55672,	-- Master Shang Xi
 						["coord"] = { 19.5, 51.2, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- 0/8 Thornbranch Scamp slain
@@ -1237,16 +1237,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(29796, {	-- Urgent News
-						["qg"] = 55942,	-- Ji Firepaw
 						["sourceQuests"] = {
 							29793,	-- Evil from the Seas
 							30590,	-- Handle With Care
 						},
+						["qg"] = 55942,	-- Ji Firepaw
 						["coord"] = { 36.4, 72.5, THE_WANDERING_ISLE_STARTING_ZONE },
 					}),
 					q(29787, {	-- Worthy of Passing
-						["qg"] = 55586,	-- Master Shang Xi
 						["sourceQuest"] = 29786,	-- Battle for the Skies
+						["qg"] = 55586,	-- Master Shang Xi
 						["coord"] = { 30.0, 60.4, THE_WANDERING_ISLE_STARTING_ZONE },
 						["groups"] = {
 							objective(1, {	-- Guardian of the Elders slain
@@ -1256,11 +1256,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30589, {	-- Wrecking the Wreck
-						["qg"] = 60042,	-- Korga Strongmane
 						["sourceQuests"] = {
 							29795,	-- Stocking Stalks
 							30591,	-- Preying on the Predators
 						},
+						["qg"] = 60042,	-- Korga Strongmane
 						["coord"] = { 50.2, 76.6, THE_WANDERING_ISLE_STARTING_ZONE },
 					}),
 				}),

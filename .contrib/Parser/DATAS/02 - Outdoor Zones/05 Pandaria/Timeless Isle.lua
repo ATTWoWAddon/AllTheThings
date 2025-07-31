@@ -97,10 +97,10 @@ root(ROOTS.Zones, {
 								},
 							}),
 							q(33136, {	-- The Rainy Day is Here
-								["qg"] = 73082,	-- Master Li
-								["sourceQuest"] = 33137,	-- The Celestial Tournament
-								["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
 								["description"] = "You can complete this quest once across your account. It is given to you after your first victory over the Celestial Tournament.",
+								["sourceQuest"] = 33137,	-- The Celestial Tournament
+								["qg"] = 73082,	-- Master Li
+								["coord"] = { 34.8, 59.6, TIMELESS_ISLE },
 								["groups"] = {
 									i(101529),	-- Celestial Coin
 								},
@@ -963,63 +963,63 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 					}),
 					q(33161, {	-- A Timeless Tour
-						["qg"] = 72870,	-- Kairoz
 						["sourceQuests"] = {
 							33156,	-- Time Keeper Kairoz
 							33160,	-- Time Keeper Kairoz
 						},
+						["qg"] = 72870,	-- Kairoz
 					}),
 					q(33337, {	-- A Vision in Time
-						["qg"] = 72870,	-- Kairoz
 						["sourceQuests"] = { 33338 },	-- Empowering the Hourglass
+						["qg"] = 72870,	-- Kairoz
 						["groups"] = {
 							i(105930),	-- Vision of Time
 						},
 					}),
 					q(33378, {	-- Courting Destiny
-						["qg"] = 72870,	-- Kairoz
 						["sourceQuests"] = { 33377 },	-- Hidden Threads
+						["qg"] = 72870,	-- Kairoz
 						["groups"] = {
 							i(105934),	-- Vision of Time
 						},
 					}),
 					q(33342, {	-- Drive Back The Flame
-						["qg"] = 73303,	-- Emperor Shaohao
 						["sourceQuests"] = { 33341 },	-- Wayshrines Of The Celestials
+						["qg"] = 73303,	-- Emperor Shaohao
 					}),
 					q(33338, {	-- Empowering the Hourglass
-						["qg"] = 72870,	-- Kairoz
 						["sourceQuests"] = { 33336 },	-- The Essence of Time
+						["qg"] = 72870,	-- Kairoz
 						["isWeekly"] = true,
 						["groups"] = {
 							i(105715),	-- Epoch Stone (QI!)
 						},
 					}),
 					q(33377, {	-- Hidden Threads
-						["qg"] = 72870,	-- Kairoz
 						["sourceQuests"] = { 33376 },	-- Seeking Fate
+						["qg"] = 72870,	-- Kairoz
 						["groups"] = {
 							i(105933),	-- Vision of Time
 						},
 					}),
 					q(33332, {	-- Hints From The Past
-						["qg"] = 72870,	-- Kairoz
 						["sourceQuests"] = { 33228 },	-- Time In Your Hands
+						["qg"] = 72870,	-- Kairoz
 					}),
 					q(33222, {	-- Little Tommy Newcomer
 						["qg"] = 73626,	-- Little Tommy Newcomer
 						["isDaily"] = true,
 					}),
 					q(33379, {	-- One Final Turn
-						["qg"] = 72870,	-- Kairoz
 						["sourceQuests"] = { 33378 },	-- Courting Destiny
+						["qg"] = 72870,	-- Kairoz
 						["groups"] = {
 							i(105935),	-- Vision of Time
 						},
 					}),
 					q(33374, {	-- Path of the Mistwalker
-						["qg"] = 73303,	-- Emperor Shaohao
 						["sourceQuests"] = { 33341 },	-- Wayshrines Of The Celestials
+						["qg"] = 73303,	-- Emperor Shaohao
 						["isDaily"] = true,
 						["groups"] = {
 							i(103642),	-- Book of the Ages
@@ -1028,33 +1028,33 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(33375, {	-- Refining The Vision
-						["qg"] = 72870,	-- Kairoz
 						["sourceQuests"] = { 33337 },	-- A Vision in Time
+						["qg"] = 72870,	-- Kairoz
 						["groups"] = {
 							i(105931),	-- Vision of Time
 						},
 					}),
 					q(32974, {	-- Rolo's Riddle #1
+						["description"] = "The riddle can be found in |cFFFFFFFFGlinting Sand|r along the coast of the island. Find the first clue at the stone columns near the weekly Gleaming Treasure Chest (|cFFFFFFFF49.4, 69.3|r).",
 						["providers"] = {
 							{ "i", 102225 },	-- Rolo's Riddle
 							{ "o", 222684 },	-- Glinting Sand
 						},
-						["description"] = "The riddle can be found in |cFFFFFFFFGlinting Sand|r along the coast of the island. Find the first clue at the stone columns near the weekly Gleaming Treasure Chest (|cFFFFFFFF49.4, 69.3|r).",
 					}),
 					q(32975, {	-- Rolo's Riddle #2
-						["qg"] = 72751,	-- Mound of Dirt
-						["sourceQuest"] = 32974,	-- Rolo's Riddle
-						["coord"] = { 49.4, 69.3, TIMELESS_ISLE },
 						["description"] = "Find the second clue at the back of Three-Breeze Terrace (|cFFFFFFFF34.5, 26.5|r).",
+						["sourceQuest"] = 32974,	-- Rolo's Riddle
+						["qg"] = 72751,	-- Mound of Dirt
+						["coord"] = { 49.4, 69.3, TIMELESS_ISLE },
 					}),
 					q(32976, {	-- Rolo's Riddle #3
+						["description"] = "The final treasure you're looking for is high up at the bloody lake where Garnia lives (|cFFFFFFFF66.0, 23.2|r).\n\nYou can pick up an albatross ride, or approach from outside the island with strategic flying/falling/gliding.",
+						["sourceQuest"] = 32975,	-- Rolo's Riddle #2
 						["qgs"] = {
 							72754,	-- Mound of Dirt
 							72755,	-- Rolo's Treasure
 						},
-						["sourceQuest"] = 32975,	-- Rolo's Riddle #2
 						["coord"] = { 34.5, 26.5, TIMELESS_ISLE },
-						["description"] = "The final treasure you're looking for is high up at the bloody lake where Garnia lives (|cFFFFFFFF66.0, 23.2|r).\n\nYou can pick up an albatross ride, or approach from outside the island with strategic flying/falling/gliding.",
 						["groups"] = {
 							ach(8730),	-- Rolo's Riddle
 							i(104013),	-- Timeless Cloth Armor Cache
@@ -1064,44 +1064,44 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(33376, {	-- Seeking Fate
-						["qg"] = 72870,	-- Kairoz
 						["sourceQuests"] = { 33375 },	-- Refining The Vision
+						["qg"] = 72870,	-- Kairoz
 						["groups"] = {
 							i(105932),	-- Vision of Time
 						},
 					}),
 					q(33334, {	-- Strong Enough To Survive
-						["qg"] = 72870,	-- Kairoz
 						["sourceQuests"] = { 33333 },	-- Timeless Treasures
+						["qg"] = 72870,	-- Kairoz
 						["isWeekly"] = true,
 					}),
 					q(33343, {	-- The Archiereus Of Flame
-						["qg"] = 73303,	-- Emperor Shaohao
 						["sourceQuests"] = {
 							33342,	-- Drive Back The Flame
 							33374,	-- Path of the Mistwalker
 						},
+						["qg"] = 73303,	-- Emperor Shaohao
 						["groups"] = {
 							i(103982),	-- Burden of Eternity
 						},
 					}),
 					q(33336, {	-- The Essence of Time
-						["qg"] = 72870,	-- Kairoz
 						["sourceQuests"] = { 33161 },	-- A Timeless Tour
+						["qg"] = 72870,	-- Kairoz
 						["groups"] = {
 							i(105715),	-- Epoch Stone (QI!)
 						},
 					}),
 					q(33335, {	-- The Last Emperor
-						["qg"] = 72870,	-- Kairoz
 						["sourceQuests"] = { 33228 },	-- Time In Your Hands
+						["qg"] = 72870,	-- Kairoz
 					}),
 					q(33228, {	-- Time In Your Hands
-						["qg"] = 72870,	-- Kairoz
 						["sourceQuests"] = {
 							33156,	-- Time Keeper Kairoz
 							33160,	-- Time Keeper Kairoz
 						},
+						["qg"] = 72870,	-- Kairoz
 						["groups"] = {
 							i(104013),	-- Timeless Cloth Armor Cache
 							i(104012),	-- Timeless Leather Armor Cache
@@ -1110,26 +1110,26 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(33160, {	-- Time Keeper Kairoz
-						["qg"] = 73348,	-- Watcher Lara <The Timewalkers>
 						["sourceQuests"] = { 33231 },	-- Journey to the Timeless Isle
+						["qg"] = 73348,	-- Watcher Lara <The Timewalkers>
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(33156, {	-- Time Keeper Kairoz
-						["qg"] = 73353,	-- Watcher Alundra <The Timewalkers>
 						["sourceQuests"] = { 33232 },	-- Journey to the Timeless Isle
+						["qg"] = 73353,	-- Watcher Alundra <The Timewalkers>
 						["races"] = HORDE_ONLY,
 					}),
 					q(33340, {	-- Timeless Nutriment
-						["qg"] = 73303,	-- Emperor Shaohao
 						["sourceQuests"] = { 33335 },	-- The Last Emperor
+						["qg"] = 73303,	-- Emperor Shaohao
 					}),
 					q(33333, {	-- Timeless Treasures
-						["qg"] = 72870,	-- Kairoz
 						["sourceQuests"] = { 33332 },	-- Hints From The Past
+						["qg"] = 72870,	-- Kairoz
 					}),
 					q(33341, {	-- Wayshrines Of The Celestials
-						["qg"] = 73303,	-- Emperor Shaohao
 						["sourceQuests"] = { 33340 },	-- Timeless Nutriment
+						["qg"] = 73303,	-- Emperor Shaohao
 					}),
 				}),
 				n(RARES, {

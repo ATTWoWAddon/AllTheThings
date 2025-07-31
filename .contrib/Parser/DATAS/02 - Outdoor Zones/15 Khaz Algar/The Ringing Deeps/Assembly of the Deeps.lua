@@ -73,7 +73,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 								}),
 								i(239121, {	-- Awakened Mechanical Cache (S2)
 									["sym"] = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Khaz Algar Zone Rewards content]
-									["timeline"] = { ADDED_11_1_0_SEASONSTART },
+									["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
+									["groups"] = {
+										i(223128),	-- Formula: Enchant Chest - Oathsworn's Strength (RECIPE!)
+										i(224426),	-- Pattern: Ignition Satchel (RECIPE!)
+										i(223040),	-- Plans: Charged Crusher (RECIPE!)
+									},
+								}),
+								i(250765, {	-- Awakened Mechanical Cache (S3)
+									["sym"] = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Khaz Algar Zone Rewards content]
+									["timeline"] = { ADDED_11_2_0_SEASONSTART },
 									["groups"] = {
 										i(223128),	-- Formula: Enchant Chest - Oathsworn's Strength (RECIPE!)
 										i(224426),	-- Pattern: Ignition Satchel (RECIPE!)
@@ -294,8 +303,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(79220, {	-- Renowned with the Assembly of the Deeps
 					["provider"] = { "n", 221390 },	-- Waxmonger Squick <Quatermaster>
 					["coord"] = { 47.5, 32.8, THE_RINGING_DEEPS },
-					["isRepeatable"] = true,
 					["minReputation"] = { FACTION_THE_ASSEMBLY_OF_THE_DEEPS, 25 },
+					["isRepeatable"] = true,
 					["groups"] = { i(225245) },	-- Overflowing Trove of the Deeps
 				}),
 			}),
@@ -311,7 +320,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						},
 					}),
 					q(79555, {	-- Deep Wax Galactic
-					["description"] = "Quest Item drops from Nerubian enemies in the area.",
+						["description"] = "Quest Item drops from Nerubian enemies in the area.",
 						["provider"] = { "i", 217385 },	-- Clump of Waxy Excretion
 						["coord"] = { 79.4, 76.5, AZJ_KAHET },
 						["groups"] = {

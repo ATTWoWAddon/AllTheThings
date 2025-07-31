@@ -1,4 +1,4 @@
-﻿local ObjectDB = ObjectDB; for objectID,objectData in pairs({
+local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[444799] = {
 		readable = "Potent Concentrated Shadow",
 		model = 4681253,

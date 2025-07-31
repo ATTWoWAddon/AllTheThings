@@ -58,49 +58,49 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 					["isBreadcrumb"] = true,
 				}),
 				q(32808, {	-- A Little Field Work
-					["qg"] = 61962,	-- Lorewalker Cho
 					["sourceQuests"] = { 32807 },	-- The Warchief and the Darkness
+					["qg"] = 61962,	-- Lorewalker Cho
 					["coord"] = { 83.2, 29.6, VALE_OF_ETERNAL_BLOSSOMS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(32809, {	-- Gathering Intelligence
-					["qg"] = 71027,	-- Amber Kearnen
 					["sourceQuests"] = { 32808 },	-- A Little Field Work
+					["qg"] = 71027,	-- Amber Kearnen
 					["coord"] = { 54.4, 9.8, DUROTAR },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(32810, {	-- The Darkspear Rebellion
-					["qg"] = 71027,	-- Amber Kearnen
 					["sourceQuests"] = { 32809 },	-- Gathering Intelligence
+					["qg"] = 71027,	-- Amber Kearnen
 					["coord"] = { 54.4, 9.8, DUROTAR },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(32871, {	-- Vol'jin of the Darkspear
-					["qg"] = 71320,	-- Zen'tabra
 					["sourceQuests"] = { 32810 },	-- The Darkspear Rebellion
+					["qg"] = 71320,	-- Zen'tabra
 					["coord"] = { 51.8, 39.2, DUROTAR },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(32811, {	-- Battlefield: Barrens
-					["qg"] = 70978,	-- Vol'jin
 					["sourceQuests"] = { 32871 },	-- Vol'jin of the Darkspear
+					["qg"] = 70978,	-- Vol'jin
 					["coord"] = { 49.7, 40.1, DUROTAR },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(32895, {	-- The Road to War
-					["qg"] = 71336,	-- Gleep Chatterswitch
 					["sourceQuests"] = { 32811 },	-- Battlefield: Barrens
+					["qg"] = 71336,	-- Gleep Chatterswitch
 					["coord"] = { 85.8, 59.6, VALE_OF_ETERNAL_BLOSSOMS },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["isWeekly"] = true,
 				}),
 				q(32872, {	-- Battlefield: Barrens
-					["qg"] = 71333,	-- Ki'ta Arrowtusk
 					["sourceQuests"] = {
 						32811,	-- Battlefield: Barrens
 						32895,	-- The Road to War
 					},
+					["qg"] = 71333,	-- Ki'ta Arrowtusk
 					["coord"] = { 49.8, 40.0, DUROTAR },
 					["races"] = ALLIANCE_ONLY,
 					["isWeekly"] = true,
@@ -109,49 +109,49 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 					},
 				}),
 				q(32812, {	-- The Darkspear Rebellion
-					["qg"] = 61962,	-- Lorewalker Cho
 					["sourceQuests"] = { 32807 },	-- The Warchief and the Darkness
+					["qg"] = 61962,	-- Lorewalker Cho
 					["coord"] = { 83.2, 29.6, VALE_OF_ETERNAL_BLOSSOMS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(32867, {	-- Vol'jin of the Darkspear
-					["qg"] = 71333,	-- Ki'ta Arrowtusk
 					["sourceQuests"] = { 32812 },	-- The Darkspear Rebellion
+					["qg"] = 71333,	-- Ki'ta Arrowtusk
 					["coord"] = { 49.8, 40.0, DUROTAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(32819, {	-- Battlefield: Barrens
-					["qg"] = 70978,	-- Vol'jin
 					["sourceQuests"] = { 32867 },	-- Vol'jin of the Darkspear
+					["qg"] = 70978,	-- Vol'jin
 					["coord"] = { 49.7, 40.1, DUROTAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(32813, {	-- Battle of Sen'jin Village
-					["qg"] = 70978,	-- Vol'jin
 					["sourceQuests"] = { 32819 },	-- Battlefield: Barrens
+					["qg"] = 70978,	-- Vol'jin
 					["coord"] = { 49.7, 40.1, DUROTAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(32814, {	-- Battle of Razor Hill
-					["qg"] = 70978,	-- Vol'jin
 					["sourceQuests"] = { 32813 },	-- Battle of Sen'jin Village
+					["qg"] = 70978,	-- Vol'jin
 					["coord"] = { 49.7, 40.1, DUROTAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(32896, {	-- The Road to War
-					["qg"] = 71483,	-- Abrogar Dusthoof
 					["sourceQuests"] = { 32814 },	-- Battle of Razor Hill
+					["qg"] = 71483,	-- Abrogar Dusthoof
 					["coord"] = { 62.2, 23.8, VALE_OF_ETERNAL_BLOSSOMS },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["isWeekly"] = true,
 				}),
 				q(32862, {	-- Battlefield: Barrens
-					["qg"] = 71333,	-- Ki'ta Arrowtusk
 					["sourceQuests"] = {
 						32814,	-- Battle of Razor Hill
 						32896,	-- The Road to War
 					},
+					["qg"] = 71333,	-- Ki'ta Arrowtusk
 					["coord"] = { 49.8, 40.0, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["isWeekly"] = true,

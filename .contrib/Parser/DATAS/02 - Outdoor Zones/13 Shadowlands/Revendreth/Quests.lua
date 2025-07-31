@@ -120,8 +120,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					},
 				}),
 				q(58932, {	-- Temel, the Sin Herald
-					["sourceQuests"] = { 57173 },	-- The Accuser's Sinstone
 					["description"] = "Automatically offered after Echelon drops you off during Inquisitor Stelia's Sinstone.",
+					["sourceQuests"] = { 57173 },	-- The Accuser's Sinstone
 					["coord"] = { 69.4, 53.9, REVENDRETH },
 				}),
 				q(59021, {	-- Herald Their Demise
@@ -635,16 +635,16 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				}),
 				q(57471, {	-- It's a Dirty Job
 					["sourceQuests"] = { 60509 },	-- Not My Job
+					["altQuests"] = { 62190 },		-- It's a Dirty Job
 					["provider"] = { "n", 157846 },	-- Rendle
 					["coord"] = { 72.5, 73.2, REVENDRETH },
-					["altQuests"] = { 62190 },		-- It's a Dirty Job
 				}),
 				q(62190, {	-- It's a Dirty Job
 					["description"] = "This quest is available to players with Ember Court rank 2 while doing Dredger quest-line before doing Dirty Jobs quest-line in Revendreth",
 					["sourceQuests"] = { 60509 },	-- Not My Job
+					["altQuests"] = { 57471 },		-- It's a Dirty Job
 					["provider"] = { "n", 157846 },	-- Rendle
 					["coord"] = { 72.5, 73.2, REVENDRETH },
-					["altQuests"] = { 57471 },		-- It's a Dirty Job
 					["customCollect"] = "SL_COV_VEN",	-- Venthyr
 				}),
 				q(57474, {	-- Dredger Duty
@@ -675,9 +675,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			header(HEADERS.AchCriteria, 14798.04, {	-- The Final Atonement
 				q(58093, {	-- Our Forgotten Purpose
 					["sourceQuests"] = { 58086 },	-- The Master of Lies
+					["altQuests"] = { 57918 },	-- The Absolution of Souls
 					["provider"] = { "n", 160248 },	-- Archivist Fane
 					["coord"] = { 72.9, 52.0, REVENDRETH },
-					["altQuests"] = { 57918 },	-- The Absolution of Souls
 					["isBreadcrumb"] = true,
 				}),
 				q(57919, {	-- An Abuse of Power
@@ -893,8 +893,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				q(61839, {	-- Nipping at the Undergrowth
 					["description"] = "Becomes available in the Endmire north of Darkhaven after looting Impressionable Gorger Spawn from the Worldedge Gorger.",
 					["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
-					["cost"] = { { "i", 180583, 1 } },	-- Impressionable Gorger Spawn (technically this doesn't stay in your inventory, but i think this is a better way to display it - when it was added as a drop, the rare still showed up as something you needed to do, vs 'cost' that will disappear as soon as this quest is done)
 					["coord"] = { 60.0, 58.0, REVENDRETH },	-- rough coords where NPC will spawn for quest
+					["cost"] = { { "i", 180583, 1 } },	-- Impressionable Gorger Spawn (technically this doesn't stay in your inventory, but i think this is a better way to display it - when it was added as a drop, the rare still showed up as something you needed to do, vs 'cost' that will disappear as soon as this quest is done)
 					["groups"] = {
 						i(182314),	-- Endmire Vineroot (QI!)
 						i(182590),	-- Vinewormed Coin Pouch
@@ -993,8 +993,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(58717, {	-- Bell of Remembrance
 				["provider"] = { "i", 174674 },	-- Bell of Remembrance
 				["coord"] = { 67.0, 33.6, REVENDRETH },
-				["crs"] = { 160716 },	-- Sinstone Rampager
 				["customCollect"] = "SL_COV_VEN",	-- Venthyr
+				["crs"] = { 160716 },	-- Sinstone Rampager
 			}),
 			q(60514, {	-- Hunting Trophies
 				["sourceQuests"] = { 59014 },	-- King of the Hill
@@ -1123,8 +1123,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				q(59211, {	-- Forgotten Village
 					["sourceQuests"] = { 60313 },	-- Dredhollow
 					["coord"] = { 42.0, 79.0, REVENDRETH },
-					["lvl"] = { 58, 59 },
 					["lockCriteria"] = { 1, "lvl", 60 },
+					["lvl"] = { 58, 59 },
 				}),
 			}),
 			n(BONUS_OBJECTIVES, sharedData({

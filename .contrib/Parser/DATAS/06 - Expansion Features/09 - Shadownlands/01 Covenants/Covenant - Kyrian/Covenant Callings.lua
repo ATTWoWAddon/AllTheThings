@@ -13,10 +13,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["customCollect"] = "SL_COV_KYR",
 			},{
 				q(62692, {	-- A Calling in Bastion
-					["provider"] = { "n", 160470 },	-- Adjutant Nikos
-					["sourceQuests"] = { 62698 },	-- A Call to Service
-					["coord"] = { 52.2, 47.0, BASTION },
 					["description"] = "Will only be offered as the initial 'Calling' during the Covenant introduction.",
+					["sourceQuests"] = { 62698 },	-- A Call to Service
+					["provider"] = { "n", 160470 },	-- Adjutant Nikos
+					["coord"] = { 52.2, 47.0, BASTION },
 					["groups"] = {
 						i(181372),	-- Tribute of the Ascended
 					},

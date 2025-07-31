@@ -1,4 +1,3 @@
-
 -- Only match groups with npcID
 function FILTERFUNC_npcID(t) return t.npcID and t.npcID > 0 and true; end
 

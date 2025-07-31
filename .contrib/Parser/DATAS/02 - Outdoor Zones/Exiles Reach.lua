@@ -471,10 +471,10 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 						55174,	-- Cooking Meat [A] [Hunter]
 						59339,	-- Enhanced Combat Tactics [A] [Monk]
 					},
+					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 175031 },	-- Alaria
 					["coord"] = { 58.3, 74.4, EXILES_REACH },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuestNumRequired"] = 1,
 					["groups"] = {
 						i(167206),	-- Fire Essence (QI!)
 					},
@@ -485,13 +485,13 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 						59932,	-- Cooking Meat [H] [Hunter]
 						59934,	-- Enhanced Combat Tactics [H] [Monk]
 					},
-					["providers"] = {
-						{ "n", 166854 },	-- Won'sa
-						{ "n", 175030 },	-- Won'sa (Note: this creatureID here at least from 11.0.5)
+					["sourceQuestNumRequired"] = 1,
+					["qgs"] = {
+						166854,	-- Won'sa
+						175030,	-- Won'sa (Note: this creatureID here at least from 11.0.5)
 					},
 					["coord"] = { 58.3, 74.4, EXILES_REACH },
 					["races"] = HORDE_ONLY,
-					["sourceQuestNumRequired"] = 1,
 					["groups"] = {
 						i(167206),	-- Fire Essence (QI!)
 					},
@@ -501,30 +501,30 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 						55173,	-- Northbound [A]
 						59342,	-- Taming the Wilds [A] [Hunter]
 					},
-					["coord"] = { 62.7, 69.8, EXILES_REACH },
-					["provider"] = { "n", 154327 },	-- Austin Huxworth
-					["races"] = ALLIANCE_ONLY,
 					["sourceQuestNumRequired"] = 1,
+					["provider"] = { "n", 154327 },	-- Austin Huxworth
+					["coord"] = { 62.7, 69.8, EXILES_REACH },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(59938, {	-- Down with the Quilboar [H]
 					["sourceQuests"] = {
 						59935,	-- Northbound [H]
 						59937,	-- Taming the Wilds [H] [Hunter]
 					},
-					["coord"] = { 62.7, 69.8, EXILES_REACH },
-					["provider"] = { "n", 166996 },	-- Mithdran Dawntracker
-					["races"] = HORDE_ONLY,
 					["sourceQuestNumRequired"] = 1,
+					["provider"] = { "n", 166996 },	-- Mithdran Dawntracker
+					["coord"] = { 62.7, 69.8, EXILES_REACH },
+					["races"] = HORDE_ONLY,
 				}),
 				q(55184, {	-- Forbidden Quilboar Necromancy [A]
 					["sourceQuests"] = {
 						55173,	-- Northbound [A]
 						59342,	-- Taming the Wilds [A] [Hunter]
 					},
-					["coord"] = { 62.7, 69.8, EXILES_REACH },
-					["provider"] = { "n", 154327 },	-- Austin Huxworth
-					["races"] = ALLIANCE_ONLY,
 					["sourceQuestNumRequired"] = 1,
+					["provider"] = { "n", 154327 },	-- Austin Huxworth
+					["coord"] = { 62.7, 69.8, EXILES_REACH },
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(174789, { ["timeline"] = { REMOVED_11_0_0 } }),	-- Dented Plate Mitts
 						i(174788, { ["timeline"] = { REMOVED_11_0_0 } }),	-- Linked Mail Gloves
@@ -541,10 +541,10 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 						59935,	-- Northbound [H]
 						59937,	-- Taming the Wilds [H] [Hunter]
 					},
-					["coord"] = { 62.7, 69.8, EXILES_REACH },
-					["provider"] = { "n", 166996 },	-- Mithdran Dawntracker
-					["races"] = HORDE_ONLY,
 					["sourceQuestNumRequired"] = 1,
+					["provider"] = { "n", 166996 },	-- Mithdran Dawntracker
+					["coord"] = { 62.7, 69.8, EXILES_REACH },
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(174789, { ["timeline"] = { REMOVED_11_0_0 } }),	-- Dented Plate Mitts
 						i(174788, { ["timeline"] = { REMOVED_11_0_0 } }),	-- Linked Mail Gloves
@@ -561,8 +561,8 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 						55186,	-- Down with the Quilboar [A]
 						55184,	-- Forbidden Quilboar Necromancy [A]
 					},
-					["coord"] = { 56.1, 59.1, EXILES_REACH },
 					["provider"] = { "n", 149899 },	-- Lindie Springstock
+					["coord"] = { 56.1, 59.1, EXILES_REACH },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(59940, {	-- The Choppy Booster Mk 5
@@ -570,8 +570,8 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 						59938,	-- Down with the Quilboar [H]
 						59939,	-- Forbidden Quilboar Necromancy [H]
 					},
-					["coord"] = { 56.1, 59.1, EXILES_REACH },
 					["provider"] = { "n", 167019 },	-- Cork Fizzlepop
+					["coord"] = { 56.1, 59.1, EXILES_REACH },
 					["races"] = HORDE_ONLY,
 				}),
 				q(56034, {	-- Re-sizing the Situation [A]
@@ -778,13 +778,13 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 				}),
 				q(85678, {	-- Repair Yourself [A]
 					["coord"] = { 52.2, 55.2, EXILES_REACH },
-					["races"] = ALLIANCE_ONLY,
 					["timeline"] = { ADDED_11_1_7 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(85679, {	-- Repair Yourself [H]
 					["coord"] = { 52.4, 55.6, EXILES_REACH },
-					["races"] = HORDE_ONLY,
 					["timeline"] = { ADDED_11_1_7 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(56344, {	-- To Darkmaul Citadel [A]
 					["sourceQuests"] = {
@@ -814,21 +814,21 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 						85679,	-- Repair Yourself
 						-- #endif
 					},
-					["coord"] = { 52.1, 55.3, EXILES_REACH },
 					["provider"] = { "n", 167212 },	-- Warlord Breka Grimaxe
+					["coord"] = { 52.1, 55.3, EXILES_REACH },
 					["races"] = HORDE_ONLY,
 				}),
 				q(55981, {	-- Right Beneath Their Eyes [A]
 					["sourceQuests"] = { 56344 },	-- To Darkmaul Citadel [A]
+					["provider"] = { "n", 156941 },	-- Captain Garrick
 					["coord"] = { 48.9, 49.2, EXILES_REACH },
 					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 156941 },	-- Captain Garrick
 				}),
 				q(59978, {	-- Right Beneath Their Eyes [H]
 					["sourceQuests"] = { 59975 },	-- To Darkmaul Citadel [H]
+					["provider"] = { "n", 167596 },	-- Warlord Breka Grimaxe
 					["coord"] = { 48.9, 49.3, EXILES_REACH },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 167596 },	-- Warlord Breka Grimaxe
 				}),
 				q(55989, {	-- Catapult Destruction [A]
 					["sourceQuests"] = { 55981 },	-- Right Beneath Their Eyes [A]
@@ -896,8 +896,8 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					},
 					["provider"] = { "n", 156965 },	-- Captain Kelra
 					["coord"] = { 39.9, 32.1, EXILES_REACH },
-					["races"] = ALLIANCE_ONLY,
 					["maps"] = { DARKMAUL_CITADEL },
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(175188),	-- Expeditionary Cloth Hood
 						i(175190),	-- Expeditionary Leather Helm
@@ -913,8 +913,8 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					},
 					["provider"] = { "n", 167183 },	-- Warlord Mulgrin Thunderwalker
 					["coord"] = { 39.9, 32.1, EXILES_REACH },
-					["races"] = HORDE_ONLY,
 					["maps"] = { DARKMAUL_CITADEL },
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(175220),	-- Expeditionary Cloth Hood
 						i(175222),	-- Expeditionary Leather Helm
@@ -966,8 +966,8 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
 					["provider"] = { "n", 163007 },	-- Curly
 					["coord"] = { 77.3, 67.0, STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
 					["timeline"] = { ADDED_9_0_1, REMOVED_10_1_5 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(58910, {	-- What's Your Specialty? [A] [Druid]
 					["sourceQuests"] = { 58908 },	-- Finding Your Way [A]
@@ -1052,36 +1052,36 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 						59593,	-- What's Your Specialty? [A] [Warlock]
 						59594,	-- What's Your Specialty? [A] [Warrior]
 					},
+					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 163097 },	-- Lindle Springstock
 					["coord"] = { 79.0, 69.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuestNumRequired"] = 1
 				}),
 				q(58912, {	-- An Urgent Meeting [A]
 					["sourceQuests"] = { 58911 },	-- Home Is Where the Hearth Is [A]
 					["provider"] = { "n", 163211 },	-- Henry Garrick
 					["coord"] = { 75.3, 54.3, STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
 					["timeline"] = { ADDED_9_0_1, REMOVED_11_0_2 },
+					["races"] = ALLIANCE_ONLY,
 					["customCollect"] = IGNORED_VALUE,	-- Technically only possible by NPE quest completion, but technically no longer NPE when accepting this quest...
 				}),
 				q(58983, {	-- Battle for Azeroth: Tides of War (SL/new player version)
-					["qg"] = 163219,	-- Captain Garrick
-					["sourceQuest"] = 58912,	-- An Urgent Meeting [A]
 					["description"] = "This quest starts the Battle for Azeroth campaign for players from Exile's Reach.",
+					["sourceQuest"] = 58912,	-- An Urgent Meeting [A]
+					["qg"] = 163219,	-- Captain Garrick
 					["coord"] = { 85.2, 32.1, STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
 					["timeline"] = { ADDED_9_0_1, REMOVED_11_0_2 },
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(178941),	-- Alliance Dog Tags,
 					}
 				}),
 				q(59641, {	-- The Nation of Kul Tiras
-					["qg"] = 165395,	-- Anduin Wrynn
 					["sourceQuest"] = 58983,	-- Battle for Azeroth: Tides of War (SL/new player version)
+					["qg"] = 165395,	-- Anduin Wrynn
 					["coord"] = { 85.8, 31.6, STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
 					["timeline"] = { ADDED_9_0_1, REMOVED_11_0_2 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 
 					-- Orgrimmar --
@@ -1101,8 +1101,8 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
 					["provider"] = { "n", 168540 },	-- Rohaka Tuskmaul
 					["coord"] = { 61.5, 32.9, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
 					["timeline"] = { ADDED_9_0_1, REMOVED_10_1_5 },
+					["races"] = HORDE_ONLY,
 				}),
 				q(60346, {	-- What's Your Specialty? [H] [Druid]
 					["sourceQuests"] = { 60344 },	-- Finding Your Way [H]
@@ -1187,10 +1187,10 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 						60355,	-- What's Your Specialty? [H] [Warlock]
 						60357,	-- What's Your Specialty? [H] [Warrior]
 					},
+					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
 					["coord"] = { 73.6, 43.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					["sourceQuestNumRequired"] = 1,
 				}),
 				----- The original ending of the questline where new players got funneled into BfA -----
 				-- After 11.0.2 players receive Lost Dragonscale and the quest The Dragon Isles Await (65436 [A] / 65435 [H])
@@ -1198,17 +1198,17 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["sourceQuests"] = { 60359 },	-- Home Is Where the Hearth Is [H]
 					["provider"] = { "n", 168771 },	-- Shuja Grimaxe
 					["coord"] = { 70.9, 49.6, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
 					["timeline"] = { ADDED_9_0_1, REMOVED_11_0_2 },
+					["races"] = HORDE_ONLY,
 					["customCollect"] = IGNORED_VALUE,	-- Technically only possible by NPE quest completion, but technically no longer NPE when accepting this quest...
 				}),
 				q(60361, {	-- Battle for Azeroth: Mission Statement (SL/new player version)
-					["sourceQuest"] = 60360,	-- An Urgent Meeting
 					["description"] = "This quest starts the Battle for Azeroth campaign for players from Exile's Reach.",
+					["sourceQuest"] = 60360,	-- An Urgent Meeting
 					["qg"] = 168431,	-- Warlord Breka Grimaxe
 					["coord"] = { 48.3, 71.4, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
 					["timeline"] = { ADDED_9_0_1, REMOVED_11_0_2 },
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(178942),	-- War-Chain of the Horde
 					},

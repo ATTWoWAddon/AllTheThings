@@ -68,8 +68,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 					["coord"] = { 23.7, 51.2, UNDERMINE },
 				}),
 				q(84948, {	-- Contract Work
-					-- This one is 'forge a pact'?
 					["coord"] = { 42.9, 52.3, UNDERMINE },
+					-- This one is 'forge a pact'?
 					["groups"] = {
 						i(234281),	-- Undermine Cartel Work
 					},

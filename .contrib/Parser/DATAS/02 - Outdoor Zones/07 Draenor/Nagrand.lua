@@ -219,10 +219,10 @@ root(ROOTS.Zones, {
 								q(37125, {	-- A Rare Find
 									["provider"] = { "n", 87393 },	-- Sallee Silverclamp
 									["coord"] = { 50.4, 41.3, DRAENOR_NAGRAND },
-									["repeatable"] = true,
 									["cost"] = {
 										{ "i", 118100, 1 },	-- Highmaul Relic
 									},
+									["repeatable"] = true,
 								}),
 								q(37210, {	-- Aogexon's Fang
 									["providers"] = {
@@ -259,10 +259,10 @@ root(ROOTS.Zones, {
 								q(35147, {	-- Fragments of the Past
 									["provider"] = { "n", 87393 },	-- Sallee Silverclamp
 									["coord"] = { 50.4, 41.3, DRAENOR_NAGRAND },
-									["isDaily"] = true,
 									["cost"] = {
 										{ "i", 118099, 20 },	-- Gorian Artifact Fragment
 									},
+									["isDaily"] = true,
 								}),
 								q(37223, {	-- Gagrog's Skull
 									["providers"] = {
@@ -469,48 +469,48 @@ root(ROOTS.Zones, {
 				}),
 				n(QUESTS, {
 					q(34719, {	-- ... and My Hammer
+						["sourceQuest"] = 34716,	-- Mo'mor Might Know
 						["provider"] = { "n", 79743 },	-- Vindicator Mo'mor
 						["coord"] = { 66.7, 68.6, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 34716,	-- Mo'mor Might Know
 					}),
 					q(34769, {	-- A Choice to Make
+						["sourceQuest"] = 34746,	-- Shields Down!
 						["provider"] = { "n", 79674 },	-- Thaelin Darkanvil
 						["coord"] = { 63.0, 61.9, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 34746,	-- Shields Down!
 					}),
 					q(34899, {	-- A Choice to Make
+						["sourceQuest"] = 34868,	-- Challenge of the Masters
 						["provider"] = { "n", 80140 },	-- A Choice to Make
 						["coord"] = { 82.9, 44.1, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 34868,	-- Challenge of the Masters
 					}),
 					q(36284, {	-- A Fascinating Fungus
+						["sourceQuest"] = 35146,	-- The Good Doctor
 						["provider"] = { "n", 84861 },	-- A Fascinating Fungus
 						["coord"] = { 86.6, 28.3, DRAENOR_NAGRAND },
-						["sourceQuest"] = 35146,	-- The Good Doctor
 					}),
 					q(35632, {	-- A Lesson in Archaeology
-						["provider"] = { "n", 79201 },	-- Gazmolf Futzwangler
-						["coord"] = { 71.1, 52.3, DRAENOR_NAGRAND },
 						["sourceQuests"] = {
 							34809,	-- A Lesson in Mineralogy
 							34811,	-- Good Help is Hard to Find
 						},
+						["provider"] = { "n", 79201 },	-- Gazmolf Futzwangler
+						["coord"] = { 71.1, 52.3, DRAENOR_NAGRAND },
 					}),
 					q(34809, {	-- A Lesson in Mineralogy
+						["sourceQuest"] = 34810,	-- Gazmolf Futzwangler and the Highmaul Crusade
 						["provider"] = { "n", 79201 },	-- Gazmolf Futzwangler
 						["coord"] = { 71.1, 52.3, DRAENOR_NAGRAND },
-						["sourceQuest"] = 34810,	-- Gazmolf Futzwangler and the Highmaul Crusade
 					}),
 					q(35663, {	-- A Lesson in Teamwork
-						["provider"] = { "n", 79201 },	-- Gazmolf Futzwangler
-						["coord"] = { 71.1, 52.3, DRAENOR_NAGRAND },
 						["sourceQuests"] = {
 							34809,	-- A Lesson in Mineralogy
 							34811,	-- Good Help is Hard to Find
 						},
+						["provider"] = { "n", 79201 },	-- Gazmolf Futzwangler
+						["coord"] = { 71.1, 52.3, DRAENOR_NAGRAND },
 						["groups"] = {
 							i(114890),	-- Excavated Highmaul Doohickey
 							i(114887),	-- Excavated Highmaul Knicknack
@@ -518,9 +518,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(34894, {	-- A Rare Bloom
+						["sourceQuest"] = 34943,	-- An Old Friend
 						["provider"] = { "n", 80434 },	-- Gar'rok
 						["coord"] = { 75.0, 22.7, DRAENOR_NAGRAND },
-						["sourceQuest"] = 34943,	-- An Old Friend
 					}),
 					q(33928, {	-- A Wrong of Earth and Fire
 						["description"] = "Starts dropping during |cFFFFD700Elemental Attunement|r.",
@@ -541,50 +541,50 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(35059, {	-- Along the Riverside
-						["provider"] = { "n", 79576 },	-- Rangari D'kaan
-						["coord"] = { 63.5, 61.8, DRAENOR_NAGRAND },
-						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
 							34596,	-- Reglakk's Research
 							34957,	-- Challenge of the Masters
 						},
+						["provider"] = { "n", 79576 },	-- Rangari D'kaan
+						["coord"] = { 63.5, 61.8, DRAENOR_NAGRAND },
+						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(35095, {	-- Along the Riverside
-						["provider"] = { "n", 80003 },	-- Thrall
-						["coord"] = { 82.8, 45.0, DRAENOR_NAGRAND },
-						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							35158,	-- Reglakk's Research
 							34918,	-- Shields Down!
 							-- 34826,	-- The Friend of My Enemy TODO: not sure if required
 						},
+						["provider"] = { "n", 80003 },	-- Thrall
+						["coord"] = { 82.8, 45.0, DRAENOR_NAGRAND },
+						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(36193, {	-- An Act of Kindness
+						["description"] = "Available during |cFFFFD700The Trial of Heart|r.",
+						["sourceQuest"] = 36167,	-- The Trial of Heart
 						["provider"] = { "n", 84459 },	-- Rangari Saardar
 						["coord"] = { 49.4, 16.6, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 36167,	-- The Trial of Heart
-						["description"] = "Available during |cFFFFD700The Trial of Heart|r.",
 					}),
 					q(34943, {	-- An Old Friend
-						["provider"] = { "n", 80595 },	-- Kalandrios
-						["coord"] = { 72.7, 19.7, DRAENOR_NAGRAND },
 						["sourceQuests"] = {
 							35331,	-- Called to the Throne (alliance)
 							34965,	-- Called to the Throne (horde)
 						},
+						["provider"] = { "n", 80595 },	-- Kalandrios
+						["coord"] = { 72.7, 19.7, DRAENOR_NAGRAND },
 					}),
 					q(35169, {	-- And Justice for Thrall
-						["provider"] = { "n", 79576 },	-- Rangari D'kaan
-						["coord"] = { 63.5, 61.8, DRAENOR_NAGRAND },
-						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
 							34957,	-- Challenge of the Masters
 							35062,	-- Lok-rath is Secured
 							34596,	-- Reglakk's Research
 						},
+						["provider"] = { "n", 79576 },	-- Rangari D'kaan
+						["coord"] = { 63.5, 61.8, DRAENOR_NAGRAND },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(118156),	-- Coif of Grasping Earth
 							i(118154),	-- Grounded Headguard
@@ -593,14 +593,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(35171, {	-- And Justice for Thrall
-						["provider"] = { "n", 80003 },	-- Thrall
-						["coord"] = { 82.8, 45.0, DRAENOR_NAGRAND },
-						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							34868,	-- Challenge of the Masters
 							35098,	-- Lok-rath is Secured
 							35158,	-- Reglakk's Research
 						},
+						["provider"] = { "n", 80003 },	-- Thrall
+						["coord"] = { 82.8, 45.0, DRAENOR_NAGRAND },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(118156),	-- Coif of Grasping Earth
 							i(118154),	-- Grounded Headguard
@@ -609,69 +609,69 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(39299, {	-- Black Marketeering
+						["sourceQuest"] = 39278,	-- The Missing Manifest
 						["provider"] = { "n", 83888 },	-- Mister Knuckles
 						["coord"] = { 53.8, 15.0, DRAENOR_NAGRAND },
-						["sourceQuest"] = 39278,	-- The Missing Manifest
 						["groups"] = {
 							currency(824),	-- Garrison Resources
 						},
 					}),
 					q(34953, {	-- Blood of the Burning Blade
+						["description"] = "Only available if you do not accept |cFFFFD700The Friend o' My Enemy|r from Hansel Heavyhands.",
+						["sourceQuest"] = 34951,	-- They Call Him Lantresor of the Blade
+						["altQuests"] = { 34952 },	-- The Friend o' My Enemy
 						["provider"] = { "n", 80161 },	-- Lantresor of the Blade
 						["coord"] = { 85.4, 54.6, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
-						["altQuests"] = { 34952 },	-- The Friend o' My Enemy
-						["sourceQuest"] = 34951,	-- They Call Him Lantresor of the Blade
-						["description"] = "Only available if you do not accept |cFFFFD700The Friend o' My Enemy|r from Hansel Heavyhands.",
 					}),
 					q(35143, {	-- Blood of the Burning Blade
+						["description"] = "Only available if you do not accept |cFFFFD700The Friend of My Enemy|r from Thrall.",
+						["sourceQuest"] = 34808,	-- More Lazy Peons
+						["altQuests"] = { 34826 },	-- The Friend of My Enemy
 						["provider"] = { "n", 80161 },	-- Lantresor of the Blade
 						["coord"] = { 85.4, 54.5, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 34808,	-- More Lazy Peons
-						["altQuests"] = { 34826 },	-- The Friend of My Enemy
-						["description"] = "Only available if you do not accept |cFFFFD700The Friend of My Enemy|r from Thrall.",
 					}),
 					q(35921, {	-- Bread and Circuses
+						["sourceQuest"] = 35062,	-- Lok-rath is Secured
 						["provider"] = { "n", 83606 },	-- Lucy Brokerblast
 						["coord"] = { 63.4, 60.6, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 35062,	-- Lok-rath is Secured
 						["isBreadcrumb"] = true,
 					}),
 					q(35922, {	-- Bread and Circuses
+						["sourceQuest"] = 35098,	-- Lok-rath is Secured
 						["provider"] = { "n", 83606 },	-- Lucy Brokerblast
 						["coord"] = { 82.8, 46.8, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 35098,	-- Lok-rath is Secured
 						["isBreadcrumb"] = true,
 					}),
 					q(35331, {	-- Called to the Throne
+						["sourceQuest"] = 35332,	-- Nobundo Sends Word
 						["provider"] = { "n", 82138 },	-- Vindicator Nobundo
 						["coord"] = { 71.7, 19.6, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 35332,	-- Nobundo Sends Word
 					}),
 					q(34965, {	-- Called to the Throne
+						["sourceQuest"] = 34964,	-- The Farseer Awaits
 						["provider"] = { "n", 80597 },	-- Farseer Drek'Thar
 						["coord"] = { 71.7, 19.6, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 34964,	-- The Farseer Awaits
 					}),
 					q(35141, {	-- Carrier Has Arrived
-						["provider"] = { "n", 81412 },	-- Vindicator Yrel
-						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 35140,	-- THAELIN!
+						["provider"] = { "n", 81412 },	-- Vindicator Yrel
 						["coords"] = {
 							{ 61.9, 40.5, DRAENOR_NAGRAND },	-- If you haven't picked up finished "And Justice For Thrall"
 							{ 66.9, 33.7, DRAENOR_NAGRAND },	-- If you finish "And Justice For Thrall" first
 						},
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(34957, {	-- Challenge of the Masters
+						["sourceQuest"] = 34956,	-- Meet Me in the Cavern
 						["provider"] = { "n", 80161 },	-- Lantresor of the Blade
 						["coord"] = { 44.8, 19.8, 551 },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 34956,	-- Meet Me in the Cavern
 						["groups"] = {
 							i(114707),	-- Beastrider Belt
 							i(114704),	-- Plainsthunder Girdle
@@ -680,10 +680,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(34868, {	-- Challenge of the Masters
+						["sourceQuest"] = 34866,	-- Meet Me in the Cavern
 						["provider"] = { "n", 80319 },	-- Lantresor of the Blade
 						["coord"] = { 44.8, 19.7, 551 },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 34866,	-- Meet Me in the Cavern
 						["groups"] = {
 							i(114700),	-- Beastrider Spaulders
 							i(114701),	-- Plainsthunder Shoulders
@@ -697,45 +697,45 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 					q(35170, {	-- Consumed by Vengeance
+						["sourceQuest"] = 35167,	-- Lost in Nagrand
 						["provider"] = { "n", 82688 },	-- Olgra
 						["coord"] = { 74.1, 37.5, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 35167,	-- Lost in Nagrand
 					}),
 					q(35398, {	-- Dark Binding
+						["sourceQuest"] = 35372,	-- The Call of Oshu'gun
 						["provider"] = { "n", 82179 },	-- Vindicator Nobundo
 						["coord"] = { 55.5, 55.9, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 35372,	-- The Call of Oshu'gun
 					}),
 					q(35144, {	-- Dark Binding
+						["sourceQuest"] = 35232,	-- The Call of Oshu'gun
 						["provider"] = { "n", 81335 },	-- Farseer Drek'Thar
 						["coord"] = { 55.5, 55.9, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 35232,	-- The Call of Oshu'gun
 					}),
 					q(34512, {	-- Declawing the Competition
-						["provider"] = { "n", 79310 },	-- Pyxni Pennypocket
-						["coord"] = { 78.5, 48.5, DRAENOR_NAGRAND },
 						["sourceQuests"] = {
 							34769,	-- A Choice to Make (alliance)
 							34899,	-- A Choice to Make (horde)
 						},
+						["provider"] = { "n", 79310 },	-- Pyxni Pennypocket
+						["coord"] = { 78.5, 48.5, DRAENOR_NAGRAND },
 					}),
 					q(36285, {	-- Dirgemire
-						["provider"] = { "n", 84861 },	-- A Fascinating Fungus
-						["coord"] = { 86.6, 28.3, DRAENOR_NAGRAND },
 						["sourceQuests"] = {
 							36284,	-- A Fascinating Fungus
 							36275,	-- The Search For Research
 						},
+						["provider"] = { "n", 84861 },	-- A Fascinating Fungus
+						["coord"] = { 86.6, 28.3, DRAENOR_NAGRAND },
 					}),
 					q(35083, {	-- Disrupt the Rituals
-						["provider"] = {"o",233263},	-- Shamanstone
 						["sourceQuests"] = {
 							35372,	-- The Call of Oshu'gun (alliance)
 							35232,	-- The Call of Oshu'gun (horde)
 						},
+						["provider"] = {"o",233263},	-- Shamanstone
 						["coords"] = {
 							{ 55.4, 55.9, DRAENOR_NAGRAND },
 							{ 51.8, 58.8, DRAENOR_NAGRAND },
@@ -744,12 +744,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(34881, {	-- Earth, Wind and Fire...and Water
-						["provider"] = { "n", 80593 },	-- Incineratus
-						["coord"] = { 71.3, 17.8, DRAENOR_NAGRAND },
 						["sourceQuests"] = {
 							35331,	-- Called to the Throne (alliance)
 							34965,	-- Called to the Throne (horde)
 						},
+						["provider"] = { "n", 80593 },	-- Incineratus
+						["coord"] = { 71.3, 17.8, DRAENOR_NAGRAND },
 						["groups"] = {
 							i(119066),	-- Seal of Falling Snow
 							i(119074),	-- Seal of Rumbling Earth
@@ -759,48 +759,48 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(35023, {	-- Echoes of the Past
+						["sourceQuest"] = 35393,	-- Spiritual Matters
 						["provider"] = { "n", 80866 },	-- Dahaka
 						["coord"] = { 40.3, 56.7, DRAENOR_NAGRAND },
-						["sourceQuest"] = 35393,	-- Spiritual Matters
 					}),
 					q(35333, {	-- Elemental Attunement
+						["sourceQuest"] = 35331,	-- Called to the Throne
 						["provider"] = { "n", 82138 },	-- Vindicator Nobundo
 						["coord"] = { 71.7, 19.6, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 35331,	-- Called to the Throne
 					}),
 					q(34891, {	-- Elemental Attunement
+						["sourceQuest"] = 34965,	-- Called to the Throne
 						["provider"] = { "n", 80597 },	-- Farseer Drek'Thar
 						["coord"] = { 71.7, 19.6, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 34965,	-- Called to the Throne
 					}),
 					q(35596, {	-- Feline Friends Forever
+						["description"] = "Kill |cFFFFD700Bolkar the Cruel|r to loot |cFFFFD700Goldmane's Cage Key|r, then use the key on the cage.",
 						["provider"] = { "n", 80083 },	-- Goldmane the Skinner
-						["crs"] = { 80080 },	-- Bolkar the Cruel
 						["coord"] = { 40.4, 76.1, DRAENOR_NAGRAND },
-						["description"] = "Kill |cFFFFD700Bolkar the Cruel|r to loot |cFFFFD700Goldmane's Cage Key|r, then use the key on the cage.";
+						["crs"] = { 80080 },	-- Bolkar the Cruel
 						["groups"] = {
 							follower(170),	-- Goldmane the Skinner
 						},
 					}),
 					q(34819, {	-- Fruitful Ventures
+						["sourceQuest"] = 34869,	-- Tastes Like Chicken
 						["provider"] = { "n", 81955 },	-- Digrem Orebar
 						["coord"] = { 79.2, 52.6, DRAENOR_NAGRAND },
-						["sourceQuest"] = 34869,	-- Tastes Like Chicken
 					}),
 					q(34810, {	-- Gazmolf Futzwangler and the Highmaul Crusade
-						["provider"] = { "n", 80184 },	-- Gabby Goldsnap
-						["coord"] = { 79.8, 48.8, DRAENOR_NAGRAND },
 						["sourceQuests"] = {
 							34769,	-- A Choice to Make (alliance)
 							34899,	-- A Choice to Make (horde)
 						},
+						["provider"] = { "n", 80184 },	-- Gabby Goldsnap
+						["coord"] = { 79.8, 48.8, DRAENOR_NAGRAND },
 					}),
 					q(34515, {	-- Gobnapped
+						["sourceQuest"] = 34598,	-- The Missing Caravan
 						["provider"] = { "n", 79312 },	-- Greezlex Fizzpinch
 						["coord"] = { 78.9, 58.8, DRAENOR_NAGRAND },
-						["sourceQuest"] = 34598,	-- The Missing Caravan
 						["groups"] = {
 							i(114881),	-- Sabermaw Mauler's Gorget
 							i(114882),	-- Sabermaw Mystic's Pendant
@@ -808,12 +808,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(35024, {	-- Golmash Hellscream
-						["provider"] = { "n", 80864 },	-- Gar'rok
-						["coord"] = { 40.4, 56.7, DRAENOR_NAGRAND },
 						["sourceQuests"] = {
 							35023,	-- Echoes of the Past
 							35022,	-- Lighting The Darkness
 						},
+						["provider"] = { "n", 80864 },	-- Gar'rok
+						["coord"] = { 40.4, 56.7, DRAENOR_NAGRAND },
 						["groups"] = {
 							i(118158),	-- Weatherbeaten Warsong Chain
 							i(118159),	-- Eroded Warsong Pendant
@@ -823,22 +823,22 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(34811, {	-- Good Help is Hard to Find
+						["sourceQuest"] = 34810,	-- Gazmolf Futzwangler and the Highmaul Crusade
 						["provider"] = { "n", 82658 },	-- Trixi Leroux
 						["coord"] = { 71.1, 52.4, DRAENOR_NAGRAND },
-						["sourceQuest"] = 34810,	-- Gazmolf Futzwangler and the Highmaul Crusade
 					}),
 					q(34893, {	-- Guardians of the Plateau
-						["provider"] = { "n", 80593 },	-- Incineratus
-						["coord"] = { 71.3, 17.8, DRAENOR_NAGRAND },
 						["sourceQuests"] = {
 							35331,	-- Called to the Throne (alliance)
 							34965,	-- Called to the Throne (horde)
 						},
+						["provider"] = { "n", 80593 },	-- Incineratus
+						["coord"] = { 71.3, 17.8, DRAENOR_NAGRAND },
 					}),
 					q(34932, {	-- Guise of the Deceiver
+						["sourceQuest"] = 34894,	-- A Rare Bloom
 						["provider"] = { "n", 80434 },	-- Gar'rok
 						["coord"] = { 75.0, 22.7, DRAENOR_NAGRAND },
-						["sourceQuest"] = 34894,	-- A Rare Bloom
 					}),
 					heroscall(q(49567, {	-- Hero's Call: Nagrand! (Draenor)
 						["timeline"] = { ADDED_7_3_5 },
@@ -846,16 +846,16 @@ root(ROOTS.Zones, {
 						["lvl"] = 98,
 					})),
 					q(34915, {	-- I Help Ya Kill Dem
+						["sourceQuest"] = 34914,	-- Target of Opportunity
 						["provider"] = { "n", 80429 },	-- Shadow Hunter Kajassa
 						["coord"] = { 68.5, 64.5, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 34914,	-- Target of Opportunity
 					}),
 					q(35068, {	-- If They Won't Surrender...
+						["sourceQuest"] = 35060,	-- Terms of Surrender
 						["provider"] = { "n", 81097 },	-- Lieutenant K. K. Lee
 						["coord"] = { 55.4, 42.0, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 35060,	-- Terms of Surrender
 						["groups"] = {
 							i(118150),	-- Beastrider Bracers
 							i(118148),	-- Plainsthunder Bracers
@@ -864,10 +864,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(35100, {	-- If They Won't Surrender...
+						["sourceQuest"] = 35096,	-- Terms of Surrender
 						["provider"] = { "n", 81194 },	-- Senior Sergeant Igerdes
 						["coord"] = { 55.4, 42.0, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 35096,	-- Terms of Surrender
 						["groups"] = {
 							i(118150),	-- Beastrider Bracers
 							i(118148),	-- Plainsthunder Bracers
@@ -876,10 +876,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(35357, {	-- King of the Breezestriders
+						["sourceQuest"] = 35356,	-- Someone's Missing Arrow
 						["provider"] = { "n", 82094 },	-- Rangari Laara
 						["coord"] = { 63.4, 61.4, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 35356,	-- Someone's Missing Arrow
 						["groups"] = {
 							i(114698),	-- Beastrider Breeches
 							i(114695),	-- Plainsthunder Legguards
@@ -888,10 +888,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(35378, {	-- King of the Breezestriders
+						["sourceQuest"] = 35377,	-- Someone's Missing Axe
 						["provider"] = { "n", 82080 },	-- Stalker Ogka
 						["coord"] = { 82.5, 43.9, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 35377,	-- Someone's Missing Axe
 						["groups"] = {
 							i(114698),	-- Beastrider Breeches
 							i(114695),	-- Plainsthunder Legguards
@@ -900,21 +900,21 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(35022, {	-- Lighting the Darkness
+						["sourceQuest"] = 35393,	-- Spiritual Matters
 						["provider"] = { "n", 80864 },	-- Gar'rok
 						["coord"] = { 40.4, 56.7, DRAENOR_NAGRAND },
-						["sourceQuest"] = 35393,	-- Spiritual Matters
 					}),
 					q(35062, {	-- Lok'rath is Secured
+						["sourceQuest"] = 35061,	-- The Pride of Lok-rath
 						["provider"] = { "n", 81039 },	-- Vindicator Yrel
 						["coord"] = { 61.9, 40.5, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 35061,	-- The Pride of Lok-rath
 					}),
 					q(35098, {	-- Lok-rath is Secured
+						["sourceQuest"] = 35097,	-- The Pride of Lok-rath
 						["provider"] = { "n", 81186 },	-- Durotan
 						["coord"] = { 48.5, 48.2, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 35097,	-- The Pride of Lok-rath
 					}),
 					q(35167, {	-- Lost in Nagrand
 						["provider"] = { "n", 72822 },	-- Mankrik
@@ -922,34 +922,34 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 					q(35928, {	-- Meatgut Needs Bones
+						["sourceQuest"] = 34769,	-- A Choice to Make (todo: verify if needed)
 						["provider"] = { "n", 82727 },	-- Meatgut
 						["coord"] = { 78.3, 52.5, DRAENOR_NAGRAND },
 						["repeatable"] = true,
-						["sourceQuest"] = 34769,	-- A Choice to Make (todo: verify if needed)
 					}),
 					q(34956, {	-- Meet Me in the Cavern
-						["provider"] = { "n", 80161 },	-- Lantresor of the Blade
-						["coord"] = { 85.4, 54.6, DRAENOR_NAGRAND },
-						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
 							34955,	-- Not Without My Honor
 							34954,	-- The Blade Itself
 						},
+						["provider"] = { "n", 80161 },	-- Lantresor of the Blade
+						["coord"] = { 85.4, 54.6, DRAENOR_NAGRAND },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(34866, {	-- Meet Me in the Cavern
-						["provider"] = { "n", 80161 },
-						["coord"] = { 85.4, 54.5, DRAENOR_NAGRAND },
-						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							34850,	-- Not Without My Honor
 							34849,	-- The Blade Itself
 						},
+						["provider"] = { "n", 80161 },
+						["coord"] = { 85.4, 54.5, DRAENOR_NAGRAND },
+						["races"] = HORDE_ONLY,
 					}),
 					q(34716, {	-- Mo'mor Might Know
+						["sourceQuest"] = 34682,	-- Operation: Surprise Party
 						["provider"] = { "n", 79722 },	-- Mo'mor Might Know
 						["coord"] = { 65.8, 68.6, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 34682,	-- Operation: Surprise Party
 						["groups"] = {
 							i(114694),	-- Beastrider Helm
 							i(114691),	-- Plainsthunder Helm
@@ -958,44 +958,44 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(34808, {	-- More Lazy Peons
+						["sourceQuest"] = 34795,	-- The Might of the Warsong
 						["provider"] = { "n", 80003 },	-- Thrall
 						["coord"] = { 82.8, 45.0, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 34795,	-- The Might of the Warsong
 					}),
 					q(34516, {	-- My Precious!
+						["sourceQuest"] = 34598,	-- The Missing Caravan
 						["provider"] = { "n", 79899 },	-- Bazwix
 						["coord"] = { 76.9, 59.2, DRAENOR_NAGRAND },
-						["sourceQuest"] = 34598,	-- The Missing Caravan
 					}),
 					q(34466, {	-- Mysterious Staff
-						["coord"] = { 46.3, 16.0, DRAENOR_NAGRAND },
 						["icon"] = 135188,
 						["provider"] = {"o",229344},	-- Buried Timewarped Staff
+						["coord"] = { 46.3, 16.0, DRAENOR_NAGRAND },
 					}),
 					q(34900, {	-- New Babies
+						["sourceQuest"] = 34819,	-- Fruitful Ventures
 						["provider"] = { "n", 81955 },	-- Digrem Orebar
 						["coord"] = { 79.2, 52.6, DRAENOR_NAGRAND },
-						["sourceQuest"] = 34819,	-- Fruitful Ventures
 						["groups"] = {
 							i(114834),	-- Meadowstomper Calf (PET!)
 						},
 					}),
 					q(35332, {	-- Nobundo Sends Word
-						["provider"] = { "n", 79576 },	-- Rangari D'kaan
-						["coord"] = { 63.5, 61.8, DRAENOR_NAGRAND },
-						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
 							34596,	-- Reglakk's Research
 							34957,	-- Challenge of the Masters
 						},
+						["provider"] = { "n", 79576 },	-- Rangari D'kaan
+						["coord"] = { 63.5, 61.8, DRAENOR_NAGRAND },
+						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(34955, {	-- Not Without My Honor
+						["sourceQuest"] = 34951,	-- They Call Him Lantresor of the Blade
 						["provider"] = { "n", 80161 },	-- Lantresor of the Blade
 						["coord"] = { 85.4, 54.6, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 34951,	-- They Call Him Lantresor of the Blade
 						["groups"] = {
 							i(114687),	-- Beastrider Gloves
 							i(114688),	-- Plainsthunder Gauntlets
@@ -1004,10 +1004,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(34850, {	-- Not Without My Honor
+						["sourceQuest"] = 34818,	-- They Call Him Lantresor of the Blade
 						["provider"] = { "n", 80161 },	-- Lantresor of the Blade
 						["coord"] = { 85.4, 54.5, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 34818,	-- They Call Him Lantresor of the Blade
 						["groups"] = {
 							i(114694),	-- Beastrider Helm
 							i(114691),	-- Plainsthunder Helm
@@ -1016,10 +1016,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(34572, {	-- Obliterating Ogres
+						["sourceQuest"] = 34769,	-- A Choice to Make (alliance)
 						["provider"] = { "n", 79282 },	-- Rangari Eleena
 						["coord"] = { 78.7, 69.2, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 34769,	-- A Choice to Make (alliance)
 						["groups"] = {
 							i(114686),	-- Beastrider Boots
 							i(114683),	-- Plainsthunder Warboots
@@ -1028,10 +1028,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(35155, {	-- Obliterating Ogres
+						["sourceQuest"] = 34899,	-- A Choice to Make (horde)
 						["provider"] = { "n", 79281 },	-- Akrosh
 						["coord"] = { 83.0, 67.9, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 34899,	-- A Choice to Make (horde)
 						["groups"] = {
 							i(114686),	-- Beastrider Boots
 							i(114683),	-- Plainsthunder Warboots
@@ -1040,60 +1040,60 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(34593, {	-- Obtaining Ogre Offensive Orders
-						["provider"] = { "n", 79282 },	-- Rangari Eleena
-						["coord"] = { 78.7, 69.2, DRAENOR_NAGRAND },
-						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
 							34769,	-- A Choice to Make (alliance)
 							35148,	-- Trouble at the Overwatch
 						},
+						["provider"] = { "n", 79282 },	-- Rangari Eleena
+						["coord"] = { 78.7, 69.2, DRAENOR_NAGRAND },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(35157, {	-- Obtaining Ogre Offensive Orders
-						["provider"] = { "n", 79281 },	-- Akrosh
-						["coord"] = { 83.0, 67.9, DRAENOR_NAGRAND },
-						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							34899,	-- A Choice to Make (horde)
 							35150,	-- Trouble at the Overwatch
 						},
+						["provider"] = { "n", 79281 },	-- Akrosh
+						["coord"] = { 83.0, 67.9, DRAENOR_NAGRAND },
+						["races"] = HORDE_ONLY,
 					}),
 					q(34717, {	-- Operation: Just Arrowhead
-						["provider"] = { "n", 79722 },	-- Rangari Ogir
-						["coord"] = { 65.8, 68.6, DRAENOR_NAGRAND },
-						["races"] = ALLIANCE_ONLY,
 						["description"] = "This version is offered if you do not leave Rangari Ogir's area after turning in Operation: Surprise Party.",
 						["sourceQuest"] = 34682,	-- Operation: Surprise Party
-					}),
-					q(34720, {	-- Operation: Just Arrowhead
 						["provider"] = { "n", 79722 },	-- Rangari Ogir
 						["coord"] = { 65.8, 68.6, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
+					}),
+					q(34720, {	-- Operation: Just Arrowhead
 						["description"] = "This version is offered if you left Rangari Ogir's area after turning in Operation: Surprise Party.",
 						["sourceQuest"] = 34682,	-- Operation: Surprise Party
+						["provider"] = { "n", 79722 },	-- Rangari Ogir
+						["coord"] = { 65.8, 68.6, DRAENOR_NAGRAND },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(34682, {	-- Operation: Surprise Party
+						["sourceQuest"] = 34678,	-- Up and Running
 						["provider"] = { "n", 79674 },	-- Thaelin Darkanvil
 						["coord"] = { 63.0, 61.9, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 34678,	-- Up and Running
 					}),
 					q(35350, {	-- Queen of the Clefthoof
+						["sourceQuest"] = 35337,	-- That Pounding Sound
 						["provider"] = { "n", 82092 },	-- Kia Herman
 						["coord"] = { 63.5, 61.4, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 35337,	-- That Pounding Sound
 					}),
 					q(35375, {	-- Queen of the Clefthoof
+						["sourceQuest"] = 35374,	-- That Pounding Sound
 						["provider"] = { "n", 82078 },	-- Shadow Hunter Tax
 						["coord"] = { 82.5, 43.9, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 35374,	-- That Pounding Sound
 					}),
 					q(34596, {	-- Reglakk's Research
+						["sourceQuest"] = 34593,	-- Obtaining Ogre Offensive Orders
 						["provider"] = { "n", 81144 },	-- Rangari Eleena
 						["coord"] = { 84.0, 76.8, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 34593,	-- Obtaining Ogre Offensive Orders
 						["groups"] = {
 							i(114911),	-- Mighty Gorian Cleaver
 							i(114912),	-- Mighty Gorian Greatsword
@@ -1107,10 +1107,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(35158, {	-- Reglakk's Research
+						["sourceQuest"] = 35157,	-- Obtaining Ogre Offensive Orders
 						["provider"] = { "n", 81361 },	-- Dalgorsh
 						["coord"] = { 83.7, 76.8, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 35157,	-- Obtaining Ogre Offensive Orders
 						["groups"] = {
 							i(114911),	-- Mighty Gorian Cleaver
 							i(114912),	-- Mighty Gorian Greatsword
@@ -1124,63 +1124,63 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(34597, {	-- Removing the Paper Trail
-						["coord"] = { 81.3, 70.3, DRAENOR_NAGRAND },
 						["icon"] = 454060,
-						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 34769,	-- A Choice to Make (alliance)
 						["provider"] = {"o",231901},	-- Ogre Scrolls
+						["coord"] = { 81.3, 70.3, DRAENOR_NAGRAND },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(35156, {	-- Removing the Paper Trail
-						["coord"] = { 81.3, 70.3, DRAENOR_NAGRAND },
 						["icon"] = 454060,
-						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34899,	-- A Choice to Make (horde)
 						["provider"] = {"o",231901},	-- Ogre Scrolls
+						["coord"] = { 81.3, 70.3, DRAENOR_NAGRAND },
+						["races"] = HORDE_ONLY,
 					}),
 					q(34877, {	-- Removing the Reinforcements
-						["provider"] = { "n", 81144 },	-- Rangari Eleena
-						["coord"] = { 84.0, 76.8, DRAENOR_NAGRAND },
-						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
 							34572,	-- Obliterating Ogres
 							34593,	-- Obtaining Ogre Offensive Orders
 						},
+						["provider"] = { "n", 81144 },	-- Rangari Eleena
+						["coord"] = { 84.0, 76.8, DRAENOR_NAGRAND },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(35159, {	-- Removing the Reinforcements
+						["sourceQuest"] = 35157,	-- Obtaining Ogre Offensive Orders
 						["provider"] = { "n", 81361 },	-- Dalgorsh
 						["coord"] = { 83.7, 76.8, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 35157,	-- Obtaining Ogre Offensive Orders
 					}),
 					q(34665, {	-- Ring of Trials: Captain Boomspark
+						["sourceQuest"] = 34664,	-- Ring of Trials: Hol'yelaa
 						["provider"] = { "n", 79188 },	-- Dexyl Deadblade
 						["coord"] = { 79.4, 50.2, DRAENOR_NAGRAND },
-						["sourceQuest"] = 34664,	-- Ring of Trials: Hol'yelaa
 					}),
 					q(34662, {	-- Ring of Trials: Crushmaul
-						["provider"] = { "n", 79188 },	-- Dexyl Deadblade
-						["coord"] = { 79.4, 50.2, DRAENOR_NAGRAND },
 						["sourceQuests"] = {
 							34769,	-- A Choice to Make (alliance)
 							34899,	-- A Choice to Make (horde)
 							35921,	-- Bread and Circuses (alliance breadcrumb)
 							35922,	-- Bread and Circuses (horde breadcrumb)
 						},
+						["provider"] = { "n", 79188 },	-- Dexyl Deadblade
+						["coord"] = { 79.4, 50.2, DRAENOR_NAGRAND },
 					}),
 					q(34664, {	-- Ring of Trials: Hol'yelaa
+						["sourceQuest"] = 34663,	-- Ring of Trials: Raketalon
 						["provider"] = { "n", 79188 },	-- Dexyl Deadblade
 						["coord"] = { 79.4, 50.2, DRAENOR_NAGRAND },
-						["sourceQuest"] = 34663,	-- Ring of Trials: Raketalon
 					}),
 					q(34663, {	-- Ring of Trials: Raketalon
+						["sourceQuest"] = 34662,	-- Ring of Trials: Crushmaul
 						["provider"] = { "n", 79188 },	-- Dexyl Deadblade
 						["coord"] = { 79.4, 50.2, DRAENOR_NAGRAND },
-						["sourceQuest"] = 34662,	-- Ring of Trials: Crushmaul
 					}),
 					q(34666, {	-- Ring of Trials: Roakk the Zealot
+						["sourceQuest"] = 34665,	-- Ring of Trials: Captain Boomspark
 						["provider"] = { "n", 79188 },	-- Dexyl Deadblade
 						["coord"] = { 79.4, 50.2, DRAENOR_NAGRAND },
-						["sourceQuest"] = 34665,	-- Ring of Trials: Captain Boomspark
 						["groups"] = {
 							i(114711),	-- Beastrider Wristwraps
 							i(114709),	-- Plainsthunder Wristwraps
@@ -1189,13 +1189,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(34746, {	-- Shields Down!
-						["provider"] = { "n", 79743 },	-- Vindicator Mo'mor
-						["coord"] = { 66.7, 68.6, DRAENOR_NAGRAND },
-						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
 							34719,	-- ... and My Hammer
 							34718,	-- The Others
 						},
+						["provider"] = { "n", 79743 },	-- Vindicator Mo'mor
+						["coord"] = { 66.7, 68.6, DRAENOR_NAGRAND },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(114700),	-- Beastrider Spaulders
 							i(114701),	-- Plainsthunder Shoulders
@@ -1204,14 +1204,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(34918, {	-- Shields Down!
-						["provider"] = { "n", 80429 },	-- Shadow Hunter Kajassa
-						["coord"] = { 68.5, 64.5, DRAENOR_NAGRAND },
-						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							34915,	-- I Help Ya Kill Dem
 							34917,	-- Shields Up!
 							34916,	-- The Blessing of Samedi
 						},
+						["provider"] = { "n", 80429 },	-- Shadow Hunter Kajassa
+						["coord"] = { 68.5, 64.5, DRAENOR_NAGRAND },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(114707),	-- Beastrider Belt
 							i(114704),	-- Plainsthunder Girdle
@@ -1225,23 +1225,23 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 					q(35338, {	-- Shooting the Breeze (A)
+						["sourceQuest"] = 34769,	-- A Choice to Make
 						["provider"] = { "n", 82094 },	-- Rangari Laara
 						["coord"] = { 63.4, 61.4, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 34769,	-- A Choice to Make
 					}),
 					q(35376, {	-- Shooting the Breeze (H)
+						["sourceQuest"] = 34899,	-- A Choice to Make
 						["provider"] = { "n", 82080 },	-- Stalker Ogka
 						["coord"] = { 82.5, 43.9, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 34899,	-- A Choice to Make
 					}),
 					q(35084, {	-- Silence the Call
-						["provider"] = {"o",233263},	-- Shamanstone
 						["sourceQuests"] = {
 							35372,	-- The Call of Oshu'gun (alliance)
 							35232,	-- The Call of Oshu'gun (horde)
 						},
+						["provider"] = {"o",233263},	-- Shamanstone
 						["coords"] = {
 							{ 55.4, 55.9, DRAENOR_NAGRAND },
 							{ 51.8, 58.8, DRAENOR_NAGRAND },
@@ -1255,93 +1255,93 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(35067, {	-- Silence the War Machines
+						["sourceQuest"] = 35060,	-- Terms of Surrender
 						["provider"] = { "n", 81097 },	-- Lieutenant K. K. Lee
 						["coord"] = { 55.4, 42.0, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 35060,	-- Terms of Surrender
 					}),
 					q(35099, {	-- Silence the War Machines
+						["sourceQuest"] = 35096,	-- Terms of Surrender
 						["provider"] = { "n", 81194 },	-- Senior Sergeant Igerdes
 						["coord"] = { 55.4, 42.0, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 35096,	-- Terms of Surrender
 					}),
 					q(35356, {	-- Someone's Missing Arrow
-						["races"] = ALLIANCE_ONLY,
 						["provider"] = {"i",113107},	-- Rangari Arrow
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(35377, {	-- Someone's Missing Axe
-						["races"] = HORDE_ONLY,
 						["provider"] = { "i", 113109 },	-- Frostwolf Axe
+						["races"] = HORDE_ONLY,
 					}),
 					q(35393, {	-- Spiritual Matters
+						["sourceQuest"] = 35372,	-- The Call of Oshu'gun
 						["provider"] = { "n", 82179 },	-- Vindicator Nobundo
 						["coord"] = { 55.5, 55.9, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 35372,	-- The Call of Oshu'gun
 					}),
 					q(35231, {	-- Spiritual Matters
+						["sourceQuest"] = 35232,	-- The Call of Oshu'gun
 						["provider"] = { "n", 81335 },	-- Farseer Drek'Thar
 						["coord"] = { 55.5, 55.9, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 35232,	-- The Call of Oshu'gun
 					}),
 					q(34914, {	-- Target of Opportunity: Telaar
+						["sourceQuest"] = 34899,	-- A Choice to Make
 						["provider"] = { "n", 81189 },	-- Aggra
 						["coord"] = { 82.8, 45.0, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 34899,	-- A Choice to Make
 						["isBreadcrumb"] = true,
 					}),
 					q(34869, {	-- Tastes Like Chicken
-						["provider"] = { "n", 81955 },	-- Digrem Orebar
-						["coord"] = { 79.2, 52.6, DRAENOR_NAGRAND },
 						["sourceQuests"] = {
 							34769,	-- A Choice to Make (alliance)
 							34899,	-- A Choice to Make (horde)
 						},
+						["provider"] = { "n", 81955 },	-- Digrem Orebar
+						["coord"] = { 79.2, 52.6, DRAENOR_NAGRAND },
 					}),
 					q(35060, {	-- Terms of Surrender
-						["provider"] = { "n", 81039 },	-- Vindicator Yrel
-						["coord"] = { 61.9, 40.5, DRAENOR_NAGRAND },
-						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
 							34769,	-- A Choice to Make (alliance)
 							35059,	-- Along the Riverside
 						},
+						["provider"] = { "n", 81039 },	-- Vindicator Yrel
+						["coord"] = { 61.9, 40.5, DRAENOR_NAGRAND },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(35096, {	-- Terms of Surrender
-						["provider"] = { "n", 81186 },	-- Durotan
-						["coord"] = { 48.5, 48.2, DRAENOR_NAGRAND },
-						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							34899,	-- A Choice to Make (horde)
 							35095,	-- Along the Riverside
 						},
+						["provider"] = { "n", 81186 },	-- Durotan
+						["coord"] = { 48.5, 48.2, DRAENOR_NAGRAND },
+						["races"] = HORDE_ONLY,
 					}),
 					q(35069, {	-- Terror of Nagrand
+						["sourceQuest"] = 35060,	-- Terms of Surrender
 						["provider"] = { "n", 81134 },	-- Fallen Alliance Solder
 						["coord"] = { 56.1, 43.7, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 35060,	-- Terms of Surrender
 					}),
 					q(35101, {	-- Terror of Nagrand
+						["sourceQuest"] = 35096,	-- Terms of Surrender
 						["provider"] = { "n", 81195 },	-- Fallen Horde Soldier
 						["coord"] = { 56.1, 43.7, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 35096,	-- Terms of Surrender
 					}),
 					q(35140, {	-- THAELIN!
+						["sourceQuest"] = 35061,	-- The Pride of Lok-rath
 						["provider"] = { "n", 81039 },	-- Vindicator Yrel
 						["coord"] = { 61.9, 40.5, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 35061,	-- The Pride of Lok-rath
 					}),
 					q(35337, {	-- That Pounding Sound
+						["sourceQuest"] = 34769,	-- A Choice to Make
 						["provider"] = { "n", 82092 },	-- Kia Herman
 						["coord"] = { 63.5, 61.4, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 34769,	-- A Choice to Make
 						["groups"] = {
 							i(118137),	-- Plainshunter Blackjack
 							i(118135),	-- Plainshunter Claws
@@ -1352,10 +1352,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(35374, {	-- That Pounding Sound
+						["sourceQuest"] = 34899,	-- A Choice to Make
 						["provider"] = { "n", 82078 },	-- Shadow Hunter Taz
 						["coord"] = { 82.5, 43.9, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 34899,	-- A Choice to Make
 						["groups"] = {
 							i(118137),	-- Plainshunter Blackjack
 							i(118135),	-- Plainshunter Claws
@@ -1366,16 +1366,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(34954, {	-- The Blade Itself
+						["sourceQuest"] = 34951,	-- They Call Him Lantresor of the Blade
 						["provider"] = { "n", 80161 },	-- Lantresor of the Blade
 						["coord"] = { 85.4, 54.6, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 34951,	-- They Call Him Lantresor of the Blade
 					}),
 					q(34849, {	-- The Blade Itself
+						["sourceQuest"] = 34818,	-- They Call Him Lantresor of the Blade
 						["provider"] = { "n", 80161 },	-- Lantresor of the Blade
 						["coord"] = { 85.4, 54.5, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 34818,	-- They Call Him Lantresor of the Blade
 					}),
 					q(34916, {	-- The Blessing of Samedi
 						["provider"] = { "n", 80429 },	-- Shadow Hunter Kajassa
@@ -1389,31 +1389,31 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(37286, {	-- The Bloodshed Never Ends
+						["description"] = "Must have the |cFFFFD700Gladiator's Sanctum|r in your garrison.",
 						["provider"] = { "n", 87311 },	-- Kharg
 						["coord"] = { 33.0, 38.4, DRAENOR_NAGRAND },
-						["description"] = "Must have the |cFFFFD700Gladiator's Sanctum|r in your garrison.",
 						["isWeekly"] = true,
 					}),
 					q(35372, {	-- The Call of Oshu'gun
+						["sourceQuest"] = 35330,	-- The Ritual of Binding
 						["provider"] = { "n", 82138 },	-- Vindicator Nobundo
 						["coord"] = { 71.7, 19.6, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 35330,	-- The Ritual of Binding
 					}),
 					q(35232, {	-- The Call of Oshu'gun
+						["sourceQuest"] = 35265,	-- The Ritual of Binding
 						["provider"] = { "n", 80597 },	-- Farseer Drek'Thar
 						["coord"] = { 71.7, 19.6, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 35265,	-- The Ritual of Binding
 					}),
 					q(35396, {	-- The Dark Heart of Oshu'gun
-						["provider"] = { "n", 82181 },	-- Vindicator Nobundo
-						["coord"] = { 46.0, 32.7, 553 },
-						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
 							35398,	-- Dark Binding
 							35397,	-- The Pale Threat
 						},
+						["provider"] = { "n", 82181 },	-- Vindicator Nobundo
+						["coord"] = { 46.0, 32.7, 553 },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(118126),	-- Void-Warped Oshu'gun Crossbow
 							i(118127),	-- Void-Warped Oshu'gun Dagger
@@ -1426,13 +1426,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(35317, {	-- The Dark Heart of Oshu'gun
-						["provider"] = { "n", 81953 },	-- Farseer Drek'Thar
-						["coord"] = { 46.0, 32.7, DRAENOR_NAGRAND },
-						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							35144,	-- Dark Binding
 							35145,	-- The Pale Threat
 						},
+						["provider"] = { "n", 81953 },	-- Farseer Drek'Thar
+						["coord"] = { 46.0, 32.7, DRAENOR_NAGRAND },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(118126),	-- Void-Warped Oshu'gun Crossbow
 							i(118127),	-- Void-Warped Oshu'gun Dagger
@@ -1449,9 +1449,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 79.4, 30.2, DRAENOR_NAGRAND },
 					}),
 					q(34941, {	-- The Debt We Share
+						["sourceQuest"] = 34932,	-- Guise of the Deceiver
 						["provider"] = { "n", 80434 },	-- Gar'rok
 						["coord"] = { 75.0, 22.7, DRAENOR_NAGRAND },
-						["sourceQuest"] = 34932,	-- Guise of the Deceiver
 						["groups"] = {
 							i(114885),	-- Gar'rok's Patchwork Cloak
 							i(119052),	-- Gar'rok's Roadworn Cloak
@@ -1461,6 +1461,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(34964, {	-- The Farseer Awaits
+						["sourceQuest"] = 34918,	-- Shields Down!
 						["qgs"] = {
 							80003,	-- Thrall
 							81419,	-- Thrall
@@ -1470,69 +1471,65 @@ root(ROOTS.Zones, {
 							{ 67.0, 33.7, DRAENOR_NAGRAND },
 						},
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 34918,	-- Shields Down!
 						["isBreadcrumb"] = true,
 					}),
 					q(35395, {	-- The Fate of Gordawg
-						["provider"] = { "n", 82181 },	-- Vindicator Nobundo
-						["coord"] = { 46.0, 32.7, 553 },
-						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
 							35398,	-- Dark Binding
 							35397,	-- The Pale Threat
 						},
+						["provider"] = { "n", 82181 },	-- Vindicator Nobundo
+						["coord"] = { 46.0, 32.7, 553 },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(34271, {	-- The Fate of Gordawg
-						["provider"] = { "n", 81953 },	-- Farseer Drek'Thar
-						["coord"] = { 46.0, 32.7, DRAENOR_NAGRAND },
-						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							35144,	-- Dark Binding
 							35145,	-- The Pale Threat
 						},
+						["provider"] = { "n", 81953 },	-- Farseer Drek'Thar
+						["coord"] = { 46.0, 32.7, DRAENOR_NAGRAND },
+						["races"] = HORDE_ONLY,
 					}),
 					q(34952, {	-- The Friend o' My Enemy
-						["provider"] = { "n", 79954 },	-- Hansel Heavyhands
-						["coord"] = { 63.5, 61.8, DRAENOR_NAGRAND },
-						["races"] = ALLIANCE_ONLY,
 						["description"] = "This quest is only available if you do not accept |cFFFFD700Blood of the Burning Blade|r from Lantresor of the Blade.",
 						["sourceQuest"] = 34769,	-- A Choice to Make
 						["altQuests"] = { 34953 },	-- Blood of the Burning Blade
+						["provider"] = { "n", 79954 },	-- Hansel Heavyhands
+						["coord"] = { 63.5, 61.8, DRAENOR_NAGRAND },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(34826, {	-- The Friend of My Enemy
+						["description"] = "This quest is only available if you do not accept |cFFFFD700Blood of the Burning Blade|r from Lantresor of the Blade.",
+						["sourceQuest"] = 34808,	-- More Lazy Peons
+						["altQuests"] = { 35143 },	-- Blood of the Burning Blade
 						["provider"] = { "n", 80003 },	-- Thrall
 						["coord"] = { 82.8, 45.0, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
-						["altQuests"] = { 35143 },	-- Blood of the Burning Blade
-						["sourceQuest"] = 34808,	-- More Lazy Peons
-						["description"] = "This quest is only available if you do not accept |cFFFFD700Blood of the Burning Blade|r from Lantresor of the Blade.",
 					}),
 					q(35146, {	-- The Good Doctor
 						["provider"] = { "n", 84632 },	-- Marybelle Walsh
 						["coord"] = { 77.4, 47.3, DRAENOR_NAGRAND },
 					}),
 					q(34747, {	-- The Honor of a Blademaster
+						["sourceQuest"] = 34957,	-- Challenge of the Masters
 						["provider"] = { "n", 81790 },	-- Lantresor of the Blade
 						["coord"] = { 64.2, 59.6, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 34957,	-- Challenge of the Masters
 						["groups"] = {
 							follower(157),	-- Lantresor of the Blade
 						},
 					}),
 					q(34770, {	-- The Honor of a Blademaster
+						["sourceQuest"] = 34868,	-- Challenge of the Masters
 						["provider"] = { "n", 81790 },	-- Lantresor of the Blade
 						["coord"] = { 82.6, 46.7, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 34868,	-- Challenge of the Masters
 						["groups"] = {
 							follower(157),	-- Lantresor of the Blade
 						},
 					}),
 					q(34675, {	-- The Might of the Warsong
-						["provider"] = { "n", 79263 },	-- Lieutenant Balfor
-						["coord"] = { 86.3, 66.1, DRAENOR_NAGRAND },
-						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
 							34674,	-- Taking the Fight to Nagrand
 							37184,	-- Taking the Fight to Nagrand
@@ -1540,11 +1537,11 @@ root(ROOTS.Zones, {
 							49567,	-- Hero's Call: Nagrand! (Draenor)
 							-- #endif
 						},
+						["provider"] = { "n", 79263 },	-- Lieutenant Balfor
+						["coord"] = { 86.3, 66.1, DRAENOR_NAGRAND },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(34795, {	-- The Might of the Warsong
-						["provider"] = { "n", 80001 },	-- Stone Guard Brox
-						["coord"] = { 86.3, 66.1, DRAENOR_NAGRAND },
-						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							34794,	-- Taking the Fight to Nagrand
 							36952,	-- Taking the Fight to Nagrand
@@ -1552,16 +1549,20 @@ root(ROOTS.Zones, {
 							49549,	-- Warchief's Command: Nagrand! (Draenor)
 							-- #endif
 						},
+						["provider"] = { "n", 80001 },	-- Stone Guard Brox
+						["coord"] = { 86.3, 66.1, DRAENOR_NAGRAND },
+						["races"] = HORDE_ONLY,
 					}),
 					q(34598, {	-- The Missing Caravan
-						["provider"] = { "n", 79310 },	-- Pyxni Pennypocket
-						["coord"] = { 78.5, 48.5, DRAENOR_NAGRAND },
 						["sourceQuests"] = {
 							34769,	-- A Choice to Make (alliance)
 							34899,	-- A Choice to Make (horde)
 						},
+						["provider"] = { "n", 79310 },	-- Pyxni Pennypocket
+						["coord"] = { 78.5, 48.5, DRAENOR_NAGRAND },
 					}),
 					q(35087, {	-- The Nether Approaches
+						["sourceQuest"] = 35085,	-- Through the Nether
 						["provider"] = {"o",233263},	-- Shamanstone
 						["coords"] = {
 							{ 55.4, 55.9, DRAENOR_NAGRAND },
@@ -1569,31 +1570,30 @@ root(ROOTS.Zones, {
 							{ 46.8, 57.5, DRAENOR_NAGRAND },
 							{ 52.0, 68.8, DRAENOR_NAGRAND },
 						},
-						["sourceQuest"] = 35085,	-- Through the Nether
 					}),
 					q(34718, {	-- The Others
+						["sourceQuest"] = 34716,	-- Mo'mor Might Know
 						["provider"] = { "n", 79743 },	-- Vindicator Mo'mor
 						["coord"] = { 66.7, 68.6, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 34716,	-- Mo'mor Might Know
 					}),
 					q(35397, {	-- The Pale Threat
+						["sourceQuest"] = 35372,	-- The Call of Oshu'gun
 						["provider"] = { "n", 82179 },	-- Vindicator Nobundo
 						["coord"] = { 55.5, 55.9, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 35372,	-- The Call of Oshu'gun
 					}),
 					q(35145, {	-- The Pale Threat
+						["sourceQuest"] = 35232,	-- The Call of Oshu'gun
 						["provider"] = { "n", 81335 },	-- Farseer Drek'Thar
 						["coord"] = { 55.5, 55.9, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 35232,	-- The Call of Oshu'gun
 					}),
 					q(35061, {	-- The Pride of Lok-rath
+						["sourceQuest"] = 35060,	-- Terms of Surrender
 						["provider"] = { "n", 81086 },	-- Uruk Foecleaver
 						["coord"] = { 55.5, 42.0, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 35060,	-- Terms of Surrender
 						["groups"] = {
 							i(118142),	-- Beastrider Belt
 							i(118139),	-- Plainsthunder Waistguard
@@ -1602,10 +1602,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(35097, {	-- The Pride of Lok-rath
+						["sourceQuest"] = 35096,	-- Terms of Surrender
 						["provider"] = { "n", 81086 },	-- Uruk Foecleaver
 						["coord"] = { 55.5, 42.0, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 35096,	-- Terms of Surrender
 						["groups"] = {
 							i(118142),	-- Beastrider Belt
 							i(118139),	-- Plainsthunder Waistguard
@@ -1614,15 +1614,15 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(35330, {	-- The Ritual of Binding
-						["provider"] = { "n", 82138 },	-- Vindicator Nobundo
-						["coord"] = { 71.7, 19.6, DRAENOR_NAGRAND },
-						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
 							35333,	-- Elemental Attunement
 							34881,	-- Earth, Wind and Fire... and Water
 							34893,	-- Guardians of the Plateau
 							34941,	-- The Debt We Share
 						},
+						["provider"] = { "n", 82138 },	-- Vindicator Nobundo
+						["coord"] = { 71.7, 19.6, DRAENOR_NAGRAND },
+						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(114682),	-- Beastrider Vest
 							i(114680),	-- Plainsthunder Chestplate
@@ -1631,15 +1631,15 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(35265, {	-- The Ritual of Binding
-						["provider"] = { "n", 80597 },	-- Farseer Drek'Thar
-						["coord"] = { 71.7, 19.6, DRAENOR_NAGRAND },
-						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							34891,	-- Elemental Attunement
 							34881,	-- Earth, Wind and Fire... and Water
 							34893,	-- Guardians of the Plateau
 							34941,	-- The Debt We Share
 						},
+						["provider"] = { "n", 80597 },	-- Farseer Drek'Thar
+						["coord"] = { 71.7, 19.6, DRAENOR_NAGRAND },
+						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(114682),	-- Beastrider Vest
 							i(114680),	-- Plainsthunder Chestplate
@@ -1648,9 +1648,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(36275, {	-- The Search For Research
+						["sourceQuest"] = 35146,	-- The Good Doctor
 						["provider"] = { "n", 84861 },	-- A Fascinating Fungus
 						["coord"] = { 86.6, 28.3, DRAENOR_NAGRAND },
-						["sourceQuest"] = 35146,	-- The Good Doctor
 						["groups"] = {
 							i(116830),	-- Researcher's Ring
 							i(119063),	-- Sporebat Glowpod Ring
@@ -1660,16 +1660,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(35088, {	-- The Shadow of the Void
+						["sourceQuests"] = {
+							35087,	-- The Nether Approaches
+							35086,	-- The Void March
+						},
 						["provider"] = {"o",233263},	-- Shamanstone
 						["coords"] = {
 							{ 55.4, 55.9, DRAENOR_NAGRAND },
 							{ 51.8, 58.8, DRAENOR_NAGRAND },
 							{ 46.8, 57.5, DRAENOR_NAGRAND },
 							{ 52.0, 68.8, DRAENOR_NAGRAND },
-						},
-						["sourceQuests"] = {
-							35087,	-- The Nether Approaches
-							35086,	-- The Void March
 						},
 						["groups"] = {
 							i(118143),	-- Beastrider Gauntlets
@@ -1679,6 +1679,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(35086, {	-- The Void March
+						["sourceQuest"] = 35085,	-- Through the Nether
 						["provider"] = {"o",233263},	-- Shamanstone
 						["coords"] = {
 							{ 55.4, 55.9, DRAENOR_NAGRAND },
@@ -1686,40 +1687,43 @@ root(ROOTS.Zones, {
 							{ 46.8, 57.5, DRAENOR_NAGRAND },
 							{ 52.0, 68.8, DRAENOR_NAGRAND },
 						},
-						["sourceQuest"] = 35085,	-- Through the Nether
 					}),
 					q(35271, {	-- The Warsong Threat
+						["provider"] = {"o",232024},	-- Warsong Attack Plans
 						["coord"] = { 51.8, 62.0, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
-						["provider"] = {"o",232024},	-- Warsong Attack Plans
 					}),
 					q(35386, {	-- The Warsong Threat
+						["provider"] = {"o",232024},	-- Warsong Attack Plans
 						["coord"] = { 51.8, 62.0, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
-						["provider"] = {"o",232024},	-- Warsong Attack Plans
 					}),
 					q(37981, {	-- The World Famous Ring of Blood!
 						["description"] = "The item that starts this quest has a chance to drop from any of the daily bounties offered in your garrison (Renzik 'The Shiv' for Alliance and Shadow Hunter Ty'jin for Horde).\n\nThe item isn't looted, but will pop directly into your inventory when the quest mob dies.  If it doesn't drop the first time, you can camp the mob for more chances.  You'll get a total of three invitations, which you can sell or trade.\n",
 						["provider"] = { "i", 122190 },	-- Ring of Blood Invitation
 					}),
 					q(34951, {	-- They Call Him Lantresor of the Blade
+						["sourceQuest"] = 34769,	-- A Choice to Make
 						["provider"] = { "n", 80624 },	-- Vindicator Mo'mor
 						["coord"] = { 63.4, 61.8, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 34769,	-- A Choice to Make
 					}),
 					q(34818, {	-- They Call Him Lantresor of the Blade
+						["sourceQuest"] = 34808,	-- More Lazy Peons
 						["provider"] = { "n", 80140 },	-- Foreman Thazz'ril
 						["coord"] = { 82.9, 44.1, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 34808,	-- More Lazy Peons
 					}),
 					q(34514, {	-- They've Got The Goods!
+						["sourceQuest"] = 34598,	-- The Missing Caravan
 						["provider"] = { "n", 79312 },	-- Greezlex Fizzpinch
 						["coord"] = { 78.9, 58.8, DRAENOR_NAGRAND },
-						["sourceQuest"] = 34598,	-- The Missing Caravan
 					}),
 					q(35085, {	-- Through the Nether
+						["sourceQuests"] = {
+							35083,	-- Disrupt the Rituals
+							35084,	-- Silence the Call
+						},
 						["provider"] = {"o",233263},	-- Shamanstone
 						["coords"] = {
 							{ 55.4, 55.9, DRAENOR_NAGRAND },
@@ -1727,38 +1731,34 @@ root(ROOTS.Zones, {
 							{ 46.8, 57.5, DRAENOR_NAGRAND },
 							{ 52.0, 68.8, DRAENOR_NAGRAND },
 						},
-						["sourceQuests"] = {
-							35083,	-- Disrupt the Rituals
-							35084,	-- Silence the Call
-						},
 					}),
 					q(35148, {	-- Trouble at the Overwatch
+						["sourceQuest"] = 34769,	-- A Choice to Make
 						["provider"] = { "n", 79954 },	-- Hansel Heavyhands
 						["coord"] = { 63.5, 61.8, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 34769,	-- A Choice to Make
 						["isBreadcrumb"] = true,
 					}),
 					q(35150, {	-- Trouble at the Overwatch
+						["sourceQuest"] = 34899,	-- A Choice to Make
 						["provider"] = { "n", 81319 },	-- Draka
 						["coord"] = { 82.8, 45.0, DRAENOR_NAGRAND },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 34899,	-- A Choice to Make
 						["isBreadcrumb"] = true,
 					}),
 					q(34678, {	-- Up and Running
+						["sourceQuest"] = 34675,	-- The Might of the Warsong
 						["provider"] = { "n", 79576 },	-- Rangari D'kaan
 						["coord"] = { 63.5, 61.8, DRAENOR_NAGRAND },
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 34675,	-- The Might of the Warsong
 					}),
 					q(34513, {	-- WANTED: Razorpaw!
-						["coord"] = { 78.9, 58.9, DRAENOR_NAGRAND },
 						["sourceQuests"] = {
 							34769,	-- A Choice to Make (alliance)
 							34899,	-- A Choice to Make (horde)
 						},
 						["provider"] = {"o",230303},	-- Bounty Board
+						["coord"] = { 78.9, 58.9, DRAENOR_NAGRAND },
 					}),
 					warchiefscommand(q(49549, {	-- Warchief's Command: Nagrand! (Draenor)
 						["timeline"] = { ADDED_7_3_5 },

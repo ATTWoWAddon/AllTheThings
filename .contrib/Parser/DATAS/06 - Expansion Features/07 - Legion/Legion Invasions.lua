@@ -34,8 +34,8 @@ root(ROOTS.ExpansionFeatures,
 				}),
 				n(QUESTS, {
 					q(46205, {	-- A Conduit No More
-						["provider"] = { "n", 117774 },	-- Prince Farondis
 						["sourceQuests"] = { 45795 },	-- Presence of Power
+						["provider"] = { "n", 117774 },	-- Prince Farondis
 						["coord"] = { 55.1, 67.4, AZSUNA },
 						["repeatable"] = true,
 					}),
@@ -68,50 +68,50 @@ root(ROOTS.ExpansionFeatures,
 						}
 					}),
 					q(46199, {	-- Battle for Azsuna
-						["provider"] = { "n", 119002 },	-- Prince Farondis
 						["sourceQuests"] = { 46205 },	-- A Conduit No More
+						["provider"] = { "n", 119002 },	-- Prince Farondis
 						["coord"] = { 58.4, 21.4, AZSUNA },
 						["repeatable"] = true,
 					}),
 					q(46182, {	-- Battle for Highmountain
-						["provider"] = { "n", 119676 },	-- Lasan Skyhorn
 						["sourceQuests"] = { 45572 },	-- Holding Our Ground
+						["provider"] = { "n", 119676 },	-- Lasan Skyhorn
 						["coord"] = { 50.2, 64.4, HIGHMOUNTAIN },
 						["repeatable"] = true,
 					}),
 					q(45856, {	-- Battle for Val'sharah
-						["provider"] = { "n", 118250 },	-- Commander Jarod Shadowsong
 						["sourceQuests"] = { 44789 },	-- Holding the Ramparts
+						["provider"] = { "n", 118250 },	-- Commander Jarod Shadowsong
 						["coord"] = { 44.0, 50.6, VALSHARAH },
 						["repeatable"] = true,
 					}),
 					q(46110, {	-- Battle for Stormheim
-						["provider"] = { "n", 118778 },	-- Val'kyr of Odyn
 						["sourceQuests"] = { 45406 },	-- The Storm's Fury
+						["provider"] = { "n", 118778 },	-- Val'kyr of Odyn
 						["coord"] = { 81.7, 7.1, STORMHEIM },
 						["repeatable"] = true,
 					}),
 					q(45572, {	-- Holding Our Ground
-						["provider"] = { "n", 119944 },	-- Lasan Skyhorn
 						["sourceQuests"] = { 45840 },	-- Assault on Highmountain
+						["provider"] = { "n", 119944 },	-- Lasan Skyhorn
 						["coord"] = { 25.2, 22.6, 750 },	-- Thunder Totem
 						["repeatable"] = true,
 					}),
 					q(44789, {	-- Holding the Ramparts
-						["provider"] = { "n", 118183 },	-- Commander Jarod Shadowsong
 						["sourceQuests"] = { 45812 },	-- Assault on Val'sharah
+						["provider"] = { "n", 118183 },	-- Commander Jarod Shadowsong
 						["coord"] = { 39.0, 51.6, VALSHARAH },
 						["repeatable"] = true,
 					}),
 					q(45795, {	-- Presence of Power
-						["provider"] = { "n", 118942 },	-- Prince Farondis
 						["sourceQuests"] = { 45838 },	-- Assault on Azsuna
+						["provider"] = { "n", 118942 },	-- Prince Farondis
 						["coord"] = { 56.0, 60.8, AZSUNA },
 						["repeatable"] = true,
 					}),
 					q(45406, {	-- The Storm's Fury
-						["provider"] = { "n", 116868 },	-- Vethir
 						["sourceQuests"] = { 45839 },	-- Assault on Stormheim
+						["provider"] = { "n", 116868 },	-- Vethir
 						["repeatable"] = true,
 					}),
 				}),

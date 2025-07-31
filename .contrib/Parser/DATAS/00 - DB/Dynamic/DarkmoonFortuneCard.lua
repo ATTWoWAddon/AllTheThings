@@ -1,4 +1,4 @@
-﻿local ObjectDB = ObjectDB; for objectID,objectData in pairs({
+local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[467337] = {
 		readable = "Darkmoon Fortune Card",
 		model = 5334402,

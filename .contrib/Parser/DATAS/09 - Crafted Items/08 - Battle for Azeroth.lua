@@ -922,11 +922,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 			i(153702),	-- Kubiline
 			i(153705),	-- Kyanite
 			i(154124),	-- Laribole
+			i(168190, { ["timeline"] = { ADDED_8_2_0 } }),	-- Lava Lazuli
 			i(154120),	-- Owlseye
 			i(154125),	-- Royal Quartz
 			i(153701),	-- Rubellite
 			i(168192, { ["timeline"] = { ADDED_8_2_0 } }),	-- Sand Spinel
 			i(154121),	-- Scarlet Diamond
+			i(168191, { ["timeline"] = { ADDED_8_2_0 } }),	-- Sea Currant
 			i(153703),	-- Solstone
 			i(154122),	-- Tidal Amethyst
 			i(153704),	-- Viridium

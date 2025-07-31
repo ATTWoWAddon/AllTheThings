@@ -55,29 +55,29 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 	n(VENTHYR, {
 		n(QUESTS, {
 			q(63215, {	-- Report to Draven
-				["provider"] = { "n", 159478 },	-- Tal-Inara
 				["sourceQuests"] = {
 					-- TODO: confirm
 					57878,	-- Choosing Your Purpose [Story]
 					62000,	-- Choosing Your Purpose [Skip]
 				},
 				["sourceQuestNumRequired"] = 1,
+				["provider"] = { "n", 159478 },	-- Tal-Inara
 				["coord"] = { 39.2, 69.7, ORIBOS },
 				["isBreadcrumb"] = true,
 			}),
 			q(59314, {	-- Sinfall
-				["provider"] = { "n", 171589 },	-- General Draven
 				["sourceQuests"] = {
 					57878,	-- Choosing Your Purpose [Story]
 					62000,	-- Choosing Your Purpose [Skip]
 					63215,	-- Report to Draven [Skip]
 				},
 				["sourceQuestNumRequired"] = 2,	-- You want to be able to be given the Breadcrumb warning so you can pickup General Draven quest.
+				["provider"] = { "n", 171589 },	-- General Draven
 				["coord"] = { 44.8, 68.9, ORIBOS },
 			}),
 			q(57889, {	-- "Accidental" Arson
-				["provider"] = { "n", 159694 },	-- The Countess
 				["sourceQuests"] = { 57887 },	-- Killing the Messenger
+				["provider"] = { "n", 159694 },	-- The Countess
 				["coord"] = { 58.0, 27.5, REVENDRETH },
 				["groups"] = {
 					i(180917),	-- Soulbreaker's Ebony Leggings
@@ -87,37 +87,37 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				},
 			}),
 			q(62695, {	-- A Call to Service
-				["provider"] = { "n", 175772 },	-- Rahel
 				["sourceQuests"] = { 62857 },	-- The Court's Bounty
+				["provider"] = { "n", 175772 },	-- Rahel
 				["coord"] = { 54.0, 27.2, SINFALL_REACHES },
 			}),
 			q(62914, {	-- A Coalition of the Willing
-				["provider"] = { "n", 164738 },	-- Tenaval
 				["sourceQuests"] = { 62870 },	-- Souls for Sinfall
+				["provider"] = { "n", 164738 },	-- Tenaval
 				["coord"] = { 45.9, 27.6, SINFALL_REACHES },
 			}),
 			q(62920, {	-- A Conduit For Change
-				["provider"] = { "n", 171950 },	-- The Accuser
 				["sourceQuests"] = { 62919 },	-- Strengthening the Bond
+				["provider"] = { "n", 171950 },	-- The Accuser
 				["coord"] = { 44.6, 20.1, SINFALL_REACHES },
 			}),
 			q(57885, {	-- A Discreet Entrance
-				["provider"] = { "n", 159513 },	-- Bogdan
 				["sourceQuests"] = { 57884 },	-- Reclaiming Thornhill Manor
+				["provider"] = { "n", 159513 },	-- Bogdan
 				["coord"] = { 58.8, 29.9, REVENDRETH },
 			}),
 			q(57886, {	-- A Meal and a Deal
-				["provider"] = { "n", 159694 },	-- The Countess
 				["sourceQuests"] = { 57885 },	-- A Discreet Entrance
+				["provider"] = { "n", 159694 },	-- The Countess
 				["coord"] = { 58.0, 27.5, REVENDRETH },
 			}),
 			q(58600, {	-- A Perfect Circle
-				["provider"] = { "n", 160280 },	-- Mikanikos
 				["sourceQuests"] = {
 					58585,	-- No Friend of Mine
 					58584,	-- Right Our Wrongs
 					58586,	-- The Right Stuff
 				},
+				["provider"] = { "n", 160280 },	-- Mikanikos
 				["coord"] = { 50.1, 20.5, BASTION },
 				["groups"] = {
 					i(180450),	-- Assorted Bolts (QI!)
@@ -127,16 +127,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				},
 			}),
 			q(59325, {	-- A Stalwart Ally
-				["provider"] = { "n", 161977 },	-- General Draven
 				["sourceQuests"] = { 58407 },	-- The Medallion of Dominion
+				["provider"] = { "n", 161977 },	-- General Draven
 				["coord"] = { 46.2, 14.7, SINFALL_REACHES },
 				["groups"] = {
 					follower(1209),	-- General Draven
 				},
 			}),
 			q(65169, {	-- A Stalwart Ally
-				["provider"] = { "n", 161977 },	-- General Draven
 				["sourceQuests"] = { 62920 },	-- A Conduit For Change
+				["provider"] = { "n", 161977 },	-- General Draven
 				["coord"] = { 46.1, 14.9, SINFALL_REACHES },
 				["timeline"] = { ADDED_9_1_5 },
 				["groups"] = {
@@ -144,72 +144,72 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				},
 			}),
 			q(58555, {	-- A Tense Reunion
-				["provider"] = { "n", 162213 },	-- General Draven
 				["sourceQuests"] = { 58530 },	-- Hidden Mirror
+				["provider"] = { "n", 162213 },	-- General Draven
 				["coord"] = { 49.7, 30.1, BASTION },
 			}),
 			q(60183, {	-- After Them!
-				["provider"] = { "n", 167381 },	-- Baroness Draka
 				["sourceQuests"] = {
 					57771,	-- An Unwelcome Incursion
 					60265,	-- Disrupting the Chain
 					57772,	-- Fangs and Minds
 					60145,	-- Third Talon Vartox
 				},
+				["provider"] = { "n", 167381 },	-- Baroness Draka
 				["coord"] = { 56.3, 66.6, REVENDRETH },
 			}),
 			q(57880, {	-- An Estate Within the Old Gate
-				["provider"] = { "n", 161979 },	-- Theotar
 				["sourceQuests"] = { 60904 },	-- Medallion of Desire
+				["provider"] = { "n", 161979 },	-- Theotar
 				["coord"] = { 50.2, 18.6, SINFALL_REACHES },
 				["groups"] = {
 					i(173158),	-- Theotar's Note (QI!)
 				},
 			}),
 			q(58424, {	-- An Eye for an Amulet
-				["provider"] = { "n", 160956 },	-- Watcher Emil
 				["sourceQuests"] = {
 					58372,	-- Lead the Way
 					58337,	-- Break Out
 					58326,	-- Combing the Catacombs
 				},
+				["provider"] = { "n", 160956 },	-- Watcher Emil
 				["coord"] = { 72.6, 37.5, REVENDRETH },
 			}),
 			q(57888, {	-- An Invitation to Treachery
-				["provider"] = { "n", 159694 },	-- The Countess
 				["sourceQuests"] = { 57887 },	-- Killing the Messenger
+				["provider"] = { "n", 159694 },	-- The Countess
 				["coord"] = { 58.0, 27.5, REVENDRETH },
 				["groups"] = {
 					i(173358),	-- Invitations (QI!)
 				},
 			}),
 			q(57771, {	-- An Unwelcome Incursion
-				["provider"] = { "n", 167381 },	-- Baroness Draka
 				["sourceQuests"] = { 57727 },	-- Stonevigil Unrest
+				["provider"] = { "n", 167381 },	-- Baroness Draka
 				["coord"] = { 56.3, 66.6, REVENDRETH },
 				["groups"] = {
 					i(180947),	-- Tithe Collector's Vessel (TOY!)
 				},
 			}),
 			q(59323, {	-- Anima Awakening
-				["provider"] = { "n", 171934 },	-- Prince Renathal
 				["sourceQuests"] = { 59321 },	-- Sacred Covenant
+				["provider"] = { "n", 171934 },	-- Prince Renathal
 				["coord"] = { 45.3, 30.3, SINFALL_DEPTHS },
 			}),
 			q(62902, {	-- Anima is Power
-				["provider"] = { "n", 165302 },	-- Rendle
-				["sourceQuests"] = { 62691 },	-- A Calling in Revendreth
-				["coord"] = { 61.6, 75.7, SINFALL_DEPTHS },
 				["description"] = "Becomes available after you complete your first Calling quest.",
+				["sourceQuests"] = { 62691 },	-- A Calling in Revendreth
+				["provider"] = { "n", 165302 },	-- Rendle
+				["coord"] = { 61.6, 75.7, SINFALL_DEPTHS },
 			}),
 			q(62905, {	-- Back into the Darkness
-				["provider"] = { "n", 164738 },	-- Tenaval
 				["sourceQuests"] = { 62904 },	-- The Souls Plight
+				["provider"] = { "n", 164738 },	-- Tenaval
 				["coord"] = { 46.0, 27.9, SINFALL_REACHES },
 			}),
 			q(57890, {	-- Beautiful, But Deadly
-				["provider"] = { "n", 159694 },	-- The Countess
 				["sourceQuests"] = { 57887 },	-- Killing the Messenger
+				["provider"] = { "n", 159694 },	-- The Countess
 				["coord"] = { 58.0, 27.5, REVENDRETH },
 				["groups"] = {
 					o(338520, {	-- Duskmire Mushroom
@@ -218,70 +218,70 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				},
 			}),
 			q(62918, {	-- Binding Power
-				["provider"] = { "n", 171950 },	-- The Accuser
 				["sourceQuests"] = { 62915 },	-- Home Improvement
+				["provider"] = { "n", 171950 },	-- The Accuser
 				["coord"] = { 46.2, 21.6, SINFALL_REACHES },
 			}),
 			q(58388, {	-- Blackbale Betrayers
-				["provider"] = { "n", 161421 },	-- The Accuser
 				["sourceQuests"] = { 58443 },	-- Continued Care of Kael'thas
+				["provider"] = { "n", 161421 },	-- The Accuser
 				["coord"] = { 46.4, 51.4, REVENDRETH },
 			}),
 			q(58337, {	-- Break Out
-				["provider"] = { "n", 161056 },	-- Guard Captain Elizabeta
 				["sourceQuests"] = { 58842 },	-- The Curator
+				["provider"] = { "n", 161056 },	-- Guard Captain Elizabeta
 				["coord"] = { 65.9, 32.2, REVENDRETH },
 				["groups"] = {
 					i(174040),	-- Chains of Regret (QI!)
 				},
 			}),
 			q(62856, {	-- Building Your Renown
-				["provider"] = { "n", 171934 },	-- Prince Renathal
 				["sourceQuests"] = { 59323 },	-- Anima Awakening
+				["provider"] = { "n", 171934 },	-- Prince Renathal
 				["coord"] = { 45.5, 28.7, SINFALL_DEPTHS },
 			}),
 			q(60993, {	-- Citadel of Loyalty
-				["provider"] = { "n", 160280 },	-- Mikanikos
 				["sourceQuests"] = { 58656 },	-- Heavy is the Head...
+				["provider"] = { "n", 160280 },	-- Mikanikos
 				["coord"] = { 50.1, 20.5, BASTION },
 			}),
 			q(58326, {	-- Combing the Catacombs
-				["provider"] = { "n", 161056 },	-- Guard Captain Elizabeta
 				["sourceQuests"] = { 58842 },	-- The Curator
+				["provider"] = { "n", 161056 },	-- Guard Captain Elizabeta
 				["coord"] = { 65.9, 32.2, REVENDRETH },
 			}),
 			q(59701, {	-- Common Ground
-				["provider"] = { "n", 158653 },	-- Prince Renathal
-				["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
-				["coord"] = { 51.0, 38.0, SINFALL_REACHES },
 				["description"] = "Requires Renown 5.",
+				["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
+				["provider"] = { "n", 158653 },	-- Prince Renathal
+				["coord"] = { 51.0, 38.0, SINFALL_REACHES },
 			}),
 			q(61077, {	-- Confronting Sin
-				["provider"] = { "n", 158653 },	-- Prince Renathal
-				["sourceQuests"] = { 59233 },	-- The Prince's New Crown
-				["coord"] = { 52.0, 37.6, SINFALL_REACHES },
 				["description"] = "Requires Renown 17.",
+				["sourceQuests"] = { 59233 },	-- The Prince's New Crown
+				["provider"] = { "n", 158653 },	-- Prince Renathal
+				["coord"] = { 52.0, 37.6, SINFALL_REACHES },
 			}),
 			q(58443, {	-- Continued Care of Kael'thas
-				["provider"] = { "n", 161278 },	-- The Accuser
 				["sourceQuests"] = { 58387 },	-- We Each Must Carry Our Own Sins
+				["provider"] = { "n", 161278 },	-- The Accuser
 				["coord"] = { 43.8, 51.4, REVENDRETH },
 			}),
 			q(58630, {	-- Crown of the Harvesters
-				["provider"] = { "n", 160280 },	-- Mikanikos
 				["sourceQuests"] = {
 					58600,	-- A Perfect Circle
 					58603,	-- Phaestus, Genesis of Aeons
 				},
+				["provider"] = { "n", 160280 },	-- Mikanikos
 				["coord"] = { 50.1, 20.5, BASTION },
 			}),
 			q(58428, {	-- Crypt Crashers
-				["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
 				["sourceQuests"] = {
 					58372,	-- Lead the Way
 					58337,	-- Break Out
 					58326,	-- Combing the Catacombs
 				},
+				["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
 				["coord"] = { 72.7, 37.6, REVENDRETH },
 				["groups"] = {
 					o(339837, {	-- Powder Bag
@@ -293,36 +293,36 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				},
 			}),
 			q(58392, {	-- Death's End Destruction
-				["provider"] = { "n", 161572 },	-- Kael'thas Sunstrider
 				["sourceQuests"] = { 58391 },	-- Reconnaissance... for my, uh, Recovery
+				["provider"] = { "n", 161572 },	-- Kael'thas Sunstrider
 				["coord"] = { 69.8, 59.9, REVENDRETH },
 			}),
 			q(60995, {	-- Disloyalty
-				["provider"] = { "n", 170999 },	-- General Draven
 				["sourceQuests"] = { 60993 },	-- Citadel of Loyalty
+				["provider"] = { "n", 170999 },	-- General Draven
 				["coord"] = { 24.3, 29.8, BASTION },
 			}),
 			q(60265, {	-- Disrupting the Chain
-				["provider"] = { "i", 178557 },	-- Supply Chain Memo
 				["sourceQuests"] = { 57727 },	-- Stonevigil Unrest
+				["provider"] = { "i", 178557 },	-- Supply Chain Memo
 				["coord"] = { 57.4, 69.2, REVENDRETH },	-- rough area
 				["groups"] = {
 					i(178557),	-- Supply Chain Memo (QI!)
 				},
 			}),
 			q(58384, {	-- Dredgers Left Behind
-				["provider"] = { "n", 161208 },	-- The Accuser
 				["sourceQuests"] = { 58426 },	-- In the Shadow of our Failures
+				["provider"] = { "n", 161208 },	-- The Accuser
 				["coord"] = { 42.2, 47.5, REVENDRETH },
 			}),
 			q(57892, {	-- Enacting Immediate Justice
-				["provider"] = { "n", 159946 },	-- The Countess
 				["sourceQuests"] = { 57891 },	-- Mix, Mingle, and Meddle
+				["provider"] = { "n", 159946 },	-- The Countess
 				["coord"] = { 56.9, 28.7, REVENDRETH },
 			}),
 			q(58395, {	-- Enough Vengeance For One Day
-				["provider"] = { "n", 161436 },	-- Kael'thas Sunstrider
 				["sourceQuests"] = { 58394 },	-- Lady Ouix'Ara
+				["provider"] = { "n", 161436 },	-- Kael'thas Sunstrider
 				-- no coords, is your 'pet'
 				["groups"] = {
 					i(180903),	-- Fearstalker's Ebony Hauberk
@@ -332,124 +332,124 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				},
 			}),
 			q(60996, {	-- Face Your Fears
-				["provider"] = { "n", 171147 },	-- General Draven
 				["sourceQuests"] = {
 					60995,	-- Disloyalty
 					60994,	-- Lowering Their Defenses
 				},
+				["provider"] = { "n", 171147 },	-- General Draven
 				["coord"] = { 24.3, 29.7, BASTION },
 				["groups"] = {
 					i(180605),	-- Crown of the Harvesters (QI!)
 				},
 			}),
 			q(57772, {	-- Fangs and Minds
-				["provider"] = { "n", 167380 },	-- Prince Renethal
 				["sourceQuests"] = { 57727 },	-- Stonevigil Unrest
+				["provider"] = { "n", 167380 },	-- Prince Renethal
 				["coord"] = { 56.3, 66.7, REVENDRETH },
 				["groups"] = {
 					i(178213),	-- Prince Renathal's Decree (QI!)
 				},
 			}),
 			q(60500, {	-- Halls of Atonement: Medallion of Pride
-				["provider"] = { "o", 352520 },	-- Medallion of Pride
 				["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
+				["provider"] = { "o", 352520 },	-- Medallion of Pride
 				["coord"] = { 56.8, 30.8, SINFALL_REACHES },
 				["groups"] = {
 					i(179024),	-- Medallion of Pride (QI!)
 				},
 			}),
 			q(59676, {	-- Harvester of Desire
-				["provider"] = { "n", 165658 },	-- Cudgelface
 				["sourceQuests"] = { 59706 },	-- Invitation for the Countess
+				["provider"] = { "n", 165658 },	-- Cudgelface
 				["coord"] = { 52.4, 35.4, REVENDRETH },
 			}),
 			q(59711, {	-- Harvester of Envy
-				["provider"] = { "n", 165818 },	-- Nadjia the Mistblade
 				["sourceQuests"] = { 59707 },	-- Invitation for the Tithelord
+				["provider"] = { "n", 165818 },	-- Nadjia the Mistblade
 				["coord"] = { 72.1, 74.9, REVENDRETH },
 			}),
 			q(59720, {	-- Harvester of Wrath
-				["provider"] = { "n", 165865 },	-- General Draven
 				["sourceQuests"] = { 59708 },	-- Invitation for the Stonewright
+				["provider"] = { "n", 165865 },	-- General Draven
 				["coord"] = { 40.3, 30.7, REVENDRETH },
 			}),
 			q(58656, {	-- Heavy is the Head...
-				["provider"] = { "n", 174587 },	-- Mikanikos
 				["sourceQuests"] = { 58630 },	-- Crown of the Harvesters
+				["provider"] = { "n", 174587 },	-- Mikanikos
 				["coord"] = { 51.4, 18.5, BASTION },
 			}),
 			q(58530, {	-- Hidden Mirror
-				["provider"] = { "n", 161514 },	-- General Draven
 				["sourceQuests"] = { 61050 },	-- How to Wear Seven Medallions
+				["provider"] = { "n", 161514 },	-- General Draven
 				["coord"] = { 43.8, 46.4, SINFALL_REACHES },
 				["groups"] = {
 					i(180356),	-- Laurent's Compact Looking Glass (QI!)
 				},
 			}),
 			q(62915, {	-- Home Improvement
-				["provider"] = { "n", 172605 },	-- Foreman Flatfinger
 				["sourceQuests"] = { 62837 },	-- Hopeful News
+				["provider"] = { "n", 172605 },	-- Foreman Flatfinger
 				["coord"] = { 55.3, 27.4, SINFALL_REACHES },
 			}),
 			q(61050, {	-- How to Wear Seven Medallions
-				["provider"] = { "n", 158653 },	-- Prince Renathal
-				["sourceQuests"] = { 58444 },	-- Return to Sinfall
-				["coord"] = { 51.3, 38.0, SINFALL_REACHES },
 				["description"] = "Requires Renown 13.",
+				["sourceQuests"] = { 58444 },	-- Return to Sinfall
+				["provider"] = { "n", 158653 },	-- Prince Renathal
+				["coord"] = { 51.3, 38.0, SINFALL_REACHES },
 			}),
 			q(58426, {	-- In the Shadow of our Failures
-				["provider"] = { "n", 161158 },	-- The Accuser
 				["sourceQuests"] = { 58383 },	-- The Many Sins of Kael'thas Sunstrider
+				["provider"] = { "n", 161158 },	-- The Accuser
 				["coord"] = { 46.5, 32.2, SINFALL_DEPTHS },
 			}),
 			q(62903, {	-- Into the Reservoir
-				["provider"] = { "n", 172605 },	-- Foreman Flatfinger
 				["sourceQuests"] = { 62902 },	-- Anima is Power
+				["provider"] = { "n", 172605 },	-- Foreman Flatfinger
 				["coord"] = { 54.9, 26.3, SINFALL_REACHES },
 			}),
 			q(59706, {	-- Invitation for the Countess
-				["provider"] = { "n", 165661 },	-- Prince Renathal
 				["sourceQuests"] = {
 					59701,	-- Common Ground
 					61492,	-- The Princeguard
 				},
+				["provider"] = { "n", 165661 },	-- Prince Renathal
 				["coord"] = { 41.0, 54.7, REVENDRETH },
 			}),
 			q(59708, {	-- Invitation for the Stonewright
-				["provider"] = { "n", 165661 },	-- Prince Renathal
 				["sourceQuests"] = {
 					59701,	-- Common Ground
 					61492,	-- The Princeguard
 				},
+				["provider"] = { "n", 165661 },	-- Prince Renathal
 				["coord"] = { 41.0, 54.7, REVENDRETH },
 			}),
 			q(59707, {	-- Invitation for the Tithelord
-				["provider"] = { "n", 165661 },	-- Prince Renathal
 				["sourceQuests"] = {
 					59701,	-- Common Ground
 					61492,	-- The Princeguard
 				},
+				["provider"] = { "n", 165661 },	-- Prince Renathal
 				["coord"] = { 41.0, 54.7, REVENDRETH },
 			}),
 			q(57887, {	-- Killing the Messenger
-				["provider"] = { "n", 159694 },	-- The Countess
 				["sourceQuests"] = { 57886 },	-- A Meal and a Deal
+				["provider"] = { "n", 159694 },	-- The Countess
 				["coord"] = { 58.0, 27.5, REVENDRETH },
 				["groups"] = {
 					i(173285),	-- Treasonous Missive (QI!)
 				},
 			}),
 			q(59343, {	-- Kindred Spirits
-				["provider"] = { "n", 172042 },	-- Theotar
 				["sourceQuests"] = { 59719 },	-- The Court
+				["provider"] = { "n", 172042 },	-- Theotar
 				["coord"] = { 50.3, 18.8, SINFALL_REACHES },
 				["groups"] = {
 					follower(1210),	-- Theotar
 				},
 			}),
 			q(65170, {	-- Kindred Spirits
-				["provider"] = { "n", 161979 },	-- Theotar
 				["sourceQuests"] = { 62920 },	-- A Conduit For Change
+				["provider"] = { "n", 161979 },	-- Theotar
 				["coord"] = { 50.5, 18, SINFALL_REACHES },
 				["timeline"] = { ADDED_9_1_5 },
 				["groups"] = {
@@ -457,17 +457,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				},
 			}),
 			q(58394, {	-- Lady Ouix'Ara
-				["provider"] = { "n", 161436 },	-- Kael'thas Sunstrider
 				["sourceQuests"] = {
 					58392,	-- Death's End Destruction
 					58393,	-- Strategic Executions
 				},	--
+				["provider"] = { "n", 161436 },	-- Kael'thas Sunstrider
 				["maps"] = { REVENDRETH },
 				-- no coords, is your 'pet'
 			}),
 			q(58372, {	-- Lead the Way
-				["provider"] = { "n", 160956 },	-- Watcher Emil
 				["sourceQuests"] = { 58325 },	-- Watcher Emil
+				["provider"] = { "n", 160956 },	-- Watcher Emil
 				["coord"] = { 65.9, 28.8, REVENDRETH },
 				["groups"] = {
 					i(180925),	-- Soulbreaker's Ebony Sash
@@ -477,18 +477,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				},
 			}),
 			q(58385, {	-- Learning to Sacrifice
-				["provider"] = { "n", 161208 },	-- The Accuser
 				["sourceQuests"] = { 58426 },	-- In the Shadow of our Failures
+				["provider"] = { "n", 161208 },	-- The Accuser
 				["coord"] = { 42.2, 47.5, REVENDRETH },
 			}),
 			q(60994, {	-- Lowering Their Defenses
-				["provider"] = { "n", 171001 },	-- Mikanikos
 				["sourceQuests"] = { 60993 },	-- Citadel of Loyalty
+				["provider"] = { "n", 171001 },	-- Mikanikos
 				["coord"] = { 24.3, 29.8, BASTION },
 			}),
 			q(58389, {	-- Maldraxxian Weapons
-				["provider"] = { "i", 174212 },	-- Suspicious Weapon
 				["sourceQuests"] = { 58443 },	-- Continued Care of Kael'thas
+				["provider"] = { "i", 174212 },	-- Suspicious Weapon
 				["coord"] = { 48.3, 54.4, REVENDRETH },
 				["crs"] = {
 					161448,	-- Blackbale Lookout
@@ -500,30 +500,30 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				},
 			}),
 			q(60935, {	-- Medallion of Avarice
-				["provider"] = { "o", 353949 },	-- Medallion of Avarice
-				["sourceQuest"] = 57893,	-- Neither Enemy nor Ally
-				["coord"] = { 54.9, 30.9, SINFALL_REACHES },
 				["description"] = "Requires Renown 11.",
+				["sourceQuest"] = 57893,	-- Neither Enemy nor Ally
+				["provider"] = { "o", 353949 },	-- Medallion of Avarice
+				["coord"] = { 54.9, 30.9, SINFALL_REACHES },
 			}),
 			q(60904, {	-- Medallion of Desire
-				["provider"] = { "o", 353948 },	-- Medallion of Desire
-				["sourceQuests"] = { 59719 },	-- The Court
-				["coord"] = { 53.6, 32.9, SINFALL_REACHES },
 				["description"] = "Requires Renown 8.",
+				["sourceQuests"] = { 59719 },	-- The Court
+				["provider"] = { "o", 353948 },	-- Medallion of Desire
+				["coord"] = { 53.6, 32.9, SINFALL_REACHES },
 			}),
 			q(58406, {	-- Mirror to Maldraxxus
-				["provider"] = { "n", 158653 },	-- Prince Renethal
-				["sourceQuests"] = { 57646 },	-- The Tithelord
-				["coord"] = { 51.8, 37.5, SINFALL_REACHES },
 				["description"] = "Requires Renown 22.",
+				["sourceQuests"] = { 57646 },	-- The Tithelord
+				["provider"] = { "n", 158653 },	-- Prince Renethal
+				["coord"] = { 51.8, 37.5, SINFALL_REACHES },
 			}),
 			q(58440, {	-- Mirror, Mirror...
-				["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
 				["sourceQuests"] = {
 					60673,	-- The Traitor
 					58424,	-- An Eye for an Amulet
 					58428,	-- Crypt Crashers
 				},
+				["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
 				["coord"] = { 72.7, 37.6, REVENDRETH },
 				["groups"] = {
 					i(180945),	-- Crypt Gargon (MOUNT!)
@@ -534,96 +534,96 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				},
 			}),
 			q(57891, {	-- Mix, Mingle, and Meddle
-				["provider"] = { "n", 159694 },	-- The Countess
 				["sourceQuests"] = {
 					57889,	-- "Accidental" Arson
 					57888,	-- An Invitation to Treachery
 					57890,	-- Beautiful, But Deadly
 				},
+				["provider"] = { "n", 159694 },	-- The Countess
 				["coord"] = { 58.0, 27.5, REVENDRETH },
 				["groups"] = { i(174923) },	-- Duskmire Elixir (QI!)
 			}),
 			q(57893, {	-- Neither Enemy nor Ally
-				["provider"] = { "n", 159946 },	-- The Countess
 				["sourceQuests"] = { 57892 },	-- Enacting Immediate Justice
+				["provider"] = { "n", 159946 },	-- The Countess
 				["coord"] = { 56.9, 28.7, REVENDRETH },
 				["groups"] = {
 					i(173287),	-- Medallion of Desire (QI!)
 				},
 			}),
 			q(58585, {	-- No Friend of Mine
-				["provider"] = { "n", 160280 },	-- Mikanikos
 				["sourceQuests"] = { 58555 },	-- A Tense Reunion
+				["provider"] = { "n", 160280 },	-- Mikanikos
 				["coord"] = { 50.1, 20.6, BASTION },
 				["groups"] = {
 					i(174466),	-- Mikanikos's Tool Chest (QI!)
 				},
 			}),
 			q(62921, {	-- Our True Purpose
-				["provider"] = { "n", 171950 },	-- The Accuser
 				["sourceQuests"] = { 62920 },	-- A Conduit For Change
+				["provider"] = { "n", 171950 },	-- The Accuser
 				["coord"] = { 44.6, 20.1, SINFALL_REACHES },
 			}),
 			q(59324, {	-- Our True Purpose
-				["provider"] = { "n", 164741 },	-- Tactician Sakaa
 			--	["sourceQuests"] = {  },	-- TODO: unknown.  i think you get this version of "Our True Purpose" if you pursue the Adventures Scouting Map first, instead of Mirror Network?
+				["provider"] = { "n", 164741 },	-- Tactician Sakaa
 				["coord"] = { 57.6, 58.8, SINFALL_REACHES },
 			}),
 			q(58603, {	-- Phaestus, Genesis of Aeons
-				["provider"] = { "n", 160280 },	-- Mikanikos
 				["sourceQuests"] = {
 					58585,	-- No Friend of Mine
 					58584,	-- Right Our Wrongs
 					58586,	-- The Right Stuff
 				},
+				["provider"] = { "n", 160280 },	-- Mikanikos
 				["coord"] = { 50.1, 20.5, BASTION },
 				["groups"] = {
 					i(174061),	-- Phaestus, Genesis of Aeons (QI!)
 				},
 			}),
 			q(57884, {	-- Reclaiming Thornhill Manor
-				["provider"] = { "n", 159513 },	-- Bogdan
 				["sourceQuests"] = {
 					57882,	-- Reestablishing the Household
 					57881,	-- The Key to Rebuilding
 				},
+				["provider"] = { "n", 159513 },	-- Bogdan
 				["coord"] = { 60.4, 40.1, REVENDRETH },
 			}),
 			q(58391, {	-- Reconnaissance... for my, uh, Recovery
-				["provider"] = { "n", 161431 },	-- Kael'thas Sunstrider
 				["sourceQuests"] = {
 					58388,	-- Blackbale Betrayers
 					58389,	-- Maldraxxian Weapons
 					58518,	-- There's Always a Paper Trail
 				},	--
+				["provider"] = { "n", 161431 },	-- Kael'thas Sunstrider
 				["maps"] = { REVENDRETH },
 				-- no coords, is your 'pet'
 			}),
 			q(57882, {	-- Reestablishing the Household
-				["provider"] = { "n", 159513 },	-- Bogdan
 				["sourceQuests"] = { 57880 },	-- An Estate Within the Old Gate
+				["provider"] = { "n", 159513 },	-- Bogdan
 				["coord"] = { 60.4, 40.1, REVENDRETH },
 				["groups"] = {
 					i(174839),	-- Offer of Employment (QI!)
 				},
 			}),
 			q(61981, {	-- Replenish the Reservoir
-				["provider"] = { "n", 172605 },	-- Foreman Flatfinger <Sanctum Upgrades>
 				["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
+				["provider"] = { "n", 172605 },	-- Foreman Flatfinger <Sanctum Upgrades>
 				["coord"] = { 55.5, 26.3, SINFALL_REACHES },
 				["isWeekly"] = true,
 			}),
 			q(58444, {	-- Return to Sinfall
-				["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
 				["sourceQuests"] = { 58440 },	-- Mirror, Mirror...
+				["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
 				["coord"] = { 72.7, 37.6, REVENDRETH },
 				["groups"] = {
 					i(174111),	-- Medallion of Avarice (QI!)
 				},
 			}),
 			q(58584, {	-- Right our Wrongs
-				["provider"] = { "n", 161526 },	-- General Draven
 				["sourceQuests"] = { 58555 },	-- A Tense Reunion
+				["provider"] = { "n", 161526 },	-- General Draven
 				["coord"] = { 50.1, 20.6, BASTION },
 				["groups"] = {
 					i(180937),	-- Fearstalker's Ebony Cloak
@@ -633,43 +633,43 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				},
 			}),
 			q(59321, {	-- Sacred Covenant
-				["provider"] = { "n", 164796 },	-- Prince Renathal
 				["sourceQuests"] = { 59315 },	-- The Court of Harvesters
+				["provider"] = { "n", 164796 },	-- Prince Renathal
 				["coord"] = { 50.9, 38.1, SINFALL_REACHES },
 			}),
 			q(63341, {	-- Sinfall Tactician
-				["provider"] = { "n", 175772 },	-- Rahel
-				["sourceQuests"] = { 63340 },	-- Sinfall Veteran
-				["coord"] = { 54.0, 27.2, SINFALL_REACHES },
 				["description"] = "Requires Renown 22.",
+				["sourceQuests"] = { 63340 },	-- Sinfall Veteran
+				["provider"] = { "n", 175772 },	-- Rahel
+				["coord"] = { 54.0, 27.2, SINFALL_REACHES },
 				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_0 },
 				-- TODO: Assumed SQ... double check by skipping to Renown 22
 			}),
 			q(64083, {	-- Sinfall Tactician #2
+				["description"] = "Requires Renown 59.",
 				["provider"] = { "n", 175772 },	-- Rahel
 				["coord"] = { 54.0, 27.2, SINFALL_REACHES },
-				["description"] = "Requires Renown 59.",
 			}),
 			q(63340, {	-- Sinfall Veteran
-				["provider"] = { "n", 175772 },	-- Rahel
-			--	["sourceQuests"] = {  },	-- probably requires something between "our true purpose" and "ashes of the tower," unsure what unlocks the ability to pick up "return lost souls," which gives renown
-				["coord"] = { 54.1, 26.8, SINFALL_REACHES },
 				["description"] = "Requires Renown 7.",
+			--	["sourceQuests"] = {  },	-- probably requires something between "our true purpose" and "ashes of the tower," unsure what unlocks the ability to pick up "return lost souls," which gives renown
+				["provider"] = { "n", 175772 },	-- Rahel
+				["coord"] = { 54.1, 26.8, SINFALL_REACHES },
 				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_0 },
 			}),
 			q(64325, {	-- Sinfall Veteran #2
+				["description"] = "Requires Renown 43.",
 				["provider"] = { "n", 175772 },	-- Rahel
 				["coord"] = { 54.1, 26.8, SINFALL_REACHES },
-				["description"] = "Requires Renown 43.",
 			}),
 			q(58382, {	-- Someone Worth Saving
-				["provider"] = { "n", 165291 },	-- The Accuser
 				["sourceQuests"] = { 61077 },	-- Confronting Sin
+				["provider"] = { "n", 165291 },	-- The Accuser
 				["coord"] = { 55.8, 78.7, SINFALL_DEPTHS },
 			}),
 			q(62870, {	-- Souls for Sinfall
-				["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 				["sourceQuests"] = { 62837 },	-- Hopeful News
+				["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 				["coord"] = { 40.0, 68.3, ORIBOS },
 				["groups"] = {
 					i(180202),	-- Soulkeeper Crystal (QI!)
@@ -680,12 +680,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				},
 			}),
 			q(58421, {	-- Special Access
-				["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
 				["sourceQuests"] = {
 					58372,	-- Lead the Way
 					58337,	-- Break Out
 					58326,	-- Combing the Catacombs
 				},
+				["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
 				["coord"] = { 72.7, 37.6, REVENDRETH },
 				["groups"] = {
 					i(174094),	-- Boian's Fangs (QI!)
@@ -694,19 +694,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				},
 			}),
 			q(57727, {	-- Stonevigil Unrest
-				["provider"] = { "n", 158653 },	-- Prince Renethal
-				["sourceQuests"] = { 58395 },	-- Enough Vengeance For One Day
-				["coord"] = { 51.8, 37.5, SINFALL_REACHES },
 				["description"] = "Requires Renown 20.",
+				["sourceQuests"] = { 58395 },	-- Enough Vengeance For One Day
+				["provider"] = { "n", 158653 },	-- Prince Renethal
+				["coord"] = { 51.8, 37.5, SINFALL_REACHES },
 			}),
 			q(58393, {	-- Strategic Executions
-				["provider"] = { "n", 161572 },	-- Kael'thas Sunstrider
 				["sourceQuests"] = { 58391 },	-- Reconnaissance... for my, uh, Recovery
+				["provider"] = { "n", 161572 },	-- Kael'thas Sunstrider
 				["coord"] = { 69.8, 59.9, REVENDRETH },
 			}),
 			q(62919, {	-- Strengthening the Bond
-				["provider"] = { "n", 171979 },	-- Nadjia the Mistblade
 				["sourceQuests"] = { 62918 },	-- Binding Power
+				["provider"] = { "n", 171979 },	-- Nadjia the Mistblade
 				["coord"] = { 43.9, 17.9, SINFALL_REACHES },
 				["groups"] = appendGroups(CONDUIT_GROUP, {
 					i(182962),	-- Catastrophic Origin
@@ -724,19 +724,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				}),
 			}),
 			q(57918, {	-- The Absolution of Souls
-				["provider"] = { "n", 165291 },	-- The Accuser
-				["altQuests"] = { 58093 },	-- Our Forgotten Purpose
-				["coord"] = { 55.6, 76.6, SINFALL_DEPTHS },
 				["description"] = "Becomes available after unlocking tier 1 of the Command Table sanctum upgrade.",
+				["altQuests"] = { 58093 },	-- Our Forgotten Purpose
+				["provider"] = { "n", 165291 },	-- The Accuser
+				["coord"] = { 55.6, 76.6, SINFALL_DEPTHS },
 				["isBreadcrumb"] = true,
 			}),
 			q(59719, {	-- The Court
-				["provider"] = { "n", 165661 },	-- Prince Renathal
 				["sourceQuests"] = {
 					59676,	-- Harvester of Desire
 					59711,	-- Harvester of Envy
 					59708,	-- Harvester of Wrath
 				},
+				["provider"] = { "n", 165661 },	-- Prince Renathal
 				["coord"] = { 41.0, 54.7, REVENDRETH },
 				["groups"] = {
 					i(180928),	-- Soulbreaker's Ebony Wraps
@@ -746,41 +746,41 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				},
 			}),
 			q(62857, {	-- The Court's Bounty
-				["provider"] = { "n", 175772 },	-- Rahel
 				["sourceQuests"] = { 62856 },	-- Building Your Renown
+				["provider"] = { "n", 175772 },	-- Rahel
 				["coord"] = { 54.0, 27.2, SINFALL_REACHES },
 			}),
 			q(59315, {	-- The Court of Harvesters
-				["provider"] = { "n", 164742 },	-- Prince Renathal
 				["sourceQuests"] = { 59314 },	-- Sinfall
+				["provider"] = { "n", 164742 },	-- Prince Renathal
 				["coord"] = { 25.4, 56.1, SINFALL_REACHES },
 			}),
 			q(58842, {	-- The Curator
-				["provider"] = { "n", 158653 },	-- Prince Renathal
 				["sourceQuests"] = { 60935 },	-- Medallion of Avarice
+				["provider"] = { "n", 158653 },	-- Prince Renathal
 				["coord"] = { 51.7, 37.6, SINFALL_REACHES },
 			}),
 			q(63033, {	-- The Highlord Calls
-				["provider"] = { "n", 158653 },	-- Prince Renathal
 				["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
+				["provider"] = { "n", 158653 },	-- Prince Renathal
 				["coord"] = { 51.2, 37.8, SINFALL_REACHES },
 			}),
 			q(57881, {	-- The Key to Rebuilding
-				["provider"] = { "n", 159513 },	-- Bogdan
 				["sourceQuests"] = { 57880 },	-- An Estate Within the Old Gate
+				["provider"] = { "n", 159513 },	-- Bogdan
 				["coord"] = { 60.4, 40.1, REVENDRETH },
 				["groups"] = {
 					i(173180),	-- Ornate Key (QI!)
 				},
 			}),
 			q(58383, {	-- The Many Sins of Kael'thas Sunstrider
-				["provider"] = { "n", 161158 },	-- The Accuser
 				["sourceQuests"] = { 58382 },	-- Someone Worth Saving
+				["provider"] = { "n", 161158 },	-- The Accuser
 				["coord"] = { 46.4, 32.3, SINFALL_DEPTHS },
 			}),
 			q(58407, {	-- The Medallion of Dominion
-				["provider"] = { "n", 170543 },	-- General Draven
 				["sourceQuests"] = { 58406 },	-- Mirror to Maldraxxus
+				["provider"] = { "n", 170543 },	-- General Draven
 				["coord"] = { 27.4, 40.3, REVENDRETH },
 				["maps"] = { 1689 },	-- Exoramas (Venthyr Renown 22 Scenario)
 				["groups"] = appendGroups(LFR_WEAPON_GROUP, {
@@ -788,8 +788,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				}),
 			}),
 			q(59233, {	-- The Prince's New Crown
-				["provider"] = { "n", 171175 },	-- General Draven
 				["sourceQuests"] = { 60996 },	-- Face Your Fears
+				["provider"] = { "n", 171175 },	-- General Draven
 				["coord"] = { 21.0, 22.8, BASTION },
 				["groups"] = {
 					i(180604),	-- Crown of the Harvesters (QI!)
@@ -800,17 +800,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				},
 			}),
 			q(61492, {	-- The Princeguard
-				["provider"] = { "n", 161977 },	-- General Draven
-				["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
-				["coord"] = { 46.3, 15.7, SINFALL_REACHES },
 				["description"] = "Requires Renown 5.",
+				["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
+				["provider"] = { "n", 161977 },	-- General Draven
+				["coord"] = { 46.3, 15.7, SINFALL_REACHES },
 				["groups"] = {
 					i(181516),	-- Stone-Laced Infused Ruby (QI!)
 				},
 			}),
 			q(58586, {	-- The Right Stuff
-				["provider"] = { "n", 160280 },	-- Mikanikos
 				["sourceQuests"] = { 58555 },	-- A Tense Reunion
+				["provider"] = { "n", 160280 },	-- Mikanikos
 				["coord"] = { 50.1, 20.6, BASTION },
 				["groups"] = {
 					i(173880),	-- Purified Metal (QI!)
@@ -818,13 +818,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				},
 			}),
 			q(62904, {	-- The Souls Plight
-				["provider"] = { "n", 172605 },	-- Foreman Flatfinger
 				["sourceQuests"] = { 62903 },	-- Into the Reservoir
+				["provider"] = { "n", 172605 },	-- Foreman Flatfinger
 				["coord"] = { 54.9, 26.3, SINFALL_REACHES },
 			}),
 			q(57646, {	-- The Tithelord
-				["provider"] = { "n", 167689 },	-- Prince Renethal
 				["sourceQuests"] = { 57729 },	-- To the Estate
+				["provider"] = { "n", 167689 },	-- Prince Renethal
 				["coord"] = { 71.9, 68.8, REVENDRETH },
 				["groups"] = {
 					i(173976),	-- Medallion of Envy (QI!)
@@ -835,8 +835,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				},
 			}),
 			q(60673, {	-- The Traitor
-				["provider"] = { "n", 161298 },	-- Nourman <The Doorman>
 				["sourceQuests"] = { 58421 },	-- Special Access
+				["provider"] = { "n", 161298 },	-- Nourman <The Doorman>
 				["coord"] = { 77.5, 39.2, REVENDRETH },
 				["groups"] = {
 					i(174092),	-- Mateo's Mirror Shard (QI!)
@@ -847,8 +847,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				},
 			}),
 			q(58518, {	-- There's Always a Paper Trail
-				["provider"] = { "n", 161427 },	-- Kael'thas Sunstrider
 				["sourceQuests"] = { 58443 },	-- Continued Care of Kael'thas
+				["provider"] = { "n", 161427 },	-- Kael'thas Sunstrider
 				["maps"] = { REVENDRETH },
 				-- no coords, is your 'pet'
 				["groups"] = {
@@ -856,77 +856,77 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				},
 			}),
 			q(60145, {	-- Third Talon Vartox
-				["provider"] = { "n", 167381 },	-- Baroness Draka
 				["sourceQuests"] = { 57727 },	-- Stonevigil Unrest
+				["provider"] = { "n", 167381 },	-- Baroness Draka
 				["coord"] = { 56.3, 66.6, REVENDRETH },
 			}),
 			q(57729, {	-- To the Estate
-				["provider"] = { "n", 167620 },	-- Prince Renethal
 				["sourceQuests"] = { 60183 },	-- After Them!
+				["provider"] = { "n", 167620 },	-- Prince Renethal
 				["coord"] = { 61.5, 69.6, REVENDRETH },
 			}),
 			q(58386, {	-- Use My Strengths
-				["provider"] = { "n", 161261 },	-- Kael'thas Sunstrider
 				["sourceQuests"] = { 58426 },	-- In the Shadow of our Failures
+				["provider"] = { "n", 161261 },	-- Kael'thas Sunstrider
 				["maps"] = { REVENDRETH },
 				-- no coords, is your 'pet'
 			}),
 			q(58325, {	-- Watcher Emil
+				["sourceQuests"] = { 58842 },	-- The Curator
 				["qgs"] = {
 					160941,	-- The Curator <Harvester of Avarice> (initial provider)
 					160942,	-- Forgotten Soul (if you abandon it, this is in the follow-up quest area)
 				},
-				["sourceQuests"] = { 58842 },	-- The Curator
 				["coords"] = {
 					{ 72.7, 37.6, REVENDRETH },	-- The Curator
 					{ 66.0, 28.9, REVENDRETH },	-- Forgotten Soul
 				},
 			}),
 			q(58387, {	-- We Each Must Carry Our Own Sins
-				["provider"] = { "n", 161278 },	-- The Accuser
 				["sourceQuests"] = {
 					58384,	-- Dredgers Left Behind
 					58385,	-- Learning to Sacrifice
 					58386,	-- Use My Strengths
 				},
+				["provider"] = { "n", 161278 },	-- The Accuser
 				["coord"] = { 43.8, 51.4, REVENDRETH },
 				["groups"] = {
 					i(180941),	-- Kael's Dark Sinstone Chain
 				},
 			}),
 			q(61334, {	-- Return Lost Souls (5)
-				["provider"] = { "n", 164738 },	-- Tenaval
 				-- ["sourceQuests"] = {  },	-- TODO
+				["provider"] = { "n", 164738 },	-- Tenaval
 				["coord"] = { 45.3, 28.5, SINFALL_REACHES },
 				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_5 },
 				["isWeekly"] = true,
 			}),
 			q(62867, {	-- Return Lost Souls (10)
-				["provider"] = { "n", 164738 },	-- Tenaval
-				-- ["sourceQuests"] = {  },	-- TODO
-				["coord"] = { 45.3, 28.5, SINFALL_REACHES },
 				["description"] = "Requires Renown 15.",
+				-- ["sourceQuests"] = {  },	-- TODO
+				["provider"] = { "n", 164738 },	-- Tenaval
+				["coord"] = { 45.3, 28.5, SINFALL_REACHES },
 				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_5 },
 				["isWeekly"] = true,
 			}),
 			q(62868, {	-- Return Lost Souls (15)
-				["provider"] = { "n", 164738 },	-- Tenaval
-				-- ["sourceQuests"] = {  },	-- TODO
-				["coord"] = { 45.3, 28.5, SINFALL_REACHES },
 				["description"] = "Requires Renown 24.",
+				-- ["sourceQuests"] = {  },	-- TODO
+				["provider"] = { "n", 164738 },	-- Tenaval
+				["coord"] = { 45.3, 28.5, SINFALL_REACHES },
 				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_5 },
 				["isWeekly"] = true,
 			}),
 			q(62869, {	-- Return Lost Souls (20)
-				["provider"] = { "n", 164738 },	-- Tenaval
-				-- ["sourceQuests"] = {  },	-- TODO
-				["coord"] = { 45.3, 28.5, SINFALL_REACHES },
 				["description"] = "Requires Renown 32.",
+				-- ["sourceQuests"] = {  },	-- TODO
+				["provider"] = { "n", 164738 },	-- Tenaval
+				["coord"] = { 45.3, 28.5, SINFALL_REACHES },
 				["isWeekly"] = true,
 			}),
 			q(65105, {	-- Return More Lost Souls
-				["provider"] = { "n", 164738 },	-- Tenaval
 				["sourceQuests"] = { 62869 },	-- Return Lost Souls (20)
+				["provider"] = { "n", 164738 },	-- Tenaval
 				["coord"] = { 45.3, 28.5, SINFALL_REACHES },
 				["timeline"] = { ADDED_9_1_5 },
 				["repeatable"] = true,

@@ -219,18 +219,18 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDownSelf({ ["timeline"] = {
 				q(43243, { ["isRepeatable"] = true, }),	-- Demon Commander (Tanaris)
 				q(43242, { ["isRepeatable"] = true, }),	-- Demon Commander (Westfall)
 				q(44184, {	-- In the Blink of an Eye
-					["qg"] = 114562,	-- Khadgar's Upgraded Servant
-					["sourceQuests"] = {
-						44500,	-- Author! Author!
-						43926,	-- Legion: The Legion Returns
-					},
-					["sourceQuestNumRequired"] = 1,
 					-- #if AFTER SL
 					["description"] = "This is available to players choosing the Legion Timeline during Chromie Time.",
 					["timeline"] = { ADDED_7_0_3, REMOVED_7_0_3, ADDED_9_0_1 },
 					-- TODO: confirm if this can somehow be picked up via Party Sync
 					["DisablePartySync"] = false,	-- false = "hasn't been verified yet"
 					-- #endif
+					["sourceQuests"] = {
+						44500,	-- Author! Author!
+						43926,	-- Legion: The Legion Returns
+					},
+					["sourceQuestNumRequired"] = 1,
+					["qg"] = 114562,	-- Khadgar's Upgraded Servant
 					["groups"] = {
 						i(140192),	-- Dalaran Heartstone (TOY!)
 						i(143780),	-- Tome of the Tranquil Mind

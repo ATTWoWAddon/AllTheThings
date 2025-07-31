@@ -35,17 +35,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(36161, {	-- Where There Is Smoke...
-					["provider"] = { "n", 84684 },	-- Lieutenant Thorn <Mission Specialist>
 					["sourceQuest"] = 36160,	-- Garrison Campaign: Every Rose Has Its Thorn
+					["provider"] = { "n", 84684 },	-- Lieutenant Thorn <Mission Specialist>
 					["coord"] = { 29.6, 34.4, LUNARFALL },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(36242, {	-- Where There Is Smoke... (H)
+					["sourceQuests"] = { 36261 },	-- Garrison Campaign: Missing Grunt
 					["providers"] = {
 						{ "n", 79740 },	-- Warmaster Zog
 						{ "o", 233956 },	-- Bloody Blade
 					},
-					["sourceQuests"] = { 36261 },	-- Garrison Campaign: Missing Grunt
 					["coords"] = {
 						{ 53.8, 54.6, FROSTWALL },	-- Warmaster Zog
 						{ 63.8, 44.9, FROSTWALL },	-- Bloody Blade
@@ -53,14 +53,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(36162, {    -- A Stolen Heart
-					["provider"] = { "n", 84511 },    -- Lieutenant Thorn
 					["sourceQuests"] = { 36161 },    -- Where There Is Smoke... (A)
+					["provider"] = { "n", 84511 },    -- Lieutenant Thorn
 					["coord"] = { 31.6, 33.6, LUNARFALL },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(36248, {	-- A Stolen Heart
-					["provider"] = { "n", 79740 },	-- Warmaster Zog
 					["sourceQuests"] = { 36242 },	-- Where There Is Smoke... (H)
+					["provider"] = { "n", 79740 },	-- Warmaster Zog
 					["coord"] = { 53.8, 54.6, FROSTWALL },
 					["races"] = HORDE_ONLY,
 				}),
@@ -71,52 +71,52 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["coord"] = { 29.2, 33.1, LUNARFALL },	-- garrison lvl 3
 				}),
 				q(34027, {	-- Groundbreaking Data
-					["provider"] = { "n", 77217 },	-- Jr. Surveyor Dorn
 					["sourceQuest"] = 34026,	-- Garrison Campaign: Seismic Matters
+					["provider"] = { "n", 77217 },	-- Jr. Surveyor Dorn
 					["coord"] = { 64.5, 69.8, LUNARFALL },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(34028, {	-- These Look Familiar....
-					["provider"] = { "n", 77217 },	-- Jr. Surveyor Dorn
 					["sourceQuest"] = 34027,	-- Groundbreaking Data
+					["provider"] = { "n", 77217 },	-- Jr. Surveyor Dorn
 					["coord"] = { 64.5, 69.8, LUNARFALL },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(34029, {	-- The Prototype
-					["provider"] = { "n", 77160 },	-- Hansel Heavyhands
 					["sourceQuest"] = 34028,	-- These Look Familiar
+					["provider"] = { "n", 77160 },	-- Hansel Heavyhands
 					["coord"] = { 69.6, 26.1, GORGROND },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(34030, {	-- The Captive Engineer
-					["provider"] = { "n", 77160 },	-- Hansel Heavyhands
 					["sourceQuest"] = 34029,	-- The Prototype
+					["provider"] = { "n", 77160 },	-- Hansel Heavyhands
 					["coord"] = { 86.3, 48.9, FROSTFIRE_RIDGE },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(34048, {	-- "Mole Machine, Go Home"
-					["provider"] = { "n", 77167 },	-- Thaelin Darkanvil (Dark Iron Golem)
 					["sourceQuest"] = 34030,	-- The Captive Engineer
+					["provider"] = { "n", 77167 },	-- Thaelin Darkanvil (Dark Iron Golem)
 					["coord"] = { 88.4, 49.4, FROSTFIRE_RIDGE },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(34031, {	-- Something to Remember Me By
-					["provider"] = { "n", 77167 },	-- Thaelin Darkanvil (Dark Iron Golem)
 					["sourceQuest"] = 34030,	-- The Captive Engineer
+					["provider"] = { "n", 77167 },	-- Thaelin Darkanvil (Dark Iron Golem)
 					["coord"] = { 88.4, 49.4, FROSTFIRE_RIDGE },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(34032, {	-- Privileged Information
-					["provider"] = { "n", 77167 },	-- Thaelin Darkanvil (Dark Iron Golem)
 					["sourceQuests"] = {
 						34048,	-- "Mole Machine, Go Home"
 						34031,	-- Something to Remember Me By
 					},
+					["provider"] = { "n", 77167 },	-- Thaelin Darkanvil (Dark Iron Golem)
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(34033, {	-- And The Mole You Rode In On
-					["provider"] = { "n", 77167 },	-- Thaelin Darkanvil (Dark Iron Golem)
 					["sourceQuest"] = 34032,	-- Privileged Information
+					["provider"] = { "n", 77167 },	-- Thaelin Darkanvil (Dark Iron Golem)
 					["races"] = ALLIANCE_ONLY,
 				}),
 
@@ -127,47 +127,47 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(34035, {	-- I Know The Drill!
-					["provider"] = { "n", 77928 },	-- Gazlowe
 					["sourceQuests"] = { 34034 },	-- Garrison Campaign: Grinding Gears
+					["provider"] = { "n", 77928 },	-- Gazlowe
 					["coord"] = { 78.2, 55.0, FROSTFIRE_RIDGE },
 					["races"] = HORDE_ONLY,
 				}),
 				q(34040, {	-- Maker's Mark
-					["provider"] = { "n", 77928 },	-- Gazlowe
 					["sourceQuests"] = { 34035 },	-- I Know The Drill!
+					["provider"] = { "n", 77928 },	-- Gazlowe
 					["coord"] = { 80.0, 56.2, FROSTFIRE_RIDGE },
 					["races"] = HORDE_ONLY,
 				}),
 				q(34041, {	-- Four Finger Discount
-					["provider"] = { "n", 77928 },	-- Gazlowe
 					["sourceQuests"] = { 34035 },	-- I Know The Drill!
+					["provider"] = { "n", 77928 },	-- Gazlowe
 					["coord"] = { 80.0, 56.2, FROSTFIRE_RIDGE },
 					["races"] = HORDE_ONLY,
 				}),
 				q(34042, {	-- A Fellow Gearhead
-					["provider"] = { "n", 77928 },	-- Gazlowe
 					["sourceQuests"] = {
 						34040,	-- Maker's Mark
 						34041,	-- Four Finger Discount
 					},
+					["provider"] = { "n", 77928 },	-- Gazlowe
 					["coord"] = { 85.8, 45.8, FROSTFIRE_RIDGE },
 					["races"] = HORDE_ONLY,
 				}),
 				q(34039, {	-- WANTED: Overlord Blackhammer
+					["sourceQuests"] = { 34042 },	-- A Fellow Gearhead
 					["qgs"] = {
 						77928,	-- Gazlowe
 						78323,	-- Goblin Engineer
 					},
-					["sourceQuests"] = { 34042 },	-- A Fellow Gearhead
 					["coord"] = { 88.4, 49.6, FROSTFIRE_RIDGE },
 					["races"] = HORDE_ONLY,
 				}),
 				q(34078, {	-- Payment Due for Services Rendered
+					["sourceQuests"] = { 34039 },	-- WANTED: Overlord Blackhammer
 					["qgs"] = {
 						77928,	-- Gazlowe
 						78323,	-- Goblin Engineer
 					},
-					["sourceQuests"] = { 34039 },	-- WANTED: Overlord Blackhammer
 					["coord"] = { 85.8, 45.8, FROSTFIRE_RIDGE },
 					["races"] = HORDE_ONLY,
 				}),
@@ -184,16 +184,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(36341, {	-- Primal Fury (A)
-					["provider"] = { "n", 84185 },	-- Thisalee Crow
 					["sourceQuest"] = 36134,	-- Garrison Campaign: Awakening
+					["provider"] = { "n", 84185 },	-- Thisalee Crow
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						follower(217),	-- Thisalee Crow
 					},
 				}),
 				q(36342, {	-- Primal Fury (H)
-					["provider"] = { "n", 88530 },	-- Choluna
 					["sourceQuest"] = 36136,	-- Garrison Campaign: Awakening
+					["provider"] = { "n", 88530 },	-- Choluna
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						follower(217),	-- Choluna
@@ -235,45 +235,45 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["coord"] = { 40.4, 40.3, GORGROND },
 				}),
 				q(34337, {	-- The Giant Cauldron
-					["provider"] = { "n", 78187 },	-- Thisalee Crow
 					["sourceQuests"] = {
 						34336,	-- Ambushing the Enemy
 						34347,	-- Bladefury's Orders
 					},
+					["provider"] = { "n", 78187 },	-- Thisalee Crow
 					["coord"] = { 39.8, 37.0, GORGROND },
 				}),
 				q(34339, {	-- A Goren's Feast
-					["provider"] = { "n", 89179 },	-- Choluna
 					["sourceQuest"] = 34337,	-- The Giant Cauldron
+					["provider"] = { "n", 89179 },	-- Choluna
 					["coord"] = { 54.2, 56.0, GORGROND },
 				}),
 				q(34340, {	-- Heating Up
-					["provider"] = { "n", 74125 },	-- Aren Mistshade
 					["sourceQuest"] = 34337,	-- The Giant Cauldron
+					["provider"] = { "n", 74125 },	-- Aren Mistshade
 					["coord"] = { 54.2, 56.0, GORGROND },
 				}),
 				q(34338, {	-- The Descent
-					["provider"] = { "n", 78251 },	-- Thisalee Crow
 					["sourceQuest"] = 34337,	-- The Giant Cauldron
+					["provider"] = { "n", 78251 },	-- Thisalee Crow
 					["coord"] = { 54.2, 56.0, GORGROND },
 				}),
 				q(34410, {	-- The Beating Heart
-					["provider"] = { "n", 78251 },	-- Thisalee Crow
 					["sourceQuests"] = {
 						34339,	-- A Goren's Feast
 						34340,	-- Heating Up
 						34338,	-- The Descent
 					},
+					["provider"] = { "n", 78251 },	-- Thisalee Crow
 					["coord"] = { 54.2, 56.0, GORGROND },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(34341, {	-- The Beating Heart
-					["provider"] = { "n", 78251 },	-- Thisalee Crow
 					["sourceQuests"] = {
 						34339,	-- A Goren's Feast
 						34340,	-- Heating Up
 						34338,	-- The Descent
 					},
+					["provider"] = { "n", 78251 },	-- Thisalee Crow
 					["coord"] = { 54.2, 56.0, GORGROND },
 					["races"] = HORDE_ONLY,
 				}),
@@ -304,52 +304,52 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					},
 				}),
 				q(35188, {	-- Pesky Podlings
-					["provider"] = { "n", 81499 },	-- Soulbinder Zamaya
 					["sourceQuests"] = { 35187 },	-- Infiltrating the Sargerei
+					["provider"] = { "n", 81499 },	-- Soulbinder Zamaya
 					["coord"] = { 49.8, 81.4, DRAENOR_SHADOWMOON_VALLEY },
 				}),
 				q(35189, {	-- The Word of Socrethar
-					["provider"] = { "n", 81530 },	-- Anchorite Laanda
 					["sourceQuests"] = { 35187 },	-- Infiltrating the Sargerei
+					["provider"] = { "n", 81530 },	-- Anchorite Laanda
 					["coord"] = { 50.0, 81.2, DRAENOR_SHADOWMOON_VALLEY },
 				}),
 				q(35190, {	-- An Ancient Threat
-					["provider"] = { "n", 81499 },	-- Soulbinder Zamaya
 					["sourceQuests"] = { 35187 },	-- Infiltrating the Sargerei
+					["provider"] = { "n", 81499 },	-- Soulbinder Zamaya
 					["coord"] = { 49.8, 81.4, DRAENOR_SHADOWMOON_VALLEY },
 				}),
 				q(35191, {	-- Shattering the Enemy
-					["provider"] = { "n", 81530 },	-- Anchorite Laanda
 					["sourceQuests"] = { 35187 },	-- Infiltrating the Sargerei
+					["provider"] = { "n", 81530 },	-- Anchorite Laanda
 					["coord"] = { 50.0, 81.2, DRAENOR_SHADOWMOON_VALLEY },
 				}),
 				q(35194, {	-- Facing Demons
-					["provider"] = { "n", 81530 },	-- Anchorite Laanda
 					["sourceQuests"] = {
 						35188,	-- Pesky Podlings
 						35189,	-- The Word of Socrethar
 						35190,	-- An Ancient Threat
 						35191,	-- Shattering the Enemy
 					},
+					["provider"] = { "n", 81530 },	-- Anchorite Laanda
 					["coord"] = { 50.0, 81.2, DRAENOR_SHADOWMOON_VALLEY },
 				}),
 				q(35195, {	-- Socrethar's Fury
-					["provider"] = { "o", 231918 },	-- Laanda's Scroll
 					["sourceQuests"] = { 35194 },	-- Facing Demons
+					["provider"] = { "o", 231918 },	-- Laanda's Scroll
 					["coord"] = { 50.0, 81.2, DRAENOR_SHADOWMOON_VALLEY },
 					["groups"] = {
 						i(119134),	-- Sargerei Disguise (TOY!)
 					},
 				}),
 				q(35196, {	-- Forging Ahead
-					["provider"] = { "n", 81530 },	-- Anchorite Laanda
 					["sourceQuests"] = { 35195 },	-- Socrethar's Fury
+					["provider"] = { "n", 81530 },	-- Anchorite Laanda
 					["coord"] = { 50.6, 82.2, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(35197, {	-- Forging Ahead
-					["provider"] = { "n", 81530 },	-- Anchorite Laanda
 					["sourceQuests"] = { 35195 },	-- Socrethar's Fury
+					["provider"] = { "n", 81530 },	-- Anchorite Laanda
 					["coord"] = { 50.6, 82.2, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = HORDE_ONLY,
 				}),
@@ -376,26 +376,26 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["coord"] = { 59.2, 82.2, DRAENOR_SHADOWMOON_VALLEY },
 				}),
 				q(34355, {	-- Dirty Rats
-					["provider"] = { "n", 77982 },	-- Rexxar
 					["sourceQuest"] = 34353,	-- Shredder Suppressor
+					["provider"] = { "n", 77982 },	-- Rexxar
 					["coord"] = { 59.2, 82.2, DRAENOR_SHADOWMOON_VALLEY },
 				}),
 				q(34397, {	-- Downsizing the Darktide
-					["provider"] = { "n", 78258 },	-- Rexxar
 					["sourceQuest"] = 34355,	-- Dirty Rats
+					["provider"] = { "n", 78258 },	-- Rexxar
 					["coord"] = { 58.1, 93.9, DRAENOR_SHADOWMOON_VALLEY },
 				}),
 				q(34365, {	-- Releasing Rylak
-					["provider"] = { "n", 78258 },	-- Rexxar
 					["sourceQuest"] = 34355,	-- Dirty Rats
+					["provider"] = { "n", 78258 },	-- Rexxar
 					["coord"] = { 58.1, 93.9, DRAENOR_SHADOWMOON_VALLEY },
 				}),
 				q(34450, {	-- Rylak Rescue
-					["provider"] = { "n", 78258 },	-- Rexxar
 					["sourceQuests"] = {
 						34365,	-- Releasing Rylak
 						34397,	-- Downsizing the Darktide
 					},
+					["provider"] = { "n", 78258 },	-- Rexxar
 					["coord"] = { 58.1, 93.9, DRAENOR_SHADOWMOON_VALLEY },
 				}),
 
@@ -411,50 +411,50 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(35838, {	-- The Warlord's Council
-					["provider"] = { "n", 83051 },	-- Jeanine Amrell
 					["sourceQuest"] = 35837,	-- Garrison Campaign: Deep Recon
+					["provider"] = { "n", 83051 },	-- Jeanine Amrell
 					["coord"] = { 49.8, 37.0, DRAENOR_NAGRAND },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(35844, {	-- The Warlord's Council
-					["provider"] = { "n", 83052 },	-- Shadow Hunter Zasta
 					["sourceQuest"] = 35843,	-- Garrison Campaign: Deep Recon
+					["provider"] = { "n", 83052 },	-- Shadow Hunter Zasta
 					["coord"] = { 49.8, 37.0, DRAENOR_NAGRAND },
 					["races"] = HORDE_ONLY,
 				}),
 				q(35839, {	-- Plans of War
-					["provider"] = { "n", 83053 },	-- Flint Shadowmore
 					["sourceQuest"] = 35838,	-- The Warlord's Council
+					["provider"] = { "n", 83053 },	-- Flint Shadowmore
 					["coord"] = { 41.8, 37.0, DRAENOR_NAGRAND },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(35845, {	-- Plans of War
-					["provider"] = { "n", 83054 },	-- Shadow Hunter Kajassa
 					["sourceQuest"] = 35844,	-- The Warlord's Council
+					["provider"] = { "n", 83054 },	-- Shadow Hunter Kajassa
 					["coord"] = { 41.8, 37.0, DRAENOR_NAGRAND },
 					["races"] = HORDE_ONLY,
 				}),
 				q(35840, {	-- Intercepting the Orders
-					["provider"] = { "n", 83053 },	-- Flint Shadowmore
 					["sourceQuest"] = 35839,	-- Plans of War
+					["provider"] = { "n", 83053 },	-- Flint Shadowmore
 					["coord"] = { 41.8, 37.0, DRAENOR_NAGRAND },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(35846, {	-- Intercepting the Orders
-					["provider"] = { "n", 83054 },	-- Shadow Hunter Kajassa
 					["sourceQuest"] = 35845,	-- Plans of War
+					["provider"] = { "n", 83054 },	-- Shadow Hunter Kajassa
 					["coord"] = { 41.8, 37.0, DRAENOR_NAGRAND },
 					["races"] = HORDE_ONLY,
 				}),
 				q(35841, {	-- Putting Down the Packleader
-					["provider"] = { "n", 83053 },	-- Flint Shadowmore
 					["sourceQuest"] = 35839,	-- Plans of War (35840 is too far)
+					["provider"] = { "n", 83053 },	-- Flint Shadowmore
 					["coord"] = { 41.8, 37.0, DRAENOR_NAGRAND },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(35842, {	-- Putting Down the Packleader
-					["provider"] = { "n", 83054 },	-- Shadow Hunter Kajassa
 					["sourceQuest"] = 35845,	-- Plans of War (35846 is too far)
+					["provider"] = { "n", 83054 },	-- Shadow Hunter Kajassa
 					["coord"] = { 41.8, 37.0, DRAENOR_NAGRAND },
 					["races"] = HORDE_ONLY,
 				}),
@@ -481,18 +481,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["coord"] = { 27.0, 44.4, TANAAN_JUNGLE },
 				}),
 				q(38271, {	-- Following the Bloody Path
-					["provider"] = { "n", 91348 },	-- Ariok
 					["sourceQuest"] = 38270,
+					["provider"] = { "n", 91348 },	-- Ariok
 					["coord"] = { 27.0, 44.4, TANAAN_JUNGLE },
 				}),
 				q(38273, {	-- Spirits of the Bleeding Hollow
-					["provider"] = { "o", 240547 },	-- Orc Skull
 					["sourceQuest"] = 38271,	-- Following the Bloody Path
+					["provider"] = { "o", 240547 },	-- Orc Skull
 					["coord"] = { 32.5, 37.5, TANAAN_JUNGLE },
 				}),
 				q(38272, {	-- The Bleeding Hollow
-					["provider"] = { "n", 91421 },	-- Ariok
 					["sourceQuest"] = 38271,
+					["provider"] = { "n", 91421 },	-- Ariok
 					["coord"] = { 32.5, 37.5, TANAAN_JUNGLE },
 				}),
 				q(38274, {	-- The Eye of Kilrogg
@@ -514,14 +514,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(38267, {	-- Friends Above (A)
-					["provider"] = { "n", 91290 },	-- Reshad
 					["sourceQuest"] = 37687,	-- Garrison Campaign: In the Shadows (A)
+					["provider"] = { "n", 91290 },	-- Reshad
 					["coord"] = { 57.4, 58.8, TANAAN_JUNGLE },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(38269, {	-- Friends Above (H)
-					["provider"] = { "n", 91292 },	-- Reshad
 					["sourceQuest"] = 37688,	-- Garrison Campaign: In the Shadows (H)
+					["provider"] = { "n", 91292 },	-- Reshad
 					["coord"] = { 60.4, 46.2, TANAAN_JUNGLE },
 					["races"] = HORDE_ONLY,
 				}),
@@ -536,8 +536,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["coord"] = { 25.8, 38.8, TANAAN_JUNGLE },
 				}),
 				q(38223, {	-- Dark Ascension
-					["provider"] = { "o", 240317 },	-- Iskar's Tome of Shadows
 					["sourceQuest"] = 38213,	-- Get a Clue
+					["provider"] = { "o", 240317 },	-- Iskar's Tome of Shadows
 					["coord"] = { 16.1, 44.3, TANAAN_JUNGLE },
 					["groups"] = {
 						i(124557),	-- Baleful Girdle
@@ -556,8 +556,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(38562, {	-- Secrets of the Sargerei (A)
-					["provider"] = { "n", 91751 },	-- Exarch Yrel
 					["sourceQuest"] = 38421,	-- Garrison Campaign: Onslaught at Auchindoun (A)
+					["provider"] = { "n", 91751 },	-- Exarch Yrel
 					["coord"] = { 44.2, 65.4, TALADOR },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -570,8 +570,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					},
 				}),
 				q(38416, {	-- Secrets of the Sargerei (H)
-					["provider"] = { "n", 91750 },	-- Lady Liadrin
 					["sourceQuest"] = 38415,	-- Garrison Campaign: Onslaught at Auchindoun (H)
+					["provider"] = { "n", 91750 },	-- Lady Liadrin
 					["coord"] = { 44.2, 65.2, TALADOR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -606,8 +606,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["coord"] = { 47.2, 70.4, TANAAN_JUNGLE },
 				}),
 				q(39394, {	-- The Cipher of Damnation (A)
-					["provider"] = { "n", 92120 },	-- Oronok Torn-heart
 					["sourceQuest"] = 38462,	-- Breaching the Barrier
+					["provider"] = { "n", 92120 },	-- Oronok Torn-heart
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(128225),	-- Empowered Apexis Fragment
@@ -615,8 +615,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					},
 				}),
 				q(38463, {	-- The Cipher of Damnation (H)
-					["provider"] = { "n", 92120 },	-- Oronok Torn-heart
 					["sourceQuest"] = 38462,	-- Breaching the Barrier
+					["provider"] = { "n", 92120 },	-- Oronok Torn-heart
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(128225),	-- Empowered Apexis Fragment
@@ -644,37 +644,37 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["coord"] = { 39.6, 24.6, DRAENOR_NAGRAND },
 				}),
 				q(35972, {	-- Ogre Onslaught
-					["provider"] = { "n", 83734 },	-- Greblin Fastfizzle
 					["sourceQuest"] = 35945,	-- Greblin Fastfizzle
+					["provider"] = { "n", 83734 },	-- Greblin Fastfizzle
 					["coord"] = { 39.6, 24.4, DRAENOR_NAGRAND },
 				}),
 				q(35970, {	-- Preservation Capitalization
-					["provider"] = { "n", 83734 },	-- Greblin Fastfizzle
 					["sourceQuest"] = 35945,	-- Greblin Fastfizzle
+					["provider"] = { "n", 83734 },	-- Greblin Fastfizzle
 					["coord"] = { 39.6, 24.4, DRAENOR_NAGRAND },
 				}),
 				q(37511, {	-- Dizzy Sparkshift
-					["provider"] = { "n", 83734 },	-- Greblin Fastfizzle
 					["sourceQuests"] = {
 						35972,	-- Ogre Onslaught
 						35970,	-- Preservation Capitalization
 					},
+					["provider"] = { "n", 83734 },	-- Greblin Fastfizzle
 					["coord"] = { 39.6, 24.4, DRAENOR_NAGRAND },
 				}),
 				q(35973, {	-- Brokyo Beatdown
-					["provider"] = { "n", 76508 },	-- Dizzy Sparkshift
 					["sourceQuest"] = 37511,	-- Dizzy Sparkshift
+					["provider"] = { "n", 76508 },	-- Dizzy Sparkshift
 					["coord"] = { 40.6, 13.0, DRAENOR_NAGRAND },
 				}),
 				q(37517, {	-- News for Nixxie
-					["provider"] = { "n", 76508 },	-- Dizzy Sparkshift
 					["sourceQuest"] = 35973,	-- Brokyo Breakdown
+					["provider"] = { "n", 76508 },	-- Dizzy Sparkshift
 					["coord"] = { 40.6, 13.0, DRAENOR_NAGRAND },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(37516, {	-- News for Nixxie
-					["provider"] = { "n", 76508 },	-- Dizzy Sparkshift
 					["sourceQuest"] = 35973,	-- Brokyo Breakdown
+					["provider"] = { "n", 76508 },	-- Dizzy Sparkshift
 					["coord"] = { 40.6, 13.0, DRAENOR_NAGRAND },
 					["races"] = HORDE_ONLY,
 				}),
@@ -685,30 +685,30 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(36164, {	-- The Trial of Courage
-					["provider"] = { "n", 80078 },	-- Exarch Akama
 					["sourceQuest"] = 36163,	-- Garrison Campaign: The Exarch's Call
+					["provider"] = { "n", 80078 },	-- Exarch Akama
 					["coord"] = { 55.8, 32.8, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(36168, {	-- The Trial of Faith
-					["provider"] = { "n", 80073 },	-- Exarch Maladaar
 					["sourceQuest"] = 36163,	-- Garrison Campaign: The Exarch's Call
+					["provider"] = { "n", 80073 },	-- Exarch Maladaar
 					["coord"] = { 62.4, 26.2, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(36167, {	-- The Trial of Heart
-					["provider"] = { "n", 80079 },	-- Exarch Naielle
 					["sourceQuest"] = 36163,	-- Garrison Campaign: The Exarch's Call
+					["provider"] = { "n", 80079 },	-- Exarch Naielle
 					["coord"] = { 62.4, 26.2, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(36169, {	-- The Trial of Champions
-					["provider"] = { "n", 84974 },	-- Exarch Maladaar
 					["sourceQuests"] = {
 						36168,	-- The Trial of Faith
 						36164,	-- The Trial of Courage
 						36167,	-- The Trial of Heart
 					},
+					["provider"] = { "n", 84974 },	-- Exarch Maladaar
 					["coord"] = { 75.0, 57.8, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -725,35 +725,35 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(32980, {	-- Eaters of the Elements
-					["provider"] = { "n", 72230 },	-- Draka
 					["sourceQuests"] = { 32979 },	-- Garrison Campaign: Farseer's Rock
+					["provider"] = { "n", 72230 },	-- Draka
 					["coord"] = { 57.6, 41.6, FROSTFIRE_RIDGE },
 					["races"] = HORDE_ONLY,
 				}),
 				q(33444, {	-- Eatercology
-					["provider"] = { "n", 72230 },	-- Draka
 					["sourceQuests"] = { 32980 },	-- Eaters of the Elements
+					["provider"] = { "n", 72230 },	-- Draka
 					["coord"] = { 57.2, 41.6, FROSTFIRE_RIDGE },
 					["races"] = HORDE_ONLY,
 				}),
 				q(32983, {	-- In the Shadow of Giants
-					["provider"] = { "n", 74253 },	-- Farseer Drek'Thar
 					["sourceQuests"] = { 32980 },	-- Eaters of the Elements
+					["provider"] = { "n", 74253 },	-- Farseer Drek'Thar
 					["coord"] = { 57.6, 41.6, FROSTFIRE_RIDGE },
 					["races"] = HORDE_ONLY,
 				}),
 				q(32984, {	-- The Ascent
-					["provider"] = { "n", 74253 },	-- Farseer Drek'Thar
 					["sourceQuests"] = {
 						33444,	-- Eatercology
 						32983,	-- In the Shadow of Giants
 					},
+					["provider"] = { "n", 74253 },	-- Farseer Drek'Thar
 					["coord"] = { 74.0, 29.6, FROSTFIRE_RIDGE },
 					["races"] = HORDE_ONLY,
 				}),
 				q(32985, {	-- Fury of Frostfire
-					["provider"] = { "n", 74330 },	-- Farseer Drek'Thar
 					["sourceQuests"] = { 32984 },	-- The Ascent
+					["provider"] = { "n", 74330 },	-- Farseer Drek'Thar
 					["coord"] = { 70.0, 38.2, FROSTFIRE_RIDGE },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -761,8 +761,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					},
 				}),
 				q(33427, {	-- Ours is the Fury
-					["provider"] = { "n", 76622 },	-- Thrall
 					["sourceQuests"] = { 32985 },	-- Fury of Frostfire
+					["provider"] = { "n", 76622 },	-- Thrall
 					["coord"] = { 70.0, 38.2, FROSTFIRE_RIDGE },
 					["races"] = HORDE_ONLY,
 				}),
@@ -777,39 +777,39 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(35683, {	-- Reclaiming the City
-					["provider"] = { "n", 75028 },	-- Exarch Maladaar
 					["sourceQuest"] = 35679,	-- Garrison Campaign: The Fall of Shattrath
+					["provider"] = { "n", 75028 },	-- Exarch Maladaar
 					["coord"] = { 49.8, 48.6, TALADOR },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(35684, {	-- Reclaiming the City
-					["provider"] = { "n", 76804 },	-- Lady Liadrin
 					["sourceQuest"] = 35680,	-- Garrison Campaign: The Fall of Shattrath
+					["provider"] = { "n", 76804 },	-- Lady Liadrin
 					["coord"] = { 50.0, 48.4, TALADOR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(35685, {	-- Socrethar's Demise
-					["provider"] = { "n", 75028 },	-- Exarch Maladaar
 					["sourceQuest"] = 35683,	-- Reclaiming the City
+					["provider"] = { "n", 75028 },	-- Exarch Maladaar
 					["coord"] = { 49.8, 48.6, TALADOR },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(35687, {	-- Socrethar's Demise
-					["provider"] = { "n", 76804 },	-- Lady Liadrin
 					["sourceQuest"] = 35684,	-- Reclaiming the City
+					["provider"] = { "n", 76804 },	-- Lady Liadrin
 					["coord"] = { 50.0, 48.4, TALADOR },
 					["races"] = HORDE_ONLY,
 				}),
 
 			-- The Ring of Blood
 				q(36219, {	-- Garrison Campaign: The Ring of Blood
+					["description"] = "Offered if you have NOT completed |cFFFFD700The Ring of Trials|r in Nagrand or the |cFFFFD700Stonemaul Arena|r bonus objective in Gorgrond.",
 					["providers"] = {
 						{ "o", 234243 },	-- Overly Gaudy Note [H Tier 2]
 					},
 					["coords"] = {
 						{ 42.9, 50.2, FROSTWALL },	-- [H Tier 2]
 					},
-					["description"] = "Offered if you have NOT completed |cFFFFD700The Ring of Trials|r in Nagrand or the |cFFFFD700Stonemaul Arena|r bonus objective in Gorgrond.",
 				}),
 				q(36280, {	-- Garrison Campaign: The Ring of Blood
 					["description"] = "Offered if you complete |cFFFFD700The Ring of Trials|r in Nagrand.",
@@ -821,32 +821,32 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["description"] = "Offered if you complete |cFFFFD700The Ring of Trials|r in Nagrand and the |cFFFFD700Stonemaul Arena|r bonus objective in Gorgrond.",
 				}),
 				q(36220, {	-- How Tough Are You?
-					["provider"] = { "n", 84637 },	-- Gurgthock
 					["sourceQuests"] = { 36219, 36280, 36281, 36282 },	-- Garrison Campaign: The Ring of Blood (4 different versions... come on, blizzard)
+					["provider"] = { "n", 84637 },	-- Gurgthock
 					["coord"] = { 63.0, 36.0, DRAENOR_NAGRAND },
 				}),
 				q(36221, {	-- Entry Fee
-					["provider"] = { "n", 84720 },	-- Kroggol the Wall
 					["sourceQuest"] = 36220,	-- How Tough Are You?
+					["provider"] = { "n", 84720 },	-- Kroggol the Wall
 					["coord"] = { 56.8, 19.2, DRAENOR_NAGRAND },
 				}),
 				q(36222, {	-- The Champion of Blood
-					["provider"] = { "n", 84784 },	-- Wodin the Troll-Servant
 					["sourceQuest"] = 36221,	-- Entry Fee
+					["provider"] = { "n", 84784 },	-- Wodin the Troll-Servant
 					["coord"] = { 56.8, 13.0, DRAENOR_NAGRAND },
 					["groups"] = {
 						title(261),	-- Blood Champion <Name>
 					},
 				}),
 				q(36289, {	-- Out of the Shadows
-					["provider"] = { "n", 84784 },	-- Wodin the Troll-Servant
 					["sourceQuest"] = 36222,	-- The Champion of Blood
+					["provider"] = { "n", 84784 },	-- Wodin the Troll-Servant
 					["coord"] = { 56.8, 13.0, DRAENOR_NAGRAND },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(36290, {	-- Out of the Shadows
-					["provider"] = { "n", 84784 },	-- Wodin the Troll-Servant
 					["sourceQuest"] = 36222,	-- The Champion of Blood
+					["provider"] = { "n", 84784 },	-- Wodin the Troll-Servant
 					["coord"] = { 56.8, 13.0, DRAENOR_NAGRAND },
 					["races"] = HORDE_ONLY,
 				}),
@@ -858,8 +858,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(34281, {	-- Out of the Chains
-					["provider"] = { "n", 78056 },	-- Owynn Graddock <SI:7>
 					["sourceQuest"] = 34284,	-- Garrison Campaign: The Search for Owynn Graddock
+					["provider"] = { "n", 78056 },	-- Owynn Graddock <SI:7>
 					["coord"] = { 48.8, 14.6, FROSTFIRE_RIDGE },
 					["cost"] = {
 						{ "i", 110116, 1 },	-- Bloodmaul Shackle Key
@@ -867,8 +867,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(34285, {	-- Gearing Up
-					["provider"] = { "n", 78056 },	-- Owynn Graddock <SI:7>
 					["sourceQuest"] = 34281,	-- Out of the Chains
+					["provider"] = { "n", 78056 },	-- Owynn Graddock <SI:7>
 					["coord"] = { 48.8, 14.6, FROSTFIRE_RIDGE },
 					["cost"] = {
 						{ "i", 110229, 1 },	-- Owynn's Armor
@@ -878,36 +878,36 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(34286, {	-- Seeking the Truth
-					["provider"] = { "n", 78056 },	-- Owynn Graddock <SI:7>
 					["sourceQuest"] = 34285,	-- Gearing Up
+					["provider"] = { "n", 78056 },	-- Owynn Graddock <SI:7>
 					["coord"] = { 48.8, 14.6, FROSTFIRE_RIDGE },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(34362, {	-- The Shadow Gate
-					["provider"] = { "n", 78056 },	-- Owynn Graddock <SI:7>
 					["sourceQuest"] = 34286,	-- Seeking the Truth
+					["provider"] = { "n", 78056 },	-- Owynn Graddock <SI:7>
 					["coord"] = { 40.22, 21.46, FROSTFIRE_RIDGE },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(34287, {	-- Cleansing the Souls
-					["provider"] = { "n", 78428 },	-- Orlana Strongbrow
 					["sourceQuest"] = 34362,	-- The Shadow Gate
+					["provider"] = { "n", 78428 },	-- Orlana Strongbrow
 					["coord"] = { 39.6, 23.4, FROSTFIRE_RIDGE },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(34288, {	-- The Totems That Bind
-					["provider"] = { "n", 78428 },	-- Orlana Strongbrow
 					["sourceQuest"] = 34362,	-- The Shadow Gate
+					["provider"] = { "n", 78428 },	-- Orlana Strongbrow
 					["coord"] = { 39.6, 23.4, FROSTFIRE_RIDGE },
 					["cost"] = { { "i", 110378, 5 } },	-- Borgal's Totem
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(34289, {	-- Soulgrinder Survivor
-					["provider"] = { "n", 78428 },	-- Orlana Strongbrow
 					["sourceQuests"] = {
 						34287,	-- Cleansing the Souls
 						34288,	-- The Totems That Bind
 					},
+					["provider"] = { "n", 78428 },	-- Orlana Strongbrow
 					["coord"] = { 39.6, 23.4, FROSTFIRE_RIDGE },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -922,47 +922,47 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(34314, {	-- Out of the Chains
-					["provider"] = { "n", 78659 },	-- Shadow Hunter Bwu'ja
 					["sourceQuests"] = { 34309 },	-- Garrison Campaign: The Search for Shadow Hunter Bwu'ja
+					["provider"] = { "n", 78659 },	-- Shadow Hunter Bwu'ja
 					["coord"] = { 51.8, 16.8, FROSTFIRE_RIDGE },
 					["races"] = HORDE_ONLY,
 				}),
 				q(34315, {	-- Gearing Up
-					["provider"] = { "n", 78659 },	-- Shadow Hunter Bwu'ja
 					["sourceQuests"] = { 34314 },	-- Out of the Chains
+					["provider"] = { "n", 78659 },	-- Shadow Hunter Bwu'ja
 					["coord"] = { 51.8, 16.8, FROSTFIRE_RIDGE },
 					["races"] = HORDE_ONLY,
 				}),
 				q(34316, {	-- Seeking the Truth
-					["provider"] = { "n", 78746 },	-- Shadow Hunter Bwu'ja
 					["sourceQuests"] = { 34315 },	-- Gearing Up
+					["provider"] = { "n", 78746 },	-- Shadow Hunter Bwu'ja
 					["coord"] = { 51.8, 16.8, FROSTFIRE_RIDGE },
 					["races"] = HORDE_ONLY,
 				}),
 				q(34381, {	-- The Shadow Gate
-					["provider"] = { "n", 78785 },	-- Shadow Hunter Bwu'ja
 					["sourceQuests"] = { 34316 },	-- Seeking the Truth
+					["provider"] = { "n", 78785 },	-- Shadow Hunter Bwu'ja
 					["coord"] = { 40.6, 21.8, FROSTFIRE_RIDGE },
 					["races"] = HORDE_ONLY,
 				}),
 				q(34469, {	-- Cleansing the Souls
-					["provider"] = { "n", 78428 },	-- Orlana Strongbrow
 					["sourceQuests"] = { 34381 },	-- The Shadow Gate
+					["provider"] = { "n", 78428 },	-- Orlana Strongbrow
 					["coord"] = { 39.6, 23.4, FROSTFIRE_RIDGE },
 					["races"] = HORDE_ONLY,
 				}),
 				q(34318, {	-- The Totems That Bind
-					["provider"] = { "n", 78428 },	-- Orlana Strongbrow
 					["sourceQuests"] = { 34381 },	-- The Shadow Gate
+					["provider"] = { "n", 78428 },	-- Orlana Strongbrow
 					["coord"] = { 39.6, 23.4, FROSTFIRE_RIDGE },
 					["races"] = HORDE_ONLY,
 				}),
 				q(34319, {	-- Soulgrinder Survivor
-					["provider"] = { "n", 78428 },	-- Orlana Strongbrow
 					["sourceQuests"] = {
 						34469,	-- Cleansing the Souls
 						34318,	-- The Totems That Bind
 					},
+					["provider"] = { "n", 78428 },	-- Orlana Strongbrow
 					["coord"] = { 39.6, 23.4, FROSTFIRE_RIDGE },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -972,86 +972,86 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 
 			-- War Council
 				q(38253, {	-- Garrison Campaign: War Council
-					["altQuests"] = { 40418 },	-- To Tanaan!
-					["sourceQuests"] = { 36615 },	-- My Very Own Castle
 					["description"] = "Automatically granted upon entering your garrison.",
+					["sourceQuests"] = { 36615 },	-- My Very Own Castle
+					["altQuests"] = { 40418 },	-- To Tanaan!
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(38567, {	-- Garrison Campaign: War Council
-					["altQuests"] = { 40417 },	-- To Tanaan!
-					["sourceQuests"] = { 36614 },	-- My Very Own Fortress
 					["description"] = "Automatically granted upon upgrading your garrison to Rank 3.",
+					["sourceQuests"] = { 36614 },	-- My Very Own Fortress
+					["altQuests"] = { 40417 },	-- To Tanaan!
 					["races"] = HORDE_ONLY,
 				}),
 				q(38257, {	-- We Need a Shipwright
-					["provider"] = { "n", 92219 },	-- King Varian Wrynn
 					["sourceQuests"] = {
 						38253,	-- Garrison Campaign: War Council
 						40418,	-- To Tanaan!
 					},
+					["provider"] = { "n", 92219 },	-- King Varian Wrynn
 					["coord"] = { 32.0, 31.9, LUNARFALL },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(38568, {	-- We Need a Shipwright
-					["provider"] = { "n", 92400 },	-- Vol'jin
 					["sourceQuests"] = {
 						38567,	-- Garrison Campaign: War Council
 						40417,	-- To Tanaan!
 					},
+					["provider"] = { "n", 92400 },	-- Vol'jin
 					["coord"] = { 39.2, 54.9, FROSTWALL },
 					["races"] = HORDE_ONLY,
 				}),
 				q(38254, {	-- Derailment (A)
-					["provider"] = { "n", 90180 },	-- Exarch Naielle
 					["sourceQuest"] = 38257,	-- We Need a Shipwright
+					["provider"] = { "n", 90180 },	-- Exarch Naielle
 					["coord"] = { 52.5, 9.8, GORGROND },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(38570, {	-- Derailment (H)
-					["provider"] = { "n", 89937 },	-- Sammy Fivefingers
 					["sourceQuest"] = 38568,	-- We Need a Shipwright
+					["provider"] = { "n", 89937 },	-- Sammy Fivefingers
 					["coord"] = { 52.5, 9.8, GORGROND },
 					["races"] = HORDE_ONLY,
 				}),
 				q(38255, {	-- The Train Gang (A)
-					["provider"] = { "n", 90177 },	-- Exarch Yrel
 					["sourceQuest"] = 38254,	-- Derailment
+					["provider"] = { "n", 90177 },	-- Exarch Yrel
 					["coord"] = { 56.7, 17.1, GORGROND },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(38571, {	-- The Train Gang (H)
-					["provider"] = { "n", 92401 },	-- Durotan
 					["sourceQuest"] = 38570,	-- Derailment
+					["provider"] = { "n", 92401 },	-- Durotan
 					["coord"] = { 56.7, 17.1, GORGROND },
 					["races"] = HORDE_ONLY,
 				}),
 				q(38256, {	-- Hook, Line, and... Sink Him! (A)
-					["provider"] = { "n", 91242 },	-- Solog Roark
 					["sourceQuest"] = 38255,	-- The Train Gang
+					["provider"] = { "n", 91242 },	-- Solog Roark
 					["coord"] = { 56.7, 17.2, GORGROND },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(38572, {	-- Hook, Line, and... Sink Him! (H)
-					["provider"] = { "n", 91242 },	-- Solog Roark
 					["sourceQuest"] = 38571,	-- The Train Gang
+					["provider"] = { "n", 91242 },	-- Solog Roark
 					["coord"] = { 56.7, 17.2, GORGROND },
 					["races"] = HORDE_ONLY,
 				}),
 				q(38258, {	-- Nothing Remains (A)
-					["provider"] = { "n", 91242 },	-- Solog Roark
 					["sourceQuest"] = 38256,	-- Hook, Line, and... Sink Him!
+					["provider"] = { "n", 91242 },	-- Solog Roark
 					["coord"] = { 50.6, 16.6, GORGROND },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(38573, {	-- Nothing Remains (H)
-					["provider"] = { "n", 91242 },	-- Solog Roark
 					["sourceQuest"] = 38572,	-- Hook, Line, and... Sink Him!
+					["provider"] = { "n", 91242 },	-- Solog Roark
 					["coord"] = { 50.6, 16.6, GORGROND },
 					["races"] = HORDE_ONLY,
 				}),
 				q(38259, {	-- All Hands on Deck
-					["provider"] = { "n", 92219 },	-- King Varian Wrynn
 					["sourceQuest"] = 38258,	-- Nothing Remains
+					["provider"] = { "n", 92219 },	-- King Varian Wrynn
 					["coord"] = { 32.0, 31.9, LUNARFALL },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1059,8 +1059,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					},
 				}),
 				q(38574, {	-- All Hands on Deck
-					["provider"] = { "n", 92400 },	-- Vol'jin
 					["sourceQuest"] = 38573,	-- Nothing Remains
+					["provider"] = { "n", 92400 },	-- Vol'jin
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						garrisonBuilding(205),	-- Shipyard lvl 1
@@ -1596,8 +1596,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				},
 			}),
 			q(33075, {	-- A Hero's Welcome
-				["provider"] = { "n", 80568 },	-- Yrel
 				["sourceQuests"] = { 34692 },	-- Delegating on Draenor
+				["provider"] = { "n", 80568 },	-- Yrel
 				["coords"] = {
 					{ 46.9, 50.8, LUNARFALL },	-- lvl 1 garrison
 					{ 47.0, 51.0, LUNARFALL },	-- lvl 2/3 garrison
@@ -1622,26 +1622,26 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				},
 			}),
 			q(37851, {	-- Amulet of Rukhmar: The Final Key
-				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["sourceQuests"] = { 37850 },	-- Amulet of Rukhmar: The Second Key
+				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
 				["isDaily"] = true,
 			}),
 			q(37849, {	-- Amulet of Rukhmar: The First Key
-				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["sourceQuests"] = { 37848 },	-- Treasure Contract: Amulet of Rukhmar
+				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
 				["isDaily"] = true,
 			}),
 			q(37850, {	-- Amulet of Rukhmar: The Second Key
-				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["sourceQuests"] = { 37849 },	-- Amulet of Rukhmar: The First Key
+				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
 				["isDaily"] = true,
 			}),
 			q(37852, {	-- Amulet of Rukhmar: The Apexis Device [A]
-				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["sourceQuests"] = { 37851 },	-- Amulet of Rukhmar: The Final Key
+				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["coord"] = { 34.6, 32.7, LUNARFALL },
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
@@ -1652,8 +1652,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				},
 			}),
 			q(37993, {	-- Amulet of Rukhmar: The Apexis Device [H]
-				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["sourceQuests"] = { 37851 },	-- Amulet of Rukhmar: The Final Key
+				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["coord"] = { 40.2, 56.0, FROSTWALL },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
@@ -1664,15 +1664,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				},
 			}),
 			q(34653, {	-- Arakkoa Exodus
+				["sourceQuests"] = { 35537, 35554 },	-- News from Spires of Arak H/A
 				["qgs"] = {
 					81492,	-- Bodrick Grey
 					78487,	-- Rokhan
 				},
-				["sourceQuests"] = { 35537, 35554 },	-- News from Spires of Arak H/A
 				["coords"] = { { 45.6, 43.2, FROSTWALL }, { 37.8, 36.8, LUNARFALL } },
 				["isBreadcrumb"] = true,
 			}),
 			q(36951, {	-- Arakkoa Exodus
+				["description"] = WOD_CHROMIE_TIME_DESCRIPTION,
+				["sourceQuests"] = { 35554 },	-- News from Spires of Arak
 				["providers"] = {
 					{ "o", 232397 },	-- Bulletin Board
 					{ "o", 232398 },	-- Bounty Board
@@ -1681,14 +1683,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					{ "o", 233291 },	-- Command Board lvl 2
 					{ "o", 237022 },	-- Command Board lvl 3
 				},
-				["sourceQuests"] = { 35554 },	-- News from Spires of Arak
 				["coords"] = { { 49.3, 41.3, FROSTWALL }, { 42.8, 45.2, LUNARFALL } },
-				["description"] = WOD_CHROMIE_TIME_DESCRIPTION,
 				["isBreadcrumb"] = true,
 			}),
 			q(36624, {	-- Ashran Appearance
-				["provider"] = { "n", 79953 },	-- Lieutenant Thorn
 				["sourceQuest"] = 34692,	-- Delegating on Draenor
+				["provider"] = { "n", 79953 },	-- Lieutenant Thorn
 				["coords"] = {
 					{ 40.7, 53.6, LUNARFALL },	-- lvl 1 garrison
 					{ 31.1, 32.8, LUNARFALL },	-- lvl 2 garrison
@@ -1696,8 +1696,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(36706, {	-- Ashran Appearance
-				["provider"] = { "n", 78466 },	-- Gazlowe
 				["sourceQuest"] = 34775,	-- Mission Probable
+				["provider"] = { "n", 78466 },	-- Gazlowe
 				["coord"] = { 52.4, 53.3, FROSTWALL },
 				["races"] = HORDE_ONLY,
 			}),
@@ -2154,8 +2154,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				},
 			}),
 			q(36627, {	-- Big Frostfire Gun
-				["provider"] = { "n", 85882 },	-- Blixthraz Blastcharge
 				["sourceQuest"] = 36594,	-- "Spare" Parts
+				["provider"] = { "n", 85882 },	-- Blixthraz Blastcharge
 				["coord"] = { 62.2, 73.4, FROSTWALL },
 				["requireSkill"] = ENGINEERING,
 				["races"] = HORDE_ONLY,
@@ -2164,17 +2164,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				}),
 			}),
 			q(36592, {	-- Bigger is Better
-				["provider"] = { "n", 77209 },	-- Baros Alexston
 				["sourceQuests"] = {
 					34692,	-- Delegating on Draenor
 					33814,	-- Fast Expansion
 				},
+				["provider"] = { "n", 77209 },	-- Baros Alexston
 				["coord"] = { 41.2, 49.3, LUNARFALL },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(36567, {	-- Bigger is Better
-				["provider"] = { "n", 78466 },	-- Gazlowe
 				["sourceQuest"] = 34775,	-- Mission Probable
+				["provider"] = { "n", 78466 },	-- Gazlowe
 				["coord"] = { 52.4, 53.3, FROSTWALL },	-- lvl 1
 				["races"] = HORDE_ONLY,
 			}),
@@ -2189,8 +2189,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(38356, {	-- Bringing the Bass
-				["provider"] = { "n", 91589 },	-- Fix "Smallie" Biggswrench
 				["sourceQuests"] = { 36615 },	-- My Very Own Castle
+				["provider"] = { "n", 91589 },	-- Fix "Smallie" Biggswrench
 				["coord"] = { 33.8, 36.4, LUNARFALL },
 				["timeline"] = { ADDED_6_1_0 },
 				["races"] = ALLIANCE_ONLY,
@@ -2210,8 +2210,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				},
 			}),
 			q(37961, {	-- Bringing the Bass
-				["provider"] = { "n", 91072 },	-- Drix Bassbolter
 				["sourceQuests"] = { 36614 },	-- My Very Own Fortress
+				["provider"] = { "n", 91072 },	-- Drix Bassbolter
 				["coord"] = { 40.9, 47.8, FROSTWALL },
 				["races"] = HORDE_ONLY,
 				["_drop"] = { "races" },	-- bad API data
@@ -2230,45 +2230,45 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				},
 			}),
 			q(34587, {	-- Build Your Barracks
-				["provider"] = { "n", 77209 },	-- Baros Alexston
 				["sourceQuests"] = {
 					35176,	-- Keeping it Together
 					35174,	-- Pale Moonlight
 					35166,	-- Ship Salvage
 				},
+				["provider"] = { "n", 77209 },	-- Baros Alexston
 				["coord"] = { 41.1, 49.4, LUNARFALL },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(34461, {	-- Build Your Barracks
-				["provider"] = { "n", 78466 },	-- Gazlowe
 				["sourceQuests"] = {
 					34823,	-- The Ogron Live?
 					34824,	-- What We Got
 					34822,	-- What We Need
 				},
+				["provider"] = { "n", 78466 },	-- Gazlowe
 				["coord"] = { 52.4, 53.3, FROSTWALL },
 				["races"] = HORDE_ONLY,
 			}),
 			q(36100, {	-- Building For Professions
-				["provider"] = { "n", 77209 },	-- Baros Alexston
+				["description"] = "Becomes available after completing any seconday profession intro quest.",
 				["sourceQuest"] = 34586,	-- Establish Your Garrison
+				["provider"] = { "n", 77209 },	-- Baros Alexston
 				["coords"] = {
 					{ 41.3, 49.4, LUNARFALL },	-- lvl 1 garrison
 					{ 29.2, 33.1, LUNARFALL },	-- lvl 2/3 garrison
 				},
-				["description"] = "Becomes available after completing any seconday profession intro quest.",
 				["races"] = ALLIANCE_ONLY,
 				["DisablePartySync"] = true,
 			}),
 			q(37669, {	-- Building For Professions
-				["provider"] = { "n", 78466 },	-- Gazlowe
+				["description"] = "Becomes available after completing any seconday profession intro quest.",
 				["sourceQuest"] = 34378,	-- Establish Your Garrison
+				["provider"] = { "n", 78466 },	-- Gazlowe
 				["coords"] = {
 					{ 52.4, 53.3, FROSTWALL },	-- lvl 1
 					{ 42.2, 55.6, FROSTWALL },	-- lvl 2
 					{ 37.6, 50.3, FROSTWALL },	-- lvl 3
 				},
-				["description"] = "Becomes available after completing any seconday profession intro quest.",
 				["races"] = HORDE_ONLY,
 				["DisablePartySync"] = true,
 			}),
@@ -2299,8 +2299,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				},
 			}),
 			q(36404, {	-- Clearing the Garden
-				["provider"] = { "n", 85344 },	-- Naron Bloomthistle
 				["sourceQuest"] = 36592,	-- Bigger is Better
+				["provider"] = { "n", 85344 },	-- Naron Bloomthistle
 				["coord"] = { 58.9, 53.4, LUNARFALL },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
@@ -2308,8 +2308,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				},
 			}),
 			q(34193, {	-- Clearing the Garden
-				["provider"] = { "n", 81981 },	-- Tarnon
 				["sourceQuest"] = 36567,	-- Bigger is Better
+				["provider"] = { "n", 81981 },	-- Tarnon
 				["coord"] = { 43.4, 83.2, FROSTWALL },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
@@ -2317,8 +2317,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				},
 			}),
 			q(37885, {	-- Dark Grimoire: Breaching the Barrier (A)
-				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["sourceQuest"] = 37884,	-- Dark Grimoire: The Final Ingredient
+				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["coord"] = { 34.6, 32.7, LUNARFALL },
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
@@ -2329,8 +2329,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				},
 			}),
 			q(37994, {	-- Dark Grimoire: Breaching the Barrier (H)
-				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["sourceQuest"] = 37884,	-- Dark Grimoire: The Final Ingredient
+				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["coord"] = { 40.2, 56.0, FROSTWALL },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
@@ -2341,20 +2341,20 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				},
 			}),
 			q(37884, {	-- Dark Grimoire: The Final Ingredient
-				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["sourceQuest"] = 37883,	-- Dark Grimoire: The Second Ingredient
+				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
 				["isDaily"] = true,
 			}),
 			q(37882, {	-- Dark Grimoire: The First Ingredient
-				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["sourceQuest"] = 37881,	-- Treasure Contract: Explosive Discoveries
+				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
 				["isDaily"] = true,
 			}),
 			q(37883, {	-- Dark Grimoire: The Second Ingredient
-				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["sourceQuest"] = 37882,	-- Dark Grimoire: The First Ingredient
+				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
 				["isDaily"] = true,
 			}),
@@ -2499,20 +2499,20 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				}},
 			}),
 			q(34692, {	-- Delegating on Draenor
-				["provider"] = { "n", 79953 },	-- Lieutenant Thorn
 				["sourceQuests"] = { 34646 },	-- Qiana Moonshadow
+				["provider"] = { "n", 79953 },	-- Lieutenant Thorn
 				["coord"] = { 40.2, 43.6, LUNARFALL },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(34379, {	-- Den of Wolves
-				["provider"] = { "n", 76411 },	-- Farseer Drek'Thar
 				["sourceQuest"] = 34775,	-- Mission Probable
+				["provider"] = { "n", 76411 },	-- Farseer Drek'Thar
 				["coord"] = { 49.7, 49.5, FROSTWALL },
 				["races"] = HORDE_ONLY,
 			}),
 			q(37979, {	-- Dream of Argus: The Crystal Reborn (A)
-				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["sourceQuest"] = 37978,	-- Dream of Argus: The Final Fragment
+				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["coord"] = { 34.6, 32.7, LUNARFALL },
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
@@ -2523,8 +2523,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				},
 			}),
 			q(37997, {	-- Dream of Argus: The Crystal Reborn (H)
-				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["sourceQuest"] = 37978,	-- Dream of Argus: The Final Fragment
+				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["coord"] = { 40.2, 56.0, FROSTWALL },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
@@ -2535,20 +2535,20 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				},
 			}),
 			q(37978, {	-- Dream of Argus: The Final Fragment
-				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["sourceQuest"] = 37977,	-- Dream of Argus: The Second Fragment
+				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
 				["isDaily"] = true,
 			}),
 			q(37976, {	-- Dream of Argus: The First Fragment
-				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["sourceQuest"] = 37973,	-- Treasure Contract: The Artificer
+				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
 				["isDaily"] = true,
 			}),
 			q(37977, {	-- Dream of Argus: The Second Fragment
-				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["sourceQuest"] = 37976,	-- Dream of Argus: The First Fragment
+				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
 				["isDaily"] = true,
 			}),
@@ -2562,8 +2562,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				},
 			}),
 			q(34586, {	-- Establish Your Garrison
-				["provider"] = { "n", 79243 },	-- Baros Alexston
 				["sourceQuests"] = { 34585 },	-- Quakefist
+				["provider"] = { "n", 79243 },	-- Baros Alexston
 				["coord"] = { 32.7, 34.0, LUNARFALL },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
@@ -2571,8 +2571,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				},
 			}),
 			q(34378, {	-- Establish Your Garrison
-				["provider"] = { "n", 78466 },	-- Gazlowe
 				["sourceQuests"] = { 34765 },	-- The Den of Skog
+				["provider"] = { "n", 78466 },	-- Gazlowe
 				["coord"] = { 51.2, 39.6, FROSTWALL },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
@@ -2580,8 +2580,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				},
 			}),
 			q(34583, {	-- For the Alliance
-				["provider"] = { "n", 79470 },	-- Vindicator Maraad
 				["sourceQuests"] = { 34582 },	-- Finding a Foothold
+				["provider"] = { "n", 79470 },	-- Vindicator Maraad
 				["coord"] = { 30.0, 34.3, LUNARFALL },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
@@ -2596,8 +2596,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				},
 			}),
 			q(34364, {	-- For the Horde!
-				["provider"] = { "n", 70859 },	-- Thrall
 				["sourceQuest"] = 34402,	-- Of Wolves and Warriors
+				["provider"] = { "n", 70859 },	-- Thrall
 				["coord"] = { 51.2, 43.2, FROSTWALL },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
@@ -2612,8 +2612,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				},
 			}),
 			q(39195, {	-- Gems of the Apexis
-				["provider"] = { "n", 77209 },	-- Baros Alexston
 				["sourceQuest"] = 38445,	-- The Assault Base
+				["provider"] = { "n", 77209 },	-- Baros Alexston
 				["requireSkill"] = JEWELCRAFTING,
 				["races"] = ALLIANCE_ONLY,
 				["isBreadcrumb"] = true,
@@ -2625,36 +2625,36 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["isBreadcrumb"] = true,
 			}),
 			q(33461, {	-- Gloomshade Game Hunter
-				["providers"] = {
-					{ "o", 230865 },	-- List of Ingredients
-					{ "n", 79966 },	-- Lost Packmule
-				},
+				-- ["icon"] = 632821,
 				["sourceQuests"] = {
 					33081,	-- Escape from Shaz'gul
 					33059,	-- The Fate of Karabor
+				},
+				["providers"] = {
+					{ "o", 230865 },	-- List of Ingredients
+					{ "n", 79966 },	-- Lost Packmule
 				},
 				["coords"] = {
 					{ 30.2, 18.1, LUNARFALL },	-- level 2 garrison
 					{ 39.8, 29.4, DRAENOR_SHADOWMOON_VALLEY },	-- Lost Packmule
 				},
-				-- ["icon"] = 632821,
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(37917, {	-- Gronnsbane: The Blessing of Fire
-				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["sourceQuest"] = 37916, -- Gronnsbane: The Broken Spear
+				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
 				["isDaily"] = true,
 			}),
 			q(37918, {	-- Gronnsbane: The Blessing of Fire
-				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["sourceQuest"] = 37917, -- Gronnsbane: The Broken Spear
+				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
 				["isDaily"] = true,
 			}),
 			q(37919, {	-- Gronnsbane: The Blessing of Beasts (A)
-				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["sourceQuest"] = 37918, -- Gronnsbane: The Blessing of Fire
+				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["coord"] = { 34.6, 32.7, LUNARFALL },
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
@@ -2666,8 +2666,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				},
 			}),
 			q(37995, {	-- Gronnsbane: The Blessing of Beasts (H)
-				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["sourceQuest"] = 37918, -- Gronnsbane: The Blessing of Fire
+				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["coord"] = { 40.2, 56.0, FROSTWALL },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
@@ -2678,8 +2678,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				},
 			}),
 			q(37916, {	-- Gronnsbane: The Broken Spear
-				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["sourceQuest"] = 37914, -- Treasure Contract: The Thunderlord Sage
+				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
 				["isDaily"] = true,
 				["groups"] = {
@@ -2690,26 +2690,26 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				},
 			}),
 			q(37799, {	-- Gutrek's Cleaver: The Final Piece
-				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["sourceQuest"] = 37798,	-- Gutrek's Cleaver: The Second Piece
+				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
 				["isDaily"] = true,
 			}),
 			q(37797, {	-- Gutrek's Cleaver: The First Piece
-				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["sourceQuest"] = 37788,	-- Treasure Contract: Gutrek's Cleaver
+				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
 				["isDaily"] = true,
 			}),
 			q(37798, {	-- Gutrek's Cleaver: The Second Piece
-				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["sourceQuest"] = 37797,	-- Gutrek's Cleaver: The First Piece
+				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
 				["isDaily"] = true,
 			}),
 			q(37811, {	-- Gutrek's Cleaver: The Spirit Forge (A)
-				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["sourceQuest"] = 37799,	-- Gutrek's Cleaver: The Final Piece
+				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["coord"] = { 34.6, 32.7, LUNARFALL },
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
@@ -2720,8 +2720,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				},
 			}),
 			q(37992, {	-- Gutrek's Cleaver: The Spirit Forge (H)
-				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["sourceQuest"] = 37799,	-- Gutrek's Cleaver: The Final Piece
+				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["coord"] = { 40.2, 56.0, FROSTWALL },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
@@ -2760,36 +2760,36 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["isBreadcrumb"] = true,
 			}),
 			q(34681, {	-- It's a Matter of Strategy
-				["provider"] = { "n", 78487 },	-- Rokhan
 				["sourceQuest"] = 36494,	-- News from Talador
+				["provider"] = { "n", 78487 },	-- Rokhan
 				["coord"] = { 45.9, 42.7, FROSTWALL },
 				["races"] = HORDE_ONLY,
 			}),
 			q(35176, {	-- Keeping it Together
-				["provider"] = { "n", 77209 },	-- Baros Alexston
 				["sourceQuests"] = { 34586 },	-- Establish Your Garrison
+				["provider"] = { "n", 77209 },	-- Baros Alexston
 				["coord"] = { 41.1, 49.4, LUNARFALL },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(36352, {	-- Locating the Lapidarist
-				["provider"] = { "n", 84967 },	-- "Appraiser" Sazsel Stickyfingers
 				["sourceQuest"] = 36314,	-- The Intricate Pendant
+				["provider"] = { "n", 84967 },	-- "Appraiser" Sazsel Stickyfingers
 				["coord"] = { 60.9, 40.0, FROSTWALL },
 				["requireSkill"] = JEWELCRAFTING,
 				["races"] = HORDE_ONLY,
 			}),
 			q(34584, {	-- Looking for Lumber
-				["provider"] = { "n", 79243 },	-- Baros Alexston
 				["sourceQuests"] = { 34583 },	-- For the Alliance!
+				["provider"] = { "n", 79243 },	-- Baros Alexston
 				["coord"] = { 32.5, 34.2, LUNARFALL },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(34820, {	-- Lost Lumberjacks
-				["provider"] = { "n", 80163 },	-- Ken Loggin
 				["sourceQuests"] = {
 					33081,	-- Escape from Shaz'gul
 					33059,	-- The Fate of Karabor
 				},
+				["provider"] = { "n", 80163 },	-- Ken Loggin
 				["coords"] = {
 					{ 29.6, 19.3, LUNARFALL },	-- level 2 garrison
 					{ 40.3, 54.4, LUNARFALL },	-- lvl 3 garrison
@@ -2797,8 +2797,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(33359, {	-- Meet Us at Starfall Post
-				["provider"] = { "n", 80645 },	-- Cordana Felsong
 				["sourceQuests"] = { 34586 },	-- Establish Your Garrison
+				["provider"] = { "n", 80645 },	-- Cordana Felsong
 				["coords"] = {
 					{ 43.8, 44.4, LUNARFALL },	-- lvl 1 garrison
 					{ 43.1, 44.7, LUNARFALL },	-- lvl 2/3 garrison
@@ -2807,8 +2807,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["isBreadcrumb"] = true,
 			}),
 			q(34778, {	-- Migrant Workers
-				["provider"] = { "n", 79457 },	-- Vindicator Maraad
 				["sourceQuests"] = { 34692 },	-- Delegating on Draenor
+				["provider"] = { "n", 79457 },	-- Vindicator Maraad
 				["coords"] = {
 					{ 44.1, 53.2, LUNARFALL },	-- lvl 1 garrison
 					{ 41.5, 44.9, LUNARFALL },	-- lvl 2/3 garrison
@@ -2816,20 +2816,20 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(36615, {	-- My Very Own Castle
-				["provider"] = { "n", 77209 },	-- Baros Alexston
 				["sourceQuest"] = 36592,	-- Bigger is Better
+				["provider"] = { "n", 77209 },	-- Baros Alexston
 				["coord"] = { 31.8, 31.0, LUNARFALL },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(36614, {	-- My Very Own Fortress
-				["provider"] = { "n", 78466 },	-- Gazlowe
 				["sourceQuest"] = 36567,	-- Bigger is Better
+				["provider"] = { "n", 78466 },	-- Gazlowe
 				["coord"] = { 42.1, 55.5, FROSTWALL },	-- Rank 2
 				["races"] = HORDE_ONLY,
 			}),
 			q(38344, {	-- Mystery Notebook
-				["provider"] = { "n", 91589 },	-- Fix "Smallie" Biggswrench
 				["sourceQuest"] = 36615,	-- My Very Own Castle
+				["provider"] = { "n", 91589 },	-- Fix "Smallie" Biggswrench
 				["coord"] = { 33.8, 36.4, LUNARFALL },
 				["timeline"] = {
 					ADDED_6_1_0,
@@ -2838,8 +2838,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(38306, {	-- Mystery Notebook
-				["provider"] = { "n", 91072 },	-- Drix Bassbolter
 				["sourceQuests"] = { 36614 },	-- My Very Own Fortress
+				["provider"] = { "n", 91072 },	-- Drix Bassbolter
 				["coord"] = { 40.9, 47.8, FROSTWALL },
 				["timeline"] = {
 					ADDED_6_1_0,
@@ -2848,26 +2848,26 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(38408, {	-- New Goods
-				["provider"] = { "n", 79953 },	-- Lieutenant Thorn
 				["sourceQuests"] = { 36615 },	-- My Very Own Castle
+				["provider"] = { "n", 79953 },	-- Lieutenant Thorn
 				["coord"] = { 28.7, 35.0, LUNARFALL },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(38427, {	-- New Goods
-				["provider"] = { "n", 79740 },	-- Warmaster Zog
 				["sourceQuests"] = { 36614 },	-- My Very Own Fortress
+				["provider"] = { "n", 79740 },	-- Warmaster Zog
 				["coord"] = { 39.2, 55.3, FROSTWALL },
 				["races"] = HORDE_ONLY,
 			}),
 			q(35174, {	-- Pale Moonlight
-				["provider"] = { "n", 79457 },	-- Vindicator Maraad
 				["sourceQuests"] = { 34586 },	-- Establish Your Garrison
+				["provider"] = { "n", 79457 },	-- Vindicator Maraad
 				["coord"] = { 44.0, 53.3, LUNARFALL },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(36861, {	-- Pinchwhistle Gearworks
-				["provider"] = { "n", 86589 },	-- Watchman Tilnia
 				["sourceQuests"] = { 34586 },	-- Establish Your Garrison
+				["provider"] = { "n", 86589 },	-- Watchman Tilnia
 				["coords"] = {
 					{ 45.8, 46.0, LUNARFALL },	-- lvl 1 garrison
 					{ 46.1, 45.7, LUNARFALL },	-- lvl 2/3 garrison
@@ -2876,8 +2876,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["isBreadcrumb"] = true,
 			}),
 			q(36862, {	-- Pinchwhistle Gearworks
-				["provider"] = { "n", 86614 },	-- Pinchwhistle Gearworks
 				["sourceQuest"] = 34378,	-- Establish Your Garrison
+				["provider"] = { "n", 86614 },	-- Pinchwhistle Gearworks
 				["coords"] = {
 					{ 50.8, 50.7, FROSTWALL },	-- lvl 1 garrison
 					{ 46.8, 45.8, FROSTWALL },	-- lvl 2 garrison
@@ -2886,8 +2886,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["isBreadcrumb"] = true,
 			}),
 			q(37433, {	-- Proving Grounds
-				["provider"] = { "n", 79953 },	-- Lieutenant Thorn
 				["sourceQuests"] = { 34586 },	-- Establish Your Garrison
+				["provider"] = { "n", 79953 },	-- Lieutenant Thorn
 				["coord"] = { 29.1, 34.6, LUNARFALL },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
@@ -2902,8 +2902,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				},
 			}),
 			q(37434, {	-- Proving Grounds
-				["provider"] = { "n", 79740 },	-- Warmaster Zog
 				["sourceQuest"] = 34378,	-- Establish Your Garrison
+				["provider"] = { "n", 79740 },	-- Warmaster Zog
 				["coords"] = {
 					{ 53.8, 54.9, FROSTWALL },	-- lvl 1 garrison
 					{ 40.5, 54.8, FROSTWALL },	-- lvl 2 garrison
@@ -2921,8 +2921,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				},
 			}),
 			q(34646, {	-- Qiana Moonshadow
-				["provider"] = { "n", 79457 },	-- Vindicator Maraad
 				["sourceQuests"] = { 34587 },	-- Build Your Barracks
+				["provider"] = { "n", 79457 },	-- Vindicator Maraad
 				["coord"] = { 44.1, 53.3, LUNARFALL },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
@@ -2930,17 +2930,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				},
 			}),
 			q(34585, {	-- Quakefist
-				["provider"] = { "n", 79567 },	-- Yrel
 				["sourceQuests"] = {
 					34584,	-- Looking for Lumber
 					34616,	-- Ravenous Ravens
 				},
+				["provider"] = { "n", 79567 },	-- Yrel
 				["coord"] = { 31.4, 35.8, LUNARFALL },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(34616, {	-- Ravenous Ravens
-				["provider"] = { "n", 79243 },	-- Baros Alexston
 				["sourceQuests"] = { 34583 },	-- For the Alliance!
+				["provider"] = { "n", 79243 },	-- Baros Alexston
 				["coord"] = { 32.5, 34.2, LUNARFALL },
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -2957,8 +2957,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["isDaily"] = true,
 			}),
 			q(37288, {	-- Resources in Ashran
-				["provider"] = { "n", 77209 },	-- Baros Alexston
 			--	["sourceQuests"] = {  },	--
+				["provider"] = { "n", 77209 },	-- Baros Alexston
 				["coord"] = { 29.5, 33.3, LUNARFALL },
 				["races"] = ALLIANCE_ONLY,
 			--	unknown SQ.  wowhead says level requirement is 92, but i didn't see this until i hit 100 and upgraded to a level 3 garrison
@@ -2973,18 +2973,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["hqd"] = {
 					["coord"] = { 48.6, 17.2, FROSTWALL },
 				},
-				["provider"] = { "n", 79492 },	-- Dagg
 				["sourceQuests"] = { 34651 },	-- Dagg
+				["provider"] = { "n", 79492 },	-- Dagg
 				["groups"] = {
 					follower(32),    -- Follower: Dagg
 				},
 			}),
 			q(37289, {	-- Shadowmoon Invasion!
-				["provider"] = { "n", 88223 },	-- Sergeant Crowler
 				["sourceQuests"] = {
 					33081,	-- Escape from Shaz'gul
 					33059,	-- The Fate of Karabor
 				},
+				["provider"] = { "n", 88223 },	-- Sergeant Crowler
 				["coord"] = { 29.5, 16.4, LUNARFALL },	-- level 2 garrison
 				["races"] = ALLIANCE_ONLY,
 				["DisablePartySync"] = true,
@@ -3000,8 +3000,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				},
 			}),
 			q(35166, {	-- Ship Salvage
-				["provider"] = { "n", 77209 },	-- Baros Alexston
 				["sourceQuests"] = { 34586 },	-- Establish Your Garrison
+				["provider"] = { "n", 77209 },	-- Baros Alexston
 				["coord"] = { 41.1, 49.4, LUNARFALL },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
@@ -3019,8 +3019,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				},
 			}),
 			q(36522, {	-- Solidarity in Death
-				["provider"] = { "n", 85777 },	-- Ahm
 				["sourceQuest"] = 33973,	-- Dying Wish
+				["provider"] = { "n", 85777 },	-- Ahm
 				["coords"] = {
 					{ 50.5, 15.7, FROSTWALL },
 					{ 53.4, 69.2, LUNARFALL },
@@ -3030,8 +3030,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				},
 			}),
 			q(36594, {	-- "Spare" Parts
-				["provider"] = { "n", 85882 },	-- Blixthraz Blastcharge
 				["sourceQuest"] = 36589,	-- Heavy Arms
+				["provider"] = { "n", 85882 },	-- Blixthraz Blastcharge
 				["coord"] = { 62.2, 73.4, FROSTWALL },
 				["requireSkill"] = ENGINEERING,
 				["races"] = HORDE_ONLY,
@@ -3045,43 +3045,43 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["isDaily"] = true,
 			}),
 			q(34674, {	-- Taking the Fight to Nagrand
+				["description"] = WOD_CHROMIE_TIME_DESCRIPTION,
 				["providers"] = {
 					{ "o", 232397 },	-- Bulletin Board
 					{ "o", 232398 },	-- Bounty Board
 					{ "o", 232400 },	-- Bulletin Board
 				},
 				["coord"] = { 42.8, 45.2, LUNARFALL },
-				["description"] = WOD_CHROMIE_TIME_DESCRIPTION,
 				["races"] = ALLIANCE_ONLY,
 				["isBreadcrumb"] = true,
 			}),
 			q(36952, {	-- Taking the Fight to Nagrand
+				["description"] = WOD_CHROMIE_TIME_DESCRIPTION,
 				["providers"] = {
 					{ "o", 232416 },	-- Command Board lvl 1
 					{ "o", 233291 },	-- Command Board lvl 2
 					{ "o", 237022 },	-- Command Board lvl 3
 				},
 				["coord"] = { 49.8, 41.7, FROSTWALL },
-				["description"] = WOD_CHROMIE_TIME_DESCRIPTION,
 				["races"] = HORDE_ONLY,
 				["isBreadcrumb"] = true,
 			}),
 			q(37184, {	-- Taking the Fight to Nagrand
-				["provider"] = { "n", 81492 },	-- Bodrick Grey
 				["sourceQuests"] = {
 					36601,	-- News From Nagrand (Shadow-sage Iskar)
 					36606,	-- News From Nagrand (Lieutenant Willem)
 				},
+				["provider"] = { "n", 81492 },	-- Bodrick Grey
 				["coord"] = { 38.2, 37.0, LUNARFALL },	-- garrison lvl 3
 				["races"] = ALLIANCE_ONLY,
 				["isBreadcrumb"] = true,
 			}),
 			q(34794, {	-- Taking the Fight to Nagrand
-				["provider"] = { "n", 78487 },	-- Rokhan
 				["sourceQuests"] = {
 					36601,	-- News From Nagrand (Shadow-sage Iskar)
 					36606,	-- News From Nagrand (Lieutenant Willem)
 				},
+				["provider"] = { "n", 78487 },	-- Rokhan
 				["races"] = HORDE_ONLY,
 				["isBreadcrumb"] = true,
 			}),
@@ -3092,13 +3092,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(34676, {	-- The Critical Path
+				["description"] = WOD_CHROMIE_TIME_DESCRIPTION,
 				["providers"] = {
 					{ "o", 232397 },	-- Bulletin Board
 					{ "o", 232398 },	-- Bounty Board
 					{ "o", 232400 },	-- Bulletin Board
 				},
 				["coord"] = { 42.8, 45.2, LUNARFALL },
-				["description"] = WOD_CHROMIE_TIME_DESCRIPTION,
 				["races"] = ALLIANCE_ONLY,
 				["isBreadcrumb"] = true,
 				["DisablePartySync"] = true,
@@ -3125,18 +3125,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["isBreadcrumb"] = true,
 			}),
 			q(35557, {	-- The Secrets of Gorgrond
+				["description"] = WOD_CHROMIE_TIME_DESCRIPTION,
 				["providers"] = {
 					{ "o", 232416 },	-- Command Board lvl 1
 					{ "o", 233291 },	-- Command Board lvl 2
 					{ "o", 237022 },	-- Command Board lvl 3
 				},
-				["description"] = WOD_CHROMIE_TIME_DESCRIPTION,
 				["races"] = HORDE_ONLY,
 				["isBreadcrumb"] = true,
 			}),
 			q(37945, {	-- The Silent Skull: Taking from the Taker (A)
-				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["sourceQuest"] = 37944,	-- The Silent Skull: The Third Reagent
+				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["coord"] = { 34.6, 32.7, LUNARFALL },
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
@@ -3147,8 +3147,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				},
 			}),
 			q(37996, {	-- The Silent Skull: Taking from the Taker (H)
-				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["sourceQuest"] = 37944,	-- The Silent Skull: The Third Reagent
+				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["coord"] = { 40.2, 56.0, FROSTWALL },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
@@ -3159,30 +3159,30 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				},
 			}),
 			q(37942, {	-- The Silent Skull: The First Reagent
-				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["sourceQuest"] = 37941,	-- Treasure Contract: The Infected Orc
+				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
 				["isDaily"] = true,
 			}),
 			q(37943, {	-- The Silent Skull: The Second Reagent
-				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["sourceQuest"] = 37942,	-- The Silent Skull: The First Reagent
+				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
 				["isDaily"] = true,
 			}),
 			q(37944, {	-- The Silent Skull: The Third Reagent
-				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["sourceQuest"] = 37943,	-- The Silent Skull: The Second Reagent
+				["provider"] = { "o", 239791 },	-- Relic Hunting Notes
 				["coords"] = { { 40.2, 56.0, FROSTWALL }, { 34.6, 32.7, LUNARFALL } },
 				["isDaily"] = true,
 			}),
 			q(35459, {	-- The Southern Wilds
+				["sourceQuests"] = { 34019 },	-- Shadows Awaken
 				["providers"] = {
 					{ "o", 232397 },	-- Bulletin Board
 					{ "o", 232398 },	-- Bounty Board
 					{ "o", 232400 },	-- Bulletin Board
 				},
-				["sourceQuests"] = { 34019 },	-- Shadows Awaken
 				["coord"] = { 42.8, 45.2, LUNARFALL },
 				["races"] = ALLIANCE_ONLY,
 				["isBreadcrumb"] = true,
@@ -3205,8 +3205,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["_drop"] = { "g" },	-- Drop Ultimate Battle-Training Stone
 			}),
 			q(34192, {	-- Things Are Not Goren Our Way
-				["provider"] = { "n", 77730 },	-- Timothy Leens
 				["sourceQuests"] = { 36592 },	-- Bigger is Better
+				["provider"] = { "n", 77730 },	-- Timothy Leens
 				["coord"] = { 65.2, 41.8, LUNARFALL },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
@@ -3214,8 +3214,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				},
 			}),
 			q(35154, {	-- Things Are Not Goren Our Way
-				["provider"] = { "n", 81688 },	-- Gorsol
 				["sourceQuest"] = 36567,	-- Bigger is Better
+				["provider"] = { "n", 81688 },	-- Gorsol
 				["coord"] = { 62.0, 73.9, FROSTWALL },	-- lvl 2 garrison
 				["races"] = HORDE_ONLY,
 				["groups"] = {
@@ -3223,17 +3223,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				},
 			}),
 			q(40418, {	-- To Tanaan!
-				["altQuests"] = { 38253 },	-- Garrison Campaign: War Council
-				["sourceQuests"] = { 36615 },	-- My Very Own Castle
 				["description"] = "This quest is only available to characters who used a character boost during Warlords of Draenor leading into Legion. If you receive this quest on a character that did NOT use a boost during that time, please report in the errors channel of the discord!",
+				["sourceQuests"] = { 36615 },	-- My Very Own Castle
+				["altQuests"] = { 38253 },	-- Garrison Campaign: War Council
 				["races"] = ALLIANCE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 				-- FOUND! Almost certainly a breadcrumb for WoD characters that used a Legion boost. Keeping note in here just in case we ever find additional conditions to pop it.
 			}),
 			q(40417, {	-- To Tanaan!
-				["altQuests"] = { 38567 },	-- Garrison Campaign: War Council
-				["sourceQuests"] = { 36614 },	-- My Very Own Fortress
 				["description"] = "This quest is only available to characters who used a character boost during Warlords of Draenor leading into Legion. If you receive this quest on a character that did NOT use a boost during that time, please report in the errors channel of the discord!",
+				["sourceQuests"] = { 36614 },	-- My Very Own Fortress
+				["altQuests"] = { 38567 },	-- Garrison Campaign: War Council
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 				-- FOUND! Almost certainly a breadcrumb for WoD characters that used a Legion boost. Keeping note in here just in case we ever find additional conditions to pop it.
@@ -3287,14 +3287,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["isDaily"] = true,
 			}),
 			q(37290, {	-- Upgrades in Ashran
+				["description"] = "You need to have Comprehensive Construction Outpost Guide (item 116395) in your inventory",
 				["provider"] = { "n", 78466 },	-- Gazlowe
 				["coord"] = { 37.5, 50.3, FROSTWALL },	-- lvl 3
-				["description"] = "You need to have Comprehensive Construction Outpost Guide (item 116395) in your inventory",
 				["races"] = HORDE_ONLY,
 			}),
 			q(34209, {	-- Vouchsafe Our Arrival
-				["provider"] = { "n", 79252 },	-- Cordana Felsong
 				["sourceQuest"] = 34378,	-- Establish Your Garrison
+				["provider"] = { "n", 79252 },	-- Cordana Felsong
 				["coord"] = { 49.4, 36.5, FROSTWALL },
 				["races"] = HORDE_ONLY,
 			}),
@@ -3315,8 +3315,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				},
 			}),
 			q(34736, {	-- We Be Needin' Supplies
-				["provider"] = { "n", 78487 },	-- Rokhan
 				["sourceQuest"] = 33657,	-- Moving In
+				["provider"] = { "n", 78487 },	-- Rokhan
 				["coord"] = { 51.2, 51.3, FROSTWALL },	-- lvl 1
 				["races"] = HORDE_ONLY,
 				["isBreadcrumb"] = true,

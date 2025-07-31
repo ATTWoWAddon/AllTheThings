@@ -1,4 +1,4 @@
-﻿local ObjectDB = ObjectDB; for objectID,objectData in pairs({
+local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[507768] = {
 		readable = "Jettisoned Pile of Goblin-Bucks",
 		model = 200137,

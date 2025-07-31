@@ -7,18 +7,18 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 		n(EMISSARY_QUESTS, {
 			q(50606, {	-- Horde War Effort [The Honorbound] [Tier 2]
 				["provider"] = { "n", 135447 },	-- Ransa Greyfeather
-				["lvl"] = 120,
 				["coord"] = { 58.0, 62.6, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["isWorldQuest"] = true,
+				["lvl"] = 120,
 				["sym"] = { { "select", "itemID", 165871, 163857 } },		-- Honorbound Equipment Cache & Azerite Armor Cache
 			}),
 			q(54455, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 }, ["minReputation"] = { FACTION_THE_HONORBOUND, EXALTED } }, {	-- Supplies from the Honorbound
 				["provider"] = { "n", 135447 },	-- Ransa Greyfeather
-				["lvl"] = 120,
 				["coord"] = { 58.0, 62.6, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["repeatable"] = true,
+				["lvl"] = 120,
 				["groups"] = {
 					i(166299, {	-- Honorbound Supplies
 						i(166879),	-- Rallying War Banner (TOY!)
@@ -28,10 +28,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			})),
 			q(54462, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 }, ["minReputation"] = { FACTION_ZANDALARI_EMPIRE, EXALTED } }, {	-- Supplies from the Zandalari Empire
 				["provider"] = { "n", 131287 },	-- Natal'hakata
-				["lvl"] = 120,
 				["coord"] = { 67.07, 71.44, HALL_OF_CHRONICLERS },
 				["races"] = HORDE_ONLY,
 				["repeatable"] = true,
+				["lvl"] = 120,
 				["groups"] = {
 					i(166292, {	-- Zandalari Empire Supplies
 						i(166701),	-- Warbeast Kraal Dinner Bell (TOY!)
@@ -40,10 +40,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			})),
 			q(50598, {	-- Zandalari Empire
 				["provider"] = { "n", 131287 },	-- Natal'hakata
-				["lvl"] = 120,
-				["isWorldQuest"] = true,
 				["coord"] = { 67.07, 71.44, HALL_OF_CHRONICLERS },
 				["races"] = HORDE_ONLY,
+				["isWorldQuest"] = true,
+				["lvl"] = 120,
 				["groups"] = {
 					i(165866, {	-- Zandalari Empire Equipment Cache
 						["sym"] = {

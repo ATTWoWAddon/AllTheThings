@@ -17,8 +17,8 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			}),
 			n(QUESTS, {
 				q(42213, {	-- Eye of Azshara: The Tidestone of Golganneth
-					["provider"] = { "n", 106780 },	-- Tidestone of Golganneth
 					["sourceQuest"] = 38286,	-- Eye of Azshara: Wrath of Azshara
+					["provider"] = { "n", 106780 },	-- Tidestone of Golganneth
 					["modelScale"] = 3,
 					["groups"] = {
 						i(140622),	-- Hardshell Greatbelt

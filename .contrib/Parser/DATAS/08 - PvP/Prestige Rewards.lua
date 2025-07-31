@@ -19,15 +19,15 @@ root(ROOTS.PVP, pvp(n(PRESTIGE, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(42978, {	-- A Royal Audience [Alliance]
-					["provider"] = { "i", 138992 },	-- Grand Marshal's Medal of Valor
 					["description"] = "You get this quest when you reach Prestige Rank 2.",
+					["provider"] = { "i", 138992 },	-- Grand Marshal's Medal of Valor
 					["timeline"] = { REMOVED_8_0_1 },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(42982, {	-- The Victor's Spoils [Alliance]
-					["qg"] = 109466,	-- Anduin Wrynn <King of Stormwind>
 					["sourceQuest"] = 42978,	-- A Royal Audience [Alliance]
+					["qg"] = 109466,	-- Anduin Wrynn <King of Stormwind>
 					["timeline"] = { REMOVED_8_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -59,15 +59,15 @@ root(ROOTS.PVP, pvp(n(PRESTIGE, bubbleDownSelf({ ["u"] = REMOVED_FROM_GAME }, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(42985, {	-- A Royal Audience [Horde]
-					["provider"] = { "i", 138996 },	-- High Warlord's Medal of Valor
 					["description"] = "You get this quest when you reach Prestige Rank 2.",
+					["provider"] = { "i", 138996 },	-- High Warlord's Medal of Valor
 					["timeline"] = { REMOVED_8_0_1 },
 					["maps"] = { UNDERCITY },
 					["races"] = HORDE_ONLY,
 				}),
 				q(42987, {	-- The Victor's Spoils [Horde]
-					["qg"] = 109471,	-- Lady Sylvanas Windrunner
 					["sourceQuest"] = 42985,	-- A Royal Audience
+					["qg"] = 109471,	-- Lady Sylvanas Windrunner
 					["coord"] = { 57.8, 91.6, UNDERCITY },
 					["timeline"] = { REMOVED_8_0_1 },
 					["races"] = HORDE_ONLY,

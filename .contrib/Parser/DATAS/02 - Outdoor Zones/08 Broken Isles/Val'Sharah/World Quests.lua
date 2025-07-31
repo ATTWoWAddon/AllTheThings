@@ -115,6 +115,9 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			q(42028),	-- Into the Nightmare
 			q(41271, {	-- Into the Whirlpool
 				["requireSkill"] = FISHING,
+				["groups"] = {
+					i(139279),	-- Albino Barracuda (QI!)
+				},
 			}),
 			q(41531, {	-- Iridescent Dreamleaf
 				["requireSkill"] = HERBALISM,
@@ -204,11 +207,11 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			q(44759),	-- The Vale of Dread (Invasion WQ)
 			q(43303),	-- Time to Rumble!
 			petbattle(q(40279, {	-- Training with Durian
-				["coord"] = { 46.4, 36.9, VALSHARAH },
 				-- #IF BEFORE 10.2.5
 				-- Not sure when they fixed this but you can repeat the battle now :D
 				["description"] = "This World Quest only allows ONE completed pet battle per character per day, contrary to every other Legion Pet Battle World Quest.",
 				-- #ENDIF
+				["coord"] = { 46.4, 36.9, VALSHARAH },
 			})),
 			q(41992),	-- Twisted Ash
 			q(46766),	-- Ulgthax (Invasion wq)
@@ -266,10 +269,10 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 				["requireSkill"] = MINING,
 			}),
 			q(41634, {	-- Work Order: Leystone Armguards
-				["requireSkill"] = BLACKSMITHING,
 				["provider"] = { "n", 106901 },	-- Sylvia Hartshorn
-				["lvl"] = 110,
+				["requireSkill"] = BLACKSMITHING,
 				["isWorldQuest"] = true,
+				["lvl"] = 110,
 				["groups"] = {
 					i(123936),	-- Plans: Leystone Armguards [Rank 3] (RECIPE!)
 				},

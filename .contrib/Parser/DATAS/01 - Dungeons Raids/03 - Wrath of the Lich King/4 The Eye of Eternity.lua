@@ -25,8 +25,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, {
 				n(QUESTS, {
 					q(13384, {	-- Judgment at the Eye of Eternity
-						["qg"] = 27990,	-- Krasus <Consort of the Queen>
 						["sourceQuest"] = 13372,	-- The Key to the Focusing Iris
+						["qg"] = 27990,	-- Krasus <Consort of the Queen>
 						["coord"] = { 59.7, 54.6, DRAGONBLIGHT },
 						-- #if ANYCLASSIC
 						["OnUpdate"] = WOTLK_CLASSIC_TENMAN_KEY_ONUPDATE,
@@ -78,8 +78,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			d(DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL, {
 				n(QUESTS, {
 					q(13385, {	-- Heroic Judgment at the Eye of Eternity
-						["qg"] = 27990,	-- Krasus <Consort of the Queen>
 						["sourceQuest"] = 13375,	-- The Heroic Key to the Focusing Iris
+						["qg"] = 27990,	-- Krasus <Consort of the Queen>
 						["coord"] = { 59.7, 54.6, DRAGONBLIGHT },
 						["groups"] = {
 							objective(1, {	-- 0/1 Heart of Magic

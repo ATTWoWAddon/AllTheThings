@@ -7,8 +7,8 @@ root(ROOTS.Zones, {
 		m(VALSHARAH, {
 			n(EMISSARY_QUESTS, {
 				q(42170, {	-- The Dreamweavers
-					["isWorldQuest"] = true,
 					["provider"] = { "n", 106901 },	-- Sylvia Hartshorn <Dreamweaver Emissary>
+					["isWorldQuest"] = true,
 					["groups"] = {
 						i(157822, {	-- Dreamweaver Provisions
 							["sym"] = {
@@ -46,8 +46,8 @@ root(ROOTS.Zones, {
 					},
 				}),
 				q(46747, bubbleDownSelf({ ["minReputation"] = { FACTION_THE_DREAMWEAVERS, EXALTED }}, {		-- Supplies From the Dreamweavers
-					["repeatable"] = true,
 					["provider"] = { "n", 106901 },	-- Sylvia Hartshorn <Dreamweaver Emissary>
+					["repeatable"] = true,
 					["groups"] = {
 						i(152103, {	-- Dreamweaver Cache
 							i(147804),	-- Wild Dreamrunner (MOUNT!)

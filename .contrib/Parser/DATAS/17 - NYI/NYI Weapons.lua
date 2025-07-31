@@ -1933,7 +1933,7 @@ root(ROOTS.NeverImplemented, {
 		})),
 
 		-- 11.0.5
-		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
+		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_5 } }, {
 			i(225667),	-- Ambassador Flamelash's Trident
 			i(231490),	-- Arbiter's Blade
 			i(232474),	-- Defias Cuirass
@@ -1946,12 +1946,12 @@ root(ROOTS.NeverImplemented, {
 		})),
 
 		-- 11.0.7
-		expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_7 } }, {
+		expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_7 } }, {
 			i(232946),	-- Verus
 		})),
 
 		-- 11.1.0
-		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0 } }, {
+		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_0 } }, {
 			i(230796),	-- [11.1 PVP] Gladiator's Placeholder <TEMPLATE> (bow)
 			i(230797),	-- [11.1 PVP] Gladiator's Placeholder <TEMPLATE> (2h axe)
 			i(230798),	-- [11.1 PVP] Gladiator's Placeholder <TEMPLATE> (2h mace)

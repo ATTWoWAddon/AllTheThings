@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, {
-	inst(257, {	-- The Botanica
+	inst(257, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {	-- The Botanica
 		["lore"] = "Since Kael'thas and his blood elves seized Tempest Keep from the naaru they have had quite the time to investigate and find a usage for the technology in it. The Botanica appears to be the satellite chosen especially for this purpose. Here, blood elf scientists carry out experiments on the flora in Outland, how naaru technology can be used to create and manipulate living beings, and how all this can grant the blood elves new powers. It seems, however, that the results were not quite as expected, and thus some of the experiments have gotten out of control...",
 		-- #if BEFORE MOP
 		["zone-text-areaID"] = 3847,	-- The Botanica
@@ -23,8 +23,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(10257, {	-- Capturing the Keystone
-					["qg"] = 19481,	-- Archmage Vargoth
 					["sourceQuest"] = 10256,	-- Finding the Keymaster
+					["qg"] = 19481,	-- Archmage Vargoth
 					["coord"] = { 58.3, 86.4, NETHERSTORM },
 					["lvl"] = lvlsquish(67, 67, 25),
 					["groups"] = {
@@ -304,7 +304,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				},
 			}),
 		},
-	}),
+	})),
 })));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {

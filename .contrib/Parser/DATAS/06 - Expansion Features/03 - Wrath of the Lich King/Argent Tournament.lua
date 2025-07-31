@@ -487,12 +487,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 			}),
 			n(QUESTS, {
 				q(13666, {	-- A Blade Fit For A Champion (A) (The Silver Covenant, Aspirant)
-					["qg"] = 33625,	-- Arcanist Taelis
 					["sourceQuests"] = {
 						13828,	-- Mastery Of Melee (A)
 						13837,	-- Mastery Of The Charge (A)
 						13835,	-- Mastery Of The Shield-Breaker (A)
 					},
+					["qg"] = 33625,	-- Arcanist Taelis
 					["coord"] = { 76.5, 19.4, ICECROWN },
 					["maps"] = { GRIZZLY_HILLS },
 					["races"] = ALLIANCE_ONLY,
@@ -506,11 +506,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13757, {	-- A Blade Fit For A Champion (A) (Darnassus, Valiant)
-					["qg"] = 33592,	-- Jaelyne Evensong
 					["sourceQuests"] = {
 						13689,	-- A Valiant Of Darnassus
 						13706,	-- Valiant Of Darnassus
 					},
+					["qg"] = 33592,	-- Jaelyne Evensong
 					["coord"] = { 76.3, 19.0, ICECROWN },
 					["maps"] = { GRIZZLY_HILLS },
 					["races"] = ALLIANCE_ONLY,
@@ -525,11 +525,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13746, {	-- A Blade Fit For A Champion (A) (Gnomeregan, Valiant)
-					["qg"] = 33335,	-- Ambrose Boltspark
 					["sourceQuests"] = {
 						13688,	-- A Valiant Of Gnomeregan
 						13704,	-- Valiant Of Gnomeregan
 					},
+					["qg"] = 33335,	-- Ambrose Boltspark
 					["coord"] = { 76.5, 19.8, ICECROWN },
 					["maps"] = { GRIZZLY_HILLS },
 					["races"] = ALLIANCE_ONLY,
@@ -544,11 +544,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13741, {	-- A Blade Fit For A Champion (A) (Ironforge, Valiant)
-					["qg"] = 33312,	-- Lana Stouthammer
 					["sourceQuests"] = {
 						13685,	-- A Valiant Of Ironforge
 						13703,	-- Valiant Of Ironforge
 					},
+					["qg"] = 33312,	-- Lana Stouthammer
 					["coord"] = { 76.6, 19.5, ICECROWN },
 					["maps"] = { GRIZZLY_HILLS },
 					["races"] = ALLIANCE_ONLY,
@@ -563,11 +563,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13603, {	-- A Blade Fit For A Champion (A) (Stormwind City, Valiant)
-					["qg"] = 33225,	-- Marshal Jacob Alerius
 					["sourceQuests"] = {
 						13684,	-- A Valiant Of Stormwind
 						13593,	-- Valiant Of Stormwind
 					},
+					["qg"] = 33225,	-- Marshal Jacob Alerius
 					["coord"] = { 76.6, 19.1, ICECROWN },
 					["maps"] = { GRIZZLY_HILLS },
 					["races"] = ALLIANCE_ONLY,
@@ -582,11 +582,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13752, {	-- A Blade Fit For A Champion (A) (The Exodar, Valiant)
-					["qg"] = 33593,	-- Colosos
 					["sourceQuests"] = {
 						13690,	-- A Valiant Of The Exodar
 						13705,	-- Valiant Of The Exodar
 					},
+					["qg"] = 33593,	-- Colosos
 					["coord"] = { 76.1, 19.1, ICECROWN },
 					["maps"] = { GRIZZLY_HILLS },
 					["races"] = ALLIANCE_ONLY,
@@ -601,12 +601,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13673, {	-- A Blade Fit For A Champion (H) (The Sunreavers, Aspirant)
-					["qg"] = 33542,	-- Magister Edien Sunhollow
 					["sourceQuests"] = {
 						13829,	-- Mastery Of Melee (H)
 						13839,	-- Mastery Of The Charge (H)
 						13838,	-- Mastery Of The Shield-Breaker (H)
 					},
+					["qg"] = 33542,	-- Magister Edien Sunhollow
 					["coord"] = { 76.3, 24.4, ICECROWN },
 					["maps"] = { GRIZZLY_HILLS },
 					["races"] = HORDE_ONLY,
@@ -620,11 +620,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13768, {	-- A Blade Fit For A Champion (H) (Darkspear Trolls, Valiant)
-					["qg"] = 33372,	-- Zul'tore
 					["sourceQuests"] = {
 						13693,	-- A Valiant Of Sen'jin
 						13708,	-- Valiant Of Sen'jin
 					},
+					["qg"] = 33372,	-- Zul'tore
 					["coord"] = { 76.0, 24.5, ICECROWN },
 					["maps"] = { GRIZZLY_HILLS },
 					["races"] = HORDE_ONLY,
@@ -639,11 +639,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13762, {	-- A Blade Fit For A Champion (H) (Orgrimmar, Valiant)
-					["qg"] = 33361,	-- Mokra the Skullcrusher
 					["sourceQuests"] = {
 						13691,	-- A Valiant Of Orgrimmar
 						13707,	-- Valiant Of Orgrimmar
 					},
+					["qg"] = 33361,	-- Mokra the Skullcrusher
 					["coord"] = { 76.5, 24.6, ICECROWN },
 					["maps"] = { GRIZZLY_HILLS },
 					["races"] = HORDE_ONLY,
@@ -658,11 +658,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13783, {	-- A Blade Fit For A Champion (H) (Silvermoon City, Valiant)
-					["qg"] = 33379,	-- Eressea Dawnsinger
 					["sourceQuests"] = {
 						13696,	-- A Valiant Of Silvermoon
 						13711,	-- Valiant Of Silvermoon
 					},
+					["qg"] = 33379,	-- Eressea Dawnsinger
 					["coord"] = { 76.5, 23.9, ICECROWN },
 					["maps"] = { GRIZZLY_HILLS },
 					["races"] = HORDE_ONLY,
@@ -677,11 +677,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13773, {	-- A Blade Fit For A Champion (H) (Thunder Bluff, Valiant)
-					["qg"] = 33403,	-- Runok Wildmane
 					["sourceQuests"] = {
 						13694,	-- A Valiant Of Thunder Bluff
 						13709,	-- Valiant Of Thunder Bluff
 					},
+					["qg"] = 33403,	-- Runok Wildmane
 					["coord"] = { 76.2, 24.6, ICECROWN },
 					["maps"] = { GRIZZLY_HILLS },
 					["races"] = HORDE_ONLY,
@@ -696,11 +696,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13778, {	-- A Blade Fit For A Champion (H) (Undercity, Valiant)
-					["qg"] = 33373,	-- Deathstalker Visceri
 					["sourceQuests"] = {
 						13695,	-- A Valiant Of Undercity
 						13710,	-- Valiant Of Undercity
 					},
+					["qg"] = 33373,	-- Deathstalker Visceri
 					["coord"] = { 76.5, 24.2, ICECROWN },
 					["maps"] = { GRIZZLY_HILLS },
 					["races"] = HORDE_ONLY,
@@ -715,8 +715,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				}),
 
 				q(13735, {	-- A Champion Rises (A) (Darnassus)
-					["qg"] = 33592,	-- Jaelyne Evensong
 					["sourceQuest"] = 13725,	-- The Valiant's Challenge (A) (Darnassus)
+					["qg"] = 33592,	-- Jaelyne Evensong
 					["coord"] = { 76.3, 19.0, ICECROWN },
 					["races"] = { NIGHTELF },
 					["groups"] = {
@@ -725,8 +725,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13733, {	-- A Champion Rises (A) (Gnomeregan)
-					["qg"] = 33335,	-- Ambrose Boltspark
 					["sourceQuest"] = 13723,	-- The Valiant's Challenge (A) (Gnomeregan)
+					["qg"] = 33335,	-- Ambrose Boltspark
 					["coord"] = { 76.5, 19.8, ICECROWN },
 					["races"] = { GNOME },
 					["groups"] = {
@@ -735,8 +735,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13732, {	-- A Champion Rises (A) (Ironforge)
-					["qg"] = 33312,	-- Lana Stouthammer
 					["sourceQuest"] = 13713,	-- The Valiant's Challenge (A) (Ironforge)
+					["qg"] = 33312,	-- Lana Stouthammer
 					["coord"] = { 76.6, 19.5, ICECROWN },
 					["races"] = { DWARF },
 					["groups"] = {
@@ -745,8 +745,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13702, {	-- A Champion Rises (A) (Stormwind City)
-					["qg"] = 33225,	-- Marshal Jacob Alerius
 					["sourceQuest"] = 13699,	-- The Valiant's Challenge (A) (Stormwind City)
+					["qg"] = 33225,	-- Marshal Jacob Alerius
 					["coord"] = { 76.6, 19.1, ICECROWN },
 					["races"] = { HUMAN },
 					["groups"] = {
@@ -755,8 +755,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13734, {	-- A Champion Rises (A) (The Exodar)
-					["qg"] = 33593,	-- Colosos
 					["sourceQuest"] = 13724,	-- The Valiant's Challenge (A) (The Exodar)
+					["qg"] = 33593,	-- Colosos
 					["coord"] = { 76.1, 19.1, ICECROWN },
 					["races"] = { DRAENEI },
 					["groups"] = {
@@ -765,8 +765,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13737, {	-- A Champion Rises (H) (Darkspear Trolls)
-					["qg"] = 33372,	-- Zul'tore
 					["sourceQuest"] = 13727,	-- The Valiant's Challenge (H) (Darkspear Trolls)
+					["qg"] = 33372,	-- Zul'tore
 					["coord"] = { 76.0, 24.5, ICECROWN },
 					["races"] = { TROLL },
 					["groups"] = {
@@ -775,8 +775,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13736, {	-- A Champion Rises (H) (Orgrimmar)
-					["qg"] = 33361,	-- Mokra the Skullcrusher
 					["sourceQuest"] = 13726,	-- The Valiant's Challenge (H) (Orgrimmar)
+					["qg"] = 33361,	-- Mokra the Skullcrusher
 					["coord"] = { 76.5, 24.6, ICECROWN },
 					["races"] = { ORC },
 					["groups"] = {
@@ -785,8 +785,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13740, {	-- A Champion Rises (H) (Silvermoon City)
-					["qg"] = 33379,	-- Eressea Dawnsinger
 					["sourceQuest"] = 13731,	-- The Valiant's Challenge (H) (Silvermoon City)
+					["qg"] = 33379,	-- Eressea Dawnsinger
 					["coord"] = { 76.5, 23.9, ICECROWN },
 					["races"] = { BLOODELF },
 					["groups"] = {
@@ -795,8 +795,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13738, {	-- A Champion Rises (H) (Thunder Bluff)
-					["qg"] = 33403,	-- Runok Wildmane
 					["sourceQuest"] = 13728,	-- The Valiant's Challenge (H) (Thunder Bluff)
+					["qg"] = 33403,	-- Runok Wildmane
 					["coord"] = { 76.2, 24.6, ICECROWN },
 					["races"] = { TAUREN },
 					["groups"] = {
@@ -805,8 +805,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13739, {	-- A Champion Rises (H) (Undercity)
-					["qg"] = 33373,	-- Deathstalker Visceri
 					["sourceQuest"] = 13729,	-- The Valiant's Challenge (H) (Undercity)
+					["qg"] = 33373,	-- Deathstalker Visceri
 					["coord"] = { 76.5, 24.2, ICECROWN },
 					["races"] = { UNDEAD },
 					["groups"] = {
@@ -816,8 +816,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				}),
 
 				q(13681, {	-- A Chip Off the Ulduar Block
-					["qg"] = 33435,	-- Bozzle Blastbolt
 					["sourceQuest"] = 13820,	-- The Blastbolt Brothers
+					["qg"] = 33435,	-- Bozzle Blastbolt
 					["coord"] = { 74.0, 24.6, ICECROWN },
 					["timeline"] = { ADDED_3_1_0, REMOVED_4_0_1 },
 					["maps"] = { THE_STORM_PEAKS },
@@ -838,8 +838,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				}),
 				applyclassicphase(WRATH_PHASE_THREE, {	-- A Leg Up
 					["allianceQuestData"] = q(14074, {	-- A Leg Up (A)
-						["qg"] = 34880,	-- Narasi Snowdawn <The Silver Covenant>
 						["sourceAchievements"] = { 3676 },	-- A Silver Confidant
+						["qg"] = 34880,	-- Narasi Snowdawn <The Silver Covenant>
 						["coord"] = { 76.2, 19.6, ICECROWN },
 						["minReputation"] = { FACTION_THE_SILVER_COVENANT, EXALTED },	-- The Silver Covenant, Exalted.
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
@@ -847,8 +847,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["OnTooltip"] = CLASSIC_ONLY_DB_FUNC([[_.OnTooltipDB.WithRequiredAchievement]]),
 					}),
 					["hordeQuestData"] = q(14143, {	-- A Leg Up (H)
-						["qg"] = 34771,	-- Girana the Blooded <The Sunreavers>
 						["sourceAchievements"] = { 3677 },	-- The Sunreavers
+						["qg"] = 34771,	-- Girana the Blooded <The Sunreavers>
 						["coord"] = { 76.1, 24.0, ICECROWN },
 						["minReputation"] = { FACTION_THE_SUNREAVERS, EXALTED },	-- The Sunreavers, Exalted.
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
@@ -872,72 +872,72 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13689, {	-- A Valiant Of Darnassus
-					["qg"] = 33625,	-- Arcanist Taelis
 					["sourceQuest"] = 13679,	-- The Aspirant's Challenge (A)
+					["qg"] = 33625,	-- Arcanist Taelis
 					["coord"] = { 76.5, 19.4, ICECROWN },
 					["races"] = { NIGHTELF, WORGEN },
 				}),
 				q(13688, {	-- A Valiant Of Gnomeregan
-					["qg"] = 33625,	-- Arcanist Taelis
 					["sourceQuest"] = 13679,	-- The Aspirant's Challenge (A)
+					["qg"] = 33625,	-- Arcanist Taelis
 					["coord"] = { 76.5, 19.4, ICECROWN },
 					["races"] = { GNOME },
 				}),
 				q(13685, {	-- A Valiant Of Ironforge
-					["qg"] = 33625,	-- Arcanist Taelis
 					["sourceQuest"] = 13679,	-- The Aspirant's Challenge (A)
+					["qg"] = 33625,	-- Arcanist Taelis
 					["coord"] = { 76.5, 19.4, ICECROWN },
 					["races"] = { DWARF },
 				}),
 				q(13691, {	-- A Valiant Of Orgrimmar
-					["qg"] = 33542,	-- Magister Edien Sunhollow
 					["sourceQuest"] = 13680,	-- The Aspirant's Challenge (H)
+					["qg"] = 33542,	-- Magister Edien Sunhollow
 					["coord"] = { 76.3, 24.4, ICECROWN },
 					["races"] = { ORC, GOBLIN, PANDAREN_HORDE, NIGHTBORNE, HIGHMOUNTAIN_TAUREN, ZANDALARI, VULPERA, MAGHAR, DRACTHYR_HORDE },
 				}),
 				q(13693, {	-- A Valiant Of Sen'jin
-					["qg"] = 33542,	-- Magister Edien Sunhollow
 					["sourceQuest"] = 13680,	-- The Aspirant's Challenge (H)
+					["qg"] = 33542,	-- Magister Edien Sunhollow
 					["coord"] = { 76.3, 24.4, ICECROWN },
 					["races"] = { TROLL },
 				}),
 				q(13696, {	-- A Valiant Of Silvermoon
-					["qg"] = 33542,	-- Magister Edien Sunhollow
 					["sourceQuest"] = 13680,	-- The Aspirant's Challenge (H)
+					["qg"] = 33542,	-- Magister Edien Sunhollow
 					["coord"] = { 76.3, 24.4, ICECROWN },
 					["races"] = { BLOODELF },
 				}),
 				q(13684, {	-- A Valiant Of Stormwind
-					["qg"] = 33625,	-- Arcanist Taelis
 					["sourceQuest"] = 13679,	-- The Aspirant's Challenge (A)
+					["qg"] = 33625,	-- Arcanist Taelis
 					["coord"] = { 76.5, 19.4, ICECROWN },
 					["races"] = { HUMAN, PANDAREN_ALLIANCE, VOIDELF, LIGHTFORGED, KULTIRAN, DARKIRON, MECHAGNOME, DRACTHYR_ALLIANCE },
 				}),
 				q(13690, {	-- A Valiant Of The Exodar
-					["qg"] = 33625,	-- Arcanist Taelis
 					["sourceQuest"] = 13679,	-- The Aspirant's Challenge (A)
+					["qg"] = 33625,	-- Arcanist Taelis
 					["coord"] = { 76.5, 19.4, ICECROWN },
 					["races"] = { DRAENEI },
 				}),
 				q(13694, {	-- A Valiant Of Thunder Bluff
-					["qg"] = 33542,	-- Magister Edien Sunhollow
 					["sourceQuest"] = 13680,	-- The Aspirant's Challenge (H)
+					["qg"] = 33542,	-- Magister Edien Sunhollow
 					["coord"] = { 76.3, 24.4, ICECROWN },
 					["races"] = { TAUREN },
 				}),
 				q(13695, {	-- A Valiant Of Undercity
-					["qg"] = 33542,	-- Magister Edien Sunhollow
 					["sourceQuest"] = 13680,	-- The Aspirant's Challenge (H)
+					["qg"] = 33542,	-- Magister Edien Sunhollow
 					["coord"] = { 76.3, 24.4, ICECROWN },
 					["races"] = { UNDEAD },
 				}),
 
 				q(13760, {	-- A Valiant's Field Training (A) (Darnassus, Valiant)
-					["qg"] = 33652,	-- Illestria Bladesinger
 					["sourceQuests"] = {
 						13689,	-- A Valiant Of Darnassus
 						13706,	-- Valiant Of Darnassus
 					},
+					["qg"] = 33652,	-- Illestria Bladesinger
 					["coord"] = { 76.3, 19.0, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -950,11 +950,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13749, {	-- A Valiant's Field Training (A) (Gnomeregan, Valiant)
-					["qg"] = 33648,	-- Tickin Gearspanner
 					["sourceQuests"] = {
 						13688,	-- A Valiant Of Gnomeregan
 						13704,	-- Valiant Of Gnomeregan
 					},
+					["qg"] = 33648,	-- Tickin Gearspanner
 					["coord"] = { 76.6, 19.8, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -980,11 +980,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13592, {	-- A Valiant's Field Training (A) (Stormwind City, Valiant)
-					["qg"] = 33222,	-- Sir Marcus Barlowe
 					["sourceQuests"] = {
 						13684,	-- A Valiant Of Stormwind
 						13593,	-- Valiant Of Stormwind
 					},
+					["qg"] = 33222,	-- Sir Marcus Barlowe
 					["coord"] = { 76.5, 19.1, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -997,11 +997,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13755, {	-- A Valiant's Field Training (A) (The Exodar, Valiant)
-					["qg"] = 33655,	-- Saandos
 					["sourceQuests"] = {
 						13690,	-- A Valiant Of The Exodar
 						13705,	-- Valiant Of The Exodar
 					},
+					["qg"] = 33655,	-- Saandos
 					["coord"] = { 76.1, 19.2, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -1027,11 +1027,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13765, {	-- A Valiant's Field Training (H) (Orgrimmar, Valiant)
-					["qg"] = 33405,	-- Akinos
 					["sourceQuests"] = {
 						13691,	-- A Valiant Of Orgrimmar
 						13707,	-- Valiant Of Orgrimmar
 					},
+					["qg"] = 33405,	-- Akinos
 					["coord"] = { 76.5, 24.5, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -1044,11 +1044,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13786, {	-- A Valiant's Field Training (H) (Silvermoon City, Valiant)
-					["qg"] = 33538,	-- Kethiel Sunlance
 					["sourceQuests"] = {
 						13696,	-- A Valiant Of Silvermoon
 						13711,	-- Valiant Of Silvermoon
 					},
+					["qg"] = 33538,	-- Kethiel Sunlance
 					["coord"] = { 76.4, 23.8, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -1061,11 +1061,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13776, {	-- A Valiant's Field Training (H) (Thunder Bluff, Valiant)
-					["qg"] = 33539,	-- Dern Ragetotem
 					["sourceQuests"] = {
 						13694,	-- A Valiant Of Thunder Bluff
 						13709,	-- Valiant Of Thunder Bluff
 					},
+					["qg"] = 33539,	-- Dern Ragetotem
 					["coord"] = { 76.3, 24.7, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -1078,11 +1078,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13781, {	-- A Valiant's Field Training (H) (Undercity, Valiant)
-					["qg"] = 33541,	-- Sarah Chalke
 					["sourceQuests"] = {
 						13695,	-- A Valiant Of Undercity
 						13710,	-- Valiant Of Undercity
 					},
+					["qg"] = 33541,	-- Sarah Chalke
 					["coord"] = { 76.6, 24.1, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -1095,12 +1095,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13669, {	-- A Worthy Weapon (A) (The Silver Covenant, Aspirant)
-					["qg"] = 33625,	-- Arcanist Taelis
 					["sourceQuests"] = {
 						13828,	-- Mastery Of Melee (A)
 						13837,	-- Mastery Of The Charge (A)
 						13835,	-- Mastery Of The Shield-Breaker (A)
 					},
+					["qg"] = 33625,	-- Arcanist Taelis
 					["coord"] = { 76.5, 19.4, ICECROWN },
 					["maps"] = { DRAGONBLIGHT },
 					["races"] = ALLIANCE_ONLY,
@@ -1113,11 +1113,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13758, {	-- A Worthy Weapon (A) (Darnassus, Valiant)
-					["qg"] = 33592,	-- Jaelyne Evensong
 					["sourceQuests"] = {
 						13689,	-- A Valiant Of Darnassus
 						13706,	-- Valiant Of Darnassus
 					},
+					["qg"] = 33592,	-- Jaelyne Evensong
 					["coord"] = { 76.3, 19.0, ICECROWN },
 					["maps"] = { DRAGONBLIGHT },
 					["races"] = ALLIANCE_ONLY,
@@ -1131,11 +1131,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13747, {	-- A Worthy Weapon (A) (Gnomeregan, Valiant)
-					["qg"] = 33335,	-- Ambrose Boltspark
 					["sourceQuests"] = {
 						13688,	-- A Valiant Of Gnomeregan
 						13704,	-- Valiant Of Gnomeregan
 					},
+					["qg"] = 33335,	-- Ambrose Boltspark
 					["coord"] = { 76.5, 19.8, ICECROWN },
 					["maps"] = { DRAGONBLIGHT },
 					["races"] = ALLIANCE_ONLY,
@@ -1149,11 +1149,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13742, {	-- A Worthy Weapon (A) (Ironforge, Valiant)
-					["qg"] = 33312,	-- Lana Stouthammer
 					["sourceQuests"] = {
 						13685,	-- A Valiant Of Ironforge
 						13703,	-- Valiant Of Ironforge
 					},
+					["qg"] = 33312,	-- Lana Stouthammer
 					["coord"] = { 76.6, 19.5, ICECROWN },
 					["maps"] = { DRAGONBLIGHT },
 					["races"] = ALLIANCE_ONLY,
@@ -1167,11 +1167,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13600, {	-- A Worthy Weapon (A) (Stormwind City, Valiant)
-					["qg"] = 33225,	-- Marshal Jacob Alerius
 					["sourceQuests"] = {
 						13684,	-- A Valiant Of Stormwind
 						13593,	-- Valiant Of Stormwind
 					},
+					["qg"] = 33225,	-- Marshal Jacob Alerius
 					["coord"] = { 76.6, 19.1, ICECROWN },
 					["maps"] = { DRAGONBLIGHT },
 					["races"] = ALLIANCE_ONLY,
@@ -1185,11 +1185,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13753, {	-- A Worthy Weapon (A) (The Exodar, Valiant)
-					["qg"] = 33593,	-- Colosos
 					["sourceQuests"] = {
 						13690,	-- A Valiant Of The Exodar
 						13705,	-- Valiant Of The Exodar
 					},
+					["qg"] = 33593,	-- Colosos
 					["coord"] = { 76.1, 19.1, ICECROWN },
 					["maps"] = { DRAGONBLIGHT },
 					["races"] = ALLIANCE_ONLY,
@@ -1203,12 +1203,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13674, {	-- A Worthy Weapon (H) (The Sunreavers, Aspirant)
-					["qg"] = 33542,	-- Magister Edien Sunhollow
 					["sourceQuests"] = {
 						13829,	-- Mastery Of Melee (H)
 						13839,	-- Mastery Of The Charge (H)
 						13838,	-- Mastery Of The Shield-Breaker (H)
 					},
+					["qg"] = 33542,	-- Magister Edien Sunhollow
 					["coord"] = { 76.3, 24.4, ICECROWN },
 					["maps"] = { DRAGONBLIGHT },
 					["races"] = HORDE_ONLY,
@@ -1221,11 +1221,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13769, {	-- A Worthy Weapon (H) (Darkspear Trolls, Valiant)
-					["qg"] = 33372,	-- Zul'tore
 					["sourceQuests"] = {
 						13693,	-- A Valiant Of Sen'jin
 						13708,	-- Valiant Of Sen'jin
 					},
+					["qg"] = 33372,	-- Zul'tore
 					["coord"] = { 76.0, 24.5, ICECROWN },
 					["maps"] = { DRAGONBLIGHT },
 					["races"] = HORDE_ONLY,
@@ -1239,11 +1239,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13763, {	-- A Worthy Weapon (H) (Orgrimmar, Valiant)
-					["qg"] = 33361,	-- Mokra the Skullcrusher
 					["sourceQuests"] = {
 						13691,	-- A Valiant Of Orgrimmar
 						13707,	-- Valiant Of Orgrimmar
 					},
+					["qg"] = 33361,	-- Mokra the Skullcrusher
 					["coord"] = { 76.5, 24.6, ICECROWN },
 					["maps"] = { DRAGONBLIGHT },
 					["races"] = HORDE_ONLY,
@@ -1257,11 +1257,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13784, {	-- A Worthy Weapon (H) (Silvermoon City, Valiant)
-					["qg"] = 33379,	-- Eressea Dawnsinger
 					["sourceQuests"] = {
 						13696,	-- A Valiant Of Silvermoon
 						13711,	-- Valiant Of Silvermoon
 					},
+					["qg"] = 33379,	-- Eressea Dawnsinger
 					["coord"] = { 76.5, 23.9, ICECROWN },
 					["maps"] = { DRAGONBLIGHT },
 					["races"] = HORDE_ONLY,
@@ -1275,11 +1275,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13774, {	-- A Worthy Weapon (H) (Thunder Bluff, Valiant)
-					["qg"] = 33403,	-- Runok Wildmane
 					["sourceQuests"] = {
 						13694,	-- A Valiant Of Thunder Bluff
 						13709,	-- Valiant Of Thunder Bluff
 					},
+					["qg"] = 33403,	-- Runok Wildmane
 					["coord"] = { 76.2, 24.6, ICECROWN },
 					["maps"] = { DRAGONBLIGHT },
 					["races"] = HORDE_ONLY,
@@ -1293,11 +1293,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13779, {	-- A Worthy Weapon (H) (Undercity, Valiant)
-					["qg"] = 33373,	-- Deathstalker Visceri
 					["sourceQuests"] = {
 						13695,	-- A Valiant Of Undercity
 						13710,	-- Valiant Of Undercity
 					},
+					["qg"] = 33373,	-- Deathstalker Visceri
 					["coord"] = { 76.5, 24.2, ICECROWN },
 					["maps"] = { DRAGONBLIGHT },
 					["races"] = HORDE_ONLY,
@@ -1311,8 +1311,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13790, {	-- Among the Champions (A, non-DK)
-					["qg"] = 33771,	-- Luuri
 					["sourceQuest"] = 13794,	-- Eadric the Pure
+					["qg"] = 33771,	-- Luuri
 					["coord"] = { 69.8, 23.3, ICECROWN },
 					["maxReputation"] = { FACTION_THE_SILVER_COVENANT, EXALTED },	-- The Silver Covenant, Exalted.
 					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
@@ -1339,8 +1339,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13811, {	-- Among the Champions (H, non-DK)
-					["qg"] = 33771,	-- Luuri
 					["sourceQuest"] = 13794,	-- Eadric the Pure
+					["qg"] = 33771,	-- Luuri
 					["coord"] = { 69.8, 23.3, ICECROWN },
 					["maxReputation"] = { FACTION_THE_SUNREAVERS, EXALTED },	-- The Sunreavers, Exalted.
 					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
@@ -1367,8 +1367,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13793, {	-- Among the Champions (A, DK)
-					["qg"] = 33770,	-- Illyrie Nightfall <Mistress of Horses>
 					["sourceQuest"] = 13795,	-- The Scourgebane
+					["qg"] = 33770,	-- Illyrie Nightfall <Mistress of Horses>
 					["coord"] = { 73.6, 20.0, ICECROWN },
 					["maxReputation"] = { FACTION_THE_SILVER_COVENANT, EXALTED },	-- The Silver Covenant, Exalted.
 					["classes"] = { DEATHKNIGHT },
@@ -1395,8 +1395,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13814, {	-- Among the Champions (H, DK)
-					["qg"] = 33770,	-- Illyrie Nightfall <Mistress of Horses>
 					["sourceQuest"] = 13795,	-- The Scourgebane
+					["qg"] = 33770,	-- Illyrie Nightfall <Mistress of Horses>
 					["coord"] = { 73.6, 20.0, ICECROWN },
 					["maxReputation"] = { FACTION_THE_SUNREAVERS, EXALTED },	-- The Sunreavers, Exalted.
 					["classes"] = { DEATHKNIGHT },
@@ -1423,14 +1423,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13855, {	-- At The Enemy's Gates (A) (Darnassus, Valiant)
+					["sourceQuests"] = {
+						13689,	-- A Valiant Of Darnassus
+						13706,	-- Valiant Of Darnassus
+					},
 					["providers"] = {
 						{ "n", 33654 },	-- Airae Starseeker
 						{ "n", 33870 },	-- Stabled Argent Warhorse
 						{ "i", 46106 },	-- Argent Lance
-					},
-					["sourceQuests"] = {
-						13689,	-- A Valiant Of Darnassus
-						13706,	-- Valiant Of Darnassus
 					},
 					["coord"] = { 76.4, 19.0, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
@@ -1450,14 +1450,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13852, {	-- At The Enemy's Gates (A) (Gnomeregan, Valiant)
+					["sourceQuests"] = {
+						13688,	-- A Valiant Of Gnomeregan
+						13704,	-- Valiant Of Gnomeregan
+					},
 					["providers"] = {
 						{ "n", 33649 },	-- Flickin Gearspanner
 						{ "n", 33870 },	-- Stabled Argent Warhorse
 						{ "i", 46106 },	-- Argent Lance
-					},
-					["sourceQuests"] = {
-						13688,	-- A Valiant Of Gnomeregan
-						13704,	-- Valiant Of Gnomeregan
 					},
 					["coord"] = { 76.5, 19.9, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
@@ -1477,14 +1477,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13851, {	-- At The Enemy's Gates (A) (Ironforge, Valiant)
+					["sourceQuests"] = {
+						13685,	-- A Valiant Of Ironforge
+						13703,	-- Valiant Of Ironforge
+					},
 					["providers"] = {
 						{ "n", 33309 },	-- Clara Tumblebrew
 						{ "n", 33870 },	-- Stabled Argent Warhorse
 						{ "i", 46106 },	-- Argent Lance
-					},
-					["sourceQuests"] = {
-						13685,	-- A Valiant Of Ironforge
-						13703,	-- Valiant Of Ironforge
 					},
 					["coord"] = { 76.6, 19.6, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
@@ -1504,14 +1504,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13847, {	-- At The Enemy's Gates (A) (Stormwind City, Valiant)
+					["sourceQuests"] = {
+						13684,	-- A Valiant Of Stormwind
+						13593,	-- Valiant Of Stormwind
+					},
 					["providers"] = {
 						{ "n", 33223 },	-- Captain Joseph Holley
 						{ "n", 33870 },	-- Stabled Argent Warhorse
 						{ "i", 46106 },	-- Argent Lance
-					},
-					["sourceQuests"] = {
-						13684,	-- A Valiant Of Stormwind
-						13593,	-- Valiant Of Stormwind
 					},
 					["coord"] = { 76.6, 19.2, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
@@ -1531,14 +1531,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13854, {	-- At The Enemy's Gates (A) (The Exodar, Valiant)
+					["sourceQuests"] = {
+						13690,	-- A Valiant Of The Exodar
+						13705,	-- Valiant Of The Exodar
+					},
 					["providers"] = {
 						{ "n", 33656 },	-- Ranii
 						{ "n", 33870 },	-- Stabled Argent Warhorse
 						{ "i", 46106 },	-- Argent Lance
-					},
-					["sourceQuests"] = {
-						13690,	-- A Valiant Of The Exodar
-						13705,	-- Valiant Of The Exodar
 					},
 					["coord"] = { 76.1, 19.1, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
@@ -1558,14 +1558,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13857, {	-- At The Enemy's Gates (H) (Darkspear Trolls, Valiant)
+					["sourceQuests"] = {
+						13693,	-- A Valiant Of Sen'jin
+						13708,	-- Valiant Of Sen'jin
+					},
 					["providers"] = {
 						{ "n", 33545 },	-- Gahju
 						{ "n", 33870 },	-- Stabled Argent Warhorse
 						{ "i", 46106 },	-- Argent Lance
-					},
-					["sourceQuests"] = {
-						13693,	-- A Valiant Of Sen'jin
-						13708,	-- Valiant Of Sen'jin
 					},
 					["coord"] = { 75.9, 24.4, ICECROWN },
 					["races"] = HORDE_ONLY,
@@ -1585,14 +1585,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13856, {	-- At The Enemy's Gates (H) (Orgrimmar, Valiant)
+					["sourceQuests"] = {
+						13691,	-- A Valiant Of Orgrimmar
+						13707,	-- Valiant Of Orgrimmar
+					},
 					["providers"] = {
 						{ "n", 33544 },	-- Morah Worgsister
 						{ "n", 33870 },	-- Stabled Argent Warhorse
 						{ "i", 46106 },	-- Argent Lance
-					},
-					["sourceQuests"] = {
-						13691,	-- A Valiant Of Orgrimmar
-						13707,	-- Valiant Of Orgrimmar
 					},
 					["coord"] = { 76.4, 24.6, ICECROWN },
 					["races"] = HORDE_ONLY,
@@ -1612,14 +1612,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13859, {	-- At The Enemy's Gates (H) (Silvermoon City, Valiant)
+					["sourceQuests"] = {
+						13696,	-- A Valiant Of Silvermoon
+						13711,	-- Valiant Of Silvermoon
+					},
 					["providers"] = {
 						{ "n", 33548 },	-- Aneera Thuron
 						{ "n", 33870 },	-- Stabled Argent Warhorse
 						{ "i", 46106 },	-- Argent Lance
-					},
-					["sourceQuests"] = {
-						13696,	-- A Valiant Of Silvermoon
-						13711,	-- Valiant Of Silvermoon
 					},
 					["coord"] = { 76.5, 23.9, ICECROWN },
 					["races"] = HORDE_ONLY,
@@ -1639,14 +1639,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13858, {	-- At The Enemy's Gates (H) (Thunder Bluff, Valiant)
+					["sourceQuests"] = {
+						13694,	-- A Valiant Of Thunder Bluff
+						13709,	-- Valiant Of Thunder Bluff
+					},
 					["providers"] = {
 						{ "n", 33549 },	-- Anka Clawhoof
 						{ "n", 33870 },	-- Stabled Argent Warhorse
 						{ "i", 46106 },	-- Argent Lance
-					},
-					["sourceQuests"] = {
-						13694,	-- A Valiant Of Thunder Bluff
-						13709,	-- Valiant Of Thunder Bluff
 					},
 					["coord"] = { 76.1, 24.6, ICECROWN },
 					["races"] = HORDE_ONLY,
@@ -1666,14 +1666,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13860, {	-- At The Enemy's Gates (H) (Undercity, Valiant)
+					["sourceQuests"] = {
+						13695,	-- A Valiant Of Undercity
+						13710,	-- Valiant Of Undercity
+					},
 					["providers"] = {
 						{ "n", 33547 },	-- Handler Dretch
 						{ "n", 33870 },	-- Stabled Argent Warhorse
 						{ "i", 46106 },	-- Argent Lance
-					},
-					["sourceQuests"] = {
-						13695,	-- A Valiant Of Undercity
-						13710,	-- Valiant Of Undercity
 					},
 					["coord"] = { 76.5, 24.3, ICECROWN },
 					["races"] = HORDE_ONLY,
@@ -1694,12 +1694,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				}),
 
 				q(13861, {	-- Battle Before the Citadel (A, non-DK)
+					["sourceQuest"] = 13794,	-- Eadric the Pure
 					["providers"] = {
 						{ "n", 33759 },	-- Eadric the Pure <Grand Champion of the Argent Crusade>
 						{ "n", 33870 },	-- Stabled Argent Warhorse
 						{ "i", 46106 },	-- Argent Lance
 					},
-					["sourceQuest"] = 13794,	-- Eadric the Pure
 					["coord"] = { 69.9, 23.4, ICECROWN },
 					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
 					["races"] = ALLIANCE_ONLY,
@@ -1713,12 +1713,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13862, {	-- Battle Before the Citadel (H, non-DK)
+					["sourceQuest"] = 13794,	-- Eadric the Pure
 					["providers"] = {
 						{ "n", 33759 },	-- Eadric the Pure <Grand Champion of the Argent Crusade>
 						{ "n", 33870 },	-- Stabled Argent Warhorse
 						{ "i", 46106 },	-- Argent Lance
 					},
-					["sourceQuest"] = 13794,	-- Eadric the Pure
 					["coord"] = { 69.9, 23.4, ICECROWN },
 					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
 					["races"] = HORDE_ONLY,
@@ -1732,12 +1732,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13863, {	-- Battle Before the Citadel (H, DK)
+					["sourceQuest"] = 13795,	-- The Scourgebane
 					["providers"] = {
 						{ "n", 33762 },	-- Crok Scourgebane <Grand Champion of the Ebon Blade>
 						{ "n", 33870 },	-- Stabled Argent Warhorse
 						{ "i", 46106 },	-- Argent Lance
 					},
-					["sourceQuest"] = 13795,	-- The Scourgebane
 					["coord"] = { 73.8, 20.0, ICECROWN },
 					["classes"] = { DEATHKNIGHT },
 					["races"] = HORDE_ONLY,
@@ -1751,12 +1751,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13864, {	-- Battle Before the Citadel (A, DK)
+					["sourceQuest"] = 13795,	-- The Scourgebane
 					["providers"] = {
 						{ "n", 33762 },	-- Crok Scourgebane <Grand Champion of the Ebon Blade>
 						{ "n", 33870 },	-- Stabled Argent Warhorse
 						{ "i", 46106 },	-- Argent Lance
 					},
-					["sourceQuest"] = 13795,	-- The Scourgebane
 					["coord"] = { 73.8, 20.0, ICECROWN },
 					["classes"] = { DEATHKNIGHT },
 					["races"] = ALLIANCE_ONLY,
@@ -1771,8 +1771,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				}),
 
 				applyclassicphase(WRATH_PHASE_THREE, q(24442, {	-- Battle Plans Of The Kvaldir
-					["provider"] = { "i", 49676 },	-- Kvaldir Attack Plans
 					["sourceAchievements"] = { 2771, 2817 },	-- Exalted Champion of the Horde / Exalted Champion of the Alliance
+					["provider"] = { "i", 49676 },	-- Kvaldir Attack Plans
 					["crs"] = {
 						34839,	-- Kvaldir Mist Binder
 						34838,	-- Kvaldir Reaver
@@ -1793,8 +1793,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 
 				applyclassicphase(WRATH_PHASE_THREE, {	-- Breakfast Of Champions
 					["allianceQuestData"] = q(14076, {	-- Breakfast Of Champions (A)
-						["qg"] = 34912,	-- Savinia Loresong <The Silver Covenant>
 						["sourceAchievements"] = { 3676 },	-- A Silver Confidant
+						["qg"] = 34912,	-- Savinia Loresong <The Silver Covenant>
 						["coord"] = { 76.2, 19.6, ICECROWN },
 						["minReputation"] = { FACTION_THE_SILVER_COVENANT, EXALTED },	-- The Silver Covenant, Exalted.
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
@@ -1802,8 +1802,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["OnTooltip"] = CLASSIC_ONLY_DB_FUNC([[_.OnTooltipDB.WithRequiredAchievement]]),
 					}),
 					["hordeQuestData"] = q(14092, {	-- Breakfast Of Champions (H)
-						["qg"] = 34914,	-- Tylos Dawnrunner <The Sunreavers>
 						["sourceAchievements"] = { 3677 },	-- The Sunreavers
+						["qg"] = 34914,	-- Tylos Dawnrunner <The Sunreavers>
 						["coord"] = { 76.1, 24.0, ICECROWN },
 						["minReputation"] = { FACTION_THE_SUNREAVERS, EXALTED },	-- The Sunreavers, Exalted.
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
@@ -1827,7 +1827,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				}),
 
 				q(13846, {	-- Contributin' To The Cause
-					["qg"] = 34210,	-- Squire Artie
 					["sourceQuests"] = {
 						13735,	-- A Champion Rises (A) (Darnassus)
 						13733,	-- A Champion Rises (A) (Gnomeregan)
@@ -1840,13 +1839,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						13738,	-- A Champion Rises (H) (Thunder Bluff)
 						13739,	-- A Champion Rises (H) (Undercity)
 					},
+					["qg"] = 34210,	-- Squire Artie
 					["coord"] = { 69.5, 22.4, ICECROWN },
 					["maxReputation"] = { FACTION_ARGENT_CRUSADE, EXALTED },	-- Argent Crusade, Exalted.
 					["isDaily"] = true,
 				}),
 				applyclassicphase(WRATH_PHASE_THREE, q(14105, {	-- Deathspeaker Kharos
-					["qg"] = 34882,	-- High Crusader Adelard
 					["sourceAchievements"] = { 2771, 2817 },	-- Exalted Champion of the Horde / Exalted Champion of the Alliance
+					["qg"] = 34882,	-- High Crusader Adelard
 					["coord"] = { 69.4, 23.1, ICECROWN },
 					["isDaily"] = true,
 					["OnClick"] = CRUSADER_DAILY_OnClick,
@@ -1861,8 +1861,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, q(14101, {	-- Drottinn Hrothgar
-					["qg"] = 34882,	-- High Crusader Adelard
 					["sourceAchievements"] = { 2771, 2817 },	-- Exalted Champion of the Horde / Exalted Champion of the Alliance
+					["qg"] = 34882,	-- High Crusader Adelard
 					["coord"] = { 69.4, 23.1, ICECROWN },
 					["isDaily"] = true,
 					["OnClick"] = CRUSADER_DAILY_OnClick,
@@ -1880,7 +1880,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				})),
 				q(13794, {	-- Eadric the Pure
-					["qg"] = 33817,	-- Justicar Mariel Trueheart
 					["sourceQuests"] = {
 						13735,	-- A Champion Rises (A) (Darnassus)
 						13733,	-- A Champion Rises (A) (Gnomeregan)
@@ -1893,13 +1892,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						13738,	-- A Champion Rises (H) (Thunder Bluff)
 						13739,	-- A Champion Rises (H) (Undercity)
 					},
+					["qg"] = 33817,	-- Justicar Mariel Trueheart
 					["coord"] = { 69.6, 22.8, ICECROWN },
 					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
 					["isBreadcrumb"] = true,	-- [Possible to not have this quest completed and still pick up following dailies...]
 				}),
 				applyclassicphase(WRATH_PHASE_THREE, q(14108, {	-- Get Kraken!
-					["qg"] = 35094,	-- Crusader Silverdawn
 					["sourceAchievements"] = { 2771, 2817 },	-- Exalted Champion of the Horde / Exalted Champion of the Alliance
+					["qg"] = 35094,	-- Crusader Silverdawn
 					["coord"] = { 69.4, 23.1, ICECROWN },
 					["isDaily"] = true,
 					["OnClick"] = CRUSADER_DAILY_OnClick,
@@ -1921,8 +1921,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 
 				applyclassicphase(WRATH_PHASE_THREE, {	-- Gormok Wants His Snobolds
 					["allianceQuestData"] = q(14090, {	-- Gormok Wants His Snobolds (A)
-						["qg"] = 34912,	-- Savinia Loresong <The Silver Covenant>
 						["sourceAchievements"] = { 3676 },	-- A Silver Confidant
+						["qg"] = 34912,	-- Savinia Loresong <The Silver Covenant>
 						["coord"] = { 76.2, 19.6, ICECROWN },
 						["minReputation"] = { FACTION_THE_SILVER_COVENANT, EXALTED },	-- The Silver Covenant, Exalted.
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
@@ -1930,8 +1930,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["OnTooltip"] = CLASSIC_ONLY_DB_FUNC([[_.OnTooltipDB.WithRequiredAchievement]]),
 					}),
 					["hordeQuestData"] = q(14141, {	-- Gormok Wants His Snobolds (H)
-						["qg"] = 34914,	-- Tylos Dawnrunner <The Sunreavers>
 						["sourceAchievements"] = { 3677 },	-- The Sunreavers
+						["qg"] = 34914,	-- Tylos Dawnrunner <The Sunreavers>
 						["coord"] = { 76.1, 24.0, ICECROWN },
 						["minReputation"] = { FACTION_THE_SUNREAVERS, EXALTED },	-- The Sunreavers, Exalted.
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
@@ -1953,9 +1953,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				}),
 
 				applyclassicphase(WRATH_PHASE_THREE, q(14095, {	-- Identifying the Remains
-					["provider"] = { "i", 46955 },	-- Kraken Tooth
-					["sourceAchievements"] = { 2771, 2817 },	-- Exalted Champion of the Horde / Exalted Champion of the Alliance
 					["description"] = "Defeating the Kraken during |cFFFFD700Get Kraken|r rewards this item.",
+					["sourceAchievements"] = { 2771, 2817 },	-- Exalted Champion of the Horde / Exalted Champion of the Alliance
+					["provider"] = { "i", 46955 },	-- Kraken Tooth
 					["isDaily"] = true,
 					["cr"] = 34925,	-- North Sea Kraken
 					["OnClick"] = CRUSADER_DAILY_OnClick,
@@ -1964,8 +1964,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				})),
 
 				q(13627, {	-- Jack Me Some Lumber
-					["qg"] = 33434,	-- Bezzle Blastbolt
 					["sourceQuest"] = 13820,	-- The Blastbolt Brothers
+					["qg"] = 33434,	-- Bezzle Blastbolt
 					["coord"] = { 74.2, 24.6, ICECROWN },
 					["timeline"] = { ADDED_3_1_0, REMOVED_4_0_1 },
 					["maps"] = { CRYSTALSONG_FOREST },
@@ -1985,28 +1985,28 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				}),
 				{	-- Learning The Reins
 					["allianceQuestData"] = q(13625, {	-- Learning The Reins (A)
-						["providers"] = {
-							{ "n", 33647 },	-- Scout Shalyndria
-							{ "n", 33843 },	-- Stabled Quel'dorei Steed
-							{ "i", 46069 },	-- Alliance Lance
-						},
 						["sourceQuests"] = {
 							13828,	-- Mastery Of Melee (A)
 							13837,	-- Mastery Of The Charge (A)
 							13835,	-- Mastery Of The Shield-Breaker (A)
 						},
+						["providers"] = {
+							{ "n", 33647 },	-- Scout Shalyndria
+							{ "n", 33843 },	-- Stabled Quel'dorei Steed
+							{ "i", 46069 },	-- Alliance Lance
+						},
 						["coord"] = { 76.5, 19.5, ICECROWN },
 					}),
 					["hordeQuestData"] = q(13677, {	-- Learning The Reins (H)
-						["providers"] = {
-							{ "n", 33659 },	-- Galathia Brightdawn
-							{ "n", 33842 },	-- Stabled Sunreaver Hawkstrider
-							{ "i", 46070 },	-- Horde Lance
-						},
 						["sourceQuests"] = {
 							13829,	-- Mastery Of Melee (H)
 							13839,	-- Mastery Of The Charge (H)
 							13838,	-- Mastery Of The Shield-Breaker (H)
+						},
+						["providers"] = {
+							{ "n", 33659 },	-- Galathia Brightdawn
+							{ "n", 33842 },	-- Stabled Sunreaver Hawkstrider
+							{ "i", 46070 },	-- Horde Lance
 						},
 						["coord"] = { 76.2, 24.4, ICECROWN },
 					}),
@@ -2026,21 +2026,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				},
 				{	-- Mastery Of Melee
 					["allianceQuestData"] = q(13828, {	-- Mastery Of Melee (A)
+						["sourceQuest"] = 13667,	-- The Argent Tournament (A)
 						["providers"] = {
 							{ "n", 33625 },	-- Arcanist Taelis
 							{ "n", 33843 },	-- Stabled Quel'dorei Steed
 							{ "i", 46069 },	-- Alliance Lance
 						},
-						["sourceQuest"] = 13667,	-- The Argent Tournament (A)
 						["coord"] = { 76.5, 19.4, ICECROWN },
 					}),
 					["hordeQuestData"] = q(13829, {	-- Mastery Of Melee (H)
+						["sourceQuest"] = 13668,	-- The Argent Tournament (H)
 						["providers"] = {
 							{ "n", 33542 },	-- Magister Edien Sunhollow
 							{ "n", 33842 },	-- Stabled Sunreaver Hawkstrider
 							{ "i", 46070 },	-- Horde Lance
 						},
-						["sourceQuest"] = 13668,	-- The Argent Tournament (H)
 						["coord"] = { 76.2, 24.3, ICECROWN },
 					}),
 					["groups"] = {
@@ -2055,21 +2055,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				},
 				{	-- Mastery Of The Charge
 					["allianceQuestData"] = q(13837, {	-- Mastery Of The Charge (A)
+						["sourceQuest"] = 13667,	-- The Argent Tournament (A)
 						["providers"] = {
 							{ "n", 33646 },	-- Avareth Swiftstrike
 							{ "n", 33843 },	-- Stabled Quel'dorei Steed
 							{ "i", 46069 },	-- Alliance Lance
 						},
-						["sourceQuest"] = 13667,	-- The Argent Tournament (A)
 						["coord"] = { 76.4, 19.4, ICECROWN },
 					}),
 					["hordeQuestData"] = q(13839, {	-- Mastery Of The Charge (H)
+						["sourceQuest"] = 13668,	-- The Argent Tournament (H)
 						["providers"] = {
 							{ "n", 33658 },	-- Amariel Sunsworn
 							{ "n", 33842 },	-- Stabled Sunreaver Hawkstrider
 							{ "i", 46070 },	-- Horde Lance
 						},
-						["sourceQuest"] = 13668,	-- The Argent Tournament (H)
 						["coord"] = { 76.3, 24.3, ICECROWN },
 					}),
 					["groups"] = {
@@ -2084,21 +2084,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				},
 				{	-- Mastery Of The Shield-Breaker
 					["allianceQuestData"] = q(13835, {	-- Mastery Of The Shield-Breaker (A)
+						["sourceQuest"] = 13667,	-- The Argent Tournament (A)
 						["providers"] = {
 							{ "n", 33647 },	-- Scout Shalyndria
 							{ "n", 33843 },	-- Stabled Quel'dorei Steed
 							{ "i", 46069 },	-- Alliance Lance
 						},
-						["sourceQuest"] = 13667,	-- The Argent Tournament (A)
 						["coord"] = { 76.5, 19.5, ICECROWN },
 					}),
 					["hordeQuestData"] = q(13838, {	-- Mastery Of The Shield-Breaker (H)
+						["sourceQuest"] = 13668,	-- The Argent Tournament (H)
 						["providers"] = {
 							{ "n", 33659 },	-- Galathia Brightdawn
 							{ "n", 33842 },	-- Stabled Sunreaver Hawkstrider
 							{ "i", 46070 },	-- Horde Lance
 						},
-						["sourceQuest"] = 13668,	-- The Argent Tournament (H)
 						["coord"] = { 76.2, 24.4, ICECROWN },
 					}),
 					["groups"] = {
@@ -2112,8 +2112,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				},
 				applyclassicphase(WRATH_PHASE_THREE, q(14102, {	-- Mistcaller Yngvar
-					["qg"] = 34882,	-- High Crusader Adelard
 					["sourceAchievements"] = { 2771, 2817 },	-- Exalted Champion of the Horde / Exalted Champion of the Alliance
+					["qg"] = 34882,	-- High Crusader Adelard
 					["coord"] = { 69.4, 23.1, ICECROWN },
 					["isDaily"] = true,
 					["OnClick"] = CRUSADER_DAILY_OnClick,
@@ -2131,8 +2131,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, q(14104, {	-- Ornolf The Scarred
-					["qg"] = 34882,	-- High Crusader Adelard
 					["sourceAchievements"] = { 2771, 2817 },	-- Exalted Champion of the Horde / Exalted Champion of the Alliance
+					["qg"] = 34882,	-- High Crusader Adelard
 					["coord"] = { 69.4, 23.1, ICECROWN },
 					["isDaily"] = true,
 					["OnClick"] = CRUSADER_DAILY_OnClick,
@@ -2151,8 +2151,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				})),
 				applyclassicphase(WRATH_PHASE_THREE, {	-- Rescue at Sea
 					["allianceQuestData"] = q(14152, {	-- Rescue at Sea (A)
-						["qg"] = 34880,	-- Narasi Snowdawn <The Silver Covenant>
 						["sourceAchievements"] = { 3676 },	-- A Silver Confidant
+						["qg"] = 34880,	-- Narasi Snowdawn <The Silver Covenant>
 						["coord"] = { 76.2, 19.6, ICECROWN },
 						["minReputation"] = { FACTION_THE_SILVER_COVENANT, EXALTED },	-- The Silver Covenant, Exalted.
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
@@ -2160,8 +2160,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["OnTooltip"] = CLASSIC_ONLY_DB_FUNC([[_.OnTooltipDB.WithRequiredAchievement]]),
 					}),
 					["hordeQuestData"] = q(14136, {	-- Rescue at Sea (H)
-						["qg"] = 34771,	-- Girana the Blooded <The Sunreavers>
 						["sourceAchievements"] = { 3677 },	-- The Sunreavers
+						["qg"] = 34771,	-- Girana the Blooded <The Sunreavers>
 						["coord"] = { 76.1, 24.0, ICECROWN },
 						["minReputation"] = { FACTION_THE_SUNREAVERS, EXALTED },	-- The Sunreavers, Exalted.
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
@@ -2181,8 +2181,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				}),
 				applyclassicphase(WRATH_PHASE_THREE, {	-- Stop The Aggressors
 					["allianceQuestData"] = q(14080, {	-- Stop The Aggressors (A)
-						["qg"] = 34880,	-- Narasi Snowdawn <The Silver Covenant>
 						["sourceAchievements"] = { 3676 },	-- A Silver Confidant
+						["qg"] = 34880,	-- Narasi Snowdawn <The Silver Covenant>
 						["coord"] = { 76.2, 19.6, ICECROWN },
 						["minReputation"] = { FACTION_THE_SILVER_COVENANT, EXALTED },	-- The Silver Covenant, Exalted.
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
@@ -2190,8 +2190,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["OnTooltip"] = CLASSIC_ONLY_DB_FUNC([[_.OnTooltipDB.WithRequiredAchievement]]),
 					}),
 					["hordeQuestData"] = q(14140, {	-- Stop The Aggressors (H)
-						["qg"] = 34771,	-- Girana the Blooded <The Sunreavers>
 						["sourceAchievements"] = { 3677 },	-- The Sunreavers
+						["qg"] = 34771,	-- Girana the Blooded <The Sunreavers>
 						["coord"] = { 76.1, 24.0, ICECROWN },
 						["minReputation"] = { FACTION_THE_SUNREAVERS, EXALTED },	-- The Sunreavers, Exalted.
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
@@ -2210,8 +2210,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13789, {	-- Taking Battle To The Enemy (A, non-DK)
-					["qg"] = 33763,	-- Cellian Daybreak <Master of Arms>
 					["sourceQuest"] = 13794,	-- Eadric the Pure
+					["qg"] = 33763,	-- Cellian Daybreak <Master of Arms>
 					["coord"] = { 69.9, 23.4, ICECROWN },
 					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
 					["races"] = ALLIANCE_ONLY,
@@ -2230,8 +2230,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13810, {	-- Taking Battle To The Enemy (H, non-DK)
-					["qg"] = 33763,	-- Cellian Daybreak <Master of Arms>
 					["sourceQuest"] = 13794,	-- Eadric the Pure
+					["qg"] = 33763,	-- Cellian Daybreak <Master of Arms>
 					["coord"] = { 69.9, 23.4, ICECROWN },
 					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
 					["races"] = HORDE_ONLY,
@@ -2250,8 +2250,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13791, {	-- Taking Battle To The Enemy (A, DK)
-					["qg"] = 33769,	-- Zor'be the Bloodletter <Master of Arms>
 					["sourceQuest"] = 13795,	-- The Scourgebane
+					["qg"] = 33769,	-- Zor'be the Bloodletter <Master of Arms>
 					["coord"] = { 73.8, 19.6, ICECROWN },
 					["classes"] = { DEATHKNIGHT },
 					["races"] = ALLIANCE_ONLY,
@@ -2270,8 +2270,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13813, {	-- Taking Battle To The Enemy (H, DK)
-					["qg"] = 33769,	-- Zor'be the Bloodletter <Master of Arms>
 					["sourceQuest"] = 13795,	-- The Scourgebane
+					["qg"] = 33769,	-- Zor'be the Bloodletter <Master of Arms>
 					["coord"] = { 73.8, 19.6, ICECROWN },
 					["classes"] = { DEATHKNIGHT },
 					["races"] = HORDE_ONLY,
@@ -2301,13 +2301,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				}),
 				{	-- The Aspirant's Challenge
 					["allianceQuestData"] = q(13679, {	-- The Aspirant's Challenge (A)
-						["qg"] = 33625,	-- Arcanist Taelis
 						["sourceQuest"] = 13672,	-- Up To The Challenge (A)
+						["qg"] = 33625,	-- Arcanist Taelis
 						["coord"] = { 76.5, 19.4, ICECROWN },
 					}),
 					["hordeQuestData"] = q(13680, {	-- The Aspirant's Challenge (H)
-						["qg"] = 33542,	-- Magister Edien Sunhollow
 						["sourceQuest"] = 13678,	-- Up To The Challenge (H)
+						["qg"] = 33542,	-- Magister Edien Sunhollow
 						["coord"] = { 76.3, 24.4, ICECROWN },
 					}),
 					["groups"] = {
@@ -2321,8 +2321,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				},
 				q(13634, {	-- The Black Knight of Silverpine?
-					["qg"] = 33417,	-- Crusader Rhydalla
 					["sourceQuest"] = 13668,	-- The Argent Tournament (H)
+					["qg"] = 33417,	-- Crusader Rhydalla
 					["coord"] = { 69.4, 23.0, ICECROWN },
 					["maps"] = { SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
@@ -2337,8 +2337,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13633, {	-- The Black Knight of Westfall?
-					["qg"] = 33417,	-- Crusader Rhydalla
 					["sourceQuest"] = 13667,	-- The Argent Tournament (A)
+					["qg"] = 33417,	-- Crusader Rhydalla
 					["coord"] = { 69.4, 23.0, ICECROWN },
 					["maps"] = { WESTFALL },
 					["races"] = ALLIANCE_ONLY,
@@ -2353,8 +2353,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				applyclassicphase(WRATH_PHASE_THREE, q(14016, {	-- The Black Knight's Curse
-					["qg"] = 33417,	-- Crusader Rhydalla
 					["sourceQuest"] = 13664,	-- The Black Knight's Fall
+					["qg"] = 33417,	-- Crusader Rhydalla
 					["coord"] = { 69.4, 23.0, ICECROWN },
 					["groups"] = {
 						objective(1, {	-- Investigate the Black Knight's Grave
@@ -2364,7 +2364,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				})),
 				q(13664, {	-- The Black Knight's Fall
-					["qg"] = 33417,	-- Crusader Rhydalla
 					["sourceQuests"] = {
 						13663,	-- The Black Knight's Orders
 						13735,	-- A Champion Rises (A) (Darnassus)
@@ -2378,6 +2377,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						13738,	-- A Champion Rises (H) (Thunder Bluff)
 						13739,	-- A Champion Rises (H) (Undercity)
 					},
+					["qg"] = 33417,	-- Crusader Rhydalla
 					["coord"] = { 69.4, 23.0, ICECROWN },
 					["groups"] = {
 						objective(1, {	-- Defeat the Black Knight
@@ -2391,8 +2391,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				applyclassicphase(WRATH_PHASE_THREE, q(14017, {	-- The Black Knight's Fate
-					["qg"] = 33417,	-- Crusader Rhydalla
 					["sourceQuest"] = 14016,	-- The Black Knight's Curse
+					["qg"] = 33417,	-- Crusader Rhydalla
 					["coord"] = { 69.4, 23.0, ICECROWN },
 					["groups"] = {
 						objective(1, {	-- 0/1 Doctor Kohler's Orders
@@ -2403,8 +2403,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				})),
 				q(13663, {	-- The Black Knight's Orders
-					["qg"] = 33417,	-- Crusader Rhydalla
 					["sourceQuest"] = 13654,	-- There's Something About the Squire
+					["qg"] = 33417,	-- Crusader Rhydalla
 					["coord"] = { 69.4, 23.0, ICECROWN },
 					["groups"] = {
 						objective(1, {	-- Black Knight's Gryphon taken
@@ -2446,12 +2446,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					-- #endif
 				}),
 				q(13670, {	-- The Edge Of Winter (A) (The Silver Covenant, Aspirant)
-					["qg"] = 33625,	-- Arcanist Taelis
 					["sourceQuests"] = {
 						13828,	-- Mastery Of Melee (A)
 						13837,	-- Mastery Of The Charge (A)
 						13835,	-- Mastery Of The Shield-Breaker (A)
 					},
+					["qg"] = 33625,	-- Arcanist Taelis
 					["coord"] = { 76.5, 19.4, ICECROWN },
 					["maps"] = { CRYSTALSONG_FOREST, HOWLING_FJORD },
 					["races"] = ALLIANCE_ONLY,
@@ -2464,11 +2464,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13759, {	-- The Edge Of Winter (A) (Darnassus, Valiant)
-					["qg"] = 33592,	-- Jaelyne Evensong
 					["sourceQuests"] = {
 						13689,	-- A Valiant Of Darnassus
 						13706,	-- Valiant Of Darnassus
 					},
+					["qg"] = 33592,	-- Jaelyne Evensong
 					["coord"] = { 76.3, 19.0, ICECROWN },
 					["maps"] = { CRYSTALSONG_FOREST, HOWLING_FJORD },
 					["races"] = ALLIANCE_ONLY,
@@ -2482,11 +2482,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13748, {	-- The Edge Of Winter (A) (Gnomeregan, Valiant)
-					["qg"] = 33335,	-- Ambrose Boltspark
 					["sourceQuests"] = {
 						13688,	-- A Valiant Of Gnomeregan
 						13704,	-- Valiant Of Gnomeregan
 					},
+					["qg"] = 33335,	-- Ambrose Boltspark
 					["coord"] = { 76.5, 19.8, ICECROWN },
 					["maps"] = { CRYSTALSONG_FOREST, HOWLING_FJORD },
 					["races"] = ALLIANCE_ONLY,
@@ -2500,11 +2500,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13743, {	-- The Edge Of Winter (A) (Ironforge, Valiant)
-					["qg"] = 33312,	-- Lana Stouthammer
 					["sourceQuests"] = {
 						13685,	-- A Valiant Of Ironforge
 						13703,	-- Valiant Of Ironforge
 					},
+					["qg"] = 33312,	-- Lana Stouthammer
 					["coord"] = { 76.6, 19.5, ICECROWN },
 					["maps"] = { CRYSTALSONG_FOREST, HOWLING_FJORD },
 					["races"] = ALLIANCE_ONLY,
@@ -2518,11 +2518,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13616, {	-- The Edge Of Winter (A) (Stormwind City, Valiant)
-					["qg"] = 33225,	-- Marshal Jacob Alerius
 					["sourceQuests"] = {
 						13684,	-- A Valiant Of Stormwind
 						13593,	-- Valiant Of Stormwind
 					},
+					["qg"] = 33225,	-- Marshal Jacob Alerius
 					["coord"] = { 76.6, 19.1, ICECROWN },
 					["maps"] = { CRYSTALSONG_FOREST, HOWLING_FJORD },
 					["races"] = ALLIANCE_ONLY,
@@ -2536,11 +2536,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13754, {	-- The Edge Of Winter (A) (The Exodar, Valiant)
-					["qg"] = 33593,	-- Colosos
 					["sourceQuests"] = {
 						13690,	-- A Valiant Of The Exodar
 						13705,	-- Valiant Of The Exodar
 					},
+					["qg"] = 33593,	-- Colosos
 					["coord"] = { 76.1, 19.1, ICECROWN },
 					["maps"] = { CRYSTALSONG_FOREST, HOWLING_FJORD },
 					["races"] = ALLIANCE_ONLY,
@@ -2554,12 +2554,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13675, {	-- The Edge Of Winter (H) (The Sunreavers, Aspirant)
-					["qg"] = 33542,	-- Magister Edien Sunhollow
 					["sourceQuests"] = {
 						13829,	-- Mastery Of Melee (H)
 						13839,	-- Mastery Of The Charge (H)
 						13838,	-- Mastery Of The Shield-Breaker (H)
 					},
+					["qg"] = 33542,	-- Magister Edien Sunhollow
 					["coord"] = { 76.2, 24.3, ICECROWN },
 					["maps"] = { CRYSTALSONG_FOREST, HOWLING_FJORD },
 					["races"] = HORDE_ONLY,
@@ -2572,11 +2572,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13770, {	-- The Edge Of Winter (H) (Darkspear Trolls, Valiant)
-					["qg"] = 33372,	-- Zul'tore
 					["sourceQuests"] = {
 						13693,	-- A Valiant Of Sen'jin
 						13708,	-- Valiant Of Sen'jin
 					},
+					["qg"] = 33372,	-- Zul'tore
 					["coord"] = { 76.0, 24.5, ICECROWN },
 					["maps"] = { CRYSTALSONG_FOREST, HOWLING_FJORD },
 					["races"] = HORDE_ONLY,
@@ -2590,11 +2590,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13764, {	-- The Edge Of Winter (H) (Orgrimmar, Valiant)
-					["qg"] = 33361,	-- Mokra the Skullcrusher
 					["sourceQuests"] = {
 						13691,	-- A Valiant Of Orgrimmar
 						13707,	-- Valiant Of Orgrimmar
 					},
+					["qg"] = 33361,	-- Mokra the Skullcrusher
 					["coord"] = { 76.5, 24.6, ICECROWN },
 					["maps"] = { CRYSTALSONG_FOREST, HOWLING_FJORD },
 					["races"] = HORDE_ONLY,
@@ -2608,11 +2608,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13785, {	-- The Edge Of Winter (H) (Silvermoon City, Valiant)
-					["qg"] = 33379,	-- Eressea Dawnsinger
 					["sourceQuests"] = {
 						13696,	-- A Valiant Of Silvermoon
 						13711,	-- Valiant Of Silvermoon
 					},
+					["qg"] = 33379,	-- Eressea Dawnsinger
 					["coord"] = { 76.5, 23.9, ICECROWN },
 					["maps"] = { CRYSTALSONG_FOREST, HOWLING_FJORD },
 					["races"] = HORDE_ONLY,
@@ -2626,11 +2626,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13775, {	-- The Edge Of Winter (H) (Thunder Bluff, Valiant)
-					["qg"] = 33403,	-- Runok Wildmane
 					["sourceQuests"] = {
 						13694,	-- A Valiant Of Thunder Bluff
 						13709,	-- Valiant Of Thunder Bluff
 					},
+					["qg"] = 33403,	-- Runok Wildmane
 					["coord"] = { 76.2, 24.6, ICECROWN },
 					["maps"] = { CRYSTALSONG_FOREST, HOWLING_FJORD },
 					["races"] = HORDE_ONLY,
@@ -2644,11 +2644,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13780, {	-- The Edge Of Winter (H) (Undercity, Valiant)
-					["qg"] = 33373,	-- Deathstalker Visceri
 					["sourceQuests"] = {
 						13695,	-- A Valiant Of Undercity
 						13710,	-- Valiant Of Undercity
 					},
+					["qg"] = 33373,	-- Deathstalker Visceri
 					["coord"] = { 76.5, 24.2, ICECROWN },
 					["maps"] = { CRYSTALSONG_FOREST, HOWLING_FJORD },
 					["races"] = HORDE_ONLY,
@@ -2662,8 +2662,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				applyclassicphase(WRATH_PHASE_THREE, q(14107, {	-- The Fate of the Fallen
-					["qg"] = 35094,	-- Crusader Silverdawn
 					["sourceAchievements"] = { 2771, 2817 },	-- Exalted Champion of the Horde / Exalted Champion of the Alliance
+					["qg"] = 35094,	-- Crusader Silverdawn
 					["coord"] = { 69.4, 23.1, ICECROWN },
 					["isDaily"] = true,
 					["OnClick"] = CRUSADER_DAILY_OnClick,
@@ -2681,11 +2681,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				})),
 				q(13761, {	-- The Grand Melee (A) (Darnassus, Valiant)
-					["qg"] = 33654,	-- Airae Starseeker
 					["sourceQuests"] = {
 						13689,	-- A Valiant Of Darnassus
 						13706,	-- Valiant Of Darnassus
 					},
+					["qg"] = 33654,	-- Airae Starseeker
 					["coord"] = { 76.4, 19.0, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -2710,11 +2710,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13750, {	-- The Grand Melee (A) (Gnomeregan, Valiant)
-					["qg"] = 33649,	-- Flickin Gearspanner
 					["sourceQuests"] = {
 						13688,	-- A Valiant Of Gnomeregan
 						13704,	-- Valiant Of Gnomeregan
 					},
+					["qg"] = 33649,	-- Flickin Gearspanner
 					["coord"] = { 76.5, 19.9, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -2739,11 +2739,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13745, {	-- The Grand Melee (A) (Ironforge, Valiant)
-					["qg"] = 33309,	-- Clara Tumblebrew
 					["sourceQuests"] = {
 						13685,	-- A Valiant Of Ironforge
 						13703,	-- Valiant Of Ironforge
 					},
+					["qg"] = 33309,	-- Clara Tumblebrew
 					["coord"] = { 76.6, 19.6, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -2768,11 +2768,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13665, {	-- The Grand Melee (A) (Stormwind City, Valiant)
-					["qg"] = 33223,	-- Captain Joseph Holley
 					["sourceQuests"] = {
 						13684,	-- A Valiant Of Stormwind
 						13593,	-- Valiant Of Stormwind
 					},
+					["qg"] = 33223,	-- Captain Joseph Holley
 					["coord"] = { 76.6, 19.2, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -2797,11 +2797,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13756, {	-- The Grand Melee (A) (The Exodar, Valiant)
-					["qg"] = 33656,	-- Ranii
 					["sourceQuests"] = {
 						13690,	-- A Valiant Of The Exodar
 						13705,	-- Valiant Of The Exodar
 					},
+					["qg"] = 33656,	-- Ranii
 					["coord"] = { 76.1, 19.1, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -2826,11 +2826,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13772, {	-- The Grand Melee (H) (Darkspear Trolls, Valiant)
-					["qg"] = 33545,	-- Gahju
 					["sourceQuests"] = {
 						13693,	-- A Valiant Of Sen'jin
 						13708,	-- Valiant Of Sen'jin
 					},
+					["qg"] = 33545,	-- Gahju
 					["coord"] = { 75.9, 24.4, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -2855,11 +2855,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13767, {	-- The Grand Melee (H) (Orgrimmar, Valiant)
-					["qg"] = 33544,	-- Morah Worgsister
 					["sourceQuests"] = {
 						13691,	-- A Valiant Of Orgrimmar
 						13707,	-- Valiant Of Orgrimmar
 					},
+					["qg"] = 33544,	-- Morah Worgsister
 					["coord"] = { 76.4, 24.6, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -2884,11 +2884,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13787, {	-- The Grand Melee (H) (Silvermoon City, Valiant)
-					["qg"] = 33548,	-- Aneera Thuron
 					["sourceQuests"] = {
 						13696,	-- A Valiant Of Silvermoon
 						13711,	-- Valiant Of Silvermoon
 					},
+					["qg"] = 33548,	-- Aneera Thuron
 					["coord"] = { 76.5, 23.9, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -2913,11 +2913,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13777, {	-- The Grand Melee (H) (Thunder Bluff, Valiant)
-					["qg"] = 33549,	-- Anka Clawhoof
 					["sourceQuests"] = {
 						13694,	-- A Valiant Of Thunder Bluff
 						13709,	-- Valiant Of Thunder Bluff
 					},
+					["qg"] = 33549,	-- Anka Clawhoof
 					["coord"] = { 76.1, 24.6, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -2942,11 +2942,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13782, {	-- The Grand Melee (H) (Undercity, Valiant)
-					["qg"] = 33547,	-- Handler Dretch
 					["sourceQuests"] = {
 						13695,	-- A Valiant Of Undercity
 						13710,	-- Valiant Of Undercity
 					},
+					["qg"] = 33547,	-- Handler Dretch
 					["coord"] = { 76.5, 24.3, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -2972,8 +2972,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				}),
 				applyclassicphase(WRATH_PHASE_THREE, {	-- The Light's Mercy
 					["allianceQuestData"] = q(14077, {	-- The Light's Mercy (A)
-						["qg"] = 34880,	-- Narasi Snowdawn <The Silver Covenant>
 						["sourceAchievements"] = { 3676 },	-- A Silver Confidant
+						["qg"] = 34880,	-- Narasi Snowdawn <The Silver Covenant>
 						["coord"] = { 76.2, 19.6, ICECROWN },
 						["minReputation"] = { FACTION_THE_SILVER_COVENANT, EXALTED },	-- The Silver Covenant, Exalted.
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
@@ -2981,8 +2981,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["OnTooltip"] = CLASSIC_ONLY_DB_FUNC([[_.OnTooltipDB.WithRequiredAchievement]]),
 					}),
 					["hordeQuestData"] = q(14144, {	-- The Light's Mercy (H)
-						["qg"] = 34771,	-- Girana the Blooded <The Sunreavers>
 						["sourceAchievements"] = { 3677 },	-- The Sunreavers
+						["qg"] = 34771,	-- Girana the Blooded <The Sunreavers>
 						["coord"] = { 76.1, 24.0, ICECROWN },
 						["minReputation"] = { FACTION_THE_SUNREAVERS, EXALTED },	-- The Sunreavers, Exalted.
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
@@ -3001,7 +3001,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13795, {	-- The Scourgebane
-					["qg"] = 33817,	-- Justicar Mariel Trueheart
 					["sourceQuests"] = {
 						13735,	-- A Champion Rises (A) (Darnassus)
 						13733,	-- A Champion Rises (A) (Gnomeregan)
@@ -3014,15 +3013,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						13738,	-- A Champion Rises (H) (Thunder Bluff)
 						13739,	-- A Champion Rises (H) (Undercity)
 					},
+					["qg"] = 33817,	-- Justicar Mariel Trueheart
 					["coord"] = { 69.6, 22.8, ICECROWN },
 					["classes"] = { DEATHKNIGHT },
 				}),
 				q(13641, {	-- The Seer's Crystal
-					["qg"] = 33417,	-- Crusader Rhydalla
 					["sourceQuests"] = {
 						13633,	-- The Black Knight of Westfall? (A)
 						13634,	-- The Black Knight of Silverpine? (H)
 					},
+					["qg"] = 33417,	-- Crusader Rhydalla
 					["coord"] = { 69.4, 23.0, ICECROWN },
 					["maps"] = { CRYSTALSONG_FOREST },
 					["groups"] = {
@@ -3034,8 +3034,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13643, {	-- The Stories Dead Men Tell
-					["qg"] = 33417,	-- Crusader Rhydalla
 					["sourceQuest"] = 13641,	-- The Seer's Crystal
+					["qg"] = 33417,	-- Crusader Rhydalla
 					["coord"] = { 69.4, 23.0, ICECROWN },
 					["groups"] = {
 						objective(1, {	-- Sir Wendell Balfour's death investigated
@@ -3065,8 +3065,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13725, {	-- The Valiant's Challenge (A) (Darnassus)
-					["qg"] = 33592,	-- Jaelyne Evensong
 					["sourceQuest"] = 13717,	-- The Valiant's Charge (A) (Darnassus)
+					["qg"] = 33592,	-- Jaelyne Evensong
 					["coord"] = { 76.3, 19.0, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3077,8 +3077,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13723, {	-- The Valiant's Challenge (A) (Gnomeregan)
-					["qg"] = 33335,	-- Ambrose Boltspark
 					["sourceQuest"] = 13715,	-- The Valiant's Charge (A) (Gnomeregan)
+					["qg"] = 33335,	-- Ambrose Boltspark
 					["coord"] = { 76.5, 19.8, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3089,8 +3089,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13713, {	-- The Valiant's Challenge (A) (Ironforge)
-					["qg"] = 33312,	-- Lana Stouthammer
 					["sourceQuest"] = 13714,	-- The Valiant's Charge (A) (Ironforge)
+					["qg"] = 33312,	-- Lana Stouthammer
 					["coord"] = { 76.6, 19.5, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3101,8 +3101,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13699, {	-- The Valiant's Challenge (A) (Stormwind City)
-					["qg"] = 33225,	-- Marshal Jacob Alerius
 					["sourceQuest"] = 13718,	-- The Valiant's Charge (A) (Stormwind City)
+					["qg"] = 33225,	-- Marshal Jacob Alerius
 					["coord"] = { 76.6, 19.1, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3113,8 +3113,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13724, {	-- The Valiant's Challenge (A) (The Exodar)
-					["qg"] = 33593,	-- Colosos
 					["sourceQuest"] = 13716,	-- The Valiant's Charge (A) (The Exodar)
+					["qg"] = 33593,	-- Colosos
 					["coord"] = { 76.1, 19.1, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3125,8 +3125,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13727, {	-- The Valiant's Challenge (H) (Darkspear Trolls)
-					["qg"] = 33372,	-- Zul'tore
 					["sourceQuest"] = 13719,	-- The Valiant's Charge (H) (Darkspear Trolls)
+					["qg"] = 33372,	-- Zul'tore
 					["coord"] = { 76.0, 24.5, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -3137,8 +3137,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13726, {	-- The Valiant's Challenge (H) (Orgrimmar)
-					["qg"] = 33361,	-- Mokra the Skullcrusher
 					["sourceQuest"] = 13697,	-- The Valiant's Charge (H) (Orgrimmar)
+					["qg"] = 33361,	-- Mokra the Skullcrusher
 					["coord"] = { 76.5, 24.6, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -3149,8 +3149,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13731, {	-- The Valiant's Challenge (H) (Silvermoon City)
-					["qg"] = 33379,	-- Eressea Dawnsinger
 					["sourceQuest"] = 13722,	-- The Valiant's Charge (H) (Silvermoon City)
+					["qg"] = 33379,	-- Eressea Dawnsinger
 					["coord"] = { 76.5, 23.9, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -3161,8 +3161,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13728, {	-- The Valiant's Challenge (H) (Thunder Bluff)
-					["qg"] = 33403,	-- Runok Wildmane
 					["sourceQuest"] = 13720,	-- The Valiant's Charge (H) (Thunder Bluff)
+					["qg"] = 33403,	-- Runok Wildmane
 					["coord"] = { 76.2, 24.6, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -3173,8 +3173,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13729, {	-- The Valiant's Challenge (H) (Undercity)
-					["qg"] = 33373,	-- Deathstalker Visceri
 					["sourceQuest"] = 13721,	-- The Valiant's Charge (H) (Undercity)
+					["qg"] = 33373,	-- Deathstalker Visceri
 					["coord"] = { 76.5, 24.2, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -3185,11 +3185,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13717, {	-- The Valiant's Charge (A) (Darnassus)
-					["qg"] = 33592,	-- Jaelyne Evensong
 					["sourceQuests"] = {
 						13689,	-- A Valiant Of Darnassus
 						13706,	-- Valiant Of Darnassus
 					},
+					["qg"] = 33592,	-- Jaelyne Evensong
 					["coord"] = { 76.3, 19.0, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3199,11 +3199,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13715, {	-- The Valiant's Charge (A) (Gnomeregan)
-					["qg"] = 33335,	-- Ambrose Boltspark
 					["sourceQuests"] = {
 						13688,	-- A Valiant Of Gnomeregan
 						13704,	-- Valiant Of Gnomeregan
 					},
+					["qg"] = 33335,	-- Ambrose Boltspark
 					["coord"] = { 76.5, 19.8, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3213,11 +3213,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13714, {	-- The Valiant's Charge (A) (Ironforge)
-					["qg"] = 33312,	-- Lana Stouthammer
 					["sourceQuests"] = {
 						13685,	-- A Valiant Of Ironforge
 						13703,	-- Valiant Of Ironforge
 					},
+					["qg"] = 33312,	-- Lana Stouthammer
 					["coord"] = { 76.6, 19.5, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3227,11 +3227,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13718, {	-- The Valiant's Charge (A) (Stormwind City)
-					["qg"] = 33225,	-- Marshal Jacob Alerius
 					["sourceQuests"] = {
 						13684,	-- A Valiant Of Stormwind
 						13593,	-- Valiant Of Stormwind
 					},
+					["qg"] = 33225,	-- Marshal Jacob Alerius
 					["coord"] = { 76.6, 19.1, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3241,11 +3241,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13716, {	-- The Valiant's Charge (A) (The Exodar)
-					["qg"] = 33593,	-- Colosos
 					["sourceQuests"] = {
 						13690,	-- A Valiant Of The Exodar
 						13705,	-- Valiant Of The Exodar
 					},
+					["qg"] = 33593,	-- Colosos
 					["coord"] = { 76.1, 19.1, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3255,11 +3255,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13719, {	-- The Valiant's Charge (H) (Darkspear Trolls)
-					["qg"] = 33372,	-- Zul'tore
 					["sourceQuests"] = {
 						13693,	-- A Valiant Of Sen'jin
 						13708,	-- Valiant Of Sen'jin
 					},
+					["qg"] = 33372,	-- Zul'tore
 					["coord"] = { 76.0, 24.5, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -3269,11 +3269,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13697, {	-- The Valiant's Charge (H) (Orgrimmar)
-					["qg"] = 33361,	-- Mokra the Skullcrusher
 					["sourceQuests"] = {
 						13691,	-- A Valiant Of Orgrimmar
 						13707,	-- Valiant Of Orgrimmar
 					},
+					["qg"] = 33361,	-- Mokra the Skullcrusher
 					["coord"] = { 76.5, 24.6, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -3283,11 +3283,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13722, {	-- The Valiant's Charge (H) (Silvermoon City)
-					["qg"] = 33379,	-- Eressea Dawnsinger
 					["sourceQuests"] = {
 						13696,	-- A Valiant Of Silvermoon
 						13711,	-- Valiant Of Silvermoon
 					},
+					["qg"] = 33379,	-- Eressea Dawnsinger
 					["coord"] = { 76.5, 23.9, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -3297,11 +3297,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13720, {	-- The Valiant's Charge (H) (Thunder Bluff)
-					["qg"] = 33403,	-- Runok Wildmane
 					["sourceQuests"] = {
 						13694,	-- A Valiant Of Thunder Bluff
 						13709,	-- Valiant Of Thunder Bluff
 					},
+					["qg"] = 33403,	-- Runok Wildmane
 					["coord"] = { 76.2, 24.6, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -3311,11 +3311,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13721, {	-- The Valiant's Charge (H) (Undercity)
-					["qg"] = 33373,	-- Deathstalker Visceri
 					["sourceQuests"] = {
 						13695,	-- A Valiant Of Undercity
 						13710,	-- Valiant Of Undercity
 					},
+					["qg"] = 33373,	-- Deathstalker Visceri
 					["coord"] = { 76.5, 24.2, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -3325,8 +3325,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13654, {	-- There's Something About the Squire
-					["qg"] = 33417,	-- Crusader Rhydalla
 					["sourceQuest"] = 13643,	-- The Stories Dead Men Tell
+					["qg"] = 33417,	-- Crusader Rhydalla
 					["coord"] = { 69.4, 23.0, ICECROWN },
 					["maps"] = { CRYSTALSONG_FOREST },
 					["groups"] = {
@@ -3341,11 +3341,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13682, {	-- Threat From Above (A, non-DK)
-					["qg"] = 33759,	-- Eadric the Pure <Grand Champion of the Argent Crusade>
 					["sourceQuests"] = {
 						13794,	-- Eadric the Pure
 						13664,	-- The Black Knight's Fall
 					},
+					["qg"] = 33759,	-- Eadric the Pure <Grand Champion of the Argent Crusade>
 					["coord"] = { 69.9, 23.4, ICECROWN },
 					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
 					["races"] = ALLIANCE_ONLY,
@@ -3362,11 +3362,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13809, {	-- Threat From Above (H, non-DK)
-					["qg"] = 33759,	-- Eadric the Pure <Grand Champion of the Argent Crusade>
 					["sourceQuests"] = {
 						13794,	-- Eadric the Pure
 						13664,	-- The Black Knight's Fall
 					},
+					["qg"] = 33759,	-- Eadric the Pure <Grand Champion of the Argent Crusade>
 					["coord"] = { 69.9, 23.4, ICECROWN },
 					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
 					["races"] = HORDE_ONLY,
@@ -3383,11 +3383,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13788, {	-- Threat From Above (A, DK)
-					["qg"] = 33762,	-- Crok Scourgebane <Grand Champion of the Ebon Blade>
 					["sourceQuests"] = {
 						13795,	-- The Scourgebane
 						13664,	-- The Black Knight's Fall
 					},
+					["qg"] = 33762,	-- Crok Scourgebane <Grand Champion of the Ebon Blade>
 					["coord"] = { 73.8, 20.0, ICECROWN },
 					["classes"] = { DEATHKNIGHT },
 					["races"] = ALLIANCE_ONLY,
@@ -3404,11 +3404,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13812, {	-- Threat From Above (H, DK)
-					["qg"] = 33762,	-- Crok Scourgebane <Grand Champion of the Ebon Blade>
 					["sourceQuests"] = {
 						13795,	-- The Scourgebane
 						13664,	-- The Black Knight's Fall
 					},
+					["qg"] = 33762,	-- Crok Scourgebane <Grand Champion of the Ebon Blade>
 					["coord"] = { 73.8, 20.0, ICECROWN },
 					["classes"] = { DEATHKNIGHT },
 					["races"] = HORDE_ONLY,
@@ -3425,12 +3425,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13671, {	-- Training In The Field (A)
-					["qg"] = 33646,	-- Avareth Swiftstrike
 					["sourceQuests"] = {
 						13828,	-- Mastery Of Melee (A)
 						13837,	-- Mastery Of The Charge (A)
 						13835,	-- Mastery Of The Shield-Breaker (A)
 					},
+					["qg"] = 33646,	-- Avareth Swiftstrike
 					["coord"] = { 76.4, 19.4, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -3447,12 +3447,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13676, {	-- Training In The Field (H)
-					["qg"] = 33658,	-- Amariel Sunsworn
 					["sourceQuests"] = {
 						13829,	-- Mastery Of Melee (H)
 						13839,	-- Mastery Of The Charge (H)
 						13838,	-- Mastery Of The Shield-Breaker (H)
 					},
+					["qg"] = 33658,	-- Amariel Sunsworn
 					["coord"] = { 76.3, 24.3, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -3469,12 +3469,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13672, {	-- Up To The Challenge (A)
-					["qg"] = 33625,	-- Arcanist Taelis
 					["sourceQuests"] = {
 						13828,	-- Mastery Of Melee (A)
 						13837,	-- Mastery Of The Charge (A)
 						13835,	-- Mastery Of The Shield-Breaker (A)
 					},
+					["qg"] = 33625,	-- Arcanist Taelis
 					["coord"] = { 76.5, 19.4, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3484,12 +3484,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					},
 				}),
 				q(13678, {	-- Up To The Challenge (H)
-					["qg"] = 33542,	-- Magister Edien Sunhollow
 					["sourceQuests"] = {
 						13829,	-- Mastery Of Melee (H)
 						13839,	-- Mastery Of The Charge (H)
 						13838,	-- Mastery Of The Shield-Breaker (H)
 					},
+					["qg"] = 33542,	-- Magister Edien Sunhollow
 					["coord"] = { 76.2, 24.3, ICECROWN },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -3500,120 +3500,120 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				}),
 				-- TODO: verify if these are available to allied races or not
 				q(13706, {	-- Valiant Of Darnassus
-					["qg"] = 33592,	-- Jaelyne Evensong
 					["sourceQuests"] = {
 						13688,	-- A Valiant Of Gnomeregan
 						13685,	-- A Valiant Of Ironforge
 						13684,	-- A Valiant Of Stormwind
 						13690,	-- A Valiant Of The Exodar
 					},
+					["qg"] = 33592,	-- Jaelyne Evensong
 					["coord"] = { 76.3, 19.0, ICECROWN },
 					["races"] = exclude({ NIGHTELF, WORGEN }, ALLIANCE_ONLY),
 				}),
 				q(13704, {	-- Valiant Of Gnomeregan
-					["qg"] = 33335,	-- Ambrose Boltspark
 					["sourceQuests"] = {
 						13689,	-- A Valiant Of Darnassus
 						13685,	-- A Valiant Of Ironforge
 						13684,	-- A Valiant Of Stormwind
 						13690,	-- A Valiant Of The Exodar
 					},
+					["qg"] = 33335,	-- Ambrose Boltspark
 					["coord"] = { 76.5, 19.8, ICECROWN },
 					["races"] = exclude(GNOME, ALLIANCE_ONLY),
 				}),
 				q(13703, {	-- Valiant Of Ironforge
-					["qg"] = 33312,	-- Lana Stouthammer
 					["sourceQuests"] = {
 						13689,	-- A Valiant Of Darnassus
 						13688,	-- A Valiant Of Gnomeregan
 						13684,	-- A Valiant Of Stormwind
 						13690,	-- A Valiant Of The Exodar
 					},
+					["qg"] = 33312,	-- Lana Stouthammer
 					["coord"] = { 76.6, 19.5, ICECROWN },
 					["races"] = exclude(DWARF, ALLIANCE_ONLY),
 				}),
 				q(13707, {	-- Valiant Of Orgrimmar
-					["qg"] = 33361,	-- Mokra the Skullcrusher
 					["sourceQuests"] = {
 						13693,	-- A Valiant Of Sen'jin
 						13696,	-- A Valiant Of Silvermoon
 						13694,	-- A Valiant Of Thunder Bluff
 						13695,	-- A Valiant Of Undercity
 					},
+					["qg"] = 33361,	-- Mokra the Skullcrusher
 					["coord"] = { 76.5, 24.6, ICECROWN },
 					["races"] = exclude({ ORC, GOBLIN, PANDAREN_HORDE, NIGHTBORNE, HIGHMOUNTAIN_TAUREN, ZANDALARI, VULPERA, MAGHAR, DRACTHYR_HORDE }, HORDE_ONLY),
 					["_drop"] = { "races" },
 				}),
 				q(13708, {	-- Valiant Of Sen'jin
-					["qg"] = 33372,	-- Zul'tore
 					["sourceQuests"] = {
 						13691,	-- A Valiant Of Orgrimmar
 						13696,	-- A Valiant Of Silvermoon
 						13694,	-- A Valiant Of Thunder Bluff
 						13695,	-- A Valiant Of Undercity
 					},
+					["qg"] = 33372,	-- Zul'tore
 					["coord"] = { 76.0, 24.5, ICECROWN },
 					["races"] = exclude(TROLL, HORDE_ONLY),
 				}),
 				q(13711, {	-- Valiant Of Silvermoon
-					["qg"] = 33379,	-- Eressea Dawnsinger
 					["sourceQuests"] = {
 						13691,	-- A Valiant Of Orgrimmar
 						13693,	-- A Valiant Of Sen'jin
 						13694,	-- A Valiant Of Thunder Bluff
 						13695,	-- A Valiant Of Undercity
 					},
+					["qg"] = 33379,	-- Eressea Dawnsinger
 					["coord"] = { 76.5, 23.9, ICECROWN },
 					["races"] = exclude(BLOODELF, HORDE_ONLY),
 				}),
 				q(13593, {	-- Valiant Of Stormwind
-					["qg"] = 33225,	-- Marshal Jacob Alerius
 					["sourceQuests"] = {
 						13689,	-- A Valiant Of Darnassus
 						13688,	-- A Valiant Of Gnomeregan
 						13685,	-- A Valiant Of Ironforge
 						13690,	-- A Valiant Of The Exodar
 					},
+					["qg"] = 33225,	-- Marshal Jacob Alerius
 					["coord"] = { 76.6, 19.1, ICECROWN },
 					["races"] = exclude({ HUMAN, PANDAREN_ALLIANCE, VOIDELF, LIGHTFORGED, KULTIRAN, DARKIRON, MECHAGNOME, DRACTHYR_ALLIANCE }, ALLIANCE_ONLY),
 				}),
 				q(13705, {	-- Valiant Of The Exodar
-					["qg"] = 33593,	-- Colosos
 					["sourceQuests"] = {
 						13689,	-- A Valiant Of Darnassus
 						13688,	-- A Valiant Of Gnomeregan
 						13685,	-- A Valiant Of Ironforge
 						13684,	-- A Valiant Of Stormwind
 					},
+					["qg"] = 33593,	-- Colosos
 					["coord"] = { 76.1, 19.1, ICECROWN },
 					["races"] = exclude(DRAENEI, ALLIANCE_ONLY),
 				}),
 				q(13709, {	-- Valiant Of Thunder Bluff
-					["qg"] = 33403,	-- Runok Wildmane
 					["sourceQuests"] = {
 						13691,	-- A Valiant Of Orgrimmar
 						13693,	-- A Valiant Of Sen'jin
 						13696,	-- A Valiant Of Silvermoon
 						13695,	-- A Valiant Of Undercity
 					},
+					["qg"] = 33403,	-- Runok Wildmane
 					["coord"] = { 76.2, 24.6, ICECROWN },
 					["races"] = exclude(TAUREN, HORDE_ONLY),
 				}),
 				q(13710, {	-- Valiant Of Undercity
-					["qg"] = 33373,	-- Deathstalker Visceri
 					["sourceQuests"] = {
 						13691,	-- A Valiant Of Orgrimmar
 						13693,	-- A Valiant Of Sen'jin
 						13696,	-- A Valiant Of Silvermoon
 						13694,	-- A Valiant Of Thunder Bluff
 					},
+					["qg"] = 33373,	-- Deathstalker Visceri
 					["coord"] = { 76.5, 24.2, ICECROWN },
 					["races"] = exclude(UNDEAD, HORDE_ONLY),
 				}),
 				applyclassicphase(WRATH_PHASE_THREE, {	-- What Do You Feed a Yeti, Anyway?
 					["allianceQuestData"] = q(14112, {	-- What Do You Feed a Yeti, Anyway? (A)
-						["qg"] = 34912,	-- Savinia Loresong <The Silver Covenant>
 						["sourceAchievements"] = { 3676 },	-- A Silver Confidant
+						["qg"] = 34912,	-- Savinia Loresong <The Silver Covenant>
 						["coord"] = { 76.2, 19.6, ICECROWN },
 						["minReputation"] = { FACTION_THE_SILVER_COVENANT, EXALTED },	-- The Silver Covenant, Exalted.
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
@@ -3621,8 +3621,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["OnTooltip"] = CLASSIC_ONLY_DB_FUNC([[_.OnTooltipDB.WithRequiredAchievement]]),
 					}),
 					["hordeQuestData"] = q(14145, {	-- What Do You Feed a Yeti, Anyway? (H)
-						["qg"] = 34914,	-- Tylos Dawnrunner <The Sunreavers>
 						["sourceAchievements"] = { 3677 },	-- The Sunreavers
+						["qg"] = 34914,	-- Tylos Dawnrunner <The Sunreavers>
 						["coord"] = { 76.1, 24.0, ICECROWN },
 						["minReputation"] = { FACTION_THE_SUNREAVERS, EXALTED },	-- The Sunreavers, Exalted.
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
@@ -3644,8 +3644,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				}, true),
 				applyclassicphase(WRATH_PHASE_THREE, {	-- You've Really Done It This Time, Kul
 					["allianceQuestData"] = q(14096, {	-- You've Really Done It This Time, Kul (A)
-						["qg"] = 34880,	-- Narasi Snowdawn <The Silver Covenant>
 						["sourceAchievements"] = { 3676 },	-- A Silver Confidant
+						["qg"] = 34880,	-- Narasi Snowdawn <The Silver Covenant>
 						["coord"] = { 76.2, 19.6, ICECROWN },
 						["minReputation"] = { FACTION_THE_SILVER_COVENANT, EXALTED },	-- The Silver Covenant, Exalted.
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
@@ -3653,8 +3653,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["OnTooltip"] = CLASSIC_ONLY_DB_FUNC([[_.OnTooltipDB.WithRequiredAchievement]]),
 					}),
 					["hordeQuestData"] = q(14142, {	-- You've Really Done It This Time, Kul (H)
-						["qg"] = 34771,	-- Girana the Blooded <The Sunreavers>
 						["sourceAchievements"] = { 3677 },	-- The Sunreavers
+						["qg"] = 34771,	-- Girana the Blooded <The Sunreavers>
 						["coord"] = { 76.1, 24.0, ICECROWN },
 						["minReputation"] = { FACTION_THE_SUNREAVERS, EXALTED },	-- The Sunreavers, Exalted.
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
@@ -3678,13 +3678,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 			bubbleDownSelf({ ["races"] = ALLIANCE_ONLY }, {
 				["groups"] = {
 					a(q(14443, {	-- The Battered Hilt (A)
+						["description"] = "The Battered Hilt is a somewhat rare drop from the Icecrown dungeons 'Forge of Souls', 'Pit of Saron', and 'The Halls of Reflection'. Alternatively it can also be bought from the Auction House.",
 						["provider"] = { "i", 50379 },	-- Battered Hilt (A)
 						["coord"] = { 74.2, 31.2, ICECROWN },
-						["description"] = "The Battered Hilt is a somewhat rare drop from the Icecrown dungeons 'Forge of Souls', 'Pit of Saron', and 'The Halls of Reflection'. Alternatively it can also be bought from the Auction House.",
 					})),
 					q(14444, {	-- What The Dragons Know (A)
-						["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
 						["sourceQuest"] = 14443,	-- The Battered Hilt (A)
+						["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
 						["coord"] = { 74.2, 31.2, ICECROWN },
 						["maps"] = { DRAGONBLIGHT },
 						["groups"] = {
@@ -3695,8 +3695,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						},
 					}),
 					q(14457, {	-- The Sunreaver Plan
-						["qg"] = 36669,	-- Arcanist Tybalin
 						["sourceQuest"] = 14444,	-- What The Dragons Know (A)
+						["qg"] = 36669,	-- Arcanist Tybalin
 						["coord"] = { 39.6, 57.6, NORTHREND_THE_UNDERBELLY },
 						["groups"] = {
 							objective(1, {	-- 0/1 Sunreaver Orders
@@ -3707,8 +3707,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						},
 					}),
 					q(20438, {	-- A Suitable Disguise (A)
-						["qg"] = 36669,	-- Arcanist Tybalin
 						["sourceQuest"] = 14457,	-- The Sunreaver Plan
+						["qg"] = 36669,	-- Arcanist Tybalin
 						["coord"] = { 39.6, 57.6, NORTHREND_DALARAN },
 						["groups"] = {
 							objective(1, {	-- 0/1 Borrowed Tabard
@@ -3719,8 +3719,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						},
 					}),
 					q(20439, {	-- A Meeting With The Magister
-						["qg"] = 36669,	-- Arcanist Tybalin
 						["sourceQuest"] = 20438,	-- A Suitable Disguise (A)
+						["qg"] = 36669,	-- Arcanist Tybalin
 						["coord"] = { 39.6, 57.6, NORTHREND_DALARAN },
 						["groups"] = {
 							objective(1, {	-- 0/1 Ancient Dragonforged Blades
@@ -3731,17 +3731,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						},
 					}),
 					q(24454, {	-- Return To Caladis Brightspear
+						["description"] = "Turning in this quest triggers a lore exposition.",
+						["sourceQuest"] = 20439,	-- A Meeting With The Magister (A)
 						["providers"] = {
 							{ "n", 36669 },	-- Arcanist Tybalin
 							{ "i", 49698 },	-- Ancient Dragonforged Blades
 						},
-						["sourceQuest"] = 20439,	-- A Meeting With The Magister (A)
 						["coord"] = { 39.6, 57.6, NORTHREND_DALARAN },
-						["description"] = "Turning in this quest triggers a lore exposition.",
 					}),
 					q(24461, {	-- Reforging The Sword (A)
-						["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
 						["sourceQuest"] = 24454,	-- Return To Caladis Brightspear (A)
+						["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
 						["coord"] = { 74.2, 31.2, ICECROWN },
 						["maps"] = { PIT_OF_SARON },
 						["groups"] = {
@@ -3757,8 +3757,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						},
 					}),
 					q(24476, {	-- Tempering The Blade (A)
-						["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
 						["sourceQuest"] = 24461,	-- Reforging The Sword (A)
+						["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
 						["coord"] = { 74.2, 31.2, ICECROWN },
 						["maps"] = { THE_FORGE_OF_SOULS },
 						["groups"] = {
@@ -3772,10 +3772,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						},
 					}),
 					q(24480, {	-- The Halls Of Reflection (A)
-						["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
-						["sourceQuest"] = 24476,	-- Tempering The Blade (A)
-						["coord"] = { 74.2, 31.2, ICECROWN },
 						["description"] = "Just enter the instance and a special event will unfold. There is no need to talk to Jaina.",
+						["sourceQuest"] = 24476,	-- Tempering The Blade (A)
+						["qg"] = 36624,	-- Caladis Brightspear <The Silver Covenant>
+						["coord"] = { 74.2, 31.2, ICECROWN },
 						["maps"] = { HALLS_OF_REFLECTION },
 						["groups"] = {
 							objective(1, {	-- 0/1 Subdued Quel'Delar
@@ -3788,18 +3788,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						},
 					}),
 					q(24522, {	-- Journey To The Sunwell (A)
+						["description"] = "If you accidentally enter the raid before turning in the quest, you will have to use your hearthstone to get out or walk through the whole empty instance to a portal at the end.",
+						["sourceQuest"] = 24480,	-- The Halls Of Reflection (A)
 						["providers"] = {
 							{ "n", 36624 },	-- Caladis Brightspear <The Silver Covenant>
 							{ "i", 49870 },	-- Tempered Quel'Delar
 						},
-						["sourceQuest"] = 24480,	-- The Halls Of Reflection (A)
 						["coord"] = { 74.2, 31.2, ICECROWN },
-						["description"] = "If you accidentally enter the raid before turning in the quest, you will have to use your hearthstone to get out or walk through the whole empty instance to a portal at the end.",
 						["maps"] = { ISLE_OF_QUELDANAS },
 					}),
 					q(24535, {	-- Thalorien Dawnseeker (A)
-						["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
 						["sourceQuest"] = 24522,	-- Journey To The Sunwell
+						["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
 						["coord"] = { 44.6, 45.4, ISLE_OF_QUELDANAS },
 						["groups"] = {
 							objective(1, {	-- 0/1 Thalorien's Blessing obtained
@@ -3812,8 +3812,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						},
 					}),
 					q(24553, {	-- The Purification of Quel'Delar (A)
-						["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
 						["sourceQuest"] = 24535,	-- Thalorien Dawnseeker (A)
+						["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
 						["coord"] = { 44.6, 45.4, ISLE_OF_QUELDANAS },
 						["maps"] = { 336 },	-- Shrine of the Eclipse, Sunwell Plataeu
 						["classes"] = exclude({ PRIEST, SHAMAN, DRUID }, ALL_CLASSES),
@@ -3828,8 +3828,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						},
 					}),
 					q(24595, {	-- The Purification of Quel'Delar (A — Maces)
-						["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
 						["sourceQuest"] = 24535,	-- Thalorien Dawnseeker (A)
+						["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
 						["coord"] = { 44.6, 45.4, ISLE_OF_QUELDANAS },
 						["maps"] = { 336 },	-- Shrine of the Eclipse, Sunwell Plataeu
 						["classes"] = { PRIEST, SHAMAN, DRUID },
@@ -3844,22 +3844,22 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						},
 					}),
 					q(24796, {	-- A Victory For The Silver Covenant (A)
+						["sourceQuest"] = 24553,	-- The Purification of Quel'Delar (A)
 						["providers"] = {
 							{ "n", 36624 },	-- Caladis Brightspear <The Silver Covenant>
 							{ "i", 49871 },	-- Restored Quel'Delar
 						},
-						["sourceQuest"] = 24553,	-- The Purification of Quel'Delar (A)
 						["coord"] = { 74.2, 31.2, ICECROWN },
 						["maps"] = { NORTHREND_DALARAN },
 						["classes"] = exclude({ PRIEST, SHAMAN, DRUID }, ALL_CLASSES),
 						["_drop"] = { "g" },
 					}),
 					q(24795, {	-- A Victory For The Silver Covenant (A — Maces)
+						["sourceQuest"] = 24595,	-- The Purification of Quel'Delar [A - Maces]
 						["providers"] = {
 							{ "n", 36624 },	-- Caladis Brightspear <The Silver Covenant>
 							{ "i", 49871 },	-- Restored Quel'Delar
 						},
-						["sourceQuest"] = 24595,	-- The Purification of Quel'Delar [A - Maces]
 						["coord"] = { 74.2, 31.2, ICECROWN },
 						["maps"] = { NORTHREND_DALARAN },
 						["classes"] = { PRIEST, SHAMAN, DRUID },
@@ -3871,13 +3871,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 			bubbleDownSelf({ ["races"] = HORDE_ONLY }, {
 				["groups"] = {
 					q(24554, {	-- The Battered Hilt (H)
+						["description"] = "The Battered Hilt is a somewhat rare drop from the Icecrown dungeons 'The Forge of Souls', 'The Pit of Saron', and 'The Halls of Reflection'. Alternatively it can also be bought from the Auction House.",
 						["provider"] = { "i", 50380 },	-- Battered Hilt (H)
 						["coord"] = { 74.2, 31.2, ICECROWN },
-						["description"] = "The Battered Hilt is a somewhat rare drop from the Icecrown dungeons 'The Forge of Souls', 'The Pit of Saron', and 'The Halls of Reflection'. Alternatively it can also be bought from the Auction House.",
 					}),
 					q(24555, {	-- What The Dragons Know (H)
-						["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
 						["sourceQuest"] = 24554,	-- The Battered Hilt (H)
+						["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
 						["coord"] = { 74.2, 31.2, ICECROWN },
 						["maps"] = { DRAGONBLIGHT },
 						["groups"] = {
@@ -3888,8 +3888,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						},
 					}),
 					q(24557, {	-- The Silver Covenant's Scheme
-						["qg"] = 36670,	-- Magister Hathorel <The Sunreavers>
 						["sourceQuest"] = 24555,	-- What The Dragons Know
+						["qg"] = 36670,	-- Magister Hathorel <The Sunreavers>
 						["coord"] = { 69.8, 31.6, NORTHREND_DALARAN },
 						["maps"] = { NORTHREND_THE_UNDERBELLY },
 						["groups"] = {
@@ -3901,8 +3901,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						},
 					}),
 					q(24556, {	-- A Suitable Disguise (H)
-						["qg"] = 36670,	-- Magister Hathorel <The Sunreavers>
 						["sourceQuest"] = 24557,	-- The Silver Covenant's Scheme (H)
+						["qg"] = 36670,	-- Magister Hathorel <The Sunreavers>
 						["coord"] = { 69.8, 31.6, NORTHREND_DALARAN },
 						["groups"] = {
 							objective(1, {	-- 0/1 Borrowed Tabard
@@ -3913,8 +3913,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						},
 					}),
 					q(24451, {	-- An Audience With The Arcanist
-						["qg"] = 36670,	-- Magister Hathorel <The Sunreavers>
 						["sourceQuest"] = 24556,	-- A Suitable Disguise (H)
+						["qg"] = 36670,	-- Magister Hathorel <The Sunreavers>
 						["coord"] = { 69.8, 31.6, NORTHREND_DALARAN },
 						["groups"] = {
 							objective(1, {	-- 0/1 Ancient Dragonforged Blades
@@ -3925,17 +3925,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						},
 					}),
 					q(24558, {	-- Return To Myralion Sunblaze
+						["description"] = "Turning in this quest triggers a lore exposition.",
+						["sourceQuest"] = 24451,	-- An Audience With The Arcanist (H)
 						["providers"] = {
 							{ "n", 36670 },	-- Magister Hathorel <The Sunreavers>
 							{ "i", 49698 },	-- Ancient Dragonforged Blades
 						},
-						["sourceQuest"] = 24451,	-- An Audience With The Arcanist (H)
 						["coord"] = { 69.8, 31.6, NORTHREND_DALARAN },
-						["description"] = "Turning in this quest triggers a lore exposition.",
 					}),
 					q(24559, {	-- Reforging The Sword (H)
-						["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
 						["sourceQuest"] = 24558,	-- Return To Myralion Sunblaze (H)
+						["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
 						["coord"] = { 74.2, 31.2, ICECROWN },
 						["maps"] = { PIT_OF_SARON },
 						["groups"] = {
@@ -3951,8 +3951,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						},
 					}),
 					q(24560, {	-- Tempering The Blade (H)
-						["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
 						["sourceQuest"] = 24559,	-- Reforging The Sword (H)
+						["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
 						["coord"] = { 74.2, 31.2, ICECROWN },
 						["maps"] = { THE_FORGE_OF_SOULS },
 						["groups"] = {
@@ -3966,10 +3966,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						},
 					}),
 					q(24561, {	-- The Halls Of Reflection (H)
-						["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
-						["sourceQuest"] = 24560,	-- Tempering The Blade (H)
-						["coord"] = { 74.2, 31.2, ICECROWN },
 						["description"] = "Just enter the instance and a special event will unfold. There is no need to talk to Sylvanas.",
+						["sourceQuest"] = 24560,	-- Tempering The Blade (H)
+						["qg"] = 36642,	-- Myralion Sunblaze <Sunreavers>
+						["coord"] = { 74.2, 31.2, ICECROWN },
 						["maps"] = { HALLS_OF_REFLECTION },
 						["groups"] = {
 							objective(1, {	-- 0/1 Subdued Quel'Delar
@@ -3982,18 +3982,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						},
 					}),
 					q(24562, {	-- Journey To The Sunwell (H)
+						["description"] = "If you accidentally enter the raid before turning in the quest, you will have to use your hearthstone to get out or walk through the whole empty instance to a portal at the end.",
+						["sourceQuest"] = 24561,	-- The Halls Of Reflection (H)
 						["providers"] = {
 							{ "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
 							{ "i", 49870 },	-- Tempered Quel'Delar
 						},
-						["sourceQuest"] = 24561,	-- The Halls Of Reflection (H)
 						["coord"] = { 74.2, 31.2, ICECROWN },
-						["description"] = "If you accidentally enter the raid before turning in the quest, you will have to use your hearthstone to get out or walk through the whole empty instance to a portal at the end.",
 						["maps"] = { ISLE_OF_QUELDANAS },
 					}),
 					q(24563, {	-- Thalorien Dawnseeker (H)
-						["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
 						["sourceQuest"] = 24562,	-- Journey To The Sunwell
+						["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
 						["coord"] = { 44.6, 45.4, ISLE_OF_QUELDANAS },
 						["groups"] = {
 							objective(1, {	-- 0/1 Thalorien's Blessing obtained
@@ -4006,8 +4006,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						},
 					}),
 					q(24564, {	-- The Purification of Quel'Delar (H)
-						["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
 						["sourceQuest"] = 24563,	-- Thalorien Dawnseeker (H)
+						["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
 						["coord"] = { 44.6, 45.4, ISLE_OF_QUELDANAS },
 						["classes"] = exclude({ PRIEST, SHAMAN, DRUID }, ALL_CLASSES),
 						["races"] = exclude(BLOODELF, HORDE_ONLY),
@@ -4022,8 +4022,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						},
 					}),
 					q(24598, {	-- The Purification of Quel'Delar (H — Maces)
-						["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
 						["sourceQuest"] = 24563,	-- Thalorien Dawnseeker (H)
+						["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
 						["coord"] = { 44.6, 45.4, ISLE_OF_QUELDANAS },
 						["classes"] = { PRIEST, SHAMAN, DRUID },
 						["races"] = exclude(BLOODELF, HORDE_ONLY),
@@ -4038,8 +4038,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						},
 					}),
 					q(24594, {	-- The Purification of Quel'Delar (Blood Elf)
-						["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
 						["sourceQuest"] = 24563,	-- Thalorien Dawnseeker (H)
+						["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
 						["coord"] = { 44.6, 45.4, ISLE_OF_QUELDANAS },
 						["classes"] = exclude({ PRIEST, SHAMAN, DRUID }, ALL_CLASSES),
 						["races"] = { BLOODELF },
@@ -4054,8 +4054,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						},
 					}),
 					q(24596, {	-- The Purification of Quel'Delar (Blood Elf — Maces)
-						["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
 						["sourceQuest"] = 24563,	-- Thalorien Dawnseeker (H)
+						["qg"] = 37527,	-- Halduron Brightwing <Ranger-General of Silvermoon>
 						["coord"] = { 44.6, 45.4, ISLE_OF_QUELDANAS },
 						["classes"] = { PRIEST, SHAMAN, DRUID },
 						["races"] = { BLOODELF },
@@ -4070,22 +4070,22 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						},
 					}),
 					q(24801, {	-- A Victory For The Sunreavers (H)
+						["sourceQuest"] = 24564,	-- The Purification of Quel'Delar (H)
 						["providers"] = {
 							{ "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
 							{ "i", 49871 },	-- Restored Quel'Delar
 						},
-						["sourceQuest"] = 24564,	-- The Purification of Quel'Delar (H)
 						["coord"] = { 74.2, 31.2, ICECROWN },
 						["maps"] = { NORTHREND_DALARAN },
 						["races"] = exclude(BLOODELF, HORDE_ONLY),
 						["_drop"] = { "g" },
 					}),
 					q(24799, {	-- A Victory For The Sunreavers [H - Maces]
+						["sourceQuest"] = 24598,	-- The Purification of Quel'Delar [H - Maces]
 						["providers"] = {
 							{ "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
 							{ "i", 49871 },	-- Restored Quel'Delar
 						},
-						["sourceQuest"] = 24598,	-- The Purification of Quel'Delar [H - Maces]
 						["coord"] = { 74.2, 31.2, ICECROWN },
 						["maps"] = { NORTHREND_DALARAN },
 						["classes"] = { PRIEST, SHAMAN, DRUID },
@@ -4093,11 +4093,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["_drop"] = { "g" },
 					}),
 					q(24800, {	-- A Victory For The Sunreavers [Blood Elves]
+						["sourceQuest"] = 24594,	-- The Purification of Quel'Delar [Blood Elves]
 						["providers"] = {
 							{ "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
 							{ "i", 49871 },	-- Restored Quel'Delar
 						},
-						["sourceQuest"] = 24594,	-- The Purification of Quel'Delar [Blood Elves]
 						["coord"] = { 74.2, 31.2, ICECROWN },
 						["maps"] = { NORTHREND_DALARAN },
 						["classes"] = exclude({ PRIEST, SHAMAN, DRUID }, ALL_CLASSES),
@@ -4105,11 +4105,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["_drop"] = { "g" },
 					}),
 					q(24798, {	-- A Victory For The Sunreavers [Blood Elves - Maces]
+						["sourceQuest"] = 24596,	-- The Purification of Quel'Delar [Blood Elves - Maces]
 						["providers"] = {
 							{ "n", 36642 },	-- Myralion Sunblaze <Sunreavers>
 							{ "i", 49871 },	-- Restored Quel'Delar
 						},
-						["sourceQuest"] = 24596,	-- The Purification of Quel'Delar [Blood Elves - Maces]
 						["coord"] = { 74.2, 31.2, ICECROWN },
 						["maps"] = { NORTHREND_DALARAN },
 						["classes"] = { PRIEST, SHAMAN, DRUID },

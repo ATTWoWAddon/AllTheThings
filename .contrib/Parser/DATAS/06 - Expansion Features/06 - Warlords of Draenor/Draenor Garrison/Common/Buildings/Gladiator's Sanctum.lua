@@ -56,8 +56,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				n(QUESTS, {
 					q(37082),	-- Call of the Gladiator
 					q(37083, {	-- Fight, Kill, Salute!
-						["qg"] = 87311,	-- Kharg
 						["sourceQuest"] = 37082,	-- Call of the Gladiator
+						["qg"] = 87311,	-- Kharg
 						["coord"] = { 33.0, 38.6, DRAENOR_NAGRAND },
 						["groups"] = {
 							ach(9639),	-- Fight, Kill, Salute!

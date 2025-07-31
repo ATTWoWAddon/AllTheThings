@@ -489,9 +489,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						TEMPORARY_SOURCEQUEST,
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
+					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 213145 },	-- Auralia Steelstrike
 					["coord"] = { 41.3, 53.1, HALLOWFALL },
-					["sourceQuestNumRequired"] = 1,
 					["groups"] = {
 						i(216694),	-- Letter of Recommendation (QI!)
 					},
@@ -555,10 +555,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				q(82220, {	-- Eagle Eye, Eagle Die
-				["description"] = "Becomes available after daily reset.",
 					["sourceQuests"] = { 82217 },	-- Underground Economics
 					["provider"] = { "n", 213145 },	-- Auralia Steelstrike
 					["coord"] = { 42.3, 55.0, HALLOWFALL },
+				["description"] = "Becomes available after daily reset.",
 					["groups"] = {
 						i(222951),	-- Eagle Fillet (QI!)
 						i(222976),	-- Flame-Tempered Harpoon (QI!)
@@ -592,9 +592,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						TEMPORARY_SOURCEQUEST,
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
+					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "o", 430581 },	-- Egg Basket
 					["coord"] = { 60.8, 27.9, HALLOWFALL },
-					["sourceQuestNumRequired"] = 1,
 					["groups"] = {
 						i(217396),	-- Hillhelm Egg (QI!)
 					},
@@ -604,9 +604,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						TEMPORARY_SOURCEQUEST,
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
+					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 206528 },	-- Aliya Hillhelm
 					["coord"] = { 61.2, 30.5, HALLOWFALL },
-					["sourceQuestNumRequired"] = 1,
 					["groups"] = {
 						i(209854),	-- Hillhelm Remnant Supply (QI!)
 					},
@@ -616,9 +616,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						TEMPORARY_SOURCEQUEST,
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
+					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 206528 },	-- Aliya Hillhelm
 					["coord"] = { 61.2, 30.5, HALLOWFALL },
-					["sourceQuestNumRequired"] = 1,
 					["groups"] = {
 						i(212153),	-- Corrupted Shadowleaf Seed (QI!)
 					},
@@ -689,14 +689,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			header(HEADERS.AchCriteria, 40844.06, {	-- Crushing Depths
 				q(81797, {	-- Targeted Recon
 					["description"] = "Look for Arathi Captives in the area. They are an illusion. You can find Kobyss Shadeshapers right behind them.",
-					["crs"] = {
-							215623,	-- Arathi Captive
-							215653,	-- Kobyss Shadeshaper
-					},
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 218508 },	-- Joseph Brayvemarc
 					["coord"] = { 42.6, 55.3, HALLOWFALL },
 					["isBreadcrumb"] = true,
+					["crs"] = {
+							215623,	-- Arathi Captive
+							215653,	-- Kobyss Shadeshaper
+					},
 				}),
 				q(80312, {	-- Gasping Plea
 					["sourceQuests"] = { 81797 },	-- Targeted Recon
@@ -1236,8 +1236,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						78672,	-- A Lamplighter's Duty
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
-					["coord"] = { 55.2, 26.8, HALLOWFALL },
 					["sourceQuestNumRequired"] = 1,
+					["coord"] = { 55.2, 26.8, HALLOWFALL },
 					["groups"] = {
 						i(217352),	-- Gasping Fish (QI!)
 					},

@@ -61,9 +61,9 @@ root(ROOTS.Zones, {
 				}),
 				n(QUESTS, {
 					q(36630, {	-- A Surly Dwarf
+						["sourceQuests"] = { 36629 },	-- Inspiring Ashran
 						["provider"] = { "n", 86069 },	-- Lieutenant Howell
 						["coord"] = { 35.6, 75.1, STORMSHIELD },
-						["sourceQuests"] = { 36629 },	-- Inspiring Ashran
 					}),
 					q(37272, {	-- A Worthy Challenge: Gug'rokk
 						["provider"] = { "n", 88155 },	-- Challenger Savina
@@ -129,185 +129,185 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(36633, {	-- Delvar Ironfist
+						["sourceQuests"] = { 36630 },	-- A Surly Dwarf
 						["provider"] = { "n", 86084 },	-- Delvar Ironfist
 						["coord"] = { 47.5, 30.8, STORMSHIELD },
-						["sourceQuests"] = { 36630 },	-- A Surly Dwarf
 						["groups"] = {
 							follower(216),	-- Delvar Ironfist
 						},
 					}),
 					q(36626, {	-- Host Howell
+						["sourceQuests"] = { 36624 },	-- Ashran Appearance
 						["provider"] = { "n", 86095 },	-- Private Tristan
 						["coord"] = { 32.0, 50.5, STORMSHIELD },
-						["sourceQuests"] = { 36624 },	-- Ashran Appearance
 					}),
 					q(36629, {	-- Inspiring Ashran
+						["sourceQuests"] = { 36626 },	-- Host Howell
 						["provider"] = { "n", 86069 },	-- Lieutenant Howell
 						["coord"] = { 35.6, 75.1, STORMSHIELD },
-						["sourceQuests"] = { 36626 },	-- Host Howell
 					}),
 					q(36055, {	-- Sealing Fate: Apexis Crystals
-						["providers"] = {
-							{ "n", 87391 },	-- Fate-Twister Seress
-							{ "n", 88570 },	-- Fate-Twister Tiklal
+						["qgs"] = {
+							87391,	-- Fate-Twister Seress
+							88570,	-- Fate-Twister Tiklal
 						},
-						["isWeekly"] = true,
 						["coords"] = {
 							{ 51.6, 61.9, STORMSHIELD },	-- Alliance
 							{ 64.6, 62.0, WARSPEAR },	-- Horde
 						},
 						["cost"] = { { "c", 823, 500 }, },	-- 500x Apexis Crystal
+						["isWeekly"] = true,
 						["lvl"] = 100,
 					}),
 					q(37458, {	-- Sealing Fate: Extended Honor
 						["sourceQuests"] = { 36057 },	-- Sealing Fate: Honor
-						["providers"] = {
-							{ "n", 87391 },	-- Fate-Twister Seress
-							{ "n", 88570 },	-- Fate-Twister Tiklal
+						["qgs"] = {
+							87391,	-- Fate-Twister Seress
+							88570,	-- Fate-Twister Tiklal
 						},
-						["isWeekly"] = true,
 						["coords"] = {
 							{ 51.6, 61.9, STORMSHIELD },	-- Alliance
 							{ 64.6, 62.0, WARSPEAR },	-- Horde
 						},
 						["cost"] = { { "c", 1792, 1000 }, },	-- 1000x Honor
+						["isWeekly"] = true,
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(36056, {	-- Sealing Fate: Garrison Resources
-						["providers"] = {
-							{ "n", 87391 },	-- Fate-Twister Seress
-							{ "n", 88570 },	-- Fate-Twister Tiklal
+						["qgs"] = {
+							87391,	-- Fate-Twister Seress
+							88570,	-- Fate-Twister Tiklal
 						},
-						["isWeekly"] = true,
 						["coords"] = {
 							{ 51.6, 61.9, STORMSHIELD },	-- Alliance
 							{ 64.6, 62.0, WARSPEAR },	-- Horde
 						},
 						["cost"] = { { "c", 824, 1000 }, },	-- 1,000x Garrison Resources
+						["isWeekly"] = true,
 						["lvl"] = 100,
 					}),
 					q(36054, {	-- Sealing Fate: Gold
-						["providers"] = {
-							{ "n", 87391 },	-- Fate-Twister Seress
-							{ "n", 88570 },	-- Fate-Twister Tiklal
+						["qgs"] = {
+							87391,	-- Fate-Twister Seress
+							88570,	-- Fate-Twister Tiklal
 						},
-						["isWeekly"] = true,
 						["coords"] = {
 							{ 51.6, 61.9, STORMSHIELD },	-- Alliance
 							{ 64.6, 62.0, WARSPEAR },	-- Horde
 						},
 						["cost"] = 5000000,	-- 500g
+						["isWeekly"] = true,
 						["lvl"] = 100,
 					}),
 					q(37452, {	-- Sealing Fate: Heap of Apexis Crystals
 						["sourceQuests"] = { 36055 },	-- Sealing Fate: Apexis Crystals
-						["providers"] = {
-							{ "n", 87391 },	-- Fate-Twister Seress
-							{ "n", 88570 },	-- Fate-Twister Tiklal
+						["qgs"] = {
+							87391,	-- Fate-Twister Seress
+							88570,	-- Fate-Twister Tiklal
 						},
-						["isWeekly"] = true,
 						["coords"] = {
 							{ 51.6, 61.9, STORMSHIELD },	-- Alliance
 							{ 64.6, 62.0, WARSPEAR },	-- Horde
 						},
 						["cost"] = { { "c", 823, 1000 }, },	-- 1,000x Apexis Crystal
+						["isWeekly"] = true,
 						["lvl"] = 100,
 					}),
 					q(36057, {	-- Sealing Fate: Honor
-						["providers"] = {
-							{ "n", 87391 },	-- Fate-Twister Seress
-							{ "n", 88570 },	-- Fate-Twister Tiklal
+						["qgs"] = {
+							87391,	-- Fate-Twister Seress
+							88570,	-- Fate-Twister Tiklal
 						},
-						["isWeekly"] = true,
 						["coords"] = {
 							{ 51.6, 61.9, STORMSHIELD },	-- Alliance
 							{ 64.6, 62.0, WARSPEAR },	-- Horde
 						},
 						["cost"] = { { "c", 1792, 500 }, },	-- 500x Honor
+						["isWeekly"] = true,
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(37455, {	-- Sealing Fate: Immense Fortune of Gold
 						["sourceQuests"] = { 37454 },	-- Sealing Fate: Piles of Gold
-						["providers"] = {
-							{ "n", 87391 },	-- Fate-Twister Seress
-							{ "n", 88570 },	-- Fate-Twister Tiklal
+						["qgs"] = {
+							87391,	-- Fate-Twister Seress
+							88570,	-- Fate-Twister Tiklal
 						},
-						["isWeekly"] = true,
 						["coords"] = {
 							{ 51.6, 61.9, STORMSHIELD },	-- Alliance
 							{ 64.6, 62.0, WARSPEAR },	-- Horde
 						},
 						["cost"] = 20000000,	-- 2,000g
+						["isWeekly"] = true,
 						["lvl"] = 100,
 					}),
 					q(37459, {	-- Sealing Fate: Monumental Honor
 						["sourceQuests"] = { 37458 },	-- Sealing Fate: Extended Honor
-						["providers"] = {
-							{ "n", 87391 },	-- Fate-Twister Seress
-							{ "n", 88570 },	-- Fate-Twister Tiklal
+						["qgs"] = {
+							87391,	-- Fate-Twister Seress
+							88570,	-- Fate-Twister Tiklal
 						},
-						["isWeekly"] = true,
 						["coords"] = {
 							{ 51.6, 61.9, STORMSHIELD },	-- Alliance
 							{ 64.6, 62.0, WARSPEAR },	-- Horde
 						},
 						["cost"] = { { "c", 1792, 2000 }, },	-- 2000x Honor
+						["isWeekly"] = true,
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(37453, {	-- Sealing Fate: Mountain of Apexis Crystals
 						["sourceQuests"] = { 37452 },	-- Sealing Fate: Heap of Apexis Crystals
-						["providers"] = {
-							{ "n", 87391 },	-- Fate-Twister Seress
-							{ "n", 88570 },	-- Fate-Twister Tiklal
+						["qgs"] = {
+							87391,	-- Fate-Twister Seress
+							88570,	-- Fate-Twister Tiklal
 						},
-						["isWeekly"] = true,
 						["coords"] = {
 							{ 51.6, 61.9, STORMSHIELD },	-- Alliance
 							{ 64.6, 62.0, WARSPEAR },	-- Horde
 						},
 						["cost"] = { { "c", 823, 2000 }, },	-- 2,000x Apexis Crystal
+						["isWeekly"] = true,
 						["lvl"] = 100,
 					}),
 					q(37454, {	-- Sealing Fate: Piles of Gold
 						["sourceQuests"] = { 36054 },	-- Sealing Fate: Gold
-						["providers"] = {
-							{ "n", 87391 },	-- Fate-Twister Seress
-							{ "n", 88570 },	-- Fate-Twister Tiklal
+						["qgs"] = {
+							87391,	-- Fate-Twister Seress
+							88570,	-- Fate-Twister Tiklal
 						},
-						["isWeekly"] = true,
 						["coords"] = {
 							{ 51.6, 61.9, STORMSHIELD },	-- Alliance
 							{ 64.6, 62.0, WARSPEAR },	-- Horde
 						},
 						["cost"] = 10000000,	-- 1,000g
+						["isWeekly"] = true,
 						["lvl"] = 100,
 					}),
 					q(37456, {	-- Sealing Fate: Stockpiled Garrison Resources
 						["sourceQuests"] = { 36056 },	-- Sealing Fate: Garrison Resources
-						["providers"] = {
-							{ "n", 87391 },	-- Fate-Twister Seress
-							{ "n", 88570 },	-- Fate-Twister Tiklal
+						["qgs"] = {
+							87391,	-- Fate-Twister Seress
+							88570,	-- Fate-Twister Tiklal
 						},
-						["isWeekly"] = true,
 						["coords"] = {
 							{ 51.6, 61.9, STORMSHIELD },	-- Alliance
 							{ 64.6, 62.0, WARSPEAR },	-- Horde
 						},
 						["cost"] = { { "c", 824, 2000 }, },	-- 2,000x Garrison Resources
+						["isWeekly"] = true,
 						["lvl"] = 100,
 					}),
 					q(37457, {	-- Sealing Fate: Tremendous Garrison Resources
 						["sourceQuests"] = { 37456 },	-- Sealing Fate: Stockpiled Garrison Resources
-						["providers"] = {
-							{ "n", 87391 },	-- Fate-Twister Seress
-							{ "n", 88570 },	-- Fate-Twister Tiklal
+						["qgs"] = {
+							87391,	-- Fate-Twister Seress
+							88570,	-- Fate-Twister Tiklal
 						},
-						["isWeekly"] = true,
 						["coords"] = {
 							{ 51.6, 61.9, STORMSHIELD },	-- Alliance
 							{ 64.6, 62.0, WARSPEAR },	-- Horde
 						},
 						["cost"] = { { "c", 824, 4000 }, },	-- 4,000x Garrison Resources
+						["isWeekly"] = true,
 						["lvl"] = 100,
 					}),
 				}),

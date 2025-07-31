@@ -200,9 +200,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2 } }, {
 				}),
 				q(65057, {	-- Rally to Emberthal
 					["sourceQuests"] = { 65052 },	-- The Ebon Scales
-					["providers"] = {
-						{ "n", 182275 },	-- Scalecommander Sarkareth
-						{ "n", 182297 },	-- Scalecommander Sarkareth	(as of 11.0.7; 2/24/2025)
+					["qgs"] = {
+						182275,	-- Scalecommander Sarkareth
+						182297,	-- Scalecommander Sarkareth	(as of 11.0.7; 2/24/2025)
 					},
 					["coord"] = { 81.2, 54.0, THE_FORBIDDEN_REACH_DRACTHYR },
 				}),
@@ -244,9 +244,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2 } }, {
 				}),
 				q(65100, {	-- Final Orders
 					["sourceQuests"] = { 65098 },	-- The Consequence of Courage
-					["providers"] = {
-						{ "n", 182441 },	-- Scalecommander Emberthal
-						{ "n", 191780 },	-- Scalecommander Emberthal (as of 11.0.7; 2/24/2025)
+					["qgs"] = {
+						182441,	-- Scalecommander Emberthal
+						191780,	-- Scalecommander Emberthal (as of 11.0.7; 2/24/2025)
 					},
 					["coord"] = { 41.7, 44.5, THE_FORBIDDEN_REACH_DRACTHYR },
 					["groups"] = {

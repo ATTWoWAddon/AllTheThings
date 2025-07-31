@@ -161,64 +161,64 @@ root(ROOTS.Zones, {
 							}),
 							n(QUESTS, {
 								q(32169, {	-- A Colossal Victory
-									["qg"] = 67447,	-- Jorn Skyseer (summons the mob)
 									["sourceQuests"] = { 32183 },	-- Beastmaster's Quarry: The Crab
+									["qg"] = 67447,	-- Jorn Skyseer (summons the mob)
 									["races"] = HORDE_ONLY,
 									["isDaily"] = true,
 									["crs"] = { 67439 },	-- Colossal Viseclaw (killing the mob procs the quest)
 								}),
 								q(32352, {	-- A Gathering Storm
-									["qg"] = 68287,	-- Baine Bloodhoof
 									["sourceQuests"] = { 32351 },	-- Echoes of Thunder
+									["qg"] = 68287,	-- Baine Bloodhoof
 									["coord"] = { 68.3, 44.9, 392 },
 									["races"] = HORDE_ONLY,
 								}),
 								q(32413, {	-- A Return to Krasarang
-									["qg"] = 68586,	-- Grand Magister Rommath
-									["sourceQuest"] = 32412,	-- One Last Grasp
-									["coord"] = { 50.4, 48.4, 502 },
 									["description"] = "To be able to pick up this quest, head to Domination Point in Krasarang Wilds and take the flightpath back to Dalaran.",
+									["sourceQuest"] = 32412,	-- One Last Grasp
+									["qg"] = 68586,	-- Grand Magister Rommath
+									["coord"] = { 50.4, 48.4, 502 },
 									["timeline"] = { ADDED_5_1_0 },
 									["maps"] = { 501 },	-- Dalaran (Scenario)
 									["races"] = HORDE_ONLY,
 									["isBreadcrumb"] = true,
 								}),
 								q(32406, {	-- A Tactical Assault
-									["qg"] = 68586,	-- Grand Magister Rommath
 									["sourceQuests"] = { 32405 },	-- Hand of the Silver Covenant
+									["qg"] = 68586,	-- Grand Magister Rommath
 									["coord"] = { 64.0, 47.9, 502 },
 									["races"] = HORDE_ONLY,
 								}),
 								q(32127, {	-- All Dead, All Dead
-									["qg"] = 67767,	-- Brolic
 									["sourceQuests"] = {
 										32235,	-- Flash! Aaaaaahhhh!
 										32126,	-- Tear it Up
 									},
+									["qg"] = 67767,	-- Brolic
 									["coord"] = { 9.36, 50.4, KRASARANG_WILDS },
 									["races"] = HORDE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32191, {	-- Ancient Guardians
-									["qg"] = 67603,	-- Fanlyr Silverthorn
 									["sourceQuests"] = { 32190 },	-- To Mogujia
+									["qg"] = 67603,	-- Fanlyr Silverthorn
 									["coord"] = { 57.1, 78.6, KUN_LAI_SUMMIT },
 									["races"] = HORDE_ONLY,
 								}),
 								q(32167, {	-- Ancient's Fall
-									["qg"] = 67447,	-- Jorn Skyseer (summons the mob for you to fight)
 									["sourceQuests"] = { 32181 },	-- Beastmaster's Quarry: The Crane
+									["qg"] = 67447,	-- Jorn Skyseer (summons the mob for you to fight)
 									["coord"] = { 11.7, 60.8, KRASARANG_WILDS },
 									["races"] = HORDE_ONLY,
 									["isDaily"] = true,
 									["crs"] = { 67436 },	-- Ancient Bloodcrown Crane (killing the mob procs the quest)
 								}),
 								q(32128, {	-- Another One Bites the Dust
-									["qg"] = 67880,	-- Blood Guard Gro'tash
 									["sourceQuests"] = {
 										32235,	-- Flash! Aaaaaahhhh!
 										32126,	-- Tear it Up
 									},
+									["qg"] = 67880,	-- Blood Guard Gro'tash
 									["coord"] = { 9.02, 51.2, KRASARANG_WILDS },
 									["races"] = HORDE_ONLY,
 									["isDaily"] = true,
@@ -242,42 +242,42 @@ root(ROOTS.Zones, {
 									["isDaily"] = true,
 								}),
 								q(32183, {	-- Beastmaster's Quarry: The Crab
-									["qg"] = 67508,	-- Colossal Viseclaw
 									["sourceQuests"] = { 32163 },	-- Beastmaster's Hunt: The Crab
+									["qg"] = 67508,	-- Colossal Viseclaw
 									["coord"] = { 58.7, 38.7, KRASARANG_WILDS },
 									["races"] = HORDE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32181, {	-- Beastmaster's Quarry: The Crane
-									["qg"] = 67503,	-- Ancient Bloodcrown Crane
 									["sourceQuests"] = { 32161 },	-- Beastmaster's Hunt: The Crane
+									["qg"] = 67503,	-- Ancient Bloodcrown Crane
 									["coord"] = { 40.3, 60.0, KRASARANG_WILDS },
 									["races"] = HORDE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32182, {	-- Beastmaster's Quarry: The Tiger
-									["qg"] = 67498,	-- Krasari Elder
 									["sourceQuests"] = { 32162 },	-- Beastmaster's Hunt: The Tiger
+									["qg"] = 67498,	-- Krasari Elder
 									["coord"] = { 13.0, 37.7, KRASARANG_WILDS },
 									["races"] = HORDE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32214, {	-- Bilgewater Infiltrators
-									["qg"] = 67608,	-- Rivett Clutchpop
 									["sourceQuests"] = { 32108 },	-- Domination Point
+									["qg"] = 67608,	-- Rivett Clutchpop
 									["coord"] = { 12.0, 53.7, KRASARANG_WILDS },
 									["races"] = HORDE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32192, {	-- Bloodlines
-									["qg"] = 67581,	-- Lor'themar Theron
 									["sourceQuests"] = { 32190 },	-- To Mogujia
+									["qg"] = 67581,	-- Lor'themar Theron
 									["coord"] = { 57.1, 78.9, KUN_LAI_SUMMIT },
 									["races"] = HORDE_ONLY,
 								}),
 								q(32399, {	-- Breath of Darkest Shadow (H)
-									["qg"] = 67844,	-- Malkorok
 									["sourceQuests"] = { 32398 },	-- The Bell Speaks
+									["qg"] = 67844,	-- Malkorok
 									["coord"] = { 55.9, 33.9, KUN_LAI_SUMMIT },
 									["races"] = HORDE_ONLY,
 									["groups"] = {
@@ -285,34 +285,34 @@ root(ROOTS.Zones, {
 									},
 								}),
 								q(32236, {	-- Bug Off!
-									["qg"] = 67554,	-- Bixy Buzzsaw
 									["sourceQuests"] = { 32108 },	-- Domination Point
+									["qg"] = 67554,	-- Bixy Buzzsaw
 									["coord"] = { 22.2, 60.3, KRASARANG_WILDS },
 									["races"] = HORDE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32242, {	-- Buried Secrets
-									["qg"] = 67840,	-- Garrosh Hellscream
 									["sourceQuests"] = { 32256 },	-- Rise Of An Empire
+									["qg"] = 67840,	-- Garrosh Hellscream
 									["coord"] = { 32.1, 84.9, 392 },
 									["races"] = HORDE_ONLY,
 								}),
 								q(32378, {	-- Clearing a Path
-									["qg"] = 68370,	-- Lor'themar Theron
 									["sourceQuests"] = { 32376 },	-- To the Valley!
+									["qg"] = 68370,	-- Lor'themar Theron
 									["coord"] = { 53.8, 49.1, KUN_LAI_SUMMIT },
 									["races"] = HORDE_ONLY,
 								}),
 								q(32251, {	-- Dagger in the Dark
-									["qg"] = 67939,	-- General Nazgrim
 									["sourceQuests"] = { 32108 },	-- Domination Point
+									["qg"] = 67939,	-- General Nazgrim
 									["coord"] = { 10.4, 53.7, KRASARANG_WILDS },
 									["maps"] = { 488, 489 },	-- Dagger in the Dark
 									["races"] = HORDE_ONLY,
 								}),
 								q(32372, {	-- De-Subjugation
-									["qg"] = 68025,	-- Thrall
 									["sourceQuests"] = { 32320 },	-- The Horde is Family
+									["qg"] = 68025,	-- Thrall
 									["coord"] = { 38.2, 46.4, ECHO_ISLES },
 									["races"] = HORDE_ONLY,
 									["groups"] = {
@@ -320,35 +320,35 @@ root(ROOTS.Zones, {
 									},
 								}),
 								q(32123, {	-- Death on Two Legs
-									["qg"] = 67618,	-- Shokia
 									["sourceQuests"] = { 32108 },	-- Domination Point
+									["qg"] = 67618,	-- Shokia
 									["coord"] = { 9.23, 53.1, KRASARANG_WILDS },
 									["races"] = HORDE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32108, {	-- Domination Point
-									["qg"] = 68072,	-- Kor'kron Bodyguard
 									["sourceQuests"] = { 32250 },	-- The Might of the Warchief
+									["qg"] = 68072,	-- Kor'kron Bodyguard
 									["races"] = HORDE_ONLY,
 								}),
 								q(32351, {	-- Echoes of Thunder
-									["qg"] = 67939,	-- General Nazgrim
 									["sourceQuests"] = { 32384 },	-- Trapping the Leader
+									["qg"] = 67939,	-- General Nazgrim
 									["coord"] = { 10.4, 53.7, KRASARANG_WILDS },
 									["minReputation"] = { FACTION_DOMINANCE_OFFENSIVE, HONORED+10750 },
 									["races"] = HORDE_ONLY,
 								}),
 								q(32168, {	-- End of an Elder
-									["qg"] = 67447,	-- Jorn Skyseer (summons the mob)
 									["sourceQuests"] = { 32182 },	-- Beastmaster's Quarry: The Tiger
+									["qg"] = 67447,	-- Jorn Skyseer (summons the mob)
 									["coord"] = { 11.7, 60.8, KRASARANG_WILDS },
 									["races"] = HORDE_ONLY,
 									["isDaily"] = true,
 									["crs"] = { 67438 },	-- Krasari Elder (killing the mob procs the quest)
 								}),
 								q(32319, {	-- Find Thrall!
-									["qg"] = 68023,	-- Vol'jin
 									["sourceQuests"] = { 32318 },	-- Regeneration Takes Time
+									["qg"] = 68023,	-- Vol'jin
 									["coord"] = { 71.6, 93.1, KUN_LAI_SUMMIT },
 									["races"] = HORDE_ONLY,
 									["groups"] = {
@@ -356,8 +356,8 @@ root(ROOTS.Zones, {
 									},
 								}),
 								q(32235, {	-- Flash! Aaaaaahhhh!
-									["qg"] = 67880,	-- Blood Guard Gro'tash
 									["sourceQuests"] = { 32108 },	-- Domination Point
+									["qg"] = 67880,	-- Blood Guard Gro'tash
 									["coord"] = { 9.05, 51.2, KRASARANG_WILDS },
 									["races"] = HORDE_ONLY,
 									["isDaily"] = true,
@@ -366,82 +366,82 @@ root(ROOTS.Zones, {
 									},
 								}),
 								q(32329, {	-- Get My Results!
-									["qg"] = 67939,	-- General Nazgrim
 									["sourceQuests"] = { 32352 },	-- A Gathering Storm
+									["qg"] = 67939,	-- General Nazgrim
 									["coord"] = { 10.4, 53.7, KRASARANG_WILDS },
 									["minReputation"] = { FACTION_DOMINANCE_OFFENSIVE, REVERED+2700 },
 									["races"] = HORDE_ONLY,
 								}),
 								q(32130, {	-- Good Luck, Have Fun
-									["qg"] = 67402,	-- Zazzix "Toasty" Sparkrocket
 									["sourceQuests"] = { 32108 },	-- Domination Point
+									["qg"] = 67402,	-- Zazzix "Toasty" Sparkrocket
 									["coord"] = { 79.8, 30.1, KRASARANG_WILDS },
 									["races"] = HORDE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32405, {	-- Hand of the Silver Covenant
-									["qg"] = 68586,	-- Grand Magister Rommath
 									["sourceQuests"] = { 32404 },	-- Violence in the Arena
+									["qg"] = 68586,	-- Grand Magister Rommath
 									["coord"] = { 54.3, 28.3, 502 },
 									["races"] = HORDE_ONLY,
 								}),
 								q(32135, {	-- Hero Killer
-									["qg"] = 67628,	-- Shademaster Kiryn
 									["sourceQuests"] = { 32450 },	-- The Time is Now!
+									["qg"] = 67628,	-- Shademaster Kiryn
 									["coord"] = { 79.7, 30.4, KRASARANG_WILDS },
 									["races"] = HORDE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32326, {	-- Insertion
-									["qg"] = 67939,	-- General Nazgrim
 									["sourceQuests"] = { 32392 },	-- The Divine Bell
+									["qg"] = 67939,	-- General Nazgrim
 									["coord"] = { 10.4, 53.7, KRASARANG_WILDS },
 									["minReputation"] = { FACTION_DOMINANCE_OFFENSIVE, REVERED+14540 },	-- possibly 14530
 									["races"] = HORDE_ONLY,
 								}),
 								q(32344, {	-- It Is A Mystery
-									["qg"] = 68274,	-- Kaelis Sunsoar
 									["sourceQuests"] = { 32449 },	-- The Ruins of Ogudei
+									["qg"] = 68274,	-- Kaelis Sunsoar
 									["coord"] = { 36.2, 41.1, 421 },	-- Ruins of Ogudei
 									["races"] = HORDE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32403, {	-- It Starts in the Sewers
-									["qg"] = 68586,	-- Grand Magister Rommath
 									["sourceQuests"] = { 32402 },	-- The Situation In Dalaran
+									["qg"] = 68586,	-- Grand Magister Rommath
 									["coord"] = { 31.4, 50.4, 502 },
 									["races"] = HORDE_ONLY,
 								}),
 								q(32348, {	-- Kick 'em While They're Down
-									["qg"] = 68274,	-- Kaelis Sunsoar
 									["sourceQuests"] = { 32449 },	-- The Ruins of Ogudei
+									["qg"] = 68274,	-- Kaelis Sunsoar
 									["coord"] = { 36.2, 41.1, 421 },	-- Ruins of Ogudei
 									["races"] = HORDE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32199, {	-- Krasarang Steampot
-									["qg"] = 67562,	-- Duke
 									["sourceQuests"] = { 32108 },	-- Domination Point
+									["qg"] = 67562,	-- Duke
 									["coord"] = { 12.9, 53.4, KRASARANG_WILDS },
 									["races"] = HORDE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32410, {	-- Krasus' Landing
-									["qg"] = 68586,	-- Grand Magister Rommath
 									["sourceQuests"] = { 32406 },	-- A Tactical Assault
+									["qg"] = 68586,	-- Grand Magister Rommath
 									["coord"] = { 50.9, 48.0, 501 },
 									["races"] = HORDE_ONLY,
 								}),
 								q(32120, {	-- Legacy of Ogudei
-									["qg"] = 68274,	-- Kaelis Sunsoar
 									["sourceQuests"] = { 32449 },	-- The Ruins of Ogudei
+									["qg"] = 68274,	-- Kaelis Sunsoar
 									["coord"] = { 36.2, 41.1, 421 },	-- Ruins of Ogudei
 									["races"] = HORDE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32379, {	-- Legacy of the Korune
-									["qg"] = 68370,	-- Lor'themar Theron
 									["sourceQuests"] = { 32376 },	-- To the Valley!
+									["qg"] = 68370,	-- Lor'themar Theron
 									["coord"] = { 53.8, 49.1, KUN_LAI_SUMMIT },
 									["races"] = HORDE_ONLY,
 									["groups"] = {
@@ -451,8 +451,8 @@ root(ROOTS.Zones, {
 									},
 								}),
 								q(32368, {	-- Memory Wine
-									["qg"] = 68287,	-- Baine Bloodhoof
 									["sourceQuests"] = { 32448 },	-- Ties with the Past
+									["qg"] = 68287,	-- Baine Bloodhoof
 									["coord"] = { 60.3, 55.2, KUN_LAI_SUMMIT },
 									["races"] = HORDE_ONLY,
 									["groups"] = {
@@ -460,42 +460,42 @@ root(ROOTS.Zones, {
 									},
 								}),
 								q(32197, {	-- Mystery Meatloaf
-									["qg"] = 67562,	-- Duke
 									["sourceQuests"] = { 32108 },	-- Domination Point
+									["qg"] = 67562,	-- Duke
 									["coord"] = { 12.9, 53.4, KRASARANG_WILDS },
 									["races"] = HORDE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32343, {	-- Ogudei's Lieutenants
-									["qg"] = 68274,	-- Kaelis Sunsoar
 									["sourceQuests"] = { 32449 },	-- The Ruins of Ogudei
+									["qg"] = 68274,	-- Kaelis Sunsoar
 									["coord"] = { 36.2, 41.1, 421 },	-- Ruins of Ogudei
 									["races"] = HORDE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32412, {	-- One Last Grasp
-									["qg"] = 68586,	-- Grand Magister Rommath
 									["sourceQuests"] = { 32411 },	-- The Remaining Sunreavers
+									["qg"] = 68586,	-- Grand Magister Rommath
 									["coord"] = { 50.9, 48.0, 501 },
 									["races"] = HORDE_ONLY,
 								}),
 								q(32141, {	-- Power Metal
-									["qg"] = 67537,	-- Daxil "The Gem" Oregrind
 									["sourceQuests"] = { 32108 },	-- Domination Point
+									["qg"] = 67537,	-- Daxil "The Gem" Oregrind
 									["coord"] = { 22.4, 60.4, KRASARANG_WILDS },
 									["races"] = HORDE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32237, {	-- Precious Resource
-									["qg"] = 67553,	-- Bixy Buzzsaw
 									["sourceQuests"] = { 32108 },	-- Domination Point
+									["qg"] = 67553,	-- Bixy Buzzsaw
 									["coord"] = { 25.3, 58.3, KRASARANG_WILDS },
 									["races"] = HORDE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32318, {	-- Regeneration Takes Time
-									["qg"] = 67866,	-- Chen Stormstout
 									["sourceQuests"] = { 32284 },	-- Someone You Should See
+									["qg"] = 67866,	-- Chen Stormstout
 									["coord"] = { 71.6, 93.1, KUN_LAI_SUMMIT },
 									["races"] = HORDE_ONLY,
 									["groups"] = {
@@ -503,72 +503,72 @@ root(ROOTS.Zones, {
 									},
 								}),
 								q(32256, {	-- Rise Of An Empire
-									["qg"] = 67939,	-- General Nazgrim
 									["sourceQuests"] = { 32108 },	-- Domination Point
+									["qg"] = 67939,	-- General Nazgrim
 									["coord"] = { 10.4, 53.7, KRASARANG_WILDS },
 									["minReputation"] = { FACTION_DOMINANCE_OFFENSIVE, FRIENDLY+950 },
 									["races"] = HORDE_ONLY,
 								}),
 								q(32137, {	-- Runnin' On Empty
-									["qg"] = 67542,	-- Grizzle Gearslip
 									["sourceQuests"] = { 32136 },	-- Work Order: Fuel
+									["qg"] = 67542,	-- Grizzle Gearslip
 									["coord"] = { 25.6, 58.3, KRASARANG_WILDS },
 									["races"] = HORDE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32133, {	-- Sentry Wards
-									["qg"] = 67628,	-- Shademaster Kiryn
 									["sourceQuests"] = { 32108 },	-- Domination Point
+									["qg"] = 67628,	-- Shademaster Kiryn
 									["coord"] = { 79.8, 30.4, KRASARANG_WILDS },
 									["races"] = HORDE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32284, {	-- Someone You Should See
-									["qg"] = 67865,	-- Messenger Grummle
 									["sourceQuests"] = { 32257 },	-- Voice of the Gods
+									["qg"] = 67865,	-- Messenger Grummle
 									["coord"] = { 9.62, 51.2, KRASARANG_WILDS },
 									["minReputation"] = { FACTION_DOMINANCE_OFFENSIVE, FRIENDLY+4900 },
 									["races"] = HORDE_ONLY,
 								}),
 								q(32118, {	-- Taking Advantage
-									["qg"] = 67847,	-- Belloc Brightblade
 									["sourceQuests"] = { 32449 },	-- The Ruins of Ogudei
+									["qg"] = 67847,	-- Belloc Brightblade
 									["coord"] = { 80.2, 30.0, KRASARANG_WILDS },
 									["races"] = HORDE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32126, {	-- Tear It Up
-									["qg"] = 67767,	-- Brolic
 									["sourceQuests"] = { 32108 },	-- Domination Point
+									["qg"] = 67767,	-- Brolic
 									["coord"] = { 9.55, 50.9, KRASARANG_WILDS },
 									["races"] = HORDE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32398, {	-- The Bell Speaks
-									["qg"] = 67939,	-- General Nazgrim
 									["sourceQuests"] = {
 										32412,	-- One Last Grasp
 										32413,	-- A Return to Krasarang
 									},
+									["qg"] = 67939,	-- General Nazgrim
 									["coord"] = { 10.4, 53.7, KRASARANG_WILDS },
 									["minReputation"] = { FACTION_DOMINANCE_OFFENSIVE, EXALTED },
 									["races"] = HORDE_ONLY,
 								}),
 								q(32327, {	-- The Darnassus Mission
-									["qg"] = 68077,	-- Fanlyr Silverthorn
 									["sourceQuests"] = { 32326 },	-- Insertion
+									["qg"] = 68077,	-- Fanlyr Silverthorn
 									["coord"] = { 40.0, 50.4, TELDRASSIL },
 									["races"] = HORDE_ONLY,
 								}),
 								q(32392, {	-- The Divine Bell
-									["qg"] = 68337,	-- Ishi
 									["sourceQuests"] = { 32391 },	-- The Ruins of Korune
+									["qg"] = 68337,	-- Ishi
 									["coord"] = { 32.9, 26.3, KUN_LAI_SUMMIT },
 									["races"] = HORDE_ONLY,
 								}),
 								q(32320, {	-- The Horde Is Family
-									["qg"] = 68025,	-- Thrall
 									["sourceQuests"] = { 32319 },	-- Find Thrall!
+									["qg"] = 68025,	-- Thrall
 									["coords"] = {
 										{ 38.4, 46.6, ECHO_ISLES },
 										{ 44.6, 66.9, VALLEY_OF_TRIALS },
@@ -579,8 +579,8 @@ root(ROOTS.Zones, {
 									},
 								}),
 								q(32244, {	-- The Korune
-									["qg"] = 67603,	-- Fanlyr Silverthorn
 									["sourceQuests"] = { 32190 },	-- To Mogujia
+									["qg"] = 67603,	-- Fanlyr Silverthorn
 									["coord"] = { 57.1, 78.6, KUN_LAI_SUMMIT },
 									["races"] = HORDE_ONLY,
 									["groups"] = {
@@ -588,48 +588,48 @@ root(ROOTS.Zones, {
 									},
 								}),
 								q(32363, {	-- The Kun-Lai Expedition
-									["qg"] = 67939,	-- General Nazgrim
 									["sourceQuests"] = { 32330 },	-- What's in the Box?
+									["qg"] = 67939,	-- General Nazgrim
 									["coord"] = { 10.4, 53.7, KRASARANG_WILDS },
 									["minReputation"] = { FACTION_DOMINANCE_OFFENSIVE, REVERED+6650 },
 									["races"] = HORDE_ONLY,
 								}),
 								q(32250, {	-- The Might of the Warchief
+									["sourceQuests"] = { 32249 },	-- Meet the Scout
 									["qgs"] = {
 										67867,	-- Garrosh Hellscream
 										68072,	-- Kor'kron Bodyguard
 									},
-									["sourceQuests"] = { 32249 },	-- Meet the Scout
 									["coord"] = { 7.41, 62.7, KRASARANG_WILDS },
 									["races"] = HORDE_ONLY,
 								}),
 								q(32391, {	-- The Ruins of Korune
-									["qg"] = 67939,	-- General Nazgrim
 									["sourceQuests"] = { 32368 },	-- Memory Wine
+									["qg"] = 67939,	-- General Nazgrim
 									["coord"] = { 10.4, 53.7, KRASARANG_WILDS },
 									["minReputation"] = { FACTION_DOMINANCE_OFFENSIVE, REVERED+10515 },	-- possibly up to 10755?  it didn't show up for me until turning in a quest that took me from 10455 to 11145
 									["races"] = HORDE_ONLY,
 								}),
 								q(32449, {	-- The Ruins of Ogudei
-									["qg"] = 67880,	-- Blood Guard Gro'tash
 									["sourceQuests"] = { 32108 },	-- Domination Point
+									["qg"] = 67880,	-- Blood Guard Gro'tash
 									["coord"] = { 9.04, 51.2, KRASARANG_WILDS },
 									["races"] = HORDE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32409, {	-- The Kirin Tor's True Colors
-									["qg"] = 68586,	-- Grand Magister Rommath
 									["sourceQuests"] = { 32406 },	-- A Tactical Assault
+									["qg"] = 68586,	-- Grand Magister Rommath
 									["coord"] = { 50.9, 48.0, 501 },
 									["races"] = HORDE_ONLY,
 								}),
 								q(32411, {	-- The Remaining Sunreavers
-									["qg"] = 68586,	-- Grand Magister Rommath
 									["sourceQuests"] = {
 										32410,	-- Krasus' Landing
 										32409,	-- The Kirin Tor's True Colors
 										32408,	-- The Silver Covenant's Stronghold
 									},
+									["qg"] = 68586,	-- Grand Magister Rommath
 									["coord"] = { 50.9, 48.0, 501 },
 									["races"] = HORDE_ONLY,
 									["groups"] = {
@@ -637,35 +637,35 @@ root(ROOTS.Zones, {
 									},
 								}),
 								q(32408, {	-- The Silver Covenant's Stronghold
-									["qg"] = 68586,	-- Grand Magister Rommath
 									["sourceQuests"] = { 32406 },	-- A Tactical Assault
+									["qg"] = 68586,	-- Grand Magister Rommath
 									["coord"] = { 50.9, 48.0, 501 },
 									["races"] = HORDE_ONLY,
 								}),
 								q(32402, {	-- The Situation In Dalaran
-									["qg"] = 67939,	-- General Nazgrim
 									["sourceQuests"] = { 32328 },	-- Victorious Return
+									["qg"] = 67939,	-- General Nazgrim
 									["coord"] = { 10.4, 53.7, KRASARANG_WILDS },
 									["minReputation"] = { FACTION_DOMINANCE_OFFENSIVE, REVERED+18500 },
 									["races"] = HORDE_ONLY,
 								}),
 								q(32342, {	-- The Spirit Trap
-									["qg"] = 68274,	-- Kaelis Sunsoar
 									["sourceQuests"] = { 32449 },	-- The Ruins of Ogudei
+									["qg"] = 68274,	-- Kaelis Sunsoar
 									["coord"] = { 36.2, 41.1, 421 },	-- Ruins of Ogudei
 									["races"] = HORDE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32450, {	-- The Time Is Now!
-									["qg"] = 67880,	-- Blood Guard Gro'tash
 									["sourceQuests"] = { 32108 },	-- Domination Point
+									["qg"] = 67880,	-- Blood Guard Gro'tash
 									["coord"] = { 9.0, 51.3, KRASARANG_WILDS },
 									["races"] = HORDE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32448, {	-- Ties with the Past
-									["qg"] = 68287,	-- Baine Bloodhoof
 									["sourceQuests"] = { 32363 },	-- The Kun-Lai Expedition
+									["qg"] = 68287,	-- Baine Bloodhoof
 									["coord"] = { 60.3, 55.2, KUN_LAI_SUMMIT },
 									["races"] = HORDE_ONLY,
 									["groups"] = {
@@ -673,47 +673,47 @@ root(ROOTS.Zones, {
 									},
 								}),
 								q(32190, {	-- To Mogujia
-									["qg"] = 67939,	-- General Nazgrim
 									["sourceQuests"] = { 32372 },	-- De-Subjugation
+									["qg"] = 67939,	-- General Nazgrim
 									["coord"] = { 10.4, 53.7, KRASARANG_WILDS },
 									["minReputation"] = { FACTION_DOMINANCE_OFFENSIVE, HONORED+2850 },
 									["races"] = HORDE_ONLY,
 								}),
 								q(32376, {	-- To the Valley!
-									["qg"] = 67939,	-- General Nazgrim
 									["sourceQuests"] = {
 										32191,	-- Ancient Guardians
 										32192,	-- Bloodlines
 										32244,	-- The Korune
 									},
+									["qg"] = 67939,	-- General Nazgrim
 									["coord"] = { 10.4, 53.7, KRASARANG_WILDS },
 									["minReputation"] = { FACTION_DOMINANCE_OFFENSIVE, HONORED+6800 },
 									["races"] = HORDE_ONLY,
 								}),
 								q(32384, {	-- Trapping the Leader
-									["qg"] = 68370,	-- Lor'themar Theron
 									["sourceQuests"] = {
 										32378,	-- Clearing a Path
 										32379,	-- Legacy of the Korune
 									},
+									["qg"] = 68370,	-- Lor'themar Theron
 									["coord"] = { 53.8, 49.1, KUN_LAI_SUMMIT },
 									["races"] = HORDE_ONLY,
 								}),
 								q(32328, {	-- Victorious Return
-									["qg"] = 68077,	-- Fanlyr Silverthorn
 									["sourceQuests"] = { 32327 },	-- The Darnassus Mission
+									["qg"] = 68077,	-- Fanlyr Silverthorn
 									["coord"] = { 40.0, 50.4, TELDRASSIL },
 									["races"] = HORDE_ONLY,
 								}),
 								q(32404, {	-- Violence in the Arena
-									["qg"] = 68586,	-- Grand Magister Rommath
 									["sourceQuests"] = { 32403 },	-- It Starts in the Sewers
+									["qg"] = 68586,	-- Grand Magister Rommath
 									["coord"] = { 45.1, 54.0, 502 },
 									["races"] = HORDE_ONLY,
 								}),
 								q(32257, {	-- Voice of the Gods
-									["qg"] = 67834,	-- Fanlyr Silverthorn
 									["sourceQuests"] = { 32242 },	-- Buried Secrets
+									["qg"] = 67834,	-- Fanlyr Silverthorn
 									["coord"] = { 20.9, 15.7, VALE_OF_ETERNAL_BLOSSOMS },
 									["races"] = HORDE_ONLY,
 									["groups"] = {
@@ -721,49 +721,49 @@ root(ROOTS.Zones, {
 									},
 								}),
 								q(32222, {	-- Wanted: Chief Engineer Cogwrench
-									["provider"] = { "o", 216322 },	-- Bounty Board
 									["sourceQuests"] = { 32108 },	-- Domination Point
+									["provider"] = { "o", 216322 },	-- Bounty Board
 									["coord"] = { 11.8, 54.3, KRASARANG_WILDS },
 									["races"] = HORDE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32131, {	-- We Require More Minerals!
-									["qg"] = 67402,	-- Zazzix "Toasty" Sparkrocket
 									["sourceQuests"] = { 32108 },	-- Domination Point
+									["qg"] = 67402,	-- Zazzix "Toasty" Sparkrocket
 									["coord"] = { 79.8, 30.1, KRASARANG_WILDS },
 									["races"] = HORDE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32345, {	-- We're Not Monsters!
-									["qg"] = 68274,	-- Kaelis Sunsoar
 									["sourceQuests"] = { 32449 },	-- The Ruins of Ogudei
+									["qg"] = 68274,	-- Kaelis Sunsoar
 									["coord"] = { 36.2, 41.1, 421 },	-- Ruins of Ogudei
 									["races"] = HORDE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32330, {	-- What's in the Box?
-									["qg"] = 16802,	-- Lor'themar Theron
 									["sourceQuests"] = { 32329 },	-- Get My Results!
+									["qg"] = 16802,	-- Lor'themar Theron
 									["coord"] = { 54.0, 20.4, SILVERMOON_CITY },
 									["races"] = HORDE_ONLY,
 								}),
 								q(32136, {	-- Work Order: Fuel
-									["qg"] = 67535,	-- Boss-Lady Trixel
 									["sourceQuests"] = { 32108 },	-- Domination Point
+									["qg"] = 67535,	-- Boss-Lady Trixel
 									["coord"] = { 12.9, 53.4, KRASARANG_WILDS },
 									["races"] = HORDE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32140, {	-- Work Order: Iron
-									["qg"] = 67535,	-- Boss-Lady Trixel
 									["sourceQuests"] = { 32108 },	-- Domination Point
+									["qg"] = 67535,	-- Boss-Lady Trixel
 									["coord"] = { 12.9, 53.4, KRASARANG_WILDS },
 									["races"] = HORDE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32132, {	-- Worker Harassment
-									["qg"] = 67628,	-- Shademaster Kiryn
 									["sourceQuests"] = { 32108 },	-- Domination Point
+									["qg"] = 67628,	-- Shademaster Kiryn
 									["coord"] = { 79.8, 30.4, KRASARANG_WILDS },
 									["races"] = HORDE_ONLY,
 									["isDaily"] = true,
@@ -881,78 +881,78 @@ root(ROOTS.Zones, {
 							}),
 							n(QUESTS, {
 								q(32172, {	-- A Colossal Victory
-									["qg"] = 67558,	-- Huntsman Blake (summons the mob for you to kill)
 									["sourceQuests"] = { 32186 },	-- Beastmaster's Quarry: The Crab
+									["qg"] = 67558,	-- Huntsman Blake (summons the mob for you to kill)
 									["coord"] = { 88.3, 14.0, KRASARANG_WILDS },
 									["races"] = ALLIANCE_ONLY,
 									["isDaily"] = true,
 									["crs"] = { 67557 },	-- Colossal Viseclaw (killing the mob procs the quest)
 								}),
 								q(32143, {	-- A Kind of Magic
-									["qg"] = 67976,	-- Tinkmaster Overspark
 									["sourceQuests"] = { 32109 },	-- Lion's Landing
+									["qg"] = 67976,	-- Tinkmaster Overspark
 									["coord"] = { 16.0, 78.8, KRASARANG_WILDS },
 									["races"] = ALLIANCE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32247, {	-- A King Among Men
+									["sourceQuests"] = { 32246 },	-- Meet the Scout
 									["qgs"] = {
 										68392,	-- King Varian Wrynn
 										68399,	-- 7th Legion Champion
 									},
-									["sourceQuests"] = { 32246 },	-- Meet the Scout
 									["coord"] = { 89.9, 24.5, KRASARANG_WILDS },
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32377, {	-- A Kor'kron In Our Midst
-									["qg"] = 68375,	-- Agent Connelly
 									["sourceQuests"] = { 32370 },	-- The Kun-Lai Expedition
+									["qg"] = 68375,	-- Agent Connelly
 									["coord"] = { 65.1, 60.8, KUN_LAI_SUMMIT },
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32248, {	-- A Little Patience
-									["qg"] = 67940,	-- Admiral Taylor
 									["sourceQuests"] = { 32109 },	-- Lion's Landing
+									["qg"] = 67940,	-- Admiral Taylor
 									["coord"] = { 89.5, 32.6, KRASARANG_WILDS },
 									["maps"] = { 487 },	-- A Little Patience
 									["races"] = ALLIANCE_ONLY,
 									["lvl"] = 90,	-- 15
 								}),
 								q(32170, {	-- Ancient's Fall
-									["qg"] = 67558,	-- Huntsman Blake (summons the mob for you to kill)
 									["sourceQuests"] = { 32184 },	-- Beastmaster's Quarry: The Crane
+									["qg"] = 67558,	-- Huntsman Blake (summons the mob for you to kill)
 									["coord"] = { 88.8, 13.6, KRASARANG_WILDS },
 									["races"] = ALLIANCE_ONLY,
 									["isDaily"] = true,
 									["crs"] = { 67555 },	-- Ancient Bloodcrown Crane (killing the mob procs the quest)
 								}),
 								q(32452, {	-- And Then There Were Goblins
-									["qg"] = 68908,	-- Amber Kearnen
 									["sourceQuests"] = { 32109 },	-- Lion's Landing
+									["qg"] = 68908,	-- Amber Kearnen
 									["coord"] = { 94.7, 28.3, KRASARANG_WILDS },
 									["races"] = ALLIANCE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32315, {	-- Anduin's Plea
-									["qg"] = 67940,	-- Admiral Taylor
 									["sourceQuests"] = {
 										32194,	-- Bad Blood
 										32243,	-- The Source of Korune Power
 									},
+									["qg"] = 67940,	-- Admiral Taylor
 									["coord"] = { 94.5, 28.4, KRASARANG_WILDS },
 									["minReputation"] = { FACTION_OPERATION_SHIELDWALL, HONORED+10750 },
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32148, {	-- Attack! Move!
-									["qg"] = 67631,	-- Marshal Troteman
 									["sourceQuests"] = { 32109 },	-- Lion's Landing
+									["qg"] = 67631,	-- Marshal Troteman
 									["coord"] = { 89.6, 33.1, KRASARANG_WILDS },
 									["races"] = ALLIANCE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32194, {	-- Bad Blood
-									["qg"] = 67734,	-- Sarannha Skyglaive
 									["sourceQuests"] = { 32193 },	-- To Mogujia
+									["qg"] = 67734,	-- Sarannha Skyglaive
 									["coord"] = { 59.9, 75.4, KUN_LAI_SUMMIT },
 									["races"] = ALLIANCE_ONLY,
 								}),
@@ -975,41 +975,41 @@ root(ROOTS.Zones, {
 									["isDaily"] = true,
 								}),
 								q(32186, {	-- Beastmaster's Quarry: The Crab
-									["qg"] = 67508,	-- Colossal Viseclaw
 									["sourceQuests"] = { 32166 },	-- Beastmaster's Hunt: The Crab
+									["qg"] = 67508,	-- Colossal Viseclaw
 									["coord"] = { 58.7, 38.7, KRASARANG_WILDS },
 									["races"] = ALLIANCE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32184, {	-- Beastmaster's Quarry: The Crane
-									["qg"] = 67503,	-- Ancient Bloodcrown Crane
 									["sourceQuests"] = { 32164 },	-- Beastmaster's Hunt: The Crane
+									["qg"] = 67503,	-- Ancient Bloodcrown Crane
 									["coord"] = { 40.3, 60.0, KRASARANG_WILDS },
 									["races"] = ALLIANCE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32185, {	-- Beastmaster's Quarry: The Tiger
-									["qg"] = 67498,	-- Krasari Elder
 									["sourceQuests"] = { 32165 },	-- Beastmaster's Hunt: The Tiger
+									["qg"] = 67498,	-- Krasari Elder
 									["coord"] = { 12.9, 37.7, KRASARANG_WILDS },
 									["races"] = ALLIANCE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32401, {	-- Breath of Darkest Shadow
-									["qg"] = 68939,	-- Anduin Wrynn
 									["sourceQuests"] = { 32400 },	-- The Bell Speaks
+									["qg"] = 68939,	-- Anduin Wrynn
 									["coord"] = { 56.3, 34.2, KUN_LAI_SUMMIT },
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32383, {	-- Bugging Out
-									["qg"] = 68417,	-- Cousin Goottooth
 									["sourceQuests"] = { 32382 },	-- He's In Deep
+									["qg"] = 68417,	-- Cousin Goottooth
 									["coord"] = { 59.2, 84.3, KUN_LAI_SUMMIT },
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32154, {	-- Burn Out!
-									["qg"] = 68166,	-- Sully "The Pickle" McLeary
 									["sourceQuests"] = { 32109 },	-- Lion's Landing
+									["qg"] = 68166,	-- Sully "The Pickle" McLeary
 									["coord"] = { 16.3, 77.9, KRASARANG_WILDS },
 									["races"] = ALLIANCE_ONLY,
 									["isDaily"] = true,
@@ -1018,21 +1018,21 @@ root(ROOTS.Zones, {
 									},
 								}),
 								q(32420, {	-- Cashing Out
-									["qg"] = 68687,	-- Vereesa Windrunner
 									["sourceQuests"] = { 32416 },	-- Jaina's Resolution
+									["qg"] = 68687,	-- Vereesa Windrunner
 									["coord"] = { 34.5, 48.7, 501 },
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32414, {	-- Darnassus Attacked?
-									["qg"] = 67940,	-- Admiral Taylor
 									["sourceQuests"] = { 32394 },	-- The Divine Bell
+									["qg"] = 67940,	-- Admiral Taylor
 									["coord"] = { 94.4, 28.4, KRASARANG_WILDS },
 									["minReputation"] = { FACTION_OPERATION_SHIELDWALL, REVERED+8600 },
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32446, {	-- Dis-Assembly Required
-									["qg"] = 68166,	-- Sully "The Pickle" McLeary
 									["sourceQuests"] = { 32109 },	-- Lion's Landing
+									["qg"] = 68166,	-- Sully "The Pickle" McLeary
 									["coord"] = { 16.3, 77.9, KRASARANG_WILDS },
 									["races"] = ALLIANCE_ONLY,
 									["isDaily"] = true,
@@ -1047,69 +1047,69 @@ root(ROOTS.Zones, {
 									},
 								}),
 								q(32145, {	-- Don't Lose Your Head
-									["qg"] = 67528,	-- Sully "The Pickle" McLeary
 									["sourceQuests"] = { 32143 },	-- A Kind of Magic
+									["qg"] = 67528,	-- Sully "The Pickle" McLeary
 									["races"] = ALLIANCE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32171, {	-- End of an Elder
-									["qg"] = 67558,	-- Huntsman Blake (summons the mob for you to kill)
 									["sourceQuests"] = { 32185 },	-- Beastmaster's Quarry: The Tiger
+									["qg"] = 67558,	-- Huntsman Blake (summons the mob for you to kill)
 									["coord"] = { 88.3, 14.0, KRASARANG_WILDS },
 									["races"] = ALLIANCE_ONLY,
 									["isDaily"] = true,
 									["crs"] = { 67556 },	-- Krasari Elder (killing the mob procs the quest)
 								}),
 								q(32347, {	-- Eviction Notice
-									["qg"] = 68275,	-- Hilda Hornswaggle
 									["sourceQuests"] = { 32109 },	-- Lion's Landing
+									["qg"] = 68275,	-- Hilda Hornswaggle
 									["coord"] = { 31.0, 27.9, 419 },	-- Ruins of Ogudei
 									["races"] = ALLIANCE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32146, {	-- Hammer to Fall
-									["qg"] = 67386,	-- Sky Admiral Rogers
 									["sourceQuests"] = { 32109 },	-- Lion's Landing
+									["qg"] = 67386,	-- Sky Admiral Rogers
 									["coord"] = { 15.9, 78.5, KRASARANG_WILDS },
 									["races"] = ALLIANCE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32382, {	-- He's In Deep
-									["qg"] = 67940,	-- Admiral Taylor
 									["sourceQuests"] = { 32426 },	-- Stirred, Not Shaken
+									["qg"] = 67940,	-- Admiral Taylor
 									["coord"] = { 94.4, 28.4, KRASARANG_WILDS },
 									["minReputation"] = { FACTION_OPERATION_SHIELDWALL, FRIENDLY+4900 },
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32397, {	-- He Won't Even Miss It
-									["qg"] = 68417,	-- Cousin Goottooth
 									["sourceQuests"] = { 32382 },	-- He's In Deep
+									["qg"] = 68417,	-- Cousin Goottooth
 									["coord"] = { 59.2, 84.3, KUN_LAI_SUMMIT },
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32316, {	-- Heart Of The Alliance
-									["qg"] = 67948,	-- Anduin Wrynn
 									["sourceQuests"] = { 32315 },	-- Anduin's Plea
+									["qg"] = 67948,	-- Anduin Wrynn
 									["coord"] = { 66.6, 34.1, 394 },	-- Shrine of Seven Stars
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32153, {	-- Hero Killer
-									["qg"] = 67631,	-- Marshal Troteman
 									["sourceQuests"] = { 32109 },	-- Lion's Landing
+									["qg"] = 67631,	-- Marshal Troteman
 									["coord"] = { 89.6, 33.1, KRASARANG_WILDS },
 									["races"] = ALLIANCE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32119, {	-- It Is A Mystery
-									["qg"] = 68275,	-- Hilda Hornswaggle
 									["sourceQuests"] = { 32109 },	-- Lion's Landing
+									["qg"] = 68275,	-- Hilda Hornswaggle
 									["coord"] = { 31.0, 27.9, 419 },	-- Ruins of Ogudei
 									["races"] = ALLIANCE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32156, {	-- It's Only Right
-									["qg"] = 67444,	-- Mishka
 									["sourceQuests"] = { 32109 },	-- Lion's Landing
+									["qg"] = 67444,	-- Mishka
 									["coord"] = { 16.1, 77.9, KRASARANG_WILDS },
 									["races"] = ALLIANCE_ONLY,
 									["isDaily"] = true,
@@ -1121,45 +1121,45 @@ root(ROOTS.Zones, {
 									},
 								}),
 								q(32416, {	-- Jaina's Resolution
-									["qg"] = 68651,	-- Lady Jaina Proudmoore
 									["sourceQuests"] = { 32460 },	-- Tracking the Thieves
+									["qg"] = 68651,	-- Lady Jaina Proudmoore
 									["coord"] = { 40.0, 50.4, TELDRASSIL },
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32109, {	-- Lion's Landing
-									["qg"] = 68399,	-- 7th Legion Champion
 									["sourceQuests"] = { 32247 },	-- A King Among Men
+									["qg"] = 68399,	-- 7th Legion Champion
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32371, {	-- Memory Wine
-									["qg"] = 68375,	-- Agent Connelly
 									["sourceQuests"] = { 32377 },	-- A Kor'kron in Our Midst
+									["qg"] = 68375,	-- Agent Connelly
 									["coord"] = { 65.1, 60.8, KUN_LAI_SUMMIT },
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32122, {	-- Ogudei's Lieutenants
-									["qg"] = 68275,	-- Hilda Hornswaggle
 									["sourceQuests"] = { 32109 },	-- Lion's Landing
+									["qg"] = 68275,	-- Hilda Hornswaggle
 									["coord"] = { 31.0, 27.9, 419 },	-- Ruins of Ogudei
 									["races"] = ALLIANCE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32346, {	-- Oi Ain't Afraid o' No Ghosts!
-									["qg"] = 68275,	-- Hilda Hornswaggle
 									["sourceQuests"] = { 32109 },	-- Lion's Landing
+									["qg"] = 68275,	-- Hilda Hornswaggle
 									["coord"] = { 31.0, 27.9, 419 },	-- Ruins of Ogudei
 									["races"] = ALLIANCE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32419, {	-- Nowhere to Hide
-									["qg"] = 68687,	-- Vereesa Windrunner
 									["sourceQuests"] = { 32416 },	-- Jaina's Resolution
+									["qg"] = 68687,	-- Vereesa Windrunner
 									["coord"] = { 34.5, 48.7, 501 },
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32421, {	-- Nowhere to Run
-									["qg"] = 68687,	-- Vereesa Windrunner
 									["sourceQuests"] = { 32416 },	-- Jaina's Resolution
+									["qg"] = 68687,	-- Vereesa Windrunner
 									["coord"] = { 34.5, 48.7, 501 },
 									["races"] = ALLIANCE_ONLY,
 									["groups"] = {
@@ -1169,15 +1169,15 @@ root(ROOTS.Zones, {
 									},
 								}),
 								q(32116, {	-- Priorities, People!
-									["qg"] = 67631,	-- Marshal Troteman
 									["sourceQuests"] = { 32109 },	-- Lion's Landing
+									["qg"] = 67631,	-- Marshal Troteman
 									["coord"] = { 89.6, 33.1, KRASARANG_WILDS },
 									["races"] = ALLIANCE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32149, {	-- Resource Gathering
-									["qg"] = 67630,	-- Mishka
 									["sourceQuests"] = { 32109 },	-- Lion's Landing
+									["qg"] = 67630,	-- Mishka
 									["coord"] = { 94.5, 28.6, KRASARANG_WILDS },
 									["races"] = ALLIANCE_ONLY,
 									["isDaily"] = true,
@@ -1197,21 +1197,21 @@ root(ROOTS.Zones, {
 									["isDaily"] = true,
 								}),
 								q(32417, {	-- Sewer Cleaning
-									["qg"] = 68687,	-- Vereesa Windrunner
 									["sourceQuests"] = { 32416 },	-- Jaina's Resolution
+									["qg"] = 68687,	-- Vereesa Windrunner
 									["coord"] = { 34.5, 48.7, 501 },
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32115, {	-- Shackles of the Past
-									["qg"] = 68275,	-- Hilda Hornswaggle
 									["sourceQuests"] = { 32109 },	-- Lion's Landing
+									["qg"] = 68275,	-- Hilda Hornswaggle
 									["coord"] = { 31.0, 27.9, 419 },	-- Ruins of Ogudei
 									["races"] = ALLIANCE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32152, {	-- Siege Damage
-									["qg"] = 67631,	-- Marshal Troteman
 									["sourceQuests"] = { 32109 },	-- Lion's Landing
+									["qg"] = 67631,	-- Marshal Troteman
 									["coord"] = { 89.6, 33.1, KRASARANG_WILDS },
 									["races"] = ALLIANCE_ONLY,
 									["isDaily"] = true,
@@ -1223,90 +1223,90 @@ root(ROOTS.Zones, {
 									},
 								}),
 								q(32426, {	-- Stirred, not Shaken
-									["qg"] = 68526,	-- Barkeep Townsley
 									["sourceQuests"] = { 32381 },	-- To Catch a Spy
+									["qg"] = 68526,	-- Barkeep Townsley
 									["coord"] = { 67.4, 47.1, 500 },	-- Bizmo's Brawlpub
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32150, {	-- Supply Block
-									["qg"] = 67630,	-- Mishka
 									["sourceQuests"] = { 32109 },	-- Lion's Landing
+									["qg"] = 67630,	-- Mishka
 									["coord"] = { 94.5, 28.6, KRASARANG_WILDS },
 									["races"] = ALLIANCE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32400, {	-- The Bell Speaks
-									["qg"] = 67940,	-- Admiral Taylor
 									["sourceQuests"] = {
 										32336,	-- The Handle
 										32338,	-- The Harmonic Ointment
 										32337,	-- The Head
 									},
+									["qg"] = 67940,	-- Admiral Taylor
 									["coord"] = { 94.5, 28.4, KRASARANG_WILDS },
 									["minReputation"] = { FACTION_OPERATION_SHIELDWALL, EXALTED },
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32380, {	-- The Best Around
-									["qg"] = 67940,	-- Admiral Taylor
 									["sourceQuests"] = { 32109 },	-- Lion's Landing
+									["qg"] = 67940,	-- Admiral Taylor
 									["coord"] = { 89.5, 32.5, KRASARANG_WILDS },
 									["minReputation"] = { FACTION_OPERATION_SHIELDWALL, FRIENDLY+950 },
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32394, {	-- The Divine Bell
-									["qg"] = 67734,	-- Sarannha Skyglaive
 									["sourceQuests"] = { 32393 },	-- The Ruins of Korune
+									["qg"] = 67734,	-- Sarannha Skyglaive
 									["coord"] = { 32.8, 26.1, KUN_LAI_SUMMIT },
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32362, {	-- The Fate of Dalaran
-									["qg"] = 68106,	-- Anduin Wrynn
 									["sourceQuests"] = { 32331 },	-- The Kirin Tor
+									["qg"] = 68106,	-- Anduin Wrynn
 									["coord"] = { 26.3, 39.1, 501 },
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32332, {	-- The First Riddle: Mercy
-									["qg"] = 68003,	-- The Monkey King
 									["sourceQuests"] = { 32321 },	-- The Monkey King
+									["qg"] = 68003,	-- The Monkey King
 									["coord"] = { 48.8, 50.3, KUN_LAI_SUMMIT },
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32335, {	-- The Greatest Prank
-									["qg"] = 68538,	-- The Monkey King
 									["sourceQuests"] = {
 										32332,	-- The First Riddle: Mercy
 										32333,	-- The Second Riddle: Fellowship
 										32334,	-- The Third Riddle: Strength
 									},
+									["qg"] = 68538,	-- The Monkey King
 									["coord"] = { 93.8, 27.5, KRASARANG_WILDS },
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32336, {	-- The Handle
-									["qg"] = 68538,	-- The Monkey King
 									["sourceQuests"] = { 32335 },	-- The Greatest Prank
+									["qg"] = 68538,	-- The Monkey King
 									["coord"] = { 93.8, 27.5, KRASARANG_WILDS },
 									["minReputation"] = { FACTION_OPERATION_SHIELDWALL, REVERED+18500 },	-- maybe 18490
 									["races"] = ALLIANCE_ONLY,
 									["groups"] = { i(92561) },	-- Mallet Handle (QI!)
 								}),
 								q(32355, {	-- The Harmonic Mallet
-									["qg"] = 67940,	-- Admiral Taylor
 									["sourceQuests"] = { 32423 },	-- What Had To Be Done
+									["qg"] = 67940,	-- Admiral Taylor
 									["coord"] = { 94.5, 28.5, KRASARANG_WILDS },
 									["minReputation"] = { FACTION_OPERATION_SHIELDWALL, REVERED+14540 },	-- possibly 14530
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32338, {	-- The Harmonic Ointment
-									["qg"] = 68538,	-- The Monkey King
 									["sourceQuests"] = { 32335 },	-- The Greatest Prank
+									["qg"] = 68538,	-- The Monkey King
 									["coord"] = { 93.8, 27.5, KRASARANG_WILDS },
 									["minReputation"] = { FACTION_OPERATION_SHIELDWALL, REVERED+18500 },	-- maybe 18490
 									["races"] = ALLIANCE_ONLY,
 									["groups"] = { i(92562) },	-- Harmonic Ointment (QI!)
 								}),
 								q(32337, {	-- The Head
-									["qg"] = 68538,	-- The Monkey King
 									["sourceQuests"] = { 32335 },	-- The Greatest Prank
+									["qg"] = 68538,	-- The Monkey King
 									["coord"] = { 93.8, 27.5, KRASARANG_WILDS },
 									["minReputation"] = { FACTION_OPERATION_SHIELDWALL, REVERED+18500 },	-- maybe 18490
 									["races"] = ALLIANCE_ONLY,
@@ -1318,51 +1318,51 @@ root(ROOTS.Zones, {
 									},
 								}),
 								q(32331, {	-- The Kirin Tor
-									["qg"] = 67940,	-- Admiral Taylor
 									["sourceQuests"] = {
 										32383,	-- Bugging Out
 										32397,	-- He Won't Even Miss It
 									},
+									["qg"] = 67940,	-- Admiral Taylor
 									["coord"] = { 94.5, 28.4, KRASARANG_WILDS },
 									["minReputation"] = { FACTION_OPERATION_SHIELDWALL, HONORED+2850 },
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32370, {	-- The Kun-Lai Expedition
-									["qg"] = 67940,	-- Admiral Taylor
 									["sourceQuests"] = { 32316 },	-- Heart Of The Alliance
+									["qg"] = 67940,	-- Admiral Taylor
 									["coord"] = { 94.4, 28.5, KRASARANG_WILDS },
 									["minReputation"] = { FACTION_OPERATION_SHIELDWALL, REVERED+2700 },
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32321, {	-- The Monkey King
-									["qg"] = 68004,	-- Anduin Wrynn
 									["sourceQuests"] = { 32355 },	-- The Harmonic Mallet
+									["qg"] = 68004,	-- Anduin Wrynn
 									["coord"] = { 53.0, 46.4, KUN_LAI_SUMMIT },
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32157, {	-- The Only Good Goblin...
-									["qg"] = 67386,	-- Sky Admiral Rogers
 									["sourceQuests"] = { 32452 },	-- And Then There Were Goblins
+									["qg"] = 67386,	-- Sky Admiral Rogers
 									["coord"] = { 15.9, 78.5, KRASARANG_WILDS },
 									["races"] = ALLIANCE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32393, {	-- The Ruins of Korune
-									["qg"] = 67940,	-- Admiral Taylor
 									["sourceQuests"] = { 32371 },	-- Memory Wine
+									["qg"] = 67940,	-- Admiral Taylor
 									["coord"] = { 94.5, 28.4, KRASARANG_WILDS },
 									["minReputation"] = { FACTION_OPERATION_SHIELDWALL, REVERED+6650 },
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32333, {	-- The Second Riddle: Fellowship
-									["qg"] = 68003,	-- The Monkey King
 									["sourceQuests"] = { 32321 },	-- The Monkey King
+									["qg"] = 68003,	-- The Monkey King
 									["coord"] = { 48.8, 50.3, KUN_LAI_SUMMIT },
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32455, {	-- The Silence
-									["qg"] = 68987,	-- Anduin Wrynn
 									["sourceQuests"] = { 32401 },	-- Breath of Darkest Shadow
+									["qg"] = 68987,	-- Anduin Wrynn
 									["coord"] = { 55.9, 31.9, KUN_LAI_SUMMIT },
 									["races"] = ALLIANCE_ONLY,
 									["groups"] = {
@@ -1370,21 +1370,21 @@ root(ROOTS.Zones, {
 									},
 								}),
 								q(32243, {	-- The Source of Korune Power
-									["qg"] = 67716,	-- Hilda Hornswaggle
 									["sourceQuests"] = { 32193 },	-- To Mogujia
+									["qg"] = 67716,	-- Hilda Hornswaggle
 									["coord"] = { 59.8, 76.0, KUN_LAI_SUMMIT },
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32121, {	-- The Spirit Trap
-									["qg"] = 68275,	-- Hilda Hornswaggle
 									["sourceQuests"] = { 32109 },	-- Lion's Landing
+									["qg"] = 68275,	-- Hilda Hornswaggle
 									["coord"] = { 31.0, 27.9, 419 },	-- Ruins of Ogudei
 									["races"] = ALLIANCE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32334, {	-- The Third Riddle: Strength
-									["qg"] = 68003,	-- The Monkey King
 									["sourceQuests"] = { 32321 },	-- The Monkey King
+									["qg"] = 68003,	-- The Monkey King
 									["coord"] = { 48.8, 50.3, KUN_LAI_SUMMIT },
 									["races"] = ALLIANCE_ONLY,
 									["groups"] = {
@@ -1394,42 +1394,42 @@ root(ROOTS.Zones, {
 									},
 								}),
 								q(32381, {	-- To Catch a Spy
-									["qg"] = 68526,	-- Barkeep Townsley
 									["sourceQuests"] = { 32380 },	-- The Best Around
+									["qg"] = 68526,	-- Barkeep Townsley
 									["coord"] = { 67.4, 47.1, 500 },	-- Bizmo's Brawlpub
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32193, {	-- To Mogujia
-									["qg"] = 67940,	-- Admiral Taylor
 									["sourceQuests"] = { 32331 },	-- The Kirin Tor
+									["qg"] = 67940,	-- Admiral Taylor
 									["coord"] = { 94.4, 28.4, KRASARANG_WILDS },
 									["minReputation"] = { FACTION_OPERATION_SHIELDWALL, HONORED+6800 },
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32151, {	-- Tower Defense
-									["qg"] = 67631,	-- Marshal Troteman
 									["sourceQuests"] = { 32109 },	-- Lion's Landing
+									["qg"] = 67631,	-- Marshal Troteman
 									["coord"] = { 89.6, 33.1, KRASARANG_WILDS },
 									["races"] = ALLIANCE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32460, {	-- Tracking the Thieves
-									["qg"] = 68651,	-- Lady Jaina Proudmoore
-									["sourceQuests"] = { 32414 },	-- Darnassus Attacked?
-									["coord"] = { 39.0, 32.8, DARNASSUS },
 									["description"] = "If you leave before completing this quest, you may need to abandon it and pick it near the east gate of Darnassus rather than returning to where you originally picked it up.",
+									["sourceQuests"] = { 32414 },	-- Darnassus Attacked?
+									["qg"] = 68651,	-- Lady Jaina Proudmoore
+									["coord"] = { 39.0, 32.8, DARNASSUS },
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32158, {	-- Two Step Program
-									["qg"] = 68182,	-- Seraphine of the Winter
 									["sourceQuests"] = { 32109 },	-- Lion's Landing
+									["qg"] = 68182,	-- Seraphine of the Winter
 									["coord"] = { 16.1, 77.9, KRASARANG_WILDS },
 									["races"] = ALLIANCE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32144, {	-- Under Pressure
-									["qg"] = 67444,	-- Mishka
 									["sourceQuests"] = { 32109 },	-- Lion's Landing
+									["qg"] = 67444,	-- Mishka
 									["coord"] = { 16.0, 77.9, KRASARANG_WILDS },
 									["races"] = ALLIANCE_ONLY,
 									["isDaily"] = true,
@@ -1440,20 +1440,19 @@ root(ROOTS.Zones, {
 									},
 								}),
 								q(32418, {	-- Unfair Trade
-									["qg"] = 68687,	-- Vereesa Windrunner
 									["sourceQuests"] = { 32416 },	-- Jaina's Resolution
+									["qg"] = 68687,	-- Vereesa Windrunner
 									["coord"] = { 34.5, 48.7, 501 },
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32142, {	-- We Will Rock You
-									["qg"] = 67386,	-- Sky Admiral Rogers
 									["sourceQuests"] = { 32451 },	-- Send a Message
+									["qg"] = 67386,	-- Sky Admiral Rogers
 									["coord"] = { 15.9, 78.5, KRASARANG_WILDS },
 									["races"] = ALLIANCE_ONLY,
 									["isDaily"] = true,
 								}),
 								q(32423, {	-- What Had To Be Done
-									["qg"] = 68687,	-- Vareesa Windrunner
 									["sourceQuests"] = {
 										32420,	-- Cashing Out
 										32419,	-- Nowhere to Hide
@@ -1461,6 +1460,7 @@ root(ROOTS.Zones, {
 										32417,	-- Sewer Cleaning
 										32418,	-- Unfair Trade
 									},
+									["qg"] = 68687,	-- Vareesa Windrunner
 									["coord"] = { 34.6, 48.7, 501 },
 									["races"] = ALLIANCE_ONLY,
 								}),
@@ -1568,20 +1568,20 @@ root(ROOTS.Zones, {
 							faction(FACTION_NAT_PAGLE, {	-- Nat Pagle
 								n(QUESTS, {
 									q(31443, {	-- Flying Tiger Gourami
-										["provider"] = { "i", 86542 },	-- Flying Tiger Gourami
 										["description"] = "Found while fishing in any inland body of water on Pandaria.\n\n",
+										["provider"] = { "i", 86542 },	-- Flying Tiger Gourami
 										["requireSkill"] = FISHING,
 										["isDaily"] = true,
 									}),
 									q(31446, {	-- Mimic Octopus
-										["provider"] = { "i", 86545 },	-- Mimic Octopus
 										["description"] = "Found while fishing in any inland body of water on Pandaria.",
+										["provider"] = { "i", 86545 },	-- Mimic Octopus
 										["requireSkill"] = FISHING,
 										["isDaily"] = true,
 									}),
 									q(31444, {	-- Spinefish Alpha
-										["provider"] = { "i", 86544 },	-- Spinefish Alpha
 										["description"] = "Found while fishing in inland water near Sha-touched land.",
+										["provider"] = { "i", 86544 },	-- Spinefish Alpha
 										["requireSkill"] = FISHING,
 										["isDaily"] = true,
 									}),
@@ -1823,12 +1823,12 @@ root(ROOTS.Zones, {
 					-- same as above but with "Going West" for Horde, as opposed to "Going on the Offensive" for Alliance.  i picked up 30132, unsure what needs to happen to pick up 30464
 					-- ShadowBrooks -- NOTE FOR CRIEVE see changes for 30132 and 30464
 					q(30695, {	-- Ahead on the Way
-						["qg"] = 59138,	-- Koro Mistwalker
 						["sourceQuests"] = {
 							30270,	-- Blinding the Riverblades
 							30268,	-- The Murksweats
 							30694,	-- Tread Lightly
 						},
+						["qg"] = 59138,	-- Koro Mistwalker
 						["coord"] = { 41.8, 29.6, KRASARANG_WILDS },
 						["groups"] = {
 							i(81552),	-- Red Crane Sword
@@ -1842,8 +1842,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30089, {	-- Apply Directly to the Forehead
-						["qg"] = 56115,	-- Ken-Ken
 						["sourceQuests"] = { 30088 },	-- Why So Serious?
+						["qg"] = 56115,	-- Ken-Ken
 						["coord"] = { 80.1, 0.98, KRASARANG_WILDS },
 						["groups"] = {
 							i(79021),	-- Ken-Ken's Mask (QI!)
@@ -1859,11 +1859,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30672, {	-- Balance
-						["qg"] = 60139,	-- Wise Ana Wu
 						["sourceQuests"] = {
 							30691,	-- Misery
 							30671,	-- Wisdom Has A Price
 						},
+						["qg"] = 60139,	-- Wise Ana Wu
 						["coord"] = { 47.6, 78.2, KRASARANG_WILDS },
 						["groups"] = {
 							i(81542),	-- Fishmonger's Blade
@@ -1879,41 +1879,41 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30674, {	-- Balance Without Violence
+						["description"] = "Automatically given you while moving through Nayeli Lagoon.",
 						["sourceQuests"] = {
 							30691,	-- Misery
 							30671,	-- Wisdom Has A Price
 						},
 						["coord"] = { 46.9, 84.8, KRASARANG_WILDS },
-						["description"] = "Automatically given you while moving through Nayeli Lagoon.",
 					}),
 					q(30384, {	-- Blind Them! (A)
-						["qg"] = 58735,	-- Lyalia
 						["sourceQuests"] = { 30274 },	-- The Arcanic Oubliette
+						["qg"] = 58735,	-- Lyalia
 						["coord"] = { 70.6, 28.5, KRASARANG_WILDS },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(30124, {	-- Blind Them! (H)
-						["qg"] = 58114,	-- Kor Bloodtust
 						["sourceQuests"] = { 30179 },	-- Poisoned!
+						["qg"] = 58114,	-- Kor Bloodtust
 						["coord"] = { 62.6, 20.1, KRASARANG_WILDS },
 						["races"] = HORDE_ONLY,
 					}),
 					q(30270, {	-- Blinding the Riverblades
-						["qg"] = 59138,	-- Koro Mistwalker
 						["sourceQuests"] = { 30269 },	-- Unsafe Passage
+						["qg"] = 59138,	-- Koro Mistwalker
 						["coord"] = { 41.8, 29.6, KRASARANG_WILDS },
 					}),
 					q(30084, {	-- Borderlands
-						["qg"] = 57744,	-- Mei Barrelbottom
 						["sourceQuests"] = { 30091 },	-- Tears of Pandaria
+						["qg"] = 57744,	-- Mei Barrelbottom
 						["coord"] = { 79.7, 1.56, KRASARANG_WILDS },
 						["groups"] = {
 							i(78928),	-- Flame of Zhu's Watch (QI!)
 						},
 					}),
 					q(30668, {	-- Build Your Own Raft
-						["qg"] = 60173,	-- Jay Cloudfall
 						["sourceQuests"] = { 30666 },	-- Sudden, Unexpected Crocolist Aggression
+						["qg"] = 60173,	-- Jay Cloudfall
 						["coord"] = { 51.6, 76.8, KRASARANG_WILDS },
 						["groups"] = {
 							o(211379, {	-- Spare Plank
@@ -1940,8 +1940,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30082, {	-- Cheer Up, Yi-Mo
-						["qg"] = 58376,	-- Yi-Mo Longbrow
 						["sourceQuests"] = { 30080 },	-- Finding Yi-Mo
+						["qg"] = 58376,	-- Yi-Mo Longbrow
 						["coord"] = { 85.5, 0.74, KRASARANG_WILDS },
 						["groups"] = {
 							i(81440),	-- Nayeli Hood
@@ -1963,8 +1963,8 @@ root(ROOTS.Zones, {
 						["u"] = REMOVED_FROM_GAME,	-- triggers when turning in the version above
 					}),
 					q(31262, {	-- Crane Mastery: Needlebeak
-						["qg"] = 58779,	-- Daggle Bombstrider
 						["sourceQuests"] = { 30352 },	-- Crane Mastery
+						["qg"] = 58779,	-- Daggle Bombstrider
 						["coord"] = { 67.6, 25.6, KRASARANG_WILDS },
 						["groups"] = {
 							i(85854),	-- The Needlebeak (QI!)
@@ -1984,11 +1984,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 79.7, 1.57, KRASARANG_WILDS },
 					}),
 					q(30174, {	-- For Family
-						["qg"] = 58607,	-- Sunwalker Dezco
 						["sourceQuests"] = {
 							30164,	-- The Stoneplow Convoy
 							30175,	-- The Mantid (H)
 						},
+						["qg"] = 58607,	-- Sunwalker Dezco
 						["coord"] = { 15.3, 36.2, KRASARANG_WILDS },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -2004,14 +2004,14 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30163, {	-- For the Tribe
-						["qg"] = 58114,	-- Kor Bloodtusk
 						["sourceQuests"] = { 30132, 30464 },	-- Going West (two versions)
+						["qg"] = 58114,	-- Kor Bloodtusk
 						["coord"] = { 29.0, 48.1, KRASARANG_WILDS },
 						["races"] = HORDE_ONLY,
 					}),
 					q(30363, {	-- Going on the Offensive
-						["qg"] = 58735,	-- Lyalia
 						["sourceQuests"] = { 30348 },	-- Immortality?
+						["qg"] = 58735,	-- Lyalia
 						["coord"] = { 70.6, 28.5, KRASARANG_WILDS },
 						["races"] = ALLIANCE_ONLY,
 					--	does this also require "Lotus Tea" (30351) and "Threats from Dojan" (30349)?
@@ -2026,10 +2026,10 @@ root(ROOTS.Zones, {
 					--	does this have different SQs than the previous version?
 					}),
 					q(30132, {	-- Going West
-						["qg"] = 58113,	-- Sunwalker Dezco
-						["sourceQuests"] = { 30131 },	-- Life
-						["coord"] = { 63.1, 20.7, KRASARANG_WILDS },
 						["description"] = "This version is available if you have not completed the Temple of the Red Crane questline.",
+						["sourceQuests"] = { 30131 },	-- Life
+						["qg"] = 58113,	-- Sunwalker Dezco
+						["coord"] = { 63.1, 20.7, KRASARANG_WILDS },
 						["races"] = HORDE_ONLY,
 						["lockCriteria"] = { 1, "questID", 30273 },	-- In the House of the Red Crane
 						["groups"] = {
@@ -2037,20 +2037,20 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30464, {	-- Going West
-						["qg"] = 58113,	-- Sunwalker Dezco
 						["sourceQuests"] = {
 							30131,	-- Life
 							30273,	-- In the House of the Red Crane
 						},
+						["qg"] = 58113,	-- Sunwalker Dezco
 						["coord"] = { 63.1, 20.7, KRASARANG_WILDS },
 						["races"] = HORDE_ONLY,
 					}),
 					q(30130, {	-- Herbal Remedies
-						["qg"] = 58113,	-- Sunwalker Dezco
 						["sourceQuests"] = {
 							30123,	-- Skitterer Skew
 							30124,	-- Blind Them!
 						},
+						["qg"] = 58113,	-- Sunwalker Dezco
 						["coord"] = { 62.6, 20.0, KRASARANG_WILDS },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -2067,7 +2067,6 @@ root(ROOTS.Zones, {
 						["lvl"] = 81,
 					})),
 					q(30376, {	-- Hope Springs Eternal
-						["qg"] = 59719,	-- Chi-Ji
 						["sourceQuests"] = {
 							30174,	-- For Family
 							30273,	-- In the House of the Red Crane
@@ -2077,26 +2076,27 @@ root(ROOTS.Zones, {
 						--	29581,	-- The Golden Dream
 						--	29875,	-- Kang Bramblestaff (optional quest leading to Krasarang content, but doesn't function as a breadcrumb and can still be picked up after finishing the zone)
 						},
+						["qg"] = 59719,	-- Chi-Ji
 						["coord"] = { 41.6, 46.3, KRASARANG_WILDS },
 						["isBreadcrumb"] = true,
 					}),
 					q(30348, {	-- Immortality?
-						["qg"] = 58745,	-- Lorekeeper Vaeldrin
 						["sourceQuests"] = {
 							30347,	-- The Pools of Youth
 							30349,	-- Threat from Dojan (A)
 							30351,	-- Lotus Tea (A)
 						},
+						["qg"] = 58745,	-- Lorekeeper Vaeldrin
 						["coord"] = { 70.7, 28.4, KRASARANG_WILDS },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(30273, {	-- In the House of the Red Crane
-						["qg"] = 59608,	-- Anduin Wrynn
 						["sourceQuests"] = {
 							30695,	-- Ahead on the Way
 							30271,	-- Sha Can Awe
 							30272,	-- Striking the Rain
 						},
+						["qg"] = 59608,	-- Anduin Wrynn
 					--	Anduin seems to follow you constantly even if you abandon this, so coords do not appear to be unnecessary
 						["groups"] = {
 							i(81493),	-- Dojani Girdle
@@ -2111,8 +2111,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30178, {	-- Into the Wilds
-						["qg"] = 57744,	-- Mei Barrelbottom
 						["sourceQuests"] = { 30090 },	-- Zhu's Despair
+						["qg"] = 57744,	-- Mei Barrelbottom
 						["coord"] = { 79.8, 1.57, KRASARANG_WILDS },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
@@ -2125,8 +2125,8 @@ root(ROOTS.Zones, {
 					--	does this have different SQs than the previous version?
 					}),
 					q(30133, {	-- Into the Wilds
-						["qg"] = 57744,	-- Mei Barrelbottom
 						["sourceQuests"] = { 30090 },	-- Zhu's Despair
+						["qg"] = 57744,	-- Mei Barrelbottom
 						["coord"] = { 79.8, 1.57, KRASARANG_WILDS },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
@@ -2142,21 +2142,21 @@ root(ROOTS.Zones, {
 					--	does this have different SQs than the previous version?
 					}),
 					q(30131, {	-- Life
-						["qg"] = 58113,	-- Sunwalker Dezco
 						["sourceQuests"] = {
 							30128,	-- The Pools of Youth
 							30130,	-- Herbal Remedies
 						},
+						["qg"] = 58113,	-- Sunwalker Dezco
 						["coord"] = { 62.6, 19.9, KRASARANG_WILDS },
 						["races"] = HORDE_ONLY,
 					}),
 					q(30351, {	-- Lotus Tea
-						["qg"] = 56114,	-- Kang Bramblestaff
 						["sourceQuests"] = {
 							30384,	-- Blind Them!
 							30350,	-- Squirmy Delight
 							30344,	-- The Lost Dynasty
 						},
+						["qg"] = 56114,	-- Kang Bramblestaff
 						["coord"] = { 70.6, 28.5, KRASARANG_WILDS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -2165,11 +2165,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30081, {	-- Materia Medica
-						["qg"] = 56115,	-- Ken-ken
 						["sourceQuests"] = {
 							30079,	-- What's Eating Zhu's Watch?
 							30082,	-- Cheer Up, Yi-Mo
 						},
+						["qg"] = 56115,	-- Ken-ken
 						["coord"] = { 80.2, 1.00, KRASARANG_WILDS },
 						["groups"] = {
 							o_repeated({
@@ -2184,13 +2184,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30691, {	-- Misery
-						["qg"] = 60139,	-- Wise Ana Wu
 						["sourceQuests"] = { 30669 },	-- The Lorewalker on the Lake
+						["qg"] = 60139,	-- Wise Ana Wu
 						["coord"] = { 47.6, 78.1, KRASARANG_WILDS },
 					}),
 					q(30354, {	-- No Sister Left Behind
-						["qg"] = 58821,	-- Lyalia
 						["sourceQuests"] = { 30363, 30465 },	-- Going on the Offensive
+						["qg"] = 58821,	-- Lyalia
 						["coord"] = { 24.7, 29.9, KRASARANG_WILDS },
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -2204,10 +2204,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30179, {	-- Poisoned!
-						["qg"] = 58160,	-- Chizen Dawnchaser
 						["sourceQuests"] = {
 							30121,	-- Search Party
 						},
+						["qg"] = 58160,	-- Chizen Dawnchaser
 						["coord"] = { 60.4, 25.4, KRASARANG_WILDS },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -2239,8 +2239,8 @@ root(ROOTS.Zones, {
 						["u"] = REMOVED_FROM_GAME,	-- triggers when turning in the version above
 					}),
 					q(31260, {	-- Profit Mastery: Chasheen
-						["qg"] = 58779,	-- Daggle Bombstrider
 						["sourceQuests"] = { 30353 },	-- Profit Mastery
+						["qg"] = 58779,	-- Daggle Bombstrider
 						["coord"] = { 67.6, 25.6, KRASARANG_WILDS },
 						["groups"] = {
 							i(85774),	-- Ancient Tiger's Blood (QI!)
@@ -2254,8 +2254,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30355, {	-- Re-Reclaim (A)
-						["qg"] = 56114,	-- Kang Bramblestaff
 						["sourceQuests"] = { 30363, 30465 },	-- Going on the Offensive
+						["qg"] = 56114,	-- Kang Bramblestaff
 						["coord"] = { 25.2, 30.5, KRASARANG_WILDS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -2271,8 +2271,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30230, {	-- Re-Reclaim (H)
-						["qg"] = 56112,	-- Kang Bramblestaff
 						["sourceQuests"] = { 30132, 30464 },	-- Going West (two versions)
+						["qg"] = 56112,	-- Kang Bramblestaff
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							o_repeated({
@@ -2302,8 +2302,8 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 					}),
 					q(30083, {	-- Securing the Province
-						["qg"] = 57744,	-- Mei Barrelbottom
 						["sourceQuests"] = { 30091 },	-- Tears of Pandaria
+						["qg"] = 57744,	-- Mei Barrelbottom
 						["coord"] = { 79.7, 1.56, KRASARANG_WILDS },
 						["groups"] = {
 							i(81512),	-- Sha-Haunted Locket
@@ -2314,27 +2314,27 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30356, {	-- Sever Their Supply Line
-						["qg"] = 58821,	-- Lyalia
 						["sourceQuests"] = { 30363, 30465 },	-- Going on the Offensive
+						["qg"] = 58821,	-- Lyalia
 						["coord"] = { 24.7, 29.9, KRASARANG_WILDS },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(30271, {	-- Sha Can Awe
-						["qgs"] = {
-							59188,	-- Anduin Wrynn
-							59189,	-- Anduin Wrynn
-							59608,	-- Anduin Wrynn
-						},
 						["sourceQuests"] = {
 							30270,	-- Blinding the Riverblades
 							30268,	-- The Murksweats
 							30694,	-- Tread Lightly
 						},
+						["qgs"] = {
+							59188,	-- Anduin Wrynn
+							59189,	-- Anduin Wrynn
+							59608,	-- Anduin Wrynn
+						},
 						["coord"] = { 41.8, 29.6, KRASARANG_WILDS },
 					}),
 					q(30123, {	-- Skitterer Stew
-						["qg"] = 56112,	-- Kang Bramblestaff
 						["sourceQuests"] = { 30179 },	-- Poisoned!
+						["qg"] = 56112,	-- Kang Bramblestaff
 						["coord"] = { 62.7, 20.3, KRASARANG_WILDS },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -2342,8 +2342,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30350, {	-- Squirmy Delight
-						["qg"] = 56114,	-- Kang Bramblestaff
 						["sourceQuests"] = { 30274 },	-- The Arcanic Oubliette
+						["qg"] = 56114,	-- Kang Bramblestaff
 						["coord"] = { 70.6, 28.5, KRASARANG_WILDS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -2352,12 +2352,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30272, {	-- Striking the Rain
-						["qg"] = 59138,	-- Koro Mistwalker
 						["sourceQuests"] = {
 							30270,	-- Blinding the Riverblades
 							30268,	-- The Murksweats
 							30694,	-- Tread Lightly
 						},
+						["qg"] = 59138,	-- Koro Mistwalker
 						["coord"] = { 41.8, 29.6, KRASARANG_WILDS },
 					}),
 					q(30666, {	-- Sudden, Unexpected Crocolisk Aggression
@@ -2365,8 +2365,8 @@ root(ROOTS.Zones, {
 						["coord"] = { 51.6, 76.8, KRASARANG_WILDS },
 					}),
 					q(30091, {	-- Tears of Pandaria
-						["qg"] = 57744,	-- Mei Barrelbottom
 						["sourceQuests"] = { 30082 },	-- Cheer Up, Yi-Mo
+						["qg"] = 57744,	-- Mei Barrelbottom
 						["coord"] = { 79.7, 1.57, KRASARANG_WILDS },
 					}),
 					q(30274, {	-- The Arcanic Oubliette
@@ -2380,28 +2380,28 @@ root(ROOTS.Zones, {
 						["lvl"] = 90,	-- 35
 					}),
 					q(30229, {	-- The Greater Danger
-						["qg"] = 58114,	-- Kor Bloodtusk
 						["sourceQuests"] = { 30132, 30464 },	-- Going West (two versions)
+						["qg"] = 58114,	-- Kor Bloodtusk
 						["coord"] = { 29.0, 48.1, KRASARANG_WILDS },
 						["races"] = HORDE_ONLY,
 					}),
 					q(30359, {	-- The Lord Reclaimer
-						["qg"] = 58745,	-- Lorekeeper Vaeldrin
 						["sourceQuests"] = {
 							30361,	-- The Mantid
 							30357,	-- The Stoneplow Convoy
 						},
+						["qg"] = 58745,	-- Lorekeeper Vaeldrin
 						["coord"] = { 14.3, 35.7, KRASARANG_WILDS },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(30669, {	-- The Lorewalker on the Lake
-						["qg"] = 60173,	-- Jay Cloudfall
 						["sourceQuests"] = { 30668 },	-- Build Your Own Raft
+						["qg"] = 60173,	-- Jay Cloudfall
 						["coord"] = { 51.6, 76.8, KRASARANG_WILDS },
 					}),
 					q(30344, {	-- The Lost Dynasty
-						["qg"] = 58745,	-- Lorekeeper Vaeldrin
 						["sourceQuests"] = { 30274 },	-- The Arcanic Oubliette
+						["qg"] = 58745,	-- Lorekeeper Vaeldrin
 						["coord"] = { 50.9, 31.7, KRASARANG_WILDS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -2414,12 +2414,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30361, {	-- The Mantid (A)
-						["qg"] = 58630,	-- Ambassador Han
 						["sourceQuests"] = {
 							30354,	-- No Sister Left Behind
 							30355,	-- Re-Reclaim
 							30356,	-- Sever Their Supply Line
 						},
+						["qg"] = 58630,	-- Ambassador Han
 						["coord"] = { 24.9, 30.2, KRASARANG_WILDS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -2435,12 +2435,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30175, {	-- The Mantid (H)
-						["qg"] = 58630,	-- Ambassador Han
 						["sourceQuests"] = {
 							30230,	-- Re-Reclaim
 							30229,	-- The Greater Danger
 							30163,	-- For the Tribe
 						},
+						["qg"] = 58630,	-- Ambassador Han
 						["coord"] = { 29.3, 48.4, KRASARANG_WILDS },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -2456,11 +2456,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30129, {	-- The Mogu Agenda
-						["qg"] = 56112,	-- Kang Bramblestaff
 						["sourceQuests"] = {
 							30123,	-- Skitterer Skew
 							30124,	-- Blind Them!
 						},
+						["qg"] = 56112,	-- Kang Bramblestaff
 						["coord"] = { 62.7, 20.1, KRASARANG_WILDS },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -2468,8 +2468,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30268, {	-- The Murksweats
-						["qg"] = 58609,	-- Anduin Wrynn
 						["sourceQuests"] = { 30269 },	-- Unsafe Passage
+						["qg"] = 58609,	-- Anduin Wrynn
 						["coord"] = { 41.6, 30.5, KRASARANG_WILDS },
 						["groups"] = {
 							i(79199),	-- Murkscale Head (QI!)
@@ -2481,8 +2481,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30347, {	-- The Pools of Youth (A)
-						["qg"] = 58745,	-- Lorekeeper Vaeldrin
 						["sourceQuests"] = { 30346 },	-- Where are the Pools
+						["qg"] = 58745,	-- Lorekeeper Vaeldrin
 						["coord"] = { 70.6, 28.4, KRASARANG_WILDS },	-- automatically offered, but this is where it's picked up if you abandon it
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -2494,8 +2494,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30128, {	-- The Pools of Youth (H)
-						["qg"] = 58206,	-- Kang Bramblestaff
 						["sourceQuests"] = { 30129 },	-- The Mogu Agenda
+						["qg"] = 58206,	-- Kang Bramblestaff
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							o(210229, {	-- Water of Youth
@@ -2509,12 +2509,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30357, {	-- The Stoneplow Convoy (A)
-						["qg"] = 58745,	-- Lorekeeper Vaeldrin
 						["sourceQuests"] = {
 							30354,	-- No Sister Left Behind
 							30355,	-- Re-Reclaim
 							30356,	-- Sever Their Supply Line
 						},
+						["qg"] = 58745,	-- Lorekeeper Vaeldrin
 						["coord"] = { 14.3, 35.7, KRASARANG_WILDS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -2526,12 +2526,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30164, {	-- The Stoneplow Convoy (H)
-						["qg"] = 58607,	-- Sunwalker Dezco
 						["sourceQuests"] = {
 							30163,	-- For the Tribe
 							30230,	-- Re-Reclaim
 							30229,	-- The Greater Danger
 						},
+						["qg"] = 58607,	-- Sunwalker Dezco
 						["coord"] = { 15.2, 36.1, KRASARANG_WILDS },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
@@ -2539,8 +2539,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30445, {	-- The Waters of Youth
-						["qg"] = 58745,	-- Lorekeeper Vaeldrin
 						["sourceQuests"] = { 30359 },	-- The Lord Reclaimer
+						["qg"] = 58745,	-- Lorekeeper Vaeldrin
 						["coord"] = { 24.8, 29.8, KRASARANG_WILDS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -2567,12 +2567,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30349, {	-- Threat from Dojan (A)
-						["qg"] = 58735,	-- Lyalia
 						["sourceQuests"] = {
 							30384,	-- Blind Them!
 							30350,	-- Squirmy Delight
 							30344,	-- The Lost Dynasty
 						},
+						["qg"] = 58735,	-- Lyalia
 						["coord"] = { 70.6, 28.5, KRASARANG_WILDS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
@@ -2584,17 +2584,17 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30127, {	-- Threat from Dojan (H)
-						["qg"] = 58114,	-- Kor Bloodtusk
 						["sourceQuests"] = {
 							30123,	-- Skitterer Skew
 							30124,	-- Blind Them!
 						},
+						["qg"] = 58114,	-- Kor Bloodtusk
 						["coord"] = { 62.6, 20.0, KRASARANG_WILDS },
 						["races"] = HORDE_ONLY,
 					}),
 					q(30694, {	-- Tread Lightly
-						["qg"] = 59138,	-- Koro Mistwalker
 						["sourceQuests"] = { 30269 },	-- Unsafe Passage
+						["qg"] = 59138,	-- Koro Mistwalker
 						["coord"] = { 41.8, 29.6, KRASARANG_WILDS },
 						["groups"] = {
 							i(80828),	-- "Scrutiny" (QI!)
@@ -2610,7 +2610,6 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30269, {	-- Unsafe Passage
-						["qg"] = 58547,	-- Koro Mistwalker
 						["sourceQuests"] = {
 						--	unclear what the difference is in these.  the quest text is slightly different (one version for each says "I suspect they'll know something about what happened here" and the other says "They should be told of what happened here," and one version for each provides Zhu's Watch Supplies, while the other doesn't.  possibly there are different versions if you abandon/re-pick up?  completing one completed all four of these, so unless there's an issue with one version not doing the same then it should be good for all users.
 							30178,	-- Into the Wilds (A)
@@ -2618,6 +2617,7 @@ root(ROOTS.Zones, {
 							30461,	-- Into the Wilds (H)
 							30133,	-- Into the Wilds (H)
 						},
+						["qg"] = 58547,	-- Koro Mistwalker
 						["coord"] = { 45.6, 39.5, KRASARANG_WILDS },
 					}),
 					warchiefscommand(q(49540, {	-- Warchief's Command: Krasarang Wilds!
@@ -2626,7 +2626,6 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 					})),
 					q(30360, {	-- Warn Stoneplow (A)
-						["qg"] = 58821,	-- Lyalia
 						["sourceQuests"] = {
 							30174,	-- For Family
 							30273,	-- In the House of the Red Crane
@@ -2637,12 +2636,12 @@ root(ROOTS.Zones, {
 						--	29581,	-- The Golden Dream
 						--	29875,	-- Kang Bramblestaff (optional quest leading to Krasarang content, but doesn't function as a breadcrumb and can still be picked up after finishing the zone)
 						},
+						["qg"] = 58821,	-- Lyalia
 						["coord"] = { 24.7, 29.9, KRASARANG_WILDS },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(30241, {	-- Warn Stoneplow (H)
-						["qg"] = 58607,	-- Sunwalker Dezco
 						["sourceQuests"] = {
 							30174,	-- For Family
 							30273,	-- In the House of the Red Crane
@@ -2652,12 +2651,12 @@ root(ROOTS.Zones, {
 						--	29581,	-- The Golden Dream
 						--	29875,	-- Kang Bramblestaff (optional quest leading to Krasarang content, but doesn't function as a breadcrumb and can still be picked up after finishing the zone)
 						},
+						["qg"] = 58607,	-- Sunwalker Dezco
 						["coord"] = { 29.1, 48.1, KRASARANG_WILDS },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
 					q(30079, {	-- What's Eating Zhu's Watch?
-						["qg"] = 56115,	-- Ken-Ken
 						["sourceQuests"] = {
 							29873,	-- Ken-Ken
 							-- #if AFTER 7.3.5
@@ -2665,21 +2664,22 @@ root(ROOTS.Zones, {
 							49558,	-- Hero's Call: Krasarang Wilds!
 							-- #endif
 						},
+						["qg"] = 56115,	-- Ken-Ken
 						["coord"] = { 80.2, 1.02, KRASARANG_WILDS },
 					}),
 					q(30346, {	-- Where are the Pools
-						["qg"] = 58745,	-- Lorekeeper Vaeldrin
 						["sourceQuests"] = {
 							30384,	-- Blind Them!
 							30350,	-- Squirmy Delight
 							30344,	-- The Lost Dynasty
 						},
+						["qg"] = 58745,	-- Lorekeeper Vaeldrin
 						["coord"] = { 70.6, 28.5, KRASARANG_WILDS },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(30088, {	-- Why So Serious?
-						["qg"] = 56115,	-- Ken-Ken
 						["sourceQuests"] = { 30081 },	-- Materia Medica
+						["qg"] = 56115,	-- Ken-Ken
 						["coord"] = { 80.2, 0.94, KRASARANG_WILDS },
 						["groups"] = {
 							i(78941),	-- Huge Panther Fang (QI!)
@@ -2698,8 +2698,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30671, {	-- Wisdom Has A Price
-						["qg"] = 60139,	-- Wise Ana Wu
 						["sourceQuests"] = { 30669 },	-- The Lorewalker on the Lake
+						["qg"] = 60139,	-- Wise Ana Wu
 						["coord"] = { 47.6, 78.1, KRASARANG_WILDS },
 						["groups"] = {
 							i(80810),	-- Shark Fillet (QI!)
@@ -2715,8 +2715,8 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(30090, {	-- Zhu's Despair
-						["qg"] = 56115,	-- Ken-Ken
 						["sourceQuests"] = { 30089 },	-- Apply Directly to the Forehead
+						["qg"] = 56115,	-- Ken-Ken
 						["coord"] = { 80.2, 1.00, KRASARANG_WILDS },
 						["groups"] = {
 							i(79057),	-- Ken'Ken's Mask (QI!)
@@ -2769,16 +2769,16 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 					}),
 					q(36882, {	-- The Great Angler Returns
-						["qg"] = 63721,	-- Nat Pagle
 						["sourceQuests"] = { 36608 },	-- Finding Nat Pagle
+						["qg"] = 63721,	-- Nat Pagle
 						["coord"] = { 68.4, 43.5, KRASARANG_WILDS },
 						["timeline"] = { ADDED_6_0_3_LAUNCH },
 						["requireSkill"] = FISHING,
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(36609, {	-- The Great Angler Returns
-						["qg"] = 63721,	-- Nat Pagle
 						["sourceQuests"] = { 36608 },	-- Finding Nat Pagle
+						["qg"] = 63721,	-- Nat Pagle
 						["coord"] = { 68.4, 43.5, KRASARANG_WILDS },
 						["timeline"] = { ADDED_6_0_3_LAUNCH },
 						["requireSkill"] = FISHING,
@@ -3031,6 +3031,9 @@ root(ROOTS.Zones, {
 					o(215765, {	-- Waiting for the Turtle
 						["coord"] = { 72.2, 31.1, KRASARANG_WILDS },
 					}),
+				}),
+				n(ZONE_DROPS, {
+					i(74844),	-- Red Blossom Leek
 				}),
 			},
 		}),

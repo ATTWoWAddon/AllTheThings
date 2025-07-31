@@ -103,25 +103,25 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(QUESTS, {
 				q(3941, {	-- A Gnome's Assistance
-					["qg"] = 8737,	-- Linken
 					["sourceQuest"] = 3914,	-- Linken's Sword
+					["qg"] = 8737,	-- Linken
 					["coord"] = { 44.6, 8.2, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 47,
 				}),
 				q(3913, {	-- A Grave Situation
+					["sourceQuest"] = 3912,	-- Meet at the Grave
 					["providers"] = {
 						{ "n", 9299 },	-- Gaeriyan
 						{ "i", 11136 },	-- Linken's Tempered Sword
 					},
-					["sourceQuest"] = 3912,	-- Meet at the Grave
 					["coord"] = { 54.0, 23.4, TANARIS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 47,
 				}),
 				q(24735, {	-- A Little Help From My Friends
-					["qg"] = 9999,	-- Ringo
 					["sourceQuest"] = 24734,	-- Lost!
+					["qg"] = 9999,	-- Ringo
 					["coord"] = { 52.0, 49.8, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -137,8 +137,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(4491, {	-- A Little Help From My Friends
-					["qg"] = 9999,	-- Ringo
 					["sourceQuest"] = 4492,	-- Lost!
+					["qg"] = 9999,	-- Ringo
 					["coord"] = { 52, 50, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
@@ -155,8 +155,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24709, {	-- A Tale of Two Shovels
-					["qg"] = 9272,	-- Spark Nilminer
 					["sourceQuest"] = 24708,	-- The Fossil-Finder 3000
+					["qg"] = 9272,	-- Spark Nilminer
 					["coord"] = { 31.9, 50.3, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -176,8 +176,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(45055, {	-- A Taste of Their Own Medicine
-					["qg"] = 115923,	-- Ko'Zan
 					["sourceQuest"] = 45051,	-- Reverse Blacksmithing
+					["qg"] = 115923,	-- Ko'Zan
 					["coord"] = { 43.6, 41.4, UNGORO_CRATER },
 					["timeline"] = { ADDED_7_2_0 },
 					["requireSkill"] = BLACKSMITHING,
@@ -189,11 +189,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(4142, {	-- A Visit to Gregan
+					["sourceQuest"] = 4141,	-- Muigin and Larion
 					["providers"] = {
 						{ "n", 9119 },	-- Muigin
 						{ "i", 11316 },	-- Bloodpetal
 					},
-					["sourceQuest"] = 4141,	-- Muigin and Larion
 					["coord"] = { 42.9, 9.6, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { FERALAS },
@@ -201,8 +201,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 47,
 				}),
 				q(24855, {	-- Aberrant Flora
-					["qg"] = 38263,	-- Ithis Moonwarden
 					["sourceQuest"] = 24687,	-- Bouquets of Death
+					["qg"] = 38263,	-- Ithis Moonwarden
 					["coord"] = { 76.4, 48.3, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -225,8 +225,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24698, {	-- Adventures in Archaeology
-					["qg"] = 38270,	-- Nolen Tacker
 					["sourceQuest"] = 24693,	-- Mossy Pile
+					["qg"] = 38270,	-- Nolen Tacker
 					["coord"] = { 55.0, 60.5, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
@@ -287,8 +287,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24690, {	-- Blazerunner
-					["qg"] = 9270,	-- Williden Marshal
 					["sourceQuest"] = 24740,	-- Volcanic Activity
+					["qg"] = 9270,	-- Williden Marshal
 					["coord"] = { 55.1, 62.2, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -307,8 +307,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(9052, {	-- Bloodpetal Poison
-					["qg"] = 9619,	-- Torwa Pathfinder
 					["sourceQuest"] = 9063,	-- Torwa Pathfinder
+					["qg"] = 9619,	-- Torwa Pathfinder
 					["coord"] = { 71.6, 76.0, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { DRUID },
@@ -332,8 +332,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				q(4144, {	-- Bloodpetal Sprouts
-					["qg"] = 9119,	-- Muigin
 					["sourceQuest"] = 4143,	-- Haze of Evil
+					["qg"] = 9119,	-- Muigin
 					["coord"] = { 42.9, 9.6, UNGORO_CRATER },
 					["timeline"] = {
 						-- #if SEASON_OF_DISCOVERY
@@ -354,12 +354,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(4148, {	-- Bloodpetal Zapper
+					["sourceQuest"] = 4146,	-- Zapper Fuel
 					["providers"] = {
 						{ "n",   9118 },	-- Larion
 						{ "i",  11315 },	-- Bloodpetal Sprout
 						{ "o", 164958 },	-- Bloodpetal Sprout
 					},
-					["sourceQuest"] = 4146,	-- Zapper Fuel
 					["coord"] = { 45.6, 8.6, UNGORO_CRATER },
 					["timeline"] = {
 						-- #if SEASON_OF_DISCOVERY
@@ -377,8 +377,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24687, {	-- Bouquets of Death
-					["qg"] = 38263,	-- Ithis Moonwarden
 					["sourceQuest"] = 24689,	-- Flowing to the North
+					["qg"] = 38263,	-- Ithis Moonwarden
 					["coord"] = { 76.4, 48.3, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -388,14 +388,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24686, {	-- Carried on the Waves
-					["qg"] = 38274,	-- Garl Stormclaw
 					["sourceQuest"] = 24719,	-- Claws of White
+					["qg"] = 38274,	-- Garl Stormclaw
 					["coord"] = { 70.8, 76.6, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(24714, {	-- Chasing A-Me 01
-					["qg"] = 9618,	-- Karna Remtravel
 					["sourceQuest"] = 24701,	-- Marshal's Refusew
+					["qg"] = 9618,	-- Karna Remtravel
 					["coord"] = { 43.4, 40.9, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
@@ -406,23 +406,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 48,
 				}),
 				q(4244, {	-- Chasing A-Me 01 (2/3)
-					["qg"] = 9623,	-- A-Me 01
 					["sourceQuest"] = 4243,	-- Chasing A-Me 01 (1/3)
+					["qg"] = 9623,	-- A-Me 01
 					["coord"] = { 67.6, 16.8, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 10561, 1 }},	-- Mithril Casing
 					["lvl"] = 48,
 				}),
 				q(4245, {	-- Chasing A-Me 01 (3/3)
-					["qg"] = 9623,	-- A-Me 01
 					["sourceQuest"] = 4244,	-- Chasing A-Me 01 (2/3)
+					["qg"] = 9623,	-- A-Me 01
 					["coord"] = { 67.6, 16.8, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 48,
 				}),
 				q(24719, {	-- Claws of White
-					["qg"] = 38274,	-- Garl Stormclaw
 					["sourceQuest"] = 24854,	-- Finding Stormclaw
+					["qg"] = 38274,	-- Garl Stormclaw
 					["coord"] = { 70.8, 76.6, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -450,12 +450,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24725, {	-- Crystal Charge
-					["provider"] = { "o", 164955 },	-- Northern Crystal Pylon
 					["sourceQuests"] = {
 						24721,	-- The Eastern Pylon
 						24722,	-- The Northern Pylon
 						24723,	-- The Western Pylon
 					},
+					["provider"] = { "o", 164955 },	-- Northern Crystal Pylon
 					["coord"] = { 56.5, 12.4, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["cost"] = {
@@ -468,8 +468,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(4385, {	-- Crystal Charge
-					["provider"] = { "o", 164955 },	-- Northern Crystal Pylon
 					["sourceQuest"] = 4321,	-- Making Sense of It
+					["provider"] = { "o", 164955 },	-- Northern Crystal Pylon
 					["coord"] = { 56.6, 12.5, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -483,12 +483,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24726, {	-- Crystal Force
-					["provider"] = { "o", 164957 },	-- Eastern Crystal Pylon
 					["sourceQuests"] = {
 						24721,	-- The Eastern Pylon
 						24722,	-- The Northern Pylon
 						24723,	-- The Western Pylon
 					},
+					["provider"] = { "o", 164957 },	-- Eastern Crystal Pylon
 					["coord"] = { 77.2, 50.0, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["cost"] = {
@@ -501,8 +501,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(4382, {	-- Crystal Force
-					["provider"] = { "o", 164957 },	-- Eastern Crystal Pylon
 					["sourceQuest"] = 4321,	-- Making Sense of It
+					["provider"] = { "o", 164957 },	-- Eastern Crystal Pylon
 					["coord"] = { 77.3, 50.0, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -516,12 +516,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24724, {	-- Crystal Restore
-					["provider"] = { "o", 164955 },	-- Northern Crystal Pylon
 					["sourceQuests"] = {
 						24721,	-- The Eastern Pylon
 						24722,	-- The Northern Pylon
 						24723,	-- The Western Pylon
 					},
+					["provider"] = { "o", 164955 },	-- Northern Crystal Pylon
 					["coord"] = { 56.5, 12.4, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["cost"] = {
@@ -534,8 +534,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(4381, {	-- Crystal Restore
-					["provider"] = { "o", 164955 },	-- Northern Crystal Pylon
 					["sourceQuest"] = 4321,	-- Making Sense of It
+					["provider"] = { "o", 164955 },	-- Northern Crystal Pylon
 					["coord"] = { 56.6, 12.5, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -549,12 +549,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24727, {	-- Crystal Spire
-					["provider"] = { "o", 164957 },	-- Eastern Crystal Pylon
 					["sourceQuests"] = {
 						24721,	-- The Eastern Pylon
 						24722,	-- The Northern Pylon
 						24723,	-- The Western Pylon
 					},
+					["provider"] = { "o", 164957 },	-- Eastern Crystal Pylon
 					["coord"] = { 77.2, 50.0, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["cost"] = {
@@ -567,8 +567,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(4386, {	-- Crystal Spire
-					["provider"] = { "o", 164957 },	--  Eastern Crystal Pylon
 					["sourceQuest"] = 4321,	-- Making Sense of It
+					["provider"] = { "o", 164957 },	--  Eastern Crystal Pylon
 					["coord"] = { 77.3, 50.0, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -582,12 +582,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24728, {	-- Crystal Ward
-					["provider"] = { "o", 164956 },	-- Western Crystal Pylon
 					["sourceQuests"] = {
 						24721,	-- The Eastern Pylon
 						24722,	-- The Northern Pylon
 						24723,	-- The Western Pylon
 					},
+					["provider"] = { "o", 164956 },	-- Western Crystal Pylon
 					["coord"] = { 23.5, 50.0, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["cost"] = {
@@ -600,8 +600,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(4383, {	-- Crystal Ward
-					["provider"] = { "o", 164956 },	-- Western Crystal Pylon
 					["sourceQuest"] = 4321,	-- Making Sense of It
+					["provider"] = { "o", 164956 },	-- Western Crystal Pylon
 					["coord"] = { 23.5, 50.0, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -615,12 +615,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24729, {	-- Crystal Yield
-					["provider"] = { "o", 164956 },	-- Western Crystal Pylon
 					["sourceQuests"] = {
 						24721,	-- The Eastern Pylon
 						24722,	-- The Northern Pylon
 						24723,	-- The Western Pylon
 					},
+					["provider"] = { "o", 164956 },	-- Western Crystal Pylon
 					["coord"] = { 23.8, 59.1, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["cost"] = {
@@ -633,8 +633,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(4384, {	-- Crystal Yield
-					["provider"] = { "o", 164956 },	-- Western Crystal Pylon
 					["sourceQuest"] = 4321,	-- Making Sense of It
+					["provider"] = { "o", 164956 },	-- Western Crystal Pylon
 					["coord"] = { 23.8, 59.1, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -709,8 +709,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24695, {	-- Ever Watching From Above
-					["qg"] = 38502,	-- Nablya
 					["sourceQuest"] = 24694,	-- The Shaper's Terrace
+					["qg"] = 38502,	-- Nablya
 					["coord"] = { 83.5, 46.0, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -773,17 +773,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24689, {	-- Flowing to the North
-					["qg"] = 38274,	-- Garl Stormclaw
 					["sourceQuest"] = 24686,	-- Carried on the Waves
+					["qg"] = 38274,	-- Garl Stormclaw
 					["coord"] = { 70.8, 76.6, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(13903, {	-- Gorishi Grub
+					["altQuests"] = { 13917 },	-- Gorishi Grub (Undead, Troll, Tauren version until MOP)
 					["providers"] = {
 						{ "n", 34320 },	-- Venomhide Hatchling
 						{ "i", 46362 },	-- Venomhide Hatchling
 					},
-					["altQuests"] = { 13917 },	-- Gorishi Grub (Undead, Troll, Tauren version until MOP)
 					["timeline"] = { ADDED_3_2_0 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -832,13 +832,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				q(24699, {	-- Gormashh the Glutinous
+					["description"] = "If you have a Herbalism as a profession, you will have to use the 'Tar Scrapper' manually from the Objective Tracker or from your bag.",
+					["sourceQuest"] = 24737,	-- Super Sticky
 					["providers"] = {
 						{ "n", 38276 },	-- Tara (mobileNPC)
 						{ "i", 50746 },	-- Tara's Tar Scraper
 					},
-					["sourceQuest"] = 24737,	-- Super Sticky
 					["coord"] = { 43.1, 41.1, UNGORO_CRATER },
-					["description"] = "If you have a Herbalism as a profession, you will have to use the 'Tar Scrapper' manually from the Objective Tracker or from your bag.",
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Unbelievably Sticky Tar
@@ -854,8 +854,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24700, {	-- Hard to Harvest
-					["qg"] = 38276,	-- Tara (mobileNPC)
 					["sourceQuest"] = 24693,	-- Mossy Pile
+					["qg"] = 38276,	-- Tara (mobileNPC)
 					["coord"] = { 43.1, 41.1, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -916,11 +916,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(13889, {	-- Hungry, Hungry Hatchling
+					["altQuests"] = { 13915 },	-- Hungry, Hungry Hatchling (Undead, Troll, Tauren version until MOP)
 					["providers"] = {
 						{ "n", 34320 },	-- Venomhide Hatchling
 						{ "i", 46362 },	-- Venomhide Hatchling
 					},
-					["altQuests"] = { 13915 },	-- Hungry, Hungry Hatchling (Undead, Troll, Tauren version until MOP)
 					["timeline"] = { ADDED_3_2_0 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -987,11 +987,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 47,
 				}),
 				q(3845, {	-- It's a Secret to Everybody (2/3)
+					["sourceQuest"] = 3844,	-- It's a Secret to Everybody (1/3)
 					["providers"] = {
 						{ "i",  11107 },	-- A Small Pack
 						{ "o", 161504 },	-- A Small Pack
 					},
-					["sourceQuest"] = 3844,	-- It's a Secret to Everybody (1/3)
 					["coord"] = { 63.1, 68.5, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 47,
@@ -1010,19 +1010,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(3908, {	-- It's a Secret to Everybody (3/3)
+					["sourceQuest"] = 3845,	-- It's a Secret to Everybody (2/3)
 					["providers"] = {
 						{ "n", 8737 },	-- Linken
 						{ "i", 11133 },	-- Linken's Training Sword
 					},
-					["sourceQuest"] = 3845,	-- It's a Secret to Everybody (2/3)
 					["coord"] = { 44.6, 8.2, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { WINTERSPRING },
 					["lvl"] = 47,
 				}),
 				q(3962, {	-- It's Dangerous to Go Alone
-					["qg"] = 8737,	-- Linken
 					["sourceQuest"] = 3961,	-- Linken's Adventure
+					["qg"] = 8737,	-- Linken
 					["coord"] = { 44.6, 8.2, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 47,
@@ -1075,31 +1075,31 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(3961, {	-- Linken's Adventure
+					["sourceQuest"] = 4005,	-- Aquementas
 					["providers"] = {
 						{ "n", 9117 },	-- J.D. Collie
 						{ "i", 11522 },	-- Silver Totem of Aquementas
 					},
-					["sourceQuest"] = 4005,	-- Aquementas
 					["coord"] = { 41.8, 2.6, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 47,
 				}),
 				q(3942, {	-- Linken's Memory
-					["qg"] = 9117,	-- J.D. Collie
 					["sourceQuest"] = 3941,	-- A Gnome's Assistance
+					["qg"] = 9117,	-- J.D. Collie
 					["coord"] = { 41.8, 2.6, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { FELWOOD },
 					["lvl"] = 47,
 				}),
 				q(24734, {	-- Lost!
-					["providers"] = {
-						{ "n", 9997 },	-- Spraggle Frock
-						{ "i", 15722 },	-- Spraggle's Canteen
-					},
 					["sourceQuests"] = {
 						24742,	-- Finding the Source
 						24794,	-- Speak with Spraggle
+					},
+					["providers"] = {
+						{ "n", 9997 },	-- Spraggle Frock
+						{ "i", 15722 },	-- Spraggle's Canteen
 					},
 					["coord"] = { 55.0, 62.7, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
@@ -1119,12 +1119,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 50,
 				}),
 				q(4321, {	-- Making Sense of It
-					["qg"] = 9117,	-- J.D. Collie
 					["sourceQuests"] = {
 						4287,	-- The Eastern Pylon
 						4285,	-- The Northern Pylon
 						4288,	-- The Western Pylon
 					},
+					["qg"] = 9117,	-- J.D. Collie
 					["coord"] = { 41.8, 2.6, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 47,
@@ -1133,8 +1133,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24701, {	-- Marshal's Refuse
-					["qg"] = 38277,	-- Doreen (mobileNPC)
 					["sourceQuest"] = 24693,	-- Mossy Pile
+					["qg"] = 38277,	-- Doreen (mobileNPC)
 					["coord"] = { 43.1, 41.1, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1158,8 +1158,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(4147, {	-- Marvon's Workshop
-					["qg"] = 9118,	-- Larion
 					["sourceQuest"] = 4145,	-- Larion and Muigin
+					["qg"] = 9118,	-- Larion
 					["coord"] = { 45.6, 8.6, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THE_BARRENS },
@@ -1167,21 +1167,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 47,
 				}),
 				q(3912, {	-- Meet at the Grave
+					["sourceQuest"] = 3909,	-- The Videre Elixir
 					["providers"] = {
 						{ "n", 9298 },	-- Donova Snowden
 						{ "i", 11136 },	-- Linken's Tempered Sword
 					},
-					["sourceQuest"] = 3909,	-- The Videre Elixir
 					["coord"] = { 31.2, 45.2, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 11243, 1 }},	-- Videre Elixir
 					["lvl"] = 47,
 				}),
 				q(24693, {	-- Mossy Pile
-					["qg"] = 10977,	-- Quixxil
-					["sourceQuest"] = 24691,	-- Peculiar Delicacies
-					["coord"] = { 54.8, 63.8, UNGORO_CRATER },
 					["description"] = "After completing this quest you won't be able to pick up |cFFFFD700Speak With Spraggle|r breadcrumb.",
+					["sourceQuest"] = 24691,	-- Peculiar Delicacies
+					["qg"] = 10977,	-- Quixxil
+					["coord"] = { 54.8, 63.8, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(4141, {	-- Muigin and Larion
@@ -1203,8 +1203,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24691, {	-- Peculiar Delicacies
-					["qg"] = 10977,	-- Quixxil
 					["sourceQuest"] = 24690,	-- Blazerunner
+					["qg"] = 10977,	-- Quixxil
 					["coord"] = { 54.8, 63.8, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1223,11 +1223,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(13904, {	-- Poached, Scrambled, Or Raw?
+					["altQuests"] = { 13916 },	-- Poached, Scrambled, Or Raw? (Undead, Troll, Tauren version until MOP)
 					["providers"] = {
 						{ "n", 34320 },	-- Venomhide Hatchling
 						{ "i", 46362 },	-- Venomhide Hatchling
 					},
-					["altQuests"] = { 13916 },	-- Poached, Scrambled, Or Raw? (Undead, Troll, Tauren version until MOP)
 					["timeline"] = { ADDED_3_2_0 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -1268,8 +1268,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				q(24715, {	-- Repairing A-Me 01
-					["qg"] = 9623,	-- A-Me 01
 					["sourceQuest"] = 24714,	-- Chasing A-Me 01
+					["qg"] = 9623,	-- A-Me 01
 					["coord"] = { 63.8, 19.7, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1284,8 +1284,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(45051, {	-- Reverse Blacksmithing
-					["qg"] = 115923,	-- Ko'Zan
 					["sourceQuest"] = 45044,	-- Weapon No More
+					["qg"] = 115923,	-- Ko'Zan
 					["coord"] = { 43.6, 41.4, UNGORO_CRATER },
 					["timeline"] = { ADDED_7_2_0 },
 					["requireSkill"] = BLACKSMITHING,
@@ -1294,8 +1294,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24730, {	-- Roll the Bones
-					["qg"] = 9272,	-- Spark Nilminer
 					["sourceQuest"] = 24698,	-- Adventures in Archaeology
+					["qg"] = 9272,	-- Spark Nilminer
 					["coord"] = { 31.9, 50.3, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1348,8 +1348,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(45057, {	-- Saving My Head
-					["qg"] = 115923,	-- Ko'Zan
 					["sourceQuest"] = 45055,	-- A Taste of Their Own Medicine
+					["qg"] = 115923,	-- Ko'Zan
 					["coord"] = { 43.6, 41.4, UNGORO_CRATER },
 					["timeline"] = { ADDED_7_2_0 },
 					["requireSkill"] = BLACKSMITHING,
@@ -1360,11 +1360,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(13905, {	-- Searing Roc Feathers
+					["altQuests"] = { 13914 },	-- Searing Roc Feathers (Undead, Troll, Tauren version until MOP)
 					["providers"] = {
 						{ "n", 34320 },	-- Venomhide Hatchling
 						{ "i", 46362 },	-- Venomhide Hatchling
 					},
-					["altQuests"] = { 13914 },	-- Searing Roc Feathers (Undead, Troll, Tauren version until MOP)
 					["timeline"] = { ADDED_3_2_0 },
 					["maps"] = { TANARIS },
 					["races"] = HORDE_ONLY,
@@ -1403,11 +1403,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #endif
 				q(24926, {	-- Serving A-Me 01
+					["sourceQuest"] = 24715,	-- Repairing A-Me 01
 					["providers"] = {
 						{ "n",  9623 },	-- A-Me 01
 						{ "i", 51546 },	-- A-Me 01's Thumb Drive
 					},
-					["sourceQuest"] = 24715,	-- Repairing A-Me 01
 					["coord"] = { 63.8, 19.7, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1423,9 +1423,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24736, {	-- Shizzle's Flyer
+					["description"] = "Picking up or completing this quest will make |cFFFFD700Speak with Spraggle|r unavailable, making its quest chain and rewards unobtainable.",
 					["qg"] = 9998,	-- Shizzle
 					["coord"] = { 43.4, 41.3, UNGORO_CRATER },
-					["description"] = "Picking up or completing this quest will make |cFFFFD700Speak with Spraggle|r unavailable, making its quest chain and rewards unobtainable.",
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/35 Webbed Pterrordax Scale
@@ -1481,21 +1481,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24794, {	-- Speak With Spraggle
-					["qg"] = 10302,	-- Krakle
-					["sourceQuest"] = 24742,	-- Finding the Source
-					["coord"] = { 55.4, 62.5, UNGORO_CRATER },
 					["description"] = "This quest won't be available if you complete |cFFFFD700Shizzle's Flyer|r first.",
+					["sourceQuest"] = 24742,	-- Finding the Source
+					["qg"] = 10302,	-- Krakle
+					["coord"] = { 55.4, 62.5, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
 				q(24737, {	-- Super Sticky
+					["description"] = "If you have a Herbalism as a profession, you will have to use the 'Tar Scrapper' manually from the Objective Tracker or from your bag.",
+					["sourceQuest"] = 24693,	-- Mossy Pile
 					["providers"] = {
 						{ "n", 38276 },	-- Tara (mobileNPC)
 						{ "i", 50742 },	-- Tara's Tar Scraper
 					},
-					["sourceQuest"] = 24693,	-- Mossy Pile
 					["coord"] = { 43.1, 41.1, UNGORO_CRATER },
-					["description"] = "If you have a Herbalism as a profession, you will have to use the 'Tar Scrapper' manually from the Objective Tracker or from your bag.",
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/8 Super Sticky Tar
@@ -1510,8 +1510,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24717, {	-- The Apes of Un'Goro
-					["qg"] = 38275,	-- Gremix <Treasure Hunter> (mobileNPC)
 					["sourceQuest"] = 24701,	-- Marshal's Refuse
+					["qg"] = 38275,	-- Gremix <Treasure Hunter> (mobileNPC)
 					["coord"] = { 43.1, 41.1, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1550,8 +1550,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24733, {	-- The Bait for Lar'korwi
-					["qg"] = 9619,	-- Torwa Pathfinder
 					["sourceQuest"] = 24732,	-- The Scent of Lar'korwi
+					["qg"] = 9619,	-- Torwa Pathfinder
 					["coord"] = { 71.3, 76.6, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1573,11 +1573,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(4292, {	-- The Bait for Lar'korwi
+					["sourceQuest"] = 4291,	-- The Scent of Lar'korwi
 					["providers"] = {
 						{ "n", 9619 },	-- Torwa Pathfinder
 						{ "i", 11568 },	-- Torwa's Pouch
 					},
-					["sourceQuest"] = 4291,	-- The Scent of Lar'korwi
 					["coord"] = { 71.6, 76.0, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 48,
@@ -1600,11 +1600,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24707, {	-- The Ballad of Maximillian
+					["sourceQuest"] = 24706,	-- The Spirits of Golakka Hot Springs
 					["qgs"] = {
 						38237,	-- Maximillian of Northshire
 						38343,	-- Maximillian of Northshire
 					},
-					["sourceQuest"] = 24706,	-- The Spirits of Golakka Hot Springs
 					["coord"] = { 30.6, 51.1, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1623,14 +1623,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24721, {	-- The Eastern Pylon
-					["qg"] = 38263,	-- Ithis Moonwarden
 					["sourceQuest"] = 24855,	-- Aberrant Flora
+					["qg"] = 38263,	-- Ithis Moonwarden
 					["coord"] = { 76.4, 48.3, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(4287, {	-- The Eastern Pylon
-					["qg"] = 9117,	-- J.D. Collie
 					["sourceQuest"] = 4284,	-- Crystals of Power
+					["qg"] = 9117,	-- J.D. Collie
 					["coord"] = { 41.8, 2.6, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 47,
@@ -1642,11 +1642,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24704, {	-- The Evil Dragons of Un'Goro Crater
+					["sourceQuest"] = 24703,	-- An Important Lesson
 					["qgs"] = {
 						38237,	-- Maximillian of Northshire
 						38255,	-- Maximillian of Northshire (mobileNPC)
 					},
-					["sourceQuest"] = 24703,	-- An Important Lesson
 					["coord"] = { 30.6, 51.1, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1712,8 +1712,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24692, {	-- The Fledgling Colossus
-					["qg"] = 9271,	-- Hol'anyee Marshal
 					["sourceQuest"] = 24690,	-- Blazerunner
+					["qg"] = 9271,	-- Hol'anyee Marshal
 					["coord"] = { 55.0, 62.2, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1732,11 +1732,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24708, {	-- The Fossil-Finder 3000
+					["sourceQuest"] = 24730,	-- Roll the Bones
 					["providers"] = {
 						{ "n", 	9272 },	-- Spark Nilminer
 						{ "i", 50405 },	-- Fossil-Finder 3000
 					},
-					["sourceQuest"] = 24730,	-- Roll the Bones
 					["coord"] = { 31.9, 50.3, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1750,10 +1750,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24718, {	-- The Mighty U'cha
-					["qg"] = 38275,	-- Gremix <Treasure Hunter> (mobileNPC)
-					["sourceQuest"] = 24701,	-- Marshal's Refuse
-					["coord"] = { 43.1, 41.1, UNGORO_CRATER },
 					["description"] = "This quest pops-up when you enter the Fungal Rock cave during the quest |cFFFFD700The Apes of Un'Goro|r.",
+					["sourceQuest"] = 24701,	-- Marshal's Refuse
+					["qg"] = 38275,	-- Gremix <Treasure Hunter> (mobileNPC)
+					["coord"] = { 43.1, 41.1, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 U'cha's Pelt
@@ -1772,8 +1772,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(4301, {	-- The Mighty U'cha
-					["qg"] = 9619,	-- Torwa Pathfinder
 					["sourceQuest"] = 4289,	-- The Apes of Un'Goro
+					["qg"] = 9619,	-- Torwa Pathfinder
 					["coord"] = { 71.6, 76.0, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
@@ -1792,22 +1792,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(980, {	-- The New Springs
-					["qg"] = 10302,	-- Krakle
 					["sourceQuest"] = 974,	-- Finding the Source
+					["qg"] = 10302,	-- Krakle
 					["coord"] = { 30.8, 50.4, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { WINTERSPRING },
 					["lvl"] = 51,
 				}),
 				q(24722, {	-- The Northern Pylon
-					["qg"] = 38275,	-- Gremix <Treasure Hunter> (mobileNPC)
 					["sourceQuest"] = 24717,	-- The Apes of Un'Goro
+					["qg"] = 38275,	-- Gremix <Treasure Hunter> (mobileNPC)
 					["coord"] = { 43.1, 41.1, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(4285, {	-- The Northern Pylon
-					["qg"] = 9117,	-- J.D. Collie
 					["sourceQuest"] = 4284,	-- Crystals of Power
+					["qg"] = 9117,	-- J.D. Collie
 					["coord"] = { 41.8, 2.6, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 47,
@@ -1819,8 +1819,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24732, {	-- The Scent of Lar'korwi
-					["qg"] = 9619,	-- Torwa Pathfinder
 					["sourceQuest"] = 24731,	-- The Fare of Lar'korwi
+					["qg"] = 9619,	-- Torwa Pathfinder
 					["coord"] = { 71.3, 76.6, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -1831,8 +1831,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(4291, {	-- The Scent of Lar'korwi
-					["qg"] = 9619,	-- Torwa Pathfinder
 					["sourceQuest"] = 4290,	-- The Fare of Lar'korwi
+					["qg"] = 9619,	-- Torwa Pathfinder
 					["coord"] = { 71.6, 76.0, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 48,
@@ -1844,26 +1844,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24694, {	-- The Shaper's Terrace
-					["qg"] = 38504,	-- Un'Goro Examinant
 					["sourceQuests"] = {
 						24720,	-- Crystals of Power
 						24721,	-- The Eastern Pylon
 						24722,	-- The Northern Pylon
 						24723,	-- The Western Pylon
 					},
+					["qg"] = 38504,	-- Un'Goro Examinant
 					["coord"] = { 53.9, 62.5, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(24706, {	-- The Spirits of Golakka Hot Springs
-					["qgs"] = {
-						38237,	-- Maximillian of Northshire
-						38255,	-- Maximillian of Northshire (mobileNPC)
-					},
+					["description"] = "Engage, but do not kill Steaming Fury until Maximillian finished his prayer.",
 					["sourceQuests"] = {
 						24705,	-- Town Dwellers Were Made to be Saved
 						24704,	-- The Evil Dragons of Un'Goro Crater
 					},
-					["description"] = "Engage, but do not kill Steaming Fury until Maximillian finished his prayer.",
+					["qgs"] = {
+						38237,	-- Maximillian of Northshire
+						38255,	-- Maximillian of Northshire (mobileNPC)
+					},
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/2 Prayers
@@ -1872,8 +1872,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(3909, {	-- The Videre Elixir
-					["qg"] = 9298,	-- Donova Snowden
 					["sourceQuest"] = 3908,	-- It's a Secret to Everybody
+					["qg"] = 9298,	-- Donova Snowden
 					["coord"] = { 31.2, 45.2, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { FERALAS },
@@ -1901,14 +1901,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24723, {	-- The Western Pylon
-					["qg"] = 9272,	-- Spark Nilminer
 					["sourceQuest"] = 24709,	-- A Tale of Two Shovels
+					["qg"] = 9272,	-- Spark Nilminer
 					["coord"] = { 31.9, 50.3, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(4288, {	-- The Western Pylon
-					["qg"] = 9117,	-- J.D. Collie
 					["sourceQuest"] = 4284,	-- Crystals of Power
+					["qg"] = 9117,	-- J.D. Collie
 					["coord"] = { 41.8, 2.6, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 47,
@@ -1920,8 +1920,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(13906, {	-- They Grow Up So Fast
-					["qg"] = 11701,	-- Mor'vek <Ravasaur Trainers>
 					["sourceQuest"] = 13887,	-- Venomhide Eggs
+					["qg"] = 11701,	-- Mor'vek <Ravasaur Trainers>
 					["coord"] = { 71.4, 73.8, UNGORO_CRATER },
 					["timeline"] = { ADDED_3_2_0 },
 					["cost"] = {
@@ -1961,8 +1961,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 50,
 				})),
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(9051, {	-- Toxic Test
-					["qg"] = 9619,	-- Torwa Pathfinder
 					["sourceQuest"] = 9052,	-- Bloodpetal Poison
+					["qg"] = 9619,	-- Torwa Pathfinder
 					["coord"] = { 71.6, 76.0, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { DRUID },
@@ -1987,11 +1987,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24705, {	-- Town Dwellers Were Made to be Saved
+					["sourceQuest"] = 24703,	-- An Important Lesson
 					["qgs"] = {
 						38237,	-- Maximillian of Northshire
 						38255,	-- Maximillian of Northshire (mobileNPC)
 					},
-					["sourceQuest"] = 24703,	-- An Important Lesson
 					["coord"] = { 30.6, 51.1, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -2019,8 +2019,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["isBreadcrumb"] = true,
 				}),
 				q(13887, {	-- Venomhide Eggs
-					["qg"] = 11701,	-- Mor'vek
 					["sourceQuest"] = 13850,	-- Toxic Tolerance
+					["qg"] = 11701,	-- Mor'vek
 					["coord"] = { 71.5, 73.9, UNGORO_CRATER },
 					["timeline"] = { ADDED_3_2_0 },
 					["races"] = HORDE_ONLY,
@@ -2036,12 +2036,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(24740, {	-- Volcanic Activity
-					["qg"] = 9270,	-- Williden Marshal
 					["sourceQuests"] = {
 						28525,	-- Hero's Call: Un'Goro Crater!
 						28526,	-- Warchief's Command: Un'Goro Crater!
 						24911,	-- Tropical Paradise Beckons
 					},
+					["qg"] = 9270,	-- Williden Marshal
 					["coord"] = { 55.1, 62.2, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {

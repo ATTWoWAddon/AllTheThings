@@ -341,8 +341,11 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				i(225493, {	-- Cracked Medal of Conquest
 					["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 				}),
-				i(232790, {	-- Medal of Conquest
-					["timeline"] = { ADDED_11_1_0 },
+				i(232790, {	-- Cracked Medal of Conquest
+					["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
+				}),
+				i(232791, {	-- Medal of Conquest
+					["timeline"] = { ADDED_11_2_0 },
 				}),
 			},
 		}),

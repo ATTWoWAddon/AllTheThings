@@ -1132,8 +1132,8 @@ root(ROOTS.ExpansionFeatures,
 									["DisablePartySync"] = true,
 								}),
 								q(53194, {	-- To The Front
-									["provider"] = { "n", 142721 },		-- Ralston Karn
 									["sourceQuest"] = 53175,	-- The Warfront Looms
+									["provider"] = { "n", 142721 },		-- Ralston Karn
 									["coord"] = { 65.89, 26.03, BORALUS },
 									["lockCriteria"] = {1,"questID", 53206},	-- Battle for Stromgarde unlock flag (A)
 								}),
@@ -1157,8 +1157,8 @@ root(ROOTS.ExpansionFeatures,
 									},
 								}),
 								q(53185, {	-- Warfront Contribution
-									["provider"] = { "n", 142721 },	-- Ralston Karn
 									["sourceQuest"] = 53194,	-- To The Front
+									["provider"] = { "n", 142721 },	-- Ralston Karn
 									["coord"] = { 66.0, 26.0, BORALUS },
 									["races"] = ALLIANCE_ONLY,
 								}),
@@ -1370,8 +1370,8 @@ root(ROOTS.ExpansionFeatures,
 									["isWeekly"] = true,
 								}),
 								q(56137, {	-- Heroic Warfront: The Battle For Stromgarde [Tier 3]
-									["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
 									["sourceQuests"] = { 53212 },	-- Back to Zuldazar
+									["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
 									["coord"] = { 52.9, 94.3, DAZARALOR },
 									["races"] = HORDE_ONLY,
 									["isWeekly"] = true,
@@ -1390,25 +1390,25 @@ root(ROOTS.ExpansionFeatures,
 									},
 								}),
 								q(53207, {	-- The Warfront Looms
-									["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
-									["sourceQuests"] = { 52451 },	-- Uniting Zandalar
-									["coord"] = { 52.97, 94.35, DAZARALOR },
 									["description"] = "Automatically granted upon completing Uniting Zandalar to unlock World Quests.  If it doesn't pop up, relog.  I had to relog twice to receive this quest.",
+									["sourceQuests"] = { 52451 },	-- Uniting Zandalar
+									["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
+									["coord"] = { 52.97, 94.35, DAZARALOR },
 									["races"] = HORDE_ONLY,
 									["lockCriteria"] = {1,"questID", 53220},	-- Battle for Stromgarde unlock flag
 									["isBreadcrumb"] = true,
 									["DisablePartySync"] = true,
 								}),
 								q(53208, {	-- To The Front
-									["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
 									["sourceQuest"] = 53207,	-- The Warfront Looms
+									["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
 									["coord"] = { 52.9, 94.4, DAZARALOR },
 									["races"] = HORDE_ONLY,
 									["lockCriteria"] = {1,"questID", 53220},	-- Battle for Stromgarde unlock flag
 								}),
 								q(53416, {	-- Warfront: The Battle For Stromgarde [Tier 3]
-									["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
 									["sourceQuest"] = 53212,	-- Back to Zuldazar
+									["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
 									["coord"] = { 52.97, 94.35, DAZARALOR },
 									["races"] = HORDE_ONLY,
 									["isWeekly"] = true,
@@ -1441,27 +1441,27 @@ root(ROOTS.ExpansionFeatures,
 								}),
 
 								q(53198, {	-- Back to Boralus
-									["provider"] = { "n", 143018 },	-- Captain Roderick Brewston
 									["sourceQuest"] = 53197,	-- Touring the Front
+									["provider"] = { "n", 143018 },	-- Captain Roderick Brewston
 									["coord"] = { 19.26, 61.77, ARATHI_HIGHLANDS },
 									["races"] = ALLIANCE_ONLY,
 									["lockCriteria"] = {1,"questID", 53206},	-- Battle for Stromgarde unlock flag (A)
 									["isBreadcrumb"] = true,
 								}),
 								q(53212, {	-- Back to Zuldazar
-									["provider"] = { "n", 143019 },	-- Wistel Sliversnitch
 									["sourceQuest"] = 53210,	-- Touring the Front
+									["provider"] = { "n", 143019 },	-- Wistel Sliversnitch
 									["coord"] = { 26.11, 35.59, ARATHI_HIGHLANDS },
 									["races"] = HORDE_ONLY,
 									["lockCriteria"] = {1,"questID", 53220},	-- Battle for Stromgarde unlock flag
 									["isBreadcrumb"] = true,
 								}),
 								q(53153, {	-- Death to the Defilers
+									["sourceQuest"] = 53198,	-- Back to Boralus
 									["qgs"] = {
 										143172,	-- Yvera Dawnwing [Arathi Highlands Location]
 										143380,	-- Yvera Dawnwing [Boralus Location]
 									},
-									["sourceQuest"] = 53198,	-- Back to Boralus
 									["coord"] = { 21.71, 64.88, ARATHI_HIGHLANDS },
 									["races"] = ALLIANCE_ONLY,
 									["repeatable"] = true,
@@ -1479,15 +1479,15 @@ root(ROOTS.ExpansionFeatures,
 									},
 								}),
 								q(53197, {	-- Touring the Front (A)
-									["provider"] = { "n", 143018 },		-- Captain Roderick Brewston
 									["sourceQuest"] = 53194,	-- To The Front
+									["provider"] = { "n", 143018 },		-- Captain Roderick Brewston
 									["coord"] = { 19.26, 61.77, ARATHI_HIGHLANDS },
 									["races"] = ALLIANCE_ONLY,
 									["lockCriteria"] = {1,"questID", 53206},	-- Battle for Stromgarde unlock flag (A)
 								}),
 								q(53210, {	-- Touring the Front (H)
-									["provider"] = { "n", 143019 },	-- Wistel Sliversnitch
 									["sourceQuest"] = 53208,	-- To The Front
+									["provider"] = { "n", 143019 },	-- Wistel Sliversnitch
 									["coord"] = { 26.1, 35.5, ARATHI_HIGHLANDS },
 									["races"] = HORDE_ONLY,
 									["lockCriteria"] = {1,"questID", 53220},	-- Battle for Stromgarde unlock flag

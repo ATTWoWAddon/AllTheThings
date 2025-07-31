@@ -44,8 +44,8 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				["coord"] = { 63.0, 50.2, TANARIS },
 			}),
 			q(84144, {	-- Tat Big Meanie
-				["provider"] = { "n", 226684 },	-- Maru <Junior Secret Sleuf>
 				["sourceQuest"] = 84143,	-- Lost and Busy
+				["provider"] = { "n", 226684 },	-- Maru <Junior Secret Sleuf>
 				["coord"] = { 63.2, 52.4, TANARIS },
 				["groups"] = {
 					o(456767, {	-- Red Hair
@@ -70,21 +70,21 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				},
 			}),
 			q(84419, {	-- To da Ruins!
-				["provider"] = { "n", 226684 },	-- Maru <Junior Secret Sleuf>
 				["sourceQuest"] = 84144,	-- Tat Big Meanie
+				["provider"] = { "n", 226684 },	-- Maru <Junior Secret Sleuf>
 				["coord"] = { 63.2, 52.4, TANARIS },
 			}),
 			q(84393, {	-- Da Stick of Revealing
-				["provider"] = { "n", 229062 },	-- Maru <Junior Secret Sleuf>
 				["sourceQuest"] = 84419,	-- To da Ruins!
+				["provider"] = { "n", 229062 },	-- Maru <Junior Secret Sleuf>
 				["coord"] = { 35.1, 78.2, TANARIS },
 				["groups"] = { i(208092) },	-- Torch of Pyrreth
 			}),
 			q(84363, {	-- Tweasure Hunt
-				["provider"] = { "n", 229062 },	-- Maru <Junior Secret Sleuf>
-				["sourceQuest"] = 84393,	-- Da Stick of Revealing
-				["coord"] = { 37.2, 78.9, TANARIS },
 				["description"] = "Activate Torch of Pyrreth at each of the Dig Sites.",
+				["sourceQuest"] = 84393,	-- Da Stick of Revealing
+				["provider"] = { "n", 229062 },	-- Maru <Junior Secret Sleuf>
+				["coord"] = { 37.2, 78.9, TANARIS },
 				["groups"] = {
 					o(459333, {	-- Jeweled Eye
 						["provider"] = { "i", 208092 },	-- Torch of Pyrreth
@@ -109,8 +109,8 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				},
 			}),
 			q(84521, {	-- Thoughtful Pursuits
-				["provider"] = { "n", 226766 },	-- Benatauk <Unco Benny>
 				["sourceQuest"] = 84363,	-- Tweasure Hunt
+				["provider"] = { "n", 226766 },	-- Benatauk <Unco Benny>
 				["coord"] = { 63.3, 52.4, TANARIS },
 				["groups"] = {
 					i(228617),	-- Benatauk's Clue Book (QI!)
@@ -130,8 +130,8 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				},
 			}),
 			q(84868, {	-- A Whiff of Help
-				["provider"] = { "n", 226766 },	-- Benatauk <Unco Benny>
 				["sourceQuest"] = 84521,	-- Thoughtful Pursuits
+				["provider"] = { "n", 226766 },	-- Benatauk <Unco Benny>
 				["coord"] = { 63.3, 52.4, TANARIS },
 				["groups"] = {
 					hqt(83831, {	-- Triggered on turn in of (84868) A Whiff of Help. Unlocks secret quests accountwide.
@@ -204,15 +204,15 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 			}),
 			-- Chapter 1
 			q(84236, {	-- The Great Detective
-				["provider"] = { "n", 226683 },	-- Alyx <Volunteer Assistant Guest Relations Manager>
 				["sourceQuest"] = 83831,	-- Guest Relations Intro HQT
+				["provider"] = { "n", 226683 },	-- Alyx <Volunteer Assistant Guest Relations Manager>
 				["coord"] = { 63.0, 50.2, TANARIS },
 			}),
 			q(84237, {	-- The "Great" Detective
-				["provider"] = { "n", 226796 },	-- Athektin Jones
-				["sourceQuest"] = 84236,	-- The Great Detective
-				["coord"] = { 63.9, 51.7, TANARIS },
 				["description"] = "1. Talk to the members of Team Solid in following order until the quest shows 48% progress.\n- Ellanoir\n- Duryllin\n- Juddson Rakes\n- Ellanoir\n2. Use your Torch of Pyrreth at Wavestrider Beach to reveal Herrkrop's body.\n3. Talk to all nearby NPCs.\n4. Talk to Athelton Jones to complete the quest requirements.",
+				["sourceQuest"] = 84236,	-- The Great Detective
+				["provider"] = { "n", 226796 },	-- Athektin Jones
+				["coord"] = { 63.9, 51.7, TANARIS },
 				["groups"] = {
 					n(226805, {	-- Ellanoir
 						["coord"] = { 63.8, 51.0, TANARIS },
@@ -242,13 +242,13 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				},
 			}),
 			q(84278, {	-- Tracking Quest
+				["description"] = "Use the Goblin Transport at 68.0, 40.8 to travel to Borean Tundra, then find Rexxar.",
+				["sourceQuest"] = 84237,	-- The 'Great' Detective
 				["qgs"] = {
 					226683,	-- Alyx <Volunteer Assistant Guest Relations Manager>
 					232406,	-- Alyx <Volunteer Assistant Lead Guest Relations Manager and Executive Associate Event Coordinator>
 				},
-				["sourceQuest"] = 84237,	-- The 'Great' Detective
 				["coord"] = { 63.0, 50.2, TANARIS },
-				["description"] = "Use the Goblin Transport at 68.0, 40.8 to travel to Borean Tundra, then find Rexxar.",
 				["groups"] = {
 					i(227551),	-- Note from Rexxar (QI!)
 					o(457025, {	-- Pre-Calibrated Goblin Transport Vessel
@@ -260,10 +260,10 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				},
 			}),
 			q(84296, {	-- The Trail's Gone Cold
-				["provider"] = { "n", 226952 },	-- Rexxar
-				["sourceQuest"] = 84278,	-- Tracking Quest
-				["coord"] = { 77.3, 46.2, BOREAN_TUNDRA },
 				["description"] = "1. Locate 3 diary pages around the marked shed and then go to Sholazar Basin.\n2. Interact with the Mounted Spyglass atop the Glimmering Pillar and then head to Icecrown.\n3. Summon Rexxar with your Spirit's Whistle and tell him about a shapeshifter.",
+				["sourceQuest"] = 84278,	-- Tracking Quest
+				["provider"] = { "n", 226952 },	-- Rexxar
+				["coord"] = { 77.3, 46.2, BOREAN_TUNDRA },
 				["crs"] = { 228550 },	-- Rexxar
 				["groups"] = {
 					i(227664),	-- Spirit's Whistle (QI!)
@@ -290,21 +290,21 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				},
 			}),
 			q(84334, {	-- Warn the Detective
+				["sourceQuest"] = 84296,	-- The Trail's Gone Cold
 				["qgs"] = {
 					226683,	-- Alyx <Volunteer Assistant Guest Relations Manager>
 					232404,	-- Alyx <Volunteer Assistant Guest Relations Manager and Associate Event Coordinator>
 				},
-				["sourceQuest"] = 84296,	-- The Trail's Gone Cold
 				["coord"] = { 63.0, 50.2, TANARIS },
 			}),
 			q(84336, {	-- Spot The Difference
+				["description"] = "Speak to Hemet, Leeroy, and Addie to suss out the detectives' stories, then accuse one. Chase the intruder east of Bootlegger Outpost and kill him.",
+				["sourceQuest"] = 84334,	-- Warn the Detective
 				["qgs"] = {
 					226796,	-- Athelton Jones
 					228661,	-- Athelton Jones (!)
 				},
-				["sourceQuest"] = 84334,	-- Warn the Detective
 				["coord"] = { 61.0, 50.6, TANARIS },
-				["description"] = "Speak to Hemet, Leeroy, and Addie to suss out the detectives' stories, then accuse one. Chase the intruder east of Bootlegger Outpost and kill him.",
 				["groups"] = {
 					n(227731, {	-- Addie Fizzlebog
 						["coord"] = { 63.5, 51.7, TANARIS },
@@ -403,8 +403,8 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 			},
 			{	-- The Toy Thief
 				["allianceQuestData"] = q(84756, {	-- The Toy Thief [A]
-					["sourceQuest"] = 84755,	-- The Final Toy [A]
 					["description"] = "Talk to Maru, suspect a dog, then visit Urban Planner Volrath in Boralus.\nCollect a chew toy from the mountaintop behind Maruukai in the Ohn'ahran plains.\nPlace the Chew Toy in a Toy Box  in Teerakai and follow the Bakar Pup to collect Maru's toy from a nearby cave.",
+					["sourceQuest"] = 84755,	-- The Final Toy [A]
 						["groups"] = {
 							i(229992),	-- My Journal: Operation Toy Rescue (QI!)
 							n(142178, {	-- Urban Planner Volrath
@@ -414,8 +414,8 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 						},
 				}),
 				["hordeQuestData"] = q(85043, {	-- The Toy Thief [H]
-					["sourceQuest"] = 85042,	-- The Final Toy [H]
 					["description"] = "Talk to Maru, suspect a dog, then visit Matan in Dazar'alor.\nCollect a chew toy from the mountaintop behind Maruukai in the Ohn'ahran plains.\nPlace the Chew Toy in a Toy Box  in Teerakai and follow the Bakar Pup to collect Maru's toy from a nearby cave.",
+					["sourceQuest"] = 85042,	-- The Final Toy [H]
 						["groups"] = {
 							i(229997),	-- My Journal: Operation Toy Rescue (QI!)
 							o(472068, {	-- Bakar Sketch
@@ -445,22 +445,22 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 			},
 			-- Chapter 3
 			q(85047, {	-- A Pirate Predicament
+				["sourceQuests"] = {
+					84756,	-- The Toy Thief [A]
+					85043,	-- The Toy Thief [H]
+				},
 				["qgs"] = {
 					232405,	-- Alyx <Volunteer Assistant Lead Guest Relations Manager and Associate Event Coordinator>
 					232407,	-- Alyx <Volunteer Senior Assistant Lead Guest Relations Manager and Executive Associate Event Coordinator>
 					232408,	-- Alyx <Volunteer Senior Assistant Lead Guest Relations Manager and Executive Associate Event Coordinator, and Temporary Service Agent>
 				},
-				["sourceQuests"] = {
-					84756,	-- The Toy Thief [A]
-					85043,	-- The Toy Thief [H]
-				},
 				["coord"] = { 63.0, 50.2, TANARIS },
 			}),
 			q(85060, {	-- Pirate Foods and Superstitions
-				["provider"] = { "n", 231413 },	-- Bonenose
-				["sourceQuest"] = 85047,	-- A Pirate Predicament
-				["coord"] = { 60.9, 44.7, TANARIS },
 				["description"] = "Talk to Kelsey Yance in the Old Port Authority building or Mrs. Gant in a room on the lowest level of Booty Bay. Collect the Boonful Banquet from a barrel in the same room as Mrs. Gant then show it to Scowling Rosa who paths around the wharf.",
+				["sourceQuest"] = 85047,	-- A Pirate Predicament
+				["provider"] = { "n", 231413 },	-- Bonenose
+				["coord"] = { 60.9, 44.7, TANARIS },
 				["groups"] = {
 					i(231263),	-- My Journal: The Case of the Superstitious and Hungry Pirates (QI!)
 					n(2664, {	-- Kelsey Yance <Cook>
@@ -477,18 +477,18 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				},
 			}),
 			q(85208, {	-- A Pirate Missive
+				["sourceQuest"] = 85060,	-- Pirate Foods and Superstitions
 				["qgs"] = {
 					232407,	-- Alyx <Volunteer Senior Assistant Lead Guest Relations Manager and Executive Associate Event Coordinator>
 					232408,	-- Alyx <Volunteer Senior Assistant Lead Guest Relations Manager, Executive Associate Event Coordinator, and Temporary Service Agent>
 				},
-				["sourceQuest"] = 85060,	-- Pirate Foods and Superstitions
 				["coord"] = { 63.0, 50.2, TANARIS },
 				["isBreadcrumb"] = true,
 			}),
 			q(85195, {	-- Pirate Gastronomy
-				["provider"] = { "n", 105637 },	-- Scowling Rosa <Texts and Specialty Goods>
-				["sourceQuest"] = 85208,	-- A Pirate Missive
 				["description"] = "Acquire the required ingredients then talk to Bottlenose in Tanaris. Visit Hrothgar's Landing to grab the last ingredient.",
+				["sourceQuest"] = 85208,	-- A Pirate Missive
+				["provider"] = { "n", 105637 },	-- Scowling Rosa <Texts and Specialty Goods>
 				["cost"] = {
 					{ "i", 160711, 2 },	-- Aromatic Fish Oil
 					{ "i", 33823, 5 },	-- Bloodfin Catfish
@@ -515,19 +515,19 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 			}),
 			-- Chapter 4
 			q(85475, {	-- Secret in the Sands
+				["sourceQuest"] = 85195,	-- Pirate Gastronomy
 				["qgs"] = {
 					232406,	-- Alyx <Volunteer Assistant Lead Guest Relations Manager and Executive Associate Event Coordinator>
 					232408,	-- Alyx <Volunteer Senior Assistant Lead Guest Relations Manager, Executive Associate Event Coordinator, and Temporary Service Agent>
 					232410,	-- Alyx <Volunteer Senior Assistant Lead Guest Relations Manager, Executive Associate Event Coordinator, and Chief Temporary Agent of Timelines and Services>
 				},
-				["sourceQuest"] = 85195,	-- Pirate Gastronomy
 				["coord"] = { 63.0, 50.2, TANARIS },
 			}),
 			q(85476, {	-- Buried Tweasure
-				["provider"] = { "n", 226684 },	-- Maru <Junior Secret Sleuf>
-				["sourceQuest"] = 85475,	-- Secret in the Sands
-				["coord"] = { 63.2, 52.4, TANARIS },
 				["description"] = "Find clues in the Ruins of Uldum, by a rock to the east of Dunemaul Compound, to the left of Zul'Farakk's entrance, then talk to Yennu in the Gadgetzan inn.",
+				["sourceQuest"] = 85475,	-- Secret in the Sands
+				["provider"] = { "n", 226684 },	-- Maru <Junior Secret Sleuf>
+				["coord"] = { 63.2, 52.4, TANARIS },
 				["groups"] = {
 					i(231808),	-- Ancient Treasure Notes (QI!)
 					o(476815, {	-- Ancient Treasure Note
@@ -552,18 +552,18 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				},
 			}),
 			q(85502, {	-- Festive Reflections
+				["sourceQuest"] = 85476,	-- Buried Tweasure
 				["qgs"] = {
 					232406,	-- Alyx <Volunteer Assistant Lead Guest Relations Manager and Executive Associate Event Coordinator>
 					232410,	-- Alyx <Volunteer Senior Assistant Lead Guest Relations Manager, Executive Associate Event Coordinator, and Chief Temporary Agent of Timelines and Services>
 				},
-				["sourceQuest"] = 85476,	-- Buried Tweasure
 				["coord"] = { 63.0, 50.2, TANARIS },
 			}),
 			q(85503, {	--  A Surprising Investigation
-				["provider"] = { "n", 226796 },	-- Athelton Jones
-				["sourceQuest"] = 85502,	-- Festive Reflections
-				["coord"] = { 61.0, 50.7, TANARIS },
 				["description"] = "Speak to the time-displaced visitors, toss letters to eventgoers, speak to Bonenose at the north camp again, then head a bit northeast up the beach to celebrate with Alyx.",
+				["sourceQuest"] = 85502,	-- Festive Reflections
+				["provider"] = { "n", 226796 },	-- Athelton Jones
+				["coord"] = { 61.0, 50.7, TANARIS },
 				["groups"] = {
 					n(233000, {	-- Big Kinook
 						["description"] = "By the mole machine.",
@@ -610,13 +610,13 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				},
 			}),
 			q(84882, {	-- Deck Dismay
+				["description"] = "Speak to Alphonse after having looted the Six of Frost to unlock this quest. Use the Idol of Ohn'ahra to find more cards scattered around the grounds.",
 				["providers"] = {
 					{ "n", 230838 },	-- Alphonse Constant <Apprentice Cartomancer>
 					-- Need this here so you can link the source item / object to this quest without using debug mode
 					{ "i", 229219 },	-- Six of Frost
 				},
 				["coord"] = { 63.9, 52.4, TANARIS },
-				["description"] = "Speak to Alphonse after having looted the Six of Frost to unlock this quest. Use the Idol of Ohn'ahra to find more cards scattered around the grounds.",
 				["groups"] = {
 					o(467083, {	-- Darkmoon Fortune Card
 						["description"] = "Under a bench near the Story Time stage.",
@@ -667,17 +667,17 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 			}),
 			-- The Case of a Good Book
 			q(83832, {	-- Torn Dreams
+				["sourceQuest"] = 83831,	-- Guest Relations Intro HQT
 				["qgs"] = {
 					226683,	-- Alyx <Volunteer Assistant Guest Relations Manager>
 					232404,	-- Alyx <Volunteer Assistant Guest Relations Manager and Associate Event Coordinator>
 					232407,	-- Alyx <Volunteer Senior Assistant Lead Guest Relations Manager and Executive Associate Event Coordinator>
 				},
-				["sourceQuest"] = 83831,	-- Guest Relations Intro HQT
 				["coord"] = { 63.0, 50.2, TANARIS },
 			}),
 			q(83825, {	-- Restoring A Grand Tale
-				["provider"] = { "n", 231433 },	-- Raenie Fizzlebog
 				["sourceQuest"] = 83832,	-- Torn Dreams
+				["provider"] = { "n", 231433 },	-- Raenie Fizzlebog
 				["coord"] = { 63.1, 52.0, TANARIS },
 				["groups"] = {
 					i(226241),	-- Shredded Green Hills of Stranglethorn (QI!/CI!)
@@ -737,6 +737,7 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 			}),
 			-- The Loud and Smelly Case
 			q(84583, {	-- A Hozen On My Back
+				["sourceQuest"] = 83831,	-- Guest Relations Intro HQT
 				["qgs"] = {
 					226683,	-- Alyx <Volunteer Assistant Guest Relations Manager>
 					232404,	-- Alyx <Volunteer Assistant Guest Relations Manager and Associate Event Coordinator>
@@ -744,14 +745,13 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					232406,	-- Alyx <Volunteer Assistant Lead Guest Relations Manager and Executive Associate Event Coordinator>
 					232407,	-- Alyx <Volunteer Senior Assistant Lead Guest Relations Manager and Executive Associate Event Coordinator>
 				},
-				["sourceQuest"] = 83831,	-- Guest Relations Intro HQT
 				["coord"] = { 63.0, 50.2, TANARIS },
 			}),
 			q(84595, {	-- The Case of the Fur-Getting Wikket
-				["provider"] = { "n", 229749 },	-- Riko
-				["sourceQuest"] = 84583,	-- A Hozen On My Back
-				["coord"] = { 61.9, 50.5, TANARIS },
 				["description"] = "Talk to Riko, Shademaster Kiryn, then Sully. Visit Gizmo's grave in the Jade Forest, then chase him down to return to Riko. Wait 5 minutes for Riko to send you mail.",
+				["sourceQuest"] = 84583,	-- A Hozen On My Back
+				["provider"] = { "n", 229749 },	-- Riko
+				["coord"] = { 61.9, 50.5, TANARIS },
 				["groups"] = {
 					i(228750),	-- My Journal: The Case of the Fur-Getting Wikket (QI!)
 					n(229775, {	-- Sully "The Pickle" McLeary
@@ -767,14 +767,14 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 			}),
 			-- The Case of an Old Soul
 			q(84435, {	-- Nola's Last Wish
+				["description"] = "Speak to Lashk by the story time stage, locate Nola's Last Wish south of Tortaka Refuge in Vol'Dun, then used it to summon and speak to Scrollsage Nola's spirit at the underwater Tortollan wedding west of Atal'Dazar.",
+				["sourceQuest"] = 83831,	-- Guest Relations Intro HQT
 				["qgs"] = {
 					226683,	-- Alyx <Volunteer Assistant Guest Relations Manager>
 					232406,	-- Alyx <Volunteer Assistant Lead Guest Relations Manager and Executive Associate Event Coordinator>
 					232407,	-- Alyx <Volunteer Senior Assistant Lead Guest Relations Manager and Executive Associate Event Coordinator>
 				},
-				["sourceQuest"] = 83831,	-- Guest Relations Intro HQT
 				["coord"] = { 63.0, 50.2, TANARIS },
-				["description"] = "Speak to Lashk by the story time stage, locate Nola's Last Wish south of Tortaka Refuge in Vol'Dun, then used it to summon and speak to Scrollsage Nola's spirit at the underwater Tortollan wedding west of Atal'Dazar.",
 				["groups"] = {
 					i(228302),	-- My Journal: Nola's Last Wish (QI!)
 					n(229102, {	-- Lashk
@@ -794,17 +794,18 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 			}),
 			-- The Case of Great Aspirations
 			q(84932, {	-- A Legacy of Destruction
+				["sourceQuest"] = 83831,	-- Guest Relations Intro HQT
 				["qgs"] = {
 					226683,	-- Alyx <Volunteer Assistant Guest Relations Manager>
 					232406,	-- Alyx <Volunteer Assistant Lead Guest Relations Manager and Executive Associate Event Coordinator>
 					232408,	-- Alyx <Volunteer Senior Assistant Lead Guest Relations Manager, Executive Associate Event Coordinator, and Temporary Service Agent>
 				},
-				["sourceQuest"] = 83831,	-- Guest Relations Intro HQT
 				["coord"] = { 63.0, 50.2, TANARIS },
 			}),
 			q(84933, {	-- From Ashes to Wisdom
-				["provider"] = { "n", 231029 },	-- Voidfire
+				["description"] = "Summon Voidfire with the provided whistle then talk to him in the following locations:\nNear the Ruins of Thaurissan in the Burning Steppes (61.4, 28.7)\nNear the Scar of the Worldbreaker in the Badlands (33.1, 53.0)\nNear the Twilight Breach north of Victor's Point in the Twilight Highlands (38.3, 49.1)\nIn the Quel'Dormir Gardens by the Ruins of Vash'jir in the Shimmering Expanse (38.8, 66.9)",
 				["sourceQuest"] = 84932,	-- A Legacy of Destruction
+				["provider"] = { "n", 231029 },	-- Voidfire
 				["coords"] = {
 					{ 61.7, 49.8, TANARIS },
 					{ 61.4, 28.7, BURNING_STEPPES },
@@ -812,24 +813,23 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					{ 38.3, 49.1, TWILIGHT_HIGHLANDS },
 					{ 38.8, 66.9, VASHJIR_SHIMMERING_EXPANSE },
 				},
-				["description"] = "Summon Voidfire with the provided whistle then talk to him in the following locations:\nNear the Ruins of Thaurissan in the Burning Steppes (61.4, 28.7)\nNear the Scar of the Worldbreaker in the Badlands (33.1, 53.0)\nNear the Twilight Breach north of Victor's Point in the Twilight Highlands (38.3, 49.1)\nIn the Quel'Dormir Gardens by the Ruins of Vash'jir in the Shimmering Expanse (38.8, 66.9)",
 				["groups"] = { i(231292) },	-- Whelpling Whistle (QI!)
 			}),
 			-- The Case of a Feathered Friend
 			q(84923, {	-- A Bird's Tale
+				["sourceQuest"] = 83831,	-- Guest Relations Intro HQT
 				["qgs"] = {
 					226683,	-- Alyx <Volunteer Assistant Guest Relations Manager>
 					232407,	-- Alyx <Volunteer Senior Assistant Lead Guest Relations Manager and Executive Associate Event Coordinator>
 					232408,	-- Alyx <Volunteer Senior Assistant Lead Guest Relations Manager, Executive Associate Event Coordinator, and Temporary Service Agent>
 				},
-				["sourceQuest"] = 83831,	-- Guest Relations Intro HQT
 				["coord"] = { 63.0, 50.2, TANARIS },
 			}),
 			q(84924, {	-- A Bird's Tail
-				["provider"] = { "n", 228273 },	-- Reshad
-				["sourceQuest"] = 84923,	-- A Bird's Tale
-				["coord"] = { 64.2, 51.3, TANARIS },
 				["description"] = "Interact with four feathers hidden around Spires of Arak, Shattrath, Nagrand and Frostfire Ridge in Draenor.",
+				["sourceQuest"] = 84923,	-- A Bird's Tale
+				["provider"] = { "n", 228273 },	-- Reshad
+				["coord"] = { 64.2, 51.3, TANARIS },
 				["groups"] = {
 					i(229958),	-- Decorated Feather (QI!)
 					o(469568, {	-- Burnt Feather
@@ -856,19 +856,19 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 			}),
 			-- The Case of Pet Games
 			q(84506, {	-- Pet Pursuit
+				["sourceQuest"] = 83831,	-- Guest Relations Intro HQT
 				["qgs"] = {
 					226683,	-- Alyx <Volunteer Assistant Guest Relations Manager>
 					232407,	-- Alyx <Volunteer Senior Assistant Lead Guest Relations Manager and Executive Associate Event Coordinator>
 					232408,	-- Alyx <Volunteer Senior Assistant Lead Guest Relations Manager, Executive Associate Event Coordinator, and Temporary Service Agent>
 				},
-				["sourceQuest"] = 83831,	-- Guest Relations Intro HQT
 				["coord"] = { 63.0, 50.2, TANARIS },
 			}),
 			q(84469, {	-- Battle Pet Bingo
-				["provider"] = { "n", 228276 },	-- Jepetto Joybuzz
-				["sourceQuest"] = 84506,	-- Pet Pursuit
-				["coord"] = { 62.2, 49.7, TANARIS },
 				["description"] = "Interact with the Jumping Spider in the Bamboo Wilds in Jade Forest and the Summit Kid atop Neverest Pinnacl in Kun'Lai Summit.",
+				["sourceQuest"] = 84506,	-- Pet Pursuit
+				["provider"] = { "n", 228276 },	-- Jepetto Joybuzz
+				["coord"] = { 62.2, 49.7, TANARIS },
 				["groups"] = {
 					i(228328),	-- Bingo Card (QI!)
 					o(464213, {	-- Jumping Spider
@@ -883,13 +883,13 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 			}),
 			-- The Case of Missing Mementos
 			q(85477, {	--  Lost and... Found?
+				["description"] = "Open the Lost & Found box nest to Alyx then return the items to visitors around the anniversary grounds.",
+				["sourceQuest"] = 83831,	-- Guest Relations Intro HQT
 				["qgs"] = {
 					226683,	-- Alyx <Volunteer Assistant Guest Relations Manager>
 					232408,	-- Alyx <Volunteer Senior Assistant Lead Guest Relations Manager, Executive Associate Event Coordinator, and Temporary Service Agent>
 				},
-				["sourceQuest"] = 83831,	-- Guest Relations Intro HQT
 				["coord"] = { 63.0, 50.2, TANARIS },
-				["description"] = "Open the Lost & Found box nest to Alyx then return the items to visitors around the anniversary grounds.",
 				["groups"] = {
 					i(231810),	-- Alyx's Lost & Found Notes (QI!)
 					o(477139, {	-- Lost & Found
@@ -936,19 +936,19 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 			}),
 			-- The Case of Staged Disaster
 			q(84985, {	-- Not Ready on Set
+				["sourceQuest"] = 83831,	-- Guest Relations Intro HQT
 				["qgs"] = {
 					226683,	-- Alyx <Volunteer Assistant Guest Relations Manager>
 					232408,	-- Alyx <Volunteer Senior Assistant Lead Guest Relations Manager, Executive Associate Event Coordinator, and Temporary Service Agent>
 					232410,	-- Alyx <Volunteer Senior Assistant Lead Guest Relations Manager, Executive Associate Event Coordinator, and Chief Temporary Agent of Timelines and Services>
 				},
-				["sourceQuest"] = 83831,	-- Guest Relations Intro HQT
 				["coord"] = { 63.0, 50.2, TANARIS },
 			}),
 			q(84912, {	-- The Show Must Go On
-				["provider"] = { "n", 171743 },	-- Dapperdew
-				["sourceQuest"] = 84985,	-- Not Ready on Set
-				["coord"] = { 41.5, 44.8, ARDENWEALD },
 				["description"] = "Collect the Mask of the Trickster and the Play Script from on and behind the stage, and the Prop Sword and Conductor's Baton from near the venue entrance.",
+				["sourceQuest"] = 84985,	-- Not Ready on Set
+				["provider"] = { "n", 171743 },	-- Dapperdew
+				["coord"] = { 41.5, 44.8, ARDENWEALD },
 				["groups"] = {
 					i(229387),	-- Trickster's Riddles (QI!)
 					o(469334, {	-- Mask of the Trickster
@@ -1159,10 +1159,10 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 				["coord"] = { 54.9, 28.9, DORNOGAL },
 			}),
 			q(84684, {	-- Ratts' Race
-				["provider"] = { "n", 230042 },	-- Dalaran Survivor
-				["sourceQuest"]	= 84685,	-- Talk to the Dalaran Survivor with the Detective title
-				["coord"] = { 54.9, 28.9, DORNOGAL },
 				["description"] = "Find 3 notes scattered around Azj-Kahet then confront Ratts in Pillar-nest Vosh.",
+				["sourceQuest"]	= 84685,	-- Talk to the Dalaran Survivor with the Detective title
+				["provider"] = { "n", 230042 },	-- Dalaran Survivor
+				["coord"] = { 54.9, 28.9, DORNOGAL },
 				["groups"] = {
 					i(228934),	-- Carefully Penned Note (QI!)
 					o(466118, {	-- Unfinished Note
@@ -1343,6 +1343,8 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 					}),
 					--5 O'clock Basin
 					q(84781, {	-- Master of Secrets
+						["description"] = "1. Visit the Timeless isle and find Zarhym in the Cavern of Lost Spirits. Talk to Zarhym, a rare ghostly skull inside the entrance to enter the spirit realm.\n2. Within 5 minutes, Navigate to the back of the cave while avoiding ghosts to find Jeremy Feasel. Stay nearby to him, and you will not exit the spirit realm even if your 5 minutes buff expires.\n3. Defeat Jeremy in a pet battle using only 'secret' pets from the list. If someone in your group beats him in a battle, that also counts and he will grant you the quest too on talking to him. The pets MUST be level 25.\n\nFully lights up the 5 O'clock basin.\n\nValid pets:\nBaa'l, Bumbles, Filthy Slime, Francois, Gizmo the Pure, Glimr, Hungering Claw, Jenafur, Lil' Abom, Nelthara, Phoenix Wishwing, Renny, Snowclaw Cub, Spyragos, Sun Darter Hatchling, Taptaf, Terky, Tobias, Wicker Pup",
+						["sourceQuest"] = 84780,	-- Use the Scroll of Fel Binding at Uther's Tomb
 						["qgs"] = {
 							232048,	-- Jeremy Feasel
 							141941,	-- Baa'l
@@ -1365,13 +1367,11 @@ root(ROOTS.Secrets, n(GUEST_RELATIONS, bubbleDownSelf({ ["timeline"] = { ADDED_1
 							208643,	-- Tobias
 							143189,	-- Wicker Pup
 						},
-						["sourceQuest"] = 84780,	-- Use the Scroll of Fel Binding at Uther's Tomb
 						["coords"] = {
 							{ 43.1, 41.4, TIMELESS_ISLE },
 							{ 53.3, 56.8, 555 },	-- Cavern of Lost Spirits
 							{ 39.6, 38.4, 555 },	-- Cavern of Lost Spirits
 						},
-						["description"] = "1. Visit the Timeless isle and find Zarhym in the Cavern of Lost Spirits. Talk to Zarhym, a rare ghostly skull inside the entrance to enter the spirit realm.\n2. Within 5 minutes, Navigate to the back of the cave while avoiding ghosts to find Jeremy Feasel. Stay nearby to him, and you will not exit the spirit realm even if your 5 minutes buff expires.\n3. Defeat Jeremy in a pet battle using only 'secret' pets from the list. If someone in your group beats him in a battle, that also counts and he will grant you the quest too on talking to him. The pets MUST be level 25.\n\nFully lights up the 5 O'clock basin.\n\nValid pets:\nBaa'l, Bumbles, Filthy Slime, Francois, Gizmo the Pure, Glimr, Hungering Claw, Jenafur, Lil' Abom, Nelthara, Phoenix Wishwing, Renny, Snowclaw Cub, Spyragos, Sun Darter Hatchling, Taptaf, Terky, Tobias, Wicker Pup",
 						["crs"] = 71876,
 						["groups"] = { i(228995) },	-- Golden Muffin
 					}),

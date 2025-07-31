@@ -70,13 +70,13 @@ root(ROOTS.Zones, {
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(49846, {	-- Wars on Two Fronts [Cataclysm]
+				["description"] = "The Special Duty Assignments will automatically pop up when you reach level 80.  You can use them to progress either to Cataclysm or Pandaria.",
 				["providers"] = {
 					{ "o", 206111 },	-- [SW]
 					{ "o", 207321 },	-- [DA]
 					{ "o", 207320 },	-- [IF]
 					{ "i", 156477 },	-- Special Duty Assignments
 				},
-				["description"] = "The Special Duty Assignments will automatically pop up when you reach level 80.  You can use them to progress either to Cataclysm or Pandaria.",
 				["timeline"] = { ADDED_7_3_5 },
 				["isBreadcrumb"] = true,
 				["u"] = REMOVED_FROM_GAME,
@@ -84,13 +84,13 @@ root(ROOTS.Zones, {
 				-- Received 49846 on Alliance Warlock when I hit 80, so it isn't the Horde version item as a previous comment speculated. - slumber
 			}),
 			q(49864, {	-- Wars on Two Fronts (Cataclysm or Pandaria)
+				["description"] = "The Special Duty Assignments will automatically pop up when you reach level 80.  You can use them to progress either to Cataclysm or Pandaria.",
 				["providers"] = {
 					{ "o", 206111 },	-- [SW]
 					{ "o", 207321 },	-- [DA]
 					{ "o", 207320 },	-- [IF]
 					{ "i", 156477 },	-- Special Duty Assignments
 				},
-				["description"] = "The Special Duty Assignments will automatically pop up when you reach level 80.  You can use them to progress either to Cataclysm or Pandaria.",
 				["timeline"] = { ADDED_7_3_5 },
 				["isBreadcrumb"] = true,
 				["u"] = REMOVED_FROM_GAME,
@@ -106,20 +106,20 @@ root(ROOTS.Zones, {
 			},
 		}),
 		q(72746, {	-- A Piece of Silver
-			["sourceQuests"] = { 72743 },	-- A Piece of Copper
 			["description"] = "Available on the next reset after \"A Piece of Copper\", from the adventure guide.",
+			["sourceQuests"] = { 72743 },	-- A Piece of Copper
 		}),
 		q(72747, {	-- A Piece of Gold
-			["sourceQuests"] = { 72746 },	-- A Piece of Silver
 			["description"] = "Available on the next reset after \"A Piece of Silver\", from the adventure guide.",
+			["sourceQuests"] = { 72746 },	-- A Piece of Silver
 		}),
 		q(72748, {	-- A Bag of Gold
-			["sourceQuests"] = { 72747 },	-- A Piece of Gold
 			["description"] = "Available on the next reset after \"A Piece of Gold\", from the adventure guide.",
+			["sourceQuests"] = { 72747 },	-- A Piece of Gold
 		}),
 		q(72749, {	-- A Curious Coin
-			["sourceQuests"] = { 72748 },	-- A Bag of Gold
 			["description"] = "Available on the next reset after \"A Bag of Gold\", from the adventure guide.",
+			["sourceQuests"] = { 72748 },	-- A Bag of Gold
 			["groups"] = {
 				ach(16790),	-- Curious Coin
 			},

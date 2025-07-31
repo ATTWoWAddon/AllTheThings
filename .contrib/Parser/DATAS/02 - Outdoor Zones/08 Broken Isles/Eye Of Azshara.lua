@@ -40,8 +40,8 @@ root(ROOTS.Zones, {
 				}),
 				n(WORLD_QUESTS, {
 					q(43805, {	-- Aquatic Assassination
-						["lvl"] = 110,
 						["isWorldQuest"] = true,
+						["lvl"] = 110,
 					}),
 				}),
 			},

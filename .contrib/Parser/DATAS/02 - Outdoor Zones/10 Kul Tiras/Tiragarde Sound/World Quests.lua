@@ -152,8 +152,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(50998, {	-- Work Order: Deep Sea Satin
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = TAILORING,
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(53716, {	-- Eastpoint Emergency (Faction Assault WQ)
 				["races"] = HORDE_ONLY,
@@ -471,26 +471,26 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(50983, {	-- Work Order: Akunda's Bite
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = HERBALISM,
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(52423, {	-- Work Order: Battle Flag: Phalanx Defense
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = TAILORING,
+				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(162444),	-- Pattern: Battle Flag: Phalanx Defense (Rank 3)
 				},
 			}),
 			q(52331, {	-- Work Order: Demitri's Draught of Deception
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = ALCHEMY,
+				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(162257),	-- Recipe: Demitri's Draught of Deception (Rank 3)
 				},
 			}),
 			q(52333, {	-- Work Order: Sea Mist Potion
-				["races"] = ALLIANCE_ONLY,
 				["requireSkill"] = ALCHEMY,
+				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(162259),	-- Recipe: Sea Mist Potion (Rank 3)
 				},

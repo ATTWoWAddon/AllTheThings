@@ -147,8 +147,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["races"] = HORDE_ONLY,
 				}),
 				q(5728, {	-- Hidden Enemies (3/5)
-					["qg"] = 4949,	-- Thrall <Warchief>
 					["sourceQuest"] = 5727,	-- Hidden Enemies (2/5)
+					["qg"] = 4949,	-- Thrall <Warchief>
 					["coord"] = { 32.0, 37.8, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -163,16 +163,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(5729, {	-- Hidden Enemies (4/5)
-					["qg"] = 4949,	-- Thrall <Warchief>
 					["sourceQuest"] = 5728,	-- Hidden Enemies (3/5)
+					["qg"] = 4949,	-- Thrall <Warchief>
 					["coord"] = { 32.0, 37.8, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 				}),
 				q(5730, {	-- Hidden Enemies (5/5)
-					["qg"] = 3216,	-- Neeru Fireblade
 					["sourceQuest"] = 5729,	-- Hidden Enemies (4/5)
+					["qg"] = 3216,	-- Neeru Fireblade
 					["coord"] = { 49.6, 50.6, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -232,11 +232,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(5724, {	-- Returning the Lost Satchel
+					["sourceQuest"] = 5722,	-- Searching for the Lost Satchel
 					["providers"] = {
 						{ "n", 11834 },	-- Maur Grimtotem
 						{ "i", 14381 },	-- Grimtotem Satchel
 					},
-					["sourceQuest"] = 5722,	-- Searching for the Lost Satchel
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
@@ -258,8 +258,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = 9,
 				}),
 				q(5761, {	-- Slaying the Beast
-					["qg"] = 3216,	-- Neeru Fireblade
 					["sourceQuest"] = 5727,	-- Hidden Enemies (2/5)
+					["qg"] = 3216,	-- Neeru Fireblade
 					["coord"] = { 49.6, 50.6, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -271,7 +271,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(26858, {	-- Taragaman the Hungerer
-					["qg"] = 44217,	-- Stone Guard Kurjack
 					["sourceQuests"] = {
 						28003,	-- Adventurer's Wanted: Ragefire Chasm
 						26865,	-- Enemies Below [Orgrimmar]
@@ -284,6 +283,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						31037,	-- Enemies Below [Undercity]
 						-- #endif
 					},
+					["qg"] = 44217,	-- Stone Guard Kurjack
 					["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(13, 13, 7),

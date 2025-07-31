@@ -892,8 +892,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 			-- #endif
 			["groups"] = {
 				q(29397, {	-- A New Supplier of Souvenirs (A)
-					["qg"] = 24468,	-- Pol Amberstill
 					["sourceQuest"] = 11318,	-- Now This is Ram Racing... Almost. (A)
+					["qg"] = 24468,	-- Pol Amberstill
 					-- #if AFTER CATA
 					["coord"] = { 53.6, 38.6, DUN_MOROGH },
 					-- #else
@@ -912,8 +912,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					},
 				}),
 				q(29396, {	-- A New Supplier of Souvenirs (H)
-					["qg"] = 24497,	-- Ram Master Ray
 					["sourceQuest"] = 11409,	-- Now This is Ram Racing... Almost. (H)
+					["qg"] = 24497,	-- Ram Master Ray
 					-- #if AFTER CATA
 					["coord"] = { 42.6, 17.6, DUROTAR },
 					-- #else
@@ -932,15 +932,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					},
 				}),
 				q(13932, {	-- Another Year, Another Souvenir (A)
-					["qg"] = 24468,	-- Pol Amberstill
+					-- #if BEFORE WRATH
+					["description"] = "This quest was only available during the 2009 & 2010 Brewfest. We are unsure if it will be returning during TBC Classic.",
+					-- #endif
 					["sourceQuest"] = 11318,	-- Now This is Ram Racing... Almost. (A)
+					["qg"] = 24468,	-- Pol Amberstill
 					-- #if AFTER CATA
 					["coord"] = { 53.6, 38.6, DUN_MOROGH },
 					-- #else
 					["coord"] = { 46.4, 40.3, DUN_MOROGH },
-					-- #endif
-					-- #if BEFORE WRATH
-					["description"] = "This quest was only available during the 2009 & 2010 Brewfest. We are unsure if it will be returning during TBC Classic.",
 					-- #endif
 					["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 					["cost"] = {
@@ -955,15 +955,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					},
 				}),
 				q(13931, {	-- Another Year, Another Souvenir (H)
-					["qg"] = 24497,	-- Ram Master Ray
+					-- #if BEFORE WRATH
+					["description"] = "This quest was only available during the 2009 & 2010 Brewfest. We are unsure if it will be returning during TBC Classic.",
+					-- #endif
 					["sourceQuest"] = 11409,	-- Now This is Ram Racing... Almost. (H)
+					["qg"] = 24497,	-- Ram Master Ray
 					-- #if AFTER CATA
 					["coord"] = { 42.6, 17.6, DUROTAR },
 					-- #else
 					["coord"] = { 46.3, 14.8, DUROTAR },
-					-- #endif
-					-- #if BEFORE WRATH
-					["description"] = "This quest was only available during the 2009 & 2010 Brewfest. We are unsure if it will be returning during TBC Classic.",
 					-- #endif
 					["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 					["cost"] = {
@@ -1139,7 +1139,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["groups"] = BREWFEST_TOKEN,
 				}),
 				q(11293, {	-- Bark for the Barleybrews! (A)
-					["qg"] = 23627,	-- Becan Barleybrew
+					["sourceQuest"] = 11318,	-- Now This is Ram Racing... Almost. (A)
 					--[[
 					-- TODO: If they don't both check off when you complete one, uncomment.
 					["altQuests"] = {
@@ -1147,7 +1147,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						11294,	-- Bark for the Thunderbrews! (A)
 					},
 					]]--
-					["sourceQuest"] = 11318,	-- Now This is Ram Racing... Almost. (A)
+					["qg"] = 23627,	-- Becan Barleybrew
 					-- #if AFTER CATA
 					["coord"] = { 56.0, 38.0, DUN_MOROGH },
 					-- #else
@@ -1163,7 +1163,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["groups"] = BREWFEST_TOKEN,
 				}),
 				q(11407, {	-- Bark for Drohn's Distillery! (H)
-					["qg"] = 24498,	-- Cort Gorestein
+					["sourceQuest"] = 11409,	-- Now This is Ram Racing... Almost. (H)
 					--[[
 					-- TODO: If they don't both check off when you complete one, uncomment.
 					["altQuests"] = {
@@ -1171,7 +1171,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						11408,	-- Bark for T'chali's Voodoo Brewery! (H)
 					},
 					]]--
-					["sourceQuest"] = 11409,	-- Now This is Ram Racing... Almost. (H)
+					["qg"] = 24498,	-- Cort Gorestein
 					-- #if AFTER CATA
 					["coord"] = { 40.5, 18.3, DUROTAR },
 					-- #else
@@ -1187,7 +1187,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["groups"] = BREWFEST_TOKEN,
 				}),
 				q(11294, {	-- Bark for the Thunderbrews! (A)
-					["qg"] = 23628,	-- Daran Thunderbrew
+					["sourceQuest"] = 11318,	-- Now This is Ram Racing... Almost. (A)
 					--[[
 					-- TODO: If they don't both check off when you complete one, uncomment.
 					["altQuests"] = {
@@ -1195,7 +1195,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						11294,	-- Bark for the Thunderbrews! (A)
 					},
 					]]--
-					["sourceQuest"] = 11318,	-- Now This is Ram Racing... Almost. (A)
+					["qg"] = 23628,	-- Daran Thunderbrew
 					-- #if AFTER CATA
 					["coord"] = { 56.6, 36.8, DUN_MOROGH },
 					-- #else
@@ -1211,7 +1211,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["groups"] = BREWFEST_TOKEN,
 				}),
 				q(11408, {	-- Bark for T'chali's Voodoo Brewery! (H)
-					["qg"] = 24498,	-- Cort Gorestein
+					["sourceQuest"] = 11409,	-- Now This is Ram Racing... Almost. (H)
 					--[[
 					-- TODO: If they don't both check off when you complete one, uncomment.
 					["altQuests"] = {
@@ -1219,7 +1219,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						11408,	-- Bark for T'chali's Voodoo Brewery! (H)
 					},
 					]]--
-					["sourceQuest"] = 11409,	-- Now This is Ram Racing... Almost. (H)
+					["qg"] = 24498,	-- Cort Gorestein
 					-- #if AFTER CATA
 					["coord"] = { 40.5, 18.3, DUROTAR },
 					-- #else
@@ -1232,6 +1232,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["groups"] = BREWFEST_TOKEN,
 				}),
 				q(11441, {	-- Brewfest! (A)
+					["altQuests"] = {
+						11441,	-- Brewfest! (A)
+						11442,	-- Welcome to Brewfest! (A)
+					},
 					["qgs"] = {
 						18927,	-- Human Commoner
 						19148,	-- Dwarf Commoner
@@ -1242,10 +1246,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						-- #if AFTER TWW
 						220307,	-- Holiday Enthusiast
 						-- #endif
-					},
-					["altQuests"] = {
-						11441,	-- Brewfest! (A)
-						11442,	-- Welcome to Brewfest! (A)
 					},
 					["timeline"] = { ADDED_2_2_2 },
 					["maps"] = {
@@ -1275,6 +1275,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					},
 				}),
 				q(11446, {	-- Brewfest! (H)
+					["altQuests"] = {
+						11446,	-- Brewfest! (H)
+						11447,	-- Welcome to Brewfest! (H)
+					},
 					["qgs"] = {
 						19169,	-- Blood Elf Commoner
 						19175,	-- Orc Commoner
@@ -1282,10 +1286,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						19177,	-- Troll Commoner
 						19178,	-- Forsaken Commoner
 						20102,	-- Goblin Commoner
-					},
-					["altQuests"] = {
-						11446,	-- Brewfest! (H)
-						11447,	-- Welcome to Brewfest! (H)
 					},
 					["timeline"] = { ADDED_2_2_2 },
 					["maps"] = {
@@ -1387,8 +1387,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["lvl"] = lvlsquish(40, 40, 1),
 				}),
 				q(29394, {	-- Brew For Brewfest (A)
-					["qg"] = 23558,	-- Neill Ramstein
 					["sourceQuest"] = 11122,	-- There and Back Again (A)
+					["qg"] = 23558,	-- Neill Ramstein
 					-- #if AFTER CATA
 					["coord"] = { 53.6, 38.6, DUN_MOROGH },
 					-- #else
@@ -1402,8 +1402,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["isDaily"] = true,
 				}),
 				q(29393, {	-- Brew For Brewfest (H)
-					["qg"] = 24497,	-- Ram Master Ray
 					["sourceQuest"] = 11412,	-- There and Back Again (H)
+					["qg"] = 24497,	-- Ram Master Ray
 					-- #if AFTER CATA
 					["coord"] = { 42.6, 17.6, DUROTAR },
 					-- #else
@@ -1444,8 +1444,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				}),
 				-- #IF NOT ANYCLASSIC
 				q(12420, {	-- Brew of the Month Club (A)
-					["provider"] = { "i", 37736 },	-- "Brew of the Month" Club Membership Form (original)
 					["altQuests"] = { 12278 },	-- Brew of the Month Club (A)
+					["provider"] = { "i", 37736 },	-- "Brew of the Month" Club Membership Form (original)
 					["timeline"] = { ADDED_2_2_2 },	-- Originally added 3.0.2, but in TBC Classic?!
 					["maps"] = { DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
@@ -1481,8 +1481,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				}),
 				-- #IF NOT ANYCLASSIC
 				q(12421, {	-- Brew of the Month Club (H)
-					["provider"] = { "i", 37737 },	-- "Brew of the Month" Club Membership Form (original)
 					["altQuests"] = { 12306 },	-- Brew of the Month Club (H)
+					["provider"] = { "i", 37737 },	-- "Brew of the Month" Club Membership Form (original)
 					["timeline"] = { ADDED_2_2_2 },	-- Originally added 3.0.2, but in TBC Classic?!
 					["maps"] = { DUROTAR },
 					["races"] = HORDE_ONLY,
@@ -1569,11 +1569,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					},
 				}),
 				q(12022, {	-- Chug and Chuck! (A)
-					["qg"] = 27215,	-- Boxey Boltspinner
 					["sourceQuests"] = {
 						11441,	-- Brewfest! (A)
 						11442,	-- Welcome to Brewfest! (A)
 					},
+					["qg"] = 27215,	-- Boxey Boltspinner
 					-- #if AFTER CATA
 					["coord"] = { 54.7, 38.0, DUN_MOROGH },
 					-- #else
@@ -1590,11 +1590,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					}),
 				}),
 				q(12191, {	-- Chug and Chuck! (H)
-					["qg"] = 27216,	-- Bizzle Quicklift
 					["sourceQuests"] = {
 						11446,	-- Brewfest! (H)
 						11447,	-- Welcome to Brewfest! (H)
 					},
+					["qg"] = 27216,	-- Bizzle Quicklift
 					-- #if AFTER CATA
 					["coord"] = { 41.4, 17.6, DUROTAR },
 					-- #else
@@ -1611,38 +1611,38 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					}),
 				}),
 				q(56322, {	-- Contained Alemental (A)
-					["provider"] = { "o", 327669 },	-- Contained Alemental
 					["altQuests"] = {
 						56322,	-- Contained Alemental (A)
 						56341,	-- Direbrew Cog (A)
 						56372,	-- Hozen Totem (A)
 					},
+					["provider"] = { "o", 327669 },	-- Contained Alemental
 					["coord"] = { 55.5, 37.7, DUN_MOROGH },
 					["timeline"] = { ADDED_8_2_0 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(56714, {	-- Contained Alemental (H)
-					["provider"] = { "o", 330168 },	-- Contained Alemental
 					["altQuests"] = {
 						56714,	-- Contained Alemental (H)
 						56716,	-- Direbrew Cog (H)
 						56715,	-- Hozen Totem (H)
 					},
+					["provider"] = { "o", 330168 },	-- Contained Alemental
 					["coord"] = { 41.0, 17.8, DUROTAR },
 					["timeline"] = { ADDED_8_2_0 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(11321, {	-- Did Someone Say "Souvenir?" (A)
+					-- #if BEFORE WRATH
+					["description"] = "This quest was only available during the 2007 Brewfest.",
+					-- #endif
 					["qg"] = 24468,	-- Pol Amberstill
 					-- #if AFTER CATA
 					["coord"] = { 53.6, 38.6, DUN_MOROGH },
 					-- #else
 					["coord"] = { 46.4, 40.3, DUN_MOROGH },
-					-- #endif
-					-- #if BEFORE WRATH
-					["description"] = "This quest was only available during the 2007 Brewfest.",
 					-- #endif
 					["timeline"] = { ADDED_2_0_1, REMOVED_2_4_3 },
 					["cost"] = {
@@ -1657,14 +1657,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					},
 				}),
 				q(11413, {	-- Did Someone Say "Souvenir?" (H)
+					-- #if BEFORE WRATH
+					["description"] = "This quest was only available during the 2007 Brewfest.",
+					-- #endif
 					["qg"] = 24497,	-- Ram Master Ray
 					-- #if AFTER CATA
 					["coord"] = { 42.6, 17.6, DUROTAR },
 					-- #else
 					["coord"] = { 46.3, 14.8, DUROTAR },
-					-- #endif
-					-- #if BEFORE WRATH
-					["description"] = "This quest was only available during the 2007 Brewfest.",
 					-- #endif
 					["timeline"] = { ADDED_2_0_1, REMOVED_2_4_3 },
 					["cost"] = {
@@ -1707,67 +1707,67 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["groups"] = BREWFEST_TOKEN,
 				}),
 				q(56341, {	-- Direbrew Cog (A)
-					["provider"] = { "o", 328343 },	-- Direbrew Cog
 					["altQuests"] = {
 						56322,	-- Contained Alemental (A)
 						56341,	-- Direbrew Cog (A)
 						56372,	-- Hozen Totem (A)
 					},
+					["provider"] = { "o", 328343 },	-- Direbrew Cog
 					["coord"] = { 55.5, 37.7, DUN_MOROGH },
 					["timeline"] = { ADDED_8_2_0 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(56716, {	-- Direbrew Cog (H)
-					["provider"] = { "o", 330169 },	-- Direbrew Cog
 					["altQuests"] = {
 						56714,	-- Contained Alemental (H)
 						56716,	-- Direbrew Cog (H)
 						56715,	-- Hozen Totem (H)
 					},
+					["provider"] = { "o", 330169 },	-- Direbrew Cog
 					["coord"] = { 41.0, 17.8, DUROTAR },
 					["timeline"] = { ADDED_8_2_0 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(56372, {	-- Hozen Totem (A)
-					["provider"] = { "o", 328413 },	-- Hozen Totem
 					["altQuests"] = {
 						56322,	-- Contained Alemental (A)
 						56341,	-- Direbrew Cog (A)
 						56372,	-- Hozen Totem (A)
 					},
+					["provider"] = { "o", 328413 },	-- Hozen Totem
 					["coord"] = { 55.5, 37.7, DUN_MOROGH },
 					["timeline"] = { ADDED_8_2_0 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(56715, {	-- Hozen Totem (H)
-					["provider"] = { "o", 330170 },	-- Hozen Totem
 					["altQuests"] = {
 						56714,	-- Contained Alemental (H)
 						56716,	-- Direbrew Cog (H)
 						56715,	-- Hozen Totem (H)
 					},
+					["provider"] = { "o", 330170 },	-- Hozen Totem
 					["coord"] = { 41.0, 17.8, DUROTAR },
 					["timeline"] = { ADDED_8_2_0 },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(12062, {	-- Insult Coren Direbrew
-					["qg"] = 26719,	-- Brewfest Spy
 					["sourceQuest"] = 12318,	-- Save Brewfest!
+					["qg"] = 26719,	-- Brewfest Spy
 					["timeline"] = { ADDED_2_4_3, REMOVED_3_3_3 },
 					["maps"] = { BLACKROCK_DEPTHS },
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(65, 65, 10),
 				}),
 				q(11318, {	-- Now This is Ram Racing... Almost. (A)
-					["qg"] = 23558,	-- Neill Ramstein
 					["sourceQuests"] = {
 						11441,	-- Brewfest! (A)
 						11442,	-- Welcome to Brewfest! (A)
 					},
+					["qg"] = 23558,	-- Neill Ramstein
 					-- #if AFTER CATA
 					["coord"] = { 53.6, 38.6, DUN_MOROGH },
 					-- #else
@@ -1781,11 +1781,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["isYearly"] = true,
 				}),
 				q(11409, {	-- Now This is Ram Racing... Almost. (H)
-					["qg"] = 24497,	-- Ram Master Ray
 					["sourceQuests"] = {
 						11446,	-- Brewfest! (H)
 						11447,	-- Welcome to Brewfest! (H)
 					},
+					["qg"] = 24497,	-- Ram Master Ray
 					-- #if AFTER CATA
 					["coord"] = { 42.6, 17.6, DUROTAR },
 					-- #else
@@ -1870,15 +1870,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					}),
 				}),
 				q(12318, {	-- Save Brewfest!
-					["qgs"] = {
-						27584,	-- Darna Honeybock
-						28329,	-- Slurpo Fizzykeg
-					},
 					["sourceQuests"] = {
 						11441,	-- Brewfest! (A)
 						11446,	-- Brewfest! (H)
 						11442,	-- Welcome to Brewfest! (A)
 						11447,	-- Welcome to Brewfest! (H)
+					},
+					["qgs"] = {
+						27584,	-- Darna Honeybock
+						28329,	-- Slurpo Fizzykeg
 					},
 					["coords"] = {
 						{ 46.2, 52.8, DUN_MOROGH },
@@ -1937,8 +1937,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["lvl"] = lvlsquish(48, 48, 48),
 				}),
 				q(11486, {	-- The Best of Brews (A)
-					["qg"] = 23872,	-- Coren Direbrew
 					["sourceQuest"] = 11454,	-- Seek the Saboteurs
+					["qg"] = 23872,	-- Coren Direbrew
 					["timeline"] = { ADDED_2_0_1, REMOVED_2_4_3 },
 					["maps"] = { BLACKROCK_DEPTHS },
 					["races"] = ALLIANCE_ONLY,
@@ -1950,8 +1950,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					},
 				}),
 				q(11487, {	-- The Best of Brews (H)
-					["qg"] = 23872,	-- Coren Direbrew
 					["sourceQuest"] = 11454,	-- Seek the Saboteurs
+					["qg"] = 23872,	-- Coren Direbrew
 					["timeline"] = { ADDED_2_0_1, REMOVED_2_4_3 },
 					["maps"] = { BLACKROCK_DEPTHS },
 					["races"] = HORDE_ONLY,
@@ -1963,8 +1963,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					},
 				}),
 				q(11122, {	-- There and Back Again (A)
-					["qg"] = 23558,	-- Neill Ramstein
 					["sourceQuest"] = 11318,	-- Now This is Ram Racing... Almost. (A)
+					["qg"] = 23558,	-- Neill Ramstein
 					-- #if AFTER CATA
 					["coord"] = { 53.6, 38.6, DUN_MOROGH },
 					-- #else
@@ -1979,8 +1979,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["groups"] = BREWFEST_TOKEN,
 				}),
 				q(11412, {	-- There and Back Again (H)
-					["qg"] = 24497,	-- Ram Master Ray
 					["sourceQuest"] = 11409,	-- Now This is Ram Racing... Almost. (H)
+					["qg"] = 24497,	-- Ram Master Ray
 					-- #if AFTER CATA
 					["coord"] = { 42.6, 17.6, DUROTAR },
 					-- #else
@@ -2027,11 +2027,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					}),
 				}),
 				q(11442, {	-- Welcome to Brewfest! (A)
-					["qg"] = 24710,	-- Ipfelkofer Ironkeg
 					["altQuests"] = {
 						11441,	-- Brewfest! (A)
 						11442,	-- Welcome to Brewfest! (A)
 					},
+					["qg"] = 24710,	-- Ipfelkofer Ironkeg
 					-- #if AFTER CATA
 					["coord"] = { 55.1, 38.1, DUN_MOROGH },
 					-- #else
@@ -2053,6 +2053,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					},
 				}),
 				q(11447, {	-- Welcome to Brewfest! (H)
+					["altQuests"] = {
+						11446,	-- Brewfest! (H)
+						11447,	-- Welcome to Brewfest! (H)
+					},
 					-- #if AFTER 8.2.0
 					["qg"] = 155194,	-- La'gar Brewshout
 					["coord"] = { 41.6, 18.4, DUROTAR },
@@ -2064,10 +2068,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					["coord"] = { 45.6, 17.2, DUROTAR },
 					-- #endif
 					-- #endif
-					["altQuests"] = {
-						11446,	-- Brewfest! (H)
-						11447,	-- Welcome to Brewfest! (H)
-					},
 					["timeline"] = { ADDED_2_2_2 },
 					["races"] = HORDE_ONLY,
 					["isYearly"] = true,

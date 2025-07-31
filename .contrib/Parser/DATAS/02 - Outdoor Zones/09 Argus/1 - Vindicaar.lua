@@ -148,8 +148,8 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					},
 				})),
 				q(48977, bubbleDownSelf({ ["minReputation"] = { FACTION_ARMY_OF_THE_LIGHT, EXALTED }}, {	-- Supplies From the Army of the Light
-					["repeatable"] = true,
 					["provider"] = { "n", 127120 },	-- Vindicator Jaelaana
+					["repeatable"] = true,
 					["groups"] = {
 						i(152923, {	-- Gleaming Footlocker
 							i(153044),	-- Avenging Felcrusher (MOUNT!)
@@ -176,9 +176,9 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 			}),
 			n(QUESTS, {
 				q(48075, {	-- A Colorful Key
+					["sourceQuests"] = { 46941 },	-- The Path Forward
 					["provider"] = { "n", 125343 },		-- Vorel
 					["requireSkill"] = JEWELCRAFTING,
-					["sourceQuests"] = { 46941 },	-- The Path Forward
 					["groups"] = {
 						i(151736),	-- Design: Deadly Deep Chemirine (RECIPE!)
 						i(151738),	-- Design: Masterful Argulite (RECIPE!)
@@ -188,10 +188,10 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					},
 				}),
 				q(48076, {	-- A Crowning Achievment
-					["provider"] = { "n", 125343 },		-- Vorel
-					["requireSkill"] = JEWELCRAFTING,
 					["sourceQuests"] = { 48075 },	-- A Colorful Key
+					["provider"] = { "n", 125343 },		-- Vorel
 					["coord"] = { 44.45, 73.35, THE_VINDICAAR_KROKUUN_UPPER },
+					["requireSkill"] = JEWELCRAFTING,
 					["groups"] = {
 						i(151724),	-- Design: Empyrial Cosmic Crown [Rank 1] (RECIPE!)
 						i(151727),	-- Design: Empyrial Deep Crown [Rank 1] (RECIPE!)
@@ -258,26 +258,26 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 						47473,	-- Sizing Up the Opposition (Light's Purchase)
 						48929,	-- Sizing Up the Opposition (The Veiled Den)
 					},
-					["providers"] = {
-						{ "n", 124312 },	-- High Exarch Turalyon @ Krokuun
-						{ "n", 126954 },	-- High Exarch Turalyon @ Antoran Wastes
+					["qgs"] = {
+						124312,	-- High Exarch Turalyon @ Krokuun
+						126954,	-- High Exarch Turalyon @ Antoran Wastes
 					},
-					["isWeekly"] = true,
 					["coords"] = {
 						{ 59.1, 20.2, EREDATH },
 						{ 33.5, 58.3, THE_VINDICAAR_ANTORAN_WASTES_UPPER },
 						{ 45.8, 23.9, THE_VINDICAAR_EREDATH_UPPER },
 						{ 46.7, 24.6, THE_VINDICAAR_KROKUUN_UPPER },
 					},
+					["isWeekly"] = true,
 					["groups"] = {
 						i(153014),	-- Pristine Argunite (QI!)
 					},
 				}),
 				q(48636, {	-- Fueling the Antoran Campaign
 					["sourceQuests"] = { 48912 },	-- Supplying the Antoran Campaign
-					["repeatable"] = true,
 					["qg"] = 126954,	-- High Exarch Turalyon
 					["cost"] = { { "c", 1220, 900 } },	-- 900x Order Resources
+					["repeatable"] = true,
 					["groups"] = {
 						i(152097, {	-- Lightforged Bulwark
 							follower(1059, {	-- Lightforged Bulwark (Temporary Troop)
@@ -309,7 +309,6 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					["isWeekly"] = true,
 				}),
 				q(48513, {	-- Invasion Point Offensive
-				--	might unlock differently/have different SQ(s) on main character vs alts.
 					["sourceQuests"] = { 48440 },	-- Into the Night
 					["qgs"] = {
 						120978,	-- Illidan Stormrage
@@ -321,6 +320,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 						{ 46.8, 20.5, THE_VINDICAAR_EREDATH_UPPER },
 						{ 40.2, 21.4, THE_VINDICAAR_KROKUUN_UPPER },
 					},
+				--	might unlock differently/have different SQ(s) on main character vs alts.
 				}),
 				q(47182, {	-- Long Overdue
 					["sourceQuests"] = { 47134 },	-- Foiling the Legion's Jailbreak
@@ -332,8 +332,8 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					},
 				}),
 				q(48074, {	-- Looming Over Me
-					["requireSkill"] = TAILORING,
 					["sourceQuests"] = { 46941 },	-- The Path Forward
+					["requireSkill"] = TAILORING,
 					["groups"] = {
 						recipe(247807),	-- Lightweave Breeches [Rank 1]
 						i(151874),	-- Lightweave Loom (QI!)
@@ -379,9 +379,9 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				}),
 				q(48912, {	-- Supplying the Antoran Campaign
 					["sourceQuests"] = { 48448 },	-- Hindering the Legion War Machine
-					["isWeekly"] = true,
 					["qg"] = 126954,	-- High Exarch Turalyon
 					["cost"] = { { "c", 1220, 150 } },	-- 150x Order Resources
+					["isWeekly"] = true,
 					["groups"] = {
 						i(152097, {	-- Lightforged Bulwark
 							follower(1059, {	-- Lightforged Bulwark (Temporary Troop)
@@ -422,10 +422,10 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					["coord"] = { 42.9, 26.5, THE_VINDICAAR_KROKUUN_UPPER },
 				}),
 				q(49224, {	-- The Netherlight Crucible
-					["u"] = REMOVED_FROM_GAME,	-- removed in BFA 8.0.1
 					["sourceQuests"] = { 48560 },	-- An Offering of Shadow
 					["provider"] = { "n", 126389 },	-- Artificer Shela'na
 					["coord"] = { 58.8, 69.4, THE_VINDICAAR_KROKUUN_LOWER },
+					["u"] = REMOVED_FROM_GAME,	-- removed in BFA 8.0.1
 				}),
 				q(49445, {	-- The Prime Exchange
 					["sourceQuests"] = { 48440 },	-- Into the Night

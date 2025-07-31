@@ -444,11 +444,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 	-- #endif
 	n(QUESTS, {
 		q(9029, {	-- A Bubbling Cauldron
-			["provider"] = { "o", 181073 },	-- Fragrant Cauldron
 			["sourceQuests"] = {
 				9028,	-- The Source Revealed [A]
 				8984,	-- The Source Revealed [H]
 			},
+			["provider"] = { "o", 181073 },	-- Fragrant Cauldron
 			["coord"] = { 89.3, 75.1, ALTERAC_MOUNTAINS },
 			["timeline"] = { REMOVED_3_3_0 },
 			["isYearly"] = true,
@@ -494,18 +494,18 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(24657, {	-- A Friendly Chat... (A)
-			["qg"] = 38325,	-- Marion Sutton
 			["sourceQuest"] = 24849,	-- Hot On The Trail (A)
+			["qg"] = 38325,	-- Marion Sutton
 			["coord"] = { 60.4, 76.2, STORMWIND_CITY },
 			["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		q(24576, {	-- A Friendly Chat... (H)
+			["sourceQuest"] = 24851,	-- Hot On The Trail (H)
 			["qgs"] = {
 				37172,	-- Detective Snap Snagglebolt
 				38328,	-- Roka
 			},
-			["sourceQuest"] = 24851,	-- Hot On The Trail (H)
 			["coords"] = {
 				{ 50.0, 65.0, ORGRIMMAR },	-- Detective Snap Snagglebolt
 				{ 57.6, 61.0, ORGRIMMAR },	-- Roka
@@ -593,8 +593,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["isDaily"] = true,
 		}),
 		q(9024, {	-- Aristan's Hunch
-			["qg"] = 16105,	-- Aristan Mottar
 			["sourceQuest"] = 8903,	-- Dangerous Love (A)
+			["qg"] = 16105,	-- Aristan Mottar
 			["coord"] = { 54.6, 65.6, STORMWIND_CITY },
 			["timeline"] = { REMOVED_3_3_0 },
 			["races"] = ALLIANCE_ONLY,
@@ -624,8 +624,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["isDaily"] = true,
 		}),
 		q(44558, {	-- Crushing the Crown (A) [Legion+]
-			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
+			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["coord"] = { 61.5, 75.2, STORMWIND_CITY },
 			["timeline"] = { ADDED_7_1_5, REMOVED_10_2_5 },
 			["maps"] = { SILVERPINE_FOREST },
@@ -647,8 +647,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(24658, {	-- Crushing the Crown (A) [Elwynn Forest]
-			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
+			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["coord"] = { 61.5, 75.2, STORMWIND_CITY },
 			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { ELWYNN_FOREST },
@@ -666,8 +666,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(24659, {	-- Crushing the Crown (A) [Darkshore]
-			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
+			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["coord"] = { 61.5, 75.2, STORMWIND_CITY },
 			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { DARKSHORE },
@@ -685,8 +685,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(24660, {	-- Crushing the Crown (A) [Duskwood]
-			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
+			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["coord"] = { 61.5, 75.2, STORMWIND_CITY },
 			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { DUSKWOOD },
@@ -704,8 +704,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(24662, {	-- Crushing the Crown (A) [Dustwallow Marsh]
-			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
+			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["coord"] = { 61.5, 75.2, STORMWIND_CITY },
 			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { DUSTWALLOW_MARSH },
@@ -723,8 +723,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(24663, {	-- Crushing the Crown (A) [The Hinterlands]
-			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
+			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["coord"] = { 61.5, 75.2, STORMWIND_CITY },
 			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { THE_HINTERLANDS },
@@ -742,8 +742,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(24664, {	-- Crushing the Crown (A) [Winterspring]
-			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
+			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["coord"] = { 61.5, 75.2, STORMWIND_CITY },
 			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { WINTERSPRING },
@@ -761,8 +761,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(24665, {	-- Crushing the Crown (A) [Terokkar Forest]
-			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
+			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["coord"] = { 61.5, 75.2, STORMWIND_CITY },
 			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { TEROKKAR_FOREST },
@@ -780,8 +780,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(24666, {	-- Crushing the Crown (A) [Crystalsong Forest]
-			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
+			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["coord"] = { 61.5, 75.2, STORMWIND_CITY },
 			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { CRYSTALSONG_FOREST },
@@ -799,8 +799,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(28934, {	-- Crushing the Crown (A) [Uldum]
-			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
+			["qg"] = 38066,	-- Detective Snip Snagglebolt
 			["coord"] = { 61.5, 75.2, STORMWIND_CITY },
 			["timeline"] = { ADDED_4_0_6, REMOVED_7_1_5 },
 			["maps"] = { ULDUM },
@@ -818,8 +818,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(44546, {	-- Crushing the Crown (H) [Legion+]
-			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
+			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["coord"] = { 50.0, 65.0, ORGRIMMAR },
 			["timeline"] = { ADDED_7_1_5, REMOVED_10_2_5 },
 			["maps"] = { SILVERPINE_FOREST },
@@ -841,8 +841,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(24638, {	-- Crushing the Crown (H) [Durotar]
-			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
+			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["coord"] = { 50.0, 65.0, ORGRIMMAR },
 			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { DUROTAR },
@@ -860,8 +860,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(24645, {	-- Crushing the Crown (H) [Silverpine Forest]
-			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
+			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["coord"] = { 50.0, 65.0, ORGRIMMAR },
 			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { SILVERPINE_FOREST },
@@ -879,8 +879,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(24647, {	-- Crushing the Crown (H) [Hillsbrad Foothills]
-			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
+			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["coord"] = { 50.0, 65.0, ORGRIMMAR },
 			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { HILLSBRAD_FOOTHILLS },
@@ -898,8 +898,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(24648, {	-- Crushing the Crown (H) [Dustwallow Marsh]
-			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
+			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["coord"] = { 50.0, 65.0, ORGRIMMAR },
 			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { DUSTWALLOW_MARSH },
@@ -917,8 +917,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(24649, {	-- Crushing the Crown (H) [The Hinterlands]
-			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
+			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["coord"] = { 50.0, 65.0, ORGRIMMAR },
 			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { THE_HINTERLANDS },
@@ -936,8 +936,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(24650, {	-- Crushing the Crown (H) [Winterspring]
-			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
+			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["coord"] = { 50.0, 65.0, ORGRIMMAR },
 			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { WINTERSPRING },
@@ -955,8 +955,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(24651, {	-- Crushing the Crown (H) [Terokkar Forest]
-			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
+			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["coord"] = { 50.0, 65.0, ORGRIMMAR },
 			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { TEROKKAR_FOREST },
@@ -974,8 +974,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(24652, {	-- Crushing the Crown (H) [Crystalsong Forest]
-			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
+			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["coord"] = { 50.0, 65.0, ORGRIMMAR },
 			["timeline"] = { ADDED_3_3_0, REMOVED_7_1_5 },
 			["maps"] = { CRYSTALSONG_FOREST },
@@ -993,8 +993,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(28935, {	-- Crushing the Crown (H) [Uldum]
-			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
+			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["coord"] = { 50.0, 65.0, ORGRIMMAR },
 			["timeline"] = { ADDED_4_0_6, REMOVED_7_1_5 },
 			["maps"] = { ULDUM },
@@ -1101,8 +1101,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["isYearly"] = true,
 		}),
 		q(8979, {	-- Fenstad's Hunch
-			["qg"] = 16108,	-- Fenstad Argyle
 			["sourceQuest"] = 8904,	-- Dangerous Love (H)
+			["qg"] = 16108,	-- Fenstad Argyle
 			["coord"] = { 66.8, 44.4, UNDERCITY },
 			["timeline"] = { REMOVED_3_3_0 },
 			["races"] = HORDE_ONLY,
@@ -1117,8 +1117,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(24848, {	-- Fireworks At The Gilded Rose
-			["qg"] = 38066,	-- Inspector Snip Snagglebolt
 			["sourceQuest"] = 24656,	-- Pilfering Perfume (A)
+			["qg"] = 38066,	-- Inspector Snip Snagglebolt
 			["coord"] = { 61.6, 75.2, STORMWIND_CITY },
 			["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
 			["races"] = ALLIANCE_ONLY,
@@ -1182,36 +1182,36 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			-- #endif
 		}),
 		q(24849, {	-- Hot On The Trail (A)
-			["qg"] = 38325,	-- Marion Sutton
 			["sourceQuest"] = 24848,	-- Fireworks At The Gilded Rose
+			["qg"] = 38325,	-- Marion Sutton
 			["coord"] = { 60.4, 76.2, STORMWIND_CITY },
 			["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		q(24851, {	-- Hot On The Trail (H)
-			["qg"] = 38328,	-- Roka
 			["sourceQuest"] = 24850,	-- Snivel's Sweetheart
+			["qg"] = 38328,	-- Roka
 			["coord"] = { 57.6, 61.0, ORGRIMMAR },
 			["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
 			["races"] = HORDE_ONLY,
 		}),
 		q(24792, {	-- Man on the Inside (A)
-			["qg"] = 38066,	-- Inspector Snip Snagglebolt
 			["sourceQuest"] = 24657,	-- A Friendly Chat... (A)
+			["qg"] = 38066,	-- Inspector Snip Snagglebolt
 			["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 			["maps"] = { STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		q(24793, {	-- Man on the Inside (H)
-			["qg"] = 38066,	-- Inspector Snip Snagglebolt
 			["sourceQuest"] = 24576,	-- A Friendly Chat... (H)
+			["qg"] = 38066,	-- Inspector Snip Snagglebolt
 			["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 			["maps"] = { ORGRIMMAR },
 			["races"] = HORDE_ONLY,
 		}),
 		q(9025, {	-- Morgan's Discovery
-			["qg"] = 279,	-- Morgan Pestle
 			["sourceQuest"] = 9024,	-- Aristan's Hunch
+			["qg"] = 279,	-- Morgan Pestle
 			["coord"] = { 56.2, 64.8, STORMWIND_CITY },
 			["timeline"] = { REMOVED_3_3_0 },
 			["races"] = ALLIANCE_ONLY,
@@ -1224,22 +1224,22 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			-- #endif
 		}),
 		q(24656, {	-- Pilfering Perfume (A)
-			["qg"] = 38066,	-- Inspector Snip Snagglebolt
 			["sourceQuest"] = 24655,	-- Something Stinks (A)
+			["qg"] = 38066,	-- Inspector Snip Snagglebolt
 			["coord"] = { 61.6, 75.2, STORMWIND_CITY },
 			["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		q(24541, {	-- Pilfering Perfume (H)
-			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["sourceQuest"] = 24536,	-- Something Stinks (H)
+			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["coord"] = { 50.0, 65.0, ORGRIMMAR },
 			["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
 			["races"] = HORDE_ONLY,
 		}),
 		q(24850, {	-- Snivel's Sweetheart
-			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["sourceQuest"] = 24541,	-- Pilfering Perfume (H)
+			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["coord"] = { 50.0, 65.0, ORGRIMMAR },
 			["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
 			["races"] = HORDE_ONLY,
@@ -1257,25 +1257,25 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["races"] = HORDE_ONLY,
 		}),
 		q(24655, {	-- Something Stinks (A)
-			["qg"] = 38066,	-- Inspector Snip Snagglebolt
 			["sourceQuests"] = {
 				24804,	-- Uncommon Scents (A)
 				-- #if AFTER DF
 				72735,	-- Still Into Perfume (A)
 				-- #endif
 			},
+			["qg"] = 38066,	-- Inspector Snip Snagglebolt
 			["coord"] = { 61.6, 75.2, STORMWIND_CITY },
 			["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		q(24536, {	-- Something Stinks (H)
-			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["sourceQuests"] = {
 				24805,	-- Uncommon Scents (H)
 				-- #if AFTER DF
 				72736,	-- Still Into Perfume (H)
 				-- #endif
 			},
+			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["coord"] = { 50.0, 65.0, ORGRIMMAR },
 			["timeline"] = { ADDED_3_3_0, REMOVED_10_2_5 },
 			["races"] = HORDE_ONLY,
@@ -1305,48 +1305,48 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["isYearly"] = true,
 		}),
 		q(9028, {	-- The Source Revealed (A)
-			["qg"] = 16106,	-- Evert Sorisam
 			["sourceQuest"] = 9027,	-- Tracing the Source (A) (2/2)
+			["qg"] = 16106,	-- Evert Sorisam
 			["coord"] = { 39.8, 46.8, STORMWIND_CITY },
 			["timeline"] = { REMOVED_3_3_0 },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 		}),
 		q(8984, {	-- The Source Revealed (H)
-			["qg"] = 16109,	-- Mara Rennick
 			["sourceQuest"] = 8983,	-- Tracing the Source (H) (2/2)
+			["qg"] = 16109,	-- Mara Rennick
 			["coord"] = { 70.8, 28.8, UNDERCITY },
 			["timeline"] = { REMOVED_3_3_0 },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 		}),
 		q(9026, {	-- Tracing the Source (A) (1/2)
-			["qg"] = 16105,	-- Aristan Mottar
 			["sourceQuest"] = 9025,	-- Morgan's Discovery
+			["qg"] = 16105,	-- Aristan Mottar
 			["coord"] = { 54.6, 65.6, STORMWIND_CITY },
 			["timeline"] = { REMOVED_3_3_0 },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 		}),
 		q(9027, {	-- Tracing the Source (A) (2/2)
-			["qg"] = 6740,	-- Innkeeper Allison <Innkeeper>
 			["sourceQuest"] = 9026,	-- Tracing the Source (A) (1/2)
+			["qg"] = 6740,	-- Innkeeper Allison <Innkeeper>
 			["coord"] = { 52.8, 65.4, STORMWIND_CITY },
 			["timeline"] = { REMOVED_3_3_0 },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 		}),
 		q(8982, {	-- Tracing the Source (H) (1/2)
-			["qg"] = 16108,	-- Fenstad Argyle
 			["sourceQuest"] = 8980,	-- Zinge's Assessment
+			["qg"] = 16108,	-- Fenstad Argyle
 			["coord"] = { 66.8, 44.4, UNDERCITY },
 			["timeline"] = { REMOVED_3_3_0 },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 		}),
 		q(8983, {	-- Tracing the Source (H) (2/2)
-			["qg"] = 6741,	-- Innkeeper Norman <Innkeeper>
 			["sourceQuest"] = 8982,	-- Tracing the Source (H) (1/2)
+			["qg"] = 6741,	-- Innkeeper Norman <Innkeeper>
 			["coord"] = { 67.6, 38.2, UNDERCITY },
 			["timeline"] = { REMOVED_3_3_0 },
 			["races"] = HORDE_ONLY,
@@ -1381,8 +1381,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["isDaily"] = true,
 		}),
 		q(8980, {	-- Zinge's Assessment
-			["qg"] = 5204,	-- Apothecary Zinge <Royal Apothecary Society>
 			["sourceQuest"] = 8979,	-- Fenstad's Hunch
+			["qg"] = 5204,	-- Apothecary Zinge <Royal Apothecary Society>
 			["coord"] = { 50.0, 68.6, UNDERCITY },
 			["timeline"] = { REMOVED_3_3_0 },
 			["races"] = HORDE_ONLY,
@@ -1416,8 +1416,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["isBreadcrumb"] = true,
 		}),
 		q(78328, {	-- Take a Look Around (A)
-			["qg"] = 211802,	-- Luciana Delgado
 			["sourceQuest"] = 78329,	-- Love is in the Air (A)
+			["qg"] = 211802,	-- Luciana Delgado
 			["coord"] = { 32.3, 49.4, ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = { i(LOVE_TOKEN) },
@@ -1443,8 +1443,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(78337, {	-- An Unwelcome Gift (A)
-			["qg"] = 213560,	-- Inspector Snip Snagglebolt (MobileNPC)
 			["sourceQuest"] = 78332,	-- I Smell Trouble (A)
+			["qg"] = 213560,	-- Inspector Snip Snagglebolt (MobileNPC)
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				i(LOVE_TOKEN),
@@ -1453,13 +1453,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(78729, {	-- Raising a Stink (A)
-			["qg"] = 213560,	-- Inspector Snip Snagglebolt (MobileNPC)
 			["sourceQuest"] = 78337,	-- An Unwelcome Gift (A)
+			["qg"] = 213560,	-- Inspector Snip Snagglebolt (MobileNPC)
 			["races"] = ALLIANCE_ONLY,
 		}),
 		q(78369, {	-- Crushing the Crown (A)
-			["qg"] = 38066,	-- Inspector Snip Snagglebolt
 			["sourceQuest"] = 78729,	-- Raising a Stink (A)
+			["qg"] = 38066,	-- Inspector Snip Snagglebolt
 			["coord"] = { 45.7, 68.5, SILVERPINE_FOREST },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
@@ -1474,8 +1474,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(78379, {	-- The Stench of Revenge (A)
-			["qg"] = 38066,	-- Inspector Snip Snagglebolt
 			["sourceQuest"] = 78369,	-- Crushing the Crown (A)
+			["qg"] = 38066,	-- Inspector Snip Snagglebolt
 			["coord"] = { 45.7, 68.5, SILVERPINE_FOREST },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = { i(LOVE_TOKEN) },
@@ -1497,8 +1497,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			["isBreadcrumb"] = true,
 		}),
 		q(78980, {	-- Take a Look Around (H)
-			["qg"] = 214477,	-- Mahaja Cloudsong
 			["sourceQuest"] = 78981,	-- Love is in the Air (H)
+			["qg"] = 214477,	-- Mahaja Cloudsong
 			["coord"] = { 41.8, 18.0, DUROTAR },
 			["races"] = HORDE_ONLY,
 			["groups"] = { i(LOVE_TOKEN) },
@@ -1524,8 +1524,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(78983, {	-- An Unwelcome Gift (H)
-			["qg"] = 214707,	-- Detective Snap Snagglebolt (MobileNPC)
 			["sourceQuest"] = 78982,	-- I Smell Trouble (H)
+			["qg"] = 214707,	-- Detective Snap Snagglebolt (MobileNPC)
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				i(LOVE_TOKEN),
@@ -1533,13 +1533,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(78978, {	-- Raising a Stink (H)
-			["qg"] = 214707,	-- Detective Snap Snagglebolt (MobileNPC)
 			["sourceQuest"] = 78983,	-- I Smell Trouble (H)
+			["qg"] = 214707,	-- Detective Snap Snagglebolt (MobileNPC)
 			["races"] = HORDE_ONLY,
 		}),
 		q(78984, {	-- Crushing the Crown (H)
-			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["sourceQuest"] = 78978,	-- Raising a Stink (H)
+			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["coord"] = { 45.7, 68.5, SILVERPINE_FOREST },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
@@ -1554,8 +1554,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(78985, {	-- The Stench of Revenge (H)
-			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["sourceQuest"] = 78984,	-- Crushing the Crown (H)
+			["qg"] = 37172,	-- Detective Snap Snagglebolt
 			["coord"] = { 45.7, 68.5, SILVERPINE_FOREST },
 			["races"] = HORDE_ONLY,
 			["groups"] = { i(LOVE_TOKEN) },
@@ -1658,14 +1658,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(78724, {	-- Loving Yourself, Your Way (A)
-			["qg"] = 213262,	-- Ying
 			["sourceQuest"] = 78664,	-- The Gift of Self-Care (A)
+			["qg"] = 213262,	-- Ying
 			["coord"] = { 35.2, 50.5, ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		q(78726, {	-- Loving Yourself, Your Way (A)
-			["qg"] = 213262,	-- Ying
 			["sourceQuest"] = 78664,	-- The Gift of Self-Care (A)
+			["qg"] = 213262,	-- Ying
 			["coord"] = { 35.2, 50.5, ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
@@ -1679,26 +1679,26 @@ root(ROOTS.Holidays, applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_
 			},
 		}),
 		q(78727, {	-- Loving Yourself, Your Way (A)
-			["qg"] = 213262,	-- Ying
 			["sourceQuest"] = 78664,	-- The Gift of Self-Care (A)
+			["qg"] = 213262,	-- Ying
 			["coord"] = { 35.2, 50.5, ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		q(78979, {	-- Loving Yourself, Your Way (H)
-			["qg"] = 214591,	-- Ning
 			["sourceQuest"] = 78989,	-- The Gift of Self-Care (H)
+			["qg"] = 214591,	-- Ning
 			["coord"] = { 41.9, 16.2, DUROTAR },
 			["races"] = HORDE_ONLY,
 		}),
 		q(78992, {	-- Loving Yourself, Your Way (H)
-			["qg"] = 214591,	-- Ning
 			["sourceQuest"] = 78989,	-- The Gift of Self-Care (H)
+			["qg"] = 214591,	-- Ning
 			["coord"] = { 41.9, 16.2, DUROTAR },
 			["races"] = HORDE_ONLY,
 		}),
 		q(78993, {	-- Loving Yourself, Your Way (H)
-			["qg"] = 214591,	-- Ning
 			["sourceQuest"] = 78989,	-- The Gift of Self-Care (H)
+			["qg"] = 214591,	-- Ning
 			["coord"] = { 41.9, 16.2, DUROTAR },
 			["races"] = HORDE_ONLY,
 		}),

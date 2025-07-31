@@ -52,28 +52,28 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						["coord"] = { 25.6, 32.0, THE_MAW },
 						["groups"] = {
 							q(64197, {	-- Placing Stone Ring
-								["cost"] = { { "i", 186603, 1 } },	-- Nilganihmaht's Stone Ring (combine 4 green Quartered Rings)
 								["name"] = "Placing Stone Ring",
+								["cost"] = { { "i", 186603, 1 } },	-- Nilganihmaht's Stone Ring (combine 4 green Quartered Rings)
 								["lockCriteria"] = { 1, "spellID", 354354 },	-- Learning Hand of Nilganihmaht prevents being able to do the quests again
 							}),
 							q(64198, {	-- Placing Runed Band
-								["cost"] = { { "i", 186605, 1 } },	-- Nilganihmaht's Runed Band
 								["name"] = "Placing Runed Band",
+								["cost"] = { { "i", 186605, 1 } },	-- Nilganihmaht's Runed Band
 								["lockCriteria"] = { 1, "spellID", 354354 },	-- Learning Hand of Nilganihmaht prevents being able to do the quests again
 							}),
 							q(64199, {	-- Placing Gold Band
-								["cost"] = { { "i", 186608, 1 } },	-- Nilganihmaht's Gold Band
 								["name"] = "Placing Gold Band",
+								["cost"] = { { "i", 186608, 1 } },	-- Nilganihmaht's Gold Band
 								-- no lock criteria, it's apparently able to be done again after learning the mount (@Rustedchurl 2022-04-24)
 							}),
 							q(64200, {	-- Placing Silver Ring
-								["cost"] = { { "i", 186607, 1 } },	-- Nilganihmaht's Silver Ring
 								["name"] = "Placing Silver Ring",
+								["cost"] = { { "i", 186607, 1 } },	-- Nilganihmaht's Silver Ring
 								["lockCriteria"] = { 1, "spellID", 354354 },	-- Learning Hand of Nilganihmaht prevents being able to do the quests again
 							}),
 							q(64201, {	-- Placing Signet Ring
-								["cost"] = { { "i", 186606, 1 } },	-- Nilganihmaht's Signet Ring
 								["name"] = "Placing Signet Ring",
+								["cost"] = { { "i", 186606, 1 } },	-- Nilganihmaht's Signet Ring
 								["lockCriteria"] = { 1, "spellID", 354354 },	-- Learning Hand of Nilganihmaht prevents being able to do the quests again
 							}),
 							q(64202, {	-- Gotta Hand It To Ya

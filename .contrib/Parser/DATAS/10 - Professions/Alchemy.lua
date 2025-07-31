@@ -111,13 +111,13 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 	}),
 	expansion(EXPANSION.TBC, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_5 } }, {
 		q(10906, {	-- Master of Elixirs (1/2)
-			["qgs"] = {
-				16588,	-- Apothecary Antonivich <Master Alchemy Trainer>
-				18802,	-- Alchemist Gribble <Alchemy Trainer>
-			},
 			["altQuests"] = {
 				10905,	-- Master of Potions (1/2)
 				10907,	-- Master of Transmutation (1/2)
+			},
+			["qgs"] = {
+				16588,	-- Apothecary Antonivich <Master Alchemy Trainer>
+				18802,	-- Alchemist Gribble <Alchemy Trainer>
 			},
 			["coords"] = {
 				{ 52.2, 36.4, HELLFIRE_PENINSULA },	-- Apothecary Antonivich <Master Alchemy Trainer>
@@ -128,14 +128,14 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			["lvl"] = 68,
 		}),
 		q(10902, {	-- Master of Elixirs (2/2)
-			["qg"] = 19052,	-- Lorokeem <Master Alchemy Trainer>
+			["description"] = "Upon finishing this quest, you will become a Elixir Master and be locked out of becoming a Transmutation or Potion Master.",
+			["sourceQuest"] = 10906,	-- Master of Elixirs (1/2)
 			["altQuests"] = {
 				10897,	-- Master of Potions (2/2)
 				10899,	-- Master of Transmutation (2/2)
 			},
-			["sourceQuest"] = 10906,	-- Master of Elixirs (1/2)
+			["qg"] = 19052,	-- Lorokeem <Master Alchemy Trainer>
 			["coord"] = { 45.8, 20.4, SHATTRATH_CITY },
-			["description"] = "Upon finishing this quest, you will become a Elixir Master and be locked out of becoming a Transmutation or Potion Master.",
 			["timeline"] = { ADDED_2_0_5, REMOVED_4_3_0 },
 			["maps"] = { CAVERNS_OF_TIME_BLACK_MORASS },
 			["cost"] = {
@@ -156,13 +156,13 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			},
 		}),
 		q(10905, {	-- Master of Potions (1/2)
-			["qgs"] = {
-				16588,	-- Apothecary Antonivich <Master Alchemy Trainer>
-				18802,	-- Alchemist Gribble <Alchemy Trainer>
-			},
 			["altQuests"] = {
 				10906,	-- Master of Elixirs (1/2)
 				10907,	-- Master of Transmutation (1/2)
+			},
+			["qgs"] = {
+				16588,	-- Apothecary Antonivich <Master Alchemy Trainer>
+				18802,	-- Alchemist Gribble <Alchemy Trainer>
 			},
 			["coords"] = {
 				{ 52.2, 36.4, HELLFIRE_PENINSULA },	-- Apothecary Antonivich <Master Alchemy Trainer>
@@ -173,14 +173,14 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			["lvl"] = 68,
 		}),
 		q(10897, {	-- Master of Potions (2/2)
-			["qg"] = 17909,	-- Lauranna Thar'well <Expedition Cataloguer>
+			["description"] = "Upon finishing this quest, you will become a Potion Master and be locked out of becoming a Transmutation or Elixir Master.",
+			["sourceQuest"] = 10905,	-- Master of Potions (1/2)
 			["altQuests"] = {
 				10902,	-- Master of Elixirs (2/2)
 				10899,	-- Master of Transmutation (2/2)
 			},
-			["sourceQuest"] = 10905,	-- Master of Potions (1/2)
+			["qg"] = 17909,	-- Lauranna Thar'well <Expedition Cataloguer>
 			["coord"] = { 44.1, 36.6, ZANGARMARSH },
-			["description"] = "Upon finishing this quest, you will become a Potion Master and be locked out of becoming a Transmutation or Elixir Master.",
 			["timeline"] = { ADDED_2_0_5, REMOVED_4_3_0 },
 			["maps"] = { TEMPEST_KEEP_BOTANICA },
 			["cost"] = {
@@ -204,13 +204,13 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			},
 		}),
 		q(10907, {	-- Master of Transmutation (1/2)
-			["qgs"] = {
-				16588,	-- Apothecary Antonivich <Master Alchemy Trainer>
-				18802,	-- Alchemist Gribble <Alchemy Trainer>
-			},
 			["altQuests"] = {
 				10906,	-- Master of Elixirs (1/2)
 				10905,	-- Master of Potions (1/2)
+			},
+			["qgs"] = {
+				16588,	-- Apothecary Antonivich <Master Alchemy Trainer>
+				18802,	-- Alchemist Gribble <Alchemy Trainer>
 			},
 			["coords"] = {
 				{ 52.2, 36.4, HELLFIRE_PENINSULA },	-- Apothecary Antonivich <Master Alchemy Trainer>
@@ -222,14 +222,14 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			["lvl"] = 68,
 		}),
 		q(10899, {	-- Master of Transmutation (2/2)
-			["qg"] = 22427,	-- Zarevhi
+			["description"] = "Upon finishing this quest, you will become a Transmutation Master and be locked out of becoming a Potion or Elixir Master.",
+			["sourceQuest"] = 10907,	-- Master of Transmutation (1/2)
 			["altQuests"] = {
 				10902,	-- Master of Elixirs (2/2)
 				10897,	-- Master of Potions (2/2)
 			},
-			["sourceQuest"] = 10907,	-- Master of Transmutation (1/2)
+			["qg"] = 22427,	-- Zarevhi
 			["coord"] = { 44.1, 36.6, NETHERSTORM },
-			["description"] = "Upon finishing this quest, you will become a Transmutation Master and be locked out of becoming a Potion or Elixir Master.",
 			["timeline"] = { ADDED_2_0_5, REMOVED_4_3_0 },
 			["cost"] = {
 				{ "i", 23571, 4 },	-- Primal Might
@@ -280,107 +280,110 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			},
 		}),
 		q(39326, {	-- Missing Shipments
-			["provider"] = { "n", 92458 },	-- Deucus Valdera
 			["sourceQuests"] = { 39325 },	-- Get Your Mix On
+			["provider"] = { "n", 92458 },	-- Deucus Valdera
 			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
 		}),
 		q(39566, {	-- The Search for Knowledge
-			["provider"] = { "n", 92458 },	-- Deucus Valdera
 			["sourceQuests"] = { 39326 },	-- Missing Shipments
+			["provider"] = { "n", 92458 },	-- Deucus Valdera
 			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
 			["isBreadcrumb"] = true,
 		}),
 		q(39390, {	-- A Mysterious Text
-			["provider"] = { "o", 243392 },	-- Alchemy Book
 			["sourceQuests"] = { 39566 },	-- The Search for Knowledge
+			["provider"] = { "o", 243392 },	-- Alchemy Book
 			["coord"] = { 44.9, 52.1, AZSUNA },
 		}),
 		q(39327, {	-- There's a Scribe for That
-			["provider"] = { "n", 92458 },	-- Deucus Valdera
 			["sourceQuests"] = { 39390 },	-- A Mysterious Text
+			["provider"] = { "n", 92458 },	-- Deucus Valdera
 			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
 		}),
 		q(39328, {	-- Ancient Knowledge
-			["provider"] = { "n", 92458 },	-- Deucus Valdera
 			["sourceQuests"] = { 39327 },	-- There's a Scribe for That
+			["provider"] = { "n", 92458 },	-- Deucus Valdera
 			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
 		}),
 		q(39329, {	-- A Dormant Burner
-			["provider"] = { "n", 92458 },	-- Deucus Valdera
 			["sourceQuests"] = { 39328 },	-- Ancient Knowledge
+			["provider"] = { "n", 92458 },	-- Deucus Valdera
 			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
 		}),
 		q(39330, {	-- Ley Hunting
-			["provider"] = { "n", 92458 },	-- Deucus Valdera
 			["sourceQuests"] = { 39329 },	-- A Dormant Burner
+			["provider"] = { "n", 92458 },	-- Deucus Valdera
 			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
 		}),
 		q(39331, {	-- Eye of Azshara: Put a Cork in It
-			["provider"] = { "n", 92458 },	-- Deucus Valdera
 			["sourceQuests"] = { 39330 },	-- Ley Hunting
+			["provider"] = { "n", 92458 },	-- Deucus Valdera
 			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
 			["maps"] = { 713 },	-- Eye of Azshara
+			["groups"] = {
+				i(127873),	-- Advanced Corks (QI!)
+			},
 		}),
 		q(39332, {	-- Furbolg Firewater
-			["provider"] = { "n", 92458 },	-- Deucus Valdera
 			["sourceQuests"] = { 39331 },	-- Eye of Azshara: Put a Cork in it
+			["provider"] = { "n", 92458 },	-- Deucus Valdera
 			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
 		}),
 		q(39430, {	-- Flasking for a Favor
-			["provider"] = { "n", 92458 },	-- Deucus Valdera
 			["sourceQuests"] = { 39332 },	-- Furbolg Firewater
+			["provider"] = { "n", 92458 },	-- Deucus Valdera
 			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
 		}),
 		q(39334, {	-- Thanks for Flasking
+			["sourceQuests"] = { 39430 },	-- Flasking for a Favor
 			["qgs"] = {
 				92242,	-- Barm Stonebreaker
 				93974,	-- Leyweaver Erenyi
 			},
-			["sourceQuests"] = { 39430 },	-- Flasking for a Favor
 			["coords"] = {
 				{ 55.2, 84.2, HIGHMOUNTAIN },
 				{ 70.4, 46.6, VALSHARAH },
 			},
 		}),
 		q(39335, {	-- Neltharion's Lair: Potent Powder
-			["provider"] = { "n", 92458 },	-- Deucus Valdera
 			["sourceQuests"] = { 39430 },	-- Flasking for a Favor
+			["provider"] = { "n", 92458 },	-- Deucus Valdera
 			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
 			["maps"] = { 731 },	-- Neltharion's Lair
 		}),
 		q(39336, {	-- We Need More Powder!
-			["provider"] = { "n", 92458 },	-- Deucus Valdera
 			["sourceQuests"] = { 39335 },	-- Neltharion's Lair: Potent Powder
+			["provider"] = { "n", 92458 },	-- Deucus Valdera
 			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
 		}),
 		q(39337, {	-- Forlorn Filter
-			["provider"] = { "n", 92458 },	-- Deucus Valdera
 			["sourceQuests"] = { 39336 },	-- We Need More Powder!
+			["provider"] = { "n", 92458 },	-- Deucus Valdera
 			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
 		}),
 		q(39431, {	-- Mending the Filter
-			["provider"] = { "o", 249211 },	-- Torn Shaldorei Silk
 			["sourceQuests"] = { 39337 },	-- Forlorn Filter
+			["provider"] = { "o", 249211 },	-- Torn Shaldorei Silk
 			["coord"] = { 54.2, 54.7, VALSHARAH },
 		}),
 		q(44112, {	-- Trading for Dreams
-			["provider"] = { "n", 93974 },	-- Leyweaver Erenyi
 			["sourceQuests"] = { 39431 },	-- Mending the Filter
+			["provider"] = { "n", 93974 },	-- Leyweaver Erenyi
 			["coord"] = { 70.5, 46.4, VALSHARAH },
 		}),
 		q(39338, {	-- Return the Filter
-			["provider"] = { "n", 93974 },	-- Leyweaver Erenyi
 			["sourceQuests"] = { 44112 },	-- Trading for Dreams
+			["provider"] = { "n", 93974 },	-- Leyweaver Erenyi
 			["coord"] = { 70.5, 46.4, VALSHARAH },
 		}),
 		q(39339, {	-- A Fragile Crucible
-			["provider"] = { "n", 92458 },	-- Deucus Valdera
 			["sourceQuests"] = { 39338 },	-- Return the Filter
+			["provider"] = { "n", 92458 },	-- Deucus Valdera
 			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
 		}),
 		q(39340, {	-- Lining the Crucible
-			["provider"] = { "n", 92458 },	-- Deucus Valdera
 			["sourceQuests"] = { 39338 },	-- Return the Filter
+			["provider"] = { "n", 92458 },	-- Deucus Valdera
 			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
 			["cost"] = {
 				{ "i", 124124, 1 },	-- 1xBlood of Sargeras
@@ -390,33 +393,33 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			},
 		}),
 		q(39341, {	-- Vault of the Wardens: Demon's Bile
-			["provider"] = { "n", 92458 },	-- Deucus Valdera
+			["description"] = "Need to bring a Skaggldrynk and drink infront of the boss door, located west section after Inquisitor Tormentorum.",
 			["sourceQuests"] = {
 				39339,	-- A Fragile Crucible
 				39340,	-- Lining the Crucible
 			},
+			["provider"] = { "n", 92458 },	-- Deucus Valdera
 			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
-			["description"] = "Need to bring a Skaggldrynk and drink infront of the boss door, located west section after Inquisitor Tormentorum.",
 			["maps"] = { 710, 711, 712, },	-- Vault of the Wardens
 			["cost"] = {{ "i", 127840, 1 }},	-- 1xSkaggldrynk
 		}),
 		q(39343, {	-- Vault of the Wardens: Bendy Glass Tubes
-			["provider"] = { "i", 127877 },	-- Bendy Glass Tubes
 			["sourceQuests"] = {
 				39339,	-- A Fragile Crucible
 				39340,	-- Lining the Crucible
 			},
+			["provider"] = { "i", 127877 },	-- Bendy Glass Tubes
 			["coord"] = { 40, 50, 678 },	-- Vault of the Wardens
 			["maps"] = { 710, 711, 712, },	-- Vault of the Wardens
 		}),
 		q(39344, {	-- Going Underground
-			["provider"] = { "n", 92458 },	-- Deucus Valdera
 			["sourceQuests"] = { 39343 },	-- Vault of the Wardens: Bendy Glass Tubes
+			["provider"] = { "n", 92458 },	-- Deucus Valdera
 			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
 		}),
 		q(39342, {	-- The Price of the Black Market
-			["provider"] = { "n", 101492 },	-- Ms. Xiulan
 			["sourceQuests"] = { 39344 },	-- Going Underground
+			["provider"] = { "n", 101492 },	-- Ms. Xiulan
 			["coord"] = { 70.8, 19.8, LEGION_THE_UNDERBELLY },
 			["cost"] = {
 				{ "i", 124124, 1 },	-- 1xBlood of Sargeras
@@ -425,28 +428,28 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			},
 		}),
 		q(39333, {	-- An Imprecise Burette
-			["provider"] = { "n", 101492 },	-- Ms. Xiulan
 			["sourceQuests"] = { 39342 },	-- The Price of the Black Market
+			["provider"] = { "n", 101492 },	-- Ms. Xiulan
 			["coord"] = { 70.8, 19.8, LEGION_THE_UNDERBELLY },
 		}),
 		q(39645, {	-- Calibration Experts [A]
-			["provider"] = { "n", 92458 },	-- Deucus Valdera
 			["sourceQuests"] = { 39333 },	-- An Imprecise Burette
+			["provider"] = { "n", 92458 },	-- Deucus Valdera
 			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		q(39345, {	-- Calibration Experts [H]
-			["provider"] = { "n", 92458 },	-- Deucus Valdera
 			["sourceQuests"] = { 39333 },	-- An Imprecise Burette
+			["provider"] = { "n", 92458 },	-- Deucus Valdera
 			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
 			["races"] = HORDE_ONLY,
 		}),
 		q(39346, {	-- Testing the Calibration
-			["provider"] = { "n", 92458 },	-- Deucus Valdera
 			["sourceQuests"] = {
 				39645,	-- Calibration Experts (A)
 				39345,	-- Calibration Experts (H)
 			},
+			["provider"] = { "n", 92458 },	-- Deucus Valdera
 			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
 			["cost"] = {
 				{ "i", 127846, 10 },	-- 10xLeytorrent Potion
@@ -456,47 +459,47 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			},
 		}),
 		q(39347, {	-- Channeling Our Efforts
-			["provider"] = { "n", 92458 },	-- Deucus Valdera
 			["sourceQuests"] = { 39346 },	-- Testing the Calibration
+			["provider"] = { "n", 92458 },	-- Deucus Valdera
 			["coord"] = { 41.6, 32.8, LEGION_DALARAN },
 		}),
 		q(39349, {	-- Black Rook Hold: Heavy, But Helpful
-			["provider"] = { "n", 92183 },	-- Alard Schmied
-			["sourceQuests"] = { 39347 },	--- Channeling Our Efforts
-			["coord"] = { 45.0, 29.6, LEGION_DALARAN},
 			["description"] = "The respective Rank 2 recipe will drop from the dungeon, don't forget to loot it.",
+			["sourceQuests"] = { 39347 },	--- Channeling Our Efforts
+			["provider"] = { "n", 92183 },	-- Alard Schmied
+			["coord"] = { 45.0, 29.6, LEGION_DALARAN},
 			["maps"] = { 751, 752, 753, 754, 755, 756 },	-- The Black Rook Hold
 			["cost"] = {{ "i", 127849, 1 }},	-- 1xFlask of the Countless Armies
 		}),
 		q(39348, {	-- Halls of Valor: The Prime Ingredient
-			["provider"] = { "n", 92183 },	-- Alard Schmied
-			["sourceQuests"] = { 39347 },	-- Channeling Our Efforts
-			["coord"] = { 45.0, 29.6, LEGION_DALARAN},
 			["description"] = "The respective Rank 2 recipe will drop from the dungeon, don't forget to loot it.",
+			["sourceQuests"] = { 39347 },	-- Channeling Our Efforts
+			["provider"] = { "n", 92183 },	-- Alard Schmied
+			["coord"] = { 45.0, 29.6, LEGION_DALARAN},
 			["maps"] = { 703, 704, 705 },	-- Halls of Valor
 			["cost"] = {{ "i", 127850, 1 }},	-- 1xFlask of Ten Thousand Scars
 		}),
 		q(39350, {	-- Maw of Souls: A Hope in Helheim
-			["provider"] = { "n", 92183 },	-- Alard Schmied
-			["sourceQuests"] = { 39347 },	--- Channeling Our Efforts
-			["coord"] = { 45.0, 29.6, LEGION_DALARAN},
 			["description"] = "The respective Rank 2 recipe will drop from the dungeon, don't forget to loot it.",
+			["sourceQuests"] = { 39347 },	--- Channeling Our Efforts
+			["provider"] = { "n", 92183 },	-- Alard Schmied
+			["coord"] = { 45.0, 29.6, LEGION_DALARAN},
 			["maps"] = { 706, 707, 708 },	-- Maw of Souls
 			["cost"] = {{ "i", 127847, 1 }},	-- 1xFlask of the Whispered Pact
 		}),
 		q(39351, {	-- The Emerald Nightmare: Rage Fire
-			["provider"] = { "n", 92183 },	-- Alard Schmied
 			["sourceQuests"] = {
 				39348,	-- Halls of Valor: The Prime Ingredient
 				39349,	-- Black Rook Hold: Heavy, But Helpful
 				39350,	-- Maw of Souls: A Hope in Helheim
 			},
+			["provider"] = { "n", 92183 },	-- Alard Schmied
 			["coord"] = { 45.0, 29.6, LEGION_DALARAN},
 			["maps"] = { 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789, },	-- The Emerald Nightmare
 		}),
 		q(42081, {	-- In With the New
-			["provider"] = { "n", 92183 },	-- Alard Schmied
 			["sourceQuests"] = { 39351 },	-- The Emerald Nightmare: Rage Fire
+			["provider"] = { "n", 92183 },	-- Alard Schmied
 			["coord"] = { 45.0, 29.6, LEGION_DALARAN},
 		}),
 		------ 7.3.0 ------
@@ -514,8 +517,8 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			},
 		})),
 		q(48002, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {	-- Limited Supplies
-			["provider"] = { "n", 125346 },	-- Alchemist Funen
 			["sourceQuest"] = 46816,	-- Rendezvous
+			["provider"] = { "n", 125346 },	-- Alchemist Funen
 			["coord"] = { 56.2, 66.8, KROKUUN },
 			["groups"] = {
 				i(151657),	-- Recipe: Lightblood Elixir [Rank 1] (RECIPE!)
@@ -523,8 +526,8 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			},
 		})),
 		q(48013, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {	-- Tracking the Trackers
-			["provider"] = { "n", 125346 },	-- Alchemist Funen
 			["sourceQuest"] = 46816,	-- Rendezvous
+			["provider"] = { "n", 125346 },	-- Alchemist Funen
 			["coord"] = { 56.2, 66.8, KROKUUN },
 			["groups"] = {
 				i(151703),	-- Recipe: Tears of the Naaru [Rank 1] (RECIPE!)
@@ -552,9 +555,9 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			}),
 			------ Tools of Trade Questline ------
 			q(50121, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Casting the First Stone [A]
+				["description"] = "This quest chain requires 150 in Kul Tiran Alchemy.",
 				["provider"] = { "n", 132228 },	-- Elric Whalgrene
 				["coord"] = { 74.2, 6.5, BORALUS },
-				["description"] = "This quest chain requires 150 in Kul Tiran Alchemy.",
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					r(288182, {["u"]=TRAINING}),	-- Potion of Durability
@@ -568,9 +571,9 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				},
 			})),
 			q(50112, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Casting the First Stone [H]
+				["description"] = "This quest chain requires 150 in Zandalari Alchemy.",
 				["provider"] = { "n", 122703 },	-- Clever Kumali
 				["coord"] = { 42.2, 38.0, DAZARALOR },
-				["description"] = "This quest chain requires 150 in Zandalari Alchemy.",
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					r(288182, {["u"]=TRAINING}),	-- Potion of Durability
@@ -584,8 +587,8 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				},
 			})),
 			q(50122, {	-- Ocular Extracts [A]
-				["provider"] = { "n", 132228 },	-- Elric Whalgrene
 				["sourceQuests"] = { 50121 },	-- Casting the First Stone [A]
+				["provider"] = { "n", 132228 },	-- Elric Whalgrene
 				["coord"] = { 74.2, 6.5, BORALUS },
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = ALLIANCE_ONLY,
@@ -594,8 +597,8 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				},
 			}),
 			q(50113, {	-- Ocular Extracts [H]
-				["provider"] = { "n", 122703 },	-- Clever Kumali
 				["sourceQuests"] = { 50112 },	-- Casting the First Stone [H]
+				["provider"] = { "n", 122703 },	-- Clever Kumali
 				["coord"] = { 42.2, 38.0, DAZARALOR },
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = HORDE_ONLY,
@@ -604,42 +607,42 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				},
 			}),
 			q(50124, {	-- Changing the Scenery [A]
-				["provider"] = { "n", 132228 },	-- Elric Whalgrene
 				["sourceQuests"] = { 50121 },	-- Casting the First Stone [A]
+				["provider"] = { "n", 132228 },	-- Elric Whalgrene
 				["coord"] = { 74.2, 6.5, BORALUS },
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(50115, {	-- Changing the Scenery [H]
-				["provider"] = { "n", 122703 },	-- Clever Kumali
 				["sourceQuests"] = { 50112 },	-- Casting the First Stone [H]
+				["provider"] = { "n", 122703 },	-- Clever Kumali
 				["coord"] = { 42.2, 38.0, DAZARALOR },
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = HORDE_ONLY,
 			}),
 			q(50125, {	-- A Possible Solution [A]
-				["provider"] = { "n", 132228 },	-- Elric Whalgrene
 				["sourceQuests"] = {
 					50122,	-- Ocular Extracts [A]
 					50124,	-- Changing the Scenery [A]
 				},
+				["provider"] = { "n", 132228 },	-- Elric Whalgrene
 				["coord"] = { 74.2, 6.5, BORALUS },
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(50116, {	-- A Possible Solution [H]
-				["provider"] = { "n", 122703 },	-- Clever Kumali
 				["sourceQuests"] = {
 					50115,	-- Changing the Scenery [H]
 					50113,	-- Ocular Extracts [H]
 				},
+				["provider"] = { "n", 122703 },	-- Clever Kumali
 				["coord"] = { 42.2, 38.0, DAZARALOR },
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = HORDE_ONLY,
 			}),
 			q(50126, {	-- A Deathly Draught [A]
-				["provider"] = { "n", 132347 },	-- Quintin Whalgrene
 				["sourceQuests"] = { 50125 },	-- A Possible Solution [A]
+				["provider"] = { "n", 132347 },	-- Quintin Whalgrene
 				["coord"] = { 30.6, 49.6, DRUSTVAR },
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = ALLIANCE_ONLY,
@@ -648,8 +651,8 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				},
 			}),
 			q(50117, {	-- A Deathly Draught [H]
-				["provider"] = { "n", 132680 },	-- Zukashi
 				["sourceQuests"] = { 50116 },	-- A Possible Solution [H]
+				["provider"] = { "n", 132680 },	-- Zukashi
 				["coord"] = { 65.2, 36.9, NAZMIR },
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = HORDE_ONLY,
@@ -658,8 +661,8 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				},
 			}),
 			q(50127, {	-- A Stone's Throw [A]
-				["provider"] = { "n", 132347 },	-- Quintin Whalgrene
 				["sourceQuests"] = { 50125 },	-- A Possible Solution [A]
+				["provider"] = { "n", 132347 },	-- Quintin Whalgrene
 				["coord"] = { 30.6, 49.6, DRUSTVAR },
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = ALLIANCE_ONLY,
@@ -669,8 +672,8 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				},
 			}),
 			q(50118, {	-- A Stone's Throw [H]
-				["provider"] = { "n", 132680 },	-- Zukashi
 				["sourceQuests"] = { 50116 },	-- A Possible Solution [H]
+				["provider"] = { "n", 132680 },	-- Zukashi
 				["coord"] = { 65.2, 36.9, NAZMIR },
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = HORDE_ONLY,
@@ -680,28 +683,28 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				},
 			}),
 			q(50128, {	-- Chemically Compounded [A]
-				["provider"] = { "n", 132347 },	-- Quintin Whalgrene
 				["sourceQuests"] = {
 					50126,	-- A Stone's Throw [A]
 					50127,	-- A Deathly Draught [A]
 				},
+				["provider"] = { "n", 132347 },	-- Quintin Whalgrene
 				["coord"] = { 30.6, 49.6, DRUSTVAR },
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(50119, {	-- Chemically Compounded [H]
-				["provider"] = { "n", 132680 },	-- Zukashi
 				["sourceQuests"] = {
 					50117,	-- A Deathly Draught [H]
 					50118,	-- A Stone's Throw [H]
 				},
+				["provider"] = { "n", 132680 },	-- Zukashi
 				["coord"] = { 65.2, 36.9, NAZMIR },
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = HORDE_ONLY,
 			}),
 			q(50129, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- A Recipe for Success [A]
-				["provider"] = { "o", 280755 },	-- Quintin's Satchel
 				["sourceQuests"] = { 50128 },	-- Chemically Compounded [A]
+				["provider"] = { "o", 280755 },	-- Quintin's Satchel
 				["coord"] = { 62.9, 28.9, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
@@ -709,8 +712,8 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				},
 			})),
 			q(50120, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- A Recipe for Success [H]
-				["provider"] = { "o", 280957 },	-- Zukashi's Satchel
 				["sourceQuests"] = { 50119 },	-- Chemically Compounded [H]
+				["provider"] = { "o", 280957 },	-- Zukashi's Satchel
 				["coord"] = { 62.9, 28.9, NAZMIR },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
@@ -736,18 +739,18 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 		})),
 		n(QUESTS, {
 			q(70355, {	-- Dragon Isles Alchemy
+				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Alchemy.",
 				["provider"] = { "n", 191893 },	-- Zherrak
 				["coord"] = { 60.3, 72.2, THE_WAKING_SHORES },
-				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Alchemy.",
 				["lockCriteria"] = { 1,
 					"spellID", 366261,	-- Dragon Isles Alchemy
 					"questID", 72245,	-- Dragon Isles Alchemy
 				},
 			}),
 			q(72245, {	-- Dragon Isles Alchemy
+				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Alchemy.",
 				["provider"] = { "n", 198392 },	-- An'timon
 				["coord"] = { 76.2, 35.8, THE_WAKING_SHORES },
-				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Alchemy.",
 				["lockCriteria"] = { 1,
 					"spellID", 366261,	-- Dragon Isles Alchemy
 					"questID", 70355,	-- Dragon Isles Alchemy
@@ -765,8 +768,8 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				["coord"] = { 60.9, 75.8, THE_WAKING_SHORES },
 			}),
 			q(70183, {	-- Specialized Secrets: Alchemy
-				["provider"] = { "n", 193110 },	-- Khadin
 				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
+				["provider"] = { "n", 193110 },	-- Khadin
 				["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
 				["cost"] = {{ "i", 191784, 1 }},	-- 1x Dragon Shard of Knowledge
 				["isRepeatable"] = true,
@@ -784,33 +787,33 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 		},{
 			------ Requires 25 Skill ------
 			q(72427, {	-- Animated Infusion
+				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["coord"] = { 36.6, 63.6, VALDRAKKEN },
-				["description"] = "Requires 25 Skill.",
 				["groups"] = {
 					i(201828),	-- Spiked Leaves (QI!)
 				},
 			}),
 			q(66937, {	-- Decaying News
+				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191000 },	-- Dothenos
 				["coord"] = { 36.6, 62.6, VALDRAKKEN },
-				["description"] = "Requires 25 Skill.",
 				["groups"] = {
 					i(194103),	-- Rotting Sample (QI!)
 				},
 			}),
 			q(66940, {	-- Elixir Experiment
+				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["coord"] = { 36.6, 63.6, VALDRAKKEN },
-				["description"] = "Requires 25 Skill.",
 				["groups"] = {
 					i(194427),	-- Gorloc Mucus (QI!)
 				},
 			}),
 			q(66938, {	-- Mammoth Marrow
+				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["coord"] = { 36.6, 63.6, VALDRAKKEN },
-				["description"] = "Requires 25 Skill.",
 				["groups"] = {
 					i(194424),	-- Tusk Marrow (QI!)
 				},
@@ -818,24 +821,24 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 
 			------ Requires 45 Skill ------
 			q(70532, {	-- Aiding the Raiding
+				["description"] = "Requires 45 Skill.",
 				["provider"] = { "n", 185545 },	-- Conflago
 				["coord"] = { 36.4, 71.4, VALDRAKKEN },
-				["description"] = "Requires 45 Skill.",
 			}),
 			q(70533, {	-- Decaying News
+				["description"] = "Requires 45 Skill.",
 				["provider"] = { "n", 185545 },	-- Conflago
 				["coord"] = { 36.4, 71.4, VALDRAKKEN },
-				["description"] = "Requires 45 Skill.",
 			}),
 			q(70530, {	-- Examination Week
+				["description"] = "Requires 45 Skill.",
 				["provider"] = { "n", 185545 },	-- Conflago
 				["coord"] = { 36.4, 71.4, VALDRAKKEN },
-				["description"] = "Requires 45 Skill.",
 			}),
 			q(70531, {	-- Mana Markets
+				["description"] = "Requires 45 Skill.",
 				["provider"] = { "n", 185545 },	-- Conflago
 				["coord"] = { 36.4, 71.4, VALDRAKKEN },
-				["description"] = "Requires 45 Skill.",
 			}),
 
 			------ Requires ?? Skill - Patch 10.1.0. ------
@@ -1000,8 +1003,8 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			i(198608),	-- Alchemy Notes
 			q(74108, {	-- DF Inscription Order: Alchemy
 				["name"] = "DF Inscription Order: Alchemy",
-				["provider"] = { "i", 194697 },	-- Draconic Treatise on Alchemy
 				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 194697 },	-- Draconic Treatise on Alchemy
 			}),
 			q(66373, {	-- DF Weekly Alchemy Knowledgepoint #1
 				["name"] = "DF Alchemy Treasure #1",
@@ -1013,16 +1016,16 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			}),
 			q(70504, {	-- DF Weekly Alchemy Knowledgepoint #3
 				["name"] = "DF Alchemy Drop #1: Decayed",
+				["description"] = "Drops from any Decayed Mob.\nCoordinates link to the spot(s) we found best.",
 				["provider"] = { "i", 198963 },		-- Decaying Phlegm
 				["coord"] = { 18.6, 38.4, THE_AZURE_SPAN },
-				["description"] = "Drops from any Decayed Mob.\nCoordinates link to the spot(s) we found best.",
 				["crs"] = { 186361 },	-- Rotting Treant
 			}),
 			q(70511, {	-- DF Weekly Alchemy Knowledgepoint #4
 				["name"] = "DF Alchemy Drop #2: Elemental",
+				["description"] = "Drops from any Elemental.\nCoordinates link to the spot(s) we found best.",
 				["provider"] = { "i", 198964 },		-- Elementious Splinter
 				["coord"] = { 80.2, 75.6, OHNAHRAN_PLAINS },
-				["description"] = "Drops from any Elemental.\nCoordinates link to the spot(s) we found best.",
 				["crs"] = { 191712 },	-- Hissing Springsoul
 			}),
 		})),

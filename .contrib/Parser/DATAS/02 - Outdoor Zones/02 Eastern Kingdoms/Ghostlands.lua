@@ -124,8 +124,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 			}),
 			n(QUESTS, {
 				q(9275, {	-- A Little Dash of Seasoning
-					["qg"] = 16464,	-- Apothecary Venustus
 					["sourceQuest"] = 9276,	-- Attack on Zeb'Tela
+					["qg"] = 16464,	-- Apothecary Venustus
 					["coord"] = { 72.6, 31.5, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(16, 16, 1),
@@ -154,8 +154,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9315, {	-- Anok'suten
-					["qg"] = 16601,	-- Dying Blood Elf
 					["sourceQuest"] = 9758,	-- Return to Arcanist Vandril
+					["qg"] = 16601,	-- Dying Blood Elf
 					["coord"] = { 57.5, 14.9, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(9, 9, 1),
@@ -187,16 +187,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9877, {	-- A Restorative Draught
-					["qg"] = 16240,	-- Arcanist Janeda
 					["sourceQuest"] = 9220,	-- War on Deatholme
+					["qg"] = 16240,	-- Arcanist Janeda
 					["coord"] = { 54.8, 48.4, GHOSTLANDS },
 					["timeline"] = { REMOVED_7_3_5 },	-- TODO: This is a guess based on prereq quest modifications in 7.3.5.
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(17, 17, 1),
 				}),
 				q(9488, {	-- A Simple Robe
-					["qg"] = 16197,	-- Arcanist Vandril
 					["sourceQuest"] = 9487,	-- Arcane Reavers
+					["qg"] = 16197,	-- Arcanist Vandril
 					["coord"] = { 46.5, 28.4, GHOSTLANDS },
 					["cost"] = {
 						{ "i", 2589, 15 },	-- Linen Cloth
@@ -217,8 +217,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9277, {	-- Assault on Zeb'Nowa
-					["qg"] = 16463,	-- Farstrider Solanna
 					["sourceQuest"] = 9276,	-- Attack on Zeb'tela
+					["qg"] = 16463,	-- Farstrider Solanna
 					["coord"] = { 72.3, 31.2, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(15, 15, 1),
@@ -238,11 +238,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9276, {	-- Attack on Zeb'Tela
-					["qg"] = 16463,	-- Farstrider Solanna
 					-- #if AFTER LEGION
 					-- 7.3.5 introduced new pre-requisites for a lot of quests in Ghostlands.
 					["sourceQuest"] = 9146,	-- Report to Captain Helios
 					-- #endif
+					["qg"] = 16463,	-- Farstrider Solanna
 					["coord"] = { 72.3, 31.2, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(15, 15, 1),
@@ -267,8 +267,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9215, {	-- Bring Me Kel'gash's Head!
-					["provider"] = { "o", 181153 },	-- Wanted Poster: Kel'gash the Wicked
 					["sourceQuest"] = 9276,	-- Attack on Zeb'tela
+					["provider"] = { "o", 181153 },	-- Wanted Poster: Kel'gash the Wicked
 					["coord"] = { 72.2, 31.1, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(9, 9, 1),
@@ -330,8 +330,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9460, {	-- Combining Forces
-					["qg"] = 17224,	-- Keltus Darkleaf
 					["sourceQuest"] = 9532,	-- Find Keltus Darkleaf
+					["qg"] = 17224,	-- Keltus Darkleaf
 					["coord"] = { 33, 11.2, GHOSTLANDS },
 					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
@@ -346,8 +346,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9171, {	-- Culinary Crunch
-					["qg"] = 16253,	-- Master Chef Mouldier
 					["sourceQuest"] = 9138,	-- Suncrown Village
+					["qg"] = 16253,	-- Master Chef Mouldier
 					["coord"] = { 48.4, 30.9, GHOSTLANDS },
 					["cost"] = {
 						{ "i", 22644, 5 },	-- Crunchy Spider Leg
@@ -360,8 +360,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9159, {	-- Curbing the Plague
-					["qg"] = 16202,	-- Farstrider Sedina
 					["sourceQuest"] = 9158,	-- Bearers of the Plague
+					["qg"] = 16202,	-- Farstrider Sedina
 					["coord"] = { 72.4, 32.1, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(11, 11, 1),
@@ -382,7 +382,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9170, {	-- Dar'Khan's Lieutenants
-					["qg"] = 16204,	-- Magister Idonis
 					["sourceQuests"] = {
 						-- #if AFTER LEGION
 						-- 7.3.5 introduced new pre-requisites for a lot of quests in Ghostlands.
@@ -392,6 +391,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						9220,	-- War on Deatholme
 						-- #endif
 					},
+					["qg"] = 16204,	-- Magister Idonis
 					["coord"] = { 54.8, 48.5, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(17, 17, 1),
@@ -424,8 +424,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9169, {	-- Deactivate An'owyn
-					["qg"] = 16237,	-- Magister Sylastor
 					["sourceQuest"] = 9166,	-- Deliver the Plans to An'telas
+					["qg"] = 16237,	-- Magister Sylastor
 					["coord"] = { 60.2, 35.6, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(11, 11, 1),
@@ -441,8 +441,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9143, {	-- Dealing with Zeb'Sora
-					["qg"] = 16219,	-- Ranger Valanna
 					["sourceQuest"] = 9145,	-- Help Ranger Valanna!
+					["qg"] = 16219,	-- Ranger Valanna
 					["coord"] = { 69.3, 15.1, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(9, 9, 1),
@@ -457,18 +457,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9166, {	-- Deliver the Plans to An'telas
+					["sourceQuest"] = 9163,	-- Into Occupied Territory
 					["providers"] = {
 						{ "n", 16231 },	-- Dame Auriferous
 						{ "i", 22594 },	-- Night Elf Plans
 					},
-					["sourceQuest"] = 9163,	-- Into Occupied Territory
 					["coord"] = { 44.8, 32.5, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(11, 11, 1),
 				}),
 				q(9155, {	-- Down the Dead Scar
-					["qg"] = 16200,	-- Deathstalker Rathiel
 					["sourceQuest"] = 9138,	-- Suncrown Village
+					["qg"] = 16200,	-- Deathstalker Rathiel
 					["coord"] = { 46.0, 33.5, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(10, 10, 1),
@@ -506,22 +506,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				-- #if BEFORE WRATH
 				-- After Wrath, this quest was moved to Eversong Woods and has a lower level requirement.
 				q(9133, {	-- Fly to Silvermoon City
+					["sourceQuest"] = 9130,	-- Goods from Silvermoon City
 					["providers"] = {
 						{ "n", 16189 },	-- Skymaster Sunwing <Bat Handler>
 						{ "i", 22549 },	-- Quartermaster Lymel's Bill of Lading
 					},
-					["sourceQuest"] = 9130,	-- Goods from Silvermoon City
 					["coord"] = { 45.4, 30.5, GHOSTLANDS },
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(10, 10, 1),
 				}),
 				-- #endif
 				q(9157, {	-- Forgotten Rituals
-					["qg"] = 16201,	-- Geranis Whitemorn
 					-- #if AFTER LEGION
 					-- 7.3.5 introduced new pre-requisites for a lot of quests in Ghostlands.
 					["sourceQuest"] = 9146,	-- Report to Captain Helios
 					-- #endif
+					["qg"] = 16201,	-- Geranis Whitemorn
 					["coord"] = { 72.2, 19.0, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(10, 10, 1),
@@ -536,18 +536,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9811, {	-- Friend of the Sin'dorei [Non-Blood Elf Only]
+					["sourceQuest"] = 9167,	-- The Traitor's Destruction
 					["providers"] = {
 						{ "n", 16239 },	-- Magister Kaendris
 						{ "i", 22653 },	-- Dar'Khan's Head
 					},
-					["sourceQuest"] = 9167,	-- The Traitor's Destruction
 					["coord"] = { 55.0, 48.8, GHOSTLANDS },
 					["races"] = exclude(BLOODELF, HORDE_ONLY),
 					["lvl"] = lvlsquish(15, 15, 1),
 				}),
 				q(9139, {	-- Goldenmist Village
-					["qg"] = 16197,	-- Arcanist Vandril
 					["sourceQuest"] = 9138,	-- Suncrown Village
+					["qg"] = 16197,	-- Arcanist Vandril
 					["coord"] = { 46.3, 28.3, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(9, 9, 1),
@@ -565,14 +565,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				-- #if BEFORE WRATH
 				-- After Wrath, this quest was moved to Eversong Woods and has a lower level requirement.
 				q(9130, {	-- Goods from Silvermoon City
+					["sourceQuests"] = {
+						9327,	-- The Forsaken [Blood Elf Only]
+						9329,	-- The Forsaken [Non-Blood Elf Only]
+					},
 					["qg"] = 16187,	-- Quartermaster Lymel <General Goods>
 					["providers"] = {
 						{ "n", 16187 },	-- Quartermaster Lymel <General Goods>
 						{ "i", 22549 },	-- Quartermaster Lymel's Bill of Lading
-					},
-					["sourceQuests"] = {
-						9327,	-- The Forsaken [Blood Elf Only]
-						9329,	-- The Forsaken [Non-Blood Elf Only]
 					},
 					["coord"] = { 47.3, 29.3, GHOSTLANDS },
 					["races"] = { BLOODELF },
@@ -580,8 +580,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				-- #endif
 				q(9491, {	-- Greed
-					["qg"] = 16268,	-- Eralan <Poison Supplies>
 					["sourceQuest"] = 10372,	-- A Discreet Inquiry
+					["qg"] = 16268,	-- Eralan <Poison Supplies>
 					["coord"] = { 47.2, 34.3, GHOSTLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -609,11 +609,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9145, {	-- Help Ranger Valanna!
-					["qg"] = 16213,	-- Ranger Lethvalin
 					["sourceQuests"] = {
 						9327,	-- The Forsaken (Blood elf)
 						9329,	-- The Forsaken (all others)
 					},
+					["qg"] = 16213,	-- Ranger Lethvalin
 					["coord"] = { 45.4, 32.4, GHOSTLANDS },
 					-- #if BEFORE BFA
 					["minReputation"] = { FACTION_TRANQUILLIEN, FRIENDLY },	-- Tranquillien, Friendly.
@@ -623,28 +623,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(9, 9, 1),
 				}),
 				q(9328, {	-- Hero of the Sin'dorei [Blood Elf Only]
+					["sourceQuest"] = 9167,	-- The Traitor's Destruction
 					["providers"] = {
 						{ "n", 16239 },	-- Magister Kaendris
 						{ "i", 22653 },	-- Dar'Khan's Head
 					},
-					["sourceQuest"] = 9167,	-- The Traitor's Destruction
 					["coord"] = { 55.0, 48.8, GHOSTLANDS },
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(15, 15, 1),
 				}),
 				q(9162, {	-- Hints of the Past
+					["sourceQuest"] = 9161,	-- The Traitor's Shadow
 					["providers"] = {
 						{ "o", 181150 },	-- Dusty Journal
 						{ "i", 22706 },	-- Dar'Khan's Journal
 					},
-					["sourceQuest"] = 9161,	-- The Traitor's Shadow
 					["coord"] = { 79.6, 17.5, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(15, 15, 1),
 				}),
 				q(9163, {	-- Into Occupied Territory
-					["qg"] = 16231,	-- Dame Auriferous
 					["sourceQuest"] = 9160,	-- Investigate An'daroth
+					["qg"] = 16231,	-- Dame Auriferous
 					["coord"] = { 44.8, 32.5, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(11, 11, 1),
@@ -703,8 +703,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9160, {	-- Investigate An'daroth
-					["qg"] = 16231,	-- Dame Auriferous
 					["sourceQuest"] = 9138,	-- Suncrown Village
+					["qg"] = 16231,	-- Dame Auriferous
 					["coord"] = { 44.8, 32.5, GHOSTLANDS },
 					-- #IF BEFORE BFA
 					["minReputation"] = { FACTION_TRANQUILLIEN, FRIENDLY },	-- Tranquillien, Friendly.
@@ -721,28 +721,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9177, {	-- Journey to Undercity [Non-Blood Elf Only]
+					["sourceQuest"] = 9175,	-- The Lady's Necklace
 					["providers"] = {
 						{ "n", 16252 },	-- High Executor Mavren
 						{ "i", 22627 },	-- The Lady's Necklace
 					},
-					["sourceQuest"] = 9175,	-- The Lady's Necklace
 					["coord"] = { 44.7, 32.4, GHOSTLANDS },
 					["races"] = exclude(BLOODELF, HORDE_ONLY),
 					["lvl"] = lvlsquish(15, 15, 1),
 				}),
 				q(9180, {	-- Journey to Undercity [Blood Elf Only]
+					["sourceQuest"] = 9175,	-- The Lady's Necklace
 					["providers"] = {
 						{ "n", 16252 },	-- High Executor Mavren
 						{ "i", 22627 },	-- The Lady's Necklace
 					},
-					["sourceQuest"] = 9175,	-- The Lady's Necklace
 					["coord"] = { 44.7, 32.4, GHOSTLANDS },
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(15, 15, 1),
 				}),
 				q(9217, {	-- More Rotting Hearts
-					["qg"] = 16205,	-- Magistrix Aminel
 					["sourceQuest"] = 9216,	-- Rotting Hearts
+					["qg"] = 16205,	-- Magistrix Aminel
 					["coord"] = { 48.9, 31.3, GHOSTLANDS },
 					["cost"] = {
 						{ "i", 22641, 10 },	-- Rotting Heart
@@ -755,8 +755,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9219, {	-- More Spinal Dust
-					["qg"] = 16205,	-- Magistrix Aminel
 					["sourceQuest"] = 9218,	-- Spinal Dust
+					["qg"] = 16205,	-- Magistrix Aminel
 					["coord"] = { 48.9, 31.3, GHOSTLANDS },
 					["cost"] = {
 						{ "i", 22642, 10 },	-- Spinal Dust
@@ -769,8 +769,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9146, {	-- Report to Captain Helios
-					["qg"] = 16219,	-- Ranger Valanna
 					["sourceQuest"] = 9143,	-- Dealing with Zeb'Sora
+					["qg"] = 16219,	-- Ranger Valanna
 					["coord"] = { 69.4, 15.1, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(9, 9, 1),
@@ -784,11 +784,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9172, {	-- Report to Magister Kaendris
+					["sourceQuest"] = 9162,	-- Hints of the Past
 					["providers"] = {
 						{ "n", 16203 },	-- Ranger Vynna
 						{ "i", 22706 },	-- Dar'Khan's Journal
 					},
-					["sourceQuest"] = 9162,	-- Hints of the Past
 					["coord"] = { 71.9, 32.6, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(15, 15, 1),
@@ -802,8 +802,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9173, {	-- Retaking Windrunner Spire
-					["qg"] = 16252,	-- High Executor Mavren
 					["sourceQuest"] = 9140,	-- Windrunner Village
+					["qg"] = 16252,	-- High Executor Mavren
 					["coord"] = { 44.7, 32.4, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(15, 15, 1),
@@ -819,11 +819,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9618, {	-- Return the Reports
+					["sourceQuest"] = 9460,	-- Combining Forces
 					["providers"] = {
 						{ "n", 17224 },	-- Keltus Darkleaf
 						{ "i", 23919 },	-- Stack of Reports
 					},
-					["sourceQuest"] = 9460,	-- Combining Forces
 					["coord"] = { 33, 11.2, GHOSTLANDS },
 					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 					["maps"] = { SILVERMOON_CITY },
@@ -837,18 +837,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9758, {	-- Return to Arcanist Vandril
-					["qg"] = 16252,	-- High Executor Mavren
 					["sourceQuests"] = {
 						9327,	-- The Forsaken (Blood elf)
 						9329,	-- The Forsaken (all others)
 					},
+					["qg"] = 16252,	-- High Executor Mavren
 					["coord"] = { 44.7, 32.4, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(9, 9, 1),
 				}),
 				q(9216, {	-- Rotting Hearts
-					["qg"] = 16205,	-- Magistrix Aminel
 					["sourceQuest"] = 9155,	-- Down the Dead Scar
+					["qg"] = 16205,	-- Magistrix Aminel
 					["coord"] = { 48.9, 31.3, GHOSTLANDS },
 					["cost"] = {
 						{ "i", 22641, 10 },	-- Rotting Heart
@@ -860,8 +860,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9150, {	-- Salvaging the Past
-					["qg"] = 16199,	-- Magister Darenis
 					["sourceQuest"] = 9138,	-- Suncrown Village
+					["qg"] = 16199,	-- Magister Darenis
 					["coord"] = { 46.0, 31.9, GHOSTLANDS },
 					["minReputation"] = { FACTION_TRANQUILLIEN, FRIENDLY },	-- Tranquillien, Friendly.
 					["races"] = HORDE_ONLY,
@@ -878,11 +878,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9214, {	-- Shadowpine Weaponry
-					["qg"] = 16220,	-- Captain Helios
 					-- #if AFTER LEGION
 					-- 7.3.5 introduced new pre-requisites for a lot of quests in Ghostlands.
 					["sourceQuest"] = 9146,	-- Report to Captain Helios
 					-- #endif
+					["qg"] = 16220,	-- Captain Helios
 					["coord"] = { 72.3, 29.6, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(15, 15, 1),
@@ -906,8 +906,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9218, {	-- Spinal Dust
-					["qg"] = 16205,	-- Magistrix Aminel
 					["sourceQuest"] = 9155,	-- Down the Dead Scar
+					["qg"] = 16205,	-- Magistrix Aminel
 					["coord"] = { 48.9, 31.3, GHOSTLANDS },
 					["cost"] = {
 						{ "i", 22642, 10 },	-- Spinal Dust
@@ -919,11 +919,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9274, {	-- Spirits of the Drowned
-					["qg"] = 16462,	-- Ranger Krenn'an
 					-- #if AFTER LEGION
 					-- 7.3.5 introduced new pre-requisites for a lot of quests in Ghostlands.
 					["sourceQuest"] = 9146,	-- Report to Captain Helios
 					-- #endif
+					["qg"] = 16462,	-- Ranger Krenn'an
 					["coord"] = { 72.2, 29.7, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(10, 10, 1),
@@ -937,8 +937,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9138, {	-- Suncrown Village
-					["qg"] = 16197,	-- Arcanist Vandril
 					["sourceQuest"] = 9758,	-- Return to Arcanist Vandril
+					["qg"] = 16197,	-- Arcanist Vandril
 					["coord"] = { 46.2, 28.3, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(9, 9, 1),
@@ -950,27 +950,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9282, {	-- The Farstrider Enclave
-					["qg"] = 16239,	-- Magister Kaendris
 					["sourceQuest"] = 9151,	-- The Sanctum of the Sun
+					["qg"] = 16239,	-- Magister Kaendris
 					["coord"] = { 55.0, 48.8, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(15, 15, 1),
 				}),
 				q(9327, {	-- The Forsaken [Blood Elf Only]
-					["qg"] = 16197,	-- Arcanist Vandril
 					-- #if AFTER 4.0.3
 					["sourceQuest"] = 28560,	-- Warchief's Command: Ghostlands!
 					-- #endif
+					["qg"] = 16197,	-- Arcanist Vandril
 					["coord"] = { 46.5, 28.4, GHOSTLANDS },
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(9, 9, 1),
 				}),
 				q(9329, {	-- The Forsaken [Non-Blood Elf Only]
-					["qg"] = 16197,	-- Arcanist Vandril
 					-- #if AFTER 4.0.3
 					["sourceQuest"] = 28560,	-- Warchief's Command: Ghostlands!
 					-- #endif
+					["qg"] = 16197,	-- Arcanist Vandril
 					["coord"] = { 46.5, 28.4, GHOSTLANDS },
 					["races"] = exclude(BLOODELF, HORDE_ONLY),
 					["lvl"] = lvlsquish(9, 9, 1),
@@ -981,7 +981,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(15, 15, 1),
 				}),
 				q(9149, {	-- The Plagued Coast
-					["qg"] = 16198,	-- Apothecary Renzithen
 					-- #if AFTER LEGION
 					-- 7.3.5 introduced new pre-requisites for a lot of quests in Ghostlands.
 					["sourceQuest"] = 9138,	-- Suncrown Village	[TODO: Confirm this!]
@@ -992,6 +991,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						9329,	-- The Forsaken [Non-Blood Elf Only]
 					},
 					-- #endif
+					["qg"] = 16198,	-- Apothecary Renzithen
 					["coord"] = { 47.6, 34.8, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(10, 10, 1),
@@ -1009,8 +1009,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(10548, {	-- The Sad Truth
-					["qg"] = 16268,	-- Eralan <Poison Supplies>
 					["sourceQuest"] = 9491,	-- Greed
+					["qg"] = 16268,	-- Eralan <Poison Supplies>
 					["coord"] = { 47.2, 34.3, GHOSTLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
@@ -1035,13 +1035,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9151, {	-- The Sanctum of the Sun
-					["qg"] = 16199,	-- Magister Darenis
 					["sourceQuests"] = {
 						-- #IF BEFORE BFA
 						9169,	-- Deactivate An'owyn
 						-- #ENDIF
 						9140,	-- Windrunner Village
 					},
+					["qg"] = 16199,	-- Magister Darenis
 					["coord"] = { 46.0, 31.9, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					-- #if BEFORE BFA
@@ -1050,8 +1050,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(17, 17, 1),
 				}),
 				q(9167, {	-- The Traitor's Destruction
-					["qg"] = 16239,	-- Magister Kaendris
 					["sourceQuest"] = 9176,	-- The Twin Ziggurats
+					["qg"] = 16239,	-- Magister Kaendris
 					["coord"] = { 55.0, 48.8, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(15, 15, 1),
@@ -1071,15 +1071,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9161, {	-- The Traitor's Shadow
-					["qg"] = 16203,	-- Ranger Vynna
 					["sourceQuest"] = 9282,	-- The Farstrider Enclave
+					["qg"] = 16203,	-- Ranger Vynna
 					["coord"] = { 71.9, 32.6, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(15, 15, 1),
 				}),
 				q(9176, {	-- The Twin Ziggurats
-					["qg"] = 16239,	-- Magister Kaendris
 					["sourceQuest"] = 9172,	-- Report to Master Kaendris
+					["qg"] = 16239,	-- Magister Kaendris
 					["coord"] = { 55.0, 48.8, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(15, 15, 1),
@@ -1103,7 +1103,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9152, {	-- Tomber's Supplies
-					["qg"] = 16224,	-- Rathis Tomber
 					-- #if AFTER LEGION
 					-- 7.3.5 introduced new pre-requisites for a lot of quests in Ghostlands.
 					["sourceQuest"] = 9138,	-- Suncrown Village	[TODO: Confirm this!]
@@ -1114,6 +1113,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						9329,	-- The Forsaken [Non-Blood Elf Only]
 					},
 					-- #endif
+					["qg"] = 16224,	-- Rathis Tomber
 					["coord"] = { 47.2, 28.5, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(9, 9, 1),
@@ -1158,8 +1158,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9192, {	-- Trouble at the Underlight Mines
-					["qg"] = 16251,	-- Deathstalker Maltendis
 					["sourceQuest"] = 9138,	-- Suncrown Village
+					["qg"] = 16251,	-- Deathstalker Maltendis
 					["coord"] = { 44.7, 32.2, GHOSTLANDS },
 					["minReputation"] = { FACTION_TRANQUILLIEN, FRIENDLY },	-- Tranquillien, Friendly.
 					["races"] = HORDE_ONLY,
@@ -1194,8 +1194,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9174, {	-- Vanquishing Aquantion
-					["qg"] = 16201,	-- Geranis Whitemorn
 					["sourceQuest"] = 9157,	-- Forgotten Rituals
+					["qg"] = 16201,	-- Geranis Whitemorn
 					["coord"] = { 72.2, 19.1, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(10, 10, 1),
@@ -1211,11 +1211,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9156, {	-- Wanted: Knucklerot and Luzran
-					["provider"] = { "o", 181147 },	-- Wanted Poster
 					-- #if AFTER LEGION
 					-- Tested on TBC Beta, you can get this quest without the prereq. Need to test again on Retail.
 					["sourceQuest"] = 9138,	-- Suncrown Village
 					-- #endif
+					["provider"] = { "o", 181147 },	-- Wanted Poster
 					["coord"] = { 48.3, 31.6, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(9, 9, 1),
@@ -1235,7 +1235,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					},
 				}),
 				q(9220, {	-- War on Deatholme
-					["qg"] = 16204,	-- Magister Idonis
 					["sourceQuests"] = {
 						-- #if AFTER LEGION
 						-- 7.3.5 introduced new pre-requisites for a lot of quests in Ghostlands.
@@ -1245,6 +1244,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						9151,	-- The Sanctum of the Sun
 						-- #endif
 					},
+					["qg"] = 16204,	-- Magister Idonis
 					["coord"] = { 54.8, 48.5, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(17, 17, 1),
@@ -1271,8 +1271,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					-- #endif
 				})),
 				q(9140, {	-- Windrunner Village
-					["qg"] = 16197,	-- Arcanist Vandril
 					["sourceQuest"] = 9139,	-- Goldenmist Village
+					["qg"] = 16197,	-- Arcanist Vandril
 					["coord"] = { 46.2, 28.3, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(9, 9, 1),

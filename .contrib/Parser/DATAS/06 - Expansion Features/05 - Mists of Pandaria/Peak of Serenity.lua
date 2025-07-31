@@ -21,8 +21,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 		["groups"] = {
 			n(QUESTS, {
 				q(31834, {	-- Begin Your Training: Master Cheng
-					["qg"] = 66260,	-- Master Hight <Grand Master>
 					["sourceQuest"] = 31856,	-- The Peak of Serenity - Begin Your Training
+					["qg"] = 66260,	-- Master Hight <Grand Master>
 					["coord"] = { 48.6, 42.8, KUN_LAI_SUMMIT },
 					["lvl"] = lvlsquish(20, 20, 10),
 					["groups"] = {
@@ -35,11 +35,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 					},
 				}),
 				q(31837, {	-- Continue Your Training: Master Cheng
-					["qg"] = 66260,	-- Master Hight <Grand Master>
 					["sourceQuests"] = {
 						31836,	-- Continue Your Training: Master Yoon
 						31859,	-- The Peak of Serenity - Continue Your Training
 					},
+					["qg"] = 66260,	-- Master Hight <Grand Master>
 					["coord"] = { 48.6, 42.8, KUN_LAI_SUMMIT },
 					["lvl"] = lvlsquish(60, 60, 20),
 					["groups"] = {
@@ -52,11 +52,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 					},
 				}),
 				q(31839, {	-- Continue Your Training: Master Hsu
-					["qg"] = 66260,	-- Master Hight <Grand Master>
 					["sourceQuests"] = {
 						31838,	-- Continue Your Training: Master Tsang
 						31861,	-- The Peak of Serenity - Continue Your Training
 					},
+					["qg"] = 66260,	-- Master Hight <Grand Master>
 					["coord"] = { 48.6, 42.8, KUN_LAI_SUMMIT },
 					["lvl"] = lvlsquish(80, 80, 30),
 					["groups"] = {
@@ -70,7 +70,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 					},
 				}),
 				q(31835, {	-- Continue Your Training: Master Kistane
-					["qg"] = 66260,	-- Master Hight <Grand Master>
 					["sourceQuests"] = {
 						-- #if BEFORE 7.3.5
 						31833,	-- Continue Your Training: Master Woo
@@ -80,6 +79,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 						31857,	-- The Peak of Serenity - Continue Your Training
 						-- #endif
 					},
+					["qg"] = 66260,	-- Master Hight <Grand Master>
 					["coord"] = { 48.6, 42.8, KUN_LAI_SUMMIT },
 					["lvl"] = lvlsquish(40, 40, 10),
 					["groups"] = {
@@ -92,11 +92,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 					},
 				}),
 				q(31838, {	-- Continue Your Training: Master Tsang
-					["qg"] = 66260,	-- Master Hight <Grand Master>
 					["sourceQuests"] = {
 						31837,	-- Continue Your Training: Master Cheng
 						31860,	-- The Peak of Serenity - Continue Your Training
 					},
+					["qg"] = 66260,	-- Master Hight <Grand Master>
 					["coord"] = { 48.6, 42.8, KUN_LAI_SUMMIT },
 					["lvl"] = lvlsquish(70, 70, 25),
 					["groups"] = {
@@ -129,11 +129,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 					},
 				})),
 				q(31836, {	-- Continue Your Training: Master Yoon
-					["qg"] = 66260,	-- Master Hight <Grand Master>
 					["sourceQuests"] = {
 						31835,	-- Continue Your Training: Master Kistane
 						31858,	-- The Peak of Serenity - Continue Your Training
 					},
+					["qg"] = 66260,	-- Master Hight <Grand Master>
 					["coord"] = { 48.6, 42.8, KUN_LAI_SUMMIT },
 					["lvl"] = lvlsquish(50, 50, 15),
 					["groups"] = {
@@ -147,11 +147,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 					},
 				}),
 				q(31944, {	-- Complete Your Training: The Final Test
-					["qg"] = 66260,	-- Master Hight <Grand Master>
 					["sourceQuests"] = {
 						31839,	-- Continue Your Training: Master Hsu
 						31989,	-- The Peak of Serenity - Complete Your Training
 					},
+					["qg"] = 66260,	-- Master Hight <Grand Master>
 					["coord"] = { 48.6, 42.8, KUN_LAI_SUMMIT },
 					["lvl"] = lvlsquish(90, 90, 35),
 					["groups"] = {
@@ -161,8 +161,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 					},
 				}),
 				q(31840, {	-- Practice Makes Perfect: Master Cheng /lvl 10
-					["qg"] = 66260,	-- Master Hight <Grand Master>
 					["sourceQuest"] = 31834,	-- Continue Your Training: Master Cheng
+					["qg"] = 66260,	-- Master Hight <Grand Master>
 					["coord"] = { 48.6, 42.8, KUN_LAI_SUMMIT },
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(20, 20, 10),
@@ -174,8 +174,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 					},
 				}),
 				q(31844, {	-- Practice Makes Perfect: Master Cheng /lvl 20
-					["qg"] = 66260,	-- Master Hight <Grand Master>
 					["sourceQuest"] = 31837,	-- Continue Your Training: Master Cheng
+					["qg"] = 66260,	-- Master Hight <Grand Master>
 					["coord"] = { 48.6, 42.8, KUN_LAI_SUMMIT },
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(60, 60, 20),
@@ -187,8 +187,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 					},
 				}),
 				q(31846, {	-- Practice Makes Perfect: Master Hsu /lvl 30
-					["qg"] = 66260,	-- Master Hight <Grand Master>
 					["sourceQuest"] = 31839,	-- Continue Your Training: Master Hsu
+					["qg"] = 66260,	-- Master Hight <Grand Master>
 					["coord"] = { 48.6, 42.8, KUN_LAI_SUMMIT },
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(80, 80, 30),
@@ -200,8 +200,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 					},
 				}),
 				q(31842, {	-- Practice Makes Perfect: Master Kistane /lvl 10
-					["qg"] = 66260,	-- Master Hight <Grand Master>
 					["sourceQuest"] = 31835,	-- Continue Your Training: Master Kistane
+					["qg"] = 66260,	-- Master Hight <Grand Master>
 					["coord"] = { 48.6, 42.8, KUN_LAI_SUMMIT },
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(40, 40, 10),
@@ -213,8 +213,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 					},
 				}),
 				q(31845, {	-- Practice Makes Perfect: Master Tsang /lvl 25
-					["qg"] = 66260,	-- Master Hight <Grand Master>
 					["sourceQuest"] = 31838,	-- Continue Your Training: Master Tsang
+					["qg"] = 66260,	-- Master Hight <Grand Master>
 					["coord"] = { 48.6, 42.8, KUN_LAI_SUMMIT },
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
@@ -226,8 +226,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 					},
 				}),
 				q(31841, {	-- Practice Makes Perfect: Master Woo /lvl 10
-					["qg"] = 66260,	-- Master Hight <Grand Master>
 					["sourceQuest"] = 31833,	-- Continue Your Training: Master Woo
+					["qg"] = 66260,	-- Master Hight <Grand Master>
 					["coord"] = { 48.6, 42.8, KUN_LAI_SUMMIT },
 					["timeline"] = { ADDED_5_0_4, REMOVED_7_3_5 },
 					["isDaily"] = true,
@@ -240,8 +240,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 					},
 				}),
 				q(31843, {	-- Practice Makes Perfect: Master Yoon /lvl 15
-					["qg"] = 66260,	-- Master Hight <Grand Master>
 					["sourceQuest"] = 31836,	-- Continue Your Training: Master Yoon
+					["qg"] = 66260,	-- Master Hight <Grand Master>
 					["coord"] = { 48.6, 42.8, KUN_LAI_SUMMIT },
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(50, 50, 15),
@@ -259,15 +259,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 					["lvl"] = lvlsquish(20, 20, 10),
 				}),
 				q(31855, {	-- The Peak of Serenity - Continue Your Training /lvl 10
-					["qg"] = 66260,	-- Master Hight <Grand Master>
 					["sourceQuest"] = 31834,	-- Begin Your Training: Master Cheng
+					["qg"] = 66260,	-- Master Hight <Grand Master>
 					["coord"] = { 48.6, 42.8, KUN_LAI_SUMMIT },
 					["timeline"] = { ADDED_5_0_4, REMOVED_7_3_5 },
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(30, 30, 10),
 				}),
 				q(31857, {	-- The Peak of Serenity - Continue Your Training /lvl 10
-					["qg"] = 66260,	-- Master Hight <Grand Master>
 					["sourceQuests"] = {
 						-- #if BEFORE 7.3.5
 						31833,	-- Continue Your Training: Master Woo
@@ -275,46 +274,47 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, {
 						31834,	-- Begin Your Training: Master Cheng
 						-- #endif
 					},
+					["qg"] = 66260,	-- Master Hight <Grand Master>
 					["coord"] = { 48.6, 42.8, KUN_LAI_SUMMIT },
 					["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1 },	-- baiting this for #errors to get more information
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(40, 40, 10),
 				}),
 				q(31858, {	-- The Peak of Serenity - Continue Your Training /lvl 15
-					["qg"] = 66260,	-- Master Hight <Grand Master>
 					["sourceQuest"] = 31835,	-- Continue Your Training: Master Kistane
+					["qg"] = 66260,	-- Master Hight <Grand Master>
 					["coord"] = { 48.6, 42.8, KUN_LAI_SUMMIT },
 					["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1 },	-- baiting this for #errors to get more information
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(50, 50, 15),
 				}),
 				q(31859, {	-- The Peak of Serenity - Continue Your Training /lvl 20
-					["qg"] = 66260,	-- Master Hight <Grand Master>
 					["sourceQuest"] = 31836,	-- Continue Your Training: Master Yoon
+					["qg"] = 66260,	-- Master Hight <Grand Master>
 					["coord"] = { 48.6, 42.8, KUN_LAI_SUMMIT },
 					["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1 },	-- baiting this for #errors to get more information
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(60, 60, 20),
 				}),
 				q(31860, {	-- The Peak of Serenity - Continue Your Training /lvl 25
-					["qg"] = 66260,	-- Master Hight <Grand Master>
 					["sourceQuest"] = 31837,	-- Continue Your Training: Master Cheng
+					["qg"] = 66260,	-- Master Hight <Grand Master>
 					["coord"] = { 48.6, 42.8, KUN_LAI_SUMMIT },
 					["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1 },	-- baiting this for #errors to get more information
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
 				}),
 				q(31861, {	-- The Peak of Serenity - Continue Your Training /lvl 30
-					["qg"] = 66260,	-- Master Hight <Grand Master>
 					["sourceQuest"] = 31838,	-- Continue Your Training: Master Tsang
+					["qg"] = 66260,	-- Master Hight <Grand Master>
 					["coord"] = { 48.6, 42.8, KUN_LAI_SUMMIT },
 					["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1 },	-- baiting this for #errors to get more information
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(80, 80, 30),
 				}),
 				q(31989, {	-- The Peak of Serenity - Complete Your Training /lvl 35
-					["qg"] = 66260,	-- Master Hight <Grand Master>
 					["sourceQuest"] = 31839,	-- Continue Your Training: Master Hsu
+					["qg"] = 66260,	-- Master Hight <Grand Master>
 					["coord"] = { 48.6, 42.8, KUN_LAI_SUMMIT },
 					["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1 },	-- baiting this for #errors to get more information
 					["isBreadcrumb"] = true,

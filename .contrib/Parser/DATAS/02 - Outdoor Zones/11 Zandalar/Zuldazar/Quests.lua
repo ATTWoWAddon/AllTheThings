@@ -42,9 +42,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				}),
 				q(52958, {	-- Call to Arms: Drustvar
 					["provider"] = { "n", 143536 },	-- High Warlord Volrath
-					["isWeekly"] = true,
 					["coord"] = { 51.5, 58.1, ZULDAZAR },
 					["races"] = HORDE_ONLY,
+					["isWeekly"] = true,
 					["groups"] = {
 						ASPIRANTS_EQUIPMENT_CACHE,
 						i(169614),	-- Call to Arms Distinction
@@ -52,9 +52,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				}),
 				q(56650, {	-- Call to Arms: Mechagon
 					["provider"] = { "n", 143536 },	-- High Warlord Volrath
-					["isWeekly"] = true,
 					["coord"] = { 51.5, 58.1, ZULDAZAR },
 					["races"] = HORDE_ONLY,
+					["isWeekly"] = true,
 					["groups"] = {
 						ASPIRANTS_EQUIPMENT_CACHE,
 						i(169614),	-- Call to Arms Distinction
@@ -63,9 +63,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				q(56148, {	-- Call to Arms: Nazjatar
 					["sourceQuests"] = { 55500 },	-- Save a Friend
 					["provider"] = { "n", 143536 },	-- High Warlord Volrath
-					["isWeekly"] = true,
 					["coord"] = { 51.5, 58.1, ZULDAZAR },
 					["races"] = HORDE_ONLY,
+					["isWeekly"] = true,
 					["groups"] = {
 						ASPIRANTS_EQUIPMENT_CACHE,
 						i(169614),	-- Call to Arms Distinction
@@ -73,9 +73,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				}),
 				q(52954, {	-- Call to Arms: Nazmir
 					["provider"] = { "n", 143536 },	-- High Warlord Volrath
-					["isWeekly"] = true,
 					["coord"] = { 51.5, 58.1, ZULDAZAR },
 					["races"] = HORDE_ONLY,
+					["isWeekly"] = true,
 					["groups"] = {
 						ASPIRANTS_EQUIPMENT_CACHE,
 						i(169614),	-- Call to Arms Distinction
@@ -83,9 +83,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				}),
 				q(52957, {	-- Call to Arms: Stormsong Valley
 					["provider"] = { "n", 143536 },	-- High Warlord Volrath
-					["isWeekly"] = true,
 					["coord"] = { 51.5, 58.1, ZULDAZAR },
 					["races"] = HORDE_ONLY,
+					["isWeekly"] = true,
 					["groups"] = {
 						ASPIRANTS_EQUIPMENT_CACHE,
 						i(169614),	-- Call to Arms Distinction
@@ -93,9 +93,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				}),
 				q(52956, {	-- Call to Arms: Tiragarde Sound
 					["provider"] = { "n", 143536 },	-- High Warlord Volrath
-					["isWeekly"] = true,
 					["coord"] = { 51.5, 58.1, ZULDAZAR },
 					["races"] = HORDE_ONLY,
+					["isWeekly"] = true,
 					["groups"] = {
 						ASPIRANTS_EQUIPMENT_CACHE,
 						i(169614),	-- Call to Arms Distinction
@@ -103,9 +103,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				}),
 				q(59016, {	-- Call to Arms: Uldum
 					["provider"] = { "n", 143536 },	-- High Warlord Volrath
-					["isWeekly"] = true,
 					["coord"] = { 51.5, 58.1, ZULDAZAR },
 					["races"] = HORDE_ONLY,
+					["isWeekly"] = true,
 					["groups"] = {
 						ASPIRANTS_EQUIPMENT_CACHE,
 						i(169614),	-- Call to Arms Distinction
@@ -113,9 +113,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				}),
 				q(59017, {	-- Call to Arms: Vale of Eternal Blossoms
 					["provider"] = { "n", 143536 },	-- High Warlord Volrath
-					["isWeekly"] = true,
 					["coord"] = { 51.5, 58.1, ZULDAZAR },
 					["races"] = HORDE_ONLY,
+					["isWeekly"] = true,
 					["groups"] = {
 						ASPIRANTS_EQUIPMENT_CACHE,
 						i(169614),	-- Call to Arms Distinction
@@ -123,9 +123,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				}),
 				q(52953, {	-- Call to Arms: Vol'dun
 					["provider"] = { "n", 143536 },	-- High Warlord Volrath
-					["isWeekly"] = true,
 					["coord"] = { 51.5, 58.1, ZULDAZAR },
 					["races"] = HORDE_ONLY,
+					["isWeekly"] = true,
 					["groups"] = {
 						ASPIRANTS_EQUIPMENT_CACHE,
 						i(169614),	-- Call to Arms Distinction
@@ -133,18 +133,18 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				}),
 				q(52952, {	-- Call to Arms: Zuldazar
 					["provider"] = { "n", 143536 },	-- High Warlord Volrath
-					["isWeekly"] = true,
 					["coord"] = { 51.5, 58.1, ZULDAZAR },
 					["races"] = HORDE_ONLY,
+					["isWeekly"] = true,
 					["groups"] = {
 						ASPIRANTS_EQUIPMENT_CACHE,
 						i(169614),	-- Call to Arms Distinction
 					},
 				}),
 				q(53338, {	-- Prove Your Worth
+					["provider"] = { "n", 143551 },	--  Centurion Firescream
 					["coord"] = { 51.56, 58.06, ZULDAZAR },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 143551 },	--  Centurion Firescream
 					["groups"] = {
 						i(163604, {	-- Net-O-Matic 5000
 							["filterID"] = CONSUMABLES,
@@ -153,8 +153,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				}),
 				q(56500, {	-- Storming the Battlefields!
 					["provider"] = { "n", 143555 },	-- Xander Silberman
-					["races"] = HORDE_ONLY,
 					["coord"] = { 51.6, 58.2, ZANDALAR },
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(168920),	-- Azerite-Encrusted Timequartz (Rank 1)
 						i(168442),	-- Roiling Blood of the Vanquished (Rank 1)
@@ -162,23 +162,23 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					},
 				}),
 				q(53053, {	-- To The Mugambala!
+					["description"] = "You have to enable War Mode to get this quest.",
 					["provider"] = { "n", 138708 },	-- Garona Halforcen
 					["coord"] = { 58.4, 62.6, DAZARALOR },
-					["description"] = "You have to enable War Mode to get this quest.",
 					["races"] = HORDE_ONLY,
 					["lvl"] = 110,
 				}),
 				q(53054, {	-- Dueler's Guild
+					["sourceQuests"] = { 53053 },	-- To The Mugambala!
 					["provider"] = { "n", 143536 },	-- High Warlord Volrath
 					["coord"] = { 51.5, 58.2, ZULDAZAR },
-					["sourceQuests"] = { 53053 },	-- To The Mugambala!
 					["races"] = HORDE_ONLY,
 					["lvl"] = 110,
 				}),
 			})),
 			q(50393, {	-- A Child of Pa'ku
-				["races"] = HORDE_ONLY,
 				["provider"] = { "i", 157782 },	-- Pterrordax Egg
+				["races"] = HORDE_ONLY,
 			}),
 			q(48399, {	-- A Dark (Iron) Tide
 				["sourceQuests"] = { 48317 },	-- A Nose for Magic
@@ -189,22 +189,22 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(55251, {	-- A Daughter of Torcali #1
 				["sourceQuests"] = { 55258 },	-- Sleep, Eat, Repeat
 				["provider"] = { "n", 151319 },	-- Li'zal
-				["isDaily"] = true,
 				["coord"] = { 68.1, 41.7, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
 			}),
 			q(55243, {	-- A Daughter of Torcali #2
 				["sourceQuests"] = { 55507 },	-- Torcali's Blessing
 				["provider"] = { "n", 151319 },	-- Li'zal
-				["isDaily"] = true,
 				["coord"] = { 68.1, 41.7, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
 			}),
 			q(50331, {	-- A Different Outcome
 				["sourceQuests"] = { 51407 },	-- Find Their Words
-				["isBreadcrumb"] = true,
 				["provider"] = { "n", 129717 },	-- Akru
 				["coord"] = { 70.6, 64.9, ZULDAZAR },
+				["isBreadcrumb"] = true,
 			}),
 			q(48581, {	-- A Good Spanking
 				["sourceQuests"] = { 47261 },	-- How to Train Your Direhorn
@@ -224,10 +224,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(55250, {	-- A Growing Appetite
 				["sourceQuests"] = { 55258 },	-- Sleep, Eat, Repeat
-				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 151286 },		-- Child of Torcali
-				["isDaily"] = true,
 				["coord"] = { 68.2, 41.8, ZULDAZAR },
+				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
 			}),
 			q(55252, {	-- A Loa Without a Temple
 				["sourceQuests"] = { 55254 },	-- An Unending Sleep
@@ -251,24 +251,24 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(50801, {	-- A Nose for Ptrouble #1
 				["sourceQuests"] = { 50402 },	-- SKREEEEE! (#1)
 				["provider"] = { "n", 135308 },	-- Wingminder Goja
-				["isDaily"] = true,
 				["coord"] = { 70.8, 50.9, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
 			}),
 			q(50838, {	-- A Nose for Ptrouble #2
 				["sourceQuests"] = { 50412 },	-- Back to the Nest
 				["provider"] = { "n", 135308 },	-- Wingminder Goja
-				["isDaily"] = true,
 				["coord"] = { 70.7, 50.8, ZULDAZAR },
-				["races"] = HORDE_ONLY,
 				["cost"] = { { "i", 158906, 8 } },	-- 8x Shimmerfin Flesh
+				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
 			}),
 			q(50860, {	-- A Nose for Ptrouble #3
 				["sourceQuests"] = { 50900 },	-- Maybe When You're Older
 				["provider"] = { "n", 135308 },	-- Wingminder Goja
-				["isDaily"] = true,
 				["coord"] = { 70.8, 50.7, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
 			}),
 			q(50396, {	-- A Pterrible Fate
 				["sourceQuests"] = { 52447 },	-- Room to Grow
@@ -443,21 +443,21 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(55244, {	-- Away From the Herd
 				["sourceQuests"] = { 55507 },	-- Torcali's Blessing [1 back from previous]
 				["provider"] = { "n", 152258 },	-- Child of Torcali
-				["isDaily"] = true,
-				["races"] = HORDE_ONLY,
 				["coord"] = { 68.2, 41.8, ZULDAZAR },
+				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
 				["groups"] = {
 					i(168304),	-- Squeaky Raptor (QI!)
 				},
 			}),
 			q(55249, {	-- Away From the Herd
+				["provider"] = { "n", 151286 },	-- Child of Torcali
+				["coord"] = { 68.2, 41.8, ZULDAZAR },
+				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
 			--	i never got this version of the quest, only 55244.  is this version unused or is there a specific set of circumstances under which it appears?
 			--	the quest directive is slightly different -- this one says "help your direhorn cheer up" and the one i got repeatedly says "play with your direhorn."
 			--	according to wowhead, this one comes from the NPC listed under "provider" here, and the one i got comes from 152258.  so possibly from a different place in the storyline?
-				["provider"] = { "n", 151286 },	-- Child of Torcali
-				["isDaily"] = true,
-				["coord"] = { 68.2, 41.8, ZULDAZAR },
-				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(168304),	-- Squeaky Raptor (QI!)
 				},
@@ -531,11 +531,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 81.3, 45.8, ZULDAZAR },
 			}),
 			q(51249, {	-- Crabulous Feast
-			--	"the wreckoning" and "the things they carried" are available with ZERO prereqs, before starting zuldazar.  this + "productive pests" are not.  unsure what unlocks them.
-			--	could be literally anything from the dazar'alor intro through to "terrace of the chosen" or "mistress of lies," which unlock the breadcrumb that brings you to this area
 				["provider"] = { "n", 135803 },	-- J'eebi
 				["coord"] = { 76.4, 48.7, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+			--	"the wreckoning" and "the things they carried" are available with ZERO prereqs, before starting zuldazar.  this + "productive pests" are not.  unsure what unlocks them.
+			--	could be literally anything from the dazar'alor intro through to "terrace of the chosen" or "mistress of lies," which unlock the breadcrumb that brings you to this area
 				["groups"] = {
 					i(159934),	-- Large Lump of Crab Meat (QI!)
 				},
@@ -602,9 +602,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(50944, {	-- Down, But Not Out
 				["sourceQuests"] = { 50943 },	-- The Joy of Flight
-				["providers"] = {
-					{ "n", 135744 },	-- Kua'fon
-					{ "n", 133680 },	-- Kua'fon (both versions of the NPC are in the same place at the same time.  i assume if you relog this is the only one there)
+				["qgs"] = {
+					135744,	-- Kua'fon
+					133680,	-- Kua'fon (both versions of the NPC are in the same place at the same time.  i assume if you relog this is the only one there)
 				},
 				["coord"] = { 70.6, 50.6, ZULDAZAR },
 				["races"] = HORDE_ONLY,
@@ -619,8 +619,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["sourceQuests"] = { 50940 },	-- Wisdom of the Wingless
 				["provider"] = { "n", 135801 },	-- Hexlord Raal
 				["coord"] = { 70.6, 50.6, ZULDAZAR },
-				["races"] = HORDE_ONLY,
 				["cost"] = { { "i", 159139, 1 } },	-- 1x Lightweight Skyterror Barding
+				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(159138),	-- Berserker Skull (QI!)
 				},
@@ -628,9 +628,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(55245, {	-- Eat Like a Direhorn
 				["sourceQuests"] = { 55507 },	-- Torcali's Blessing [1 back from previous]
 				["provider"] = { "n", 152258 },	-- Child of Torcali
-				["isDaily"] = true,
 				["coord"] = { 68.2, 41.8, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
 			}),
 			q(49149, {	-- Embrace the Voodoo
 				["sourceQuests"] = {
@@ -659,9 +659,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(55246, {	-- Even Greener Pastures
 				--["sourceQuests"] = { 55258 },	--
 				["provider"] = { "n", 151319 },	-- Li'zal
-				["isDaily"] = true,
 				["coord"] = { 68.1, 41.7, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
 			}),
 			q(52748, {	-- Eyes on the Skies
 				["sourceQuests"] = { 50900 },	-- Maybe When You're Older
@@ -672,9 +672,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(50930, {	-- Falling with Style
 				["sourceQuests"] = { 50900 },	-- Maybe When You're Older
 				["provider"] = { "n", 135308 },	-- Wingminder Goja
-				["isDaily"] = true,
 				["coord"] = { 70.8, 50.7, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
 			}),
 			q(49663, {	-- False Prophecies
 				["sourceQuests"] = { 49905 },	-- Plot Twist
@@ -693,9 +693,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(51407, {	-- Find Their Words
 				["sourceQuests"] = { 49289 },	-- A Special Stone
-				["providers"] = {
-					{ "n", 128925 },	-- Deyon
-					{ "n", 129717 },	-- Akru
+				["qgs"] = {
+					128925,	-- Deyon
+					129717,	-- Akru
 				},
 				["coords"] = {
 					{ 75.2, 61.5, ZULDAZAR },	-- Deyon
@@ -727,9 +727,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(55248, {	-- Greener Pastures
 				["sourceQuests"] = { 55258 },	-- Sleep, Eat, Repeat
 				["provider"] = { "n", 151319 },	-- Li'zal
-				["isDaily"] = true,
 				["coord"] = { 68.1, 41.7, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
 			}),
 			q(47418, {	-- Growing Pains
 				["sourceQuests"] = {
@@ -905,8 +905,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(56205, {	--  Just Ptrust Me On This
 				["sourceQuests"] = { 50944 },	-- Down, But Not Out
 				["provider"] = { "n", 127377 },	-- Pa'Ku
-				["races"] = HORDE_ONLY,
 				["coord"] = { 71.5, 49.4, ZULDAZAR },
+				["races"] = HORDE_ONLY,
 			}),
 			q(49919, {	-- Kaja'mite Ore Bust
 				["sourceQuests"] = { 49917 },	-- Kaja'mite? Kaja'must!
@@ -925,40 +925,40 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(49922, {	-- King Da'ka (H)
-			--	kaja'mite ore dust was available before starting the intro to dazar'alor, but this quest wasn't.  what unlocks it?
 				["provider"] = { "n", 132267 },	-- Bently Greaseflare
 				["coord"] = { 51.6, 50.6, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+			--	kaja'mite ore dust was available before starting the intro to dazar'alor, but this quest wasn't.  what unlocks it?
 			}),
 			q(51111, {	-- King or Prey
 				["sourceQuests"] = {
 					47528,	-- Mistress of Lies
 					47741,	-- To Sacrifice a Loa
 				},
-				["isBreadcrumb"] = true,
 				["provider"] = { "n", 124915 },	-- King Rastakhan
 				["coord"] = { 71.0, 29.8, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+				["isBreadcrumb"] = true,
 			}),
 			q(51146, {	-- Kua'fon's Day Off #1
 				["sourceQuests"] = { 50412 },	-- Back to the Nest
 				["provider"] = { "n", 135308 },	-- Wingminder Goja
-				["isDaily"] = true,
 				["coord"] = { 70.7, 51.0, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
 			}),
 			q(51147, {	-- Kua'fon's Day Off #2
 				["sourceQuests"] = { 50900 },	-- Maybe When You're Older
 				["provider"] = { "n", 135308 },	-- Wingminder Goja
-				["isDaily"] = true,
 				["coord"] = { 70.8, 50.7, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
 			}),
 			q(49681, {	-- Lil' Tika
-			--	unknown prereq, isn't available prior to starting dazar'alor like the other quests in the area
 				["provider"] = { "n", 130468 },	-- Lil' Tika
 				["coord"] = { 46.2, 23.3, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+			--	unknown prereq, isn't available prior to starting dazar'alor like the other quests in the area
 			}),
 			q(49287, {	-- Lost Chelonians
 				["sourceQuests"] = { 49286 },	-- Caged Wisdom
@@ -968,10 +968,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(50842, {	-- Mast Effect
 				["sourceQuests"] = { 50412 },	-- Back to the Nest
 				["provider"] = { "n", 135308 },	-- Wingminder Goja
-				["isDaily"] = true,
 				["coord"] = { 70.7, 50.8, ZULDAZAR },
-				["races"] = HORDE_ONLY,
 				["cost"] = { { "i", 158906, 8 } },	-- 8x Shimmerfin Flesh
+				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
 			}),
 			q(50252, {	-- Mating Season Halftime
 				["sourceQuests"] = {
@@ -1037,9 +1037,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(55795, {	-- Mountain On the Move
 				["sourceQuests"] = { 55247 },	-- The Trust You've Earned
-				["providers"] = {
-					{ "n", 151319 },	-- Li'zal <Priestess of Torcali>
-					{ "n", 154673 },	-- Li'zal <Priestess of Torcali>
+				["qgs"] = {
+					151319,	-- Li'zal <Priestess of Torcali>
+					154673,	-- Li'zal <Priestess of Torcali>
 				},
 				["coord"] = { 68.2, 41.9, ZULDAZAR },
 				["races"] = HORDE_ONLY,
@@ -1078,9 +1078,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(52317, {	-- No Ptake, Only Throw
 				["sourceQuests"] = { 50412 },	-- Back to the Nest
 				["provider"] = { "n", 141025 },	-- Kua'fon
-				["isDaily"] = true,
 				["coord"] = { 70.7, 51.1, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
 				["groups"] = {
 					i(162024),	-- Kua'fon's Favorite Skull (QI!)
 				},
@@ -1101,11 +1101,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(50963, {	-- Of Dark Deeds and Dark Days
-			--	possibly a breadcrumb?
 				["sourceQuests"] = { 49426 },	-- The King's Gambit
 				["provider"] = { "n", 129757 },	-- King Rastakhan
 				["coord"] = { 42.7, 37.7, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+			--	possibly a breadcrumb?
 			}),
 			q(55506, {	-- One Road Ends
 				["sourceQuests"] = { 55503 },	-- The Direhorn and the Saurid
@@ -1116,9 +1116,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(50798, {	-- Out on a Limb
 				["sourceQuests"] = { 50402 },	-- SKREEEEE! (#1, prior to Nature Versus Nurture, during which this quest is available)
 				["provider"] = { "n", 135308 },	-- Wingminder Goja
-				["isDaily"] = true,
 				["coord"] = { 70.7, 50.8, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
 			}),
 			q(47734, {	-- Partners in Heresy
 				["sourceQuests"] = {
@@ -1148,11 +1148,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 68.9, 19.4, ZULDAZAR },
 			}),
 			q(47258, {	-- Prepare for a Siege
-			--	is this a breadcrumb?
 				["sourceQuests"] = { 47229 },	-- Bulwark of Torcali
 				["provider"] = { "n", 135890 },	-- King Rastakhan
 				["coord"] = { 60.0, 22.2, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+			--	is this a breadcrumb?
 			}),
 			q(51663, {	-- Preparing for the Fall
 				["sourceQuests"] = { 49492 },	-- Arrogance of Vol'jamba
@@ -1161,11 +1161,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(51248, {	-- Productive Pests
-			--	"the wreckoning" and "the things they carried" are available with ZERO prereqs, before starting zuldazar.  this + "crabulous" are not.  unsure what unlocks them.
-			--	could be literally anything from the dazar'alor intro through to "terrace of the chosen" or "mistress of lies," which unlock the breadcrumb that brings you to this area
 				["provider"] = { "n", 135855 },	-- Teekay Treadlebobbin
 				["coord"] = { 76.4, 48.7, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+			--	"the wreckoning" and "the things they carried" are available with ZERO prereqs, before starting zuldazar.  this + "crabulous" are not.  unsure what unlocks them.
+			--	could be literally anything from the dazar'alor intro through to "terrace of the chosen" or "mistress of lies," which unlock the breadcrumb that brings you to this area
 			}),
 			q(50887, {	-- Ptrust Fall
 				["sourceQuests"] = { 50886 },	-- Surrogate Wings
@@ -1271,10 +1271,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(53775, {	-- Shades of Disruption
+				["sourceQuests"] = { 53774 },	-- Wisdom of the Warchief
 				["provider"] = { "n", 145190 },	-- Princess Talanji
 				["coord"] = { 66.4, 70.8, ZANCHUL_HALL_OF_THE_HIGH_PRIESTS },
 				["races"] = HORDE_ONLY,
-				["sourceQuests"] = { 53774 },	-- Wisdom of the Warchief
 			}),
 			q(49147, {	-- Show of Strength
 				["sourceQuests"] = {
@@ -1312,9 +1312,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(50791, {	-- Skree...
 				["sourceQuests"] = { 50402 },	-- SKREEEEE! (#1)
 				["provider"] = { "n", 135272 },	-- Kua'fon
-				["isDaily"] = true,
 				["coord"] = { 70.7, 50.8, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
 			}),
 			q(50402, {	-- SKREEEEE! (#1)
 				["sourceQuests"] = { 50394 },	-- Your Problem Now
@@ -1325,23 +1325,23 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(50796, {	-- SKREEEEE! (#2)
 				["sourceQuests"] = { 50402 },	-- SKREEEEE!
 				["provider"] = { "n", 135279 },	-- Kua'fon
-				["isDaily"] = true,
 				["coord"] = { 70.7, 50.8, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
 			}),
 			q(50839, {	-- SKREEEEE! (#3)
 				["sourceQuests"] = { 50412 },	-- Back to the Nest
 				["provider"] = { "n", 135455 },	-- Kua'fon
-				["isDaily"] = true,
 				["coord"] = { 70.7, 50.8, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
 			}),
 			q(50841, {	-- SKREEEEE! (#4)
 				["sourceQuests"] = { 50900 },	-- Maybe When You're Older
 				["provider"] = { "n", 135502 },	-- Kua'fon
-				["isDaily"] = true,
 				["coord"] = { 70.8, 50.6, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+				["isDaily"] = true,
 			}),
 			q(49680, {	-- Skycaller Soltok
 				["sourceQuests"] = { 49940 },	-- Sandscar Breach (breadcrumb)
@@ -1357,8 +1357,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["sourceQuests"] = { 55253 },	-- A Show of Faith
 				["provider"] = { "n", 151286 },	-- Child of Torcali
 				["coord"] = { 68.1, 41.7, ZULDAZAR },
-				["races"] = HORDE_ONLY,
 				["cost"] = { { "i", 157779, 3 }, },	-- 3x Infant Dino Kibble
+				["races"] = HORDE_ONLY,
 			}),
 			q(49146, {	-- Spirits' Belongings
 				["sourceQuests"] = { 49122 },	-- A Port in Peril
@@ -1445,6 +1445,14 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(53476, {	-- The Great Sea Scrolls
 				["description"] = "You receive the item that starts this quest from looting any treasure chest.",
 				["provider"] = { "i", 163856 },	-- Ancient Pilgrimage Scrollcasing
+				["maps"] = {
+					NAZMIR,
+					VOLDUN,
+					TIRAGARDE_SOUND,
+					STORMSONG_VALLEY,
+					-- ZULDAZAR,
+					DRUSTVAR,
+				},
 				["_drop"] = { "g" },
 				["groups"] = {
 					i(163853),	-- Pilgrimage Scroll (QI!)
@@ -1457,14 +1465,6 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					azewrongItem(180029),	-- Bartered Vrykul Facemask
 					azewrongItem(180027),	-- Bartered Vrykul Hood
 					azewrongItem(180030),	-- Bartered Vrykul Warhelm
-				},
-				["maps"] = {
-					NAZMIR,
-					VOLDUN,
-					TIRAGARDE_SOUND,
-					STORMSONG_VALLEY,
-					-- ZULDAZAR,
-					DRUSTVAR,
 				},
 			}),
 			q(50297, {	-- The Head of Her Enemy
@@ -1619,8 +1619,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(55462, {	-- The Wanderer's Call
 				["sourceQuests"] = { 55258 },	-- Sleep, Eat, Repeat
 				["provider"] = { "n", 151999 },	-- Jo'nok, Bulwark of Torcali <Zanchuli Council>
-				["races"] = HORDE_ONLY,
 				["coord"] = { 68.2, 41.6, ZULDAZAR },
+				["races"] = HORDE_ONLY,
 			}),
 			q(47738, {	-- The Will of the Loa
 				["sourceQuests"] = { 51677 },	-- Mending Body and Soul
@@ -1692,10 +1692,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(53776, {	-- To the Broken Shore
+				["sourceQuests"] = { 53775 },	-- Shades of Disruption
 				["provider"] = { "n", 145225 },	-- Spirit of Vol'jin
 				["coord"] = { 67.6, 72.8, ZANCHUL_HALL_OF_THE_HIGH_PRIESTS },
 				["races"] = HORDE_ONLY,
-				["sourceQuests"] = { 53775 },	-- Shades of Disruption
 				["groups"] = {
 					i(165401),	-- The Glaive of Vol'jin (QI!)
 				},
@@ -1750,8 +1750,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(55504, {	-- Wayshrines of Zuldazar
 				["sourceQuests"] = { 55462 },	-- The Wanderer's Call
 				["provider"] = { "n", 151257 },	-- Torcali <Loa of Wanderers>
-				["races"] = HORDE_ONLY,
 				["coord"] = { 68.2, 29.6, ZULDAZAR },
+				["races"] = HORDE_ONLY,
 				["groups"] = {
 					o_repeated({
 						o(325476),	-- Direbloom
@@ -1776,14 +1776,14 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(53774, {	-- Wisdom of the Warchief
-				["minReputation"] = { FACTION_ZANDALARI_EMPIRE, EXALTED },	-- Zandalari Empire, Exalted.
-				["provider"] = { "n", 141555 },	-- Baine Bloodhoof
-				["coord"] = { 41.4, 72.2, HALL_OF_CHRONICLERS },
-				["races"] = HORDE_ONLY,
 				["sourceQuests"] = {
 					51521,	-- The True Leader of Zandalar
 					54165,	-- The Return of Derek Proudmoore
 				},
+				["provider"] = { "n", 141555 },	-- Baine Bloodhoof
+				["coord"] = { 41.4, 72.2, HALL_OF_CHRONICLERS },
+				["minReputation"] = { FACTION_ZANDALARI_EMPIRE, EXALTED },	-- Zandalari Empire, Exalted.
+				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(164944),	-- The Bloodied Glaive of Vol'jin (QI!)
 				},
@@ -1818,14 +1818,14 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(50433, {	-- Zanchuli Disbanded
-				["isBreadcrumb"] = true,
-				["coord"] = { 48.6, 26.8, ZULDAZAR },
-				["races"] = HORDE_ONLY,
-				["provider"] = { "n", 122760 },	-- Wardruid Loti
 				["sourceQuests"] = {
 					47528,	-- Mistress of Lies
 					47741,	-- To Sacrifice a Loa
 				},
+				["provider"] = { "n", 122760 },	-- Wardruid Loti
+				["coord"] = { 48.6, 26.8, ZULDAZAR },
+				["races"] = HORDE_ONLY,
+				["isBreadcrumb"] = true,
 			}),
 			q(49493, {	-- Zul's Ethical Dilemma
 				["sourceQuests"] = { 49492 },	-- Arrogance of Vol'jamba
@@ -1849,19 +1849,19 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(53449, {	-- Apes of Wrath
-				["isBreadcrumb"] = true,
 				["provider"] = { "n", 129589 },	-- The Monkey King
 				["coords"] = {
 					{ 47.0, 88.4, DAZARALOR },
 					{ 57, 58.5, ZULDAZAR },
 				},
 				["races"] = ALLIANCE_ONLY,
+				["isBreadcrumb"] = true,
 			}),
 			q(50044, {	-- Archaeological Efficiency (A)
+				["sourceQuests"] = { 49276 },	-- The Thrill of Exploration
+				["provider"] = { "n", 131763 },	-- Excavator Morgrum Emberflint
 				["coord"] = { 41.3, 71.5, ZULDAZAR },
 				["races"] = ALLIANCE_ONLY,
-				["provider"] = { "n", 131763 },	-- Excavator Morgrum Emberflint
-				["sourceQuests"] = { 49276 },	-- The Thrill of Exploration
 				["groups"] = {
 					o_repeated({	-- Xibalan Fossil
 						["coords"] = {
@@ -1898,9 +1898,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(49491, {	-- Fuel for the Voodoo
+				["sourceQuests"] = { 49488 },	-- Tal'gurub
 				["provider"] = { "n", 130706 },	-- Izita's Spirit
 				["coord"] = { 63.5, 31.7, ZULDAZAR },
-				["sourceQuests"] = { 49488 },	-- Tal'gurub
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					o(278453, {	-- Voodoo Totem
@@ -1932,41 +1932,41 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(49428, {	-- Grand Theft Telemancy (A)
+				["sourceQuests"] = { 49282 },	-- Morgrum's Extended Survey
 				["provider"] = { "n", 131763 },	-- Excavator Morgrum Emberflint
 				["coord"] = { 44.4, 73.4, ZULDAZAR },
-				["sourceQuests"] = { 49282 },	-- Morgrum's Extended Survey
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
 					i(159743),	-- Breath of Xibala (QI!)
 				},
 			}),
 			q(53450, {	-- King Da'ka (A)
+				["sourceQuests"] = { 53449 },	-- Apes of Wrath
 				["provider"] = { "n", 143787 },	-- Flap-Flap
 				["coord"] = { 51.4, 53.0, ZULDAZAR },
-				["sourceQuests"] = { 53449 },	-- Apes of Wrath
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(49282, {	-- Morgrum's Extended Survey
-				["coord"] = { 41.3, 71.5, ZULDAZAR },
-				["races"] = ALLIANCE_ONLY,
-				["provider"] = { "n", 131763 },	-- Excavator Morgrum Emberflint
 				["sourceQuests"] = {
 					49060,	-- Xibalan Ecology
 					49274,	-- Morgrum's Survey
 					50044,	-- Archaeological Efficiency
 				},
-			}),
-			q(49274, {	-- Morgrum's Survey
+				["provider"] = { "n", 131763 },	-- Excavator Morgrum Emberflint
 				["coord"] = { 41.3, 71.5, ZULDAZAR },
 				["races"] = ALLIANCE_ONLY,
-				["provider"] = { "n", 131763 },	-- Excavator Morgrum Emberflint
+			}),
+			q(49274, {	-- Morgrum's Survey
 				["sourceQuests"] = { 49276 },	-- The Thrill of Exploration
+				["provider"] = { "n", 131763 },	-- Excavator Morgrum Emberflint
+				["coord"] = { 41.3, 71.5, ZULDAZAR },
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(49427, {	-- Not Our Purple Elves
+				["sourceQuests"] = { 49282 },	-- Morgrum's Extended Survey
+				["provider"] = { "n", 131763 },	-- Excavator Morgrum Emberflint
 				["coord"] = { 44.4, 73.4, ZULDAZAR },
 				["races"] = ALLIANCE_ONLY,
-				["provider"] = { "n", 131763 },	-- Excavator Morgrum Emberflint
-				["sourceQuests"] = { 49282 },	-- Morgrum's Extended Survey
 			}),
 			q(52210, {	-- Sending Out An SOS
 				["sourceQuests"] = {
@@ -1974,10 +1974,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					47741,	-- To Sacrifice a Loa (Based on wowhead comment section)
 					49310,	-- The Prophet's Ploy (guessed)
 				},
-				["isBreadcrumb"] = true,
 				["provider"] = { "n", 141555 },	-- Baine Bloodhoof
 				["coord"] = { 41.4, 72.2, HALL_OF_CHRONICLERS },
 				["races"] = HORDE_ONLY,
+				["isBreadcrumb"] = true,
 			}),
 			q(49426, {	-- The King's Gambit
 				["sourceQuests"] = { 49425 },	-- City of Gold
@@ -2006,26 +2006,26 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(49276, {	-- The Thrill of Exploration
+				["provider"] = { "n", 131777 },	-- Acadia Chistlestone
 				["coord"] = { 41.2, 71.4, ZULDAZAR },
 				["races"] = ALLIANCE_ONLY,
-				["provider"] = { "n", 131777 },	-- Acadia Chistlestone
 			}),
 			q(49490, {	-- The Urn of Voices
+				["sourceQuests"] = { 49488 },	-- Tal'gurub
 				["provider"] = { "n", 129907 },	-- Zul the Prophet
 				["coord"] = { 62.8, 32.5, ZULDAZAR },
-				["sourceQuests"] = { 49488 },	-- Tal'gurub
 				["races"] = HORDE_ONLY,
 			}),
 			q(53453, {	-- To Stomp or Not To Stomp
+				["sourceQuests"] = { 53449 },	-- Apes of Wrath
 				["provider"] = { "n", 143787 },	-- Flap-Flap
 				["coord"] = { 51.4, 53.0, ZULDAZAR },
-				["sourceQuests"] = { 53449 },	-- Apes of Wrath
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(51085, {	-- WANTED: Dark Chronicler (A)
+				["provider"] = { "o", 287228 },	-- Wanted: Dark Chronicler
 				["coord"] = { 40.7, 71.1, ZULDAZAR },
 				["races"] = ALLIANCE_ONLY,
-				["provider"] = { "o", 287228 },	-- Wanted: Dark Chronicler
 			}),
 			q(53337, {	-- WANTED: Prime Thumpknuckle (A)
 				["provider"] = { "o", 287189 },	-- Wanted: Dangerous Beasts
@@ -2038,10 +2038,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(49060, {	-- Xibalan Ecology (A)
+				["sourceQuests"] = { 49276 },	-- The Thrill of Exploration
+				["provider"] = { "n", 131777 },	-- Acadia Chistlestone
 				["coord"] = { 41.2, 71.4, ZULDAZAR },
 				["races"] = ALLIANCE_ONLY,
-				["provider"] = { "n", 131777 },	-- Acadia Chistlestone
-				["sourceQuests"] = { 49276 },	-- The Thrill of Exploration
 			}),
 			--	unsorted
 			q(50954, {	-- Zandalar Forever!
@@ -2053,20 +2053,20 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 				["provider"] = { "n", 135890 },		-- King Rastakhan
 				["coord"] = { 60.0, 22.2, ZULDAZAR },
-				["races"] = HORDE_ONLY,
 				["maps"] = { 1181 },	-- Zandalar Scenario
+				["races"] = HORDE_ONLY,
 				["groups"] = {
 					ach(12481),	-- The Final Seal
 				},
 			}),
 			q(54756, {	-- Garbage for the Garbage God
-				["races"] = HORDE_ONLY,
 				["provider"] = { "i", 166507 },	-- Jani's First Offering
+				["races"] = HORDE_ONLY,
 			}),
 			q(54757, {	-- The Loa of Scavengers
-				["races"] = HORDE_ONLY,
-				["provider"] = { "n", 149006 },	-- Jani
 				["sourceQuests"] = { 54756 },	-- Garbage for the Garbage God
+				["provider"] = { "n", 149006 },	-- Jani
+				["races"] = HORDE_ONLY,
 			}),
 			n(BONUS_OBJECTIVES, sharedData({
 				["lockCriteria"] = { 1, "lvl", 50 },

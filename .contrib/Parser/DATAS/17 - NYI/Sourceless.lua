@@ -556,8 +556,8 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			expansion(EXPANSION.BFA, patch(2,5), bubbleDownSelf({ ["timeline"] = { ADDED_8_2_5 } }, {
 				q(57550),	--
 				q(57640, {	-- Master Ryson's All Seeing Eye
-					["qg"] = 13151,	-- Syndicate Master Ryson
 					["description"] = "Type: |cFFf09f26PvP|r\nCategory: |cFFf09f26Korrak's Revenge|r",
+					["qg"] = 13151,	-- Syndicate Master Ryson
 					["maps"] = 1537,	-- Alterac Valley
 					["lvl"] = 10,
 				}),

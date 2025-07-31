@@ -81,10 +81,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(50848, {	-- Brgl-Lrgl the Basher
 				n(134643, {	-- Brgl-Lrgl the Basher
-					["description"] = "This rare is only up when its associated world quest is active.",
-					["repeatable"] = true,
 					["questID"] = 50663,
+					["description"] = "This rare is only up when its associated world quest is active.",
 					["coord"] = { 29.78, 46.47, VOLDUN },
+					["repeatable"] = true,
 					["groups"] = {
 						i(161044),	-- Tideflat Brute's Greatbelt
 					},
@@ -154,8 +154,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51924),	-- Faithless Follow-Through
 			q(51156, {	-- Fangcaller Xorreth
 				n(136323, {	-- Fangcaller Xorreth
-					["description"] = "This rare is only up when its associated world quest is active.",
 					["questID"] = 51065,
+					["description"] = "This rare is only up when its associated world quest is active.",
 					["coord"] = { 53.60, 35.01, VOLDUN },
 					["groups"] = {
 						i(162612),	-- Cobra Priest's Headdress
@@ -182,8 +182,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(51157, {	-- Golanar
 				n(129027, {	-- Golanar
-					["description"] = "This rare is only up when its associated world quest is active.",
 					["questID"] = 50362,
+					["description"] = "This rare is only up when its associated world quest is active.",
 					["coords"] = {
 						{ 57.6, 6.40, VOLDUN },
 						{ 59.6, 8.80, VOLDUN },
@@ -248,10 +248,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(50851, {	-- Mor'fani the Exile
 				n(134694, {	-- Mor'fani the Exile
-					["description"] = "This rare is only up when its associated world quest is active.",
-					["repeatable"] = true,
 					["questID"] = 50666,
+					["description"] = "This rare is only up when its associated world quest is active.",
 					["coord"] = { 37.41, 88.71, VOLDUN },
+					["repeatable"] = true,
 					["groups"] = {
 						i(162616),	-- Master Dinomancer's Tunic
 					},
@@ -430,82 +430,82 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(51002, {	-- Work Order: Akunda's Bite
-				["races"] = HORDE_ONLY,
 				["requireSkill"] = HERBALISM,
+				["races"] = HORDE_ONLY,
 			}),
 			q(52427, {	-- Work Order: Battle Flag: Rallying Swiftness
-				["races"] = HORDE_ONLY,
 				["requireSkill"] = TAILORING,
+				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(162445),	-- Pattern: Battle Flag: Rallying Swiftness [Rank 3] (RECIPE!)
 				},
 			}),
 			q(51008, {	-- Work Order: Blood-Stained Bone
-				["races"] = HORDE_ONLY,
 				["requireSkill"] = SKINNING,
+				["races"] = HORDE_ONLY,
 			}),
 			q(52419, {	-- Work Order: Coarse Leather Barding
-				["races"] = HORDE_ONLY,
 				["requireSkill"] = LEATHERWORKING,
+				["races"] = HORDE_ONLY,
 			}),
 			q(52397, {	-- Work Order: Contract: Voldunai
-				["races"] = HORDE_ONLY,
 				["requireSkill"] = INSCRIPTION,
+				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(162370),	-- Technique: Contract: Voldunai [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52362, {	-- Work Order: Enchant Weapon - Quick Navigation
-				["races"] = HORDE_ONLY,
 				["requireSkill"] = ENCHANTING,
+				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(162314),	-- Formula: Enchant Weapon - Quick Navigation [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52371, {	-- Work Order: F.R.I.E.D.
-				["races"] = HORDE_ONLY,
 				["requireSkill"] = ENGINEERING,
+				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(162331),	-- Schematic: F.R.I.E.D. [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52413, {	-- Work Order: Golden Beryl
-				["races"] = HORDE_ONLY,
 				["requireSkill"] = JEWELCRAFTING,
+				["races"] = HORDE_ONLY,
 			}),
 			q(52408, {	-- Work Order: Kyanite
-				["races"] = HORDE_ONLY,
 				["requireSkill"] = JEWELCRAFTING,
+				["races"] = HORDE_ONLY,
 			}),
 			q(52338, {	-- Work Order: Potion of Concealment
-				["races"] = HORDE_ONLY,
 				["requireSkill"] = ALCHEMY,
+				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(162260),	-- Recipe: Potion of Concealment [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52412, {	-- Work Order: Rubelite
-				["races"] = HORDE_ONLY,
 				["requireSkill"] = JEWELCRAFTING,
+				["races"] = HORDE_ONLY,
 			}),
 			q(51007, {	-- Work Order: Storm Silver Ore
-				["races"] = HORDE_ONLY,
 				["requireSkill"] = MINING,
+				["races"] = HORDE_ONLY,
 			}),
 			q(51011, {	-- Work Order: Tempest Hide
-				["races"] = HORDE_ONLY,
 				["requireSkill"] = SKINNING,
+				["races"] = HORDE_ONLY,
 			}),
 			q(52370, {	-- Work Order: Thermo-Accelerated Plague Spreader
-				["races"] = HORDE_ONLY,
 				["requireSkill"] = ENGINEERING,
+				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(162736),	-- Schematic: Thermo-Accelerated Plague Spreader [Rank 3] (RECIPE!)
 				},
 			}),
 			q(51003, {	-- Work Order: Winter's Kiss
-				["races"] = HORDE_ONLY,
 				["requireSkill"] = HERBALISM,
+				["races"] = HORDE_ONLY,
 			}),
 			q(51783, {	-- Zem'lan Rescue
 				["races"] = ALLIANCE_ONLY,

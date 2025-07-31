@@ -12,11 +12,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 		["groups"] = {
 			n(QUESTS, {
 				q(30104, {	-- Documenting the Timeways
-					["qg"] = 57864,	-- Alurmi
 					["sourceQuests"] = {
 						30097,	-- Archival Purposes
 						30096,	-- Murozond
 					},
+					["qg"] = 57864,	-- Alurmi
 					["groups"] = {
 						i(72880),	-- Alurmi's Ring
 						i(72881),	-- Treads of the Past
@@ -25,17 +25,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 				q(30099, {	-- In Unending Numbers
-					["qg"] = 55624,	-- Nozdormu
 					["sourceQuest"] = 30098,	-- The Well of Eternity
+					["qg"] = 55624,	-- Nozdormu
 				}),
 				q(30102, {	-- The Hour of Twilight
-					["qg"] = 57913,	-- Chromie
 					["sourceQuest"] = 30101,	-- The Path of the Dragon Soul
+					["qg"] = 57913,	-- Chromie
 					["isBreadcrumb"] = true,
 				}),
 				q(30101, {	-- The Path of the Dragon Soul
-					["qg"] = 55624,	-- Nozdormu
 					["sourceQuest"] = 30100,	-- The Vainglorious
+					["qg"] = 55624,	-- Nozdormu
 					["groups"] = {
 						i(72876),	-- Ironfeather Longbow
 						i(72877),	-- Chain of the Demon Hunter
@@ -44,8 +44,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 				q(30100, {	-- The Vainglorious
-					["qg"] = 55624,	-- Nozdormu
 					["sourceQuest"] = 30099,	-- In Unending Numbers
+					["qg"] = 55624,	-- Nozdormu
 				}),
 			}),
 			n(ZONE_DROPS, {

@@ -154,8 +154,8 @@ profession(ENGINEERING, {
 			},
 			n(QUESTS, {
 				q(3645, {	-- Membership Card Renewal
-					["qg"] = 7406,	-- Oglethorpe Obnoticus <Master Gnome Engineer>
 					["sourceQuest"] = 3643,	-- Show Your Work
+					["qg"] = 7406,	-- Oglethorpe Obnoticus <Master Gnome Engineer>
 					["coord"] = { 28.2, 76.2, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "g", 20000 } },	-- 2g
@@ -168,8 +168,8 @@ profession(ENGINEERING, {
 					},
 				}),
 				q(3647, {	-- Membership Card Renewal
-					["qg"] = 7944,	-- Tinkmaster Overspark <Master Gnome Engineer>
 					["sourceQuest"] = 3641,	-- Show Your Work
+					["qg"] = 7944,	-- Tinkmaster Overspark <Master Gnome Engineer>
 					["coord"] = { 69.8, 50.2, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = { { "g", 20000 } },	-- 2g

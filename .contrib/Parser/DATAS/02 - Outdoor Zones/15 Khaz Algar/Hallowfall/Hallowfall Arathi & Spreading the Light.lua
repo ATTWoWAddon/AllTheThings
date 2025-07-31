@@ -277,10 +277,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						q(82006, {	-- Speak to Attica Whiskervale
 							["name"] = "Speak to Attica Whiskervale",
 							["description"] = "Speak to Attica Whiskervale about Captain Lancekat. If Attica is not there, relight the nearby lesser keyflame.",
-							["isWeekly"] = true,	-- TODO: it is unflagged with weekly reset
 							["sourceQuests"] = { 78472 },	-- Keyflame: Attica Whiskervale
 							["provider"] = { "n", 212419 },	-- Attica Whiskervale
 							["coord"] = { 64.5, 18.8, HALLOWFALL },
+							["isWeekly"] = true,	-- TODO: it is unflagged with weekly reset
 						}),
 						q(82007, {	-- Tale of Tails
 							["sourceQuests"] = { 82006 },	-- Speak to Attica Whiskervale
@@ -414,9 +414,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						}),
 						q(76600, {	-- Right Between the Gyro-Optics
 							["sourceQuests"] = { 76599 },	-- Right Between the Gyro-Optics - Activate
-							["providers"] = {
-								{"n", 208019 },	-- Auebry Irongear
-								{"n", 206441 },	-- Auebry Irongear
+							["qgs"] = {
+								208019,	-- Auebry Irongear
+								206441,	-- Auebry Irongear
 							},
 							["coord"] = { 65.2, 28.1, HALLOWFALL },
 							["groups"] = {
@@ -1342,7 +1342,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 								}),
 								i(239126, {	-- Radiant Cache (S2)
 									["sym"] = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Khaz Algar Zone Rewards content]
-									["timeline"] = { ADDED_11_1_0_SEASONSTART },
+									["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
+									["groups"] = {
+										i(223134),	-- Formula: Illusory Adornment: Radiance (RECIPE!)
+										i(223099),	-- Pattern: Sanctified Torchbearer's Grips (RECIPE!)
+										i(227283),	-- Recipe: Feast of the Divine Day (RECIPE!)
+									},
+								}),
+								i(250766, {	-- Radiant Cache (S3)
+									["sym"] = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Khaz Algar Zone Rewards content]
+									["timeline"] = { ADDED_11_2_0_SEASONSTART },
 									["groups"] = {
 										i(223134),	-- Formula: Illusory Adornment: Radiance (RECIPE!)
 										i(223099),	-- Pattern: Sanctified Torchbearer's Grips (RECIPE!)

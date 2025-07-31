@@ -166,11 +166,31 @@ IMBUED_VIAL = {	-- Imbued Vial for Vanilla/TBC/WotLK, turns into Melted Vial wit
 			{ "n", 19074},	-- Skreah <Alchemy Supplies>
 			{ "n", 16612},	-- Velanni <Alchemy Supplies & Reagents>
 			-- #endif
+			-- #if AFTER WRATH
+			{ "n", 24341},	-- Barnabas Frye <Trade Goods>
+			{ "n", 27012},	-- Beem Goldsprocket <Trade Goods>
+			{ "n", 26941},	-- Brokkan Bear-Arms <Trade Goods>
+			{ "n", 28714},	-- Patricia Egan <Alchemy Supplies>
+			{ "n", 23802},	-- Wink Sprinklesprankle <General Goods & Trade Supplies>
+			-- #endif
 		},
 		["timeline"] = { REMOVED_4_0_1 },
 	}),
 };
-CRYSTAL_VIAL = {	-- Empty Vial for Vanilla, turns into Crystal Vial with Cataclysm.
+ENCHANTED_VIAL = {	-- Enchanted Vial for WotLK, turns into Shattered Vial with Cataclysm.
+	i(40411, {
+		["description"] = "Can be bought from Alchemy Suppliers, as well as some Trade vendors around the world.",
+		["providers"] = {
+			{ "n", 24341},	-- Barnabas Frye <Trade Goods>
+			{ "n", 27012},	-- Beem Goldsprocket <Trade Goods>
+			{ "n", 26941},	-- Brokkan Bear-Arms <Trade Goods>
+			{ "n", 28714},	-- Patricia Egan <Alchemy Supplies>
+			{ "n", 23802},	-- Wink Sprinklesprankle <General Goods & Trade Supplies>
+		},
+		["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
+	}),
+};
+CRYSTAL_VIAL = {	-- Empty Vial for Vanilla, turns into Crystal Vial with Cataclysm and becomes the one vial to use in crafting recipes, deprecating all other vials.
 	i(3371, {
 		["description"] = "Can be bought from Alchemy Suppliers, as well as some Trade vendors around the world.",
 		-- #if AFTER CATA
@@ -181,6 +201,7 @@ CRYSTAL_VIAL = {	-- Empty Vial for Vanilla, turns into Crystal Vial with Catacly
 			{ "n", 3010},	-- Mani Winterhoof <Alchemy Supplies>
 			{ "n", 1313},	-- Maria Lumere <Alchemy Supplies>
 			{ "n", 16641},	-- Melaris <Alchemy Supplies>
+			{ "n", 28714},	-- Patricia Egan <Alchemy Supplies>
 			{ "n", 19074},	-- Skreah <Alchemy Supplies>
 			{ "n", 5178},	-- Soolie Berryfizz <Alchemy Supplies>
 			{ "n", 4226},	-- Ulthir <Alchemy Supplies>

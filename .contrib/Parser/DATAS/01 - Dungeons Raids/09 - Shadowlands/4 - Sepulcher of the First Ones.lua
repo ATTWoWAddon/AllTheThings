@@ -710,8 +710,8 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
 				n(WORLD_QUESTS, {
 					q(66695, {	-- Tempting Fate: Sepchuler of the First Ones
-						["isWorldQuest"] = true,
 						["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
+						["isWorldQuest"] = true,
 					}),
 				}),
 				BossOnly(VIGILANT_GUARDIAN, {

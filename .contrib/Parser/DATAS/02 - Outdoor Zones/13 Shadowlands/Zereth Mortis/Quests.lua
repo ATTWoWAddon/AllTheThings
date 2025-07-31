@@ -435,7 +435,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					},
 					["provider"] = { "n", 184442 },	-- Feroz
 					["coord"] = { 47.7, 79.9, ZERETH_MORTIS },
-					-- these are now all granted from completing 'Reap What We Have Sown' which is the quickest quest chain to complete
 					["sym"] = {{"select","itemID",
 									190985,	-- Crystallic Cryptic Mask
 									190991,	-- Crystallic Enigmatic Epaulets
@@ -450,6 +449,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 									190995,	-- Scouring Numerus Crown
 									190977,	-- Scouring Oracular Smock
 					}},
+					-- these are now all granted from completing 'Reap What We Have Sown' which is the quickest quest chain to complete
 				}),
 				q(64843, {	-- Key Crafting
 					["sourceQuests"] = { 64842 },	-- Flora Frenzy
@@ -616,7 +616,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["sourceQuests"] = { 64876 },	-- Music of the Spheres
 					["provider"] = { "n", 181706 },	-- Popopoc
 					["coord"] = { 34.1, 47.3, ZERETH_MORTIS },
-					-- these are now all granted from completing 'Reap What We Have Sown' which is the quickest quest chain to complete
 					["sym"] = {{"select","itemID",
 									190985,	-- Crystallic Cryptic Mask
 									190991,	-- Crystallic Enigmatic Epaulets
@@ -631,6 +630,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 									190995,	-- Scouring Numerus Crown
 									190977,	-- Scouring Oracular Smock
 					}},
+					-- these are now all granted from completing 'Reap What We Have Sown' which is the quickest quest chain to complete
 				}),
 				q(65245, {	-- Pop Goes the Devourer!
 					["sourceQuests"] = { 64878 },	-- What A Long Strange Trip
@@ -643,13 +643,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					["coord"] = { 47.2, 29.4, ZERETH_MORTIS },
 				}),
 				q(64889, {	-- Match Made in Zereth Mortis
+					["description"] = "to unlock cosmic transport",
 					["sourceQuests"] = {
 						65245,	-- Pop Goes the Devourer!
 						64888,	-- Borrowed Power
 					},
 					["provider"] = { "n", 181706 },	-- Popopoc
 					["coord"] = { 47.2, 29.4, ZERETH_MORTIS },
-					["description"] = "to unlock cosmic transport",
 				}),
 				q(64935, {	-- Between A Rock & A Rock
 					["sourceQuests"] = {
@@ -1384,8 +1384,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDownSelf({ ["timel
 			-- Treasure
 			q(65670),	-- Syntactic Vault When unlocking the box (spellID 367552)
 
-			--q(65011),	Old HQT for i(187885, {	-- Honeycombed Lattice
-
+			--q(65011),	Old HQT for 187885,	Honeycombed Lattice
 			-- Jiro Buffs
 			q(65167),	-- Echoed Jiro Nascii(183263) with spellID(362023) Same HQTs from different Jiros (42.7 44.8) Stackable?
 			--[[

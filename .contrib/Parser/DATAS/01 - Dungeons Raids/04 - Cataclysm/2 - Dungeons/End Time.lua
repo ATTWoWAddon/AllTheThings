@@ -22,13 +22,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 				q(30096, {	-- Murozond
-					["qgs"] = {
-						54751,	-- Nozdormu
-						54476,	-- Nozdormu
-					},
 					["sourceQuests"] = {
 						30094,	-- The End Time (Horde)
 						30095,	-- The End Time (Alliance)
+					},
+					["qgs"] = {
+						54751,	-- Nozdormu
+						54476,	-- Nozdormu
 					},
 					["groups"] = {
 						i(72873),	-- Bronze Blaster
@@ -69,11 +69,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					["DisablePartySync"] = true,
 				}),
 				q(30098, {	-- The Well of Eternity
+					["sourceQuest"] = 30096,	-- Murozond
 					["qgs"] = {
 						54476,	-- Nozdormu
 						54751,	-- Nozdormu
 					},
-					["sourceQuest"] = 30096,	-- Murozond
 				}),
 			}),
 			n(ZONE_DROPS, sharedData({ ["modID"] = 2, }, {

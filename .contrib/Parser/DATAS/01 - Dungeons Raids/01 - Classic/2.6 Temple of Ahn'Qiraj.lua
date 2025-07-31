@@ -748,8 +748,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 				}),
 				q(8595, {	-- Mortal Champions
-					["qg"] = 15503,	-- Kandrostrasz
 					["sourceQuest"] = 8579,	-- Mortal Champions
+					["qg"] = 15503,	-- Kandrostrasz
 					["maxReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
 					["cost"] = {
 						{ "i", 21229, 1 },	-- Qiraji Lord's Insignia
@@ -765,8 +765,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					["repeatable"] = true,
 				}),
 				q(8766, {	-- The Changing of Paths - Conqueror No More
-					["qg"] = 15192,	-- Anachronos
 					["sourceQuest"] = 8756,	-- The Qiraji Conqueror
+					["qg"] = 15192,	-- Anachronos
 					["coord"] = ANACHRONOS_COORD,
 					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
 					["cost"] = {
@@ -785,8 +785,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 				}),
 				q(8765, {	-- The Changing of Paths - Invoker No More
-					["qg"] = 15192,	-- Anachronos
 					["sourceQuest"] = 8761,	-- The Grand Invoker
+					["qg"] = 15192,	-- Anachronos
 					["coord"] = ANACHRONOS_COORD,
 					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
 					["cost"] = {
@@ -805,8 +805,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 				}),
 				q(8764, {	-- The Changing of Paths - Protector No More
-					["qg"] = 15192,	-- Anachronos
 					["sourceQuest"] = 8751,	-- The Protector of Kalimdor
+					["qg"] = 15192,	-- Anachronos
 					["coord"] = ANACHRONOS_COORD,
 					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
 					["cost"] = {
@@ -825,12 +825,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 				}),
 				q(8761, {	-- The Grand Invoker
-					["qg"] = 15192,	-- Anachronos
+					["sourceQuest"] = 8760,	-- The Path of the Invoker (4/4)
 					["altQuests"] = {
 						8756,	-- The Qiraji Conqueror
 						8751,	-- The Protector of Kalimdor
 					},
-					["sourceQuest"] = 8760,	-- The Path of the Invoker (4/4)
+					["qg"] = 15192,	-- Anachronos
 					["coord"] = ANACHRONOS_COORD,
 					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
 					["lvl"] = 60,
@@ -842,11 +842,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 				}),
 				q(8752, {	-- The Path of the Conqueror (1/4)
-					["qg"] = 15192,	-- Anachronos
 					["altQuests"] = {
 						8757,	-- The Path of the Invoker (1/4)
 						8747,	-- The Path of the Protector (1/4)
 					},
+					["qg"] = 15192,	-- Anachronos
 					["coord"] = ANACHRONOS_COORD,
 					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
 					["lvl"] = 60,
@@ -855,12 +855,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 				}),
 				q(8753, {	-- The Path of the Conqueror (2/4)
-					["qg"] = 15192,	-- Anachronos
+					["sourceQuest"] = 8752,	-- The Path of the Conqueror (1/4)
 					["altQuests"] = {
 						8758,	-- The Path of the Invoker (2/4)
 						8748,	-- The Path of the Protector (2/4)
 					},
-					["sourceQuest"] = 8752,	-- The Path of the Conqueror (1/4)
+					["qg"] = 15192,	-- Anachronos
 					["coord"] = ANACHRONOS_COORD,
 					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
 					["lvl"] = 60,
@@ -872,12 +872,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 				}),
 				q(8754, {	-- The Path of the Conqueror (3/4)
-					["qg"] = 15192,	-- Anachronos
+					["sourceQuest"] = 8753,	-- The Path of the Conqueror (2/4)
 					["altQuests"] = {
 						8759,	-- The Path of the Invoker (3/4)
 						8749,	-- The Path of the Protector (3/4)
 					},
-					["sourceQuest"] = 8753,	-- The Path of the Conqueror (2/4)
+					["qg"] = 15192,	-- Anachronos
 					["coord"] = ANACHRONOS_COORD,
 					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
 					["lvl"] = 60,
@@ -889,12 +889,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 				}),
 				q(8755, {	-- The Path of the Conqueror (4/4)
-					["qg"] = 15192,	-- Anachronos
+					["sourceQuest"] = 8754,	-- The Path of the Conqueror (3/4)
 					["altQuests"] = {
 						8760,	-- The Path of the Invoker (4/4)
 						8750,	-- The Path of the Protector (4/4)
 					},
-					["sourceQuest"] = 8754,	-- The Path of the Conqueror (3/4)
+					["qg"] = 15192,	-- Anachronos
 					["coord"] = ANACHRONOS_COORD,
 					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
 					["lvl"] = 60,
@@ -906,11 +906,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 				}),
 				q(8757, {	-- The Path of the Invoker (1/4)
-					["qg"] = 15192,	-- Anachronos
 					["altQuests"] = {
 						8752,	-- The Path of the Conqueror (1/4)
 						8747,	-- The Path of the Protector (1/4)
 					},
+					["qg"] = 15192,	-- Anachronos
 					["coord"] = ANACHRONOS_COORD,
 					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
 					["lvl"] = 60,
@@ -919,12 +919,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 				}),
 				q(8758, {	-- The Path of the Invoker (2/4)
-					["qg"] = 15192,	-- Anachronos
+					["sourceQuest"] = 8757,	-- The Path of the Invoker (1/4)
 					["altQuests"] = {
 						8753,	-- The Path of the Conqueror (2/4)
 						8748,	-- The Path of the Protector (2/4)
 					},
-					["sourceQuest"] = 8757,	-- The Path of the Invoker (1/4)
+					["qg"] = 15192,	-- Anachronos
 					["coord"] = ANACHRONOS_COORD,
 					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
 					["lvl"] = 60,
@@ -936,12 +936,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 				}),
 				q(8759, {	-- The Path of the Invoker (3/4)
-					["qg"] = 15192,	-- Anachronos
+					["sourceQuest"] = 8758,	-- The Path of the Invoker (2/4)
 					["altQuests"] = {
 						8754,	-- The Path of the Conqueror (3/4)
 						8749,	-- The Path of the Protector (3/4)
 					},
-					["sourceQuest"] = 8758,	-- The Path of the Invoker (2/4)
+					["qg"] = 15192,	-- Anachronos
 					["coord"] = ANACHRONOS_COORD,
 					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
 					["lvl"] = 60,
@@ -953,12 +953,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 				}),
 				q(8760, {	-- The Path of the Invoker (4/4)
-					["qg"] = 15192,	-- Anachronos
+					["sourceQuest"] = 8759,	-- The Path of the Invoker (3/4)
 					["altQuests"] = {
 						8755,	-- The Path of the Conqueror (4/4)
 						8750,	-- The Path of the Protector (4/4)
 					},
-					["sourceQuest"] = 8759,	-- The Path of the Invoker (3/4)
+					["qg"] = 15192,	-- Anachronos
 					["coord"] = ANACHRONOS_COORD,
 					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
 					["lvl"] = 60,
@@ -970,11 +970,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 				}),
 				q(8747, {	-- The Path of the Protector (1/4)
-					["qg"] = 15192,	-- Anachronos
 					["altQuests"] = {
 						8752,	-- The Path of the Conqueror (1/4)
 						8757,	-- The Path of the Invoker (1/4)
 					},
+					["qg"] = 15192,	-- Anachronos
 					["coord"] = ANACHRONOS_COORD,
 					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, NEUTRAL },	-- Brood of Nozdormu, Neutral.
 					["lvl"] = 60,
@@ -983,12 +983,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 				}),
 				q(8748, {	-- The Path of the Protector (2/4)
-					["qg"] = 15192,	-- Anachronos
+					["sourceQuest"] = 8747,	-- The Path of the Protector (1/4)
 					["altQuests"] = {
 						8753,	-- The Path of the Conqueror (2/4)
 						8758,	-- The Path of the Invoker (2/4)
 					},
-					["sourceQuest"] = 8747,	-- The Path of the Protector (1/4)
+					["qg"] = 15192,	-- Anachronos
 					["coord"] = ANACHRONOS_COORD,
 					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, FRIENDLY },	-- Brood of Nozdormu, Friendly.
 					["lvl"] = 60,
@@ -1000,12 +1000,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 				}),
 				q(8749, {	-- The Path of the Protector (3/4)
-					["qg"] = 15192,	-- Anachronos
+					["sourceQuest"] = 8748,	-- The Path of the Protector (2/4)
 					["altQuests"] = {
 						8754,	-- The Path of the Conqueror (3/4)
 						8759,	-- The Path of the Invoker (3/4)
 					},
-					["sourceQuest"] = 8748,	-- The Path of the Protector (2/4)
+					["qg"] = 15192,	-- Anachronos
 					["coord"] = ANACHRONOS_COORD,
 					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, HONORED },	-- Brood of Nozdormu, Honored.
 					["lvl"] = 60,
@@ -1017,12 +1017,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 				}),
 				q(8750, {	-- The Path of the Protector (4/4)
-					["qg"] = 15192,	-- Anachronos
+					["sourceQuest"] = 8749,	-- The Path of the Protector (3/4)
 					["altQuests"] = {
 						8755,	-- The Path of the Conqueror (4/4)
 						8760,	-- The Path of the Invoker (4/4)
 					},
-					["sourceQuest"] = 8749,	-- The Path of the Protector (3/4)
+					["qg"] = 15192,	-- Anachronos
 					["coord"] = ANACHRONOS_COORD,
 					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, REVERED },	-- Brood of Nozdormu, Revered.
 					["lvl"] = 60,
@@ -1034,12 +1034,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 				}),
 				q(8751, {	-- The Protector of Kalimdor
-					["qg"] = 15192,	-- Anachronos
+					["sourceQuest"] = 8750,	-- The Path of the Protector (4/4)
 					["altQuests"] = {
 						8761,	-- The Grand Invoker
 						8756,	-- The Qiraji Conqueror
 					},
-					["sourceQuest"] = 8750,	-- The Path of the Protector (4/4)
+					["qg"] = 15192,	-- Anachronos
 					["coord"] = ANACHRONOS_COORD,
 					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
 					["lvl"] = 60,
@@ -1051,12 +1051,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 				}),
 				q(8756, {	-- The Qiraji Conqueror
-					["qg"] = 15192,	-- Anachronos
+					["sourceQuest"] = 8755,	-- The Path of the Conqueror (4/4)
 					["altQuests"] = {
 						8761,	-- The Grand Invoker
 						8751,	-- The Protector of Kalimdor
 					},
-					["sourceQuest"] = 8755,	-- The Path of the Conqueror (4/4)
+					["qg"] = 15192,	-- Anachronos
 					["coord"] = ANACHRONOS_COORD,
 					["minReputation"] = { FACTION_BROOD_OF_NOZDORMU, EXALTED },	-- Brood of Nozdormu, Exalted.
 					["lvl"] = 60,
@@ -1068,11 +1068,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					},
 				}),
 				q(8802, {	-- The Savior of Kalimdor
+					["sourceQuest"] = 8801,	-- C'Thun's Legacy
 					["providers"] = {
 						{ "n", 15379 },	-- Caelestrasz (QG!)
 						{ "i", 21221 },	-- Eye of C'Thun (QI!)
 					},
-					["sourceQuest"] = 8801,	-- C'Thun's Legacy
 					["groups"] = {
 						i(21712),	-- Amulet of the Fallen God
 						i(21710),	-- Cloak of the Fallen God
@@ -1564,6 +1564,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					ach(687),	-- Temple of Ahn'Qiraj
 					ach(5058, {	-- Temple of Ahn'Qiraj Guild Run
 						["timeline"] = { ADDED_4_0_3 },
+					}),
+					ach(15334, {	-- Survivor of the Old God (Season of Mastery)
+						["timeline"] = { ADDED_1_14_2, REMOVED_1_15_0 },	-- Was only available in Season of Mastery
 					}),
 					i(21221),	-- Eye of C'Thun
 					applyclassicphase(PHASE_SIX, {

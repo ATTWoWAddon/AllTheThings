@@ -90,36 +90,36 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 				},
 				["groups"] = {
 					q(58314, {	-- Mask of the Burned Bridge
-						["provider"] = { "i", 174083 },	-- Faceless Mask of the Burned Bridge
 						["description"] = "Obtained from completing the Valley of Wisdom objective with one mask active.",
+						["provider"] = { "i", 174083 },	-- Faceless Mask of the Burned Bridge
 						["groups"] = {
 							i(174342),	-- Mask of the Burned Bridge
 						},
 					}),
 					q(58297, {	-- Mask of the Daredevil
-						["provider"] = { "i", 174082 },	-- Faceless Mask of the Daredevil
 						["description"] = "Obtained from completing the Valley of Honor objective with one mask active.",
+						["provider"] = { "i", 174082 },	-- Faceless Mask of the Daredevil
 						["groups"] = {
 							i(173955),	-- Mask of the Daredevil
 						},
 					}),
 					q(58316, {	-- Mask of the Dark Imagination
-						["provider"] = { "i", 174081 },	-- Faceless Mask of the Dark Imagination
 						["description"] = "Obtained from completing the Mage Quarter objective with one mask active.",
+						["provider"] = { "i", 174081 },	-- Faceless Mask of the Dark Imagination
 						["groups"] = {
 							i(173953),	-- Mask of the Dark Imagination
 						},
 					}),
 					q(58318, {	-- Mask of the Long Night
-						["provider"] = { "i", 174080 },	-- Faceless Mask of the Long Night
 						["description"] = "Obtained from a full clear of either vision.",
+						["provider"] = { "i", 174080 },	-- Faceless Mask of the Long Night
 						["groups"] = {
 							i(172952),	-- Mask of the Long Night
 						},
 					}),
 					q(58317, {	-- Mask of the Pained
-						["provider"] = { "i", 174079 },	-- Faceless Mask of the Pained
 						["description"] = "Obtained from completing the Old Town objective with one mask active.",
+						["provider"] = { "i", 174079 },	-- Faceless Mask of the Pained
 						["groups"] = {
 							i(173524),	-- Mask of the Pained
 						},

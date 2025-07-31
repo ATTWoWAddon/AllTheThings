@@ -28,35 +28,35 @@ root(ROOTS.Secrets, n(FAITHFUL_DOG, {
 		}),
 		q(46952, {	-- Step 2: Show the Pebble to Dog
 			["name"] = "|cFFFFFFFFStep 2|r: Show the Pebble to Dog",
-			["providers"] = {
-				{ "n", 87553 },		-- Dog
-				{ "i", 147420 },	-- Pebble
-			},
+			["description"] = "You need to have an Herb Garden in your garrison. Show the Pebble to Dog by speaking with them. Do not throw the pebble at Dog.",
 			["sourceQuests"] = {
 				30526,	-- Lost and Lonely
 				36404,	-- Clearing the Garden [A]
 				34193,	-- Clearing the Garden [H]
 			},
+			["providers"] = {
+				{ "n", 87553 },		-- Dog
+				{ "i", 147420 },	-- Pebble
+			},
 			["coords"] = {
 				{ 44.6, 84.8, FROSTWALL },
 				{ 58.8, 53.8, LUNARFALL },
 			},
-			["description"] = "You need to have an Herb Garden in your garrison. Show the Pebble to Dog by speaking with them. Do not throw the pebble at Dog.",
 			["timeline"] = { ADDED_7_2_0 },
 		}),
 		q(83093, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {	-- Step 3: Half-Buried Dog Bowl
 			["name"] = "|cFFFFFFFFStep 3|r: Interact with the Half-Buried Dog Bowl",
-			["provider"] = { "o", 452438 },	-- Half-Buried Dog Bowl
-			["sourceQuests"] = { 46952 },
-			["coord"] = { 31.4, 51.3, ISLE_OF_DORN },
 			["description"] = "Interacting with the bowl near Dalaran's crash will send Dog running to you.",
+			["sourceQuests"] = { 46952 },
+			["provider"] = { "o", 452438 },	-- Half-Buried Dog Bowl
+			["coord"] = { 31.4, 51.3, ISLE_OF_DORN },
 		})),
 		q(83094, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {	-- Step 4: Interact with Dog
 			["name"] = "|cFFFFFFFFStep 4|r: Interact with Dog",
-			["provider"] = { "n", 225486 },	-- Dog
-			["sourceQuests"] = { 83093 },
-			["coord"] = { 31.4, 51.3, ISLE_OF_DORN },
 			["description"] = "Interact with Dog to get them as a pet.",
+			["sourceQuests"] = { 83093 },
+			["provider"] = { "n", 225486 },	-- Dog
+			["coord"] = { 31.4, 51.3, ISLE_OF_DORN },
 			["timeline"] = { ADDED_11_0_2 },
 			["groups"] = {
 				i(224766),	-- Faithful Dog (PET!)

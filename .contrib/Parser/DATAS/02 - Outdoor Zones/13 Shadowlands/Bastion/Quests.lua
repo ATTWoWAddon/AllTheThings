@@ -295,18 +295,18 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				}),
 				q(57719, {	-- Dangerous Discourse
 					["sourceQuests"] = { 57717 },	-- Step Back From That Ledge, My Friend
+					["altQuests"] = { 60292 },	-- Dangerous Discourse
 					["provider"] = { "o", 344726  },	-- Dark Sermon
 					["coord"] = { 57.2, 71.8, BASTION },
-					["altQuests"] = { 60292 },	-- Dangerous Discourse
 					["groups"] = {
 						i(171215),	-- Dark Sermon (QI!)
 					},
 				}),
 				q(60292, {	-- Dangerous Discourse
 					["sourceQuests"] = { 57717 },	-- Step Back From That Ledge, My Friend
+					["altQuests"] = { 57719 },	-- Dangerous Discourse
 					["provider"] = { "n", 159762 },	-- Eridia
 					["coord"] = { 61.2, 74.3, BASTION },
-					["altQuests"] = { 57719 },	-- Dangerous Discourse
 					["groups"] = {
 						i(171215),	-- Dark Sermon (QI!)
 					},
@@ -779,19 +779,19 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			header(HEADERS.AchCriteria, 14801.05, {	-- Pride or Unit
 				q(59674, {	-- A Friendly Rivalry
 					["sourceQuests"] = { 60735 },	-- Trouble in Paradise
+					["altQuests"] = { 63068 },	-- Settling Disputes
 					["provider"] = { "n", 158765 },	-- Pelodis
 					["coord"] = { 57.4, 54.2, BASTION },
 					["isBreadcrumb"] = true,
-					["altQuests"] = { 63068 },	-- Settling Disputes
 				}),
 				-- Nemea
 				q(58184, {	-- Antiquated Methodology
 					["description"] = "Only available if you complete all of Pelodis's quests before any of Nemea's quests.",
 					["sourceQuests"] = { 57937 },	-- Tactical Formation
+					["altQuests"] = { 58185 },	-- Success Without Soul
 					["provider"] = { "n", 158765 },	-- Pelodis
 					["coord"] = { 54.7, 41.1, BASTION },
 					["isBreadcrumb"] = true,
-					["altQuests"] = { 58185 },	-- Success Without Soul
 				}),
 				q(58037, {	-- Part of the Pride
 					["sourceQuests"] = {
@@ -855,10 +855,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				q(58185, {	-- Success Without Soul
 					["description"] = "Only available if you complete all of Nemea's quests before any of Pelodis's quests.",
 					["sourceQuests"] = { 58042 },	-- On Larion Wings
+					["altQuests"] = { 58184 },	-- Antiquated Methodology
 					["provider"] = { "n", 157696 },	-- Nemea
 					["coord"] = { 57.2, 39.2, BASTION },
 					["isBreadcrumb"] = true,
-					["altQuests"] = { 58184 },	-- Antiquated Methodology
 				}),
 				q(57931, {	-- Phalynx Malfunction
 					["sourceQuests"] = {
@@ -1060,8 +1060,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(62916, {	-- Your Next Best Friend
 				["sourceQuests"] = { 59196 },	-- Go in Service
 				["provider"] = { "n", 175426 },	-- Sika
-				["isWeekly"] = true,
 				["coord"] = { 53.0, 47.6, BASTION },
+				["isWeekly"] = true,
 			}),
 			n(BONUS_OBJECTIVES, {
 				q(59015, {	-- Hostile Recollection

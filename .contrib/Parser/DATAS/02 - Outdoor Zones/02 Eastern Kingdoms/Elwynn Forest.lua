@@ -244,7 +244,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26389, {	-- Blackrock Invasion
-							["qg"] = 197,	-- Marshal McBride
 							["sourceQuests"] = {
 								28819,	-- The Rear is Clear (human paladin)
 								28822,	-- The Rear is Clear (human warlock)
@@ -258,6 +257,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								28818,	-- The Rear is Clear (human mage)
 								29083,	-- The Rear is Clear (non-human)
 							},
+							["qg"] = 197,	-- Marshal McBride
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
@@ -298,8 +298,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(6, {	-- Bounty on Garrick Padfoot
-							["qg"] = 823,	-- Deputy Willem
 							["sourceQuest"] = 18,	-- Brotherhood of Thieves
+							["qg"] = 823,	-- Deputy Willem
 							["coord"] = { 48.1, 42.9, ELWYNN_FOREST },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
@@ -358,8 +358,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { MONK },
 						}),
 						q(26913, {	-- Charging into Battle (Human)
-							["qg"] = 911,	-- Llane Beshere <Warrior Trainer>
 							["sourceQuest"] = 3100,	-- Simple Letter
+							["qg"] = 911,	-- Llane Beshere <Warrior Trainer>
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 40.9, 53.8, NORTHSHIRE_VALLEY },
@@ -383,11 +383,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(3101, {	-- Consecrated Letter
+							["sourceQuest"] = 7,	-- Kobold Camp Cleanup
 							["providers"] = {
 								{ "n",  197 },	-- Marshal McBride
 								{ "i", 9570 },	-- Consecrated Letter (PQI!)
 							},
-							["sourceQuest"] = 7,	-- Kobold Camp Cleanup
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
@@ -403,8 +403,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						-- #if AFTER MOP
 						q(26914, {	-- Corruption [MoP+] / Immolation [Cata] (Human)
-							["qg"] = 459,	-- Drusilla La Salle <Warlock Trainer>
 							["sourceQuest"] = 3105,	-- Tainted Letter
+							["qg"] = 459,	-- Drusilla La Salle <Warlock Trainer>
 							["coord"] = { 39.5, 55.1, NORTHSHIRE_VALLEY },
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { HUMAN },
@@ -417,19 +417,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						-- #endif
 						q(5261, {	-- Eagan Peltskinner
-							["qg"] = 823,	-- Deputy Willem
 							["sourceQuest"] = 783,	-- A Threat Within
+							["qg"] = 823,	-- Deputy Willem
 							["coord"] = { 48.17, 42.94, ELWYNN_FOREST },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["isBreadcrumb"] = true,
 						}),
 						q(3102, {	-- Encrypted Letter
+							["sourceQuest"] = 7,	-- Kobold Camp Cleanup
 							["providers"] = {
 								{ "n",  197 },	-- Marshal McBride
 								{ "i", 9555 },	-- Encrypted Letter (PQI!)
 							},
-							["sourceQuest"] = 7,	-- Kobold Camp Cleanup
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
@@ -444,8 +444,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { ROGUE },
 						}),
 						q(26390, {	-- Ending the Invasion!
-							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 26389,	-- Blackrock Invasion
+							["qg"] = 197,	-- Marshal McBride
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
@@ -484,11 +484,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26910, {	-- Etched Letter
+							["sourceQuest"] = 7,	-- Kobold Camp Cleanup
 							["providers"] = {
 								{ "n",   197 },	-- Marshal McBride
 								{ "i", 60677 },	-- Etched Letter (PQI!)
 							},
-							["sourceQuest"] = 7,	-- Kobold Camp Cleanup
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
@@ -503,7 +503,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { HUNTER },
 						}),
 						q(26391, {	-- Extinguishing Hope
-							["qg"] = 9296,	-- Milly Osworth
 							["sourceQuests"] = {
 								28819,	-- The Rear is Clear (human paladin)
 								28822,	-- The Rear is Clear (human warlock)
@@ -517,6 +516,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								28818,	-- The Rear is Clear (human mage)
 								29083,	-- The Rear is Clear (non-human)
 							},
+							["qg"] = 9296,	-- Milly Osworth
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 33.4, 54.7, NORTHSHIRE_VALLEY },
@@ -537,11 +537,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(28811, {	-- Fear No Evil
+							["sourceQuest"] = 28787,	-- Join the Battle!
 							["providers"] = {
 								{ "n",   951 },	-- Brother Paxton
 								{ "i", 65733 },	-- Paxton's Prayer Book (PQI!)
 							},
-							["sourceQuest"] = 28787,	-- Join the Battle!
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 34.8, 38.3, NORTHSHIRE_VALLEY },
@@ -565,11 +565,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(28812, {	-- Fear No Evil
+							["sourceQuest"] = 28788,	-- Join the Battle!
 							["providers"] = {
 								{ "n",   951 },	-- Brother Paxton
 								{ "i", 65733 },	-- Paxton's Prayer Book (PQI!)
 							},
-							["sourceQuest"] = 28788,	-- Join the Battle!
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 34.8, 38.3, NORTHSHIRE_VALLEY },
@@ -593,11 +593,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(28810, {	-- Fear No Evil
+							["sourceQuest"] = 28786,	-- Join the Battle!
 							["providers"] = {
 								{ "n",   951 },	-- Brother Paxton
 								{ "i", 65733 },	-- Paxton's Prayer Book (PQI!)
 							},
-							["sourceQuest"] = 28786,	-- Join the Battle!
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 34.8, 38.3, NORTHSHIRE_VALLEY },
@@ -621,11 +621,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(28813, {	-- Fear No Evil
+							["sourceQuest"] = 28789,	-- Join the Battle!
 							["providers"] = {
 								{ "n",   951 },	-- Brother Paxton
 								{ "i", 65733 },	-- Paxton's Prayer Book (PQI!)
 							},
-							["sourceQuest"] = 28789,	-- Join the Battle!
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 34.8, 38.3, NORTHSHIRE_VALLEY },
@@ -649,11 +649,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(28806, {	-- Fear No Evil
+							["sourceQuest"] = 28780,	-- Join the Battle!
 							["providers"] = {
 								{ "n",   951 },	-- Brother Paxton
 								{ "i", 65733 },	-- Paxton's Prayer Book (PQI!)
 							},
-							["sourceQuest"] = 28780,	-- Join the Battle!
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 34.8, 38.3, NORTHSHIRE_VALLEY },
@@ -677,11 +677,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(28808, {	-- Fear No Evil
+							["sourceQuest"] = 28784,	-- Join the Battle!
 							["providers"] = {
 								{ "n",   951 },	-- Brother Paxton
 								{ "i", 65733 },	-- Paxton's Prayer Book (PQI!)
 							},
-							["sourceQuest"] = 28784,	-- Join the Battle!
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 34.8, 38.3, NORTHSHIRE_VALLEY },
@@ -705,11 +705,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(28809, {	-- Fear No Evil
+							["sourceQuest"] = 28785,	-- Join the Battle!
 							["providers"] = {
 								{ "n",   951 },	-- Brother Paxton
 								{ "i", 65733 },	-- Paxton's Prayer Book (PQI!)
 							},
-							["sourceQuest"] = 28785,	-- Join the Battle!
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 34.8, 38.3, NORTHSHIRE_VALLEY },
@@ -733,11 +733,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(29082, {	-- Fear No Evil
+							["sourceQuest"] = 29080,	-- Join the Battle!
 							["providers"] = {
 								{ "n",   951 },	-- Brother Paxton
 								{ "i", 65733 },	-- Paxton's Prayer Book (PQI!)
 							},
-							["sourceQuest"] = 29080,	-- Join the Battle!
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 34.8, 38.3, NORTHSHIRE_VALLEY },
@@ -768,11 +768,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(63447, {	-- Fear No Evil
+							["sourceQuest"] = 29080,	-- Join the Battle
 							["providers"] = {
 								{ "n",   951 },	-- Brother Paxton
 								{ "i", 65733 },	-- Paxton's Prayer Book (PQI!)
 							},
-							["sourceQuest"] = 29080,	-- Join the Battle
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 34.8, 38.3, NORTHSHIRE_VALLEY },
@@ -803,11 +803,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(3104, {	-- Glyphic Letter
+							["sourceQuest"] = 7,	-- Kobold Camp Cleanup
 							["providers"] = {
 								{ "n",  197 },	-- Marshal McBride
 								{ "i", 9571 },	-- Glyphic Letter (PQI!)
 							},
-							["sourceQuest"] = 7,	-- Kobold Camp Cleanup
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
@@ -822,11 +822,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { MAGE },
 						}),
 						q(3905, {	-- Grape Manifest
+							["sourceQuest"] = 3904,	-- Milly's Harvest
 							["providers"] = {
 								{ "n",  9296 },	-- Milly Osworth
 								{ "i", 11125 },	-- Grape Manifest (PQI!)
 							},
-							["sourceQuest"] = 3904,	-- Milly's Harvest
 							["coord"] = { 50.7, 39.3, ELWYNN_FOREST },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
@@ -839,11 +839,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(3103, {	-- Hallowed Letter
+							["sourceQuest"] = 7,	-- Kobold Camp Cleanup
 							["providers"] = {
 								{ "n",  197 },	-- Marshal McBride
 								{ "i", 9548 },	-- Hallowed Letter (PQI!)
 							},
-							["sourceQuest"] = 7,	-- Kobold Camp Cleanup
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
@@ -859,8 +859,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						-- #if BEFORE MOP
 						q(26919, {	-- Healing the Wounded [Cata] / Learning the Word [MoP+] (Human)
-							["qg"] = 375,	-- Priestess Anetta <Priest Trainer>
 							["sourceQuest"] = 3103,	-- Hallowed Letter
+							["qg"] = 375,	-- Priestess Anetta <Priest Trainer>
 							["coord"] = { 49.8, 39.5, ELWYNN_FOREST },
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { HUMAN },
@@ -872,8 +872,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26914, {	-- Immolation [Cata] / Corruption [MoP+] (Human)
-							["qg"] = 459,	-- Drusilla La Salle <Warlock Trainer>
 							["sourceQuest"] = 3105,	-- Tainted Letter
+							["qg"] = 459,	-- Drusilla La Salle <Warlock Trainer>
 							["coord"] = { 49.9, 42.7, ELWYNN_FOREST },
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { HUMAN },
@@ -895,16 +895,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["lvl"] = 5,
 						}),
 						q(345, {	-- Ink Supplies
-							["qg"] = 951,	-- Brother Paxton
 							["sourceQuest"] = 344,	-- Brother Paxton (quest in Stormwind)
+							["qg"] = 951,	-- Brother Paxton
 							["coord"] = { 49.6, 40.4, ELWYNN_FOREST },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 20,
 						}),
 						q(15, {	-- Investigate Echo Ridge
-							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 7,	-- Kobold Camp Cleanup
+							["qg"] = 197,	-- Marshal McBride
 							["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
@@ -915,8 +915,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(29080, {	-- Join the Battle!
-							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 29079,	-- Lions for Lambs
+							["qg"] = 197,	-- Marshal McBride
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
@@ -928,8 +928,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = exclude({ DRACTHYR_ALLIANCE, HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
 						}),
 						q(28789, {	-- Join the Battle!
-							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 28774,	-- Lions for Lambs
+							["qg"] = 197,	-- Marshal McBride
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
@@ -942,8 +942,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { WARRIOR },
 						}),
 						q(28786, {	-- Join the Battle!
-							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 28771,	-- Lions for Lambs
+							["qg"] = 197,	-- Marshal McBride
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
@@ -956,8 +956,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { PRIEST },
 						}),
 						q(28785, {	-- Join the Battle!
-							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 28770,	-- Lions for Lambs
+							["qg"] = 197,	-- Marshal McBride
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
@@ -970,8 +970,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { PALADIN },
 						}),
 						q(28787, {	-- Join the Battle!
-							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 28772,	-- Lions for Lambs
+							["qg"] = 197,	-- Marshal McBride
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
@@ -984,8 +984,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { ROGUE },
 						}),
 						q(28784, {	-- Join the Battle!
-							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 28769,	-- Lions for Lambs
+							["qg"] = 197,	-- Marshal McBride
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
@@ -998,8 +998,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { MAGE },
 						}),
 						q(28780, {	-- Join the Battle!
-							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 28759,	-- Lions for Lambs
+							["qg"] = 197,	-- Marshal McBride
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
@@ -1012,8 +1012,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { HUNTER },
 						}),
 						q(28788, {	-- Join the Battle!
-							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 28773,	-- Lions for Lambs
+							["qg"] = 197,	-- Marshal McBride
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
@@ -1026,8 +1026,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { WARLOCK },
 						}),
 						q(31143, {	-- Join the Battle!
-							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 31140,	-- Lions for Lambs
+							["qg"] = 197,	-- Marshal McBride
 							["coord"] = { 33.5, 53.1, NORTHSHIRE_VALLEY },
 							["timeline"] = { ADDED_5_0_4 },
 							["races"] = { HUMAN, KULTIRAN },
@@ -1046,8 +1046,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						-- #if AFTER MOP
 						q(26919, {	-- Learning the Word [MoP+] / Healing the Wounded [Cata] (Human)
-							["qg"] = 375,	-- Priestess Anetta <Priest Trainer>
 							["sourceQuest"] = 3103,	-- Hallowed Letter
+							["qg"] = 375,	-- Priestess Anetta <Priest Trainer>
 							["coord"] = { 39.3, 43.8, NORTHSHIRE_VALLEY },
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { HUMAN },
@@ -1060,8 +1060,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						-- #endif
 						q(28771, {	-- Lions for Lambs
-							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 28763,	-- Beating Them Back!
+							["qg"] = 197,	-- Marshal McBride
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
@@ -1083,8 +1083,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(28772, {	-- Lions for Lambs
-							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 28764,	-- Beating Them Back!
+							["qg"] = 197,	-- Marshal McBride
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
@@ -1106,8 +1106,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(28773, {	-- Lions for Lambs
-							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 28765,	-- Beating Them Back!
+							["qg"] = 197,	-- Marshal McBride
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
@@ -1129,8 +1129,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(28774, {	-- Lions for Lambs
-							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 28766,	-- Beating Them Back!
+							["qg"] = 197,	-- Marshal McBride
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
@@ -1152,8 +1152,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(28759, {	-- Lions for Lambs
-							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 28767,	-- Beating Them Back
+							["qg"] = 197,	-- Marshal McBride
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
@@ -1175,8 +1175,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(29079, {	-- Lions for Lambs
-							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 29078,	-- Beating Them Back!
+							["qg"] = 197,	-- Marshal McBride
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
@@ -1205,8 +1205,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(31140, {	-- Lions for Lambs
-							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 31139,	-- Beating Them Back!
+							["qg"] = 197,	-- Marshal McBride
 							["coord"] = { 33.5, 53.0, NORTHSHIRE_VALLEY },
 							["timeline"] = { ADDED_5_0_4 },
 							["races"] = { HUMAN, KULTIRAN },
@@ -1222,8 +1222,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(28769, {	-- Lions for Lambs
-							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 28757,	-- Beating Them Back!
+							["qg"] = 197,	-- Marshal McBride
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
@@ -1245,8 +1245,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(28770, {	-- Lions for Lambs
-							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 28762,	-- Beating Them Back!
+							["qg"] = 197,	-- Marshal McBride
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 33.5, 53.1, NORTHSHIRE_VALLEY },
@@ -1268,8 +1268,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26916, {	-- Mastering the Arcane (Human)
-							["qg"] = 198,	-- Khelden Bremen <Mage Trainer>
 							["sourceQuest"] = 3104,	-- Glyphic Letter
+							["qg"] = 198,	-- Khelden Bremen <Mage Trainer>
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 38.8, 43.5, NORTHSHIRE_VALLEY },
@@ -1313,16 +1313,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						})),
 						-- #endif
 						q(3903, {	-- Milly Osworth
-							["qg"] = 823,	-- Deputy Willem
 							["sourceQuest"] = 18,	-- Brotherhood of Thieves
+							["qg"] = 823,	-- Deputy Willem
 							["coord"] = { 48.2, 42.8, ELWYNN_FOREST },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 2,
 						}),
 						q(3904, {	-- Milly's Harvest
-							["qg"] = 9296,	-- Milly Osworth
 							["sourceQuest"] = 3903,	-- Milly Osworth
+							["qg"] = 9296,	-- Milly Osworth
 							["coord"] = { 50.7, 39.3, ELWYNN_FOREST },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
@@ -1337,8 +1337,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(31142, {	-- Palm of the Tiger
-							["qg"] = 63258,	-- Bao <Monk Trainer>
 							["sourceQuest"] = 31141,	-- Calligraphed Letter
+							["qg"] = 63258,	-- Bao <Monk Trainer>
 							["coord"] = { 41.2, 52.1, NORTHSHIRE_VALLEY },
 							["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 							["races"] = { HUMAN },
@@ -1368,16 +1368,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						})),
 						-- #endif
 						q(54, {	-- Report to Goldshire
-							["providers"] = {
-								{ "n", 197 },	-- Marshal McBride
-								{ "i", 745 },	-- Marshal McBride's Documents (PQI!)
-							},
 							["sourceQuests"] = {
 								-- #if AFTER CATA
 								26390,	-- Ending the Invasion
 								-- #else
 								21,		-- Skirmish at Echo Ridge
 								-- #endif
+							},
+							["providers"] = {
+								{ "n", 197 },	-- Marshal McBride
+								{ "i", 745 },	-- Marshal McBride's Documents (PQI!)
 							},
 							["coords"] = {
 								-- #if AFTER MOP
@@ -1406,6 +1406,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(2158, {	-- Rest and Relaxation
+							-- #if AFTER 6.0.2
+							["description"] = "This quest gets marked as completed when you complete the quest 'Rest and Relaxation' (37112).",
+							-- #endif
 							["qg"] = 6774,	-- Falkhaan Isenstrider
 							["coords"] = {
 								-- #if AFTER MOP
@@ -1414,9 +1417,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ 45.6, 47.8, ELWYNN_FOREST },
 								-- #endif
 							},
-							-- #if AFTER 6.0.2
-							["description"] = "This quest gets marked as completed when you complete the quest 'Rest and Relaxation' (37112).",
-							-- #endif
 							["timeline"] = { REMOVED_6_0_2 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
@@ -1462,11 +1462,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(346, {	-- Return to Kristoff
+							["sourceQuest"] = 347,	-- Rethban Ore (quest in Redridge Mountains)
 							["providers"] = {
 								{ "n",  951 },	-- Brother Paxton
 								{ "i", 2795 },	-- Book: Stresses of Iron (PQI!)
 							},
-							["sourceQuest"] = 347,	-- Rethban Ore (quest in Redridge Mountains)
 							["coord"] = { 49.6, 40.4, ELWYNN_FOREST },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
@@ -1478,11 +1478,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(3100, {	-- Simple Letter
+							["sourceQuest"] = 7,	-- Kobold Camp Cleanup
 							["providers"] = {
 								{ "n",  197 },	-- Marshal McBride
 								{ "i", 9542 },	-- Simple Letter (PQI!)
 							},
-							["sourceQuest"] = 7,	-- Kobold Camp Cleanup
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
@@ -1497,8 +1497,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { WARRIOR },
 						}),
 						q(21, {	-- Skirmish at Echo Ridge
-							["qg"] = 197,	-- Marshal McBride
 							["sourceQuest"] = 15,	-- Investigate Echo Ridge
+							["qg"] = 197,	-- Marshal McBride
 							["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
@@ -1548,11 +1548,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						})),
 						-- #endif
 						q(3105, {	-- Tainted Letter
+							["sourceQuest"] = 7,	-- Kobold Camp Cleanup
 							["providers"] = {
 								{ "n",  197 },	-- Marshal McBride
 								{ "i", 9576 },	-- Tainted Letter (PQI!)
 							},
-							["sourceQuest"] = 7,	-- Kobold Camp Cleanup
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 33.5, 53.0, NORTHSHIRE_VALLEY },
@@ -1567,8 +1567,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { WARLOCK },
 						}),
 						q(26915, {	-- The Deepest Cut (Human)
-							["qg"] = 915,	-- Jorik Kerridan <Rogue Trainer>
 							["sourceQuest"] = 3102,	-- Encrypted Letter
+							["qg"] = 915,	-- Jorik Kerridan <Rogue Trainer>
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 41.1, 45.3, NORTHSHIRE_VALLEY },
@@ -1592,8 +1592,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(26917, {	-- The Hunter's Path
-							["qg"] = 43278,	-- Ashley Blank <Hunter Trainer>
 							["sourceQuest"] = 26910,	-- Etched Letter
+							["qg"] = 43278,	-- Ashley Blank <Hunter Trainer>
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 34.8, 54.8, NORTHSHIRE_VALLEY },
@@ -1632,8 +1632,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						})),
 						-- #endif
 						q(26918, {	-- The Power of the Light (Human)
-							["qg"] = 925,	-- Brother Sammuel <Paladin Trainer>
 							["sourceQuest"] = 3101,	-- Consecrated Letter
+							["qg"] = 925,	-- Brother Sammuel <Paladin Trainer>
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 41.6, 53.2, NORTHSHIRE_VALLEY },
@@ -1657,8 +1657,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(28819, {	-- The Rear is Clear
-							["qg"] = 823,	-- Sergeant Willem
 							["sourceQuest"] = 28793,	-- They Sent Assassins
+							["qg"] = 823,	-- Sergeant Willem
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 35.7, 39.8, NORTHSHIRE_VALLEY },
@@ -1671,8 +1671,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { PALADIN },
 						}),
 						q(28822, {	-- The Rear is Clear
-							["qg"] = 823,	-- Sergeant Willem
 							["sourceQuest"] = 28796,	-- They Sent Assassins
+							["qg"] = 823,	-- Sergeant Willem
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 35.7, 39.8, NORTHSHIRE_VALLEY },
@@ -1685,16 +1685,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { WARLOCK },
 						}),
 						q(31145, {	-- The Rear is Clear
-							["qg"] = 823,	-- Sergeant Willem
 							["sourceQuest"] = 31144,	-- They Sent Assassins
+							["qg"] = 823,	-- Sergeant Willem
 							["coord"] = { 35.7, 39.8, NORTHSHIRE_VALLEY },
 							["timeline"] = { ADDED_5_0_4 },
 							["races"] = { HUMAN, KULTIRAN },
 							["classes"] = { DRUID, MONK },
 						}),
 						q(28821, {	-- The Rear is Clear
-							["qg"] = 823,	-- Sergeant Willem
 							["sourceQuest"] = 28795,	-- They Sent Assassins
+							["qg"] = 823,	-- Sergeant Willem
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 35.7, 39.8, NORTHSHIRE_VALLEY },
@@ -1707,8 +1707,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { ROGUE },
 						}),
 						q(28817, {	-- The Rear is Clear
-							["qg"] = 823,	-- Sergeant Willem
 							["sourceQuest"] = 28791,	-- They Sent Assassins
+							["qg"] = 823,	-- Sergeant Willem
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 35.7, 39.8, NORTHSHIRE_VALLEY },
@@ -1721,8 +1721,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { HUNTER },
 						}),
 						q(28823, {	-- The Rear is Clear
-							["qg"] = 823,	-- Sergeant Willem
 							["sourceQuest"] = 28797,	-- They Sent Assassins
+							["qg"] = 823,	-- Sergeant Willem
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 35.7, 39.8, NORTHSHIRE_VALLEY },
@@ -1735,8 +1735,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { WARRIOR },
 						}),
 						q(28820, {	-- The Rear is Clear
-							["qg"] = 823,	-- Sergeant Willem
 							["sourceQuest"] = 28794,	-- They Sent Assassins
+							["qg"] = 823,	-- Sergeant Willem
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 35.7, 39.8, NORTHSHIRE_VALLEY },
@@ -1749,8 +1749,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { PRIEST },
 						}),
 						q(28818, {	-- The Rear is Clear
-							["qg"] = 823,	-- Sergeant Willem
 							["sourceQuest"] = 28792,	-- They Sent Assassins
+							["qg"] = 823,	-- Sergeant Willem
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 35.7, 39.8, NORTHSHIRE_VALLEY },
@@ -1763,8 +1763,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { MAGE },
 						}),
 						q(29083, {	-- The Rear is Clear
-							["qg"] = 823,	-- Sergeant Willem
 							["sourceQuest"] = 29081,	-- They Sent Assassin
+							["qg"] = 823,	-- Sergeant Willem
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 35.7, 39.8, NORTHSHIRE_VALLEY },
@@ -1776,8 +1776,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = exclude({ DRACTHYR_ALLIANCE, HUMAN, MECHAGNOME }, ALLIANCE_ONLY),
 						}),
 						q(1598, {	-- The Stolen Tome
-							["qg"] = 459,	-- Drusilla La Salle <Warlock Trainer>
 							["altQuests"] = { 1599 },	-- Beginnings
+							["qg"] = 459,	-- Drusilla La Salle <Warlock Trainer>
 							["coord"] = { 49.9, 42.6, ELWYNN_FOREST },
 							["timeline"] = { REMOVED_3_3_0 },
 							["races"] = ALLIANCE_ONLY,
@@ -1793,8 +1793,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #endif
 						}),
 						q(28792, {	-- They Sent Assassins
-							["qg"] = 823,	-- Sergeant Willem
 							["sourceQuest"] = 28784,	-- Join the Battle!
+							["qg"] = 823,	-- Sergeant Willem
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 35.7, 39.8, NORTHSHIRE_VALLEY },
@@ -1814,8 +1814,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(31144, {	-- They Sent Assassins
-							["qg"] = 823,	-- Sergeant Willem
 							["sourceQuest"] = 31143,	-- Join the Battle!
+							["qg"] = 823,	-- Sergeant Willem
 							["coord"] = { 35.7, 39.8, NORTHSHIRE_VALLEY },
 							["timeline"] = { ADDED_5_0_4 },
 							["races"] = { HUMAN, KULTIRAN },
@@ -1829,8 +1829,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(28794, {	-- They Sent Assassins
-							["qg"] = 823,	-- Sergeant Willem
 							["sourceQuest"] = 28786,	-- Join the Battle!
+							["qg"] = 823,	-- Sergeant Willem
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 35.7, 39.8, NORTHSHIRE_VALLEY },
@@ -1850,8 +1850,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(28793, {	-- They Sent Assassins
-							["qg"] = 823,	-- Sergeant Willem
 							["sourceQuest"] = 28785,	-- Join the Battle!
+							["qg"] = 823,	-- Sergeant Willem
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 35.7, 39.8, NORTHSHIRE_VALLEY },
@@ -1871,8 +1871,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(28795, {	-- They Sent Assassins
-							["qg"] = 823,	-- Sergeant Willem
 							["sourceQuest"] = 28787,	-- Join the Battle!
+							["qg"] = 823,	-- Sergeant Willem
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 35.7, 39.8, NORTHSHIRE_VALLEY },
@@ -1892,8 +1892,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(28797, {	-- They Sent Assassins
-							["qg"] = 823,	-- Sergeant Willem
 							["sourceQuest"] = 28789,	-- Join the Battle!
+							["qg"] = 823,	-- Sergeant Willem
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 35.7, 39.8, NORTHSHIRE_VALLEY },
@@ -1913,8 +1913,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(28791, {	-- They Sent Assassins
-							["qg"] = 823,	-- Sergeant Willem
 							["sourceQuest"] = 28780,	-- Join the Battle!
+							["qg"] = 823,	-- Sergeant Willem
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 35.7, 39.8, NORTHSHIRE_VALLEY },
@@ -1936,8 +1936,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(28796, {	-- They Sent Assassins
-							["qg"] = 823,	-- Sergeant Willem
 							["sourceQuest"] = 28788,	-- Join the Battle!
+							["qg"] = 823,	-- Sergeant Willem
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 35.7, 39.8, NORTHSHIRE_VALLEY },
@@ -1957,8 +1957,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(29081, {	-- They Sent Assassins
-							["qg"] = 823,	-- Sergeant Willem
 							["sourceQuest"] = 29080,	-- Join the Battle!
+							["qg"] = 823,	-- Sergeant Willem
 							["coords"] = {
 								-- #if AFTER MOP
 								{ 35.7, 39.8, NORTHSHIRE_VALLEY },
@@ -1998,8 +1998,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						})),
 						-- #endif
 						q(33, {	-- Wolves Across the Border
-							["qg"] = 196,	-- Eagan Peltskinner
 							["sourceQuest"] = 5261,	-- Eagan Peltskinner
+							["qg"] = 196,	-- Eagan Peltskinner
 							["coord"] = { 48.9, 40.1, ELWYNN_FOREST },
 							["timeline"] = { REMOVED_4_0_3 },
 							["races"] = ALLIANCE_ONLY,
@@ -2221,8 +2221,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(31550, {	-- Got one! (Marcus)
-					["qg"] = 63014,	-- Marcus Jensen
 					["sourceQuest"] = 31785,	-- Level Up!
+					["qg"] = 63014,	-- Marcus Jensen
 					["coord"] = { 40.3, 66.0, ELWYNN_FOREST },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
@@ -2234,15 +2234,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(31785, {	-- Level Up! (Marcus)
-					["qg"] = 63014,	-- Marcus Jensen
 					["sourceQuest"] = 31309,	-- On The Mend
+					["qg"] = 63014,	-- Marcus Jensen
 					["coord"] = { 40.3, 66.0, ELWYNN_FOREST },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(31724, {	-- Old MacDonald
-					["qg"] = 64330,	-- Julia Stevens
 					["sourceQuest"] = 31316,	-- Julia, The Pet Tamer
+					["qg"] = 64330,	-- Julia Stevens
 					["coord"] = { 41.6, 83.6, ELWYNN_FOREST },
 					["timeline"] = { ADDED_5_0_4 },
 					["maps"] = { WESTFALL },
@@ -2256,8 +2256,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(31309, {	-- On The Mend (Marcus)
-					["qg"] = 63014,	-- Marcus Jensen
 					["sourceQuest"] = 31308,	-- Learning the Ropes
+					["qg"] = 63014,	-- Marcus Jensen
 					["coord"] = { 40.3, 66.0, ELWYNN_FOREST },
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
@@ -2363,24 +2363,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = { HUMAN, KULTIRAN },
 				}),
 				q(26150, {	-- A Visit With Maybell
-					["qg"] = 253,	-- William Pestle
 					["sourceQuest"] = 60,	-- Kobold Candles
+					["qg"] = 253,	-- William Pestle
 					["coord"] = { 43.3, 65.7, ELWYNN_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(84, {	-- Back to Billy
+					["sourceQuest"] = 86,	-- Pie for Billy
 					["providers"] = {
 						{ "n", 246 },	-- "Auntie" Bernice Stonefield
 						{ "i", 962 },	-- Pork Belly Pie (PQI!)
 					},
-					["sourceQuest"] = 86,	-- Pie for Billy
 					["coord"] = { 34.5, 84.3, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(5, 5, 1),
 				}),
 				q(46, {	-- Bounty on Murlocs
+					-- #if BEFORE CATA
+					["sourceQuest"] = 39,	-- Deliver Thomas' Report
+					-- #endif
 					["providers"] = {
 						-- #if AFTER CATA
 						{ "o", 203733 },	-- Bounty Board
@@ -2388,9 +2391,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 261 },	-- Guard Thomas
 						-- #endif
 					},
-					-- #if BEFORE CATA
-					["sourceQuest"] = 39,	-- Deliver Thomas' Report
-					-- #endif
 					["coord"] = { 74.0, 72.3, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(7, 7, 1),
@@ -2422,6 +2422,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(59, {	-- Cloth and Leather Armor
+					["sourceQuests"] = {
+						-- #if AFTER CATA
+						71,	-- Report to Thomas
+						-- #else
+						39,	-- Deliver Thomas' Report
+						-- #endif
+					},
 					["providers"] = {
 						-- #if AFTER CATA
 						{ "n", 261 },	-- Guard Thomas
@@ -2429,13 +2436,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 240 },	-- Marshal Dughan
 						-- #endif
 						{ "i", 748 },	-- Stormwind Armor Marker (PQI!)
-					},
-					["sourceQuests"] = {
-						-- #if AFTER CATA
-						71,	-- Report to Thomas
-						-- #else
-						39,	-- Deliver Thomas' Report
-						-- #endif
 					},
 					["coords"] = {
 						-- #if AFTER CATA
@@ -2458,8 +2458,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(112, {	-- Collecting Kelp
-					["qg"] = 253,	-- William Pestle
 					["sourceQuest"] = 107,	-- Note to William
+					["qg"] = 253,	-- William Pestle
 					["coord"] = { 43.3, 65.7, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(5, 5, 1),
@@ -2474,19 +2474,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(26394, {	-- Continue to Stormwind
+					["sourceQuest"] = 26393,	-- A Swift Message
 					["providers"] = {
 						{ "n", 42983 },	-- Bartlett the Brave
 						{ "i", 58364 },	-- Argus' Note (PQI!)
 					},
-					["sourceQuest"] = 26393,	-- A Swift Message
 					["coord"] = { 41.7, 64.6, ELWYNN_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = { HUMAN, KULTIRAN },
 				}),
 				q(1667, {	-- Dead-tooth Jack
-					["qg"] = 294,	-- Marshal Haggard
 					["sourceQuest"] = 1666,	-- Marshal Haggard
+					["qg"] = 294,	-- Marshal Haggard
 					["coord"] = { 84.6, 69.4, ELWYNN_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { WARRIOR },
@@ -2517,8 +2517,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(39, {	-- Deliver Thomas' Report
-					["qg"] = 261,	-- Guard Thomas
 					["sourceQuest"] = 71,	-- Report to Thomas
+					["qg"] = 261,	-- Guard Thomas
 					["coord"] = { 74, 72.2, ELWYNN_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2526,7 +2526,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if NOT ANYCLASSIC
 				q(5635, {	-- Desperate Prayer
-					["qg"] = 377,	-- Priestess Josetta <Priest Trainer>
 					["altQuests"] = {
 						5634,	-- Desperate Prayer [Stormwind City #1]
 						5636,	-- Desperate Prayer [Teldrassil]
@@ -2535,6 +2534,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5639,	-- Desperate Prayer [Ironforge]
 						5640,	-- Desperate Prayer [Darnassus]
 					},
+					["qg"] = 377,	-- Priestess Josetta <Priest Trainer>
 					["coord"] = { 43.4, 65.6, ELWYNN_FOREST },
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = { HUMAN, DWARF },
@@ -2551,8 +2551,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				q(45, {	-- Discover Rolf's Fate
-					["provider"] = { "o", 55 },	-- A half-eaten body
 					["sourceQuest"] = 37,	-- Find the Lost Guards
+					["provider"] = { "o", 55 },	-- A half-eaten body
 					["coord"] = { 72.7, 60.3, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(7, 7, 1),
@@ -2576,8 +2576,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = lvlsquish(9, 9, 1),
 				}),
 				q(37, {	-- Find the Lost Guards
-					["qg"] = 261,	-- Guard Thomas
 					["sourceQuest"] = 35,	-- Further Concerns
+					["qg"] = 261,	-- Guard Thomas
 					["coord"] = { 74.0, 72.2, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(7, 7, 1),
@@ -2617,15 +2617,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				q(35, {	-- Further Concerns
-					["qg"] = 240,	-- Marshal Dughan
 					["sourceQuest"] = 40,	-- A Fishy Peril
+					["qg"] = 240,	-- Marshal Dughan
 					["coord"] = { 42.1, 65.9, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(7, 7, 1),
 				}),
 				q(5624, {	-- Garments of the Light
-					["qg"] = 377,	-- Priestess Josetta <Priest Trainer>
 					["sourceQuest"] = 5623,	-- In Favor of the Light
+					["qg"] = 377,	-- Priestess Josetta <Priest Trainer>
 					["coord"] = { 43.4, 65.6, ELWYNN_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = { HUMAN },
@@ -2677,8 +2677,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(87, {	-- Goldtooth
-					["qg"] = 247,	-- Billy Maclure
 					["sourceQuest"] = 84,	-- Back to Billy
+					["qg"] = 247,	-- Billy Maclure
 					["coord"] = { 43.1, 85.7, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 5,
@@ -2747,8 +2747,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 10,
 				}),
 				q(14079, {	-- Learn to Ride in Elwynn Forest
-					["provider"] = { "i", 46875 },	-- Riding Training Pamphlet
 					["description"] = "The pamphlet that starts this quest is sent to Humans in their Mailbox upon reaching the specified level.",
+					["provider"] = { "i", 46875 },	-- Riding Training Pamphlet
 					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_1 },
 					["races"] = { HUMAN },
 					["lockCriteria"] = { 1,
@@ -2767,6 +2767,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = lvlsquish(5, 5, 1),
 				}),
 				q(147, {	-- Manhunt
+					["sourceQuest"] = 123,	-- The Collector
 					["qgs"] = {
 						-- #if AFTER CATA
 						42256,	-- Marshal Patterson
@@ -2774,7 +2775,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						240,	-- Marshal Dughan
 						-- #endif
 					},
-					["sourceQuest"] = 123,	-- The Collector
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 81.9, 66.0, ELWYNN_FOREST },
@@ -2804,19 +2804,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(107, {	-- Note to William
+					["sourceQuest"] = 111,	-- Speak with Gramma
 					["providers"] = {
 						{ "n",  248 },	-- Gramma Stonefield
 						{ "i", 1252 },	-- Gramma Stonefield's Note (PQI!)
 					},
-					["sourceQuest"] = 111,	-- Speak with Gramma
 					["coord"] = { 34.9, 83.9, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(5, 5, 1),
 				}),
 				q(7678, {	-- Palomino Exchange
+					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts, I'm so sorry.",
 					["qg"] = 384,	-- Katie Hunter
 					["coord"] = { 84.0, 65.4, ELWYNN_FOREST },
-					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts, I'm so sorry.",
 					["timeline"] = { REMOVED_1_4_0 },
 					["cost"] = { { "i", 12354, 1 } },	-- Palomino (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
@@ -2825,8 +2825,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sym"] = { { "select", "itemID", 18777, 18776, 18778 } },
 				}),
 				q(86, {	-- Pie for Billy
-					["qg"] = 247,	-- Billy Maclure
 					["sourceQuest"] = 85,	-- Lost Necklace
+					["qg"] = 247,	-- Billy Maclure
 					["coord"] = { 43.1, 85.7, ELWYNN_FOREST },
 					-- #if BEFORE CATA
 					["cost"] = { { "i", 769, 4 } },	-- Chunk of Boar Meat
@@ -2900,7 +2900,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if NOT ANYCLASSIC
 				q(5628, {	-- Returning Home [Elwynn Forest]
-					["qg"] = 377,	-- Priestess Josetta <Priest Trainer>
 					["altQuests"] = {
 						5627,	-- Returning Home [Darnassus]
 						5629,	-- Returning Home [Teldrassil]
@@ -2909,6 +2908,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5632,	-- Returning Home [Stormwind City]
 						5633,	-- Returning Home [Ironforge]
 					},
+					["qg"] = 377,	-- Priestess Josetta <Priest Trainer>
 					["coord"] = { 43.4, 65.6, ELWYNN_FOREST },
 					["timeline"] = { REMOVED_3_0_2 },
 					["classes"] = { PRIEST },
@@ -2952,18 +2952,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				q(71, {	-- Report to Thomas
+					["sourceQuest"] = 45,	-- Discover Rolf's Fate
 					["providers"] = {
 						{ "o",  56 },	-- Rolf's corpse
 						{ "i", 735 },	-- Rolf and Malakai's Medallions (PQI!)
 					},
-					["sourceQuest"] = 45,	-- Discover Rolf's Fate
 					["coord"] = { 79.8, 55.5, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(7, 7, 1),
 				}),
 				q(11, {	-- Riverpaw Gnoll Bounty
-					["qg"] = 963,	-- Deputy Rainer
 					["sourceQuest"] = 239,	-- Westbrook Garrison Needs Help!
+					["qg"] = 963,	-- Deputy Rainer
 					["coord"] = { 24.2, 74.5, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(6, 6, 1),
@@ -2991,13 +2991,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(2205, {	-- Seek out SI: 7
-					["providers"] = {
-						{ "n",  917 },	-- Keryn Sylvius
-						{ "i", 7674 },	-- Delivery to Mathias (PQI!)
-					},
 					["altQuests"] = {
 						2218,	-- Road to Salvation
 						2241,	-- The Apple Falls
+					},
+					["providers"] = {
+						{ "n",  917 },	-- Keryn Sylvius
+						{ "i", 7674 },	-- Delivery to Mathias (PQI!)
 					},
 					["coord"] = { 43.9, 65.9, ELWYNN_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -3007,11 +3007,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 10,
 				}),
 				q(61, {	-- Shipment to Stormwind
+					["sourceQuest"] = 47,	-- Gold Dust Exchange
 					["providers"] = {
 						{ "n", 253 },	-- William Pestle
 						{ "i", 957 },	-- William's Shipment (PQI!)
 					},
-					["sourceQuest"] = 47,	-- Gold Dust Exchange
 					["coord"] = { 43.2, 65.8, ELWYNN_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { STORMWIND_CITY },
@@ -3026,8 +3026,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				q(2300, {	-- SI:7
-					["qg"] = 917,	-- Keryn Sylvius
 					["sourceQuest"] = 2205,	-- Seek out SI:7
+					["qg"] = 917,	-- Keryn Sylvius
 					["coord"] = { 43.8, 65.8, ELWYNN_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -3036,15 +3036,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 16,
 				}),
 				q(111, {	-- Speak with Gramma
-					["qg"] = 252,	-- Tommy Joe Stonefield
 					["sourceQuest"] = 106,	-- Young Lovers
+					["qg"] = 252,	-- Tommy Joe Stonefield
 					["coord"] = { 29.8, 86.0, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(5, 5, 1),
 				}),
 				q(1860, {	-- Speak with Jennea
-					["qg"] = 328,	-- Zaldimar Wefhellt <Mage Trainer>
 					["altQuests"] = { 1879 },	-- Speak with Bink
+					["qg"] = 328,	-- Zaldimar Wefhellt <Mage Trainer>
 					["coord"] = { 43.3, 66.2, ELWYNN_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -3071,11 +3071,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = lvlsquish(7, 7, 1),
 				}),
 				q(114, {	-- The Escape
+					["sourceQuest"] = 112,	-- Collecting Kelp
 					["providers"] = {
 						{ "n",  253 },	-- William Pestle
 						{ "i", 1257 },	-- Invisibility Liquor (PQI!)
 					},
-					["sourceQuest"] = 112,	-- Collecting Kelp
 					["coord"] = { 43.3, 65.7, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(5, 5, 1),
@@ -3087,8 +3087,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = lvlsquish(4, 4, 1),
 				}),
 				q(76, {	-- The Jasperlode Mine
-					["qg"] = 240,	-- Marshal Dughan
 					["sourceQuest"] = 62,	-- The Fargodeep Mine
+					["qg"] = 240,	-- Marshal Dughan
 					["coord"] = { 42.1, 65.9, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(4, 4, 1),
@@ -3106,6 +3106,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(176, {	-- Wanted: "Hogger"
+					["sourceQuest"] = 239,	-- Westbrook Garrison Needs Help!
 					["providers"] = {
 						-- #if AFTER 8.1.0.28724
 						{ "o", 307265 },	-- Wanted Poster
@@ -3117,7 +3118,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "o", 156561 },	-- Wanted Poster
 						-- #endif
 					},
-					["sourceQuest"] = 239,	-- Westbrook Garrison Needs Help!
 					["coords"] = {
 						-- #if AFTER 8.1.0.28724
 						{ 24.6, 78.2, ELWYNN_FOREST },
@@ -3158,17 +3158,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(239, {	-- Westbrook Garrison Needs Help!
-					["qg"] = 240,	-- Marshal Dughan
 					["sourceQuest"] = 76,	-- The Jasperlode Mine
+					["qg"] = 240,	-- Marshal Dughan
 					["coord"] = { 42.1, 65.9, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(6, 6, 1),
 				}),
 				q(7677, {	-- White Stallion Exchange
+					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts, I'm so sorry.",
 					["qg"] = 384,	-- Katie Hunter
 					["coord"] = { 84.0, 65.4, ELWYNN_FOREST },
-					["description"] = "If you are one of the poor unfortunate souls that turned in your unique mount for one of the generic mounts, I'm so sorry.",
 					["timeline"] = { REMOVED_1_4_0 },
 					["cost"] = { { "i", 12353, 1 } },	-- White Stallion (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
@@ -3177,13 +3177,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sym"] = { { "select", "itemID", 18777, 18776, 18778 } },
 				}),
 				q(106, {	-- Young Lovers
+					-- #if AFTER CATA
+					["sourceQuest"] = 26150,	-- A Visit With Maybell
+					-- #endif
 					["providers"] = {
 						{ "n",  251 },	-- Maybell Maclure
 						{ "i", 1208 },	-- Maybell's Love Letter (PQI!)
 					},
-					-- #if AFTER CATA
-					["sourceQuest"] = 26150,	-- A Visit With Maybell
-					-- #endif
 					["coord"] = { 43.2, 89.6, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(5, 5, 1),

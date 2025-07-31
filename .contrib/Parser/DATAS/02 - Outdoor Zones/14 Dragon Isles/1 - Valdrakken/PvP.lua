@@ -8,8 +8,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(72723, {	-- A Call to Battle
 					["provider"] = { "n", 196191 },	-- Malicia
 					["coord"] = { 43.4, 42.5, VALDRAKKEN },
-					["isWeekly"] = true,
 					["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_TWW_LAUNCH },
+					["isWeekly"] = true,
 				}),
 				q(71026, {	-- Against Overwhelming Odds
 					["provider"] = { "n", 196191 },	-- Malicia

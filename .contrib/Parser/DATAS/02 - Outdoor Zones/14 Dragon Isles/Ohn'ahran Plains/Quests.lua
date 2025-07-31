@@ -737,9 +737,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						66201,	-- Hooves of War
 						DF_ACCOUNT_CAMPAIGN_QUEST,
 					},
+					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 188224 },	-- Elder Yuvari
 					["coord"] = { 40.9, 61.6, OHNAHRAN_PLAINS },
-					["sourceQuestNumRequired"] = 1,
 					["isBreadcrumb"] = true,
 				}),
 				q(66652, {	-- Return to Mender
@@ -1274,8 +1274,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			})),
 			header(HEADERS.Spell, 375232, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- Emerald Dream [PH]
 				q(76982, {	-- A Sentinel's Summon
-					["maps"] = { VALDRAKKEN },
 					["timeline"] = { REMOVED_10_2_0 },
+					["maps"] = { VALDRAKKEN },
 				}),
 				q(75918, {	-- Fire Season
 					["sourceQuests"] = { 76982 },	-- A Sentinel's Summon
@@ -1285,17 +1285,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				-- These first two quests can be accepted in any order, but accepting one will change the creatureID of Shandris.
 				q(75919, {	-- Dousing the Wards
 					["sourceQuests"] = { 75918 },	-- Fire Season
-					["providers"] = {
-						{ "n", 205068 },	-- Shandris Feathermoon
-						{ "n", 205134 },	-- Shandris Feathermoon
+					["qgs"] = {
+						205068,	-- Shandris Feathermoon
+						205134,	-- Shandris Feathermoon
 					},
 					["coord"] = { 18.6, 79.8, OHNAHRAN_PLAINS },
 				}),
 				q(75920, {	-- Eyes of Fire
 					["sourceQuests"] = { 75918 },	-- Fire Season
-					["providers"] = {
-						{ "n", 205068 },	-- Shandris Feathermoon
-						{ "n", 205134 },	-- Shandris Feathermoon
+					["qgs"] = {
+						205068,	-- Shandris Feathermoon
+						205134,	-- Shandris Feathermoon
 					},
 					["coord"] = { 18.6, 79.8, OHNAHRAN_PLAINS },
 				}),
@@ -1412,9 +1412,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 22.7, 67.6, OHNAHRAN_PLAINS },
 				}),
 				q(65892, {	-- The Sundered Asunder
+					["description"] = "You must be at least level 62 for this to pop up.\nIt does not appear there are any pre-requisite quests.\nThis became available at 70 during TWW pre-patch.",
 					-- ["sourceQuests"] = {  },	--
 					["coord"] = { 64.0, 17.8, OHNAHRAN_PLAINS },
-					["description"] = "You must be at least level 62 for this to pop up.\nIt does not appear there are any pre-requisite quests.\nThis became available at 70 during TWW pre-patch.",
 					["lockCriteria"] = { 1, "lvl", 71 },
 				}),
 				q(66421, {	-- The Storm Scar

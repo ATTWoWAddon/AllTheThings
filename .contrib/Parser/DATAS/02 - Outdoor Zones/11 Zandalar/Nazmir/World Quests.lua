@@ -289,8 +289,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51628),	-- Shell Game
 			q(50468, {	-- Shul-Nagruth
 				n(128610, {	-- Maw of Shul-Nagruth
-					["description"] = "This rare is only up when its associated world quest is active.",
 					["questID"] = 50467,
+					["description"] = "This rare is only up when its associated world quest is active.",
 					["coord"] = { 49.8, 67.0, NAZMIR },
 					["groups"] = {
 						i(160973),	-- Accursed Tuskwand
@@ -379,8 +379,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(52426, {	-- Work Order: Battle Flag: Phalanx Defense
-				["races"] = HORDE_ONLY,
 				["requireSkill"] = TAILORING,
+				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(162444),	-- Pattern: Battle Flag: Phalanx Defense [Rank 3] (RECIPE!)
 				},
@@ -389,8 +389,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(52396, {	-- Work Order: Contract: Talanji's Expedition
-				["races"] = HORDE_ONLY,
 				["requireSkill"] = INSCRIPTION,
+				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(162368),	-- Technique: Contract: Talanji's Expedition [Rank 3] (RECIPE!)
 				},
@@ -402,15 +402,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(52360, {	-- Work Order: Enchant Weapon - Coastal Surge
-				["races"] = HORDE_ONLY,
 				["requireSkill"] = ENCHANTING,
+				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(162315),	-- Formula: Enchant Weapon - Coastal Surge [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52361, {	-- Work Order: Enchant Weapon - Torrent of Elements
-				["races"] = HORDE_ONLY,
 				["requireSkill"] = ENCHANTING,
+				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(162319),	-- Formula: Enchant Weapon - Torrent of Elements [Rank 3] (RECIPE!)
 				},
@@ -422,8 +422,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(52337, {	-- Work Order: Sea Mist Potion
-				["races"] = HORDE_ONLY,
 				["requireSkill"] = ALCHEMY,
+				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(162259),	-- Recipe: Sea Mist Potion [Rank 3] (RECIPE!)
 				},
@@ -441,8 +441,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(52372, {	-- Work Order: XA-1000 Surface Skimmer
-				["races"] = HORDE_ONLY,
 				["requireSkill"] = ENGINEERING,
+				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(162339),	-- Schematic: XA-1000 Surface Skimmer [Rank 3] (RECIPE!)
 				},

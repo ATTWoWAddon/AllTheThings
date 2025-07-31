@@ -625,19 +625,24 @@ do
 		return k
 	end}
 
-	local function AddGroupCosts(o, Collector)
-		-- app.PrintDebug("AGC",app:SearchLink(o))
-		if not o.visible or o.saved or o.collected then return end
-		-- only add costs once per hash in case it is duplicated
-		local hash = o.hash
-		if not hash or Collector.Hashes[hash] then return end
-		Collector.Hashes[hash] = true
+	local function AddGroupCosts(o, Collector, amount)
+		-- app.PrintDebug("AGC",app:SearchLink(o),o.visible,amount)
+		-- if we're adding a specific amount, then we ignore the duplicate prevention
+		if not amount then
+			if not o.visible or o.saved or o.collected then return end
+			if not o.collectible then return end
+			-- only add costs once per hash in case it is duplicated
+			local hash = o.hash
+			if not hash or Collector.Hashes[hash] then return end
+			Collector.Hashes[hash] = true
+		end
 
 		local cost = o.cost;
 		cost = cost and type(cost) == "table" and cost;
 		local providers = o.providers;
 		if not cost and not providers then return; end
 
+		amount = amount or 1
 		-- Gold cost currently ignored
 		-- app.PrintDebug("AGC:Add",o.hash)
 		-- app.PrintTable(cost)
@@ -648,7 +653,7 @@ do
 			for _,c in ipairs(cost) do
 				type = c[1]
 				if type == "c" or type == "i" then
-					AddCost(Data[type], c[2], c[3])
+					AddCost(Data[type], c[2], c[3] * amount)
 				-- elseif type == "g" then
 					-- special gold cost blah
 					-- AddCost(Data[type], 1, c[2])
@@ -660,7 +665,7 @@ do
 			for _,c in ipairs(providers) do
 				type = c[1]
 				if type == "i" then
-					AddCost(Data[type], c[2], 1)
+					AddCost(Data[type], c[2], amount)
 				end
 			end
 		end
@@ -717,6 +722,7 @@ do
 		-- app.PrintTable(Collector.Data)
 		-- Build all the cost data which is available to the current filters into the cost group
 		local costItems = group.g
+		local requiresCostItems = {}
 		for costKey,costType in pairs(Collector.Data) do
 			if type(costType) == "table" then
 				local costThing
@@ -739,7 +745,13 @@ do
 							costThing = nil
 						end
 						if costThing then
-							costItems[#costItems + 1] = costThing
+							if costThing.providers or (costThing.cost and type(costThing.cost) == "table") then
+								costThing.back = 0.5
+								costThing[1] = (costThing.cost and #costThing.cost) or 0.5
+								requiresCostItems[#requiresCostItems + 1] = costThing
+							else
+								costItems[#costItems + 1] = costThing
+							end
 						end
 					end
 				end
@@ -747,12 +759,58 @@ do
 		end
 		if #costItems > 0 then
 			app.Sort(costItems, app.SortDefaults.Total)
+			app.Sort(requiresCostItems, app.SortDefaults.Total)
+			app.ArrayAppend(costItems, requiresCostItems)
 			app.AssignChildren(group)
 		else
 			group.OnSetVisibility = nil
 		end
 		app.DirectGroupUpdate(group)
 		Collector.Reset()
+	end
+	local function ScanSubCosts(Collector)
+		-- app.PrintDebug("SSC:Start",Collector.__text)
+		local group = Collector.__group
+		if not group then return end
+
+		local costThing
+		local anyNewCost
+		local CurCostData = app.CloneDictionary(Collector.Data)
+		-- Scan all current Total Costs, marking each with being scanned, and incrementing
+		for costKey,costType in pairs(CurCostData) do
+			if type(costType) == "table" then
+				if rawget(costType, "Amounts") == nil then costType.Amounts = {} end
+				if costKey == "c" then
+					for id,amount in pairs(costType) do
+						id = tonumber(id)
+						if id and costType.Amounts[id] ~= amount then
+							-- app.PrintDebug("have",costKey,id,amount,"checked @",costType.Amounts[id])
+							costType.Amounts[id] = amount
+							costThing = app.SearchForObject("currencyID", id, "key") or app.CreateCurrencyClass(id)
+							anyNewCost = true
+							AddGroupCosts(costThing, Collector, amount)
+						end
+					end
+				elseif costKey == "i" then
+					for id,amount in pairs(costType) do
+						id = tonumber(id)
+						if id and costType.Amounts[id] ~= amount then
+							-- app.PrintDebug("have",costKey,id,amount,"checked @",costType.Amounts[id])
+							costType.Amounts[id] = amount
+							costThing = app.SearchForObject("itemID", id, "field") or app.CreateItem(id)
+							anyNewCost = true
+							AddGroupCosts(costThing, Collector, amount)
+						end
+					end
+				end
+			end
+		end
+
+		if anyNewCost then
+			Collector.Runner.Run(ScanSubCosts, Collector)
+		else
+			Collector.Runner.Run(EndUpdating, Collector)
+		end
 	end
 
 	api.GetCostCollector = function(group)
@@ -776,7 +834,7 @@ do
 					ScanGroups(o, Collector)
 				end
 			end
-			runner.Run(EndUpdating, Collector)
+			runner.Run(ScanSubCosts, Collector)
 		end
 
 		Collector.Reset = function()

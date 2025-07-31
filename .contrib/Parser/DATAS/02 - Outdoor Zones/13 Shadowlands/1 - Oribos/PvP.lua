@@ -7,23 +7,23 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			n(QUESTS, {
 				q(62910, {	-- Against Overwhelming Odds
 					["provider"] = { "n", 168011 },	-- Zo'sorg
-					["isWeekly"] = true,
-					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 34.7, 56.5, ORIBOS },
 					["timeline"] = { REMOVED_10_0_2 },
+					["races"] = ALLIANCE_ONLY,
+					["isWeekly"] = true,
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(62911, {	-- Against Overwhelming Odds
 					["provider"] = { "n", 168011 },	-- Zo'sorg
-					["isWeekly"] = true,
-					["races"] = HORDE_ONLY,
 					["coord"] = { 34.7, 56.5, ORIBOS },
 					["timeline"] = { REMOVED_10_0_2 },
+					["races"] = HORDE_ONLY,
+					["isWeekly"] = true,
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(65649, {	-- A New Deal
-					["provider"] = { "n", 168011 },	-- Zo'sorg
 					["sourceQuest"] = 64957,	-- This Old Waystone (possibly earlier)
+					["provider"] = { "n", 168011 },	-- Zo'sorg
 					["coord"] = { 35.6, 57.5, ORIBOS },
 					["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2 },
 					["groups"] = {
@@ -48,59 +48,59 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				})),
 				q(62287, {	-- Observing Arenas
 					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
-					["isWeekly"] = true,
 					["coord"] = { 34.3, 55.8, ORIBOS },
 					["timeline"] = { REMOVED_10_0_2 },
+					["isWeekly"] = true,
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(62284, {	-- Observing Battle
 					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
-					["isWeekly"] = true,
 					["coord"] = { 34.7, 56.5, ORIBOS },
 					["timeline"] = { REMOVED_10_0_2 },
+					["isWeekly"] = true,
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(62286, {	-- Observing Skirmishes
 					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
-					["isWeekly"] = true,
 					["coord"] = { 34.7, 56.5, ORIBOS },
 					["timeline"] = { REMOVED_10_0_2 },
+					["isWeekly"] = true,
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(62288, {	-- Observing Teamwork
 					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
-					["isWeekly"] = true,
 					["coord"] = { 34.7, 56.5, ORIBOS },
 					["timeline"] = { REMOVED_10_0_2 },
+					["isWeekly"] = true,
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(64527, {	-- Observing the Chase [SL 'Try Warmode']
-					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
-					["coord"] = { 34.7, 55.7, ORIBOS },	-- Ring of Fates
 					["altQuests"] = {
 						53295,	-- Do Your Part [BFA 'Try Warmode'] [A]
 						53338,	-- Prove Your Worth [BFA 'Try Warmode'] [H]
 					},
+					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
+					["coord"] = { 34.7, 55.7, ORIBOS },	-- Ring of Fates
 					["timeline"] = { ADDED_9_1_0 },
 				}),
 				q(62285, {	-- Observing War
 					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
-					["isWeekly"] = true,
 					["coord"] = { 34.7, 56.5, ORIBOS },
 					["timeline"] = { REMOVED_10_0_2 },
+					["isWeekly"] = true,
 					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(65773, {	-- Solo Mission
 					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 					["coord"] = { 34.7, 56.5, ORIBOS },
-					["isWeekly"] = true,
 					["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2 },
+					["isWeekly"] = true,
 				}),
 				q(65775, {	-- Soloing Strategy
 					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 					["coord"] = { 34.7, 56.5, ORIBOS },
-					["isWeekly"] = true,
 					["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2 },
+					["isWeekly"] = true,
 				}),
 			}),
 			n(VENDORS, {

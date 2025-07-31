@@ -177,8 +177,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(67221, {	-- A Head For Metal
 					["sourceQuests"] = { 66359 },	-- First Completion of 'Unlocking our Past' (Forgemaster Bazentus)
-					["coord"] = { 24.5, 60.9, THE_WAKING_SHORES },
 					["provider"] = { "n", 191194 },	-- Weaponsmith Mida
+					["coord"] = { 24.5, 60.9, THE_WAKING_SHORES },
 					["isWeekly"] = true,
 					["groups"] = {
 						i(194971),	-- Crystalized Draconium (QI!)
@@ -338,8 +338,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuest"] = 66362,	-- First Completion of 'Unlocking our Past' (Igys the Believer)
 					["provider"] = { "n", 191304 },	-- Aizir the Inflamed
 					["coord"] = { 32.0, 52.4, THE_WAKING_SHORES },
-					["crs"] = { 186163 },	-- Doventhal the Chosen
 					["isWeekly"] = true,
+					["crs"] = { 186163 },	-- Doventhal the Chosen
 					["groups"] = {
 						i(202173),	-- Magmote
 					},
@@ -348,8 +348,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuest"] = 66362,	-- First Completion of 'Unlocking our Past' (Igys the Believer)
 					["provider"] = { "n", 191307 },	-- Vyzos the Prophet
 					["coord"] = { 32.0, 52.4, THE_WAKING_SHORES },
-					["crs"] = { 191306 },	-- Aizir the Inflamed
 					["isWeekly"] = true,
+					["crs"] = { 191306 },	-- Aizir the Inflamed
 					["groups"] = {
 						i(202173),	-- Magmote
 					},
@@ -357,8 +357,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(66895, {	-- Same as the Old Boss
 					["provider"] = { "n", 191310 },	-- Doventhal the Chosen
 					["coord"] = { 32.0, 52.4, THE_WAKING_SHORES },
-					["crs"] = { 191308 },	-- Vyzos the Prophet
 					["isWeekly"] = true,
+					["crs"] = { 191308 },	-- Vyzos the Prophet
 					["groups"] = {
 						i(202173),	-- Magmote
 					},
@@ -389,9 +389,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(72456, {	-- Tomes Of Trust
 					["sourceQuest"] = 66419,	-- Allegiance To One
-					-- TODO: Possibly this requires HQT 64277 to unlock rather than the quest above
 					["provider"] = { "n", 188344 },	-- Chydrass
 					["coord"] = { 25, 56.1, THE_WAKING_SHORES },
+					-- TODO: Possibly this requires HQT 64277 to unlock rather than the quest above
 					["groups"] = {
 						i(201925),	-- Obsidian Genealogy (QI!)
 					},
@@ -437,23 +437,23 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				n(HIDDEN_QUESTS, {
 					q(66362, { ["name"] = "First Daily Completion: 'Unlocking our Past' (Igys the Believer)",
 						["sourceQuest"] = 66419,	-- Allegiance To One
-						["cr"] = 187275,	-- Igys the Believer
 						["isDaily"] = true,
+						["cr"] = 187275,	-- Igys the Believer
 					}),
 					q(66359, { ["name"] = "First Daily Completion: 'Unlocking our Past' (Forgemaster Bazentus)",
 						["sourceQuest"] = 66419,	-- Allegiance To One
-						["cr"] = 187272,	-- Forgemaster Bazentus
 						["isDaily"] = true,
+						["cr"] = 187272,	-- Forgemaster Bazentus
 					}),
 					q(66360, { ["name"] = "First Daily Completion: 'Unlocking our Past' (Sabellian)",
 						["sourceQuest"] = 66419,	-- Allegiance To One
-						["cr"] = 187447,	-- Sabellian
 						["isDaily"] = true,
+						["cr"] = 187447,	-- Sabellian
 					}),
 					q(66361, { ["name"] = "First Daily Completion: 'Unlocking our Past' (Wrathion)",
 						["sourceQuest"] = 66419,	-- Allegiance To One
-						["cr"] = 187284,	-- Wrathion
 						["isDaily"] = true,
+						["cr"] = 187284,	-- Wrathion
 					}),
 				}),
 			}),

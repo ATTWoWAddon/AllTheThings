@@ -121,16 +121,16 @@
 			}),
 			n(QUESTS, {
 				q(80438, {	-- Aid the Horde [H]
-					["provider"] = { "n", 67939 },	-- General Nazgrim
 					["sourceQuest"] = 32108,	-- Domination Point [H]
+					["provider"] = { "n", 67939 },	-- General Nazgrim
 					["coord"] = { 10.3, 53.7, KRASARANG_WILDS },
 					["cost"] = { { "c", 738, 10 } },	-- 10x Lesser Charm of Good Fortune
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 				}),
 				q(80439, {	-- Aid the Alliance [A]
-					["provider"] = { "n", 67940 },	-- Admiral Taylor
 					["sourceQuest"] = 32109,	-- Lion's Landing [A]
+					["provider"] = { "n", 67940 },	-- Admiral Taylor
 					["coord"] = { 89.5, 32.5, KRASARANG_WILDS },
 					["cost"] = { { "c", 738, 10 } },	-- 10x Lesser Charm of Good Fortune
 					["races"] = ALLIANCE_ONLY,

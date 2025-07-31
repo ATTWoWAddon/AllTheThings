@@ -167,53 +167,53 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["coord"] = { 46.6, 47.5, VALDRAKKEN },
 				}),
 				q(77231, {	-- Technoscrying 101
-					["provider"] = { "n", 208355 },	-- Zenata
 					["sourceQuests"] = { 77325 },	-- To the Archives!
+					["provider"] = { "n", 208355 },	-- Zenata
 					["coord"] = { 61.6, 31.1, THALDRASZUS },
 					["groups"] = {
 						i(208084),	-- Technoscryers (QI!)
 					},
 				}),
 				q(77166, {	-- A Practical Test
-					["provider"] = { "n", 208355 },	-- Zenata
 					["sourceQuests"] = { 77231 },	-- Technoscrying 101
+					["provider"] = { "n", 208355 },	-- Zenata
 					["coord"] = { 61.2, 30.7, THALDRASZUS },
 					["groups"] = {
 						i(202247),	-- Technoscryers (QI!)
 					},
 				}),
 				q(77176, {	-- I Can See Through Time!
-					["provider"] = { "n", 208355 },	-- Zenata
 					["sourceQuests"] = { 77166 },	-- A Practical Test
+					["provider"] = { "n", 208355 },	-- Zenata
 					["coord"] = { 61.7, 29.8, THALDRASZUS },
 					["groups"] = {
 						i(202247),	-- Technoscryers (QI!)
 					},
 				}),
 				q(77434, {	-- Technoscrying: Observatory
-					["provider"] = { "n", 208355 },	-- Zenata
 					["sourceQuests"] = { 77176 },	-- I Can See Through Time!
+					["provider"] = { "n", 208355 },	-- Zenata
 					["coord"] = { 61.7, 29.8, THALDRASZUS },
 				}),
 				q(75729, {	-- Attune to the Observer
-					["provider"] = { "n", 204835 },	-- Zenata
 					["sourceQuests"] = { 77434 },	-- Technoscrying: Observatory
+					["provider"] = { "n", 204835 },	-- Zenata
 					["coord"] = { 56.3, 43.9, THE_WAKING_SHORES },
 					["groups"] = {
 						i(202247),	-- Technoscryers (QI!)
 					},
 				}),
 				q(75867, {	-- A Link to the Past
-					["provider"] = { "n", 204835 },	-- Zenata
 					["sourceQuests"] = { 75729 },	-- Attune to the Observer
+					["provider"] = { "n", 204835 },	-- Zenata
 					["coord"] = { 56.3, 43.9, THE_WAKING_SHORES },
 					["groups"] = {
 						--i(202247),	-- Technoscryers (QI!) (TODO: seems like qi didn't get removed from previous quest?)
 					},
 				}),
 				q(75868, {	-- A Window into the Future
-					["provider"] = { "n", 204835 },	-- Zenata
 					["sourceQuests"] = { 75867 },	-- A Link to the Past
+					["provider"] = { "n", 204835 },	-- Zenata
 					["coord"] = { 56.3, 43.9, THE_WAKING_SHORES },
 					["groups"] = {
 						o(404849, {	-- Dreadsquall Nest
@@ -222,8 +222,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					},
 				}),
 				q(77267, {	-- Excavation 101
-					["provider"] = { "n", 208614 },	-- Roska Rocktooth
 					["sourceQuests"] = { 77325 },	-- To the Archives!
+					["provider"] = { "n", 208614 },	-- Roska Rocktooth
 					["coord"] = { 61.5, 31.1, THALDRASZUS },
 					["groups"] = {
 						i(210956),	-- Archivist's Fire Totem (QI!)
@@ -231,46 +231,46 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					},
 				}),
 				q(78762, {	-- Your First Find
-					["provider"] = { "n", 208614 },	-- Roska Rocktooth
 					["sourceQuests"] = { 77267 },	-- Excavation 101
+					["provider"] = { "n", 208614 },	-- Roska Rocktooth
 					["coord"] = { 61.3, 30.2, THALDRASZUS },
 				}),
 				q(77268, {	-- Hands-On Experience
-					["provider"] = { "n", 208614 },	-- Roska Rocktooth
 					["sourceQuests"] = { 78762 },	-- Your First Find
+					["provider"] = { "n", 208614 },	-- Roska Rocktooth
 					["coord"] = { 61.3, 30.2, THALDRASZUS },
 				}),
 				q(77433, {	-- Excavation: Riverbed
-					["provider"] = { "n", 208614 },	-- Roska Rocktooth
 					["sourceQuests"] = { 77268 },	-- Hands-On Experience
+					["provider"] = { "n", 208614 },	-- Roska Rocktooth
 					["coord"] = { 61.5, 30, THALDRASZUS },
 				}),
 				q(75493, {	-- Surveying the Riverbed
-					["provider"] = { "n", 204094 },	-- Roska Rocktooth
 					["sourceQuests"] = { 77433 },	-- Excavation: Riverbed
+					["provider"] = { "n", 204094 },	-- Roska Rocktooth
 					["coord"] = { 67.3, 47.5, OHNAHRAN_PLAINS },
 					["groups"] = {
 						i(210435),	-- Archivist's Water Totem
 					},
 				}),
 				q(75518, {	-- The Body on the Banks
-					["provider"] = { "n", 204245 },	-- Ancient Centaur Corpse
 					["sourceQuests"] = { 75493 },	-- Surveying the Riverbed
+					["provider"] = { "n", 204245 },	-- Ancient Centaur Corpse
 					["coord"] = { 67.3, 47.5, OHNAHRAN_PLAINS },
 				}),
 				q(75603, {	-- Do Rites by Her
-					["provider"] = { "n", 204643 },	-- Roska Rocktooth
 					["sourceQuests"] = { 75518 },	-- The Body on the Banks
+					["provider"] = { "n", 204643 },	-- Roska Rocktooth
 					["coord"] = { 66.4, 46, OHNAHRAN_PLAINS },
 				}),
 				q(77327, {	-- Nirobin and the Office
-					["qgs"] = {
-						204643,	-- Roska Rocktooth
-						204835,	-- Zenata
-					},
 					["sourceQuests"] = {
 						75603,	-- Do Rites by Her
 						75868,	-- A Window into the Future
+					},
+					["qgs"] = {
+						204643,	-- Roska Rocktooth
+						204835,	-- Zenata
 					},
 					["coords"] = {
 						{ 66.4, 46, OHNAHRAN_PLAINS },
@@ -278,28 +278,28 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					},
 				}),
 				q(76217, {	-- Living History
-					["provider"] = { "n", 205967 },	-- Nirobin
 					["sourceQuests"] = { 77327 },	-- Nirobin and the Office
+					["provider"] = { "n", 205967 },	-- Nirobin
 					["coord"] = { 58.4, 36.8, THALDRASZUS },
 				}),
 				q(76241, {	-- Lab Partners with a Squirrel
-					["provider"] = { "n", 205967 },	-- Nirobin
 					["sourceQuests"] = { 76217 },	-- Living History
+					["provider"] = { "n", 205967 },	-- Nirobin
 					["coord"] = { 58.4, 36.8, THALDRASZUS },
 				}),
 				q(76242, {	-- A Research Thesis Worth Publishing
-					["provider"] = { "n", 205975 },	-- Reese
 					["sourceQuests"] = { 76241 },	-- Lab Partners with a Squirrel
+					["provider"] = { "n", 205975 },	-- Reese
 					["coord"] = { 53.5, 47.5, THE_FORBIDDEN_REACH },
 				}),
 				q(77328, {	-- Back to Headquarters!
-					["provider"] = { "n", 205967 },	-- Nirobin
 					["sourceQuests"] = { 76242 },	-- A Research Thesis Worth Publishing
+					["provider"] = { "n", 205967 },	-- Nirobin
 					["coord"] = { 58.4, 36.8, THALDRASZUS },
 				}),
 				q(79223, {	-- Finally, An Archivist!
-					["provider"] = { "n", 206107 },	-- Eadweard Dalyngrigge
 					["sourceQuests"] = { 77328 },	-- Back to Headquarters!
+					["provider"] = { "n", 206107 },	-- Eadweard Dalyngrigge
 					["coord"] = { 61.5, 31.2, THALDRASZUS },
 					["groups"] = {
 						--spell(431591),	-- Azerothian Archives: Riverbed, Concord Observatory, and Lost Anethenum Sites (WQ unlock)
@@ -310,23 +310,23 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					},
 				}),
 				q(77483, {	-- Technoscrying: Dragonskull Island
-					["provider"] = { "n", 208355 },	-- Zenata
 					["sourceQuests"] = { 79223 },	-- Finally, An Archivist!
+					["provider"] = { "n", 208355 },	-- Zenata
 					["coord"] = { 61.5, 31.1, THALDRASZUS },
 				}),
 				q(76448, {	-- The Fate of Scalecommander Abereth
-					["provider"] = { "n", 207311 },	-- Zenata
 					["sourceQuests"] = { 77483 },	-- Technoscrying: Dragonskull Island
+					["provider"] = { "n", 207311 },	-- Zenata
 					["coord"] = { 77.1, 38.4, THE_FORBIDDEN_REACH },
 				}),
 				q(76557, {	-- Without Honor
-					["provider"] = { "n", 207311 },	-- Zenata
 					["sourceQuests"] = { 76448 },	-- The Fate of Scalecommander Abereth
+					["provider"] = { "n", 207311 },	-- Zenata
 					["coord"] = { 77.1, 38.4, THE_FORBIDDEN_REACH },
 				}),
 				q(77415, {	-- The Hidden Hand
-					["provider"] = { "n", 207311 },	-- Zenata
 					["sourceQuests"] = { 76557 },	-- Without Honor
+					["provider"] = { "n", 207311 },	-- Zenata
 					["coord"] = { 77.1, 38.4, THE_FORBIDDEN_REACH },
 					["groups"] = {
 						o(405943, {	-- Drakonid Scroll Case
@@ -336,23 +336,23 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					},
 				}),
 				q(77484, {	-- Technoscrying: Igira's Watch
-					["provider"] = { "n", 208355 },	-- Zenata
 					["sourceQuests"] = { 79223 },	-- Finally, An Archivist!
+					["provider"] = { "n", 208355 },	-- Zenata
 					["coord"] = { 61.5, 31.1, THALDRASZUS },
 				}),
 				q(76564, {	-- The Tools of the Dragonkillers
-					["provider"] = { "n", 207763 },	-- Zenata
 					["sourceQuests"] = { 77484 },	-- Technoscrying: Igira's Watch
+					["provider"] = { "n", 207763 },	-- Zenata
 					["coord"] = { 38.1, 49.8, ZARALEK_CAVERN },
 				}),
 				q(76576, {	-- An Unlikely Proposal
-					["provider"] = { "n", 207763 },	-- Zenata
 					["sourceQuests"] = { 76564 },	-- The Tools of the Dragonkillers
+					["provider"] = { "n", 207763 },	-- Zenata
 					["coord"] = { 38.1, 49.8, ZARALEK_CAVERN },
 				}),
 				q(77425, {	-- The Scale of it All
-					["provider"] = { "n", 207763 },	-- Zenata
 					["sourceQuests"] = { 76576 },	-- An Unlikely Proposal
+					["provider"] = { "n", 207763 },	-- Zenata
 					["coord"] = { 38.1, 49.8, ZARALEK_CAVERN },
 					["groups"] = {
 						--spell(431594),	-- Azerothian Archives: Igira's Watch, Zaralek Cavern Site (WQ unlock)
@@ -365,65 +365,65 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					},
 				}),
 				q(77486, {	-- Excavation: Gaze of Neltharion
-					["provider"] = { "n", 208614 },	-- Roska Rocktooth
 					["sourceQuests"] = { 79223 },	-- Finally, An Archivist!
+					["provider"] = { "n", 208614 },	-- Roska Rocktooth
 					["coord"] = { 61.5, 31.1, THALDRASZUS },
 				}),
 				q(76026, {	-- Surveying the Tower
-					["provider"] = { "n", 205413 },	-- Roska Rocktooth
 					["sourceQuests"] = { 77486 },	-- Excavation: Gaze of Neltharion
+					["provider"] = { "n", 205413 },	-- Roska Rocktooth
 					["coord"] = { 48.6, 48.3, ZARALEK_CAVERN },
 					["groups"] = {
 						i(210834),	-- Archivist's Earth Totem (QI!)
 					},
 				}),
 				q(76032, {	-- Hidden in the Midden
-					["provider"] = { "n", 207931 },	-- Defaced Dragon Statue
 					["sourceQuests"] = { 76026 },	-- Surveying the Tower
+					["provider"] = { "n", 207931 },	-- Defaced Dragon Statue
 					["coord"] = { 47.5, 48.5, ZARALEK_CAVERN },
 				}),
 				q(75604, {	-- Antiquated Antics
-					["provider"] = { "n", 205413 },	-- Roska Rocktooth (TODO: unsure, need to recheck npcID)
 					["sourceQuests"] = { 76032 },	-- Hidden in the Midden
+					["provider"] = { "n", 205413 },	-- Roska Rocktooth (TODO: unsure, need to recheck npcID)
 					["coord"] = { 47.6, 48.6, ZARALEK_CAVERN },
 					--["groups"] = {
 					--	spell(431595),	-- Azerothian Archives: Gaze of Neltharion, Zaralek Cavern Site (WQ unlock)
 					--},
 				}),
 				q(77487, {	-- Excavation: Winglord's Perch
-					["provider"] = { "n", 208614 },	-- Roska Rocktooth
 					["sourceQuests"] = { 79223 },	-- Finally, An Archivist!
+					["provider"] = { "n", 208614 },	-- Roska Rocktooth
 					["coord"] = { 61.5, 31.1, THALDRASZUS },
 				}),
 				q(77100, {	-- Surveying the Cliffside
-					["provider"] = { "n", 208362 },	-- Roska Rocktooth
 					["sourceQuests"] = { 77487 },	-- Excavation: Winglord's Perch
+					["provider"] = { "n", 208362 },	-- Roska Rocktooth
 					["coord"] = { 17.2, 16.3, THE_FORBIDDEN_REACH },
 					["groups"] = {
 						i(210778),	-- Archivist's Wind Totem (QI!)
 					},
 				}),
 				q(77151, {	-- The Cache in the Crag
-					["provider"] = { "n", 208402 },	-- Intact Dragonkin Cache
 					["sourceQuests"] = { 77100 },	-- Surveying the Cliffside
+					["provider"] = { "n", 208402 },	-- Intact Dragonkin Cache
 					["coord"] = { 14.0, 14.7, THE_FORBIDDEN_REACH },
 				}),
 				q(77154, {	-- A Taste of the Past
-					["provider"] = { "n", 208362 },	-- Roska Rocktooth
 					["sourceQuests"] = { 77151 },	-- The Cache in the Crag
+					["provider"] = { "n", 208362 },	-- Roska Rocktooth
 					["coord"] = { 14.0, 14.7, THE_FORBIDDEN_REACH },
 					--["groups"] = {
 					--	spell(431592),	-- Azerothian Archives: Winglord's Perch, Forbidden Reach Site (WQ unlock)
 					--},
 				}),
 				q(79231, {	-- Back to Headquarters! Again!
-					["provider"] = { "n", 208055 },	-- Roska Rocktooth
 					["sourceQuests"] = { 75604 },	-- Antiquated Antics (TODO: may be it require all 4 quests chain completed, so he can spawn with different coords? Or different qID?)
+					["provider"] = { "n", 208055 },	-- Roska Rocktooth
 					["coord"] = { 48.6, 48.3, ZARALEK_CAVERN },
 				}),
 				q(77331, {	-- Graduation Day
-					["provider"] = { "n", 206107 },	-- Eadweard Dalyngrigge
 					["sourceQuests"] = { 79231 },	-- Back to Headquarters! Again!
+					["provider"] = { "n", 206107 },	-- Eadweard Dalyngrigge
 					["coord"] = { 61.5, 31.2, THALDRASZUS },
 				}),
 				--

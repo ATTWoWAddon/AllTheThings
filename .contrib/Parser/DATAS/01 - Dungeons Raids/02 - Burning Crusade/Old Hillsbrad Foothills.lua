@@ -18,14 +18,14 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 		["groups"] = {
 			n(QUESTS, {
 				q(10284, {	-- Escape from Durnholde
-					["qg"] = 17876,	-- Thrall
 					["sourceQuest"] = 10283,	-- Taretha's Diversion
+					["qg"] = 17876,	-- Thrall
 					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(66, 66, 15),
 				}),
 				q(29599, {	-- Escape from Durnholde
-					["qg"] = 17876,	-- Thrall
 					["sourceQuest"] = 29598,	-- Taretha's Diversion
+					["qg"] = 17876,	-- Thrall
 					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(64, 64, 15),
 					["groups"] = {
@@ -74,8 +74,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(10282, {	-- Old Hillsbrad
-					["qg"] = 20130,	-- Andormu <Keepers of Time>
 					["sourceQuest"] = 10277,	-- The Caverns of Time
+					["qg"] = 20130,	-- Andormu <Keepers of Time>
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 41.6, 38.5, CAVERNS_OF_TIME },
@@ -86,8 +86,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["lvl"] = lvlsquish(66, 66, 15),
 				}),
 				q(10283, {	-- Taretha's Diversion
-					["qg"] = 18723,	-- Erozion
 					["sourceQuest"] = 10282,	-- Old Hillsbrad
+					["qg"] = 18723,	-- Erozion
 					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(66, 66, 15),
 					["groups"] = {
@@ -107,8 +107,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(10285, {	-- Return to Andormu
-					["qg"] = 18723,	-- Erozion
 					["sourceQuest"] = 10284,	-- Escape from Durnholde
+					["qg"] = 18723,	-- Erozion
 					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(66, 66, 15),
 					["groups"] = {

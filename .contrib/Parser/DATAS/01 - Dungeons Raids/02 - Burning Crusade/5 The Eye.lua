@@ -10,7 +10,7 @@ local legendary = function(itemID, creatureID)
 		-- #endif
 	});
 end;
-root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_3 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, bubbleDown({ ["timeline"] = { ADDED_2_0_1 } }, {
 	inst(749, {	-- The Eye
 		["lore"] = "With Outland serving as the strategic battlefront in the ongoing Burning Crusade, the Naaru used Tempest Keep to reach the shattered land. However, when the Naaru set out from their stronghold, Prince Kael'thas and his blood elves quickly raided the dimensional fortress and assumed control over its satellite structures. Guided by some unknown purpose, Kael'thas manipulates the keep's otherworldly technologies, using them to harness the chaotic energies of the Netherstorm itself.",
 		["coord"] = { 73.73, 63.71, NETHERSTORM },	-- The Eye, Netherstorm
@@ -33,8 +33,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 					},
 				}),
 				q(10946, {	-- Ruse of the Ashtongue
-					["qg"] = 21700,	-- Akama
 					["sourceQuest"] = 10944,	-- The Secret Compromised
+					["qg"] = 21700,	-- Akama
 					["coord"] = { 58.0, 48.2, SHADOWMOON_VALLEY },
 					["groups"] = {
 						objective(1, {

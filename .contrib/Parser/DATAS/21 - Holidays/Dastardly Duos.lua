@@ -62,8 +62,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 					["provider"] = { "i", 234449 },	-- Dastardly Invitation
 				}),
 				q(86503, {	-- Who are the Dastardly Duos?
-					["provider"] = { "n", 234296 },	-- Vinnie Sweets
 					["sourceQuests"] = { 86491 },	-- Dastardly Invitation
+					["provider"] = { "n", 234296 },	-- Vinnie Sweets
 					["coords"] = {
 						{ 52.8, 51.6, ISLE_OF_DORN },	-- Khaz Algar
 						--{ x, y, ORGRIMMAR },	-- Orgrimmar
@@ -75,24 +75,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 					},
 				}),
 				q(87550, {	-- Week 2: We're Really Taking Off
-					["provider"] = { "n", 234296 },	-- Vinnie Sweets
 					["sourceQuests"] = { 86503 },	-- Who are the Dastardly Duos?
+					["provider"] = { "n", 234296 },	-- Vinnie Sweets
 					["coord"] = { 52.8, 51.6, ISLE_OF_DORN },
 					["groups"] = {
 						i(239440),	-- Dastardly Prize Purse
 					},
 				}),
 				q(87551, {	-- Week 3: Spread the Word
-					["provider"] = { "n", 234296 },	-- Vinnie Sweets
 					["sourceQuests"] = { 87550 },	-- Week 2: We're Really Taking Off
+					["provider"] = { "n", 234296 },	-- Vinnie Sweets
 					["coord"] = { 52.8, 51.6, ISLE_OF_DORN },
 					["groups"] = {
 						i(239440),	-- Dastardly Prize Purse
 					},
 				}),
 				q(87552, {	-- Week 4: They've Heard of You
-					["provider"] = { "n", 234296 },	-- Vinnie Sweets
 					["sourceQuests"] = { 87551 },	-- Week 3: Spread the Word
+					["provider"] = { "n", 234296 },	-- Vinnie Sweets
 					["coord"] = { 52.8, 51.6, ISLE_OF_DORN },
 					["groups"] = {
 						i(239440),	-- Dastardly Prize Purse
@@ -101,16 +101,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 					},
 				}),
 				q(87553, {	-- Week 5: Another Amazing Week!
-					["provider"] = { "n", 234296 },	-- Vinnie Sweets
 					["sourceQuests"] = { 87552 },	-- Week 4: They've Heard of You
+					["provider"] = { "n", 234296 },	-- Vinnie Sweets
 					["coord"] = { 52.8, 51.6, ISLE_OF_DORN },
 					["groups"] = {
 						i(239440),	-- Dastardly Prize Purse
 					},
 				}),
 				q(87554, {	-- Week 6: It's the Finale!
-					["provider"] = { "n", 234296 },	-- Vinnie Sweets
 					["sourceQuests"] = { 87553 },	-- Week 5: Another Amazing Week!
+					["provider"] = { "n", 234296 },	-- Vinnie Sweets
 					["coord"] = { 52.8, 51.6, ISLE_OF_DORN },
 					["groups"] = {
 						i(239440),	-- Dastardly Prize Purse
@@ -118,8 +118,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.DASTARDLY_DUOS, bubbleDown({ ["timeline"]
 				}),
 				-- unsorted due to ptr things, sourceQuest is speculated
 				q(90701, {	-- Cowardly Cheery Bombs
-					["provider"] = { "n", 234297 },	-- Wodin the Troll Servant
 					["sourceQuests"] = { 86503 },	-- Who are the Dastardly Duos?
+					["provider"] = { "n", 234297 },	-- Wodin the Troll Servant
 					["coords"] = {
 						{ 52.8, 51.6, ISLE_OF_DORN },	-- Khaz Algar
 						--{ x, y, ORGRIMMAR },	-- Orgrimmar

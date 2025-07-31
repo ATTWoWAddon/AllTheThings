@@ -114,8 +114,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						q(62653, {	-- Stop the Inquisition
 							["sourceQuests"] = { 57929 },	-- Hunting an Inquisitor
 							["provider"] = { "n", 167332 },	-- Gresit
-							["isWeekly"] = true,
 							["coord"] = { 71.7, 40.3, REVENDRETH },
+							["isWeekly"] = true,
 						}),
 					}),
 					n(RARES, {

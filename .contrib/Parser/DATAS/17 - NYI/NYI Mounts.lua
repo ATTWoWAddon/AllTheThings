@@ -957,22 +957,54 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		})),
 
 		-- 11.1.0
-		expansion(EXPANSION.TWW, patch(0,0,1), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+		expansion(EXPANSION.TWW, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_0 } }, {
 			-- With MountID attached
 			i(232523, {	-- G-99 Breakneck
 				--["displayID"] = ,
 			}),
 			i(235659, {	-- Midnight Butterfly (MOUNT!)
-				--["displayID"] = 126175,
+				["displayID"] = 126175,
 			}),
 			i(235554, {	-- Midnight Darkmoon Charger (MOUNT!)
-				--["displayID"] = 126058,
+				["displayID"] = 126058,
 			}),
 			i(235557, {	-- Snowy Darkmoon Charger (MOUNT!)
-				--["displayID"] = 126061,
+				["displayID"] = 126061,
 			}),
 			i(235658, {	-- Spring Butterfly (MOUNT!)
-				--["displayID"] = 126174,
+				["displayID"] = 126174,
+			}),
+		})),
+
+		-- 11.1.5
+		expansion(EXPANSION.TWW, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_5 } }, {
+			i(238902, {	-- Autumn Harvesthog (MOUNT!)
+				["displayID"] = 127825,
+			}),
+			i(238968, {	-- Lavaborn Cormaera (MOUNT!)
+				["displayID"] = 127846,
+			}),
+			i(238900, {	-- Summer Harvesthog (MOUNT!)
+				["displayID"] = 127823,
+			}),
+			i(238901, {	-- Winter Harvesthog (MOUNT!)
+				["displayID"] = 127824,
+			}),
+		})),
+
+		-- 11.1.7
+		expansion(EXPANSION.TWW, patch(1,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_1_7 } }, {
+			i(243593, {	-- Banshee's Chilling Charger (MOUNT!)
+				["displayID"] = 129222,
+			}),
+			i(243597, {	-- Banshee's Sickening Charger (MOUNT!)
+				["displayID"] = 129394,
+			}),
+			i(243590, {	-- Grandmaster's Deep Board (MOUNT!)
+				["displayID"] = 129383,
+			}),
+			i(243592, {	-- Grandmaster's Smokey Board (MOUNT!)
+				["displayID"] = 129385,
 			}),
 		})),
 	}),

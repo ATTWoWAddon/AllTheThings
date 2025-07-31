@@ -34,8 +34,8 @@ root(ROOTS.Zones, {
 				q(46750),	-- Battery Backup
 				q(45559),	-- Behind Enemy Portals
 				q(45542, {	-- Behind Enemy Portals
-					-- NOTE: There are 3 versions of this world quest but only this one can be used for the achievement!
 					ach(11681),	-- Crate Expectations
+					-- NOTE: There are 3 versions of this world quest but only this one can be used for the achievement!
 				}),
 				q(45520),	-- Behind Enemy Portals
 				q(46073),	-- Break Their Garrison

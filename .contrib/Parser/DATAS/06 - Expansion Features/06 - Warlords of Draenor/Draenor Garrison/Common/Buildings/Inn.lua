@@ -538,8 +538,8 @@ root(ROOTS.ExpansionFeatures,
 								HANDS, WAIST, LEGS, CHEST, FEET, HEAD, WRIST, SHOULDER, BACK, NECK, FINGER),
 						}),
 						q(37228, {	-- A Fruitful Proposition
-							["provider"] = { "n", 87991 },	-- Cro Threadstrong
 							["sourceQuest"] = 37152,	-- Cro's Revenge
+							["provider"] = { "n", 87991 },	-- Cro Threadstrong
 							["maps"] = { 573 },	-- Bloodmaul Slag Mines
 							["repeatable"] = true,
 							["groups"] = {
@@ -548,8 +548,8 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						q(37237, {	-- A Hero's Quest is Never Complete
-							["provider"] = { "n", 88001 },	-- Maximillian of Northshire
 							["sourceQuest"] = 37162,	-- Damsels and Dragons
+							["provider"] = { "n", 88001 },	-- Maximillian of Northshire
 							["maps"] = { UPPER_BLACKROCK_SPIRE_WOD, 617, 618 },	-- Upper Blackrock Spire
 							["repeatable"] = true,
 							["groups"] = {
@@ -560,8 +560,8 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						q(37235, {	-- A Plea to the Sky
-							["provider"] = { "n", 87999 },	--  Skylord Omnuron
 							["sourceQuest"] = 37159,	-- Aviana's Request
+							["provider"] = { "n", 87999 },	--  Skylord Omnuron
 							["maps"] = { 601, 602 },	-- Skyreach
 							["repeatable"] = true,
 							["groups"] = {
@@ -572,8 +572,8 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						q(37243, {	-- An Axe to Grind
-							["provider"] = { "n", 88007 },	-- Gamon
 							["sourceQuest"] = 37160,	--  Cleaving Time
+							["provider"] = { "n", 88007 },	-- Gamon
 							["maps"] = { 606, 607, 608, 609 },	-- Grimrail Depot
 							["repeatable"] = true,
 							["groups"] = {
@@ -630,8 +630,8 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						q(37230, {	-- Bloody Expensive
-							["provider"] = { "n", 87994 },	--  Moroes <Tower Steward>
 							["sourceQuest"] = 37157,	-- Feeling A Bit Morose
+							["provider"] = { "n", 87994 },	--  Moroes <Tower Steward>
 							["maps"] = { 595 },	-- Iron Docks
 							["repeatable"] = true,
 							["groups"] = {
@@ -686,8 +686,8 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						q(37209, {	-- Cold Steel Part II
-							["provider"] = { "n", 88026 },	-- John J. Keeshan
 							["sourceQuest"] = 37151,	-- Cold Steel
+							["provider"] = { "n", 88026 },	-- John J. Keeshan
 							["maps"] = { 606, 607, 608, 609 },	-- Grimrail Depot
 							["repeatable"] = true,
 							["groups"] = {
@@ -726,13 +726,13 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						q(33814, {	-- Fast Expansion
-							["qgs"] = {
-								81152,	-- Scout Valdez
-								81153,	-- Scout Valdez
-							},
 							["sourceQuests"] = {
 								33059,	-- The Fate of Karabor
 								33081,	-- Escape From Shaz'gul
+							},
+							["qgs"] = {
+								81152,	-- Scout Valdez
+								81153,	-- Scout Valdez
 							},
 							["coords"] = {
 								{ 31.0, 31.1, LUNARFALL },	-- Garrison lvl 3
@@ -742,8 +742,8 @@ root(ROOTS.ExpansionFeatures,
 							["isBreadcrumb"] = true,
 						}),
 						q(37239, {	-- Fate of the Fallen
-							["provider"] = { "n", 88003 },	--  Cowled Ranger
 							["sourceQuest"] = 37164,	-- The Huntress
+							["provider"] = { "n", 88003 },	--  Cowled Ranger
 							["maps"] = { 574, 575, 576 },	-- Shadowmoon Burial Grounds
 							["repeatable"] = true,
 							["groups"] = {
@@ -764,8 +764,8 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						q(37244, {	-- Flamefly Trap
-							["provider"] = { "n", 88024 },	-- Oralius
 							["sourceQuest"] = 37148,	-- Oralius' Adventure
+							["provider"] = { "n", 88024 },	-- Oralius
 							["maps"] = { UPPER_BLACKROCK_SPIRE_WOD, 617, 618 },	-- Upper Blackrock Spire
 							["repeatable"] = true,
 							["groups"] = {
@@ -821,8 +821,8 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						q(37242, {	-- Learning Is Painful
-							["provider"] = { "n", 88006 },	--  Lonika Stillblade
 							["sourceQuest"] = 37167,	-- And No Maces!
+							["provider"] = { "n", 88006 },	--  Lonika Stillblade
 							["maps"] = { 606, 607, 608, 609 },	-- Grimrail Depot
 							["repeatable"] = true,
 							["groups"] = {
@@ -833,8 +833,8 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						q(37241, {	-- Lessons of the Past
-							["provider"] = { "n", 88005 },	--  Lorewalker Cho
 							["sourceQuest"] = 37166,	-- Titanic Evolution
+							["provider"] = { "n", 88005 },	--  Lorewalker Cho
 							["maps"] = { 620, 621 },	-- The Everbloom
 							["repeatable"] = true,
 							["groups"] = {
@@ -845,8 +845,8 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						q(37229, {	-- Like A Dwarf In A Mine
-							["provider"] = { "n", 87992 },	--  Olaf
 							["sourceQuest"] = 37153,	-- Time-Lost Vikings
+							["provider"] = { "n", 87992 },	--  Olaf
 							["maps"] = { 573 },	-- Bloodmaul Slag Mines
 							["repeatable"] = true,
 							["groups"] = {
@@ -857,8 +857,8 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						q(37236, {	-- Like Father, Like Son
-							["provider"] = { "n", 88000 },	--  Pip Quickwit
 							["sourceQuest"] = 37161,	-- Family Traditions
+							["provider"] = { "n", 88000 },	--  Pip Quickwit
 							["maps"] = { UPPER_BLACKROCK_SPIRE_WOD, 617, 618 },	-- Upper Blackrock Spire
 							["repeatable"] = true,
 							["groups"] = {
@@ -893,8 +893,8 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						q(37227, {	-- Put a Bird on It
-							["provider"] = { "n", 88025 },	-- Mylune
 							["sourceQuest"] = 37150,	-- For the Birds
+							["provider"] = { "n", 88025 },	-- Mylune
 							["maps"] = { 620, 621 },	-- The Everbloom
 							["repeatable"] = true,
 							["groups"] = {
@@ -905,8 +905,8 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						q(37238, {	-- Secrets of Soulbinding
-							["provider"] = { "n", 88002 },	--  Highlord Darion Mograine
 							["sourceQuest"] = 37163,	-- Shadowy Secrets
+							["provider"] = { "n", 88002 },	--  Highlord Darion Mograine
 							["maps"] = { 574, 575, 576 },	-- Shadowmoon Burial Grounds
 							["repeatable"] = true,
 							["groups"] = {
@@ -941,8 +941,8 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						q(37232, {	-- Soulcarver Voss
-							["provider"] = { "n", 87996 },	--  Lillian Voss
 							["sourceQuest"] = 37156,	-- The Soulcutter
+							["provider"] = { "n", 87996 },	--  Lillian Voss
 							["maps"] = { 593 },	-- Auchindoun
 							["repeatable"] = true,
 							["groups"] = {
@@ -973,8 +973,8 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						q(37234, {	-- The Dark Within
-							["provider"] = { "n", 87998 },	--  Sunwalker Dezco
 							["sourceQuest"] = 37158,	-- Gloriously Incandescent
+							["provider"] = { "n", 87998 },	--  Sunwalker Dezco
 							["maps"] = { 601, 602 },	-- Skyreach
 							["repeatable"] = true,
 							["groups"] = {
@@ -1003,8 +1003,8 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						q(37240, {	-- The Leaf-Reader
-							["provider"] = { "n", 88004 },	--  Zen'kiki
 							["sourceQuest"] = 37165,	-- Cenarion Concerns
+							["provider"] = { "n", 88004 },	--  Zen'kiki
 							["maps"] = { 620, 621 },	-- The Everbloom
 							["repeatable"] = true,
 							["groups"] = {
@@ -1015,8 +1015,8 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						q(37231, {	-- The Search Continues
-							["provider"] = { "n", 87995 },	--  Fleet Master Seahorn
 							["sourceQuest"] = 37155,	-- The Brass Compass
+							["provider"] = { "n", 87995 },	--  Fleet Master Seahorn
 							["maps"] = { 595 },	-- Iron Docks
 							["repeatable"] = true,
 							["groups"] = {
@@ -1067,8 +1067,8 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						q(37233, {	-- Vessel of Virtue
-							["provider"] = { "n", 87997 },	--  Leonid Barthalomew the Revered
 							["sourceQuest"] = 37154,	-- The Cure For Death
+							["provider"] = { "n", 87997 },	--  Leonid Barthalomew the Revered
 							["maps"] = { 593 },	-- Auchindoun
 							["repeatable"] = true,
 							["groups"] = {
@@ -1079,8 +1079,8 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						q(37245, {	-- Whispers in the Darkness
-							["provider"] = { "n", 88027 },	-- Impsy
 							["sourceQuest"] = 37149,	-- The Void-Gate
+							["provider"] = { "n", 88027 },	-- Impsy
 							["maps"] = { 574, 575, 576 },	-- Shadowmoon Burial Grounds
 							["repeatable"] = true,
 							["groups"] = {

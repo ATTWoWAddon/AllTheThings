@@ -20,10 +20,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 				81930,	-- The War Within [A]
 				78713,	-- The War Within [H]
 			},
+			["sourceQuestNumRequired"] = 1,
 			["provider"] = { "n", 213620 },	-- Thrall
 			["coord"] = { 41.9, 45.0, SILITHUS_THE_WOUND },
 			["maps"] = { 2321 },	-- Chamber of Heart
-			["sourceQuestNumRequired"] = 1,
 		}),
 		q(78715, {	-- Azeroth's Voice
 			["sourceQuests"] = { 78714 },	-- A Poor Reception
@@ -65,8 +65,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 				q(82153, {	-- Embassies and Envoys [A]
 					["sourceQuests"] = { 79333 },	-- The Fleet Arrives
 					["provider"] = { "n", 216168 },	-- Lady Jaina Proudmoore
-					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 35.9, 81.5, DORNOGAL },
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(223588),	-- Algari Fighting Knife
 						i(223549),	-- Algari Greatsword
@@ -81,8 +81,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 				q(79328, {	-- Embassies and Envoys [H]
 					["sourceQuests"] = { 79333 },	-- The Fleet Arrives
 					["provider"] = { "n", 216167 },	-- Thrall
-					["races"] = HORDE_ONLY,
 					["coord"] = { 36.2, 81.5, DORNOGAL },
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(223588),	-- Algari Fighting Knife
 						i(223549),	-- Algari Greatsword

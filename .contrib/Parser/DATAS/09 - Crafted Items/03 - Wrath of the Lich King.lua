@@ -715,6 +715,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			["description"] = "Can be caught in the fountain.",
 			["coord"] = { 52.9, 65.9, NORTHREND_DALARAN },	-- Dalaran fountain
 		}),
+		i(45909, {	-- Giant Darkwater Clam
+			["maps"] = { WINTERGRASP },
+			["groups"] = {
+				i(36782),	-- Succulent Clam Meat
+				i(36783),	-- Northsea Pearl
+				i(36784),	-- Siren's Tear
+			},
+		}),
 		i(41809, {	-- Glacial Salmon
 			["description"] = "Schools can be found in inland waters.",
 			["maps"] = { GRIZZLY_HILLS },
@@ -765,6 +773,28 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			["description"] = "Eat this before it despawns!",
 			["maps"] = { SHOLAZAR_BASIN },
 			["_noautomation"] = true,
+		}),
+		i(40199, {	-- Pygmy Suckerfish
+			["maps"] = {
+				BOREAN_TUNDRA,
+				CRYSTALSONG_FOREST,
+				DRAGONBLIGHT,
+				GRIZZLY_HILLS,
+				HOWLING_FJORD,
+				SHOLAZAR_BASIN,
+			},
+			["providers"] = {
+				{ "o", 192051 },	-- Borean Man O' War School
+				{ "o", 192053 },	-- Deep Sea Monsterbelly School
+				{ "o", 192048 },	-- Dragonfin Angelfish School
+				{ "o", 192049 },	-- Fangtooth Herring School
+				{ "o", 192050 },	-- Glacial Salmon School
+				{ "o", 192059 },	-- Glassfin Minnow School
+				{ "o", 192052 },	-- Imperial Manta Ray School
+				{ "o", 192054 },	-- Moonglow Cuttlefish School
+				{ "o", 192046 },	-- Musselback Sculpin School
+				{ "o", 192057 },	-- Nettlefish School
+			},
 		}),
 		i(44475, {	-- Reinforced Crate
 			["providers"] = {

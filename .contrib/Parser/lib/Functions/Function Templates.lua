@@ -135,8 +135,8 @@ FUNCTION_TEMPLATES = {
 		ExportDB.OnUpdateDB[OnUpdateName] = [[~function(t) if not C_QuestLog.IsOnQuest(]]..questID..[[) then t.visible = false; return true; end end]]
 		return [[_.OnUpdateDB.]]..OnUpdateName..[[]]
 	end,
-	GenerateOnUpdateForRepeatableQuestWithCost = function(repPerTurnIn, count)
-		local OnUpdateName = "OnUpdateForRepeatableQuestWithCost"..repPerTurnIn
+	GenerateOnUpdateForRepeatableQuestClassicReputationWithCost = function(repPerTurnIn, count)
+		local OnUpdateName = "OnUpdateRRQCR"..repPerTurnIn
 		if count then
 			OnUpdateName = OnUpdateName.."x"..count
 			ExportDB.OnUpdateDB[OnUpdateName] = [[~function(t)
@@ -152,6 +152,34 @@ FUNCTION_TEMPLATES = {
 				if cost and maxReputation then
 					t.repPerTurnIn, t.remainingTurnIns, t.totalTurnIns = _.Modules.FactionData.CalculateRemainingTurnIns(_.WOWAPI.GetFactionCurrentReputation(maxReputation[1]), ]] .. repPerTurnIn .. [[, maxReputation[2]);
 					cost[1][3] = t.remainingTurnIns;
+				end
+			end]];
+		end
+		return [[_.OnUpdateDB.]]..OnUpdateName..[[]];
+	end,
+	GenerateOnUpdateForRepeatableQuestBuddyReputationWithCost = function(repPerTurnIn, count)
+		local OnUpdateName = "OnUpdateRRQBR"..repPerTurnIn
+		if count then
+			OnUpdateName = OnUpdateName.."x"..count
+			ExportDB.OnUpdateDB[OnUpdateName] = [[~function(t)
+				local cost, maxReputation = t.cost, t.maxReputation;
+				if cost and maxReputation then
+					local info = _.WOWAPI.GetFriendshipReputation(maxReputation[1]);
+					if info then
+						t.repPerTurnIn, t.remainingTurnIns, t.totalTurnIns = _.Modules.FactionData.CalculateRemainingTurnIns(info.standing, ]] .. repPerTurnIn .. [[, info.maxRep);
+						cost[1][3] = t.remainingTurnIns * ]] .. count .. [[;
+					end
+				end
+			end]];
+		else
+			ExportDB.OnUpdateDB[OnUpdateName] = [[~function(t)
+				local cost, maxReputation = t.cost, t.maxReputation;
+				if cost and maxReputation then
+					local info = _.WOWAPI.GetFriendshipReputation(maxReputation[1]);
+					if info then
+						t.repPerTurnIn, t.remainingTurnIns, t.totalTurnIns = _.Modules.FactionData.CalculateRemainingTurnIns(info.standing, ]] .. repPerTurnIn .. [[, info.maxRep);
+						cost[1][3] = t.remainingTurnIns;
+					end
 				end
 			end]];
 		end

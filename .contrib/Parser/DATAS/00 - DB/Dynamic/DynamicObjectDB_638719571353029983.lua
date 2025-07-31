@@ -1,4 +1,4 @@
-﻿local ObjectDB = ObjectDB; for objectID,objectData in pairs({
+local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[452866] = {
 		readable = "Semi-Deluxe Noggenfogger Elixirs",
 		model = 1310398,

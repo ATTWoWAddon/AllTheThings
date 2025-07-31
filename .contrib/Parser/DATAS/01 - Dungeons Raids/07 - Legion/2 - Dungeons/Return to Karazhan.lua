@@ -16,9 +16,9 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					["coord"] = { 46.9, 75.3, DEADWIND_PASS },
 				}),
 				q(44764, {	-- Demon in Disguise
+					["sourceQuest"] = 44686,	-- Thought Collection
 					["qg"] = 114631,	-- Archmage Karlain <Kirin Tor>
 					["coord"] = { 46.9, 75.3, DEADWIND_PASS },
-					["sourceQuest"] = 44686,	-- Thought Collection
 					["lvl"] = 110,
 				}),
 				q(44557, {	-- Finite Numbers
@@ -27,8 +27,8 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					["lvl"] = 110,
 				}),
 				q(44734, {	-- Fragments of the Past
-					["qg"] = 114310,	-- Archmage Khadgar
 					["sourceQuest"] = 44733,	-- The Power of Corruption
+					["qg"] = 114310,	-- Archmage Khadgar
 					["coord"] = { 47.0, 75.2, DEADWIND_PASS },
 					["lvl"] = 110,
 					["groups"] = {
@@ -41,20 +41,20 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					["lvl"] = 110,
 				}),
 				q(45296, {	-- No Bones About It
-					["provider"] = { "i", 143556 },	-- Charred Bone Fragments
-					["sourceQuest"] = 45295,	-- Return to Karazhan: Clearing Out the Cobwebs
 					["description"] = "You must complete the full quest chain before the quest item will drop from the boss.",
+					["sourceQuest"] = 45295,	-- Return to Karazhan: Clearing Out the Cobwebs
+					["provider"] = { "i", 143556 },	-- Charred Bone Fragments
 					["groups"] = {
 						i(142469),	-- Violet Seal of the Grand Magus
 					},
 				}),
 				q(44685, {	-- Reclaiming the Ramparts
-					["qg"] = 114310,	-- Archmage Khadgar
 					["sourceQuests"] = {
 						44684,	-- Corruption Runs Deep
 						44557,	-- Finite Numbers
 						44683,	-- Holding the Lines
 					},
+					["qg"] = 114310,	-- Archmage Khadgar
 					["coord"] = { 47.0, 75.2, DEADWIND_PASS },
 					["lvl"] = 110,
 				}),
@@ -65,23 +65,23 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					["lvl"] = 110,
 				}),
 				q(45291, {	-- Return to Karazhan: Book Wyrms
-					["qg"] = 18255,	-- Mage Darius
 					["sourceQuests"] = {
 						44734,	-- Fragments of the Past
 						44735,	-- Return to Karazhan: In the Eye of the Beholder
 					},
+					["qg"] = 18255,	-- Mage Darius
 					["coord"] = { 47.3, 75.0, DEADWIND_PASS },
 					["lvl"] = 110,
 				}),
 				q(45295, {	-- Return to Karazhan: Clearing Out the Cobwebs
-					["qg"] = 18255,	-- Mage Darius
 					["sourceQuest"] = 45294,	-- Return to Karazhan: High Stress Hiatus
+					["qg"] = 18255,	-- Mage Darius
 					["coord"] = { 47.3, 75.0, DEADWIND_PASS },
 					["lvl"] = 110,
 				}),
 				q(45294, {	-- Return to Karazhan: High Stress Hiatus
-					["qg"] = 18255,	-- Mage Darius
 					["sourceQuest"] = 45293,	-- Return to Karazhan: New Shoes
+					["qg"] = 18255,	-- Mage Darius
 					["coord"] = { 47.3, 75.0, DEADWIND_PASS },
 					["lvl"] = 110,
 					["groups"] = {
@@ -89,8 +89,8 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					},
 				}),
 				q(44735, {	-- Return to Karazhan: In the Eye of the Beholder
-					["qg"] = 114310,	-- Archmage Khadgar
 					["sourceQuest"] = 44733,	-- The Power of Corruption
+					["qg"] = 114310,	-- Archmage Khadgar
 					["coord"] = { 47.3, 75.0, DEADWIND_PASS },
 					["lvl"] = 110,
 				}),
@@ -98,13 +98,13 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					["provider"] = { "i", 142246 },	-- Broken Pocket Watch
 				}),
 				q(45293, {	-- Return to Karazhan: New Shoes
-					["qg"] = 18255,	-- Mage Darius
 					["sourceQuest"] = 45292,	-- Return to Karazhan: Rebooting the Cleaner
+					["qg"] = 18255,	-- Mage Darius
 					["lvl"] = 110,
 				}),
 				q(45292, {	-- Return to Karazhan: Rebooting the Cleaner
-					["qg"] = 18255,	-- Mage Darius
 					["sourceQuest"] = 45291,	-- Return to Karazhan: Book Wyrms
+					["qg"] = 18255,	-- Mage Darius
 					["coord"] = { 47.3, 75.0, DEADWIND_PASS },
 					["lvl"] = 110,
 					["groups"] = {
@@ -112,18 +112,18 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					},
 				}),
 				q(44733, {	-- The Power of Corruption
-					["qg"] = 114310,	-- Archmage Khadgar
 					["sourceQuest"] = 44764,	-- Demon in Disguise
+					["qg"] = 114310,	-- Archmage Khadgar
 					["coord"] = { 46.9, 75.2, DEADWIND_PASS },
 					["lvl"] = 110,
 				}),
 				q(44686, {	-- Thought Collection
-					["qg"] = 114631,	-- Archmage Karlain <Kirin Tor>
 					["sourceQuests"] = {
 						44684,	-- Corruption Runs Deep
 						44557,	-- Finite Numbers
 						44683,	-- Holding the Lines
 					},
+					["qg"] = 114631,	-- Archmage Karlain <Kirin Tor>
 					["coord"] = { 46.9, 75.3, DEADWIND_PASS },
 					["lvl"] = 110,
 				}),

@@ -391,9 +391,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				}),
 				q(63722, {	-- Keepers of Korthia
 					["sourceQuests"] = { 63714 },	-- To the Vault
-					["providers"] = {
-						{ "n", 177459 },	-- Protector Kah-Rev
-						{ "n", 178640 },	-- Protector Kah-Rev (Follower)
+					["qgs"] = {
+						177459,	-- Protector Kah-Rev
+						178640,	-- Protector Kah-Rev (Follower)
 					},
 					["coord"] = { 49.5, 65.0, KORTHIA },
 				}),
@@ -592,10 +592,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					["coord"] = { 63.4, 24.6, KORTHIA },
 				}),
 				q(63728, {	-- Hunting Amid Houses [Kyrian, Necrolord, Venthyr]
+					["description"] = "Non-Night Fae version.",
 					["sourceQuests"] = { 63672 },	-- A Cry From the Heart
 					["provider"] = { "n", 177434 },	-- Ysera
 					["coord"] = { 47.8, 53.5, ARDENWEALD },
-					["description"] = "Non-Night Fae version.",
 				}),
 				q(63673, {	-- Hunting Amid Houses [Night Fae]
 					["sourceQuests"] = { 63672 },	-- A Cry From the Heart
@@ -671,17 +671,17 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				}),
 				q(63680, {	-- Out On the Edge
 					["sourceQuests"] = { 64090 },	-- The Big Squeeze
-					["providers"] = {
-						{ "n", 177964 },	-- Lady Moonberry <Inconspicuous Stone Fiend>
-						{ "n", 177967 },	-- Lady Moonberry <Inconspicuous Stone Fiend>
+					["qgs"] = {
+						177964,	-- Lady Moonberry <Inconspicuous Stone Fiend>
+						177967,	-- Lady Moonberry <Inconspicuous Stone Fiend>
 					},
 					["coord"] = { 35.6, 22.6, REVENDRETH },
 				}),
 				q(63681, {	-- Back to The Heart
 					["sourceQuests"] = { 63680 },	-- Out On the Edge
-					["providers"] = {
-						{ "n", 177962 },	-- Lady Moonberry <Court of Night>
-						{ "n", 177964 },	-- Lady Moonberry <Inconspicuous Stone Fiend>
+					["qgs"] = {
+						177962,	-- Lady Moonberry <Court of Night>
+						177964,	-- Lady Moonberry <Inconspicuous Stone Fiend>
 					},
 					["coord"] = { 34.0, 9.65, REVENDRETH },
 				}),
@@ -706,9 +706,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				}),
 				q(64437, {	-- Inform the Primus
 					["sourceQuests"] = { 63683 },	-- Winter's Sigil
-					["providers"] = {
-						{ "n", 160262 },	-- Ysera [Heart of the Forest]
-						{ "n", 177434 },	-- Ysera [Ardenweald]
+					["qgs"] = {
+						160262,	-- Ysera [Heart of the Forest]
+						177434,	-- Ysera [Ardenweald]
 					},
 					["coords"] = {
 						{ 45.2, 39.6, THE_TRUNK },	-- Ysera [Heart of the Forest]
@@ -851,12 +851,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				}),
 				------ Miscellaneous ------
 				q(63623, {	-- Filling an Empty Throne
-					["customCollect"] = "SL_COV_NEC",	-- Necrolord
 					["sourceQuests"] = { 63622 },	-- Victory in Our Name
 					["provider"] = { "n", 177194 },	-- The Primus
 					["coord"] = { 63.1, 25.3, KORTHIA },
-					-- Not really a breadcrumb quest, but if you complete the chain NOT as Necrolord, you are unable to come back and do this quest
 					["lockCriteria"] = { 1, "questID", 63659 },	-- Dreadlords!
+					["customCollect"] = "SL_COV_NEC",	-- Necrolord
+					-- Not really a breadcrumb quest, but if you complete the chain NOT as Necrolord, you are unable to come back and do this quest
 				}),
 				q(63655, {	-- Medallion of Wrath
 					["sourceQuests"] = { 63654 },	-- The Nathrezim
@@ -886,14 +886,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 			q(63731, {	-- Researching Korthian Relics
 				["description"] = "The item that starts this quest can be looted from any treasure chest or rare in Korthia.",
 				["sourceQuests"] = { 63662 },	-- Mysteries of the Maw
-				["provider"] = { "i", 187177 },	-- Researching Korthian Relics
 				["altQuests"] = { 64567 },	-- The Missing Scholar
+				["provider"] = { "i", 187177 },	-- Researching Korthian Relics
 				["isBreadcrumb"] = true,
 			}),
 			q(64567, {	-- The Missing Scholar
+				["altQuests"] = { 63731 },	-- Researching Korthian Relics
 				["provider"] = { "n", 177927 },	-- Tal-Galan
 				["coord"] = { 62.7, 24.8, KORTHIA },
-				["altQuests"] = { 63731 },	-- Researching Korthian Relics
 				["isBreadcrumb"] = true,
 			}),
 			q(63732, {	-- Interrupt the Interrogations
@@ -1133,8 +1133,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 			q(63915, {	-- Drum of the Death Loa
 				["provider"] = { "o", 369287 },	-- Drum of the Death Loa
 				["coord"] = { 52.3, 34.0, KORTHIA },
-				["cost"] = { { "i", 186718, 1 } },	-- Teleporter Repair Kit
 				["minReputation"] = { FACTION_THE_ARCHIVISTS_CODEX, 3 },	-- Tier 3
+				["cost"] = { { "i", 186718, 1 } },	-- Teleporter Repair Kit
 				["groups"] = {
 					i(187204),	-- Drum of the Death Loa (QI!)
 				},
@@ -1142,14 +1142,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 			q(63917, {	-- Everliving Statuette
 				["provider"] = { "i", 187103 },	-- Everliving Statuette
 				["coord"] = { 39.3, 52.4, KORTHIA },
-				["cost"] = { { "i", 186718, 1 } },	-- Teleporter Repair Kit
 				["minReputation"] = { FACTION_THE_ARCHIVISTS_CODEX, 3 },	-- Tier 3
+				["cost"] = { { "i", 186718, 1 } },	-- Teleporter Repair Kit
 			}),
 			q(63916, {	-- Sack of Strange Soil
 				["provider"] = { "o", 369288 },	-- Sack of Strange Soil
 				["coord"] = { 55.3, 28.6, KORTHIA },
-				["cost"] = { { "i", 186718, 1 } },	-- Teleporter Repair Kit
 				["minReputation"] = { FACTION_THE_ARCHIVISTS_CODEX, 3 },	-- Tier 3
+				["cost"] = { { "i", 186718, 1 } },	-- Teleporter Repair Kit
 				["groups"] = {
 					i(187205),	-- Sack of Strange Soil (QI!)
 				},
@@ -1157,8 +1157,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 			q(63918, {	-- Obelisk of Dark Tidings
 				["provider"] = { "i", 187104 },	-- Obelisk of Dark Tidings
 				["coord"] = { 45.0, 35.5, KORTHIA },
-				["cost"] = { { "i", 186718, 1 } },	-- Teleporter Repair Kit
 				["minReputation"] = { FACTION_THE_ARCHIVISTS_CODEX, 3 },	-- Tier 3
+				["cost"] = { { "i", 186718, 1 } },	-- Teleporter Repair Kit
 			}),
 			q(64526, {	-- Mysterious Rifts
 				["sourceQuests"] = { 64519 },	-- Lost Vaults
@@ -1481,8 +1481,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 			q(63788, {	-- Continued Efforts: Sanctuary of Guidance
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance
 				["provider"] = { "n", 178800 },	-- Voitha
-				["isDaily"] = true,
 				["coord"] = { 61.7, 23.7, KORTHIA },
+				["isDaily"] = true,
 			}),
 			q(63789, {	-- Continued Efforts: Scholar's Den
 				["sourceQuests"] = { 64556 },	-- In Need of Assistance

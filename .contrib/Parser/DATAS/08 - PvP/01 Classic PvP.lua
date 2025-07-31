@@ -627,8 +627,8 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 				-- #endif
 			}),
 			q(8385, {	-- Concerted Efforts
-				["qg"] = 15351,	-- Alliance Brigadier General
 				["sourceQuest"] = 8371,	-- Concerted Efforts
+				["qg"] = 15351,	-- Alliance Brigadier General
 				["coords"] = {
 					{ 57.8, 34.6, DARNASSUS },
 					{ 69.8, 90, IRONFORGE },
@@ -701,8 +701,8 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 				-- #endif
 			}),
 			q(8388, {	-- For Great Honor
-				["qg"] = 15350,	-- Horde Warbringer
 				["sourceQuest"] = 8367,	-- For Great Honor
+				["qg"] = 15350,	-- Horde Warbringer
 				["coords"] = {
 					{ 79.8, 30.4, ORGRIMMAR },
 					{ 56.0, 76.7, THUNDER_BLUFF },

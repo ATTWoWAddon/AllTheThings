@@ -401,9 +401,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						DF_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["sourceQuestNumRequired"] = 1,
-					["providers"] = {
-						{ "n", 187678 },	-- Alexstrasza the Life-Binder
-						{ "n", 190902 },	-- Alexstrasza the Life-Binder
+					["qgs"] = {
+						187678,	-- Alexstrasza the Life-Binder
+						190902,	-- Alexstrasza the Life-Binder
 					},
 					["coords"] = {
 						{ 72.5, 56.2, THALDRASZUS },
@@ -412,12 +412,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				------ Chapter 4 ------
 				q(70437, {	-- To Tyrhold
-					["sourceQuestNumRequired"] = 1,
 					["sourceQuests"] = {
 						66221,	-- Moving On
 						66159,	-- A Message Most Dire
 						DF_ACCOUNT_CAMPAIGN_QUEST,
 					},
+					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 187678 },	-- Alexstrasza the Life-Binder
 					["coord"] = { 58.4, 35.4, VALDRAKKEN },
 				}),
@@ -1143,9 +1143,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["icon"] = 5205847,
 				["groups"] = {
 					q(76423, {	-- No Limits
-						["providers"] = {
-							{ "n", 208035 },	-- Chromie
-							{ "n", 208086 },	-- Chromie
+						["qgs"] = {
+							208035,	-- Chromie
+							208086,	-- Chromie
 						},
 						["coords"] = {
 							{ 60.9, 40.0, VALDRAKKEN },

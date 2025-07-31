@@ -52,8 +52,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["lvl"] = 60,
 						}),
 						q(8447, {	-- Waking Legends
-							["qg"] = 11832,	-- Keeper Remulos
 							["sourceQuest"] = 8446,	-- Shrouded in Nightmare
+							["qg"] = 11832,	-- Keeper Remulos
 							["coord"] = { 36.18, 41.79, MOONGLADE },
 							["lvl"] = 60,
 							["groups"] = {
@@ -134,8 +134,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["maps"] = { MOONGLADE },
 				}),
 				q(86680, {	-- Waking Legends
-					["qg"] = 11832,	-- Keeper Remulos
 					["sourceQuest"] = 86679,	-- Shrouded in Nightmare
+					["qg"] = 11832,	-- Keeper Remulos
 					["coord"] = { 36.2, 41.8, MOONGLADE },
 					["groups"] = {
 						i(234155),	-- Malfurion's Signet Ring

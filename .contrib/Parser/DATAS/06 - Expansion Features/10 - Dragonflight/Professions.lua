@@ -33,8 +33,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 		}),
 		n(QUESTS, {
 			q(67564, {	-- Artisan's Courier
-				["provider"] = { "n", 192498 },	-- Haephesta
 				-- ["sourceQuests"] = { 66114 },	-- For the Benefit of the Queen
+				["provider"] = { "n", 192498 },	-- Haephesta
 				["coord"] = { 57.9, 68.2, THE_WAKING_SHORES },
 				["groups"] = {
 					i(198790),	-- I.O.U
@@ -42,8 +42,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				},
 			}),
 			q(67100, {	-- A Gift for Miguel
-				["provider"] = { "n", 192574 },	-- Thomas Bright
 				["sourceQuests"] = { 67564 },	-- Artisan's Courier
+				["provider"] = { "n", 192574 },	-- Thomas Bright
 				["coords"] = {
 					{ 60.2, 72.2, THE_WAKING_SHORES },
 					{ 71.7, 81.2, OHNAHRAN_PLAINS },
@@ -54,8 +54,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				},
 			}),
 			q(67143, {	-- To Give One's Heart
-				["provider"] = { "n", 192574 },	-- Thomas Bright
 				["sourceQuests"] = { 67100 },	-- A Gift for Miguel
+				["provider"] = { "n", 192574 },	-- Thomas Bright
 				["coords"] = {
 					{ 60.2, 72.2, THE_WAKING_SHORES },
 					{ 71.7, 81.2, OHNAHRAN_PLAINS },
@@ -86,8 +86,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				},
 			}),
 			q(67137, {	-- Professionally Equipped
-				["provider"] = { "n", 192539 },	-- Miguel Bright
 				["sourceQuests"] = { 67100 },	-- A Gift for Miguel
+				["provider"] = { "n", 192539 },	-- Miguel Bright
 				["coords"] = {
 					{ 60.2, 72.2, THE_WAKING_SHORES },
 					{ 71.7, 81.2, OHNAHRAN_PLAINS },
@@ -105,15 +105,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				},
 			}),
 			q(70126, {	-- A Finishing Touch
-				["provider"] = { "n", 192539 },	-- Miguel Bright
+				["description"] = "Even though Miguel can be found in numerous places around the Dragon Isles, this quest is only offered in Valdrakken once the Dragon Shard of Knowledge chain has been completed.",
 				["sourceQuests"] = {
 					69979,	-- A Worthy Hunt
 					67298,	-- The Wonders of the World
 					DF_ACCOUNT_CAMPAIGN_QUEST,
 				},
 				["sourceQuestNumRequired"] = 1,
+				["provider"] = { "n", 192539 },	-- Miguel Bright
 				["coord"] = { 39.4, 69.8, VALDRAKKEN },
-				["description"] = "Even though Miguel can be found in numerous places around the Dragon Isles, this quest is only offered in Valdrakken once the Dragon Shard of Knowledge chain has been completed.",
 				["groups"] = {
 					i(197765),	-- Impossibly Sharp Cutting Knife
 					i(191516),	-- Brood Salt
@@ -121,8 +121,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				},
 			}),
 			q(67295, {	-- That's My Specialty
-				["provider"] = { "n", 192539 },	-- Miguel Bright
 				-- ["sourceQuests"] = { 70126 },	-- A Finishing Touch
+				["provider"] = { "n", 192539 },	-- Miguel Bright
 				["coords"] = {
 					{ 60.2, 72.2, THE_WAKING_SHORES },
 					{ 71.7, 81.2, OHNAHRAN_PLAINS },
@@ -132,8 +132,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				},
 			}),
 			q(67298, {	-- The Wonders of the World
-				["provider"] = { "n", 192539 },	-- Miguel Bright
 				["sourceQuests"] = { 67295 },	-- That's My Specialty
+				["provider"] = { "n", 192539 },	-- Miguel Bright
 				["coords"] = {
 					{ 60.2, 72.2, THE_WAKING_SHORES },
 					{ 71.7, 81.2, OHNAHRAN_PLAINS },
@@ -144,8 +144,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				},
 			}),
 			q(69946, {	-- The Master of Their Craft
-				["provider"] = { "n", 192539 },	-- Miguel Bright
 				["sourceQuests"] = { 67298 },	-- The Wonders of the World
+				["provider"] = { "n", 192539 },	-- Miguel Bright
 				["coords"] = {
 					{ 60.2, 72.2, THE_WAKING_SHORES },
 					{ 71.7, 81.2, OHNAHRAN_PLAINS },
@@ -155,8 +155,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				},
 			}),
 			q(69979, {	-- A Worthy Hunt
-				["provider"] = { "n", 193110 },	-- Khadin
 				["sourceQuests"] = { 69946 },	-- The Master of Their Craft
+				["provider"] = { "n", 193110 },	-- Khadin
 				["coord"] = { 51.7, 33, OHNAHRAN_PLAINS },
 				["groups"] = {
 					i(191784),	-- Dragon Shard of Knowledge
@@ -246,62 +246,62 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["isBreadcrumb"] = true,	-- unconfirmed
 				}),
 				q(70180, {	-- Jump-Start? Jump-Starting!
-					["provider"] = { "n", 196066 },	-- Greyzik Cobblefinger
 					["sourceQuests"] = { 72773 },	-- Learning Ingenuity
+					["provider"] = { "n", 196066 },	-- Greyzik Cobblefinger
 					["coord"] = { 84.2, 54.4, VALDRAKKEN },
 				}),
 				------ Chapter 2 ------
 				q(70845, {	-- In Tyr's Footsteeps
-					["provider"] = { "n", 196475 },	-- Maiden of Inspiration
 					["sourceQuests"] = { 70180 },	-- Jump-Start? Jump-Starting!
+					["provider"] = { "n", 196475 },	-- Maiden of Inspiration
 					["coord"] = { 84.3, 53.5, VALDRAKKEN },
 				}),
 				q(70181, {	-- First Challenge of Tyr: Finesse
-					["provider"] = { "o", 379290 },	-- Ornamented Statue
 					["sourceQuests"] = { 70845 },	-- In Tyr's Footsteeps
+					["provider"] = { "o", 379290 },	-- Ornamented Statue
 					["coord"] = { 67.2, 30.8, THE_AZURE_SPAN },
 					["groups"] = {
 						i(199197),	-- Bottled Essence
 					},
 				}),
 				q(70182, {	-- The Sweet Taste of Victory
-					["provider"] = { "n", 195827 },	-- Maiden of Inspiration
 					["sourceQuests"] = { 70181 },	-- First Challenge of Tyr: Finesse
+					["provider"] = { "n", 195827 },	-- Maiden of Inspiration
 					["coord"] = { 67.1, 30.9, THE_AZURE_SPAN },
 				}),
 				q(70633, {	-- Fueling the Engine
-					["provider"] = { "n", 196475 },	-- Maiden of Inspiration
 					["sourceQuests"] = { 70182 },	-- The Sweet Taste of Victory
+					["provider"] = { "n", 196475 },	-- Maiden of Inspiration
 					["coord"] = { 84.3, 53.5, VALDRAKKEN },
 				}),
 				------ Chapter 3 ------
 				q(70339, {	-- In Tyr's Footsteps: The Ohn'ahran Plains
-					["provider"] = { "n", 196475 },	-- Maiden of Inspiration
 					["sourceQuests"] = { 70181 },	-- First Challenge of Tyr: Finesse
+					["provider"] = { "n", 196475 },	-- Maiden of Inspiration
 					["coord"] = { 84.3, 53.5, VALDRAKKEN },
 				}),
 				q(70376, {	-- Second Challenge of Tyr: Might
-					["provider"] = { "o", 380540 },	-- Ornamented Statue
 					["sourceQuests"] = { 70339 },	-- In Tyr's Footsteps: The Ohn'ahran Plains
+					["provider"] = { "o", 380540 },	-- Ornamented Statue
 					["coord"] = { 66.2, 55.3, OHNAHRAN_PLAINS },
 					["groups"] = {
 						i(199197),	-- Bottled Essence
 					},
 				}),
 				q(70341, {	-- Well Earned Vicotry
-					["provider"] = { "n", 195924 },	-- Maiden of Inspiration
 					["sourceQuests"] = { 70376 },	-- Second Challenge of Tyr: Might
+					["provider"] = { "n", 195924 },	-- Maiden of Inspiration
 					["coord"] = { 66.3, 55.3, VALDRAKKEN },
 				}),
 				------ Chapter 4 ------
 				q(70650, {	-- In Tyr's Footsteps: The Waking Shores
-					["provider"] = { "n", 196475 },	-- Maiden of Inspiration
 					["sourceQuests"] = { 70376 },	-- Second Challenge of Tyr: Might
+					["provider"] = { "n", 196475 },	-- Maiden of Inspiration
 					["coord"] = { 84.3, 53.5, VALDRAKKEN },
 				}),
 				q(70509, {	-- Third Challenge of Tyr: Persistence
-					["provider"] = { "o", 380918 },	-- Broken Ornamented Statue
 					["sourceQuests"] = { 70650 },	-- In Tyr's Footsteps: The Waking Shores
+					["provider"] = { "o", 380918 },	-- Broken Ornamented Statue
 					["coord"] = { 63.9, 41.5, THE_WAKING_SHORES },
 					["groups"] = {
 						i(198983),	-- Broken Part: Arm (QI!)
@@ -310,22 +310,22 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					},
 				}),
 				q(70621, {	-- Third Challenge of Tyr: Persistence Embodied
-					["provider"] = { "n", 195737 },	-- Maiden of Inspiration
 					["sourceQuests"] = { 70509 },	-- Third Challenge of Tyr: Persistence
+					["provider"] = { "n", 195737 },	-- Maiden of Inspiration
 					["coord"] = { 64, 41.3, THE_WAKING_SHORES },
 					["groups"] = {
 						i(199197),	-- Bottled Essence
 					},
 				}),
 				q(70510, {	-- Victorious
-					["provider"] = { "n", 195737 },	-- Maiden of Inspiration
 					["sourceQuests"] = { 70621 },	-- Third Challenge of Tyr: Persistence Embodied
+					["provider"] = { "n", 195737 },	-- Maiden of Inspiration
 					["coord"] = { 64, 41.3, THE_WAKING_SHORES },
 				}),
 				------ Chapter 5 ------
 				q(70881, {	-- Fourth Challenge of Tyr: Resourcefulness
-					["provider"] = { "n", 196475 },	-- Maiden of Inspiration
 					["sourceQuests"] = { 70510 },	-- Victorious
+					["provider"] = { "n", 196475 },	-- Maiden of Inspiration
 					["coord"] = { 83.9, 53.2, VALDRAKKEN },
 					["maps"] = { 2082, 2083 },	-- Halls of Infusion
 					["groups"] = {
@@ -335,8 +335,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 				------ Chapter 6 ------
 				q(70899, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {	-- Fifth Challenge of Tyr: Ingenuity
-					["provider"] = { "n", 196475 },	-- Maiden of Inspiration
 					["sourceQuests"] = { 70881 },	-- Fourth Challenge of Tyr: Resourcefulness
+					["provider"] = { "n", 196475 },	-- Maiden of Inspiration
 					["coord"] = { 83.9, 53.2, VALDRAKKEN },
 					["groups"] = {
 						i(199197),	-- Bottled Essence
@@ -344,15 +344,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					},
 				})),
 				q(70900, {	-- Innovating the Engine
-					["provider"] = { "n", 196475 },	-- Maiden of Inspiration
 					["sourceQuests"] = { 70899 },	-- Fifth Challenge of Tyr: Ingenuity
+					["provider"] = { "n", 196475 },	-- Maiden of Inspiration
 					["coord"] = { 83.9, 53.2, VALDRAKKEN },
 					["timeline"] = { ADDED_10_0_5 },
 				}),
 					-- Alt Skip --
 				q(72339, {	-- Engine of Innovation
-					["provider"] = { "n", 196475 },	-- Maiden of Inspiration
 					["altQuests"] = { 70900 },	-- Innovating the Engine
+					["provider"] = { "n", 196475 },	-- Maiden of Inspiration
 					["coord"] = { 83.9, 53.2, VALDRAKKEN },
 					["timeline"] = { ADDED_10_0_5 },
 					["DisablePartySync"] = true,

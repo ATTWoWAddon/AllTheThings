@@ -53,11 +53,11 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			["lvl"] = 40,
 		}, {
 			q(5141, {	-- Dragonscale Leatherworking [A]
-				["qg"] = 7866,	-- Peter Galen
 				["altQuests"] = {
 					5144,	-- Elemental Leatherworking
 					5143,	-- Tribal Leatherworking
 				},
+				["qg"] = 7866,	-- Peter Galen
 				["coord"] = { 37.4, 65.4, AZSHARA },
 				["cost"] = {
 					{ "i", 8203, 2 },	-- Tough Scorpid Breastplate
@@ -69,11 +69,11 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(5145, {	-- Dragonscale Leatherworking [H]
-				["qg"] = 7867,	-- Thorkaf Dragoneye
 				["altQuests"] = {
 					5146,	-- Elemental Leatherworking
 					5148,	-- Tribal Leatherworking
 				},
+				["qg"] = 7867,	-- Thorkaf Dragoneye
 				["coord"] = { 62.6, 57.4, BADLANDS },
 				["cost"] = {
 					{ "i", 8203, 2 },	-- Tough Scorpid Breastplate
@@ -85,11 +85,11 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["races"] = HORDE_ONLY,
 			}),
 			q(5144, {	-- Elemental Leatherworking [A]
-				["qg"] = 7868,	-- Sarah Tanner
 				["altQuests"] = {
 					5141,	-- Dragonscale Leatherworking
 					5143,	-- Tribal Leatherworking
 				},
+				["qg"] = 7868,	-- Sarah Tanner
 				["coord"] = { 63.6, 76.0, SEARING_GORGE },
 				["cost"] = {
 					{ "i", 7081, 2 },	-- Breath of Wind
@@ -102,11 +102,11 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(5146, {	-- Elemental Leatherworking [H]
-				["qg"] = 7869,	-- Brumn Winterhoof
 				["altQuests"] = {
 					5145,	-- Dragonscale Leatherworking
 					5148,	-- Tribal Leatherworking
 				},
+				["qg"] = 7869,	-- Brumn Winterhoof
 				["coord"] = { 28.2, 45.0, ARATHI_HIGHLANDS },
 				["cost"] = {
 					{ "i", 7081, 2 },	-- Breath of Wind
@@ -119,12 +119,12 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["races"] = HORDE_ONLY,
 			}),
 			q(5143, {	-- Tribal Leatherworking [A]
-				["qg"] = 7870,	-- Caryssia Moonhunter
+				["sourceQuest"] = 2853,	-- Master of the Wild Leather [A]
 				["altQuests"] = {
 					5141,	-- Dragonscale Leatherworking
 					5144,	-- Elemental Leatherworking
 				},
-				["sourceQuest"] = 2853,	-- Master of the Wild Leather [A]
+				["qg"] = 7870,	-- Caryssia Moonhunter
 				["coord"] = { 89.4, 46.5, FERALAS },
 				["cost"] = {
 					{ "i", 8214, 1 },	-- Wild Leather Helmet
@@ -135,12 +135,12 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(5148, {	-- Tribal Leatherworking [H]
-				["qg"] = 7871,	-- Se'Jib
+				["sourceQuest"] = 2860,	-- Master of the Wild Leather [H]
 				["altQuests"] = {
 					5145,	-- Dragonscale Leatherworking
 					5146,	-- Elemental Leatherworking
 				},
-				["sourceQuest"] = 2860,	-- Master of the Wild Leather [H]
+				["qg"] = 7871,	-- Se'Jib
 				["coord"] = { 36.6, 34.2, STRANGLETHORN_VALE },
 				["cost"] = {
 					{ "i", 8214, 1 },	-- Wild Leather Helmet
@@ -160,11 +160,11 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 	expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 		n(QUESTS, {
 			q(36176, {	-- A Call for Huntsman
+				["description"] = "This item can drop from any Draenor mob.",
 				["providers"] = {
 					{ "i", 114877 },	-- Dirty Note
 					{ "n", 75043 },		-- Karnoth
 				},
-				["description"] = "This item can drop from any Draenor mob.",
 				["timeline"] = { ADDED_6_0_2 },
 				["maps"] = {
 					FROSTFIRE_RIDGE,
@@ -178,8 +178,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(36505, {	-- A Warrior's Shroud
-				["provider"] = { "i", 116173 },	-- Tattered Frostwolf Shroud
 				["description"] = "This item can drop from any Draenor mob.",
+				["provider"] = { "i", 116173 },	-- Tattered Frostwolf Shroud
 				["timeline"] = { ADDED_6_0_2 },
 				["maps"] = {
 					FROSTFIRE_RIDGE,
@@ -218,8 +218,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			}),
 			q(40183, {	-- Over Your Head
-				["provider"] = { "n", 93523 },	-- Namha Moonwater
 				["sourceQuests"] = { 39958 },	-- Skin Deep
+				["provider"] = { "n", 93523 },	-- Namha Moonwater
 				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 				["groups"] = {
 					r(194739),	-- Battlebound Warhelm (RECIPE!)
@@ -239,19 +239,19 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			}),
 			q(40196, {	-- Adventuring Anxieties
-				["provider"] = { "n", 93523 },	-- Namha Moonwater
 				["sourceQuests"] = { 40183 },	-- Over Your Head
+				["provider"] = { "n", 93523 },	-- Namha Moonwater
 				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 			}),
 			q(40197, {	-- The Necessary Materials
-				["provider"] = { "n", 93523 },	-- Namha Moonwater
 				["sourceQuests"] = { 40196 },	-- Adventuring Anxieties
+				["provider"] = { "n", 93523 },	-- Namha Moonwater
 				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 				["cost"] = {{"i", 124113, 100 }},	-- 100x Stonehide Leather
 			}),
 			q(41889, {	-- Dazed of the Past
-				["provider"] = { "n", 93523 },	-- Namha Moonwater
 				["sourceQuests"] = { 40197 },	-- The Necessary Materials
+				["provider"] = { "n", 93523 },	-- Namha Moonwater
 				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 				["groups"] = {
 					r(196648),	-- Stonehide Leather Barding (RECIPE!)
@@ -270,23 +270,23 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			}),
 			q(40200, {	-- Battle Bonds [A]
-				["provider"] = { "n", 93523 },	-- Namha Moonwater
 				["sourceQuests"] = { 41889 },	-- Dazed of the Past
+				["provider"] = { "n", 93523 },	-- Namha Moonwater
 				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(40241, {	-- Battle Bonds [H]
-				["provider"] = { "n", 93523 },	-- Namha Moonwater
 				["sourceQuests"] = { 41889 },	-- Dazed of the Past
+				["provider"] = { "n", 93523 },	-- Namha Moonwater
 				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 				["races"] = HORDE_ONLY,
 			}),
 			q(40201, {	-- Playthings
-				["provider"] = { "n", 93523 },	-- Namha Moonwater
 				["sourceQuests"] = {
 					40200,	-- Battle Bonds [A]
 					40241,	-- Battle Bonds [H]
 				},
+				["provider"] = { "n", 93523 },	-- Namha Moonwater
 				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 				["groups"] = {
 					r(194776),	-- Leather Pet Bed (RECIPE!)
@@ -303,18 +303,18 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			}),
 			q(40180, {	-- Mail Men
-				["provider"] = { "n", 93523 },	-- Namha Moonwater
 				["sourceQuests"] = { 40183 },	-- Over Your Head
+				["provider"] = { "n", 93523 },	-- Namha Moonwater
 				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 			}),
 			q(40177, {	-- Leather Lady
-				["provider"] = { "n", 93523 },	-- Namha Moonwater
 				["sourceQuests"] = { 40183 },	-- Over Your Head
+				["provider"] = { "n", 93523 },	-- Namha Moonwater
 				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 			}),
 			q(40179, {	-- Stormheim Savagery
-				["provider"] = { "n", 93522 },	-- Diane Cannings
 				["sourceQuests"] = { 40177 },	-- Leather Lady
+				["provider"] = { "n", 93522 },	-- Diane Cannings
 				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 				["groups"] = {
 					r(194696),	-- Warhide Belt [Rank 1] (RECIPE!)
@@ -323,8 +323,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			}),
 			q(40178, {	-- Vestment Opportunity
-				["provider"] = { "n", 93522 },	-- Diane Cannings
 				["sourceQuests"] = { 40177 },	-- Leather Lady
+				["provider"] = { "n", 93522 },	-- Diane Cannings
 				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 				["groups"] = {
 					r(194702),	-- Warhide Jerkin [Rank 1] (RECIPE!)
@@ -332,8 +332,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			}),
 			q(40181, {	-- Black Rook Bandit
-				["provider"] = { "n", 98931 },	-- Thanid Glowergold
 				["sourceQuests"] = { 40180 },	-- Mail Men
+				["provider"] = { "n", 98931 },	-- Thanid Glowergold
 				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 				["groups"] = {
 					r(194736),	-- Battlebound Girdle [Rank 1] (RECIPE!)
@@ -342,8 +342,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			}),
 			q(40182, {	-- Too Good To Pass Up
-				["provider"] = { "n", 98931 },	-- Thanid Glowergold
 				["sourceQuests"] = { 40180 },	-- Mail Men
+				["provider"] = { "n", 98931 },	-- Thanid Glowergold
 				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 				["groups"] = {
 					r(194742),	-- Battlebound Hauberk [Rank 1] (RECIPE!)
@@ -351,12 +351,12 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			}),
 			q(40176, {	-- From Head to Toe
-				["provider"] = { "n", 93523 },	-- Namha Moonwater
 				["sourceQuests"] = {
 					40179,	-- Stormheim Savagery
 					40181,	-- Black Rook Bandit
 					40182,	-- Too Good To Pass Up
 				},
+				["provider"] = { "n", 93523 },	-- Namha Moonwater
 				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 				["groups"] = {
 					r(194741),	-- Battlebound Treads [Rank 1] (RECIPE!)
@@ -374,18 +374,18 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			}),
 			q(40187, {	-- Links in the Chain
-				["provider"] = { "n", 98931 },	-- Thanid Glowergold
 				["sourceQuests"] = { 40176 },	-- From Head to Toe
+				["provider"] = { "n", 98931 },	-- Thanid Glowergold
 				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 			}),
 			q(40184, {	-- Tauren Tanning
-				["provider"] = { "n", 93522 },	-- Diane Cannings
 				["sourceQuests"] = { 40176 },	-- From Head to Toe
+				["provider"] = { "n", 93522 },	-- Diane Cannings
 				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 			}),
 			q(40186, {	-- Drogbar Durability
-				["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 				["sourceQuests"] = { 40184 },	-- Tauren Tanning
+				["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 				["coord"] = { 36.8, 78.2, 750 },
 				["groups"] = {
 					r(194695),	-- Warhide Bindings [Rank 1] (RECIPE!)
@@ -393,8 +393,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			}),
 			q(40185, {	-- Shoulder the Burden
-				["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 				["sourceQuests"] = { 40184 },	-- Tauren Tanning
+				["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 				["coord"] = { 36.8, 78.2, 750 },
 				["groups"] = {
 					r(194697),	-- Warhide Shoulderguard [Rank 1] (RECIPE!)
@@ -402,25 +402,25 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			}),
 			q(40190, {	-- Hardening the Hide
-				["provider"] = { "n", 93522 },	-- Diane Cannings
 				["sourceQuests"] = {
 					40185,	-- Shoulder the Burden
 					40186,	-- Drogbar Durability
 				},
+				["provider"] = { "n", 93522 },	-- Diane Cannings
 				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 				["isBreadcrumb"] = true,
 			}),
 			q(40191, {	-- Stamped Stories
-				["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 				["sourceQuests"] = { 40190 },	-- Hardening the Hide
+				["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 				["coord"] = { 36.8, 78.2, 750 },
 				["groups"] = {
 					r(194710),	-- Warhide Jerkin [Rank 2] (RECIPE!)
 				},
 			}),
 			q(40192, {	-- Claw of the Land
-				["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 				["sourceQuests"] = { 40191 },	-- Stamped Stories
+				["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 				["coord"] = { 36.8, 78.2, 750 },
 				["groups"] = {
 					r(194704),	-- Warhide Belt [Rank 2] (RECIPE!)
@@ -429,8 +429,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			}),
 			q(40188, {	-- Best Served Cold
-				["provider"] = { "n", 98964 },	-- Celea
 				["sourceQuests"] = { 40187 },	-- Links in the Chain
+				["provider"] = { "n", 98964 },	-- Celea
 				["coord"] = { 47.4, 44.2, AZSUNA },
 				["groups"] = {
 					r(194735),	-- Battlebound Armbands [Rank 1] (RECIPE!)
@@ -438,8 +438,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			}),
 			q(40189, {	-- Naga Know-How
-				["provider"] = { "n", 98964 },	-- Celea
 				["sourceQuests"] = { 40187 },	-- Links in the Chain
+				["provider"] = { "n", 98964 },	-- Celea
 				["coord"] = { 47.4, 44.2, AZSUNA },
 				["groups"] = {
 					r(194737),	-- Battlebound Spaulders [Rank 1] (RECIPE!)
@@ -447,14 +447,14 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			}),
 			q(40193, {	-- Getting the Kinks Out
-				["provider"] = { "n", 98931 },	-- Thanid Glowergold
 				["sourceQuests"] = { 40189 },	-- Naga Know-How
+				["provider"] = { "n", 98931 },	-- Thanid Glowergold
 				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 				["isBreadcrumb"] = true,
 			}),
 			q(40194, {	-- Reclaimed Cargo
-				["provider"] = { "n", 98964 },	-- Celea
 				["sourceQuests"] = { 40193 },	-- Getting the Kinks Out
+				["provider"] = { "n", 98964 },	-- Celea
 				["coord"] = { 47.4, 44.2, AZSUNA },
 				["groups"] = {
 					r(194743),	-- Battlebound Armbands [Rank 2] (RECIPE!)
@@ -463,27 +463,27 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			}),
 			q(40195, {	-- A Daring Rescue
-				["provider"] = { "n", 98964 },	-- Celea
 				["sourceQuests"] = { 40194 },	-- Reclaimed Cargo
+				["provider"] = { "n", 98964 },	-- Celea
 				["coord"] = { 47.4, 44.2, AZSUNA },
 				["groups"] = {
 					i(130263),	-- Celea's Hauberk (QI!)
 				},
 			}),
 			q(40327, {	-- Testing the Metal
-				["provider"] = { "n", 99689 },	-- Taldranis
 				["sourceQuests"] = { 40195 },	-- A Daring Rescue
+				["provider"] = { "n", 99689 },	-- Taldranis
 				["coord"] = { 51.6, 58.0, AZSUNA },
 				["groups"] = {
 					r(194750),	-- Battlebound Hauberk [Rank 2] (RECIPE!)
 				},
 			}),
 			q(40198, {	-- Rats!
-				["provider"] = { "n", 93522 },	-- Diane Cannings
 				["sourceQuests"] = {
 					40192,	-- Claw of the Land
 					40327,	-- Testing the Metal
 				},
+				["provider"] = { "n", 93522 },	-- Diane Cannings
 				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 				["groups"] = {
 					r(194709),	-- Warhide Footpads [Rank 2] (RECIPE!)
@@ -493,8 +493,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			}),
 			q(40199, {	-- Leather Legwork
-				["provider"] = { "n", 98931 },	-- Thanid Glowergold
 				["sourceQuests"] = { 40198 },	-- Rats!
+				["provider"] = { "n", 98931 },	-- Thanid Glowergold
 				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 				["groups"] = {
 					r(194745),	-- Battlebound Spaulders [Rank 2] (RECIPE!)
@@ -504,13 +504,13 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			}),
 			q(40202, {	-- The Final Lessons
-				["provider"] = { "n", 93522 },	-- Diane Cannings
 				["sourceQuests"] = { 40199 },	-- Leather Legwork
+				["provider"] = { "n", 93522 },	-- Diane Cannings
 				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 			}),
 			q(40204, {	-- Evolution of the Past
-				["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 				["sourceQuests"] = { 40202 },	-- The Final Lessons
+				["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 				["coord"] = { 36.8, 78.2, 750 },
 				["groups"] = {
 					r(194708),	-- Warhide Gloves [Rank 2] (RECIPE!)
@@ -518,16 +518,16 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			}),
 			q(40205, {	-- Respect for the Past
-				["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 				["sourceQuests"] = { 40202 },	-- The Final Lessons
+				["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 				["coord"] = { 36.8, 78.2, 750 },
 				["groups"] = {
 					r(194706),	-- Warhide Pants [Rank 2] (RECIPE!)
 				},
 			}),
 			q(40203, {	-- Strength of the Past
-				["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 				["sourceQuests"] = { 40202 },	-- The Final Lessons
+				["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 				["coord"] = { 36.8, 78.2, 750 },
 				["groups"] = {
 					r(194707),	-- Warhide Mask [Rank 2] (RECIPE!)
@@ -535,22 +535,22 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			}),
 			q(40415, {	-- Well Spent Time
-				["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 				["sourceQuests"] = {
 					40204,	-- Evolution of the Past
 					40205,	-- Respect for the Past
 					40203,	-- Strength of the Past
 				},
+				["provider"] = { "n", 98948 },	-- Hrul Sharphoof
 				["coord"] = { 36.8, 78.2, 750 },
 			}),
 			q(40206, {	-- A Debt Paid
-				["provider"] = { "n", 98931 },	-- Thanid Glowergold
 				["sourceQuests"] = { 40199 },	-- Leather Legwork
+				["provider"] = { "n", 98931 },	-- Thanid Glowergold
 				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 			}),
 			q(40208, {	-- Eye of Azshara: Scales of the Sea
-				["provider"] = { "n", 98964 },	-- Celea
 				["sourceQuests"] = { 40206 },	-- A Debt Paid
+				["provider"] = { "n", 98964 },	-- Celea
 				["coord"] = { 47.4, 44.2, AZSUNA },
 				["maps"] = { 713 },	-- Eye of Azshara
 				["groups"] = {
@@ -559,8 +559,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			}),
 			q(40207, {	-- Scales of the Arcane
-				["provider"] = { "n", 98964 },	-- Celea
 				["sourceQuests"] = { 40206 },	-- A Debt Paid
+				["provider"] = { "n", 98964 },	-- Celea
 				["coord"] = { 47.4, 44.2, AZSUNA },
 				["groups"] = {
 					r(194748),	-- Battlebound Grips [Rank 2] (RECIPE!)
@@ -568,8 +568,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			}),
 			q(40209, {	-- Scales of the Earth
-				["provider"] = { "n", 98964 },	-- Celea
 				["sourceQuests"] = { 40206 },	-- A Debt Paid
+				["provider"] = { "n", 98964 },	-- Celea
 				["coord"] = { 47.4, 44.2, AZSUNA },
 				["groups"] = {
 					r(194746),	-- Battlebound Leggings [Rank 2] (RECIPE!)
@@ -577,39 +577,39 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			}),
 			q(40210, {	-- Time Well Spent
-				["provider"] = { "n", 98964 },	-- Celea
 				["sourceQuests"] = {
 					40207,	-- Scales of the Arcane
 					40208,	-- Eye of Azshara: Scales of the Sea
 					40209,	-- Scales of the Earth
 				},
+				["provider"] = { "n", 98964 },	-- Celea
 				["coord"] = { 47.4, 44.2, AZSUNA },
 			}),
 			q(40211, {	-- Demon Flesh
-				["provider"] = { "n", 93523 },	-- Namha Moonwater
 				["sourceQuests"] = {
 					40415,	-- Well Spent Time
 					40210,	-- Time Well Spent
 					42079,	-- Masquerade
 				},
+				["provider"] = { "n", 93523 },	-- Namha Moonwater
 				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 			}),
 			q(40212, {	-- Wrong End of the Knife
-				["provider"] = { "n", 98969 },	-- Stalriss Dawnrunner
 				["sourceQuests"] = { 40211 },	-- Demon Flesh
+				["provider"] = { "n", 98969 },	-- Stalriss Dawnrunner
 				["coord"] = { 26.6, 71.6, SURAMAR },
 			}),
 			q(40213, {	-- Hounds Abound
-				["provider"] = { "n", 98969 },	-- Stalriss Dawnrunner
 				["sourceQuests"] = { 40212 },	-- Wrong End of the Knife
+				["provider"] = { "n", 98969 },	-- Stalriss Dawnrunner
 				["coord"] = { 26.6, 71.6, SURAMAR },
 				["groups"] = {
 					i(130129),	-- Fel Hound Corpse (QI!)
 				},
 			}),
 			q(40214, {	-- Fel Tanning
-				["provider"] = { "n", 98969 },	-- Stalriss Dawnrunner
 				["sourceQuests"] = { 40213 },	-- Hounds Abound
+				["provider"] = { "n", 98969 },	-- Stalriss Dawnrunner
 				["coord"] = { 26.6, 71.6, SURAMAR },
 				["cost"] = {{ "i", 124438, 5 }},	-- 5x Unbroken Claw
 				["groups"] = {
@@ -625,8 +625,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			}),
 			q(40215, {	-- Mounting Made Easy
-				["provider"] = { "n", 93523 },	-- Namha Moonwater
 				["sourceQuests"] = { 40214 },	-- Fel Tanning
+				["provider"] = { "n", 93523 },	-- Namha Moonwater
 				["coord"] = { 35.4, 29.6, LEGION_DALARAN },
 				["groups"] = {
 					r(194780),	-- Elderhorn Riding Harness (RECIPE!)
@@ -634,15 +634,15 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			}),
 			-- The Sentinel's Eternal Refuge Questline
 			q(46684, {	-- The Legend of the Elderhide
-				["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 				["sourceQuests"] = { 46804 },	-- Fashion History and a Philosophy of Style
+				["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 				["coord"] = { 41.2, 59.4, BROKEN_SHORE },
 				["timeline"] = { ADDED_7_2_0 },
 				["repeatable"] = true,
 			}),
 			q(46688, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Leather of the Ancients
-				["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 				["sourceQuests"] = { 46684 },	-- The Legend of the Elderhide
+				["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 				["coord"] = { 41.2, 59.4, BROKEN_SHORE },
 				["repeatable"] = true,
 				["groups"] = {
@@ -651,8 +651,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			})),
 			q(46687, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- The Wisp and the Nightmare
-				["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 				["sourceQuests"] = { 46684 },	-- The Legend of the Elderhide
+				["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 				["coord"] = { 41.2, 59.4, BROKEN_SHORE },
 				["maps"] = { 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789, },	-- The Emerald Nightmare
 				["repeatable"] = true,
@@ -662,8 +662,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			})),
 			q(46686, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- The Wisp and the Sea
-				["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 				["sourceQuests"] = { 46684 },	-- The Legend of the Elderhide
+				["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 				["coord"] = { 41.2, 59.4, BROKEN_SHORE },
 				["maps"] = { 713 },	-- Eye of Azshara
 				["repeatable"] = true,
@@ -673,8 +673,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			})),
 			q(46685, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- The Wisp and the Shadow
-				["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 				["sourceQuests"] = { 46684 },	-- The Legend of the Elderhide
+				["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 				["coord"] = { 41.2, 59.4, BROKEN_SHORE },
 				["maps"] = { 733 },	-- Darkheart Thicket
 				["repeatable"] = true,
@@ -684,13 +684,13 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			})),
 			q(46689, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Wisp-Touched Elderhide
-				["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 				["sourceQuests"] = {
 					46688,	-- Leather of the Ancients
 					46687,	-- The Wisp and the Nightmare
 					46686,	-- The Wisp and the Sea
 					46685,	-- The Wisp and the Shadow
 				},
+				["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 				["coord"] = { 41.1, 59.3, BROKEN_SHORE },
 				["repeatable"] = true,
 				["groups"] = {
@@ -701,8 +701,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			})),
 			-- Vigilance Perch Questline
 			q(46690, {	-- The Legend of the Wardenscale
-				["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 				["sourceQuests"] = { 46804 },	-- Fashion History and a Philosophy of Style
+				["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 				["coord"] = { 41.2, 59.4, BROKEN_SHORE },
 				["timeline"] = { ADDED_7_2_0 },
 				["repeatable"] = true,
@@ -712,8 +712,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			}),
 			q(46694, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Mail of the Ancients
-				["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 				["sourceQuests"] = { 46690 },	-- The Legend of the Wardenscale
+				["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 				["coord"] = { 41.2, 59.4, BROKEN_SHORE },
 				["repeatable"] = true,
 				["groups"] = {
@@ -722,8 +722,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			})),
 			q(46692, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- The Owl and the Dreadlord
-				["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 				["sourceQuests"] = { 46690 },	-- The Legend of the Wardenscale
+				["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 				["coord"] = { 41.2, 59.4, BROKEN_SHORE },
 				["maps"] = { 845, 846, 847, 848, 849 },	-- Cathedral of Eternal Night
 				["repeatable"] = true,
@@ -733,8 +733,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			})),
 			q(46693, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- The Owl and the Observer
-				["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 				["sourceQuests"] = { 46690 },	-- The Legend of the Wardenscale
+				["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 				["coord"] = { 41.2, 59.4, BROKEN_SHORE },
 				["maps"] = { 815, 816, 817, 818, 819, 820, 821, 822, 809, 810, 811, 812, 813, 814 },	-- Return to Karazhan
 				["repeatable"] = true,
@@ -744,8 +744,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			})),
 			q(46691, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- The Owl and the Traitor
-				["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 				["sourceQuests"] = { 46690 },	-- The Legend of the Wardenscale
+				["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 				["coord"] = { 41.2, 59.4, BROKEN_SHORE },
 				["maps"] = { 710, 711, 712, },	-- Vault of the Wardens
 				["repeatable"] = true,
@@ -755,13 +755,13 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			})),
 			q(46695, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {	-- Prime Wardenscale
-				["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 				["sourceQuests"] = {
 					46694,	-- Mail of the Ancients
 					46692,	-- The Owl and the Dreadlord
 					46693,	-- The Owl and the Observer
 					46691,	-- The Owl and the Traitor
 				},
+				["provider"] = { "n", 120221 },	-- Eliezer Hammerbeard
 				["coord"] = { 41.1, 59.3, BROKEN_SHORE },
 				["repeatable"] = true,
 				["groups"] = {
@@ -772,8 +772,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			})),
 			-- 7.3.0
 			q(48078, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {	-- Counterbalancing
-				["provider"] = { "n", 125349 },	-- Enstraa
 				["sourceQuests"] = { 47743 },	-- The Child of Light and Shadow
+				["provider"] = { "n", 125349 },	-- Enstraa
 				["coord"] = { 39.6, 73.6, THE_VINDICAAR_KROKUUN_UPPER },
 				["cost"] = {
 					{ "i", 151566, 12 },	-- 12x Fiendish Leather
@@ -809,52 +809,52 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			}),
 				------ Tools of Trade Questline ------
 			q(55227, {	-- The Aeonian Artisan
+				["description"] = "Requires 150 Kul Tiran Leatherworking.",
 				["provider"] = { "n", 136063 },	-- Cassandra Brennor
 				["coord"] = { 75.5, 12.6, BORALUS },
-				["description"] = "Requires 150 Kul Tiran Leatherworking.",
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(53995, {	-- The Tauren Tanner
+				["description"] = "Requires 150 Zandalari Leatherworking.",
 				["provider"] = { "n", 122698 },	-- Xanjo
 				["coord"] = { 44.1, 34.6, DAZARALOR },
-				["description"] = "Requires 150 Zandalari Leatherworking.",
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = HORDE_ONLY,
 			}),
 			q(55228, {	-- The Audition [A]
-				["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
 				["sourceQuests"] = { 55227 },	-- The Aeonian Artisan
+				["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
 				["coord"] = { 69.6, 29.8, BORALUS },
 				["timeline"] = { ADDED_8_1_5 },
 				["cost"] = {{ "i", 154167, 3 }},	-- 3x Drums of the Maelstrom
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(55216, {	-- The Audition [H]
-				["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
 				["sourceQuests"] = { 53995 },	-- The Tauren Tanner
+				["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
 				["coord"] = { 53.4, 92.5, DAZARALOR },
 				["timeline"] = { ADDED_8_1_5 },
 				["cost"] = {{ "i", 154167, 3 }},	-- 3x Drums of the Maelstrom
 				["races"] = HORDE_ONLY,
 			}),
 			q(55229, {	-- Repaying the Debt
-				["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
 				["sourceQuests"] = { 55228 },	-- The Audition [A]
+				["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
 				["coord"] = { 69.6, 29.8, BORALUS },
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(55217, {	-- Repaying the Life Debt
-				["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
 				["sourceQuests"] = { 55216 },	-- The Audition [H]
+				["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
 				["coord"] = { 53.4, 92.5, DAZARALOR },
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = HORDE_ONLY,
 			}),
 			q(55230, {	-- Telonis' Prized Leather
-				["provider"] = { "n", 151287 },	-- Telonis
 				["sourceQuests"] = { 55229 },	-- Repaying the Debt
+				["provider"] = { "n", 151287 },	-- Telonis
 				["coord"] = { 42.6, 60.6, STORMWIND_CITY },
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = ALLIANCE_ONLY,
@@ -864,8 +864,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			}),
 			q(55218, {	-- Sheza's Prized Leather
-				["provider"] = { "n", 3037 },	-- Sheza Wildmane
 				["sourceQuests"] = { 55217 },	-- Repaying the Life Debt
+				["provider"] = { "n", 3037 },	-- Sheza Wildmane
 				["coord"] = { 69.7, 26.7, THUNDER_BLUFF },
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = HORDE_ONLY,
@@ -875,22 +875,22 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			}),
 			q(55231, {	-- The Other Ghostdancer
-				["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
 				["sourceQuests"] = { 55228 },	-- The Audition [A]
+				["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
 				["coord"] = { 69.6, 29.8, BORALUS },
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(55219, {	-- Dropping by the Base
-				["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
 				["sourceQuests"] = { 55216 },	-- The Audition [H]
+				["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
 				["coord"] = { 53.4, 92.5, DAZARALOR },
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = HORDE_ONLY,
 			}),
 			q(55232, {	-- Mevris' Menace
-				["provider"] = { "n", 151285 },	-- Mevris Ghostdancer
 				["sourceQuests"] = { 55231 },	-- The Other Ghostdancer
+				["provider"] = { "n", 151285 },	-- Mevris Ghostdancer
 				["coord"] = { 53.6, 54.4, VALSHARAH },
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = ALLIANCE_ONLY,
@@ -899,8 +899,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			}),
 			q(55220, {	-- Bass Fishing
-				["provider"] = { "n", 108017 },	-- Torv Dubstomp
 				["sourceQuests"] = { 55219 },	-- Dropping by the Base
+				["provider"] = { "n", 108017 },	-- Torv Dubstomp
 				["coord"] = { 54.9, 77.9, 750 },
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = HORDE_ONLY,
@@ -909,8 +909,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			}),
 			q(55233, {	-- Picking Bones [A]
-				["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
 				["sourceQuests"] = { 55228 },	-- The Audition [A]
+				["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
 				["coord"] = { 69.6, 29.8, BORALUS },
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = ALLIANCE_ONLY,
@@ -919,8 +919,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			}),
 			q(55221, {	-- Picking Bones [H]
-				["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
 				["sourceQuests"] = { 55216 },	-- The Audition [H]
+				["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
 				["coord"] = { 53.4, 92.5, DAZARALOR },
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = HORDE_ONLY,
@@ -929,12 +929,12 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			}),
 			q(55234, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Make Some Noise [A]
-				["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
 				["sourceQuests"] = {
 					55230,	-- Telonis' Prized Leather
 					55232,	-- Mevris' Menace
 					55233,	-- Picking Bones [A]
 				},
+				["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
 				["coord"] = { 69.6, 29.8, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
@@ -946,12 +946,12 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			})),
 			q(55222, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Make Some Noise [H]
-				["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
 				["sourceQuests"] = {
 					55218,	-- Sheza's Prized Leather
 					55220,	-- Bass Fishing
 					55221,	-- Picking Bones [H]
 				},
+				["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
 				["coord"] = { 53.4, 92.5, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
@@ -963,8 +963,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			})),
 			q(55235, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Instruments of Destruction [A]
-				["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
 				["sourceQuests"] = { 55234 },	-- Make Some Noise [A]
+				["provider"] = { "n", 151173 },	-- Daniss Ghostdancer
 				["coord"] = { 69.6, 29.8, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
@@ -972,8 +972,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			})),
 			q(55223, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Instruments of Destruction [H]
-				["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
 				["sourceQuests"] = { 55222 },	-- Make Some Noise [H]
+				["provider"] = { "n", 151162 },	-- Atikka "Ace" Moonchaser
 				["coord"] = { 53.4, 92.5, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
@@ -985,9 +985,9 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 		n(QUESTS, {
 			q(70362, {	-- Dragon Isles Leatherworking
+				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Leatherworking.",
 				["provider"] = { "n", 192048 },	-- Deidre Flemmin
 				["coord"] = { 76.6, 34.7, THE_WAKING_SHORES },
-				["description"] = "This quest can only be picked up PRIOR to learning Dragon Isles Leatherworking.",
 				["lockCriteria"] = { 1, "spellID", 366249 },	-- Dragon Isles Leatherworking
 			}),
 			q(70033, {	-- Artisan's Supply: Pioneer's Leather Boots
@@ -1012,8 +1012,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["coord"] = { 82.4, 50.6, OHNAHRAN_PLAINS },
 			}),
 			q(70191, {	-- Specialized Secrets: Leatherworking
-				["provider"] = { "n", 193110 },	-- Khadin
 				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
+				["provider"] = { "n", 193110 },	-- Khadin
 				["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
 				["cost"] = {{ "i", 191784, 1 }},	-- Dragon Shard of Knowledge
 				["isRepeatable"] = true,
@@ -1031,38 +1031,38 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 		},{
 			-- Requires 25 Skill
 			q(66363, {	-- Basilisk Bucklers
+				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191002 },	-- Dhurrel
 				["coord"] = { 36.8, 63.6, VALDRAKKEN },
-				["description"] = "Requires 25 Skill.",
 				["groups"] = {
 					i(191780),	-- Rigid Basilisk Hide (QI!)
 				},
 			}),
 			q(70594, {	-- Leatherworking Services Requested
+				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 194026 },	-- Azley
 				["coord"] = { 35.6, 58.8, VALDRAKKEN },
-				["description"] = "Requires 25 Skill.",
 			}),
 			q(66951, {	-- Population Control
+				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["coord"] = { 36.8, 62.4, VALDRAKKEN },
-				["description"] = "Requires 25 Skill.",
 				["groups"] = {
 					i(194448),	-- Salvaged Hide (QI!)
 				},
 			}),
 			q(72407, {	-- Soaked in Success
+				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["coord"] = { 36.8, 62.4, VALDRAKKEN },
-				["description"] = "Requires 25 Skill.",
 				["groups"] = {
 					i(201822),	-- Waterproof Hide (QI!)
 				},
 			}),
 			q(66364, {	-- To Fly a Kite
+				["description"] = "Requires 25 Skill.",
 				["provider"] = { "n", 191004 },	-- Temnaayu
 				["coord"] = { 36.8, 62.4, VALDRAKKEN },
-				["description"] = "Requires 25 Skill.",
 				["groups"] = {
 					i(191782),	-- Fresh Proto-Dragon Wings (QI!)
 				},
@@ -1070,24 +1070,24 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 
 			-- Requires 45 Skill
 			q(70571, {	-- Drums Here!
+				["description"] = "Requires 45 Skill.",
 				["provider"] = { "n", 185551 },	-- Hideshaper Koruz
 				["coord"] = { 28.6, 61.4, VALDRAKKEN },
-				["description"] = "Requires 45 Skill.",
 			}),
 			q(70569, {	-- For Trisket, a Task Kit
+				["description"] = "Requires 45 Skill.",
 				["provider"] = { "n", 185551 },	-- Hideshaper Koruz
 				["coord"] = { 28.6, 61.4, VALDRAKKEN },
-				["description"] = "Requires 45 Skill.",
 			}),
 			q(70568, {	-- Tipping the Scales
+				["description"] = "Requires 45 Skill.",
 				["provider"] = { "n", 185551 },	-- Hideshaper Koruz
 				["coord"] = { 28.6, 61.4, VALDRAKKEN },
-				["description"] = "Requires 45 Skill.",
 			}),
 			q(70567, {	-- When You Give Bakar a Bone
+				["description"] = "Requires 45 Skill.",
 				["provider"] = { "n", 185551 },	-- Hideshaper Koruz
 				["coord"] = { 28.6, 61.4, VALDRAKKEN },
-				["description"] = "Requires 45 Skill.",
 			}),
 			-- Requires ?? Skill - Patch 10.1.0.
 			q(75354, {	-- Mycelium Mastery
@@ -1254,8 +1254,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			i(198613),	-- Leatherworking Designs
 			q(74113, {	-- DF Inscription Order: Leatherworking
 				["name"] = "DF Inscription Order: Leatherworking",
-				["provider"] = { "i", 194700 },	-- Draconic Treatise on Leatherworking
 				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 194700 },	-- Draconic Treatise on Leatherworking
 			}),
 			q(66384, {	-- DF Weekly Leatherworking Knowledgepoint #1
 				["name"] = "DF Leatherworking Treasure #1",
@@ -1267,12 +1267,12 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			}),
 			q(70522, {	-- DF Weekly Leatherworking Knowledgepoint #3
 				["name"] = "DF Leatherworking Drop #1: Proto Drake",
+				["description"] = "Drops from any Proto Drake.\nCoordinates link to the spot(s) we found best.",
 				["provider"] = { "i", 198975 },		-- Ossified Hide
 				["coords"] = {
 					{ 80.6, 33.8, THE_WAKING_SHORES },
 					{ 79.4, 32.5, THE_WAKING_SHORES },
 				},
-				["description"] = "Drops from any Proto Drake.\nCoordinates link to the spot(s) we found best.",
 				["crs"] = {
 					196420,	-- Cavern Hunter (Thaldraszus)
 					190056,	-- Primal Proto-Drake
@@ -1280,6 +1280,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			}),
 			q(70523, {	-- DF Weekly Leatherworking Knowledgepoint #4
 				["name"] = "DF Leatherworking Drop #2: Sylvern&Vorquin",
+				["description"] = "Drops from any Sylvern or Vorquin.\nCoordinates link to the spot(s) we found best.",
 				["provider"] = { "i", 198976 },		-- Exceedingly Soft Skin
 				["coords"] = {
 					{ 36.6, 72.8, THALDRASZUS },
@@ -1287,7 +1288,6 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 					{ 32.4, 73.5, THALDRASZUS },
 					{ 31.3, 76.5, THALDRASZUS },
 				},
-				["description"] = "Drops from any Sylvern or Vorquin.\nCoordinates link to the spot(s) we found best.",
 				["crs"] = {
 					188277,	-- Garden Herdmare
 					191317,	-- Creekside Grazer

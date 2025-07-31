@@ -13,8 +13,8 @@ root(ROOTS.ExpansionFeatures,
 				n(124764, {	-- Azure Dragonshrine Area
 					n(QUESTS, {
 						q(47557, {	-- Smoldering Chronoshard
-							["provider"] = { "i", 150943 },	-- Smoldering Chronoshard
 							["sourceQuest"] = 47645,	-- Voidcaller's Scroll
+							["provider"] = { "i", 150943 },	-- Smoldering Chronoshard
 							["crs"] = { 122553 },	-- Void Gargantuan
 						}),
 						q(47645, {	-- Voidcallers' Scroll
@@ -34,8 +34,8 @@ root(ROOTS.ExpansionFeatures,
 							["description"] = "Kill the |cFFFFD700Dream Tormentors|r around each ancient.",
 						}),
 						q(47559, {	-- Gleaming Chronoshard
-							["provider"] = { "i", 150945 },	-- Gleaming Chronoshard
 							["sourceQuest"] = 47643,	-- The Ancients' Wisdom
+							["provider"] = { "i", 150945 },	-- Gleaming Chronoshard
 							["crs"] = { 122875 },	-- Thalas Vylethorn
 						}),
 					}),
@@ -61,8 +61,8 @@ root(ROOTS.ExpansionFeatures,
 							["crs"] = { 122528 },	-- Charredbone Goliath
 						}),
 						q(47558, {	-- Fel-Touched Chronoshard
-							["provider"] = { "i", 150944 },	-- Fel-Touched Chronoshard
 							["sourceQuest"] = 47644,	-- Demonic Corestone
+							["provider"] = { "i", 150944 },	-- Fel-Touched Chronoshard
 							["crs"] = { 122871 },	-- Zorathides
 						}),
 					}),
@@ -70,8 +70,8 @@ root(ROOTS.ExpansionFeatures,
 				n(124763, {	-- Ruby Dragonshrine Area
 					n(QUESTS, {
 						q(47560, {	-- Frozen Chronoshard
-							["provider"] = { "i", 150946 },	-- Frozen Chronoshard
 							["sourceQuest"] = 47642,	-- Soul Crystal
+							["provider"] = { "i", 150946 },	-- Frozen Chronoshard
 							["crs"] = { 122874 },	-- Talar Icechill
 						}),
 						q(47642, {	-- Soul Crystal
@@ -106,8 +106,8 @@ root(ROOTS.ExpansionFeatures,
 				n(122344, {	-- The Culling of Stratholme
 					n(QUESTS, {
 						q(47747, {	-- Fight Plague with Fire
-							["provider"] = { "n", 123781 },	-- Emery Neill
 							["sourceQuest"] = 47750,	-- For Emery
+							["provider"] = { "n", 123781 },	-- Emery Neill
 							["coord"] = { 56.3, 68.3, 902 },
 							["repeatable"] = true,
 							["groups"] = {
@@ -115,14 +115,14 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						q(47750, {	-- For Emery
-							["provider"] = { "n", 123790 },	-- Orphan Matron Meliana
 							["sourceQuest"] = 47746,	-- Holing Up
+							["provider"] = { "n", 123790 },	-- Orphan Matron Meliana
 							["coord"] = { 49.3, 71.7, 902 },
 							["repeatable"] = true,
 						}),
 						q(47746, {	-- Holing Up
-							["provider"] = { "n", 123790 },	-- Orphan Matron Meliana
 							["sourceQuest"] = 47745,	-- Yeah, Definitely for the Kids
+							["provider"] = { "n", 123790 },	-- Orphan Matron Meliana
 							["coord"] = { 49.3, 71.7, 902 },
 							["repeatable"] = true,
 							["groups"] = {
@@ -138,8 +138,8 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						q(47745, {	-- Yeah, Definitely for the Kids
-							["provider"] = { "n", 123781 },	-- Emery Neill
 							["sourceQuest"] = 47744,	-- Smoke, Meat, and Pretty Flowers
+							["provider"] = { "n", 123781 },	-- Emery Neill
 							["coord"] = { 56.3, 68.3, 902 },
 							["repeatable"] = true,
 						}),
@@ -182,8 +182,8 @@ root(ROOTS.ExpansionFeatures,
 				n(122339, {	-- The War for Andorhal
 					n(QUESTS, {
 						q(47773, {	-- Sky Ablaze With Cannonfire
-							["provider"] = { "n", 124154 },	-- Chromie
 							["sourceQuest"] = 47559,	-- Gleaming Chronoshard
+							["provider"] = { "n", 124154 },	-- Chromie
 							["coord"] = { 43.9, 69.2, 899 },
 							["races"] = HORDE_ONLY,
 							["repeatable"] = true,
@@ -192,8 +192,8 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						q(47772, {	-- Sky Ablaze With Cannonfire
-							["provider"] = { "n", 124154 },	-- Chromie
 							["sourceQuest"] = 47559,	-- Gleaming Chronoshard
+							["provider"] = { "n", 124154 },	-- Chromie
 							["coord"] = { 43.9, 69.2, 899 },
 							["races"] = ALLIANCE_ONLY,
 							["repeatable"] = true,
@@ -256,16 +256,16 @@ root(ROOTS.ExpansionFeatures,
 						},
 					}),
 					q(47904, {	-- Preserve the True Future
-						["provider"] = { "n", 27856 },	-- Chromie
 						["sourceQuest"] = 47550,	-- The Many Advantages of Being a Time Dragon
+						["provider"] = { "n", 27856 },	-- Chromie
 						["coord"] = { 60.0, 54.5, DRAGONBLIGHT },
 						["groups"] = {
 							currency(TIMEWARPED_BADGE),
 						},
 					}),
 					q(47545, {	-- Rewind
-						["provider"] = { "n", 27856 },	-- Chromie
 						["sourceQuest"] = 47543,	-- The Day That Chromie Dies
+						["provider"] = { "n", 27856 },	-- Chromie
 						["coord"] = { 60.0, 54.5, DRAGONBLIGHT },
 						["groups"] = {
 							currency(TIMEWARPED_BADGE),
@@ -287,8 +287,8 @@ root(ROOTS.ExpansionFeatures,
 						},
 					}),
 					q(47550, {	-- The Many Advantages of Being a Time Dragon
-						["provider"] = { "n", 27856 },	-- Chromie
 						["sourceQuest"] = 47545,	-- Rewind
+						["provider"] = { "n", 27856 },	-- Chromie
 						["coord"] = { 60.0, 54.5, DRAGONBLIGHT },
 						["groups"] = {
 							currency(TIMEWARPED_BADGE),

@@ -450,8 +450,8 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
 				n(WORLD_QUESTS, {
 					q(66693, {	-- Tempting Fate: Castle Nathria
-						["isWorldQuest"] = true,
 						["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
+						["isWorldQuest"] = true,
 					}),
 				}),
 				n(ZONE_DROPS, {

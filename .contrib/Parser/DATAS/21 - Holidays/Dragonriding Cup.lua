@@ -346,13 +346,13 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 					["repeatable"] = true,
 				}),
 				q(77839, {	-- The Eastern Kingdoms Cup Introduction
-					["provider"] = { "n", 206737 },	-- Lord Andestrasz
 					["sourceQuests"] = {
 						77840,	-- The Eastern Kingdoms Cup Begins
 						78880,	-- The Eastern Kingdoms Cup Begins
 						78881,	-- The Eastern Kingdoms Cup Begins
 					},
 					["sourceQuestNumRequired"] = 1,
+					["provider"] = { "n", 206737 },	-- Lord Andestrasz
 					["coord"] = { 27.1, 47.1, VALDRAKKEN },
 					["repeatable"] = true,
 					["groups"] = {
@@ -1057,17 +1057,17 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 					["repeatable"] = true,
 				}),
 				q(76426, {	-- The Kalimdor Cup Circuit
-					["qgs"] = {
-						206737,	-- Lord Andestrasz
-						-- #if AFTER 11.1.0
-						214111, -- Lord Andestrasz
-						-- #endif
-					},
 					["sourceQuests"] = {
 						-- #if BEFORE 10.2.5
 						76429,	-- The Kalimdor Cup Begins
 						-- #else
 						76429, 79125, 79126	-- The Kalimdor Cup Begins
+						-- #endif
+					},
+					["qgs"] = {
+						206737,	-- Lord Andestrasz
+						-- #if AFTER 11.1.0
+						214111, -- Lord Andestrasz
 						-- #endif
 					},
 					["coords"] = {
@@ -2059,8 +2059,8 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 					["repeatable"] = true,
 				}),
 				q(78047, {	-- The Outland Cup Circuit
-					["provider"] = { "n", 206737 },	-- Lord Andestrasz
 					["sourceQuests"] = { 78040, 79127, 79128 },	-- The Outland Cup Begins
+					["provider"] = { "n", 206737 },	-- Lord Andestrasz
 					["coord"] = { 26.9, 47.4, VALDRAKKEN },
 					["repeatable"] = true,
 					["groups"] = {
@@ -2678,8 +2678,8 @@ root(ROOTS.Holidays, skyriding(applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDIN
 					["repeatable"] = true,
 				}),
 				q(79130, {	-- The Northrend Cup Circuit
-					["provider"] = { "n", 206737 },	-- Lord Andestrasz
 					["sourceQuests"] = { 79131, 79132, 79133 },	-- The Outland Cup Begins
+					["provider"] = { "n", 206737 },	-- Lord Andestrasz
 					["coord"] = { 26.9, 47.4, VALDRAKKEN },
 					["repeatable"] = true,
 					["groups"] = {

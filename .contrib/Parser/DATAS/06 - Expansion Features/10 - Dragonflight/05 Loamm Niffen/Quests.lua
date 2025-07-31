@@ -59,8 +59,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["isBreadcrumb"] = true,
 					}),
 					q(75721, {	-- Bartering 101
-						["provider"] = { "n", 204693 },	-- Ponzo
 						["sourceQuests"] = { 75720 },	-- Care to Barter?
+						["provider"] = { "n", 204693 },	-- Ponzo
 						["coord"] = { 58.0, 53.8, ZARALEK_CAVERN },
 						["groups"] = {
 							i(204985),	-- Barter Brick
@@ -276,8 +276,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						},
 					}),
 					q(76067, {	-- Signed, Sealed, Self-Delivered
-						["provider"] = { "n", 205127 },	-- Newsy
 						["sourceQuests"] = { 75744 },	-- A Token of Our Gratitude
+						["provider"] = { "n", 205127 },	-- Newsy
 						-- #if BEFORE 10.2.7
 						["maps"] = { ZARALEK_CAVERN },	-- Spawns everywhere, but keeping it only listed in the factions 'main zone'
 						-- #else

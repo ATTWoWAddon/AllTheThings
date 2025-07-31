@@ -49,16 +49,16 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 		["groups"] = {
 			n(WORLD_QUESTS, {
 				q(42780, {	-- Maw of Souls: From Hell's Mouth
-					["lvl"] = 110,
 					["isWorldQuest"] = true,
+					["lvl"] = 110,
 				}),
 				q(42757, {	-- Maw of Souls: Menace of the Seas
-					["lvl"] = 110,
 					["isWorldQuest"] = true,
+					["lvl"] = 110,
 				}),
 				q(42788, {	-- Maw of Souls: Return of the Beast
-					["lvl"] = 110,
 					["isWorldQuest"] = true,
+					["lvl"] = 110,
 				}),
 			}),
 			Difficulty(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS).AddGroups({

@@ -91,6 +91,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["isRaid"] = true,
 				["groups"] = {
 					applyclassicphase(PHASE_THREE, q(7785, {	-- Examine the Vessel
+						["description"] = "This quest becomes available once you have looted either of the two Bindings of the Windseeker.\n\nWARNING: You may want to immediately travel to Silithus when you do as the Essence of the Firelord only drops from Ragnaros if you are on this quest!",
 						["qg"] = 14347,	-- Highlord Demitrian
 						["provider"] = { "i", 19016 },	-- Vessel of Rebirth
 						["coords"] = {
@@ -100,7 +101,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							{ 21.7, 8.6, SILITHUS },
 							-- #endif
 						},
-						["description"] = "This quest becomes available once you have looted either of the two Bindings of the Windseeker.\n\nWARNING: You may want to immediately travel to Silithus when you do as the Essence of the Firelord only drops from Ragnaros if you are on this quest!",
 						["cost"] = {
 							{ "i", 18563, 1 },	-- Bindings of the Windseeker [Left]
 							{ "i", 18564, 1 },	-- Bindings of the Windseeker [Right]
@@ -113,9 +113,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["lvl"] = 60,
 					})),
 					applyclassicphase(PHASE_THREE, q(7786, {	-- Thunderaan the Windseeker
-						["qg"] = 14347,	-- Highlord Demitrian
-						["altQuests"] = { 7521 },	-- Thunderaan the Windseeker [Original?]
 						["sourceQuest"] = 7785,	-- Examine the Vessel
+						["altQuests"] = { 7521 },	-- Thunderaan the Windseeker [Original?]
+						["qg"] = 14347,	-- Highlord Demitrian
 						["coords"] = {
 							-- #if AFTER LEGION
 							{ 29.6, 10.6, SILITHUS },
@@ -172,9 +172,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					})),
 					applyclassicphase(PHASE_THREE, q(7787, {	-- Rise, Thunderfury!
+						["sourceQuest"] = 7786,	-- Thunderaan the Windseeker
 						["qg"] = 14347,	-- Highlord Demitrian
 						["provider"] = { "i", 19018 },	-- Dormant Wind Kissed Blade
-						["sourceQuest"] = 7786,	-- Thunderaan the Windseeker
 						["coord"] = { 21.7, 8.6, SILITHUS },
 						-- #if ANYCLASSIC
 						-- Completable by any class in Retail... confirm for Classic
@@ -217,11 +217,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(QUESTS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, q(84545, bubbleDown({ ["timeline"] = { ADDED_1_15_3 } }, {	-- A Hero's Reward
+					["sourceQuest"] = 6824,	-- Hands of the Enemy
 					["providers"] = {
 						{ "n",  13278 },	-- Duke Hydraxis
 						{ "o", 179551 },	-- Hydraxis' Coffer
 					},
-					["sourceQuest"] = 6824,	-- Hands of the Enemy
 					["coord"] = { 79.2, 73.6, AZSHARA },
 					["lvl"] = 55,
 					["groups"] = {
@@ -252,23 +252,23 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				})),
 				q(6823, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_3_0_8 } }, {	-- Agent of Hydraxis
-					["qg"] = 13278,	-- Duke Hydraxis
 					["sourceQuest"] = 6822,	-- The Molten Core
+					["qg"] = 13278,	-- Duke Hydraxis
 					["coord"] = { 79.2, 73.6, AZSHARA },
 					["minReputation"] = { FACTION_HYDRAXIAN_WATERLORDS, HONORED },	-- Hydraxian Waterlords, Honored.
 					["lvl"] = 55,
 				})),
 				q(7633, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_4_0_3 } }, {	-- An Introduction
-					["qg"] = 14524,	-- Vartrus the Ancient
 					["sourceQuest"] = 7632,	-- The Ancient Leaf
+					["qg"] = 14524,	-- Vartrus the Ancient
 					["coord"] = { 47, 24.48, FELWOOD },
 					["classes"] = { HUNTER },
 					["lvl"] = 60,
 				})),
 				q(7487, {	-- Attunement to the Core [Old]
+					["description"] = "Complete this quest to be able to quickly teleport to Molten Core by simply talking to Lothos.",
 					["qg"] = 14387,	-- Lothos Riftwaker
 					["coord"] = { 54.2, 83.3, BLACKROCK_MOUNTAIN },
-					["description"] = "Complete this quest to be able to quickly teleport to Molten Core by simply talking to Lothos.",
 					["timeline"] = { ADDED_1_1_0, REMOVED_1_3_0 },
 					["maps"] = { BLACKROCK_DEPTHS },
 					["lvl"] = 55,
@@ -282,14 +282,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(7848, {	-- Attunement to the Core
-					["qg"] = 14387,	-- Lothos Riftwaker
-					["coord"] = { 54.2, 83.3, BLACKROCK_MOUNTAIN_LEVEL3 },
 					["description"] =
 						-- #if BEFORE 5.4.0
 						"Complete this quest to be able to quickly teleport to Molten Core by simply talking to Lothos.",
 						-- #else
 						"This quest is no longer required to enter Molten Core - you can now speak to Lothos and have him transport you inside without doing the attunement.",
 						-- #endif
+					["qg"] = 14387,	-- Lothos Riftwaker
+					["coord"] = { 54.2, 83.3, BLACKROCK_MOUNTAIN_LEVEL3 },
 					["timeline"] = { ADDED_1_3_0 },
 					["maps"] = { BLACKROCK_DEPTHS },
 					["lvl"] = 55,
@@ -303,11 +303,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				q(6821, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_3_0_8 } }, {	-- Eye of the Emberseer
-					["qg"] = 13278,	-- Duke Hydraxis
 					["sourceQuests"] = {
 						6804,	-- Poisoned Water
 						6805,	-- Stormers and Rumblers
 					},
+					["qg"] = 13278,	-- Duke Hydraxis
 					["coord"] = { 79.2, 73.6, AZSHARA },
 					["maps"] = {
 						BLACKROCK_SPIRE,
@@ -326,8 +326,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				})),
 				q(6824, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_3_0_8 } }, {	-- Hands of the Enemy
-					["qg"] = 13278,	-- Duke Hydraxis
 					["sourceQuest"] = 6823,	-- Agent of Hydraxis
+					["qg"] = 13278,	-- Duke Hydraxis
 					["coord"] = { 79.2, 73.6, AZSHARA },
 					["lvl"] = 55,
 					["groups"] = {
@@ -381,9 +381,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				})),
 				q(7632, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_4_0_3 } }, {	-- The Ancient Leaf
+					["description"] = "To find Vartrus go to the Irontree Woods in Felwood, there is an island in the middle of the green sludge with a little hill on it, go up the hill and Vartrus will appear to you.",
 					["qg"] = 14524,	-- Vartrus the Ancient
 					["coord"] = { 47, 24.48, FELWOOD },
-					["description"] = "To find Vartrus go to the Irontree Woods in Felwood, there is an island in the middle of the green sludge with a little hill on it, go up the hill and Vartrus will appear to you.",
 					["cost"] = {
 						{ "i", 18703, 1 },	-- Ancient Petrified Leaf
 					},
@@ -391,8 +391,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = 60,
 				})),
 				q(6822, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_3_0_8 } }, {	-- The Molten Core
-					["qg"] = 13278,	-- Duke Hydraxis
 					["sourceQuest"] = 6821,	-- Eye of the Emberseer
+					["qg"] = 13278,	-- Duke Hydraxis
 					["coord"] = { 79.2, 73.6, AZSHARA },
 					["lvl"] = 55,
 					["groups"] = {
@@ -779,6 +779,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					ach(686),	-- Molten Core
 					ach(5056, {	-- Molten Core Guild Run
 						["timeline"] = { ADDED_4_0_3 },
+					}),
+					ach(15330, {	-- Survivor of the Firelord (Season of Mastery)
+						["timeline"] = { ADDED_1_14_1, REMOVED_1_15_0 },	-- Was only available in Season of Mastery
 					}),
 					-- #endif
 					i(17204, {	-- Eye of Sulfuras

@@ -719,12 +719,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroups({
 				n(QUESTS, {
 					q(37029, {	-- Sigil of the Black Hand
-						["provider"] = { "n", 87225 },	-- Goraluk Anvilcrack
 						["description"] = "The questgiver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Normal difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Heroic or Mythic version first.|r",
 						["altQuests"] = {
 							37030,	-- Sigil of the Black Hand (Heroic)
 							37031,	-- Sigil of the Black Hand (Mythic)
 						},
+						["provider"] = { "n", 87225 },	-- Goraluk Anvilcrack
 						["groups"] = {
 							i(118382),	-- Ember of the Mountain (QI!)
 							i(118383),	-- Heart of Stone (QI!)
@@ -733,9 +733,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					}),
 					q(37553, {	-- Essence of the Iron Conqueror
 						["provider"] = { "i", 120277 },	-- Essence of the Iron Conqueror
-						["_drop"] = { "g" },	-- API lists all 3 token types
 						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
+						["_drop"] = { "g" },	-- API lists all 3 token types
 						["groups"] = {
 							i(120215, {	-- Helm of the Iron Conqueror
 								["sym"] = SymModID(SYM_CONQ_HELM, 3),
@@ -756,9 +756,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					}),
 					q(37540, {	-- Essence of the Iron Conqueror
 						["provider"] = { "i", 119310 },	-- ITEM
-						["_drop"] = { "g" },	-- API lists all 3 token types
 						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
+						["_drop"] = { "g" },	-- API lists all 3 token types
 						["groups"] = {
 							i(120215, {	-- Helm of the Iron Conqueror
 								["sym"] = SymModID(SYM_CONQ_HELM, 3),
@@ -885,9 +885,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				Boss(BLACKHAND, {
 					i(113979, { ["ItemAppearanceModifierID"] = 0 }),	-- The Black Hand
 				}),
-				Boss(BLACKHAND, sharedData({
-					["ignoreBonus"] = true,	-- in-game this drops with no modID
-				},{
+				Boss(BLACKHAND, sharedData({ ["ignoreBonus"] = true }, {	-- in-game this drops with no modID
 					i(120277, {	-- Essence of the Iron Conqueror
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -1079,9 +1077,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				Boss(BLACKHAND, {
 					i(113979, { ["ItemAppearanceModifierID"] = 1 }),	-- The Black Hand
 				}),
-				Boss(BLACKHAND, sharedData({
-					["ignoreBonus"] = true,	-- in-game this drops with no modID
-				},{
+				Boss(BLACKHAND, sharedData({ ["ignoreBonus"] = true }, {	-- in-game this drops with no modID
 					i(120280, {	-- Essence of the Iron Conqueror
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -1105,8 +1101,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
 				n(QUESTS, {
 					q(37031, {	-- Sigil of the Black Hand (Mythic)
-						["provider"] = { "n", 87225 },	-- Goraluk Anvilcrack
 						["description"] = "The questgiver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Mythic difficulty each week.",
+						["provider"] = { "n", 87225 },	-- Goraluk Anvilcrack
 						["groups"] = {
 							i(118390),	-- Ember of the Mountain (QI!)
 							i(118389),	-- Heart of Stone (QI!)
@@ -1159,7 +1155,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 							}),
 						},
 					}),
-                    q(37562, {	-- Essence of the Iron Protector
+					q(37562, {	-- Essence of the Iron Protector
 						["provider"] = { "i", 120284 },	-- Essence of the Iron Protector
 						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
@@ -1263,7 +1259,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					ach(8970),	-- Mythic: Blast Furnace
 				}),
 				Boss(HANSGAR_AND_FRANZOK, {
-						ach(8968),	-- Mythic: Hans'gar and Franzok
+					ach(8968),	-- Mythic: Hans'gar and Franzok
 				}),
 				Boss(FLAMEBENDER_KAGRAZ, {
 					ach(8932),	-- Mythic: Flamebender Ka'graz
@@ -1300,9 +1296,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				Boss(BLACKHAND, {
 					i(113979, { ["ItemAppearanceModifierID"] = 0 }),	-- The Black Hand
 				}),
-				Boss(BLACKHAND, sharedData({
-					["ignoreBonus"] = true,	-- in-game this drops with no modID
-				},{
+				Boss(BLACKHAND, sharedData({ ["ignoreBonus"] = true }, {	-- in-game this drops with no modID
 					i(120283, {	-- Essence of the Iron Conqueror
 						["races"] = ALLIANCE_ONLY,
 					}),

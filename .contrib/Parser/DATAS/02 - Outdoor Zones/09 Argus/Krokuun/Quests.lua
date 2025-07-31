@@ -188,6 +188,9 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				["coord"] = { 59.9, 66.5, KROKUUN },
 			}),
 			q(46816, {	-- Rendezvous
+				["sourceQuests"] = { 46732 },	-- The Prophet's Gambit
+				["provider"] = { "n", 120529 },	-- High Exarch Turalyon
+				["coord"] = { 56.7, 67.4, KROKUUN },
 				--[[
 				["groups"] = {
 					{
@@ -196,9 +199,6 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 					},
 				},
 				--]]
-				["sourceQuests"] = { 46732 },	-- The Prophet's Gambit
-				["provider"] = { "n", 120529 },	-- High Exarch Turalyon
-				["coord"] = { 56.7, 67.4, KROKUUN },
 			}),
 			q(46843, {	-- Return to the Vindicaar
 				["sourceQuests"] = { 46842 },	-- A Strike at the Heart
@@ -223,9 +223,9 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 			q(47641, {	-- Signs of Resistance
 				["sourceQuests"] = { 47627 },	-- Vengeance
 				["provider"] = { "n", 119543 },	-- Prophet Velen
-				["providers"] = {
-					{ "n", 119543 },	-- Prophet Velen
-					{ "n", 123149 },	-- Prophet Velen (phased version of him available right after you finish previous quest)
+				["qgs"] = {
+					119543,	-- Prophet Velen
+					123149,	-- Prophet Velen (phased version of him available right after you finish previous quest)
 				},
 				["coord"] = { 54.2, 75.4, KROKUUN },
 			}),
@@ -269,9 +269,9 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 			}),
 			q(48460, {	-- The Wranglers
 				["sourceQuests"] = { 46732 },	-- The Prophet's Gambit
-				["isBreadcrumb"] = true,
 				["provider"] = { "n", 119388 },	-- Chieftain Hatuun
 				["coord"] = { 56.4, 67.5, KROKUUN },
+				["isBreadcrumb"] = true,
 			}),
 			q(46841, {	-- Threat Reduction
 				["sourceQuests"] = { 46839 },	-- From Darkness
@@ -318,35 +318,35 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				},
 			}),
 			q(47967, {	-- An Argus Roper
-				["provider"] = { "n", 126160 },	-- Lead Rider Jerek
 				["sourceQuests"] = { 48460 },	-- The Wranglers [Breadcrumb - Required]
+				["provider"] = { "n", 126160 },	-- Lead Rider Jerek
 			}),
 			q(48455, {	-- Duskcloak Problem
-				["provider"] = { "n", 126160 },	-- Lead Rider Jerek
 				["sourceQuests"] = { 48460 },	-- The Wranglers [Breadcrumb - Required]
+				["provider"] = { "n", 126160 },	-- Lead Rider Jerek
 			}),
 			q(48453, {	-- Strike Back
-				["provider"] = { "n", 126160 },	-- Lead Rider Jerek
 				["sourceQuests"] = { 48460 },	-- The Wranglers [Breadcrumb - Required]
+				["provider"] = { "n", 126160 },	-- Lead Rider Jerek
 			}),
 			q(48544, {	-- Woah, Nelly
-				["provider"] = { "n", 126160 },	-- Lead Rider Jerek
 				["sourceQuests"] = { 47967, 48455, 48453 },	-- An Argus Roper / Duskcloak Problem / Strike Back
+				["provider"] = { "n", 126160 },	-- Lead Rider Jerek
 			}),
 			q(48441, {	-- Remnants of Darkfall Ridge
-				["provider"] = { "n", 119388 },	-- Chieftain Hatuun
 				["sourceQuests"] = { 48544 },	-- Woah, Nelly
+				["provider"] = { "n", 119388 },	-- Chieftain Hatuun
 			}),
 			q(48442, {	-- Nath'raxas Hold: Preparations
-				["provider"] = { "n", 119388 },	-- Chieftain Hatuun
 				["sourceQuests"] = { 48441 },	-- Remnants of Darkfall Ridge
+				["provider"] = { "n", 119388 },	-- Chieftain Hatuun
 				["coord"] = { 56.6, 67.6, KROKUUN },
 			}),
 			q(48910, {	-- Supplying Krokuun
+				["sourceQuests"] = { 48442 },	-- Nath'raxas Hold: Preparations
 				["provider"] = { "n", 119388 },	-- Chieftain Hatuun
 				["coord"] = { 56.6, 67.6, KROKUUN },
 				["isWeekly"] = true,
-				["sourceQuests"] = { 48442 },	-- Nath'raxas Hold: Preparations
 				["groups"] = {
 					i(152095, {	-- Krokul Ridgestalker
 						follower(1055, {	-- Krokul Ridgestalker (Temporary Troop)
@@ -361,18 +361,18 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				},
 			}),
 			q(48443, {	-- Nath'raxas Hold: Rescue Mission
-				["provider"] = { "n", 119388 },	-- Chieftain Hatuun
 				["sourceQuests"] = { 48910 },	-- Supplying Krokuun
+				["provider"] = { "n", 119388 },	-- Chieftain Hatuun
 				["coord"] = { 56.6, 67.6, KROKUUN },
 			}),
 			q(48634, {	-- Further Supplying Krokuun
-				["provider"] = { "n", 119388 },	-- Chieftain Hatuun
-				["coord"] = { 56.6, 67.6, KROKUUN },
-				["repeatable"] = true,
 				["sourceQuests"] = {
 					48443,	-- Nath'raxas Hold: Rescue Mission
 					48910,	-- Supplying Krokuun
 				},
+				["provider"] = { "n", 119388 },	-- Chieftain Hatuun
+				["coord"] = { 56.6, 67.6, KROKUUN },
+				["repeatable"] = true,
 				["groups"] = {
 					i(152095, {	-- Krokul Ridgestalker
 						follower(1055, {	-- Krokul Ridgestalker (Temporary Troop)
