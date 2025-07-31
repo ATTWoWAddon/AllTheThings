@@ -623,11 +623,6 @@ root(ROOTS.Zones, {
 						["qg"] = 56133,	-- Chen Stormstout
 						["coord"] = { 55.9, 49.4, VALLEY_OF_THE_FOUR_WINDS },
 					}),
-					q(32682, {	-- Inherit the Earth
-						["description"] = "Must be Exalted with The Tillers and have a fully unlocked farm.",
-						["qg"] = 64597,	-- Nana Mudclaw
-						["coord"] = { 54.6, 47.0, VALLEY_OF_THE_FOUR_WINDS },
-					}),
 					q(30653, {	-- It Does You No Good In The Keg
 						["sourceQuest"] = 29990,	-- Training and Discipline
 						["qg"] = 56474,	-- Mudmug
@@ -934,11 +929,6 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 30032,	-- The Quest for Better Barley
 						["qg"] = 56138,	-- Li Li
 						["coord"] = { 52.7, 62.8, VALLEY_OF_THE_FOUR_WINDS },
-					}),
-					q(31938, {	-- The "Earth-Slasher" Master Plow
-						["sourceQuest"] = 30529,	-- Growing the Farm III: The Mossy Boulder
-						["provider"] = { "i", 89814 },	-- "Earth-Slasher" Master Plow
-						["coord"] = { 53.2, 51.8, VALLEY_OF_THE_FOUR_WINDS },
 					}),
 					q(30073, {	-- The Emperor
 						["sourceQuests"] = {
