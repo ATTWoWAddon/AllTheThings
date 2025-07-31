@@ -6,18 +6,16 @@ local HARVESTING = createHeader({
 	icon = 134427,
 	text = {
 		en = "Harvesting",
-		--[[
-		es = "",
-		mx = "",
-		de = "",
-		fr = "",
-		it = "",
-		pt = "",
-		ru = "",
-		ko = "",
-		cn = "",
-		tw = "",
-		]]--
+		de = "Abbauen",
+		es = "Cosecha",
+		mx = "Cosechando",
+		fr = "Récolte",
+		it = "Raccolta",
+		pt = "Colhendo",
+		ru = "Сбор",
+		ko = "채취",
+		cn = "收获",
+		tw = "採集",
 	},
 	description = {
 		en = "The following goods can be harvested by planting seeds in Tilled Soil at Sunsong Ranch. You will earn Tillers reputation for harvesting crops and a chance to obtain replacement seeds from the crop.\n\nFUN FACT: Priests may cast Levitate on their crops, making them float.",
