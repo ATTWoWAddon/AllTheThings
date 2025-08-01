@@ -413,6 +413,7 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 				},
 			}),
 			n(115797, {	-- Tiana Nevermorn <Gold Exchange>
+				["timeline"] = { ADDED_7_1_5 },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(142319, {		-- Bag of Chipped Dice
