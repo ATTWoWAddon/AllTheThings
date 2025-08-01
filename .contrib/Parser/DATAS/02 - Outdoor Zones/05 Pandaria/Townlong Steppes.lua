@@ -1805,7 +1805,7 @@ root(ROOTS.Zones, {
 								i(84584),	-- Formula: Enchant Weapon - Dancing Steel (RECIPE!)
 								i(84583),	-- Formula: Enchant Weapon - Jade Spirit (RECIPE!)
 								i(84580),	-- Formula: Enchant Weapon - River's Song (RECIPE!)
-								i(138877),	-- Formula: Tome of Illusions: Secrets of the Shado-Pan (RECIPE!)
+								i(138877, { ["timeline"] = { ADDED_7_0_3 } }),	-- Formula: Tome of Illusions: Secrets of the Shado-Pan (RECIPE!)
 								i(93220),	-- Grand Commendation of the Shado-Pan
 							}, {	-- Exalted
 								i(89307, {	-- Blue Shado-Pan Riding Tiger (MOUNT!)
