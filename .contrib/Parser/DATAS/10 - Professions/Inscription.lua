@@ -227,7 +227,7 @@ GLYPH_OF_BLACK_ICE = r(124443, {	-- Glyph of Black Ice
 	["name"] = "Glyph of Black Ice",
 	["timeline"] = { ADDED_5_0_4, DELETED_7_0_3 },
 });
-GLYPH_OF_BLADED_JUDGMENT = r(122030, {	-- Glyph of Bladed Judgment
+GLYPH_OF_BLADED_JUDGMENT = r(112266, {	-- Glyph of Bladed Judgment
 	["name"] = "Glyph of Bladed Judgment",
 	["timeline"] = { ADDED_5_0_4, DELETED_7_0_3 },
 });
@@ -351,7 +351,7 @@ GLYPH_OF_BONE_SHIELD_AND_ICEBOUND_FORTITUDE = r(57210, {	-- Glyph of Bone Shield
 	-- #endif
 	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
-GLYPH_OF_BREATH_OF_FIRE = r(132167, {	-- Glyph of Breath of Fire
+GLYPH_OF_BREATH_OF_FIRE = r(124444, {	-- Glyph of Breath of Fire
 	["name"] = "Glyph of Breath of Fire",
 	["timeline"] = { ADDED_5_0_4, DELETED_6_0_2 },
 });
@@ -4569,19 +4569,21 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				["races"] = HORDE_ONLY,
 			}),
 		}),
-		-- #if BEFORE 5.0.4
+		-- #if ANYCLASSIC
 		n(RELICS, {
-			-- #if ANYCLASSIC
 			applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, r(1216316, {	-- Bloodthirsty Charm of Triumph
-				["timeline"] = { ADDED_4_2_0, DELETED_5_0_4 },
+				["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
 			})),
 			applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, r(1216290, {	-- Bloodthirsty Eyeball of Dominance
-				["timeline"] = { ADDED_4_2_0, DELETED_5_0_4 },
+				["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
 			})),
 			applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, r(1216317, {	-- Bloodthirsty Jawbone of Conquest
-				["timeline"] = { ADDED_4_2_0, DELETED_5_0_4 },
+				["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
 			})),
-			-- #endif
+		}),
+		-- #endif
+		-- #if BEFORE MOP
+		n(RELICS, {
 			r(86647, {	-- Etched Horn
 				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
 			}),
@@ -4621,6 +4623,11 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 		cat(779, {	-- Inks
 			r(111645),	-- Ink of Dreams
 			r(111646),	-- Starlight Ink
+		}),
+		cat(105, {	-- Clear Mind
+			r(112883, {	-- Tome of the Clear Mind
+				["timeline"] = { ADDED_5_0_4, DELETED_6_0_2 },
+			}),
 		}),
 		cat(778, {	-- Staves & Off-Hands
 			r(111918),	-- Inscribed Crane Staff

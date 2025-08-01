@@ -612,6 +612,7 @@ i(0, 127020);	-- Secret Tiger Fang Inscription
 i(0, 111646);	-- Starlight Ink
 i(0, 127017);	-- Tiger Claw Inscription
 i(0, 127016);	-- Tiger Fang Inscription
+i(0, 112883);	-- Tome of the Clear Mind
 i(0, 127007);	-- Yu'lon Kite
 -- Scroll/Research?!
 i(0, 124443);	-- Glyph of Black Ice
@@ -692,7 +693,6 @@ i(0, 124445);	--
 i(0, 124451);	--
 i(0, 58309);	--
 i(0, 124452);	--
-i(0, 112883);	--
 i(0, 112442);	--
 i(0, 124456);	--
 i(0, 112450);	--
