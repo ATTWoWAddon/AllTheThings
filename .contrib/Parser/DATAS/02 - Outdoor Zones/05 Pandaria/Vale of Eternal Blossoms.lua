@@ -8,7 +8,7 @@ local VALE_TOT_ONUPDATE = [[function(t)
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 	else
 		t.u = ]] .. MOP_PHASE_ONE .. [[;
-		t.description = "This will be unavailable when the Rise of the Thunder King phase begins."
+		t.description = "This will become unavailable when the Rise of the Thunder King phase begins."
 	end
 end]];
 local VALE_SOO_ONUPDATE = [[function(t)
@@ -16,7 +16,7 @@ local VALE_SOO_ONUPDATE = [[function(t)
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 	else
 		t.u = ]] .. MOP_PHASE_ONE .. [[;
-		t.description = "This will be unavailable when the Siege of Orgrimmar phase begins."
+		t.description = "This will become unavailable when the Siege of Orgrimmar phase begins."
 	end
 end]];
 -- #endif
