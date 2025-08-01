@@ -76,10 +76,10 @@ root(ROOTS.WorldDrops, {
 				}),
 			}),
 			prof(TAILORING, {
-				TempForceMisc(i(100863, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Pattern: Celestial Cloth and Its Uses
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, TempForceMisc(i(100863, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Pattern: Celestial Cloth and Its Uses
 					r(146925),	-- Accelerated Celestial Cloth (RECIPE!)
 					r(143011),	-- Celestial Cloth (RECIPE!)
-				}))),
+				})))),
 			}),
 		}),
 	}),
