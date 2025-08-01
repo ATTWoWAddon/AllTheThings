@@ -57,17 +57,17 @@ root(ROOTS.WorldDrops, {
 				i(95470),	-- Design: Serpent's Heart
 			}),
 			prof(LEATHERWORKING, {
-				i(102513, {	-- Pattern: Drums of Rage (RECIPE!)
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(102513, {	-- Pattern: Drums of Rage (RECIPE!)
 					["description"] = "Requires maxed Pandaria leatherworking skill to drop.",
 					["timeline"] = { ADDED_5_4_0 },
-				}),
-				TempForceMisc(i(100864, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Pattern: Hardened Magnificent Hide and Its Uses (RECIPE!)
+				})),
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, TempForceMisc(i(100864, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Pattern: Hardened Magnificent Hide and Its Uses (RECIPE!)
 					["description"] = "Requires maxed Pandaria leatherworking skill to drop.",
 					["groups"] = {
 						r(146923),	-- Accelerated Hardened Magnificent Hide (RECIPE!)
 						r(142976),	-- Hardened Magnificent Hide (RECIPE!)
 					},
-				}))),
+				})))),
 				i(95467, {	-- Pattern: Magnificence of Leather (RECIPE!)
 					["timeline"] = { ADDED_5_2_0 },
 				}),
