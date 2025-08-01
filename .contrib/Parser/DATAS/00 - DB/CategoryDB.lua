@@ -266,8 +266,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Shoulder Inscription",
 		text = {
 			en = "Shoulder Inscription",
-			es = "Inscripcion de hombros",
-			mx = "Inscripcion de hombros",
+			es = "Inscripción de hombros",
+			mx = "Inscripción de hombros",
 			ko = "어깨 마법부여",
 		},
 	},
@@ -364,8 +364,13 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133149,
 		text = {
 			en = "Goggles",
+			de = "Schutzbrille",
 			es = "Gafas",
 			mx = "Lentes",
+			fr = "Lunettes",
+			it = "Visori",
+			pt = "Tecnóculos",
+			ru = "очки",
 			ko = "고글",
 		},
 	},
@@ -854,8 +859,16 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Alchemy of Draenor",
 		text = {
 			en = "Alchemy of Draenor",
+			de = "Alchemie von Draenor",
 			es = "Alquimia de Draenor",
 			mx = "Alquimia de Draenor",
+			fr = "Alchimie de Draenor",
+			it = "Alchimia di Draenor",
+			pt = "Alquimia de Draenor",
+			ru = "Алхимия Дренора",
+			ko = "드레노어 연금술",
+			cn = "德拉诺炼金术",
+			tw = "德拉諾鍊金術",
 		},
 	},
 	[333] = {
@@ -942,16 +955,24 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Draenor Engineering",
 		text = {
 			en = "Draenor Engineering",
-			es = "Ingenieria de Draenor",
-			mx = "Ingenieria de Draenor",
+			es = "Ingeniería de Draenor",
+			mx = "Ingeniería de Draenor",
 		},
 	},
 	[348] = {
 		readable = "Draenor Enchanting",
 		text = {
 			en = "Draenor Enchanting",
+			de = "Verzauberkunst von Draenor",
 			es = "Encantamiento de Draenor",
 			mx = "Encantamiento de Draenor",
+			fr = "Enchantement de Draenor",
+			it = "Incantamento di Draenor",
+			pt = "Encantamento Draenoriano",
+			ru = "Дренорское наложение чар",
+			ko = "드레노어 마법부여",
+			cn = "德拉诺附魔",
+			tw = "德拉諾附魔",
 		},
 	},
 	[349] = {
@@ -1221,12 +1242,16 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Item Enhancers",
 		text = {
 			en = "Item Enhancers",
+			es = "Mejora de objetos",
+			mx = "Mejora de objetos",
 		},
 	},
 	[392] = {
 		readable = "Armor",
 		text = {
 			en = "Armor",
+			es = "Armadura",
+			mx = "Armadura",
 		},
 	},
 	[393] = {
@@ -1234,6 +1259,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 135792,
 		text = {
 			en = "Weapons and Shields",
+			es = "Armas y escudos",
+			mx = "Armas y escudos",
 			ko = "무기 & 방패",
 		},
 	},
@@ -1241,6 +1268,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Other",
 		text = {
 			en = "Other",
+			es = "Otro",
+			mx = "Otro",
 			ko = "다른",
 		},
 	},
@@ -1249,30 +1278,40 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 237174,
 		text = {
 			en = "Illusions",
+			es = "Ilusiones",
+			mx = "Ilusiones",
 		},
 	},
 	[400] = {
 		readable = "Battle Standards",
 		text = {
 			en = "Battle Standards",
+			es = "Confalones de batalla",
+			mx = "Estandartes de batalla",
 		},
 	},
 	[402] = {
 		readable = "Tents",
 		text = {
 			en = "Tents",
+			es = "Tiendas",
+			mx = "Tiendas",
 		},
 	},
 	[403] = {
 		readable = "Merchant Orders",
 		text = {
 			en = "Merchant Orders",
+			es = "Pedidos de mercader",
+			mx = "Ordenes de mercader",
 		},
 	},
 	[404] = {
 		readable = "Removal",
 		text = {
 			en = "Removal",
+			es = "Kit de extracción",
+			mx = "Equipo de desacople",
 		},
 	},
 	[407] = {
@@ -1280,6 +1319,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134331,
 		text = {
 			en = "Reagents and Research",
+			es = "Componentes e investigación",
+			mx = "Componentes e investigación",
 			ko = "재료 & 연구",
 		},
 	},
@@ -1288,6 +1329,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 1003586,
 		text = {
 			en = "Reagents and Research",
+			es = "Componentes e investigación",
+			mx = "Componentes e investigación",
 			ko = "재료 & 연구",
 		},
 	},
@@ -1295,12 +1338,24 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Draenor Inscription",
 		text = {
 			en = "Draenor Inscription",
+			de = "Inschriftenkunde von Draenor",
+			es = "Inscripción de Draenor",
+			mx = "Inscripción de Draenor",
+			fr = "Calligraphie de Draenor",
+			it = "Runografia di Draenor",
+			pt = "Escrivania de Draenor",
+			ru = "Начертание Дренора",
+			ko = "드레노어 주문각인",
+			cn = "德拉诺铭文",
+			tw = "德拉諾銘文學",
 		},
 	},
 	[411] = {
 		readable = "Staves & Wands",
 		text = {
 			en = "Staves & Wands",
+			es = "Bastones y varitas",
+			mx = "Bastones y varitas",
 			ko = "지팡이 & 마법봉",
 		},
 	},
@@ -1308,6 +1363,11 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Card",
 		text = {
 			en = "Card",
+			es = "Carta",
+			mx = "Carta",
+			fr = "Carte",
+			it = "Carta",
+			pt = "Carta",
 			tw = "卡片",
 		},
 	},
@@ -1315,6 +1375,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Off-hand",
 		text = {
 			en = "Off-hand",
+			es = "Mano izquierda",
+			mx = "Mano izquierda",
 		},
 	},
 	[414] = {
@@ -1322,6 +1384,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134331,
 		text = {
 			en = "Reagents and Research",
+			es = "Componentes e investigación",
+			mx = "Componentes e investigación",
 			ko = "재료 & 연구",
 		},
 	},
@@ -1329,6 +1393,16 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Inscription",
 		text = {
 			en = "Inscription",
+			de = "Inschriftenkunde",
+			es = "Inscripción",
+			mx = "Inscripción",
+			fr = "Calligraphie",
+			it = "Runografia",
+			pt = "Escrivania",
+			ru = "Начертание",
+			ko = "주문각인",
+			cn = "铭文",
+			tw = "銘文學",
 		},
 	},
 	[416] = {
@@ -1336,6 +1410,13 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133023,
 		text = {
 			en = "Goggles",
+			de = "Schutzbrille",
+			es = "Gafas",
+			mx = "Lentes",
+			fr = "Lunettes",
+			it = "Visori",
+			pt = "Tecnóculos",
+			ru = "очки",
 			ko = "고글",
 		},
 	},
@@ -1343,12 +1424,16 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Robotics",
 		text = {
 			en = "Robotics",
+			es = "Robóticos",
+			mx = "Robots",
 		},
 	},
 	[418] = {
 		readable = "Devices",
 		text = {
 			en = "Devices",
+			es = "Dispositivos",
+			mx = "Dispositivos",
 			ko = "장치",
 		},
 	},
@@ -1356,12 +1441,24 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Engineering",
 		text = {
 			en = "Engineering",
+			de = "Ingenieurskunst",
+			es = "Ingeniería",
+			mx = "Ingeniería",
+			fr = "Ingénierie",
+			it = "Ingegneria",
+			pt = "Engenharia",
+			ru = "Инженерное дело",
+			ko = "기계공학",
+			cn = "工程学",
+			tw = "工程學",
 		},
 	},
 	[420] = {
 		readable = "Tools",
 		text = {
 			en = "Tools",
+			es = "Herramientas",
+			mx = "Herramientas",
 			ko = "장비",
 		},
 	},
@@ -1370,7 +1467,16 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 135830,
 		text = {
 			en = "Transmutation",
+			de = "Transmutation",
+			es = "Transmutación",
+			mx = "Transmutación",
+			fr = "Transmutation",
+			it = "Trasmutazione",
+			pt = "Transmutação",
+			ru = "Трансмутация",
 			ko = "변환식",
+			cn = "转化",
+			tw = "轉化",
 		},
 	},
 	[424] = {
@@ -1378,30 +1484,47 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134331,
 		text = {
 			en = "Training",
+			es = "Entrenamiento",
+			mx = "Entrenamiento",
 		},
 	},
 	[425] = {
 		readable = "Legion Mining",
 		text = {
 			en = "Legion Mining",
+			de = "Bergbau der Verheerten Inseln",
+			es = "Minería de Legion",
+			fr = "Minage de Legion",
+			it = "Estrazione di Legion",
+			pt = "Mineração de Legion",
+			ru = "Горное дело Legion",
+			ko = "군단 채광",
+			cn = "军团采矿",
+			tw = "軍團採礦",
 		},
 	},
 	[426] = {
 		readable = "Legion Plans",
 		text = {
 			en = "Legion Plans",
+			es = "Planos de Legion",
+			mx = "Planos de Legion",
 		},
 	},
 	[427] = {
 		readable = "Armor",
 		text = {
 			en = "Armor",
+			es = "Armadura",
+			mx = "Armadura",
 		},
 	},
 	[428] = {
 		readable = "Other",
 		text = {
 			en = "Other",
+			es = "Otro",
+			mx = "Otro",
 			ko = "다른",
 		},
 	},
@@ -1409,6 +1532,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Reagents",
 		text = {
 			en = "Reagents",
+			es = "Componentes",
+			mx = "Componentes",
 			ko = "재료",
 		},
 	},
@@ -1416,6 +1541,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Legion Patterns",
 		text = {
 			en = "Legion Patterns",
+			es = "Patrones de Legion",
+			mx = "Patrones de Legion",
 		},
 	},
 	[431] = {
@@ -1423,6 +1550,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133770,
 		text = {
 			en = "Cloaks",
+			es = "Capas",
+			mx = "Capas",
 			ko = "등",
 		},
 	},
@@ -1431,18 +1560,32 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134331,
 		text = {
 			en = "Training",
+			es = "Entrenamiento",
+			mx = "Entrenamiento",
 		},
 	},
 	[433] = {
 		readable = "Alchemy of the Broken Isles",
 		text = {
 			en = "Alchemy of the Broken Isles",
+			de = "Alchemie der Verheerten Inseln",
+			es = "Alquimia de Legion",
+			mx = "Alquimia de Legion",
+			fr = "Alchimie de Legion",
+			it = "Alchimia di Legion",
+			pt = "Alquimia de Legion",
+			ru = "Алхимия Legion",
+			ko = "군단 연금술",
+			cn = "军团炼金",
+			tw = "軍團鍊金術",
 		},
 	},
 	[434] = {
 		readable = "Combat Potions",
 		text = {
 			en = "Combat Potions",
+			es = "Pociones de combate",
+			mx = "Pociones de combate",
 			ko = "전투 물약",
 		},
 	},
@@ -1451,6 +1594,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134821,
 		text = {
 			en = "Flasks",
+			es = "Frascos",
+			mx = "Frascos",
 			ko = "영약",
 		},
 	},
@@ -1459,13 +1604,24 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 135830,
 		text = {
 			en = "Transmutation",
+			de = "Transmutation",
+			es = "Transmutación",
+			mx = "Transmutación",
+			fr = "Transmutation",
+			it = "Trasmutazione",
+			pt = "Transmutação",
+			ru = "Трансмутация",
 			ko = "변환식",
+			cn = "转化",
+			tw = "轉化",
 		},
 	},
 	[437] = {
 		readable = "Utility Potions",
 		text = {
 			en = "Utility Potions",
+			es = "Pociones de utilidad",
+			mx = "Pociones de utilidad",
 			ko = "유틸리티 물약",
 		},
 	},
@@ -1474,6 +1630,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 135443,
 		text = {
 			en = "Trinkets",
+			es = "Abalorios",
+			mx = "Abalorios",
 			ko = "장비",
 		},
 	},
@@ -1481,18 +1639,32 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Cauldrons",
 		text = {
 			en = "Cauldrons",
+			es = "Calderos",
+			mx = "Calderos",
 		},
 	},
 	[440] = {
 		readable = "Mass Milling",
 		text = {
 			en = "Mass Milling",
+			es = "Moler a granel",
+			mx = "Molido en masa",
 		},
 	},
 	[443] = {
 		readable = "Legion Enchanting",
 		text = {
 			en = "Legion Enchanting",
+			de = "Verzauberkunst der Verheerten Inseln",
+			es = "Encantamiento de Legion",
+			mx = "Encantamiento de Legion",
+			fr = "Enchantement de Legion",
+			it = "Incantamento di Legion",
+			pt = "Encantamento de Legion",
+			ru = "Наложение чар Legion",
+			ko = "군단 마법부여",
+			cn = "军团附魔",
+			tw = "軍團附魔",
 		},
 	},
 	[444] = {
@@ -1500,6 +1672,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133294,
 		text = {
 			en = "Neck Enchantments",
+			es = "Encantamientos de cuello",
+			mx = "Encantamientos de cuello",
 		},
 	},
 	[445] = {
@@ -1507,6 +1681,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133397,
 		text = {
 			en = "Ring Enchantments",
+			es = "Encantamientos de anillo",
+			mx = "Encantamientos de anillo",
 			ko = "손가락 마법부여",
 		},
 	},
@@ -1515,6 +1691,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133770,
 		text = {
 			en = "Cloak Enchantments",
+			es = "Encantamientos de capa",
+			mx = "Encantamientos de capa",
 			ko = "망토 마법부여",
 		},
 	},
@@ -1522,6 +1700,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Shoulder Enchantments",
 		text = {
 			en = "Shoulder Enchantments",
+			es = "Encantamientos de hombros",
+			mx = "Encantamientos de hombros",
 			ko = "어깨 마법부여",
 		},
 	},
@@ -1530,6 +1710,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132938,
 		text = {
 			en = "Glove Enchantments",
+			es = "Encantamientos de guantes",
+			mx = "Encantamientos de guantes",
 			ko = "장갑 마법부여",
 		},
 	},
@@ -1537,18 +1719,32 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Toys, Pets, and Mounts",
 		text = {
 			en = "Toys, Pets, and Mounts",
+			es = "Juguetes, Mascotas y Monturas",
+			mx = "Juguetes, Mascotas y Monturas",
 		},
 	},
 	[450] = {
 		readable = "Legion Inscription",
 		text = {
 			en = "Legion Inscription",
+			de = "Inschriftenkunde der Verheerten Inseln",
+			es = "Inscripción de Legion",
+			mx = "Inscripción de Legion",
+			fr = "Calligraphie de Legion",
+			it = "Runografia di Legion",
+			pt = "Escrivania de Legion",
+			ru = "Начертание Legion",
+			ko = "군단 주문각인",
+			cn = "军团铭文",
+			tw = "軍團銘文學",
 		},
 	},
 	[451] = {
 		readable = "Cards",
 		text = {
 			en = "Cards",
+			es = "Cartas",
+			mx = "Cartas",
 		},
 	},
 	[453] = {
@@ -1556,6 +1752,16 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 1392953,
 		text = {
 			en = "Vantus Runes",
+			de = "Vantusrunen",
+			es = "Runas vantus",
+			mx = "Runas vantus",
+			fr = "Runes de Vantus",
+			it = "Rune Vantus",
+			pt = "Runas Vantus",
+			ru = "Вантийские руны",
+			ko = "반투스 룬",
+			cn = "凡图斯符文",
+			tw = "梵陀符文",
 		},
 	},
 	[454] = {
