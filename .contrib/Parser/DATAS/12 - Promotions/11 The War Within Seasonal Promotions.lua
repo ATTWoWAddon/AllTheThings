@@ -222,11 +222,11 @@ root(ROOTS.Promotions, {
 			}),
 			cnONLY(i(235344, {	-- Blazing Royal Fire Hawk (CN Only)
 				["description"] = "Rewarded from the Treasure Workshop.",
-				["timeline"] = { ADDED_11_0_7, "removed 11.0.7.58911" },	-- Assuming the promo ended after 6~ months
+				["timeline"] = { ADDED_11_0_7, "removed 11.1.0.59425" },	-- Removed February 27th, 2025
 			})),
 			cnONLY(i(235378, {	-- Landro's Loot Box (CN Only)
 				["description"] = "Can bought for ¥200 RMB (~$27 USD) in the Ingame Shop for a limited time.",
-				["timeline"] = { ADDED_11_0_7,  "removed 11.0.7.58911" },	-- Assuming the promo ended after 6~ months
+				["timeline"] = { ADDED_11_0_7,  "removed 11.1.0.59425" },	-- Removed February 27th, 2025
 				["groups"] = {
 					cnONLY(i(227362)),	-- Golden Ashes of Al'ar (CN Only)
 					cnONLY(i(49284)),	-- Reins of the Swift Spectral Tiger
