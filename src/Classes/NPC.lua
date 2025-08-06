@@ -256,6 +256,7 @@ local BlockedDisplayID = {
 	[56187] = 0,	-- generic bunny
 	[64062] = 0,	-- generic bunny
 	[110046] = 0,	-- nothing
+	[111386] = 0,	-- nothing
 	[112684] = 0,	-- nothing
 }
 local AllowedDisplayID = setmetatable({}, {

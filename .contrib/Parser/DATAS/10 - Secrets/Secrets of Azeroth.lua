@@ -450,17 +450,17 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 					OneTimeAccountLocked(77522,	-- The Torch of Pyrreth (Account-Wide Lock)
 					o(405510, {	-- Ancient Lever
 						["coord"] = { 56.6, 20.3, THE_WAKING_SHORES },
-						['questID'] = 77401,
+						["questID"] = 77401,
 					})),
 					OneTimeAccountLocked(77522,	-- The Torch of Pyrreth (Account-Wide Lock)
 					o(405511, {	-- Ancient Lever
 						["coord"] = { 57.7, 23.8, THE_WAKING_SHORES },
-						['questID'] = 77402,
+						["questID"] = 77402,
 					})),
 					OneTimeAccountLocked(77522,	-- The Torch of Pyrreth (Account-Wide Lock)
 					o(405512, {	-- Ancient Lever
 						["coord"] = { 57.0, 25.5, THE_WAKING_SHORES },
-						['questID'] = 77403,
+						["questID"] = 77403,
 					})),
 					o(405513, {	-- Torch of Pyrreth
 						["coord"] = { 54.5, 20.3, THE_WAKING_SHORES },

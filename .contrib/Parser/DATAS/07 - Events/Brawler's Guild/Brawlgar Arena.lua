@@ -373,7 +373,7 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 			q(32859, { ["u"] = REMOVED_FROM_GAME, }),	-- Ty'thar
 		}),
 		n(VENDORS, {
-			n(68364, {	-- Paul North <Brawl'gar Arena Quartermaster>  This vendor will change if you start the murder questline  New vendor = 145695 "Bad Luck" Symmes <Brawl'gar Arena Quartermaster>
+			n(68364, {	-- Paul North <Brawl'gar Arena Quartermaster>
 				["races"] = HORDE_ONLY,
 				["description"] = "Brawler's Burly Mushan Beast is only available to those who had reached Rank 8 in Season 1 or Season 2.|nShirts are only available to those who have already earned them.|r",
 				["groups"] = {
@@ -398,7 +398,12 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 					i(98091),	-- Last Season's Shirt
 					i(98084),	-- Ooze-Soaked Shirt
 					i(98087),	-- Paper Shirt
+					i(118908, {	-- Pit Fighter's Punching Ring
+						["timeline"] = { ADDED_6_0_2 },
+						["races"] = HORDE_ONLY,
+					}),
 					i(144392, {	-- Pugilist's Powerful Punching Ring
+						["timeline"] = { ADDED_7_1_5 },
 						["races"] = HORDE_ONLY,
 					}),
 					i(98083),	-- Sharkskin Tunic
@@ -412,7 +417,13 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 					i(98543),	-- Wraps of the Blood-Soaked Brawler
 				},
 			}),
+			n(145695, {	-- "Bad Luck" Symmes <Brawl'gar Arena Quartermaster>
+				["sourceQuest"] = 53914,	-- Murder at the Brawl'gar Arena
+				["timeline"] = { ADDED_8_1_5 },
+				["sym"] = { {"sub", "common_vendor", 68364} },	-- Paul North <Brawl'gar Arena Quartermaster>
+			}),
 			n(115797, {	-- Tiana Nevermorn <Gold Exchange>
+				["timeline"] = { ADDED_7_1_5 },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(142319, {		-- Bag of Chipped Dice

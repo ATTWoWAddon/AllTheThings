@@ -271,7 +271,7 @@ InstanceHelper.UpgradeMapping = {
 	[DIFFICULTY.RAID.HEROIC] = 6,
 };
 
-root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_2_0_SEASONSTART } }, {
+root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_2_0_TEMP } }, {
 	inst(1302, {	-- Manaforge Omega
 		["isRaid"] = true,
 		["coord"] = { 41.9, 21.5, KARESH },
@@ -391,7 +391,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 					["coord"] = { 42.0, 22.1, KARESH },
 				},bubbleDownRep(FACTION_MANAFORGE_VANDALS, {
 					{		-- RENOWN 1 --
-						q(92031), -- Meet the Vandals
+						q(92031, {	-- Meet the Vandals
+							["timeline"] = { ADDED_11_2_0 },
+						}),
 					}, {	-- RENOWN 2 --
 					}, {	-- RENOWN 3 --
 					}, {	-- RENOWN 4 --
@@ -573,7 +575,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 				}),
 				CommonBossDrops({
 					currency(WEATHERED_ETHEREAL_CREST, {
-						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+						["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
 					}),
 				}),
 				header(HEADERS.LFGDungeon, 2799, {	-- Might of the Shadowguard
@@ -625,7 +627,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(CARVED_ETHEREAL_CREST, {
-						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+						["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
 					}),
 				}),
 				n(QUESTS, {
@@ -664,7 +666,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(RUNED_ETHEREAL_CREST, {
-						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+						["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
 					}),
 				}),
 				n(QUESTS, {
@@ -688,7 +690,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
 				CommonBossDrops({
 					currency(GILDED_ETHEREAL_CREST, {
-						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+						["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
 					}),
 				}),
 				n(QUESTS, {
@@ -735,14 +737,18 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 		},
 	}),
 })));
---[[
+
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART } }, {
 	inst(1302, {	-- Manaforge Omega
 		n(FACTIONS, {
 			header(HEADERS.Faction, FACTION_MANAFORGE_VANDALS, {
 				n(QUESTS, {
-					q(92032),	-- Triggered with Meet the Vandals (92031)
-					q(92033),	-- Triggered with Meet the Vandals (92031)
+					q(92032, {	-- Triggered with Meet the Vandals (92031)
+						["timeline"] = { ADDED_11_2_0 },
+					}),
+					q(92033, {	-- Triggered with Meet the Vandals (92031)
+						["timeline"] = { ADDED_11_2_0 },
+					}),
 				}),
 			}),
 		}),
@@ -750,63 +756,14 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			["isWeekly"] = true,
 		},{
 			-- LFR
-			q(88835, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash
-			q(88838, name(HEADERS.NPC, 229287)),	-- Professor Boomspark Trash
-			q(88842, name(HEADERS.NPC, 229288)),	-- King Flamespite Trash
-			q(88846, name(HEADERS.NPC, 229433)),	-- Skiggy Muckheimer Trash
-			q(88867, name(HEADERS.NPC, 238011)),	-- Trashmaster Blazedump Trash
-			q(88829, name(HEADERS.NPC, 229283)),	-- Scraps Trash
-			q(88859, name(HEADERS.NPC, 234640)),	-- Globikus Trash
-			q(88850, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash
-			q(88854, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash
-			-- Normal
-			q(88833, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash
-			q(88840),	-- King Flamespite/Professor Boomspark Trash
-			q(88844),	-- King Flamespite/Professor Boomspark Trash
-			q(88848, name(HEADERS.NPC, 229433)),	-- Skiggy Muckheimer Trash
-			q(88869, name(HEADERS.NPC, 238011)),	-- Trashmaster Blazedump Trash
-			q(88830, name(HEADERS.NPC, 229283)),	-- Scraps Trash
-			q(88861, name(HEADERS.NPC, 234640)),	-- Globikus Trash
-			q(88852, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash
-			q(88856, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash
-			-- Heroic
-			q(88836, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash
-			q(88837, name(HEADERS.NPC, 229287)),	-- Professor Boomspark Trash
-			q(88841, name(HEADERS.NPC, 229288)),	-- King Flamespite Trash
-			q(88845, name(HEADERS.NPC, 229433)),	-- Skiggy Muckheimer Trash
-			q(88866, name(HEADERS.NPC, 238011)),	-- Trashmaster Blazedump Trash
-			q(88831, name(HEADERS.NPC, 229283)),	-- Scraps Trash
-			q(88858, name(HEADERS.NPC, 234640)),	-- Globikus Trash
-			q(88849, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash
-			q(88853, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash
-			-- Mythic
-			q(88834, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash
-			q(88839),	-- King Flamespite/Professor Boomspark Trash
-			q(88843),	-- King Flamespite/Professor Boomspark Trash
-			q(88847, name(HEADERS.NPC, 229433)),	-- Skiggy Muckheimer Trash
-			q(88868, name(HEADERS.NPC, 238011)),	-- Trashmaster Blazedump Trash
-			q(88832, name(HEADERS.NPC, 229283)),	-- Scraps Trash
-			q(88860, name(HEADERS.NPC, 234640)),	-- Globikus Trash
-			q(88851, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash
-			q(88855, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash
-			-- All
-			q(89478, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash first per week any difficulty
-			q(89479, name(HEADERS.NPC, 229433)),	-- Skiggy Muckheimer Trash first per week any difficulty
-			q(89484, name(HEADERS.NPC, 238011)),	-- Trashmaster Blazedump Trash first per week any difficulty
-			q(89477, name(HEADERS.NPC, 229283)),	-- Scraps Trash first per week any difficulty
-			q(89482, name(HEADERS.NPC, 234640)),	-- Globikus Trash first per week any difficulty
-			q(89480, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash first per week any difficulty
-			q(89481, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash first per week any difficulty
 
-			q(89452),	-- Vexie Fullthrottle
-			q(89453),	-- Cauldron of Carnage
-			q(89454),	-- Rik Reverb
-			q(89455),	-- Stix Bunkjunker
-			q(89456),	-- Sprocketmonger Lockenstock
-			q(89457),	-- One-Armed Bandit
-			q(89458),	-- Mug'Zee
-			q(89459),	-- Chrome King Gallywix
+			-- Normal
+
+			-- Heroic
+
+			-- Mythic
+
+			-- All
 		})),
 	}),
 })));
---]]

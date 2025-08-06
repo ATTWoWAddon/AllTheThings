@@ -634,6 +634,10 @@ CATA_LEATHERWORKING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"
 	r(330199, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV [Cataclysm]
 	r(330200, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V [Cataclysm]
 	n(ARMOR, {
+		-- #if ANYCLASSIC
+		r(1216335, {["timeline"] = {ADDED_4_4_1, REMOVED_5_5_0}}),	-- Bloodthirsty Fur Cloak
+		r(1216336, {["timeline"] = {ADDED_4_4_1, REMOVED_5_5_0}}),	-- Bloodthirsty Hide Cloak
+		-- #endif
 		r(78438),	-- Cloak of Beasts
 		r(78439),	-- Cloak of War
 		r(78428),	-- Darkbrand Chestguard
@@ -870,6 +874,7 @@ MOP_LEATHERWORKING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeli
 		r(124580),	-- Stormscale Shoulders
 	}),
 	filter(MISC, {
+		r(124127),	-- Angerhide Leg Armor
 		r(124126),	-- Brutal Leg Armor
 		r(124569, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Draconic Leg Reinforcements [Rank 1]
 		r(124566, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Draconic Leg Reinforcements [Rank 2]
@@ -882,6 +887,7 @@ MOP_LEATHERWORKING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeli
 		r(124568, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Heavy Leg Reinforcements [Rank 1]
 		r(124565, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Heavy Leg Reinforcements [Rank 2]
 		r(124563),	-- Heavy Leg Reinforcements [Rank 3]
+		r(124128),	-- Ironscale Leg Armor
 		r(131865, {["timeline"] = {ADDED_5_2_0}}),	-- Magnificent Hide
 		r(124627),	-- Mist-Touched Leather
 		r(124567, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Primal Leg Reinforcements [Rank 1]
@@ -890,6 +896,7 @@ MOP_LEATHERWORKING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeli
 		r(163220, {["timeline"] = {ADDED_6_0_2}}),	-- Prismatic Scale
 		r(124628),	-- Sha Armor Kit
 		r(124124),	-- Sha-Touched Leg Armor
+		r(124129),	-- Shadowleather Leg Armor
 		r(124125),	-- Toughened Leg Armor
 	}),
 }));

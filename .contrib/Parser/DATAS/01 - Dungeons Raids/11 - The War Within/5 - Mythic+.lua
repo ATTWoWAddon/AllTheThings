@@ -53,7 +53,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			}),
 		})),
 		header(HEADERS.Achievement, SEASON_ENTERPRISING, bubbleDownSelf({
-			["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0_SEASONSTART }
+			["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 }
 		},{
 			ach(40949),		-- The War Within Keystone Explorer: Season Two
 			ach(40950, {	-- The War Within Keystone Conqueror: Season Two
@@ -67,12 +67,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				i(237141),	-- Enterprising Shreddertank (MOUNT!)
 			}),
 			ach(40954, {	-- Enterprising Hero: The War Within Season Two
-				["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
-				["groups"] = {
-					title(593, {	-- <Name> the Enterprising Hero
-						["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
-					}),
-				},
+				title(593),	-- <Name> the Enterprising Hero
 			}),
 			ach(20583, {	-- Keystone Hero: Cinderbrew Meadery
 				spell(445440),	-- Path of the Flaming Brewery
@@ -104,10 +99,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				spell(354467),	-- Path of the Undefeated
 			}),
 			ach(42144, {	-- The Enterprising Damage Dealer (automated)
-				["timeline"] = { ADDED_11_1_5 },	-- Added 3 weeks after 11.1.5 for historic purposes (hotfixed)
+				["timeline"] = { ADDED_11_1_5, REMOVED_11_2_0 },	-- Added 3 weeks after 11.1.5 for historic purposes (hotfixed)
 			}),
 			ach(42148, {	-- The Enterprising Dungeon Master
-				["timeline"] = { ADDED_11_1_5 },	-- Added 3 weeks after 11.1.5 for historic purposes (hotfixed)
+				["timeline"] = { ADDED_11_1_5, REMOVED_11_2_0 },	-- Added 3 weeks after 11.1.5 for historic purposes (hotfixed)
 				-- Meta achievement
 				["sym"] = {{"meta_achievement",
 					42144,	-- The Enterprising Damage Dealer
@@ -119,12 +114,11 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 				},
 			}),
 			ach(42141, {	-- The Enterprising Healer (automated)
-				["timeline"] = { ADDED_11_1_5 },	-- Added 3 weeks after 11.1.5 for historic purposes (hotfixed)
+				["timeline"] = { ADDED_11_1_5, REMOVED_11_2_0 },	-- Added 3 weeks after 11.1.5 for historic purposes (hotfixed)
 			}),
 			ach(42139, {	-- The Enterprising Tank (automated)
-				["timeline"] = { ADDED_11_1_5 },	-- Added 3 weeks after 11.1.5 for historic purposes (hotfixed)
+				["timeline"] = { ADDED_11_1_5, REMOVED_11_2_0 },	-- Added 3 weeks after 11.1.5 for historic purposes (hotfixed)
 			}),
-
 			ach(41724, {	-- The War Within Season 2: Resilient Keystone 12 (automated)
 				["collectible"] = false,
 			}),
@@ -169,7 +163,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 			}),
 		})),
 		header(HEADERS.Achievement, SEASON_3_TWW, bubbleDownSelf({
-			["timeline"] = { ADDED_11_2_0, REMOVED_12_PH_PREPATCH }
+			["timeline"] = { ADDED_11_2_0_TEMP, REMOVED_12_PH_PREPATCH }
 		},{
 			ach(42169),	-- The War Within Keystone Explorer: Season Three
 			ach(42170, {	-- The War Within Keystone Conqueror: Season Three

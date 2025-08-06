@@ -1770,11 +1770,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 9.60, 52.6, KRASARANG_WILDS },
 						["races"] = HORDE_ONLY,
 					}),
-					fp(1190, {	-- Lion's Landing, Krasarang Wilds
+					applyclassicphase(MOP_PHASE_LANDFALL, fp(1190, {	-- Lion's Landing, Krasarang Wilds
 						["cr"] = 68226,	-- Daggin Windbeard <Flight Master>
 						["coord"] = { 88.4, 34.6, KRASARANG_WILDS },
 						["races"] = ALLIANCE_ONLY,
-					}),
+					})),
 					fp(993, {	-- Marista, Krasarang Wilds
 						["cr"] = 60441,	-- Nan-Po <Flight Master>
 						["coord"] = { 52.4, 76.6, KRASARANG_WILDS },
@@ -2183,6 +2183,20 @@ root(ROOTS.Zones, {
 							i(78880),	-- Salty Core (QI!)
 						},
 					}),
+					applyclassicphase(MOP_PHASE_LANDFALL, q(32246, {	-- Meet the Scout (A)
+						["sourceQuests"] = { 31483 },	-- Incoming...
+						["qg"] = 64610,	-- Lyalia
+						["coord"] = { 84.0, 58.7, VALE_OF_ETERNAL_BLOSSOMS },
+						["timeline"] = { ADDED_5_1_0 },
+						["races"] = ALLIANCE_ONLY,
+					})),
+					applyclassicphase(MOP_PHASE_LANDFALL, q(32249, {	-- Meet the Scout (H)
+						["sourceQuests"] = { 31483 },	-- Incoming...
+						["qg"] = 64566,	-- Sunwalker Dezco
+						["coord"] = { 62.8, 27.9, VALE_OF_ETERNAL_BLOSSOMS },
+						["timeline"] = { ADDED_5_1_0 },
+						["races"] = HORDE_ONLY,
+					})),
 					q(30691, {	-- Misery
 						["sourceQuests"] = { 30669 },	-- The Lorewalker on the Lake
 						["qg"] = 60139,	-- Wise Ana Wu

@@ -1092,9 +1092,10 @@ root(ROOTS.Zones, {
 						["qg"] = 61847,	-- Lorewalker Cho
 						["coord"] = { 57.3, 61.6, KUN_LAI_SUMMIT },
 					}),
-					q(32816, {	-- Path of the Last Emperor
+					q(32816, applyclassicphase(MOP_PHASE_ESCALATION, {	-- Path of the Last Emperor
 						["sourceQuest"] = 32815,	-- The Old Seer
 						["qg"] = 70980,	-- Seer Hao Pham Roo
+						["timeline"] = { ADDED_5_3_0 },
 						["groups"] = {
 							i(98137),	-- Treads of Reticence
 							i(98138),	-- Unpretentious Boots
@@ -1106,7 +1107,7 @@ root(ROOTS.Zones, {
 							i(98144),	-- Unassuming Slippers
 							i(98145),	-- Self-Effacing Boots
 						},
-					}),
+					})),
 					q(30819, {	-- Preparing the Remains
 						["sourceQuests"] = {
 							30807,	-- By the Falls, For the Fallen

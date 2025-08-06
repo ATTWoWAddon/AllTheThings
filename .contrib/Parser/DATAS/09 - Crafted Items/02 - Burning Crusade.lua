@@ -115,7 +115,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 		i(64394),	-- Draenei Tome
 		i(64392),	-- Orc Blood Text
 		i(87399, {["timeline"] = {ADDED_5_0_4}}),	-- Restored Artifact
-		header(HEADERS.Currency, ARCH_CURRENCY_DRAENEI, sharedData({["cost"]={{"c",ARCH_CURRENCY_DRAENEI,50}}},{ -- TODO: someone can add different fragment costs within as needed
+		header(HEADERS.Currency, ARCH_CURRENCY_DRAENEI, {
 			["provider"] = { "o", 207188 },	-- Draenei Archaeology Find
 			["maps"] = {
 				HELLFIRE_PENINSULA,
@@ -126,19 +126,19 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				ZANGARMARSH,
 			},
 			["groups"] = {
-				i(64440),	-- Anklet with Golden Bells
-				i(64456),	-- Arrival of the Naaru (TOY!)
-				i(64453),	-- Baroque Sword Scabbard
-				i(64442),	-- Carved Harp of Exotic Wood
-				i(64455),	-- Dignified Portrait
-				i(64454),	-- Fine Crystal Candelabra
-				i(64458),	-- Plated Elekk Goad
-				i(64444),	-- Scepter of the Nathrezim
-				i(64443),	-- Strange Silver Paperweight
-				i(64457),	-- The Last Relic of Argus
+				i(64440, {["cost"]={{"c",ARCH_CURRENCY_DRAENEI,45}}}),	-- Anklet with Golden Bells
+				i(64456, {["cost"]={{"c",ARCH_CURRENCY_DRAENEI,124}}}),	-- Arrival of the Naaru (TOY!)
+				i(64453, {["cost"]={{"c",ARCH_CURRENCY_DRAENEI,46}}}),	-- Baroque Sword Scabbard
+				i(64442, {["cost"]={{"c",ARCH_CURRENCY_DRAENEI,45}}}),	-- Carved Harp of Exotic Wood
+				i(64455, {["cost"]={{"c",ARCH_CURRENCY_DRAENEI,45}}}),	-- Dignified Portrait
+				i(64454, {["cost"]={{"c",ARCH_CURRENCY_DRAENEI,44}}}),	-- Fine Crystal Candelabra
+				i(64458, {["cost"]={{"c",ARCH_CURRENCY_DRAENEI,45}}}),	-- Plated Elekk Goad
+				i(64444, {["cost"]={{"c",ARCH_CURRENCY_DRAENEI,46}}}),	-- Scepter of the Nathrezim
+				i(64443, {["cost"]={{"c",ARCH_CURRENCY_DRAENEI,46}}}),	-- Strange Silver Paperweight
+				i(64457, {["cost"]={{"c",ARCH_CURRENCY_DRAENEI,130}}}),	-- The Last Relic of Argus
 			},
-		})),
-		header(HEADERS.Currency, ARCH_CURRENCY_ORC, sharedData({["cost"]={{"c",ARCH_CURRENCY_ORC,50}}},{ -- TODO: someone can add different fragment costs within as needed
+		}),
+		header(HEADERS.Currency, ARCH_CURRENCY_ORC, {
 			["provider"] = { "o", 207187 },	-- Orc Archaeology Find
 			["maps"] = {
 				HELLFIRE_PENINSULA,
@@ -147,18 +147,18 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				TEROKKAR_FOREST,
 			},
 			["groups"] = {
-				i(64436),	-- Fiendish Whip
-				i(64421),	-- Fierce Wolf Figurine
-				i(64418),	-- Gray Candle Stub
-				i(64644),	-- Headdress of the First Shaman
-				i(64417),	-- Maul of Stone Guard Mur'og
-				i(64419),	-- Rusted Steak Knife
-				i(64420),	-- Scepter of Nekros Skullcrusher
-				i(64438),	-- Skull Drinking Cup
-				i(64437),	-- Tile of Glazed Clay
-				i(64389),	-- Tiny Bronze Scorpion
+				i(64436, {["cost"]={{"c",ARCH_CURRENCY_ORC,45}}}),	-- Fiendish Whip
+				i(64421, {["cost"]={{"c",ARCH_CURRENCY_ORC,45}}}),	-- Fierce Wolf Figurine
+				i(64418, {["cost"]={{"c",ARCH_CURRENCY_ORC,45}}}),	-- Gray Candle Stub
+				i(64644, {["cost"]={{"c",ARCH_CURRENCY_ORC,130}}}),	-- Headdress of the First Shaman
+				i(64417, {["cost"]={{"c",ARCH_CURRENCY_ORC,45}}}),	-- Maul of Stone Guard Mur'og
+				i(64419, {["cost"]={{"c",ARCH_CURRENCY_ORC,45}}}),	-- Rusted Steak Knife
+				i(64420, {["cost"]={{"c",ARCH_CURRENCY_ORC,45}}}),	-- Scepter of Nekros Skullcrusher
+				i(64438, {["cost"]={{"c",ARCH_CURRENCY_ORC,45}}}),	-- Skull Drinking Cup
+				i(64437, {["cost"]={{"c",ARCH_CURRENCY_ORC,45}}}),	-- Tile of Glazed Clay
+				i(64389, {["cost"]={{"c",ARCH_CURRENCY_ORC,45}}}),	-- Tiny Bronze Scorpion
 			},
-		})),
+		}),
 	})),
 	prof(BLACKSMITHING, {
 		-- #if BEFORE CATA

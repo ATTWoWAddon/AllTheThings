@@ -185,7 +185,7 @@ namespace ATT
             {
                 fields.Remove("OnInit");
                 var onInitBody = SimplifyLuaBody(OnInitRef);
-                if (!onInitBody.Contains("return"))
+                if (!onInitBody.Contains("return") && onInitBody.Contains("function("))
                 {
                     Console.WriteLine("Missing a return within an OnInit function body.");
                     Console.WriteLine(OnInitRef.ToString());

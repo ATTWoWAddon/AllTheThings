@@ -10,7 +10,7 @@ createLocalizationString({
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",
-		-- TODO: ru = "",
+		ru = "Включить неизвестные/без источника",
 		-- TODO: ko = "",
 		cn = "包括未知/无来源",
 		tw = "包括未知/無來源",

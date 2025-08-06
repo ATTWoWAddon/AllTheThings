@@ -213,10 +213,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 						["sourceQuests"] = { 86495 },	-- The Reshii Ribbon
 						["provider"] = { "n", 233946 },	-- Xal'atath
 						["coord"] = { 48.1, 36.6, KARESH },
-						["groups"] = {
-							i(248955),	-- Ethereal Seam Ripper
-							i(235499),	-- Reshii Wraps
-						},
+						["groups"] = { i(248955) },	-- Ethereal Seam Ripper
 					}),
 					q(84857, {	-- Eco-Dome: Primus
 						["sourceQuests"] = { 84856 },	-- Where the Void Gathers
@@ -295,7 +292,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 							84861,	-- This Is Our Dome!
 							84862,	-- Void Alliance
 						},
-						["provider"] = { "n", 230814 },	-- Ve'nari
+						["qgs"] = {
+							230814,	-- Ve'nari
+							232642,	-- Void Elf Riftwalker
+						},
 						["coord"] = { 47.1, 54.5, KARESH },
 					}),
 					q(84865, {	-- Divide and Conquer
@@ -511,9 +511,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 						},
 						["provider"] = { "n", 230739 },	-- Soul-Scribe
 						["coord"] = { 75.8, 34.3, KARESH },
+						["groups"] = { i(235499) },	-- Reshii Wraps
 					}),
 				}),
-				header(HEADERS.AchCriteria, 41970.04, {	-- Chapter 4: Shadows En Garde
+				header(HEADERS.AchCriteria, 41970.04, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART } }, {	-- Chapter 4: Shadows En Garde
 					q(84896, {	-- The Next Dimension
 						["sourceQuests"] = { 84910 },	-- The Tabiqa
 						["provider"] = { "n", 230786 },	-- Soul-Scribe
@@ -622,8 +623,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 						["provider"] = { "n", 231524 },	-- Locus-Walker
 						["coord"] = { 42.9, 21.6, KARESH },
 					}),
-				}),
-				header(HEADERS.AchCriteria, 41970.05, {	-- Chapter 5: The Light of K'aresh
+				})),
+				header(HEADERS.AchCriteria, 41970.05, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART } }, {	-- Chapter 5: The Light of K'aresh
 					q(86820, {	-- Manaforge Omega: Dimensius Looms
 						["sourceQuests"] = { 85037 },	-- That's a Wrap
 						["provider"] = { "n", 231522 },	-- Alleria Windrunner
@@ -634,7 +635,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 						},
 					}),
 					q(86458),	--
-				}),
+				})),
 			}),
 			header(HEADERS.Achievement, 41808, {	-- Otherworldly Ecologist
 				q(87290, {	-- The Oasis

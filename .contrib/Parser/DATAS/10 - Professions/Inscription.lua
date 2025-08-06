@@ -135,8 +135,8 @@ GLYPH_OF_ARMORS = r(95710, {	-- Glyph of Armors / Glyph of Rapid Teleportation [
 	-- #endif
 	["timeline"] = { ADDED_4_0_3, DELETED_7_0_3 },
 });
-GLYPH_OF_THE_BATTLE_HEALER = r(124442, {	-- Glyph of the Battle Healer
-	["name"] = "Glyph of Aspect of the Battle Healer",
+GLYPH_OF_THE_BATTLE_HEALER = r(119481, {	-- Glyph of the Battle Healer
+	["name"] = "Glyph of the Battle Healer",
 	["timeline"] = { ADDED_5_0_4, DELETED_7_0_3 },
 })
 GLYPH_OF_ASPECT_OF_THE_BEAST = r(124442, {	-- Glyph of Aspect of the Beast
@@ -227,7 +227,7 @@ GLYPH_OF_BLACK_ICE = r(124443, {	-- Glyph of Black Ice
 	["name"] = "Glyph of Black Ice",
 	["timeline"] = { ADDED_5_0_4, DELETED_7_0_3 },
 });
-GLYPH_OF_BLADED_JUDGMENT = r(122030, {	-- Glyph of Bladed Judgment
+GLYPH_OF_BLADED_JUDGMENT = r(112266, {	-- Glyph of Bladed Judgment
 	["name"] = "Glyph of Bladed Judgment",
 	["timeline"] = { ADDED_5_0_4, DELETED_7_0_3 },
 });
@@ -351,7 +351,7 @@ GLYPH_OF_BONE_SHIELD_AND_ICEBOUND_FORTITUDE = r(57210, {	-- Glyph of Bone Shield
 	-- #endif
 	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
-GLYPH_OF_BREATH_OF_FIRE = r(132167, {	-- Glyph of Breath of Fire
+GLYPH_OF_BREATH_OF_FIRE = r(124444, {	-- Glyph of Breath of Fire
 	["name"] = "Glyph of Breath of Fire",
 	["timeline"] = { ADDED_5_0_4, DELETED_6_0_2 },
 });
@@ -415,7 +415,7 @@ GLYPH_OF_CIRCLE_OF_HEALING = r(57181, {	-- Glyph of Circle of Healing
 	["name"] = "Glyph of Circle of Healing",
 	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
-GLYPH_OF_CLASH = r(132167, {	-- Glyph of Clash
+GLYPH_OF_CLASH = r(124446, {	-- Glyph of Clash
 	["name"] = "Glyph of Clash",
 	["timeline"] = { ADDED_5_0_4, DELETED_6_0_2 },
 });
@@ -1123,6 +1123,10 @@ GLYPH_OF_GARROTE = r(57123, {	-- Glyph of Garrote
 	["name"] = "Glyph of Garrote",
 	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
+GLYPH_OF_GATEWAY_ATTUNEMENT = r(135561, {	-- Glyph of Gateway Attunement
+	["name"] = "Glyph of Gateway Attunement",
+	["timeline"] = { ADDED_5_0_4, DELETED_7_0_3 },
+})
 GLYPH_OF_GHOST_WOLF = r(59326, {	-- Glyph of Ghost Wolf
 	["name"] = "Glyph of Ghost Wolf",
 	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
@@ -3647,6 +3651,7 @@ local CLASS_GLYPHS = cat(1126, {	-- Glyphs
 		GLYPH_OF_FELGUARD,
 		GLYPH_OF_FELHUNTER_AND_DEMON_TRAINING,
 		GLYPH_OF_FLOATING_SHARDS,
+		GLYPH_OF_GATEWAY_ATTUNEMENT,
 		GLYPH_OF_HAUNT_AND_DRAIN_LIFE,
 		GLYPH_OF_HEALTH_FUNNEL,
 		GLYPH_OF_HEALTHSTONE,
@@ -4569,19 +4574,21 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 				["races"] = HORDE_ONLY,
 			}),
 		}),
-		-- #if BEFORE 5.0.4
+		-- #if ANYCLASSIC
 		n(RELICS, {
-			-- #if ANYCLASSIC
 			applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, r(1216316, {	-- Bloodthirsty Charm of Triumph
-				["timeline"] = { ADDED_4_2_0, DELETED_5_0_4 },
+				["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
 			})),
 			applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, r(1216290, {	-- Bloodthirsty Eyeball of Dominance
-				["timeline"] = { ADDED_4_2_0, DELETED_5_0_4 },
+				["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
 			})),
 			applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, r(1216317, {	-- Bloodthirsty Jawbone of Conquest
-				["timeline"] = { ADDED_4_2_0, DELETED_5_0_4 },
+				["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
 			})),
-			-- #endif
+		}),
+		-- #endif
+		-- #if BEFORE MOP
+		n(RELICS, {
 			r(86647, {	-- Etched Horn
 				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
 			}),
@@ -4621,6 +4628,11 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["timeline"] = { ADDE
 		cat(779, {	-- Inks
 			r(111645),	-- Ink of Dreams
 			r(111646),	-- Starlight Ink
+		}),
+		cat(105, {	-- Clear Mind
+			r(112883, {	-- Tome of the Clear Mind
+				["timeline"] = { ADDED_5_0_4, DELETED_6_0_2 },
+			}),
 		}),
 		cat(778, {	-- Staves & Off-Hands
 			r(111918),	-- Inscribed Crane Staff

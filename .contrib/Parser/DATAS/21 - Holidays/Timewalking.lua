@@ -72,6 +72,14 @@ local function AddInstancesToRotation(expansionTier, argument1, ...)
 	end
 	root(ROOTS.Instances, expansion(expansionTier, instances));
 end
+local function TimelyGoodieBag(t)
+	-- not a great way to add multiple providers for a 'container' in normal data flow
+	local tgb = container(232877, t)	-- Timely Goodie Bag
+	tgb.providers[#tgb.providers + 1] = {"i",229355}	-- Chromie's Premium Goodie Bag
+	tgb.providers[#tgb.providers + 1] = {"i",226102}	-- Chromie's Tour Goodie Bag
+	tgb.providers[#tgb.providers + 1] = {"i",229359}	-- Chromie's Goodie Bag
+	return tgb
+end
 
 root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2 } }, {
 	["modID"] = 22,	-- Timewalking
@@ -201,6 +209,72 @@ root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, bubble
 				}),
 			},
 		}),
+		n(REWARDS, {
+			TimelyGoodieBag({	-- Timely Goodie Bag
+				-- TODO: probably nice to organize by armor/type & weapon since the drops are likely loot-spec-based
+				["description"] = "Available from the weekly Timewalking quest for characters below max level.",
+				["groups"] = {
+					i(226046),	-- Timely Tourist's Band
+					i(226064),	-- Timely Tourist's Beacon Staff
+					i(226082),	-- Timely Tourist's Belt
+					i(226091),	-- Timely Tourist's Bindings
+					i(226056),	-- Timely Tourist's Blade
+					i(226167),	-- Timely Tourist's Bolthrower
+					i(226085),	-- Timely Tourist's Boots
+					i(226083),	-- Timely Tourist's Bracers
+					i(226068),	-- Timely Tourist's Breastplate
+					i(226076),	-- Timely Tourist's Chainmail
+					i(226169),	-- Timely Tourist's Chisel
+					i(226171),	-- Timely Tourist's Cleaver
+					i(226051),	-- Timely Tourist's Cloak
+					i(226079),	-- Timely Tourist's Coif
+					i(226098),	-- Timely Tourist's Cord
+					i(226095),	-- Timely Tourist's Cowl
+					i(226099),	-- Timely Tourist's Cuffs
+					i(226063),	-- Timely Tourist's Drill-Tipped Stave
+					i(226089),	-- Timely Tourist's Epaulets
+					i(226070),	-- Timely Tourist's Gauntlets
+					i(226074),	-- Timely Tourist's Girdle
+					i(226086),	-- Timely Tourist's Gloves
+					i(226080),	-- Timely Tourist's Greaves
+					i(226078),	-- Timely Tourist's Grips
+					i(226055),	-- Timely Tourist's Hammer
+					i(226094),	-- Timely Tourist's Handwraps
+					i(226170),	-- Timely Tourist's Hatchet
+					i(226087),	-- Timely Tourist's Headgear
+					i(226071),	-- Timely Tourist's Helm
+					i(226072),	-- Timely Tourist's Legguards
+					i(226065),	-- Timely Tourist's Lantern
+					i(226096),	-- Timely Tourist's Leggings
+					i(226088),	-- Timely Tourist's Pants
+					i(226073),	-- Timely Tourist's Pauldrons
+					i(226049),	-- Timely Tourist's Pendant
+					i(226062),	-- Timely Tourist's Polearm
+					i(226054),	-- Timely Tourist's Pummeler
+					i(226048),	-- Timely Tourist's Ring
+					i(226053),	-- Timely Tourist's Ritual Knife
+					i(226092),	-- Timely Tourist's Robes
+					i(226069),	-- Timely Tourist's Sabatons
+					i(226093),	-- Timely Tourist's Sandals
+					i(226090),	-- Timely Tourist's Sash
+					i(226052),	-- Timely Tourist's Shank
+					i(226058),	-- Timely Tourist's Sharpshooter
+					i(226050),	-- Timely Tourist's Shawl
+					i(226066),	-- Timely Tourist's Shield
+					i(226081),	-- Timely Tourist's Shoulderguards
+					i(226097),	-- Timely Tourist's Shoulderpads
+					i(226047),	-- Timely Tourist's Signet
+					i(226061),	-- Timely Tourist's Spade
+					i(226168),	-- Timely Tourist's Spellblade
+					i(226077),	-- Timely Tourist's Striders
+					i(226057),	-- Timely Tourist's Sword
+					i(226059),	-- Timely Tourist's Torch
+					i(226075),	-- Timely Tourist's Vambraces
+					i(226084),	-- Timely Tourist's Vest
+					i(226060),	-- Timely Tourist's Waraxe
+				},
+			}),
+		}),
 	},
 }))));
 
@@ -227,12 +301,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 				["lockCriteria"] = { 1, "lvl", 80 },
 				["isWeekly"] = true,
 				["groups"] = {
-					i(232877, {	-- Timely Goodie Bag
-						["sym"] = {
-							{ "select", "itemID", 229355 },	-- Chromie's Premium Goodie Bag
-							{ "pop" },
-						},
-					}),
+					i(232877),	-- Timely Goodie Bag
 				},
 			}),
 			q(83274, {	-- An Original Path Through Time
@@ -244,7 +313,9 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 				["timeline"] = { ADDED_11_0_5 },
 				["isWeekly"] = true,
 				["lvl"] = 80,
-				["sym"] = { { "select", "itemID", 232877 } },	-- Timely Goodie Bag
+				["groups"] = {
+					i(232877),	-- Timely Goodie Bag
+				},
 			}),
 			q(83285, {	-- The Ancient Scroll
 				["provider"] = { "i", 225348 },	-- Ancient Timewarped Scroll
@@ -879,12 +950,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 				["lockCriteria"] = { 1, "lvl", 80 },
 				["isWeekly"] = true,
 				["groups"] = {
-					i(232877, {	-- Timely Goodie Bag
-						["sym"] = {
-							{ "select", "itemID", 229355 },	-- Chromie's Premium Goodie Bag
-							{ "pop" },
-						},
-					}),
+					i(232877),	-- Timely Goodie Bag
 				},
 			}),
 			q(47523, {	-- Disturbance Detected: Black Temple
@@ -2098,12 +2164,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 				["lockCriteria"] = { 1, "lvl", 80 },
 				["isWeekly"] = true,
 				["groups"] = {
-					i(232877, {	-- Timely Goodie Bag
-						["sym"] = {
-							{ "select", "itemID", 229355 },	-- Chromie's Premium Goodie Bag
-							{ "pop" },
-						},
-					}),
+					i(232877),	-- Timely Goodie Bag
 				},
 			}),
 			q(50316, {	-- Disturbance Detected: Ulduar
@@ -3657,12 +3718,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 				["lockCriteria"] = { 1, "lvl", 80 },
 				["isWeekly"] = true,
 				["groups"] = {
-					i(232877, {	-- Timely Goodie Bag
-						["sym"] = {
-							{ "select", "itemID", 229355 },	-- Chromie's Premium Goodie Bag
-							{ "pop" },
-						},
-					}),
+					i(232877),	-- Timely Goodie Bag
 				},
 			}),
 			q(57637, {	-- Disturbance Detected: Firelands
@@ -4619,12 +4675,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_MISTS_O
 				["lockCriteria"] = { 1, "lvl", 80 },
 				["isWeekly"] = true,
 				["groups"] = {
-					i(232877, {	-- Timely Goodie Bag
-						["sym"] = {
-							{ "select", "itemID", 229355 },	-- Chromie's Premium Goodie Bag
-							{ "pop" },
-						},
-					}),
+					i(232877),	-- Timely Goodie Bag
 				},
 			}),
 			q(45563, {	-- The Shrouded Coin
@@ -5243,12 +5294,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_WARLORD
 				["lockCriteria"] = { 1, "lvl", 80 },
 				["isWeekly"] = true,
 				["groups"] = {
-					i(232877, {	-- Timely Goodie Bag
-						["sym"] = {
-							{ "select", "itemID", 229355 },	-- Chromie's Premium Goodie Bag
-							{ "pop" },
-						},
-					}),
+					i(232877),	-- Timely Goodie Bag
 				},
 			}),
 			q(55498, {	-- The Shimmering Crystal (A)
@@ -5913,12 +5959,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 				["lockCriteria"] = { 1, "lvl", 80 },
 				["isWeekly"] = true,
 				["groups"] = {
-					i(232877, {	-- Timely Goodie Bag
-						["sym"] = {
-							{ "select", "itemID", 229355},	-- Chromie's Premium Goodie Bag
-							{ "pop" },
-						},
-					}),
+					i(232877),	-- Timely Goodie Bag
 				},
 			}),
 			q(64710, {	-- Whispering Felflame Crystal

@@ -327,13 +327,13 @@ local function GetReagentIcon(data, iconOnly)
 end
 local function GetUpgradeIconForRow(data, iconOnly)
 	-- upgrade only for filled groups, or if itself is an upgrade
-	if data.filledUpgrade or data.isUpgrade or (data.progress == data.total and ((data.upgradeTotal or 0) > 0)) then
+	if data.isUpgrade or (data.progress == data.total and data.upgradeTotal > 0) then
 		return L[iconOnly and "UPGRADE_ICON" or "UPGRADE_TEXT"];
 	end
 end
 local function GetUpgradeIconForTooltip(data, iconOnly)
 	-- upgrade only if itself has an upgrade
-	if data.filledUpgrade or data.collectibleAsUpgrade then
+	if data.collectibleAsUpgrade then
 		return L[iconOnly and "UPGRADE_ICON" or "UPGRADE_TEXT"];
 	end
 end
@@ -344,13 +344,15 @@ local function GetCatalystIcon(data, iconOnly)
 end
 local function GetCostIconForRow(data, iconOnly)
 	-- cost only for filled groups, or if itself is a cost
-	if data.filledCost or data.isCost or (data.progress == data.total and ((data.costTotal or 0) > 0)) then
+	-- temp, added filledCost back due to some discrepancies discovered based on Fillers not accounted for in Cost calculations
+	if data.isCost or data.filledCost or (data.progress == data.total and data.costTotal > 0) then
 		return L[iconOnly and "COST_ICON" or "COST_TEXT"];
 	end
 end
 local function GetCostIconForTooltip(data, iconOnly)
 	-- cost only if itself is a cost
-	if data.filledCost or data.collectibleAsCost then
+	-- temp, added filledCost back due to some discrepancies discovered based on Fillers not accounted for in Cost calculations
+	if data.isCost or data.filledCost then
 		return L[iconOnly and "COST_ICON" or "COST_TEXT"];
 	end
 end
@@ -533,6 +535,10 @@ end
 local function SetRowData(self, row, data)
 	ClearRowData(row);
 	if data then
+		-- temp debug check to ensure we aren't assigning any non-objects into windows
+		-- if not data.key then
+		-- 	app.PrintDebug(app.Modules.Color.Colorize("Non-Object "..(data.text or "?").." assigned to Row "..self.Suffix,app.Colors.LockedWarning))
+		-- end
 		local text = data.text;
 		if IsRetrieving(text) then
 			text = RETRIEVING_DATA;
@@ -620,7 +626,7 @@ local function ClearRowData(self)
 end
 local function Refresh(self)
 	if not self:IsVisible() then return; end
-	-- app.PrintDebug(Colorize("Refresh:", app.Colors.TooltipDescription),self.Suffix)
+	-- app.PrintDebug(app.Modules.Color.Colorize("Refresh:", app.Colors.TooltipDescription),self.Suffix)
 	local height = self:GetHeight();
 	if height > 80 then
 		self.ScrollBar:Show();
@@ -1824,7 +1830,7 @@ app.AddEventHandler("RowOnEnter", function(self)
 		-- Add any ID toggle fields
 		app.ProcessInformationTypes(tooltipInfo, reference);
 	end
-	
+
 	-- Further conditional texts that can be displayed
 	if reference.timeRemaining then
 		tooltipInfo[#tooltipInfo + 1] = {

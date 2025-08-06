@@ -10,7 +10,7 @@ createLocalizationString({
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",
-		-- TODO: ru = "",
+		ru = "Исследование (неточное)",
 		-- TODO: ko = "",
 		cn = "探索(不精准)",
 		tw = "地圖探索(不精準)",

@@ -10,7 +10,7 @@ createLocalizationString({
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",
-		-- TODO: ru = "",
+		ru = "Автоматически устанавливать точки маршрута",
 		-- TODO: ko = "",
 		cn = "自动绘制路径点",
 		tw = "自動繪製路線點",

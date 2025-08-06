@@ -11,7 +11,7 @@ createLocalizationString({
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",
-		-- TODO: ru = "",
+		ru = "В качестве примера, использование |cff00FF98/att achievement:9547|r покажет вам что-то потрясающее!",
 		-- TODO: ko = "",
 		cn = "例如，输入 |cff00FF98/att achievement:9547|r，就能看到超酷的内容！",
 		-- TODO: tw = "",

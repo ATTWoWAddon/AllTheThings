@@ -10,7 +10,7 @@ INVASION_PIRATE = createHeader({
 		-- ko = "",
 		mx = "Invasión: Pirata",
 		-- pt = "",
-		-- ru = "",
+		ru = "Вторжение: Пираты",
 		cn = "入侵：海盗",
 		-- tw = "",
 	},

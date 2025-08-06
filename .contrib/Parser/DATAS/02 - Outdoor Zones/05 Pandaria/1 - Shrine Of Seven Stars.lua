@@ -18,59 +18,60 @@ root(ROOTS.Zones, m(PANDARIA, {
 			},{
 				q(32007, {	-- A Worthy Challenge: Darkmaster Gandling
 					["isDaily"] = true,
-					["u"] = REMOVED_FROM_GAME,
+					["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
 					["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
 				}),
 				q(32005, {	-- A Worthy Challenge: Durand
 					["isDaily"] = true,
-					["u"] = REMOVED_FROM_GAME,
+					["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
 					["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
 				}),
 				q(32006, {	-- A Worthy Challenge: Flameweaver Koegler
 					["isDaily"] = true,
-					["u"] = REMOVED_FROM_GAME,
+					["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
 					["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
 				}),
 				q(32003, {	-- A Worthy Challenge: Raigonn
 					["isDaily"] = true,
-					["u"] = REMOVED_FROM_GAME,
+					["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
 					["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
 				}),
 				q(31998, {	-- A Worthy Challenge: Sha of Doubt
 					["isDaily"] = true,
-					["u"] = REMOVED_FROM_GAME,
+					["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
 					["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
 				}),
 				q(32001, {	-- A Worthy Challenge: Sha of Hatred
 					["isDaily"] = true,
-					["u"] = REMOVED_FROM_GAME,
+					["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
 					["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
 				}),
 				q(32004, {	-- A Worthy Challenge: Wing Leader Ner'onok
 					["isDaily"] = true,
-					["u"] = REMOVED_FROM_GAME,
+					["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
 					["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
 				}),
 				q(32002, {	-- A Worthy Challenge: Xin the Weaponmaster
 					["isDaily"] = true,
-					["u"] = REMOVED_FROM_GAME,
+					["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
 					["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
 				}),
 				q(32000, {	-- A Worthy Challenge: Yan-zhu the Uncasked
 					["isDaily"] = true,
-					["u"] = REMOVED_FROM_GAME,
+					["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
 					["_drop"] = { "g" },	-- drop Heroic Cache of Treasures
 				}),
-				q(33248, {	-- Proving Grounds
+				q(33248, applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, {	-- Proving Grounds
 					["qg"] = 64101,	-- Taijin the Cyclone
 					["coord"] = { 47.23, 49.71, 393 },
-				}),
-				q(32683, {	-- So You Want to Be a Blacksmith...
+					["timeline"] = { ADDED_5_4_0 },
+				})),
+				q(32683, applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, {	-- So You Want to Be a Blacksmith...
 					["qg"] = 64085,	-- Cullen Hammerbrow
 					["coord"] = { 71.27, 50.52, 393 },
-					["timeline"] = { REMOVED_8_0_1 },	-- no longer available due to the profession level changes
+					["timeline"] = { ADDED_5_2_0, REMOVED_8_0_1 },	-- no longer available due to the profession level changes
 					["requireSkill"] = BLACKSMITHING,
-				}),
+				})),
 				--[[
 				q(31390, {	-- The Klaxxi
 				}),

@@ -259,9 +259,7 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 				["_factions"] = { 1357 },	-- Nomi
 			}),
 		}),
-		ach(7329, {	-- Pandaren Cuisine
-			["sym"] = {{ "partial_achievement", 7330 }},	-- Pandaren Delicacies
-		}),
+		ach(7329),	-- Pandaren Cuisine
 		ach(7330),	-- Pandaren Delicacies
 		ach(7326, {	-- The Pandaren Gourmet (15)
 			["sym"] = {{ "partial_achievement", 7327 }},	-- The Pandaren Gourmet (30)

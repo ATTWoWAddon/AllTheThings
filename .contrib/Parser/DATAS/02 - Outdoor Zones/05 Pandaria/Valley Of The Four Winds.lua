@@ -1090,6 +1090,12 @@ root(ROOTS.Zones, {
 						["qg"] = 56133,	-- Chen Stormstout
 						["coord"] = { 68.9, 43.2, VALLEY_OF_THE_FOUR_WINDS },
 					}),
+					q(32019, {	-- They Call Him... Stormstout
+						["description"] = "Only available before completion of |cFFFFD700The Jade Serpent|r.",
+						["qg"] = 56782,	-- Elder Sage Rain-Zhu
+						["coord"] = { 58.1, 58.6, THE_JADE_FOREST },
+						["isBreadcrumb"] = true,
+					}),
 					q(29985, {	-- They Will Be Mist
 						["sourceQuest"] = 29984,	-- Unyielding Fists: Trial of Bamboo
 						["qg"] = 56714,	-- Master Bruised Paw

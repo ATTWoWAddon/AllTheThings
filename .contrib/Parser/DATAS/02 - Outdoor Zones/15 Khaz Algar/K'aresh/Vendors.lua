@@ -29,6 +29,22 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 					i(247694),	-- Snifted Void Essence
 				},
 			}),
+			n(235645, {	-- Curator Ve'ka <Exotic Toys>
+				["coord"] = { 51.9, 53.9, KARESH_TAZAVESH },
+				["sym"] = {{"select","itemID",
+					54436,	-- Blue Clockwork Rocket Bot (PET!)
+					54343,	-- Blue Crashin' Thrashin' Racer Controller (TOY!)
+					192099,	-- Earpieces of Tranquil Focus (TOY!)
+					104324,	-- Foot Ball (TOY!)
+					44481,	-- Grindgear Toy Gorilla
+					44601,	-- Heavy Copper Racer
+					34498,	-- Paper Zeppelin Kit
+					137663,	-- Soft Foam Sword (TOY!)
+					104323,	-- The Swineskin (TOY!)
+					44482,	-- Trusty Copper Racer
+					44599,	-- Zippy Copper Racer
+				}},
+			}),
 			n(241588, {	-- Hashim
 				["coord"] = { 50.3, 36.6, KARESH },
 				["groups"] = {
@@ -100,6 +116,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 					i(247689),	-- K'areshi Copper Ingot (JUNK!)
 					i(247691),	-- Slateback Hide (JUNK!)
 					i(247690),	-- Void-Tainted Lotus (JUNK!)
+				},
+			}),
+			n(235314, {	-- Ta'sam <Fine Goods & Lost Treasures>
+				["description"] = "|cFFE50D12WARNING:|r Sells junk items. Purchases are not refundable. Selling the items back will get you back only 1/4 of the gold spent.",
+				["coord"] = { 43.3, 35.5, KARESH_TAZAVESH },
+				["groups"] = {
+					i(247686),	-- Crystalized Nightshade (JUNK!)
+					i(247688),	-- K'arroc Feather Quill (JUNK!)
+					i(247687),	-- Overly-Preserved K'areshi Preserves (JUNK!)
+					i(247685),	-- Slightly Used Containment Device (JUNK!)
 				},
 			}),
 			n(243801, {	-- Zo'phar <Rare Materials>

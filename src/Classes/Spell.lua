@@ -15,20 +15,11 @@ local IsQuestFlaggedCompleted, SearchForFieldContainer, SearchForField
 local GetSpellLink = app.WOWAPI.GetSpellLink;
 
 -- TODO: some of these deprecated in 11.2, move to WOWAPI
-local IsSpellKnown, IsPlayerSpell, GetNumSpellTabs, GetSpellTabInfo, IsSpellKnownOrOverridesKnown
+local IsSpellKnown, GetNumSpellTabs, GetSpellTabInfo, IsSpellKnownOrOverridesKnown
 ---@diagnostic disable-next-line: deprecated
-	= IsSpellKnown, IsPlayerSpell, GetNumSpellTabs, GetSpellTabInfo, IsSpellKnownOrOverridesKnown
+	= app.WOWAPI.IsSpellKnown, GetNumSpellTabs, GetSpellTabInfo, app.WOWAPI.IsSpellKnownOrOverridesKnown
 
--- Consolidates some spell checking
----@param spellID number
----@param rank? number
----@param ignoreHigherRanks? boolean
----@return boolean isKnown
-local IsSpellKnownHelper = function(spellID, rank, ignoreHigherRanks)
-	if IsPlayerSpell(spellID) or IsSpellKnown(spellID) or IsSpellKnown(spellID, true)
-		or IsSpellKnownOrOverridesKnown(spellID) or IsSpellKnownOrOverridesKnown(spellID, true) then
-		return true;
-	end
+local function IsSpellKnownByQuestComplete(spellID)
 	if spellID == 390631 and IsQuestFlaggedCompleted(66444) then	-- Ottuk Taming returning false for the above functions
 		return true;
 	end
@@ -37,6 +28,36 @@ local IsSpellKnownHelper = function(spellID, rank, ignoreHigherRanks)
 	end
 	if (spellID == 148972 or spellID == 148970) and IsQuestFlaggedCompleted(32325) then	-- Green Dread/Fel-Steed returning false for the above functions
 		return true;
+	end
+end
+-- Consolidates some spell checking
+---@param spellID number
+---@param rank? number
+---@param ignoreHigherRanks? boolean
+---@return boolean isKnown
+local IsSpellKnownHelper
+-- In 11.2 some spell checking was consolidated
+if app.GameBuildVersion >= 110200 then
+	IsSpellKnownHelper = function(spellID, rank, ignoreHigherRanks)
+		if IsSpellKnown(spellID)
+			or IsSpellKnown(spellID, 1)
+			or IsSpellKnownOrOverridesKnown(spellID, 0, true)
+			or IsSpellKnownOrOverridesKnown(spellID, 1, true)
+			or IsSpellKnownByQuestComplete(spellID) then
+			return true
+		end
+	end
+else
+	local IsPlayerSpell = app.WOWAPI.IsPlayerSpell
+	IsSpellKnownHelper = function(spellID, rank, ignoreHigherRanks)
+		if IsPlayerSpell(spellID)
+			or IsSpellKnown(spellID)
+			or IsSpellKnown(spellID, true)
+			or IsSpellKnownOrOverridesKnown(spellID)
+			or IsSpellKnownOrOverridesKnown(spellID, true)
+			or IsSpellKnownByQuestComplete(spellID) then
+			return true
+		end
 	end
 end
 app.IsSpellKnownHelper = IsSpellKnownHelper;

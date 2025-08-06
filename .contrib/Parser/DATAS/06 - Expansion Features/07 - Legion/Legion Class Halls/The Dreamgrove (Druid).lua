@@ -107,8 +107,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							artifact(62),	-- Restoration Druid Hidden Artifact Appearance
 						}),
 						i(129362),	-- Broot (PET!)
-						i(140741),	-- Nightmare Lasher (PET!)
 						i(140397),	-- G'hanir's Blossom
+						i(140741),	-- Nightmare Lasher (PET!)
+						i(140400),	-- Perfect Dreamgrove Blossom
 					},
 				}),
 				petbattle(filter(BATTLE_PETS, {

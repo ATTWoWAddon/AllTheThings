@@ -2155,6 +2155,7 @@ end)();
 -- Synchronization Functions
 (function()
 local C_CreatureInfo_GetRaceInfo = C_CreatureInfo.GetRaceInfo;
+local SendAddonMessage = app.WOWAPI.SendAddonMessage
 local outgoing,incoming,queue,active = {},{},{},nil;
 local whiteListedFields = { --[["Achievements",]] "Artifacts", "AzeriteEssenceRanks", "BattlePets", "Exploration", "Factions", "FlightPaths", "Followers", "GarrisonBuildings", "Quests", "Spells", "Titles" };
 app.CharacterSyncTables = whiteListedFields;
@@ -2171,7 +2172,7 @@ local function processQueue()
 		tremove(queue, 1);
 		active = data[1];
 		app.print("Updating " .. data[2] .. " from " .. data[3] .. "...");
-		C_ChatInfo.SendAddonMessage("ATT", "!\tsyncsum\t" .. data[1], "WHISPER", data[3]);
+		SendAddonMessage("ATT", "!\tsyncsum\t" .. data[1], "WHISPER", data[3]);
 	end
 end
 
@@ -2182,7 +2183,7 @@ function app:AcknowledgeIncomingChunks(sender, uid, total)
 		incoming[sender] = incomingFromSender;
 	end
 	incomingFromSender[uid] = { ["chunks"] = {}, ["total"] = total };
-	C_ChatInfo.SendAddonMessage("ATT", "chksack\t" .. uid, "WHISPER", sender);
+	SendAddonMessage("ATT", "chksack\t" .. uid, "WHISPER", sender);
 end
 local function ProcessIncomingChunk(sender, uid, index, chunk)
 	if not (chunk and index and uid and sender) then return false; end
@@ -2245,9 +2246,9 @@ local function ProcessIncomingChunk(sender, uid, index, chunk)
 end
 function app:AcknowledgeIncomingChunk(sender, uid, index, chunk)
 	if chunk and ProcessIncomingChunk(sender, uid, index, chunk) then
-		C_ChatInfo.SendAddonMessage("ATT", "chkack\t" .. uid .. "\t" .. index .. "\t1", "WHISPER", sender);
+		SendAddonMessage("ATT", "chkack\t" .. uid .. "\t" .. index .. "\t1", "WHISPER", sender);
 	else
-		C_ChatInfo.SendAddonMessage("ATT", "chkack\t" .. uid .. "\t" .. index .. "\t0", "WHISPER", sender);
+		SendAddonMessage("ATT", "chkack\t" .. uid .. "\t" .. index .. "\t0", "WHISPER", sender);
 	end
 end
 function app:SendChunk(sender, uid, index, success)
@@ -2257,7 +2258,7 @@ function app:SendChunk(sender, uid, index, success)
 		if chunksForUID and success == 1 then
 			local chunk = chunksForUID[index];
 			if chunk then
-				C_ChatInfo.SendAddonMessage("ATT", "chk\t" .. uid .. "\t" .. index .. "\t" .. chunk, "WHISPER", sender);
+				SendAddonMessage("ATT", "chk\t" .. uid .. "\t" .. index .. "\t" .. chunk, "WHISPER", sender);
 			end
 		else
 			outgoingForSender.uids[uid] = nil;
@@ -2397,12 +2398,12 @@ function app:ReceiveSyncRequest(sender, battleTag)
 			if (msg:len() + charsummary:len()) < 255 then
 				msg = msg .. charsummary;
 			else
-				C_ChatInfo.SendAddonMessage("ATT", msg, "WHISPER", sender);
+				SendAddonMessage("ATT", msg, "WHISPER", sender);
 				msg = "?\tsyncsum" .. charsummary;
 			end
 		end
 	end
-	C_ChatInfo.SendAddonMessage("ATT", msg, "WHISPER", sender);
+	SendAddonMessage("ATT", msg, "WHISPER", sender);
 end
 function app:ReceiveSyncSummary(sender, summary)
 	if app:IsAccountLinked(sender) then
@@ -2462,7 +2463,7 @@ function app:ReceiveSyncSummaryResponse(sender, summary)
 			outgoingForSender.total = uid;
 
 			-- Send Addon Message Back
-			C_ChatInfo.SendAddonMessage("ATT", "chks\t" .. uid .. "\t" .. #chunks, "WHISPER", sender);
+			SendAddonMessage("ATT", "chks\t" .. uid .. "\t" .. #chunks, "WHISPER", sender);
 		end
 	end
 end
@@ -2474,7 +2475,7 @@ function app:Synchronize(automatically)
 		local any, msg = false, "?\tsync\t" .. battleTag;
 		for playerName,allowed in pairs(AllTheThingsAD.LinkedAccounts) do
 			if allowed and not playerName:find("#") then
-				C_ChatInfo.SendAddonMessage("ATT", msg, "WHISPER", playerName);
+				SendAddonMessage("ATT", msg, "WHISPER", playerName);
 				any = true;
 			end
 		end
@@ -2488,7 +2489,7 @@ function app:SynchronizeWithPlayer(playerName)
 	local battleTag = select(2, BNGetInfo());
 	if battleTag then
 		app.CurrentCharacter.lastPlayed = time();
-		C_ChatInfo.SendAddonMessage("ATT", "?\tsync\t" .. battleTag, "WHISPER", playerName);
+		SendAddonMessage("ATT", "?\tsync\t" .. battleTag, "WHISPER", playerName);
 	end
 end
 app.AddEventHandler("OnReady", function()
@@ -4329,6 +4330,9 @@ customWindowUpdates.RaidAssistant = function(self)
 			-- Define the different window configurations that the mini list will switch to based on context.
 			local raidassistant, lootspecialization, dungeondifficulty, raiddifficulty, legacyraiddifficulty;
 			local GetDifficultyInfo, GetInstanceInfo = GetDifficultyInfo, GetInstanceInfo;
+
+			local GetSpecialization = app.WOWAPI.GetSpecialization
+			local GetSpecializationInfo = app.WOWAPI.GetSpecializationInfo
 
 			-- Raid Assistant
 			local switchDungeonDifficulty = function(row, button)

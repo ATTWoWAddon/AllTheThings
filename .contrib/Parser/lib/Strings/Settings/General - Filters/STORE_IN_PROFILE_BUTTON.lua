@@ -10,7 +10,7 @@ createLocalizationString({
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",
-		-- TODO: ru = "",
+		ru = "Сохранять в профиле",
 		-- TODO: ko = "",
 		cn = "储存在配置文件中",
 		-- TODO: tw = "",

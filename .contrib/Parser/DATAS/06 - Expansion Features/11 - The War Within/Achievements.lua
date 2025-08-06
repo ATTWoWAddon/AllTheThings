@@ -416,7 +416,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 			i(226206),	-- Mark of the Spelunker Supreme
 		})),
 		-- INFO: Verified 2025-01-12, shows no criteria without achraw
-		achraw(40911, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 }, }, {	-- The War Within Season 2: Master Blaster
+		achraw(40911, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART }, }, {	-- The War Within Season 2: Master Blaster
 			crit(70046),	-- Attained 1600+ Rated PVP rating
 			crit(70053),	-- Attained 2000+ Mythic Plus rating
 			crit(70052),	-- Defeated Gallywix on Heroic or Mythic difficulty

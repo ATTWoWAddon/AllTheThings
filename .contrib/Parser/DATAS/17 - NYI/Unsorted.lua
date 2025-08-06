@@ -407,7 +407,6 @@ root(ROOTS.Unsorted, {
 			}),
 			filter(MISC, {
 				i(238808),	-- Celeste-Touched Fin
-				i(238810),	-- Mana-Blessed Fin
 				i(238849),	-- Ominous Unblinking Eye
 				i(238851),	-- Fractured Dragon Scale
 				i(238853),	-- Netherbound Heart
@@ -2027,7 +2026,6 @@ root(ROOTS.Unsorted, {
 				i(158805),	-- Soft Turtle Shell \\ PH Flavor - Beast  - Raven - Bird
 				i(158807),	-- PH Flavor - Unused \\ PH Flavor - Doe / Gazelle
 				i(158809),	-- PH Flavor - Unused \\ PH Flavor - Flesh Beast
-				i(158810),	-- Humming Dew \\ PH Flavor - Earth Elemental
 				i(158812),	-- Glowfly Abdomen \\ PH Flavor - Ettin
 				i(158813),	-- Sausage Casing \\ PH Flavor - Lightning Elemental
 				i(158814),	-- Bulging Coin Purse \\ PH Flavor - Unused \\ PH Flavor - Swamp Plant
@@ -2054,7 +2052,6 @@ root(ROOTS.Unsorted, {
 				i(158847),	-- PH Flavor - Unused \\ PH Flavor - Bog Plant
 				i(158850),	-- Vibrant Plumage \\ PH Flavor - Pig
 				i(158852),	-- PH Flavor - Unused \\ PH Flavor - Fox
-				i(158853),	-- Bony Skullplate \\ PH Flavor - Naga Brute
 				i(158854),	-- PH Flavor - Unused \\ PH Flavor - Goat
 				i(158867),	-- Needlepoint Bill \\ PH Flavor - Ranishu
 				i(158873),	-- Crystalline Honeymead \\ PH Flavor - Dire Troll Female - Blood Troll
@@ -2566,7 +2563,6 @@ root(ROOTS.Unsorted, {
 		})),
 		-- 8.1.0
 		expansion(EXPANSION.BFA, patch(1,0), bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {
-			i(164380),	-- Binding Stone
 			i(164641),	-- Pile of Weapons
 			i(164735),	-- Fallen Defender's Blade
 			i(164745),	-- Pile of Weapons
@@ -3022,8 +3018,6 @@ root(ROOTS.Unsorted, {
 			i(170034),	-- Overloaded Capacitor
 			i(170035),	-- Corroded Gauge
 			i(170036),	-- Cracked Display
-			i(170037),	-- Cracked Lattice
-			i(170038),	-- Torn Mesh
 			i(170039),	-- Shredded Grid
 			i(170040),	-- Unraveling Web
 			i(170041),	-- Cracked Skull

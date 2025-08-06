@@ -10,9 +10,11 @@ FILLED_TRAVELERS_LOG = createHeader({
 		mx = "Llenar el registro del viajero",
 		cn = "旅行者日志进度",
 		tw = "完成旅行者日誌",
+		ru = "Заполненный Журнал Путешественника",
 	},
 	description = {
 		en = "This reward is given for filling the Travel Points Progress Bar during the month.",
+		ru = "Эта награда выдаётся за заполнение прогресса Очков путешествия в течение месяца.",
 	},
 });
 

@@ -120,7 +120,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 		i(64396),	-- Nerubian Obelisk
 		i(87399, {["timeline"] = {ADDED_5_0_4}}),	-- Restored Artifact
 		i(64395),	-- Vrykul Rune Stick
-		header(HEADERS.Currency, ARCH_CURRENCY_NERUBIAN, sharedData({["cost"]={{"c",ARCH_CURRENCY_NERUBIAN,50}}},{ -- TODO: someone can add different fragment costs within as needed
+		header(HEADERS.Currency, ARCH_CURRENCY_NERUBIAN, {
 			["provider"] = { "o", 203078 },	-- Nerubian Archaeology Find
 			["maps"] = {
 				BOREAN_TUNDRA,
@@ -130,18 +130,18 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 				ZULDRAK,
 			},
 			["groups"] = {
-				i(64481),	-- Blessing of the Old God (TOY!)
-				i(64479),	-- Ewer of Jormungar Blood
-				i(64477),	-- Gruesome Heart Box
-				i(64476),	-- Infested Ruby Ring
-				i(64482),	-- Puzzle Box of Yogg-Saron (TOY!)
-				i(64475),	-- Scepter of Nezar'Azret
-				i(64478),	-- Six-Clawed Cornice
-				i(64474),	-- Spidery Sundial
-				i(64480),	-- Vizier's Scrawled Streamer
+				i(64481, {["cost"]={{"c",ARCH_CURRENCY_NERUBIAN,140}}}),	-- Blessing of the Old God (TOY!)
+				i(64479, {["cost"]={{"c",ARCH_CURRENCY_NERUBIAN,45}}}),	-- Ewer of Jormungar Blood
+				i(64477, {["cost"]={{"c",ARCH_CURRENCY_NERUBIAN,45}}}),	-- Gruesome Heart Box
+				i(64476, {["cost"]={{"c",ARCH_CURRENCY_NERUBIAN,45}}}),	-- Infested Ruby Ring
+				i(64482, {["cost"]={{"c",ARCH_CURRENCY_NERUBIAN,140}}}),	-- Puzzle Box of Yogg-Saron (TOY!)
+				i(64475, {["cost"]={{"c",ARCH_CURRENCY_NERUBIAN,45}}}),	-- Scepter of Nezar'Azret
+				i(64478, {["cost"]={{"c",ARCH_CURRENCY_NERUBIAN,45}}}),	-- Six-Clawed Cornice
+				i(64474, {["cost"]={{"c",ARCH_CURRENCY_NERUBIAN,45}}}),	-- Spidery Sundial
+				i(64480, {["cost"]={{"c",ARCH_CURRENCY_NERUBIAN,45}}}),	-- Vizier's Scrawled Streamer
 			},
-		})),
-		header(HEADERS.Currency, ARCH_CURRENCY_VRYKUL, sharedData({["cost"]={{"c",ARCH_CURRENCY_VRYKUL,50}}},{ -- TODO: someone can add different fragment costs within as needed
+		}),
+		header(HEADERS.Currency, ARCH_CURRENCY_VRYKUL, {
 			["provider"] = { "o", 207189 },	-- Vrykul Archaeology Find
 			["maps"] = {
 				HOWLING_FJORD,
@@ -150,15 +150,15 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 				THE_STORM_PEAKS,
 			},
 			["groups"] = {
-				i(64464),	-- Fanged Cloak Pin
-				i(64462),	-- Flint Striker
-				i(64459),	-- Intricate Treasure Chest Key
-				i(64460),	-- Nifflevar Bearded Axe
-				i(64461),	-- Scramseax
-				i(64467),	-- Thorned Necklace
-				i(69775, {["timeline"] = {ADDED_4_1_0}}),	-- Vrykul Drinking Horn (TOY!)
+				i(64464, {["cost"]={{"c",ARCH_CURRENCY_VRYKUL,45}}}),	-- Fanged Cloak Pin
+				i(64462, {["cost"]={{"c",ARCH_CURRENCY_VRYKUL,45}}}),	-- Flint Striker
+				i(64459, {["cost"]={{"c",ARCH_CURRENCY_VRYKUL,45}}}),	-- Intricate Treasure Chest Key
+				i(64460, {["cost"]={{"c",ARCH_CURRENCY_VRYKUL,130}}}),	-- Nifflevar Bearded Axe
+				i(64461, {["cost"]={{"c",ARCH_CURRENCY_VRYKUL,45}}}),	-- Scramseax
+				i(64467, {["cost"]={{"c",ARCH_CURRENCY_VRYKUL,45}}}),	-- Thorned Necklace
+				i(69775, {["cost"]={{"c",ARCH_CURRENCY_VRYKUL,100}},["timeline"] = {ADDED_4_1_0}}),	-- Vrykul Drinking Horn (TOY!)
 			},
-		})),
+		}),
 	})),
 	prof(BLACKSMITHING, {
 		-- #if BEFORE CATA

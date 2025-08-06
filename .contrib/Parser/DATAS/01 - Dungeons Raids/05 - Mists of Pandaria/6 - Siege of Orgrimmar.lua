@@ -308,6 +308,22 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					["provider"] = { "n", 73335 },	-- Fading Breath
 					--["coord"] = { <coords>, <mapID> },	-- Siege of Orgrimmar
 				}),
+				{
+					["aqd"] = q(33134, {	-- Warforged Seals (A)
+						["qg"] = 64029,	-- Elder Lin
+						["coord"] = { 85.2, 62.6, VALE_OF_ETERNAL_BLOSSOMS },
+					}),
+					["hqd"] = q(33133, {	-- Warforged Seals (H)
+						["qg"] = 63996,	-- Elder Liao
+						["coord"] = { 62.0, 20.6, VALE_OF_ETERNAL_BLOSSOMS },
+					}),
+					["timeline"] = { ADDED_5_4_0 },
+					["cost"] = {{ "c", 738, 50 }},	-- Lesser Charms of Good Fortune
+					["repeatable"] = true,
+					["groups"] = {
+						currency(776),	-- Warforged Seal
+					},
+				},
 				q(33138, {	-- Why Do We Fight?
 					["sourceQuests"] = { 33147 },	-- The Last Gasp of Y'Shaarj
 					["provider"] = { "n", 73318 },	-- Lorewalker Cho

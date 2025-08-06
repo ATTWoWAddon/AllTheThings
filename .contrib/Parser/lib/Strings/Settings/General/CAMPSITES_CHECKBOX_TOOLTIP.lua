@@ -10,7 +10,7 @@ createLocalizationString({
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",
-		-- TODO: ru = "",
+		ru = "Включите для отслеживания лагерей отряда.",
 		-- TODO: ko = "",
 		cn = "启用此选项以追踪战团营地的完成情况。",
 		-- TODO: tw = "",

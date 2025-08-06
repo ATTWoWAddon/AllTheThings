@@ -11,7 +11,7 @@ createLocalizationString({
 		fr = "Sujets & Compagnons",
 		it = "Seguaci & Avventurieri",
 		pt = "Seguidores & Companheiros",
-		ru = "Соратники & Спутники",
+		ru = "Соратники и Спутники",
 		ko = "추종자 및 동료",
 		cn = "追随者 & 伙伴",
 		tw = "追隨者 & 伙伴",

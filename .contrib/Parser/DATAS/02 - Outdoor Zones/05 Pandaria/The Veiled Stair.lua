@@ -95,14 +95,14 @@ root(ROOTS.Zones, {
 					n(70436, {	-- Blacktalon Quartermaster <Supplier to the Black Prince>
 						["coord"] = { 54.2, 72.9, THE_VEILED_STAIR },
 						["timeline"] = { ADDED_5_2_0 },
-						-- #if AFTER WOD
-						["u"] = TEMP_MOP_LEGENDARY_CLOAK_PHASE,
-						-- #endif
 						["groups"] = appendGroups(
 							applyclassicphase(MOP_PHASE_ONE, bubbleDown({
 								["sourceAchievement"] = 7533,	-- Chapter I: Trial of the Black Prince
 								["timeline"] = { ADDED_5_0_4 },
 								["cost"] = 100000000,	-- 10,000g
+								-- #if AFTER WOD
+								["u"] = TEMP_MOP_LEGENDARY_CLOAK_PHASE,
+								-- #endif
 							}, {
 								i(89873),	-- Crystallized Dread
 								i(89882),	-- Crystallized Horror
@@ -115,6 +115,9 @@ root(ROOTS.Zones, {
 								},
 								["timeline"] = { ADDED_5_1_0 },
 								["cost"] = 25000000,	-- 2,500g
+								-- #if AFTER WOD
+								["u"] = TEMP_MOP_LEGENDARY_CLOAK_PHASE,
+								-- #endif
 							}, {
 								i(93403),	-- Eye of the Black Prince
 							})),
@@ -122,6 +125,9 @@ root(ROOTS.Zones, {
 								["sourceQuest"] = 32595,	-- The Crown of Heaven
 								["timeline"] = { ADDED_5_2_0 },
 								["cost"] = {{ "i", 76132, 5 }},	-- Primal Diamond
+								-- #if AFTER WOD
+								["u"] = TEMP_MOP_LEGENDARY_CLOAK_PHASE,
+								-- #endif
 							}, {
 								i(95346),	-- Capacitive Primal Diamond
 								i(95345),	-- Courageous Primal Diamond
@@ -132,6 +138,9 @@ root(ROOTS.Zones, {
 								["sourceAchievement"] = 7536,	-- Chapter IV: Celestial Blessings
 								["timeline"] = { ADDED_5_3_0 },
 								["cost"] = 100000000,	-- 10,000g
+								-- #if AFTER WOD
+								["u"] = TEMP_MOP_LEGENDARY_CLOAK_PHASE,
+								-- #endif
 							}, {
 								i(98149),	-- Cranewing Cloak
 								i(98150),	-- Jadefire Drape
@@ -144,6 +153,9 @@ root(ROOTS.Zones, {
 								i(102457, {	-- Timeless Essence of the Black Dragonflight
 									["sourceAchievement"] = 8325,	-- Chapter V: Judgment of the Black Prince
 									["timeline"] = { ADDED_5_4_0 },
+									-- #if AFTER WOD
+									["u"] = TEMP_MOP_LEGENDARY_CLOAK_PHASE,
+									-- #endif
 								}),
 							}),
 						{}),

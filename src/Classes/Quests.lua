@@ -1734,7 +1734,7 @@ local createQuest = app.CreateClass("Quest", "questID", {
 		local flag = IsQuestFlaggedCompletedForObject(t);
 		if flag then return flag; end
 		local maxReputation = t.maxReputation;
-		if FactionCache[t.maxReputation[1]].standing > maxReputation[2] then
+		if FactionCache[t.maxReputation[1]].reputation > maxReputation[2] then
 			return t.repeatable and 1 or 2;
 		end
 		if app.Settings.AccountWide.Reputations then

@@ -1,5 +1,6 @@
 4.4.0.53627
 s(200903)/i(6116),	-- entice's Robe \\ Apprentice's Robe
+s(200913)/i(6243),	-- n Woolen Robe \\ Green Woolen Robe
 s(200943)/i(7248),	-- Twain TEST Cloak
 s(201113)/i(16369),	-- ht-Lieutenant's Silk Boots \\ Knight-Lieutenant's Silk Boots
 s(201114)/i(16391),	-- ht-Lieutenant's Silk Gloves \\ Knight-Lieutenant's Silk Gloves
@@ -4603,6 +4604,209 @@ s(230301)/i(232548),	-- The Horseman's Sinister Saber
 4.4.1.56961
 s(230465)/i(233017),	-- Monster - Baleroc Sword
 4.4.2.58723
+s(275293)/i(92074),	-- Martial Sword
+s(275294)/i(92075),	-- Scourgeheart Vambraces
+s(275295)/i(92076),	-- Scourgeheart Armguards
+s(275296)/i(92077),	-- Naturalist Bracers
+s(275297)/i(92078),	-- Naturalist Cuffs
+s(275298)/i(92079),	-- Forestwalker Bracers
+s(275299)/i(92080),	-- Naturalist Bindings
+s(275300)/i(92081),	-- Enlightened Wristwraps
+s(275301)/i(92082),	-- Partisan Armplates
+s(275302)/i(92083),	-- Partisan Vambraces
+s(275303)/i(92084),	-- Partisan Armguards
+s(275304)/i(92085),	-- Deliverer Bindings
+s(275305)/i(92086),	-- Deliverer Wristwraps
+s(275306)/i(92087),	-- Darkwalker Bindings
+s(275307)/i(92088),	-- Thundercaller Armbands
+s(275308)/i(92089),	-- Thundercaller Armguard
+s(275309)/i(92090),	-- Thundercaller Bracers
+s(275310)/i(92091),	-- Martial Vambraces
+s(275311)/i(92092),	-- Soulseizer Wristwraps
+s(275312)/i(92093),	-- Martial Armguards
+s(275313)/i(92094),	-- Naturalist Cord
+s(275314)/i(92095),	-- Forestwalker Belt
+s(275315)/i(92096),	-- Naturalist Waistband
+s(275316)/i(92097),	-- Enlightened Cord
+s(275317)/i(92098),	-- Partisan Belt
+s(275318)/i(92099),	-- Partisan Girdle
+s(275319)/i(92100),	-- Partisan Waistband
+s(275320)/i(92101),	-- Deliverer Sash
+s(275321)/i(92102),	-- Deliverer Cord
+s(275322)/i(92103),	-- Darkwalker Waistband
+s(275323)/i(92104),	-- Thundercaller Belt
+s(275324)/i(92105),	-- Thundercaller Waistguard
+s(275325)/i(92106),	-- Thundercaller Girdle
+s(275326)/i(92107),	-- Martial Girdle
+s(275327)/i(92108),	-- Soulseizer Cord
+s(275328)/i(92109),	-- Martial Waistband
+s(275329)/i(92110),	-- Scourgeheart Blade
+s(275330)/i(92111),	-- Partisan Sword
+s(275331)/i(92112),	-- Thundercaller Mace
+s(275332)/i(92130),	-- Scourgeheart Girdle
+s(275333)/i(92131),	-- Scourgeheart Waistband
+s(275334)/i(92132),	-- Naturalist Belt
+s(275335)/i(92152),	-- Naturalist Pauldrons
+s(275336)/i(92153),	-- Forestwalker Spaulders
+s(275337)/i(92154),	-- Enlightened Shoulderpads
+s(275338)/i(92155),	-- Partisan Spaulders
+s(275339)/i(92156),	-- Partisan Pauldrons
+s(275340)/i(92157),	-- Partisan Shoulderguards
+s(275341)/i(92158),	-- Deliverer Mantle
+s(275342)/i(92159),	-- Deliverer Shoulderpads
+s(275343)/i(92160),	-- Darkwalker Shoulders
+s(275344)/i(92161),	-- Thundercaller Pauldrons
+s(275345)/i(92162),	-- Thundercaller Shoulderguards
+s(275346)/i(92163),	-- Soulseizer Shoulderpads
+s(275347)/i(92164),	-- Thundercaller Spaulders
+s(275348)/i(92165),	-- Martial Pauldrons
+s(275349)/i(92166),	-- Martial Shoulderguards
+s(275350)/i(92169),	-- Enlightened Robe
+s(275351)/i(92170),	-- Deliverer Robe
+s(275352)/i(92171),	-- Deliverer Vestments
+s(275353)/i(92172),	-- Soulseizer Robe
+s(275354)/i(92173),	-- Partisan Bulwark
+s(275355)/i(92174),	-- Partisan Shield
+s(275356)/i(92175),	-- Thundercaller Aegis
+s(275357)/i(92176),	-- Thundercaller Shield
+s(275358)/i(92177),	-- Martial Bulwark
+s(275359)/i(92178),	-- Scourgeheart Pauldrons
+s(275360)/i(92179),	-- Scourgeheart Shoulderguards
+s(275361)/i(92180),	-- Naturalist Spaulders
+s(275362)/i(92181),	-- Naturalist Shoulders
+s(275363)/i(92192),	-- Darkwalker Shiv
+s(275364)/i(92193),	-- Forestwalker Rifle
+s(275365)/i(92194),	-- Enlightened Wand
+s(275366)/i(92195),	-- Deliverer Wand
+s(275367)/i(92196),	-- Soulseizer Wand
+s(275368)/i(92197),	-- Thundercaller Legguards
+s(275369)/i(92198),	-- Soulseizer Leggings
+s(275370)/i(92199),	-- Thundercaller Leggings
+s(275371)/i(92200),	-- Martial Legplates
+s(275372)/i(92201),	-- Martial Legguards
+s(275373)/i(92202),	-- Partisan Scepter
+s(275374)/i(92203),	-- Darkwalker Sword
+s(275375)/i(92204),	-- Darkwalker Dagger
+s(275376)/i(92205),	-- Thundercaller Gavel
+s(275377)/i(92206),	-- Thundercaller Scepter
+s(275378)/i(92216),	-- Thundercaller Coif
+s(275379)/i(92217),	-- Thundercaller Helm
+s(275380)/i(92218),	-- Soulseizer Cowl
+s(275381)/i(92219),	-- Thundercaller Cowl
+s(275382)/i(92220),	-- Martial Helm
+s(275383)/i(92221),	-- Martial Faceguard
+s(275384)/i(92222),	-- Scourgeheart Legplates
+s(275385)/i(92223),	-- Scourgeheart Legguards
+s(275386)/i(92224),	-- Naturalist Legguards
+s(275387)/i(92225),	-- Naturalist Leggings
+s(275388)/i(92226),	-- Naturalist Britches
+s(275389)/i(92227),	-- Forestwalker Legguards
+s(275390)/i(92228),	-- Enlightened Leggings
+s(275391)/i(92229),	-- Partisan Leggings
+s(275392)/i(92230),	-- Partisan Legplates
+s(275393)/i(92231),	-- Partisan Legguards
+s(275394)/i(92232),	-- Deliverer Leggings
+s(275395)/i(92233),	-- Deliverer Pants
+s(275396)/i(92234),	-- Darkwalker Britches
+s(275397)/i(92235),	-- Thundercaller Legwraps
+s(275398)/i(92236),	-- Thundercaller Gloves
+s(275399)/i(92237),	-- Thundercaller Handguards
+s(275400)/i(92238),	-- Soulseizer Handwraps
+s(275401)/i(92239),	-- Thundercaller Grips
+s(275402)/i(92240),	-- Martial Gauntlets
+s(275403)/i(92241),	-- Martial Handguards
+s(275404)/i(92242),	-- Scourgeheart Helm
+s(275405)/i(92243),	-- Scourgeheart Faceguard
+s(275406)/i(92244),	-- Naturalist Helm
+s(275407)/i(92245),	-- Naturalist Headpiece
+s(275408)/i(92246),	-- Naturalist Hood
+s(275409)/i(92247),	-- Forestwalker Helm
+s(275410)/i(92248),	-- Partisan Helm
+s(275411)/i(92249),	-- Enlightened Hood
+s(275412)/i(92250),	-- Partisan Headpiece
+s(275413)/i(92251),	-- Partisan Faceguard
+s(275414)/i(92252),	-- Deliverer Hood
+s(275415)/i(92253),	-- Deliverer Cowl
+s(275416)/i(92254),	-- Darkwalker Hood
+s(275417)/i(92262),	-- Scourgeheart Gauntlets
+s(275418)/i(92263),	-- Scourgeheart Handguards
+s(275419)/i(92264),	-- Naturalist Handguards
+s(275420)/i(92265),	-- Naturalist Grips
+s(275421)/i(92266),	-- Naturalist Gloves
+s(275422)/i(92267),	-- Forestwalker Gauntlets
+s(275423)/i(92268),	-- Partisan Gauntlets
+s(275424)/i(92269),	-- Enlightened Handwraps
+s(275425)/i(92270),	-- Partisan Gloves
+s(275426)/i(92271),	-- Partisan Handguards
+s(275427)/i(92272),	-- Deliverer Handwraps
+s(275428)/i(92273),	-- Deliverer Gloves
+s(275429)/i(92274),	-- Darkwalker Gloves
+s(275430)/i(92294),	-- Deliverer Boots
+s(275431)/i(92295),	-- Darkwalker Boots
+s(275432)/i(92296),	-- Thundercaller Boots
+s(275433)/i(92297),	-- Thundercaller Greaves
+s(275434)/i(92298),	-- Soulseizer Sandals
+s(275435)/i(92299),	-- Thundercaller Sabatons
+s(275436)/i(92300),	-- Martial Sabatons
+s(275437)/i(92301),	-- Martial Greaves
+s(275438)/i(92314),	-- Darkwalker Cloak of Rage
+s(275439)/i(92315),	-- Deliverer Cloak of Destruction
+s(275440)/i(92316),	-- Thundercaller Cloak of Rage
+s(275441)/i(92317),	-- Thundercaller Cloak of Destruction
+s(275442)/i(92318),	-- Thundercaller Cloak of Wisdom
+s(275443)/i(92319),	-- Martial Cloak of Battle
+s(275444)/i(92320),	-- Soulseizer Cloak of Destruction
+s(275445)/i(92321),	-- Martial Cloak of Stoicism
+s(275446)/i(92322),	-- Scourgeheart Greaves
+s(275447)/i(92323),	-- Scourgeheart Sabatons
+s(275448)/i(92324),	-- Naturalist Footpads
+s(275449)/i(92325),	-- Naturalist Treads
+s(275450)/i(92326),	-- Naturalist Boots
+s(275451)/i(92327),	-- Forestwalker Greaves
+s(275452)/i(92328),	-- Partisan Sabatons
+s(275453)/i(92329),	-- Enlightened Sandals
+s(275454)/i(92330),	-- Partisan Boots
+s(275455)/i(92331),	-- Partisan Greaves
+s(275456)/i(92332),	-- Deliverer Sandals
+s(275457)/i(92333),	-- Partisan Battleplate
+s(275458)/i(92334),	-- Partisan Breastplate
+s(275459)/i(92335),	-- Partisan Chestguard
+s(275460)/i(92336),	-- Darkwalker Jerkin
+s(275461)/i(92337),	-- Thundercaller Tunic
+s(275462)/i(92338),	-- Thundercaller Vest
+s(275463)/i(92339),	-- Thundercaller Chestguard
+s(275464)/i(92340),	-- Martial Breastplate
+s(275465)/i(92341),	-- Martial Chestguard
+s(275466)/i(92342),	-- Scourgeheart Cloak of Stoicism
+s(275467)/i(92343),	-- Scourgeheart Cloak of Battle
+s(275468)/i(92344),	-- Naturalist Cloak of Rage
+s(275469)/i(92345),	-- Naturalist Cloak of Destruction
+s(275470)/i(92346),	-- Naturalist Cloak of Wisdom
+s(275471)/i(92347),	-- Forestwalker Cloak of Rage
+s(275472)/i(92348),	-- Enlightened Cloak of Destruction
+s(275473)/i(92349),	-- Partisan Cloak of Wisdom
+s(275474)/i(92350),	-- Partisan Cloak of Stoicism
+s(275475)/i(92351),	-- Partisan Cloak of Battle
+s(275476)/i(92352),	-- Deliverer Cloak of Wisdom
+s(275477)/i(92353),	-- Scourgeheart Maul
+s(275478)/i(92354),	-- Scourgeheart Hammer
+s(275479)/i(92355),	-- Naturalist Stave
+s(275480)/i(92356),	-- Naturalist Spear
+s(275481)/i(92357),	-- Forestwalker Spear
+s(275482)/i(92358),	-- Naturalist Staff
+s(275483)/i(92359),	-- Enlightened Staff
+s(275484)/i(92360),	-- Partisan Greatsword
+s(275485)/i(92361),	-- Deliverer Stave
+s(275486)/i(92362),	-- Deliverer Staff
+s(275487)/i(92363),	-- Martial Maul
+s(275488)/i(92364),	-- Martial Greatsword
+s(275489)/i(92365),	-- Soulseizer Staff
+s(275490)/i(92366),	-- Scourgeheart Chestguard
+s(275491)/i(92367),	-- Scourgeheart Breastplate
+s(275492)/i(92368),	-- Naturalist Vest
+s(275493)/i(92369),	-- Naturalist Tunic
+s(275494)/i(92370),	-- Naturalist Jerkin
+s(275495)/i(92371),	-- Forestwalker Vest
 s(275496)/i(92372),	-- Waterdancer Spire
 s(275497)/i(92373),	-- Waterdancer Staff
 s(275498)/i(92374),	-- Waterdancer Jerkin

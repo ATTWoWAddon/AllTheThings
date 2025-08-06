@@ -289,7 +289,7 @@ TRADING_POST = createPhase({
 		-- #endif
 	},
 	description = {
-		en = "This item is available in the Trading Post.",
+		en = "This Thing is available in the Trading Post.",
 		-- de = "",
 		es = "Este artículo está disponible en el puesto comercial.",
 		mx = "Este artículo está disponible en el puesto de venta",
@@ -297,7 +297,7 @@ TRADING_POST = createPhase({
 		-- it = "",
 		-- ko = "",
 		-- pt = "",
-		-- ru = "",
+		ru = "Эта Штучка доступна в Торговой лавке.",
 		-- cn = "",
 		-- tw = "",
 	},

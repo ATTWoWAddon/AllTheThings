@@ -184,11 +184,6 @@ i(216956),	-- Torn Letter
 i(217017),	-- Fishing Tournament!
 i(217161),	-- Spell Notes: TROFF IRESTBOL
 1.15.1.53247
-i(217248),	-- Earthen Silk Belt
-i(217249),	-- Pattern: Earthen Silk Belt
-i(217252),	-- Long Silken Cloak
-i(217255),	-- Crimson Silk Belt
-i(217256),	-- Earthen Vest
 i(217260),	-- Pattern: Big Voodoo Mask
 i(217262),	-- Pattern: Big Voodoo Robe
 i(217264),	-- Pattern: Guardian Leather Bracers
@@ -1092,11 +1087,7 @@ i(227847),	-- Devilcore Leggings
 i(227848),	-- Devilcore Gauntlets
 i(227850),	-- Sageblade of the Archmagus
 i(227855),	-- Synthetic Gordok Ogre Suit
-i(227856),	-- Synthetic Gordok Ogre Suit
 i(227858),	-- Hammer of the Wild Gods
-i(227860),	-- Incandescent Mooncloth Vest
-i(227863),	-- Incandescent Mooncloth Circlet
-i(227864),	-- Incandescent Mooncloth Leggings
 i(227873),	-- Honed Blue Dragonscale Shoulders
 i(227874),	-- Honed Blue Dragonscale Leggings
 i(227875),	-- Honed Blue Dragonscale Breastplate
@@ -1155,7 +1146,6 @@ i(228048),	-- Libram of Divinity
 i(228049),	-- Totem of Sustaining
 i(228105),	-- Everburning Flame Core \\ Molten Orb
 i(228114),	-- Plans: Refined Arcanite Reaper
-i(228115),	-- Pattern: Synthetic Gordok Ogre Suit
 i(228116),	-- Pattern: Synthetic Gordok Ogre Suit
 i(228117),	-- Plans: Refined Arcanite Champion
 i(228118),	-- Plans: Stronger-hold Gauntlets
@@ -1198,7 +1188,6 @@ i(227924),	-- Unusual Flask
 i(228305),	-- Plans: Refined Hammer of the Titans
 i(228309),	-- Pattern: Living Green Dragonscale Breastplate
 i(228310),	-- Plans: Hardened Frostguard
-i(228318),	-- Pattern: Incandescent Mooncloth Leggings
 i(228323),	-- Copper Slaughter Coin
 i(228324),	-- Gold Slaughter Coin
 i(228325),	-- Silver Slaughter Coin
@@ -1221,8 +1210,6 @@ i(228746),	-- Fluorescent Green Mechanostrider
 i(228747),	-- Reins of the Golden Sabercat
 i(228748),	-- Whistle of the Mottled Blood Raptor
 i(228912),	-- Artifact Storage Key
-1.15.3.55646
-i(228994),	-- Bottomless Bag
 1.15.3.55917
 i(208222),	-- Old Guard Retaliator
 i(228978),	-- Enchanted Sigil: Flowing Waters
@@ -1901,10 +1888,6 @@ i(234465),	-- Reins of the Swift Spectral Tiger
 i(234467),	-- Bubbles' Rod of Dragons
 i(234481),	-- Pattern: Dreamscale Kilt
 i(234482),	-- Dreamscale Kilt
-i(234483),	-- Pattern: Dreamscale Bracers
-i(234484),	-- Dreamscale Bracers
-i(234485),	-- Dreamscale Mitts
-i(234486),	-- Pattern: Dreamscale Mitts
 i(234487),	-- Dreamscale Visor
 i(234488),	-- Plans: Dreamscale Visor
 i(234542),	-- High Warlord's Greatsword
@@ -2361,7 +2344,6 @@ i(236313),	-- The Soul Harvester's Bindings
 i(236314),	-- Boots of Displacement
 i(236315),	-- Polar Helmet
 i(236316),	-- Sadist's Collar
-i(236317),	-- Vis'era the Gutrender \\ Corrupted Ashbringer
 i(236318),	-- Seal of the Damned
 i(236319),	-- Leggings of Apocalypse
 i(236320),	-- Warmth of Forgiveness
@@ -2731,7 +2713,6 @@ i(237291),	-- Glacial Leggings
 i(237292),	-- Polar Leggings
 i(237293),	-- Icy Scale Leggings
 i(237294),	-- Ramaladni's Icy Grasp
-i(237302),	-- Tabard of the Scarlet Enclave
 i(237348),	-- Monster - Sword, Short Ornate
 i(237381),	-- Desecrated Ring
 i(237386),	-- Wartorn Undermine Supply Crate
@@ -2786,14 +2767,6 @@ i(237020),	-- Scarlet Insignia
 i(237023),	-- Pop-Up Shrub
 i(237037),	-- Haute Club Membership Card
 i(237163),	-- Ancient Hero's Skull
-i(238264),	-- Scarlet Augur's Hood
-i(238265),	-- Scarlet Augur's Mantle
-i(238266),	-- Scarlet Augur's Vestaments
-i(238267),	-- Scarlet Augur's Cuffs
-i(238268),	-- Scarlet Augur's Mitts
-i(238269),	-- Scarlet Augur's Strap
-i(238270),	-- Scarlet Augur's Leggings
-i(238271),	-- Scarlet Augur's Soles
 i(238272),	-- Scarlet Infiltrator's Bandana
 i(238273),	-- Scarlet Infiltrator's Shoulderpads
 i(238274),	-- Scarlet Infiltrator's Vest
@@ -2818,33 +2791,16 @@ i(238292),	-- Scarlet Soldier's Grips
 i(238293),	-- Scarlet Soldier's Waistguard
 i(238294),	-- Scarlet Soldier's Legplates
 i(238295),	-- Scarlet Soldier's Stompers
-i(238298),	-- Pattern: Scarlet Augur's Hood
-i(238299),	-- Pattern: Scarlet Augur's Mantle
-i(238300),	-- Pattern: Scarlet Augur's Vestaments
-i(238301),	-- Pattern: Scarlet Augur's Cuffs
-i(238302),	-- Pattern: Scarlet Augur's Mitts
-i(238303),	-- Pattern: Scarlet Augur's Strap
-i(238304),	-- Pattern: Scarlet Augur's Leggings
-i(238305),	-- Pattern: Scarlet Augur's Soles
-i(238306),	-- Pattern: Scarlet Infiltrator's Bandana
-i(238307),	-- Pattern: Scarlet Infiltrator's Shoulderpads
-i(238308),	-- Pattern: Scarlet Infiltrator's Vest
 i(238309),	-- Pattern: Scarlet Infiltrator's Bracers
 i(238310),	-- Pattern: Scarlet Infiltrator's Gloves
 i(238311),	-- Pattern: Scarlet Infiltrator's Belt
 i(238312),	-- Pattern: Scarlet Infiltrator's Trousers
 i(238313),	-- Pattern: Scarlet Infiltrator's Shoes
-i(238314),	-- Pattern: Scarlet Huntsman's Coif
-i(238315),	-- Pattern: Scarlet Huntsman's Pauldrons
-i(238316),	-- Pattern: Scarlet Huntsman's Chain
 i(238317),	-- Pattern: Scarlet Huntsman's Wristguards
 i(238318),	-- Pattern: Scarlet Huntsman's Handguards
 i(238319),	-- Pattern: Scarlet Huntsman's Clasp
 i(238320),	-- Pattern: Scarlet Huntsman's Legguards
 i(238321),	-- Pattern: Scarlet Huntsman's Boots
-i(238322),	-- Plans: Scarlet Soldier's Helmet
-i(238323),	-- Plans: Scarlet Soldier's Spaulders
-i(238324),	-- Plans: Scarlet Soldier's Chestplate
 i(238325),	-- Plans: Scarlet Soldier's Protectors
 i(238326),	-- Plans: Scarlet Soldier's Grips
 i(238327),	-- Plans: Scarlet Soldier's Waistguard
@@ -2895,22 +2851,13 @@ i(239013),	-- Crystalline Axe
 i(239016),	-- Holy Salts
 i(239017),	-- Exquisite Spices
 i(239021),	-- Carrie's Cookbook
-i(239060),	-- Will of the Mountain
 i(239061),	-- Flawless Obsidian Hammer
 i(239092),	-- Preposterously Prosed Postage
 i(239097),	-- Key to the Cathedral
-i(239117),	-- Crusader's Chalice
 i(239119),	-- Holy Arrow
 i(239123),	-- Monster - BOW_1H_STANDARD_C_01 - Red
-i(239147),	-- Crusader's Knapsack
-i(239148),	-- Crimson Dawnwoven Bag
-i(239149),	-- Pattern: Crusader's Knapsack
-i(239150),	-- Pattern: Crimson Dawnwoven Bag
 i(239159),	-- S03 - Scarlet Enclave - Captains Shield
-i(239196),	-- Ruined Lightforged Blade
 i(239197),	-- Reforged Blade of the Ashbringer
-i(239215),	-- Charred Emblem \\ Corrupted Emblem
-i(239216),	-- Lightforged Iron
 i(239218),	-- Stoneshaper's Notes
 i(239219),	-- Emblem of the Ashbringer
 i(239221),	-- Monster - Sword1H, Basic
@@ -2926,35 +2873,9 @@ i(239316),	-- Triangulation Samophlange
 i(239540),	-- Dawnstalker Headpiece
 i(239618),	-- Monster - Sword 1H - Vanquisher's Sword (Alt)
 i(239688),	-- Monster - Spear 2H - Scarlet Cavalry - Spear
-i(239694),	-- Covenant of Light
-i(239695),	-- Scarlet Steed
-i(239696),	-- Hilt of the Ashbringer
 i(239698),	-- Dawnwoven Fabric
-i(239706),	-- Consecrated Sabatons
-i(239707),	-- Consecrated Helmet
-i(239708),	-- Consecrated Pauldrons
-i(239710),	-- Consecrated Sandals
-i(239712),	-- Consecrated Shoulderpads
-i(239714),	-- Consecrated Circlet
-i(239715),	-- Consecrated Robe
-i(239716),	-- Consecrated Gloves
-i(239718),	-- Consecrated Belt
-i(239719),	-- Consecrated Bindings
-i(239722),	-- Consecrated Wristguards
-i(239726),	-- Consecrated Boots
-i(239729),	-- Consecrated Headpiece
-i(239730),	-- Consecrated Handguards
-i(239731),	-- Consecrated Tunic
-i(239756),	-- Consecrated Girdle
-i(239758),	-- Consecrated Spaulders
-i(239759),	-- Consecrated Bracers
-i(239760),	-- Consecrated Waistguard
-i(239761),	-- Consecrated Breastplate
-i(239762),	-- Consecrated Gauntlets
 i(239764),	-- Crimson Bladeleaf
 i(240018),	-- Fizzlefuse's Tinker Manual
-i(240132),	-- Test Staff
-i(240174),	-- Solistra, Fang of the First Light
 i(240195),	-- Invisible Sword
 i(240217),	-- Monster Item - Stave_2H_Jeweled_A_02 - Red
 i(240742),	-- Monster - 1H, Shortsword, Red
@@ -2962,63 +2883,12 @@ i(240832),	-- Nivifacient Gland
 i(240835),	-- Crate of Moonglade Supplies
 i(240836),	-- Thisalee's Whistle
 i(240837),	-- Strings of Fate
-i(240839),	-- Thal'kituun, the Unseen Guest
-i(240841),	-- High Commander's Guard
-i(240843),	-- Starter's Pistol
 i(240845),	-- Prototype Magnet
 i(240846),	-- Magnetic Scrap
 i(240848),	-- Nordrassil Detritus
-i(240849),	-- Staff of the Glade
-i(240850),	-- Lightfist Hammer
-i(240851),	-- Regicide
-i(240852),	-- Crimson Cleaver
-i(240853),	-- Queensfall
-i(240854),	-- Mercy
-i(240919),	-- Ravagane
-i(240920),	-- Leogan
-i(240921),	-- Scarlet Smashbringer
-i(240922),	-- Deception
-i(240924),	-- Poleaxe of the Beast
-i(240925),	-- Experiment-800M
 i(240936),	-- Inert Ashbringer
 i(240945),	-- Slice of Carrie's Apple Pie
 i(240994),	-- Tim's Test Ranged Weapon 2
-i(240997),	-- Fratley's Spur
-i(240998),	-- Soporific Blade
-i(241001),	-- Tyr's Fall
-i(241002),	-- Remnants of the Red
-i(241003),	-- Mirage, Rod of Illusion
-i(241006),	-- Spire of Sacrifice
-i(241008),	-- Condemnation
-i(241011),	-- Greatstaff of Fealty
-i(241015),	-- Aegis of the Scarlet Bastion
-i(241017),	-- Demon's Folly
-i(241018),	-- Nathrezim Heart
-i(241021),	-- The Light
-i(241022),	-- Dawnbringer's Cloak
-i(241023),	-- Drape of the Dastardly
-i(241024),	-- Scarlet Commander's Cape
-i(241025),	-- Flag of the Broken Admiral
-i(241026),	-- Cardinal's Shawl
-i(241027),	-- Shield Warden's Guard
-i(241028),	-- Nathrezim Loop
-i(241029),	-- Baelin's Band
-i(241030),	-- Mason's Fraternity Ring
-i(241032),	-- Ring of Resurrection
-i(241034),	-- Heart of Light
-i(241038),	-- Sir Dornel's Didgeridoo
-i(241039),	-- Infusion of Souls
-i(241068),	-- Stiltz's Standard
-i(241069),	-- Choke Chain
-i(241070),	-- Hope of Herod
-i(241071),	-- Talisman of the Scarlet Scoundrel
-i(241073),	-- Touch of Light
-i(241074),	-- Helm of the Red Crusade
-i(241075),	-- Raging Destroyer's Helm
-i(241076),	-- Cowl of the Covenant
-i(241077),	-- Cardinal's Chapeau
-i(241079),	-- Weight of the World
-i(241080),	-- Herod's Pauldron
 i(241081),	-- Corrupted Ashbringer
 i(241082),	-- Ashbringer
 i(241083),	-- S03 - Scarlet Enclave - Sword 2h Raid
@@ -3037,38 +2907,7 @@ i(241122),	-- Reborn Knife
 i(241123),	-- Reborn Dagger
 i(241124),	-- Reborn Knife
 i(241128),	-- Pile of Portiporters
-i(241152),	-- Dawnwrought Shoulders
-i(241153),	-- Doan's Mantle
-i(241154),	-- Bearskin Mantle
-i(241157),	-- Scarlet Chestplate
-i(241158),	-- Chains of the Abandoned
-i(241159),	-- Monastery Garb
-i(241162),	-- Sunblessed Leathers
-i(241163),	-- Sunblaze Bracers
-i(241164),	-- Scrapped Argent Leathers
-i(241165),	-- Penitent Wraps
-i(241166),	-- Dawnstripped Bands
-i(241167),	-- Prisoner Shackles
-i(241168),	-- Sunblaze Grips
 i(241169),	-- Prototype Nitro Boosts
-i(241170),	-- Enclave Protectors
-i(241171),	-- Gloves of Departed Souls
-i(241172),	-- Caldoran's Locked Gauntlets
-i(241173),	-- High Wizard Wrap
-i(241174),	-- Girdle of the Reborn Champion
-i(241175),	-- Torturer's Toolbelt
-i(241176),	-- Diesalven's Demise
-i(241177),	-- Kilt of the Scarlet Arcanist
-i(241178),	-- Stalwart Pain Plate
-i(241179),	-- Leggings of Catastrophe
-i(241180),	-- Lightscale Leggings
-i(241181),	-- Dawnworn Chain Leggings
-i(241182),	-- Templar Plate Legguards
-i(241183),	-- Ashwalkers
-i(241184),	-- Savior Sandals
-i(241185),	-- Bear Training Boots
-i(241186),	-- Polished Scarlet Mail Boots
-i(241187),	-- Crimson Wartreads
 i(241190),	-- Bird Whistle
 i(241191),	-- Formula: Enchant Weapon - Grand Crusader
 i(241195),	-- Formula: Enchant 2H Weapon - Grand Arcanist
@@ -3109,9 +2948,6 @@ i(242320),	-- New Plague Samples
 i(242361),	-- Formula: Enchant 2H Weapon - Grand Inquisitor
 i(242362),	-- Brilliance of the Grand Inquisitor
 i(242363),	-- Who, What, Where, When, and Die! Five Keys to a Good Inquisition
-i(242364),	-- Mature Light Dragon Sinew
-i(242365),	-- Wing of Balnazzar
-i(242366),	-- Inescapable Fate
 i(242367),	-- Wing and String
 i(242425),	-- Torn Diary Page - Page 1
 i(242426),	-- Torn Diary Page - Page 2
@@ -3130,7 +2966,6 @@ i(231806),	-- Searing Arrow
 i(231807),	-- Searing Shot
 i(242710),	-- Monster Weapon [DNT]
 1.15.7.60000
-i(242793),	-- Portable Cannon
 i(243010),	-- Corrupted Ashbringer
 i(243064),	-- Long Staff
 i(243177),	-- Ingenious Toy
@@ -3141,7 +2976,6 @@ i(208196),	-- Moa'kin Band
 i(208425),	-- Shiny Archaic Vestige
 i(208484),	-- Sunlight
 i(230002),	-- Mortal Finisher
-i(242465),	-- Jostled Chalice Fragment
 i(243065),	-- Broken Wand
 i(243198),	-- Poultry Precision Scope
 i(243345),	-- Long Staff

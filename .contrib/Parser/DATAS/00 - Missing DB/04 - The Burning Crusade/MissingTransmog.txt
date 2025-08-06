@@ -1,53 +1,3 @@
-2.5.1.38043
-s(116764)/i(185976),	-- Communal Faceguard
-s(116768)/i(185977),	-- Communal Pauldrons
-s(116769)/i(185998),	-- Communal Chestguard
-s(116770)/i(185999),	-- Communal Plate Vambraces
-s(116771)/i(186001),	-- Communal Plate Gauntlets
-s(116772)/i(186002),	-- Communal Plate Girdle
-s(116784)/i(186015),	-- Communal Plate Leggings
-s(116785)/i(186016),	-- Communal Plate Greaves
-s(116786)/i(186018),	-- Communal Cowl
-s(116787)/i(186019),	-- Communal Mantle
-s(116788)/i(186020),	-- Communal Armor
-s(116789)/i(186021),	-- Communal Sash
-s(116790)/i(186022),	-- Communal Pants
-s(116791)/i(186023),	-- Communal Boots
-s(116792)/i(186024),	-- Communal Bracers
-s(116793)/i(186025),	-- Communal Gloves
-s(116794)/i(186026),	-- Communal Crown
-s(116795)/i(186027),	-- Communal Pads
-s(116796)/i(186028),	-- Communal Tunic
-s(116797)/i(186029),	-- Communal Belt
-s(116798)/i(186030),	-- Communal Legguards
-s(116799)/i(186031),	-- Communal Boots
-s(116800)/i(186032),	-- Communal Bindings
-s(116801)/i(186033),	-- Communal Gloves
-s(116802)/i(186034),	-- Communal Headguard
-s(116803)/i(186035),	-- Communal Spaulders
-s(116804)/i(186036),	-- Communal Armor
-s(116805)/i(186037),	-- Communal Belt
-s(116806)/i(186038),	-- Communal Leggings
-s(116807)/i(186039),	-- Communal Boots
-s(116808)/i(186040),	-- Communal Armguards
-s(116809)/i(186041),	-- Communal Gauntlets
-s(116811)/i(186044),	-- Communal Cloak
-s(116812)/i(186045),	-- Communal Cloak
-s(116813)/i(186046),	-- Communal Cloak
-s(116814)/i(186047),	-- Communal Cape
-s(116815)/i(186075),	-- Communal Cloak
-s(116816)/i(186076),	-- Communal Bindings
-s(116818)/i(186078),	-- Communal Crown
-s(116819)/i(186079),	-- Communal Legguards
-s(116820)/i(186080),	-- Communal Pads
-s(116821)/i(186081),	-- Communal Headguard
-s(116822)/i(186082),	-- Communal Leggings
-s(116823)/i(186083),	-- Communal Spaulders
-s(116824)/i(186084),	-- Communal Armguards
-s(116825)/i(186085),	-- Communal Plate Vambraces
-s(116826)/i(186086),	-- Communal Faceguard
-s(116827)/i(186087),	-- Communal Plate Leggings
-s(116828)/i(186088),	-- Communal Pauldrons
 2.5.1.38119
 s(116936)/i(285),	-- email Vest \\ Scalemail Vest
 s(116937)/i(286),	-- email Pants \\ Scalemail Pants
@@ -174,6 +124,7 @@ s(120970)/i(6141),	--
 s(120971)/i(6142),	--
 s(120972)/i(6143),	--
 s(120996)/i(6182),	-- Dim Torch
+s(121056)/i(6243),	-- n Woolen Robe \\ Green Woolen Robe
 s(121409)/i(6606),	--
 s(121451)/i(6653),	-- h of the Dormant Flame \\ Torch of the Dormant Flame
 s(121452)/i(6654),	-- h of the Eternal Flame \\ Torch of the Eternal Flame
@@ -462,7 +413,6 @@ s(139549)/i(29203),	-- anted Thorium Blades \\ Enchanted Thorium Blades
 s(139550)/i(29204),	-- teel Whisper Knives \\ Felsteel Whisper Knives
 s(139602)/i(29256),	--
 s(139704)/i(29358),	--
-s(140094)/i(29748),	-- Monster - Staff, Blooming Druid Staff
 s(140098)/i(29752),	--
 s(140169)/i(29823),	-- Rogue 105 Epic Test Chest
 s(140170)/i(29824),	-- Rogue 150 Epic Test Chest
@@ -599,7 +549,6 @@ s(143410)/i(33073),	-- Test_Ears_Hidden(builtByBlue)
 s(143411)/i(33074),	-- Test_Eyes_Hidden(builtByBlue)
 s(143412)/i(33075),	-- Test_NoseAndEars_Hidden(builtByBlue)
 s(143446)/i(33118),	-- Socket Test Shoulders [PH] \\ Socket Testing Item
-s(143485)/i(33162),	-- Monster - Item, Tankard Gold Offhand (Yellow Glow)
 s(143616)/i(33338),	-- Monster - Throwing Knife (Fire Trail)
 s(143644)/i(33482),	-- a-Lash Boots \\ Cobra-Lash Boots
 s(143696)/i(33542),	-- Shaman Testing Axe
@@ -628,7 +577,6 @@ s(144679)/i(34874),	-- Monster - Sunwell Raid - Polearm, Blue
 s(144985)/i(35233),	-- iphase Spectrographic Goggles \\ Multiphase Spectrographic Goggles
 s(145291)/i(35674),	-- Test Druid  Weapon
 s(145322)/i(35732),	-- TEST HELM
-s(145351)/i(36761),	-- Monster - Item, Tankard Metal Offhand (Red Glow)
 s(145401)/i(37739),	-- al Gladiator's Blade of Alacrity \\ Brutal Gladiator's Blade of Alacrity
 s(145402)/i(37740),	-- al Gladiator's Swift Judgment \\ Brutal Gladiator's Swift Judgment \\ Brutal Gladiator's Swift Judgement
 s(145450)/i(38275),	--
@@ -637,25 +585,7 @@ s(145479)/i(38352),	--
 s(145508)/i(171470),	--
 s(145532)/i(185985),	-- Communal Stone of Onslaught
 s(145534)/i(185987),	-- Communal Stone of Wisdom
-s(145536)/i(186048),	-- Communal Dagger
-s(145537)/i(186049),	-- Communal Rose
-s(145538)/i(186050),	-- Communal Wand
-s(145539)/i(186051),	-- Communal Staff
-s(145543)/i(186055),	-- Communal Stave
-s(145544)/i(186056),	-- Communal Bow
-s(145545)/i(186057),	-- Communal Warmaul
-s(145546)/i(186058),	-- Communal Sword
-s(145547)/i(186060),	-- Communal Guardian
-s(145548)/i(186061),	-- Communal Blade
-s(145549)/i(186062),	-- Communal Smasher
-s(145550)/i(186063),	-- Communal Shield
-s(145551)/i(186064),	-- Communal Buckler
-s(145555)/i(186068),	-- Communal Shiv
 s(145556)/i(186069),	-- Communal Knives
-s(145557)/i(186070),	-- Communal Right Claw \\ Communal Slicers
-s(145562)/i(186163),	-- Communal Guardian
-2.5.1.38364
-s(146055)/i(186682),	-- Communal Left Claw
 2.5.1.38453
 s(146099)/i(3579),	--
 s(146100)/i(4574),	--

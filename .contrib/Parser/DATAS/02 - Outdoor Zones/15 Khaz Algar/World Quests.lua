@@ -10,10 +10,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
 		}),
 		i(245653, {	-- Coffer Key Shard (Season 3)
-			["timeline"] = { ADDED_11_2_0_SEASONSTART },
+			["timeline"] = { ADDED_11_2_0 },
 		}),
 		currency(RESTORED_COFFER_KEY, {
-			["cost"] = {{ "i", 
+			["cost"] = {{ "i",
 				-- #if AFTER 11.2
 				245653,
 				-- #elseif AFTER 11.1

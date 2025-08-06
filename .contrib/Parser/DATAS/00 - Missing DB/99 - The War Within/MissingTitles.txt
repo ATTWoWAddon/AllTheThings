@@ -1,6 +1,5 @@
 11.2.0.61476
 title(638),	-- %s the Delver Within
-title(639),	-- Contract Killer %s
 title(641),	-- %s Bronzebeard
 title(644),	-- %s of the Twilight Star
 11.2.0.61624

@@ -3,16 +3,7 @@ createLocalizationString({
 	constant = "PET_BATTLES",
 	export = true,
 	text = {
-		en = "Pet Battles",
-		-- TODO: de = "",
-		es = "Duelo de mascotas",
-		mx = "Duelo de mascotas",
-		-- TODO: fr = "",
-		-- TODO: it = "",
-		-- TODO: pt = "",
-		-- TODO: ru = "",
-		-- TODO: ko = "",
+		en = [[~SHOW_PET_BATTLES_ON_MAP_TEXT]],
 		cn = "战斗宠物",
-		-- TODO: tw = "",
 	},
 })

@@ -45,6 +45,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				o(502603, {	-- Crudely Stitched Sack
 					["coord"] = { 58.6, 34.3, KARESH },
 					["questID"] = 86323,
+					["groups"] = { i(246295), },	-- Tazavesh Lookout's Mace (COSMETIC!)
 				}),
 				o(529537, {	-- Efrat's Forgotten Bulwark
 					["coord"] = { 78.0, 48.9, KARESH },
@@ -63,7 +64,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				o(499093, {	-- Forlorn Wind Chime
 					["coord"] = { 69.7, 52.3, KARESH },
 					["questID"] = 85837,
-					["groups"] = { i(246295), },	-- Tazavesh Lookout's Mace (COSMETIC!)
 				}),
 				o(500046, {	-- Gift of the Brothers
 					["coord"] = { 76.1, 45.3, KARESH },

@@ -851,7 +851,7 @@ MOP_BLACKSMITHING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timelin
 		r(122636),	-- Spiritguard Shield
 	}),
 }));
-COMMON_MOP_BLACKSMITHING_RECIPES = applyclassicphase(MOP_PHASE_LANDFALL, sharedData({ ["cost"] = {{ "i", SPIRIT_OF_HARMONY, 1 }}, ["timeline"] = { ADDED_5_0_4 } }, {
+COMMON_MOP_BLACKSMITHING_RECIPES = applyclassicphase(MOP_PHASE_ONE, sharedData({ ["cost"] = {{ "i", SPIRIT_OF_HARMONY, 1 }}, ["timeline"] = { ADDED_5_0_4 } }, {
 	i(84158),	-- Plans: Contender's Revenant Belt (RECIPE!)
 	i(84159),	-- Plans: Contender's Revenant Boots (RECIPE!)
 	i(84160),	-- Plans: Contender's Revenant Bracers (RECIPE!)

@@ -36,11 +36,6 @@ s(198615)/i(216704),	-- First Sergeant's Dragonhide Armguards
 s(198616)/i(216705),	-- First Sergeant's Plate Bracers
 s(198617)/i(216706),	-- First Sergeant's Leather Armguards
 s(198618)/i(216707),	-- First Sergeant's Silk Cuffs
-1.15.1.53247
-s(199481)/i(217248),	-- Earthen Silk Belt
-s(199483)/i(217252),	-- Long Silken Cloak
-s(199485)/i(217255),	-- Crimson Silk Belt
-s(199486)/i(217256),	-- Earthen Vest
 1.15.2.53941
 s(198741)/i(216891),	--
 s(200650)/i(218083),	-- Tail of Eranikus
@@ -626,9 +621,6 @@ s(224122)/i(227847),	-- Devilcore Leggings
 s(224123)/i(227848),	-- Devilcore Gauntlets
 s(224125)/i(227850),	-- Sageblade of the Archmagus
 s(224131)/i(227858),	-- Hammer of the Wild Gods
-s(224133)/i(227860),	-- Incandescent Mooncloth Vest
-s(224136)/i(227863),	-- Incandescent Mooncloth Circlet
-s(224137)/i(227864),	-- Incandescent Mooncloth Leggings
 s(224146)/i(227873),	-- Honed Blue Dragonscale Shoulders
 s(224147)/i(227874),	-- Honed Blue Dragonscale Leggings
 s(224148)/i(227875),	-- Honed Blue Dragonscale Breastplate
@@ -1115,61 +1107,6 @@ s(231243)/i(233787),	-- Battle Hardened Dreadweave Cuffs
 s(231244)/i(233788),	-- Battle Hardened Dreadweave Cuffs
 s(231245)/i(233789),	-- Battle Hardened Dreadweave Belt
 s(231246)/i(233790),	-- Battle Hardened Dreadweave Belt
-s(231447)/i(234061),	-- Qiraji Sacrificial Dagger
-s(231448)/i(234062),	-- Vestments of the Shifting Sands
-s(231449)/i(234063),	-- Belt of the Sand Reaver
-s(231450)/i(234064),	-- Belt of the Inquisition
-s(231451)/i(234065),	-- Sand Reaver Wristguards
-s(231452)/i(234066),	-- Toughened Silithid Hide Gloves
-s(231453)/i(234067),	-- Manslayer of the Qiraji
-s(231454)/i(234068),	-- Boots of the Vanguard
-s(231455)/i(234069),	-- Boots of the Qiraji General
-s(231456)/i(234070),	-- Bracers of Qiraji Command
-s(231457)/i(234071),	-- Legplates of the Qiraji Command
-s(231458)/i(234072),	-- Southwind's Grasp
-s(231459)/i(234073),	-- Dustwind Turban
-s(231461)/i(234075),	-- Gauntlets of the Immovable
-s(231462)/i(234076),	-- Talon of Furious Concentration
-s(231463)/i(234077),	-- Thick Silithid Chestguard
-s(231464)/i(234078),	-- Chitinous Shoulderguards
-s(231465)/i(234079),	-- Cloak of the Savior
-s(231466)/i(234081),	-- Gauntlets of Southwind
-s(231467)/i(234082),	-- Mantle of Maz'Nadir
-s(231468)/i(234084),	-- Southwind Helm
-s(231470)/i(234087),	-- Obsidian Scaled Leggings
-s(231471)/i(234088),	-- Legplates of the Destroyer
-s(231472)/i(234089),	-- Buru's Skull Fragment
-s(231473)/i(234090),	-- Gloves of the Swarm
-s(231474)/i(234091),	-- Slimy Scaled Gauntlets
-s(231475)/i(234093),	-- Quicksand Waders
-s(231476)/i(234094),	-- Scaled Bracers of the Gorger
-s(231477)/i(234095),	-- Slime Kickers
-s(231478)/i(234096),	-- Bow of Taut Sinew
-s(231479)/i(234097),	-- Stinger of Ayamiss
-s(231480)/i(234098),	-- Boots of the Desert Protector
-s(231481)/i(234099),	-- Boots of the Fiery Sands
-s(231482)/i(234100),	-- Helm of Regrowth
-s(231483)/i(234102),	-- Scaled Silithid Gauntlets
-s(231484)/i(234103),	-- Bracers of Brutality
-s(231485)/i(234104),	-- Crossbow of Imminent Doom
-s(231486)/i(234105),	-- Gauntlets of New Life
-s(231487)/i(234106),	-- Gloves of Dark Wisdom
-s(231488)/i(234107),	-- Helm of Domination
-s(231489)/i(234108),	-- Leggings of the Black Blizzard
-s(231490)/i(234109),	-- Mantle of the Horusath
-s(231491)/i(234110),	-- Ossirian's Binding
-s(231492)/i(234111),	-- Runic Stone Shoulders
-s(231493)/i(234112),	-- Sand Polished Hammer
-s(231494)/i(234113),	-- Sandstorm Cloak
-s(231495)/i(234114),	-- Shackles of the Unscarred
-s(231496)/i(234115),	-- Staff of the Ruins
-s(231497)/i(234117),	-- Treads of the Wandering Nomad
-s(231498)/i(234118),	-- Gavel of Qiraji Authority
-s(231499)/i(234119),	-- Antenna of Invigoration
-s(231500)/i(234120),	-- Helm of the Holy Avenger
-s(231501)/i(234121),	-- Silithid Husked Launcher
-s(231502)/i(234122),	-- The Lost Kris of Zedd
-s(231503)/i(234123),	-- Coif of Elemental Fury
 s(231505)/i(234129),	-- Onyx Embedded Leggings
 s(231506)/i(234133),	-- Drudge Boots
 s(231507)/i(234134),	-- Gnomish Turban of Psychic Might
@@ -1194,8 +1131,6 @@ s(231555)/i(234319),	-- Heavy Obsidian Belt
 s(231556)/i(234321),	-- Light Obsidian Belt
 s(231557)/i(234324),	-- Dreamscale Breastplate
 s(248928)/i(234482),	-- Dreamscale Kilt
-s(248929)/i(234484),	-- Dreamscale Bracers
-s(248930)/i(234485),	-- Dreamscale Mitts
 s(248931)/i(234487),	-- Dreamscale Visor
 s(248967)/i(234542),	-- High Warlord's Greatsword
 s(248968)/i(234543),	-- High Warlord's Battle Axe
@@ -1505,7 +1440,6 @@ s(284743)/i(236312),	-- Iblis, Blade of the Fallen Seraph
 s(284744)/i(236313),	-- The Soul Harvester's Bindings
 s(284745)/i(236314),	-- Boots of Displacement
 s(284746)/i(236315),	-- Polar Helmet
-s(284747)/i(236317),	-- Vis'era the Gutrender \\ Corrupted Ashbringer
 s(284748)/i(236319),	-- Leggings of Apocalypse
 s(284749)/i(236321),	-- Maul of the Redeemed Crusader
 s(284750)/i(236322),	-- Soulstring
@@ -1601,7 +1535,6 @@ s(285182)/i(237290),	-- Icebane Leggings
 s(285183)/i(237291),	-- Glacial Leggings
 s(285184)/i(237292),	-- Polar Leggings
 s(285185)/i(237293),	-- Icy Scale Leggings
-s(285190)/i(237302),	-- Tabard of the Scarlet Enclave
 s(285226)/i(237348),	-- Monster - Sword, Short Ornate
 s(285330)/i(237512),	-- Blade of Inquisition
 s(285517)/i(237577),	-- Totem of Unholy Might
@@ -1636,14 +1569,6 @@ s(287437)/i(238364),	-- Cloak of Revanchion
 1.15.7.59706
 s(168412)/i(190325),	-- Monster - Incubus Whip Mace1H
 s(287139)/i(237897),	--
-s(287484)/i(238264),	-- Scarlet Augur's Hood
-s(287485)/i(238265),	-- Scarlet Augur's Mantle
-s(287486)/i(238266),	-- Scarlet Augur's Vestaments
-s(287487)/i(238267),	-- Scarlet Augur's Cuffs
-s(287488)/i(238268),	-- Scarlet Augur's Mitts
-s(287489)/i(238269),	-- Scarlet Augur's Strap
-s(287490)/i(238270),	-- Scarlet Augur's Leggings
-s(287491)/i(238271),	-- Scarlet Augur's Soles
 s(287492)/i(238272),	-- Scarlet Infiltrator's Bandana
 s(287493)/i(238273),	-- Scarlet Infiltrator's Shoulderpads
 s(287494)/i(238274),	-- Scarlet Infiltrator's Vest
@@ -1673,252 +1598,22 @@ s(287840)/i(238918),	--
 s(287849)/i(238945),	-- Caladboulder
 s(287862)/i(238961),	-- Caladbolg
 s(287884)/i(239010),	-- Hilt of the Ashbringer
-s(287978)/i(239060),	-- Will of the Mountain
 s(287979)/i(239061),	-- Flawless Obsidian Hammer
 s(288000)/i(239123),	-- Monster - BOW_1H_STANDARD_C_01 - Red
 s(288012)/i(239159),	-- S03 - Scarlet Enclave - Captains Shield
 s(288015)/i(239221),	-- Monster - Sword1H, Basic
 s(288080)/i(239301),	-- Corrupted Ashbringer
-s(288231)/i(239512),	-- Lightbreaker Wrists
-s(288232)/i(239513),	-- Lightbreaker Belt
-s(288233)/i(239514),	-- Lightbreaker Grips
-s(288234)/i(239515),	-- Lightbreaker Greaves
-s(288235)/i(239516),	-- Lightbreaker Shoulders
-s(288236)/i(239517),	-- Lightbreaker Greathelm
-s(288237)/i(239518),	-- Lightbreaker Tassets
-s(288238)/i(239519),	-- Lightbreaker Cuirass
-s(288239)/i(239520),	-- Lightbreaker Bracers
-s(288240)/i(239521),	-- Lightbreaker Waistguard
-s(288241)/i(239522),	-- Lightbreaker Gauntlets
-s(288242)/i(239523),	-- Lightbreaker Sabatons
-s(288243)/i(239524),	-- Lightbreaker Pauldrons
-s(288244)/i(239525),	-- Lightbreaker Helmet
-s(288245)/i(239526),	-- Lightbreaker Legplates
-s(288246)/i(239527),	-- Lightbreaker Breastplate
-s(288248)/i(239529),	-- Dawnstalker Breastplate
-s(288249)/i(239530),	-- Dawnstalker Greaves
-s(288250)/i(239531),	-- Dawnstalker Gauntlets
-s(288251)/i(239532),	-- Dawnstalker Visor
-s(288252)/i(239533),	-- Dawnstalker Leggings
-s(288253)/i(239534),	-- Dawnstalker Pauldrons
-s(288254)/i(239535),	-- Dawnstalker Belt
-s(288255)/i(239536),	-- Dawnstalker Vambraces
-s(288256)/i(239537),	-- Dawnstalker Boots
-s(288257)/i(239538),	-- Dawnstalker Girdle
-s(288258)/i(239539),	-- Dawnstalker Handguards
 s(288259)/i(239540),	-- Dawnstalker Headpiece
-s(288260)/i(239541),	-- Dawnstalker Legguards
-s(288261)/i(239542),	-- Dawnstalker Spaulders
-s(288262)/i(239543),	-- Dawnstalker Tunic
-s(288263)/i(239544),	-- Dawnstalker Wristguards
-s(288264)/i(239547),	-- Duskwraith Wristguards
-s(288265)/i(239548),	-- Duskwraith Chestguard
-s(288266)/i(239549),	-- Duskwraith Grips
-s(288267)/i(239550),	-- Duskwraith Mask
-s(288268)/i(239551),	-- Duskwraith Leggings
-s(288269)/i(239552),	-- Duskwraith Mantle
-s(288270)/i(239553),	-- Duskwraith Treads
-s(288271)/i(239554),	-- Duskwraith Belt
-s(288272)/i(239555),	-- Duskwraith Bracers
-s(288273)/i(239556),	-- Duskwraith Waistguard
-s(288274)/i(239557),	-- Duskwraith Gauntlets
-s(288275)/i(239558),	-- Duskwraith Sabatons
-s(288276)/i(239559),	-- Duskwraith Pauldrons
-s(288277)/i(239560),	-- Duskwraith Helmet
-s(288278)/i(239561),	-- Duskwraith Legplates
-s(288279)/i(239562),	-- Duskwraith Breastplate
-s(288280)/i(239565),	-- Garb of Revelation
-s(288281)/i(239572),	-- Boots of Revelation
-s(288282)/i(239574),	-- Hands of Revelation
-s(288283)/i(239575),	-- Crown of Revelation
-s(288284)/i(239577),	-- Pants of Revelation
-s(288285)/i(239581),	-- Mantle of Revelation
-s(288286)/i(239582),	-- Girdle of Revelation
-s(288287)/i(239583),	-- Wrists of Revelation
-s(288288)/i(239584),	-- Gloves of Revelation
-s(288289)/i(239585),	-- Circlet of Revelation
-s(288290)/i(239586),	-- Shoulderpads of Revelation
-s(288291)/i(239587),	-- Leggings of Revelation
-s(288292)/i(239588),	-- Bindings of Revelation
-s(288293)/i(239589),	-- Sandals of Revelation
-s(288294)/i(239590),	-- Belt of Revelation
-s(288295)/i(239591),	-- Robe of Revelation
 s(288302)/i(239618),	-- Monster - Sword 1H - Vanquisher's Sword (Alt)
 s(288310)/i(239621),	--
 s(288349)/i(239688),	-- Monster - Spear 2H - Scarlet Cavalry - Spear
-s(288637)/i(240020),	-- Inquisition Legguards
-s(288638)/i(240021),	-- Inquisition Spaulders
-s(288639)/i(240022),	-- Inquisition Boots
-s(288640)/i(240023),	-- Inquisition Vambraces
-s(288641)/i(240024),	-- Inquisition Belt
-s(288642)/i(240025),	-- Inquisition Shoulderplates
-s(288643)/i(240026),	-- Inquisition Leggings
-s(288644)/i(240027),	-- Inquisition Helmet
-s(288645)/i(240028),	-- Inquisition Gloves
-s(288646)/i(240029),	-- Inquisition Greaves
-s(288647)/i(240030),	-- Inquisition Breastplate
-s(288648)/i(240031),	-- Inquisition Bracers
-s(288649)/i(240032),	-- Inquisition Waistguard
-s(288650)/i(240033),	-- Inquisition Pauldrons
-s(288651)/i(240034),	-- Inquisition Legplates
-s(288652)/i(240035),	-- Inquisition Crown
-s(288653)/i(240036),	-- Inquisition Gauntlets
-s(288654)/i(240037),	-- Inquisition Sabatons
-s(288655)/i(240038),	-- Inquisition Chestguard
-s(288656)/i(240039),	-- Inquisition Tunic
-s(288657)/i(240040),	-- Inquisition Headpiece
-s(288658)/i(240041),	-- Inquisition Handguards
-s(288659)/i(240042),	-- Inquisition Wristguards
-s(288660)/i(240043),	-- Inquisition Girdle
-s(288661)/i(240044),	-- Fireleaf Wristwraps
-s(288662)/i(240045),	-- Fireleaf Waistguard
-s(288663)/i(240046),	-- Fireleaf Mantle
-s(288664)/i(240047),	-- Fireleaf Pants
-s(288665)/i(240048),	-- Fireleaf Hood
-s(288666)/i(240049),	-- Fireleaf Mitts
-s(288667)/i(240050),	-- Fireleaf Boots
-s(288668)/i(240051),	-- Fireleaf Garb
-s(288669)/i(240052),	-- Fireleaf Bindings
-s(288670)/i(240053),	-- Fireleaf Belt
-s(288671)/i(240054),	-- Fireleaf Shoulderpads
-s(288672)/i(240055),	-- Fireleaf Leggings
-s(288673)/i(240056),	-- Fireleaf Circlet
-s(288674)/i(240057),	-- Fireleaf Gloves
-s(288675)/i(240058),	-- Fireleaf Sandals
-s(288676)/i(240059),	-- Fireleaf Robe
-s(288677)/i(240060),	-- Waywatcher Wraps
-s(288678)/i(240061),	-- Waywatcher Sash
-s(288679)/i(240062),	-- Waywatcher Shoulderpads
-s(288680)/i(240063),	-- Waywatcher Trousers
-s(288681)/i(240064),	-- Waywatcher Cowl
-s(288682)/i(240065),	-- Waywatcher Grips
-s(288683)/i(240066),	-- Waywatcher Stompers
-s(288684)/i(240067),	-- Waywatcher Vest
-s(288685)/i(240068),	-- Waywatcher Bindings
-s(288686)/i(240069),	-- Waywatcher Cord
-s(288687)/i(240070),	-- Waywatcher Mantle
-s(288688)/i(240071),	-- Waywatcher Kilt
-s(288689)/i(240072),	-- Waywatcher Hood
-s(288690)/i(240073),	-- Waywatcher Mitts
-s(288691)/i(240074),	-- Waywatcher Sandals
-s(288692)/i(240075),	-- Waywatcher Leathers
-s(288693)/i(240076),	-- Waywatcher Bracers
-s(288694)/i(240077),	-- Waywatcher Waistguard
-s(288695)/i(240078),	-- Waywatcher Pauldrons
-s(288696)/i(240079),	-- Waywatcher Leggings
-s(288697)/i(240080),	-- Waywatcher Headdress
-s(288698)/i(240081),	-- Waywatcher Gauntlets
-s(288699)/i(240082),	-- Waywatcher Sabatons
-s(288700)/i(240083),	-- Waywatcher Armor
-s(288701)/i(240084),	-- Waywatcher Wristguards
-s(288702)/i(240085),	-- Waywatcher Girdle
-s(288703)/i(240086),	-- Waywatcher Spaulders
-s(288704)/i(240087),	-- Waywatcher Legguards
-s(288705)/i(240088),	-- Waywatcher Headpiece
-s(288706)/i(240089),	-- Waywatcher Handguards
-s(288707)/i(240090),	-- Waywatcher Boots
-s(288708)/i(240091),	-- Waywatcher Tunic
-s(288709)/i(240092),	-- Soulcrusher Tunic
-s(288710)/i(240093),	-- Soulcrusher Boots
-s(288711)/i(240095),	-- Soulcrusher Handguards
-s(288712)/i(240096),	-- Soulcrusher Headpiece
-s(288713)/i(240097),	-- Soulcrusher Legguards
-s(288714)/i(240098),	-- Soulcrusher Spaulders
-s(288715)/i(240099),	-- Soulcrusher Girdle
-s(288716)/i(240100),	-- Soulcrusher Wristguards
-s(288717)/i(240101),	-- Soulcrusher Chestguard
-s(288718)/i(240102),	-- Soulcrusher Sabatons
-s(288719)/i(240103),	-- Soulcrusher Gloves
-s(288720)/i(240104),	-- Soulcrusher Faceguard
-s(288721)/i(240105),	-- Soulcrusher Legplates
-s(288722)/i(240106),	-- Soulcrusher Pauldrons
-s(288723)/i(240107),	-- Soulcrusher Waistguard
-s(288724)/i(240108),	-- Soulcrusher Bracers
-s(288725)/i(240109),	-- Soulcrusher Embrace
-s(288726)/i(240110),	-- Soulcrusher Greaves
-s(288738)/i(240122),	-- Soulcrusher Mitts
-s(288739)/i(240123),	-- Soulcrusher Crown
-s(288740)/i(240124),	-- Soulcrusher Kilt
-s(288741)/i(240125),	-- Soulcrusher Mantle
-s(288742)/i(240126),	-- Soulcrusher Cord
-s(288743)/i(240127),	-- Soulcrusher Bindings
-s(288744)/i(240128),	-- Soulcrusher Armor
-s(288745)/i(240129),	-- Soulcrusher Treads
-s(288746)/i(240130),	-- Soulcrusher Grips
-s(288747)/i(240131),	-- Soulcrusher Helmet
-s(288748)/i(240132),	-- Test Staff
-s(288749)/i(240134),	-- Soulcrusher Leggings
-s(288750)/i(240135),	-- Soulcrusher Epaulets
-s(288751)/i(240136),	-- Soulcrusher Belt
-s(288752)/i(240137),	-- Soulcrusher Vambraces
-s(288753)/i(240138),	-- Heretic Robe
-s(288754)/i(240139),	-- Heretic Sandals
-s(288755)/i(240140),	-- Heretic Gloves
-s(288756)/i(240141),	-- Heretic Cowl
-s(288757)/i(240142),	-- Heretic Leggings
-s(288758)/i(240143),	-- Heretic Shoulderpads
-s(288759)/i(240144),	-- Heretic Belt
-s(288760)/i(240145),	-- Heretic Bindings
-s(288761)/i(240146),	-- Heretic Garb
-s(288762)/i(240147),	-- Heretic Handguards
-s(288763)/i(240148),	-- Heretic Hood
-s(288764)/i(240149),	-- Heretic Pants
-s(288765)/i(240150),	-- Heretic Mantle
-s(288766)/i(240151),	-- Heretic Waistguard
-s(288767)/i(240152),	-- Heretic Wristguards
-s(288768)/i(240153),	-- Heretic Boots
-s(288773)/i(240174),	-- Solistra, Fang of the First Light
 s(288775)/i(240195),	-- Invisible Sword
 s(288777)/i(240217),	-- Monster Item - Stave_2H_Jeweled_A_02 - Red
 s(289299)/i(240742),	-- Monster - 1H, Shortsword, Red
 s(289388)/i(240837),	-- Strings of Fate
-s(289389)/i(240839),	-- Thal'kituun, the Unseen Guest
-s(289390)/i(240841),	-- High Commander's Guard
-s(289391)/i(240842),	-- Scarlet Rotbringer
-s(289392)/i(240843),	-- Starter's Pistol
-s(289393)/i(240844),	-- Putress' Poker
-s(289395)/i(240849),	-- Staff of the Glade
-s(289396)/i(240850),	-- Lightfist Hammer
-s(289397)/i(240851),	-- Regicide
-s(289398)/i(240852),	-- Crimson Cleaver
-s(289399)/i(240853),	-- Queensfall
-s(289400)/i(240854),	-- Mercy
-s(289401)/i(240919),	-- Ravagane
-s(289402)/i(240920),	-- Leogan
-s(289403)/i(240921),	-- Scarlet Smashbringer
-s(289404)/i(240922),	-- Deception
-s(289405)/i(240923),	-- Duplicity
-s(289406)/i(240924),	-- Poleaxe of the Beast
-s(289407)/i(240925),	-- Experiment-800M
 s(289414)/i(240993),	--
 s(289415)/i(240994),	-- Tim's Test Ranged Weapon 2
 s(289416)/i(240997),	-- Fratley's Spur
-s(289417)/i(240998),	-- Soporific Blade
-s(289418)/i(241001),	-- Tyr's Fall
-s(289419)/i(241002),	-- Remnants of the Red
-s(289420)/i(241003),	-- Mirage, Rod of Illusion
-s(289421)/i(241004),	-- Conundrum
-s(289422)/i(241006),	-- Spire of Sacrifice
-s(289424)/i(241008),	-- Condemnation
-s(289425)/i(241011),	-- Greatstaff of Fealty
-s(289426)/i(241012),	-- Wand of Reanimation
-s(289427)/i(241015),	-- Aegis of the Scarlet Bastion
-s(289429)/i(241017),	-- Demon's Folly
-s(289430)/i(241018),	-- Nathrezim Heart
-s(289432)/i(241020),	-- Putress' Completed Diary
-s(289433)/i(241021),	-- The Light
-s(289434)/i(241022),	-- Dawnbringer's Cloak
-s(289435)/i(241023),	-- Drape of the Dastardly
-s(289436)/i(241024),	-- Scarlet Commander's Cape
-s(289437)/i(241025),	-- Flag of the Broken Admiral
-s(289438)/i(241026),	-- Cardinal's Shawl
-s(289442)/i(241074),	-- Helm of the Red Crusade
-s(289443)/i(241075),	-- Raging Destroyer's Helm
-s(289444)/i(241076),	-- Cowl of the Covenant
-s(289445)/i(241077),	-- Cardinal's Chapeau
-s(289446)/i(241078),	-- Shroud of the Embalmed
-s(289447)/i(241079),	-- Weight of the World
-s(289448)/i(241080),	-- Herod's Pauldron
 s(289449)/i(241081),	-- Corrupted Ashbringer
 s(289450)/i(241082),	-- Ashbringer
 s(289451)/i(241083),	-- S03 - Scarlet Enclave - Sword 2h Raid
@@ -1937,40 +1632,6 @@ s(289488)/i(241121),	-- Reborn Dagger
 s(289489)/i(241122),	-- Reborn Knife
 s(289490)/i(241123),	-- Reborn Dagger
 s(289491)/i(241124),	-- Reborn Knife
-s(289493)/i(241152),	-- Dawnwrought Shoulders
-s(289494)/i(241153),	-- Doan's Mantle
-s(289495)/i(241154),	-- Bearskin Mantle
-s(289496)/i(241156),	-- Blighted Robes
-s(289497)/i(241157),	-- Scarlet Chestplate
-s(289498)/i(241158),	-- Chains of the Abandoned
-s(289499)/i(241159),	-- Monastery Garb
-s(289500)/i(241160),	-- Dawnworn Chainmail
-s(289501)/i(241161),	-- Templar Breastplate
-s(289502)/i(241162),	-- Sunblessed Leathers
-s(289503)/i(241163),	-- Sunblaze Bracers
-s(289504)/i(241164),	-- Scrapped Argent Leathers
-s(289505)/i(241165),	-- Penitent Wraps
-s(289506)/i(241166),	-- Dawnstripped Bands
-s(289507)/i(241167),	-- Prisoner Shackles
-s(289508)/i(241168),	-- Sunblaze Grips
-s(289509)/i(241170),	-- Enclave Protectors
-s(289510)/i(241171),	-- Gloves of Departed Souls
-s(289511)/i(241172),	-- Caldoran's Locked Gauntlets
-s(289512)/i(241173),	-- High Wizard Wrap
-s(289513)/i(241174),	-- Girdle of the Reborn Champion
-s(289514)/i(241175),	-- Torturer's Toolbelt
-s(289515)/i(241176),	-- Diesalven's Demise
-s(289516)/i(241177),	-- Kilt of the Scarlet Arcanist
-s(289517)/i(241178),	-- Stalwart Pain Plate
-s(289518)/i(241179),	-- Leggings of Catastrophe
-s(289519)/i(241180),	-- Lightscale Leggings
-s(289520)/i(241181),	-- Dawnworn Chain Leggings
-s(289521)/i(241182),	-- Templar Plate Legguards
-s(289522)/i(241183),	-- Ashwalkers
-s(289523)/i(241184),	-- Savior Sandals
-s(289524)/i(241185),	-- Bear Training Boots
-s(289525)/i(241186),	-- Polished Scarlet Mail Boots
-s(289526)/i(241187),	-- Crimson Wartreads
 s(289527)/i(241212),	-- Cluck Cannon
 s(289606)/i(241649),	-- Gauntlets of the Hillsbrad Guard
 s(290246)/i(242427),	-- Putress' Diary

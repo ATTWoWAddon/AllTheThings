@@ -19,6 +19,7 @@ DELVES_TWW_S1 = createHeader({
 		en = "Delves TWW S1",
 		es = "Profundidades TWW T1",
 		mx = "Abismos TWW T1",
+		ru = "Вылазки TWW 1 сезон",
 		cn = "地心之战地下堡第1季",
 	},
 });
@@ -29,6 +30,7 @@ DELVES_TWW_S2 = createHeader({
 		en = "Delves TWW S2",
 		es = "Profundidades TWW T2",
 		mx = "Abismos TWW T2",
+		ru = "Вылазки TWW 2 сезон",
 		cn = "地心之战地下堡第2季",
 	},
 });
@@ -39,6 +41,7 @@ DELVES_TWW_S3 = createHeader({
 		en = "Delves TWW S3",
 		es = "Profundidades TWW T3",
 		mx = "Abismos TWW T3",
+		ru = "Вылазки TWW 3 сезон",
 		cn = "地心之战地下堡第3季",
 	},
 });
@@ -229,11 +232,30 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 						i(235614),	-- Golden-Gob Propulsion Rig
 					}),
 				})),
+				hqt(86407, {
+					["name"] = "Received Item from Underpin (Delve)",
+					["providers"] = {
+						{"n",234168},	-- The Underpin ?
+						{"n",236626},	-- The Underpin ??
+					},
+					["timeline"]={ADDED_11_1_0_SEASONSTART},
+					["isWeekly"] = true,
+				}),
 			},
 		})),
+		hqt(87286, {	-- after opening Jettisoned Pile of Goblin-Bucks (objectID 507768), First per week, Delve Tier doesn't matter
+			["name"] = "Received Item from Underpin (Summon)",
+			["providers"] = {
+				{"i",233186},	-- Wave Scrambler 2000 (not really a quest provider, but otherwise turns into a quest item cuz providers)
+				{"o",507768},	-- Jettisoned Pile of Goblin-Bucks
+				{"n",236942},	-- The Underpin
+			},
+			["timeline"]={ADDED_11_1_0_SEASONSTART},
+			["isWeekly"] = true,
+		}),
 	})),
-	n(DELVES_TWW_S3, applyDataSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART } }, {	-- Includes Voidrazor Sanctuary
-		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 } }, {
+	n(DELVES_TWW_S3, applyDataSelf({ ["timeline"] = { ADDED_11_2_0 } }, {	-- Includes Voidrazor Sanctuary
+		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 } }, {
 			ach(42801),	-- Journey's End (Season 3)
 			ach(42799),	-- Let Her Solo Me
 			ach(42196),	-- War Within Delves: Tier 4 (Season 3)
@@ -1354,6 +1376,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 						i(235485),	-- Oil Gouger
 						i(235492),	-- Oscillating Scrapcleaver
 						i(235484),	-- Razor-sharp Desk Fan
+						i(218125),	-- Reactive Webbed Escutcheon
 						i(235488),	-- Rocket Taped to a Screwdriver
 						i(235486),	-- Springloaded Kneecap Breaker
 						i(235422),	-- Venture Co Seal
@@ -2543,7 +2566,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					}),
 					i(235688, {	-- Delver's Dirigible Schematic: Fan (MM!)
 						["cost"] = {{"c", UNDERCOIN, 2500}},
-						["timeline"] = { ADDED_11_2_0_SEASONSTART },
+						["timeline"] = { ADDED_11_2_0 },
 					}),
 					i(224770, {	-- Delver's Dirigible Schematic: Front-Mounted Propeller (MM!)
 						["cost"] = {{"c", UNDERCOIN, 2500}},
@@ -2554,11 +2577,11 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					}),
 					i(235690, {	-- Delver's Dirigible Schematic: Harpoon (MM!)
 						["cost"] = {{"c", UNDERCOIN, 2500}},
-						["timeline"] = { ADDED_11_2_0_SEASONSTART },
+						["timeline"] = { ADDED_11_2_0 },
 					}),
 					i(235689, {	-- Delver's Dirigible Schematic: Kite (MM!)
 						["cost"] = {{"c", UNDERCOIN, 2500}},
-						["timeline"] = { ADDED_11_2_0_SEASONSTART },
+						["timeline"] = { ADDED_11_2_0 },
 					}),
 					i(224769, {	-- Delver's Dirigible Schematic: Rotor Blades (MM!)
 						["cost"] = {{"c", UNDERCOIN, 3000}},
@@ -2569,7 +2592,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					}),
 					i(235692, {	-- Delver's Dirigible Schematic: Thrusters (MM!)
 						["cost"] = {{"c", UNDERCOIN, 2500}},
-						["timeline"] = { ADDED_11_2_0_SEASONSTART },
+						["timeline"] = { ADDED_11_2_0 },
 					}),
 					i(235683, {	-- Delver's Dirigible Schematic: Turbine (MM!)
 						["cost"] = {{"c", UNDERCOIN, 2500}},
@@ -2584,7 +2607,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					}),
 					i(235691, {	-- Delver's Dirigible Schematic: Yellow Paint (MM!)
 						["cost"] = {{"c", UNDERCOIN, 2500}},
-						["timeline"] = { ADDED_11_2_0_SEASONSTART },
+						["timeline"] = { ADDED_11_2_0 },
 					}),
 				}),
 				filter(MOUNTS, {
@@ -2609,7 +2632,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					}),
 					iensemble(237954, {	-- Arsenal: Undermine Weaponry
 						["cost"] = {{"c", UNDERCOIN, 5000}},
-						["timeline"] = { ADDED_11_2_0_SEASONSTART },
+						["timeline"] = { ADDED_11_2_0 },
 					}),
 					iensemble(234385, {	-- Ensemble: Aegis Of Hidden Stars
 						["cost"] = {{"c", UNDERCOIN, 5000}},
@@ -2617,11 +2640,11 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					}),
 					iensemble(237945, {	-- Ensemble: Blastborne Loadout
 						["cost"] = {{"c", UNDERCOIN, 5000}},
-						["timeline"] = { ADDED_11_2_0_SEASONSTART },
+						["timeline"] = { ADDED_11_2_0 },
 					}),
 					iensemble(248788, {	-- Ensemble: Bundle of Ethereal Cloaks
 						["cost"] = {{"c", UNDERCOIN, 2000}},
-						["timeline"] = { ADDED_11_2_0_SEASONSTART },
+						["timeline"] = { ADDED_11_2_0 },
 					}),
 					iensemble(234384, {	-- Ensemble: Chains Of The Stygian Sea
 						["cost"] = {{"c", UNDERCOIN, 5000}},
@@ -2629,7 +2652,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					}),
 					iensemble(237944, {	-- Ensemble: Junkreaver's Plates
 						["cost"] = {{"c", UNDERCOIN, 5000}},
-						["timeline"] = { ADDED_11_2_0_SEASONSTART },
+						["timeline"] = { ADDED_11_2_0 },
 					}),
 					iensemble(234383, {	-- Ensemble: Myconic Shell
 						["cost"] = {{"c", UNDERCOIN, 5000}},
@@ -2637,11 +2660,11 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					}),
 					iensemble(237949, {	-- Ensemble: Nitroclad Kit
 						["cost"] = {{"c", UNDERCOIN, 5000}},
-						["timeline"] = { ADDED_11_2_0_SEASONSTART },
+						["timeline"] = { ADDED_11_2_0 },
 					}),
 					iensemble(237953, {	-- Ensemble: Noxious Injector Apparatus
 						["cost"] = {{"c", UNDERCOIN, 5000}},
-						["timeline"] = { ADDED_11_2_0_SEASONSTART },
+						["timeline"] = { ADDED_11_2_0 },
 					}),
 					iensemble(234382, {	-- Ensemble: Unkindled Waxweave Panoply
 						["cost"] = {{"c", UNDERCOIN, 5000}},
@@ -2657,7 +2680,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					}),
 					i(245525, {	-- Opulent Phasebound Visor
 						["cost"] = {{"c", UNDERCOIN, 2500}},
-						["timeline"] = { ADDED_11_2_0_SEASONSTART },
+						["timeline"] = { ADDED_11_2_0 },
 					}),
 					i(212163, {	-- Soporific Shroom Cap
 						["cost"] = {{"c", UNDERCOIN, 2500}},
@@ -2670,7 +2693,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 						["timeline"] = { ADDED_11_1_0_SEASONSTART },
 					}),
 					i(226258, {	-- Delver's Pouch of Reagents
-						["cost"] = {{"c", UNDERCOIN, 1500}},
+						["cost"] = {{"c", UNDERCOIN, 500}},
 					}),
 					i(226259, {	-- Delver's Pouch of Resonance Crystals
 						["cost"] = {{"c", UNDERCOIN, 2000}},
@@ -2721,7 +2744,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					-- Season 3
 					i(244193, {	-- L00T RAID-R Mini
 						["cost"] = {{"c", UNDERCOIN, 1000}},
-						["timeline"] = { ADDED_11_2_0_SEASONSTART },
+						["timeline"] = { ADDED_11_2_0 },
 					}),
 					i(238526, {	-- Restored Coffer Key
 						["cost"] = {{"c", UNDERCOIN, 2000}},
@@ -2733,7 +2756,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 					}),
 					i(248017, {	-- Shrieking Quartz
 						["cost"] = {{"c", UNDERCOIN, 2000}},
-						["timeline"] = { ADDED_11_2_0_SEASONSTART },
+						["timeline"] = { ADDED_11_2_0 },
 					}),
 				}),
 				filter(TOYS, {
@@ -3973,8 +3996,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 			-- q(86371),	-- Delver's Bounty weekly lockout (source doesn't matter) [linked to Item]
 			q(86438),	-- Opened first Nemesis Strongbox (first purple on account)
 			-- Underpin Invasion
-			q(87287),	-- after openining Jettisoned Pile of Goblin-Bucks (objectID 507768), First per week, Delve Tier doesn't matter
-			q(87286),	-- after openining Jettisoned Pile of Goblin-Bucks (objectID 507768), Second per week, Delve Tier doesn't matter
+			q(87287, {["isWeekly"] = true}),	-- after opening Jettisoned Pile of Goblin-Bucks (objectID 507768), Second per week, Delve Tier doesn't matter
 			--- Overcharged Delves
 			-- Belt unlocks
 			q(90945, {["timeline"]={ADDED_11_1_7}}),	-- Learn 1st and 2nd Durable Information Storage Container Abilities (spellID 1239198)
@@ -4020,8 +4042,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 		q(86325),	-- Looting first Zekvir cache from above kil
 
 		-- Underpin Delve
-		q(86407, {["timeline"]={ADDED_11_1_0_SEASONSTART}}),	-- First weekly Underpin kill
-		q(86439, {["timeline"]={ADDED_11_1_0_SEASONSTART}}),	-- First weekly Underpin kill
+		q(86439, {["timeline"]={ADDED_11_1_0_SEASONSTART}}),	-- Unlock 'Hataclysm' achieve dialog
 
 		-- Ky'veza Delve
 	})),

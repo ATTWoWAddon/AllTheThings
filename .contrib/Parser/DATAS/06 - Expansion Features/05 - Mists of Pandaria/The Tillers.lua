@@ -955,6 +955,20 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						}),
 					},
 				}),
+				-- Wouter NOTE: part of a quest chain to get a pet in DF, but that's not relevant for Classic yet
+				-- #if ANYCLASSIC
+				-- #if BEFORE DF
+				q(30526, {	-- Lost and Lonely
+					["provider"] = { "n", 59533 },	-- Lost Dog
+					["coord"] = { 42.4, 50.2, VALLEY_OF_THE_FOUR_WINDS },
+					["minReputation"] = { FACTION_THE_TILLERS, REVERED+600 },	-- The Tillers, 12600 Rep
+					["timeline"] = { ADDED_5_0_4 },
+					["groups"] = {
+						i(80144),	-- Tasty T-Bone (QI!)
+					},
+				}),
+				-- #endif
+				-- #endif
 				q(31338, {	-- Lost Sheepie
 					["qg"] = 58709,	-- Chee Chee
 					["coord"] = { 53.0, 52.0, VALLEY_OF_THE_FOUR_WINDS },
@@ -1210,6 +1224,21 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["provider"] = { "i", 86404 },	-- Old Map
 					["minReputation"] = { FACTION_THE_TILLERS, EXALTED },	-- The Tillers
 					["crs"] = { 59639 },	-- Enormous Cattail Grouper
+				}),
+				-- Wouter TODO: check these quests
+				q(31372, {	-- The Tillers (A)
+					["qg"] = 64036,	-- Tang Ironhoe
+					["coord"] = { 87.0, 60.8, VALE_OF_ETERNAL_BLOSSOMS },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(31374, {	-- The Tillers (H)
+					["qg"] = 64011,	-- Farmhand Dooka
+					["coord"] = { 60.4, 22.8, VALE_OF_ETERNAL_BLOSSOMS },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(31326, {	-- Tina's Tasteful Tiara
 					["provider"] = { "i", 86434 },	-- Tasteful Tiara

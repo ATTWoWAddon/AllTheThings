@@ -689,13 +689,18 @@ namespace ATT
 
                     case "_wipe":
                     case "_defaulttimeline":
-                    // Functions
-                    case "OnInit":
-                    case "OnClick":
-                    case "OnUpdate":
-                    case "OnTooltip":
                         item[field] = value;
                         break;
+                    // Functions
+                    // These seem rather problematic to shared between all sources of an Item, since the conditions of when to apply the
+                    // logic differ based on Source.
+                    // i.e. OnInit setting something to a certain 'u' value only makes sense in the context of the specific source
+                    //case "OnInit":
+                    //case "OnClick":
+                    //case "OnUpdate":
+                    //case "OnTooltip":
+                    //    item[field] = value;
+                    //    break;
 
                     default:
                         // for undefined parser-only fields, just use the base Object merge implementation for the Item

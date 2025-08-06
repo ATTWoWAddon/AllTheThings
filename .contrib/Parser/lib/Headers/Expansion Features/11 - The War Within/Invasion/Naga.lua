@@ -10,7 +10,7 @@ INVASION_NAGA = createHeader({
 		-- ko = "",
 		mx = "Invasión: Naga",
 		-- pt = "",
-		-- ru = "",
+		ru = "Вторжение: Наги",
 		cn = "入侵：娜迦",
 		-- tw = "",
 	},

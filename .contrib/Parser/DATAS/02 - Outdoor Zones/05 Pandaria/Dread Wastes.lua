@@ -11,7 +11,6 @@ root(ROOTS.Zones, {
 					ach(7312),	-- Amber is the Color of My Energy
 					ach(6540),	-- Dread Haste Makes Dread Waste
 					ach(6978),	-- Explore Dread Wastes
-					ach(6857),	-- Heart of the Mantid Swarm (automated)
 					ach(7316, {	-- Over Their Heads
 						crit(20511, {		-- Garalon
 							["crs"] = { 63667 },
@@ -1378,6 +1377,18 @@ root(ROOTS.Zones, {
 							i(90076),	-- Boggeo's Thorns
 							i(90077),	-- Oracle's Blade
 						},
+					}),
+					q(31390, {	-- The Klaxxi [A]
+						["qg"] = 64488,	-- Riki the Shifting Shadow
+						["coord"] = { 84.4, 61.6, VALE_OF_ETERNAL_BLOSSOMS },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
+					}),
+					q(31391, {	-- The Klaxxi [H]
+						["qg"] = 64534,	-- Bowmaster Ku
+						["coord"] = { 63.2, 20.8, VALE_OF_ETERNAL_BLOSSOMS },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
 					}),
 					q(31006, {	-- The Klaxxi Council
 						["sourceQuests"] = {

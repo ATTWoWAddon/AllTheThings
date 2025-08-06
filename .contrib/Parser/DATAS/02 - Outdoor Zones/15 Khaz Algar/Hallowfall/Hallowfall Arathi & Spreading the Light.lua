@@ -701,7 +701,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 								filter(MOUNTS, {
 									i(223318),	-- Dauntless Imperial Lynx (MOUNT!)
 								}),
-								n(ARMOR, {
+								n(ARMOR, bubbleDownFiltered({["modID"] = 134},FILTERFUNC_itemID,{
 									filter(BACK_F, {
 										i(229069),	-- Nisa's Spare Cloak
 									}),
@@ -777,8 +777,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 										i(229125),	-- Warstone's Mantle
 										i(229121),	-- Warstone's Sabatons
 									}),
-								}),
-								n(WEAPONS, {
+								})),
+								n(WEAPONS, sharedData({["modID"] = 0},{	-- TODO: get one of these to drop and tell me the modID :D
 									i(229135),	-- Lamplighter Elite's Blade
 									i(229131),	-- Lamplighter Elite's Dagger
 									i(229146),	-- Lamplighter Elite's Glaive
@@ -795,6 +795,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 									i(229142),	-- Lamplighter Elite's Staff
 									i(229136),	-- Lamplighter Elite's Sword
 									i(229139),	-- Lamplighter Elite's Warhammer
+								})),
+								n(WEAPONS, sharedData({["modID"] = 27},{
 									i(229152),	-- Lamplighter's Battleaxe
 									i(229163),	-- Lamplighter's Blade
 									i(229157),	-- Lamplighter's Bulwark
@@ -812,7 +814,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 									i(229148),	-- Lamplighter's Staff
 									i(229162),	-- Lamplighter's Sword
 									i(229158),	-- Lamplighter's War Knives
-								}),
+								})),
 							},
 						}),
 					}),
@@ -1342,7 +1344,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 								}),
 								i(239126, {	-- Radiant Cache (S2)
 									["sym"] = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Khaz Algar Zone Rewards content]
-									["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
+									["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
 									["groups"] = {
 										i(223134),	-- Formula: Illusory Adornment: Radiance (RECIPE!)
 										i(223099),	-- Pattern: Sanctified Torchbearer's Grips (RECIPE!)

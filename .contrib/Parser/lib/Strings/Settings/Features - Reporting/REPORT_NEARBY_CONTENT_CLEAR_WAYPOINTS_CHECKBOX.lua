@@ -10,7 +10,7 @@ createLocalizationString({
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",
-		-- TODO: ru = "",
+		ru = "Автоматически очищать",
 		-- TODO: ko = "",
 		cn = "自动清除",
 		tw = "自動清除",

@@ -6,7 +6,6 @@ pet(4824),	-- Baby Karesh Fox - Orange
 pet(4830),	-- Observer, Baby (Green)
 pet(4832),	-- Looker Gaz'kreth Jr.
 pet(4837),	-- Worm, Cosmic - Critter (Red)
-pet(4841),	-- Starlight
 
 
 Nothing is Missing in PetDB.lua! Good Work!

@@ -10,7 +10,7 @@ createLocalizationString({
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",
-		-- TODO: ru = "",
+		ru = "Открываемый список",
 		-- TODO: ko = "",
 		cn = "弹出列表",
 		-- TODO: tw = "",

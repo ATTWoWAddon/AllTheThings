@@ -9,7 +9,7 @@ LORE = createHeader({
 		--	it = "TODO",
 		mx = "Historia",
 		--	pt = "TODO",
-		--	ru = "TODO",
+		ru = "История",
 		--	ko = "TODO",
 		cn = "剧情",
 	},

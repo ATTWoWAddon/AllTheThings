@@ -10,7 +10,7 @@ createLocalizationString({
 		fr = "Trajets Aériens",
 		-- TODO: it = "",
 		-- TODO: pt = "",
-		ru = "Полёты & Паромные Станции",
+		ru = "Полёты и Паромные Станции",
 		-- TODO: ko = "",
 		cn = "飞行路径",
 		tw = "飛行路線",

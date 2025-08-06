@@ -6,8 +6,8 @@ pet(666),	-- Micronax \\ Elayna
 pet(1243),	-- Living Fluid
 pet(1255),	-- Zeradar \\ Murkimus Tyrannicus
 pet(1259),	-- Widowling
-pet(1320),	-- Lil' Bling
 pet(1352),	-- Lord Piglet \\ Chubbs
+pet(1386),	-- Dread Hatchling
 pet(4172),	-- Cockatoo
 pet(4182),	-- Green Water Snake
 pet(4183),	-- Ribbon Snake

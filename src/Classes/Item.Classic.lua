@@ -534,18 +534,6 @@ if C_Heirloom and app.GameBuildVersion >= 30000 then
 			if t.collectedAsCost == false then
 				return 0;
 			end
-			if t.repeatable then
-				return (app.CurrentCharacter.Factions[t.factionID] and 1)
-					or (ATTAccountWideData.Factions[t.factionID] and 2);
-			else
-				-- This is used for the Grand Commendations unlocking Bonus Reputation
-				if ATTAccountWideData.FactionBonus[t.factionID] then return 1; end
-				if GetFactionBonusReputation(t.factionID) then
-					ATTAccountWideData.FactionBonus[t.factionID] = 1;
-					return 1;
-				end
-			end
-			-- This is used by reputation tokens. (turn in items)
 			if app.CurrentCharacter.Factions[t.factionID] then return 1; end
 			if app.Settings.AccountWide.Reputations and ATTAccountWideData.Factions[t.factionID] then return 2; end
 		end,

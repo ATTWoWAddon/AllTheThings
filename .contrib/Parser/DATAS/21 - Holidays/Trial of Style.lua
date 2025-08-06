@@ -356,7 +356,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 					["timeline"] = { ADDED_11_1_0 },
 				}),
 				i(233154, {	-- Banded Sepia War Wraps
-					["cost"] = {{ "i", TRIAL_OF_STYLE_TOKEN, 15 }},
+					["cost"] = {{ "i", TRIAL_OF_STYLE_TOKEN, 25 }},
 					["timeline"] = { ADDED_11_1_0 },
 				}),
 				i(237242, {	-- Banded Snowy War Legwraps

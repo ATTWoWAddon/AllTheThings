@@ -3997,10 +3997,10 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 					["name"] = "Secrets of the Stone",
 					["recipeID"] = 131759
 				},
-				{
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, {
 					["name"] = "Serpent's Heart",
 					["recipeID"] = 140050
-				},
+				}),
 				{
 					["name"] = "Sun's Radiance",
 					["recipeID"] = 131695
@@ -4719,10 +4719,10 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 					["name"] = "Powerful Primal Diamond",
 					["recipeID"] = 107766
 				},
-				{
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, {
 					["name"] = "Primal Diamond",
 					["recipeID"] = 140060
-				},
+				}),
 				{
 					["name"] = "Reverberating Primal Diamond",
 					["recipeID"] = 107767
