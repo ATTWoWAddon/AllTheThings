@@ -134,7 +134,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 			ach(42761),	-- Remnants of a Shattered World (automated)
 			ach(60890),	-- Secrets of the K'areshi (automated)
 			skyriding(ach(42717, {	-- Skyriding Glyphs: Castigaar
-				["coord"] = { 74.0, 32.6, KARESH },
+				["coord"] = { 61.0, 39.0, KARESH },
 			})),
 			skyriding(ach(42718, {	-- Skyriding Glyphs: Eco-Dome: Primus
 				["coord"] = { 46.5, 58.4, KARESH },
@@ -143,7 +143,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 				["coord"] = { 54.7, 23.4, KARESH },
 			})),
 			skyriding(ach(42719, {	-- Skydiving Glyphs: North Sufaad
-				["coord"] = { 55.1, 67.6, KARESH },
+				["coord"] = { 77.0, 46.0, KARESH },
 			})),
 			skyriding(ach(42713, {	-- Skyriding Glyphs: Serrated Peaks
 				["coord"] = { 54.7, 53.2, KARESH },
