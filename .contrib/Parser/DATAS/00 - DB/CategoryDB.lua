@@ -2542,36 +2542,88 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Alchemy of Pandaria",
 		text = {
 			en = "Alchemy of Pandaria",
+			de = "Alchemie von Pandaria",
+			es = "Alquimia de Pandaria",
+			mx = "Alquimia de Pandaria",
+			fr = "Alchimie de Pandarie",
+			it = "Alchimia di Pandaria",
+			pt = "Alquimia de Pandária",
+			ru = "Алхимия Пандарии",
+			ko = "판다리아 연금술",
+			cn = "潘达利亚炼金",
+			tw = "潘達利亞鍊金術",
 		},
 	},
 	[598] = {
 		readable = "Alchemy of the Cataclysm",
 		text = {
 			en = "Alchemy of the Cataclysm",
+			de = "Alchemie des Kataklysmus",
+			es = "Alquimia de Cataclysm",
+			mx = "Alquimia de Cataclysm",
+			fr = "Alchimie de Cataclysm",
+			it = "Alchimia di Cataclysm",
+			pt = "Alquimia de Cataclysm",
+			ru = "Алхимия времен Катаклизма",
+			ko = "대격변 연금술",
+			cn = "大地的裂变炼金",
+			tw = "大災變鍊金術",
 		},
 	},
 	[600] = {
 		readable = "Alchemy of Northrend",
 		text = {
 			en = "Alchemy of Northrend",
+			de = "Alchemie von Nordend",
+			es = "Alquimia de Rasganorte",
+			mx = "Alquimia de Rasganorte",
+			fr = "Alchimie du Norfendre",
+			it = "Alchimia di Nordania",
+			pt = "Alquimia de Nortúndria",
+			ru = "Алхимия Нордскола",
+			ko = "노스렌드 연금술",
+			cn = "诺森德炼金",
+			tw = "北裂境鍊金術",
 		},
 	},
 	[602] = {
 		readable = "Alchemy of Outland",
 		text = {
 			en = "Alchemy of Outland",
+			de = "Alchemie der Scherbenwelt",
+			es = "Alquimia de Terrallende",
+			mx = "Alquimia de Terrallende",
+			fr = "Alchimie de l’Outreterre",
+			it = "Alchimia delle Terre Esterne",
+			pt = "Alquimia de Terralém",
+			ru = "Алхимия Запределья",
+			ko = "아웃랜드 연금술",
+			cn = "外域炼金",
+			tw = "外域鍊金術",
 		},
 	},
 	[604] = {
 		readable = "Alchemy",
 		text = {
 			en = "Alchemy",
+			de = "Alchemie",
+			es = "Alquimia",
+			mx = "Alquimia",
+			fr = "Alchimie",
+			it = "Alchimia",
+			pt = "Alquimia",
+			ru = "Алхимия",
+			ko = "연금술",
+			cn = "炼金术",
+			tw = "鍊金術",
 		},
 	},
 	[605] = {
 		readable = "Combat Potions",
 		text = {
 			en = "Combat Potions",
+			es = "Pociones de combate",
+			mx = "Pociones de combate",
 			ko = "전투 물약",
 		},
 	},
@@ -2579,6 +2631,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Utility Potions",
 		text = {
 			en = "Utility Potions",
+			es = "Pociones de utilidad",
+			mx = "Pociones de utilidad",
 			ko = "유틸리티 물약",
 		},
 	},
@@ -2587,6 +2641,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134821,
 		text = {
 			en = "Flasks",
+			es = "Frascos",
+			mx = "Frascos",
 			ko = "영약",
 		},
 	},
@@ -2595,7 +2651,16 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 135830,
 		text = {
 			en = "Transmutation",
+			de = "Transmutation",
+			es = "Transmutación",
+			mx = "Transmutación",
+			fr = "Transmutation",
+			it = "Trasmutazione",
+			pt = "Transmutação",
+			ru = "Трансмутация",
 			ko = "변환식",
+			cn = "转化",
+			tw = "轉化",
 		},
 	},
 	[609] = {
@@ -2603,6 +2668,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 135443,
 		text = {
 			en = "Trinkets",
+			es = "Abalorios",
+			mx = "Abalorios",
 			ko = "장비",
 		},
 	},
@@ -2610,6 +2677,16 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Tool of the Trade",
 		text = {
 			en = "Tool of the Trade",
+			de = "Werkzeuge des Handwerks",
+			es = "Herramientas de trabajo",
+			mx = "Herramientas del oficio",
+			fr = "Outils de travail",
+			it = "Ferri del Mestiere",
+			pt = "Truques do ofício",
+			ru = "Профессиональные инструменты",
+			ko = "전문 기술 도구",
+			cn = "商业工具",
+			tw = "工具",
 		},
 	},
 	[611] = {
@@ -2617,6 +2694,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134831,
 		text = {
 			en = "Potions",
+			es = "Pociones",
+			mx = "Pociones",
 			ko = "물약",
 		},
 	},
@@ -2625,6 +2704,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134836,
 		text = {
 			en = "Elixirs",
+			es = "Elixires",
+			mx = "Elixires",
 			ko = "비약",
 		},
 	},
@@ -2633,6 +2714,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134821,
 		text = {
 			en = "Flasks",
+			es = "Frascos",
+			mx = "Frascos",
 			ko = "영약",
 		},
 	},
@@ -2641,7 +2724,16 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 135830,
 		text = {
 			en = "Transmutation",
+			de = "Transmutation",
+			es = "Transmutación",
+			mx = "Transmutación",
+			fr = "Transmutation",
+			it = "Trasmutazione",
+			pt = "Transmutação",
+			ru = "Трансмутация",
 			ko = "변환식",
+			cn = "转化",
+			tw = "轉化",
 		},
 	},
 	[615] = {
@@ -2649,6 +2741,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 135443,
 		text = {
 			en = "Trinkets",
+			es = "Abalorios",
+			mx = "Abalorios",
 			ko = "장비",
 		},
 	},
@@ -2657,6 +2751,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134723,
 		text = {
 			en = "Oils",
+			es = "Aceites",
+			mx = "Aceites",
 			ko = "오일",
 		},
 	},
@@ -2664,6 +2760,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Cauldrons",
 		text = {
 			en = "Cauldrons",
+			es = "Calderos",
+			mx = "Calderos",
 		},
 	},
 	[618] = {
@@ -2671,6 +2769,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134831,
 		text = {
 			en = "Potions",
+			es = "Pociones",
+			mx = "Pociones",
 			ko = "물약",
 		},
 	},
@@ -2679,6 +2779,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134836,
 		text = {
 			en = "Elixirs",
+			es = "Elixires",
+			mx = "Elixires",
 			ko = "비약",
 		},
 	},
@@ -2687,6 +2789,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134821,
 		text = {
 			en = "Flasks",
+			es = "Frascos",
+			mx = "Frascos",
 			ko = "영약",
 		},
 	},
@@ -2695,7 +2799,16 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 135830,
 		text = {
 			en = "Transmutation",
+			de = "Transmutation",
+			es = "Transmutación",
+			mx = "Transmutación",
+			fr = "Transmutation",
+			it = "Trasmutazione",
+			pt = "Transmutação",
+			ru = "Трансмутация",
 			ko = "변환식",
+			cn = "转化",
+			tw = "轉化",
 		},
 	},
 	[622] = {
@@ -2703,6 +2816,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 135443,
 		text = {
 			en = "Trinkets",
+			es = "Abalorios",
+			mx = "Abalorios",
 			ko = "장비",
 		},
 	},
@@ -2711,6 +2826,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134723,
 		text = {
 			en = "Oils",
+			es = "Aceites",
+			mx = "Aceites",
 			ko = "오일",
 		},
 	},
@@ -2719,6 +2836,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133236,
 		text = {
 			en = "Mounts",
+			es = "Monturas",
+			mx = "Monturas",
 		},
 	},
 	[625] = {
@@ -2726,6 +2845,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134331,
 		text = {
 			en = "Research",
+			es = "Investigación",
+			mx = "Investigación",
 		},
 	},
 	[626] = {
@@ -2733,6 +2854,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134831,
 		text = {
 			en = "Potions",
+			es = "Pociones",
+			mx = "Pociones",
 			ko = "물약",
 		},
 	},
@@ -2741,6 +2864,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134836,
 		text = {
 			en = "Elixirs",
+			es = "Elixires",
+			mx = "Elixires",
 			ko = "비약",
 		},
 	},
@@ -2749,6 +2874,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134821,
 		text = {
 			en = "Flasks",
+			es = "Frascos",
+			mx = "Frascos",
 			ko = "영약",
 		},
 	},
@@ -2757,7 +2884,16 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 135830,
 		text = {
 			en = "Transmutation",
+			de = "Transmutation",
+			es = "Transmutación",
+			mx = "Transmutación",
+			fr = "Transmutation",
+			it = "Trasmutazione",
+			pt = "Transmutação",
+			ru = "Трансмутация",
 			ko = "변환식",
+			cn = "转化",
+			tw = "轉化",
 		},
 	},
 	[630] = {
@@ -2765,6 +2901,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 135443,
 		text = {
 			en = "Trinkets",
+			es = "Abalorios",
+			mx = "Abalorios",
 			ko = "장비",
 		},
 	},
@@ -2773,6 +2911,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134723,
 		text = {
 			en = "Oils",
+			es = "Aceites",
+			mx = "Aceites",
 			ko = "오일",
 		},
 	},
@@ -2780,6 +2920,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Cauldrons",
 		text = {
 			en = "Cauldrons",
+			es = "Calderos",
+			mx = "Calderos",
 		},
 	},
 	[633] = {
@@ -2787,6 +2929,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134831,
 		text = {
 			en = "Potions",
+			es = "Pociones",
+			mx = "Pociones",
 			ko = "물약",
 		},
 	},
@@ -2795,6 +2939,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134836,
 		text = {
 			en = "Elixirs",
+			es = "Elixires",
+			mx = "Elixires",
 			ko = "비약",
 		},
 	},
@@ -2803,6 +2949,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134821,
 		text = {
 			en = "Flasks",
+			es = "Frascos",
+			mx = "Frascos",
 			ko = "영약",
 		},
 	},
@@ -2811,7 +2959,16 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 135830,
 		text = {
 			en = "Transmutation",
+			de = "Transmutation",
+			es = "Transmutación",
+			mx = "Transmutación",
+			fr = "Transmutation",
+			it = "Trasmutazione",
+			pt = "Transmutação",
+			ru = "Трансмутация",
 			ko = "변환식",
+			cn = "转化",
+			tw = "轉化",
 		},
 	},
 	[637] = {
@@ -2819,6 +2976,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 135443,
 		text = {
 			en = "Trinkets",
+			es = "Abalorios",
+			mx = "Abalorios",
 			ko = "장비",
 		},
 	},
@@ -2827,6 +2986,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134831,
 		text = {
 			en = "Potions",
+			es = "Pociones",
+			mx = "Pociones",
 			ko = "물약",
 		},
 	},
@@ -2835,6 +2996,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134836,
 		text = {
 			en = "Elixirs",
+			es = "Elixires",
+			mx = "Elixires",
 			ko = "비약",
 		},
 	},
@@ -2843,6 +3006,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134821,
 		text = {
 			en = "Flasks",
+			es = "Frascos",
+			mx = "Frascos",
 			ko = "영약",
 		},
 	},
@@ -2851,7 +3016,16 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 135830,
 		text = {
 			en = "Transmutation",
+			de = "Transmutation",
+			es = "Transmutación",
+			mx = "Transmutación",
+			fr = "Transmutation",
+			it = "Trasmutazione",
+			pt = "Transmutação",
+			ru = "Трансмутация",
 			ko = "변환식",
+			cn = "转化",
+			tw = "轉化",
 		},
 	},
 	[642] = {
@@ -2859,6 +3033,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134333,
 		text = {
 			en = "Trinkets",
+			es = "Abalorios",
+			mx = "Abalorios",
 			ko = "장비",
 		},
 	},
@@ -2867,6 +3043,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132799,
 		text = {
 			en = "Oils",
+			es = "Aceites",
+			mx = "Aceites",
 			ko = "오일",
 		},
 	},
@@ -2875,6 +3053,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132621,
 		text = {
 			en = "Materials",
+			es = "Materiales",
+			mx = "Materiales",
 			ko = "재료",
 		},
 	},
@@ -2882,12 +3062,24 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Special",
 		text = {
 			en = "Special",
+			es = "Especial",
+			mx = "Especial",
 		},
 	},
 	[647] = {
 		readable = "Zandalari Enchanting",
 		text = {
 			en = "Zandalari Enchanting",
+			de = "Verzauberkunst von Zandalar",
+			es = "Encantamiento Zandalari",
+			mx = "Encantamiento Zandalari",
+			fr = "Enchantement de Zandalar",
+			it = "Incantamento di Zandalar",
+			pt = "Encantamento de Zandalar",
+			ru = "Зандаларское наложение чар",
+			ko = "잔달라 마법부여",
+			cn = "赞达拉附魔",
+			tw = "贊達拉附魔",
 		},
 	},
 	[650] = {
@@ -2895,6 +3087,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132938,
 		text = {
 			en = "Glove Enchantments",
+			es = "Encantamientos de guantes",
+			mx = "Encantamientos de guantes",
 			ko = "장갑 마법부여",
 		},
 	},
@@ -2903,6 +3097,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133397,
 		text = {
 			en = "Ring Enchantments",
+			es = "Encantamientos de anillo",
+			mx = "Encantamientos de anillo",
 			ko = "손가락 마법부여",
 		},
 	},
@@ -2911,6 +3107,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 135792,
 		text = {
 			en = "Weapon Enchantments",
+			es = "Encantamientos de arma",
+			mx = "Encantamientos de arma",
 			ko = "무기 마법부여",
 		},
 	},
@@ -2919,6 +3117,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 237174,
 		text = {
 			en = "Illusions",
+			es = "Ilusiones",
+			mx = "Ilusiones",
 		},
 	},
 	[654] = {
@@ -2926,6 +3126,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 463518,
 		text = {
 			en = "Reagents",
+			es = "Componentes",
+			mx = "Componentes",
 			ko = "재료",
 		},
 	},
@@ -2933,12 +3135,24 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Pandaria Enchanting",
 		text = {
 			en = "Pandaria Enchanting",
+			de = "Verzauberkunst von Pandaria",
+			es = "Encantamiento de Pandaria",
+			mx = "Encantamiento de Pandaria",
+			fr = "Enchantement de Pandarie",
+			it = "Incantamento di Pandaria",
+			pt = "Encantamento de Pandária",
+			ru = "Наложение чар Пандарии",
+			ko = "판다리아 마법부여",
+			cn = "潘达利亚附魔",
+			tw = "潘達利亞附魔",
 		},
 	},
 	[657] = {
 		readable = "Armor Enchantments",
 		text = {
 			en = "Armor Enchantments",
+			es = "Encantamientos de armadura",
+			mx = "Encantamientos de armadura",
 		},
 	},
 	[658] = {
@@ -2946,6 +3160,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 135792,
 		text = {
 			en = "Weapon Enchantments",
+			es = "Encantamientos de arma",
+			mx = "Encantamientos de arma",
 			ko = "무기 마법부여",
 		},
 	},
@@ -2954,36 +3170,80 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134952,
 		text = {
 			en = "Shield and Off-Hand Enchantments",
+			es = "Encantamientos de escudo y mano izquierda",
+			mx = "Encantamientos de escudo y mano izquierda",
 		},
 	},
 	[661] = {
 		readable = "Cataclysm Enchanting",
 		text = {
 			en = "Cataclysm Enchanting",
+			de = "Verzauberkunst des Kataklysmus",
+			es = "Encantamiento de Cataclysm",
+			mx = "Encantamiento de Cataclysm",
+			fr = "Enchantement de Cataclysm",
+			it = "Incantamento di Cataclysm",
+			pt = "Encantamento de Cataclysm",
+			ru = "Наложение чар времен Катаклизма",
+			ko = "대격변 마법부여",
+			cn = "大地的裂变附魔",
+			tw = "大災變附魔",
 		},
 	},
 	[663] = {
 		readable = "Northrend Enchanting",
 		text = {
 			en = "Northrend Enchanting",
+			de = "Verzauberkunst von Nordend",
+			es = "Encantamiento de Rasganorte",
+			mx = "Encantamiento de Rasganorte",
+			fr = "Enchantement du Norfendre",
+			it = "Incantamento di Nordania",
+			pt = "Encantamento de Nortúndria",
+			ru = "Наложение чар Нордскола",
+			ko = "노스렌드 마법부여",
+			cn = "诺森德附魔",
+			tw = "北裂境附魔",
 		},
 	},
 	[665] = {
 		readable = "Outland Enchanting",
 		text = {
 			en = "Outland Enchanting",
+			de = "Verzauberkunst der Scherbenwelt",
+			es = "Encantamiento de Terrallende",
+			mx = "Encantamiento de Terrallende",
+			fr = "Enchantement de l’Outreterre",
+			it = "Incantamento delle Terre Esterne",
+			pt = "Encantamento de Terralém",
+			ru = "Наложение чар Запределья",
+			ko = "아웃랜드 마법부여",
+			cn = "外域附魔",
+			tw = "外域附魔",
 		},
 	},
 	[667] = {
 		readable = "Enchanting",
 		text = {
 			en = "Enchanting",
+			de = "Verzauberkunst",
+			es = "Encantamiento",
+			mx = "Encantamiento",
+			fr = "Enchantement",
+			it = "Incantamento",
+			pt = "Encantamento",
+			ru = "Наложение чар",
+			ko = "마법부여",
+			cn = "附魔",
+			tw = "附魔",
 		},
 	},
 	[668] = {
 		readable = "Armor Enchantments",
 		text = {
 			en = "Armor Enchantments",
+			es = "Encantamientos de armadura",
+			mx = "Encantamientos de armadura",
 		},
 	},
 	[669] = {
@@ -2991,6 +3251,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 135792,
 		text = {
 			en = "Weapon Enchantments",
+			es = "Encantamientos de arma",
+			mx = "Encantamientos de arma",
 			ko = "무기 마법부여",
 		},
 	},
@@ -2999,12 +3261,16 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134952,
 		text = {
 			en = "Shield and Off-Hand Enchantments",
+			es = "Encantamientos de escudo y mano izquierda",
+			mx = "Encantamientos de escudo y mano izquierda",
 		},
 	},
 	[671] = {
 		readable = "Pets",
 		text = {
 			en = "Pets",
+			es = "Mascotas",
+			mx = "Mascotas",
 		},
 	},
 	[672] = {
@@ -3012,6 +3278,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 237013,
 		text = {
 			en = "Reagents",
+			es = "Componentes",
+			mx = "Componentes",
 			ko = "재료",
 		},
 	},
@@ -3020,6 +3288,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132535,
 		text = {
 			en = "Boot Enchantments",
+			es = "Encantamientos de botas",
+			mx = "Encantamientos de botas",
 			ko = "장화 마법부여",
 		},
 	},
@@ -3028,6 +3298,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132938,
 		text = {
 			en = "Glove Enchantments",
+			es = "Encantamientos de guantes",
+			mx = "Encantamientos de guantes",
 			ko = "장갑 마법부여",
 		},
 	},
@@ -3036,6 +3308,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132624,
 		text = {
 			en = "Chest Enchantments",
+			es = "Encantamientos de pecho",
+			mx = "Encantamientos de pecho",
 			ko = "가슴 마법부여",
 		},
 	},
@@ -3044,6 +3318,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133770,
 		text = {
 			en = "Cloak Enchantments",
+			es = "Encantamientos de capa",
+			mx = "Encantamientos de capa",
 			ko = "망토 마법부여",
 		},
 	},
@@ -3052,6 +3328,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132616,
 		text = {
 			en = "Bracer Enchantments",
+			es = "Encantamientos de brazales",
+			mx = "Encantamientos de brazales",
 			ko = "손목 마법부여",
 		},
 	},
@@ -3060,6 +3338,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 135792,
 		text = {
 			en = "Weapon Enchantments",
+			es = "Encantamientos de arma",
+			mx = "Encantamientos de arma",
 			ko = "무기 마법부여",
 		},
 	},
@@ -3068,6 +3348,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134951,
 		text = {
 			en = "Shield Enchantments",
+			es = "Encantamientos de escudo",
+			mx = "Encantamientos de escudo",
 			ko = "방패 마법부여",
 		},
 	},
@@ -3076,6 +3358,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132881,
 		text = {
 			en = "Reagents",
+			es = "Componentes",
+			mx = "Componentes",
 			ko = "재료",
 		},
 	},
@@ -3084,6 +3368,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132535,
 		text = {
 			en = "Boot Enchantments",
+			es = "Encantamientos de botas",
+			mx = "Encantamientos de botas",
 			ko = "장화 마법부여",
 		},
 	},
@@ -3092,6 +3378,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132616,
 		text = {
 			en = "Bracer Enchantments",
+			es = "Encantamientos de brazales",
+			mx = "Encantamientos de brazales",
 			ko = "손목 마법부여",
 		},
 	},
@@ -3100,6 +3388,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132624,
 		text = {
 			en = "Chest Enchantments",
+			es = "Encantamientos de pecho",
+			mx = "Encantamientos de pecho",
 			ko = "가슴 마법부여",
 		},
 	},
@@ -3108,6 +3398,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133770,
 		text = {
 			en = "Cloak Enchantments",
+			es = "Encantamientos de capa",
+			mx = "Encantamientos de capa",
 			ko = "망토 마법부여",
 		},
 	},
@@ -3116,6 +3408,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132938,
 		text = {
 			en = "Glove Enchantments",
+			es = "Encantamientos de guantes",
+			mx = "Encantamientos de guantes",
 			ko = "장갑 마법부여",
 		},
 	},
@@ -3124,6 +3418,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 135792,
 		text = {
 			en = "Weapon Enchantments",
+			es = "Encantamientos de arma",
+			mx = "Encantamientos de arma",
 			ko = "무기 마법부여",
 		},
 	},
@@ -3132,6 +3428,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134951,
 		text = {
 			en = "Shield Enchantments",
+			es = "Encantamientos de escudo",
+			mx = "Encantamientos de escudo",
 			ko = "방패 마법부여",
 		},
 	},
@@ -3140,6 +3438,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134723,
 		text = {
 			en = "Oils",
+			es = "Aceites",
+			mx = "Aceites",
 			ko = "오일",
 		},
 	},
@@ -3148,6 +3448,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132886,
 		text = {
 			en = "Other",
+			es = "Otro",
+			mx = "Otro",
 			ko = "다른",
 		},
 	},
@@ -3156,6 +3458,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132535,
 		text = {
 			en = "Boot Enchantments",
+			es = "Encantamientos de botas",
+			mx = "Encantamientos de botas",
 			ko = "장화 마법부여",
 		},
 	},
@@ -3164,6 +3468,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132616,
 		text = {
 			en = "Bracer Enchantments",
+			es = "Encantamientos de brazales",
+			mx = "Encantamientos de brazales",
 			ko = "손목 마법부여",
 		},
 	},
@@ -3172,6 +3478,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132624,
 		text = {
 			en = "Chest Enchantments",
+			es = "Encantamientos de pecho",
+			mx = "Encantamientos de pecho",
 			ko = "가슴 마법부여",
 		},
 	},
@@ -3180,6 +3488,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133770,
 		text = {
 			en = "Cloak Enchantments",
+			es = "Encantamientos de capa",
+			mx = "Encantamientos de capa",
 			ko = "망토 마법부여",
 		},
 	},
@@ -3188,6 +3498,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132938,
 		text = {
 			en = "Glove Enchantments",
+			es = "Encantamientos de guantes",
+			mx = "Encantamientos de guantes",
 			ko = "장갑 마법부여",
 		},
 	},
@@ -3196,6 +3508,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 135792,
 		text = {
 			en = "Weapon Enchantments",
+			es = "Encantamientos de arma",
+			mx = "Encantamientos de arma",
 			ko = "무기 마법부여",
 		},
 	},
@@ -3204,6 +3518,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134951,
 		text = {
 			en = "Shield Enchantments",
+			es = "Encantamientos de escudo",
+			mx = "Encantamientos de escudo",
 			ko = "방패 마법부여",
 		},
 	},
@@ -3212,6 +3528,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 135138,
 		text = {
 			en = "Rods",
+			es = "Varas",
+			mx = "Varas",
 			ko = "장비",
 		},
 	},
@@ -3220,6 +3538,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 135468,
 		text = {
 			en = "Wands",
+			es = "Varitas",
+			mx = "Varitas",
 			ko = "마법봉",
 		},
 	},
@@ -3228,6 +3548,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134711,
 		text = {
 			en = "Oils",
+			es = "Aceites",
+			mx = "Aceites",
 			ko = "오일",
 		},
 	},
@@ -3236,6 +3558,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134084,
 		text = {
 			en = "Trinkets",
+			es = "Abalorios",
+			mx = "Abalorios",
 			ko = "장신구",
 		},
 	},
@@ -3244,6 +3568,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133229,
 		text = {
 			en = "Reagents",
+			es = "Componentes",
+			mx = "Componentes",
 			ko = "재료",
 		},
 	},
@@ -3252,6 +3578,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 237174,
 		text = {
 			en = "Illusions",
+			es = "Ilusiones",
+			mx = "Ilusiones",
 		},
 	},
 	[703] = {
@@ -3259,6 +3587,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 237174,
 		text = {
 			en = "Illusions",
+			es = "Ilusiones",
+			mx = "Ilusiones",
 		},
 	},
 	[704] = {
@@ -3266,6 +3596,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 237174,
 		text = {
 			en = "Illusions",
+			es = "Ilusiones",
+			mx = "Ilusiones",
 		},
 	},
 	[705] = {
@@ -3273,6 +3605,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 237174,
 		text = {
 			en = "Illusions",
+			es = "Ilusiones",
+			mx = "Ilusiones",
 		},
 	},
 	[706] = {
@@ -3280,6 +3614,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 237174,
 		text = {
 			en = "Illusions",
+			es = "Ilusiones",
+			mx = "Ilusiones",
 		},
 	},
 	[707] = {
@@ -3287,6 +3623,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 463517,
 		text = {
 			en = "Reagents",
+			es = "Componentes",
+			mx = "Componentes",
 			ko = "재료",
 		},
 	},
@@ -3294,42 +3632,96 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Zandalari Engineering",
 		text = {
 			en = "Zandalari Engineering",
+			de = "Ingenieurskunst von Zandalar",
+			es = "Ingeniería zandalari",
+			mx = "Ingeniería zandalari",
+			fr = "Ingénierie de Zandalar",
+			it = "Ingegneria di Zandalar",
+			pt = "Engenharia de Zandalar",
+			ru = "Зандаларское инженерное дело",
+			ko = "잔달라 기계공학",
+			cn = "赞达拉工程学",
+			tw = "贊達拉工程學",
 		},
 	},
 	[713] = {
 		readable = "Pandaria Engineering",
 		text = {
 			en = "Pandaria Engineering",
+			de = "Ingenieurskunst von Pandaria",
+			es = "Ingeniería de Pandaria",
+			mx = "Ingeniería de Pandaria",
+			fr = "Ingénierie de Pandarie",
+			it = "Ingegneria di Pandaria",
+			pt = "Engenharia de Pandária",
+			ru = "Инженерное дело Пандарии",
+			ko = "판다리아 기계공학",
+			cn = "潘达利亚工程学",
+			tw = "潘達利亞工程學",
 		},
 	},
 	[715] = {
 		readable = "Cataclysm Engineering",
 		text = {
 			en = "Cataclysm Engineering",
+			de = "Ingenieurskunst des Kataklysmus",
+			es = "Ingeniería de Cataclsym",
+			mx = "Ingeniería de Cataclsym",
+			fr = "Ingénierie de Cataclysm",
+			it = "Ingegneria di Cataclysm",
+			pt = "Engenharia de Cataclysm",
+			ru = "Инженерное дело времен Катаклизма",
+			ko = "대격변 기계공학",
+			cn = "大地的裂变工程学",
+			tw = "大災變工程學",
 		},
 	},
 	[717] = {
 		readable = "Northrend Engineering",
 		text = {
 			en = "Northrend Engineering",
+			de = "Ingenieurskunst von Nordend",
+			es = "Ingeniería de Rasganorte",
+			mx = "Ingeniería de Rasganorte",
+			fr = "Ingénierie du Norfendre",
+			it = "Ingegneria di Nordania",
+			pt = "Engenharia de Nortúndria",
+			ru = "Инженерное дело Нордскола",
+			ko = "노스렌드 기계공학",
+			cn = "诺森德工程学",
+			tw = "北裂境工程學",
 		},
 	},
 	[719] = {
 		readable = "Outland Engineering",
 		text = {
 			en = "Outland Engineering",
+			de = "Ingenieurskunst der Scherbenwelt",
+			es = "Ingeniería de Terrallende",
+			mx = "Ingeniería de Terrallende",
+			fr = "Ingénierie de l’Outreterre",
+			it = "Ingegneria delle Terre Esterne",
+			pt = "Engenharia de Terralém",
+			ru = "Инженерное дело Запределья",
+			ko = "아웃랜드 기계공학",
+			cn = "外域工程学",
+			tw = "外域工程學",
 		},
 	},
 	[721] = {
 		readable = "Bombs",
 		text = {
 			en = "Bombs",
+			es = "Bombas",
+			mx = "Bombas",
 		},
 	},
 	[722] = {
 		readable = "Devices",
 		text = {
 			en = "Devices",
+			es = "Dispositivos",
+			mx = "Dispositivos",
 			ko = "장치",
 		},
 	},
@@ -3338,6 +3730,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 135792,
 		text = {
 			en = "Weapons",
+			es = "Armas",
+			mx = "Armas",
 			ko = "무기",
 			tw = "武器",
 		},
@@ -3347,6 +3741,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133236,
 		text = {
 			en = "Mounts & Pets",
+			es = "Monturas y mascotas",
+			mx = "Monturas y mascotas",
 		},
 	},
 	[725] = {
@@ -3354,6 +3750,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 135815,
 		text = {
 			en = "Fireworks",
+			es = "Fuegos artificiales",
+			mx = "Fuegos artificiales",
 			ko = "폭죽",
 		},
 	},
@@ -3362,6 +3760,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133711,
 		text = {
 			en = "Explosives",
+			es = "Explosivos",
+			mx = "Explosivos",
 			ko = "폭발물",
 		},
 	},
@@ -3370,6 +3770,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 135815,
 		text = {
 			en = "Fireworks",
+			es = "Fuegos artificiales",
+			mx = "Fuegos artificiales",
 			ko = "폭죽",
 		},
 	},
@@ -3377,6 +3779,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Devices",
 		text = {
 			en = "Devices",
+			es = "Dispositivos",
+			mx = "Dispositivos",
 			ko = "장치",
 		},
 	},
@@ -3384,6 +3788,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Reagents",
 		text = {
 			en = "Reagents",
+			es = "Componentes",
+			mx = "Componentes",
 			ko = "재료",
 		},
 	},
@@ -3392,6 +3798,13 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133023,
 		text = {
 			en = "Goggles",
+			de = "Schutzbrille",
+			es = "Gafas",
+			mx = "Lentes",
+			fr = "Lunettes",
+			it = "Visori",
+			pt = "Tecnóculos",
+			ru = "очки",
 			ko = "고글",
 		},
 	},
@@ -3400,6 +3813,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 135612,
 		text = {
 			en = "Guns",
+			es = "Pistolas",
+			mx = "Pistolas",
 			ko = "총",
 		},
 	},
@@ -3408,6 +3823,11 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134442,
 		text = {
 			en = "Scopes",
+			es = "Miras",
+			mx = "Miras",
+			fr = "Lunette",
+			it = "Mirino",
+			ru = "Прицел",
 			ko = "조준경",
 		},
 	},
@@ -3416,24 +3836,32 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133236,
 		text = {
 			en = "Mounts",
+			es = "Monturas",
+			mx = "Monturas",
 		},
 	},
 	[734] = {
 		readable = "Cogwheels",
 		text = {
 			en = "Cogwheels",
+			es = "Engranajes",
+			mx = "Engranajes",
 		},
 	},
 	[735] = {
 		readable = "Tinkers",
 		text = {
 			en = "Tinkers",
+			es = "Modificaciones",
+			mx = "Artilugios",
 		},
 	},
 	[736] = {
 		readable = "Reagents",
 		text = {
 			en = "Reagents",
+			es = "Componentes",
+			mx = "Componentes",
 			ko = "재료",
 		},
 	},
@@ -3442,6 +3870,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133711,
 		text = {
 			en = "Explosives",
+			es = "Explosivos",
+			mx = "Explosivos",
 			ko = "폭발물",
 		},
 	},
@@ -3450,6 +3880,13 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133023,
 		text = {
 			en = "Goggles",
+			de = "Schutzbrille",
+			es = "Gafas",
+			mx = "Lentes",
+			fr = "Lunettes",
+			it = "Visori",
+			pt = "Tecnóculos",
+			ru = "очки",
 			ko = "고글",
 		},
 	},
@@ -3457,6 +3894,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Devices",
 		text = {
 			en = "Devices",
+			es = "Dispositivos",
+			mx = "Dispositivos",
 			ko = "장치",
 		},
 	},
@@ -3465,6 +3904,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 135792,
 		text = {
 			en = "Weapons",
+			es = "Armas",
+			mx = "Armas",
 			ko = "무기",
 			tw = "武器",
 		},
@@ -3474,6 +3915,11 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134442,
 		text = {
 			en = "Scopes",
+			es = "Miras",
+			mx = "Miras",
+			fr = "Lunette",
+			it = "Mirino",
+			ru = "Прицел",
 			ko = "조준경",
 		},
 	},
@@ -3481,12 +3927,16 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Tinkers",
 		text = {
 			en = "Tinkers",
+			es = "Modificaciones",
+			mx = "Artilugios",
 		},
 	},
 	[743] = {
 		readable = "Reagents",
 		text = {
 			en = "Reagents",
+			es = "Componentes",
+			mx = "Componentes",
 			ko = "재료",
 		},
 	},
@@ -3495,6 +3945,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133711,
 		text = {
 			en = "Explosives",
+			es = "Explosivos",
+			mx = "Explosivos",
 			ko = "폭발물",
 		},
 	},
@@ -3503,6 +3955,13 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133023,
 		text = {
 			en = "Goggles",
+			de = "Schutzbrille",
+			es = "Gafas",
+			mx = "Lentes",
+			fr = "Lunettes",
+			it = "Visori",
+			pt = "Tecnóculos",
+			ru = "очки",
 			ko = "고글",
 		},
 	},
@@ -3510,6 +3969,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Devices",
 		text = {
 			en = "Devices",
+			es = "Dispositivos",
+			mx = "Dispositivos",
 			ko = "장치",
 		},
 	},
@@ -3518,6 +3979,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 135792,
 		text = {
 			en = "Weapons",
+			es = "Armas",
+			mx = "Armas",
 			ko = "무기",
 			tw = "武器",
 		},
@@ -3527,6 +3990,11 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134442,
 		text = {
 			en = "Scopes",
+			es = "Miras",
+			mx = "Miras",
+			fr = "Lunette",
+			it = "Mirino",
+			ru = "Прицел",
 			ko = "조준경",
 		},
 	},
@@ -3535,12 +4003,16 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133236,
 		text = {
 			en = "Mounts",
+			es = "Monturas",
+			mx = "Monturas",
 		},
 	},
 	[750] = {
 		readable = "Reagents",
 		text = {
 			en = "Reagents",
+			es = "Componentes",
+			mx = "Componentes",
 			ko = "재료",
 		},
 	},
@@ -3549,6 +4021,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133711,
 		text = {
 			en = "Explosives",
+			es = "Explosivos",
+			mx = "Explosivos",
 			ko = "폭발물",
 		},
 	},
@@ -3557,6 +4031,13 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133023,
 		text = {
 			en = "Goggles",
+			de = "Schutzbrille",
+			es = "Gafas",
+			mx = "Lentes",
+			fr = "Lunettes",
+			it = "Visori",
+			pt = "Tecnóculos",
+			ru = "очки",
 			ko = "고글",
 		},
 	},
@@ -3564,6 +4045,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Devices",
 		text = {
 			en = "Devices",
+			es = "Dispositivos",
+			mx = "Dispositivos",
 			ko = "장치",
 		},
 	},
@@ -3572,6 +4055,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 135792,
 		text = {
 			en = "Weapons",
+			es = "Armas",
+			mx = "Armas",
 			ko = "무기",
 			tw = "武器",
 		},
@@ -3581,6 +4066,11 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134442,
 		text = {
 			en = "Scopes",
+			es = "Miras",
+			mx = "Miras",
+			fr = "Lunette",
+			it = "Mirino",
+			ru = "Прицел",
 			ko = "조준경",
 		},
 	},
@@ -3589,6 +4079,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133236,
 		text = {
 			en = "Mounts",
+			es = "Monturas",
+			mx = "Monturas",
 		},
 	},
 	[757] = {
@@ -3596,6 +4088,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 135815,
 		text = {
 			en = "Fireworks",
+			es = "Fuegos artificiales",
+			mx = "Fuegos artificiales",
 			ko = "폭죽",
 		},
 	},
@@ -3603,30 +4097,80 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Zandalari Inscription",
 		text = {
 			en = "Zandalari Inscription",
+			de = "Inschriftenkunde von Zandalar",
+			es = "Inscripción Zandalari",
+			mx = "Inscripción Zandalari",
+			fr = "Calligraphie de Zandalar",
+			it = "Runografia di Zandalar",
+			pt = "Escrivania de Zandalar",
+			ru = "Зандаларское начертание",
+			ko = "잔달라 주문각인",
+			cn = "赞达拉铭文",
+			tw = "贊達拉銘文學",
 		},
 	},
 	[763] = {
 		readable = "Pandaria Inscription",
 		text = {
 			en = "Pandaria Inscription",
+			de = "Inschriftenkunde von Pandaria",
+			es = "Inscripción de Pandaria",
+			mx = "Inscripción de Pandaria",
+			fr = "Calligraphie de Pandarie",
+			it = "Runografia di Pandaria",
+			pt = "Escrivania de Pandária",
+			ru = "Начертание Пандарии",
+			ko = "판다리아 주문각인",
+			cn = "潘达利亚铭文",
+			tw = "潘達利亞銘文學",
 		},
 	},
 	[765] = {
 		readable = "Cataclysm Inscription",
 		text = {
 			en = "Cataclysm Inscription",
+			de = "Inschriftenkunde des Kataklysmus",
+			es = "Inscripción de Cataclysm",
+			mx = "Inscripción de Cataclysm",
+			fr = "Calligraphie de Cataclysm",
+			it = "Runografia di Cataclysm",
+			pt = "Escrivania de Cataclysm",
+			ru = "Начертание времен Катаклизма",
+			ko = "대격변 주문각인",
+			cn = "大地的裂变铭文",
+			tw = "大災變銘文學",
 		},
 	},
 	[767] = {
 		readable = "Northrend Inscription",
 		text = {
 			en = "Northrend Inscription",
+			de = "Inschriftenkunde von Nordend",
+			es = "Inscripción de Rasganorte",
+			mx = "Inscripción de Rasganorte",
+			fr = "Calligraphie du Norfendre",
+			it = "Runografia di Nordania",
+			pt = "Escrivania de Nortúndria",
+			ru = "Начертание Нордскола",
+			ko = "노스렌드 주문각인",
+			cn = "诺森德铭文",
+			tw = "北裂境銘文學",
 		},
 	},
 	[769] = {
 		readable = "Outland Inscription",
 		text = {
 			en = "Outland Inscription",
+			de = "Inschriftenkunde der Scherbenwelt",
+			es = "Inscripción de Terrallende",
+			mx = "Inscripción de Terrallende",
+			fr = "Calligraphie de l’Outreterre",
+			it = "Runografia delle Terre Esterne",
+			pt = "Escrivania de Terralém",
+			ru = "Начертание Запределья",
+			ko = "아웃랜드 주문각인",
+			cn = "外域铭文",
+			tw = "外域銘文學",
 		},
 	},
 	[771] = {
@@ -3634,12 +4178,16 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134939,
 		text = {
 			en = "Books & Scrolls",
+			es = "Libros y pergaminos",
+			mx = "Libros y pergaminos",
 		},
 	},
 	[772] = {
 		readable = "Contracts",
 		text = {
 			en = "Contracts",
+			es = "Contratos",
+			mx = "Contratos",
 		},
 	},
 	[773] = {
@@ -3647,6 +4195,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134495,
 		text = {
 			en = "Trinkets",
+			es = "Abalorios",
+			mx = "Abalorios",
 			ko = "장비",
 		},
 	},
@@ -3654,12 +4204,16 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Off-Hands",
 		text = {
 			en = "Off-Hands",
+			es = "Mano izquierda",
+			mx = "Mano izquierda",
 		},
 	},
 	[775] = {
 		readable = "Mass Milling",
 		text = {
 			en = "Mass Milling",
+			es = "Moler a granel",
+			mx = "Molido en masa",
 		},
 	},
 	[776] = {
@@ -3667,18 +4221,38 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 1392953,
 		text = {
 			en = "Vantus Runes",
+			de = "Vantusrunen",
+			es = "Runas vantus",
+			mx = "Runas vantus",
+			fr = "Runes de Vantus",
+			it = "Rune Vantus",
+			pt = "Runas Vantus",
+			ru = "Вантийские руны",
+			ko = "반투스 룬",
+			cn = "凡图斯符文",
+			tw = "梵陀符文",
 		},
 	},
 	[777] = {
 		readable = "Glyphs",
 		text = {
 			en = "Glyphs",
+			de = "Glyphe",
+			es = "Glifos",
+			mx = "Glifos",
+			fr = "Glyphe",
+			it = "Glifo",
+			pt = "Glifo",
+			ru = "Символ",
+			ko = "문양",
 		},
 	},
 	[778] = {
 		readable = "Staves & Off-Hands",
 		text = {
 			en = "Staves & Off-Hands",
+			es = "Bastones y mano izquierda",
+			mx = "Bastones y mano izquierda",
 		},
 	},
 	[779] = {
@@ -3686,12 +4260,22 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 237070,
 		text = {
 			en = "Inks",
+			de = "Tinte",
+			es = "Tintas",
+			mx = "Tintas",
+			fr = "Encre",
+			it = "Tinta",
+			pt = "Tinta",
+			ru = "Чернила",
+			ko = "잉크",
 		},
 	},
 	[780] = {
 		readable = "Cards",
 		text = {
 			en = "Cards",
+			es = "Cartas",
+			mx = "Cartas",
 		},
 	},
 	[781] = {
@@ -3699,18 +4283,24 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134331,
 		text = {
 			en = "Scrolls & Research",
+			es = "Pergaminos e investigación",
+			mx = "Pergaminos e investigación",
 		},
 	},
 	[782] = {
 		readable = "Quest",
 		text = {
 			en = "Quest",
+			es = "Misión",
+			mx = "Misión",
 		},
 	},
 	[783] = {
 		readable = "Toys & Pets",
 		text = {
 			en = "Toys & Pets",
+			es = "Juguetes y mascotas",
+			mx = "Juguetes y mascotas",
 		},
 	},
 	[784] = {
@@ -3718,6 +4308,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 135443,
 		text = {
 			en = "Trinkets",
+			es = "Abalorios",
+			mx = "Abalorios",
 			ko = "장비",
 		},
 	},
@@ -3726,12 +4318,28 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 237070,
 		text = {
 			en = "Inks",
+			de = "Tinte",
+			es = "Tintas",
+			mx = "Tintas",
+			fr = "Encre",
+			it = "Tinta",
+			pt = "Tinta",
+			ru = "Чернила",
+			ko = "잉크",
 		},
 	},
 	[786] = {
 		readable = "Glyphs",
 		text = {
 			en = "Glyphs",
+			de = "Glyphe",
+			es = "Glifos",
+			mx = "Glifos",
+			fr = "Glyphe",
+			it = "Glifo",
+			pt = "Glifo",
+			ru = "Символ",
+			ko = "문양",
 		},
 	},
 	[787] = {
@@ -3739,18 +4347,24 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134331,
 		text = {
 			en = "Scrolls & Research",
+			es = "Pergaminos e investigación",
+			mx = "Pergaminos e investigación",
 		},
 	},
 	[788] = {
 		readable = "Cards",
 		text = {
 			en = "Cards",
+			es = "Cartas",
+			mx = "Cartas",
 		},
 	},
 	[789] = {
 		readable = "Shoulder Inscription",
 		text = {
 			en = "Shoulder Inscription",
+			es = "Inscripción de hombros",
+			mx = "Inscripción de hombros",
 			ko = "어깨 마법부여",
 		},
 	},
@@ -3759,6 +4373,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 135792,
 		text = {
 			en = "Weapons & Off-Hands",
+			es = "Armas y mano izquierda",
+			mx = "Armas y mano izquierda",
 			ko = "무기",
 		},
 	},
@@ -3766,12 +4382,16 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Quest",
 		text = {
 			en = "Quest",
+			es = "Misión",
+			mx = "Misión",
 		},
 	},
 	[792] = {
 		readable = "Toys",
 		text = {
 			en = "Toys",
+			es = "Juguetes",
+			mx = "Juguetes",
 		},
 	},
 	[793] = {
@@ -3779,12 +4399,28 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 237070,
 		text = {
 			en = "Inks",
+			de = "Tinte",
+			es = "Tintas",
+			mx = "Tintas",
+			fr = "Encre",
+			it = "Tinta",
+			pt = "Tinta",
+			ru = "Чернила",
+			ko = "잉크",
 		},
 	},
 	[794] = {
 		readable = "Glyphs",
 		text = {
 			en = "Glyphs",
+			de = "Glyphe",
+			es = "Glifos",
+			mx = "Glifos",
+			fr = "Glyphe",
+			it = "Glifo",
+			pt = "Glifo",
+			ru = "Символ",
+			ko = "문양",
 		},
 	},
 	[795] = {
@@ -3792,24 +4428,32 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134331,
 		text = {
 			en = "Scrolls & Research",
+			es = "Pergaminos e investigación",
+			mx = "Pergaminos e investigación",
 		},
 	},
 	[796] = {
 		readable = "Cards",
 		text = {
 			en = "Cards",
+			es = "Cartas",
+			mx = "Cartas",
 		},
 	},
 	[797] = {
 		readable = "Off-Hands",
 		text = {
 			en = "Off-Hands",
+			es = "Mano izquierda",
+			mx = "Mano izquierda",
 		},
 	},
 	[798] = {
 		readable = "Shoulder Inscription",
 		text = {
 			en = "Shoulder Inscription",
+			es = "Inscripción de hombros",
+			mx = "Inscripción de hombros",
 			ko = "어깨 마법부여",
 		},
 	},
@@ -3818,18 +4462,36 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 237070,
 		text = {
 			en = "Inks",
+			de = "Tinte",
+			es = "Tintas",
+			mx = "Tintas",
+			fr = "Encre",
+			it = "Tinta",
+			pt = "Tinta",
+			ru = "Чернила",
+			ko = "잉크",
 		},
 	},
 	[800] = {
 		readable = "Glyphs",
 		text = {
 			en = "Glyphs",
+			de = "Glyphe",
+			es = "Glifos",
+			mx = "Glifos",
+			fr = "Glyphe",
+			it = "Glifo",
+			pt = "Glifo",
+			ru = "Символ",
+			ko = "문양",
 		},
 	},
 	[801] = {
 		readable = "Cards",
 		text = {
 			en = "Cards",
+			es = "Cartas",
+			mx = "Cartas",
 		},
 	},
 	[802] = {
@@ -3837,54 +4499,71 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134331,
 		text = {
 			en = "Scrolls & Research",
+			es = "Pergaminos e investigación",
+			mx = "Pergaminos e investigación",
 		},
 	},
 	[803] = {
 		readable = "Off-Hands",
 		text = {
 			en = "Off-Hands",
+			es = "Mano izquierda",
+			mx = "Mano izquierda",
 		},
 	},
 	[805] = {
 		readable = "Zandalari Designs",
 		text = {
 			en = "Zandalari Designs",
+			es = "Diseños Zandalari",
+			mx = "Diseños Zandalari",
 		},
 	},
 	[809] = {
 		readable = "Pandaria Designs",
 		text = {
 			en = "Pandaria Designs",
+			es = "Diseños de Pandaria",
+			mx = "Diseños de Pandaria",
 		},
 	},
 	[811] = {
 		readable = "Cataclysm Designs",
 		text = {
 			en = "Cataclysm Designs",
+			es = "Diseños de Cataclysm",
+			mx = "Diseños de Cataclysm",
 		},
 	},
 	[813] = {
 		readable = "Northrend Designs",
 		text = {
 			en = "Northrend Designs",
+			es = "Diseños de Rasganorte",
+			mx = "Diseños de Rasganorte",
 		},
 	},
 	[815] = {
 		readable = "Outland Designs",
 		text = {
 			en = "Outland Designs",
+			es = "Diseños de Terrallende",
+			mx = "Diseños de Terrallende",
 		},
 	},
 	[817] = {
 		readable = "Gems",
 		text = {
 			en = "Gems",
+			es = "Gemas",
+			mx = "Gemas",
 		},
 	},
 	[818] = {
 		readable = "Mass Prospecting",
 		text = {
 			en = "Mass Prospecting",
+			mx = "Exploracion en masa",
 		},
 	},
 	[819] = {
@@ -3892,6 +4571,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133397,
 		text = {
 			en = "Rings",
+			es = "Anillos",
+			mx = "Anillos",
 			ko = "손가락",
 		},
 	},
@@ -3900,6 +4581,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 135792,
 		text = {
 			en = "Weapons",
+			es = "Armas",
+			mx = "Armas",
 			ko = "무기",
 			tw = "武器",
 		},
@@ -3909,6 +4592,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133244,
 		text = {
 			en = "Blue Gems",
+			es = "Gemas azules",
+			mx = "Gemas azules",
 		},
 	},
 	[822] = {
@@ -3916,6 +4601,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133263,
 		text = {
 			en = "Green Gems",
+			es = "Gemas verdes",
+			mx = "Gemas verdes",
 		},
 	},
 	[823] = {
@@ -3923,6 +4610,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133260,
 		text = {
 			en = "Orange Gems",
+			es = "Gemas naranjas",
+			mx = "Gemas naranjas",
 		},
 	},
 	[824] = {
@@ -3930,6 +4619,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133265,
 		text = {
 			en = "Purple Gems",
+			es = "Gemas moradas",
+			mx = "Gemas moradas",
 		},
 	},
 	[825] = {
@@ -3937,6 +4628,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133238,
 		text = {
 			en = "Red Gems",
+			es = "Gemas rojas",
+			mx = "Gemas rojas",
 		},
 	},
 	[827] = {
@@ -3944,6 +4637,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134098,
 		text = {
 			en = "Meta Gems",
+			es = "Gemas meta",
+			mx = "Gemas meta",
 		},
 	},
 	[828] = {
@@ -3951,6 +4646,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133294,
 		text = {
 			en = "Necklaces",
+			es = "Collares",
+			mx = "Collares",
 			ko = "목",
 		},
 	},
@@ -3959,6 +4656,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133397,
 		text = {
 			en = "Rings",
+			es = "Anillos",
+			mx = "Anillos",
 			ko = "손가락",
 		},
 	},
@@ -3967,6 +4666,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133236,
 		text = {
 			en = "Mounts",
+			es = "Monturas",
+			mx = "Monturas",
 		},
 	},
 	[831] = {
@@ -3974,6 +4675,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134331,
 		text = {
 			en = "Research",
+			es = "Investigación",
+			mx = "Investigación",
 		},
 	},
 	[832] = {
@@ -3981,6 +4684,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133247,
 		text = {
 			en = "Toys & Pets",
+			es = "Juguetes y mascotas",
+			mx = "Juguetes y mascotas",
 		},
 	},
 	[833] = {
@@ -3988,6 +4693,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133248,
 		text = {
 			en = "Yellow Gems",
+			es = "Gemas amarillas",
+			mx = "Gemas amarillas",
 		},
 	},
 	[834] = {
@@ -3995,6 +4702,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133244,
 		text = {
 			en = "Blue Gems",
+			es = "Gemas azules",
+			mx = "Gemas azules",
 		},
 	},
 	[835] = {
@@ -4002,6 +4711,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133263,
 		text = {
 			en = "Green Gems",
+			es = "Gemas verdes",
+			mx = "Gemas verdes",
 		},
 	},
 	[836] = {
@@ -4009,6 +4720,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133260,
 		text = {
 			en = "Orange Gems",
+			es = "Gemas naranjas",
+			mx = "Gemas naranjas",
 		},
 	},
 	[837] = {
@@ -4016,6 +4729,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133265,
 		text = {
 			en = "Purple Gems",
+			es = "Gemas moradas",
+			mx = "Gemas moradas",
 		},
 	},
 	[838] = {
@@ -4023,6 +4738,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133238,
 		text = {
 			en = "Red Gems",
+			es = "Gemas rojas",
+			mx = "Gemas rojas",
 		},
 	},
 	[839] = {
@@ -4030,6 +4747,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133248,
 		text = {
 			en = "Yellow Gems",
+			es = "Gemas amarillas",
+			mx = "Gemas amarillas",
 		},
 	},
 	[840] = {
@@ -4037,6 +4756,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134098,
 		text = {
 			en = "Meta Gems",
+			es = "Gemas meta",
+			mx = "Gemas meta",
 		},
 	},
 	[841] = {
@@ -4044,6 +4765,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133294,
 		text = {
 			en = "Necklaces",
+			es = "Collares",
+			mx = "Collares",
 			ko = "목",
 		},
 	},
@@ -4052,6 +4775,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133397,
 		text = {
 			en = "Rings",
+			es = "Anillos",
+			mx = "Anillos",
 			ko = "손가락",
 		},
 	},
@@ -4060,6 +4785,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132767,
 		text = {
 			en = "Crowns",
+			es = "Coronas",
+			mx = "Coronas",
 			ko = "머리",
 		},
 	},
@@ -4068,6 +4795,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 135599,
 		text = {
 			en = "Fist Weapons",
+			es = "Armas de puño",
+			mx = "Armas de puño",
 		},
 	},
 	[845] = {
@@ -4075,6 +4804,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134128,
 		text = {
 			en = "Toys & Prisms",
+			es = "Juguetes y primas",
+			mx = "Juguetes y primas",
 		},
 	},
 	[846] = {
@@ -4082,6 +4813,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133244,
 		text = {
 			en = "Blue Gems",
+			es = "Gemas azules",
+			mx = "Gemas azules",
 		},
 	},
 	[847] = {
@@ -4089,6 +4822,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133263,
 		text = {
 			en = "Green Gems",
+			es = "Gemas verdes",
+			mx = "Gemas verdes",
 		},
 	},
 	[848] = {
@@ -4096,6 +4831,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133260,
 		text = {
 			en = "Orange Gems",
+			es = "Gemas naranjas",
+			mx = "Gemas naranjas",
 		},
 	},
 	[849] = {
@@ -4103,6 +4840,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133265,
 		text = {
 			en = "Purple Gems",
+			es = "Gemas moradas",
+			mx = "Gemas moradas",
 		},
 	},
 	[850] = {
@@ -4110,6 +4849,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133238,
 		text = {
 			en = "Red Gems",
+			es = "Gemas rojas",
+			mx = "Gemas rojas",
 		},
 	},
 	[851] = {
@@ -4117,6 +4858,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133248,
 		text = {
 			en = "Yellow Gems",
+			es = "Gemas amarillas",
+			mx = "Gemas amarillas",
 		},
 	},
 	[852] = {
@@ -4124,6 +4867,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134098,
 		text = {
 			en = "Meta Gems",
+			es = "Gemas meta",
+			mx = "Gemas meta",
 		},
 	},
 	[853] = {
@@ -4131,6 +4876,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133294,
 		text = {
 			en = "Necklaces",
+			es = "Collares",
+			mx = "Collares",
 			ko = "목",
 		},
 	},
@@ -4139,6 +4886,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133397,
 		text = {
 			en = "Rings",
+			es = "Anillos",
+			mx = "Anillos",
 			ko = "손가락",
 		},
 	},
@@ -4147,6 +4896,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 237370,
 		text = {
 			en = "Prismatic Gems",
+			es = "Gemas prismáticas",
+			mx = "Gemas prismáticas",
 		},
 	},
 	[856] = {
@@ -4154,6 +4905,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134095,
 		text = {
 			en = "Pets and Projects",
+			es = "Mascotas y proyectos",
+			mx = "Mascotas y proyectos",
 		},
 	},
 	[857] = {
@@ -4161,6 +4914,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133244,
 		text = {
 			en = "Blue Gems",
+			es = "Gemas azules",
+			mx = "Gemas azules",
 		},
 	},
 	[858] = {
@@ -4168,6 +4923,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133263,
 		text = {
 			en = "Green Gems",
+			es = "Gemas verdes",
+			mx = "Gemas verdes",
 		},
 	},
 	[859] = {
@@ -4175,6 +4932,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133260,
 		text = {
 			en = "Orange Gems",
+			es = "Gemas naranjas",
+			mx = "Gemas naranjas",
 		},
 	},
 	[860] = {
@@ -4182,6 +4941,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133265,
 		text = {
 			en = "Purple Gems",
+			es = "Gemas moradas",
+			mx = "Gemas moradas",
 		},
 	},
 	[861] = {
@@ -4189,6 +4950,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133238,
 		text = {
 			en = "Red Gems",
+			es = "Gemas rojas",
+			mx = "Gemas rojas",
 		},
 	},
 	[862] = {
@@ -4196,6 +4959,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133248,
 		text = {
 			en = "Yellow Gems",
+			es = "Gemas meta",
+			mx = "Gemas meta",
 		},
 	},
 	[863] = {
@@ -4203,6 +4968,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134098,
 		text = {
 			en = "Meta Gems",
+			es = "Gemas meta",
+			mx = "Gemas meta",
 		},
 	},
 	[864] = {
@@ -4210,6 +4977,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133294,
 		text = {
 			en = "Necklaces",
+			es = "Collares",
+			mx = "Collares",
 			ko = "목",
 		},
 	},
@@ -4218,6 +4987,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133397,
 		text = {
 			en = "Rings",
+			es = "Anillos",
+			mx = "Anillos",
 			ko = "손가락",
 		},
 	},
@@ -4226,6 +4997,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 135443,
 		text = {
 			en = "Trinkets",
+			es = "Abalorios",
+			mx = "Abalorios",
 			ko = "장비",
 		},
 	},
@@ -4234,6 +5007,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134096,
 		text = {
 			en = "Prisms & Statues",
+			es = "Prismas y estatuas",
+			mx = "Prismas y estatuas",
 		},
 	},
 	[868] = {
@@ -4241,6 +5016,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 135732,
 		text = {
 			en = "Reagents",
+			es = "Componentes",
+			mx = "Componentes",
 			ko = "재료",
 		},
 	},
@@ -4249,6 +5026,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132767,
 		text = {
 			en = "Crowns",
+			es = "Coronas",
+			mx = "Coronas",
 			ko = "머리",
 		},
 	},
