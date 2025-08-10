@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			ach(16677, {	-- Adventurer of the Ohn'ahran Plains
 				["sym"] = {{ "achievement_criteria" }},
 			}),
-			ach(17562, {    -- Ancient Stones of the Ohn'ahran Plains (automated)
+			ach(17562, {	-- Ancient Stones of the Ohn'ahran Plains (automated)
 				["timeline"] = { ADDED_10_1_0 },
 			}),
 			ach(16061, {	-- Dragon Glyphs: Dragonsprings Summit

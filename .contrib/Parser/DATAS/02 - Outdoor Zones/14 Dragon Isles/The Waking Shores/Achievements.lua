@@ -102,7 +102,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["_npcs"] = { 193175 },	-- Slurpo, the Incredible Snail
 				}),
 			}),
-			ach(17561, {    -- Ancient Stones of the Waking Shores (automated)
+			ach(17561, {	-- Ancient Stones of the Waking Shores (automated)
 				["timeline"] = { ADDED_10_1_0 },
 			}),
 			ach(16406, {	-- All Sides of the Story (automated)

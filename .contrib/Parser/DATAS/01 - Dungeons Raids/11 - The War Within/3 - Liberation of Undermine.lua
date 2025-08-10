@@ -261,12 +261,18 @@ local Boss, BossOnly, Difficulty, CommonBossDrops, ZoneDrops =
 InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops, InstanceHelper.ZoneDrops
 
 InstanceHelper.UpgradeMapping = {
+	-- #IF AFTER 11.2
+	[DIFFICULTY.RAID.LFR] = 0,
+	[DIFFICULTY.RAID.NORMAL] = 0,
+	[DIFFICULTY.RAID.HEROIC] = 0,
+	-- #ELSE
 	[DIFFICULTY.RAID.LFR] = 3,
 	[DIFFICULTY.RAID.NORMAL] = 5,
 	[DIFFICULTY.RAID.HEROIC] = 6,
+	-- #ENDIF
 };
 
-root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_1_0_SEASONSTART } }, {
+root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 	inst(1296, {	-- Liberation of Undermine
 		["isRaid"] = true,
 		["coord"] = { 42.0, 50.2, UNDERMINE },
@@ -278,6 +284,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 			2411,	-- The Tower of Spades
 			2428,	-- Research and Destruction
 		},
+		["timeline"] = { ADDED_11_1_0_SEASONSTART },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(41225, {	-- Shock and Awesome
@@ -396,9 +403,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 				ach(41290),	-- Heroic: Liberation of Undermine Guild Run
 			}),
 			header(HEADERS.Faction, FACTION_GALLAGIO, {	-- Gallagio Loyalty Rewards Club
-				n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0 } },{
-					ach(60939),	-- Bringing Down the House
-				})),
+				n(ACHIEVEMENTS, {
+					ach(60939, {["timeline"] = { ADDED_11_2_0 }}),	-- Bringing Down the House
+				}),
 				faction(FACTION_GALLAGIO),
 				n(QUESTS, sharedData({
 					["qg"] = 235617,	-- Paula Piranha <Renown Quartermaster>
@@ -678,7 +685,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 				}),
 				CommonBossDrops({
 					currency(WEATHERED_UNDERMINE_CREST, {
-						["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0_SEASONSTART },
+						["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
 					}),
 				}),
 				header(HEADERS.LFGDungeon, 2780, {	-- Shock and Awesome
@@ -762,7 +769,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(CARVED_UNDERMINE_CREST, {
-						["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0_SEASONSTART },
+						["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
 					}),
 				}),
 				n(QUESTS, {
@@ -801,13 +808,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 				BossOnly(BANDIT),
 				BossOnly(MUGZEE),
 				BossOnly(GALLYWIX, {
-					ach(41298, {["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0_SEASONSTART }}),	-- Ahead of the Curve: Chrome King Gallywix
+					ach(41298, {["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART }}),	-- Ahead of the Curve: Chrome King Gallywix
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(RUNED_UNDERMINE_CREST, {
-						["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0_SEASONSTART },
+						["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
 					}),
 				}),
 				n(QUESTS, {
@@ -836,7 +843,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
 				CommonBossDrops({
 					currency(GILDED_UNDERMINE_CREST, {
-						["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0_SEASONSTART },
+						["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
 					}),
 				}),
 				n(QUESTS, {
@@ -872,8 +879,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 					ach(41236, {	-- Mythic: Chrome King Gallywix
 						title(605),	-- <Name>, Liberator of Undermine
 					}),
-					ach(41297, {["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0_SEASONSTART }}),	-- Cutting Edge: Chrome King Gallywix
-					ach(41296, bubbleDownSelf({["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0_SEASONSTART } }, {	-- Hall of Fame: Chrome King Gallywix
+					ach(41297, {["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART }}),	-- Cutting Edge: Chrome King Gallywix
+					ach(41296, applyDataSelf({["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART } }, {	-- Hall of Fame: Chrome King Gallywix
 						title(604),	-- <Name>, Famed Slayer of The Chrome King
 					})),
 					ach(41292),	-- Mythic: Chrome King Gallywix Guild Run
@@ -901,78 +908,81 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 			}),
 		},
 	}),
-})));
+}));
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_1_0_SEASONSTART } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({  }, {
 	inst(1296, {	-- Liberation of Undermine
-		n(FACTIONS, {
-			header(HEADERS.Faction, FACTION_GALLAGIO, {
-				n(QUESTS, {
-					q(86468),	-- Triggered with Members Only (89016)
-					q(89017),	-- Triggered with Members Only (89016)
+		["timeline"] = { ADDED_11_1_0_SEASONSTART },
+		["groups"] = {
+			n(FACTIONS, {
+				header(HEADERS.Faction, FACTION_GALLAGIO, {
+					n(QUESTS, {
+						q(86468),	-- Triggered with Members Only (89016)
+						q(89017),	-- Triggered with Members Only (89016)
+					}),
 				}),
 			}),
-		}),
-		inst(1296, bubbleDown({	-- Liberation of Undermine
-			["isWeekly"] = true,
-		},{
-			-- LFR
-			q(88835, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash
-			q(88838, name(HEADERS.NPC, 229287)),	-- Professor Boomspark Trash
-			q(88842, name(HEADERS.NPC, 229288)),	-- King Flamespite Trash
-			q(88846, name(HEADERS.NPC, 229433)),	-- Skiggy Muckheimer Trash
-			q(88867, name(HEADERS.NPC, 238011)),	-- Trashmaster Blazedump Trash
-			q(88829, name(HEADERS.NPC, 229283)),	-- Scraps Trash
-			q(88859, name(HEADERS.NPC, 234640)),	-- Globikus Trash
-			q(88850, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash
-			q(88854, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash
-			-- Normal
-			q(88833, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash
-			q(88840),	-- King Flamespite/Professor Boomspark Trash
-			q(88844),	-- King Flamespite/Professor Boomspark Trash
-			q(88848, name(HEADERS.NPC, 229433)),	-- Skiggy Muckheimer Trash
-			q(88869, name(HEADERS.NPC, 238011)),	-- Trashmaster Blazedump Trash
-			q(88830, name(HEADERS.NPC, 229283)),	-- Scraps Trash
-			q(88861, name(HEADERS.NPC, 234640)),	-- Globikus Trash
-			q(88852, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash
-			q(88856, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash
-			-- Heroic
-			q(88836, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash
-			q(88837, name(HEADERS.NPC, 229287)),	-- Professor Boomspark Trash
-			q(88841, name(HEADERS.NPC, 229288)),	-- King Flamespite Trash
-			q(88845, name(HEADERS.NPC, 229433)),	-- Skiggy Muckheimer Trash
-			q(88866, name(HEADERS.NPC, 238011)),	-- Trashmaster Blazedump Trash
-			q(88831, name(HEADERS.NPC, 229283)),	-- Scraps Trash
-			q(88858, name(HEADERS.NPC, 234640)),	-- Globikus Trash
-			q(88849, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash
-			q(88853, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash
-			-- Mythic
-			q(88834, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash
-			q(88839),	-- King Flamespite/Professor Boomspark Trash
-			q(88843),	-- King Flamespite/Professor Boomspark Trash
-			q(88847, name(HEADERS.NPC, 229433)),	-- Skiggy Muckheimer Trash
-			q(88868, name(HEADERS.NPC, 238011)),	-- Trashmaster Blazedump Trash
-			q(88832, name(HEADERS.NPC, 229283)),	-- Scraps Trash
-			q(88860, name(HEADERS.NPC, 234640)),	-- Globikus Trash
-			q(88851, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash
-			q(88855, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash
-			-- All
-			q(89478, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash first per week any difficulty
-			q(89479, name(HEADERS.NPC, 229433)),	-- Skiggy Muckheimer Trash first per week any difficulty
-			q(89484, name(HEADERS.NPC, 238011)),	-- Trashmaster Blazedump Trash first per week any difficulty
-			q(89477, name(HEADERS.NPC, 229283)),	-- Scraps Trash first per week any difficulty
-			q(89482, name(HEADERS.NPC, 234640)),	-- Globikus Trash first per week any difficulty
-			q(89480, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash first per week any difficulty
-			q(89481, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash first per week any difficulty
-
-			q(89452),	-- Vexie Fullthrottle
-			q(89453),	-- Cauldron of Carnage
-			q(89454),	-- Rik Reverb
-			q(89455),	-- Stix Bunkjunker
-			q(89456),	-- Sprocketmonger Lockenstock
-			q(89457),	-- One-Armed Bandit
-			q(89458),	-- Mug'Zee
-			q(89459),	-- Chrome King Gallywix
-		})),
+		},
 	}),
+	inst(1296, bubbleDown({	-- Liberation of Undermine
+		["isWeekly"] = true,
+	},{
+		-- LFR
+		q(88835, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash
+		q(88838, name(HEADERS.NPC, 229287)),	-- Professor Boomspark Trash
+		q(88842, name(HEADERS.NPC, 229288)),	-- King Flamespite Trash
+		q(88846, name(HEADERS.NPC, 229433)),	-- Skiggy Muckheimer Trash
+		q(88867, name(HEADERS.NPC, 238011)),	-- Trashmaster Blazedump Trash
+		q(88829, name(HEADERS.NPC, 229283)),	-- Scraps Trash
+		q(88859, name(HEADERS.NPC, 234640)),	-- Globikus Trash
+		q(88850, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash
+		q(88854, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash
+		-- Normal
+		q(88833, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash
+		q(88840),	-- King Flamespite/Professor Boomspark Trash
+		q(88844),	-- King Flamespite/Professor Boomspark Trash
+		q(88848, name(HEADERS.NPC, 229433)),	-- Skiggy Muckheimer Trash
+		q(88869, name(HEADERS.NPC, 238011)),	-- Trashmaster Blazedump Trash
+		q(88830, name(HEADERS.NPC, 229283)),	-- Scraps Trash
+		q(88861, name(HEADERS.NPC, 234640)),	-- Globikus Trash
+		q(88852, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash
+		q(88856, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash
+		-- Heroic
+		q(88836, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash
+		q(88837, name(HEADERS.NPC, 229287)),	-- Professor Boomspark Trash
+		q(88841, name(HEADERS.NPC, 229288)),	-- King Flamespite Trash
+		q(88845, name(HEADERS.NPC, 229433)),	-- Skiggy Muckheimer Trash
+		q(88866, name(HEADERS.NPC, 238011)),	-- Trashmaster Blazedump Trash
+		q(88831, name(HEADERS.NPC, 229283)),	-- Scraps Trash
+		q(88858, name(HEADERS.NPC, 234640)),	-- Globikus Trash
+		q(88849, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash
+		q(88853, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash
+		-- Mythic
+		q(88834, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash
+		q(88839),	-- King Flamespite/Professor Boomspark Trash
+		q(88843),	-- King Flamespite/Professor Boomspark Trash
+		q(88847, name(HEADERS.NPC, 229433)),	-- Skiggy Muckheimer Trash
+		q(88868, name(HEADERS.NPC, 238011)),	-- Trashmaster Blazedump Trash
+		q(88832, name(HEADERS.NPC, 229283)),	-- Scraps Trash
+		q(88860, name(HEADERS.NPC, 234640)),	-- Globikus Trash
+		q(88851, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash
+		q(88855, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash
+		-- All
+		q(89478, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash first per week any difficulty
+		q(89479, name(HEADERS.NPC, 229433)),	-- Skiggy Muckheimer Trash first per week any difficulty
+		q(89484, name(HEADERS.NPC, 238011)),	-- Trashmaster Blazedump Trash first per week any difficulty
+		q(89477, name(HEADERS.NPC, 229283)),	-- Scraps Trash first per week any difficulty
+		q(89482, name(HEADERS.NPC, 234640)),	-- Globikus Trash first per week any difficulty
+		q(89480, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash first per week any difficulty
+		q(89481, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash first per week any difficulty
+
+		q(89452),	-- Vexie Fullthrottle
+		q(89453),	-- Cauldron of Carnage
+		q(89454),	-- Rik Reverb
+		q(89455),	-- Stix Bunkjunker
+		q(89456),	-- Sprocketmonger Lockenstock
+		q(89457),	-- One-Armed Bandit
+		q(89458),	-- Mug'Zee
+		q(89459),	-- Chrome King Gallywix
+	})),
 })));

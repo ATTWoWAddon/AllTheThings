@@ -579,7 +579,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["provider"] = { "n", 160262 },	-- Ysera
 				["coord"] = { 44.7, 39.0, THE_TRUNK },
 				["groups"] = {
-					i(175149),    -- A Small Carving of Ysera (QI!)
+					i(175149),	-- A Small Carving of Ysera (QI!)
 				},
 			}),
 			q(59071, {	-- Mending a Broken Hart

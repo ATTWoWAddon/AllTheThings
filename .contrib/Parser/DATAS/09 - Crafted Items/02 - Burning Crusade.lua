@@ -115,7 +115,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 		i(64394),	-- Draenei Tome
 		i(64392),	-- Orc Blood Text
 		i(87399, {["timeline"] = {ADDED_5_0_4}}),	-- Restored Artifact
-		header(HEADERS.Currency, ARCH_CURRENCY_DRAENEI, sharedData({["cost"]={{"c",ARCH_CURRENCY_DRAENEI,50}}},{ -- TODO: someone can add different fragment costs within as needed
+		header(HEADERS.Currency, ARCH_CURRENCY_DRAENEI, {
 			["provider"] = { "o", 207188 },	-- Draenei Archaeology Find
 			["maps"] = {
 				HELLFIRE_PENINSULA,
@@ -126,19 +126,19 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				ZANGARMARSH,
 			},
 			["groups"] = {
-				i(64440),	-- Anklet with Golden Bells
-				i(64456),	-- Arrival of the Naaru (TOY!)
-				i(64453),	-- Baroque Sword Scabbard
-				i(64442),	-- Carved Harp of Exotic Wood
-				i(64455),	-- Dignified Portrait
-				i(64454),	-- Fine Crystal Candelabra
-				i(64458),	-- Plated Elekk Goad
-				i(64444),	-- Scepter of the Nathrezim
-				i(64443),	-- Strange Silver Paperweight
-				i(64457),	-- The Last Relic of Argus
+				i(64440, {["cost"]={{"c",ARCH_CURRENCY_DRAENEI,45}}}),	-- Anklet with Golden Bells
+				i(64456, {["cost"]={{"c",ARCH_CURRENCY_DRAENEI,124}}}),	-- Arrival of the Naaru (TOY!)
+				i(64453, {["cost"]={{"c",ARCH_CURRENCY_DRAENEI,46}}}),	-- Baroque Sword Scabbard
+				i(64442, {["cost"]={{"c",ARCH_CURRENCY_DRAENEI,45}}}),	-- Carved Harp of Exotic Wood
+				i(64455, {["cost"]={{"c",ARCH_CURRENCY_DRAENEI,45}}}),	-- Dignified Portrait
+				i(64454, {["cost"]={{"c",ARCH_CURRENCY_DRAENEI,44}}}),	-- Fine Crystal Candelabra
+				i(64458, {["cost"]={{"c",ARCH_CURRENCY_DRAENEI,45}}}),	-- Plated Elekk Goad
+				i(64444, {["cost"]={{"c",ARCH_CURRENCY_DRAENEI,46}}}),	-- Scepter of the Nathrezim
+				i(64443, {["cost"]={{"c",ARCH_CURRENCY_DRAENEI,46}}}),	-- Strange Silver Paperweight
+				i(64457, {["cost"]={{"c",ARCH_CURRENCY_DRAENEI,130}}}),	-- The Last Relic of Argus
 			},
-		})),
-		header(HEADERS.Currency, ARCH_CURRENCY_ORC, sharedData({["cost"]={{"c",ARCH_CURRENCY_ORC,50}}},{ -- TODO: someone can add different fragment costs within as needed
+		}),
+		header(HEADERS.Currency, ARCH_CURRENCY_ORC, {
 			["provider"] = { "o", 207187 },	-- Orc Archaeology Find
 			["maps"] = {
 				HELLFIRE_PENINSULA,
@@ -147,18 +147,18 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				TEROKKAR_FOREST,
 			},
 			["groups"] = {
-				i(64436),	-- Fiendish Whip
-				i(64421),	-- Fierce Wolf Figurine
-				i(64418),	-- Gray Candle Stub
-				i(64644),	-- Headdress of the First Shaman
-				i(64417),	-- Maul of Stone Guard Mur'og
-				i(64419),	-- Rusted Steak Knife
-				i(64420),	-- Scepter of Nekros Skullcrusher
-				i(64438),	-- Skull Drinking Cup
-				i(64437),	-- Tile of Glazed Clay
-				i(64389),	-- Tiny Bronze Scorpion
+				i(64436, {["cost"]={{"c",ARCH_CURRENCY_ORC,45}}}),	-- Fiendish Whip
+				i(64421, {["cost"]={{"c",ARCH_CURRENCY_ORC,45}}}),	-- Fierce Wolf Figurine
+				i(64418, {["cost"]={{"c",ARCH_CURRENCY_ORC,45}}}),	-- Gray Candle Stub
+				i(64644, {["cost"]={{"c",ARCH_CURRENCY_ORC,130}}}),	-- Headdress of the First Shaman
+				i(64417, {["cost"]={{"c",ARCH_CURRENCY_ORC,45}}}),	-- Maul of Stone Guard Mur'og
+				i(64419, {["cost"]={{"c",ARCH_CURRENCY_ORC,45}}}),	-- Rusted Steak Knife
+				i(64420, {["cost"]={{"c",ARCH_CURRENCY_ORC,45}}}),	-- Scepter of Nekros Skullcrusher
+				i(64438, {["cost"]={{"c",ARCH_CURRENCY_ORC,45}}}),	-- Skull Drinking Cup
+				i(64437, {["cost"]={{"c",ARCH_CURRENCY_ORC,45}}}),	-- Tile of Glazed Clay
+				i(64389, {["cost"]={{"c",ARCH_CURRENCY_ORC,45}}}),	-- Tiny Bronze Scorpion
 			},
-		})),
+		}),
 	})),
 	prof(BLACKSMITHING, {
 		-- #if BEFORE CATA
@@ -470,11 +470,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			i(38928),	-- Enchant Chest - Major Versatility / TBC: Major Spirit
 			i(38929),	-- Enchant Chest - Versatility Prime / TBC: Restore Mana Prime
 			i(38940),	-- Enchant Cloak - Greater Agility
-			i(38941, {["timeline"] = {ADDED_3_0_2, REMOVED_5_0_4}}),	-- Enchant Cloak - Greater Arcane Resistance
+			i(38941, {["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 }}),	-- Enchant Cloak - Greater Arcane Resistance
 			i(39000),	-- Enchant Cloak - Greater Dodge / TBC: Steelweave
-			i(38942, {["timeline"] = {ADDED_3_0_2, REMOVED_5_0_4}}),	-- Enchant Cloak - Greater Shadow Resistance
+			i(38942, {["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 }}),	-- Enchant Cloak - Greater Shadow Resistance
 			i(38914),	-- Enchant Cloak - Major Armor
-			i(38915, {["timeline"] = {ADDED_3_0_2, REMOVED_5_0_4}}),	-- Enchant Cloak - Major Resistance
+			i(38915, {["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 }}),	-- Enchant Cloak - Major Resistance
 			i(38939),	-- Enchant Cloak - Empowerment
 			-- #if AFTER BFA
 			i(38895),	-- Enchant Cloak - Dodge
@@ -501,20 +501,22 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 		})),
 		filter(MISC, {
 			i(22460),	-- Prismatic Sphere
-			i(22462, {["timeline"] = {ADDED_2_0_5, REMOVED_5_0_4}}),	-- Runed Adamantite Rod
-			i(22463, {["timeline"] = {ADDED_2_0_5, REMOVED_5_0_4}}),	-- Runed Eternium Rod
-			i(22461, {["timeline"] = {ADDED_2_0_5, REMOVED_5_0_4}}),	-- Runed Fel Iron Rod
 			i(22521),	-- Superior Mana Oil
 			i(22522),	-- Superior Wizard Oil
 			i(22459),	-- Void Sphere
 		}),
+		filter(PROFESSION_EQUIPMENT, sharedDataSelf({ ["timeline"] = { REMOVED_5_0_4 }}, {
+			i(22462),	-- Runed Adamantite Rod
+			i(22463),	-- Runed Eternium Rod
+			i(22461),	-- Runed Fel Iron Rod
+		})),
 		applyclassicphase(WRATH_PHASE_ONE, n(WEAPON_ENCHANTMENTS, sharedDataSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
 			i(38949),	-- Enchant Shield - Armor / TBC: Resilience
 			i(38905),	-- Enchant Shield - Intellect
 			i(38904),	-- Enchant Shield - Lesser Dodge / TBC: Tough Shield
 			i(38945),	-- Enchant Shield - Major Stamina
 			i(38906),	-- Enchant Shield - Parry / TBC: Shield Block
-			i(38907, {["timeline"] = {ADDED_3_0_2, REMOVED_5_0_4}}),	-- Enchant Shield - Resistance
+			i(38907, {["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 }}),	-- Enchant Shield - Resistance
 			i(38927),	-- Enchant Weapon - Battlemaster
 			i(38948),	-- Enchant Weapon - Executioner
 			i(38998),	-- Enchant Weapon - Deathfrost
@@ -1752,33 +1754,33 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			--]]
 		}),
 		spell(2656, {	-- Smelting
-			i(23446, {    -- Adamantite Bar
-				["cost"] = ClassicCost({ { "i", 23425, 2 } }),    -- Adamantite Ore
+			i(23446, {	-- Adamantite Bar
+				["cost"] = ClassicCost({ { "i", 23425, 2 } }),	-- Adamantite Ore
 			}),
-			i(23447, {    -- Eternium Bar
-				["cost"] = ClassicCost({ { "i", 23427, 2 } }),    -- Eternium Ore
+			i(23447, {	-- Eternium Bar
+				["cost"] = ClassicCost({ { "i", 23427, 2 } }),	-- Eternium Ore
 			}),
-			i(23445, {    -- Fel Iron Bar
-				["cost"] = ClassicCost({ { "i", 23424, 2 } }),    -- Fel Iron Ore
+			i(23445, {	-- Fel Iron Bar
+				["cost"] = ClassicCost({ { "i", 23424, 2 } }),	-- Fel Iron Ore
 			}),
-			i(23448, {    -- Felsteel Bar
+			i(23448, {	-- Felsteel Bar
 				["cost"] = ClassicCost({
 					{ "i", 23445, 3 },	-- Fel Iron Bar
 					{ "i", 23447, 2 },	-- Eternium Bar
 				}),
 			}),
-			i(23573, {    -- Hardened Adamantite Bar
-				["cost"] = ClassicCost({ { "i", 23446, 10 } }),    -- Adamantite Bar
+			i(23573, {	-- Hardened Adamantite Bar
+				["cost"] = ClassicCost({ { "i", 23446, 10 } }),	-- Adamantite Bar
 			}),
-			applyclassicphase(TBC_PHASE_FIVE, i(35128, {    -- Hardened Khorium Bar
+			applyclassicphase(TBC_PHASE_FIVE, i(35128, {	-- Hardened Khorium Bar
 				["timeline"] = {ADDED_2_4_0},
 				["cost"] = ClassicCost({
-					{ "i", 23449, 3 },    -- Khorium Bar
-					{ "i", 23573, 1 },    -- Hardened Adamantite Bar
+					{ "i", 23449, 3 },	-- Khorium Bar
+					{ "i", 23573, 1 },	-- Hardened Adamantite Bar
 				}),
 			})),
-			i(23449, {    -- Khorium Bar
-				["cost"] = ClassicCost({ { "i", 23426, 2 } }),    -- Khorium Ore
+			i(23449, {	-- Khorium Bar
+				["cost"] = ClassicCost({ { "i", 23426, 2 } }),	-- Khorium Ore
 			}),
 		}),
 	}),
@@ -1790,9 +1792,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 		i(22055),	-- Wound Poison V
 	})),
 	prof(SKINNING, {
-		["description"] = "The following items can be gathered by skinning creatures on Outland. Note that Knothide Leader is the most common reagent to get from skinning. All other skinned reagents have a lower than 100% drop chance from skinning the respective mobs, thus you must expect having to skin multiple creatures to obtain the reagent.\n\nThis header will often not show everything uncollected it contains, even when enabling 'Debug Mode'. The best way to track specific reagents is to do /att item:[itemID] or pop out this header.",
+		["description"] = "The following items can be gathered by skinning creatures on Outland. Note that Knothide Leather is the most common reagent to get from skinning. All other skinned reagents have a lower than 100% drop chance from skinning the respective mobs, thus you must expect having to skin multiple creatures to obtain the reagent.\n\nThis header will often not show everything uncollected it contains, even when enabling 'Debug Mode'. The best way to track specific reagents is to do /att item:[itemID] or pop out this header.",
 		["groups"] = {
-			i(29539, {    -- Cobra Scales
+			i(29539, {	-- Cobra Scales
 				["crs"] = {
 					19784,	-- Coilskar Cobra
 					23020,	-- Shadow Serpent
@@ -1809,7 +1811,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 					{ 45.8, 28.6, SHADOWMOON_VALLEY },	-- Coilskar Point
 				},
 			}),
-			i(25699, {    -- Crystal-Infused Leather
+			i(25699, {	-- Crystal-Infused Leather
 				["crs"] = {
 					18461,	-- Dampscale Basilisk
 					18463,	-- Dampscale Devourer
@@ -1866,7 +1868,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				},
 				["description"] = "Can be efficiently farmed in Blade's Edge Mountains and Zangarmarsh using a route from the southwestern end of Zangarmarsh following the western edge northwards and later eastwards to Blade's Edge Mountains. Then fly up to and follow the Vortex Summit, down again to Grishnath, and east up again following the Crystal Spine, over to Skald, and down to Veil Ruuan.\n\nCan also be found on basilisks all over Terokkar Forest, most of them dropping Dampscale Basilisk Eye.\n\nSkinning most mobs can also give Fel Scales",
 			}),
-			i(25707, {    -- Fel Hide
+			i(25707, {	-- Fel Hide
 				["crs"] = {
 					19852,	-- Artifact Seeker
 					23219,	-- Blackwind Warp Chaser
@@ -1956,7 +1958,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 					i(21887),	-- Knothide Leather
 				},
 			}),
-			i(29548, {    -- Nether Dragonscales
+			i(29548, {	-- Nether Dragonscales
 				["description"] = "Is skinned from Netherwing drakes in Outland. Characters who have started the Netherwing questline can only kill Netherwing drakes in Blade's Edge Nountains and Netherstorm, and then it requires the player to toggle 'At War' with the Netherwing in the reputation panel. Killing Netherwing drakes does not lower the reputation with the faction.",
 				["crs"] = {
 					21722,	-- Enslaved Netherwing Drake
@@ -1971,7 +1973,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				},
 			}),
 			i(35229),	-- Nether Residue (Quest Item for Shattrath q(11875) Gaining the Advantage)
-			i(25708, {    -- Thick Clefthoof Leather
+			i(25708, {	-- Thick Clefthoof Leather
 				["description"] = "Clefthoofs can be found all over Nagrand.",
 				["crs"] = {
 					17133,	-- Aged Clefthoof
@@ -1981,7 +1983,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				},
 				["maps"] = { NAGRAND },
 			}),
-			i(29547, {    -- Wind Scales
+			i(29547, {	-- Wind Scales
 				["crs"] = {
 					20502,	-- Eclipsion Dragonhawk
 					21123,	-- Felsworn Scalewing

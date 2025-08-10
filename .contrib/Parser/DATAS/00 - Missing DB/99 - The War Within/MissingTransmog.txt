@@ -32539,6 +32539,7 @@ s(98468)/i(159322),	-- Seawalker's Pantaloons \\ 8.0 - PH Dungeon - Leather LEGS
 s(98470)/i(159328),	-- Wharf Warden's Gloves \\ 8.0 - PH Dungeon - Leather HAND
 s(98482)/i(159342),	-- Hood of Dreadful Maladies \\ 8.0 - PH Dungeon - Leather HEAD
 s(98483)/i(159342),	-- Hood of Dreadful Maladies \\ 8.0 - PH Dungeon - Leather HEAD
+s(98503)/i(152873),	-- Talanji's Salutary Scepter \\ Talanji's Salutary Wand
 s(98538)/i(162590),	-- Sandals of the Tidesages
 s(98539)/i(162590),	-- Sandals of the Tidesages
 s(98540)/i(162590),	-- Sandals of the Tidesages
@@ -36035,6 +36036,10 @@ s(222786)/i(212446),	-- Royal Emblem of Nerub-ar \\ 11.0 Raid Template - Generic
 11.0.2.55665
 s(225006)/i(212435),	-- Liquified Defector's Leggings \\ 11.0 Raid Template - Mail - Legs
 s(225007)/i(212435),	-- Liquified Defector's Leggings \\ 11.0 Raid Template - Mail - Legs
+11.0.5.56487
+s(227801)/i(230033),	-- Prowler's Midnight Shoulder Cape
+s(227821)/i(230054),	-- Prowler's Midnight Cowl
+s(227841)/i(230074),	-- Prowler's Midnight Mask
 11.1.0.58221
 s(248966)/i(227541),	-- Miner's Debt Marker
 s(266731)/i(235222),	-- Apogee Inventor's Goggles
@@ -36299,1177 +36304,743 @@ s(292181)/i(244410),	--
 s(292182)/i(244411),	--
 s(292934)/i(245994),	--
 11.2.0.61476
-s(227955)/i(230288),	-- Astral Aspirant's Plate Helm
-s(227956)/i(230289),	-- Astral Aspirant's Silk Robe
-s(227957)/i(230290),	-- Astral Aspirant's Chestplate
-s(227958)/i(230291),	-- Astral Aspirant's Armored Vest
-s(227959)/i(230292),	-- Astral Aspirant's Leather Vest
-s(227960)/i(230293),	-- Astral Aspirant's Plate Warboots
-s(227961)/i(230294),	-- Astral Aspirant's Silk Treads
-s(227962)/i(230295),	-- Astral Aspirant's Chain Sabatons
-s(227963)/i(230296),	-- Astral Aspirant's Leather Boots
-s(227964)/i(230297),	-- Astral Aspirant's Leather Gloves
-s(227965)/i(230298),	-- Astral Aspirant's Plate Gauntlets
-s(227966)/i(230299),	-- Astral Aspirant's Silk Gloves
-s(227967)/i(230300),	-- Astral Aspirant's Chain Gauntlets
-s(227968)/i(230301),	-- Astral Aspirant's Silk Hood
-s(227969)/i(230302),	-- Astral Aspirant's Chain Helm
-s(227970)/i(230303),	-- Astral Aspirant's Leather Helm
-s(227971)/i(230304),	-- Astral Aspirant's Plate Legguards
-s(227972)/i(230305),	-- Astral Aspirant's Silk Leggings
-s(227973)/i(230306),	-- Astral Aspirant's Chain Leggings
-s(227974)/i(230307),	-- Astral Aspirant's Leather Breeches
-s(227975)/i(230308),	-- Astral Aspirant's Leather Spaulders
-s(227976)/i(230309),	-- Astral Aspirant's Plate Shoulders
-s(227977)/i(230310),	-- Astral Aspirant's Silk Mantle
-s(227978)/i(230311),	-- Astral Aspirant's Chain Spaulders
-s(227979)/i(230312),	-- Astral Aspirant's Plate Girdle
-s(227980)/i(230313),	-- Astral Aspirant's Silk Cord
-s(227981)/i(230314),	-- Astral Aspirant's Chain Belt
-s(227982)/i(230315),	-- Astral Aspirant's Leather Belt
-s(227983)/i(230316),	-- Astral Aspirant's Silk Wristwraps
-s(227984)/i(230317),	-- Astral Aspirant's Plate Cuffs
-s(227985)/i(230318),	-- Astral Aspirant's Chain Wristwraps
-s(227986)/i(230319),	-- Astral Aspirant's Leather Wristwraps
-s(227987)/i(230320),	-- Astral Aspirant's Plate Headguard
-s(227988)/i(230321),	-- Astral Aspirant's Silk Shirt
-s(227989)/i(230322),	-- Astral Aspirant's Plate Armor
-s(227990)/i(230323),	-- Astral Aspirant's Armored Tunic
-s(227991)/i(230324),	-- Astral Aspirant's Leather Tunic
-s(227992)/i(230325),	-- Astral Aspirant's Plate Stompers
-s(227993)/i(230326),	-- Astral Aspirant's Silk Footwraps
-s(227994)/i(230327),	-- Astral Aspirant's Chain Stompers
-s(227995)/i(230328),	-- Astral Aspirant's Leather Footpads
-s(227996)/i(230329),	-- Astral Aspirant's Leather Grips
-s(227997)/i(230330),	-- Astral Aspirant's Plate Handguards
-s(227998)/i(230331),	-- Astral Aspirant's Silk Handwraps
-s(227999)/i(230332),	-- Astral Aspirant's Chain Handguards
-s(228000)/i(230333),	-- Astral Aspirant's Silk Cover
-s(228001)/i(230334),	-- Astral Aspirant's Chain Headguard
-s(228002)/i(230335),	-- Astral Aspirant's Leather Mask
-s(228003)/i(230336),	-- Astral Aspirant's Plate Wargreaves
-s(228004)/i(230337),	-- Astral Aspirant's Silk Legwraps
-s(228005)/i(230338),	-- Astral Aspirant's Chain Wargreaves
-s(228006)/i(230339),	-- Astral Aspirant's Leather Leggings
-s(228007)/i(230340),	-- Astral Aspirant's Leather Mantle
-s(228008)/i(230341),	-- Astral Aspirant's Plate Pauldrons
-s(228009)/i(230342),	-- Astral Aspirant's Silk Shawl
-s(228010)/i(230343),	-- Astral Aspirant's Chain Shoulderguards
-s(228011)/i(230344),	-- Astral Aspirant's Plate Greatbelt
-s(228012)/i(230345),	-- Astral Aspirant's Silk Belt
-s(228013)/i(230346),	-- Astral Aspirant's Chain Clasp
-s(228014)/i(230347),	-- Astral Aspirant's Leather Cord
-s(228015)/i(230348),	-- Astral Aspirant's Silk Bindings
-s(228016)/i(230349),	-- Astral Aspirant's Plate Armguards
-s(228017)/i(230350),	-- Astral Aspirant's Chain Bracer
-s(228018)/i(230351),	-- Astral Aspirant's Leather Armguards
-s(228019)/i(230363),	-- Astral Aspirant's Drape
-s(228020)/i(230364),	-- Astral Aspirant's Cloak
-s(228021)/i(230365),	-- Astral Aspirant's Cape
-s(228022)/i(230366),	-- Astral Aspirant's Greatcloak
-s(228023)/i(230367),	-- Astral Aspirant's Battleaxe
-s(228024)/i(230368),	-- Astral Aspirant's Dagger
-s(228025)/i(230369),	-- Astral Aspirant's Mace
-s(228026)/i(230370),	-- Astral Aspirant's Polearm
-s(228027)/i(230371),	-- Astral Aspirant's Staff
-s(228028)/i(230372),	-- Astral Aspirant's Greatsword
-s(228029)/i(230373),	-- Astral Aspirant's Censer
-s(228030)/i(230374),	-- Astral Aspirant's Warglaive
-s(228031)/i(230375),	-- Astral Aspirant's Scepter
-s(228032)/i(230376),	-- Astral Aspirant's Shield
-s(228033)/i(230377),	-- Astral Aspirant's Rifle
-s(228034)/i(230378),	-- Astral Aspirant's Halberd
-s(228035)/i(230379),	-- Astral Aspirant's Morningstar
-s(228036)/i(230380),	-- Astral Aspirant's Knife
-s(228037)/i(230381),	-- Astral Aspirant's Chopper
-s(228038)/i(230382),	-- Astral Aspirant's Wand
-s(228039)/i(230383),	-- Astral Gladiator's Silk Robe
 s(228040)/i(230383),	-- Astral Gladiator's Silk Robe
 s(228041)/i(230383),	-- Astral Gladiator's Silk Robe
 s(228042)/i(230383),	-- Astral Gladiator's Silk Robe
-s(228043)/i(230384),	-- Astral Gladiator's Silk Gown
 s(228044)/i(230384),	-- Astral Gladiator's Silk Gown
 s(228045)/i(230384),	-- Astral Gladiator's Silk Gown
 s(228046)/i(230384),	-- Astral Gladiator's Silk Gown
-s(228047)/i(230385),	-- Astral Gladiator's Silk Slippers
 s(228048)/i(230385),	-- Astral Gladiator's Silk Slippers
 s(228049)/i(230385),	-- Astral Gladiator's Silk Slippers
 s(228050)/i(230385),	-- Astral Gladiator's Silk Slippers
-s(228051)/i(230386),	-- Astral Gladiator's Silk Treads
 s(228052)/i(230386),	-- Astral Gladiator's Silk Treads
 s(228053)/i(230386),	-- Astral Gladiator's Silk Treads
 s(228054)/i(230386),	-- Astral Gladiator's Silk Treads
-s(228055)/i(230387),	-- Astral Gladiator's Silk Gloves
 s(228056)/i(230387),	-- Astral Gladiator's Silk Gloves
 s(228057)/i(230387),	-- Astral Gladiator's Silk Gloves
 s(228058)/i(230387),	-- Astral Gladiator's Silk Gloves
-s(228059)/i(230388),	-- Astral Gladiator's Silk Handwraps
 s(228060)/i(230388),	-- Astral Gladiator's Silk Handwraps
 s(228061)/i(230388),	-- Astral Gladiator's Silk Handwraps
 s(228062)/i(230388),	-- Astral Gladiator's Silk Handwraps
-s(228063)/i(230389),	-- Astral Gladiator's Silk Hat
 s(228064)/i(230389),	-- Astral Gladiator's Silk Hat
 s(228065)/i(230389),	-- Astral Gladiator's Silk Hat
 s(228066)/i(230389),	-- Astral Gladiator's Silk Hat
-s(228067)/i(230390),	-- Astral Gladiator's Silk Cap
 s(228068)/i(230390),	-- Astral Gladiator's Silk Cap
 s(228069)/i(230390),	-- Astral Gladiator's Silk Cap
 s(228070)/i(230390),	-- Astral Gladiator's Silk Cap
-s(228071)/i(230391),	-- Astral Gladiator's Silk Leggings
 s(228072)/i(230391),	-- Astral Gladiator's Silk Leggings
 s(228073)/i(230391),	-- Astral Gladiator's Silk Leggings
 s(228074)/i(230391),	-- Astral Gladiator's Silk Leggings
-s(228075)/i(230392),	-- Astral Gladiator's Silk Trousers
 s(228076)/i(230392),	-- Astral Gladiator's Silk Trousers
 s(228077)/i(230392),	-- Astral Gladiator's Silk Trousers
 s(228078)/i(230392),	-- Astral Gladiator's Silk Trousers
-s(228079)/i(230393),	-- Astral Gladiator's Silk Mantle
 s(228080)/i(230393),	-- Astral Gladiator's Silk Mantle
 s(228081)/i(230393),	-- Astral Gladiator's Silk Mantle
 s(228082)/i(230393),	-- Astral Gladiator's Silk Mantle
-s(228083)/i(230394),	-- Astral Gladiator's Silk Amice
 s(228084)/i(230394),	-- Astral Gladiator's Silk Amice
 s(228085)/i(230394),	-- Astral Gladiator's Silk Amice
 s(228086)/i(230394),	-- Astral Gladiator's Silk Amice
-s(228087)/i(230395),	-- Astral Gladiator's Silk Cord
 s(228088)/i(230395),	-- Astral Gladiator's Silk Cord
 s(228089)/i(230395),	-- Astral Gladiator's Silk Cord
 s(228090)/i(230395),	-- Astral Gladiator's Silk Cord
-s(228091)/i(230396),	-- Astral Gladiator's Silk Belt
 s(228092)/i(230396),	-- Astral Gladiator's Silk Belt
 s(228093)/i(230396),	-- Astral Gladiator's Silk Belt
 s(228094)/i(230396),	-- Astral Gladiator's Silk Belt
-s(228095)/i(230397),	-- Astral Gladiator's Silk Wristwraps
 s(228096)/i(230397),	-- Astral Gladiator's Silk Wristwraps
 s(228097)/i(230397),	-- Astral Gladiator's Silk Wristwraps
 s(228098)/i(230397),	-- Astral Gladiator's Silk Wristwraps
-s(228099)/i(230398),	-- Astral Gladiator's Silk Armbands
 s(228100)/i(230398),	-- Astral Gladiator's Silk Armbands
 s(228101)/i(230398),	-- Astral Gladiator's Silk Armbands
 s(228102)/i(230398),	-- Astral Gladiator's Silk Armbands
-s(228103)/i(230399),	-- Astral Gladiator's Cloak
 s(228104)/i(230399),	-- Astral Gladiator's Cloak
 s(228105)/i(230399),	-- Astral Gladiator's Cloak
 s(228106)/i(230399),	-- Astral Gladiator's Cloak
-s(228107)/i(230400),	-- Astral Gladiator's Drape
 s(228108)/i(230400),	-- Astral Gladiator's Drape
 s(228109)/i(230400),	-- Astral Gladiator's Drape
 s(228110)/i(230400),	-- Astral Gladiator's Drape
-s(228111)/i(230401),	-- Astral Gladiator's Shawl
 s(228112)/i(230401),	-- Astral Gladiator's Shawl
 s(228113)/i(230401),	-- Astral Gladiator's Shawl
 s(228114)/i(230401),	-- Astral Gladiator's Shawl
-s(228115)/i(230402),	-- Astral Gladiator's Silk Robes
 s(228116)/i(230402),	-- Astral Gladiator's Silk Robes
 s(228117)/i(230402),	-- Astral Gladiator's Silk Robes
 s(228118)/i(230402),	-- Astral Gladiator's Silk Robes
-s(228119)/i(230403),	-- Astral Gladiator's Silk Vestments
 s(228120)/i(230403),	-- Astral Gladiator's Silk Vestments
 s(228121)/i(230403),	-- Astral Gladiator's Silk Vestments
 s(228122)/i(230403),	-- Astral Gladiator's Silk Vestments
-s(228123)/i(230404),	-- Astral Gladiator's Silk Slippers
 s(228124)/i(230404),	-- Astral Gladiator's Silk Slippers
 s(228125)/i(230404),	-- Astral Gladiator's Silk Slippers
 s(228126)/i(230404),	-- Astral Gladiator's Silk Slippers
-s(228127)/i(230405),	-- Astral Gladiator's Silk Treads
 s(228128)/i(230405),	-- Astral Gladiator's Silk Treads
 s(228129)/i(230405),	-- Astral Gladiator's Silk Treads
 s(228130)/i(230405),	-- Astral Gladiator's Silk Treads
-s(228131)/i(230406),	-- Astral Gladiator's Silk Gloves
 s(228132)/i(230406),	-- Astral Gladiator's Silk Gloves
 s(228133)/i(230406),	-- Astral Gladiator's Silk Gloves
 s(228134)/i(230406),	-- Astral Gladiator's Silk Gloves
-s(228135)/i(230407),	-- Astral Gladiator's Silk Handwraps
 s(228136)/i(230407),	-- Astral Gladiator's Silk Handwraps
 s(228137)/i(230407),	-- Astral Gladiator's Silk Handwraps
 s(228138)/i(230407),	-- Astral Gladiator's Silk Handwraps
-s(228139)/i(230408),	-- Astral Gladiator's Silk Hood
 s(228140)/i(230408),	-- Astral Gladiator's Silk Hood
 s(228141)/i(230408),	-- Astral Gladiator's Silk Hood
 s(228142)/i(230408),	-- Astral Gladiator's Silk Hood
-s(228143)/i(230409),	-- Astral Gladiator's Silk Guise
 s(228144)/i(230409),	-- Astral Gladiator's Silk Guise
 s(228145)/i(230409),	-- Astral Gladiator's Silk Guise
 s(228146)/i(230409),	-- Astral Gladiator's Silk Guise
-s(228147)/i(230410),	-- Astral Gladiator's Silk Leggings
 s(228148)/i(230410),	-- Astral Gladiator's Silk Leggings
 s(228149)/i(230410),	-- Astral Gladiator's Silk Leggings
 s(228150)/i(230410),	-- Astral Gladiator's Silk Leggings
-s(228151)/i(230411),	-- Astral Gladiator's Silk Trousers
 s(228152)/i(230411),	-- Astral Gladiator's Silk Trousers
 s(228153)/i(230411),	-- Astral Gladiator's Silk Trousers
 s(228154)/i(230411),	-- Astral Gladiator's Silk Trousers
-s(228155)/i(230412),	-- Astral Gladiator's Silk Mantle
 s(228156)/i(230412),	-- Astral Gladiator's Silk Mantle
 s(228157)/i(230412),	-- Astral Gladiator's Silk Mantle
 s(228158)/i(230412),	-- Astral Gladiator's Silk Mantle
-s(228159)/i(230413),	-- Astral Gladiator's Silk Amice
 s(228160)/i(230413),	-- Astral Gladiator's Silk Amice
 s(228161)/i(230413),	-- Astral Gladiator's Silk Amice
 s(228162)/i(230413),	-- Astral Gladiator's Silk Amice
-s(228163)/i(230414),	-- Astral Gladiator's Silk Cord
 s(228164)/i(230414),	-- Astral Gladiator's Silk Cord
 s(228165)/i(230414),	-- Astral Gladiator's Silk Cord
 s(228166)/i(230414),	-- Astral Gladiator's Silk Cord
-s(228167)/i(230415),	-- Astral Gladiator's Silk Belt
 s(228168)/i(230415),	-- Astral Gladiator's Silk Belt
 s(228169)/i(230415),	-- Astral Gladiator's Silk Belt
 s(228170)/i(230415),	-- Astral Gladiator's Silk Belt
-s(228171)/i(230416),	-- Astral Gladiator's Silk Wristwraps
 s(228172)/i(230416),	-- Astral Gladiator's Silk Wristwraps
 s(228173)/i(230416),	-- Astral Gladiator's Silk Wristwraps
 s(228174)/i(230416),	-- Astral Gladiator's Silk Wristwraps
-s(228175)/i(230417),	-- Astral Gladiator's Silk Armbands
 s(228176)/i(230417),	-- Astral Gladiator's Silk Armbands
 s(228177)/i(230417),	-- Astral Gladiator's Silk Armbands
 s(228178)/i(230417),	-- Astral Gladiator's Silk Armbands
-s(228179)/i(230418),	-- Astral Gladiator's Cloak
 s(228180)/i(230418),	-- Astral Gladiator's Cloak
 s(228181)/i(230418),	-- Astral Gladiator's Cloak
 s(228182)/i(230418),	-- Astral Gladiator's Cloak
-s(228183)/i(230419),	-- Astral Gladiator's Drape
 s(228184)/i(230419),	-- Astral Gladiator's Drape
 s(228185)/i(230419),	-- Astral Gladiator's Drape
 s(228186)/i(230419),	-- Astral Gladiator's Drape
-s(228187)/i(230420),	-- Astral Gladiator's Shawl
 s(228188)/i(230420),	-- Astral Gladiator's Shawl
 s(228189)/i(230420),	-- Astral Gladiator's Shawl
 s(228190)/i(230420),	-- Astral Gladiator's Shawl
-s(228191)/i(230421),	-- Astral Gladiator's Silk Raiment
 s(228192)/i(230421),	-- Astral Gladiator's Silk Raiment
 s(228193)/i(230421),	-- Astral Gladiator's Silk Raiment
 s(228194)/i(230421),	-- Astral Gladiator's Silk Raiment
-s(228195)/i(230422),	-- Astral Gladiator's Silk Vestments
 s(228196)/i(230422),	-- Astral Gladiator's Silk Vestments
 s(228197)/i(230422),	-- Astral Gladiator's Silk Vestments
 s(228198)/i(230422),	-- Astral Gladiator's Silk Vestments
-s(228199)/i(230423),	-- Astral Gladiator's Silk Slippers
 s(228200)/i(230423),	-- Astral Gladiator's Silk Slippers
 s(228201)/i(230423),	-- Astral Gladiator's Silk Slippers
 s(228202)/i(230423),	-- Astral Gladiator's Silk Slippers
-s(228203)/i(230424),	-- Astral Gladiator's Silk Treads
 s(228204)/i(230424),	-- Astral Gladiator's Silk Treads
 s(228205)/i(230424),	-- Astral Gladiator's Silk Treads
 s(228206)/i(230424),	-- Astral Gladiator's Silk Treads
-s(228207)/i(230426),	-- Astral Gladiator's Silk Gloves
 s(228208)/i(230426),	-- Astral Gladiator's Silk Gloves
 s(228209)/i(230426),	-- Astral Gladiator's Silk Gloves
 s(228210)/i(230426),	-- Astral Gladiator's Silk Gloves
-s(228211)/i(230427),	-- Astral Gladiator's Silk Handwraps
 s(228212)/i(230427),	-- Astral Gladiator's Silk Handwraps
 s(228213)/i(230427),	-- Astral Gladiator's Silk Handwraps
 s(228214)/i(230427),	-- Astral Gladiator's Silk Handwraps
-s(228215)/i(230428),	-- Astral Gladiator's Silk Hood
 s(228216)/i(230428),	-- Astral Gladiator's Silk Hood
 s(228217)/i(230428),	-- Astral Gladiator's Silk Hood
 s(228218)/i(230428),	-- Astral Gladiator's Silk Hood
-s(228219)/i(230429),	-- Astral Gladiator's Silk Guise
 s(228220)/i(230429),	-- Astral Gladiator's Silk Guise
 s(228221)/i(230429),	-- Astral Gladiator's Silk Guise
 s(228222)/i(230429),	-- Astral Gladiator's Silk Guise
-s(228223)/i(230430),	-- Astral Gladiator's Silk Leggings
 s(228224)/i(230430),	-- Astral Gladiator's Silk Leggings
 s(228225)/i(230430),	-- Astral Gladiator's Silk Leggings
 s(228226)/i(230430),	-- Astral Gladiator's Silk Leggings
-s(228227)/i(230431),	-- Astral Gladiator's Silk Trousers
 s(228228)/i(230431),	-- Astral Gladiator's Silk Trousers
 s(228229)/i(230431),	-- Astral Gladiator's Silk Trousers
 s(228230)/i(230431),	-- Astral Gladiator's Silk Trousers
-s(228231)/i(230432),	-- Astral Gladiator's Silk Mantle
 s(228232)/i(230432),	-- Astral Gladiator's Silk Mantle
 s(228233)/i(230432),	-- Astral Gladiator's Silk Mantle
 s(228234)/i(230432),	-- Astral Gladiator's Silk Mantle
-s(228235)/i(230433),	-- Astral Gladiator's Silk Amice
 s(228236)/i(230433),	-- Astral Gladiator's Silk Amice
 s(228237)/i(230433),	-- Astral Gladiator's Silk Amice
 s(228238)/i(230433),	-- Astral Gladiator's Silk Amice
-s(228239)/i(230434),	-- Astral Gladiator's Silk Cord
 s(228240)/i(230434),	-- Astral Gladiator's Silk Cord
 s(228241)/i(230434),	-- Astral Gladiator's Silk Cord
 s(228242)/i(230434),	-- Astral Gladiator's Silk Cord
-s(228243)/i(230435),	-- Astral Gladiator's Silk Belt
 s(228244)/i(230435),	-- Astral Gladiator's Silk Belt
 s(228245)/i(230435),	-- Astral Gladiator's Silk Belt
 s(228246)/i(230435),	-- Astral Gladiator's Silk Belt
-s(228247)/i(230436),	-- Astral Gladiator's Silk Wristwraps
 s(228248)/i(230436),	-- Astral Gladiator's Silk Wristwraps
 s(228249)/i(230436),	-- Astral Gladiator's Silk Wristwraps
 s(228250)/i(230436),	-- Astral Gladiator's Silk Wristwraps
-s(228251)/i(230437),	-- Astral Gladiator's Silk Armbands
 s(228252)/i(230437),	-- Astral Gladiator's Silk Armbands
 s(228253)/i(230437),	-- Astral Gladiator's Silk Armbands
 s(228254)/i(230437),	-- Astral Gladiator's Silk Armbands
-s(228255)/i(230438),	-- Astral Gladiator's Cloak
 s(228256)/i(230438),	-- Astral Gladiator's Cloak
 s(228257)/i(230438),	-- Astral Gladiator's Cloak
 s(228258)/i(230438),	-- Astral Gladiator's Cloak
-s(228259)/i(230439),	-- Astral Gladiator's Drape
 s(228260)/i(230439),	-- Astral Gladiator's Drape
 s(228261)/i(230439),	-- Astral Gladiator's Drape
 s(228262)/i(230439),	-- Astral Gladiator's Drape
-s(228263)/i(230440),	-- Astral Gladiator's Shawl
 s(228264)/i(230440),	-- Astral Gladiator's Shawl
 s(228265)/i(230440),	-- Astral Gladiator's Shawl
 s(228266)/i(230440),	-- Astral Gladiator's Shawl
-s(228267)/i(230441),	-- Astral Gladiator's Leather Vest
 s(228268)/i(230441),	-- Astral Gladiator's Leather Vest
 s(228269)/i(230441),	-- Astral Gladiator's Leather Vest
 s(228270)/i(230441),	-- Astral Gladiator's Leather Vest
-s(228271)/i(230442),	-- Astral Gladiator's Leather Vestments
 s(228272)/i(230442),	-- Astral Gladiator's Leather Vestments
 s(228273)/i(230442),	-- Astral Gladiator's Leather Vestments
 s(228274)/i(230442),	-- Astral Gladiator's Leather Vestments
-s(228275)/i(230443),	-- Astral Gladiator's Leather Boots
 s(228276)/i(230443),	-- Astral Gladiator's Leather Boots
 s(228277)/i(230443),	-- Astral Gladiator's Leather Boots
 s(228278)/i(230443),	-- Astral Gladiator's Leather Boots
-s(228279)/i(230444),	-- Astral Gladiator's Leather Treads
 s(228280)/i(230444),	-- Astral Gladiator's Leather Treads
 s(228281)/i(230444),	-- Astral Gladiator's Leather Treads
 s(228282)/i(230444),	-- Astral Gladiator's Leather Treads
-s(228283)/i(230445),	-- Astral Gladiator's Leather Gloves
 s(228284)/i(230445),	-- Astral Gladiator's Leather Gloves
 s(228285)/i(230445),	-- Astral Gladiator's Leather Gloves
 s(228286)/i(230445),	-- Astral Gladiator's Leather Gloves
-s(228287)/i(230446),	-- Astral Gladiator's Leather Grips
 s(228288)/i(230446),	-- Astral Gladiator's Leather Grips
 s(228289)/i(230446),	-- Astral Gladiator's Leather Grips
 s(228290)/i(230446),	-- Astral Gladiator's Leather Grips
-s(228291)/i(230447),	-- Astral Gladiator's Leather Helm
 s(228292)/i(230447),	-- Astral Gladiator's Leather Helm
 s(228293)/i(230447),	-- Astral Gladiator's Leather Helm
 s(228294)/i(230447),	-- Astral Gladiator's Leather Helm
-s(228295)/i(230448),	-- Astral Gladiator's Leather Mask
 s(228296)/i(230448),	-- Astral Gladiator's Leather Mask
 s(228297)/i(230448),	-- Astral Gladiator's Leather Mask
 s(228298)/i(230448),	-- Astral Gladiator's Leather Mask
-s(228299)/i(230449),	-- Astral Gladiator's Leather Breeches
 s(228300)/i(230449),	-- Astral Gladiator's Leather Breeches
 s(228301)/i(230449),	-- Astral Gladiator's Leather Breeches
 s(228302)/i(230449),	-- Astral Gladiator's Leather Breeches
-s(228303)/i(230450),	-- Astral Gladiator's Leather Legwraps
 s(228304)/i(230450),	-- Astral Gladiator's Leather Legwraps
 s(228305)/i(230450),	-- Astral Gladiator's Leather Legwraps
 s(228306)/i(230450),	-- Astral Gladiator's Leather Legwraps
-s(228307)/i(230451),	-- Astral Gladiator's Leather Spaulders
 s(228308)/i(230451),	-- Astral Gladiator's Leather Spaulders
 s(228309)/i(230451),	-- Astral Gladiator's Leather Spaulders
 s(228310)/i(230451),	-- Astral Gladiator's Leather Spaulders
-s(228311)/i(230452),	-- Astral Gladiator's Leather Shoulderpads
 s(228312)/i(230452),	-- Astral Gladiator's Leather Shoulderpads
 s(228313)/i(230452),	-- Astral Gladiator's Leather Shoulderpads
 s(228314)/i(230452),	-- Astral Gladiator's Leather Shoulderpads
-s(228315)/i(230453),	-- Astral Gladiator's Leather Belt
 s(228316)/i(230453),	-- Astral Gladiator's Leather Belt
 s(228317)/i(230453),	-- Astral Gladiator's Leather Belt
 s(228318)/i(230453),	-- Astral Gladiator's Leather Belt
-s(228319)/i(230454),	-- Astral Gladiator's Leather Strap
 s(228320)/i(230454),	-- Astral Gladiator's Leather Strap
 s(228321)/i(230454),	-- Astral Gladiator's Leather Strap
 s(228322)/i(230454),	-- Astral Gladiator's Leather Strap
-s(228323)/i(230455),	-- Astral Gladiator's Leather Wristwraps
 s(228324)/i(230455),	-- Astral Gladiator's Leather Wristwraps
 s(228325)/i(230455),	-- Astral Gladiator's Leather Wristwraps
 s(228326)/i(230455),	-- Astral Gladiator's Leather Wristwraps
-s(228327)/i(230456),	-- Astral Gladiator's Leather Wristguards
 s(228328)/i(230456),	-- Astral Gladiator's Leather Wristguards
 s(228329)/i(230456),	-- Astral Gladiator's Leather Wristguards
 s(228330)/i(230456),	-- Astral Gladiator's Leather Wristguards
-s(228331)/i(230457),	-- Astral Gladiator's Cloak
 s(228332)/i(230457),	-- Astral Gladiator's Cloak
 s(228333)/i(230457),	-- Astral Gladiator's Cloak
 s(228334)/i(230457),	-- Astral Gladiator's Cloak
-s(228335)/i(230458),	-- Astral Gladiator's Drape
 s(228336)/i(230458),	-- Astral Gladiator's Drape
 s(228337)/i(230458),	-- Astral Gladiator's Drape
 s(228338)/i(230458),	-- Astral Gladiator's Drape
-s(228339)/i(230459),	-- Astral Gladiator's Shawl
 s(228340)/i(230459),	-- Astral Gladiator's Shawl
 s(228341)/i(230459),	-- Astral Gladiator's Shawl
 s(228342)/i(230459),	-- Astral Gladiator's Shawl
-s(228343)/i(230460),	-- Astral Gladiator's Leather Vest
 s(228344)/i(230460),	-- Astral Gladiator's Leather Vest
 s(228345)/i(230460),	-- Astral Gladiator's Leather Vest
 s(228346)/i(230460),	-- Astral Gladiator's Leather Vest
-s(228347)/i(230461),	-- Astral Gladiator's Leather Jerkin
 s(228348)/i(230461),	-- Astral Gladiator's Leather Jerkin
 s(228349)/i(230461),	-- Astral Gladiator's Leather Jerkin
 s(228350)/i(230461),	-- Astral Gladiator's Leather Jerkin
-s(228351)/i(230462),	-- Astral Gladiator's Leather Boots
 s(228352)/i(230462),	-- Astral Gladiator's Leather Boots
 s(228353)/i(230462),	-- Astral Gladiator's Leather Boots
 s(228354)/i(230462),	-- Astral Gladiator's Leather Boots
-s(228355)/i(230463),	-- Astral Gladiator's Leather Treads
 s(228356)/i(230463),	-- Astral Gladiator's Leather Treads
 s(228357)/i(230463),	-- Astral Gladiator's Leather Treads
 s(228358)/i(230463),	-- Astral Gladiator's Leather Treads
-s(228359)/i(230464),	-- Astral Gladiator's Leather Gloves
 s(228360)/i(230464),	-- Astral Gladiator's Leather Gloves
 s(228361)/i(230464),	-- Astral Gladiator's Leather Gloves
 s(228362)/i(230464),	-- Astral Gladiator's Leather Gloves
-s(228363)/i(230465),	-- Astral Gladiator's Leather Grips
 s(228364)/i(230465),	-- Astral Gladiator's Leather Grips
 s(228365)/i(230465),	-- Astral Gladiator's Leather Grips
 s(228366)/i(230465),	-- Astral Gladiator's Leather Grips
-s(228367)/i(230466),	-- Astral Gladiator's Leather Helm
 s(228368)/i(230466),	-- Astral Gladiator's Leather Helm
 s(228369)/i(230466),	-- Astral Gladiator's Leather Helm
 s(228370)/i(230466),	-- Astral Gladiator's Leather Helm
-s(228371)/i(230467),	-- Astral Gladiator's Leather Mask
 s(228372)/i(230467),	-- Astral Gladiator's Leather Mask
 s(228373)/i(230467),	-- Astral Gladiator's Leather Mask
 s(228374)/i(230467),	-- Astral Gladiator's Leather Mask
-s(228375)/i(230468),	-- Astral Gladiator's Leather Breeches
 s(228376)/i(230468),	-- Astral Gladiator's Leather Breeches
 s(228377)/i(230468),	-- Astral Gladiator's Leather Breeches
 s(228378)/i(230468),	-- Astral Gladiator's Leather Breeches
-s(228379)/i(230469),	-- Astral Gladiator's Leather Legwraps
 s(228380)/i(230469),	-- Astral Gladiator's Leather Legwraps
 s(228381)/i(230469),	-- Astral Gladiator's Leather Legwraps
 s(228382)/i(230469),	-- Astral Gladiator's Leather Legwraps
-s(228383)/i(230470),	-- Astral Gladiator's Leather Spaulders
 s(228384)/i(230470),	-- Astral Gladiator's Leather Spaulders
 s(228385)/i(230470),	-- Astral Gladiator's Leather Spaulders
 s(228386)/i(230470),	-- Astral Gladiator's Leather Spaulders
-s(228387)/i(230471),	-- Astral Gladiator's Leather Shoulderpads
 s(228388)/i(230471),	-- Astral Gladiator's Leather Shoulderpads
 s(228389)/i(230471),	-- Astral Gladiator's Leather Shoulderpads
 s(228390)/i(230471),	-- Astral Gladiator's Leather Shoulderpads
-s(228391)/i(230472),	-- Astral Gladiator's Leather Belt
 s(228392)/i(230472),	-- Astral Gladiator's Leather Belt
 s(228393)/i(230472),	-- Astral Gladiator's Leather Belt
 s(228394)/i(230472),	-- Astral Gladiator's Leather Belt
-s(228395)/i(230473),	-- Astral Gladiator's Leather Strap
 s(228396)/i(230473),	-- Astral Gladiator's Leather Strap
 s(228397)/i(230473),	-- Astral Gladiator's Leather Strap
 s(228398)/i(230473),	-- Astral Gladiator's Leather Strap
-s(228399)/i(230474),	-- Astral Gladiator's Leather Wristwraps
 s(228400)/i(230474),	-- Astral Gladiator's Leather Wristwraps
 s(228401)/i(230474),	-- Astral Gladiator's Leather Wristwraps
 s(228402)/i(230474),	-- Astral Gladiator's Leather Wristwraps
-s(228403)/i(230475),	-- Astral Gladiator's Leather Wristguards
 s(228404)/i(230475),	-- Astral Gladiator's Leather Wristguards
 s(228405)/i(230475),	-- Astral Gladiator's Leather Wristguards
 s(228406)/i(230475),	-- Astral Gladiator's Leather Wristguards
-s(228407)/i(230476),	-- Astral Gladiator's Cloak
 s(228408)/i(230476),	-- Astral Gladiator's Cloak
 s(228409)/i(230476),	-- Astral Gladiator's Cloak
 s(228410)/i(230476),	-- Astral Gladiator's Cloak
-s(228411)/i(230477),	-- Astral Gladiator's Drape
 s(228412)/i(230477),	-- Astral Gladiator's Drape
 s(228413)/i(230477),	-- Astral Gladiator's Drape
 s(228414)/i(230477),	-- Astral Gladiator's Drape
-s(228415)/i(230478),	-- Astral Gladiator's Shawl
 s(228416)/i(230478),	-- Astral Gladiator's Shawl
 s(228417)/i(230478),	-- Astral Gladiator's Shawl
 s(228418)/i(230478),	-- Astral Gladiator's Shawl
-s(228419)/i(230479),	-- Astral Gladiator's Leather Vest
 s(228420)/i(230479),	-- Astral Gladiator's Leather Vest
 s(228421)/i(230479),	-- Astral Gladiator's Leather Vest
 s(228422)/i(230479),	-- Astral Gladiator's Leather Vest
-s(228423)/i(230480),	-- Astral Gladiator's Leather Jerkin
 s(228424)/i(230480),	-- Astral Gladiator's Leather Jerkin
 s(228425)/i(230480),	-- Astral Gladiator's Leather Jerkin
 s(228426)/i(230480),	-- Astral Gladiator's Leather Jerkin
-s(228427)/i(230481),	-- Astral Gladiator's Leather Boots
 s(228428)/i(230481),	-- Astral Gladiator's Leather Boots
 s(228429)/i(230481),	-- Astral Gladiator's Leather Boots
 s(228430)/i(230481),	-- Astral Gladiator's Leather Boots
-s(228431)/i(230482),	-- Astral Gladiator's Leather Treads
 s(228432)/i(230482),	-- Astral Gladiator's Leather Treads
 s(228433)/i(230482),	-- Astral Gladiator's Leather Treads
 s(228434)/i(230482),	-- Astral Gladiator's Leather Treads
-s(228435)/i(230483),	-- Astral Gladiator's Leather Gloves
 s(228436)/i(230483),	-- Astral Gladiator's Leather Gloves
 s(228437)/i(230483),	-- Astral Gladiator's Leather Gloves
 s(228438)/i(230483),	-- Astral Gladiator's Leather Gloves
-s(228439)/i(230484),	-- Astral Gladiator's Leather Grips
 s(228440)/i(230484),	-- Astral Gladiator's Leather Grips
 s(228441)/i(230484),	-- Astral Gladiator's Leather Grips
 s(228442)/i(230484),	-- Astral Gladiator's Leather Grips
-s(228443)/i(230485),	-- Astral Gladiator's Leather Helm
 s(228444)/i(230485),	-- Astral Gladiator's Leather Helm
 s(228445)/i(230485),	-- Astral Gladiator's Leather Helm
 s(228446)/i(230485),	-- Astral Gladiator's Leather Helm
-s(228447)/i(230486),	-- Astral Gladiator's Leather Mask
 s(228448)/i(230486),	-- Astral Gladiator's Leather Mask
 s(228449)/i(230486),	-- Astral Gladiator's Leather Mask
 s(228450)/i(230486),	-- Astral Gladiator's Leather Mask
-s(228451)/i(230487),	-- Astral Gladiator's Leather Breeches
 s(228452)/i(230487),	-- Astral Gladiator's Leather Breeches
 s(228453)/i(230487),	-- Astral Gladiator's Leather Breeches
 s(228454)/i(230487),	-- Astral Gladiator's Leather Breeches
-s(228455)/i(230488),	-- Astral Gladiator's Leather Legwraps
 s(228456)/i(230488),	-- Astral Gladiator's Leather Legwraps
 s(228457)/i(230488),	-- Astral Gladiator's Leather Legwraps
 s(228458)/i(230488),	-- Astral Gladiator's Leather Legwraps
-s(228459)/i(230489),	-- Astral Gladiator's Leather Spaulders
 s(228460)/i(230489),	-- Astral Gladiator's Leather Spaulders
 s(228461)/i(230489),	-- Astral Gladiator's Leather Spaulders
 s(228462)/i(230489),	-- Astral Gladiator's Leather Spaulders
-s(228463)/i(230490),	-- Astral Gladiator's Leather Shoulderpads
 s(228464)/i(230490),	-- Astral Gladiator's Leather Shoulderpads
 s(228465)/i(230490),	-- Astral Gladiator's Leather Shoulderpads
 s(228466)/i(230490),	-- Astral Gladiator's Leather Shoulderpads
-s(228467)/i(230491),	-- Astral Gladiator's Leather Belt
 s(228468)/i(230491),	-- Astral Gladiator's Leather Belt
 s(228469)/i(230491),	-- Astral Gladiator's Leather Belt
 s(228470)/i(230491),	-- Astral Gladiator's Leather Belt
-s(228471)/i(230492),	-- Astral Gladiator's Leather Strap
 s(228472)/i(230492),	-- Astral Gladiator's Leather Strap
 s(228473)/i(230492),	-- Astral Gladiator's Leather Strap
 s(228474)/i(230492),	-- Astral Gladiator's Leather Strap
-s(228475)/i(230493),	-- Astral Gladiator's Leather Wristwraps
 s(228476)/i(230493),	-- Astral Gladiator's Leather Wristwraps
 s(228477)/i(230493),	-- Astral Gladiator's Leather Wristwraps
 s(228478)/i(230493),	-- Astral Gladiator's Leather Wristwraps
-s(228479)/i(230494),	-- Astral Gladiator's Leather Wristguards
 s(228480)/i(230494),	-- Astral Gladiator's Leather Wristguards
 s(228481)/i(230494),	-- Astral Gladiator's Leather Wristguards
 s(228482)/i(230494),	-- Astral Gladiator's Leather Wristguards
-s(228483)/i(230495),	-- Astral Gladiator's Cloak
 s(228484)/i(230495),	-- Astral Gladiator's Cloak
 s(228485)/i(230495),	-- Astral Gladiator's Cloak
 s(228486)/i(230495),	-- Astral Gladiator's Cloak
-s(228487)/i(230496),	-- Astral Gladiator's Drape
 s(228488)/i(230496),	-- Astral Gladiator's Drape
 s(228489)/i(230496),	-- Astral Gladiator's Drape
 s(228490)/i(230496),	-- Astral Gladiator's Drape
-s(228491)/i(230497),	-- Astral Gladiator's Shawl
 s(228492)/i(230497),	-- Astral Gladiator's Shawl
 s(228493)/i(230497),	-- Astral Gladiator's Shawl
 s(228494)/i(230497),	-- Astral Gladiator's Shawl
-s(228495)/i(230498),	-- Astral Gladiator's Leather Vest
 s(228496)/i(230498),	-- Astral Gladiator's Leather Vest
 s(228497)/i(230498),	-- Astral Gladiator's Leather Vest
 s(228498)/i(230498),	-- Astral Gladiator's Leather Vest
-s(228499)/i(230499),	-- Astral Gladiator's Leather Jerkin
 s(228500)/i(230499),	-- Astral Gladiator's Leather Jerkin
 s(228501)/i(230499),	-- Astral Gladiator's Leather Jerkin
 s(228502)/i(230499),	-- Astral Gladiator's Leather Jerkin
-s(228503)/i(230500),	-- Astral Gladiator's Leather Boots
 s(228504)/i(230500),	-- Astral Gladiator's Leather Boots
 s(228505)/i(230500),	-- Astral Gladiator's Leather Boots
 s(228506)/i(230500),	-- Astral Gladiator's Leather Boots
-s(228507)/i(230501),	-- Astral Gladiator's Leather Treads
 s(228508)/i(230501),	-- Astral Gladiator's Leather Treads
 s(228509)/i(230501),	-- Astral Gladiator's Leather Treads
 s(228510)/i(230501),	-- Astral Gladiator's Leather Treads
-s(228511)/i(230502),	-- Astral Gladiator's Leather Gloves
 s(228512)/i(230502),	-- Astral Gladiator's Leather Gloves
 s(228513)/i(230502),	-- Astral Gladiator's Leather Gloves
 s(228514)/i(230502),	-- Astral Gladiator's Leather Gloves
-s(228515)/i(230503),	-- Astral Gladiator's Leather Grips
 s(228516)/i(230503),	-- Astral Gladiator's Leather Grips
 s(228517)/i(230503),	-- Astral Gladiator's Leather Grips
 s(228518)/i(230503),	-- Astral Gladiator's Leather Grips
-s(228519)/i(230504),	-- Astral Gladiator's Leather Helm
 s(228520)/i(230504),	-- Astral Gladiator's Leather Helm
 s(228521)/i(230504),	-- Astral Gladiator's Leather Helm
 s(228522)/i(230504),	-- Astral Gladiator's Leather Helm
-s(228523)/i(230505),	-- Astral Gladiator's Leather Mask
 s(228524)/i(230505),	-- Astral Gladiator's Leather Mask
 s(228525)/i(230505),	-- Astral Gladiator's Leather Mask
 s(228526)/i(230505),	-- Astral Gladiator's Leather Mask
-s(228527)/i(230506),	-- Astral Gladiator's Leather Breeches
 s(228528)/i(230506),	-- Astral Gladiator's Leather Breeches
 s(228529)/i(230506),	-- Astral Gladiator's Leather Breeches
 s(228530)/i(230506),	-- Astral Gladiator's Leather Breeches
-s(228531)/i(230507),	-- Astral Gladiator's Leather Legwraps
 s(228532)/i(230507),	-- Astral Gladiator's Leather Legwraps
 s(228533)/i(230507),	-- Astral Gladiator's Leather Legwraps
 s(228534)/i(230507),	-- Astral Gladiator's Leather Legwraps
-s(228535)/i(230508),	-- Astral Gladiator's Leather Spaulders
 s(228536)/i(230508),	-- Astral Gladiator's Leather Spaulders
 s(228537)/i(230508),	-- Astral Gladiator's Leather Spaulders
 s(228538)/i(230508),	-- Astral Gladiator's Leather Spaulders
-s(228539)/i(230509),	-- Astral Gladiator's Leather Shoulderpads
 s(228540)/i(230509),	-- Astral Gladiator's Leather Shoulderpads
 s(228541)/i(230509),	-- Astral Gladiator's Leather Shoulderpads
 s(228542)/i(230509),	-- Astral Gladiator's Leather Shoulderpads
-s(228543)/i(230510),	-- Astral Gladiator's Leather Belt
 s(228544)/i(230510),	-- Astral Gladiator's Leather Belt
 s(228545)/i(230510),	-- Astral Gladiator's Leather Belt
 s(228546)/i(230510),	-- Astral Gladiator's Leather Belt
-s(228547)/i(230511),	-- Astral Gladiator's Leather Strap
 s(228548)/i(230511),	-- Astral Gladiator's Leather Strap
 s(228549)/i(230511),	-- Astral Gladiator's Leather Strap
 s(228550)/i(230511),	-- Astral Gladiator's Leather Strap
-s(228551)/i(230512),	-- Astral Gladiator's Leather Wristwraps
 s(228552)/i(230512),	-- Astral Gladiator's Leather Wristwraps
 s(228553)/i(230512),	-- Astral Gladiator's Leather Wristwraps
 s(228554)/i(230512),	-- Astral Gladiator's Leather Wristwraps
-s(228555)/i(230513),	-- Astral Gladiator's Leather Wristguards
 s(228556)/i(230513),	-- Astral Gladiator's Leather Wristguards
 s(228557)/i(230513),	-- Astral Gladiator's Leather Wristguards
 s(228558)/i(230513),	-- Astral Gladiator's Leather Wristguards
-s(228559)/i(230514),	-- Astral Gladiator's Cloak
 s(228560)/i(230514),	-- Astral Gladiator's Cloak
 s(228561)/i(230514),	-- Astral Gladiator's Cloak
 s(228562)/i(230514),	-- Astral Gladiator's Cloak
-s(228563)/i(230515),	-- Astral Gladiator's Drape
 s(228564)/i(230515),	-- Astral Gladiator's Drape
 s(228565)/i(230515),	-- Astral Gladiator's Drape
 s(228566)/i(230515),	-- Astral Gladiator's Drape
-s(228567)/i(230516),	-- Astral Gladiator's Shawl
 s(228568)/i(230516),	-- Astral Gladiator's Shawl
 s(228569)/i(230516),	-- Astral Gladiator's Shawl
 s(228570)/i(230516),	-- Astral Gladiator's Shawl
-s(228571)/i(230517),	-- Astral Gladiator's Armored Scales
 s(228572)/i(230517),	-- Astral Gladiator's Armored Scales
 s(228573)/i(230517),	-- Astral Gladiator's Armored Scales
 s(228574)/i(230517),	-- Astral Gladiator's Armored Scales
-s(228575)/i(230518),	-- Astral Gladiator's Scaleguard
 s(228576)/i(230518),	-- Astral Gladiator's Scaleguard
 s(228577)/i(230518),	-- Astral Gladiator's Scaleguard
 s(228578)/i(230518),	-- Astral Gladiator's Scaleguard
-s(228579)/i(230519),	-- Astral Gladiator's Chain Sabatons
 s(228580)/i(230519),	-- Astral Gladiator's Chain Sabatons
 s(228581)/i(230519),	-- Astral Gladiator's Chain Sabatons
 s(228582)/i(230519),	-- Astral Gladiator's Chain Sabatons
-s(228583)/i(230520),	-- Astral Gladiator's Chain Boots
 s(228584)/i(230520),	-- Astral Gladiator's Chain Boots
 s(228585)/i(230520),	-- Astral Gladiator's Chain Boots
 s(228586)/i(230520),	-- Astral Gladiator's Chain Boots
-s(228587)/i(230521),	-- Astral Gladiator's Chain Gauntlets
 s(228588)/i(230521),	-- Astral Gladiator's Chain Gauntlets
 s(228589)/i(230521),	-- Astral Gladiator's Chain Gauntlets
 s(228590)/i(230521),	-- Astral Gladiator's Chain Gauntlets
-s(228591)/i(230522),	-- Astral Gladiator's Chain Handguards
 s(228592)/i(230522),	-- Astral Gladiator's Chain Handguards
 s(228593)/i(230522),	-- Astral Gladiator's Chain Handguards
 s(228594)/i(230522),	-- Astral Gladiator's Chain Handguards
-s(228595)/i(230523),	-- Astral Gladiator's Chain Helm
 s(228596)/i(230523),	-- Astral Gladiator's Chain Helm
 s(228597)/i(230523),	-- Astral Gladiator's Chain Helm
 s(228598)/i(230523),	-- Astral Gladiator's Chain Helm
-s(228599)/i(230524),	-- Astral Gladiator's Chain Faceguard
 s(228600)/i(230524),	-- Astral Gladiator's Chain Faceguard
 s(228601)/i(230524),	-- Astral Gladiator's Chain Faceguard
 s(228602)/i(230524),	-- Astral Gladiator's Chain Faceguard
-s(228603)/i(230525),	-- Astral Gladiator's Chain Leggings
 s(228604)/i(230525),	-- Astral Gladiator's Chain Leggings
 s(228605)/i(230525),	-- Astral Gladiator's Chain Leggings
 s(228606)/i(230525),	-- Astral Gladiator's Chain Leggings
-s(228607)/i(230526),	-- Astral Gladiator's Chain Breeches
 s(228608)/i(230526),	-- Astral Gladiator's Chain Breeches
 s(228609)/i(230526),	-- Astral Gladiator's Chain Breeches
 s(228610)/i(230526),	-- Astral Gladiator's Chain Breeches
-s(228611)/i(230527),	-- Astral Gladiator's Chain Monnion
 s(228612)/i(230527),	-- Astral Gladiator's Chain Monnion
 s(228613)/i(230527),	-- Astral Gladiator's Chain Monnion
 s(228614)/i(230527),	-- Astral Gladiator's Chain Monnion
-s(228615)/i(230528),	-- Astral Gladiator's Chain Shoulderguard
 s(228616)/i(230528),	-- Astral Gladiator's Chain Shoulderguard
 s(228617)/i(230528),	-- Astral Gladiator's Chain Shoulderguard
 s(228618)/i(230528),	-- Astral Gladiator's Chain Shoulderguard
-s(228619)/i(230529),	-- Astral Gladiator's Chain Belt
 s(228620)/i(230529),	-- Astral Gladiator's Chain Belt
 s(228621)/i(230529),	-- Astral Gladiator's Chain Belt
 s(228622)/i(230529),	-- Astral Gladiator's Chain Belt
-s(228623)/i(230530),	-- Astral Gladiator's Chain Girdle
 s(228624)/i(230530),	-- Astral Gladiator's Chain Girdle
 s(228625)/i(230530),	-- Astral Gladiator's Chain Girdle
 s(228626)/i(230530),	-- Astral Gladiator's Chain Girdle
-s(228627)/i(230531),	-- Astral Gladiator's Chain Wristguards
 s(228628)/i(230531),	-- Astral Gladiator's Chain Wristguards
 s(228629)/i(230531),	-- Astral Gladiator's Chain Wristguards
 s(228630)/i(230531),	-- Astral Gladiator's Chain Wristguards
-s(228631)/i(230532),	-- Astral Gladiator's Chain Bracers
 s(228632)/i(230532),	-- Astral Gladiator's Chain Bracers
 s(228633)/i(230532),	-- Astral Gladiator's Chain Bracers
 s(228634)/i(230532),	-- Astral Gladiator's Chain Bracers
-s(228635)/i(230533),	-- Astral Gladiator's Cloak
 s(228636)/i(230533),	-- Astral Gladiator's Cloak
 s(228637)/i(230533),	-- Astral Gladiator's Cloak
 s(228638)/i(230533),	-- Astral Gladiator's Cloak
-s(228639)/i(230534),	-- Astral Gladiator's Drape
 s(228640)/i(230534),	-- Astral Gladiator's Drape
 s(228641)/i(230534),	-- Astral Gladiator's Drape
 s(228642)/i(230534),	-- Astral Gladiator's Drape
-s(228643)/i(230535),	-- Astral Gladiator's Shawl
 s(228644)/i(230535),	-- Astral Gladiator's Shawl
 s(228645)/i(230535),	-- Astral Gladiator's Shawl
 s(228646)/i(230535),	-- Astral Gladiator's Shawl
-s(228647)/i(230536),	-- Astral Gladiator's Chain Vest
 s(228648)/i(230536),	-- Astral Gladiator's Chain Vest
 s(228649)/i(230536),	-- Astral Gladiator's Chain Vest
 s(228650)/i(230536),	-- Astral Gladiator's Chain Vest
-s(228651)/i(230537),	-- Astral Gladiator's Chain Tunic
 s(228652)/i(230537),	-- Astral Gladiator's Chain Tunic
 s(228653)/i(230537),	-- Astral Gladiator's Chain Tunic
 s(228654)/i(230537),	-- Astral Gladiator's Chain Tunic
-s(228655)/i(230538),	-- Astral Gladiator's Chain Sabatons
 s(228656)/i(230538),	-- Astral Gladiator's Chain Sabatons
 s(228657)/i(230538),	-- Astral Gladiator's Chain Sabatons
 s(228658)/i(230538),	-- Astral Gladiator's Chain Sabatons
-s(228659)/i(230539),	-- Astral Gladiator's Chain Boots
 s(228660)/i(230539),	-- Astral Gladiator's Chain Boots
 s(228661)/i(230539),	-- Astral Gladiator's Chain Boots
 s(228662)/i(230539),	-- Astral Gladiator's Chain Boots
-s(228663)/i(230540),	-- Astral Gladiator's Chain Gauntlets
 s(228664)/i(230540),	-- Astral Gladiator's Chain Gauntlets
 s(228665)/i(230540),	-- Astral Gladiator's Chain Gauntlets
 s(228666)/i(230540),	-- Astral Gladiator's Chain Gauntlets
-s(228667)/i(230541),	-- Astral Gladiator's Chain Handguards
 s(228668)/i(230541),	-- Astral Gladiator's Chain Handguards
 s(228669)/i(230541),	-- Astral Gladiator's Chain Handguards
 s(228670)/i(230541),	-- Astral Gladiator's Chain Handguards
-s(228671)/i(230542),	-- Astral Gladiator's Chain Helm
 s(228672)/i(230542),	-- Astral Gladiator's Chain Helm
 s(228673)/i(230542),	-- Astral Gladiator's Chain Helm
 s(228674)/i(230542),	-- Astral Gladiator's Chain Helm
-s(228675)/i(230543),	-- Astral Gladiator's Chain Faceguard
 s(228676)/i(230543),	-- Astral Gladiator's Chain Faceguard
 s(228677)/i(230543),	-- Astral Gladiator's Chain Faceguard
 s(228678)/i(230543),	-- Astral Gladiator's Chain Faceguard
-s(228679)/i(230544),	-- Astral Gladiator's Chain Leggings
 s(228680)/i(230544),	-- Astral Gladiator's Chain Leggings
 s(228681)/i(230544),	-- Astral Gladiator's Chain Leggings
 s(228682)/i(230544),	-- Astral Gladiator's Chain Leggings
-s(228683)/i(230545),	-- Astral Gladiator's Chain Breeches
 s(228684)/i(230545),	-- Astral Gladiator's Chain Breeches
 s(228685)/i(230545),	-- Astral Gladiator's Chain Breeches
 s(228686)/i(230545),	-- Astral Gladiator's Chain Breeches
-s(228687)/i(230546),	-- Astral Gladiator's Chain Monnion
 s(228688)/i(230546),	-- Astral Gladiator's Chain Monnion
 s(228689)/i(230546),	-- Astral Gladiator's Chain Monnion
 s(228690)/i(230546),	-- Astral Gladiator's Chain Monnion
-s(228691)/i(230547),	-- Astral Gladiator's Chain Shoulderguard
 s(228692)/i(230547),	-- Astral Gladiator's Chain Shoulderguard
 s(228693)/i(230547),	-- Astral Gladiator's Chain Shoulderguard
 s(228694)/i(230547),	-- Astral Gladiator's Chain Shoulderguard
-s(228695)/i(230548),	-- Astral Gladiator's Chain Belt
 s(228696)/i(230548),	-- Astral Gladiator's Chain Belt
 s(228697)/i(230548),	-- Astral Gladiator's Chain Belt
 s(228698)/i(230548),	-- Astral Gladiator's Chain Belt
-s(228699)/i(230550),	-- Astral Gladiator's Chain Girdle
 s(228700)/i(230550),	-- Astral Gladiator's Chain Girdle
 s(228701)/i(230550),	-- Astral Gladiator's Chain Girdle
 s(228702)/i(230550),	-- Astral Gladiator's Chain Girdle
-s(228703)/i(230551),	-- Astral Gladiator's Chain Wristguards
 s(228704)/i(230551),	-- Astral Gladiator's Chain Wristguards
 s(228705)/i(230551),	-- Astral Gladiator's Chain Wristguards
 s(228706)/i(230551),	-- Astral Gladiator's Chain Wristguards
-s(228707)/i(230552),	-- Astral Gladiator's Chain Bracers
 s(228708)/i(230552),	-- Astral Gladiator's Chain Bracers
 s(228709)/i(230552),	-- Astral Gladiator's Chain Bracers
 s(228710)/i(230552),	-- Astral Gladiator's Chain Bracers
-s(228711)/i(230553),	-- Astral Gladiator's Cloak
 s(228712)/i(230553),	-- Astral Gladiator's Cloak
 s(228713)/i(230553),	-- Astral Gladiator's Cloak
 s(228714)/i(230553),	-- Astral Gladiator's Cloak
-s(228715)/i(230554),	-- Astral Gladiator's Drape
 s(228716)/i(230554),	-- Astral Gladiator's Drape
 s(228717)/i(230554),	-- Astral Gladiator's Drape
 s(228718)/i(230554),	-- Astral Gladiator's Drape
-s(228719)/i(230555),	-- Astral Gladiator's Shawl
 s(228720)/i(230555),	-- Astral Gladiator's Shawl
 s(228721)/i(230555),	-- Astral Gladiator's Shawl
 s(228722)/i(230555),	-- Astral Gladiator's Shawl
-s(228723)/i(230556),	-- Astral Gladiator's Chain Vest
 s(228724)/i(230556),	-- Astral Gladiator's Chain Vest
 s(228725)/i(230556),	-- Astral Gladiator's Chain Vest
 s(228726)/i(230556),	-- Astral Gladiator's Chain Vest
-s(228727)/i(230557),	-- Astral Gladiator's Chain Tunic
 s(228728)/i(230557),	-- Astral Gladiator's Chain Tunic
 s(228729)/i(230557),	-- Astral Gladiator's Chain Tunic
 s(228730)/i(230557),	-- Astral Gladiator's Chain Tunic
-s(228731)/i(230558),	-- Astral Gladiator's Chain Sabatons
 s(228732)/i(230558),	-- Astral Gladiator's Chain Sabatons
 s(228733)/i(230558),	-- Astral Gladiator's Chain Sabatons
 s(228734)/i(230558),	-- Astral Gladiator's Chain Sabatons
-s(228735)/i(230559),	-- Astral Gladiator's Chain Boots
 s(228736)/i(230559),	-- Astral Gladiator's Chain Boots
 s(228737)/i(230559),	-- Astral Gladiator's Chain Boots
 s(228738)/i(230559),	-- Astral Gladiator's Chain Boots
-s(228739)/i(230560),	-- Astral Gladiator's Chain Gauntlets
 s(228740)/i(230560),	-- Astral Gladiator's Chain Gauntlets
 s(228741)/i(230560),	-- Astral Gladiator's Chain Gauntlets
 s(228742)/i(230560),	-- Astral Gladiator's Chain Gauntlets
-s(228743)/i(230561),	-- Astral Gladiator's Chain Handguards
 s(228744)/i(230561),	-- Astral Gladiator's Chain Handguards
 s(228745)/i(230561),	-- Astral Gladiator's Chain Handguards
 s(228746)/i(230561),	-- Astral Gladiator's Chain Handguards
-s(228747)/i(230562),	-- Astral Gladiator's Chain Helm
 s(228748)/i(230562),	-- Astral Gladiator's Chain Helm
 s(228749)/i(230562),	-- Astral Gladiator's Chain Helm
 s(228750)/i(230562),	-- Astral Gladiator's Chain Helm
-s(228751)/i(230563),	-- Astral Gladiator's Chain Faceguard
 s(228752)/i(230563),	-- Astral Gladiator's Chain Faceguard
 s(228753)/i(230563),	-- Astral Gladiator's Chain Faceguard
 s(228754)/i(230563),	-- Astral Gladiator's Chain Faceguard
-s(228755)/i(230564),	-- Astral Gladiator's Chain Leggings
 s(228756)/i(230564),	-- Astral Gladiator's Chain Leggings
-s(228757)/i(230565),	-- Astral Gladiator's Chain Breeches
 s(228758)/i(230565),	-- Astral Gladiator's Chain Breeches
-s(228759)/i(230566),	-- Astral Gladiator's Chain Monnion
 s(228760)/i(230566),	-- Astral Gladiator's Chain Monnion
 s(228761)/i(230566),	-- Astral Gladiator's Chain Monnion
 s(228762)/i(230566),	-- Astral Gladiator's Chain Monnion
-s(228763)/i(230567),	-- Astral Gladiator's Chain Shoulderguard
 s(228764)/i(230567),	-- Astral Gladiator's Chain Shoulderguard
 s(228765)/i(230567),	-- Astral Gladiator's Chain Shoulderguard
 s(228766)/i(230567),	-- Astral Gladiator's Chain Shoulderguard
-s(228767)/i(230568),	-- Astral Gladiator's Chain Belt
 s(228768)/i(230568),	-- Astral Gladiator's Chain Belt
 s(228769)/i(230568),	-- Astral Gladiator's Chain Belt
 s(228770)/i(230568),	-- Astral Gladiator's Chain Belt
-s(228771)/i(230569),	-- Astral Gladiator's Chain Girdle
 s(228772)/i(230569),	-- Astral Gladiator's Chain Girdle
 s(228773)/i(230569),	-- Astral Gladiator's Chain Girdle
 s(228774)/i(230569),	-- Astral Gladiator's Chain Girdle
-s(228775)/i(230570),	-- Astral Gladiator's Chain Wristguards
 s(228776)/i(230570),	-- Astral Gladiator's Chain Wristguards
 s(228777)/i(230570),	-- Astral Gladiator's Chain Wristguards
 s(228778)/i(230570),	-- Astral Gladiator's Chain Wristguards
-s(228779)/i(230571),	-- Astral Gladiator's Chain Bracers
 s(228780)/i(230571),	-- Astral Gladiator's Chain Bracers
 s(228781)/i(230571),	-- Astral Gladiator's Chain Bracers
 s(228782)/i(230571),	-- Astral Gladiator's Chain Bracers
-s(228783)/i(230572),	-- Astral Gladiator's Cloak
 s(228784)/i(230572),	-- Astral Gladiator's Cloak
 s(228785)/i(230572),	-- Astral Gladiator's Cloak
 s(228786)/i(230572),	-- Astral Gladiator's Cloak
-s(228787)/i(230573),	-- Astral Gladiator's Drape
 s(228788)/i(230573),	-- Astral Gladiator's Drape
 s(228789)/i(230573),	-- Astral Gladiator's Drape
 s(228790)/i(230573),	-- Astral Gladiator's Drape
-s(228791)/i(230574),	-- Astral Gladiator's Shawl
 s(228792)/i(230574),	-- Astral Gladiator's Shawl
 s(228793)/i(230574),	-- Astral Gladiator's Shawl
 s(228794)/i(230574),	-- Astral Gladiator's Shawl
-s(228795)/i(230575),	-- Astral Gladiator's Chestguard
 s(228796)/i(230575),	-- Astral Gladiator's Chestguard
 s(228797)/i(230575),	-- Astral Gladiator's Chestguard
 s(228798)/i(230575),	-- Astral Gladiator's Chestguard
-s(228799)/i(230576),	-- Astral Gladiator's Chestplate
 s(228800)/i(230576),	-- Astral Gladiator's Chestplate
 s(228801)/i(230576),	-- Astral Gladiator's Chestplate
 s(228802)/i(230576),	-- Astral Gladiator's Chestplate
-s(228803)/i(230577),	-- Astral Gladiator's Plate Warboots
 s(228804)/i(230577),	-- Astral Gladiator's Plate Warboots
 s(228805)/i(230577),	-- Astral Gladiator's Plate Warboots
 s(228806)/i(230577),	-- Astral Gladiator's Plate Warboots
-s(228807)/i(230578),	-- Astral Gladiator's Plate Stompers
 s(228808)/i(230578),	-- Astral Gladiator's Plate Stompers
 s(228809)/i(230578),	-- Astral Gladiator's Plate Stompers
 s(228810)/i(230578),	-- Astral Gladiator's Plate Stompers
-s(228811)/i(230579),	-- Astral Gladiator's Plate Gauntlets
 s(228812)/i(230579),	-- Astral Gladiator's Plate Gauntlets
 s(228813)/i(230579),	-- Astral Gladiator's Plate Gauntlets
 s(228814)/i(230579),	-- Astral Gladiator's Plate Gauntlets
-s(228815)/i(230580),	-- Astral Gladiator's Plate Handguards
 s(228816)/i(230580),	-- Astral Gladiator's Plate Handguards
 s(228817)/i(230580),	-- Astral Gladiator's Plate Handguards
 s(228818)/i(230580),	-- Astral Gladiator's Plate Handguards
-s(228819)/i(230581),	-- Astral Gladiator's Plate Helm
 s(228820)/i(230581),	-- Astral Gladiator's Plate Helm
 s(228821)/i(230581),	-- Astral Gladiator's Plate Helm
 s(228822)/i(230581),	-- Astral Gladiator's Plate Helm
-s(228823)/i(230582),	-- Astral Gladiator's Plate Helmet
 s(228824)/i(230582),	-- Astral Gladiator's Plate Helmet
 s(228825)/i(230582),	-- Astral Gladiator's Plate Helmet
 s(228826)/i(230582),	-- Astral Gladiator's Plate Helmet
-s(228827)/i(230583),	-- Astral Gladiator's Plate Legguards
 s(228828)/i(230583),	-- Astral Gladiator's Plate Legguards
 s(228829)/i(230583),	-- Astral Gladiator's Plate Legguards
 s(228830)/i(230583),	-- Astral Gladiator's Plate Legguards
-s(228831)/i(230584),	-- Astral Gladiator's Plate Wargreaves
 s(228832)/i(230584),	-- Astral Gladiator's Plate Wargreaves
 s(228833)/i(230584),	-- Astral Gladiator's Plate Wargreaves
 s(228834)/i(230584),	-- Astral Gladiator's Plate Wargreaves
-s(228835)/i(230585),	-- Astral Gladiator's Plate Shoulders
 s(228836)/i(230585),	-- Astral Gladiator's Plate Shoulders
 s(228837)/i(230585),	-- Astral Gladiator's Plate Shoulders
 s(228838)/i(230585),	-- Astral Gladiator's Plate Shoulders
-s(228839)/i(230586),	-- Astral Gladiator's Plate Pauldrons
 s(228840)/i(230586),	-- Astral Gladiator's Plate Pauldrons
 s(228841)/i(230586),	-- Astral Gladiator's Plate Pauldrons
 s(228842)/i(230586),	-- Astral Gladiator's Plate Pauldrons
-s(228843)/i(230587),	-- Astral Gladiator's Plate Girdle
 s(228844)/i(230587),	-- Astral Gladiator's Plate Girdle
 s(228845)/i(230587),	-- Astral Gladiator's Plate Girdle
 s(228846)/i(230587),	-- Astral Gladiator's Plate Girdle
-s(228847)/i(230588),	-- Astral Gladiator's Plate Greatbelt
 s(228848)/i(230588),	-- Astral Gladiator's Plate Greatbelt
 s(228849)/i(230588),	-- Astral Gladiator's Plate Greatbelt
 s(228850)/i(230588),	-- Astral Gladiator's Plate Greatbelt
-s(228851)/i(230589),	-- Astral Gladiator's Plate Wristguards
 s(228852)/i(230589),	-- Astral Gladiator's Plate Wristguards
 s(228853)/i(230589),	-- Astral Gladiator's Plate Wristguards
 s(228854)/i(230589),	-- Astral Gladiator's Plate Wristguards
-s(228855)/i(230590),	-- Astral Gladiator's Plate Vambraces
 s(228856)/i(230590),	-- Astral Gladiator's Plate Vambraces
 s(228857)/i(230590),	-- Astral Gladiator's Plate Vambraces
 s(228858)/i(230590),	-- Astral Gladiator's Plate Vambraces
-s(228859)/i(230591),	-- Astral Gladiator's Cloak
 s(228860)/i(230591),	-- Astral Gladiator's Cloak
 s(228861)/i(230591),	-- Astral Gladiator's Cloak
 s(228862)/i(230591),	-- Astral Gladiator's Cloak
-s(228863)/i(230592),	-- Astral Gladiator's Drape
 s(228864)/i(230592),	-- Astral Gladiator's Drape
 s(228865)/i(230592),	-- Astral Gladiator's Drape
 s(228866)/i(230592),	-- Astral Gladiator's Drape
-s(228867)/i(230593),	-- Astral Gladiator's Shawl
 s(228868)/i(230593),	-- Astral Gladiator's Shawl
 s(228869)/i(230593),	-- Astral Gladiator's Shawl
 s(228870)/i(230593),	-- Astral Gladiator's Shawl
-s(228871)/i(230594),	-- Astral Gladiator's Chestguard
 s(228872)/i(230594),	-- Astral Gladiator's Chestguard
 s(228873)/i(230594),	-- Astral Gladiator's Chestguard
 s(228874)/i(230594),	-- Astral Gladiator's Chestguard
-s(228875)/i(230595),	-- Astral Gladiator's Chestplate
 s(228876)/i(230595),	-- Astral Gladiator's Chestplate
 s(228877)/i(230595),	-- Astral Gladiator's Chestplate
 s(228878)/i(230595),	-- Astral Gladiator's Chestplate
-s(228879)/i(230596),	-- Astral Gladiator's Plate Warboots
 s(228880)/i(230596),	-- Astral Gladiator's Plate Warboots
 s(228881)/i(230596),	-- Astral Gladiator's Plate Warboots
 s(228882)/i(230596),	-- Astral Gladiator's Plate Warboots
-s(228883)/i(230597),	-- Astral Gladiator's Plate Stompers
 s(228884)/i(230597),	-- Astral Gladiator's Plate Stompers
 s(228885)/i(230597),	-- Astral Gladiator's Plate Stompers
 s(228886)/i(230597),	-- Astral Gladiator's Plate Stompers
-s(228887)/i(230598),	-- Astral Gladiator's Plate Gauntlets
 s(228888)/i(230598),	-- Astral Gladiator's Plate Gauntlets
 s(228889)/i(230598),	-- Astral Gladiator's Plate Gauntlets
 s(228890)/i(230598),	-- Astral Gladiator's Plate Gauntlets
-s(228891)/i(230599),	-- Astral Gladiator's Plate Handguards
 s(228892)/i(230599),	-- Astral Gladiator's Plate Handguards
 s(228893)/i(230599),	-- Astral Gladiator's Plate Handguards
 s(228894)/i(230599),	-- Astral Gladiator's Plate Handguards
-s(228895)/i(230600),	-- Astral Gladiator's Plate Helm
 s(228896)/i(230600),	-- Astral Gladiator's Plate Helm
 s(228897)/i(230600),	-- Astral Gladiator's Plate Helm
 s(228898)/i(230600),	-- Astral Gladiator's Plate Helm
-s(228899)/i(230601),	-- Astral Gladiator's Plate Helmet
 s(228900)/i(230601),	-- Astral Gladiator's Plate Helmet
 s(228901)/i(230601),	-- Astral Gladiator's Plate Helmet
 s(228902)/i(230601),	-- Astral Gladiator's Plate Helmet
-s(228903)/i(230602),	-- Astral Gladiator's Plate Legguards
 s(228904)/i(230602),	-- Astral Gladiator's Plate Legguards
 s(228905)/i(230602),	-- Astral Gladiator's Plate Legguards
 s(228906)/i(230602),	-- Astral Gladiator's Plate Legguards
-s(228907)/i(230603),	-- Astral Gladiator's Plate Tasses
 s(228908)/i(230603),	-- Astral Gladiator's Plate Tasses
 s(228909)/i(230603),	-- Astral Gladiator's Plate Tasses
 s(228910)/i(230603),	-- Astral Gladiator's Plate Tasses
-s(228911)/i(230604),	-- Astral Gladiator's Plate Shoulders
 s(228912)/i(230604),	-- Astral Gladiator's Plate Shoulders
 s(228913)/i(230604),	-- Astral Gladiator's Plate Shoulders
 s(228914)/i(230604),	-- Astral Gladiator's Plate Shoulders
-s(228915)/i(230605),	-- Astral Gladiator's Plate Pauldrons
 s(228916)/i(230605),	-- Astral Gladiator's Plate Pauldrons
 s(228917)/i(230605),	-- Astral Gladiator's Plate Pauldrons
 s(228918)/i(230605),	-- Astral Gladiator's Plate Pauldrons
-s(228919)/i(230606),	-- Astral Gladiator's Plate Girdle
 s(228920)/i(230606),	-- Astral Gladiator's Plate Girdle
 s(228921)/i(230606),	-- Astral Gladiator's Plate Girdle
 s(228922)/i(230606),	-- Astral Gladiator's Plate Girdle
-s(228923)/i(230607),	-- Astral Gladiator's Plate Greatbelt
 s(228924)/i(230607),	-- Astral Gladiator's Plate Greatbelt
 s(228925)/i(230607),	-- Astral Gladiator's Plate Greatbelt
 s(228926)/i(230607),	-- Astral Gladiator's Plate Greatbelt
-s(228927)/i(230608),	-- Astral Gladiator's Plate Wristguards
 s(228928)/i(230608),	-- Astral Gladiator's Plate Wristguards
 s(228929)/i(230608),	-- Astral Gladiator's Plate Wristguards
 s(228930)/i(230608),	-- Astral Gladiator's Plate Wristguards
-s(228931)/i(230609),	-- Astral Gladiator's Plate Vambraces
 s(228932)/i(230609),	-- Astral Gladiator's Plate Vambraces
 s(228933)/i(230609),	-- Astral Gladiator's Plate Vambraces
 s(228934)/i(230609),	-- Astral Gladiator's Plate Vambraces
-s(228935)/i(230610),	-- Astral Gladiator's Cloak
 s(228936)/i(230610),	-- Astral Gladiator's Cloak
 s(228937)/i(230610),	-- Astral Gladiator's Cloak
 s(228938)/i(230610),	-- Astral Gladiator's Cloak
-s(228939)/i(230611),	-- Astral Gladiator's Drape
 s(228940)/i(230611),	-- Astral Gladiator's Drape
 s(228941)/i(230611),	-- Astral Gladiator's Drape
 s(228942)/i(230611),	-- Astral Gladiator's Drape
-s(228943)/i(230612),	-- Astral Gladiator's Shawl
 s(228944)/i(230612),	-- Astral Gladiator's Shawl
 s(228945)/i(230612),	-- Astral Gladiator's Shawl
 s(228946)/i(230612),	-- Astral Gladiator's Shawl
-s(228947)/i(230613),	-- Astral Gladiator's Chestguard
 s(228948)/i(230613),	-- Astral Gladiator's Chestguard
 s(228949)/i(230613),	-- Astral Gladiator's Chestguard
 s(228950)/i(230613),	-- Astral Gladiator's Chestguard
-s(228951)/i(230614),	-- Astral Gladiator's Chestplate
 s(228952)/i(230614),	-- Astral Gladiator's Chestplate
 s(228953)/i(230614),	-- Astral Gladiator's Chestplate
 s(228954)/i(230614),	-- Astral Gladiator's Chestplate
-s(228955)/i(230615),	-- Astral Gladiator's Plate Warboots
 s(228956)/i(230615),	-- Astral Gladiator's Plate Warboots
 s(228957)/i(230615),	-- Astral Gladiator's Plate Warboots
 s(228958)/i(230615),	-- Astral Gladiator's Plate Warboots
-s(228959)/i(230616),	-- Astral Gladiator's Plate Stompers
 s(228960)/i(230616),	-- Astral Gladiator's Plate Stompers
 s(228961)/i(230616),	-- Astral Gladiator's Plate Stompers
 s(228962)/i(230616),	-- Astral Gladiator's Plate Stompers
-s(228963)/i(230617),	-- Astral Gladiator's Plate Gauntlets
 s(228964)/i(230617),	-- Astral Gladiator's Plate Gauntlets
 s(228965)/i(230617),	-- Astral Gladiator's Plate Gauntlets
 s(228966)/i(230617),	-- Astral Gladiator's Plate Gauntlets
-s(228967)/i(230618),	-- Astral Gladiator's Plate Handguards
 s(228968)/i(230618),	-- Astral Gladiator's Plate Handguards
 s(228969)/i(230618),	-- Astral Gladiator's Plate Handguards
 s(228970)/i(230618),	-- Astral Gladiator's Plate Handguards
-s(228971)/i(230619),	-- Astral Gladiator's Plate Helm
 s(228972)/i(230619),	-- Astral Gladiator's Plate Helm
 s(228973)/i(230619),	-- Astral Gladiator's Plate Helm
 s(228974)/i(230619),	-- Astral Gladiator's Plate Helm
-s(228975)/i(230620),	-- Astral Gladiator's Plate Helmet
 s(228976)/i(230620),	-- Astral Gladiator's Plate Helmet
 s(228977)/i(230620),	-- Astral Gladiator's Plate Helmet
 s(228978)/i(230620),	-- Astral Gladiator's Plate Helmet
-s(228979)/i(230621),	-- Astral Gladiator's Plate Legguards
 s(228980)/i(230621),	-- Astral Gladiator's Plate Legguards
 s(228981)/i(230621),	-- Astral Gladiator's Plate Legguards
 s(228982)/i(230621),	-- Astral Gladiator's Plate Legguards
-s(228983)/i(230622),	-- Astral Gladiator's Plate Wargreaves
 s(228984)/i(230622),	-- Astral Gladiator's Plate Wargreaves
 s(228985)/i(230622),	-- Astral Gladiator's Plate Wargreaves
 s(228986)/i(230622),	-- Astral Gladiator's Plate Wargreaves
-s(228987)/i(230623),	-- Astral Gladiator's Plate Shoulders
 s(228988)/i(230623),	-- Astral Gladiator's Plate Shoulders
 s(228989)/i(230623),	-- Astral Gladiator's Plate Shoulders
 s(228990)/i(230623),	-- Astral Gladiator's Plate Shoulders
-s(228991)/i(230624),	-- Astral Gladiator's Plate Pauldrons
 s(228992)/i(230624),	-- Astral Gladiator's Plate Pauldrons
 s(228993)/i(230624),	-- Astral Gladiator's Plate Pauldrons
 s(228994)/i(230624),	-- Astral Gladiator's Plate Pauldrons
-s(228995)/i(230625),	-- Astral Gladiator's Plate Girdle
 s(228996)/i(230625),	-- Astral Gladiator's Plate Girdle
 s(228997)/i(230625),	-- Astral Gladiator's Plate Girdle
 s(228998)/i(230625),	-- Astral Gladiator's Plate Girdle
-s(228999)/i(230626),	-- Astral Gladiator's Plate Greatbelt
 s(229000)/i(230626),	-- Astral Gladiator's Plate Greatbelt
 s(229001)/i(230626),	-- Astral Gladiator's Plate Greatbelt
 s(229002)/i(230626),	-- Astral Gladiator's Plate Greatbelt
-s(229003)/i(230627),	-- Astral Gladiator's Plate Wristguards
 s(229004)/i(230627),	-- Astral Gladiator's Plate Wristguards
 s(229005)/i(230627),	-- Astral Gladiator's Plate Wristguards
 s(229006)/i(230627),	-- Astral Gladiator's Plate Wristguards
-s(229007)/i(230628),	-- Astral Gladiator's Plate Vambraces
 s(229008)/i(230628),	-- Astral Gladiator's Plate Vambraces
 s(229009)/i(230628),	-- Astral Gladiator's Plate Vambraces
 s(229010)/i(230628),	-- Astral Gladiator's Plate Vambraces
-s(229011)/i(230629),	-- Astral Gladiator's Cloak
 s(229012)/i(230629),	-- Astral Gladiator's Cloak
 s(229013)/i(230629),	-- Astral Gladiator's Cloak
 s(229014)/i(230629),	-- Astral Gladiator's Cloak
-s(229015)/i(230630),	-- Astral Gladiator's Drape
 s(229016)/i(230630),	-- Astral Gladiator's Drape
 s(229017)/i(230630),	-- Astral Gladiator's Drape
 s(229018)/i(230630),	-- Astral Gladiator's Drape
-s(229019)/i(230631),	-- Astral Gladiator's Shawl
 s(229020)/i(230631),	-- Astral Gladiator's Shawl
 s(229021)/i(230631),	-- Astral Gladiator's Shawl
 s(229022)/i(230631),	-- Astral Gladiator's Shawl
-s(229023)/i(230643),	-- Astral Gladiator's Splitter
-s(229024)/i(230644),	-- Astral Gladiator's Dagger
-s(229025)/i(230645),	-- Astral Gladiator's Warglaive
-s(229026)/i(230646),	-- Astral Gladiator's Spear
-s(229027)/i(230647),	-- Astral Gladiator's Staff
-s(229028)/i(230648),	-- Astral Gladiator's Bow
-s(229029)/i(230649),	-- Astral Gladiator's Scepter
-s(229030)/i(230650),	-- Astral Gladiator's Censer
-s(229031)/i(230651),	-- Astral Gladiator's Shield
-s(229032)/i(230652),	-- Astral Gladiator's Axe
-s(229033)/i(230653),	-- Astral Gladiator's Cinquedea \\ Astral Gladiator's Pincer
-s(229034)/i(230654),	-- Astral Gladiator's Claws
-s(229035)/i(230655),	-- Astral Gladiator's Crossbow
-s(229036)/i(230656),	-- Astral Gladiator's Greatstaff
-s(229037)/i(230657),	-- Astral Gladiator's Bulwark
-s(229038)/i(230658),	-- Astral Gladiator's Greatsword
-s(229039)/i(230659),	-- Astral Gladiator's Pulverizer
-s(229040)/i(230660),	-- Astral Gladiator's Sword
-s(229041)/i(230661),	-- Astral Gladiator's Skewer
-s(229042)/i(230662),	-- Astral Gladiator's Battlestaff
-s(229043)/i(230663),	-- Astral Warmonger's Garb
-s(229044)/i(230664),	-- Astral Warmonger's Slippers
-s(229045)/i(230665),	-- Astral Warmonger's Gloves
-s(229046)/i(230666),	-- Astral Warmonger's Mask
-s(229047)/i(230667),	-- Astral Warmonger's Pants
-s(229048)/i(230668),	-- Astral Warmonger's Cord
-s(229049)/i(230669),	-- Astral Warmonger's Bindings
-s(229050)/i(230670),	-- Astral Warmonger's Mantle
-s(229051)/i(230671),	-- Astral Warmonger's Boots
-s(229052)/i(230672),	-- Astral Warmonger's Handwraps
-s(229053)/i(230673),	-- Astral Warmonger's Hood
-s(229054)/i(230674),	-- Astral Warmonger's Breeches
-s(229055)/i(230675),	-- Astral Warmonger's Belt
-s(229056)/i(230676),	-- Astral Warmonger's Wraps
-s(229057)/i(230677),	-- Astral Warmonger's Jerkin
-s(229058)/i(230678),	-- Astral Warmonger's Shoulderguard
-s(229059)/i(230679),	-- Astral Warmonger's Faceplate
-s(229060)/i(230680),	-- Astral Warmonger's Cuirass
-s(229061)/i(230681),	-- Astral Warmonger's Sabatons
-s(229062)/i(230682),	-- Astral Warmonger's Gauntlets
-s(229063)/i(230683),	-- Astral Warmonger's Legguards
-s(229064)/i(230684),	-- Astral Warmonger's Spaulders
-s(229065)/i(230685),	-- Astral Warmonger's Clasp
-s(229066)/i(230686),	-- Astral Warmonger's Bracers
-s(229067)/i(230687),	-- Astral Warmonger's Chestguard
-s(229068)/i(230688),	-- Astral Warmonger's Greaves
-s(229069)/i(230689),	-- Astral Warmonger's Grips
-s(229070)/i(230690),	-- Astral Warmonger's Helm
-s(229071)/i(230691),	-- Astral Warmonger's Leggings
-s(229072)/i(230692),	-- Astral Warmonger's Epaulets
-s(229073)/i(230693),	-- Astral Warmonger's Cinch
-s(229074)/i(230694),	-- Astral Warmonger's Armguards
-s(229075)/i(230695),	-- Astral Warmonger's Cape
-s(229076)/i(230696),	-- Astral Warmonger's Shawl
-s(229077)/i(230697),	-- Astral Warmonger's Cloak
-s(229078)/i(230698),	-- Astral Warmonger's Drape
-s(229079)/i(230699),	-- Astral Warmonger's Battleaxe
-s(229080)/i(230700),	-- Astral Warmonger's Hatchet
-s(229081)/i(230701),	-- Astral Warmonger's Carver
-s(229082)/i(230702),	-- Astral Warmonger's Flameshot
-s(229083)/i(230703),	-- Astral Warmonger's Twinblade
-s(229084)/i(230704),	-- Astral Warmonger's Lantern
-s(229085)/i(230705),	-- Astral Warmonger's Spire
-s(229086)/i(230706),	-- Astral Warmonger's Battlestaff
-s(229087)/i(230707),	-- Astral Warmonger's Greatsword
-s(229088)/i(230708),	-- Astral Warmonger's Broadsword
-s(229089)/i(230709),	-- Astral Warmonger's Club
-s(229090)/i(230710),	-- Astral Warmonger's Hammer
-s(229091)/i(230711),	-- Astral Warmonger's Cudgel
-s(229092)/i(230712),	-- Astral Warmonger's Aegis
-s(229093)/i(230713),	-- Astral Warmonger's Impaler
-s(229094)/i(230714),	-- Astral Warmonger's Spear
-s(229095)/i(230715),	-- Astral Warmonger's Wand
-s(229096)/i(230716),	-- Astral Warmonger's Mace
-s(229097)/i(230717),	-- Astral Warmonger's Crusher
-s(229098)/i(230718),	-- Astral Warmonger's Scepter
-s(229099)/i(230719),	-- Astral Warmonger's Dagger
-s(229100)/i(230720),	-- Astral Warmonger's Dirk
-s(229161)/i(230814),	-- [11.2 PVP] Gladiator's Axe <TEMPLATE>
-s(229162)/i(230815),	-- [11.2 PVP] Gladiator's Dagger <TEMPLATE>
-s(229163)/i(230816),	-- [11.2 PVP] Gladiator's Gun <TEMPLATE>
-s(229164)/i(230817),	-- [11.2 PVP] Gladiator's Warglaive <TEMPLATE>
-s(229166)/i(230819),	-- [11.2 PVP] Gladiator's Spear <TEMPLATE>
-s(229167)/i(230820),	-- [11.2 PVP] Gladiator's Staff <TEMPLATE>
-s(229168)/i(230821),	-- [11.2 PVP] Gladiator's Greatsword <TEMPLATE>
-s(229169)/i(230822),	-- [11.2 PVP] Gladiator's Battlestaff <TEMPLATE>
-s(229170)/i(230823),	-- [11.2 PVP] Gladiator's Crossbow <TEMPLATE>
-s(229171)/i(230824),	-- [11.2 PVP] Gladiator's Scepter <TEMPLATE>
-s(229172)/i(230825),	-- [11.2 PVP] Gladiator's Focus <TEMPLATE>
-s(229173)/i(230826),	-- [11.2 PVP] Gladiator's Shield <TEMPLATE>
-s(229174)/i(230827),	-- [11.2 PVP] Gladiator's Bulwark <TEMPLATE>
-s(229175)/i(230828),	-- [11.2 PVP] Gladiator's Claws <TEMPLATE>
-s(229176)/i(230829),	-- [11.2 PVP] Gladiator's Bow <TEMPLATE>
-s(229177)/i(230830),	-- [11.2 PVP] Gladiator's Greataxe <TEMPLATE>
-s(229178)/i(230831),	-- [11.2 PVP] Gladiator's Pulverizer <TEMPLATE>
-s(229179)/i(230832),	-- [11.2 PVP] Gladiator's Wither-Blade <TEMPLATE>
-s(229180)/i(230833),	-- [11.2 PVP] Gladiator's Placeholder <TEMPLATE>
-s(229181)/i(230834),	-- [11.2 PVP] Gladiator's Placeholder <TEMPLATE>
-s(229182)/i(230835),	-- [11.2 PVP] Gladiator's Placeholder <TEMPLATE>
-s(229183)/i(230836),	-- [11.2 PVP] Gladiator's Placeholder <TEMPLATE>
-s(229697)/i(231629),	-- zzOld
-s(229704)/i(231636),	-- zzOld
-s(230435)/i(232908),	-- Astral Gladiator's Tabard
 s(230453)/i(232993),	--
 s(230454)/i(232994),	--
 s(230455)/i(232995),	--
@@ -37535,182 +37106,6 @@ s(266722)/i(235208),	--
 s(284799)/i(236674),	--
 s(285331)/i(237520),	--
 s(285332)/i(237521),	--
-s(285333)/i(237522),	-- Colossal Lifetether
-s(285334)/i(237522),	-- Colossal Lifetether
-s(285335)/i(237522),	-- Colossal Lifetether
-s(285336)/i(237522),	-- Colossal Lifetether
-s(285337)/i(237523),	-- Arcanotech Wrist-Matrix
-s(285338)/i(237523),	-- Arcanotech Wrist-Matrix
-s(285339)/i(237523),	-- Arcanotech Wrist-Matrix
-s(285340)/i(237523),	-- Arcanotech Wrist-Matrix
-s(285341)/i(237524),	-- Laced Lair-Steppers
-s(285342)/i(237524),	-- Laced Lair-Steppers
-s(285343)/i(237524),	-- Laced Lair-Steppers
-s(285344)/i(237524),	-- Laced Lair-Steppers
-s(285345)/i(237525),	-- Irradiated Impurity Filter
-s(285346)/i(237525),	-- Irradiated Impurity Filter
-s(285347)/i(237525),	-- Irradiated Impurity Filter
-s(285348)/i(237525),	-- Irradiated Impurity Filter
-s(285349)/i(237526),	-- Breached Containment Guards
-s(285350)/i(237526),	-- Breached Containment Guards
-s(285351)/i(237526),	-- Breached Containment Guards
-s(285352)/i(237526),	-- Breached Containment Guards
-s(285353)/i(237527),	-- Frock of Spirit's Reunion
-s(285354)/i(237527),	-- Frock of Spirit's Reunion
-s(285355)/i(237527),	-- Frock of Spirit's Reunion
-s(285356)/i(237527),	-- Frock of Spirit's Reunion
-s(285357)/i(237528),	-- Manaforged Displacement Chassis
-s(285358)/i(237528),	-- Manaforged Displacement Chassis
-s(285359)/i(237528),	-- Manaforged Displacement Chassis
-s(285360)/i(237528),	-- Manaforged Displacement Chassis
-s(285361)/i(237529),	-- Harvested Attendant's Uniform
-s(285362)/i(237529),	-- Harvested Attendant's Uniform
-s(285363)/i(237529),	-- Harvested Attendant's Uniform
-s(285364)/i(237529),	-- Harvested Attendant's Uniform
-s(285365)/i(237530),	-- Shrapnel-Fused Legguards
-s(285366)/i(237530),	-- Shrapnel-Fused Legguards
-s(285367)/i(237530),	-- Shrapnel-Fused Legguards
-s(285368)/i(237530),	-- Shrapnel-Fused Legguards
-s(285369)/i(237531),	-- Elite Shadowguard Legwraps
-s(285370)/i(237531),	-- Elite Shadowguard Legwraps
-s(285371)/i(237531),	-- Elite Shadowguard Legwraps
-s(285372)/i(237531),	-- Elite Shadowguard Legwraps
-s(285373)/i(237532),	-- Beacons of False Righteousness
-s(285374)/i(237532),	-- Beacons of False Righteousness
-s(285375)/i(237532),	-- Beacons of False Righteousness
-s(285376)/i(237532),	-- Beacons of False Righteousness
-s(285377)/i(237533),	-- Atomic Phasebelt
-s(285378)/i(237533),	-- Atomic Phasebelt
-s(285379)/i(237533),	-- Atomic Phasebelt
-s(285380)/i(237533),	-- Atomic Phasebelt
-s(285381)/i(237534),	-- Singed Sievecuffs
-s(285382)/i(237534),	-- Singed Sievecuffs
-s(285383)/i(237534),	-- Singed Sievecuffs
-s(285384)/i(237534),	-- Singed Sievecuffs
-s(285385)/i(237535),	-- Artoshion's Abyssal Stare
-s(285386)/i(237535),	-- Artoshion's Abyssal Stare
-s(285387)/i(237535),	-- Artoshion's Abyssal Stare
-s(285388)/i(237535),	-- Artoshion's Abyssal Stare
-s(285389)/i(237536),	-- Bite of the Astral Wastes
-s(285390)/i(237536),	-- Bite of the Astral Wastes
-s(285391)/i(237536),	-- Bite of the Astral Wastes
-s(285392)/i(237536),	-- Bite of the Astral Wastes
-s(285393)/i(237537),	-- Claws of Failed Resistance
-s(285394)/i(237537),	-- Claws of Failed Resistance
-s(285395)/i(237537),	-- Claws of Failed Resistance
-s(285396)/i(237537),	-- Claws of Failed Resistance
-s(285397)/i(237538),	-- Forgeweaver's Journal Holster
-s(285398)/i(237538),	-- Forgeweaver's Journal Holster
-s(285399)/i(237538),	-- Forgeweaver's Journal Holster
-s(285400)/i(237538),	-- Forgeweaver's Journal Holster
-s(285401)/i(237539),	-- Deathspindle Talons
-s(285402)/i(237539),	-- Deathspindle Talons
-s(285403)/i(237539),	-- Deathspindle Talons
-s(285404)/i(237539),	-- Deathspindle Talons
-s(285405)/i(237540),	-- Winged Gamma Handlers
-s(285406)/i(237540),	-- Winged Gamma Handlers
-s(285407)/i(237540),	-- Winged Gamma Handlers
-s(285408)/i(237540),	-- Winged Gamma Handlers
-s(285409)/i(237541),	-- Darksorrow's Corrupted Carapace
-s(285410)/i(237541),	-- Darksorrow's Corrupted Carapace
-s(285411)/i(237541),	-- Darksorrow's Corrupted Carapace
-s(285412)/i(237541),	-- Darksorrow's Corrupted Carapace
-s(285413)/i(237542),	-- Stellar Navigation Slacks
-s(285414)/i(237542),	-- Stellar Navigation Slacks
-s(285415)/i(237542),	-- Stellar Navigation Slacks
-s(285416)/i(237542),	-- Stellar Navigation Slacks
-s(285417)/i(237543),	-- Chambersieve Waistcoat
-s(285418)/i(237543),	-- Chambersieve Waistcoat
-s(285419)/i(237543),	-- Chambersieve Waistcoat
-s(285420)/i(237543),	-- Chambersieve Waistcoat
-s(285421)/i(237544),	-- Royal Voidscale Gauntlets
-s(285422)/i(237544),	-- Royal Voidscale Gauntlets
-s(285423)/i(237544),	-- Royal Voidscale Gauntlets
-s(285424)/i(237544),	-- Royal Voidscale Gauntlets
-s(285425)/i(237545),	-- Discarded Nutrient Shackles
-s(285426)/i(237545),	-- Discarded Nutrient Shackles
-s(285427)/i(237545),	-- Discarded Nutrient Shackles
-s(285428)/i(237545),	-- Discarded Nutrient Shackles
-s(285429)/i(237546),	-- Bindings of Lost Essence
-s(285430)/i(237546),	-- Bindings of Lost Essence
-s(285431)/i(237546),	-- Bindings of Lost Essence
-s(285432)/i(237546),	-- Bindings of Lost Essence
-s(285433)/i(237547),	-- Mounted Manacannons
-s(285434)/i(237547),	-- Mounted Manacannons
-s(285435)/i(237547),	-- Mounted Manacannons
-s(285436)/i(237547),	-- Mounted Manacannons
-s(285437)/i(237548),	-- Twilight Tyrant's Veil
-s(285438)/i(237548),	-- Twilight Tyrant's Veil
-s(285439)/i(237548),	-- Twilight Tyrant's Veil
-s(285440)/i(237548),	-- Twilight Tyrant's Veil
-s(285441)/i(237549),	-- Bloodwrath's Gnarled Claws
-s(285442)/i(237549),	-- Bloodwrath's Gnarled Claws
-s(285443)/i(237549),	-- Bloodwrath's Gnarled Claws
-s(285444)/i(237549),	-- Bloodwrath's Gnarled Claws
-s(285445)/i(237550),	-- Fresh Ethereal Fetters
-s(285446)/i(237550),	-- Fresh Ethereal Fetters
-s(285447)/i(237550),	-- Fresh Ethereal Fetters
-s(285448)/i(237550),	-- Fresh Ethereal Fetters
-s(285449)/i(237551),	-- Sterilized Expulsion Boots
-s(285450)/i(237551),	-- Sterilized Expulsion Boots
-s(285451)/i(237551),	-- Sterilized Expulsion Boots
-s(285452)/i(237551),	-- Sterilized Expulsion Boots
-s(285453)/i(237552),	-- Deathbound Shoulderpads
-s(285454)/i(237552),	-- Deathbound Shoulderpads
-s(285455)/i(237552),	-- Deathbound Shoulderpads
-s(285456)/i(237552),	-- Deathbound Shoulderpads
-s(285457)/i(237553),	-- Laboratory Test Slippers
-s(285458)/i(237553),	-- Laboratory Test Slippers
-s(285459)/i(237553),	-- Laboratory Test Slippers
-s(285460)/i(237553),	-- Laboratory Test Slippers
-s(285461)/i(237554),	-- Clasp of Furious Freedom
-s(285462)/i(237554),	-- Clasp of Furious Freedom
-s(285463)/i(237554),	-- Clasp of Furious Freedom
-s(285464)/i(237554),	-- Clasp of Furious Freedom
-s(285465)/i(237555),	-- Pactbound Vambraces
-s(285466)/i(237555),	-- Pactbound Vambraces
-s(285467)/i(237555),	-- Pactbound Vambraces
-s(285468)/i(237555),	-- Pactbound Vambraces
-s(285469)/i(237556),	-- Sandals of Scarred Servitude
-s(285470)/i(237556),	-- Sandals of Scarred Servitude
-s(285471)/i(237556),	-- Sandals of Scarred Servitude
-s(285472)/i(237556),	-- Sandals of Scarred Servitude
-s(285473)/i(237557),	-- Reaper's Dreadbelt
-s(285474)/i(237557),	-- Reaper's Dreadbelt
-s(285475)/i(237557),	-- Reaper's Dreadbelt
-s(285476)/i(237557),	-- Reaper's Dreadbelt
-s(285477)/i(237558),	-- Conjoined Glass Bracers
-s(285478)/i(237558),	-- Conjoined Glass Bracers
-s(285479)/i(237558),	-- Conjoined Glass Bracers
-s(285480)/i(237558),	-- Conjoined Glass Bracers
-s(285481)/i(237559),	-- Singularity Cincture
-s(285482)/i(237559),	-- Singularity Cincture
-s(285483)/i(237559),	-- Singularity Cincture
-s(285484)/i(237559),	-- Singularity Cincture
-s(285485)/i(237560),	-- Greaves of Shattered Space
-s(285486)/i(237560),	-- Greaves of Shattered Space
-s(285487)/i(237560),	-- Greaves of Shattered Space
-s(285488)/i(237560),	-- Greaves of Shattered Space
-s(285489)/i(237561),	-- Yoke of Enveloping Hatred
-s(285490)/i(237561),	-- Yoke of Enveloping Hatred
-s(285491)/i(237561),	-- Yoke of Enveloping Hatred
-s(285492)/i(237561),	-- Yoke of Enveloping Hatred
-s(285493)/i(237562),	-- Time-Compressed Wristguards
-s(285494)/i(237562),	-- Time-Compressed Wristguards
-s(285495)/i(237562),	-- Time-Compressed Wristguards
-s(285496)/i(237562),	-- Time-Compressed Wristguards
-s(285497)/i(237563),	-- Ultradense Fission Girdle
-s(285498)/i(237563),	-- Ultradense Fission Girdle
-s(285499)/i(237563),	-- Ultradense Fission Girdle
-s(285500)/i(237563),	-- Ultradense Fission Girdle
-s(285501)/i(237564),	-- Darkrider Sabatons
-s(285502)/i(237564),	-- Darkrider Sabatons
-s(285503)/i(237564),	-- Darkrider Sabatons
-s(285504)/i(237564),	-- Darkrider Sabatons
-s(285505)/i(237565),	-- Kinetic Dunerunners
-s(285506)/i(237565),	-- Kinetic Dunerunners
-s(285507)/i(237565),	-- Kinetic Dunerunners
-s(285508)/i(237565),	-- Kinetic Dunerunners
 s(285509)/i(237566),	--
 s(285510)/i(237566),	--
 s(285511)/i(237566),	--
@@ -37719,1561 +37114,945 @@ s(285513)/i(237571),	--
 s(285514)/i(237571),	--
 s(285515)/i(237571),	--
 s(285516)/i(237571),	--
-s(285518)/i(237605),	-- Living Weapon's Cape
 s(285519)/i(237605),	-- Living Weapon's Cape
 s(285520)/i(237605),	-- Living Weapon's Cape
 s(285521)/i(237605),	-- Living Weapon's Cape
 s(285522)/i(237605),	-- Living Weapon's Cape
-s(285523)/i(237605),	-- Living Weapon's Cape
-s(285524)/i(237605),	-- Living Weapon's Cape
-s(285525)/i(237605),	-- Living Weapon's Cape
 s(285526)/i(237605),	-- Living Weapon's Cape
 s(285527)/i(237605),	-- Living Weapon's Cape
 s(285528)/i(237605),	-- Living Weapon's Cape
 s(285529)/i(237605),	-- Living Weapon's Cape
-s(285530)/i(237606),	-- Living Weapon's Manacles
 s(285531)/i(237606),	-- Living Weapon's Manacles
 s(285532)/i(237606),	-- Living Weapon's Manacles
 s(285533)/i(237606),	-- Living Weapon's Manacles
 s(285534)/i(237606),	-- Living Weapon's Manacles
-s(285535)/i(237606),	-- Living Weapon's Manacles
-s(285536)/i(237606),	-- Living Weapon's Manacles
-s(285537)/i(237606),	-- Living Weapon's Manacles
 s(285538)/i(237606),	-- Living Weapon's Manacles
 s(285539)/i(237606),	-- Living Weapon's Manacles
 s(285540)/i(237606),	-- Living Weapon's Manacles
 s(285541)/i(237606),	-- Living Weapon's Manacles
-s(285542)/i(237607),	-- Living Weapon's Chain
 s(285543)/i(237607),	-- Living Weapon's Chain
 s(285544)/i(237607),	-- Living Weapon's Chain
 s(285545)/i(237607),	-- Living Weapon's Chain
 s(285546)/i(237607),	-- Living Weapon's Chain
-s(285547)/i(237607),	-- Living Weapon's Chain
-s(285548)/i(237607),	-- Living Weapon's Chain
-s(285549)/i(237607),	-- Living Weapon's Chain
 s(285550)/i(237607),	-- Living Weapon's Chain
 s(285551)/i(237607),	-- Living Weapon's Chain
 s(285552)/i(237607),	-- Living Weapon's Chain
 s(285553)/i(237607),	-- Living Weapon's Chain
-s(285554)/i(237608),	-- Living Weapon's Ramparts
 s(285555)/i(237608),	-- Living Weapon's Ramparts
 s(285556)/i(237608),	-- Living Weapon's Ramparts
 s(285557)/i(237608),	-- Living Weapon's Ramparts
 s(285558)/i(237608),	-- Living Weapon's Ramparts
-s(285559)/i(237608),	-- Living Weapon's Ramparts
-s(285560)/i(237608),	-- Living Weapon's Ramparts
-s(285561)/i(237608),	-- Living Weapon's Ramparts
 s(285562)/i(237608),	-- Living Weapon's Ramparts
 s(285563)/i(237608),	-- Living Weapon's Ramparts
 s(285564)/i(237608),	-- Living Weapon's Ramparts
 s(285565)/i(237608),	-- Living Weapon's Ramparts
-s(285566)/i(237609),	-- Living Weapon's Legguards
 s(285567)/i(237609),	-- Living Weapon's Legguards
 s(285568)/i(237609),	-- Living Weapon's Legguards
 s(285569)/i(237609),	-- Living Weapon's Legguards
 s(285570)/i(237609),	-- Living Weapon's Legguards
-s(285571)/i(237609),	-- Living Weapon's Legguards
-s(285572)/i(237609),	-- Living Weapon's Legguards
-s(285573)/i(237609),	-- Living Weapon's Legguards
 s(285574)/i(237609),	-- Living Weapon's Legguards
 s(285575)/i(237609),	-- Living Weapon's Legguards
 s(285576)/i(237609),	-- Living Weapon's Legguards
 s(285577)/i(237609),	-- Living Weapon's Legguards
-s(285578)/i(237610),	-- Living Weapon's Faceshield
 s(285579)/i(237610),	-- Living Weapon's Faceshield
 s(285580)/i(237610),	-- Living Weapon's Faceshield
 s(285581)/i(237610),	-- Living Weapon's Faceshield
 s(285582)/i(237610),	-- Living Weapon's Faceshield
-s(285583)/i(237610),	-- Living Weapon's Faceshield
-s(285584)/i(237610),	-- Living Weapon's Faceshield
-s(285585)/i(237610),	-- Living Weapon's Faceshield
 s(285586)/i(237610),	-- Living Weapon's Faceshield
 s(285587)/i(237610),	-- Living Weapon's Faceshield
 s(285588)/i(237610),	-- Living Weapon's Faceshield
 s(285589)/i(237610),	-- Living Weapon's Faceshield
-s(285590)/i(237611),	-- Living Weapon's Crushers
 s(285591)/i(237611),	-- Living Weapon's Crushers
 s(285592)/i(237611),	-- Living Weapon's Crushers
 s(285593)/i(237611),	-- Living Weapon's Crushers
 s(285594)/i(237611),	-- Living Weapon's Crushers
-s(285595)/i(237611),	-- Living Weapon's Crushers
-s(285596)/i(237611),	-- Living Weapon's Crushers
-s(285597)/i(237611),	-- Living Weapon's Crushers
 s(285598)/i(237611),	-- Living Weapon's Crushers
 s(285599)/i(237611),	-- Living Weapon's Crushers
 s(285600)/i(237611),	-- Living Weapon's Crushers
 s(285601)/i(237611),	-- Living Weapon's Crushers
-s(285602)/i(237612),	-- Living Weapon's Sabatons
 s(285603)/i(237612),	-- Living Weapon's Sabatons
 s(285604)/i(237612),	-- Living Weapon's Sabatons
 s(285605)/i(237612),	-- Living Weapon's Sabatons
 s(285606)/i(237612),	-- Living Weapon's Sabatons
-s(285607)/i(237612),	-- Living Weapon's Sabatons
-s(285608)/i(237612),	-- Living Weapon's Sabatons
-s(285609)/i(237612),	-- Living Weapon's Sabatons
 s(285610)/i(237612),	-- Living Weapon's Sabatons
 s(285611)/i(237612),	-- Living Weapon's Sabatons
 s(285612)/i(237612),	-- Living Weapon's Sabatons
 s(285613)/i(237612),	-- Living Weapon's Sabatons
-s(285614)/i(237613),	-- Living Weapon's Bulwark
 s(285615)/i(237613),	-- Living Weapon's Bulwark
 s(285616)/i(237613),	-- Living Weapon's Bulwark
 s(285617)/i(237613),	-- Living Weapon's Bulwark
 s(285618)/i(237613),	-- Living Weapon's Bulwark
-s(285619)/i(237613),	-- Living Weapon's Bulwark
-s(285620)/i(237613),	-- Living Weapon's Bulwark
-s(285621)/i(237613),	-- Living Weapon's Bulwark
 s(285622)/i(237613),	-- Living Weapon's Bulwark
 s(285623)/i(237613),	-- Living Weapon's Bulwark
 s(285624)/i(237613),	-- Living Weapon's Bulwark
 s(285625)/i(237613),	-- Living Weapon's Bulwark
-s(285626)/i(237614),	-- Gilded Cloak of the Lucent Battalion
 s(285627)/i(237614),	-- Gilded Cloak of the Lucent Battalion
 s(285628)/i(237614),	-- Gilded Cloak of the Lucent Battalion
 s(285629)/i(237614),	-- Gilded Cloak of the Lucent Battalion
 s(285630)/i(237614),	-- Gilded Cloak of the Lucent Battalion
-s(285631)/i(237614),	-- Gilded Cloak of the Lucent Battalion
-s(285632)/i(237614),	-- Gilded Cloak of the Lucent Battalion
-s(285633)/i(237614),	-- Gilded Cloak of the Lucent Battalion
 s(285634)/i(237614),	-- Gilded Cloak of the Lucent Battalion
 s(285635)/i(237614),	-- Gilded Cloak of the Lucent Battalion
 s(285636)/i(237614),	-- Gilded Cloak of the Lucent Battalion
 s(285637)/i(237614),	-- Gilded Cloak of the Lucent Battalion
-s(285638)/i(237615),	-- Vambraces of the Lucent Battalion
 s(285639)/i(237615),	-- Vambraces of the Lucent Battalion
 s(285640)/i(237615),	-- Vambraces of the Lucent Battalion
 s(285641)/i(237615),	-- Vambraces of the Lucent Battalion
 s(285642)/i(237615),	-- Vambraces of the Lucent Battalion
-s(285643)/i(237615),	-- Vambraces of the Lucent Battalion
-s(285644)/i(237615),	-- Vambraces of the Lucent Battalion
-s(285645)/i(237615),	-- Vambraces of the Lucent Battalion
 s(285646)/i(237615),	-- Vambraces of the Lucent Battalion
 s(285647)/i(237615),	-- Vambraces of the Lucent Battalion
 s(285648)/i(237615),	-- Vambraces of the Lucent Battalion
 s(285649)/i(237615),	-- Vambraces of the Lucent Battalion
-s(285650)/i(237616),	-- Seal of the Lucent Battalion
 s(285651)/i(237616),	-- Seal of the Lucent Battalion
 s(285652)/i(237616),	-- Seal of the Lucent Battalion
 s(285653)/i(237616),	-- Seal of the Lucent Battalion
 s(285654)/i(237616),	-- Seal of the Lucent Battalion
-s(285655)/i(237616),	-- Seal of the Lucent Battalion
-s(285656)/i(237616),	-- Seal of the Lucent Battalion
-s(285657)/i(237616),	-- Seal of the Lucent Battalion
 s(285658)/i(237616),	-- Seal of the Lucent Battalion
 s(285659)/i(237616),	-- Seal of the Lucent Battalion
 s(285660)/i(237616),	-- Seal of the Lucent Battalion
 s(285661)/i(237616),	-- Seal of the Lucent Battalion
-s(285662)/i(237617),	-- Chargers of the Lucent Battalion
 s(285663)/i(237617),	-- Chargers of the Lucent Battalion
 s(285664)/i(237617),	-- Chargers of the Lucent Battalion
 s(285665)/i(237617),	-- Chargers of the Lucent Battalion
 s(285666)/i(237617),	-- Chargers of the Lucent Battalion
-s(285667)/i(237617),	-- Chargers of the Lucent Battalion
-s(285668)/i(237617),	-- Chargers of the Lucent Battalion
-s(285669)/i(237617),	-- Chargers of the Lucent Battalion
 s(285670)/i(237617),	-- Chargers of the Lucent Battalion
 s(285671)/i(237617),	-- Chargers of the Lucent Battalion
 s(285672)/i(237617),	-- Chargers of the Lucent Battalion
 s(285673)/i(237617),	-- Chargers of the Lucent Battalion
-s(285674)/i(237618),	-- Cuisses of the Lucent Battalion
 s(285675)/i(237618),	-- Cuisses of the Lucent Battalion
 s(285676)/i(237618),	-- Cuisses of the Lucent Battalion
 s(285677)/i(237618),	-- Cuisses of the Lucent Battalion
 s(285678)/i(237618),	-- Cuisses of the Lucent Battalion
-s(285679)/i(237618),	-- Cuisses of the Lucent Battalion
-s(285680)/i(237618),	-- Cuisses of the Lucent Battalion
-s(285681)/i(237618),	-- Cuisses of the Lucent Battalion
 s(285682)/i(237618),	-- Cuisses of the Lucent Battalion
 s(285683)/i(237618),	-- Cuisses of the Lucent Battalion
 s(285684)/i(237618),	-- Cuisses of the Lucent Battalion
 s(285685)/i(237618),	-- Cuisses of the Lucent Battalion
-s(285686)/i(237619),	-- Lightmane of the Lucent Battalion
 s(285687)/i(237619),	-- Lightmane of the Lucent Battalion
 s(285688)/i(237619),	-- Lightmane of the Lucent Battalion
 s(285689)/i(237619),	-- Lightmane of the Lucent Battalion
 s(285690)/i(237619),	-- Lightmane of the Lucent Battalion
-s(285691)/i(237619),	-- Lightmane of the Lucent Battalion
-s(285692)/i(237619),	-- Lightmane of the Lucent Battalion
-s(285693)/i(237619),	-- Lightmane of the Lucent Battalion
 s(285694)/i(237619),	-- Lightmane of the Lucent Battalion
 s(285695)/i(237619),	-- Lightmane of the Lucent Battalion
 s(285696)/i(237619),	-- Lightmane of the Lucent Battalion
 s(285697)/i(237619),	-- Lightmane of the Lucent Battalion
-s(285698)/i(237620),	-- Protectors of the Lucent Battalion
 s(285699)/i(237620),	-- Protectors of the Lucent Battalion
 s(285700)/i(237620),	-- Protectors of the Lucent Battalion
 s(285701)/i(237620),	-- Protectors of the Lucent Battalion
 s(285702)/i(237620),	-- Protectors of the Lucent Battalion
-s(285703)/i(237620),	-- Protectors of the Lucent Battalion
-s(285704)/i(237620),	-- Protectors of the Lucent Battalion
-s(285705)/i(237620),	-- Protectors of the Lucent Battalion
 s(285706)/i(237620),	-- Protectors of the Lucent Battalion
 s(285707)/i(237620),	-- Protectors of the Lucent Battalion
 s(285708)/i(237620),	-- Protectors of the Lucent Battalion
 s(285709)/i(237620),	-- Protectors of the Lucent Battalion
-s(285710)/i(237621),	-- Stompers of the Lucent Battalion
 s(285711)/i(237621),	-- Stompers of the Lucent Battalion
 s(285712)/i(237621),	-- Stompers of the Lucent Battalion
 s(285713)/i(237621),	-- Stompers of the Lucent Battalion
 s(285714)/i(237621),	-- Stompers of the Lucent Battalion
-s(285715)/i(237621),	-- Stompers of the Lucent Battalion
-s(285716)/i(237621),	-- Stompers of the Lucent Battalion
-s(285717)/i(237621),	-- Stompers of the Lucent Battalion
 s(285718)/i(237621),	-- Stompers of the Lucent Battalion
 s(285719)/i(237621),	-- Stompers of the Lucent Battalion
 s(285720)/i(237621),	-- Stompers of the Lucent Battalion
 s(285721)/i(237621),	-- Stompers of the Lucent Battalion
-s(285722)/i(237622),	-- Cuirass of the Lucent Battalion
 s(285723)/i(237622),	-- Cuirass of the Lucent Battalion
 s(285724)/i(237622),	-- Cuirass of the Lucent Battalion
 s(285725)/i(237622),	-- Cuirass of the Lucent Battalion
 s(285726)/i(237622),	-- Cuirass of the Lucent Battalion
-s(285727)/i(237622),	-- Cuirass of the Lucent Battalion
-s(285728)/i(237622),	-- Cuirass of the Lucent Battalion
-s(285729)/i(237622),	-- Cuirass of the Lucent Battalion
 s(285730)/i(237622),	-- Cuirass of the Lucent Battalion
 s(285731)/i(237622),	-- Cuirass of the Lucent Battalion
 s(285732)/i(237622),	-- Cuirass of the Lucent Battalion
 s(285733)/i(237622),	-- Cuirass of the Lucent Battalion
-s(285734)/i(237623),	-- Hollow Sentinel's Wingdrape
 s(285735)/i(237623),	-- Hollow Sentinel's Wingdrape
 s(285736)/i(237623),	-- Hollow Sentinel's Wingdrape
 s(285737)/i(237623),	-- Hollow Sentinel's Wingdrape
 s(285738)/i(237623),	-- Hollow Sentinel's Wingdrape
-s(285739)/i(237623),	-- Hollow Sentinel's Wingdrape
-s(285740)/i(237623),	-- Hollow Sentinel's Wingdrape
-s(285741)/i(237623),	-- Hollow Sentinel's Wingdrape
 s(285742)/i(237623),	-- Hollow Sentinel's Wingdrape
 s(285743)/i(237623),	-- Hollow Sentinel's Wingdrape
 s(285744)/i(237623),	-- Hollow Sentinel's Wingdrape
 s(285745)/i(237623),	-- Hollow Sentinel's Wingdrape
-s(285746)/i(237624),	-- Hollow Sentinel's Stonecuffs
 s(285747)/i(237624),	-- Hollow Sentinel's Stonecuffs
 s(285748)/i(237624),	-- Hollow Sentinel's Stonecuffs
 s(285749)/i(237624),	-- Hollow Sentinel's Stonecuffs
 s(285750)/i(237624),	-- Hollow Sentinel's Stonecuffs
-s(285751)/i(237624),	-- Hollow Sentinel's Stonecuffs
-s(285752)/i(237624),	-- Hollow Sentinel's Stonecuffs
-s(285753)/i(237624),	-- Hollow Sentinel's Stonecuffs
 s(285754)/i(237624),	-- Hollow Sentinel's Stonecuffs
 s(285755)/i(237624),	-- Hollow Sentinel's Stonecuffs
 s(285756)/i(237624),	-- Hollow Sentinel's Stonecuffs
 s(285757)/i(237624),	-- Hollow Sentinel's Stonecuffs
-s(285758)/i(237625),	-- Hollow Sentinel's Greatbelt
 s(285759)/i(237625),	-- Hollow Sentinel's Greatbelt
 s(285760)/i(237625),	-- Hollow Sentinel's Greatbelt
 s(285761)/i(237625),	-- Hollow Sentinel's Greatbelt
 s(285762)/i(237625),	-- Hollow Sentinel's Greatbelt
-s(285763)/i(237625),	-- Hollow Sentinel's Greatbelt
-s(285764)/i(237625),	-- Hollow Sentinel's Greatbelt
-s(285765)/i(237625),	-- Hollow Sentinel's Greatbelt
 s(285766)/i(237625),	-- Hollow Sentinel's Greatbelt
 s(285767)/i(237625),	-- Hollow Sentinel's Greatbelt
 s(285768)/i(237625),	-- Hollow Sentinel's Greatbelt
 s(285769)/i(237625),	-- Hollow Sentinel's Greatbelt
-s(285770)/i(237626),	-- Hollow Sentinel's Perches \\ Hollow Senintel's Perches
 s(285771)/i(237626),	-- Hollow Sentinel's Perches \\ Hollow Senintel's Perches
 s(285772)/i(237626),	-- Hollow Sentinel's Perches \\ Hollow Senintel's Perches
 s(285773)/i(237626),	-- Hollow Sentinel's Perches \\ Hollow Senintel's Perches
 s(285774)/i(237626),	-- Hollow Sentinel's Perches \\ Hollow Senintel's Perches
-s(285775)/i(237626),	-- Hollow Sentinel's Perches \\ Hollow Senintel's Perches
-s(285776)/i(237626),	-- Hollow Sentinel's Perches \\ Hollow Senintel's Perches
-s(285777)/i(237626),	-- Hollow Sentinel's Perches \\ Hollow Senintel's Perches
 s(285778)/i(237626),	-- Hollow Sentinel's Perches \\ Hollow Senintel's Perches
 s(285779)/i(237626),	-- Hollow Sentinel's Perches \\ Hollow Senintel's Perches
 s(285780)/i(237626),	-- Hollow Sentinel's Perches \\ Hollow Senintel's Perches
 s(285781)/i(237626),	-- Hollow Sentinel's Perches \\ Hollow Senintel's Perches
-s(285782)/i(237627),	-- Hollow Sentinel's Stonekilt
 s(285783)/i(237627),	-- Hollow Sentinel's Stonekilt
 s(285784)/i(237627),	-- Hollow Sentinel's Stonekilt
 s(285785)/i(237627),	-- Hollow Sentinel's Stonekilt
 s(285786)/i(237627),	-- Hollow Sentinel's Stonekilt
-s(285787)/i(237627),	-- Hollow Sentinel's Stonekilt
-s(285788)/i(237627),	-- Hollow Sentinel's Stonekilt
-s(285789)/i(237627),	-- Hollow Sentinel's Stonekilt
 s(285790)/i(237627),	-- Hollow Sentinel's Stonekilt
 s(285791)/i(237627),	-- Hollow Sentinel's Stonekilt
 s(285792)/i(237627),	-- Hollow Sentinel's Stonekilt
 s(285793)/i(237627),	-- Hollow Sentinel's Stonekilt
-s(285794)/i(237628),	-- Hollow Sentinel's Stonemask
 s(285795)/i(237628),	-- Hollow Sentinel's Stonemask
 s(285796)/i(237628),	-- Hollow Sentinel's Stonemask
 s(285797)/i(237628),	-- Hollow Sentinel's Stonemask
 s(285798)/i(237628),	-- Hollow Sentinel's Stonemask
-s(285799)/i(237628),	-- Hollow Sentinel's Stonemask
-s(285800)/i(237628),	-- Hollow Sentinel's Stonemask
-s(285801)/i(237628),	-- Hollow Sentinel's Stonemask
 s(285802)/i(237628),	-- Hollow Sentinel's Stonemask
 s(285803)/i(237628),	-- Hollow Sentinel's Stonemask
 s(285804)/i(237628),	-- Hollow Sentinel's Stonemask
 s(285805)/i(237628),	-- Hollow Sentinel's Stonemask
-s(285806)/i(237629),	-- Hollow Sentinel's Gauntlets
 s(285807)/i(237629),	-- Hollow Sentinel's Gauntlets
 s(285808)/i(237629),	-- Hollow Sentinel's Gauntlets
 s(285809)/i(237629),	-- Hollow Sentinel's Gauntlets
 s(285810)/i(237629),	-- Hollow Sentinel's Gauntlets
-s(285811)/i(237629),	-- Hollow Sentinel's Gauntlets
-s(285812)/i(237629),	-- Hollow Sentinel's Gauntlets
-s(285813)/i(237629),	-- Hollow Sentinel's Gauntlets
 s(285814)/i(237629),	-- Hollow Sentinel's Gauntlets
 s(285815)/i(237629),	-- Hollow Sentinel's Gauntlets
 s(285816)/i(237629),	-- Hollow Sentinel's Gauntlets
 s(285817)/i(237629),	-- Hollow Sentinel's Gauntlets
-s(285818)/i(237630),	-- Hollow Sentinel's Greatboots
 s(285819)/i(237630),	-- Hollow Sentinel's Greatboots
 s(285820)/i(237630),	-- Hollow Sentinel's Greatboots
 s(285821)/i(237630),	-- Hollow Sentinel's Greatboots
 s(285822)/i(237630),	-- Hollow Sentinel's Greatboots
-s(285823)/i(237630),	-- Hollow Sentinel's Greatboots
-s(285824)/i(237630),	-- Hollow Sentinel's Greatboots
-s(285825)/i(237630),	-- Hollow Sentinel's Greatboots
 s(285826)/i(237630),	-- Hollow Sentinel's Greatboots
 s(285827)/i(237630),	-- Hollow Sentinel's Greatboots
 s(285828)/i(237630),	-- Hollow Sentinel's Greatboots
 s(285829)/i(237630),	-- Hollow Sentinel's Greatboots
-s(285830)/i(237631),	-- Hollow Sentinel's Breastplate
 s(285831)/i(237631),	-- Hollow Sentinel's Breastplate
 s(285832)/i(237631),	-- Hollow Sentinel's Breastplate
 s(285833)/i(237631),	-- Hollow Sentinel's Breastplate
 s(285834)/i(237631),	-- Hollow Sentinel's Breastplate
-s(285835)/i(237631),	-- Hollow Sentinel's Breastplate
-s(285836)/i(237631),	-- Hollow Sentinel's Breastplate
-s(285837)/i(237631),	-- Hollow Sentinel's Breastplate
 s(285838)/i(237631),	-- Hollow Sentinel's Breastplate
 s(285839)/i(237631),	-- Hollow Sentinel's Breastplate
 s(285840)/i(237631),	-- Hollow Sentinel's Breastplate
 s(285841)/i(237631),	-- Hollow Sentinel's Breastplate
-s(285842)/i(237632),	-- Shawl of Channeled Fury
 s(285843)/i(237632),	-- Shawl of Channeled Fury
 s(285844)/i(237632),	-- Shawl of Channeled Fury
 s(285845)/i(237632),	-- Shawl of Channeled Fury
 s(285846)/i(237632),	-- Shawl of Channeled Fury
-s(285847)/i(237632),	-- Shawl of Channeled Fury
-s(285848)/i(237632),	-- Shawl of Channeled Fury
-s(285849)/i(237632),	-- Shawl of Channeled Fury
 s(285850)/i(237632),	-- Shawl of Channeled Fury
 s(285851)/i(237632),	-- Shawl of Channeled Fury
 s(285852)/i(237632),	-- Shawl of Channeled Fury
 s(285853)/i(237632),	-- Shawl of Channeled Fury
-s(285854)/i(237633),	-- Bracers of Channeled Fury
 s(285855)/i(237633),	-- Bracers of Channeled Fury
 s(285856)/i(237633),	-- Bracers of Channeled Fury
 s(285857)/i(237633),	-- Bracers of Channeled Fury
 s(285858)/i(237633),	-- Bracers of Channeled Fury
-s(285859)/i(237633),	-- Bracers of Channeled Fury
-s(285860)/i(237633),	-- Bracers of Channeled Fury
-s(285861)/i(237633),	-- Bracers of Channeled Fury
 s(285862)/i(237633),	-- Bracers of Channeled Fury
 s(285863)/i(237633),	-- Bracers of Channeled Fury
 s(285864)/i(237633),	-- Bracers of Channeled Fury
 s(285865)/i(237633),	-- Bracers of Channeled Fury
-s(285866)/i(237634),	-- Fauld of Channeled Fury
 s(285867)/i(237634),	-- Fauld of Channeled Fury
 s(285868)/i(237634),	-- Fauld of Channeled Fury
 s(285869)/i(237634),	-- Fauld of Channeled Fury
 s(285870)/i(237634),	-- Fauld of Channeled Fury
-s(285871)/i(237634),	-- Fauld of Channeled Fury
-s(285872)/i(237634),	-- Fauld of Channeled Fury
-s(285873)/i(237634),	-- Fauld of Channeled Fury
 s(285874)/i(237634),	-- Fauld of Channeled Fury
 s(285875)/i(237634),	-- Fauld of Channeled Fury
 s(285876)/i(237634),	-- Fauld of Channeled Fury
 s(285877)/i(237634),	-- Fauld of Channeled Fury
-s(285878)/i(237635),	-- Fangs of Channeled Fury
 s(285879)/i(237635),	-- Fangs of Channeled Fury
 s(285880)/i(237635),	-- Fangs of Channeled Fury
 s(285881)/i(237635),	-- Fangs of Channeled Fury
 s(285882)/i(237635),	-- Fangs of Channeled Fury
-s(285883)/i(237635),	-- Fangs of Channeled Fury
-s(285884)/i(237635),	-- Fangs of Channeled Fury
-s(285885)/i(237635),	-- Fangs of Channeled Fury
 s(285886)/i(237635),	-- Fangs of Channeled Fury
 s(285887)/i(237635),	-- Fangs of Channeled Fury
 s(285888)/i(237635),	-- Fangs of Channeled Fury
 s(285889)/i(237635),	-- Fangs of Channeled Fury
 s(285890)/i(237636),	-- Tassets of Channeled Fury
 s(285891)/i(237636),	-- Tassets of Channeled Fury
-s(285892)/i(237636),	-- Tassets of Channeled Fury
-s(285893)/i(237636),	-- Tassets of Channeled Fury
-s(285894)/i(237636),	-- Tassets of Channeled Fury
-s(285895)/i(237636),	-- Tassets of Channeled Fury
 s(285896)/i(237636),	-- Tassets of Channeled Fury
 s(285897)/i(237636),	-- Tassets of Channeled Fury
-s(285898)/i(237637),	-- Aspect of Channeled Fury
 s(285899)/i(237637),	-- Aspect of Channeled Fury
 s(285900)/i(237637),	-- Aspect of Channeled Fury
 s(285901)/i(237637),	-- Aspect of Channeled Fury
 s(285902)/i(237637),	-- Aspect of Channeled Fury
-s(285903)/i(237637),	-- Aspect of Channeled Fury
-s(285904)/i(237637),	-- Aspect of Channeled Fury
-s(285905)/i(237637),	-- Aspect of Channeled Fury
 s(285906)/i(237637),	-- Aspect of Channeled Fury
 s(285907)/i(237637),	-- Aspect of Channeled Fury
 s(285908)/i(237637),	-- Aspect of Channeled Fury
 s(285909)/i(237637),	-- Aspect of Channeled Fury
-s(285910)/i(237638),	-- Claws of Channeled Fury
 s(285911)/i(237638),	-- Claws of Channeled Fury
 s(285912)/i(237638),	-- Claws of Channeled Fury
 s(285913)/i(237638),	-- Claws of Channeled Fury
 s(285914)/i(237638),	-- Claws of Channeled Fury
-s(285915)/i(237638),	-- Claws of Channeled Fury
-s(285916)/i(237638),	-- Claws of Channeled Fury
-s(285917)/i(237638),	-- Claws of Channeled Fury
 s(285918)/i(237638),	-- Claws of Channeled Fury
 s(285919)/i(237638),	-- Claws of Channeled Fury
 s(285920)/i(237638),	-- Claws of Channeled Fury
 s(285921)/i(237638),	-- Claws of Channeled Fury
-s(285922)/i(237639),	-- Boots of Channeled Fury
 s(285923)/i(237639),	-- Boots of Channeled Fury
 s(285924)/i(237639),	-- Boots of Channeled Fury
 s(285925)/i(237639),	-- Boots of Channeled Fury
 s(285926)/i(237639),	-- Boots of Channeled Fury
-s(285927)/i(237639),	-- Boots of Channeled Fury
-s(285928)/i(237639),	-- Boots of Channeled Fury
-s(285929)/i(237639),	-- Boots of Channeled Fury
 s(285930)/i(237639),	-- Boots of Channeled Fury
 s(285931)/i(237639),	-- Boots of Channeled Fury
 s(285932)/i(237639),	-- Boots of Channeled Fury
 s(285933)/i(237639),	-- Boots of Channeled Fury
 s(285934)/i(237640),	-- Furs of Channeled Fury
 s(285935)/i(237640),	-- Furs of Channeled Fury
-s(285936)/i(237640),	-- Furs of Channeled Fury
-s(285937)/i(237640),	-- Furs of Channeled Fury
-s(285938)/i(237640),	-- Furs of Channeled Fury
-s(285939)/i(237640),	-- Furs of Channeled Fury
 s(285940)/i(237640),	-- Furs of Channeled Fury
 s(285941)/i(237640),	-- Furs of Channeled Fury
-s(285942)/i(237641),	-- Midnight Herald's Shroud
 s(285943)/i(237641),	-- Midnight Herald's Shroud
 s(285944)/i(237641),	-- Midnight Herald's Shroud
 s(285945)/i(237641),	-- Midnight Herald's Shroud
 s(285946)/i(237641),	-- Midnight Herald's Shroud
-s(285947)/i(237641),	-- Midnight Herald's Shroud
-s(285948)/i(237641),	-- Midnight Herald's Shroud
-s(285949)/i(237641),	-- Midnight Herald's Shroud
 s(285950)/i(237641),	-- Midnight Herald's Shroud
 s(285951)/i(237641),	-- Midnight Herald's Shroud
 s(285952)/i(237641),	-- Midnight Herald's Shroud
 s(285953)/i(237641),	-- Midnight Herald's Shroud
-s(285954)/i(237642),	-- Midnight Herald's Wristguards
 s(285955)/i(237642),	-- Midnight Herald's Wristguards
 s(285956)/i(237642),	-- Midnight Herald's Wristguards
 s(285957)/i(237642),	-- Midnight Herald's Wristguards
 s(285958)/i(237642),	-- Midnight Herald's Wristguards
-s(285959)/i(237642),	-- Midnight Herald's Wristguards
-s(285960)/i(237642),	-- Midnight Herald's Wristguards
-s(285961)/i(237642),	-- Midnight Herald's Wristguards
 s(285962)/i(237642),	-- Midnight Herald's Wristguards
 s(285963)/i(237642),	-- Midnight Herald's Wristguards
 s(285964)/i(237642),	-- Midnight Herald's Wristguards
 s(285965)/i(237642),	-- Midnight Herald's Wristguards
-s(285966)/i(237643),	-- Midnight Herald's Clasp
 s(285967)/i(237643),	-- Midnight Herald's Clasp
 s(285968)/i(237643),	-- Midnight Herald's Clasp
 s(285969)/i(237643),	-- Midnight Herald's Clasp
 s(285970)/i(237643),	-- Midnight Herald's Clasp
-s(285971)/i(237643),	-- Midnight Herald's Clasp
-s(285972)/i(237643),	-- Midnight Herald's Clasp
-s(285973)/i(237643),	-- Midnight Herald's Clasp
 s(285974)/i(237643),	-- Midnight Herald's Clasp
 s(285975)/i(237643),	-- Midnight Herald's Clasp
 s(285976)/i(237643),	-- Midnight Herald's Clasp
 s(285977)/i(237643),	-- Midnight Herald's Clasp
-s(285978)/i(237644),	-- Midnight Herald's Shadowguards
 s(285979)/i(237644),	-- Midnight Herald's Shadowguards
 s(285980)/i(237644),	-- Midnight Herald's Shadowguards
 s(285981)/i(237644),	-- Midnight Herald's Shadowguards
 s(285982)/i(237644),	-- Midnight Herald's Shadowguards
-s(285983)/i(237644),	-- Midnight Herald's Shadowguards
-s(285984)/i(237644),	-- Midnight Herald's Shadowguards
-s(285985)/i(237644),	-- Midnight Herald's Shadowguards
 s(285986)/i(237644),	-- Midnight Herald's Shadowguards
 s(285987)/i(237644),	-- Midnight Herald's Shadowguards
 s(285988)/i(237644),	-- Midnight Herald's Shadowguards
 s(285989)/i(237644),	-- Midnight Herald's Shadowguards
-s(285990)/i(237645),	-- Midnight Herald's Petticoat
 s(285991)/i(237645),	-- Midnight Herald's Petticoat
 s(285992)/i(237645),	-- Midnight Herald's Petticoat
 s(285993)/i(237645),	-- Midnight Herald's Petticoat
 s(285994)/i(237645),	-- Midnight Herald's Petticoat
-s(285995)/i(237645),	-- Midnight Herald's Petticoat
-s(285996)/i(237645),	-- Midnight Herald's Petticoat
-s(285997)/i(237645),	-- Midnight Herald's Petticoat
 s(285998)/i(237645),	-- Midnight Herald's Petticoat
 s(285999)/i(237645),	-- Midnight Herald's Petticoat
 s(286000)/i(237645),	-- Midnight Herald's Petticoat
 s(286001)/i(237645),	-- Midnight Herald's Petticoat
-s(286002)/i(237646),	-- Midnight Herald's Cowl
 s(286003)/i(237646),	-- Midnight Herald's Cowl
 s(286004)/i(237646),	-- Midnight Herald's Cowl
 s(286005)/i(237646),	-- Midnight Herald's Cowl
 s(286006)/i(237646),	-- Midnight Herald's Cowl
-s(286007)/i(237646),	-- Midnight Herald's Cowl
-s(286008)/i(237646),	-- Midnight Herald's Cowl
-s(286009)/i(237646),	-- Midnight Herald's Cowl
 s(286010)/i(237646),	-- Midnight Herald's Cowl
 s(286011)/i(237646),	-- Midnight Herald's Cowl
 s(286012)/i(237646),	-- Midnight Herald's Cowl
 s(286013)/i(237646),	-- Midnight Herald's Cowl
-s(286014)/i(237647),	-- Midnight Herald's Gloves
 s(286015)/i(237647),	-- Midnight Herald's Gloves
 s(286016)/i(237647),	-- Midnight Herald's Gloves
 s(286017)/i(237647),	-- Midnight Herald's Gloves
 s(286018)/i(237647),	-- Midnight Herald's Gloves
-s(286019)/i(237647),	-- Midnight Herald's Gloves
-s(286020)/i(237647),	-- Midnight Herald's Gloves
-s(286021)/i(237647),	-- Midnight Herald's Gloves
 s(286022)/i(237647),	-- Midnight Herald's Gloves
 s(286023)/i(237647),	-- Midnight Herald's Gloves
 s(286024)/i(237647),	-- Midnight Herald's Gloves
 s(286025)/i(237647),	-- Midnight Herald's Gloves
-s(286026)/i(237648),	-- Midnight Herald's Jackboots
 s(286027)/i(237648),	-- Midnight Herald's Jackboots
 s(286028)/i(237648),	-- Midnight Herald's Jackboots
 s(286029)/i(237648),	-- Midnight Herald's Jackboots
 s(286030)/i(237648),	-- Midnight Herald's Jackboots
-s(286031)/i(237648),	-- Midnight Herald's Jackboots
-s(286032)/i(237648),	-- Midnight Herald's Jackboots
-s(286033)/i(237648),	-- Midnight Herald's Jackboots
 s(286034)/i(237648),	-- Midnight Herald's Jackboots
 s(286035)/i(237648),	-- Midnight Herald's Jackboots
 s(286036)/i(237648),	-- Midnight Herald's Jackboots
 s(286037)/i(237648),	-- Midnight Herald's Jackboots
-s(286038)/i(237649),	-- Midnight Herald's Hauberk
 s(286039)/i(237649),	-- Midnight Herald's Hauberk
 s(286040)/i(237649),	-- Midnight Herald's Hauberk
 s(286041)/i(237649),	-- Midnight Herald's Hauberk
 s(286042)/i(237649),	-- Midnight Herald's Hauberk
-s(286043)/i(237649),	-- Midnight Herald's Hauberk
-s(286044)/i(237649),	-- Midnight Herald's Hauberk
-s(286045)/i(237649),	-- Midnight Herald's Hauberk
 s(286046)/i(237649),	-- Midnight Herald's Hauberk
 s(286047)/i(237649),	-- Midnight Herald's Hauberk
 s(286048)/i(237649),	-- Midnight Herald's Hauberk
 s(286049)/i(237649),	-- Midnight Herald's Hauberk
-s(286050)/i(237650),	-- Spellweaver's Immaculate Runecloak
 s(286051)/i(237650),	-- Spellweaver's Immaculate Runecloak
 s(286052)/i(237650),	-- Spellweaver's Immaculate Runecloak
 s(286053)/i(237650),	-- Spellweaver's Immaculate Runecloak
 s(286054)/i(237650),	-- Spellweaver's Immaculate Runecloak
-s(286055)/i(237650),	-- Spellweaver's Immaculate Runecloak
-s(286056)/i(237650),	-- Spellweaver's Immaculate Runecloak
-s(286057)/i(237650),	-- Spellweaver's Immaculate Runecloak
 s(286058)/i(237650),	-- Spellweaver's Immaculate Runecloak
 s(286059)/i(237650),	-- Spellweaver's Immaculate Runecloak
 s(286060)/i(237650),	-- Spellweaver's Immaculate Runecloak
 s(286061)/i(237650),	-- Spellweaver's Immaculate Runecloak
-s(286062)/i(237651),	-- Spellweaver's Immaculate Cuffs
 s(286063)/i(237651),	-- Spellweaver's Immaculate Cuffs
 s(286064)/i(237651),	-- Spellweaver's Immaculate Cuffs
 s(286065)/i(237651),	-- Spellweaver's Immaculate Cuffs
 s(286066)/i(237651),	-- Spellweaver's Immaculate Cuffs
-s(286067)/i(237651),	-- Spellweaver's Immaculate Cuffs
-s(286068)/i(237651),	-- Spellweaver's Immaculate Cuffs
-s(286069)/i(237651),	-- Spellweaver's Immaculate Cuffs
 s(286070)/i(237651),	-- Spellweaver's Immaculate Cuffs
 s(286071)/i(237651),	-- Spellweaver's Immaculate Cuffs
 s(286072)/i(237651),	-- Spellweaver's Immaculate Cuffs
 s(286073)/i(237651),	-- Spellweaver's Immaculate Cuffs
-s(286074)/i(237652),	-- Spellweaver's Immaculate Crystal Cord
 s(286075)/i(237652),	-- Spellweaver's Immaculate Crystal Cord
 s(286076)/i(237652),	-- Spellweaver's Immaculate Crystal Cord
 s(286077)/i(237652),	-- Spellweaver's Immaculate Crystal Cord
 s(286078)/i(237652),	-- Spellweaver's Immaculate Crystal Cord
-s(286079)/i(237652),	-- Spellweaver's Immaculate Crystal Cord
-s(286080)/i(237652),	-- Spellweaver's Immaculate Crystal Cord
-s(286081)/i(237652),	-- Spellweaver's Immaculate Crystal Cord
 s(286082)/i(237652),	-- Spellweaver's Immaculate Crystal Cord
 s(286083)/i(237652),	-- Spellweaver's Immaculate Crystal Cord
 s(286084)/i(237652),	-- Spellweaver's Immaculate Crystal Cord
 s(286085)/i(237652),	-- Spellweaver's Immaculate Crystal Cord
-s(286086)/i(237653),	-- Spellweaver's Immaculate Pauldrons
 s(286087)/i(237653),	-- Spellweaver's Immaculate Pauldrons
 s(286088)/i(237653),	-- Spellweaver's Immaculate Pauldrons
 s(286089)/i(237653),	-- Spellweaver's Immaculate Pauldrons
 s(286090)/i(237653),	-- Spellweaver's Immaculate Pauldrons
-s(286091)/i(237653),	-- Spellweaver's Immaculate Pauldrons
-s(286092)/i(237653),	-- Spellweaver's Immaculate Pauldrons
-s(286093)/i(237653),	-- Spellweaver's Immaculate Pauldrons
 s(286094)/i(237653),	-- Spellweaver's Immaculate Pauldrons
 s(286095)/i(237653),	-- Spellweaver's Immaculate Pauldrons
 s(286096)/i(237653),	-- Spellweaver's Immaculate Pauldrons
 s(286097)/i(237653),	-- Spellweaver's Immaculate Pauldrons
-s(286098)/i(237654),	-- Spellweaver's Immaculate Runeslacks
 s(286099)/i(237654),	-- Spellweaver's Immaculate Runeslacks
 s(286100)/i(237654),	-- Spellweaver's Immaculate Runeslacks
 s(286101)/i(237654),	-- Spellweaver's Immaculate Runeslacks
 s(286102)/i(237654),	-- Spellweaver's Immaculate Runeslacks
-s(286103)/i(237654),	-- Spellweaver's Immaculate Runeslacks
-s(286104)/i(237654),	-- Spellweaver's Immaculate Runeslacks
-s(286105)/i(237654),	-- Spellweaver's Immaculate Runeslacks
 s(286106)/i(237654),	-- Spellweaver's Immaculate Runeslacks
 s(286107)/i(237654),	-- Spellweaver's Immaculate Runeslacks
 s(286108)/i(237654),	-- Spellweaver's Immaculate Runeslacks
 s(286109)/i(237654),	-- Spellweaver's Immaculate Runeslacks
-s(286110)/i(237655),	-- Spellweaver's Immaculate Focus
 s(286111)/i(237655),	-- Spellweaver's Immaculate Focus
 s(286112)/i(237655),	-- Spellweaver's Immaculate Focus
 s(286113)/i(237655),	-- Spellweaver's Immaculate Focus
 s(286114)/i(237655),	-- Spellweaver's Immaculate Focus
-s(286115)/i(237655),	-- Spellweaver's Immaculate Focus
-s(286116)/i(237655),	-- Spellweaver's Immaculate Focus
-s(286117)/i(237655),	-- Spellweaver's Immaculate Focus
 s(286118)/i(237655),	-- Spellweaver's Immaculate Focus
 s(286119)/i(237655),	-- Spellweaver's Immaculate Focus
 s(286120)/i(237655),	-- Spellweaver's Immaculate Focus
 s(286121)/i(237655),	-- Spellweaver's Immaculate Focus
-s(286122)/i(237656),	-- Spellweaver's Immaculate Scaleguards
 s(286123)/i(237656),	-- Spellweaver's Immaculate Scaleguards
 s(286124)/i(237656),	-- Spellweaver's Immaculate Scaleguards
 s(286125)/i(237656),	-- Spellweaver's Immaculate Scaleguards
 s(286126)/i(237656),	-- Spellweaver's Immaculate Scaleguards
-s(286127)/i(237656),	-- Spellweaver's Immaculate Scaleguards
-s(286128)/i(237656),	-- Spellweaver's Immaculate Scaleguards
-s(286129)/i(237656),	-- Spellweaver's Immaculate Scaleguards
 s(286130)/i(237656),	-- Spellweaver's Immaculate Scaleguards
 s(286131)/i(237656),	-- Spellweaver's Immaculate Scaleguards
 s(286132)/i(237656),	-- Spellweaver's Immaculate Scaleguards
 s(286133)/i(237656),	-- Spellweaver's Immaculate Scaleguards
-s(286134)/i(237657),	-- Spellweaver's Immaculate Talons
 s(286135)/i(237657),	-- Spellweaver's Immaculate Talons
 s(286136)/i(237657),	-- Spellweaver's Immaculate Talons
 s(286137)/i(237657),	-- Spellweaver's Immaculate Talons
 s(286138)/i(237657),	-- Spellweaver's Immaculate Talons
-s(286139)/i(237657),	-- Spellweaver's Immaculate Talons
-s(286140)/i(237657),	-- Spellweaver's Immaculate Talons
-s(286141)/i(237657),	-- Spellweaver's Immaculate Talons
 s(286142)/i(237657),	-- Spellweaver's Immaculate Talons
 s(286143)/i(237657),	-- Spellweaver's Immaculate Talons
 s(286144)/i(237657),	-- Spellweaver's Immaculate Talons
 s(286145)/i(237657),	-- Spellweaver's Immaculate Talons
-s(286146)/i(237658),	-- Spellweaver's Immaculate Crestward
 s(286147)/i(237658),	-- Spellweaver's Immaculate Crestward
 s(286148)/i(237658),	-- Spellweaver's Immaculate Crestward
 s(286149)/i(237658),	-- Spellweaver's Immaculate Crestward
 s(286150)/i(237658),	-- Spellweaver's Immaculate Crestward
-s(286151)/i(237658),	-- Spellweaver's Immaculate Crestward
-s(286152)/i(237658),	-- Spellweaver's Immaculate Crestward
-s(286153)/i(237658),	-- Spellweaver's Immaculate Crestward
 s(286154)/i(237658),	-- Spellweaver's Immaculate Crestward
 s(286155)/i(237658),	-- Spellweaver's Immaculate Crestward
 s(286156)/i(237658),	-- Spellweaver's Immaculate Crestward
 s(286157)/i(237658),	-- Spellweaver's Immaculate Crestward
-s(286158)/i(237659),	-- Cape of the Sudden Eclipse
 s(286159)/i(237659),	-- Cape of the Sudden Eclipse
 s(286160)/i(237659),	-- Cape of the Sudden Eclipse
 s(286161)/i(237659),	-- Cape of the Sudden Eclipse
 s(286162)/i(237659),	-- Cape of the Sudden Eclipse
-s(286163)/i(237659),	-- Cape of the Sudden Eclipse
-s(286164)/i(237659),	-- Cape of the Sudden Eclipse
-s(286165)/i(237659),	-- Cape of the Sudden Eclipse
 s(286166)/i(237659),	-- Cape of the Sudden Eclipse
 s(286167)/i(237659),	-- Cape of the Sudden Eclipse
 s(286168)/i(237659),	-- Cape of the Sudden Eclipse
 s(286169)/i(237659),	-- Cape of the Sudden Eclipse
-s(286170)/i(237660),	-- Armbands of the Sudden Eclipse
 s(286171)/i(237660),	-- Armbands of the Sudden Eclipse
 s(286172)/i(237660),	-- Armbands of the Sudden Eclipse
 s(286173)/i(237660),	-- Armbands of the Sudden Eclipse
 s(286174)/i(237660),	-- Armbands of the Sudden Eclipse
-s(286175)/i(237660),	-- Armbands of the Sudden Eclipse
-s(286176)/i(237660),	-- Armbands of the Sudden Eclipse
-s(286177)/i(237660),	-- Armbands of the Sudden Eclipse
 s(286178)/i(237660),	-- Armbands of the Sudden Eclipse
 s(286179)/i(237660),	-- Armbands of the Sudden Eclipse
 s(286180)/i(237660),	-- Armbands of the Sudden Eclipse
 s(286181)/i(237660),	-- Armbands of the Sudden Eclipse
-s(286182)/i(237661),	-- Strap of the Sudden Eclipse
 s(286183)/i(237661),	-- Strap of the Sudden Eclipse
 s(286184)/i(237661),	-- Strap of the Sudden Eclipse
 s(286185)/i(237661),	-- Strap of the Sudden Eclipse
 s(286186)/i(237661),	-- Strap of the Sudden Eclipse
-s(286187)/i(237661),	-- Strap of the Sudden Eclipse
-s(286188)/i(237661),	-- Strap of the Sudden Eclipse
-s(286189)/i(237661),	-- Strap of the Sudden Eclipse
 s(286190)/i(237661),	-- Strap of the Sudden Eclipse
 s(286191)/i(237661),	-- Strap of the Sudden Eclipse
 s(286192)/i(237661),	-- Strap of the Sudden Eclipse
 s(286193)/i(237661),	-- Strap of the Sudden Eclipse
-s(286194)/i(237662),	-- Smokemantle of the Sudden Eclipse
 s(286195)/i(237662),	-- Smokemantle of the Sudden Eclipse
 s(286196)/i(237662),	-- Smokemantle of the Sudden Eclipse
 s(286197)/i(237662),	-- Smokemantle of the Sudden Eclipse
 s(286198)/i(237662),	-- Smokemantle of the Sudden Eclipse
-s(286199)/i(237662),	-- Smokemantle of the Sudden Eclipse
-s(286200)/i(237662),	-- Smokemantle of the Sudden Eclipse
-s(286201)/i(237662),	-- Smokemantle of the Sudden Eclipse
 s(286202)/i(237662),	-- Smokemantle of the Sudden Eclipse
 s(286203)/i(237662),	-- Smokemantle of the Sudden Eclipse
 s(286204)/i(237662),	-- Smokemantle of the Sudden Eclipse
 s(286205)/i(237662),	-- Smokemantle of the Sudden Eclipse
-s(286206)/i(237663),	-- Pants of the Sudden Eclipse
 s(286207)/i(237663),	-- Pants of the Sudden Eclipse
 s(286208)/i(237663),	-- Pants of the Sudden Eclipse
 s(286209)/i(237663),	-- Pants of the Sudden Eclipse
 s(286210)/i(237663),	-- Pants of the Sudden Eclipse
-s(286211)/i(237663),	-- Pants of the Sudden Eclipse
-s(286212)/i(237663),	-- Pants of the Sudden Eclipse
-s(286213)/i(237663),	-- Pants of the Sudden Eclipse
 s(286214)/i(237663),	-- Pants of the Sudden Eclipse
 s(286215)/i(237663),	-- Pants of the Sudden Eclipse
 s(286216)/i(237663),	-- Pants of the Sudden Eclipse
 s(286217)/i(237663),	-- Pants of the Sudden Eclipse
-s(286218)/i(237664),	-- Hood of the Sudden Eclipse
 s(286219)/i(237664),	-- Hood of the Sudden Eclipse
 s(286220)/i(237664),	-- Hood of the Sudden Eclipse
 s(286221)/i(237664),	-- Hood of the Sudden Eclipse
 s(286222)/i(237664),	-- Hood of the Sudden Eclipse
-s(286223)/i(237664),	-- Hood of the Sudden Eclipse
-s(286224)/i(237664),	-- Hood of the Sudden Eclipse
-s(286225)/i(237664),	-- Hood of the Sudden Eclipse
 s(286226)/i(237664),	-- Hood of the Sudden Eclipse
 s(286227)/i(237664),	-- Hood of the Sudden Eclipse
 s(286228)/i(237664),	-- Hood of the Sudden Eclipse
 s(286229)/i(237664),	-- Hood of the Sudden Eclipse
-s(286230)/i(237665),	-- Deathgrips of the Sudden Eclipse
 s(286231)/i(237665),	-- Deathgrips of the Sudden Eclipse
 s(286232)/i(237665),	-- Deathgrips of the Sudden Eclipse
 s(286233)/i(237665),	-- Deathgrips of the Sudden Eclipse
 s(286234)/i(237665),	-- Deathgrips of the Sudden Eclipse
-s(286235)/i(237665),	-- Deathgrips of the Sudden Eclipse
-s(286236)/i(237665),	-- Deathgrips of the Sudden Eclipse
-s(286237)/i(237665),	-- Deathgrips of the Sudden Eclipse
 s(286238)/i(237665),	-- Deathgrips of the Sudden Eclipse
 s(286239)/i(237665),	-- Deathgrips of the Sudden Eclipse
 s(286240)/i(237665),	-- Deathgrips of the Sudden Eclipse
 s(286241)/i(237665),	-- Deathgrips of the Sudden Eclipse
-s(286242)/i(237666),	-- Bladed Boots of the Sudden Eclipse
 s(286243)/i(237666),	-- Bladed Boots of the Sudden Eclipse
 s(286244)/i(237666),	-- Bladed Boots of the Sudden Eclipse
 s(286245)/i(237666),	-- Bladed Boots of the Sudden Eclipse
 s(286246)/i(237666),	-- Bladed Boots of the Sudden Eclipse
-s(286247)/i(237666),	-- Bladed Boots of the Sudden Eclipse
-s(286248)/i(237666),	-- Bladed Boots of the Sudden Eclipse
-s(286249)/i(237666),	-- Bladed Boots of the Sudden Eclipse
 s(286250)/i(237666),	-- Bladed Boots of the Sudden Eclipse
 s(286251)/i(237666),	-- Bladed Boots of the Sudden Eclipse
 s(286252)/i(237666),	-- Bladed Boots of the Sudden Eclipse
 s(286253)/i(237666),	-- Bladed Boots of the Sudden Eclipse
-s(286254)/i(237667),	-- Tactical Vest of the Sudden Eclipse
 s(286255)/i(237667),	-- Tactical Vest of the Sudden Eclipse
 s(286256)/i(237667),	-- Tactical Vest of the Sudden Eclipse
 s(286257)/i(237667),	-- Tactical Vest of the Sudden Eclipse
 s(286258)/i(237667),	-- Tactical Vest of the Sudden Eclipse
-s(286259)/i(237667),	-- Tactical Vest of the Sudden Eclipse
-s(286260)/i(237667),	-- Tactical Vest of the Sudden Eclipse
-s(286261)/i(237667),	-- Tactical Vest of the Sudden Eclipse
 s(286262)/i(237667),	-- Tactical Vest of the Sudden Eclipse
 s(286263)/i(237667),	-- Tactical Vest of the Sudden Eclipse
 s(286264)/i(237667),	-- Tactical Vest of the Sudden Eclipse
 s(286265)/i(237667),	-- Tactical Vest of the Sudden Eclipse
-s(286266)/i(237668),	-- Breeze of Fallen Storms
 s(286267)/i(237668),	-- Breeze of Fallen Storms
 s(286268)/i(237668),	-- Breeze of Fallen Storms
 s(286269)/i(237668),	-- Breeze of Fallen Storms
 s(286270)/i(237668),	-- Breeze of Fallen Storms
-s(286271)/i(237668),	-- Breeze of Fallen Storms
-s(286272)/i(237668),	-- Breeze of Fallen Storms
-s(286273)/i(237668),	-- Breeze of Fallen Storms
 s(286274)/i(237668),	-- Breeze of Fallen Storms
 s(286275)/i(237668),	-- Breeze of Fallen Storms
 s(286276)/i(237668),	-- Breeze of Fallen Storms
 s(286277)/i(237668),	-- Breeze of Fallen Storms
-s(286278)/i(237669),	-- Demigaunts of Fallen Storms
 s(286279)/i(237669),	-- Demigaunts of Fallen Storms
 s(286280)/i(237669),	-- Demigaunts of Fallen Storms
 s(286281)/i(237669),	-- Demigaunts of Fallen Storms
 s(286282)/i(237669),	-- Demigaunts of Fallen Storms
-s(286283)/i(237669),	-- Demigaunts of Fallen Storms
-s(286284)/i(237669),	-- Demigaunts of Fallen Storms
-s(286285)/i(237669),	-- Demigaunts of Fallen Storms
 s(286286)/i(237669),	-- Demigaunts of Fallen Storms
 s(286287)/i(237669),	-- Demigaunts of Fallen Storms
 s(286288)/i(237669),	-- Demigaunts of Fallen Storms
 s(286289)/i(237669),	-- Demigaunts of Fallen Storms
-s(286290)/i(237670),	-- Thunderbund of Fallen Storms
 s(286291)/i(237670),	-- Thunderbund of Fallen Storms
 s(286292)/i(237670),	-- Thunderbund of Fallen Storms
 s(286293)/i(237670),	-- Thunderbund of Fallen Storms
 s(286294)/i(237670),	-- Thunderbund of Fallen Storms
-s(286295)/i(237670),	-- Thunderbund of Fallen Storms
-s(286296)/i(237670),	-- Thunderbund of Fallen Storms
-s(286297)/i(237670),	-- Thunderbund of Fallen Storms
 s(286298)/i(237670),	-- Thunderbund of Fallen Storms
 s(286299)/i(237670),	-- Thunderbund of Fallen Storms
 s(286300)/i(237670),	-- Thunderbund of Fallen Storms
 s(286301)/i(237670),	-- Thunderbund of Fallen Storms
-s(286302)/i(237671),	-- Glyphs of Fallen Storms
 s(286303)/i(237671),	-- Glyphs of Fallen Storms
 s(286304)/i(237671),	-- Glyphs of Fallen Storms
 s(286305)/i(237671),	-- Glyphs of Fallen Storms
 s(286306)/i(237671),	-- Glyphs of Fallen Storms
-s(286307)/i(237671),	-- Glyphs of Fallen Storms
-s(286308)/i(237671),	-- Glyphs of Fallen Storms
-s(286309)/i(237671),	-- Glyphs of Fallen Storms
 s(286310)/i(237671),	-- Glyphs of Fallen Storms
 s(286311)/i(237671),	-- Glyphs of Fallen Storms
 s(286312)/i(237671),	-- Glyphs of Fallen Storms
 s(286313)/i(237671),	-- Glyphs of Fallen Storms
-s(286314)/i(237672),	-- Legwraps of Fallen Storms
 s(286315)/i(237672),	-- Legwraps of Fallen Storms
 s(286316)/i(237672),	-- Legwraps of Fallen Storms
 s(286317)/i(237672),	-- Legwraps of Fallen Storms
 s(286318)/i(237672),	-- Legwraps of Fallen Storms
-s(286319)/i(237672),	-- Legwraps of Fallen Storms
-s(286320)/i(237672),	-- Legwraps of Fallen Storms
-s(286321)/i(237672),	-- Legwraps of Fallen Storms
 s(286322)/i(237672),	-- Legwraps of Fallen Storms
 s(286323)/i(237672),	-- Legwraps of Fallen Storms
 s(286324)/i(237672),	-- Legwraps of Fallen Storms
 s(286325)/i(237672),	-- Legwraps of Fallen Storms
-s(286326)/i(237673),	-- Half-Mask of Fallen Storms
 s(286327)/i(237673),	-- Half-Mask of Fallen Storms
 s(286328)/i(237673),	-- Half-Mask of Fallen Storms
 s(286329)/i(237673),	-- Half-Mask of Fallen Storms
 s(286330)/i(237673),	-- Half-Mask of Fallen Storms
-s(286331)/i(237673),	-- Half-Mask of Fallen Storms
-s(286332)/i(237673),	-- Half-Mask of Fallen Storms
-s(286333)/i(237673),	-- Half-Mask of Fallen Storms
 s(286334)/i(237673),	-- Half-Mask of Fallen Storms
 s(286335)/i(237673),	-- Half-Mask of Fallen Storms
 s(286336)/i(237673),	-- Half-Mask of Fallen Storms
 s(286337)/i(237673),	-- Half-Mask of Fallen Storms
-s(286338)/i(237674),	-- Grasp of Fallen Storms
 s(286339)/i(237674),	-- Grasp of Fallen Storms
 s(286340)/i(237674),	-- Grasp of Fallen Storms
 s(286341)/i(237674),	-- Grasp of Fallen Storms
 s(286342)/i(237674),	-- Grasp of Fallen Storms
-s(286343)/i(237674),	-- Grasp of Fallen Storms
-s(286344)/i(237674),	-- Grasp of Fallen Storms
-s(286345)/i(237674),	-- Grasp of Fallen Storms
 s(286346)/i(237674),	-- Grasp of Fallen Storms
 s(286347)/i(237674),	-- Grasp of Fallen Storms
 s(286348)/i(237674),	-- Grasp of Fallen Storms
 s(286349)/i(237674),	-- Grasp of Fallen Storms
-s(286350)/i(237675),	-- Footpads of Fallen Storms
 s(286351)/i(237675),	-- Footpads of Fallen Storms
 s(286352)/i(237675),	-- Footpads of Fallen Storms
 s(286353)/i(237675),	-- Footpads of Fallen Storms
 s(286354)/i(237675),	-- Footpads of Fallen Storms
-s(286355)/i(237675),	-- Footpads of Fallen Storms
-s(286356)/i(237675),	-- Footpads of Fallen Storms
-s(286357)/i(237675),	-- Footpads of Fallen Storms
 s(286358)/i(237675),	-- Footpads of Fallen Storms
 s(286359)/i(237675),	-- Footpads of Fallen Storms
 s(286360)/i(237675),	-- Footpads of Fallen Storms
 s(286361)/i(237675),	-- Footpads of Fallen Storms
-s(286362)/i(237676),	-- Gi of Fallen Storms
 s(286363)/i(237676),	-- Gi of Fallen Storms
 s(286364)/i(237676),	-- Gi of Fallen Storms
 s(286365)/i(237676),	-- Gi of Fallen Storms
 s(286366)/i(237676),	-- Gi of Fallen Storms
-s(286367)/i(237676),	-- Gi of Fallen Storms
-s(286368)/i(237676),	-- Gi of Fallen Storms
-s(286369)/i(237676),	-- Gi of Fallen Storms
 s(286370)/i(237676),	-- Gi of Fallen Storms
 s(286371)/i(237676),	-- Gi of Fallen Storms
 s(286372)/i(237676),	-- Gi of Fallen Storms
 s(286373)/i(237676),	-- Gi of Fallen Storms
-s(286374)/i(237677),	-- Plumage of the Mother Eagle
 s(286375)/i(237677),	-- Plumage of the Mother Eagle
 s(286376)/i(237677),	-- Plumage of the Mother Eagle
 s(286377)/i(237677),	-- Plumage of the Mother Eagle
 s(286378)/i(237677),	-- Plumage of the Mother Eagle
-s(286379)/i(237677),	-- Plumage of the Mother Eagle
-s(286380)/i(237677),	-- Plumage of the Mother Eagle
-s(286381)/i(237677),	-- Plumage of the Mother Eagle
 s(286382)/i(237677),	-- Plumage of the Mother Eagle
 s(286383)/i(237677),	-- Plumage of the Mother Eagle
 s(286384)/i(237677),	-- Plumage of the Mother Eagle
 s(286385)/i(237677),	-- Plumage of the Mother Eagle
-s(286386)/i(237678),	-- Bands of the Mother Eagle
 s(286387)/i(237678),	-- Bands of the Mother Eagle
 s(286388)/i(237678),	-- Bands of the Mother Eagle
 s(286389)/i(237678),	-- Bands of the Mother Eagle
 s(286390)/i(237678),	-- Bands of the Mother Eagle
-s(286391)/i(237678),	-- Bands of the Mother Eagle
-s(286392)/i(237678),	-- Bands of the Mother Eagle
-s(286393)/i(237678),	-- Bands of the Mother Eagle
 s(286394)/i(237678),	-- Bands of the Mother Eagle
 s(286395)/i(237678),	-- Bands of the Mother Eagle
 s(286396)/i(237678),	-- Bands of the Mother Eagle
 s(286397)/i(237678),	-- Bands of the Mother Eagle
-s(286398)/i(237679),	-- Dreamsash of the Mother Eagle
 s(286399)/i(237679),	-- Dreamsash of the Mother Eagle
 s(286400)/i(237679),	-- Dreamsash of the Mother Eagle
 s(286401)/i(237679),	-- Dreamsash of the Mother Eagle
 s(286402)/i(237679),	-- Dreamsash of the Mother Eagle
-s(286403)/i(237679),	-- Dreamsash of the Mother Eagle
-s(286404)/i(237679),	-- Dreamsash of the Mother Eagle
-s(286405)/i(237679),	-- Dreamsash of the Mother Eagle
 s(286406)/i(237679),	-- Dreamsash of the Mother Eagle
 s(286407)/i(237679),	-- Dreamsash of the Mother Eagle
 s(286408)/i(237679),	-- Dreamsash of the Mother Eagle
 s(286409)/i(237679),	-- Dreamsash of the Mother Eagle
-s(286410)/i(237680),	-- Ritual Pauldrons of the Mother Eagle
 s(286411)/i(237680),	-- Ritual Pauldrons of the Mother Eagle
 s(286412)/i(237680),	-- Ritual Pauldrons of the Mother Eagle
 s(286413)/i(237680),	-- Ritual Pauldrons of the Mother Eagle
 s(286414)/i(237680),	-- Ritual Pauldrons of the Mother Eagle
-s(286415)/i(237680),	-- Ritual Pauldrons of the Mother Eagle
-s(286416)/i(237680),	-- Ritual Pauldrons of the Mother Eagle
-s(286417)/i(237680),	-- Ritual Pauldrons of the Mother Eagle
 s(286418)/i(237680),	-- Ritual Pauldrons of the Mother Eagle
 s(286419)/i(237680),	-- Ritual Pauldrons of the Mother Eagle
 s(286420)/i(237680),	-- Ritual Pauldrons of the Mother Eagle
 s(286421)/i(237680),	-- Ritual Pauldrons of the Mother Eagle
-s(286422)/i(237681),	-- Breeches of the Mother Eagle
 s(286423)/i(237681),	-- Breeches of the Mother Eagle
 s(286424)/i(237681),	-- Breeches of the Mother Eagle
 s(286425)/i(237681),	-- Breeches of the Mother Eagle
 s(286426)/i(237681),	-- Breeches of the Mother Eagle
-s(286427)/i(237681),	-- Breeches of the Mother Eagle
-s(286428)/i(237681),	-- Breeches of the Mother Eagle
-s(286429)/i(237681),	-- Breeches of the Mother Eagle
 s(286430)/i(237681),	-- Breeches of the Mother Eagle
 s(286431)/i(237681),	-- Breeches of the Mother Eagle
 s(286432)/i(237681),	-- Breeches of the Mother Eagle
 s(286433)/i(237681),	-- Breeches of the Mother Eagle
-s(286434)/i(237682),	-- Skymane of the Mother Eagle
 s(286435)/i(237682),	-- Skymane of the Mother Eagle
 s(286436)/i(237682),	-- Skymane of the Mother Eagle
 s(286437)/i(237682),	-- Skymane of the Mother Eagle
 s(286438)/i(237682),	-- Skymane of the Mother Eagle
-s(286439)/i(237682),	-- Skymane of the Mother Eagle
-s(286440)/i(237682),	-- Skymane of the Mother Eagle
-s(286441)/i(237682),	-- Skymane of the Mother Eagle
 s(286442)/i(237682),	-- Skymane of the Mother Eagle
 s(286443)/i(237682),	-- Skymane of the Mother Eagle
 s(286444)/i(237682),	-- Skymane of the Mother Eagle
 s(286445)/i(237682),	-- Skymane of the Mother Eagle
-s(286446)/i(237683),	-- Wings of the Mother Eagle
 s(286447)/i(237683),	-- Wings of the Mother Eagle
 s(286448)/i(237683),	-- Wings of the Mother Eagle
 s(286449)/i(237683),	-- Wings of the Mother Eagle
 s(286450)/i(237683),	-- Wings of the Mother Eagle
-s(286451)/i(237683),	-- Wings of the Mother Eagle
-s(286452)/i(237683),	-- Wings of the Mother Eagle
-s(286453)/i(237683),	-- Wings of the Mother Eagle
 s(286454)/i(237683),	-- Wings of the Mother Eagle
 s(286455)/i(237683),	-- Wings of the Mother Eagle
 s(286456)/i(237683),	-- Wings of the Mother Eagle
 s(286457)/i(237683),	-- Wings of the Mother Eagle
-s(286458)/i(237684),	-- Feathered Boots of the Mother Eagle
 s(286459)/i(237684),	-- Feathered Boots of the Mother Eagle
 s(286460)/i(237684),	-- Feathered Boots of the Mother Eagle
 s(286461)/i(237684),	-- Feathered Boots of the Mother Eagle
 s(286462)/i(237684),	-- Feathered Boots of the Mother Eagle
-s(286463)/i(237684),	-- Feathered Boots of the Mother Eagle
-s(286464)/i(237684),	-- Feathered Boots of the Mother Eagle
-s(286465)/i(237684),	-- Feathered Boots of the Mother Eagle
 s(286466)/i(237684),	-- Feathered Boots of the Mother Eagle
 s(286467)/i(237684),	-- Feathered Boots of the Mother Eagle
 s(286468)/i(237684),	-- Feathered Boots of the Mother Eagle
 s(286469)/i(237684),	-- Feathered Boots of the Mother Eagle
-s(286470)/i(237685),	-- Vest of the Mother Eagle
 s(286471)/i(237685),	-- Vest of the Mother Eagle
 s(286472)/i(237685),	-- Vest of the Mother Eagle
 s(286473)/i(237685),	-- Vest of the Mother Eagle
 s(286474)/i(237685),	-- Vest of the Mother Eagle
-s(286475)/i(237685),	-- Vest of the Mother Eagle
-s(286476)/i(237685),	-- Vest of the Mother Eagle
-s(286477)/i(237685),	-- Vest of the Mother Eagle
 s(286478)/i(237685),	-- Vest of the Mother Eagle
 s(286479)/i(237685),	-- Vest of the Mother Eagle
 s(286480)/i(237685),	-- Vest of the Mother Eagle
 s(286481)/i(237685),	-- Vest of the Mother Eagle
-s(286482)/i(237686),	-- Charhound's Vicious Felcover
 s(286483)/i(237686),	-- Charhound's Vicious Felcover
 s(286484)/i(237686),	-- Charhound's Vicious Felcover
 s(286485)/i(237686),	-- Charhound's Vicious Felcover
 s(286486)/i(237686),	-- Charhound's Vicious Felcover
-s(286487)/i(237686),	-- Charhound's Vicious Felcover
-s(286488)/i(237686),	-- Charhound's Vicious Felcover
-s(286489)/i(237686),	-- Charhound's Vicious Felcover
 s(286490)/i(237686),	-- Charhound's Vicious Felcover
 s(286491)/i(237686),	-- Charhound's Vicious Felcover
 s(286492)/i(237686),	-- Charhound's Vicious Felcover
 s(286493)/i(237686),	-- Charhound's Vicious Felcover
-s(286494)/i(237687),	-- Charhound's Vicious Restraints
 s(286495)/i(237687),	-- Charhound's Vicious Restraints
 s(286496)/i(237687),	-- Charhound's Vicious Restraints
 s(286497)/i(237687),	-- Charhound's Vicious Restraints
 s(286498)/i(237687),	-- Charhound's Vicious Restraints
-s(286499)/i(237687),	-- Charhound's Vicious Restraints
-s(286500)/i(237687),	-- Charhound's Vicious Restraints
-s(286501)/i(237687),	-- Charhound's Vicious Restraints
 s(286502)/i(237687),	-- Charhound's Vicious Restraints
 s(286503)/i(237687),	-- Charhound's Vicious Restraints
 s(286504)/i(237687),	-- Charhound's Vicious Restraints
 s(286505)/i(237687),	-- Charhound's Vicious Restraints
-s(286506)/i(237688),	-- Charhound's Vicious Huntbelt
 s(286507)/i(237688),	-- Charhound's Vicious Huntbelt
 s(286508)/i(237688),	-- Charhound's Vicious Huntbelt
 s(286509)/i(237688),	-- Charhound's Vicious Huntbelt
 s(286510)/i(237688),	-- Charhound's Vicious Huntbelt
-s(286511)/i(237688),	-- Charhound's Vicious Huntbelt
-s(286512)/i(237688),	-- Charhound's Vicious Huntbelt
-s(286513)/i(237688),	-- Charhound's Vicious Huntbelt
 s(286514)/i(237688),	-- Charhound's Vicious Huntbelt
 s(286515)/i(237688),	-- Charhound's Vicious Huntbelt
 s(286516)/i(237688),	-- Charhound's Vicious Huntbelt
 s(286517)/i(237688),	-- Charhound's Vicious Huntbelt
-s(286518)/i(237689),	-- Charhound's Vicious Hornguards
 s(286519)/i(237689),	-- Charhound's Vicious Hornguards
 s(286520)/i(237689),	-- Charhound's Vicious Hornguards
 s(286521)/i(237689),	-- Charhound's Vicious Hornguards
 s(286522)/i(237689),	-- Charhound's Vicious Hornguards
-s(286523)/i(237689),	-- Charhound's Vicious Hornguards
-s(286524)/i(237689),	-- Charhound's Vicious Hornguards
-s(286525)/i(237689),	-- Charhound's Vicious Hornguards
 s(286526)/i(237689),	-- Charhound's Vicious Hornguards
 s(286527)/i(237689),	-- Charhound's Vicious Hornguards
 s(286528)/i(237689),	-- Charhound's Vicious Hornguards
 s(286529)/i(237689),	-- Charhound's Vicious Hornguards
-s(286530)/i(237690),	-- Charhound's Vicious Hidecoat
 s(286531)/i(237690),	-- Charhound's Vicious Hidecoat
 s(286532)/i(237690),	-- Charhound's Vicious Hidecoat
 s(286533)/i(237690),	-- Charhound's Vicious Hidecoat
 s(286534)/i(237690),	-- Charhound's Vicious Hidecoat
-s(286535)/i(237690),	-- Charhound's Vicious Hidecoat
-s(286536)/i(237690),	-- Charhound's Vicious Hidecoat
-s(286537)/i(237690),	-- Charhound's Vicious Hidecoat
 s(286538)/i(237690),	-- Charhound's Vicious Hidecoat
 s(286539)/i(237690),	-- Charhound's Vicious Hidecoat
 s(286540)/i(237690),	-- Charhound's Vicious Hidecoat
 s(286541)/i(237690),	-- Charhound's Vicious Hidecoat
-s(286542)/i(237691),	-- Charhound's Vicious Scalp
 s(286543)/i(237691),	-- Charhound's Vicious Scalp
 s(286544)/i(237691),	-- Charhound's Vicious Scalp
 s(286545)/i(237691),	-- Charhound's Vicious Scalp
 s(286546)/i(237691),	-- Charhound's Vicious Scalp
-s(286547)/i(237691),	-- Charhound's Vicious Scalp
-s(286548)/i(237691),	-- Charhound's Vicious Scalp
-s(286549)/i(237691),	-- Charhound's Vicious Scalp
 s(286550)/i(237691),	-- Charhound's Vicious Scalp
 s(286551)/i(237691),	-- Charhound's Vicious Scalp
 s(286552)/i(237691),	-- Charhound's Vicious Scalp
 s(286553)/i(237691),	-- Charhound's Vicious Scalp
-s(286554)/i(237692),	-- Charhound's Vicious Felclaws
 s(286555)/i(237692),	-- Charhound's Vicious Felclaws
 s(286556)/i(237692),	-- Charhound's Vicious Felclaws
 s(286557)/i(237692),	-- Charhound's Vicious Felclaws
 s(286558)/i(237692),	-- Charhound's Vicious Felclaws
-s(286559)/i(237692),	-- Charhound's Vicious Felclaws
-s(286560)/i(237692),	-- Charhound's Vicious Felclaws
-s(286561)/i(237692),	-- Charhound's Vicious Felclaws
 s(286562)/i(237692),	-- Charhound's Vicious Felclaws
 s(286563)/i(237692),	-- Charhound's Vicious Felclaws
 s(286564)/i(237692),	-- Charhound's Vicious Felclaws
 s(286565)/i(237692),	-- Charhound's Vicious Felclaws
-s(286566)/i(237693),	-- Charhound's Vicious Flametabi
 s(286567)/i(237693),	-- Charhound's Vicious Flametabi
 s(286568)/i(237693),	-- Charhound's Vicious Flametabi
 s(286569)/i(237693),	-- Charhound's Vicious Flametabi
 s(286570)/i(237693),	-- Charhound's Vicious Flametabi
-s(286571)/i(237693),	-- Charhound's Vicious Flametabi
-s(286572)/i(237693),	-- Charhound's Vicious Flametabi
-s(286573)/i(237693),	-- Charhound's Vicious Flametabi
 s(286574)/i(237693),	-- Charhound's Vicious Flametabi
 s(286575)/i(237693),	-- Charhound's Vicious Flametabi
 s(286576)/i(237693),	-- Charhound's Vicious Flametabi
 s(286577)/i(237693),	-- Charhound's Vicious Flametabi
-s(286578)/i(237694),	-- Charhound's Vicious Bindings
 s(286579)/i(237694),	-- Charhound's Vicious Bindings
 s(286580)/i(237694),	-- Charhound's Vicious Bindings
 s(286581)/i(237694),	-- Charhound's Vicious Bindings
 s(286582)/i(237694),	-- Charhound's Vicious Bindings
-s(286583)/i(237694),	-- Charhound's Vicious Bindings
-s(286584)/i(237694),	-- Charhound's Vicious Bindings
-s(286585)/i(237694),	-- Charhound's Vicious Bindings
 s(286586)/i(237694),	-- Charhound's Vicious Bindings
 s(286587)/i(237694),	-- Charhound's Vicious Bindings
 s(286588)/i(237694),	-- Charhound's Vicious Bindings
 s(286589)/i(237694),	-- Charhound's Vicious Bindings
-s(286590)/i(237695),	-- Inquisitor's All-Seeing Madness
 s(286591)/i(237695),	-- Inquisitor's All-Seeing Madness
 s(286592)/i(237695),	-- Inquisitor's All-Seeing Madness
 s(286593)/i(237695),	-- Inquisitor's All-Seeing Madness
 s(286594)/i(237695),	-- Inquisitor's All-Seeing Madness
-s(286595)/i(237695),	-- Inquisitor's All-Seeing Madness
-s(286596)/i(237695),	-- Inquisitor's All-Seeing Madness
-s(286597)/i(237695),	-- Inquisitor's All-Seeing Madness
 s(286598)/i(237695),	-- Inquisitor's All-Seeing Madness
 s(286599)/i(237695),	-- Inquisitor's All-Seeing Madness
 s(286600)/i(237695),	-- Inquisitor's All-Seeing Madness
 s(286601)/i(237695),	-- Inquisitor's All-Seeing Madness
-s(286602)/i(237696),	-- Inquisitor's Bracelets of Madness
 s(286603)/i(237696),	-- Inquisitor's Bracelets of Madness
 s(286604)/i(237696),	-- Inquisitor's Bracelets of Madness
 s(286605)/i(237696),	-- Inquisitor's Bracelets of Madness
 s(286606)/i(237696),	-- Inquisitor's Bracelets of Madness
-s(286607)/i(237696),	-- Inquisitor's Bracelets of Madness
-s(286608)/i(237696),	-- Inquisitor's Bracelets of Madness
-s(286609)/i(237696),	-- Inquisitor's Bracelets of Madness
 s(286610)/i(237696),	-- Inquisitor's Bracelets of Madness
 s(286611)/i(237696),	-- Inquisitor's Bracelets of Madness
 s(286612)/i(237696),	-- Inquisitor's Bracelets of Madness
 s(286613)/i(237696),	-- Inquisitor's Bracelets of Madness
-s(286614)/i(237697),	-- Inquisitor's Tome of Madness
 s(286615)/i(237697),	-- Inquisitor's Tome of Madness
 s(286616)/i(237697),	-- Inquisitor's Tome of Madness
 s(286617)/i(237697),	-- Inquisitor's Tome of Madness
 s(286618)/i(237697),	-- Inquisitor's Tome of Madness
-s(286619)/i(237697),	-- Inquisitor's Tome of Madness
-s(286620)/i(237697),	-- Inquisitor's Tome of Madness
-s(286621)/i(237697),	-- Inquisitor's Tome of Madness
 s(286622)/i(237697),	-- Inquisitor's Tome of Madness
 s(286623)/i(237697),	-- Inquisitor's Tome of Madness
 s(286624)/i(237697),	-- Inquisitor's Tome of Madness
 s(286625)/i(237697),	-- Inquisitor's Tome of Madness
-s(286626)/i(237698),	-- Inquisitor's Gaze of Madness
 s(286627)/i(237698),	-- Inquisitor's Gaze of Madness
 s(286628)/i(237698),	-- Inquisitor's Gaze of Madness
 s(286629)/i(237698),	-- Inquisitor's Gaze of Madness
 s(286630)/i(237698),	-- Inquisitor's Gaze of Madness
-s(286631)/i(237698),	-- Inquisitor's Gaze of Madness
-s(286632)/i(237698),	-- Inquisitor's Gaze of Madness
-s(286633)/i(237698),	-- Inquisitor's Gaze of Madness
 s(286634)/i(237698),	-- Inquisitor's Gaze of Madness
 s(286635)/i(237698),	-- Inquisitor's Gaze of Madness
 s(286636)/i(237698),	-- Inquisitor's Gaze of Madness
 s(286637)/i(237698),	-- Inquisitor's Gaze of Madness
-s(286638)/i(237699),	-- Inquisitor's Leggings of Madness
 s(286639)/i(237699),	-- Inquisitor's Leggings of Madness
 s(286640)/i(237699),	-- Inquisitor's Leggings of Madness
 s(286641)/i(237699),	-- Inquisitor's Leggings of Madness
 s(286642)/i(237699),	-- Inquisitor's Leggings of Madness
-s(286643)/i(237699),	-- Inquisitor's Leggings of Madness
-s(286644)/i(237699),	-- Inquisitor's Leggings of Madness
-s(286645)/i(237699),	-- Inquisitor's Leggings of Madness
 s(286646)/i(237699),	-- Inquisitor's Leggings of Madness
 s(286647)/i(237699),	-- Inquisitor's Leggings of Madness
 s(286648)/i(237699),	-- Inquisitor's Leggings of Madness
 s(286649)/i(237699),	-- Inquisitor's Leggings of Madness
-s(286650)/i(237700),	-- Inquisitor's Portal to Madness
 s(286651)/i(237700),	-- Inquisitor's Portal to Madness
 s(286652)/i(237700),	-- Inquisitor's Portal to Madness
 s(286653)/i(237700),	-- Inquisitor's Portal to Madness
 s(286654)/i(237700),	-- Inquisitor's Portal to Madness
-s(286655)/i(237700),	-- Inquisitor's Portal to Madness
-s(286656)/i(237700),	-- Inquisitor's Portal to Madness
-s(286657)/i(237700),	-- Inquisitor's Portal to Madness
 s(286658)/i(237700),	-- Inquisitor's Portal to Madness
 s(286659)/i(237700),	-- Inquisitor's Portal to Madness
 s(286660)/i(237700),	-- Inquisitor's Portal to Madness
 s(286661)/i(237700),	-- Inquisitor's Portal to Madness
-s(286662)/i(237701),	-- Inquisitor's Clutches of Madness
 s(286663)/i(237701),	-- Inquisitor's Clutches of Madness
 s(286664)/i(237701),	-- Inquisitor's Clutches of Madness
 s(286665)/i(237701),	-- Inquisitor's Clutches of Madness
 s(286666)/i(237701),	-- Inquisitor's Clutches of Madness
-s(286667)/i(237701),	-- Inquisitor's Clutches of Madness
-s(286668)/i(237701),	-- Inquisitor's Clutches of Madness
-s(286669)/i(237701),	-- Inquisitor's Clutches of Madness
 s(286670)/i(237701),	-- Inquisitor's Clutches of Madness
 s(286671)/i(237701),	-- Inquisitor's Clutches of Madness
 s(286672)/i(237701),	-- Inquisitor's Clutches of Madness
 s(286673)/i(237701),	-- Inquisitor's Clutches of Madness
-s(286674)/i(237702),	-- Inquisitor's Treads of Madness
 s(286675)/i(237702),	-- Inquisitor's Treads of Madness
 s(286676)/i(237702),	-- Inquisitor's Treads of Madness
 s(286677)/i(237702),	-- Inquisitor's Treads of Madness
 s(286678)/i(237702),	-- Inquisitor's Treads of Madness
-s(286679)/i(237702),	-- Inquisitor's Treads of Madness
-s(286680)/i(237702),	-- Inquisitor's Treads of Madness
-s(286681)/i(237702),	-- Inquisitor's Treads of Madness
 s(286682)/i(237702),	-- Inquisitor's Treads of Madness
 s(286683)/i(237702),	-- Inquisitor's Treads of Madness
 s(286684)/i(237702),	-- Inquisitor's Treads of Madness
 s(286685)/i(237702),	-- Inquisitor's Treads of Madness
-s(286686)/i(237703),	-- Inquisitor's Robes of Madness
 s(286687)/i(237703),	-- Inquisitor's Robes of Madness
 s(286688)/i(237703),	-- Inquisitor's Robes of Madness
 s(286689)/i(237703),	-- Inquisitor's Robes of Madness
 s(286690)/i(237703),	-- Inquisitor's Robes of Madness
-s(286691)/i(237703),	-- Inquisitor's Robes of Madness
-s(286692)/i(237703),	-- Inquisitor's Robes of Madness
-s(286693)/i(237703),	-- Inquisitor's Robes of Madness
 s(286694)/i(237703),	-- Inquisitor's Robes of Madness
 s(286695)/i(237703),	-- Inquisitor's Robes of Madness
 s(286696)/i(237703),	-- Inquisitor's Robes of Madness
 s(286697)/i(237703),	-- Inquisitor's Robes of Madness
-s(286698)/i(237704),	-- Dying Star's Memory
 s(286699)/i(237704),	-- Dying Star's Memory
 s(286700)/i(237704),	-- Dying Star's Memory
 s(286701)/i(237704),	-- Dying Star's Memory
 s(286702)/i(237704),	-- Dying Star's Memory
-s(286703)/i(237704),	-- Dying Star's Memory
-s(286704)/i(237704),	-- Dying Star's Memory
-s(286705)/i(237704),	-- Dying Star's Memory
 s(286706)/i(237704),	-- Dying Star's Memory
 s(286707)/i(237704),	-- Dying Star's Memory
 s(286708)/i(237704),	-- Dying Star's Memory
 s(286709)/i(237704),	-- Dying Star's Memory
-s(286710)/i(237705),	-- Dying Star's Bangles
 s(286711)/i(237705),	-- Dying Star's Bangles
 s(286712)/i(237705),	-- Dying Star's Bangles
 s(286713)/i(237705),	-- Dying Star's Bangles
 s(286714)/i(237705),	-- Dying Star's Bangles
-s(286715)/i(237705),	-- Dying Star's Bangles
-s(286716)/i(237705),	-- Dying Star's Bangles
-s(286717)/i(237705),	-- Dying Star's Bangles
 s(286718)/i(237705),	-- Dying Star's Bangles
 s(286719)/i(237705),	-- Dying Star's Bangles
 s(286720)/i(237705),	-- Dying Star's Bangles
 s(286721)/i(237705),	-- Dying Star's Bangles
-s(286722)/i(237706),	-- Dying Star's Waistlight
 s(286723)/i(237706),	-- Dying Star's Waistlight
 s(286724)/i(237706),	-- Dying Star's Waistlight
 s(286725)/i(237706),	-- Dying Star's Waistlight
 s(286726)/i(237706),	-- Dying Star's Waistlight
-s(286727)/i(237706),	-- Dying Star's Waistlight
-s(286728)/i(237706),	-- Dying Star's Waistlight
-s(286729)/i(237706),	-- Dying Star's Waistlight
 s(286730)/i(237706),	-- Dying Star's Waistlight
 s(286731)/i(237706),	-- Dying Star's Waistlight
 s(286732)/i(237706),	-- Dying Star's Waistlight
 s(286733)/i(237706),	-- Dying Star's Waistlight
-s(286734)/i(237707),	-- Dying Star's Pyrelights
 s(286735)/i(237707),	-- Dying Star's Pyrelights
 s(286736)/i(237707),	-- Dying Star's Pyrelights
 s(286737)/i(237707),	-- Dying Star's Pyrelights
 s(286738)/i(237707),	-- Dying Star's Pyrelights
-s(286739)/i(237707),	-- Dying Star's Pyrelights
-s(286740)/i(237707),	-- Dying Star's Pyrelights
-s(286741)/i(237707),	-- Dying Star's Pyrelights
 s(286742)/i(237707),	-- Dying Star's Pyrelights
 s(286743)/i(237707),	-- Dying Star's Pyrelights
 s(286744)/i(237707),	-- Dying Star's Pyrelights
 s(286745)/i(237707),	-- Dying Star's Pyrelights
-s(286746)/i(237708),	-- Dying Star's Leggings
 s(286747)/i(237708),	-- Dying Star's Leggings
 s(286748)/i(237708),	-- Dying Star's Leggings
 s(286749)/i(237708),	-- Dying Star's Leggings
 s(286750)/i(237708),	-- Dying Star's Leggings
-s(286751)/i(237708),	-- Dying Star's Leggings
-s(286752)/i(237708),	-- Dying Star's Leggings
-s(286753)/i(237708),	-- Dying Star's Leggings
 s(286754)/i(237708),	-- Dying Star's Leggings
 s(286755)/i(237708),	-- Dying Star's Leggings
 s(286756)/i(237708),	-- Dying Star's Leggings
 s(286757)/i(237708),	-- Dying Star's Leggings
-s(286758)/i(237709),	-- Dying Star's Veil
 s(286759)/i(237709),	-- Dying Star's Veil
 s(286760)/i(237709),	-- Dying Star's Veil
 s(286761)/i(237709),	-- Dying Star's Veil
 s(286762)/i(237709),	-- Dying Star's Veil
-s(286763)/i(237709),	-- Dying Star's Veil
-s(286764)/i(237709),	-- Dying Star's Veil
-s(286765)/i(237709),	-- Dying Star's Veil
 s(286766)/i(237709),	-- Dying Star's Veil
 s(286767)/i(237709),	-- Dying Star's Veil
 s(286768)/i(237709),	-- Dying Star's Veil
 s(286769)/i(237709),	-- Dying Star's Veil
-s(286770)/i(237710),	-- Dying Star's Caress
 s(286771)/i(237710),	-- Dying Star's Caress
 s(286772)/i(237710),	-- Dying Star's Caress
 s(286773)/i(237710),	-- Dying Star's Caress
 s(286774)/i(237710),	-- Dying Star's Caress
-s(286775)/i(237710),	-- Dying Star's Caress
-s(286776)/i(237710),	-- Dying Star's Caress
-s(286777)/i(237710),	-- Dying Star's Caress
 s(286778)/i(237710),	-- Dying Star's Caress
 s(286779)/i(237710),	-- Dying Star's Caress
 s(286780)/i(237710),	-- Dying Star's Caress
 s(286781)/i(237710),	-- Dying Star's Caress
-s(286782)/i(237711),	-- Dying Star's Soles
 s(286783)/i(237711),	-- Dying Star's Soles
 s(286784)/i(237711),	-- Dying Star's Soles
 s(286785)/i(237711),	-- Dying Star's Soles
 s(286786)/i(237711),	-- Dying Star's Soles
-s(286787)/i(237711),	-- Dying Star's Soles
-s(286788)/i(237711),	-- Dying Star's Soles
-s(286789)/i(237711),	-- Dying Star's Soles
 s(286790)/i(237711),	-- Dying Star's Soles
 s(286791)/i(237711),	-- Dying Star's Soles
 s(286792)/i(237711),	-- Dying Star's Soles
 s(286793)/i(237711),	-- Dying Star's Soles
-s(286794)/i(237712),	-- Dying Star's Cassock
 s(286795)/i(237712),	-- Dying Star's Cassock
 s(286796)/i(237712),	-- Dying Star's Cassock
 s(286797)/i(237712),	-- Dying Star's Cassock
 s(286798)/i(237712),	-- Dying Star's Cassock
-s(286799)/i(237712),	-- Dying Star's Cassock
-s(286800)/i(237712),	-- Dying Star's Cassock
-s(286801)/i(237712),	-- Dying Star's Cassock
 s(286802)/i(237712),	-- Dying Star's Cassock
 s(286803)/i(237712),	-- Dying Star's Cassock
 s(286804)/i(237712),	-- Dying Star's Cassock
-s(286805)/i(237713),	-- Augur's Ephemeral Brilliance
 s(286806)/i(237713),	-- Augur's Ephemeral Brilliance
 s(286807)/i(237713),	-- Augur's Ephemeral Brilliance
 s(286808)/i(237713),	-- Augur's Ephemeral Brilliance
 s(286809)/i(237713),	-- Augur's Ephemeral Brilliance
-s(286810)/i(237713),	-- Augur's Ephemeral Brilliance
-s(286811)/i(237713),	-- Augur's Ephemeral Brilliance
-s(286812)/i(237713),	-- Augur's Ephemeral Brilliance
 s(286813)/i(237713),	-- Augur's Ephemeral Brilliance
 s(286814)/i(237713),	-- Augur's Ephemeral Brilliance
 s(286815)/i(237713),	-- Augur's Ephemeral Brilliance
 s(286816)/i(237713),	-- Augur's Ephemeral Brilliance
-s(286817)/i(237714),	-- Augur's Ephemeral Bindings
 s(286818)/i(237714),	-- Augur's Ephemeral Bindings
 s(286819)/i(237714),	-- Augur's Ephemeral Bindings
 s(286820)/i(237714),	-- Augur's Ephemeral Bindings
 s(286821)/i(237714),	-- Augur's Ephemeral Bindings
-s(286822)/i(237714),	-- Augur's Ephemeral Bindings
-s(286823)/i(237714),	-- Augur's Ephemeral Bindings
-s(286824)/i(237714),	-- Augur's Ephemeral Bindings
 s(286825)/i(237714),	-- Augur's Ephemeral Bindings
 s(286826)/i(237714),	-- Augur's Ephemeral Bindings
 s(286827)/i(237714),	-- Augur's Ephemeral Bindings
 s(286828)/i(237714),	-- Augur's Ephemeral Bindings
-s(286829)/i(237715),	-- Augur's Ephemeral Quillsash
 s(286830)/i(237715),	-- Augur's Ephemeral Quillsash
 s(286831)/i(237715),	-- Augur's Ephemeral Quillsash
 s(286832)/i(237715),	-- Augur's Ephemeral Quillsash
 s(286833)/i(237715),	-- Augur's Ephemeral Quillsash
-s(286834)/i(237715),	-- Augur's Ephemeral Quillsash
-s(286835)/i(237715),	-- Augur's Ephemeral Quillsash
-s(286836)/i(237715),	-- Augur's Ephemeral Quillsash
 s(286837)/i(237715),	-- Augur's Ephemeral Quillsash
 s(286838)/i(237715),	-- Augur's Ephemeral Quillsash
 s(286839)/i(237715),	-- Augur's Ephemeral Quillsash
 s(286840)/i(237715),	-- Augur's Ephemeral Quillsash
-s(286841)/i(237716),	-- Augur's Ephemeral Orbs of Power
 s(286842)/i(237716),	-- Augur's Ephemeral Orbs of Power
 s(286843)/i(237716),	-- Augur's Ephemeral Orbs of Power
 s(286844)/i(237716),	-- Augur's Ephemeral Orbs of Power
 s(286845)/i(237716),	-- Augur's Ephemeral Orbs of Power
-s(286846)/i(237716),	-- Augur's Ephemeral Orbs of Power
-s(286847)/i(237716),	-- Augur's Ephemeral Orbs of Power
-s(286848)/i(237716),	-- Augur's Ephemeral Orbs of Power
 s(286849)/i(237716),	-- Augur's Ephemeral Orbs of Power
 s(286850)/i(237716),	-- Augur's Ephemeral Orbs of Power
 s(286851)/i(237716),	-- Augur's Ephemeral Orbs of Power
 s(286852)/i(237716),	-- Augur's Ephemeral Orbs of Power
-s(286853)/i(237717),	-- Augur's Ephemeral Trousers
 s(286854)/i(237717),	-- Augur's Ephemeral Trousers
 s(286855)/i(237717),	-- Augur's Ephemeral Trousers
 s(286856)/i(237717),	-- Augur's Ephemeral Trousers
 s(286857)/i(237717),	-- Augur's Ephemeral Trousers
-s(286858)/i(237717),	-- Augur's Ephemeral Trousers
-s(286859)/i(237717),	-- Augur's Ephemeral Trousers
-s(286860)/i(237717),	-- Augur's Ephemeral Trousers
 s(286861)/i(237717),	-- Augur's Ephemeral Trousers
 s(286862)/i(237717),	-- Augur's Ephemeral Trousers
 s(286863)/i(237717),	-- Augur's Ephemeral Trousers
 s(286864)/i(237717),	-- Augur's Ephemeral Trousers
-s(286865)/i(237718),	-- Augur's Ephemeral Wide-Brim
 s(286866)/i(237718),	-- Augur's Ephemeral Wide-Brim
 s(286867)/i(237718),	-- Augur's Ephemeral Wide-Brim
 s(286868)/i(237718),	-- Augur's Ephemeral Wide-Brim
 s(286869)/i(237718),	-- Augur's Ephemeral Wide-Brim
-s(286870)/i(237718),	-- Augur's Ephemeral Wide-Brim
-s(286871)/i(237718),	-- Augur's Ephemeral Wide-Brim
-s(286872)/i(237718),	-- Augur's Ephemeral Wide-Brim
 s(286873)/i(237718),	-- Augur's Ephemeral Wide-Brim
 s(286874)/i(237718),	-- Augur's Ephemeral Wide-Brim
 s(286875)/i(237718),	-- Augur's Ephemeral Wide-Brim
 s(286876)/i(237718),	-- Augur's Ephemeral Wide-Brim
-s(286877)/i(237719),	-- Augur's Ephemeral Mitts
 s(286878)/i(237719),	-- Augur's Ephemeral Mitts
 s(286879)/i(237719),	-- Augur's Ephemeral Mitts
 s(286880)/i(237719),	-- Augur's Ephemeral Mitts
 s(286881)/i(237719),	-- Augur's Ephemeral Mitts
-s(286882)/i(237719),	-- Augur's Ephemeral Mitts
-s(286883)/i(237719),	-- Augur's Ephemeral Mitts
-s(286884)/i(237719),	-- Augur's Ephemeral Mitts
 s(286885)/i(237719),	-- Augur's Ephemeral Mitts
 s(286886)/i(237719),	-- Augur's Ephemeral Mitts
 s(286887)/i(237719),	-- Augur's Ephemeral Mitts
 s(286888)/i(237719),	-- Augur's Ephemeral Mitts
-s(286889)/i(237720),	-- Augur's Ephemeral Slippers
 s(286890)/i(237720),	-- Augur's Ephemeral Slippers
 s(286891)/i(237720),	-- Augur's Ephemeral Slippers
 s(286892)/i(237720),	-- Augur's Ephemeral Slippers
 s(286893)/i(237720),	-- Augur's Ephemeral Slippers
-s(286894)/i(237720),	-- Augur's Ephemeral Slippers
-s(286895)/i(237720),	-- Augur's Ephemeral Slippers
-s(286896)/i(237720),	-- Augur's Ephemeral Slippers
 s(286897)/i(237720),	-- Augur's Ephemeral Slippers
 s(286898)/i(237720),	-- Augur's Ephemeral Slippers
 s(286899)/i(237720),	-- Augur's Ephemeral Slippers
 s(286900)/i(237720),	-- Augur's Ephemeral Slippers
-s(286901)/i(237721),	-- Augur's Ephemeral Habiliments
 s(286902)/i(237721),	-- Augur's Ephemeral Habiliments
 s(286903)/i(237721),	-- Augur's Ephemeral Habiliments
 s(286904)/i(237721),	-- Augur's Ephemeral Habiliments
 s(286905)/i(237721),	-- Augur's Ephemeral Habiliments
-s(286906)/i(237721),	-- Augur's Ephemeral Habiliments
-s(286907)/i(237721),	-- Augur's Ephemeral Habiliments
-s(286908)/i(237721),	-- Augur's Ephemeral Habiliments
 s(286909)/i(237721),	-- Augur's Ephemeral Habiliments
 s(286910)/i(237721),	-- Augur's Ephemeral Habiliments
 s(286911)/i(237721),	-- Augur's Ephemeral Habiliments
 s(286912)/i(237721),	-- Augur's Ephemeral Habiliments
-s(286913)/i(237723),	-- Ward of the Weaving-Beast
-s(286914)/i(237724),	-- Iris of the Dark Beyond
-s(286915)/i(237725),	-- Supermassive Starcrusher
-s(286916)/i(237726),	-- Marvel of Technomancy
-s(286917)/i(237727),	-- Collapsing Phaseblades
-s(286918)/i(237728),	-- Voidglass Kris
-s(286919)/i(237729),	-- Prodigious Gene Splicer
-s(286920)/i(237730),	-- Voidglass Spire
-s(286921)/i(237731),	-- Ergospheric Cudgel
-s(286922)/i(237732),	-- Piercing Strandbow
-s(286923)/i(237733),	-- Lacerated Current Caster
-s(286924)/i(237734),	-- Oath-Breaker's Recompense
-s(286925)/i(237735),	-- Voidglass Sovereign's Blade
-s(286926)/i(237736),	-- Overclocked Plexhammer
-s(286927)/i(237737),	-- Photon Sabre Prime
-s(286928)/i(237738),	-- Unbound Training Claws
-s(286929)/i(237739),	-- Obliteration Beamglaive
-s(286930)/i(237740),	-- Vengeful Netherspike
-s(286931)/i(237741),	-- Event Horizon
-s(286932)/i(237742),	-- Fractillus' Last Breath
-s(287063)/i(237813),	-- Factory-Issue Plexhammer
-s(287107)/i(237858),	-- Encroaching Void Vestment
-s(287108)/i(237859),	-- Silent Huntsman's Sandals
-s(287109)/i(237860),	-- Wastelander's Worn Handwraps
-s(287110)/i(237861),	-- Cowl of the Lost Trust
-s(287111)/i(237862),	-- Oathsworn Defender's Leggings
-s(287112)/i(237863),	-- Eco-Stabilizer's Cord
-s(287113)/i(237864),	-- Cuffs of the Riftsealer
-s(287114)/i(237865),	-- Silent Huntsman's Waders
-s(287115)/i(237866),	-- Wastelander's Worn Gloves
-s(287116)/i(237867),	-- Oathsworn Defender's Breeches
-s(287117)/i(237868),	-- Eco-Stabilizer's Sash
-s(287118)/i(237869),	-- Bindings of the Riftsealer
-s(287119)/i(237870),	-- Encroaching Void Chainmail
-s(287120)/i(237871),	-- Silent Huntsman's Striders
-s(287121)/i(237872),	-- Wastelander's Worn Grips
-s(287122)/i(237873),	-- Coif of the Lost Trust
-s(287123)/i(237874),	-- Oathsworn Defender's Greaves
-s(287124)/i(237875),	-- Tazavesh Guardian's Shoulderguards
-s(287125)/i(237876),	-- Eco-Stabilizer's Cinch
-s(287126)/i(237877),	-- Bracers of the Riftsealer
-s(287127)/i(237878),	-- Helm of the Lost Trust
-s(287128)/i(237879),	-- Encroaching Void Breastplate
-s(287129)/i(237880),	-- Silent Huntsman's Sabatons
-s(287130)/i(237881),	-- Wastelander's Worn Gauntlets
-s(287131)/i(237882),	-- Oathsworn Defender's Legguards
-s(287132)/i(237883),	-- Tazavesh Guardian's Mantle
-s(287133)/i(237884),	-- Eco-Stabilizer's Girdle
-s(287134)/i(237885),	-- Armplates of the Riftsealer
-s(287135)/i(237886),	-- Encroaching Void Vest
-s(287136)/i(237887),	-- Tazavesh Guardian's Epaulets
-s(287137)/i(237888),	-- Tazavesh Guardian's Shoulderpads
-s(287173)/i(237936),	-- Fallen Prince's Crown
-s(287174)/i(237937),	-- Fallen Prince's Helm
-s(287175)/i(237938),	-- Fallen Prince's Headplate
 s(287209)/i(237955),	--
 s(287210)/i(237960),	--
 s(287211)/i(237961),	--
 s(287212)/i(237964),	--
-s(287213)/i(237965),	-- Void-Scarred Seer's Vestments
-s(287214)/i(237966),	-- Void-Scarred Seer's Slippers
-s(287215)/i(237967),	-- Void-Scarred Seer's Gloves
-s(287216)/i(237968),	-- Void-Scarred Seer's Crown
-s(287217)/i(237969),	-- Void-Scarred Seer's Leggings
-s(287218)/i(237970),	-- Void-Scarred Seer's Spines
-s(287219)/i(237971),	-- Void-Scarred Seer's Cord
-s(287220)/i(237972),	-- Void-Scarred Seer's Bands
-s(287221)/i(237973),	-- Void-Scarred Blade's Jerkin
-s(287222)/i(237974),	-- Void-Scarred Blade's Soles
-s(287223)/i(237975),	-- Void-Scarred Blade's Grips
-s(287224)/i(237976),	-- Void-Scarred Blade's Hood
-s(287225)/i(237977),	-- Void-Scarred Blade's Breeches
-s(287226)/i(237978),	-- Void-Scarred Blade's Shoulderpads
-s(287227)/i(237979),	-- Void-Scarred Blade's Belt
-s(287228)/i(237980),	-- Void-Scarred Blade's Bracers
-s(287229)/i(237981),	-- Void-Scarred Striker's Brigandine
-s(287230)/i(237982),	-- Void-Scarred Striker's Boots
-s(287231)/i(237983),	-- Void-Scarred Striker's Gauntlets
-s(287232)/i(237984),	-- Void-Scarred Striker's Cowl
-s(287233)/i(237985),	-- Void-Scarred Striker's Legguards
-s(287234)/i(237986),	-- Void-Scarred Striker's Pauldrons
-s(287235)/i(237987),	-- Void-Scarred Striker's Sash
-s(287236)/i(237988),	-- Void-Scarred Striker's Armguards
-s(287237)/i(237989),	-- Void-Scarred Captain's Breastplate
-s(287238)/i(237990),	-- Void-Scarred Captain's Sollerets
-s(287239)/i(237991),	-- Void-Scarred Captain's Handguards
-s(287240)/i(237992),	-- Void-Scarred Captain's Helmet
-s(287241)/i(237993),	-- Void-Scarred Captain' s Greaves
-s(287242)/i(237994),	-- Void-Scarred Captain's Epaulettes
-s(287243)/i(237995),	-- Void-Scarred Captain's Greatbelt
-s(287244)/i(237996),	-- Void-Scarred Captain's Vambraces
-s(287245)/i(237997),	-- Ethereal Handchopper
-s(287246)/i(237998),	-- Void Assassin's Ritual Blade
-s(287247)/i(237999),	-- Battered Matter Destabilizer
-s(287248)/i(238000),	-- Mana Manipulator
-s(287249)/i(238001),	-- Rod of the Unwoven
-s(287250)/i(238002),	-- Wanderer's Projectile Accelerator
-s(287251)/i(238003),	-- Wyrmhunter's Skewer
-s(287252)/i(238004),	-- Exile's Beacon
-s(287253)/i(238005),	-- Void-Steeped Falchion
-s(287254)/i(238006),	-- Soulbearer's Censer
-s(287255)/i(238007),	-- Bulwark of the Great Dark
-s(287256)/i(238008),	-- Wastelander's Folly
-s(287296)/i(238027),	-- Harvested Creephide Cord
-s(287297)/i(238027),	-- Harvested Creephide Cord
-s(287298)/i(238027),	-- Harvested Creephide Cord
-s(287299)/i(238027),	-- Harvested Creephide Cord
-s(287300)/i(238028),	-- Bone-Melted Faceplate
-s(287301)/i(238028),	-- Bone-Melted Faceplate
-s(287302)/i(238028),	-- Bone-Melted Faceplate
-s(287303)/i(238028),	-- Bone-Melted Faceplate
-s(287304)/i(238029),	-- 11.2 Raid - Cloth - Waist
 s(287305)/i(238029),	-- 11.2 Raid - Cloth - Waist
 s(287306)/i(238029),	-- 11.2 Raid - Cloth - Waist
 s(287307)/i(238029),	-- 11.2 Raid - Cloth - Waist
-s(287308)/i(238030),	-- Voidhound Trainer's Boots
-s(287309)/i(238030),	-- Voidhound Trainer's Boots
-s(287310)/i(238030),	-- Voidhound Trainer's Boots
-s(287311)/i(238030),	-- Voidhound Trainer's Boots
-s(287312)/i(238031),	-- Veiled Manta Vest
-s(287313)/i(238031),	-- Veiled Manta Vest
-s(287314)/i(238031),	-- Veiled Manta Vest
-s(287315)/i(238031),	-- Veiled Manta Vest
-s(287316)/i(238032),	-- Acolyte's Infused Leggings
-s(287317)/i(238032),	-- Acolyte's Infused Leggings
-s(287318)/i(238032),	-- Acolyte's Infused Leggings
-s(287319)/i(238032),	-- Acolyte's Infused Leggings
-s(287320)/i(238033),	-- Zadus's Liturgical Hat
-s(287321)/i(238033),	-- Zadus's Liturgical Hat
-s(287322)/i(238033),	-- Zadus's Liturgical Hat
-s(287323)/i(238033),	-- Zadus's Liturgical Hat
-s(287324)/i(238034),	-- Jak'tull's Intruder Stompers
-s(287325)/i(238034),	-- Jak'tull's Intruder Stompers
-s(287326)/i(238034),	-- Jak'tull's Intruder Stompers
-s(287327)/i(238034),	-- Jak'tull's Intruder Stompers
 s(287334)/i(238052),	--
 s(287335)/i(238053),	--
-s(287336)/i(238054),	-- Entropic-Shadow Saber
-s(287337)/i(238055),	-- Entropic-Shadow Dagger
-s(287338)/i(238056),	-- Entropic-Shadow Staff
-s(287339)/i(238058),	-- Entropic-Shadow Handaxe
-s(287340)/i(238059),	-- Entropic-Shadow Gavel
-s(287341)/i(238060),	-- Entropic-Shadow Greatsword
-s(287342)/i(238061),	-- Entropic-Shadow Javelin
-s(287343)/i(238062),	-- Entropic-Shadow Sharpshooter
 s(287344)/i(238063),	--
 s(287345)/i(238064),	--
 s(287346)/i(238065),	--
-s(287347)/i(238066),	-- Entropic-Shadow Sword
-s(287348)/i(238184),	-- Stave of Unyielding Will
-s(287349)/i(238185),	-- Wand of Unyielding Will
-s(287350)/i(238186),	-- Cudgel of Unyielding Will
-s(287351)/i(238187),	-- Mace of Unyielding Will
-s(287352)/i(238188),	-- Greatsword of Unyielding Will
-s(287353)/i(238189),	-- Dagger of Unyielding Will
-s(287354)/i(238190),	-- Shield of Unyielding Will
-s(287355)/i(238191),	-- Relic of Unyielding Will
-s(287356)/i(238192),	-- Entropic-Shadow Warglaive
-s(287357)/i(238193),	-- Blade of Unyielding Will
-s(287358)/i(238194),	-- Blaster of Unyielding Will
 s(287359)/i(238195),	--
 s(287410)/i(238235),	--
 s(287411)/i(238236),	--
@@ -39281,43 +38060,10 @@ s(287412)/i(238237),	--
 s(287413)/i(238238),	--
 s(287414)/i(238239),	--
 s(287415)/i(238240),	--
-s(287422)/i(238262),	-- Entropic-Shadow Mace
 s(287438)/i(238393),	--
 s(287863)/i(238963),	--
 s(288008)/i(239141),	--
 s(288014)/i(239209),	--
-s(288194)/i(239448),	-- Reshii Magi's Vestments
-s(288195)/i(239449),	-- Reshii Magi's Slippers
-s(288196)/i(239450),	-- Reshii Magi's Gloves
-s(288197)/i(239451),	-- Reshii Magi's Crown
-s(288198)/i(239452),	-- Reshii Magi's Leggings
-s(288199)/i(239453),	-- Reshii Magi's Spines
-s(288200)/i(239454),	-- Reshii Magi's Cord
-s(288201)/i(239455),	-- Reshii Magi's Bands
-s(288202)/i(239456),	-- Reshii Scout's Jerkin
-s(288203)/i(239457),	-- Reshii Scout's Soles
-s(288204)/i(239458),	-- Reshii Scout's Grips
-s(288205)/i(239459),	-- Reshii Scout's Hood
-s(288206)/i(239460),	-- Reshii Scout's Breeches
-s(288207)/i(239461),	-- Reshii Scout's Shoulderpads
-s(288208)/i(239462),	-- Reshii Scout's Belt
-s(288209)/i(239463),	-- Reshii Scout's Bracers
-s(288210)/i(239464),	-- Reshii Skirmisher's Brigandine
-s(288211)/i(239465),	-- Reshii Skirmisher's Boots
-s(288212)/i(239466),	-- Reshii Skirmisher's Gauntlets
-s(288213)/i(239467),	-- Reshii Skirmisher's Cowl
-s(288214)/i(239468),	-- Reshii Skirmisher's Legguards
-s(288215)/i(239469),	-- Reshii Skirmisher's Pauldrons
-s(288216)/i(239470),	-- Reshii Skirmisher's Sash
-s(288217)/i(239471),	-- Reshii Skirmisher's Armguards
-s(288218)/i(239472),	-- Reshii Brute's Breastplate
-s(288219)/i(239473),	-- Reshii Brute's Sollerets
-s(288220)/i(239474),	-- Reshii Brute's Handguards
-s(288221)/i(239475),	-- Reshii Brute's Helmet
-s(288222)/i(239476),	-- Reshii Brute's Greaves
-s(288223)/i(239477),	-- Reshii Brute's Epaulettes
-s(288224)/i(239478),	-- Reshii Brute's Greatbelt
-s(288225)/i(239479),	-- Reshii Brute's Vambraces
 s(288727)/i(240111),	--
 s(288728)/i(240112),	--
 s(288729)/i(240113),	--
@@ -39391,123 +38137,18 @@ s(289087)/i(240530),	--
 s(289088)/i(240531),	--
 s(289089)/i(240532),	--
 s(289090)/i(240533),	--
-s(289543)/i(241232),	-- Brewer's Basic Shoulder Cape
-s(289547)/i(241239),	-- Epaulets of Arcing Power
 s(289548)/i(241239),	-- Epaulets of Arcing Power
-s(289549)/i(241240),	-- Type II Bomber Jacket
 s(289550)/i(241240),	-- Type II Bomber Jacket
-s(289575)/i(241266),	-- Brewer's Black Shoulder Cape
-s(289580)/i(241341),	-- Brewer's Blue Shoulder Cape
-s(289581)/i(241342),	-- Brewer's Green Shoulder Cape
-s(289582)/i(241343),	-- Brewer's Basic Beret
-s(289583)/i(241344),	-- Brewer's Black Beret
-s(289584)/i(241345),	-- Brewer's Blue Beret
-s(289585)/i(241346),	-- Brewer's Green Beret
-s(289586)/i(241347),	-- Brewer's Basic Kilt
-s(289587)/i(241348),	-- Brewer's Black Kilt
-s(289588)/i(241350),	-- Brewer's Blue Kilt
-s(289589)/i(241351),	-- Brewer's Green Kilt
 s(289590)/i(241628),	--
 s(289591)/i(241630),	--
 s(289592)/i(241631),	--
 s(289593)/i(241634),	--
-s(290270)/i(242464),	-- Swarmite's Frenzied Pedicel
-s(290271)/i(242468),	-- Al'dani Attendant's Gauze
 s(291521)/i(242614),	--
 s(291522)/i(242615),	--
-s(291767)/i(243002),	-- Light-Soaked Cleaver
-s(291768)/i(243003),	-- Spear of Fallen Memories
-s(291769)/i(243004),	-- Efrat's Forgotten Bulwark
-s(291770)/i(243005),	-- Tulwar of the Golden Guard
-s(291771)/i(243006),	-- Petrified Branch of Janaa
-s(291772)/i(243008),	-- Shadowguard Crusher
-s(291773)/i(243009),	-- Sufaadi Skiff Lantern
-s(291775)/i(243038),	-- Gaze of the Untethered Doom
-s(291779)/i(243039),	-- Devoured Magi's Cinch
-s(291783)/i(243040),	-- Crystalblight Legguards
-s(291787)/i(243041),	-- Umbral Stalker's Footpads
-s(291791)/i(243042),	-- Void-Bound Hauberk
-s(291795)/i(243043),	-- Shadowguard's Rift Wrap
-s(291799)/i(243044),	-- Feasting Fiend's Barbute
-s(291803)/i(243045),	-- Bygone Wastelander's Girdle
-s(291808)/i(243048),	-- Technomancer's Service Sandals
-s(291809)/i(243048),	-- Technomancer's Service Sandals
-s(291810)/i(243048),	-- Technomancer's Service Sandals
-s(291811)/i(243048),	-- Technomancer's Service Sandals
-s(291816)/i(243153),	-- Korgorath's Talon
-s(291851)/i(243305),	-- Interloper's Silken Striders
-s(291852)/i(243305),	-- Interloper's Silken Striders
-s(291853)/i(243305),	-- Interloper's Silken Striders
-s(291854)/i(243305),	-- Interloper's Silken Striders
-s(291855)/i(243306),	-- Interloper's Reinforced Sandals
-s(291856)/i(243306),	-- Interloper's Reinforced Sandals
-s(291857)/i(243306),	-- Interloper's Reinforced Sandals
-s(291858)/i(243306),	-- Interloper's Reinforced Sandals
-s(291859)/i(243307),	-- Interloper's Plated Sabatons
-s(291860)/i(243307),	-- Interloper's Plated Sabatons
-s(291861)/i(243307),	-- Interloper's Plated Sabatons
-s(291862)/i(243307),	-- Interloper's Plated Sabatons
-s(291863)/i(243308),	-- Interloper's Chain Boots
-s(291864)/i(243308),	-- Interloper's Chain Boots
-s(291865)/i(243308),	-- Interloper's Chain Boots
-s(291866)/i(243308),	-- Interloper's Chain Boots
-s(291867)/i(243344),	-- Chef's Hat
-s(291869)/i(243365),	-- Maw of the Void
 s(291877)/i(243420),	--
 s(291878)/i(243421),	--
 s(291879)/i(243422),	--
 s(291880)/i(243423),	--
-s(291881)/i(243500),	-- Wastelander Magi's Vestments
-s(291882)/i(243501),	-- Wastelander Magi's Slippers
-s(291883)/i(243502),	-- Wastelander Magi's Gloves
-s(291884)/i(243503),	-- Wastelander Magi's Crown
-s(291885)/i(243504),	-- Wastelander Magi's Leggings
-s(291886)/i(243505),	-- Wastelander Magi's Spines
-s(291887)/i(243506),	-- Wastelander Magi's Cord
-s(291888)/i(243507),	-- Wastelander Magi's Bands
-s(291889)/i(243508),	-- Wastelander Scout's Jerkin
-s(291890)/i(243509),	-- Wastelander Scout's Soles
-s(291891)/i(243510),	-- Wastelander Scout's Grips
-s(291892)/i(243511),	-- Wastelander Scout's Hood
-s(291893)/i(243512),	-- Wastelander Scout's Breeches
-s(291894)/i(243513),	-- Wastelander Scout's Shoulderpads
-s(291895)/i(243514),	-- Wastelander Scout's Belt
-s(291896)/i(243515),	-- Wastelander Scout's Bracers
-s(291897)/i(243516),	-- Wastelander Skirmisher's Brigandine
-s(291898)/i(243517),	-- Wastelander Skirmisher's Boots
-s(291899)/i(243518),	-- Wastelander Skirmisher's Gauntlets
-s(291900)/i(243519),	-- Wastelander Skirmisher's Cowl
-s(291901)/i(243520),	-- Wastelander Skirmisher's Legguards
-s(291902)/i(243521),	-- Wastelander Skirmisher's Pauldrons
-s(291903)/i(243522),	-- Wastelander Skirmisher's Sash
-s(291904)/i(243523),	-- Wastelander Skirmisher's Armguards
-s(291905)/i(243524),	-- Wastelander Brute's Breastplate
-s(291906)/i(243525),	-- Wastelander Brute's Sollerets
-s(291907)/i(243526),	-- Wastelander Brute's Handguards
-s(291908)/i(243527),	-- Wastelander Brute's Helmet
-s(291909)/i(243528),	-- Wastelander Brute's Greaves
-s(291910)/i(243529),	-- Wastelander Brute's Epaulettes
-s(291911)/i(243530),	-- Wastelander Brute's Greatbelt
-s(291912)/i(243531),	-- Wastelander Brute's Vambraces
-s(291913)/i(243532),	-- Wastelander's Gilded Cleaver
-s(291914)/i(243533),	-- Wastelander's Gilded Carver
-s(291915)/i(243534),	-- Wastelander's Gilded Chopper
-s(291916)/i(243535),	-- Wastelander's Gilded Stiletto
-s(291917)/i(243536),	-- Wastelander's Gilded Kris
-s(291918)/i(243537),	-- Wastelander's Gilded Mace
-s(291919)/i(243538),	-- Wastelander's Gilded Warmace
-s(291920)/i(243539),	-- Wastelander's Gilded Falchion
-s(291921)/i(243540),	-- Wastelander's Gilded Longsword
-s(291922)/i(243541),	-- Wastelander's Gilded Blaster
-s(291923)/i(243542),	-- Wastelander's Gilded Spear
-s(291924)/i(243543),	-- Wastelander's Gilded Bident
-s(291925)/i(243544),	-- Wastelander's Gilded Pole
-s(291926)/i(243545),	-- Wastelander's Gilded Staff
-s(291927)/i(243546),	-- Wastelander's Gilded Greatsword
-s(291928)/i(243547),	-- Wastelander's Gilded Blade
-s(291929)/i(243548),	-- Wastelander's Gilded Censer
-s(291930)/i(243549),	-- Wastelander's Gilded Bastion
-s(291931)/i(243550),	-- Wastelander's Gilded Warglaive
 s(291952)/i(244061),	--
 s(291953)/i(244062),	--
 s(291954)/i(244065),	--
@@ -39547,7 +38188,6 @@ s(291987)/i(244132),	--
 s(291988)/i(244134),	--
 s(291989)/i(244136),	--
 s(291990)/i(244138),	--
-s(292051)/i(244234),	-- Astral Gladiator's Prestigious Cloak
 s(292052)/i(244235),	--
 s(292053)/i(244236),	--
 s(292054)/i(244237),	--
@@ -39580,297 +38220,10 @@ s(292080)/i(244263),	--
 s(292081)/i(244264),	--
 s(292082)/i(244265),	--
 s(292083)/i(244266),	--
-s(292084)/i(244267),	-- Untethered Seer's Vestments
-s(292085)/i(244268),	-- Untethered Seer's Slippers
-s(292086)/i(244269),	-- Untethered Seer's Gloves
-s(292087)/i(244270),	-- Untethered Seer's Crown
-s(292088)/i(244271),	-- Untethered Seer's Leggings
-s(292089)/i(244272),	-- Untethered Seer's Spines
-s(292090)/i(244273),	-- Untethered Seer's Cord
-s(292091)/i(244274),	-- Untethered Seer's Bands
-s(292092)/i(244275),	-- Untethered Blade's Jerkin
-s(292093)/i(244276),	-- Untethered Blade's Soles
-s(292094)/i(244277),	-- Untethered Blade's Grips
-s(292095)/i(244278),	-- Untethered Blade's Hood
-s(292096)/i(244279),	-- Untethered Blade's Breeches
-s(292097)/i(244280),	-- Untethered Blade's Shoulderpads
-s(292098)/i(244281),	-- Untethered Blade's Belt
-s(292099)/i(244282),	-- Untethered Blade's Bracers
-s(292100)/i(244283),	-- Untethered Striker's Brigandine
-s(292101)/i(244284),	-- Untethered Striker's Boots
-s(292102)/i(244285),	-- Untethered Striker's Gauntlets
-s(292103)/i(244286),	-- Untethered Striker's Cowl
-s(292104)/i(244287),	-- Untethered Striker's Legguards
-s(292105)/i(244288),	-- Untethered Striker's Pauldrons
-s(292106)/i(244289),	-- Untethered Striker's Sash
-s(292107)/i(244290),	-- Untethered Striker's Armguards
-s(292108)/i(244291),	-- Untethered Captain's Breastplate
-s(292109)/i(244292),	-- Untethered Captain's Sollerets
-s(292110)/i(244293),	-- Untethered Captain's Handguards
-s(292111)/i(244294),	-- Untethered Captain's Helmet
-s(292112)/i(244295),	-- Untethered Captain' s Greaves
-s(292113)/i(244296),	-- Untethered Captain's Epaulettes
-s(292114)/i(244297),	-- Untethered Captain's Greatbelt
-s(292115)/i(244298),	-- Untethered Captain's Vambraces
 s(292208)/i(244442),	--
-s(292219)/i(244477),	-- Worn Shadowguard Seer's Vestments
-s(292220)/i(244478),	-- Worn Shadowguard Seer's Slippers
-s(292221)/i(244479),	-- Worn Shadowguard Seer's Gloves
-s(292222)/i(244480),	-- Worn Shadowguard Seer's Crown
-s(292223)/i(244481),	-- Worn Shadowguard Seer's Leggings
-s(292224)/i(244482),	-- Worn Shadowguard Seer's Spines
-s(292225)/i(244483),	-- Worn Shadowguard Seer's Cord
-s(292226)/i(244484),	-- Worn Shadowguard Seer's Bands
-s(292227)/i(244485),	-- Worn Shadowguard Blade's Jerkin
-s(292228)/i(244486),	-- Worn Shadowguard Blade's Soles
-s(292229)/i(244487),	-- Worn Shadowguard Blade's Grips
-s(292230)/i(244488),	-- Worn Shadowguard Blade's Hood
-s(292231)/i(244489),	-- Worn Shadowguard Blade's Breeches
-s(292232)/i(244490),	-- Worn Shadowguard Blade's Shoulderpads
-s(292233)/i(244491),	-- Worn Shadowguard Blade's Belt
-s(292234)/i(244492),	-- Worn Shadowguard Blade's Bracers
-s(292235)/i(244493),	-- Worn Shadowguard Striker's Brigandine
-s(292236)/i(244494),	-- Worn Shadowguard Striker's Boots
-s(292237)/i(244495),	-- Worn Shadowguard Striker's Gauntlets
-s(292238)/i(244496),	-- Worn Shadowguard Striker's Cowl
-s(292239)/i(244497),	-- Worn Shadowguard Striker's Legguards
-s(292240)/i(244498),	-- Worn Shadowguard Striker's Pauldrons
-s(292241)/i(244499),	-- Worn Shadowguard Striker's Sash
-s(292242)/i(244500),	-- Worn Shadowguard Striker's Armguards
-s(292243)/i(244501),	-- Worn Shadowguard Captain's Breastplate
-s(292244)/i(244502),	-- Worn Shadowguard Captain's Sollerets
-s(292245)/i(244503),	-- Worn Shadowguard Captain's Handguards
-s(292246)/i(244504),	-- Worn Shadowguard Captain's Helmet
-s(292247)/i(244505),	-- Worn Shadowguard Captain's Greaves
-s(292248)/i(244506),	-- Worn Shadowguard Captain's Epaulettes
-s(292249)/i(244507),	-- Worn Shadowguard Captain's Greatbelt
-s(292250)/i(244508),	-- Worn Shadowguard Captain's Vambraces
-s(292251)/i(244509),	-- Worn Shadowguard Cleaver
-s(292252)/i(244510),	-- Worn Shadowguard Carver
-s(292253)/i(244511),	-- Worn Shadowguard Chopper
-s(292254)/i(244512),	-- Worn Shadowguard Stiletto
-s(292255)/i(244513),	-- Worn Shadowguard Kris
-s(292256)/i(244514),	-- Worn Shadowguard Mace
-s(292257)/i(244515),	-- Worn Shadowguard Warmace
-s(292258)/i(244516),	-- Worn Shadowguard Falchion
-s(292259)/i(244517),	-- Worn Shadowguard Longsword
-s(292260)/i(244518),	-- Worn Shadowguard Blaster
-s(292261)/i(244519),	-- Worn Shadowguard Spear
-s(292262)/i(244520),	-- Worn Shadowguard Bident
-s(292263)/i(244521),	-- Worn Shadowguard Pole
-s(292264)/i(244522),	-- Worn Shadowguard Staff
-s(292265)/i(244523),	-- Worn Shadowguard Greatsword
-s(292266)/i(244524),	-- Worn Shadowguard Blade
-s(292267)/i(244525),	-- Worn Shadowguard Censer
-s(292268)/i(244526),	-- Worn Shadowguard Bastion
-s(292269)/i(244527),	-- Worn Shadowguard Warglaive
-s(292443)/i(244806),	-- Renowned Explorer's Versatile Vest
-s(292826)/i(245524),	-- Shadowguard's Phasebound Visor
-s(292827)/i(245525),	-- Opulent Phasebound Visor
-s(292828)/i(245526),	-- Bloodmarked Phasebound Visor
-s(292829)/i(245527),	-- Consortium's Phasebound Visor
-s(292830)/i(245528),	-- Wastelander's Phasebound Visor \\ Wastlander's Phasebound Visor
-s(292831)/i(245529),	-- Hal'hadar's Phasebound Visor
 s(292832)/i(245542),	--
 s(292835)/i(245629),	--
-s(292839)/i(245667),	-- Warglaive of the Audacious Hunter
-s(292840)/i(245669),	-- P.O.S.T. Master's Prototype Parcel and Postage Presser
-s(292841)/i(245671),	-- Phaseblade of the Void Marches
-s(292842)/i(245673),	-- Bladed Rifle of Unfettered Momentum
-s(292858)/i(245707),	-- Shoulderpads of the Exiled Vow
-s(292859)/i(245708),	-- Epaulets of the Exiled Vow
-s(292860)/i(245709),	-- Shoulderguards of the Exiled Vow
-s(292861)/i(245710),	-- Mantle of the Exiled Vow
-s(292862)/i(245713),	-- Cord of the First Oath
-s(292863)/i(245714),	-- Sash of the First Oath
-s(292864)/i(245715),	-- Cinch of the First Oath
-s(292865)/i(245716),	-- Girdle of the First Oath
-s(292866)/i(245717),	-- Legwraps of the Auditbreaker
-s(292867)/i(245718),	-- Breeches of the Auditbreaker
-s(292868)/i(245719),	-- Greaves of the Auditbreaker
-s(292869)/i(245720),	-- Legguards of the Auditbreaker
-s(292870)/i(245721),	-- Iridescent Huskwrap
-s(292871)/i(245722),	-- Iridescent Huskjerkin
-s(292872)/i(245723),	-- Iridescent Husktunic
-s(292873)/i(245724),	-- Iridescent Huskplate
-s(292874)/i(245725),	-- Voidmarket Negotiator's Handwraps
-s(292875)/i(245726),	-- Voidmarket Negotiator's Gloves
-s(292876)/i(245727),	-- Voidmarket Negotiator's Grips
-s(292877)/i(245728),	-- Voidmarket Negotiator's Gauntlets
-s(292878)/i(245729),	-- Sandals of the Endless Hunger
-s(292879)/i(245730),	-- Waders of the Endless Hunger
-s(292880)/i(245731),	-- Striders of the Endless Hunger
-s(292881)/i(245732),	-- Sabatons of the Endless Hunger
-s(292882)/i(245733),	-- Unstable Sample Straps
-s(292883)/i(245734),	-- Unstable Sample Bindings
-s(292884)/i(245735),	-- Unstable Sample Bracers
-s(292885)/i(245736),	-- Unstable Sample Armplates
-s(292904)/i(245947),	-- Barrel Helm
-s(292905)/i(245948),	-- Bronzebeard's Portable Forge
-s(292906)/i(245949),	-- The Speaker's Portable Forge
-s(292907)/i(245950),	-- Dark Iron Portable Forge
-s(292908)/i(245951),	-- Wildhammer's Portable Forge
-s(292909)/i(245952),	-- Bronzebeard's Ceremonial Gavel \\ Bronzbeard's Ceremonial Gavel \\ Bronzbeard's Ceremonial Mace
-s(292910)/i(245953),	-- The Speaker's Ceremonial Mallet \\ The Speaker's Ceremonial Mace
-s(292911)/i(245954),	-- Wildhammer's Ceremonial Mace
-s(292912)/i(245955),	-- Dark Iron's Ceremonial Mace
-s(292913)/i(245956),	-- Bronzebeard's Crystal Ward
-s(292914)/i(245957),	-- The Speaker's Crystal Ward
-s(292915)/i(245958),	-- Wildhammer's Crystal Ward
-s(292916)/i(245959),	-- Dark Iron's Crystal Ward
-s(292920)/i(245967),	-- Shawl of the Trust
-s(292921)/i(245968),	-- Tabard of the Trust
-s(292922)/i(245969),	-- Mantle of the Trust
-s(292923)/i(245971),	-- Consortium Brute's Clasp
-s(292924)/i(245972),	-- Consortium Skirmisher's Armbands
-s(292925)/i(245973),	-- Consortium Scout's Armlets
-s(292926)/i(245974),	-- Consortium Magi's Cuffs
-s(292927)/i(245975),	-- Consortium Brute's Chestguard
-s(292928)/i(245976),	-- Consortium Skirmisher's Cuirass
-s(292929)/i(245977),	-- Consortium Scout's Jacket
-s(292930)/i(245978),	-- Consortium Magi's Robes
-s(292931)/i(245979),	-- Arcano-Charged Wrench
-s(292932)/i(245980),	-- Inter-Phase Scoop
-s(292933)/i(245981),	-- K'areshi Multi-Tool
-s(292977)/i(246071),	-- Mana-Seamster's Arcane-Needle
-s(292978)/i(246086),	-- Fate Weaver
-s(293020)/i(246273),	-- Vest of Refracted Shadows
-s(293021)/i(246274),	-- Geezle's Zapstep Boots
-s(293022)/i(246275),	-- Codebreaker's Cunning Handwraps
-s(293023)/i(246276),	-- Sinlight Shoulderpads
-s(293024)/i(246277),	-- Swampface's Oozewalkers
-s(293025)/i(246278),	-- Overpressure Platelegs
-s(293026)/i(246279),	-- Fizzlefuse Cuffs
-s(293027)/i(246280),	-- Boots of Titanic Deconversion
-s(293028)/i(246282),	-- Order Bashers
-s(293029)/i(246283),	-- Crown of Absolute Command
-s(293030)/i(246284),	-- Nathrian Reliquary
-s(293031)/i(246285),	-- Fluxphase Culottes
-s(293032)/i(246286),	-- Spaulders of Unleashed Pride
-s(293033)/i(246287),	-- Improvisational Girdle
-s(293034)/i(246293),	-- Buckler of the Last Stand
-s(293035)/i(246295),	-- Tazavesh Lookout's Mace
-s(293036)/i(246297),	-- Desperate Defender's Bladed Staff
-s(293037)/i(246299),	-- Blade of Lost Hope
-s(293038)/i(246319),	-- Festering Scythe
-s(293124)/i(237736),	-- Overclocked Plexhammer
-s(293125)/i(237736),	-- Overclocked Plexhammer
-s(293126)/i(237736),	-- Overclocked Plexhammer
-s(293127)/i(237813),	-- Factory-Issue Plexhammer
-s(293128)/i(237813),	-- Factory-Issue Plexhammer
-s(293129)/i(237813),	-- Factory-Issue Plexhammer
-s(293130)/i(237739),	-- Obliteration Beamglaive
-s(293131)/i(237739),	-- Obliteration Beamglaive
-s(293132)/i(237739),	-- Obliteration Beamglaive
-s(293133)/i(237738),	-- Unbound Training Claws
-s(293134)/i(237738),	-- Unbound Training Claws
-s(293135)/i(237738),	-- Unbound Training Claws
-s(293136)/i(237730),	-- Voidglass Spire
-s(293137)/i(237730),	-- Voidglass Spire
-s(293138)/i(237730),	-- Voidglass Spire
-s(293139)/i(237729),	-- Prodigious Gene Splicer
-s(293140)/i(237729),	-- Prodigious Gene Splicer
-s(293141)/i(237729),	-- Prodigious Gene Splicer
-s(293142)/i(237723),	-- Ward of the Weaving-Beast
-s(293143)/i(237723),	-- Ward of the Weaving-Beast
-s(293144)/i(237723),	-- Ward of the Weaving-Beast
-s(293145)/i(237726),	-- Marvel of Technomancy
-s(293146)/i(237726),	-- Marvel of Technomancy
-s(293147)/i(237726),	-- Marvel of Technomancy
-s(293148)/i(237737),	-- Photon Sabre Prime
-s(293149)/i(237737),	-- Photon Sabre Prime
-s(293150)/i(237737),	-- Photon Sabre Prime
-s(293151)/i(237724),	-- Iris of the Dark Beyond
-s(293152)/i(237724),	-- Iris of the Dark Beyond
-s(293153)/i(237724),	-- Iris of the Dark Beyond
-s(293154)/i(237727),	-- Collapsing Phaseblades
-s(293155)/i(237727),	-- Collapsing Phaseblades
-s(293156)/i(237727),	-- Collapsing Phaseblades
-s(293157)/i(237741),	-- Event Horizon
-s(293158)/i(237741),	-- Event Horizon
-s(293159)/i(237741),	-- Event Horizon
-s(293160)/i(237728),	-- Voidglass Kris
-s(293161)/i(237728),	-- Voidglass Kris
-s(293162)/i(237728),	-- Voidglass Kris
-s(293164)/i(237733),	-- Lacerated Current Caster
-s(293165)/i(237733),	-- Lacerated Current Caster
-s(293166)/i(237733),	-- Lacerated Current Caster
-s(293167)/i(237742),	-- Fractillus' Last Breath
-s(293168)/i(237742),	-- Fractillus' Last Breath
-s(293169)/i(237742),	-- Fractillus' Last Breath
-s(293170)/i(237734),	-- Oath-Breaker's Recompense
-s(293171)/i(237734),	-- Oath-Breaker's Recompense
-s(293172)/i(237734),	-- Oath-Breaker's Recompense
-s(293173)/i(237740),	-- Vengeful Netherspike
-s(293174)/i(237740),	-- Vengeful Netherspike
-s(293175)/i(237740),	-- Vengeful Netherspike
-s(293176)/i(237735),	-- Voidglass Sovereign's Blade
-s(293177)/i(237735),	-- Voidglass Sovereign's Blade
-s(293178)/i(237735),	-- Voidglass Sovereign's Blade
-s(293179)/i(237731),	-- Ergospheric Cudgel
-s(293180)/i(237731),	-- Ergospheric Cudgel
-s(293181)/i(237731),	-- Ergospheric Cudgel
-s(293182)/i(237725),	-- Supermassive Starcrusher
-s(293183)/i(237725),	-- Supermassive Starcrusher
-s(293184)/i(237725),	-- Supermassive Starcrusher
-s(293185)/i(237732),	-- Piercing Strandbow
-s(293186)/i(237732),	-- Piercing Strandbow
-s(293187)/i(237732),	-- Piercing Strandbow
-s(293190)/i(246781),	-- Bronzebeard's Ancient Crusher \\ Bronzbeard's Ancient Crusher
-s(293191)/i(246782),	-- The Speaker's Ancient Crusher
-s(293192)/i(246783),	-- Wildhammer's Ancient Crusher
-s(293193)/i(246784),	-- Dark Iron's Ancient Crusher
-s(293194)/i(246785),	-- Coldsnap Felblade
-s(293195)/i(246786),	-- Sinister Felblade
-s(293196)/i(246787),	-- Hellfire Felblade
-s(293197)/i(246788),	-- Netherstorm Felblade
-s(293198)/i(246790),	-- Coldsnap Feldirk
-s(293199)/i(246791),	-- Hellfire Feldirk
-s(293200)/i(246792),	-- Netherstorm Feldirk
-s(293201)/i(246793),	-- Sinister Feldirk
-s(293203)/i(246798),	-- Bronzebeard's Mighty Crossbow
-s(293204)/i(246799),	-- The Speaker's Mighty Crossbow
-s(293205)/i(246800),	-- Wildhammer's Mighty Crossbow
-s(293206)/i(246801),	-- Dark Iron's Mighty Crossbow
-s(293207)/i(242481),	-- Spellstrike Warplance
-s(293215)/i(246949),	-- Felrider's Azure Treads \\ Felreaver's Azure Treads
-s(293216)/i(246950),	-- Felrider's Azure Helm \\ Felreaver's Azure Helm
-s(293217)/i(246952),	-- Felrider's Azure Shoulderguards \\ Felreaver's Azure Shoulderguards
-s(293218)/i(246956),	-- Felrider's Azure Jacket \\ Felreaver's Azure Jacket
-s(293219)/i(246962),	-- Felrider's Azure Belt \\ Felreaver's Azure Belt
-s(293220)/i(246963),	-- Felrider's Azure Legguards \\ Felreaver's Azure Legguards
-s(293221)/i(246964),	-- Felrider's Azure Gauntlets \\ Felreaver's Azure Gauntlets
-s(293223)/i(246966),	-- Felreaver's Legion Gauntlets
-s(293224)/i(246967),	-- Felreaver's Legion Legguards
-s(293225)/i(246968),	-- Felreaver's Legion Belt
-s(293226)/i(246969),	-- Felreaver's Legion Jacket
-s(293227)/i(246970),	-- Felreaver's Legion Shoulderguards
-s(293228)/i(246971),	-- Felreaver's Legion Helm
-s(293229)/i(246972),	-- Felreaver's Legion Treads
-s(293230)/i(246974),	-- Felreaver's Hellfire Gauntlets
-s(293231)/i(246975),	-- Felreaver's Hellfire Legguards
-s(293232)/i(246976),	-- Felreaver's Hellfire Belt
-s(293233)/i(246977),	-- Felreaver's Hellfire Jacket
-s(293234)/i(246978),	-- Felreaver's Hellfire Shoulderguards
-s(293235)/i(246979),	-- Felreaver's Hellfire Helm
-s(293236)/i(246980),	-- Felreaver's Hellfire Treads
-s(293237)/i(246982),	-- Felreaver's Arcane Gauntlets
-s(293238)/i(246983),	-- Felreaver's Arcane Legguards
-s(293239)/i(246984),	-- Felreaver's Arcane Belt
-s(293240)/i(246985),	-- Felreaver's Arcane Jacket
-s(293241)/i(246986),	-- Felreaver's Arcane Shoulderguards
-s(293242)/i(246987),	-- Felreaver's Arcane Helm
-s(293243)/i(246988),	-- Felreaver's Arcane Treads
-s(293244)/i(246990),	-- Felreaver's Azure Staff
-s(293245)/i(246991),	-- Felreaver's Legion Staff
-s(293246)/i(246992),	-- Infernal's Profane Staff \\ Felreaver's Arcane Staff
-s(293247)/i(246994),	-- Felreaver's Hellfire Staff
-s(293249)/i(246996),	-- Felreaver's Azure Wand
-s(293250)/i(246997),	-- Felreaver's Legion Wand
-s(293251)/i(246998),	-- Felreaver's Hellfire Wand
-s(293252)/i(246999),	-- Infernal's Profane Touch \\ Felreaver's Arcane Wand
 s(294119)/i(247244),	--
-s(294870)/i(235499),	-- Reshii Wraps
 s(294999)/i(247657),	--
 s(295000)/i(247658),	--
 s(295001)/i(237524),	-- Laced Lair-Steppers
@@ -40074,20 +38427,6 @@ s(295227)/i(237553),	-- Laboratory Test Slippers
 s(295228)/i(237553),	-- Laboratory Test Slippers
 s(295229)/i(237553),	-- Laboratory Test Slippers
 s(295230)/i(237553),	-- Laboratory Test Slippers
-s(295235)/i(247703),	-- Reshii Hood
-s(295236)/i(247704),	-- Reshii Mantle
-s(295237)/i(247705),	-- The Horseman's Chilling Blade
-s(295238)/i(247706),	-- The Horseman's Ghoulish Blade
-s(295239)/i(247707),	-- The Horseman's Burning Blade
-s(295240)/i(247708),	-- The Horseman's Hallowed Blade \\ The Horseman's Ghostly Blade
-s(295241)/i(247709),	-- The Horseman's Chilling Great Blade
-s(295242)/i(247710),	-- The Horseman's Ghoulish Great Blade
-s(295243)/i(247711),	-- The Horseman's Burning Great Blade
-s(295244)/i(247712),	-- The Horseman's Hallowed Great Blade \\ The Horseman's Ghostly Great Blade
-s(295245)/i(247714),	-- The Horseman's Chilling Bulwark
-s(295246)/i(247715),	-- The Horseman's Ghoulish Bulwark
-s(295247)/i(247716),	-- The Horseman's Burning Bulwark
-s(295248)/i(247717),	-- The Horseman's Hallowed Bulwark \\ The Horseman's Ghostly Bulwark
 s(295249)/i(237536),	-- Bite of the Astral Wastes
 s(295250)/i(237536),	-- Bite of the Astral Wastes
 s(295251)/i(237536),	-- Bite of the Astral Wastes
@@ -40126,128 +38465,11 @@ s(295284)/i(230565),	-- Astral Gladiator's Chain Breeches
 s(295285)/i(230565),	-- Astral Gladiator's Chain Breeches
 s(295288)/i(247836),	--
 s(295289)/i(247838),	--
-s(295290)/i(247897),	-- The Horseman's Chilling Helm
-s(295291)/i(247898),	-- The Horseman's Chilling Mantle
-s(295292)/i(247899),	-- The Horseman's Chilling Breastplate
-s(295293)/i(247900),	-- The Horseman's Chilling Cinch
-s(295294)/i(247901),	-- The Horseman's Chilling Greaves
-s(295295)/i(247903),	-- The Horseman's Chilling Treads
-s(295296)/i(247904),	-- The Horseman's Chilling Grips
-s(295297)/i(247905),	-- The Horseman's Chilling Cloak
-s(295322)/i(247964),	-- The Horseman's Ghoulish Helm
-s(295323)/i(247965),	-- The Horseman's Ghoulish Mantle
-s(295324)/i(247966),	-- The Horseman's Ghoulish Breastplate
-s(295325)/i(247967),	-- The Horseman's Ghoulish Cinch
-s(295326)/i(247968),	-- The Horseman's Ghoulish Greaves
-s(295327)/i(247969),	-- The Horseman's Ghoulish Treads
-s(295328)/i(247971),	-- The Horseman's Ghoulish Grips
-s(295329)/i(247972),	-- The Horseman's Ghoulish Cloak
-s(295330)/i(247974),	-- The Horseman's Burning Helm
-s(295331)/i(247975),	-- The Horseman's Burning Mantle
-s(295332)/i(247976),	-- The Horseman's Burning Breastplate
-s(295333)/i(247977),	-- The Horseman's Burning Cinch
-s(295334)/i(247978),	-- The Horseman's Burning Greaves
-s(295335)/i(247979),	-- The Horseman's Burning Treads
-s(295336)/i(247980),	-- The Horseman's Burning Grips
-s(295337)/i(247981),	-- The Horseman's Burning Cloak
-s(295338)/i(247983),	-- The Horseman's Hallowed Helm \\ The Horseman's Ghostly Helm
-s(295339)/i(247984),	-- The Horseman's Hallowed Mantle \\ The Horseman's Ghostly Mantle
-s(295340)/i(247985),	-- The Horseman's Hallowed Breastplate \\ The Horseman's Ghostly Breastplate
-s(295341)/i(247986),	-- The Horseman's Hallowed Cinch \\ The Horseman's Ghostly Cinch
-s(295342)/i(247987),	-- The Horseman's Hallowed Greaves \\ The Horseman's Ghostly Greaves
-s(295343)/i(247988),	-- The Horseman's Hallowed Treads \\ The Horseman's Ghostly Treads
-s(295344)/i(247989),	-- The Horseman's Hallowed Grips \\ The Horseman's Ghostly Grips
-s(295345)/i(247990),	-- The Horseman's Hallowed Cloak \\ The Horseman's Ghostly Cloak
-s(295410)/i(248199),	-- The Brothers' Final Gift
-s(295428)/i(248291),	-- Bronzebeard's Ceremonial Crown \\ Bronzbeard's Ceremonial Crown
-s(295429)/i(248292),	-- Bronzebeard's Ceremonial Mantle \\ Bronzbeard's Ceremonial Mantle
-s(295430)/i(248293),	-- Bronzebeard's Ceremonial Chestplate \\ Bronzbeard's Ceremonial Chestplate
-s(295431)/i(248294),	-- Bronzebeard's Ceremonial Belt \\ Bronzbeard's Ceremonial Belt
-s(295432)/i(248295),	-- Bronzebeard's Ceremonial Boots \\ Bronzbeard's Ceremonial Boots
-s(295433)/i(248296),	-- Bronzebeard's Ceremonial Legguards \\ Bronzbeard's Ceremonial Legguards
-s(295434)/i(248297),	-- Bronzebeard's Ceremonial Gauntlets \\ Bronzbeard's Ceremonial Gauntlets
-s(295435)/i(248298),	-- Bronzebeard's Ceremonial Cloak \\ Bronzbeard's Ceremonial Cloak
-s(295436)/i(248301),	-- The Speaker's Ceremonial Crown
-s(295437)/i(248302),	-- The Speaker's Ceremonial Mantle
-s(295438)/i(248303),	-- The Speaker's Ceremonial Chestplate
-s(295439)/i(248304),	-- The Speaker's Ceremonial Belt
-s(295440)/i(248305),	-- The Speaker's Ceremonial Boots
-s(295441)/i(248306),	-- The Speaker's Ceremonial Legguards
-s(295442)/i(248307),	-- The Speaker's Ceremonial Gauntlets
-s(295443)/i(248308),	-- The Speaker's Ceremonial Cloak
-s(295444)/i(248310),	-- Wildhammer's Ceremonial Crown
-s(295445)/i(248311),	-- Wildhammer's Ceremonial Mantle
-s(295446)/i(248312),	-- Wildhammer's Ceremonial Chestplate
-s(295447)/i(248313),	-- Wildhammer's Ceremonial Belt
-s(295448)/i(248314),	-- Wildhammer's Ceremonial Boots
-s(295449)/i(248315),	-- Wildhammer's Ceremonial Legguards
-s(295450)/i(248316),	-- Wildhammer's Ceremonial Gauntlets
-s(295451)/i(248317),	-- Wildhammer's Ceremonial Cloak
-s(295452)/i(248319),	-- Dark Iron's Ceremonial Crown
-s(295453)/i(248320),	-- Dark Iron's Draping Mantle
-s(295454)/i(248321),	-- Dark Iron's Ceremonial Chestplate
-s(295455)/i(248322),	-- Dark Iron's Ceremonial Belt
-s(295456)/i(248323),	-- Dark Iron's Ceremonial Boots
-s(295457)/i(248324),	-- Dark Iron's Ceremonial Legguards
-s(295458)/i(248325),	-- Dark Iron's Ceremonial Gauntlets
-s(295459)/i(248326),	-- Dark Iron's Ceremonial Cloak
-s(295462)/i(248340),	-- Astral Gladiator's Focus
-s(295463)/i(248341),	-- Astral Gladiator's Mace
-s(295464)/i(248342),	-- Astral Gladiator's Axe
-s(295465)/i(248343),	-- Astral Gladiator's Dagger
-s(295466)/i(248344),	-- Astral Gladiator's Gun
-s(295467)/i(248345),	-- Astral Gladiator's Warglaive
-s(295468)/i(248346),	-- Astral Gladiator's Spear
-s(295469)/i(248347),	-- Astral Gladiator's Staff
-s(295470)/i(248348),	-- Astral Gladiator's Greatsword
-s(295471)/i(248349),	-- Astral Gladiator's Battlestaff
-s(295472)/i(248350),	-- Astral Gladiator's Crossbow
-s(295473)/i(248351),	-- Astral Gladiator's Scepter
-s(295474)/i(248352),	-- Astral Gladiator's Focus
-s(295475)/i(248353),	-- Astral Gladiator's Shield
-s(295476)/i(248354),	-- Astral Gladiator's Bulwark
-s(295477)/i(248355),	-- Astral Gladiator's Claws
-s(295478)/i(248356),	-- Astral Gladiator's Bow
 s(295479)/i(248357),	--
-s(295480)/i(248358),	-- Astral Gladiator's Pulverizer
-s(295481)/i(248359),	-- Astral Gladiator's Sword
 s(295482)/i(248360),	--
 s(295483)/i(248361),	--
 s(295484)/i(248362),	--
 s(295485)/i(248363),	--
-s(295486)/i(248364),	-- Astral Gladiator's Axe
-s(295487)/i(248365),	-- Astral Gladiator's Cinquedea \\ Astral Gladiator's Pincer
-s(295488)/i(248366),	-- Astral Gladiator's Mace
-s(295489)/i(248367),	-- Astral Gladiator's Censer
-s(295510)/i(248394),	-- Dark Iron's Crystal Mantle
-s(295511)/i(248395),	-- Wildhammer's Ritualistic Mantle
-s(295512)/i(248396),	-- The Speaker's Ritualistic Mantle
-s(295513)/i(248397),	-- Bronzebeard's Ritualistic Mantle \\ Bronzbeard's Ritualistic Mantle
-s(295616)/i(237892),	-- Hood of the Lost Trust
-s(295617)/i(237939),	-- Fallen Prince's Mask
-s(295633)/i(242473),	-- Spittle-Stained Trousers
-s(295634)/i(242472),	-- Consumed Wastelander's Epaulets
-s(295635)/i(242475),	-- Eco-Dome Access Bands
-s(295636)/i(242470),	-- Mandibular Bonewhacker
-s(295637)/i(242477),	-- Wasteland Devotee's Wrappings \\ Wastland Devotee's Wrappings
-s(295638)/i(242482),	-- Reinforced Stalkerhide Vest
-s(295639)/i(242483),	-- Greaves of the Wild Pair
-s(295640)/i(242479),	-- Girdle of Absolute Faith
-s(295641)/i(242476),	-- Taahbat's Desert Carbine
-s(295642)/i(242490),	-- Ancient Oracle's Caress
-s(295643)/i(242486),	-- Mantle of Wounded Fate
-s(295644)/i(242488),	-- Tunic of Sworn Revenge
-s(295645)/i(242484),	-- Soul-Scribe's Tabiqa Dagger
-s(295646)/i(242487),	-- Fatebound Crusader
-s(295647)/i(242493),	-- Starlit Safeguard
-s(295675)/i(248780),	-- Consortium Brute's Cape
-s(295676)/i(248781),	-- Consortium Skirmisher's Cloak
-s(295677)/i(248782),	-- Consortium Scout's Serape
-s(295678)/i(248783),	-- Consortium Magi's Shawl
-s(295679)/i(248790),	-- Wastelander Scout's Serape
-s(295680)/i(248791),	-- Wastelander Skirmisher's Cloak
-s(295681)/i(248792),	-- Wastelander Magi's Shawl
-s(295682)/i(248793),	-- Wastelander Brute's Cape
 s(295684)/i(248813),	--
 s(295685)/i(248813),	--
 s(295686)/i(248813),	--
@@ -40260,146 +38482,8 @@ s(295692)/i(248813),	--
 s(295693)/i(248813),	--
 s(295694)/i(248813),	--
 s(295695)/i(248813),	--
-s(295713)/i(248916),	-- Untethered Seer's Capelet
-s(295714)/i(248917),	-- Untethered Blade's Mantle
-s(295715)/i(248918),	-- Untethered Striker's Shroud
-s(295716)/i(248919),	-- Untethered Captain's Capote
-11.2.0.61624
-s(295944)/i(249145),	-- Manaforge Raider's Gamma Shockmace
-s(295945)/i(249146),	-- Manaforge Raider's Gamma Plexhammer
-s(295946)/i(249147),	-- Manaforge Raider's Gamma Beamglaive
-s(295947)/i(249148),	-- Manaforge Raider's Gamma Lightshiv
-s(295948)/i(249149),	-- Manaforge Raider's Gamma Recurve
-s(295949)/i(249150),	-- Manaforge Raider's Gamma Warpblade
-s(295950)/i(249151),	-- Manaforge Raider's Gamma Spire
-s(295951)/i(249152),	-- Manaforge Raider's Gamma Ward
-s(295952)/i(249153),	-- Manaforge Raider's Gamma Staff
-s(295953)/i(249154),	-- Manaforge Raider's Gamma Greatsword
-s(295954)/i(249155),	-- Manaforge Raider's Gamma Reactor
-s(295955)/i(249156),	-- Manaforge Raider's Gamma Phaseblade
-s(295956)/i(249157),	-- Manaforge Raider's Gamma Shard
-s(295957)/i(249158),	-- Manaforge Raider's Gamma Caster
-s(295958)/i(249159),	-- Manaforge Raider's Gamma Baton
-s(295959)/i(249160),	-- Manaforge Raider's Gamma Hatchet
-s(295960)/i(249161),	-- Manaforge Raider's Gamma Blade
-s(295961)/i(249162),	-- Manaforge Raider's Tyrant Maul
-s(295962)/i(249163),	-- Manaforge Raider's Gamma Starcrusher
-s(295963)/i(249164),	-- Manaforge Raider's Cosmic Shockmace
-s(295964)/i(249165),	-- Manaforge Raider's Umbral Shockmace
-s(295965)/i(249166),	-- Manaforge Raider's Devouring Shockmace
-s(295966)/i(249167),	-- Manaforge Raider's Cosmic Plexhammer
-s(295967)/i(249168),	-- Manaforge Raider's Umbral Plexhammer
-s(295968)/i(249169),	-- Manaforge Raider's Devouring Plexhammer
-s(295969)/i(249170),	-- Manaforge Raider's Cosmic Beamglaive
-s(295970)/i(249171),	-- Manaforge Raider's Umbral Beamglaive
-s(295971)/i(249172),	-- Manaforge Raider's Devouring Beamglaive
-s(295972)/i(249173),	-- Manaforge Raider's Cosmic Lightshiv
-s(295973)/i(249174),	-- Manaforge Raider's Umbral Lightshiv
-s(295974)/i(249175),	-- Manaforge Raider's Devouring Lightshiv
-s(295975)/i(249176),	-- Manaforge Raider's Cosmic Recurve
-s(295976)/i(249177),	-- Manaforge Raider's Umbral Recurve
-s(295977)/i(249178),	-- Manaforge Raider's Devouring Recurve
-s(295978)/i(249179),	-- Manaforge Raider's Cosmic Warpblade
-s(295979)/i(249180),	-- Manaforge Raider's Umbral Warpblade
-s(295980)/i(249181),	-- Manaforge Raider's Devouring Warpblade
-s(295981)/i(249182),	-- Manaforge Raider's Cosmic Spire
-s(295982)/i(249183),	-- Manaforge Raider's Umbral Spire
-s(295983)/i(249184),	-- Manaforge Raider's Devouring Spire
-s(295984)/i(249185),	-- Manaforge Raider's Cosmic Ward
-s(295985)/i(249186),	-- Manaforge Raider's Umbral Ward
-s(295986)/i(249187),	-- Manaforge Raider's Devouring Ward
-s(295987)/i(249188),	-- Manaforge Raider's Cosmic Staff
-s(295988)/i(249189),	-- Manaforge Raider's Umbral Staff
-s(295989)/i(249190),	-- Manaforge Raider's Devouring Staff
-s(295990)/i(249191),	-- Manaforge Raider's Cosmic Greatsword
-s(295991)/i(249192),	-- Manaforge Raider's Umbral Greatsword
-s(295992)/i(249193),	-- Manaforge Raider's Devouring Greatsword
-s(295993)/i(249194),	-- Manaforge Raider's Cosmic Reactor
-s(295994)/i(249195),	-- Manaforge Raider's Umbral Reactor
-s(295995)/i(249196),	-- Manaforge Raider's Devouring Reactor
-s(295996)/i(249197),	-- Manaforge Raider's Cosmic Phaseblade
-s(295997)/i(249198),	-- Manaforge Raider's Umbral Phaseblade
-s(295998)/i(249199),	-- Manaforge Raider's Devouring Phaseblade
-s(295999)/i(249200),	-- Manaforge Raider's Cosmic Shard
-s(296000)/i(249201),	-- Manaforge Raider's Umbral Shard
-s(296001)/i(249202),	-- Manaforge Raider's Devouring Shard
-s(296002)/i(249203),	-- Manaforge Raider's Cosmic Caster
-s(296003)/i(249204),	-- Manaforge Raider's Umbral Caster
-s(296004)/i(249205),	-- Manaforge Raider's Devouring Caster
-s(296005)/i(249206),	-- Manaforge Raider's Cosmic Baton
-s(296006)/i(249207),	-- Manaforge Raider's Umbral Baton
-s(296007)/i(249208),	-- Manaforge Raider's Devouring Baton
-s(296008)/i(249209),	-- Manaforge Raider's Cosmic Hatchet
-s(296009)/i(249210),	-- Manaforge Raider's Umbral Hatchet
-s(296010)/i(249211),	-- Manaforge Raider's Devouring Hatchet
-s(296011)/i(249212),	-- Manaforge Raider's Cosmic Blade
-s(296012)/i(249213),	-- Manaforge Raider's Umbral Blade
-s(296013)/i(249214),	-- Manaforge Raider's Devouring Blade
-s(296014)/i(249215),	-- Manaforge Raider's Cosmic Starcrusher
-s(296015)/i(249216),	-- Manaforge Raider's Umbral Starcrusher
-s(296016)/i(249217),	-- Manaforge Raider's Devouring Starcrusher
-s(296245)/i(249560),	-- Skymaster's Silver Mantle
-s(296246)/i(249561),	-- Skymaster's Silver Cloak
-s(296247)/i(249562),	-- Skymaster's Silver Tabard
-s(296248)/i(249563),	-- Skymaster's Sapphire Crown
-s(296249)/i(249564),	-- Skymaster's Sapphire Shoulderguards
-s(296250)/i(249565),	-- Skymaster's Sapphire Epaulets
-11.2.0.61787
-s(296325)/i(249857),	-- Brewer's Blue Belt
-s(296326)/i(249858),	-- Brewer's Basic Belt
-s(296327)/i(249859),	-- Brewer's Green Belt
-s(296328)/i(249860),	-- Brewer's Black Belt
-s(297782)/i(250082),	-- T'uure, Remnant of the Naaru
-s(297790)/i(250104),	-- Soulbinder's Nethermantle
-11.2.0.61871
-s(297792)/i(250269),	-- Phase-Lost Longsword
-s(297793)/i(250270),	-- Phase-Lost Scimitar
-s(297794)/i(250271),	-- Phase-Lost Hammer
-s(297795)/i(250272),	-- Phase-Lost Cudgel
-s(297796)/i(250273),	-- Phase-Lost Carver
-s(297797)/i(250274),	-- Phase-Lost Hatchet
-s(297798)/i(250275),	-- Phase-Lost Zweihander
-s(297799)/i(250276),	-- Phase-Lost Greatsword
-s(297800)/i(250277),	-- Phase-Lost Maul
-s(297801)/i(250278),	-- Phase-Lost Great Mace
-s(297802)/i(250280),	-- Phase-Lost Chopper
-s(297803)/i(250281),	-- Phase-Lost Battleaxe
-s(297804)/i(250282),	-- Phase-Lost Bardiche
-s(297805)/i(250283),	-- Phase-Lost Spear
-s(297806)/i(250284),	-- Phase-Lost Spire
-s(297807)/i(250285),	-- Phase-Lost Shillelagh
-s(297808)/i(250286),	-- Phase-Lost Blunderbuss
-s(297810)/i(250288),	-- Phase-Lost Baselard
-s(297811)/i(250289),	-- Phase-Lost Dirk
-s(297816)/i(250294),	-- Phase-Lost Katar
-s(297817)/i(250295),	-- Phase-Lost Claw
-s(297818)/i(250296),	-- Phase-Lost Sigil
-s(297819)/i(250297),	-- Phase-Lost Beacon
-s(297820)/i(250298),	-- Phase-Lost Bulwark
-s(297821)/i(250299),	-- Phase-Lost Pavise
-s(297822)/i(250300),	-- Phase-Lost Rod
-s(297823)/i(250301),	-- Phase-Lost Wand
-s(297824)/i(250287),	-- Phase-Lost Longbow
-s(297834)/i(250430),	-- Darkened Shoulderguards of the Wastelander Seer
-s(297835)/i(250431),	-- Golden Shoulderguards of the Wastelander Seer
-s(297836)/i(250432),	-- Violet Shoulderguards of the Wastelander Seer
-s(297837)/i(250433),	-- Crimson Shoulderguards of the Wastelander Seer
-s(297838)/i(250434),	-- Verdant Shoulderguards of the Wastelander Seer
-s(297839)/i(250435),	-- Loamy Shoulderguards of the Wastelander Seer
-s(297840)/i(250436),	-- Capelet of the Reshii
-s(297841)/i(250437),	-- Cloak of the Reshii
-s(297842)/i(250438),	-- Serape of the Reshii
-s(297843)/i(250439),	-- Stole of the Reshii
-s(297968)/i(250706),	-- The Horseman's Hallowed Cowl
-s(297969)/i(250707),	-- The Horseman's Burning Cowl
-s(297970)/i(250708),	-- The Horseman's Ghoulish Cowl
-s(297971)/i(250709),	-- The Horseman's Chilling Cowl
-11.2.0.62049
-s(292048)/i(244228),	-- Sash of the Tipsy Sage
-s(292049)/i(244229),	-- Angler's Mantle
-s(292050)/i(244230),	-- Strawhat of Frosted Currents
-s(292133)/i(244352),	-- Cloak of the Veiled Paws
-s(298264)/i(251529),	-- Void-Scarred Striker's Cloak
-s(298265)/i(251530),	-- Void-Scarred Captain's Cape
-s(298266)/i(251531),	-- Void-Scarred Seer's Shawl
-s(298267)/i(251532),	-- Void-Scarred Blade's Serape
+11.2.0.62213
+s(298426)/i(251893),	--
+s(298427)/i(251894),	--
+s(298428)/i(251895),	--
+s(298429)/i(251896),	--

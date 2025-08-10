@@ -170,7 +170,7 @@ root(ROOTS.Zones, {
 								q(32352, {	-- A Gathering Storm
 									["sourceQuests"] = { 32351 },	-- Echoes of Thunder
 									["qg"] = 68287,	-- Baine Bloodhoof
-									["coord"] = { 68.3, 44.9, 392 },
+									["coord"] = { 68.3, 44.9, SHRINE_OF_TWO_MOONS_THE_IMPERIAL_MERCANTILE },
 									["races"] = HORDE_ONLY,
 								}),
 								q(32413, {	-- A Return to Krasarang
@@ -294,7 +294,7 @@ root(ROOTS.Zones, {
 								q(32242, {	-- Buried Secrets
 									["sourceQuests"] = { 32256 },	-- Rise Of An Empire
 									["qg"] = 67840,	-- Garrosh Hellscream
-									["coord"] = { 32.1, 84.9, 392 },
+									["coord"] = { 32.1, 84.9, SHRINE_OF_TWO_MOONS_THE_IMPERIAL_MERCANTILE },
 									["races"] = HORDE_ONLY,
 								}),
 								q(32378, {	-- Clearing a Path
@@ -1090,7 +1090,7 @@ root(ROOTS.Zones, {
 								q(32316, {	-- Heart Of The Alliance
 									["sourceQuests"] = { 32315 },	-- Anduin's Plea
 									["qg"] = 67948,	-- Anduin Wrynn
-									["coord"] = { 66.6, 34.1, 394 },	-- Shrine of Seven Stars
+									["coord"] = { 66.6, 34.1, SHRINE_OF_SEVEN_STARS_THE_IMPERIAL_EXCHANGE },
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32153, {	-- Hero Killer
@@ -1770,11 +1770,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 9.60, 52.6, KRASARANG_WILDS },
 						["races"] = HORDE_ONLY,
 					}),
-					fp(1190, {	-- Lion's Landing, Krasarang Wilds
+					applyclassicphase(MOP_PHASE_LANDFALL, fp(1190, {	-- Lion's Landing, Krasarang Wilds
 						["cr"] = 68226,	-- Daggin Windbeard <Flight Master>
 						["coord"] = { 88.4, 34.6, KRASARANG_WILDS },
 						["races"] = ALLIANCE_ONLY,
-					}),
+					})),
 					fp(993, {	-- Marista, Krasarang Wilds
 						["cr"] = 60441,	-- Nan-Po <Flight Master>
 						["coord"] = { 52.4, 76.6, KRASARANG_WILDS },
@@ -2183,6 +2183,20 @@ root(ROOTS.Zones, {
 							i(78880),	-- Salty Core (QI!)
 						},
 					}),
+					applyclassicphase(MOP_PHASE_LANDFALL, q(32246, {	-- Meet the Scout (A)
+						["sourceQuests"] = { 31483 },	-- Incoming...
+						["qg"] = 64610,	-- Lyalia
+						["coord"] = { 84.0, 58.7, VALE_OF_ETERNAL_BLOSSOMS },
+						["timeline"] = { ADDED_5_1_0 },
+						["races"] = ALLIANCE_ONLY,
+					})),
+					applyclassicphase(MOP_PHASE_LANDFALL, q(32249, {	-- Meet the Scout (H)
+						["sourceQuests"] = { 31483 },	-- Incoming...
+						["qg"] = 64566,	-- Sunwalker Dezco
+						["coord"] = { 62.8, 27.9, VALE_OF_ETERNAL_BLOSSOMS },
+						["timeline"] = { ADDED_5_1_0 },
+						["races"] = HORDE_ONLY,
+					})),
 					q(30691, {	-- Misery
 						["sourceQuests"] = { 30669 },	-- The Lorewalker on the Lake
 						["qg"] = 60139,	-- Wise Ana Wu
@@ -2373,12 +2387,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 70.6, 28.4, KRASARANG_WILDS },
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(31058, {	-- The Funky Monkey Brew
-						["qg"] = 65289,	-- Brewmaster Bo
-						["coord"] = { 54.4, 75.2, KRASARANG_WILDS },
-						["maps"] = { 450 },	-- Unga Ingoo
-						["lvl"] = 90,	-- 35
-					}),
 					q(30229, {	-- The Greater Danger
 						["sourceQuests"] = { 30132, 30464 },	-- Going West (two versions)
 						["qg"] = 58114,	-- Kor Bloodtusk
@@ -2476,8 +2484,8 @@ root(ROOTS.Zones, {
 							i(81517),	-- Murksweat Ward
 							i(81518),	-- Lory Feather Band
 							i(81519),	-- Snakejaw Band
-							i(81560),	-- Snakeswarm Ring
-							i(81561),	-- Murkscale Band
+							i(81520),	-- Snakeswarm Ring
+							i(81521),	-- Murkscale Band
 						},
 					}),
 					q(30347, {	-- The Pools of Youth (A)
@@ -2731,35 +2739,16 @@ root(ROOTS.Zones, {
 
 
 
-					q(30740, {	-- Champion of Chi-Ji
-						["qg"] = 60506,	-- Thelonius
-						["isDaily"] = true,
-					}),
-					q(30739, {	-- Ellia Ravenmane: Redemption
-						["qg"] = 60506,	-- Thelonius
-						["isDaily"] = true,
-					}),
-					q(30732, {	-- Ellia Ravenmane: Revenge
-						["qg"] = 60506,	-- Thelonius
-						["isDaily"] = true,
-					}),
-					q(30737, {	-- Fat Long-Fat: Rematch
-						["qg"] = 60506,	-- Thelonius
-						["isDaily"] = true,
-					}),
+					
+					
+					
 					q(32134, {	-- Hard Counter
 						["qg"] = 67402,	-- Zazzix "Toasty" Sparkrocket
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
-					q(30734, {	-- Huck Wheelbarrow
-						["qg"] = 60506,	-- Thelonius
-						["isDaily"] = true,
-					}),
-					q(30735, {	-- Mindel Sunspeaker
-						["qg"] = 60506,	-- Thelonius
-						["isDaily"] = true,
-					}),
+					
+					
 					q(32139, {	-- Stacked!
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
@@ -2784,14 +2773,8 @@ root(ROOTS.Zones, {
 						["requireSkill"] = FISHING,
 						["races"] = HORDE_ONLY,
 					}),
-					q(30738, {	-- Thelonius
-						["qg"] = 60506,	-- Thelonius
-						["isDaily"] = true,
-					}),
-					q(30733, {	-- Tukka-Tuk
-						["qg"] = 60506,	-- Thelonius
-						["isDaily"] = true,
-					}),
+					
+					
 					q(32238, {	-- Universal Remote-Explode
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
@@ -2804,10 +2787,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
-					q(30736, {	-- Yan Quillpaw
-						["qg"] = 60506,	-- Thelonius
-						["isDaily"] = true,
-					}),
+					
 	--[[
 					The following quests have all been removed from the game
 					q(30677, {	-- Shuttle Service

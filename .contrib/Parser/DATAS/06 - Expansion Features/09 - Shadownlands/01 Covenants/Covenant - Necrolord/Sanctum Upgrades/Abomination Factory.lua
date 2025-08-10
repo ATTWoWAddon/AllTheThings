@@ -556,7 +556,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								n(QUESTS, {
 									q(61510, {	-- A Bountiful Haul
 										["sourceQuests"] = { 60041 },	-- Build-A-Bomination
-										["provider"] = { "n", 161270 },    -- Chordy
+										["provider"] = { "n", 161270 },	-- Chordy
 										["coord"] = { 55.1, 68.6, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
@@ -565,9 +565,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 											i(174101),	-- Valuable Salvage (QI!)
 										},
 									}),
-									q(62213, {    -- A Brokered Deal
+									q(62213, {	-- A Brokered Deal
 										["sourceQuests"] = { 58410 },	-- Construct Body: Atticus
-										["provider"] = { "n", 159238 },    -- Atticus
+										["provider"] = { "n", 159238 },	-- Atticus
 										["coord"] = { 55.3, 68.3, MALDRAXXUS },
 										["maps"] = {
 											1717,	-- Chill's Reach
@@ -588,7 +588,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 										},
 										["coord"] = { 24.2, 38.6, MALDRAXXUS },
 									}),
-									q(59747, {    -- A Lost Soul
+									q(59747, {	-- A Lost Soul
 										["description"] = "Pull the chain on the right side of the vault as you enter.",
 										["providers"] = {
 											{ "n", 166096 },	-- Miru Soulblossom
@@ -612,7 +612,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									}),
 									q(62232, {	-- Arboreal Tactics
 										["sourceQuests"] = { 57611 },	-- Construct Body: Marz
-										["provider"] = { "n", 158301 },    -- Marz
+										["provider"] = { "n", 158301 },	-- Marz
 										["coord"] = { 54.2, 68.6, MALDRAXXUS },
 										["isWeekly"] = true,
 										["crs"] = {
@@ -623,9 +623,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 											i(178679),	-- Call Marz (QI!)
 										},
 									}),
-									q(62256, {    -- Asset Extraction
+									q(62256, {	-- Asset Extraction
 										["sourceQuests"] = { 58410 },	-- Construct Body: Atticus
-										["provider"] = { "n", 159238 },    -- Atticus
+										["provider"] = { "n", 159238 },	-- Atticus
 										["coord"] = { 55.3, 68.3, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
@@ -678,9 +678,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 										},
 										-- achievement_criteria
 									}),
-									q(60291, {    -- Corpse Run
+									q(60291, {	-- Corpse Run
 										["sourceQuests"] = { 57597 },	-- Construct Body: Flytrap
-										["provider"] = { "n", 158300 },    -- Flytrap
+										["provider"] = { "n", 158300 },	-- Flytrap
 										["coord"] = { 54.3, 68.1, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
@@ -690,7 +690,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									}),
 									q(61522, {	-- Corpse Run
 										["sourceQuests"] = { 57597 },	-- Construct Body: Flytrap
-										["provider"] = { "n", 158300 },    -- Flytrap
+										["provider"] = { "n", 158300 },	-- Flytrap
 										["coord"] = { 54.3, 68.1, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
@@ -700,7 +700,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									}),
 									q(61523, {	-- Corpse Run
 										["sourceQuests"] = { 57597 },	-- Construct Body: Flytrap
-										["provider"] = { "n", 158300 },    -- Flytrap
+										["provider"] = { "n", 158300 },	-- Flytrap
 										["coord"] = { 54.3, 68.1, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
@@ -708,9 +708,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 											i(178599),	-- Call Flytrap (QI!)
 										},
 									}),
-									q(60765, {    -- Cure For All Ills
+									q(60765, {	-- Cure For All Ills
 										["sourceQuests"] = { 57605 },	-- Construct Body: Roseboil
-										["provider"] = { "n", 159241 },    -- Roseboil
+										["provider"] = { "n", 159241 },	-- Roseboil
 										["coord"] = { 55.1, 68.1, MALDRAXXUS },
 										["isWeekly"] = true,
 										["crs"] = {
@@ -723,7 +723,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									}),
 									q(62217, {	-- Field Training
 										["sourceQuests"] = { 57611 },	-- Construct Body: Marz
-										["provider"] = { "n", 158301 },    -- Marz
+										["provider"] = { "n", 158301 },	-- Marz
 										["coord"] = { 54.2, 68.6, MALDRAXXUS },
 										["isWeekly"] = true,
 										["crs"] = {
@@ -744,7 +744,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									}),
 									q(62041, {	-- In A Bad Light
 										["sourceQuests"] = { 57605 },	-- Construct Body: Roseboil
-										["provider"] = { "n", 159241 },    -- Roseboil
+										["provider"] = { "n", 159241 },	-- Roseboil
 										["coord"] = { 55.1, 68.1, MALDRAXXUS },
 										["isWeekly"] = true,
 										["crs"] = {
@@ -812,9 +812,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 											i(174101),	-- Valuable Salvage (QI!)
 										},
 									}),
-									q(60264, {    -- Soul Survivor
-										["sourceQuests"] = { 59747 },    -- A Lost Soul
-										["provider"] = { "n", 167877 },    -- Miru Soulblossom
+									q(60264, {	-- Soul Survivor
+										["sourceQuests"] = { 59747 },	-- A Lost Soul
+										["provider"] = { "n", 167877 },	-- Miru Soulblossom
 										["coord"] = { 55.0, 68.2, MALDRAXXUS },
 									}),
 									q(60048, {	-- Stitching Time
@@ -824,7 +824,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									}),
 									q(59126, {	-- Supply Chain
 										["sourceQuests"] = { 58410 },	-- Construct Body: Atticus
-										["provider"] = { "n", 159238 },    -- Atticus
+										["provider"] = { "n", 159238 },	-- Atticus
 										["coord"] = { 55.3, 68.3, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
@@ -853,7 +853,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									}),
 									q(62216, {	-- Training Program
 										["sourceQuests"] = { 57611 },	-- Construct Body: Marz
-										["provider"] = { "n", 158301 },    -- Marz
+										["provider"] = { "n", 158301 },	-- Marz
 										["coord"] = { 54.2, 68.6, MALDRAXXUS },
 										["isWeekly"] = true,
 										["crs"] = {
@@ -988,7 +988,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								n(QUESTS, {
 									q(62244, {	-- Digging Around
 										["sourceQuests"] = { 58414 },	-- Construct Body: Toothpick
-										["provider"] = { "n", 159212 },    -- Toothpick
+										["provider"] = { "n", 159212 },	-- Toothpick
 										["coord"] = { 54.9, 67.8, MALDRAXXUS },
 										["isWeekly"] = true,
 										["crs"] = {
@@ -1001,13 +1001,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									}),
 									q(59615, {	-- Every Dog Has Its Day
 										["description"] = "Kill Soul Harvester Anka at 70.1, 40.8 to obtain the Soul Harvester Key, which opens the cage and makes the quest available.  The key will only drop if you have tier 2 or higher Abomination Table.",
-										["provider"] = { "n", 162151 },    -- Neena
+										["provider"] = { "n", 162151 },	-- Neena
 										["coord"] = { 69.3, 40.6, MALDRAXXUS },
 										["cost"] = { { "i", 184354, 1 } },	-- 1 Soul Harvester Key (for opening Neena's Cage)
 									}),
 									q(62194, {	-- Fighting Words
 										["sourceQuests"] = { 57600 },	-- Construct Body: Sabrina
-										["provider"] = { "n", 159226 },    -- Sabrina
+										["provider"] = { "n", 159226 },	-- Sabrina
 										["coord"] = { 54.8, 68.8, MALDRAXXUS },
 										["isWeekly"] = true,
 										["crs"] = {
@@ -1025,7 +1025,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									}),
 									q(60237, {	-- Old Stomping Grounds
 										["sourceQuests"] = { 58414 },	-- Construct Body: Toothpick
-										["provider"] = { "n", 159212 },    -- Toothpick
+										["provider"] = { "n", 159212 },	-- Toothpick
 										["coord"] = { 54.9, 67.8, MALDRAXXUS },
 										["isWeekly"] = true,
 										["crs"] = {
@@ -1048,7 +1048,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									}),
 									q(62294, {	-- One Lich's Trash...
 										["sourceQuests"] = { 57601 },	-- Construct Body: The Professor
-										["provider"] = { "n", 159198 },    -- The Professor
+										["provider"] = { "n", 159198 },	-- The Professor
 										["coord"] = { 55.4, 68.2, MALDRAXXUS },
 										["isWeekly"] = true,
 										["crs"] = {
@@ -1062,7 +1062,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									}),
 									q(61996, {	-- Say The Magic Words
 										["sourceQuests"] = { 57600 },	-- Construct Body: Sabrina
-										["provider"] = { "n", 159226 },    -- Sabrina
+										["provider"] = { "n", 159226 },	-- Sabrina
 										["coord"] = { 54.8, 68.8, MALDRAXXUS },
 										["isWeekly"] = true,
 										["crs"] = {
@@ -1075,7 +1075,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									}),
 									q(58515, {	-- Scrounging for Scrolls
 										["sourceQuests"] = { 57601 },	-- Construct Body: The Professor
-										["provider"] = { "n", 159198 },    -- The Professor
+										["provider"] = { "n", 159198 },	-- The Professor
 										["coord"] = { 55.4, 68.2, MALDRAXXUS },
 										["isWeekly"] = true,
 										["crs"] = {
@@ -1094,7 +1094,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									}),
 									q(62195, {	-- The Last Word
 										["sourceQuests"] = { 57600 },	-- Construct Body: Sabrina
-										["provider"] = { "n", 159226 },    -- Sabrina
+										["provider"] = { "n", 159226 },	-- Sabrina
 										["coord"] = { 54.8, 68.8, MALDRAXXUS },
 										["isWeekly"] = true,
 										["crs"] = {
@@ -1108,7 +1108,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									}),
 									q(58525, {	-- The Two Sides of History
 										["sourceQuests"] = { 57601 },	-- Construct Body: The Professor
-										["provider"] = { "n", 159198 },    -- The Professor
+										["provider"] = { "n", 159198 },	-- The Professor
 										["coord"] = { 55.4, 68.2, MALDRAXXUS },
 										["isWeekly"] = true,
 										["crs"] = {
@@ -1345,7 +1345,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								n(QUESTS, {
 									q(57634, {	-- Bring Your Own
 										["sourceQuests"] = { 58411 },	-- Construct Body: Iron Phillip
-										["provider"] = { "n", 159199 },    -- Iron Phillip
+										["provider"] = { "n", 159199 },	-- Iron Phillip
 										["coord"] = { 55.5, 68.4, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API
@@ -1371,7 +1371,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									}),
 									q(62276, {	-- Drink to the Dead
 										["sourceQuests"] = { 58413 },	-- Construct Body: Naxx
-										["provider"] = { "n", 158298 },    -- Naxx
+										["provider"] = { "n", 158298 },	-- Naxx
 										["coord"] = { 54.8, 68.7, MALDRAXXUS },
 										["isWeekly"] = true,
 										["_drop"] = { "g", "isDaily" },	-- Superior Parts is included from API

@@ -7,64 +7,64 @@
 
 local HELM_CONQ = i(71675, {	-- Helm of the Fiery Conqueror
 	["sym"] = {{"select","itemID",
-		71282,    -- Balespider's Hood
-		71272,    -- Cowl of the Cleansing Flame
-		71277,    -- Hood of the Cleansing Flame
-		70948,    -- Immolation Faceguard
-		71093,    -- Immolation Headguard
-		71065,    -- Immolation Helmet
+		71282,	-- Balespider's Hood
+		71272,	-- Cowl of the Cleansing Flame
+		71277,	-- Hood of the Cleansing Flame
+		70948,	-- Immolation Faceguard
+		71093,	-- Immolation Headguard
+		71065,	-- Immolation Helmet
 	}},
 });
 local HELM_PROT = i(71682, {	-- Helm of the Fiery Protector
 	["sym"] = {{"select","itemID",
-		71298,    -- Erupting Volcanic Faceguard
-		71293,    -- Erupting Volcanic Headpiece
-		71303,    -- Erupting Volcanic Helmet
-		70944,    -- Faceguard of the Molten Giant
-		71051,    -- Flamewaker's Headguard
-		71070,    -- Helmet of the Molten Giant
+		71298,	-- Erupting Volcanic Faceguard
+		71293,	-- Erupting Volcanic Headpiece
+		71303,	-- Erupting Volcanic Helmet
+		70944,	-- Faceguard of the Molten Giant
+		71051,	-- Flamewaker's Headguard
+		71070,	-- Helmet of the Molten Giant
 	}},
 });
 local HELM_VANQ = i(71668, {	-- Helm of the Fiery Vanquisher
 	["sym"] = {{"select","itemID",
-		71047,    -- Dark Phoenix Helmet
-		70954,    -- Elementium Deathplate Faceguard
-		71060,    -- Elementium Deathplate Helmet
-		71287,    -- Firehawk Hood
-		71108,    -- Obsidian Arborweave Cover
-		71098,    -- Obsidian Arborweave Headpiece
-		71103,    -- Obsidian Arborweave Helm
+		71047,	-- Dark Phoenix Helmet
+		70954,	-- Elementium Deathplate Faceguard
+		71060,	-- Elementium Deathplate Helmet
+		71287,	-- Firehawk Hood
+		71108,	-- Obsidian Arborweave Cover
+		71098,	-- Obsidian Arborweave Headpiece
+		71103,	-- Obsidian Arborweave Helm
 	}},
 });
 local SHOULDER_CONQ = i(71681, {	-- Mantle of the Fiery Conqueror
 	["sym"] = {{"select","itemID",
-		71285,    -- Balespider's Mantle
-		71095,    -- Immolation Mantle
-		71067,    -- Immolation Pauldrons
-		70946,    -- Immolation Shoulderguards
-		71275,    -- Mantle of the Cleansing Flame
-		71280,    -- Shoulderwraps of the Cleansing Flame
+		71285,	-- Balespider's Mantle
+		71095,	-- Immolation Mantle
+		71067,	-- Immolation Pauldrons
+		70946,	-- Immolation Shoulderguards
+		71275,	-- Mantle of the Cleansing Flame
+		71280,	-- Shoulderwraps of the Cleansing Flame
 	}},
 });
 local SHOULDER_PROT = i(71688, {	-- Mantle of the Fiery Protector
 	["sym"] = {{"select","itemID",
-		71300,    -- Erupting Volcanic Mantle
-		71295,    -- Erupting Volcanic Shoulderwraps
-		71305,    -- Erupting Volcanic Spaulders
-		71053,    -- Flamewaker's Spaulders
-		71072,    -- Pauldrons of the Molten Giant
-		70941,    -- Shoulderguards of the Molten Giant
+		71300,	-- Erupting Volcanic Mantle
+		71295,	-- Erupting Volcanic Shoulderwraps
+		71305,	-- Erupting Volcanic Spaulders
+		71053,	-- Flamewaker's Spaulders
+		71072,	-- Pauldrons of the Molten Giant
+		70941,	-- Shoulderguards of the Molten Giant
 	}},
 });
 local SHOULDER_VANQ = i(71674, {	-- Mantle of the Fiery Vanquisher
 	["sym"] = {{"select","itemID",
-		71049,    -- Dark Phoenix Spaulders
-		71062,    -- Elementium Deathplate Pauldrons
-		70951,    -- Elementium Deathplate Shoulderguards
-		71290,    -- Firehawk Mantle
-		71106,    -- Obsidian Arborweave Mantle
-		71111,    -- Obsidian Arborweave Shoulderwraps
-		71101,    -- Obsidian Arborweave Spaulders
+		71049,	-- Dark Phoenix Spaulders
+		71062,	-- Elementium Deathplate Pauldrons
+		70951,	-- Elementium Deathplate Shoulderguards
+		71290,	-- Firehawk Mantle
+		71106,	-- Obsidian Arborweave Mantle
+		71111,	-- Obsidian Arborweave Shoulderwraps
+		71101,	-- Obsidian Arborweave Spaulders
 	}},
 });
 
@@ -94,13 +94,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						["description"] = "This quest is auto accepted upon killing a Molten Lord.",
 						["qg"] = 53115,	-- Molten Lord
 						["maps"] = { STORMWIND_CITY },
-						["isBreadcrumb"] = true,    -- for A Legendary Engagement
+						["isBreadcrumb"] = true,	-- for A Legendary Engagement
 					})),
 					h(q(29452, {	-- Your Time Has Come [H]
 						["description"] = "This quest is auto accepted upon killing a Molten Lord.",
 						["qg"] = 53115,	-- Molten Lord
 						["maps"] = { ORGRIMMAR },
-						["isBreadcrumb"] = true,    -- for A Legendary Engagement
+						["isBreadcrumb"] = true,	-- for A Legendary Engagement
 					})),
 					a(q(29132, {	-- A Legendary Engagement [A]
 						["description"] = "Located inside Portal tower.\n\nThis is a really great quest to pick up on a character that you don't plan to ever get the legendary on. So long as you never finish this quest you have a very very convenient port to the heart of the Caverns of Time from Stormwind or Orgrimmar.",
@@ -633,7 +633,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(71782),	-- Shatterskull Bonecrusher
 							i(71775),	-- Smoldering Censer of Purity
 							i(71780),	-- Zoid's Firelit Greatsword
-							ig(69237),	-- Living Ember
+							ig(69237, {	-- Living Ember
+								["description"] = "Drops commonly from Firelands bosses.",
+							}),
 						},
 					}),
 					e(192, {	-- Beth'tilac

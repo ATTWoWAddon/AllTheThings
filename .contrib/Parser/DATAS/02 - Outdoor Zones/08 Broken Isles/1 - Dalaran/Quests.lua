@@ -466,7 +466,7 @@ root(ROOTS.Zones, {
 					["classes"] = { SHAMAN },
 				}),
 				q(44412, {	-- Enemies Everywhere
-					["sourceQuest"] = 44411,    -- Strange Humming Crystal
+					["sourceQuest"] = 44411,	-- Strange Humming Crystal
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
 					["groups"] = {
 						i(141348, {	-- Wondrous Wisdomball (PET!)

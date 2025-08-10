@@ -47,47 +47,41 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 	}),
 	prof(ALCHEMY, {
 		n(DISCOVERY, {
-			spell(430345, {	-- Meticulous Experimentation
-				i(211958, {	-- Meticulous Experimentation
-					r(430595),	-- Draught of Shocking Revelations
-					r(430594),	-- Draught of Silent Footfalls
-					r(430605),	-- Flask of Alchemical Chaos
-					r(430612),	-- Flask of Saving Graces
-					r(430601),	-- Flask of Tempered Aggression
-					r(430604),	-- Flask of Tempered Mastery
-					r(430602),	-- Flask of Tempered Swiftness
-					r(430603),	-- Flask of Tempered Versatility
-					r(430598),	-- Frontline Potion
-					r(430596),	-- Grotesque Vial
-					r(430617),	-- Phial of Bountiful Seasons
-					r(430614),	-- Phial of Concentrated Ingenuity
-					r(430616),	-- Phial of Enhanced Ambidexterity
-					r(430615),	-- Phial of Truesight
-					r(430600),	-- Potion of the Reborn Cheetah
-					r(430597),	-- Potion of Unwavering Focus
-					r(430599),	-- Tempered Potion
-				}),
+			salvagerecipe(430345, 211958, {	-- Meticulous Experimentation
+				r(430595),	-- Draught of Shocking Revelations
+				r(430594),	-- Draught of Silent Footfalls
+				r(430605),	-- Flask of Alchemical Chaos
+				r(430612),	-- Flask of Saving Graces
+				r(430601),	-- Flask of Tempered Aggression
+				r(430604),	-- Flask of Tempered Mastery
+				r(430602),	-- Flask of Tempered Swiftness
+				r(430603),	-- Flask of Tempered Versatility
+				r(430598),	-- Frontline Potion
+				r(430596),	-- Grotesque Vial
+				r(430617),	-- Phial of Bountiful Seasons
+				r(430614),	-- Phial of Concentrated Ingenuity
+				r(430616),	-- Phial of Enhanced Ambidexterity
+				r(430615),	-- Phial of Truesight
+				r(430600),	-- Potion of the Reborn Cheetah
+				r(430597),	-- Potion of Unwavering Focus
+				r(430599),	-- Tempered Potion
 			}),
-			spell(430315, {	-- Thaumaturgy
-				i(211796, {	-- Thaumaturgy
-					i(223487),	-- Writhing Transmutagen (PET!)
-					r(430618),	-- Mercurial Blessings
-					r(449571),	-- Mercurial Herbs
-					r(430619),	-- Mercurial Storms
-					r(430622),	-- Ominous Call
-					r(430623),	-- Ominous Gloom
-					r(449572),	-- Ominous Herbs
-					r(430621),	-- Volatile Stone
-					r(430620),	-- Volatile Weaving
-				}),
+			salvagerecipe(430315, 211796, {	-- Thaumaturgy
+				i(223487),	-- Writhing Transmutagen (PET!)
+				r(430618),	-- Mercurial Blessings
+				r(449571),	-- Mercurial Herbs
+				r(430619),	-- Mercurial Storms
+				r(430622),	-- Ominous Call
+				r(430623),	-- Ominous Gloom
+				r(449572),	-- Ominous Herbs
+				r(430621),	-- Volatile Stone
+				r(430620),	-- Volatile Weaving
 			}),
-			spell(427174, {	-- Wild Experimentation
-				i(210813,{	-- Wild Experimentation
-					r(430591),	-- Algari Mana Potion
-					r(430592),	-- Cavedweller's Delight
-					r(430345),	-- Meticulous Experimentation
-					r(430593),	-- Slumbering Soul Serum
-				}),
+			salvagerecipe(427174, 210813, {	-- Wild Experimentation
+				r(430591),	-- Algari Mana Potion
+				r(430592),	-- Cavedweller's Delight
+				r(430345),	-- Meticulous Experimentation
+				r(430593),	-- Slumbering Soul Serum
 			}),
 		}),
 		filter(CONSUMABLES, {
@@ -124,8 +118,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 				i(212948),	-- Fleeting Cavedweller's Delight+
 				i(212957),	-- Fleeting Draught of Shocking Revelations+
 				i(212954),	-- Fleeting Draught of Silent Footfalls+
-				i(212960),	-- Fleeting Grotesque Vial+
 				i(212966),	-- Fleeting Frontline Potion+
+				i(212960),	-- Fleeting Grotesque Vial+
 				i(212972),	-- Fleeting Potion of the Reborn Cheetah+
 				i(212963),	-- Fleeting Potion of Unwavering Focus+
 				i(212951),	-- Fleeting Slumbering Soul Serum+
@@ -137,8 +131,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 				i(212949),	-- Fleeting Cavedweller's Delight++
 				i(212958),	-- Fleeting Draught of Shocking Revelations++
 				i(212955),	-- Fleeting Draught of Silent Footfalls++
-				i(212961),	-- Fleeting Grotesque Vial++
 				i(212967),	-- Fleeting Frontline Potion++
+				i(212961),	-- Fleeting Grotesque Vial++
 				i(212973),	-- Fleeting Potion of the Reborn Cheetah++
 				i(212964),	-- Fleeting Potion of Unwavering Focus++
 				i(212952),	-- Fleeting Slumbering Soul Serum++
@@ -150,8 +144,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 				i(212950),	-- Fleeting Cavedweller's Delight+++
 				i(212959),	-- Fleeting Draught of Shocking Revelations+++
 				i(212956),	-- Fleeting Draught of Silent Footfalls+++
-				i(212962),	-- Fleeting Grotesque Vial+++
 				i(212968),	-- Fleeting Frontline Potion+++
+				i(212962),	-- Fleeting Grotesque Vial+++
+				i(244849, {["timeline"]={ADDED_11_2_0}}),-- Fleeting Invigorating Healing Potion+++
 				i(212974),	-- Fleeting Potion of the Reborn Cheetah+++
 				i(212965),	-- Fleeting Potion of Unwavering Focus+++
 				i(212953),	-- Fleeting Slumbering Soul Serum+++
@@ -542,7 +537,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 	}),
 	prof(COOKING, {
 		n(DISCOVERY, {
-			spell(447869, {	-- Fine Egg Powders
+			header(HEADERS.Spell, 447869, {	-- Fine Egg Powders
 				r(447873),	-- Secret Sauce
 			}),
 		}),
@@ -1018,10 +1013,65 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 	}),
 	prof(ENGINEERING, {
 		n(DISCOVERY, {
-			spell(447312, {	-- Invent
-				i(224640),	-- Invent
+			salvagerecipe(447312, 224640, {	-- Invent / Invent
+				i(219191),	-- Hastily Scrawled Notes
+				i(221968),	-- Legibly Scribbled Notes
 			}),
-			TempForceMisc(i(219192, {	-- Comprehensibly Organized Ideas
+			salvagerecipe(447310, 224822, {	-- Scour Through Scrap / Scour Through Scrap
+				r(447340),	-- Chaos Circuit
+				r(447313),	-- Disassemble Invention
+				r(447341),	-- Entropy Enhancer
+				r(447338),	-- Gyrating Gear
+				r(447336),	-- Handful of Bismuth Bolts
+				r(447312),	-- Invent
+				r(447339),	-- Safety Switch
+				r(447337),	-- Whimsical Wiring
+				i(227890, { -- Unrecognizable Prototype
+					i(221956, { -- Prototype: Algari Repair Bot 11O
+						r(447367),	-- Algari Repair Bot 11O
+					}),
+					i(221960, { -- Prototype: Barrel of Fireworks
+						r(447369),	-- Barrel of Fireworks
+					}),
+					i(221952, { -- Prototype: Convincingly Realistic Jumper Cables
+						r(447366),	-- Convincingly Realistic Jumper Cables
+					}),
+					i(221961, { -- Prototype: Defective Escape Pod
+						r(447370),	-- Defective Escape Pod
+					}),
+					i(221963, { -- Prototype: Filmless Camera
+						r(447371),	-- Filmless Camera
+					}),
+					i(221965, { -- Prototype: Wormhole Generator: Khaz Algar
+						r(447372),	-- Wormhole Generator: Khaz Algar
+					}),
+					i(221958, { -- Prototype: Summon Portable Profession Possibility Projector
+						r(447368),	-- Portable Profession Possibility Projector
+					}),
+					i(221875, { -- Prototype: Potion Bomb of Recovery
+						r(447343),	-- Potion Bomb of Recovery
+					}),
+					i(221948, { -- Prototype: Pausing Pylon
+						r(447365),	-- Pausing Pylon
+					}),
+					i(221879, { -- Prototype: Potion Bomb of Power
+						r(447344),	-- Potion Bomb of Power
+					}),
+					i(221871, { -- Prototype: Potion Bomb of Speed
+						r(447342),	-- Potion Bomb of Speed
+					}),
+					i(221944, { -- Prototype: Irresistible Red Button
+						r(447364),	-- Irresistible Red Button
+					}),
+					i(221903, { -- Prototype: Earthen Delivery Drill
+						r(447350),	-- Tinker: Earthen Delivery Drill
+					}),
+					i(221907, { -- Prototype: Heartseeking Health Injector
+						r(447351),	-- Tinker: Heartseeking Health Injector
+					}),
+				}),
+			}),
+			i(219192, {	-- Comprehensibly Organized Ideas
 				["description"] = "NOTE: Some of these require a specific specialization to discover.",
 				["groups"] = {
 					r(447325, {	-- Aqirite Brainwave Projector
@@ -1082,76 +1132,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 						["description"] = "Requires specialization - Bracers to discover",
 					}),
 				},
-			})),
-			spell(447310, {	-- Scour Through Scrap
-				i(224822, {	-- Scour Through Scrap
-					r(447340),	-- Chaos Circuit
-					r(447313),	-- Disassemble Invention
-					r(447341),	-- Entropy Enhancer
-					r(447338),	-- Gyrating Gear
-					r(447336),	-- Handful of Bismuth Bolts
-					r(447312),	-- Invent
-					r(447339),	-- Safety Switch
-					r(447337),	-- Whimsical Wiring
-					i(227890, { -- Unrecognizable Prototype
-					i(221956, { -- Prototype: Algari Repair Bot 11O
-						r(447367),	-- Algari Repair Bot 11O
-					}),
-					i(221960, { -- Prototype: Barrel of Fireworks
-						r(447369),	-- Barrel of Fireworks
-					}),
-					i(221952, { -- Prototype: Convincingly Realistic Jumper Cables
-						r(447366),	-- Convincingly Realistic Jumper Cables
-					}),
-					i(221961, { -- Prototype: Defective Escape Pod
-						r(447370),	-- Defective Escape Pod
-					}),
-					i(221963, { -- Prototype: Filmless Camera
-						r(447371),	-- Filmless Camera
-					}),
-					i(221965, { -- Prototype: Wormhole Generator: Khaz Algar
-						r(447372),	-- Wormhole Generator: Khaz Algar
-					}),
-					i(221958, { -- Prototype: Summon Portable Profession Possibility Projector
-						r(447368),	-- Portable Profession Possibility Projector
-					}),
-					i(221875, { -- Prototype: Potion Bomb of Recovery
-						r(447343),	-- Potion Bomb of Recovery
-					}),
-					i(221948, { -- Prototype: Pausing Pylon
-						r(447365),	-- Pausing Pylon
-					}),
-					i(221879, { -- Prototype: Potion Bomb of Power
-						r(447344),	-- Potion Bomb of Power
-					}),
-					i(221871, { -- Prototype: Potion Bomb of Speed
-						r(447342),	-- Potion Bomb of Speed
-					}),
-					i(221944, { -- Prototype: Irresistible Red Button
-						r(447364),	-- Irresistible Red Button
-					}),
-					i(221903, { -- Prototype: Earthen Delivery Drill
-						r(447350),	-- Tinker: Earthen Delivery Drill
-					}),
-					i(221907, { -- Prototype: Heartseeking Health Injector
-						r(447351),	-- Tinker: Heartseeking Health Injector
-					}),
-					}),
-				}),
 			}),
-			-- because parser is still 'guessing' Recipe Items based on SpellID and RequireSkill, this is turning into
-			-- Recipe 448280 (Rearrange Notes) which is harvested in ReagentDB as using Hastily Scrawled Notes as a Reagent
-			-- Thus due to some newer Recipe nesting tech for popouts of Reagents directly, this is nesting itself inside itself
-			-- and then filling it again, which repeats forever.
-			-- Eventually the Profession DBs will be done (right?) and Parser won't be magically turning Items into Recipes unless
-			-- we say so
-			TempForceMisc(i(219191, {	-- Hastily Scrawled Notes
-				["provider"] = { "i", 224640 },	-- Invent
-			})),
-			TempForceMisc(i(221968)),	-- Legibly Scribbled Notes
 		}),
-		spell(447311, {	-- Pilfer Through Parts
+		salvagerecipe(447311, 225202, {	-- Pilfer Through Parts
 			i(227769),	-- Bountiful Bolts
+		}),
+		salvagerecipe(447313, 225251, {	-- Disassemble Invention
+			-- any reason to list possible outputs here?
 		}),
 		n(ARMOR, {
 			i(225642),	-- Acolyte's Goggles
@@ -1529,12 +1516,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			r(435829),	-- Lush Luredrop
 			r(435812),	-- Lush Mycobloom
 			r(435830),	-- Lush Orbinid
+			r(1250317, {["timeline"] = {ADDED_11_2_0}}),	-- Lush Phantom Bloom
 			r(435822),	-- Orbinid
 			r(438953),	-- Overload Altered Herb
 			r(438952),	-- Overload Crystallized Herb
 			r(423395),	-- Overload Empowered Herb
 			r(438955),	-- Overload Irradiated Herb
 			r(438961),	-- Overload Sporefused Herb
+			r(1250314, {["timeline"] = {ADDED_11_2_0}}),	-- Phantom Bloom
 			r(435880),	-- Sporefused Arathor's Spear
 			r(435873),	-- Sporefused Blessing Blossom
 			r(435861),	-- Sporefused Luredrop
@@ -1603,7 +1592,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(224800),	-- Orbinid Pigment+++
 		}),
 		n(DISCOVERY, {
-			spell(447868, {	-- Algari Treatise on Inscription
+			header(HEADERS.Spell, 447868, {	-- Algari Treatise on Inscription
 				r(444187),	-- Algari Treatise on Alchemy
 				r(444184),	-- Algari Treatise on Blacksmithing
 				r(444188),	-- Algari Treatise on Enchanting
@@ -1890,7 +1879,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		n(DISCOVERY, {
 			r(434020),	-- Algari Crushing
 		}),
-		spell(434018, {	-- Algari Prospecting
+		salvagerecipe(434018, 194709, {	-- Algari Prospecting
 			i(212498),	-- Ambivalent Amber
 			i(212505),	-- Extravagant Emerald
 			i(213399),	-- Glittering Glass
@@ -1898,7 +1887,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(212511),	-- Ostentatious Onyx
 			i(212495),	-- Radiant Ruby
 		}),
-		spell(434020, {	-- Algari Crushing
+		salvagerecipe(434020, 201926, {	-- Algari Crushing
 			i(213219),	-- Crushed Gemstones+
 			i(213220),	-- Crushed Gemstones++
 			i(213221),	-- Crushed Gemstones+++
@@ -2380,7 +2369,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		}),
 	}),
 	prof(MINING, {
-		spell(2575, {	-- Mining
+		header(HEADERS.Spell, 2575, {	-- Mining
 			i(210933),	-- Aqirite+
 			i(210934),	-- Aqirite++
 			i(210935),	-- Aqirite+++
@@ -2392,10 +2381,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(210936),	-- Ironclaw Ore+
 			i(210937),	-- Ironclaw Ore++
 			i(210938),	-- Ironclaw Ore+++
-			i(238201, {["timeline"]={ADDED_11_2_0}}),	-- K'areshi Ore+
-			i(238212, {["timeline"]={ADDED_11_2_0}}),	-- K'areshi Ore++
-			i(238213, {["timeline"]={ADDED_11_2_0}}),	-- K'areshi Ore+++
+			i(238201, {["timeline"]={ADDED_11_2_0}}),	-- Desolate Talus+
+			i(238212, {["timeline"]={ADDED_11_2_0}}),	-- Desolate Talus++
+			i(238213, {["timeline"]={ADDED_11_2_0}}),	-- Desolate Talus+++
 			i(240216, {["timeline"]={ADDED_11_2_0}}),	-- K'areshi Resonating Stone
+			i(246504, {["timeline"]={ADDED_11_2_0}}),	-- Inscrutable Ore (QS!)
 			i(224838),	-- Null Sliver
 			i(210939),	-- Null Stone
 			i(224583),	-- Slab of Slate
@@ -2415,6 +2405,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			r(439716),	-- Crystallized Aqirite
 			r(439715),	-- Crystallized Bismuth
 			r(439717),	-- Crystallized Ironclaw
+			r(1250351, {["timeline"]={ADDED_11_2_0}}),-- Desolate Deposit
 			r(439722),	-- EZ-Mine Aqirite
 			r(439721),	-- EZ-Mine Bismuth
 			r(439723),	-- EZ-Mine Ironclaw
@@ -2427,6 +2418,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			r(439743),	-- Overload Weeping
 			r(439710),	-- Rich Aqirite
 			r(439709),	-- Rich Bismuth
+			r(1250356, {["timeline"]={ADDED_11_2_0}}),	-- Rich Desolate Deposit
 			r(439711),	-- Rich Ironclaw
 			r(439728),	-- Webbed Aqirite
 			r(439727),	-- Webbed Bismuth
@@ -2853,7 +2845,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			q(82039),	-- first Fractured Spark of Omens
 			q(85395, {["timeline"]={ADDED_11_1_0_SEASONSTART}}),	-- Fractured Spark of Fortunes
 			q(90664, {["timeline"]={ADDED_11_1_0_SEASONSTART}}),	-- Triggers wtih 90660 A Golden Circumstance
-			q(85685, {["timeline"]={ADDED_11_2_0_SEASONSTART}}),	-- Fractured Spark of Starlight
+			q(85685, {["timeline"]={ADDED_11_2_0}}),	-- Fractured Spark of Starlight
 		}),
 	}),
 })));

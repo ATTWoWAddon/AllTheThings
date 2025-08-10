@@ -50,7 +50,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				n(ZONE_DROPS, {
 					i(7754),	-- Harbinger Boots
-					i(7786),    -- Headsplitter
+					i(7786),	-- Headsplitter
 					i(7787),	-- Resplendent Guardian
 					i(8226),	-- The Butcher
 					i(7727),	-- Watchman Pauldrons

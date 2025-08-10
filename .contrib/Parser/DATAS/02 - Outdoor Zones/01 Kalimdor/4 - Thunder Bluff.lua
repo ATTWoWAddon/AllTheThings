@@ -975,7 +975,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						853,	-- Hatchet
 						12249,	-- Merciless Axe
 						1196,	-- Tabar
-						37,     -- Worn Axe
+						37, 	-- Worn Axe
 					}},
 					["groups"] = {
 						i(12249, {	-- Merciless Axe
@@ -1231,7 +1231,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["groups"] = appendGroups(
 						-- #if AFTER CATA
-						COMMON_CATACLYSM_TAILORING_RECIPES, 
+						COMMON_CATACLYSM_TAILORING_RECIPES,
 						-- #endif
 						VANILLA_COMMON_LEATHERWORKING_TAILORING_SUPPLIES, VANILLA_TAILORING_SUPPLIES, {
 						i(10311, {	-- Pattern: Orange Martial Shirt (RECIPE!)
@@ -1260,7 +1260,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["groups"] = appendGroups(
 						-- #if BEFORE CATA
-						VANILLA_EXCLUSIVE_ALCHEMY_VIALS, IMBUED_VIAL, 
+						VANILLA_EXCLUSIVE_ALCHEMY_VIALS, IMBUED_VIAL,
 						-- #endif
 						CRYSTAL_VIAL, {
 					}),
@@ -1276,7 +1276,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["sym"] = {
 						-- #if AFTER CATA
-						{"sub", "common_recipes_vendor", 49737},	-- Shazdar <Sous Chef>
+						{"sub", "common_vendor", 49737},	-- Shazdar <Sous Chef>
 						-- #endif
 						{ "select","itemID",
 							159,	-- Refreshing Spring Water

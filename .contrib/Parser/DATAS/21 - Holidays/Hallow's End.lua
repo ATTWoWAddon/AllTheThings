@@ -2323,7 +2323,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					["provider"] = { "o", 215915 },	-- Candy Bucket, Shrine of Seven Stars
 					["coords"] = {
 						{ 87.0, 68.8, VALE_OF_ETERNAL_BLOSSOMS },
-						{ 37.7, 67.0, 393 },	-- Shrine of Seven Stars
+						{ 37.7, 67.0, SHRINE_OF_SEVEN_STARS },
 					},
 					["timeline"] = { ADDED_5_0_4 },
 				}),
@@ -2778,7 +2778,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					["coord"] = { 61.9, 16.1, VALE_OF_ETERNAL_BLOSSOMS },
 					["coords"] = {
 						{ 61.9, 16.1, VALE_OF_ETERNAL_BLOSSOMS },
-						--{ x, y, 391 },	-- Shrine of Two Moons
+						--{ x, y, SHRINE_OF_TWO_MOONS },
 					},
 					["timeline"] = { ADDED_5_0_4 },
 				}),

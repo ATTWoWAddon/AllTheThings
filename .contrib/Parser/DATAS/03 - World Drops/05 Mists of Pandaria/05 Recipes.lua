@@ -3,33 +3,31 @@
 -----------------------------------------------------
 
 root(ROOTS.WorldDrops, {
-	expansion(EXPANSION.MOP, {
+	expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4 }}, {
 		filter(RECIPES, {
 			prof(BLACKSMITHING, {
-				TempForceMisc(i(100865, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Plans: Balanced Trillium Ingot and Its Uses (RECIPE!)
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, TempForceMisc(i(100865, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Plans: Balanced Trillium Ingot and Its Uses (RECIPE!)
 					r(146921),	-- Accelerated Balanced Trillium Ingot (RECIPE!)
 					r(143255),	-- Balanced Trillium Ingot (RECIPE!)
-				}))),
+				})))),
 			}),
 			prof(ENGINEERING, {
-				TempForceMisc(i(100910, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Schematic: Chief Engineer Jard's Journal
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, TempForceMisc(i(100910, bubbleDownSelf({ ["timeline"] = { ADDED_5_2_0 } }, {	-- Schematic: Chief Engineer Jard's Journal
 					r(139197),	-- Advanced Refrigeration Unit
 					r(139176),	-- Jard's Peculiar Energy Source
 					r(139196),	-- Pierre
 					r(143714),	-- Rascal-Bot
 					r(139192),	-- Sky Golem
+				})))),
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, TempForceMisc(i(94847, {	-- Schematic: Chief Engineer Jard's Journal
+					["timeline"] = { ADDED_5_2_0, REMOVED_9_0_2_LAUNCH },
+					["_drop"] = { "g" },
 				}))),
-				TempForceMisc(i(94847, {	-- Schematic: Chief Engineer Jard's Journal
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, q(32630, {	-- Chief Engineer Jard's Journal
+					["provider"] = { "i", 94847 },	-- Schematic: Chief Engineer Jard's Journal
 					["timeline"] = { ADDED_5_2_0, REMOVED_9_0_2_LAUNCH },
 					["_drop"] = { "g" },
-					["u"] = NEVER_IMPLEMENTED,
 				})),
-				q(32630, {	-- Chief Engineer Jard's Journal
-					["provider"] = {"i",94847},	-- Schematic: Chief Engineer Jard's Journal
-					["timeline"] = { ADDED_5_2_0, REMOVED_9_0_2_LAUNCH },
-					["u"] = NEVER_IMPLEMENTED,
-					["_drop"] = { "g" },
-				}),
 			}),
 			prof(INSCRIPTION, {
 				i(102534),	-- Technique: Crafted Malevolent Gladiator's Medallion of Tenacity
@@ -51,23 +49,23 @@ root(ROOTS.WorldDrops, {
 				i(83862),	-- Design: Forlorn Primal Diamond
 				i(83872),	-- Design: Impassive Primal Diamond
 				i(83901),	-- Design: Powerful Primal Diamond
-				i(95471),	-- Design: Primal Diamond
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(95471, {["timeline"] = { ADDED_5_2_0 } })),	-- Design: Primal Diamond
 				i(83925),	-- Design: Reverberating Primal Diamond
 				i(83926),	-- Design: Revitalizing Primal Diamond
-				i(95470),	-- Design: Serpent's Heart
+				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, i(95470, {["timeline"] = { ADDED_5_2_0 } })),	-- Design: Serpent's Heart
 			}),
 			prof(LEATHERWORKING, {
-				i(102513, {	-- Pattern: Drums of Rage (RECIPE!)
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, i(102513, {	-- Pattern: Drums of Rage (RECIPE!)
 					["description"] = "Requires maxed Pandaria leatherworking skill to drop.",
 					["timeline"] = { ADDED_5_4_0 },
-				}),
-				TempForceMisc(i(100864, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Pattern: Hardened Magnificent Hide and Its Uses (RECIPE!)
+				})),
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, TempForceMisc(i(100864, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Pattern: Hardened Magnificent Hide and Its Uses (RECIPE!)
 					["description"] = "Requires maxed Pandaria leatherworking skill to drop.",
 					["groups"] = {
 						r(146923),	-- Accelerated Hardened Magnificent Hide (RECIPE!)
 						r(142976),	-- Hardened Magnificent Hide (RECIPE!)
 					},
-				}))),
+				})))),
 				i(95467, {	-- Pattern: Magnificence of Leather (RECIPE!)
 					["timeline"] = { ADDED_5_2_0 },
 				}),
@@ -76,11 +74,11 @@ root(ROOTS.WorldDrops, {
 				}),
 			}),
 			prof(TAILORING, {
-				TempForceMisc(i(100863, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Pattern: Celestial Cloth and Its Uses
+				applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, TempForceMisc(i(100863, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {	-- Pattern: Celestial Cloth and Its Uses
 					r(146925),	-- Accelerated Celestial Cloth (RECIPE!)
 					r(143011),	-- Celestial Cloth (RECIPE!)
-				}))),
+				})))),
 			}),
 		}),
-	}),
+	})),
 });

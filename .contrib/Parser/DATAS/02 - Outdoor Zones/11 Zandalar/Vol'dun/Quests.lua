@@ -764,7 +764,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 56.7, 50.5, VOLDUN },	-- Vulpera Hideaway
 				["races"] = HORDE_ONLY,
 				["groups"] = {
-					i(151273, {    -- Knickknacks (QI!)
+					i(151273, {	-- Knickknacks (QI!)
 						-- All the items in this list are counted as "Knickknacks" when looted
 						i(144299),	-- Chipped Statuette (QI!)
 						i(151276),	-- Cloudy Potion (QI!)

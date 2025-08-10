@@ -29,12 +29,12 @@ root(ROOTS.Zones, {
 						}),
 						un(REMOVED_FROM_GAME, i(154910, {	-- Legionfall Spoils
 							["sym"] = {{"select","itemID",
-								157830,    -- Legionfall Spoils
+								157830,	-- Legionfall Spoils
 							}},
 						})),
 						un(REMOVED_FROM_GAME, i(152649, {	-- Legionfall Spoils
 							["sym"] = {{"select","itemID",
-								157830,    -- Legionfall Spoils
+								157830,	-- Legionfall Spoils
 							}},
 						})),
 					},

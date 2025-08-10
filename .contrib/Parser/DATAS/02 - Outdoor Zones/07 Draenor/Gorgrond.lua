@@ -80,7 +80,7 @@ root(ROOTS.Zones, {
 				545,	-- Moira's Reach
 				546,	-- Fissure of Fury
 				547,	-- Fissure of Fury
-				548,    -- Cragplume Cauldron
+				548,	-- Cragplume Cauldron
 				549,	-- Cragplume Cauldron
 			},
 			["groups"] = {

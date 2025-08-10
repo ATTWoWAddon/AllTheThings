@@ -287,8 +287,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(6121, {	-- Lessons Anew [A]
 					["sourceQuests"] = {
 						5923,	-- Heeding the Call [Darnassus]
-						5924,   -- Heeding the Call [Stormwind City]
-						5925,   -- Heeding the Call [Teldrassil]
+						5924,	-- Heeding the Call [Stormwind City]
+						5925,	-- Heeding the Call [Teldrassil]
 					},
 					["qg"] = 4217,	-- Mathrengyl Bearwalker <Druid Trainer>
 					["coord"] = { 35.2, 8.0, DARNASSUS },
@@ -300,8 +300,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(6126, {	-- Lessons Anew [H]
 					["sourceQuests"] = {
 						5926,	-- Heeding the Call [Thunder Bluff]
-						5927,   -- Heeding the Call [Orgrimmar]
-						5928,   -- Heeding the Call [Mulgore]
+						5927,	-- Heeding the Call [Orgrimmar]
+						5928,	-- Heeding the Call [Mulgore]
 					},
 					["qg"] = 3033,	-- Turak Runetotem <Druid Trainer>
 					["coord"] = { 76.4, 27.6, THUNDER_BLUFF },
@@ -313,8 +313,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5921, {	-- Moonglade [A]
 					["sourceQuests"] = {
 						5923,	-- Heeding the Call [Darnassus]
-						5924,   -- Heeding the Call [Stormwind City]
-						5925,   -- Heeding the Call [Teldrassil]
+						5924,	-- Heeding the Call [Stormwind City]
+						5925,	-- Heeding the Call [Teldrassil]
 					},
 					["qg"] = 4217,	-- Mathrengyl Bearwalker <Druid Trainer>
 					["coord"] = { 35.2, 8.0, DARNASSUS },
@@ -325,8 +325,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5922, {	-- Moonglade [H]
 					["sourceQuests"] = {
 						5926,	-- Heeding the Call [Thunder Bluff]
-						5927,   -- Heeding the Call [Orgrimmar]
-						5928,   -- Heeding the Call [Mulgore]
+						5927,	-- Heeding the Call [Orgrimmar]
+						5928,	-- Heeding the Call [Mulgore]
 					},
 					["qg"] = 3033,	-- Turak Runetotem <Druid Trainer>
 					["coord"] = { 76.4, 27.6, THUNDER_BLUFF },
@@ -414,8 +414,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1123, {	-- Rabine Saturna [H]
 					["sourceQuests"] = {
 						1000,	-- The New Frontier [Thunder Bluff]
-						1004,   -- The New Frontier [Undercity]
-						1018,   -- The New Frontier [Orgrimmar]
+						1004,	-- The New Frontier [Undercity]
+						1018,	-- The New Frontier [Orgrimmar]
 					},
 					["qg"] = 5769,	-- Arch Druid Hamuul Runetotem
 					["coord"] = { 78.4, 28.4, THUNDER_BLUFF },
@@ -484,8 +484,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1015, {	-- The New Frontier [Stormwind City]
 					["altQuests"] = {
-						1019,   -- The New Frontier [Ironforge]
-						1047,   -- The New Frontier [Darnassus]
+						1019,	-- The New Frontier [Ironforge]
+						1047,	-- The New Frontier [Darnassus]
 					},
 					["qg"] = 2198,	-- Crier Goodman
 					["coord"] = { 54.8, 62.6, STORMWIND_CITY },
@@ -496,7 +496,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1019, {	-- The New Frontier [Ironforge]
 					["altQuests"] = {
 						1015,	-- The New Frontier [Stormwind City]
-						1047,   -- The New Frontier [Darnassus]
+						1047,	-- The New Frontier [Darnassus]
 					},
 					["qg"] = 10877,	-- Courier Hammerfall
 					["coord"] = { 31.6, 67, IRONFORGE },
@@ -507,7 +507,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1047, {	-- The New Frontier (1/2) [Darnassus]
 					["altQuests"] = {
 						1015,	-- The New Frontier [Stormwind City]
-						1019,   -- The New Frontier [Ironforge]
+						1019,	-- The New Frontier [Ironforge]
 					},
 					["qg"] = 10878,	-- Herald Moonstalker
 					["coord"] = { 36.4, 39.8, DARNASSUS },
@@ -518,8 +518,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(6761, {	-- The New Frontier (2/2) [Darnassus]
 					["sourceQuests"] = {
 						1015,	-- The New Frontier [Stormwind City]
-						1019,   -- The New Frontier [Ironforge]
-						1047,   -- The New Frontier (1/2) [Darnassus]
+						1019,	-- The New Frontier [Ironforge]
+						1047,	-- The New Frontier (1/2) [Darnassus]
 					},
 					["qg"] = 3516,	-- Arch Druid Fandral Staghelm
 					["coord"] = { 34.8, 8.8, DARNASSUS },
@@ -530,7 +530,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1000, {	-- The New Frontier [Thunder Bluff]
 					["altQuests"] = {
 						1018,	-- The New Frontier [Orgrimmar]
-						1004,   -- The New Frontier [Undercity]
+						1004,	-- The New Frontier [Undercity]
 					},
 					["qg"] = 10881,	-- Bluff Runner Windstrider
 					["coord"] = { 41.4, 54.2, THUNDER_BLUFF },
@@ -541,7 +541,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1004, {	-- The New Frontier [Undercity]
 					["altQuests"] = {
 						1018,	-- The New Frontier [Orgrimmar]
-						1000,   -- The New Frontier [Thunder Bluff]
+						1000,	-- The New Frontier [Thunder Bluff]
 					},
 					["qg"] = 10879,	-- Harbinger Balthazad
 					["coord"] = { 68.8, 48.4, UNDERCITY },
@@ -551,8 +551,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1018, {	-- The New Frontier [Orgrimmar]
 					["altQuests"] = {
-						1000,   -- The New Frontier [Thunder Bluff]
-						1004,   -- The New Frontier [Undercity]
+						1000,	-- The New Frontier [Thunder Bluff]
+						1004,	-- The New Frontier [Undercity]
 					},
 					["qg"] = 10880,	-- Warcaller Gorlach
 					["coord"] = { 46.6, 64.6, ORGRIMMAR },

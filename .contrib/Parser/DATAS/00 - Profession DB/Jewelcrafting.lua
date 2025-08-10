@@ -1382,9 +1382,11 @@ i(211589, 430056);	-- Draconic Combatant's Jeweled Signet
 -- PATCH 11.0.0 --
 ------------------
 --- NYI ---
-i(223083, 0);	-- Design: Elemental Focusing Lens
-i(223084, 0);	-- Design: Prismatic Null Stone
-i(225431, 0);	-- Design: Vicious Jeweler's Setting
+i(0, 435335);		-- Apply Socket
+i(0, 434019);		-- Recraft Equipment
+i(225431, 435336);	-- Design: Vicious Jeweler's Setting
+i(223083, 0);		-- Design: Elemental Focusing Lens
+i(223084, 0);		-- Design: Prismatic Null Stone
 
 ------------------
 -- PATCH 11.0.2 --

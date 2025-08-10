@@ -339,13 +339,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 			["timeline"] = { ADDED_11_0_2 },
 			["groups"] = {
 				i(225493, {	-- Cracked Medal of Conquest
-					["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
+					["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0_SEASONSTART },
 				}),
 				i(232790, {	-- Cracked Medal of Conquest
-					["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
+					["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0_SEASONSTART },
 				}),
 				i(232791, {	-- Medal of Conquest
-					["timeline"] = { ADDED_11_2_0 },
+					["timeline"] = { ADDED_11_2_0_SEASONSTART },
 				}),
 			},
 		}),

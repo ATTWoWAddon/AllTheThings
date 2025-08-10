@@ -3262,6 +3262,11 @@ root(ROOTS.Zones, {
 								-- #if AFTER CATA
 								38682,	-- Enchanting Vellum
 								-- #endif
+								-- #if AFTER BFA
+								6217,	-- Copper Rod
+								10938,	-- Lesser Magic Essence
+								10940,	-- Strange Dust
+								-- #endif
 							},
 						},
 						-- #else
@@ -3378,6 +3383,11 @@ root(ROOTS.Zones, {
 								11291,	-- Star Wood
 								-- #if AFTER CATA
 								38682,	-- Enchanting Vellum
+								-- #endif
+								-- #if AFTER BFA
+								6217,	-- Copper Rod
+								10938,	-- Lesser Magic Essence
+								10940,	-- Strange Dust
 								-- #endif
 							},
 						},

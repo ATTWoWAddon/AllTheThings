@@ -170,7 +170,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				-- ["questID"] = ,	-- No questid triggered (Jan 5, 2025)
 				["coord"] = { 30.1, 40.8, ZARALEK_CAVERN },
 				["groups"] = {
-					i(202869),    -- Scorching Key
+					i(202869),	-- Scorching Key
 				}
 			}),
 			n(200618, {	-- Sheridon Hastle

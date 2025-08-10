@@ -351,8 +351,8 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 		header(HEADERS.Spell, 184490, {	-- Living Leystone [Rank 3]
 			["description"] = "Best spot is in Valsharah during the 'Leystone Basilisks' World Quest.",
 			["crs"] = {
-				104877,    -- Leystone Basilisk (Mining Proc)
-				103514,    -- Leystone Basilisk (WQ Valsharah)
+				104877,	-- Leystone Basilisk (Mining Proc)
+				103514,	-- Leystone Basilisk (WQ Valsharah)
 			},
 			["maps"] = {
 				AZSUNA,
@@ -1314,11 +1314,11 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 			q(91420, {	-- Swap Meet
 				["description"] = "Obtained the first time you harvest Desolate Deposit.",
 				["providers"] = {
-					{ "i", 246504 },	-- Inscrutable Ore
+					{ "i", 246504 },	-- Inscrutable Ore (QS!)
 					{ "o", 523491 },	-- Desolate Deposit
 					{ "o", 523512 },	-- Rich Desolate Deposit
 				},
-				["timeline"] = { ADDED_11_2_0 }
+				["timeline"] = { ADDED_11_2_0 },
 			}),
 		}),
 		n(TREASURES, {

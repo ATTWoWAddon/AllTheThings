@@ -470,7 +470,7 @@ WRATH_GOBLIN_ENGINEERING
 -- #endif
 );
 WOTLK_ENGINEERING_SUPPLIES = applyclassicphase(WRATH_PHASE_ONE, sharedData ({
-	["sharedDescription"] = "Can be bought from Engineering Suppliers, as well as some Trade vendors around the world.",
+	["description"] = "Can be bought from Engineering Suppliers, as well as some Trade vendors around the world.",
 	["providers"] = {
 		{ "n", 28722},	-- Bryan Landers <Engineering Supplies>
 		-- #if AFTER CATA

@@ -88,15 +88,42 @@ namespace ATT
             var ItemConversionDB = WagoData.GetAll<ItemBonus>().Values.Where(i => i.Type == 37).ToArray();
             if (ItemConversionDB.Length > 0)
             {
-                var itemConversionDB = new Dictionary<long, object>();
+                var itemConversionDB = new Dictionary<string, object>();
                 Exports.Add("ItemConversionDB", itemConversionDB);
                 if (Exports.TryGetValue("_Compressed", out IDictionary<string, object> compressed))
                 {
                     compressed.Add("ItemConversionDB", true);
                 }
+
+                var bonusCatalysts = new Dictionary<long, long>();
+                var catalystBonusIDs = new Dictionary<long, long>();
+                itemConversionDB["BonusCatalysts"] = bonusCatalysts;
+                itemConversionDB["BonusUpgradeTracks"] = catalystBonusIDs;
+
                 foreach (var obj in ItemConversionDB)
                 {
-                    itemConversionDB[obj.ParentItemBonusListID] = obj.Value_0;
+                    bonusCatalysts[obj.ParentItemBonusListID] = obj.Value_0;
+
+                    // probably not worth having a configurable mapping... unless blizz adds more naming/ids for upgrade levels >_>
+                    switch (obj.Value_1)
+                    {
+                        // LFR
+                        case 4:
+                            catalystBonusIDs[obj.ParentItemBonusListID] = 972;
+                            break;
+                        // N
+                        case 0:
+                            catalystBonusIDs[obj.ParentItemBonusListID] = 973;
+                            break;
+                        // H
+                        case 1:
+                            catalystBonusIDs[obj.ParentItemBonusListID] = 974;
+                            break;
+                        // M
+                        case 3:
+                            catalystBonusIDs[obj.ParentItemBonusListID] = 978;
+                            break;
+                    }
                 }
             }
 
@@ -4438,13 +4465,15 @@ namespace ATT
                     switch (filter)
                     {
                         case Objects.Filters.Ignored:
-                        case Objects.Filters.Consumable:
                         case Objects.Filters.Faction:
                         case Objects.Filters.Toy:
                         case Objects.Filters.Quest:
                         case Objects.Filters.Recipe:
                         case Objects.Filters.Mount:
                             return;
+                        case Objects.Filters.Consumable:
+                            if(!data.ContainsKey("factionID")) return;
+                            break;
                     }
 
                     //LogDebugFormatted("ItemID:{0} Marked as Heirloom. Filter: {1}", itemID, filter.ToString());

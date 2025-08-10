@@ -7,6 +7,7 @@ NIGHTFALL = createHeader({
 	text = {
 		en = "Nightfall",
 		cn = "夜幕激斗",
+		ru = "Сумерки",
 	},
 });
 

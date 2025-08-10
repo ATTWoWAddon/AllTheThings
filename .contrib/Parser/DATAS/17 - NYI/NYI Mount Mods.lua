@@ -59,17 +59,8 @@ root(ROOTS.NeverImplemented, n(MOUNT_MODS, {
 			i(232979),	-- Jaks Jabberjaw (MM!)
 			i(232978),	-- Louie Firehands (MM!)
 			i(232930),	-- Zaps Leadfoot (MM!)
-			i(235697),	-- Delver's Dirigible Schematic: Alliance Decal (MM!)
-			i(235694),	-- Delver's Dirigible Schematic: Blue Paint (MM!)
 			i(235696),	-- Delver's Dirigible Schematic: Explorer Decal (MM!)
-			i(235688),	-- Delver's Dirigible Schematic: Fan (MM!)
-			i(235690),	-- Delver's Dirigible Schematic: Harpoon (MM!)
-			i(235698),	-- Delver's Dirigible Schematic: Horde Decal (MM!)
-			i(235689),	-- Delver's Dirigible Schematic: Kite (MM!)
-			i(235695),	-- Delver's Dirigible Schematic: Red Paint (MM!)
 			i(235693),	-- Delver's Dirigible Schematic: Rocket (MM!)
-			i(235692),	-- Delver's Dirigible Schematic: Thrusters (MM!)
-			i(235691),	-- Delver's Dirigible Schematic: Yellow Paint (MM!)
 		})),
 	}),
 }));

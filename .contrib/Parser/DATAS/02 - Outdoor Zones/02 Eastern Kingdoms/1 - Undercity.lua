@@ -2136,7 +2136,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["sym"] = {
 						-- #if AFTER CATA
-						{"sub", "common_recipes_vendor", 49737},	-- Shazdar <Sous Chef>
+						{"sub", "common_vendor", 49737},	-- Shazdar <Sous Chef>
 						-- #endif
 						{ "select","itemID",
 							159,	-- Refreshing Spring Water
@@ -2262,13 +2262,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sym"] = { {"sub", "common_recipes_vendor", 3346 } },	-- Kithas <Enchanting Supplies>
 					["coord"] = { 62.0, 60.8, UNDERCITY },
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(ENCHANTING_SUPPLIES, VANILLA_ENCHANTING_COMMON_RECIPES, {
-						i(6217, {	-- Copper Rod
-							["description"] = "Can be bought from Enchanting Suppliers, as well as some Trade vendors around the world.",
-						}),
-						i(10938, { ["isLimited"] = true, }),	-- Lesser Magic Essence
-						i(10940, { ["isLimited"] = true, }),	-- Strange Dust
-					}),
+					["groups"] = appendGroups(ENCHANTING_SUPPLIES, RUNED_COPPER_ROD_REAGENTS, VANILLA_ENCHANTING_COMMON_RECIPES, {}),
 				}),
 				n(4559, {	-- Timothy Weldon
 					["coord"] = { 63.6, 39.6, UNDERCITY },

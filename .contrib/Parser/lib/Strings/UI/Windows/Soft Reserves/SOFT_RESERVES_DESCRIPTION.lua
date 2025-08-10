@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "The soft reservation list submitted by your raid group. This is managed through the Master Looter, should they have ATT installed. If not, this feature will not function.\n\nML: Members of your raid without ATT installed can whisper you '!sr <itemlink>' or '!sr <itemID>' to Soft Reserve an item.",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "La lista de reserva anticipada enviada por tu grupo de banda. Esta se gestiona a través del Maestro Saqueador, si tiene instalado ATT. De lo contrario, esta función no funcionará.\n\nML: Los miembros de tu banda sin ATT instalado pueden susurrar \"!sr <itemlink>\" o \"!sr <itemID>\" para reservar un objeto.",
+		mx = "La lista de reserva anticipada enviada por tu grupo de banda. Esta se gestiona a través del Maestro Saqueador, si tiene instalado ATT. De lo contrario, esta función no funcionará.\n\nML: Los miembros de tu banda sin ATT instalado pueden susurrar \"!sr <itemlink>\" o \"!sr <itemID>\" para reservar un objeto.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

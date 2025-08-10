@@ -1258,3 +1258,10 @@ i(0, 449573);		-- Mercurial Coalescence
 i(0, 449574);		-- Ominous Coalescence
 i(0, 430315);		-- Thaumaturgy
 i(0, 449575);		-- Volatile Coalescence
+
+------------------
+-- PATCH 11.2.0 --
+------------------
+--- ITEM ---
+i(244841, 1238010);	-- Invigorating Healing Potion
+i(248550, 1246966);	-- Umbral Essentia

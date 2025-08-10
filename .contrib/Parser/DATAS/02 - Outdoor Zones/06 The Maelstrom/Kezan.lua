@@ -17,13 +17,13 @@ root(ROOTS.Zones, {
 				n(EXPLORATION, sharedData({
 					["races"] = { GOBLIN },
 				},{
-					exploration(4767),    -- Bilgewater Port
-					exploration(4771),    -- Drudgetown
-					exploration(4770),    -- First Bank of Kezan
-					exploration(4768),    -- Gallywix's Villa
-					exploration(4766),    -- Kaja'mine
-					exploration(4822),    -- Kajaro Field
-					exploration(4765),    -- KTC Headquarters
+					exploration(4767),	-- Bilgewater Port
+					exploration(4771),	-- Drudgetown
+					exploration(4770),	-- First Bank of Kezan
+					exploration(4768),	-- Gallywix's Villa
+					exploration(4766),	-- Kaja'mine
+					exploration(4822),	-- Kajaro Field
+					exploration(4765),	-- KTC Headquarters
 				})),
 				n(QUESTS, {
 					q(14125, {	-- 447

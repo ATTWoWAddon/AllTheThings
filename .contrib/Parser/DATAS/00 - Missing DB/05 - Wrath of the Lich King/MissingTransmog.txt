@@ -1457,8 +1457,82 @@ s(188063)/i(206693),	-- Flying Knives
 3.4.3.51831
 s(48336)/i(92553),	-- ish X-Ray Specs Visual \\ Gnomish X-Ray Specs Visual
 3.4.3.52237
+s(190798)/i(209516),	-- Secondhand Plate Vambraces
+s(190800)/i(209522),	-- Secondhand Plate Leggings
+s(190801)/i(209515),	-- Secondhand Faceguard
+s(190802)/i(209517),	-- Secondhand Plate Gauntlets
+s(190803)/i(209519),	-- Secondhand Plate Greaves
+s(190804)/i(209518),	-- Secondhand Chestguard
+s(190810)/i(209528),	-- Secondhand Faceguard
+s(190811)/i(209529),	-- Secondhand Crown
+s(190812)/i(209530),	-- Secondhand Crown
+s(190813)/i(209531),	-- Secondhand Headguard
+s(190814)/i(209532),	-- Secondhand Cowl
+s(190815)/i(209533),	-- Secondhand Headguard
+s(190860)/i(209583),	-- Secondhand Spaulders
+s(190861)/i(209584),	-- Secondhand Pads
+s(190862)/i(209585),	-- Secondhand Spaulders
+s(190863)/i(209586),	-- Secondhand Pauldrons
+s(190864)/i(209587),	-- Secondhand Pads
+s(190865)/i(209588),	-- Secondhand Pauldrons
+s(190866)/i(209589),	-- Secondhand Mantle
+s(190876)/i(209599),	-- Secondhand Cloak
+s(190877)/i(209600),	-- Secondhand Cloak
+s(190879)/i(209602),	-- Secondhand Cloak
+s(190880)/i(209603),	-- Secondhand Cloak
+s(190881)/i(209606),	-- Secondhand Armor
+s(190882)/i(209607),	-- Secondhand Tunic
+s(190885)/i(209627),	-- Secondhand Tunic
+s(190886)/i(209628),	-- Secondhand Armor
+s(190887)/i(209629),	-- Secondhand Armor
+s(190888)/i(209630),	-- Secondhand Chestguard
+s(190889)/i(209631),	-- Secondhand Bracers
+s(190890)/i(209632),	-- Secondhand Bindings
+s(190891)/i(209633),	-- Secondhand Bindings
+s(190892)/i(209634),	-- Secondhand Armguards
+s(190893)/i(209635),	-- Secondhand Armguards
+s(190894)/i(209636),	-- Secondhand Plate Vambraces
+s(190895)/i(209637),	-- Secondhand Gloves
+s(190896)/i(209638),	-- Secondhand Gloves
+s(190897)/i(209639),	-- Secondhand Gloves
+s(190898)/i(209640),	-- Secondhand Gauntlets
+s(190899)/i(209641),	-- Secondhand Gauntlets
+s(190900)/i(209642),	-- Secondhand Plate Gauntlets
+s(190901)/i(209644),	-- Secondhand Sash
+s(190902)/i(209645),	-- Secondhand Belt
+s(190903)/i(209646),	-- Secondhand Belt
+s(190904)/i(209647),	-- Secondhand Belt
+s(190905)/i(209648),	-- Secondhand Belt
+s(190906)/i(209649),	-- Secondhand Plate Girdle
+s(190907)/i(209650),	-- Secondhand Pants
+s(190908)/i(209651),	-- Secondhand Legguards
+s(190909)/i(209652),	-- Secondhand Legguards
+s(190910)/i(209653),	-- Secondhand Leggings
+s(190911)/i(209654),	-- Secondhand Leggings
+s(190912)/i(209655),	-- Secondhand Plate Leggings
+s(190913)/i(209656),	-- Secondhand Boots
+s(190914)/i(209657),	-- Secondhand Boots
+s(190915)/i(209658),	-- Secondhand Boots
+s(190916)/i(209659),	-- Secondhand Boots
+s(190917)/i(209660),	-- Secondhand Boots
+s(190918)/i(209661),	-- Secondhand Plate Greaves
+s(191010)/i(209782),	-- Secondhand Guardian
+s(191011)/i(209783),	-- Secondhand Shiv
+s(191012)/i(209784),	-- Secondhand Sword
+s(191013)/i(209785),	-- Secondhand Blade
 s(191014)/i(209786),	-- Secondhand Shield
+s(191015)/i(209787),	-- Secondhand Buckler
+s(191016)/i(209789),	-- Secondhand Bow
+s(191017)/i(209790),	-- Secondhand Warmaul
+s(191018)/i(209791),	-- Secondhand Stave
+s(191019)/i(209792),	-- Secondhand Staff
+s(191020)/i(209793),	-- Secondhand Right Claw
+s(191021)/i(209794),	-- Secondhand Smasher
+s(191022)/i(209796),	-- Secondhand Dagger
+s(191023)/i(209801),	-- Secondhand Left Claw
 s(191024)/i(209803),	-- Secondhand Knives
+s(191026)/i(209804),	-- Secondhand Wand
+s(191941)/i(210135),	-- Secondhand Rose
 3.4.3.54948
 s(77255)/i(134017),	-- Carlos' Famous Hat \\ Don Carlos' Famous Hat
 s(222836)/i(225921),	-- Icebound Cloak

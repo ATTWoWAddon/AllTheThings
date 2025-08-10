@@ -871,7 +871,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["description"] = "Found in the Hall of the Crafters after you defeat Archaedas. Contains 2-3 items.",
 				["modelScale"] = 3,
 				["sym"] = {{"select","itemID",	-- Since this is basically a source for any classic world drops, we will only list drops where the Ancient Treasure appears to be the best chance
-					8029,    -- Plans: Wicked Mithril Bade
+					8029,	-- Plans: Wicked Mithril Bade
 				}},
 			}),
 			o(131474, {	-- The Discs of Norgannon

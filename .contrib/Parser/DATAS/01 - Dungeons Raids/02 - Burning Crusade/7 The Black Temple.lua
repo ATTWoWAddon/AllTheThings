@@ -423,8 +423,18 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 							i(122196, {	-- Music Roll: The Burning Legion
 								["timeline"] = { ADDED_6_1_0 },
 							}),
-							applyclassicphase(TBC_PHASE_THREE_GLAIVEPRIO, i(32837)),	-- Warglaive of Azzinoth (LEGENDARY! MH)
-							applyclassicphase(TBC_PHASE_THREE_GLAIVEPRIO, i(32838)),	-- Warglaive of Azzinoth (LEGENDARY! OH)
+							applyclassicphase(TBC_PHASE_THREE_GLAIVEPRIO, i(32837, {	-- Warglaive of Azzinoth (LEGENDARY! MH)
+								-- #if AFTER 11.1.7
+								["description"] = "Following patch 11.1.7, Blizzard seems to have changed something such that this can no longer be collected, though it continues to function properly for the related Achievement",
+								["collectible"]=false,
+								-- #endif
+							})),
+							applyclassicphase(TBC_PHASE_THREE_GLAIVEPRIO, i(32838, {	-- Warglaive of Azzinoth (LEGENDARY! OH)
+								-- #if AFTER 11.1.7
+								["description"] = "Following patch 11.1.7, Blizzard seems to have changed something such that this can no longer be collected, though it continues to function properly for the related Achievement",
+								["collectible"]=false,
+								-- #endif
+							})),
 							i(31089, {	-- Chestguard of the Forgotten Conqueror
 								["classes"] = { PALADIN, PRIEST, WARLOCK },
 							}),

@@ -392,7 +392,6 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				i(166887),	-- Pakura Priest Staff
 				i(158568),	-- Mojo-Drainer Staff
 				i(152871),	-- Seapriest's Wand
-				i(152873),	-- Talanji's Salutary Scepter
 				i(158580),	-- Loa-Claimer's Wariglaives
 			})),
 		}),

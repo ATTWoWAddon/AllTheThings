@@ -1093,29 +1093,43 @@ root(ROOTS.Zones, {
 							i(83652),	-- Palewind Helm
 						},
 					}),
+					q(31386, {	-- The Shado-Pan Offensive (A)
+						["qg"] = 64030,	-- Lao Lang
+						["coord"] = { 84.4, 61.6, VALE_OF_ETERNAL_BLOSSOMS },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
+					}),
+					q(31388, {	-- The Shado-Pan Offensive (H)
+						["qg"] = 64002,	-- Sang-Bo
+						["coord"] = { 63.0, 21.2, VALE_OF_ETERNAL_BLOSSOMS },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+					}),
 					q(30956, {	-- The Siege Swells
 						["qg"] = 61580,	-- Ogo the Elder
 						["coord"] = { 39.3, 62.2, TOWNLONG_STEPPES },
 						["isDaily"] = true,
 					}),
-					q(32681, {	-- The Storm Gathers (A)
+					applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, q(32681, {	-- The Storm Gathers (A)
 						["sourceQuest"] = 32679,	-- Thunder Calls (A)
 						["qg"] = 70360,	-- Vareesa Windrunner
 						["coord"] = { 49.8, 69.0, TOWNLONG_STEPPES },
+						["timeline"] = { ADDED_5_2_0 },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(95567),	-- Kirin Tor Beacon (TOY!)
 						},
-					}),
-					q(32680, {	-- The Storm Gathers (H)
+					})),
+					applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, q(32680, {	-- The Storm Gathers (H)
 						["sourceQuest"] = 32678,	-- Thunder Calls (H)
 						["qg"] = 70358,	-- Scout Captain Elsia
 						["coord"] = { 50.7, 73.3, TOWNLONG_STEPPES },
+						["timeline"] = { ADDED_5_2_0 },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(95568),	-- Sunreaver Beacon (TOY!)
 						},
-					}),
+					})),
 					q(30975, {	-- The Taking of Dusklight Bridge
 						["sourceQuest"] = 30973,	-- Up In Flames
 						["qg"] = 61016,	-- Lao-Chin the Iron Belly
@@ -1199,6 +1213,20 @@ root(ROOTS.Zones, {
 							i(84102),	-- Ancient Arcane Powder (QI!)
 						},
 					}),
+					applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, q(32679, {	-- Thunder Calls (A)
+						["qg"] = 64610,	-- Lyalia
+						["coord"] = { 84.0, 58.8, VALE_OF_ETERNAL_BLOSSOMS },
+						["timeline"] = { ADDED_5_2_0 },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
+					})),
+					applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, q(32678, {	-- Thunder Calls (H)
+						["qg"] = 64566,	-- Sunwalker Dezco
+						["coord"] = { 62.8, 28.0, VALE_OF_ETERNAL_BLOSSOMS },
+						["timeline"] = { ADDED_5_2_0 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+					})),
 					q(30780, {	-- Totemic Research
 						["sourceQuest"] = 30777,	-- In Search of Suna
 						["qg"] = 60864,	-- Yalia Sagewhisper
@@ -1660,6 +1688,14 @@ root(ROOTS.Zones, {
 							89657,	-- Wall Breaker Gauntlets
 							89652,	-- Wandering Friar's Gloves
 						}},
+						["groups"] = {
+							-- #if AFTER 6.0.1
+							currency(697, {	-- Elder Charm of Good Fortune
+								["cost"] = { { "c", 738, 20 } },	-- 20x Lesser Charm of Good Fortune
+								["timeline"] = { ADDED_6_0_2 },
+							}),
+							-- #endif
+						},
 					}),
 					n(64606, {	-- Commander Oxheart <Valor Quartermaster>
 						["coord"] = { 37.8, 64.6, TOWNLONG_STEPPES },
@@ -1805,7 +1841,7 @@ root(ROOTS.Zones, {
 								i(84584),	-- Formula: Enchant Weapon - Dancing Steel (RECIPE!)
 								i(84583),	-- Formula: Enchant Weapon - Jade Spirit (RECIPE!)
 								i(84580),	-- Formula: Enchant Weapon - River's Song (RECIPE!)
-								i(138877),	-- Formula: Tome of Illusions: Secrets of the Shado-Pan (RECIPE!)
+								i(138877, { ["timeline"] = { ADDED_7_0_3 } }),	-- Formula: Tome of Illusions: Secrets of the Shado-Pan (RECIPE!)
 								i(93220),	-- Grand Commendation of the Shado-Pan
 							}, {	-- Exalted
 								i(89307, {	-- Blue Shado-Pan Riding Tiger (MOUNT!)

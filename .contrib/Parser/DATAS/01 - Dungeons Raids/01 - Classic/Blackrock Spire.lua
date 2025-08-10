@@ -18,7 +18,7 @@ UPPER_BLACKROCK_SPIRE = createHeader({
 		en = [[~DUNGEON_FLOOR_UPPERBLACKROCKSPIRE1]],
 	},
 	description = {
-		-- #if BEFORE 3.0.8
+		-- #if AFTER 3.0.8
 		en = "Also known as 'Upper' Blackrock Spire.",
 		-- #else
 		en = "One member of your group must have completed the Seal of Ascension quest chain in order for the fires to light and the door to open to this portion of the instance. Also known as 'Upper' Blackrock Spire.",

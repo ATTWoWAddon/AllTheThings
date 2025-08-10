@@ -121,13 +121,10 @@ i(21785),	-- Cut Emerald
 i(21786),	-- Cut Azerothian Diamond
 i(21807),	-- rked Letter \\ Unmarked Letter
 i(21808),	-- ne Core \\ Arcane Core
-i(21877),	-- erweave Cloth \\ Netherweave Cloth
 i(21878),	-- zzDEPRECATED Spellthread \\ zzOLDSpellthread
 i(21879),	-- Charged Draenethyst Crystal
 i(21880),	-- Perfect Draenethyst Crystal
-i(21881),	-- erweb Spider Silk \\ Netherweb Spider Silk
 i(21883),	-- Ebon Felcloth
-i(21929),	-- e Spessarite \\ Flame Spessarite
 i(22018),	-- ured Glacier Water \\ Conjured Glacier Water
 i(22019),	-- ured Croissant \\ Conjured Croissant
 i(22026),	-- QAE Test Item Update \\ zzOLD - QAEnchant 2H Weapon +9 Damage
@@ -204,8 +201,6 @@ i(23026),	-- Supply Request Crystal
 i(23051),	-- Monster - Bow, Raid Snake ZG
 i(23074),	-- [PH] Goblin Tooth
 i(23076),	-- liant Citrine \\ Brilliant Citrine
-i(23077),	-- d Garnet \\ Blood Garnet
-i(23079),	-- Peridot \\ Deep Peridot
 i(23094),	-- liant Blood Garnet \\ Brilliant Blood Garnet \\ Teardrop Blood Garnet
 i(23095),	-- Blood Garnet \\ Bold Blood Garnet
 i(23096),	-- liant Blood Garnet \\ Brilliant Blood Garnet \\ Runed Blood Garnet
@@ -218,17 +213,14 @@ i(23103),	-- ant Deep Peridot \\ Radiant Deep Peridot
 i(23104),	-- ed Deep Peridot \\ Jagged Deep Peridot
 i(23105),	-- l Deep Peridot \\ Regal Deep Peridot \\ Enduring Deep Peridot
 i(23106),	-- fied Shadow Draenite \\ Purified Shadow Draenite \\ Dazzling Deep Peridot
-i(23107),	-- ow Draenite \\ Shadow Draenite
 i(23108),	-- less Shadow Draenite \\ Timeless Shadow Draenite \\ Glowing Shadow Draenite
 i(23109),	-- fied Shadow Draenite \\ Purified Shadow Draenite \\ Royal Shadow Draenite
 i(23110),	-- ting Shadow Draenite \\ Shifting Shadow Draenite
 i(23111),	-- reign Shadow Draenite \\ Sovereign Shadow Draenite
-i(23112),	-- en Draenite \\ Golden Draenite
 i(23113),	-- liant Blood Garnet \\ Brilliant Blood Garnet \\ Brilliant Golden Draenite
 i(23114),	-- th Golden Draenite \\ Smooth Golden Draenite \\ Gleaming Golden Draenite
 i(23115),	-- le Golden Draenite \\ Subtle Golden Draenite \\ Thick Golden Draenite
 i(23116),	-- d Azure Moonstone \\ Rigid Azure Moonstone \\ Rigid Golden Draenite
-i(23117),	-- e Moonstone \\ Azure Moonstone
 i(23118),	-- d Azure Moonstone \\ Solid Azure Moonstone
 i(23119),	-- kling Azure Moonstone \\ Sparkling Azure Moonstone
 i(23120),	-- my Azure Moonstone \\ Stormy Azure Moonstone
@@ -388,6 +380,7 @@ i(23790),	-- owed Out Tree \\ Hollowed Out Tree
 i(23791),	-- of Leaves \\ Pile of Leaves
 i(23792),	-- Disguise Kit \\ Tree Disguise Kit
 i(23798),	-- olical Plans \\ Diabolical Plans
+i(23817),	-- matic: Titanium Toolbox \\ Schematic: Titanium Toolbox \\ Schematic: Khorium Toolbox
 i(23818),	-- lpine Furbolg Language Primer \\ Stillpine Furbolg Language Primer
 i(23822),	-- ing Potion Injector \\ Healing Potion Injector
 i(23823),	-- Potion Injector \\ Mana Potion Injector
@@ -632,10 +625,6 @@ i(24472),	-- Grog'ak's Head \\ Boss Grog'ak's Head
 i(24473),	-- ged Crusher Core \\ Enraged Crusher Core
 i(24474),	-- et Scrying Crystal \\ Violet Scrying Crystal
 i(24475),	-- awg's Imprint \\ Gordawg's Imprint
-i(24476),	-- al Clam \\ Jaggal Clam
-i(24477),	-- al Clam Meat \\ Jaggal Clam Meat
-i(24478),	-- al Pearl \\ Jaggal Pearl
-i(24479),	-- ow Pearl \\ Shadow Pearl
 i(24480),	-- tly Essence \\ Ghostly Essence
 i(24482),	-- rus' Report \\ Alturus' Report \\ Alturus's Report
 i(24483),	-- ered Basidium \\ Withered Basidium
@@ -1014,14 +1003,8 @@ i(27628),	-- Level 62 Test Gear Green - Plate - Warrior 2
 i(27629),	-- Level 61 Test Gear Green - Plate - Warrior 2
 i(27630),	-- Level 60 Test Gear Green - Plate - Warrior 2
 i(27634),	-- Saga of Terokk \\ The Saga of Terokk
-i(27671),	-- ard Meat \\ Buzzard Meat
-i(27674),	-- ger Flesh \\ Ravager Flesh
 i(27676),	-- nge Spores \\ Strange Spores
-i(27677),	-- k o' Basilisk \\ Chunk o' Basilisk
-i(27678),	-- thoof Meat \\ Clefthoof Meat
 i(27679),	-- ic Dawnstone \\ Mystic Dawnstone \\ Sublime Mystic Dawnstone
-i(27681),	-- ed Flesh \\ Warped Flesh
-i(27682),	-- uk Venison \\ Talbuk Venison
 i(27729),	-- noid Skull \\ Humanoid Skull
 i(27774),	-- zzOLDMighty Blood Garnet
 i(27785),	-- ed Deep Peridot \\ Jagged Deep Peridot \\ Notched Deep Peridot
@@ -1305,7 +1288,6 @@ i(29737),	-- ud's Concoction \\ Navuud's Concoction
 i(29738),	-- of Void Horror Ooze \\ Vial of Void Horror Ooze
 i(29741),	-- nostic Results \\ Diagnostic Results
 i(29742),	-- Warden's Key \\ The Warden's Key
-i(29748),	-- Monster - Staff, Blooming Druid Staff
 i(29749),	-- hlon Lasher Cutting \\ Farahlon Lasher Cutting
 i(29751),	-- uk Horn Sample \\ Talbuk Horn Sample
 i(29768),	-- ing Hydra Heart \\ Hulking Hydra Heart
@@ -1672,8 +1654,6 @@ i(31664),	-- hed's Key \\ Zuluhed's Key
 i(31666),	-- ered Steam Tonk Controller \\ Battered Steam Tonk Controller
 i(31667),	-- Knife of a Thousand Lies
 i(31668),	-- Collecting Totem \\ Orb Collecting Totem
-i(31670),	-- or Ribs \\ Raptor Ribs
-i(31671),	-- ent Flesh \\ Serpent Flesh
 i(31678),	-- al Interference Rod \\ Mental Interference Rod
 i(31697),	-- d Relic \\ Dread Relic
 i(31698),	-- er from Shattrath \\ Letter from Shattrath
@@ -2036,7 +2016,6 @@ i(33141),	-- d Bladestone \\ Rigid Bladestone \\ Great Bladestone
 i(33142),	-- d Bladestone \\ Rigid Bladestone
 i(33143),	-- e of Blades \\ Stone of Blades
 i(33144),	-- t of Eternity \\ Facet of Eternity
-i(33162),	-- Monster - Item, Tankard Gold Offhand (Yellow Glow)
 i(33163),	-- elin Cargo \\ Zeppelin Cargo
 i(33166),	-- e's Fish Paste, Extra Strength \\ Pagle's Fish Paste, Extra Strength
 i(33175),	-- tail \\ Wyrmtail
@@ -2258,6 +2237,29 @@ i(35499),	-- Ninja Grenade [PH]
 i(35501),	-- nal Earthstorm Diamond \\ Eternal Earthstorm Diamond
 i(35503),	-- r Skyfire Diamond \\ Ember Skyfire Diamond
 i(35512),	-- et Full of Snow \\ Pocket Full of Snow
+i(35517),	-- Pattern: Bindings of Lightning Reflexes
+i(35518),	-- Pattern: Bracers of Nimble Thought
+i(35519),	-- Pattern: Bracers of Renewed Life
+i(35520),	-- Pattern: Living Earth Bindings
+i(35521),	-- Pattern: Living Earth Shoulders
+i(35522),	-- Pattern: Mantle of Nimble Thought
+i(35523),	-- Pattern: Shoulderpads of Renewed Life
+i(35524),	-- Pattern: Shoulders of Lightning Reflexes
+i(35525),	-- Pattern: Swiftheal Mantle
+i(35526),	-- Pattern: Swiftheal Wraps
+i(35527),	-- Pattern: Swiftstrike Bracers
+i(35539),	-- Pattern: Carapace of Sun and Shadow
+i(35540),	-- Pattern: Embrace of the Phoenix
+i(35541),	-- Pattern: Fletcher's Gloves of the Phoenix
+i(35542),	-- Pattern: Gloves of Immortal Dusk
+i(35544),	-- Pattern: Hands of Eternal Light
+i(35545),	-- Pattern: Leather Chestguard of the Sun
+i(35546),	-- Pattern: Leather Gauntlets of the Sun
+i(35548),	-- Pattern: Robe of Eternal Light
+i(35549),	-- Pattern: Sun-Drenched Scale Chestguard
+i(35550),	-- Pattern: Sun-Drenched Scale Gloves
+i(35551),	-- Pattern: Sunfire Handwraps
+i(35552),	-- Pattern: Sunfire Robe
 i(35568),	-- e of Silvermoon \\ Flame of Silvermoon
 i(35569),	-- e of the Exodar \\ Flame of the Exodar
 i(35674),	-- Test Druid  Weapon
@@ -2275,7 +2277,6 @@ i(35760),	-- less Pyrestone \\ Reckless Pyrestone
 i(35761),	-- k Lionseye \\ Quick Lionseye
 i(35828),	-- mic Beacon \\ Totemic Beacon
 i(36748),	-- Brewmaiden's Brew \\ Dark Brewmaiden's Brew
-i(36761),	-- Monster - Item, Tankard Metal Offhand (Red Glow)
 i(36876),	-- ched Holy Symbol \\ Scorched Holy Symbol
 i(37148),	-- e Singed Page \\ Loose Singed Page \\ Singed Page
 i(37311),	-- reaker Whip \\ Skybreaker Whip
@@ -2338,97 +2339,10 @@ i(185691),	-- Auchenai Key
 i(185692),	-- Warpforged Key
 i(185693),	-- Key of Time
 i(185956),	-- Shimmering Vessel
-i(185976),	-- Communal Faceguard
-i(185977),	-- Communal Pauldrons
-i(185981),	-- Communal Band of Onslaught
-i(185982),	-- Communal Band of Dexterity
-i(185983),	-- Communal Band of Wisdom
-i(185984),	-- Communal Band of Durability
-i(185985),	-- Communal Stone of Onslaught
-i(185986),	-- Communal Stone of Durability
-i(185987),	-- Communal Stone of Wisdom
-i(185988),	-- Communal Stone of Stoicism
-i(185998),	-- Communal Chestguard
-i(185999),	-- Communal Plate Vambraces
-i(186001),	-- Communal Plate Gauntlets
-i(186002),	-- Communal Plate Girdle
-i(186015),	-- Communal Plate Leggings
-i(186016),	-- Communal Plate Greaves
-i(186018),	-- Communal Cowl
-i(186019),	-- Communal Mantle
-i(186020),	-- Communal Armor
-i(186021),	-- Communal Sash
-i(186022),	-- Communal Pants
-i(186023),	-- Communal Boots
-i(186024),	-- Communal Bracers
-i(186025),	-- Communal Gloves
-i(186026),	-- Communal Crown
-i(186027),	-- Communal Pads
-i(186028),	-- Communal Tunic
-i(186029),	-- Communal Belt
-i(186030),	-- Communal Legguards
-i(186031),	-- Communal Boots
-i(186032),	-- Communal Bindings
-i(186033),	-- Communal Gloves
-i(186034),	-- Communal Headguard
-i(186035),	-- Communal Spaulders
-i(186036),	-- Communal Armor
-i(186037),	-- Communal Belt
-i(186038),	-- Communal Leggings
-i(186039),	-- Communal Boots
-i(186040),	-- Communal Armguards
-i(186041),	-- Communal Gauntlets
-i(186044),	-- Communal Cloak
-i(186045),	-- Communal Cloak
-i(186046),	-- Communal Cloak
-i(186047),	-- Communal Cape
-i(186048),	-- Communal Dagger
-i(186049),	-- Communal Rose
-i(186050),	-- Communal Wand
-i(186051),	-- Communal Staff
-i(186052),	-- Communal Idol of Wrath
-i(186053),	-- Communal Idol of the Wild
-i(186054),	-- Communal Idol of Life
-i(186055),	-- Communal Stave
-i(186056),	-- Communal Bow
-i(186057),	-- Communal Warmaul
-i(186058),	-- Communal Sword
-i(186060),	-- Communal Guardian
-i(186061),	-- Communal Blade
-i(186062),	-- Communal Smasher
-i(186063),	-- Communal Shield
-i(186064),	-- Communal Buckler
-i(186065),	-- Communal Book of Healing
-i(186066),	-- Communal Book of Protection
-i(186067),	-- Communal Book of Righteousness
-i(186068),	-- Communal Shiv
-i(186069),	-- Communal Knives
-i(186070),	-- Communal Right Claw \\ Communal Slicers
-i(186071),	-- Communal Totem of Lightning
-i(186072),	-- Communal Totem of Restoration
-i(186073),	-- Communal Totem of the Storm
-i(186074),	-- Communal Necklace
-i(186075),	-- Communal Cloak
-i(186076),	-- Communal Bindings
-i(186078),	-- Communal Crown
-i(186079),	-- Communal Legguards
-i(186080),	-- Communal Pads
-i(186081),	-- Communal Headguard
-i(186082),	-- Communal Leggings
-i(186083),	-- Communal Spaulders
-i(186084),	-- Communal Armguards
-i(186085),	-- Communal Plate Vambraces
-i(186086),	-- Communal Faceguard
-i(186087),	-- Communal Plate Leggings
-i(186088),	-- Communal Pauldrons
-2.5.1.38119
-i(186163),	-- Communal Guardian
 2.5.1.38225
 i(186440),	-- Sealed Package
 i(186451),	-- Sealed Package
 i(186452),	-- Sealed Package
-2.5.1.38364
-i(186682),	-- Communal Left Claw
 2.5.1.38548
 i(187129),	-- Honor Points
 i(187130),	-- Honor Points

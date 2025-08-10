@@ -166,41 +166,83 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 		i(130905),	-- Mark of the Deceiver
 		i(87399),	-- Restored Artifact
 		header(HEADERS.Currency, ARCH_CURRENCY_DEMONIC, sharedData({["cost"]={{"c",ARCH_CURRENCY_DEMONIC,50}}},{ -- TODO: someone can add different fragment costs within as needed
-			i(130917),	-- Flayed-Skin Chronicle
-			i(130920),	-- Houndstooth Hauberk
-			i(130916),	-- Imp's Cup
-			i(130918),	-- Malformed Abyssal
-			i(130919),	-- Orb of Inner Chaos
-			i(130932),	-- Pristine Flayed-Skin Chronicle
-			i(130935),	-- Pristine Houndstooth Hauberk
-			i(130931),	-- Pristine Imp's Cup
-			i(130933),	-- Pristine Malformed Abyssal
-			i(130934),	-- Pristine Orb of Inner Chaos
+			["providers"] = {
+				{ "o", 246812 },	-- Demonic Archaeology Find
+				-- #if AFTER 7.2.5
+				{ "o", 268466 },	-- Demonic Archaeology Find
+				{ "o", 268451 },	-- Demonic Archaeology Find
+				-- #endif
+			},
+			["maps"] = {
+				AZSUNA,
+				STORMHEIM,
+				SURAMAR,
+				VALSHARAH,
+			},
+			["groups"] = {
+				i(130917),	-- Flayed-Skin Chronicle
+				i(130920),	-- Houndstooth Hauberk
+				i(130916),	-- Imp's Cup
+				i(130918),	-- Malformed Abyssal
+				i(130919),	-- Orb of Inner Chaos
+				i(130932),	-- Pristine Flayed-Skin Chronicle
+				i(130935),	-- Pristine Houndstooth Hauberk
+				i(130931),	-- Pristine Imp's Cup
+				i(130933),	-- Pristine Malformed Abyssal
+				i(130934),	-- Pristine Orb of Inner Chaos
+			},
 		})),
 		header(HEADERS.Currency, ARCH_CURRENCY_HIGHBORNE, sharedData({["cost"]={{"c",ARCH_CURRENCY_HIGHBORNE,50}}},{ -- TODO: someone can add different fragment costs within as needed
-			i(130907),	-- Inert Leystone Charm
-			i(130910),	-- Nobleman's Letter Opener
-			i(130909),	-- Pre-War Highborne Tapestry
-			i(130922),	-- Pristine Inert Leystone Charm
-			i(130925),	-- Pristine Nobleman's Letter Opener
-			i(130924),	-- Pristine Pre-War Highborne Tapestry
-			i(130923),	-- Pristine Quietwine Vial
-			i(130921),	-- Pristine Violetglass Vessel
-			i(130908),	-- Quietwine Vial
-			i(137782, {["timeline"] = {ADDED_7_1_0}}),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 3] (RECIPE!)
-			i(130906),	-- Violetglass Vessel
+			["providers"] = {
+				{ "o", 246811 },	-- Highborne Archaeology Find
+				-- #if AFTER 7.2.0
+				{ "o", 268440 },	-- Highborne Archaeology Find
+				{ "o", 268453 },	-- Highborne Archaeology Find
+				-- #endif
+			},
+			["maps"] = {
+				AZSUNA,
+				SURAMAR,
+				VALSHARAH,
+			},
+			["groups"] = {
+				i(130907),	-- Inert Leystone Charm
+				i(130910),	-- Nobleman's Letter Opener
+				i(130909),	-- Pre-War Highborne Tapestry
+				i(130922),	-- Pristine Inert Leystone Charm
+				i(130925),	-- Pristine Nobleman's Letter Opener
+				i(130924),	-- Pristine Pre-War Highborne Tapestry
+				i(130923),	-- Pristine Quietwine Vial
+				i(130921),	-- Pristine Violetglass Vessel
+				i(130908),	-- Quietwine Vial
+				i(137782, {["timeline"] = {ADDED_7_1_0}}),	-- Vantus Rune Technique: Grand Magistrix Elisande [Rank 3] (RECIPE!)
+				i(130906),	-- Violetglass Vessel
+			},
 		})),
 		header(HEADERS.Currency, ARCH_CURRENCY_HIGHMOUNTAIN, sharedData({["cost"]={{"c",ARCH_CURRENCY_HIGHMOUNTAIN,50}}},{ -- TODO: someone can add different fragment costs within as needed
-			i(130914),	-- Drogbar Gem-Roller
-			i(130913),	-- Hand-Smoothed Pyrestone
-			i(130912),	-- Moosebone Fish-Hook
-			i(130929),	-- Pristine Drogbar Gem-Roller
-			i(130928),	-- Pristine Hand-Smoothed Pyrestone
-			i(130927),	-- Pristine Moosebone Fish-Hook
-			i(130930),	-- Pristine Stonewood Bow
-			i(130926),	-- Pristine Trailhead Drum
-			i(130915),	-- Stonewood Bow
-			i(130911),	-- Trailhead Drum
+			["providers"] = {
+				{ "o", 246804 },	-- Highmountain Tauren Archaeology Find
+				-- #if AFTER 7.2.0
+				{ "o", 268450 },	-- Highmountain Tauren Archaeology Find
+				-- #endif
+			},
+			["maps"] = {
+				HIGHMOUNTAIN,
+				652,	-- Thunder Totem
+				750,	-- Thunder Totem
+			},
+			["groups"] = {
+				i(130914),	-- Drogbar Gem-Roller
+				i(130913),	-- Hand-Smoothed Pyrestone
+				i(130912),	-- Moosebone Fish-Hook
+				i(130929),	-- Pristine Drogbar Gem-Roller
+				i(130928),	-- Pristine Hand-Smoothed Pyrestone
+				i(130927),	-- Pristine Moosebone Fish-Hook
+				i(130930),	-- Pristine Stonewood Bow
+				i(130926),	-- Pristine Trailhead Drum
+				i(130915),	-- Stonewood Bow
+				i(130911),	-- Trailhead Drum
+			},
 		})),
 	}),
 	prof(BLACKSMITHING, {

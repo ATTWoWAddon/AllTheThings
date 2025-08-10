@@ -203,7 +203,7 @@ root(ROOTS.Promotions, n(WARCRAFT_RUMBLE, bubbleDownSelf({ ["timeline"] = { ADDE
         }),
         q(73390, {	-- Gain New Look: Whelp Egg
         }),
-        -- Gold Looks
+		-- Gold Looks
         q(73173, {	-- Gain Even Newer Look: Maiev
         }),
         q(73392, {	-- Gain Even Newer Look: Murloc

@@ -40,8 +40,6 @@ r(265869),	-- Skinning
 r(265871),	-- Skinning
 9.0.1.33978
 r(308569),	-- Skinning
-11.0.5.56487
-r(469989),	-- Toughened Tempest Pelt
 
 
 

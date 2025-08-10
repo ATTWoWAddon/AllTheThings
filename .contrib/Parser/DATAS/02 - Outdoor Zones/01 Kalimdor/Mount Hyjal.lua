@@ -132,35 +132,35 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				},
 			}),
 			explorationHeader({
-				visit_exploration(5045,{coord={57.8,77.5,198}}),    -- Ascendant's Rise
+				visit_exploration(5045,{coord={57.8,77.5,198}}),	-- Ascendant's Rise
 				exploration(5018),	-- Ashen Lake
 				exploration(5013),	-- Blackhorn's Penance
 				exploration(4991),	-- Darkwhisper Gorge
-				visit_exploration(4996,{coord={91.2,49.4,198}}),    -- Doom's Vigil
-				visit_exploration(4994,{coord={87.3,56.5,198}}),    -- The Forge of Supplication
-				visit_exploration(4988,{coord={29.8,35.4,198}}),    -- Gar'gol's Hovel
+				visit_exploration(4996,{coord={91.2,49.4,198}}),	-- Doom's Vigil
+				visit_exploration(4994,{coord={87.3,56.5,198}}),	-- The Forge of Supplication
+				visit_exploration(4988,{coord={29.8,35.4,198}}),	-- Gar'gol's Hovel
 				exploration(4998),	-- Gates of Sothann
 				exploration(4989),	-- Grove of Aessina
-				visit_exploration(4999,{coord={32.8,43.1,198}}),    -- Lightning Ledge
-				visit_exploration(4980,{coord={33.3,36.1,198}}),    -- Maw of Lycanthoth
+				visit_exploration(4999,{coord={32.8,43.1,198}}),	-- Lightning Ledge
+				visit_exploration(4980,{coord={33.3,36.1,198}}),	-- Maw of Lycanthoth
 				exploration(5038),	-- Nordrassil
-				visit_exploration(5022,{coord={37.3,71.5,198}}),    -- Rim of the World
+				visit_exploration(5022,{coord={37.3,71.5,198}}),	-- Rim of the World
 				exploration(5019),	-- Sanctuary of Malorne
 				exploration(5087),	-- Sethria's Roost
 				exploration(4990),	-- Shrine of Aviana
 				exploration(4979),	-- Shrine of Goldrinn
-				visit_exploration(5039,{coord={47.8,77.6,198}}),    -- Sulfuron Spire
+				visit_exploration(5039,{coord={47.8,77.6,198}}),	-- Sulfuron Spire
 				exploration(5623),	-- The Circle of Cinders
 				exploration(5020),	-- The Flamewake
-				visit_exploration(5014,{coord={16.5,48.0,198}}),    -- The Inferno
+				visit_exploration(5014,{coord={16.5,48.0,198}}),	-- The Inferno
 				exploration(4861),	-- The Regrowth
 				exploration(5017),	-- The Scorched Plain
 				exploration(5040),	-- The Throne of Flame
-				visit_exploration(4984,{coord={79.6,61.1,198}}),    -- The Twilight Gauntlet
+				visit_exploration(4984,{coord={79.6,61.1,198}}),	-- The Twilight Gauntlet
 				exploration(5622),	-- The Verdant Thicket
-				visit_exploration(5033,{coord={38.9,24.6,198}}),    -- Twilight Command Post
+				visit_exploration(5033,{coord={38.9,24.6,198}}),	-- Twilight Command Post
 				exploration(5016),	-- Whistling Grove
-				visit_exploration(4978,{coord={33.5,30.2,198}}),    -- Wolf's Run
+				visit_exploration(4978,{coord={33.5,30.2,198}}),	-- Wolf's Run
 			}),
 			n(FACTIONS, {
 				faction(FACTION_GUARDIANS_OF_HYJAL, {	-- Guardians of Hyjal

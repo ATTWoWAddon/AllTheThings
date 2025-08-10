@@ -108,7 +108,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					["crs"] = { 43875 },	-- Asaad, Caliph of Zephyrs
 					["groups"] = {
 						-- #if BEFORE 7.3.5
-						ach(4847),    -- The Vortex Pinnacle
+						ach(4847),	-- The Vortex Pinnacle
 						-- #endif
 						i(55847),	-- Billowing Cape
 						i(55844),	-- Gloves of Haze
@@ -225,7 +225,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					e(116, {	-- Asaad, Caliph of Zephyrs
 						["crs"] = { 43875 },	-- Asaad, Caliph of Zephyrs
 						["groups"] = {
-							ach(4847),    -- The Vortex Pinnacle
+							ach(4847),	-- The Vortex Pinnacle
 							i(56369),	-- Billowing Cape
 							i(56368),	-- Gloves of Haze
 							i(56370),	-- Heart of Thunder

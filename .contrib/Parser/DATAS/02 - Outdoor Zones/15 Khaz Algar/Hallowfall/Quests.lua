@@ -596,7 +596,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "o", 430581 },	-- Egg Basket
 					["coord"] = { 60.8, 27.9, HALLOWFALL },
 					["groups"] = {
-						i(217396),	-- Hillhelm Egg (QI!)
+						o(430601, {	-- Hillhelm Egg
+							["coord"] = { 60.9, 27.7, HALLOWFALL },
+							["groups"] = { i(217396) },	-- Hillhelm Egg (QI!)
+						}),
 					},
 				}),
 				q(76247, {	-- Keep The Home Fires Burning
@@ -643,9 +646,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["sourceQuests"] = { 79109 },	-- Follow Miral
 					["provider"] = { "n", 215041 },	-- Miral Murder-Mittens
 					["coord"] = { 60.3, 21.2, HALLOWFALL },
-					["groups"] = {
-						i(221849),	-- Vanilla (PET!)
-					},
+					["groups"] = { i(221849) },	-- Vanilla (PET!)
 				}),
 			}),
 			header(HEADERS.AchCriteria, 40844.05, {	-- The Sky's the Limit

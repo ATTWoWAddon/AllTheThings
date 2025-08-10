@@ -2966,28 +2966,6 @@ root(ROOTS.Zones, {
 					})),
 				}),
 				n(VENDORS, {
-					-- Danny Donkey: This is an irrelevant source for vanilla recipes. Might add things to this vendor later.
-					--[[n(26569, {	-- Alys Vol'tyr <Reagents & Enchanting Supplies>
-						["coord"] = { 36.2, 46.6, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
-						["groups"] = {
-							i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
-							i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
-							i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
-							i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
-						},
-					}),]]
-					-- Danny Donkey: This is an irrelevant source for vanilla recipes. Might add things to this vendor later.
-					--[[n(27030, {	-- Bradley Towns <Reagents & Enchanting Supplies>
-						["coord"] = { 76.8, 62.2, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
-						["groups"] = {
-							i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
-							i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
-							i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
-							i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
-						},
-					}),]]
 					n(32533, {	-- Cielstrasza <Wyrmrest Accord Quartermaster>
 						["coord"] = { 59.8, 53.0, DRAGONBLIGHT },
 						["groups"] = bubbleDownClassicRep(FACTION_THE_WYRMREST_ACCORD, {
@@ -3037,17 +3015,6 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					-- Danny Donkey: This is an irrelevant source for vanilla recipes. Might add things to this vendor later.
-					--[[n(27054, {	-- Modoru <Reagents & Enchanting Supplies>
-						["coord"] = { 28.8, 55.8, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
-							i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
-							i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
-							i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
-							i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
-						},
-					}),]]
 					n(32763, {	-- Sairuk <Kalu'ak Quartermaster>
 						["coord"] = { 48.6, 75.6, DRAGONBLIGHT },
 						["groups"] = bubbleDownClassicRep(FACTION_THE_KALUAK, {

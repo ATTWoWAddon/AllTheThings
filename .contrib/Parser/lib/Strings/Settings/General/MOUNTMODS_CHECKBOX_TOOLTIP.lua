@@ -10,7 +10,7 @@ createLocalizationString({
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",
-		-- TODO: ru = "",
+		ru = "Включите для отслеживания модификаций транспорта.",
 		-- TODO: ko = "",
 		cn = "启用此选项以追踪坐骑更改",
 		-- TODO: tw = "",

@@ -166,6 +166,7 @@ s(158337)/i(6141),	--
 s(158338)/i(6142),	--
 s(158339)/i(6143),	--
 s(158350)/i(6182),	-- Dim Torch
+s(158393)/i(6243),	-- n Woolen Robe \\ Green Woolen Robe
 s(158599)/i(6606),	--
 s(158623)/i(6653),	-- h of the Dormant Flame \\ Torch of the Dormant Flame
 s(158624)/i(6654),	-- h of the Eternal Flame \\ Torch of the Eternal Flame
@@ -375,15 +376,12 @@ s(164335)/i(20573),	-- ad Male Mask \\ Undead Male Mask \\ Flimsy Male Undead Ma
 s(164336)/i(20574),	-- ad Female Mask \\ Undead Female Mask \\ Flimsy Female Undead Mask
 s(164452)/i(20814),	-- Broken Master's Throwing Dagger \\ Master's Throwing Dagger
 s(164453)/i(20905),	--
-s(164457)/i(21121),	-- Monster - Item, Flower - Purple
-s(164459)/i(21123),	-- Monster - Item, Flower - White
 s(164467)/i(21135),	-- Broken Assassin's Throwing Axe \\ Assassin's Throwing Axe
 s(164470)/i(21169),	--
 s(164471)/i(21170),	--
 s(164472)/i(21172),	--
 s(164581)/i(21439),	-- AHNQIRAJ TEST ITEM D PLATE HELM
 s(164587)/i(21445),	-- AHNQIRAJ TEST ITEM D PLATE BRACER
-s(164749)/i(21796),	-- Monster - Item, Ahn'Qiraj Held Scepter
 s(164750)/i(21797),	--
 s(164751)/i(21798),	--
 s(164752)/i(21799),	--

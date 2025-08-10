@@ -612,6 +612,7 @@ i(0, 127020);	-- Secret Tiger Fang Inscription
 i(0, 111646);	-- Starlight Ink
 i(0, 127017);	-- Tiger Claw Inscription
 i(0, 127016);	-- Tiger Fang Inscription
+i(0, 112883);	-- Tome of the Clear Mind
 i(0, 127007);	-- Yu'lon Kite
 -- Scroll/Research?!
 i(0, 124443);	-- Glyph of Black Ice
@@ -622,12 +623,13 @@ i(0, 112430);	-- Glyph of Burning Anger (Research: Blackfallow Ink)
 i(0, 124446);	-- Glyph of Clash
 i(0, 126153);	-- Glyph of Confession
 i(0, 112462);	-- Glyph of Crackling Tiger Lightning (Research: Blackfallow Ink)
+i(0, 112429);	-- Glyph of Crow Feast / Glyph of Hawk Feast [Legion+] (Research: Jadefire Ink)
 i(0, 126701);	-- Glyph of Direction
 i(0, 124447);	-- Glyph of Enduring Healing Sphere
 i(0, 112469);	-- Glyph of Fighting Pose (Research: Ink of the Sea)
 i(0, 57037);	-- Glyph of Focused Wrath
+i(0, 135561);	-- Glyph of Gateway Attunement
 i(0, 124449);	-- Glyph of Guard
-i(0, 112429);	-- Glyph of Crow Feast / Glyph of Hawk Feast [Legion+] (Research: Jadefire Ink)
 i(0, 126687);	-- Glyph of Holy Resurrection
 i(0, 112464);	-- Glyph of Honor (Scroll of Wisdom)
 i(0, 122015);	-- Glyph of Incite
@@ -692,7 +694,6 @@ i(0, 124445);	--
 i(0, 124451);	--
 i(0, 58309);	--
 i(0, 124452);	--
-i(0, 112883);	--
 i(0, 112442);	--
 i(0, 124456);	--
 i(0, 112450);	--
@@ -725,7 +726,6 @@ i(0, 148259);	--
 i(0, 148279);	--
 i(0, 148283);	--
 i(0, 148284);	--
-i(0, 135561);	--
 i(0, 148257);	--
 i(0, 148273);	--
 i(0, 148288);	--
@@ -1674,18 +1674,34 @@ i(0, 444186);	-- Algari Treatise on Tailoring
 ------------------
 -- PATCH 11.0.7 --
 ------------------
+--- ITEM ---
 i(234231, 1213515);	-- Glyph of the Admiral's Pistol Shot
 i(234232, 1213517);	-- Glyph of the Ashvane Pistol Shot
 i(234229, 1213514);	-- Glyph of the Gilded Pistol Shot
 i(234230, 1213512);	-- Glyph of the Twilight Pistol Shot
+--- NYI ---
+i(0, 1213516);		-- Unknown
 
 ------------------
 -- PATCH 11.1.0 --
 ------------------
+--- ITEM ---
 i(232535, 471132);	-- Contract: The Cartels of Undermine
 i(233022, 472951);	-- Vantus Rune: Undermine
 
 ------------------
 -- PATCH 11.1.7 --
 ------------------
+--- ITEM ---
 i(243052, 1234336);	-- Technique: Glyph of the Strix
+
+------------------
+-- PATCH 11.2.0 --
+------------------
+--- ITEM ---
+i(244043, 1236170);	-- Contract: The K'aresh Trust
+i(249703, 1249466);	-- Deal: Cartel Ba
+i(249705, 1249468);	-- Deal: Cartel Om
+i(249701, 1249463);	-- Deal: Cartel Zo
+i(246811, 1243994);	-- Inspired Writer's Quill
+i(244334, 1236908);	-- Vantus Rune: Manaforge Omega

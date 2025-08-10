@@ -1,6 +1,6 @@
 TRANSPORT_NETWORK = createHeader({
 	readable = "Transport Network",
-	-- icon = ,     -- Uses Different Icons
+	-- icon = , 	-- Uses Different Icons
 	text = {
 		en = "Transport Network",
 		de = "Reisenetzwerk",

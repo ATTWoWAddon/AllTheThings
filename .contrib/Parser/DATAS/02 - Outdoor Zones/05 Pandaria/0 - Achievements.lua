@@ -107,6 +107,5 @@ root(ROOTS.Zones, m(PANDARIA, applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["ti
 		}),
 		ach(7997),	-- Riches of Pandaria
 		ach(6350),	-- To All the Squirrels I Once Caressed? (automated)
-		ach(6858),	-- What Is Worth Fighting For
 	}),
 }))))

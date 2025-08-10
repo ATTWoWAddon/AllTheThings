@@ -59,261 +59,209 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 			["groups"] = {
 				-- Original Classic Gear, only collectable with the original title.
 				n(WEAPONS, {
-					i(18825, {	-- Grand Marshal's Aegis
-						["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
-					}),
-					i(18867, {	-- Grand Marshal's Battle Hammer
-						["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
-					}),
-					i(18833, {	-- Grand Marshal's Bullseye
-						["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
-					}),
-					i(18876, {	-- Grand Marshal's Claymore
-						["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
-					}),
-					i(23455, {	-- Grand Marshal's Demolisher
-						["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
-					}),
-					i(18838, {	-- Grand Marshal's Dirk
-						["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
-					}),
-					i(18869, {	-- Grand Marshal's Glaive
-						["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
-					}),
-					i(18855, {	-- Grand Marshal's Hand Cannon
-						["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
-					}),
-					i(18827, {	-- Grand Marshal's Handaxe
-						["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
-					}),
-					i(12584, {	-- Grand Marshal's Longsword
-						["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
-					}),
-					i(23451, {	-- Grand Marshal's Mageblade
-						["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
-					}),
-					i(18865, {	-- Grand Marshal's Punisher
-						["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
-					}),
-					i(18847, {	-- Grand Marshal's Razor Hand Blade
-						["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
-					}),
-					i(18836, {	-- Grand Marshal's Repeater
-						["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
-					}),
-					i(18843, {	-- Grand Marshal's Right Hand Blade
-						["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
-					}),
-					i(18873, {	-- Grand Marshal's Stave
-						["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
-					}),
-					i(18830, {	-- Grand Marshal's Sunderer
-						["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
-					}),
-					i(23456, {	-- Grand Marshal's Swiftblade
-						["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
-					}),
-					i(23452, {	-- Grand Marshal's Tome of Power
-						["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
-					}),
-					i(23453, {	-- Grand Marshal's Tome of Restoration
-						["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
-					}),
-					i(23454, {	-- Grand Marshal's Warhammer
-						["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
-					}),
+					moh(2, i(18825)),	-- Grand Marshal's Aegis
+					moh(5, i(18867)),	-- Grand Marshal's Battle Hammer
+					moh(5, i(18833)),	-- Grand Marshal's Bullseye
+					moh(5, i(18876)),	-- Grand Marshal's Claymore
+					moh(5, i(23455)),	-- Grand Marshal's Demolisher
+					moh(5, i(18838)),	-- Grand Marshal's Dirk
+					moh(5, i(18869)),	-- Grand Marshal's Glaive
+					moh(5, i(18855)),	-- Grand Marshal's Hand Cannon
+					moh(5, i(18827)),	-- Grand Marshal's Handaxe
+					moh(5, i(12584)),	-- Grand Marshal's Longsword
+					moh(5, i(23451)),	-- Grand Marshal's Mageblade
+					moh(5, i(18865)),	-- Grand Marshal's Punisher
+					moh(5, i(18847)),	-- Grand Marshal's Razor Hand Blade
+					moh(5, i(18836)),	-- Grand Marshal's Repeater
+					moh(5, i(18843)),	-- Grand Marshal's Right Hand Blade
+					moh(5, i(18873)),	-- Grand Marshal's Stave
+					moh(5, i(18830)),	-- Grand Marshal's Sunderer
+					moh(5, i(23456)),	-- Grand Marshal's Swiftblade
+					moh(2, i(23452)),	-- Grand Marshal's Tome of Power
+					moh(2, i(23453)),	-- Grand Marshal's Tome of Restoration
+					moh(5, i(23454)),	-- Grand Marshal's Warhammer
 				}),
 				cl(DRUID, bubbleDownSelf({ ["classes"] = { DRUID } }, {
 					-- Epic set
-					i(16451, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Field Marshal's Dragonhide Helmet		- 3x Mark of Honor
-					i(16449, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Field Marshal's Dragonhide Spaulders		- 2x Mark of Honor
-					i(16452, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Field Marshal's Dragonhide Breastplate	- 3x Mark of Honor
-					i(16448, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Marshal's Dragonhide Gauntlets 			- 2x Mark of Honor
-					i(16450, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Marshal's Dragonhide Legguards 			- 3x Mark of Honor
-					i(16459, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Marshal's Dragonhide Boots 				- 2x Mark of Honor
+					moh(3, i(16451)),	-- Field Marshal's Dragonhide Helmet
+					moh(2, i(16449)),	-- Field Marshal's Dragonhide Spaulders
+					moh(3, i(16452)),	-- Field Marshal's Dragonhide Breastplate
+					moh(2, i(16448)),	-- Marshal's Dragonhide Gauntlets
+					moh(3, i(16450)),	-- Marshal's Dragonhide Legguards
+					moh(2, i(16459)),	-- Marshal's Dragonhide Boots
 					-- Rare set
-					i(23308, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Lieutenant Commander's Dragonhide Headguard	- 3x Mark of Honor
-					i(23309, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Lieutenant Commander's Dragonhide Shoulders	- 2x Mark of Honor
-					i(23294, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Knight-Captain's Dragonhide Chestpiece 		- 3x Mark of Honor
-					i(23280, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Knight-Lieutenant's Dragonhide Grips			- 2x Mark of Honor
-					i(23295, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Knight-Captain's Dragonhide Leggings 		- 3x Mark of Honor
-					i(23281, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Knight-Lieutenant's Dragonhide Treads 		- 2x Mark of Honor
+					moh(3, i(23308)),	-- Lieutenant Commander's Dragonhide Headguard
+					moh(2, i(23309)),	-- Lieutenant Commander's Dragonhide Shoulders
+					moh(3, i(23294)),	-- Knight-Captain's Dragonhide Chestpiece
+					moh(2, i(23280)),	-- Knight-Lieutenant's Dragonhide Grips
+					moh(3, i(23295)),	-- Knight-Captain's Dragonhide Leggings
+					moh(2, i(23281)),	-- Knight-Lieutenant's Dragonhide Treads
 				}));
 				cl(HUNTER, bubbleDownSelf({ ["classes"] = { HUNTER } }, {
 					-- Epic set
-					i(16465, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Field Marshal's Chain Helm 			- 3x Mark of Honor
-					i(16468, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Field Marshal's Chain Spaulders   	- 2x Mark of Honor
-					i(16466, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Field Marshal's Chain Breastplate	- 3x Mark of Honor
-					i(16463, { ["cost"] = {{ "i", 137642, 2 }} }), 	-- Marshal's Chain Grips				- 2x Mark of Honor
-					i(16467, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Marshal's Chain Legguards			- 3x Mark of Honor
-					i(16462, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Marshal's Chain Boots				- 2x Mark of Honor
+					moh(3, i(16465)),	-- Field Marshal's Chain Helm
+					moh(2, i(16468)),	-- Field Marshal's Chain Spaulders
+					moh(3, i(16466)),	-- Field Marshal's Chain Breastplate
+					moh(2, i(16463)), 	-- Marshal's Chain Grips
+					moh(3, i(16467)),	-- Marshal's Chain Legguards
+					moh(2, i(16462)),	-- Marshal's Chain Boots
 					-- Rare set
-					i(23306, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Lieutenant Commander's Chain Helm 	  - 3x Mark of Honor
-					i(23307, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Lieutenant Commander's Chain Shoulders - 2x Mark of Honor
-					i(23292, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Knight-Captain's Chain Hauberk		  - 3x Mark of Honor
-					i(23279, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Knight-Lieutenant's Chain Vices		  - 2x Mark of Honor
-					i(23293, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Knight-Captain's Chain Legguards		  - 3x Mark of Honor
-					i(23278, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Knight-Lieutenant's Chain Greaves	  - 2x Mark of Honor
+					moh(3, i(23306)),	-- Lieutenant Commander's Chain Helm
+					moh(2, i(23307)),	-- Lieutenant Commander's Chain Shoulders
+					moh(3, i(23292)),	-- Knight-Captain's Chain Hauberk
+					moh(2, i(23279)),	-- Knight-Lieutenant's Chain Vices
+					moh(3, i(23293)),	-- Knight-Captain's Chain Legguards
+					moh(2, i(23278)),	-- Knight-Lieutenant's Chain Greaves
 				})),
 				cl(MAGE, bubbleDownSelf({ ["classes"] = { MAGE } }, {
 					-- Epic set
-					i(16441, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Field Marshal's Coronet			- 3x Mark of Honor
-					i(16444, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Field Marshal's Silk Spaulders	- 2x Mark of Honor
-					i(16443, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Field Marshal's Silk Vestments	- 3x Mark of Honor
-					i(16440, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Marshal's Silk Gloves			- 2x Mark of Honor
-					i(16442, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Marshal's Silk Leggings			- 3x Mark of Honor
-					i(16437, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Marshal's Silk Footwraps			- 2x Mark of Honor
+					moh(3, i(16441)),	-- Field Marshal's Coronet
+					moh(2, i(16444)),	-- Field Marshal's Silk Spaulders
+					moh(3, i(16443)),	-- Field Marshal's Silk Vestments
+					moh(2, i(16440)),	-- Marshal's Silk Gloves
+					moh(3, i(16442)),	-- Marshal's Silk Leggings
+					moh(2, i(16437)),	-- Marshal's Silk Footwraps
 					-- Rare set
-					i(23318, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Lieutenant Commander's Silk Cowl		- 3x Mark of Honor
-					i(23319, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Lieutenant Commander's Silk Mantle	- 2x Mark of Honor
-					i(23305, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Knight-Captain's Silk Tunic			- 3x Mark of Honor
-					i(23290, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Knight-Lieutenant's Silk Handwraps	- 2x Mark of Honor
-					i(23304, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Knight-Captain's Silk Legguards		- 3x Mark of Honor
-					i(23291, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Knight-Lieutenant's Silk Walkers		- 2x Mark of Honor
+					moh(3, i(23318)),	-- Lieutenant Commander's Silk Cowl
+					moh(2, i(23319)),	-- Lieutenant Commander's Silk Mantle
+					moh(3, i(23305)),	-- Knight-Captain's Silk Tunic
+					moh(2, i(23290)),	-- Knight-Lieutenant's Silk Handwraps
+					moh(3, i(23304)),	-- Knight-Captain's Silk Legguards
+					moh(2, i(23291)),	-- Knight-Lieutenant's Silk Walkers
 				}));
 				cl(PALADIN, bubbleDownSelf({ ["classes"] = { PALADIN } }, {
 					-- Epic set
-					i(16474, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Field Marshal's Lamellar Faceguard	- 3x Mark of Honor
-					i(16476, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Field Marshal's Lamellar Pauldrons	- 2x Mark of Honor
-					i(16473, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Field Marshal's Lamellar Chestplate	- 3x Mark of Honor
-					i(16471, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Marshal's Lamellar Gloves			- 2x Mark of Honor
-					i(16475, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Marshal's Lamellar Legplates			- 3x Mark of Honor
-					i(16472, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Marshal's Lamellar Boots				- 2x Mark of Honor
+					moh(3, i(16474)),	-- Field Marshal's Lamellar Faceguard
+					moh(2, i(16476)),	-- Field Marshal's Lamellar Pauldrons
+					moh(3, i(16473)),	-- Field Marshal's Lamellar Chestplate
+					moh(2, i(16471)),	-- Marshal's Lamellar Gloves
+					moh(3, i(16475)),	-- Marshal's Lamellar Legplates
+					moh(2, i(16472)),	-- Marshal's Lamellar Boots
 					-- Rare set
-					i(23276, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Lieutenant Commander's Lamellar Headguard	- 3x Mark of Honor
-					i(23277, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Lieutenant Commander's Lamellar Shoulders	- 2x Mark of Honor
-					i(23272, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Knight-Captain's Lamellar Breastplate		- 3x Mark of Honor
-					i(23274, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Knight-Lieutenant's Lamellar Gauntlets		- 2x Mark of Honor
-					i(23273, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Knight-Captain's Lamellar Leggings			- 3x Mark of Honor
-					i(23275, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Knight-Lieutenant's Lamellar Sabatons		- 2x Mark of Honor
+					moh(3, i(23276)),	-- Lieutenant Commander's Lamellar Headguard
+					moh(2, i(23277)),	-- Lieutenant Commander's Lamellar Shoulders
+					moh(3, i(23272)),	-- Knight-Captain's Lamellar Breastplate
+					moh(2, i(23274)),	-- Knight-Lieutenant's Lamellar Gauntlets
+					moh(3, i(23273)),	-- Knight-Captain's Lamellar Leggings
+					moh(2, i(23275)),	-- Knight-Lieutenant's Lamellar Sabatons
 				}));
 				cl(PRIEST, bubbleDownSelf({ ["classes"] = { PRIEST } }, {
 					-- Epic set
-					i(17602, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Field Marshal's Headdress		- 3x Mark of Honor
-					i(17604, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Field Marshal's Satin Mantle		- 2x Mark of Honor
-					i(17605, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Field Marshal's Satin Vestments	- 3x Mark of Honor
-					i(17608, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Marshal's Satin Gloves			- 2x Mark of Honor
-					i(17603, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Marshal's Satin Pants			- 3x Mark of Honor
-					i(17607, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Marshal's Satin Sandals			- 2x Mark of Honor
+					moh(3, i(17602)),	-- Field Marshal's Headdress
+					moh(2, i(17604)),	-- Field Marshal's Satin Mantle
+					moh(3, i(17605)),	-- Field Marshal's Satin Vestments
+					moh(2, i(17608)),	-- Marshal's Satin Gloves
+					moh(3, i(17603)),	-- Marshal's Satin Pants
+					moh(2, i(17607)),	-- Marshal's Satin Sandals
 					-- Rare set
-					i(23316, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Lieutenant Commander's Satin Hood	- 3x Mark of Honor
-					i(23317, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Lieutenant Commander's Satin Mantle	- 2x Mark of Honor
-					i(23303, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Knight-Captain's Satin Tunic			- 3x Mark of Honor
-					i(23288, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Knight-Lieutenant's Satin Handwraps	- 2x Mark of Honor
-					i(23302, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Knight-Captain's Satin Legguards		- 3x Mark of Honor
-					i(23289, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Knight-Lieutenant's Satin Walkers	- 2x Mark of Honor
+					moh(3, i(23316)),	-- Lieutenant Commander's Satin Hood
+					moh(2, i(23317)),	-- Lieutenant Commander's Satin Mantle
+					moh(3, i(23303)),	-- Knight-Captain's Satin Tunic
+					moh(2, i(23288)),	-- Knight-Lieutenant's Satin Handwraps
+					moh(3, i(23302)),	-- Knight-Captain's Satin Legguards
+					moh(2, i(23289)),	-- Knight-Lieutenant's Satin Walkers
 				}));
 				cl(ROGUE, bubbleDownSelf({ ["classes"] = { ROGUE } }, {
 					-- Epic set
-					i(16455, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Field Marshal's Leather Mask			- 3x Mark of Honor
-					i(16457, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Field Marshal's Leather Epaulets		- 2x Mark of Honor
-					i(16453, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Field Marshal's Leather Chestpiece	- 3x Mark of Honor
-					i(16454, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Marshal's Leather Handgrips			- 2x Mark of Honor
-					i(16456, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Marshal's Leather Leggings			- 3x Mark of Honor
-					i(16446, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Marshal's Leather Footguards			- 2x Mark of Honor
+					moh(3, i(16455)),	-- Field Marshal's Leather Mask
+					moh(2, i(16457)),	-- Field Marshal's Leather Epaulets
+					moh(3, i(16453)),	-- Field Marshal's Leather Chestpiece
+					moh(2, i(16454)),	-- Marshal's Leather Handgrips
+					moh(3, i(16456)),	-- Marshal's Leather Leggings
+					moh(2, i(16446)),	-- Marshal's Leather Footguards
 					-- Rare set
-					i(23312, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Lieutenant Commander's Leather Helm		- 3x Mark of Honor
-					i(23313, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Lieutenant Commander's Leather Shoulders	- 2x Mark of Honor
-					i(23298, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Knight-Captain's Leather Chestpiece		- 3x Mark of Honor
-					i(23284, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Knight-Lieutenant's Leather Grips		- 2x Mark of Honor
-					i(23299, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Knight-Captain's Leather Legguards		- 3x Mark of Honor
-					i(23285, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Knight-Lieutenant's Leather Walkers		- 2x Mark of Honor
+					moh(3, i(23312)),	-- Lieutenant Commander's Leather Helm
+					moh(2, i(23313)),	-- Lieutenant Commander's Leather Shoulders
+					moh(3, i(23298)),	-- Knight-Captain's Leather Chestpiece
+					moh(2, i(23284)),	-- Knight-Lieutenant's Leather Grips
+					moh(3, i(23299)),	-- Knight-Captain's Leather Legguards
+					moh(2, i(23285)),	-- Knight-Lieutenant's Leather Walkers
 				})),
 				cl(SHAMAN, bubbleDownSelf({ ["classes"] = { SHAMAN } }, {
 					-- Epic set
-					i(29610, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Field Marshal's Mail Helm		- 3x Mark of Honor
-					i(29611, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Field Marshal's Mail Spaulders	- 2x Mark of Honor
-					i(29609, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Field Marshal's Mail Armor		- 3x Mark of Honor
-					i(29607, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Marshal's Mail Gauntlets			- 2x Mark of Honor
-					i(29608, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Marshal's Mail Leggings			- 3x Mark of Honor
-					i(29606, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Marshal's Mail Boots				- 2x Mark of Honor
+					moh(3, i(29610)),	-- Field Marshal's Mail Helm
+					moh(2, i(29611)),	-- Field Marshal's Mail Spaulders
+					moh(3, i(29609)),	-- Field Marshal's Mail Armor
+					moh(2, i(29607)),	-- Marshal's Mail Gauntlets
+					moh(3, i(29608)),	-- Marshal's Mail Leggings
+					moh(2, i(29606)),	-- Marshal's Mail Boots
 					-- Rare set
-					i(29598, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Lieutenant Commander's Mail Headguard	- 3x Mark of Honor
-					i(29599, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Lieutenant Commander's Mail Pauldrons	- 2x Mark of Honor
-					i(29596, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Knight-Captain's Mail Hauberk			- 3x Mark of Honor
-					i(29595, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Knight-Lieutenant's Mail Vices			- 2x Mark of Honor
-					i(29597, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Knight-Captain's Mail Legguards			- 3x Mark of Honor
-					i(29594, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Knight-Lieutenant's Mail Greaves			- 2x Mark of Honor
+					moh(3, i(29598)),	-- Lieutenant Commander's Mail Headguard
+					moh(2, i(29599)),	-- Lieutenant Commander's Mail Pauldrons
+					moh(3, i(29596)),	-- Knight-Captain's Mail Hauberk
+					moh(2, i(29595)),	-- Knight-Lieutenant's Mail Vices
+					moh(3, i(29597)),	-- Knight-Captain's Mail Legguards
+					moh(2, i(29594)),	-- Knight-Lieutenant's Mail Greaves
 				}));
 				cl(WARLOCK, bubbleDownSelf({ ["classes"] = { WARLOCK } }, {
 					-- Epic set
-					i(17578, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Field Marshal's Coronal				- 3x Mark of Honor
-					i(17580, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Field Marshal's Dreadweave Shoulders	- 2x Mark of Honor
-					i(17581, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Field Marshal's Dreadweave Robe		- 3x Mark of Honor
-					i(17584, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Marshal's Dreadweave Gloves			- 2x Mark of Honor
-					i(17579, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Marshal's Dreadweave Leggings		- 3x Mark of Honor
-					i(17583, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Marshal's Dreadweave Boots			- 2x Mark of Honor
+					moh(3, i(17578)),	-- Field Marshal's Coronal
+					moh(2, i(17580)),	-- Field Marshal's Dreadweave Shoulders
+					moh(3, i(17581)),	-- Field Marshal's Dreadweave Robe
+					moh(2, i(17584)),	-- Marshal's Dreadweave Gloves
+					moh(3, i(17579)),	-- Marshal's Dreadweave Leggings
+					moh(2, i(17583)),	-- Marshal's Dreadweave Boots
 					-- Rare set
-					i(23310, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Lieutenant Commander's Dreadweave Cowl		- 3x Mark of Honor
-					i(23311, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Lieutenant Commander's Dreadweave Spaulders	- 2x Mark of Honor
-					i(23297, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Knight-Captain's Dreadweave Tunic			- 3x Mark of Honor
-					i(23282, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Knight-Lieutenant's Dreadweave Handwraps		- 2x Mark of Honor
-					i(23296, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Knight-Captain's Dreadweave Legguards		- 3x Mark of Honor
-					i(23283, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Knight-Lieutenant's Dreadweave Walkers		- 2x Mark of Honor
+					moh(3, i(23310)),	-- Lieutenant Commander's Dreadweave Cowl
+					moh(2, i(23311)),	-- Lieutenant Commander's Dreadweave Spaulders
+					moh(3, i(23297)),	-- Knight-Captain's Dreadweave Tunic
+					moh(2, i(23282)),	-- Knight-Lieutenant's Dreadweave Handwraps
+					moh(3, i(23296)),	-- Knight-Captain's Dreadweave Legguards
+					moh(2, i(23283)),	-- Knight-Lieutenant's Dreadweave Walkers
 				}));
 				cl(WARRIOR, bubbleDownSelf({ ["classes"] = { WARRIOR } }, {
 					-- Epic set
-					i(16478, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Field Marshal's Plate Helm			- 3x Mark of Honor
-					i(16480, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Field Marshal's Plate Shoulderguards	- 2x Mark of Honor
-					i(16477, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Field Marshal's Plate Armor			- 3x Mark of Honor
-					i(16484, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Marshal's Plate Gauntlets			- 2x Mark of Honor
-					i(16479, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Marshal's Plate Legguards			- 3x Mark of Honor
-					i(16483, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Marshal's Plate Boots				- 2x Mark of Honor
+					moh(3, i(16478)),	-- Field Marshal's Plate Helm
+					moh(2, i(16480)),	-- Field Marshal's Plate Shoulderguards
+					moh(3, i(16477)),	-- Field Marshal's Plate Armor
+					moh(2, i(16484)),	-- Marshal's Plate Gauntlets
+					moh(3, i(16479)),	-- Marshal's Plate Legguards
+					moh(2, i(16483)),	-- Marshal's Plate Boots
 					-- Rare set
-					i(23314, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Lieutenant Commander's Plate Helmet		- 3x Mark of Honor
-					i(23315, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Lieutenant Commander's Plate Shoulders	- 2x Mark of Honor
-					i(23300, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Knight-Captain's Plate Hauberk			- 3x Mark of Honor
-					i(23286, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Knight-Lieutenant's Plate Gauntlets		- 2x Mark of Honor
-					i(23301, { ["cost"] = {{ "i", 137642, 3 }} }),	-- Knight-Captain's Plate Leggings			- 3x Mark of Honor
-					i(23287, { ["cost"] = {{ "i", 137642, 2 }} }),	-- Knight-Lieutenant's Plate Greaves		- 2x Mark of Honor
+					moh(3, i(23314)),	-- Lieutenant Commander's Plate Helmet
+					moh(2, i(23315)),	-- Lieutenant Commander's Plate Shoulders
+					moh(3, i(23300)),	-- Knight-Captain's Plate Hauberk
+					moh(2, i(23286)),	-- Knight-Lieutenant's Plate Gauntlets
+					moh(3, i(23301)),	-- Knight-Captain's Plate Leggings
+					moh(2, i(23287)),	-- Knight-Lieutenant's Plate Greaves
 				}));
 
 				-- Back
-				i(16342, { ["cost"] = {{ "i", 137642, 1 }} }),	-- Sergeant's Cape (58)	- 1x Mark of Honor
-				i(18441, { ["cost"] = {{ "i", 137642, 1 }} }),	-- Sergeant's Cape (45)	- 1x Mark of Honor
-				i(18440, { ["cost"] = {{ "i", 137642, 1 }} }),	-- Sergeant's Cape (30)	- 1x Mark of Honor
+				moh(1, i(16342)),	-- Sergeant's Cape (58)
+				moh(1, i(18441)),	-- Sergeant's Cape (45)
+				moh(1, i(18440)),	-- Sergeant's Cape (30)
 
 				-- Wrist
-				i(18448, {	-- Sergeant Major's Chain Armguards (58)
+				moh(1, i(18448, {	-- Sergeant Major's Chain Armguards (58)
 					["classes"] = { HUNTER, SHAMAN },
-					["cost"] = {{ "i", 137642, 1 }},	-- 1x Mark of Honor
-				}),
-				i(18449, {	-- Sergeant Major's Chain Armguards (45)
+				})),
+				moh(1, i(18449, {	-- Sergeant Major's Chain Armguards (45)
 					["classes"] = { HUNTER, SHAMAN },
-					["cost"] = {{ "i", 137642, 1 }},	-- 1x Mark of Honor
-				}),
-				i(18454, {	-- Sergeant Major's Dragonhide Armsplints (58)
+				})),
+				moh(1, i(18454, {	-- Sergeant Major's Dragonhide Armsplints (58)
 					["classes"] = { DRUID },
-					["cost"] = {{ "i", 137642, 1 }},	-- 1x Mark of Honor
-				}),
-				i(18455, {	-- Sergeant Major's Dragonhide Armsplints (45)
+				})),
+				moh(1, i(18455, {	-- Sergeant Major's Dragonhide Armsplints (45)
 					["classes"] = { DRUID },
-					["cost"] = {{ "i", 137642, 1 }},	-- 1x Mark of Honor
-				}),
-				i(18452, {	-- Sergeant Major's Leather  (58)
+				})),
+				moh(1, i(18452, {	-- Sergeant Major's Leather  (58)
 					["classes"] = { ROGUE },
-					["cost"] = {{ "i", 137642, 1 }},	-- 1x Mark of Honor
-				}),
-				i(18453, {	-- Sergeant Major's Leather Armsplints (45)
+				})),
+				moh(1, i(18453, {	-- Sergeant Major's Leather Armsplints (45)
 					["classes"] = { ROGUE },
-					["cost"] = {{ "i", 137642, 1 }},	-- 1x Mark of Honor
-				}),
-				i(18445, {	-- Sergeant Major's Plate Wristguards (58)
+				})),
+				moh(1, i(18445, {	-- Sergeant Major's Plate Wristguards (58)
 					["classes"] = { PALADIN, WARRIOR },
-					["cost"] = {{ "i", 137642, 1 }},	-- 1x Mark of Honor
-				}),
-				i(18447, {	-- Sergeant Major's Plate Wristguards (45)
+				})),
+				moh(1, i(18447, {	-- Sergeant Major's Plate Wristguards (45)
 					["classes"] = { PALADIN, WARRIOR },
-					["cost"] = {{ "i", 137642, 1 }},	-- 1x Mark of Honor
-				}),
-				i(18456, {	-- Sergeant Major's Silk Cuffs (58)
+				})),
+				moh(1, i(18456, {	-- Sergeant Major's Silk Cuffs (58)
 					["classes"] = { MAGE, PRIEST, WARLOCK },
-					["cost"] = {{ "i", 137642, 1 }},	-- 1x Mark of Honor
-				}),
-				i(18457, {	-- Sergeant Major's Silk Cuffs (45)
+				})),
+				moh(1, i(18457, {	-- Sergeant Major's Silk Cuffs (45)
 					["classes"] = { MAGE, PRIEST, WARLOCK },
-					["cost"] = {{ "i", 137642, 1 }},	-- 1x Mark of Honor
-				}),
+				})),
 
 				-- Necks
 				i(18443),	-- Master Sergeant's Insignia (58)
@@ -347,69 +295,27 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 			-- #endif
 			["groups"] = {
 				n(WEAPONS, {
-					i(18831, {	-- High Warlord's Battle Axe
-						["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
-					}),
-					i(23464, {	-- High Warlord's Battle Mace
-						["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
-					}),
-					i(16345, {	-- High Warlord's Blade
-						["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
-					}),
-					i(18866, {	-- High Warlord's Bludgeon
-						["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
-					}),
-					i(18828, {	-- High Warlord's Cleaver
-						["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
-					}),
-					i(18837, {	-- High Warlord's Crossbow
-						["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
-					}),
-					i(23465, {	-- High Warlord's Destroyer
-						["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
-					}),
-					i(18877, {	-- High Warlord's Greatsword
-						["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
-					}),
-					i(18871, {	-- High Warlord's Pig Sticker
-						["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
-					}),
-					i(18868, {	-- High Warlord's Pulverizer
-						["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
-					}),
-					i(23467, {	-- High Warlord's Quickblade
-						["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
-					}),
-					i(18835, {	-- High Warlord's Recurve
-						["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
-					}),
-					i(18840, {	-- High Warlord's Razor
-						["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
-					}),
-					i(18848, {	-- High Warlord's Razor Claw
-						["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
-					}),
-					i(18844, {	-- High Warlord's Right Claw
-						["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
-					}),
-					i(18826, {	-- High Warlord's Shield Wall
-						["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
-					}),
-					i(23466, {	-- High Warlord's Spellblade
-						["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
-					}),
-					i(18860, {	-- High Warlord's Street Sweeper
-						["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
-					}),
-					i(23468, {	-- High Warlord's Tome of Destruction
-						["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
-					}),
-					i(23469, {	-- High Warlord's Tome of Mending
-						["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
-					}),
-					i(18874, {	-- High Warlord's War Staff
-						["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
-					}),
+					moh(5, i(18831)),	-- High Warlord's Battle Axe
+					moh(5, i(23464)),	-- High Warlord's Battle Mace
+					moh(5, i(16345)),	-- High Warlord's Blade
+					moh(5, i(18866)),	-- High Warlord's Bludgeon
+					moh(5, i(18828)),	-- High Warlord's Cleaver
+					moh(5, i(18837)),	-- High Warlord's Crossbow
+					moh(5, i(23465)),	-- High Warlord's Destroyer
+					moh(5, i(18877)),	-- High Warlord's Greatsword
+					moh(5, i(18871)),	-- High Warlord's Pig Sticker
+					moh(5, i(18868)),	-- High Warlord's Pulverizer
+					moh(5, i(23467)),	-- High Warlord's Quickblade
+					moh(5, i(18835)),	-- High Warlord's Recurve
+					moh(5, i(18840)),	-- High Warlord's Razor
+					moh(5, i(18848)),	-- High Warlord's Razor Claw
+					moh(5, i(18844)),	-- High Warlord's Right Claw
+					moh(2, i(18826)),	-- High Warlord's Shield Wall
+					moh(5, i(23466)),	-- High Warlord's Spellblade
+					moh(5, i(18860)),	-- High Warlord's Street Sweeper
+					moh(2, i(23468)),	-- High Warlord's Tome of Destruction
+					moh(2, i(23469)),	-- High Warlord's Tome of Mending
+					moh(5, i(18874)),	-- High Warlord's War Staff
 				}),
 				cl(DRUID, bubbleDownSelf({ ["classes"] = { DRUID } }, {
 					-- Epic set

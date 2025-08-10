@@ -66,7 +66,9 @@ local Ignored = setmetatable({
 		[231409] = true,	-- Smaks Topskimmer [Renown Quartermaster - The Cartels of Undermine]
 	},
 	object = {
-
+		[503267] = true,	-- Phase Conduit [K'aresh Teleport Node]
+		[516991] = true,	-- Phase Conduit [K'aresh Teleport Node]
+		[527623] = true,	-- Phase Conduit [K'aresh Teleport Node]
 	},
 },{ __index = function() return app.EmptyTable end })
 local function AlertForVignetteInfo(info)

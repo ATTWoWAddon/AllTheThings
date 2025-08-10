@@ -147,6 +147,55 @@ CATA_COOKING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = { A
 	r(88006),	-- Blackened Surprise
 	r(88015),	-- Darkbrew Lager
 }));
+CATA_COOKING_SUPPLIES = applyclassicphase(CATA_PHASE_ONE, sharedData({
+	["providers"] = {
+		{ "n", 5160},	-- Emrul Riknussun <Cooking Supplier>
+		{ "n", 4223},	-- Fyldan <Cooking Supplies> [TBC+] / <Cooking Supplier>
+		{ "n", 49701},	-- Jon Casper <Sous Chef>
+		{ "n", 3027},	-- Naal Mistrunner <Cooking Supplies>
+		{ "n", 4553},	-- Ronald Burch <Cooking Supplies> [TBC+] / <Cooking Supplier>
+		{ "n", 49737},	-- Shazdar <Sous Chef>
+	},
+	["timeline"] = { ADDED_4_0_3 },
+},{
+	chefsaward(2, i(65513, {	-- Crate of Tasty Meat
+	--	i(62786),	-- Cocoa Beans
+	})),
+	chefsaward(1, i(68689, {	-- Imported Supplies
+		i(62786),	-- Cocoa Beans
+	})),
+	chefsaward(3, i(65426)),	-- Recipe: Baked Rockfish (RECIPE!)
+	chefsaward(3, i(65427)),	-- Recipe: Basilisk Liverdog (RECIPE!)
+	chefsaward(3, i(65429)),	-- Recipe: Beer-Basted Crocolisk (RECIPE!)
+	chefsaward(3, i(65424)),	-- Recipe: Blackbelly Sushi (RECIPE!)
+	chefsaward(3, i(65411)),	-- Recipe: Broiled Mountain Trout (RECIPE!)
+	chefsaward(3, i(65431)),	-- Recipe: Chocolate Cookie (RECIPE!)
+	chefsaward(3, i(65430)),	-- Recipe: Crocolisk Au Gratin (RECIPE!)
+	chefsaward(3, i(65422)),	-- Recipe: Delicious Sagefish Tail (RECIPE!)
+	chefsaward(3, i(65408)),	-- Recipe: Feathered Lure (RECIPE!)
+	chefsaward(3, i(65423)),	-- Recipe: Fish Fry (RECIPE!)
+	chefsaward(5, i(65432)),	-- Recipe: Fortune Cookie (RECIPE!)
+	chefsaward(3, i(65428)),	-- Recipe: Grilled Dragon (RECIPE!)
+	chefsaward(3, i(65418)),	-- Recipe: Hearty Seafood Soup (RECIPE!)
+	chefsaward(3, i(65415)),	-- Recipe: Highland Spirits (RECIPE!)
+	chefsaward(3, i(65407)),	-- Recipe: Lavascale Fillet (RECIPE!)
+	chefsaward(3, i(65409)),	-- Recipe: Lavascale Minestrone (RECIPE!)
+	chefsaward(3, i(65412)),	-- Recipe: Lightly Fried Lurker (RECIPE!)
+	chefsaward(3, i(65416)),	-- Recipe: Lurker Lunch (RECIPE!)
+	chefsaward(3, i(65420)),	-- Recipe: Mushroom Sauce Mudfish (RECIPE!)
+	chefsaward(3, i(65417)),	-- Recipe: Pickled Guppy (RECIPE!)
+	chefsaward(3, i(65410)),	-- Recipe: Salted Eye (RECIPE!)
+	chefsaward(3, i(68688, {	-- Recipe: Scalding Murglesnout (RECIPE!)
+		["timeline"] = { ADDED_4_0_6 },
+	})),
+	chefsaward(3, i(65413)),	-- Recipe: Seasoned Crab (RECIPE!)
+	chefsaward(3, i(65421)),	-- Recipe: Severed Sagefish Head (RECIPE!)
+	chefsaward(3, i(65425)),	-- Recipe: Skewered Eel (RECIPE!)
+	chefsaward(5, i(65433)),	-- Recipe: South Island Iced Tea (RECIPE!)
+	chefsaward(3, i(65414)),	-- Recipe: Starfire Espresso (RECIPE!)
+	chefsaward(3, i(65419)),	-- Recipe: Tender Baked Turtle (RECIPE!)
+	chefsaward(3, i(65406)),	-- Recipe: Whitecrest Gumbo (RECIPE!)
+}));
 MOP_COOKING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	r(104381, {	-- Cooking (Zen Master)
 		["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1_LAUNCH },

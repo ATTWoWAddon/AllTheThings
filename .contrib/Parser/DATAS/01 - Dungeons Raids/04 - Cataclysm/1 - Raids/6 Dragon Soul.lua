@@ -471,7 +471,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							56427,	-- Warmaster Blackthorn
 						},
 						["groups"] = {
-							i(71998),	-- Essence of Destruction
+							i(71998, {	-- Essence of Destruction
+								["description"] = "Drops commonly from Dragon Soul bosses.",
+							}),
 							i(77952, {	-- Elementium Gem Cluster
 								i(77951),	-- Shadowy Gem
 							}),

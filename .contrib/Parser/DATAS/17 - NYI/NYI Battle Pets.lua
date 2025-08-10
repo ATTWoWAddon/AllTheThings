@@ -1574,7 +1574,7 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 				["displayID"] = 120695,
 			}),
 			-- #if BEFORE 11.2.0
-			i(231757, {	-- Cauldrone (PET!)
+			i(231757, {	-- Cauldrone (PET!) TODO: [wrong ItemID]
 				["displayID"] = 47711,
 			}),
 			-- #endif
@@ -1596,9 +1596,9 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			i(232854, {	-- Grinner (PET!)
 				["displayID"] = 121850,
 			}),
-			i(231756, {	-- Hermes
-				["displayID"] = 120709,
-			}),
+			-- i(231756, {	-- Hermes TODO: [wrong ItemID]
+			-- 	["displayID"] = 120709,
+			-- }),
 			i(232856, {	-- Scruff (PET!)
 				["displayID"] = 121851,
 			}),

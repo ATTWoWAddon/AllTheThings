@@ -626,8 +626,6 @@ q(89568),	-- CLASSIC:Something New
 q(89574),	-- CLASSIC:Servants of Death
 q(90106),	--
 q(90107),	-- CLASSIC:The Blade Reformed
-q(90116),	-- CLASSIC:Holy Threads
-q(90120),	-- CLASSIC:Red is Not Dead
 q(90506),	--
 q(90507),	--
 q(90508),	--
@@ -654,3 +652,6 @@ q(90627),	-- CLASSIC:Crafty the Crafter
 q(90629),	--
 1.15.7.60932
 q(91354),	--
+1.15.7.61582
+q(91888),	--
+q(91889),	--

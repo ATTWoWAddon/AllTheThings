@@ -54,6 +54,7 @@ app.GetCachedData = function(cacheKey, method, ...)
 		cache, working = method(...);
 		if not working then
 			-- Only cache if the tooltip if no additional work is needed.
+			-- app.PrintDebug("CACHED-DATA",cache.hash)
 			searchCache[cacheKey] = cache;
 		end
 		return cache, working;

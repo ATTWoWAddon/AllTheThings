@@ -1765,6 +1765,8 @@ root(ROOTS.Zones, {
 					n(31247, {	-- Roxi Ramrocket <Flying Trainer>
 						["coord"] = { 40.6, 84.8, THE_STORM_PEAKS },
 						["groups"] = {
+							-- this NPC is so buggy that listing items here when they aren't exclusive is a waste of time to come out here
+							-- #if BEFORE MOP
 							i(44500, {	-- Elementium-Plated Exhaust Pipe
 								["cost"] = 15000000,	-- 1500g
 							}),
@@ -1774,6 +1776,7 @@ root(ROOTS.Zones, {
 							i(44499, {	-- Salvaged Iron Golem Parts
 								["cost"] = 30000000,	-- 3000g
 							}),
+							-- #endif
 						},
 					}),
 					n(30006, {	-- Warsmith Sigfinna

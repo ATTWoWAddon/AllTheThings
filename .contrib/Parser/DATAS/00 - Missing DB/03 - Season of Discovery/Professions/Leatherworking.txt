@@ -9,7 +9,6 @@ r(461645),	-- Honed Blue Dragonscale Shoulders
 r(461649),	-- Living Green Dragonscale Leggings
 r(461673),	-- Honed Blue Dragonscale Breastplate
 r(461677),	-- Living Green Dragonscale Gauntlets \\ Living Green Dragonscale Leggings
-r(461692),	-- Synthetic Gordok Ogre Suit
 r(461720),	-- Living Green Dragonscale Breastplate
 r(461722),	-- Devilcore Gauntlets
 r(461724),	-- Devilcore Leggings

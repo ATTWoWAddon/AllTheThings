@@ -115,11 +115,6 @@ r(330258),	-- Relic of the Past II
 r(330259),	-- Relic of the Past III
 r(330260),	-- Relic of the Past IV
 r(330261),	-- Relic of the Past V
-11.2.0.61476
-r(1228338),	-- Pure Energizing Fiber
-r(1228342),	-- Pure Precise Fiber
-r(1228343),	-- Pure Dexterous Fiber
-r(1228344),	-- Pure Chronomatic Fiber
 
 
 

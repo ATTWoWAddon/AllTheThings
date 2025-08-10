@@ -23,30 +23,30 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 		["lvl"] = 110,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(10818, {    -- Darkbough
-                    crit(31428, {    -- Nythendra
+				ach(10818, {	-- Darkbough
+                    crit(31428, {	-- Nythendra
                         ["_encounter"] = { 1703, DIFFICULTY.RAID.LFR },
                     }),
-                    crit(31429, {    -- Elerethe Renferal
+                    crit(31429, {	-- Elerethe Renferal
                         ["_encounter"] = { 1744, DIFFICULTY.RAID.LFR },
                     }),
-                    crit(31430, {    -- Il'gynoth, Heart of Corruption
+                    crit(31430, {	-- Il'gynoth, Heart of Corruption
                         ["_encounter"] = { 1738, DIFFICULTY.RAID.LFR },
                     }),
                 }),
-				ach(10819, {    -- Tormented Guardians
-                    crit(31431, {    -- Ursoc
+				ach(10819, {	-- Tormented Guardians
+                    crit(31431, {	-- Ursoc
                         ["_encounter"] = { 1667, DIFFICULTY.RAID.LFR },
                     }),
-                    crit(31433, {    -- Dragons of Nightmare
+                    crit(31433, {	-- Dragons of Nightmare
                         ["_encounter"] = { 1704, DIFFICULTY.RAID.LFR },
                     }),
-                    crit(31432, {    -- Cenarius
+                    crit(31432, {	-- Cenarius
                         ["_encounter"] = { 1750, DIFFICULTY.RAID.LFR },
                     }),
                 }),
-				ach(10820, {    -- Rift of Aln
-                    crit(31434, {    -- Xavius
+				ach(10820, {	-- Rift of Aln
+                    crit(31434, {	-- Xavius
                         ["_encounter"] = { 1726, DIFFICULTY.RAID.LFR },
                     }),
                 }),

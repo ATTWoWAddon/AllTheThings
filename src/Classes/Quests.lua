@@ -567,8 +567,13 @@ local function CollectibleAsLocked(t, locked)
 end
 local function CollectibleAsQuestOrAsLocked(t)
 	local locked = t.locked
-	return (not locked and CollectibleAsQuest(t))
+	return (not locked and (t.CollectibleAsQuest or CollectibleAsQuest)(t))
 		or CollectibleAsLocked(t, locked);
+end
+local function CollectibleAsReputationQuest(t)
+	if app.Settings.Collectibles.Quests then
+		return app.Settings.Collectibles.Reputations or CollectibleAsQuest(t);
+	end
 end
 -- Returns whether the provided Quest group is expected to be available to the current character or another character when in debug/account mode
 app.IsQuestAvailable = function(t)
@@ -1618,7 +1623,12 @@ local createQuest = app.CreateClass("Quest", "questID", {
 		return "quest:"..t.questID
 	end,
 	RefreshCollectionOnly = true,
-	collectible = CollectibleAsQuest,
+	CollectibleAsQuest = function()
+		return CollectibleAsQuest;
+	end,
+	collectible = function(t)
+		return t:CollectibleAsQuest();
+	end,
 	collected = IsQuestFlaggedCompletedForObject,
 	altcollected = function(t)
 		local altQuests = t.altQuests;
@@ -1720,10 +1730,8 @@ local createQuest = app.CreateClass("Quest", "questID", {
 },
 "WithReputation", {
 	-- Classic: Quests which give Reputation are always collectible if tracking Quests & Reputations
-	collectible = app.IsClassic and function(t)
-		if app.Settings.Collectibles.Quests then
-			return app.Settings.Collectibles.Reputations or CollectibleAsQuest(t);
-		end
+	CollectibleAsQuest = app.IsClassic and function()
+		return CollectibleAsReputationQuest;
 	end or nil,
 	-- Classic: Quests which give Reputation are considered collected if tracking Reputations
 	-- and the corresponding Faction is not collected. Even if the Quest itself is not complete.
@@ -1734,7 +1742,7 @@ local createQuest = app.CreateClass("Quest", "questID", {
 		local flag = IsQuestFlaggedCompletedForObject(t);
 		if flag then return flag; end
 		local maxReputation = t.maxReputation;
-		if FactionCache[t.maxReputation[1]].standing > maxReputation[2] then
+		if FactionCache[t.maxReputation[1]]:CompareReputation(maxReputation[2]) then
 			return t.repeatable and 1 or 2;
 		end
 		if app.Settings.AccountWide.Reputations then

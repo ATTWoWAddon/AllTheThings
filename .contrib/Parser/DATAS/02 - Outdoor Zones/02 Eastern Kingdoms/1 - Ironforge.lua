@@ -163,7 +163,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 					i(34484, {	-- Old Ironjaw
-						["description"] = 
+						["description"] =
 							-- #if BEFORE WRATH
 							"Keep this in your bank until Achievements are added, otherwise you'll need to obtain it again. Fair warning!",
 							-- #elseif BEFORE LEGION
@@ -1492,12 +1492,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 23.2, 17.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						2527,    -- Battle Staff
-						2532,    -- Morning Star
-						2524,    -- Truncheon
-						2525,    -- War Hammer
-						2533,    -- War Maul
-						2535,    -- War Staff
+						2527,	-- Battle Staff
+						2532,	-- Morning Star
+						2524,	-- Truncheon
+						2525,	-- War Hammer
+						2533,	-- War Maul
+						2535,	-- War Staff
 					}},
 				}),
 				n(5128, {	-- Bombus Finespindle <Leatherworking Supplies>
@@ -1516,43 +1516,43 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 61.8, 88.8, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						2520,    -- Broadsword
-						1198,    -- Claymore
-						851,    -- Cutlass
-						922,    -- Dacian Falx
-						2024,    -- Espadon
-						2528,    -- Falchion
-						2207,    -- Jambiya
-						2209,    -- Kris
-						923,    -- Longsword
-						2526,    -- Main Gauche
-						2208,    -- Poniad
-						2534,    -- Rondel
-						2027,    -- Scimitar
-						2521,    -- Flamberge
-						2529,    -- Zweihander
+						2520,	-- Broadsword
+						1198,	-- Claymore
+						851,	-- Cutlass
+						922,	-- Dacian Falx
+						2024,	-- Espadon
+						2528,	-- Falchion
+						2207,	-- Jambiya
+						2209,	-- Kris
+						923,	-- Longsword
+						2526,	-- Main Gauche
+						2208,	-- Poniad
+						2534,	-- Rondel
+						2027,	-- Scimitar
+						2521,	-- Flamberge
+						2529,	-- Zweihander
 					}},
 				}),
 				n(5123, {	-- Bretta Goldfury
 					["coord"] = { 72.8, 64.8, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						3024,    -- Bkp 2700 Enforcer
-						3023,    -- Large Bore Blunderbuss
-						2509,    -- Ornate Blunderbuss
-						2510,    -- Solid Blunderbuss
+						3024,	-- Bkp 2700 Enforcer
+						3023,	-- Large Bore Blunderbuss
+						2509,	-- Ornate Blunderbuss
+						2510,	-- Solid Blunderbuss
 					}},
 				}),
 				n(5106, {	-- Bromiir Ormsen
 					["coord"] = { 32.6, 58.2, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						2392,    -- Light Mail Armor
-						2393,    -- Light Mail Belt
-						2395,    -- Light Mail Boots
-						2396,    -- Light Mail Bracers
-						2397,    -- Light Mail Gloves
-						2394,    -- Light Mail Leggings
+						2392,	-- Light Mail Armor
+						2393,	-- Light Mail Belt
+						2395,	-- Light Mail Boots
+						2396,	-- Light Mail Bracers
+						2397,	-- Light Mail Gloves
+						2394,	-- Light Mail Leggings
 					}},
 					["groups"] = {
 						i(1201),	-- Dull Heater Shield
@@ -1605,35 +1605,35 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 54.8, 88.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						2419,    -- Augmented Chain Belt
-						2420,    -- Augmented Chain Boots
-						2421,    -- Augmented Chain Bracers
-						2422,    -- Augmented Chain Gloves
-						3891,    -- Augmented Chain Helm
-						2418,    -- Augmented Chain Leggings
-						2417,    -- Augmented Chain Vest
-						2448,    -- Heavy Pavise
-						17189,    -- Metal Buckler
-						2148,    -- Polished Scale Belt
-						2149,    -- Polished Scale Boots
-						2150,    -- Polished Scale Bracers
-						2151,    -- Polished Scale Gloves
-						2152,    -- Polished Scale Leggings
-						2153,    -- Polished Scale Vest
-						1853,    -- Scalemail Belt
-						287,    -- Scalemail Boots
-						1852,    -- Scalemail Bracers
-						718,    -- Scalemail Gloves
-						286,    -- Scalemail Pants
-						285,    -- Scalemail Vest
+						2419,	-- Augmented Chain Belt
+						2420,	-- Augmented Chain Boots
+						2421,	-- Augmented Chain Bracers
+						2422,	-- Augmented Chain Gloves
+						3891,	-- Augmented Chain Helm
+						2418,	-- Augmented Chain Leggings
+						2417,	-- Augmented Chain Vest
+						2448,	-- Heavy Pavise
+						17189,	-- Metal Buckler
+						2148,	-- Polished Scale Belt
+						2149,	-- Polished Scale Boots
+						2150,	-- Polished Scale Bracers
+						2151,	-- Polished Scale Gloves
+						2152,	-- Polished Scale Leggings
+						2153,	-- Polished Scale Vest
+						1853,	-- Scalemail Belt
+						287,	-- Scalemail Boots
+						1852,	-- Scalemail Bracers
+						718,	-- Scalemail Gloves
+						286,	-- Scalemail Pants
+						285,	-- Scalemail Vest
 					}},
 				}),
 				n(5102, {	-- Dolman Steelfury
 					["coord"] = { 36.6, 66.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						2492,    -- Cudgel
-						2493,    -- Wooden Mallet
+						2492,	-- Cudgel
+						2493,	-- Wooden Mallet
 					}},
 					["groups"] = {
 						i(1194),	-- Bastard Sword
@@ -1656,7 +1656,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 60.6, 38.2, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					-- #if AFTER CATA
-					["sym"] = {{"sub", "common_recipes_vendor", 49701}},	-- Jon Casper <Sous Chef>
+					["sym"] = {{"sub", "common_vendor", 49701}},	-- Jon Casper <Sous Chef>
 					-- #endif
 					["groups"] = appendGroups(VANILLA_COOKING_SUPPLIES, {
 						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
@@ -1718,22 +1718,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 36.4, 66.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						2025,    -- Bearded Axe
-						1198,    -- Claymore
-						2029,    -- Cleaver
-						851,    -- Cutlass
-						2024,    -- Espadon
-						1197,    -- Giant Mace
-						2030,    -- Gnarled Staff
-						2028,    -- Hammer
-						853,    -- Hatchet
-						2207,    -- Jambiya
-						852,    -- Mace
-						2208,    -- Poniard
-						854,    -- Quarter Staff
-						2026,    -- Rock Hammer
-						2027,    -- Scimitar
-						1196,    -- Tabar
+						2025,	-- Bearded Axe
+						1198,	-- Claymore
+						2029,	-- Cleaver
+						851,	-- Cutlass
+						2024,	-- Espadon
+						1197,	-- Giant Mace
+						2030,	-- Gnarled Staff
+						2028,	-- Hammer
+						853,	-- Hatchet
+						2207,	-- Jambiya
+						852,	-- Mace
+						2208,	-- Poniard
+						854,	-- Quarter Staff
+						2026,	-- Rock Hammer
+						2027,	-- Scimitar
+						1196,	-- Tabar
 					}},
 				}),
 				n(5112, {	-- Gwenna Firebrew <Barmaid>
@@ -1743,6 +1743,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(2594),	-- Flagon of Dwarven Honeymead/Mead
 						i(2593),	-- Flask of Stormwind Tawny
 						i(1179),	-- Ice Cold Milk
+						--i(2595),	-- Jug of Badlands Bourbon
 						i(2596),	-- Skin of Dwarven Stout
 					},
 				}),
@@ -1755,14 +1756,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 22.8, 16.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						5239,    -- Blackbone Wand
-						5210,    -- Burning Wand
-						5236,    -- Combustible Wand
-						5211,    -- Dusk Wand
-						5209,    -- Gloom Wand
-						5347,    -- Pestilent Wand
-						5238,    -- Pitchwood Wand
-						5208,    -- Smoldering Wand
+						5239,	-- Blackbone Wand
+						5210,	-- Burning Wand
+						5236,	-- Combustible Wand
+						5211,	-- Dusk Wand
+						5209,	-- Gloom Wand
+						5347,	-- Pestilent Wand
+						5238,	-- Pitchwood Wand
+						5208,	-- Smoldering Wand
 					}},
 				}),
 				n(5119, {	-- Hegnar Swiftaxe
@@ -1770,16 +1771,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
 						-- added all
-						926,    -- Battle Axe
-						2025,    -- Bearded Axe
-						2523,    -- Bullova
-						2029,    -- Cleaver
-						2522,    -- Crescent Axe
-						927,    -- Double Axe
-						2530,    -- Francisca
-						2531,    -- Great Axe
-						853,    -- Hatchet
-						1196,    -- Tabar
+						926,	-- Battle Axe
+						2025,	-- Bearded Axe
+						2523,	-- Bullova
+						2029,	-- Cleaver
+						2522,	-- Crescent Axe
+						927,	-- Double Axe
+						2530,	-- Francisca
+						2531,	-- Great Axe
+						853,	-- Hatchet
+						1196,	-- Tabar
 					}},
 				}),
 				n(5170, {	-- Hjoldir Stoneblade
@@ -1787,57 +1788,57 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
 						-- added all
-						2520,    -- Broadsword
-						2528,    -- Falchion
-						2521,    -- Flamberge
-						2526,    -- Main Gauche
-						2534,    -- Rondel
-						2529,    -- Zweihander
+						2520,	-- Broadsword
+						2528,	-- Falchion
+						2521,	-- Flamberge
+						2526,	-- Main Gauche
+						2534,	-- Rondel
+						2529,	-- Zweihander
 					}},
 				}),
 				n(5155, {	-- Ingrys Stonebrow
 					["coord"] = { 39.2, 5.0, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						2435,    -- Embroidered Armor
-						3587,    -- Embroidered Belt
-						2438,    -- Embroidered Boots
-						3588,    -- Embroidered Bracers
-						2440,    -- Embroidered Gloves
-						3892,    -- Embroidered Hat
-						2437,    -- Embroidered Pants
-						3593,    -- Russet Belt
-						2432,    -- Russet Boots
-						3594,    -- Russet Bracers
-						2434,    -- Russet Gloves
-						3889,    -- Russet Hat
-						2431,    -- Russet Pants
-						2429,    -- Russet Vest
-						3597,    -- Thick Cloth Belt
-						3598,    -- Thick Cloth Bracers
-						203,    -- Thick Cloth Gloves
-						201,    -- Thick Cloth Pants
-						202,    -- Thick Cloth Shoes
-						200,    -- Thick Cloth Vest
+						2435,	-- Embroidered Armor
+						3587,	-- Embroidered Belt
+						2438,	-- Embroidered Boots
+						3588,	-- Embroidered Bracers
+						2440,	-- Embroidered Gloves
+						3892,	-- Embroidered Hat
+						2437,	-- Embroidered Pants
+						3593,	-- Russet Belt
+						2432,	-- Russet Boots
+						3594,	-- Russet Bracers
+						2434,	-- Russet Gloves
+						3889,	-- Russet Hat
+						2431,	-- Russet Pants
+						2429,	-- Russet Vest
+						3597,	-- Thick Cloth Belt
+						3598,	-- Thick Cloth Bracers
+						203,	-- Thick Cloth Gloves
+						201,	-- Thick Cloth Pants
+						202,	-- Thick Cloth Shoes
+						200,	-- Thick Cloth Vest
 					}},
 				}),
 				n(5121, {	-- Kelomir Ironhand
 					["coord"] = { 61.4, 88.4, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						2527,    -- Battle Staff
-						925,    -- Flail
-						1197,    -- Giant Mace
-						2030,    -- Gnarled Staff
-						2028,    -- Hammer
-						928,    -- Long Staff
-						852,    -- Mace
-						924,    -- Maul
-						854,    -- Quarter Staff
-						2026,    -- Rock Hammer
-						2525,    -- War Hammer
-						2533,    -- War Maul
-						2535,    -- War Staff
+						2527,	-- Battle Staff
+						925,	-- Flail
+						1197,	-- Giant Mace
+						2030,	-- Gnarled Staff
+						2028,	-- Hammer
+						928,	-- Long Staff
+						852,	-- Mace
+						924,	-- Maul
+						854,	-- Quarter Staff
+						2026,	-- Rock Hammer
+						2525,	-- War Hammer
+						2533,	-- War Maul
+						2535,	-- War Staff
 					}},
 					["groups"] = {
 						i(2532),	-- Morning Star
@@ -2018,27 +2019,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 54.6, 88.2, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						2435,    -- Embroidered Armor
-						3587,    -- Embroidered Belt
-						2438,    -- Embroidered Boots
-						3588,    -- Embroidered Bracers
-						2440,    -- Embroidered Gloves
-						3892,    -- Embroidered Hat
-						2437,    -- Embroidered Pants
-						2471,    -- Reinforced Leather Belt
-						2473,    -- Reinforced Leather Boots
-						2474,    -- Reinforced Leather Bracers
-						3893,    -- Reinforced Leather Cap
-						2475,    -- Reinforced Leather Gloves
-						2472,    -- Reinforced Leather Pants
-						2470,    -- Reinforced Leather Vest
-						2464,    -- Studded Belt
-						2467,    -- Studded Boots
-						2468,    -- Studded Bracers
-						2463,    -- Studded Doublet
-						2469,    -- Studded Gloves
-						3890,    -- Studded Hat
-						2465,    -- Studded Pants
+						2435,	-- Embroidered Armor
+						3587,	-- Embroidered Belt
+						2438,	-- Embroidered Boots
+						3588,	-- Embroidered Bracers
+						2440,	-- Embroidered Gloves
+						3892,	-- Embroidered Hat
+						2437,	-- Embroidered Pants
+						2471,	-- Reinforced Leather Belt
+						2473,	-- Reinforced Leather Boots
+						2474,	-- Reinforced Leather Bracers
+						3893,	-- Reinforced Leather Cap
+						2475,	-- Reinforced Leather Gloves
+						2472,	-- Reinforced Leather Pants
+						2470,	-- Reinforced Leather Vest
+						2464,	-- Studded Belt
+						2467,	-- Studded Boots
+						2468,	-- Studded Bracers
+						2463,	-- Studded Doublet
+						2469,	-- Studded Gloves
+						3890,	-- Studded Hat
+						2465,	-- Studded Pants
 					}},
 				}),
 				n(5049, {	-- Lyesa Steelbrow <Tabard Vendor>
@@ -2050,13 +2051,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 38.8, 5.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						2617,    -- Burning Robes
-						2615,    -- Chromatic Robe
-						2613,    -- Double Stitched Robes
-						2612,    -- Plain Robe
-						2614,    -- Robe Of Apprenticeship
-						2616,    -- Shimmering Silk Robes
-						2618,    -- Silver Dress Robes
+						2617,	-- Burning Robes
+						2615,	-- Chromatic Robe
+						2613,	-- Double Stitched Robes
+						2612,	-- Plain Robe
+						2614,	-- Robe Of Apprenticeship
+						2616,	-- Shimmering Silk Robes
+						2618,	-- Silver Dress Robes
 					}},
 				}),
 				n(50308, {	-- Master Tinker Trini <Gnomeregan Quartermaster>
@@ -2089,12 +2090,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 32.0, 58.8, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						847,    -- Chainmail Armor
-						1845,    -- Chainmail Belt
-						849,    -- Chainmail Boots
-						1846,    -- Chainmail Bracers
-						850,    -- Chainmail Gloves
-						848,    -- Chainmail Pants
+						847,	-- Chainmail Armor
+						1845,	-- Chainmail Belt
+						849,	-- Chainmail Boots
+						1846,	-- Chainmail Bracers
+						850,	-- Chainmail Gloves
+						848,	-- Chainmail Pants
 					}},
 					["groups"] = {
 						i(17187),	-- Banded Buckler
@@ -2105,28 +2106,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 55.0, 88.4, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						2424,    -- Brigandine Belt
-						2426,    -- Brigandine Boots
-						2427,    -- Brigandine Bracers
-						2428,    -- Brigandine Gloves
-						3894,    -- Brigandine Helm
-						2425,    -- Brigandine Leggings
-						2423,    -- Brigandine Vest
-						2451,    -- Crested Heater Shield
-						2448,    -- Heavy Pavise
-						2446,    -- Kite Shield
-						2445,    -- Large Metal Shield
-						17189,    -- Metal Buckler
-						17190,    -- Ornate Buckler
-						8094,    -- Platemail Armor
-						8088,    -- Platemail Belt
-						8089,    -- Platemail Boots
-						8090,    -- Platemail Bracers
-						8091,    -- Platemail Gloves
-						8092,    -- Platemail Helm
-						8093,    -- Platemail Leggings
-						17192,    -- Reinforced Targe
-						17188,    -- Ringed Buckler
+						2424,	-- Brigandine Belt
+						2426,	-- Brigandine Boots
+						2427,	-- Brigandine Bracers
+						2428,	-- Brigandine Gloves
+						3894,	-- Brigandine Helm
+						2425,	-- Brigandine Leggings
+						2423,	-- Brigandine Vest
+						2451,	-- Crested Heater Shield
+						2448,	-- Heavy Pavise
+						2446,	-- Kite Shield
+						2445,	-- Large Metal Shield
+						17189,	-- Metal Buckler
+						17190,	-- Ornate Buckler
+						8094,	-- Platemail Armor
+						8088,	-- Platemail Belt
+						8089,	-- Platemail Boots
+						8090,	-- Platemail Bracers
+						8091,	-- Platemail Gloves
+						8092,	-- Platemail Helm
+						8093,	-- Platemail Leggings
+						17192,	-- Reinforced Targe
+						17188,	-- Ringed Buckler
 					}},
 				}),
 				n(8681, {	-- Outfitter Eric <Speciality Tailoring Supplies>
@@ -2155,7 +2156,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = appendGroups(
 						-- #if AFTER CATA
-						COMMON_CATACLYSM_TAILORING_RECIPES, 
+						COMMON_CATACLYSM_TAILORING_RECIPES,
 						-- #endif
 						VANILLA_COMMON_LEATHERWORKING_TAILORING_SUPPLIES, VANILLA_TAILORING_SUPPLIES, {}),
 				}),
@@ -2166,26 +2167,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						16059,	-- Common Brown Shirt
 						3428,	-- Common Gray Shirt
 						16060,	-- Common White Shirt
-						837,    -- Heavy Weave Armor
-						3589,    -- Heavy Weave Belt
-						3590,    -- Heavy Weave Bracers
-						839,    -- Heavy Weave Gloves
-						838,    -- Heavy Weave Pants
-						840,    -- Heavy Weave Shoes
-						1843,    -- Tanned Leather Belt
-						843,    -- Tanned Leather Boots
-						1844,    -- Tanned Leather Bracers
-						844,    -- Tanned Leather Gloves
-						846,    -- Tanned Leather Jerkin
-						845,    -- Tanned Leather Pants
+						837,	-- Heavy Weave Armor
+						3589,	-- Heavy Weave Belt
+						3590,	-- Heavy Weave Bracers
+						839,	-- Heavy Weave Gloves
+						838,	-- Heavy Weave Pants
+						840,	-- Heavy Weave Shoes
+						1843,	-- Tanned Leather Belt
+						843,	-- Tanned Leather Boots
+						1844,	-- Tanned Leather Bracers
+						844,	-- Tanned Leather Gloves
+						846,	-- Tanned Leather Jerkin
+						845,	-- Tanned Leather Pants
 					}},
 				}),
 				n(5122, {	-- Skolmin Goldfury <Bow Merchant>
 					["coord"] = { 71.6, 66.2, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						3027,    -- Heavy Recurve Bow
-						3026,    -- Reinforced Bow
+						3027,	-- Heavy Recurve Bow
+						3026,	-- Reinforced Bow
 					}},
 					["groups"] = {
 						i(11303, {	-- Fine Shortbow
@@ -2236,13 +2237,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 61.8, 90.0, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						15905,    -- Brass Knuckles
-						15904,    -- Deadly Fist Blades
-						15808,    -- Fine Light Crossbow
-						15809,    -- Heavy Crossbow
-						2511,    -- Hunter's Boomstick
-						15807,    -- Light Crossbow
-						2509,    -- Ornate Blunderbuss
+						15905,	-- Brass Knuckles
+						15904,	-- Deadly Fist Blades
+						15808,	-- Fine Light Crossbow
+						15809,	-- Heavy Crossbow
+						2511,	-- Hunter's Boomstick
+						15807,	-- Light Crossbow
+						2509,	-- Ornate Blunderbuss
 					}},
 					["groups"] = {
 						i(15904),	-- Deadly Fist Blades
@@ -2282,15 +2283,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if AFTER CATA
 					["sym"] = { { "sub", "common_recipes_vendor", 1318 } },	-- Jessara Cordell <Enchanting Supplies>
 					-- #endif
-					["groups"] = appendGroups(ENCHANTING_SUPPLIES, VANILLA_ENCHANTING_COMMON_RECIPES, {
+					["groups"] = appendGroups(ENCHANTING_SUPPLIES, RUNED_COPPER_ROD_REAGENTS, VANILLA_ENCHANTING_COMMON_RECIPES, {
 						i(6349, {	-- Formula: Enchant 2H Weapon - Lesser Intellect (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(6217, {	-- Copper Rod
-							["description"] = "Can be bought from Enchanting Suppliers, as well as some Trade vendors around the world.",
-						}),
-						i(10938, { ["isLimited"] = true, }),	-- Lesser Magic Essence
-						i(10940, { ["isLimited"] = true, }),	-- Strange Dust
 					}),
 				}),
 				n(5169, {	-- Tynnus Venomsprout
@@ -2298,7 +2294,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					-- #if AFTER MOP
 					["sym"] = {{"select","itemID",
-						4565,    -- Simple Dagger
+						4565,	-- Simple Dagger
 					}},
 					-- #endif
 				}),
@@ -2312,9 +2308,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						"This NPC is only available on July 4th.",
 						-- #endif
 					["sym"] = {{"select","itemID",
-						8626,    -- Blue Sparkler
-						8625,    -- White Sparkler
-						8624,    -- Red Sparkler
+						8626,	-- Blue Sparkler
+						8625,	-- White Sparkler
+						8624,	-- Red Sparkler
 					}},
 				}),
 			}),

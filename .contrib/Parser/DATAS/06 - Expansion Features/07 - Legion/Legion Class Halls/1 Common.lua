@@ -1153,6 +1153,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					i(139828),	-- Queen's Feathers
 					i(139878),	-- Relic of the Ebon Blade
 					i(139876),	-- Rune of Reckoning
+					i(152932, { ["timeline"] = { ADDED_7_3_0 } }),	-- Runewarded Lightblade
 					i(152443, { ["timeline"] = { ADDED_7_3_0 } }),	-- Sanctified Armaments of the Light
 					i(152441, { ["timeline"] = { ADDED_7_3_0 } }),	-- Satchel of Lucidity
 					i(139670),	-- Scream of the Dead

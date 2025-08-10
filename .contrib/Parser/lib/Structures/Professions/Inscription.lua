@@ -214,6 +214,13 @@ INSCRIPTION_SUPPLIES = sharedData({
 		{ "n", 30730},	-- Stanly McCormick <Inscription Supplies>
 		{ "n", 30733},	-- Thargen Heavyquilll <Inscription Supplies>
 		{ "n", 30723},	-- Xantili <Inscription Supplies>
+		-- #if AFTER WRATH
+		{ "n", 26977},	-- Adelene Sunlance <Inscription Trainer>
+		{ "n", 26959},	-- Booker Kells <Inscription Trainer>
+		{ "n", 28723},	-- Larana Drome <Inscription Supplies>
+		{ "n", 26916},	-- Mindri Dinkles <Inscription Trainer>
+		{ "n", 26995},	-- Tink Brightbolt <Inscription Trainer>
+		-- #endif
 		-- #if AFTER 3.1.0
 		{ "n", 33679},	-- Recorder Lidio <Inscription Trainer>
 		{ "n", 33638},	-- Scribe Lanloer <Inscription Trainer>

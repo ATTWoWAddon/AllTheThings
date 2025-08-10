@@ -5,6 +5,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		text = {
 			en = "Lush Sugar Orchid",
 			es = "Orquídea dulce exuberante",
+			mx = "Orquídea dulce exuberante",
 			de = "Üppige Zuckerorchidee",
 			fr = "Orchidée en sucre luxuriante",
 			it = "Orchidea di Zucchero Rigogliosa",
@@ -12,6 +13,7 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 			ru = "Зрелая сахарная орхидея",
 			ko = "무성한 설탕 난초",
 			cn = "繁茂的糖兰",
+			tw = "茂盛的糖香蘭花",
 		},
 	},
 })

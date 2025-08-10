@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			ach(16678, {	-- Adventurer of The Azure Span
 				["sym"] = {{ "achievement_criteria" }},
 			}),
-			ach(17563, {    -- Ancient Stones of the Azure Span (automated)
+			ach(17563, {	-- Ancient Stones of the Azure Span (automated)
 				["timeline"] = { ADDED_10_1_0 },
 			}),
 			ach(16577, {	-- Azure Span Glyph Hunter

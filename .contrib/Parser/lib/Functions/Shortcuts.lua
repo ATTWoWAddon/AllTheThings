@@ -157,6 +157,23 @@ applyData = function(data, t)
 		end
 	end
 end
+-- Performs applyData logic to the top-level table
+-- This is sort of a workaround for replacing bubbleDownSelf a billion times with static field and groups
+applyDataSelf = function(data, t)
+	if not data then
+		print("ERROR: applyDataSelf: No Data")
+		return t
+	end
+	if not t then
+		print("ERROR: applyDataSelf: No Source 't'")
+		return t
+	end
+	-- if this is an array, convert to .g container first to prevent merge confusion
+	t = togroups(t);
+	-- then apply regular applyData on the group
+	applyData(data, t);
+	return t
+end
 -- Applies a function against the group and all sub-groups
 applyFunc = function(func, t)
 	if not func then return t end
@@ -745,7 +762,7 @@ tolbaradcommendation = function(cost, item)				-- Assign a Tol Barad Commendatio
 	applycost(item, { "c", 391, cost });	-- Tol Barad Commendation
 	return item;
 end
-traderstender = function(cost, item)                    -- Assign a Traders Tender cost to an item.
+traderstender = function(cost, item)                	-- Assign a Traders Tender cost to an item.
     if cost > 0 then applycost(item, { "c", TRADERS_TENDER, cost }); end
     return item;
 end
@@ -1142,6 +1159,12 @@ container = function(id, t)								-- This function helps build an item containe
 		bag.provider = nil;
 	end
 	return bag;
+end
+salvagerecipe = function(recipeID, displayItemID, t)	-- This function helps build proper listing for 'Salvage' Recipes and their visible 'Display Item'
+	local item = container(displayItemID, t)
+	local providers = item.providers
+	providers[#providers + 1] = { "s", recipeID }
+	return item
 end
 
 ---@param id number

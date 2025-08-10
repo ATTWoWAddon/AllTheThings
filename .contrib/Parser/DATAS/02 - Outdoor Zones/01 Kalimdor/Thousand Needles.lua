@@ -3120,7 +3120,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					-- #endif
 				}),
-				n(4878, {   -- Montarr <Lorekeeper>
+				n(4878, {	-- Montarr <Lorekeeper>
 					["coord"] = { 45.2, 50.6, THOUSAND_NEEDLES },
 					["timeline"] = { REMOVED_4_0_3 },
 					["groups"] = {

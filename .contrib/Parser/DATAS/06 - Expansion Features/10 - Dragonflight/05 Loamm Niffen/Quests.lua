@@ -236,8 +236,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						},
 					}),
 				}, {	-- RENOWN 19 --
-					q(75742, {    -- Drake Helms
-						["provider"] = { "n", 205127 },    -- Newsy
+					q(75742, {	-- Drake Helms
+						["provider"] = { "n", 205127 },	-- Newsy
 						-- #if BEFORE 10.2.7
 						["maps"] = { ZARALEK_CAVERN },	-- Spawns everywhere, but keeping it only listed in the factions 'main zone'
 						-- #else

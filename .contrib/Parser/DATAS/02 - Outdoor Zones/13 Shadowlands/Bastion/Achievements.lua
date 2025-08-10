@@ -371,16 +371,16 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["sourceQuests"] = { 57568 },	-- Tough Love
 				}),
 				crit(50339, {	-- The Spear of Kalliope
-					["sourceQuests"] = { 60906 },   -- Rightful Resting Place (non-Kyrian)
+					["sourceQuests"] = { 60906 },	-- Rightful Resting Place (non-Kyrian)
 				}),
 				crit(50340, {	-- The Spear of Kalliope
-					["sourceQuests"] = { 57967 },   -- Rightful Resting Place (Kyrian)
+					["sourceQuests"] = { 57967 },	-- Rightful Resting Place (Kyrian)
 				}),
 				crit(50334, {	-- Pride or Unit
-					["sourceQuests"] = { 58103 },   -- Pride or Unit (Pelodis - Phalynx)
+					["sourceQuests"] = { 58103 },	-- Pride or Unit (Pelodis - Phalynx)
 				}),
 				crit(50333, {	-- Pride or Unit
-					["sourceQuests"] = { 60296 },   -- Pride or Unit (Nemea - Larion)
+					["sourceQuests"] = { 60296 },	-- Pride or Unit (Nemea - Larion)
 				}),
 			}),
 			achWithRep(14335, FACTION_THE_ASCENDED),	-- The Ascended

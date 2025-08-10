@@ -526,6 +526,11 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(223032),	-- Technique: Lexicon of Mysteries
 					i(223033),	-- Technique: Patient Alchemist's Mixing Rod
 				})),
+
+				-- 11.0.7
+				expansion(EXPANSION.TWW, patch(0,7), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_7 } }, {
+					r(1213516),	-- Unknown
+				})),
 			}),
 		}),
 	}),

@@ -1205,9 +1205,32 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			--	Clams
 			--	Cooking reagents
 			--	Other reagents
-			--_______________________________
+			--_________________________________
 			--
 			--	Cloth + Silk:
+			{
+				i(33470, {
+					["description"] = "Frostweave Cloth is a very common drop from WotLK humanoid and undead creatures."
+				}),
+				i(42253, {	-- Iceweb Silk
+					["coords"] = {
+						{ 40.4, 78.0, THE_STORM_PEAKS },	-- Crystalweb Cavern
+						{ 37.0, 56.2, ZULDRAK },	-- Heb'Valok
+						{ 47.6, 83.1, ZULDRAK },	-- Drak'Sotra Fields, southeast of.
+					},
+					["crs"] = {
+						15975,	-- Carrion Spinner
+						29412,	-- Crystalweb Splitter
+						29411,	-- Crystalweb Weaver
+						15974,	-- Dread Creeper
+						29461,	-- Icetip Crawler
+						28342,	-- Trapdoor Ambusher
+						28221,	-- Trapdoor Crawler
+						15976,	-- Venom Stalker
+					},
+					["maps"] = { NAXXRAMAS },
+				}),
+			},
 			--_________________________________
 			--
 			--	Elemental reagents:
@@ -1578,7 +1601,21 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 						29390,	-- Snowdrift Jormungar
 						25454,	-- Tundra Crawler
 					},
-				})
+				}),
+			--__________________________________
+			--
+			-- Other reagents:
+				i(47556, {	-- Crusader Orb
+					["description"] = "Is a common drop from Trial of the Crusader bosses.",
+					["timeline"] = { ADDED_3_2_0 },
+				}),
+				i(43102, {	-- Frozen Orb
+					["description"] = "Is a guarranteed drop from WotLK Heroic dungeon end bosses.",
+				}),
+				i(45087, {	-- Runed Orb
+					["description"] = "Is a common drop from Ulduar bosses.",
+					["timeline"] = { ADDED_3_1_0 },
+				}),
 			}
 		),
 	})

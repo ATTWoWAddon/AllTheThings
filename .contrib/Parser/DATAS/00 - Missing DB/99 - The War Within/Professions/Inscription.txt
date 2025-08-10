@@ -643,16 +643,6 @@ r(382989),	-- Cataclysm Milling
 r(382990),	-- Northrend Milling
 r(382991),	-- Outland Milling
 r(382994),	-- Classic Milling
-11.0.7.57361
-r(1213516),	--
-11.2.0.61476
-r(1236170),	-- Contract: The K'aresh Trust
-r(1236908),	-- Vantus Rune: Manaforge Omega
-r(1243994),	-- Inspired Writer's Quill
-11.2.0.61624
-r(1249463),	-- Deal: Cartel Zo
-r(1249466),	-- Deal: Cartel Ba
-r(1249468),	-- Deal: Cartel Om
 
 
 
@@ -667,5 +657,3 @@ r(148264),	--
 r(148265),	--
 r(148267),	--
 r(148277),	--
-11.0.7.57361
-r(1213516),	--

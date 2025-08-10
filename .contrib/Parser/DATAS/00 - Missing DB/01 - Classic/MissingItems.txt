@@ -460,6 +460,8 @@ i(2394),	-- t Mail Leggings \\ Light Mail Leggings
 i(2395),	-- t Mail Boots \\ Light Mail Boots
 i(2396),	-- t Mail Bracers \\ Light Mail Bracers
 i(2397),	-- t Mail Gloves \\ Light Mail Gloves
+i(2404),	-- Deprecated Pattern: Light Winter Cloak
+i(2405),	-- Deprecated Pattern: Light Winter Boots
 i(2412),	-- Deprecated Nightmare Bridle
 i(2417),	-- ented Chain Vest \\ Augmented Chain Vest
 i(2418),	-- ented Chain Leggings \\ Augmented Chain Leggings
@@ -492,6 +494,7 @@ i(2518),	-- Deprecated Solid Shot
 i(2519),	-- y Shot \\ Heavy Shot
 i(2536),	-- g Stone Tooth \\ Trogg Stone Tooth
 i(2548),	-- el of Barleybrew Scalder \\ Barrel of Barleybrew Scalder
+i(2554),	-- Deprecated Recipe: Elixir of Fortitude
 i(2560),	-- ers' Completed Journal \\ Jitters' Completed Journal
 i(2561),	-- 'sul's Head \\ Chok'sul's Head
 i(2563),	-- nge Smelling Powder \\ Strange Smelling Powder
@@ -500,6 +503,9 @@ i(2588),	-- Deprecated Red Leather Mask
 i(2590),	-- st Spider Webbing \\ Forest Spider Webbing
 i(2591),	-- y Trogg Cloth \\ Dirty Trogg Cloth
 i(2595),	-- of Badlands Bourbon \\ Jug of Badlands Bourbon \\ Jug of Bourbon
+i(2599),	-- Deprecated Pattern: Forest Silk Gloves
+i(2600),	-- Deprecated Pattern: Trogg Vest
+i(2602),	-- Deprecated Pattern: Feathered Robe
 i(2606),	-- er Venom \\ Lurker Venom
 i(2607),	-- rosh Crystal \\ Mo'grosh Crystal
 i(2608),	-- shadon Ambergris \\ Threshadon Ambergris
@@ -707,7 +713,6 @@ i(3177),	-- Fang \\ Tiny Fang
 i(3179),	-- ked Dragon Molting \\ Cracked Dragon Molting
 i(3180),	-- ked Raptor Scale \\ Flecked Raptor Scale
 i(3181),	-- ially Digested Meat \\ Partially Digested Meat
-i(3182),	-- er's Silk \\ Spider's Silk
 i(3183),	-- y Claw \\ Mangy Claw
 i(3218),	-- wood Shackle \\ Pyrewood Shackle
 i(3222),	-- ed Dagger \\ Wicked Dagger
@@ -1112,6 +1117,7 @@ i(4285),	-- Codex of Holy Word: Fortitude IV
 i(4286),	-- Codex of Prayer of Healing II
 i(4287),	-- Codex of Nullify Disease II
 i(4288),	-- Codex of Remove Curse II
+i(4295),	-- Pattern: Double-stitched Leather Gloves OLD
 i(4418),	-- Deprecated Creeper Cakes
 i(4419),	-- ll of Intellect III \\ Scroll of Intellect III
 i(4421),	-- ll of Protection III \\ Scroll of Protection III
@@ -1430,7 +1436,6 @@ i(5105),	-- Explosive Shell
 i(5113),	-- of the Syndicate \\ Mark of the Syndicate
 i(5114),	-- red Talon \\ Severed Talon
 i(5115),	-- en Wishbone \\ Broken Wishbone
-i(5116),	-- Tail Feather \\ Long Tail Feather
 i(5117),	-- ant Plume \\ Vibrant Plume
 i(5118),	-- e Flat Tooth \\ Large Flat Tooth
 i(5119),	-- Loose Hair \\ Fine Loose Hair
@@ -1647,7 +1652,6 @@ i(5566),	-- en Antler \\ Broken Antler
 i(5567),	-- er Hook \\ Silver Hook
 i(5569),	-- eed \\ Seaweed
 i(5570),	-- moss Egg \\ Deepmoss Egg
-i(5573),	-- n Leather Bag \\ Green Leather Bag
 i(5574),	-- e Leather Bag \\ White Leather Bag
 i(5575),	-- e Green Sack \\ Large Green Sack
 i(5576),	-- e Brown Sack \\ Large Brown Sack
@@ -1760,8 +1764,6 @@ i(5741),	-- Chip \\ Rock Chip
 i(5748),	-- aur Longbow \\ Centaur Longbow
 i(5768),	-- e Race Ticket \\ Gnome Race Ticket
 i(5769),	-- in Race Ticket \\ Goblin Race Ticket
-i(5784),	-- y Murloc Scale \\ Slimy Murloc Scale
-i(5785),	-- k Murloc Scale \\ Thick Murloc Scale
 i(5790),	-- brow's Journal \\ Lonebrow's Journal
 i(5791),	-- ig Lonebrow's Journal \\ Henrig Lonebrow's Journal
 i(5794),	-- y Scorpid Venom \\ Salty Scorpid Venom
@@ -1894,6 +1896,7 @@ i(6209),	-- PVP - Horde Mine Deed
 i(6210),	-- PVP - Alliance Mine Deed
 i(6213),	-- Test Sharpening Stone
 i(6216),	-- Mystical Powder
+i(6243),	-- n Woolen Robe \\ Green Woolen Robe
 i(6244),	-- ggggfg
 i(6245),	-- itol's Satchel \\ Karnitol's Satchel
 i(6246),	-- fury Claw \\ Hatefury Claw
@@ -2065,7 +2068,6 @@ i(6997),	-- ered Manuscript \\ Tattered Manuscript
 i(6999),	-- of the Cabal \\ Tome of the Cabal
 i(7006),	-- nstructed Tome \\ Reconstructed Tome
 i(7007),	-- Backus' Phat Lewt
-i(7072),	-- Scale \\ Naga Scale
 i(7073),	-- en Fang \\ Broken Fang
 i(7074),	-- ped Claw \\ Chipped Claw
 i(7083),	-- fied Kor Gem \\ Purified Kor Gem
@@ -2215,7 +2217,6 @@ i(8151),	-- k of Mojo \\ Flask of Mojo
 i(8152),	-- k of Big Mojo \\ Flask of Big Mojo
 i(8155),	-- rah's Sacrifice \\ Sathrah's Sacrifice
 i(8164),	-- Test Stationery
-i(8168),	-- Black Feather \\ Jet Black Feather
 i(8243),	-- Scooby Snack
 i(8344),	-- ery Spinnerets \\ Silvery Spinnerets
 i(8363),	-- an Voodoo Charm \\ Shaman Voodoo Charm
@@ -3220,6 +3221,7 @@ i(13469),	-- of Weldon Barov \\ Head of Weldon Barov
 i(13470),	-- of Alexi Barov \\ Head of Alexi Barov
 i(13471),	-- Deed to Brill \\ The Deed to Brill
 i(13507),	-- fwatcher Longhorn Report \\ Cliffwatcher Longhorn Report
+i(13517),	-- pe: Alchemist Stone \\ Recipe: Alchemist Stone \\ Recipe: Alchemist's Stone \\ Recipe: Alchemists' Stone
 i(13536),	-- of Awakening \\ Horn of Awakening
 i(13542),	-- n Box \\ Demon Box
 i(13543),	-- Krastinov's Bag of Horrors UNUSED
@@ -4015,8 +4017,6 @@ i(21043),	-- erious Envelope \\ Mysterious Envelope
 i(21111),	-- onic For Dummies: Volume II \\ Draconic For Dummies: Volume II
 i(21112),	-- cal Book Binding \\ Magical Book Binding
 i(21114),	-- ey Rum Dark \\ Rumsey Rum Dark
-i(21121),	-- Monster - Item, Flower - Purple
-i(21123),	-- Monster - Item, Flower - White
 i(21130),	-- y of Weavil \\ Diary of Weavil
 i(21131),	-- owup Combat Assignment \\ Followup Combat Assignment
 i(21136),	-- nite Buoy \\ Arcanite Buoy
@@ -4108,7 +4108,6 @@ i(21720),	-- Large Yellow Rocket Cluster
 i(21721),	-- glow \\ Moonglow
 i(21739),	-- Lunar Festival Invitation DEBUG
 i(21747),	-- ival Firecracker \\ Festival Firecracker
-i(21796),	-- Monster - Item, Ahn'Qiraj Held Scepter
 i(21811),	-- [PH] Object of Affection
 i(21830),	-- y Wrapper \\ Empty Wrapper
 i(21831),	-- pered Gift \\ Wrappered Gift

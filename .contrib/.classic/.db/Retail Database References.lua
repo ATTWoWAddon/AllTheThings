@@ -42,6 +42,7 @@
 -- #IMPORT: 09 - Crafted Items\\03 - Wrath of the Lich King.lua
 -- #IMPORT: 09 - Crafted Items\\04 - Cataclysm.lua
 -- #IMPORT: 09 - Crafted Items\\05 - Mists of Pandaria.lua
+-- #IMPORT: 09 - Crafted Items\\99 - Quests.lua
 
 -- Group Finder
 -- #IMPORT: 04 - Group Finder\\Group Finder.lua

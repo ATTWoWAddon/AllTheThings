@@ -152,6 +152,7 @@ local ZoneDropLoot = {
 	i(170210),	-- Recipe: Abyssal Healing Potion [Rank 3] (RECIPE!)
 	i(170208),	-- Recipe: Potion of Unbridled Fury [Rank 3] (RECIPE!)
 	i(170209),	-- Recipe: Potion of Wild Mending [Rank 3] (RECIPE!)
+	i(168632),	-- Slipstream Generator
 	i(168756),	-- Hijack Synaptic Circuits
 	i(168798),	-- Trajectory Analysis
 };
@@ -179,7 +180,9 @@ MECHAGON_WORKSHOP = createHeader({
 	},
 });
 
-local TIMELINE_UNAVAILABLE_TWWS2 = {ADDED_8_2_0,REMOVED_11_1_0_SEASONSTART,ADDED_11_2_0_SEASONSTART}
+local TIMELINE_UNAVAILABLE_MYTHICPLUS = {ADDED_8_2_0,REMOVED_11_1_0_SEASONSTART,ADDED_11_2_0}
+-- Unavailable during:
+-- TWW S2 Mythic Plus (11.1 until 11.2)
 
 ------ Boss Functions ------
 local InstanceHelper = CreateInstanceHelper(EncounterToCRS, EncounterToLoot, ZoneDropLoot)
@@ -458,7 +461,7 @@ appendAllGroups(SeasonDifficultyGroups, {
 	Difficulty(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS).AddGroups({
 		-- Junkyard was removed entirely during 11.1
 		n(MECHAGON_JUNKYARD, {
-			timeline = TIMELINE_UNAVAILABLE_TWWS2,
+			timeline = TIMELINE_UNAVAILABLE_MYTHICPLUS,
 			g = {
 				BossOnly(GOBBAMAK, {
 					i(169050),	-- Logg
@@ -469,7 +472,7 @@ appendAllGroups(SeasonDifficultyGroups, {
 	Difficulty(DIFFICULTY.DUNGEON.HEROIC).AddGroups({
 		-- Junkyard was removed entirely during 11.1
 		n(MECHAGON_JUNKYARD, {
-			timeline = TIMELINE_UNAVAILABLE_TWWS2,
+			timeline = TIMELINE_UNAVAILABLE_MYTHICPLUS,
 			g = {
 				Boss(GOBBAMAK, {
 				}),
@@ -485,18 +488,18 @@ appendAllGroups(SeasonDifficultyGroups, {
 				-- Not entirely sure how this version is obtainable if at all during Seasons... so we will assume it isn't and see if any report
 				i(168970, {	-- Trashmaster's Mantle
 					["description"] = "Equipping this cloak gives you a temporary Trashmaster title.  To get a permanent character-specific Trashmaster title, take this cloak to Jani's trashpile in Dazar'alor (Horde) or Vol'dun (Alliance).",
-					["timeline"] = TIMELINE_UNAVAILABLE_TWWS2,
+					["timeline"] = TIMELINE_UNAVAILABLE_MYTHICPLUS,
 				}),
 			}),
 			-- Azerite from Heroic doesn't exist during the Season
-			BossOnly(KING, sharedData({timeline = TIMELINE_UNAVAILABLE_TWWS2},
+			BossOnly(KING, sharedData({timeline = TIMELINE_UNAVAILABLE_MYTHICPLUS},
 				clone(AzeriteLoot[KING]))),
 		}),
 	}),
 	Difficulty(DIFFICULTY.DUNGEON.MYTHIC).AddGroups({
 		-- Junkyard was removed entirely during 11.1
 		n(MECHAGON_JUNKYARD, {
-			timeline = TIMELINE_UNAVAILABLE_TWWS2,
+			timeline = TIMELINE_UNAVAILABLE_MYTHICPLUS,
 			g = {
 				Boss(GOBBAMAK, {
 				}),
@@ -513,11 +516,11 @@ appendAllGroups(SeasonDifficultyGroups, {
 					-- Not entirely sure how this version is obtainable if at all during Seasons... so we will assume it isn't and see if any report
 					i(168970, {	-- Trashmaster's Mantle
 						["description"] = "Equipping this cloak gives you a temporary Trashmaster title.  To get a permanent character-specific Trashmaster title, take this cloak to Jani's trashpile in Dazar'alor (Horde) or Vol'dun (Alliance).",
-						["timeline"] = TIMELINE_UNAVAILABLE_TWWS2,
+						["timeline"] = TIMELINE_UNAVAILABLE_MYTHICPLUS,
 					}),
 				}),
 				-- Azerite from Mythic doesn't exist during the Season
-				BossOnly(KING, sharedData({timeline = TIMELINE_UNAVAILABLE_TWWS2},
+				BossOnly(KING, sharedData({timeline = TIMELINE_UNAVAILABLE_MYTHICPLUS},
 					clone(AzeriteLoot[KING]))),
 			},
 		}),
@@ -539,7 +542,7 @@ local INSTANCE_GROUPS = {
 	ZoneDrops(),
 	Difficulty(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS).AddGroups({
 		n(MECHAGON_JUNKYARD, {
-			timeline = TIMELINE_UNAVAILABLE_TWWS2,
+			timeline = TIMELINE_UNAVAILABLE_MYTHICPLUS,
 			g = {
 				BossOnly(GOBBAMAK, {
 					i(168751),	-- Omnipurpose Effective Logic Board
@@ -598,7 +601,7 @@ local INSTANCE_GROUPS = {
 	}),
 	Difficulty(DIFFICULTY.DUNGEON.HEROIC).AddGroups({
 		n(MECHAGON_JUNKYARD, {
-			timeline = TIMELINE_UNAVAILABLE_TWWS2,
+			timeline = TIMELINE_UNAVAILABLE_MYTHICPLUS,
 			g = {
 				BossOnly(GOBBAMAK, {
 				}),
@@ -632,7 +635,7 @@ local INSTANCE_GROUPS = {
 			},
 		}),
 		n(MECHAGON_JUNKYARD, {
-			timeline = TIMELINE_UNAVAILABLE_TWWS2,
+			timeline = TIMELINE_UNAVAILABLE_MYTHICPLUS,
 			g = {
 				BossOnly(GOBBAMAK, {
 					ach(13706),	-- Stay Positive
@@ -659,7 +662,7 @@ local INSTANCE_GROUPS = {
 			}),
 			BossOnly(KING, {
 				ach(13624, {	-- Keep DPS-ing and Nobody Explodes
-					timeline = TIMELINE_UNAVAILABLE_TWWS2,
+					timeline = TIMELINE_UNAVAILABLE_MYTHICPLUS,
 					g = {
 						i(168830),	-- Aerial Unit R-21/X (MOUNT!)
 						i(169003),	-- Apogee Inventor's Goggles

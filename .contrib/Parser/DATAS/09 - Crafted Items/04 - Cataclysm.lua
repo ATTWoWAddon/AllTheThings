@@ -114,27 +114,27 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 	prof(ARCHAEOLOGY, {
 		i(87399, {["timeline"] = {ADDED_5_0_4}}),	-- Restored Artifact
 		i(64397),	-- Tol'vir Hieroglyphic
-		header(HEADERS.Currency, ARCH_CURRENCY_TOLVIR, sharedData({["cost"]={{"c",ARCH_CURRENCY_TOLVIR,50}}},{ -- TODO: someone can add different fragment costs within as needed
+		header(HEADERS.Currency, ARCH_CURRENCY_TOLVIR, {
 			["provider"] = { "o", 207190 },	-- Tol'vir Archaeology Find
 			["maps"] = { ULDUM },
 			["groups"] = {
 				i(64657, {	-- Canopic Jar
 					i(67538),	-- Recipe: Vial of the Sands (RECIPE!)
 				}),
-				i(64652),	-- Castle of Sand
-				i(64653),	-- Cat Statue with Emerald Eyes
-				i(60847),	-- Crawling Claw (PET!)
-				i(64656),	-- Engraved Scimitar Hilt
-				i(64881),	-- Pendant of the Scarab Storm (TOY!)
-				i(64904),	-- Ring of the Boy Emperor
-				i(64885),	-- Scimitar of the Sirocco
-				i(64658),	-- Sketch of a Desert Palace
-				i(64654),	-- Soapstone Scarab Necklace
-				i(64880),	-- Staff of Ammunae
-				i(64655),	-- Tiny Oasis Mosaic
-				i(64883),	-- Ultramarine Qiraji Battle Tank (MOUNT!)
+				i(64652, {["cost"]={{"c",ARCH_CURRENCY_TOLVIR,45}}}),	-- Castle of Sand
+				i(64653, {["cost"]={{"c",ARCH_CURRENCY_TOLVIR,45}}}),	-- Cat Statue with Emerald Eyes
+				i(60847, {["cost"]={{"c",ARCH_CURRENCY_TOLVIR,150}}}),	-- Crawling Claw (PET!)
+				i(64656, {["cost"]={{"c",ARCH_CURRENCY_TOLVIR,45}}}),	-- Engraved Scimitar Hilt
+				i(64881, {["cost"]={{"c",ARCH_CURRENCY_TOLVIR,150}}}),	-- Pendant of the Scarab Storm (TOY!)
+				i(64904, {["cost"]={{"c",ARCH_CURRENCY_TOLVIR,150}}}),	-- Ring of the Boy Emperor
+				i(64885, {["cost"]={{"c",ARCH_CURRENCY_TOLVIR,150}}}),	-- Scimitar of the Sirocco
+				i(64658, {["cost"]={{"c",ARCH_CURRENCY_TOLVIR,45}}}),	-- Sketch of a Desert Palace
+				i(64654, {["cost"]={{"c",ARCH_CURRENCY_TOLVIR,45}}}),	-- Soapstone Scarab Necklace
+				i(64880, {["cost"]={{"c",ARCH_CURRENCY_TOLVIR,150}}}),	-- Staff of Ammunae
+				i(64655, {["cost"]={{"c",ARCH_CURRENCY_TOLVIR,45}}}),	-- Tiny Oasis Mosaic
+				i(64883, {["cost"]={{"c",ARCH_CURRENCY_TOLVIR,150}}}),	-- Ultramarine Qiraji Battle Tank (MOUNT!)
 			},
-		})),
+		}),
 	}),
 	prof(BLACKSMITHING, {
 		n(ARMOR, {
@@ -267,6 +267,22 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		}),
 	}),
 	prof(COOKING, {
+		n(COMMON_VENDOR_ITEMS, sharedData({	-- Experimental
+			["coords"] = {
+				{ 76.27, 52.64, TWILIGHT_HIGHLANDS },	-- Dragonmaw Port
+				{ 79.37, 78.53, TWILIGHT_HIGHLANDS },	-- Highbank
+				{ 50.21, 38.36, ULDUM },	-- Mar'at
+			},
+			["description"] = "Coordinates are for select vendors.",
+			["providers"] = {
+				{ "n", 49688 },	-- Innkeeper Francis <Innkeeper>
+				{ "n", 49519 },	-- Lizzy "Lemons"
+				{ "n", 48861 },	-- Umi <Produce>
+			},
+		}, {
+			i(58265),	-- Highland Pomegranate
+			i(58278),	-- Tropical Sunfruit
+		})),
 		i(62661),	-- Baked Rockfish
 		i(62665),	-- Basilisk Liverdog
 		i(62670),	-- Beer-Basted Crocolisk
@@ -302,13 +318,53 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		i(62656),	-- Whitecrest Gumbo
 	}),
 	prof(ENCHANTING, {
-		spell(13262, {	-- Disenchant
-			i(52719),	-- Greater Celestial Essence
-			i(52721),	-- Heavenly Shard
-			i(52555),	-- Hypnotic Dust
-			i(52718),	-- Lesser Celestial Essence
-			i(52722),	-- Maelstrom Crystal
-			i(52720),	-- Small Heavenly Shard
+		header(HEADERS.Spell, 13262, {	-- Disenchant
+			-- Danny Donkey: We need ilvl data from WoD and BfA stat squishes.
+			-- Dust:
+			i(52555, {	-- Hypnotic Dust
+				-- #if AFTER 9.0.1
+				["description"] = "Obtained from disenchanting uncommon (green) quality Cataclysm garments, amulets, rings, shields and off-hand frills within the ilvl bracket 35-36.",
+				-- #elseif BEFORE WOD
+				["description"] = "Obtained from disenchanting uncommon (green) quality Cataclysm garments, amulets, rings, shields and off-hand frills within the ilvl bracket 272-312.",
+				-- #endif
+			}),
+			-- Essences:
+			i(52719, {	-- Greater Celestial Essence
+				-- #if AFTER 9.0.1
+				["description"] = "Obtained from disenchanting uncommon (green) quality Cataclysm weapons within the ilvl bracket 36-37, except shields and off-hand frills.",
+				-- #elseif BEFORE WOD
+				["description"] = "Obtained from disenchanting uncommon (green) quality Cataclysm weapons within the ilvl bracket 306-318, except shields and off-hand frills.",
+				-- #endif
+			}),
+			i(52718, {	-- Lesser Celestial Essence
+				-- #if AFTER 9.0.1
+				["description"] = "Obtained from disenchanting uncommon (green) quality Cataclysm weapons within the ilvl bracket 35-36, except shields and off-hand frills.",
+				-- #elseif BEFORE WOD
+				["description"] = "Obtained from disenchanting uncommon (green) quality Cataclysm weapons within the ilvl bracket 272-305, except shields and off-hand frills.",
+				-- #endif
+			}),
+			-- Shards and crystals:
+			i(52721, {	-- Heavenly Shard
+				-- #if AFTER 9.0.1
+				["description"] = "Obtained from disenchanting all rare (blue) quality Cataclysm gear at ilvl 37.",
+				-- #elseif BEFORE WOD
+				["description"] = "Obtained from disenchanting all rare (blue) quality Cataclysm gear within the ilvl bracket 318-346.",
+				-- #endif
+			}),
+			i(52722, {	-- Maelstrom Crystal
+				-- #if AFTER 9.0.1
+				["description"] = "Obtained from disenchanting all epic (purple) quality Cataclysm gear at ilvl 37.",
+				-- #elseif BEFORE WOD
+				["description"] = "Obtained from disenchanting all epic (purple) quality Cataclysm gear within the ilvl bracket 353-410.",
+				-- #endif
+			}),
+			i(52720, {	-- Small Heavenly Shard
+				-- #if AFTER 9.0.1
+				["description"] = "Obtained from disenchanting all rare (blue) quality Cataclysm gear at ilvl 36.",
+				-- #elseif BEFORE WOD
+				["description"] = "Obtained from disenchanting all rare (blue) quality Cataclysm gear within the ilvl bracket 288-316.",
+				-- #endif
+			}),
 		}),
 		n(ARMOR_ENCHANTMENTS, {
 			i(52781),	-- Enchant Boots - Assassin's Step
@@ -921,41 +977,41 @@ Fire and Water - Damage against Elementals increased by 15%.
 		}),
 		category(106, {	-- Tarot Cards
 			sp(86615, {	-- Darkmoon Card of Destruction
-				i(61988),    -- Ace of Embers
-				i(61989),    -- Two of Embers
-				i(61990),    -- Three of Embers
-				i(61991),    -- Four of Embers
-				i(61992),    -- Five of Embers
-				i(61993),    -- Six of Embers
-				i(61994),    -- Seven of Embers
-				i(61995),    -- Eight of Embers
+				i(61988),	-- Ace of Embers
+				i(61989),	-- Two of Embers
+				i(61990),	-- Three of Embers
+				i(61991),	-- Four of Embers
+				i(61992),	-- Five of Embers
+				i(61993),	-- Six of Embers
+				i(61994),	-- Seven of Embers
+				i(61995),	-- Eight of Embers
 
-				i(61996),    -- Ace of Stones
-				i(61997),    -- Two of Stones
-				i(61998),    -- Three of Stones
-				i(61999),    -- Four of Stones
-				i(62000),    -- Five of Stones
-				i(62001),    -- Six of Stones
-				i(62002),    -- Seven of Stones
-				i(62003),    -- Eight of Stones
+				i(61996),	-- Ace of Stones
+				i(61997),	-- Two of Stones
+				i(61998),	-- Three of Stones
+				i(61999),	-- Four of Stones
+				i(62000),	-- Five of Stones
+				i(62001),	-- Six of Stones
+				i(62002),	-- Seven of Stones
+				i(62003),	-- Eight of Stones
 
-				i(62004),    -- Ace of the Winds
-				i(62005),    -- Two of the Winds
-				i(62006),    -- Three of the Winds
-				i(62007),    -- Four of the Winds
-				i(62008),    -- Five of the Winds
-				i(62009),    -- Six of the Winds
-				i(62010),    -- Seven of the Winds
-				i(62011),    -- Eight of the Winds
+				i(62004),	-- Ace of the Winds
+				i(62005),	-- Two of the Winds
+				i(62006),	-- Three of the Winds
+				i(62007),	-- Four of the Winds
+				i(62008),	-- Five of the Winds
+				i(62009),	-- Six of the Winds
+				i(62010),	-- Seven of the Winds
+				i(62011),	-- Eight of the Winds
 
-				i(62012),    -- Ace of Waves
-				i(62013),    -- Two of Waves
-				i(62014),    -- Three of Waves
-				i(62015),    -- Four of Waves
-				i(62016),    -- Five of Waves
-				i(62017),    -- Six of Waves
-				i(62018),    -- Seven of Waves
-				i(62019),    -- Eight of Waves
+				i(62012),	-- Ace of Waves
+				i(62013),	-- Two of Waves
+				i(62014),	-- Three of Waves
+				i(62015),	-- Four of Waves
+				i(62016),	-- Five of Waves
+				i(62017),	-- Six of Waves
+				i(62018),	-- Seven of Waves
+				i(62019),	-- Eight of Waves
 			}),
 			i(60838, {	-- Mysterious Fortune Card
 				["timeline"] = { ADDED_4_0_3 },

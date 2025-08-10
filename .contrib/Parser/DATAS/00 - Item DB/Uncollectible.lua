@@ -319,6 +319,7 @@ i(158820);	-- Blind-Worm Sting
 i(162978);	-- Blood Magic Ritual Dish
 i(158759);	-- Bloodgorged Sac
 i(158750);	-- Bonebreaker Beak
+i(158853);	-- Bony Skullplate
 i(158851);	-- Bottled Squall
 i(155843);	-- Brittle Ceremonial Necklace
 i(155649);	-- Broken Zandalari Spear
@@ -367,6 +368,7 @@ i(158765);	-- Hardshell Mollusk
 i(158806);	-- Hooked Talon
 i(155600);	-- How to Make Money and Influence Subordinates
 i(155605);	-- Huge Femur
+i(158810);	-- Humming Dew
 i(163842);	-- Inert Hearthstone
 i(170021);	-- Inert Slivers
 i(155631);	-- Inert Stone
@@ -412,6 +414,7 @@ i(161053);	-- Salty Dog Crackers
 i(162630);	-- Sandy Ornate Relic
 i(163087);	-- Satchel of Blood Oranges
 i(158849);	-- Sawtooth Jawbone
+i(162025);	-- Sermon of the High Exarch
 i(158752);	-- Severed Foot
 i(155598);	-- Severed Mandible
 i(155629);	-- Shaggy Mane
@@ -466,6 +469,7 @@ i(166874);	-- Azerothian Diamond Brooch
 i(166860);	-- Azj'Aqir Onyx Stone
 i(166856);	-- Bwonsamdi Ritual Scepter
 i(166868);	-- Chit of the Black Empire
+i(170037);	-- Cracked Lattice
 i(166798);	-- Crackling Tourmaline (Opulence Crown Consumable)
 i(166862);	-- Crystal Aqiri Skull
 i(166800);	-- Diamond of Sustenance (Opulence Crown Consumable)
@@ -480,6 +484,7 @@ i(166858);	-- Silver Sculpture of Sseratus
 i(166797);	-- Star Topaz (Opulence Crown Consumable)
 i(166872);	-- Sterling Truesilver Flatware
 i(166796);	-- Sunset Amber (Opulence Crown Consumable)
+i(170038);	-- Torn Mesh
 i(166288);	-- Waterlogged Junk
 i(166859);	-- Zinj'alor Blue Diamond
 
@@ -513,6 +518,7 @@ i(169138);	-- Fractured Personality Module
 i(169123);	-- Functional Fiddleswitch
 i(170013);	-- Inanimate Rock
 i(169129);	-- Lovingly Worn Wrench
+i(238810);	-- Mana-Blessed Fin
 i(170031);	-- Moldy Tome
 i(170096);	-- Sodden Highborne Painting
 i(170098);	-- Rusted Girandole Earring
@@ -2548,6 +2554,7 @@ i(246584);	-- A Steamy Romance Novel: Devouring Love
 i(238881);	-- Barbed Predator Tusk
 i(245672);	-- Blade of the Void Swamp
 i(238834);	-- Burnished Void Claw
+i(238808);	-- Celeste-Touched Fin
 i(238874);	-- Congealed Mana
 i(246298);	-- Cracked Staff of the Desperate Defender
 i(247686);	-- Crystallized Nightshade
@@ -2576,8 +2583,10 @@ i(238876);	-- Malicious Mandible
 i(238869);	-- Matted Pelt
 i(238801);	-- Mite-Kissed Silver Tooth
 i(238855);	-- Netherclaw
+i(248970);	-- Nexus-Princess Ky'veza
 i(246296);	-- Off-Balance Mace of the Tazavesh Lookout
 i(238880);	-- Oily Blubber
+i(238849);	-- Ominous Unblinking Eye
 i(247687);	-- Overly-Preserved K'areshi Preserves
 i(245670);	-- P.O.S.T. Employee's Backup Stamp
 i(238870);	-- Pearly Incisor
@@ -2602,6 +2611,7 @@ i(238847);	-- Torn Maw Fragment
 i(238887);	-- Torn Voidscript Page
 i(243017);	-- Tulwar of the Pyrite Guard
 i(238875);	-- Twisted Sediment
+i(238885);	-- Unstable Power Source
 i(238867);	-- Unstable Void Essence
 i(238814);	-- Vibrantly Colored Crest
 i(238866);	-- Void Dust

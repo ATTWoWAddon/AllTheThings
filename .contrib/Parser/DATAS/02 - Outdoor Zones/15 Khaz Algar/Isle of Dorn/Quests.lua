@@ -481,7 +481,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						o(433101, {	-- Bag of Glowing Shards
 							i(217505),	-- Bag of Glowing Shards (QI!)
 						}),
-						o(433102, {
+						o(433102, {	-- Bundle of Receipts
 							i(217504),	-- Bundle of Receipts (QI!)
 						}),
 						o(433090, {	-- Infused Underclay
@@ -851,7 +851,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 57.7, 42.7, ISLE_OF_DORN },
 					["groups"] = {
 						i(213002),	-- Charged Core (QI!)
-						o(420730, {
+						o(420730, {	-- Vein of Ore
 							i(213001),	-- Clump of Ore (QI!)
 						}),
 					},

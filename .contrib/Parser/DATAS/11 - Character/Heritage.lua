@@ -753,7 +753,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 	race(KULTIRAN, bubbleDown({ ["timeline"] = { ADDED_8_1_5 }, ["races"] = { KULTIRAN } }, {
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed both |cFFFFD700A Nation United|r, The Kul Tiran Campaign and |cFFFFD700Tides of Vengeance|r, The 8.1.5 War Campaign.",
 		["groups"] = {
-			q(53722, {    -- Heritage of the Kul Tiran
+			q(53722, {	-- Heritage of the Kul Tiran
 				["provider"] = { "n", 150941 },	-- Katherine Proudmoore
 				["coord"] = { 67.8, 21.8, BORALUS },
 				["lvl"] = 50,
@@ -795,7 +795,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 	race(MAGHAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 }, ["races"] = { MAGHAR } }, {
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700Ready for War|r, The 8.0 War Campaign.",
 		["groups"] = {
-			q(51484, {    -- Heritage of the Mag'har
+			q(51484, {	-- Heritage of the Mag'har
 				["provider"] = { "n", 143845 },	--  Overlord Geya'rah
 				["coord"] = { 70.6, 44.6, ORGRIMMAR },
 				["lvl"] = 50,
@@ -832,7 +832,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 	race(MECHAGNOME, bubbleDown({ ["timeline"] = { ADDED_8_3_0 }, ["races"] = { MECHAGNOME } }, {
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700The Mechagonian Threat|r, The Mechagon Storyline.",
 		["groups"] = {
-			q(58436, {    -- Heritage of the Mechagnome
+			q(58436, {	-- Heritage of the Mechagnome
 				["provider"] = { "n", 158145 },	-- Prince Erazmin
 				["coord"] = { 73.0, 33.4, MECHAGON },
 				["maps"] = { MECHAGON_CITY },
@@ -933,7 +933,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 	race(NIGHTBORNE, bubbleDown({ ["timeline"] = { ADDED_7_3_5 }, ["races"] = { NIGHTBORNE } }, {
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700Insurrection|r, The 7.2 Suramar Campaign.",
 		["groups"] = {
-			q(49784, {    -- Heritage of the Nightborne
+			q(49784, {	-- Heritage of the Nightborne
 				["provider"] = { "n", 131326 },	-- First Arcanist Thalyssra
 				["coord"] = { 59.4, 85.4, SURAMAR },
 				["lvl"] = 50,
@@ -1481,7 +1481,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 	race(VULPERA, bubbleDown({ ["timeline"] = { ADDED_8_3_0 }, ["races"] = { VULPERA } }, {
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700Secrets in the Sands|r, The Vol'dun Storyline.",
 		["groups"] = {
-			q(58435, {    -- Heritage of the Vulpera
+			q(58435, {	-- Heritage of the Vulpera
 				["provider"] = { "n", 124108 },	-- Hagashi <Innkeeper>
 				["coord"] = { 56.8,	49.8, VOLDUN },
 				["lvl"] = 50,
@@ -1573,7 +1573,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 	race(ZANDALARI, bubbleDown({ ["timeline"] = { ADDED_8_1_5 }, ["races"] = { ZANDALARI } }, {
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed both |cFFFFD700Zandalar Forever!|r, The Zandalari Campaign and |cFFFFD700Tides of Vengeance|r, The 8.1.5 War Campaign.",
 		["groups"] = {
-			q(53721, {    -- Heritage of the Zandalari
+			q(53721, {	-- Heritage of the Zandalari
 				["provider"] = { "n", 146335 },	--  Queen Talanji
 				["coord"] = { 42.2, 9.4, DAZARALOR },
 				["lvl"] = 50,

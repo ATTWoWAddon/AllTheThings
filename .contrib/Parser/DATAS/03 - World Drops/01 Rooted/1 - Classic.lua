@@ -5809,7 +5809,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 			["description"] = "Can drop from trolls.",
 			["maps"] = {
-				LOWER_BLACKROCK_SPIRE,
+				LBRS_TAZZALOR,
 				ZULGURUB,
 			},
 		}),
@@ -5827,7 +5827,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- #else
 			["coord"] = { 50.0, 70.0, ARATHI_HIGHLANDS },
 			["cr"] = 2561,	-- Highland Fleshstalker
-			["description"] = "Cataclysm messed up with the drop sources for Large Fangs. Supposed to drop from all raptors within a given level range. The Highland Fleshstalker seems to be the most reliable source. Consider farming this on a character that needs Skining skills or skinned reagents.",
+			["description"] = "Cataclysm messed up with the drop sources for Raptor Hides. Supposed to drop from all raptors within a given level range. The Highland Fleshstalker seems to be the most reliable source. Consider farming this on a character that needs Skining skills or skinned reagents.",
 			-- #endif
 		}),
 		i(5635, {	-- Sharp Claw

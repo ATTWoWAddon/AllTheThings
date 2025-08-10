@@ -13,41 +13,41 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 		["lvl"] = 110,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(10829, {    -- Arcing Aqueducts
-                    crit(31445, {    -- Skorpyron
+				ach(10829, {	-- Arcing Aqueducts
+                    crit(31445, {	-- Skorpyron
                         ["_encounter"] = { 1706, DIFFICULTY.RAID.LFR },
                     }),
-                    crit(31444, {    -- Chronomatic Anomaly
+                    crit(31444, {	-- Chronomatic Anomaly
                         ["_encounter"] = { 1725, DIFFICULTY.RAID.LFR },
                     }),
-                    crit(31443, {    -- Trilliax
+                    crit(31443, {	-- Trilliax
                         ["_encounter"] = { 1731, DIFFICULTY.RAID.LFR },
                     }),
                 }),
-				ach(10837, {    -- Royal Athenaeum
-                    crit(31447, {    -- Spellblade Aluriel
+				ach(10837, {	-- Royal Athenaeum
+                    crit(31447, {	-- Spellblade Aluriel
                         ["_encounter"] = { 1751, DIFFICULTY.RAID.LFR },
                     }),
-                    crit(31448, {    -- Star Augur Etraeus
+                    crit(31448, {	-- Star Augur Etraeus
                         ["_encounter"] = { 1732, DIFFICULTY.RAID.LFR },
                     }),
-                    crit(31449, {    -- High Botanist Tel'arn
+                    crit(31449, {	-- High Botanist Tel'arn
                         ["_encounter"] = { 1761, DIFFICULTY.RAID.LFR },
                     }),
                 }),
-				ach(10838, {    -- Nightspire
-                    crit(31452, {    -- Tichondrius
+				ach(10838, {	-- Nightspire
+                    crit(31452, {	-- Tichondrius
                         ["_encounter"] = { 1762, DIFFICULTY.RAID.LFR },
                     }),
-                    crit(31451, {    -- Krosus
+                    crit(31451, {	-- Krosus
                         ["_encounter"] = { 1713, DIFFICULTY.RAID.LFR },
                     }),
-                    crit(31450, {    -- Elisande
+                    crit(31450, {	-- Elisande
                         ["_encounter"] = { 1743, DIFFICULTY.RAID.LFR },
                     }),
                 }),
-				ach(10839, {    -- Betrayer's Rise
-                    crit(31453, {    -- Gul'dan
+				ach(10839, {	-- Betrayer's Rise
+                    crit(31453, {	-- Gul'dan
                         ["_encounter"] = { 1737, DIFFICULTY.RAID.LFR },
 						["provider"] = { "n", 104154 },	-- Gul'dan
                     }),

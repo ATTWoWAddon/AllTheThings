@@ -28,22 +28,22 @@ root(ROOTS.Zones, {
 						}),
 						un(REMOVED_FROM_GAME, i(154907, {	-- Nightfallen Hoard
 							["sym"] = {{"select","itemID",
-								157826,    -- Nightfallen Hoard
+								157826,	-- Nightfallen Hoard
 							}},
 						})),
 						un(REMOVED_FROM_GAME, i(151468, {	-- Nightfallen Hoard
 							["sym"] = {{"select","itemID",
-								157826,    -- Nightfallen Hoard
+								157826,	-- Nightfallen Hoard
 							}},
 						})),
 						un(REMOVED_FROM_GAME, i(146751, {	-- Nightfallen Hoard
 							["sym"] = {{"select","itemID",
-								157826,    -- Nightfallen Hoard
+								157826,	-- Nightfallen Hoard
 							}},
 						})),
 						un(REMOVED_FROM_GAME, i(137564, {	-- Nightfallen Hoard
 							["sym"] = {{"select","itemID",
-								157826,    -- Nightfallen Hoard
+								157826,	-- Nightfallen Hoard
 							}},
 						})),
 					},

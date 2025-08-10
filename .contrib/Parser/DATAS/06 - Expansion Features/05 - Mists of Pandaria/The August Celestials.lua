@@ -8,9 +8,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 		["lvl"] = lvlsquish(90, 90, 15),
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(7287, {	-- Champion of Chi-Ji (Cradle of Chi-Ji)
-				--	the challenger quests (1) are dailies, which reset, and (2) completing one completes all of them every day, including the final quest in the chain, so adding a SQ to this achievement won't work
-					["description"] = "Requires completing August Celestials dailies at the Cradle of Chi-Ji for a total of 15 days.  After you complete the first set of dailies, you'll be given an additional quest to defeat a challenger.  You can only work on the achievement on days when the August Celestials request your aid at the Temple of the Red Crane.\n\n",
+				ach(7287, {	-- Champion of Chi-Ji
 					["maps"] = { KRASARANG_WILDS },
 				}),
 				ach(6543),	-- The August Celestials
@@ -37,6 +35,10 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["races"] = HORDE_ONLY,
 				}),
 				q(30716, {	-- Chasing Hope
+					["sourceQuests"] = {
+						31378,	-- Challenge At The Temple of the Red Crane (A)
+						31379,	-- Challenge At The Temple of the Red Crane (H)
+					},
 					["qg"] = 60528,	-- Kuo-Na Quillpaw
 					["coord"] = { 31.6, 61.6, KRASARANG_WILDS },
 					["groups"] = {
@@ -45,88 +47,30 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						}),
 					},
 				}),
-				q(30730, {	-- Dextrous Izissha
-					["qg"] = 60506,	-- Thelonius
-					["coord"] = { 31.8, 61.6, KRASARANG_WILDS },
-					["groups"] = {
-						objective(1, {	-- 0/1 Dextrous Izissha slain
-							["provider"] = { "n", 60536 },	-- Dextrous Izissha
-							["coord"] = { 31.6, 80.2, KRASARANG_WILDS },
-						}),
-					},
-				}),
-				q(30725, {	-- Ellia Ravenmane
-					["qg"] = 60506,	-- Thelonius
-					["coord"] = { 31.8, 61.4, KRASARANG_WILDS },
-					["groups"] = {
-						objective(1, {	-- 0/1 Ellia Ravenmane defeated
-							["provider"] = { "n", 60530 },	-- Ellia Ravenmane
-							["coord"] = { 31.8, 71.0, KRASARANG_WILDS },
-						}),
-					},
-				}),
-				q(30727, {	-- Ellia Ravenmane: Rematch
-					["qg"] = 60506,	-- Thelonius
-					["coord"] = { 31.8, 61.4, KRASARANG_WILDS },
-					["groups"] = {
-						objective(1, {	-- 0/1 Ellia Ravenmane defeated
-							["provider"] = { "n", 60530 },	-- Ellia Ravenmane
-							["coord"] = { 31.8, 71.0, KRASARANG_WILDS },
-						}),
-					},
-				}),
-				q(30728, {	-- Fat Long-Fat
-					["qg"] = 60506,	-- Thelonius
-					["coord"] = { 31.8, 61.4, KRASARANG_WILDS },
-					["groups"] = {
-						objective(1, {	-- 0/1 Fat Long-Fat defeated
-							["provider"] = { "n", 60534 },	-- Fat Long-Fat
-							["coord"] = { 32.0, 70.6, KRASARANG_WILDS },
-						}),
-					},
-				}),
 				q(30717, {	-- Gifts of the Great Crane
+					["sourceQuests"] = {
+						31378,	-- Challenge At The Temple of the Red Crane (A)
+						31379,	-- Challenge At The Temple of the Red Crane (H)
+					},
 					["qg"] = 60529,	-- Yan Quillpaw
 					["coord"] = { 32.0, 61.8, KRASARANG_WILDS },
 					["groups"] = {
-						o_repeated({
-							i(80938),	-- Gift of the Great Crane (QI!)
-							o(211451),	-- Cerulean Gift of the Crane
-							o(211452),	-- Bronze Gift of the Crane
-						}),
-					},
-				}),
-				q(30729, {	-- Julia Bates
-					["qg"] = 60506,	-- Thelonius
-					["coord"] = { 31.8, 61.5, KRASARANG_WILDS },
-					["groups"] = {
-						objective(1, {	-- 0/1 Julia Bates defeated
-							["provider"] = { "n", 60535 },	-- Julia Bates
-							["coord"] = { 28.8, 75.6, KRASARANG_WILDS },
-						}),
-					},
-				}),
-				q(30731, {	-- Kuo-Na Quillpaw
-					["qg"] = 60506,	-- Thelonius
-					["coord"] = { 31.8, 61.4, KRASARANG_WILDS },
-					["groups"] = {
-						objective(1, {	-- 0/1 Kuo-Na Quillpaw defeated
-							["provider"] = { "n", 60537 },	-- Kuo-Na Quillpaw
-							["coord"] = { 36.6, 74.8, KRASARANG_WILDS },
-						}),
-					},
-				}),
-				q(30726, {	-- Minh Do-Tan
-					["qg"] = 60506,	-- Thelonius
-					["coord"] = { 31.8, 61.4, KRASARANG_WILDS },
-					["groups"] = {
-						objective(1, {	-- 0/1 Minh Do-Tan defeated
-							["provider"] = { "n", 60532 },	-- Minh Do-Tan
-							["coord"] = { 32.0, 76.4, KRASARANG_WILDS },
+						objective(1, {	-- 0/10 Gift of the Great Crane
+							["providers"] = {
+								{ "i",  80938 },	-- Gift of the Great Crane (QI!)
+								{ "o", 211452 },	-- Bronze Gift of the Crane
+								{ "o", 211451 },	-- Cerulean Gift of the Crane
+								{ "o", 211453 },	-- Crimson Gift of the Crane
+							},
+							["coord"] = { 34.5, 72.9, KRASARANG_WILDS },
 						}),
 					},
 				}),
 				q(30718, {	-- Students of Chi-Ji
+					["sourceQuests"] = {
+						31378,	-- Challenge At The Temple of the Red Crane (A)
+						31379,	-- Challenge At The Temple of the Red Crane (H)
+					},
 					["qg"] = 60506,	-- Thelonius
 					["coord"] = { 31.8, 61.5, KRASARANG_WILDS },
 					["groups"] = {
@@ -139,7 +83,183 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						}),
 					},
 				}),
-
+				header(HEADERS.Achievement, 7287, {	-- Champion of Chi-Ji
+					["sourceQuests"] = {
+						30716,	-- Chasing Hope
+						30717,	-- Gifts of the Great Crane
+						30718,	-- Students of Chi-Ji
+					},
+					["description"] = "Requires completing August Celestials dailies at the Cradle of Chi-Ji for a total of 15 days.  After you complete the first set of dailies, you'll be given an additional quest to defeat a challenger.  You can only work on the achievement on days when the August Celestials request your aid at the Temple of the Red Crane.",
+					["icon"] = 605484,
+					["groups"] = sharedData({
+						["qg"] = 60506,	-- Thelonius
+						["coord"] = { 31.8, 61.4, KRASARANG_WILDS },
+						["maxReputation"] = { FACTION_THE_AUGUST_CELESTIALS, EXALTED },
+						["isDaily"] = true,
+					}, {
+						--[[
+						Part of the chain of "bosses" with connected quests you need to kill for Champion of Chi-Ji a series of quests for The August Celestials at the Cradle of Chi-Ji.
+						
+						Ellia Ravenmane
+						Minh Do-Tan
+						Ellia Ravenmane: Rematch
+						Fat Long-Fat
+						Julia Bates
+						Dextrous Izissha
+						Kuo-Na Quillpaw
+						Ellia Ravenmane: Revenge
+						Tukka-Tuk
+						Huck Wheelbarrow
+						Mindel Sunspeaker
+						Yan Quillpaw
+						Fat Long-Fat: Rematch
+						Thelonius
+						Ellia Ravenmane: Redemption
+						]]--
+						q(30725, {	-- Ellia Ravenmane
+							objective(1, {	-- 0/1 Ellia Ravenmane defeated
+								["provider"] = { "n", 60530 },	-- Ellia Ravenmane
+								["coord"] = { 31.8, 71.0, KRASARANG_WILDS },
+							}),
+						}),
+						q(30726, {	-- Minh Do-Tan
+							["sourceQuest"] = 30725,	-- Ellia Ravenmane
+							["groups"] = {
+								objective(1, {	-- 0/1 Minh Do-Tan defeated
+									["provider"] = { "n", 60532 },	-- Minh Do-Tan
+									["coord"] = { 32.0, 76.4, KRASARANG_WILDS },
+								}),
+							},
+						}),
+						q(30727, {	-- Ellia Ravenmane: Rematch
+							["sourceQuest"] = 30726,	-- Minh Do-Tan
+							["groups"] = {
+								objective(1, {	-- 0/1 Ellia Ravenmane defeated
+									["provider"] = { "n", 60530 },	-- Ellia Ravenmane
+									["coord"] = { 31.8, 71.0, KRASARANG_WILDS },
+								}),
+							},
+						}),
+						q(30728, {	-- Fat Long-Fat
+							["sourceQuest"] = 30727,	-- Ellia Ravenmane: Rematch
+							["groups"] = {
+								objective(1, {	-- 0/1 Fat Long-Fat defeated
+									["provider"] = { "n", 60534 },	-- Fat Long-Fat
+									["coord"] = { 32.0, 70.6, KRASARANG_WILDS },
+								}),
+							},
+						}),
+						q(30729, {	-- Julia Bates
+							["sourceQuest"] = 30728,	-- Fat Long-Fat
+							["groups"] = {
+								objective(1, {	-- 0/1 Julia Bates defeated
+									["provider"] = { "n", 60535 },	-- Julia Bates
+									["coord"] = { 28.8, 75.6, KRASARANG_WILDS },
+								}),
+							},
+						}),
+						q(30730, {	-- Dextrous Izissha
+							["sourceQuest"] = 30729,	-- Julia Bates
+							["groups"] = {
+								objective(1, {	-- 0/1 Dextrous Izissha slain
+									["provider"] = { "n", 60536 },	-- Dextrous Izissha
+									["coord"] = { 31.6, 80.2, KRASARANG_WILDS },
+								}),
+							},
+						}),
+						q(30731, {	-- Kuo-Na Quillpaw
+							["sourceQuest"] = 30730,	-- Dextrous Izissha
+							["groups"] = {
+								objective(1, {	-- 0/1 Kuo-Na Quillpaw defeated
+									["provider"] = { "n", 60537 },	-- Kuo-Na Quillpaw
+									["coord"] = { 36.6, 74.8, KRASARANG_WILDS },
+								}),
+							},
+						}),
+						q(30732, {	-- Ellia Ravenmane: Revenge
+							["sourceQuest"] = 30731,	-- Kuo-Na Quillpaw
+							["groups"] = {
+								objective(1, {	-- 0/1 Ellia Ravenmane defeated
+									["provider"] = { "n", 60538 },	-- Ellia Ravenmane
+									["coord"] = { 34.6, 83.0, KRASARANG_WILDS },
+								}),
+							},
+						}),
+						q(30733, {	-- Tukka-Tuk
+							["sourceQuest"] = 30732,	-- Ellia Ravenmane: Revenge
+							["groups"] = {
+								objective(1, {	-- 0/1 Tukka-Tuk defeated
+									["provider"] = { "n", 60539 },	-- Tukka-Tuk
+									["coord"] = { 34.2, 74.2, KRASARANG_WILDS },
+								}),
+							},
+						}),
+						q(30734, {	-- Huck Wheelbarrow
+							["sourceQuest"] = 30733,	-- Tukka-Tuk
+							["groups"] = {
+								objective(1, {	-- 0/1 Huck Wheelbarrow defeated
+									["provider"] = { "n", 60540 },	-- Huck Wheelbarrow
+									["coord"] = { 27.8, 70.2, KRASARANG_WILDS },
+								}),
+							},
+						}),
+						q(30735, {	-- Mindel Sunspeaker
+							["sourceQuest"] = 30734,	-- Huck Wheelbarrow
+							["groups"] = {
+								objective(1, {	-- 0/1 Mindel Sunspeaker defeated
+									["provider"] = { "n", 60541 },	-- Mindel Sunspeaker
+									["coord"] = { 32.0, 70.8, KRASARANG_WILDS },
+								}),
+							},
+						}),
+						q(30736, {	-- Yan Quillpaw
+							["sourceQuest"] = 30735,	-- Mindel Sunspeaker
+							["groups"] = {
+								objective(1, {	-- 0/1 Yan Quillpaw defeated
+									["provider"] = { "n", 60542 },	-- Yan Quillpaw
+									["coord"] = { 36.6, 76.0, KRASARANG_WILDS },
+								}),
+							},
+						}),
+						q(30737, {	-- Fat Long-Fat: Rematch
+							["sourceQuest"] = 30736,	-- Yan Quillpaw
+							["groups"] = {
+								objective(1, {	-- 0/1 Fat Long-Fat defeated
+									["provider"] = { "n", 60543 },	-- Fat Long-Fat
+									["coord"] = { 34.8, 82.6, KRASARANG_WILDS },
+								}),
+							},
+						}),
+						q(30738, {	-- Thelonius
+							["sourceQuest"] = 30737,	-- Fat Long-Fat: Rematch
+							["groups"] = {
+								objective(1, {	-- 0/1 Thelonius defeated
+									["provider"] = { "n", 60544 },	-- Thelonius
+									["coord"] = { 28.8, 72.5, KRASARANG_WILDS },
+								}),
+							},
+						}),
+						q(30739, {	-- Ellia Ravenmane: Redemption
+							["sourceQuest"] = 30738,	-- Thelonius
+							["groups"] = {
+								objective(1, {	-- 0/1 Ellia Ravenmane defeated
+									["provider"] = { "n", 60545 },	-- Ellia Ravenmane
+									["coord"] = { 36.2, 75.4, KRASARANG_WILDS },
+								}),
+							},
+						}),
+						q(30740, {	-- Champion of Chi-Ji
+							["sourceQuest"] = 30739,	-- Ellia Ravenmane: Redemption
+							["groups"] = {
+								objective(1, {	-- 0/1 Champion of Chi-Ji defeated
+									["provider"] = { "n", 60546 },	-- Champion of Chi-Ji
+									["coord"] = { 34.4, 81.4, KRASARANG_WILDS },
+								}),
+							},
+						}),
+					}),
+				}),
+				
 				-- Kun-Lai Summit
 				q(31380, {	-- Trial At The Temple of the White Tiger (A)
 					["sourceQuest"] = 31512,	-- A Witness to History (A)
@@ -338,6 +458,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 								{ "i", 77475 },	-- Stack of Mantras (QI!)
 								{ "n", 57400 },	-- Yu'lon Guardian
 								{ "n", 57316 },	-- Yu'lon Adept
+								{ "n", 57326 },	-- Yu'lon Guardian
 							},
 							["coord"] = { 55.2, 57.2, THE_JADE_FOREST },
 						}),
@@ -530,7 +651,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
 	header(HEADERS.Faction, FACTION_THE_AUGUST_CELESTIALS, {
 		n(QUESTS, {
-			q(30719),	-- FLAG - Cradle of Chi-Ji Progress Bit 01
+			q(30719),	-- FLAG - Cradle of Chi-Ji Progress Bit 01 - Triggered after turning in Ellia Ravenmane. (First quest in the chain)
 			q(30720),	-- FLAG - Cradle of Chi-Ji Progress Bit 02 - triggered after turning in Dextrous Izissha quest, 6th for Champion of Chi-Ji, triggered on another character after turning in Minh Do-Tan, which is the 2nd
 			q(30721),	-- FLAG - Cradle of Chi-Ji Progress Bit 03
 			q(30722),	-- FLAG - Cradle of Chi-Ji Progress Bit 04

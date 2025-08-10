@@ -18,23 +18,23 @@ root(ROOTS.Zones, {
 				n(EXPLORATION, sharedData({
 					["races"] = { GOBLIN },
 				},{
-					exploration(4783),    -- Alliance Beachhead
-					exploration(4951),    -- Bilgewater Lumber Yard
-					exploration(4954),    -- Gallywix Docks
-					exploration(4779),    -- Horde Base Camp
-					exploration(4952),    -- KTC Oil Platform
-					exploration(4870),    -- Landing Site
-					exploration(4909),    -- Lost Caldera
-					exploration(4886),    -- Oomlot Village
-					exploration(4903),    -- Oostan
-					exploration(4873),    -- Raptor Rise
-					exploration(4876),    -- Ruins of Vashj'elan
-					exploration(4874),    -- Scorched Gully
-					exploration(4721),    -- Shipwreck Shore
-					exploration(4782),    -- The Savage Glen
-					exploration(4956),    -- The Slave Pits
-					exploration(4911),    -- Volcanoth's Lair
-					exploration(4912),    -- Warchief's Lookout
+					exploration(4783),	-- Alliance Beachhead
+					exploration(4951),	-- Bilgewater Lumber Yard
+					exploration(4954),	-- Gallywix Docks
+					exploration(4779),	-- Horde Base Camp
+					exploration(4952),	-- KTC Oil Platform
+					exploration(4870),	-- Landing Site
+					exploration(4909),	-- Lost Caldera
+					exploration(4886),	-- Oomlot Village
+					exploration(4903),	-- Oostan
+					exploration(4873),	-- Raptor Rise
+					exploration(4876),	-- Ruins of Vashj'elan
+					exploration(4874),	-- Scorched Gully
+					exploration(4721),	-- Shipwreck Shore
+					exploration(4782),	-- The Savage Glen
+					exploration(4956),	-- The Slave Pits
+					exploration(4911),	-- Volcanoth's Lair
+					exploration(4912),	-- Warchief's Lookout
 				})),
 				n(QUESTS, {
 					q(24817, {	-- A Goblin in Shark's Clothing

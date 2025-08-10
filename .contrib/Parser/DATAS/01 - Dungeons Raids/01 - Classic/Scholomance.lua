@@ -2048,7 +2048,7 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
 			["timeline"] = { ADDED_5_0_4 },
 			["groups"] = bubbleDown({["ignoreBonus"] = true},{
 				i(85580, {	-- Empty Polyformic Acid Vial
-					["description"] = "Use this at the table nearby to apply the appearance, or to store the appearance once appiled.",
+					["description"] = "Use this at the table nearby to apply the appearance, or to store the appearance once applied.",
 					["groups"] = {
 						i(85589),	-- Nearly Full Vial of Polyformic Acid
 						i(85592),	-- Half Full Vial of Polyformic Acid

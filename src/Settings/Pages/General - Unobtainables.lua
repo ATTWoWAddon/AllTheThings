@@ -139,7 +139,8 @@ if app.GameBuildVersion > 90000 then
 				or (app.CurrentCharacter and app.CurrentCharacter.CustomCollects and app.CurrentCharacter.CustomCollects[cc]))
 			self:SetChecked(automatic or settings:Get(filterID))
 			if automatic then
-				self:SetAlpha(0.6)
+				self:Disable()
+				self:SetAlpha(0.4)
 			else
 				self:Enable()
 				self:SetAlpha(1)
@@ -178,7 +179,8 @@ if app.GameBuildVersion > 90000 then
 				or (app.CurrentCharacter and app.CurrentCharacter.CustomCollects and app.CurrentCharacter.CustomCollects[cc]))
 			self:SetChecked(automatic or settings:Get(filterID))
 			if automatic then
-				self:SetAlpha(0.6)
+				self:Disable()
+				self:SetAlpha(0.4)
 			else
 				self:Enable()
 				self:SetAlpha(1)

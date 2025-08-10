@@ -692,17 +692,17 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				["modelScale"] = 4,
 				["catalystID"] = 2,	-- ItemBonus.Value_0 SL:S4
 				["groups"] = {
-					Difficulty(DIFFICULTY.RAID.LFR, {["upgradeTrackID"]=8131}).AddGroups(
+					Difficulty(DIFFICULTY.RAID.LFR, {["upgradeTrackID"]=UPGRADETRACKS.VETERAN}).AddGroups(
 						sharedData({["cost"] = {{"i",190189,2070}}},	-- 2070 Sandworn Relic, Full set cost from Vendor
 						ALL_CLASS_TIERS_HELPER(SEPULCHER_OF_FIRST_ONES_TIER, DIFFICULTY.RAID.LFR))
 					),
-					Difficulty(DIFFICULTY.RAID.NORMAL, {["upgradeTrackID"]=8133}).AddGroups(
+					Difficulty(DIFFICULTY.RAID.NORMAL, {["upgradeTrackID"]=UPGRADETRACKS.CHAMPION}).AddGroups(
 						ALL_CLASS_TIERS_HELPER(SEPULCHER_OF_FIRST_ONES_TIER, DIFFICULTY.RAID.NORMAL)
 					),
-					Difficulty(DIFFICULTY.RAID.HEROIC, {["upgradeTrackID"]=8118}).AddGroups(
+					Difficulty(DIFFICULTY.RAID.HEROIC, {["upgradeTrackID"]=UPGRADETRACKS.HERO}).AddGroups(
 						ALL_CLASS_TIERS_HELPER(SEPULCHER_OF_FIRST_ONES_TIER, DIFFICULTY.RAID.HEROIC)
 					),
-					Difficulty(DIFFICULTY.RAID.MYTHIC, {["upgradeTrackID"]=8132}).AddGroups(
+					Difficulty(DIFFICULTY.RAID.MYTHIC, {["upgradeTrackID"]=UPGRADETRACKS.MYTH}).AddGroups(
 						ALL_CLASS_TIERS_HELPER(SEPULCHER_OF_FIRST_ONES_TIER, DIFFICULTY.RAID.MYTHIC)
 					),
 				},

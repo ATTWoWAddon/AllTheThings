@@ -1066,7 +1066,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["description"] = "The item that starts this quest and the Rune Chits themselves can drop from Korthian treasures.",
 				["sourceQuests"] = { 64506 },	-- What Must Be Found
 				["provider"] = { "i", 187055 },	-- Pouch of Rune Chits
-				["cost"] = { { "i", 185962, 20 } },    -- 20x Rune Chit
+				["cost"] = { { "i", 185962, 20 } },	-- 20x Rune Chit
 				["groups"] = {
 					i(187154),	-- Ancient Korthian Runes (TOY!)
 					i(185963),	-- Diviner's Rune Chit (QI!)

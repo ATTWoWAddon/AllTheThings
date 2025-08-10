@@ -96,7 +96,7 @@ root(ROOTS.Promotions, {
 				q(79184, {	-- It's Hearthstone's Anniversary!
 					["provider"] = { "i", 212154 },	-- Hearthstone Invitation Letter (QI!)
 					["groups"] = {
-						i(212157),   -- An Invitation
+						i(212157),	-- An Invitation
 					},
 				}),
 				q(79178, {	-- Play Hearthstone!

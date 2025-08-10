@@ -10,7 +10,7 @@ createLocalizationString({
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",
-		-- TODO: ru = "",
+		ru = "Мигать панелью задач",
 		-- TODO: ko = "",
 		cn = "闪烁任务栏",
 		tw = "閃爍任務欄",

@@ -869,6 +869,18 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					i(109777),	-- Unsullied Signet
 				}),
 			}),
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
+				n(TRINKET, {
+					["maps"] = { WOD_MAP.AUCH, WOD_MAP.BSM, WOD_MAP.RAIL, WOD_MAP.DOCKS, WOD_MAP.SBG, WOD_MAP.SKY, WOD_MAP.BLOOM, WOD_MAP.UBRS },
+					["groups"] = sharedData({["timeline"] = { ADDED_6_2_3, REMOVED_7_0_3_LAUNCH }},{
+						i(133595),	-- Gronntooth War Horn
+						i(133585),	-- Judgment of the Naaru
+						i(133596),	-- Orb of Voidsight
+						i(133598),	-- Purified Shard of the Third Moon
+						i(133597),	-- Infallible Tracking Charm
+					}),
+				}),
+			}),
 		},
 	}),
 })));

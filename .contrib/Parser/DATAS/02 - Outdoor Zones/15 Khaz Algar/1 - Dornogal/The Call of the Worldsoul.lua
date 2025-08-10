@@ -19,7 +19,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			},{
 				q(89492, {	-- Dastardly Duos in the Dome!
-					["timeline"] = { ADDED_11_1_5 },
+					["timeline"] = { ADDED_11_1_5, "removed 11.1.7.61967" },
 				}),
 				q(82449),	-- The Call of the Worldsoul
 				q(82491),	-- Worldsoul: Ara-Kara, City of Echoes [N]

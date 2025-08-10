@@ -72,6 +72,9 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				152756,	-- Daggertooth Terror
 			},
 		}),
+		i(168099, {	-- Deepcoral Pod
+			["cr"] = 152297,	-- Deepcoral Bud
+		}),
 		i(170167, {	-- Eel Filet
 			["description"] = "Gives 250 reputation and 50 experience for your bodyguard.",
 			["crs"] = {	-- may drop from additional mobs.  check back and add crs as appropriate.

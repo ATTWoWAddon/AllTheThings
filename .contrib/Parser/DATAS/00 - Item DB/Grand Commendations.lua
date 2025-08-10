@@ -1,11 +1,6 @@
 local Items = ItemDBConditional;
 local i = function(itemID, factionID, unlock)
-	local o = {
-		["factionID"] = factionID,
-		-- #if NOT ANYCLASSIC
-		-- ["f"] = 112
-		-- #endif
-	};
+	local o = { ["factionID"] = factionID };
 	-- #if NOT ANYCLASSIC
 	if not unlock then o.repeatable = true; end
 	-- #endif
@@ -57,18 +52,20 @@ h(i(70154, FACTION_UNDERCITY));				-- Undercity Writ of Commendation
 -- Pandaria
 -- The "Grand Commendation" items of Pandaria unlock bonus reputation rather than grant reputation.
 -- TODO: review if /dump GetFactionInfoByID(1337) still returns [15] = false
--- i(93231, 1376, true);		-- Grand Commendation of Operation: Shieldwall
--- i(93225, 1302, true);		-- Grand Commendation of the Anglers
--- i(93224, 1341, true);		-- Grand Commendation of the August Celestials
--- i(93232, 1375, true);		-- Grand Commendation of the Dominance Offensive
--- i(93215, 1269, true);		-- Grand Commendation of the Golden Lotus
--- i(95545, 1387, true);		-- Grand Commendation of the Kirin Tor Offensive
--- i(92522, 1337, true);		-- Grand Commendation of the Klaxxi
--- i(93230, 1345, true);		-- Grand Commendation of the Lorewalkers
--- i(93229, 1271, true);		-- Grand Commendation of the Order of the Cloud Serpent
--- i(93220, 1270, true);		-- Grand Commendation of the Shado-Pan
--- i(95548, 1388, true);		-- Grand Commendation of the Sunreaver Onslaught
--- i(93226, 1272, true);		-- Grand Commendation of the Tillers
+-- #if BEFORE WOD
+i(93231, 1376, true);		-- Grand Commendation of Operation: Shieldwall
+i(93225, 1302, true);		-- Grand Commendation of the Anglers
+i(93224, 1341, true);		-- Grand Commendation of the August Celestials
+i(93232, 1375, true);		-- Grand Commendation of the Dominance Offensive
+i(93215, 1269, true);		-- Grand Commendation of the Golden Lotus
+i(95545, 1387, true);		-- Grand Commendation of the Kirin Tor Offensive
+i(92522, 1337, true);		-- Grand Commendation of the Klaxxi
+i(93230, 1345, true);		-- Grand Commendation of the Lorewalkers
+i(93229, 1271, true);		-- Grand Commendation of the Order of the Cloud Serpent
+i(93220, 1270, true);		-- Grand Commendation of the Shado-Pan
+i(95548, 1388, true);		-- Grand Commendation of the Sunreaver Onslaught
+i(93226, 1272, true);		-- Grand Commendation of the Tillers
+-- #endif
 a(i(95490, FACTION_KIRIN_TOR_OFFENSIVE));	-- Greater Kirin Tor Offensive Insignia
 a(i(95489, FACTION_KIRIN_TOR_OFFENSIVE));	-- Kirin Tor Offensive Insignia
 h(i(95488, FACTION_SUNREAVER_ONSLAUGHT));	-- Greater Sunreaver Onslaught Insignia

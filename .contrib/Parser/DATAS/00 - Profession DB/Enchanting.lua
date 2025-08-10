@@ -1418,3 +1418,9 @@ i(239081, 0);		-- Formula: Enchant Weapon - Infinite Stars
 i(238406, 0);		-- Formula: Enchant Weapon - Twilight Devastation
 i(239091, 0);		-- Formula: Enchant Weapon - Twisted Appendage
 i(239096, 0);		-- Formula: Enchant Weapon - Void Ritual
+
+------------------
+-- PATCH 11.2.0 --
+------------------
+--- ITEM ---
+i(249709, 1249469);	-- Gleeful Glamour - Ethereal

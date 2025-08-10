@@ -1174,7 +1174,7 @@ local function AddContainsData(group, tooltipInfo)
 	if not working and not app.ActiveRowReference then
 		app.Sort(group.g, app.SortDefaults.Hierarchy, true);
 	end
-	-- app.PrintDebug("SummarizeThings",app:SearchLink(group),group.g and #group.g)
+	-- app.PrintDebug("SummarizeThings",app:SearchLink(group),group.g and #group.g,working)
 	local entries = {};
 	-- app.Debugging = "CONTAINS-"..group.hash;
 	ContainsLimit = app.Settings:GetTooltipSetting("ContainsCount") or 25;
@@ -1857,7 +1857,7 @@ local function GetSearchResults(method, paramA, paramB, options)
 
 	group.isBaseSearchResult = true;
 
-	return group
+	return group, group.working
 end
 app.GetCachedSearchResults = function(method, paramA, paramB, options)
 	if options and options.IgnoreCache then
@@ -2155,6 +2155,7 @@ end)();
 -- Synchronization Functions
 (function()
 local C_CreatureInfo_GetRaceInfo = C_CreatureInfo.GetRaceInfo;
+local SendAddonMessage = app.WOWAPI.SendAddonMessage
 local outgoing,incoming,queue,active = {},{},{},nil;
 local whiteListedFields = { --[["Achievements",]] "Artifacts", "AzeriteEssenceRanks", "BattlePets", "Exploration", "Factions", "FlightPaths", "Followers", "GarrisonBuildings", "Quests", "Spells", "Titles" };
 app.CharacterSyncTables = whiteListedFields;
@@ -2171,7 +2172,7 @@ local function processQueue()
 		tremove(queue, 1);
 		active = data[1];
 		app.print("Updating " .. data[2] .. " from " .. data[3] .. "...");
-		C_ChatInfo.SendAddonMessage("ATT", "!\tsyncsum\t" .. data[1], "WHISPER", data[3]);
+		SendAddonMessage("ATT", "!\tsyncsum\t" .. data[1], "WHISPER", data[3]);
 	end
 end
 
@@ -2182,7 +2183,7 @@ function app:AcknowledgeIncomingChunks(sender, uid, total)
 		incoming[sender] = incomingFromSender;
 	end
 	incomingFromSender[uid] = { ["chunks"] = {}, ["total"] = total };
-	C_ChatInfo.SendAddonMessage("ATT", "chksack\t" .. uid, "WHISPER", sender);
+	SendAddonMessage("ATT", "chksack\t" .. uid, "WHISPER", sender);
 end
 local function ProcessIncomingChunk(sender, uid, index, chunk)
 	if not (chunk and index and uid and sender) then return false; end
@@ -2245,9 +2246,9 @@ local function ProcessIncomingChunk(sender, uid, index, chunk)
 end
 function app:AcknowledgeIncomingChunk(sender, uid, index, chunk)
 	if chunk and ProcessIncomingChunk(sender, uid, index, chunk) then
-		C_ChatInfo.SendAddonMessage("ATT", "chkack\t" .. uid .. "\t" .. index .. "\t1", "WHISPER", sender);
+		SendAddonMessage("ATT", "chkack\t" .. uid .. "\t" .. index .. "\t1", "WHISPER", sender);
 	else
-		C_ChatInfo.SendAddonMessage("ATT", "chkack\t" .. uid .. "\t" .. index .. "\t0", "WHISPER", sender);
+		SendAddonMessage("ATT", "chkack\t" .. uid .. "\t" .. index .. "\t0", "WHISPER", sender);
 	end
 end
 function app:SendChunk(sender, uid, index, success)
@@ -2257,7 +2258,7 @@ function app:SendChunk(sender, uid, index, success)
 		if chunksForUID and success == 1 then
 			local chunk = chunksForUID[index];
 			if chunk then
-				C_ChatInfo.SendAddonMessage("ATT", "chk\t" .. uid .. "\t" .. index .. "\t" .. chunk, "WHISPER", sender);
+				SendAddonMessage("ATT", "chk\t" .. uid .. "\t" .. index .. "\t" .. chunk, "WHISPER", sender);
 			end
 		else
 			outgoingForSender.uids[uid] = nil;
@@ -2397,12 +2398,12 @@ function app:ReceiveSyncRequest(sender, battleTag)
 			if (msg:len() + charsummary:len()) < 255 then
 				msg = msg .. charsummary;
 			else
-				C_ChatInfo.SendAddonMessage("ATT", msg, "WHISPER", sender);
+				SendAddonMessage("ATT", msg, "WHISPER", sender);
 				msg = "?\tsyncsum" .. charsummary;
 			end
 		end
 	end
-	C_ChatInfo.SendAddonMessage("ATT", msg, "WHISPER", sender);
+	SendAddonMessage("ATT", msg, "WHISPER", sender);
 end
 function app:ReceiveSyncSummary(sender, summary)
 	if app:IsAccountLinked(sender) then
@@ -2462,7 +2463,7 @@ function app:ReceiveSyncSummaryResponse(sender, summary)
 			outgoingForSender.total = uid;
 
 			-- Send Addon Message Back
-			C_ChatInfo.SendAddonMessage("ATT", "chks\t" .. uid .. "\t" .. #chunks, "WHISPER", sender);
+			SendAddonMessage("ATT", "chks\t" .. uid .. "\t" .. #chunks, "WHISPER", sender);
 		end
 	end
 end
@@ -2474,7 +2475,7 @@ function app:Synchronize(automatically)
 		local any, msg = false, "?\tsync\t" .. battleTag;
 		for playerName,allowed in pairs(AllTheThingsAD.LinkedAccounts) do
 			if allowed and not playerName:find("#") then
-				C_ChatInfo.SendAddonMessage("ATT", msg, "WHISPER", playerName);
+				SendAddonMessage("ATT", msg, "WHISPER", playerName);
 				any = true;
 			end
 		end
@@ -2488,7 +2489,7 @@ function app:SynchronizeWithPlayer(playerName)
 	local battleTag = select(2, BNGetInfo());
 	if battleTag then
 		app.CurrentCharacter.lastPlayed = time();
-		C_ChatInfo.SendAddonMessage("ATT", "?\tsync\t" .. battleTag, "WHISPER", playerName);
+		SendAddonMessage("ATT", "?\tsync\t" .. battleTag, "WHISPER", playerName);
 	end
 end
 app.AddEventHandler("OnReady", function()
@@ -3735,6 +3736,7 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 					MergeProperties(header, group, true);
 					NestObjects(header, group.g);
 				end
+				local externalMaps = {}
 				-- then merge all mapped groups into the list
 				for _,group in ipairs(mapGroups) do
 					-- app.PrintDebug("Mapping:",app:SearchLink(group))
@@ -3779,8 +3781,22 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 
 					-- If relative to a difficultyID, then merge it into one.
 					if difficultyID then group = app.CreateDifficulty(difficultyID, { g = { group } }); end
+
+					-- If we're trying to map in another 'map', nest it into a special group for external maps
+					if group.instanceID or group.mapID then
+						externalMaps[#externalMaps + 1] = group
+						group = nil
+					end
 					-- app.PrintDebug("Merge as Mapped:",app:SearchLink(group))
 					MergeObject(groups, group);
+				end
+
+				-- Nest our external maps into a special header to reduce minilist header spam
+				if #externalMaps > 0 then
+					local externalMapHeader = app.CreateRawText(TRACKER_FILTER_REMOTE_ZONES, {icon=450908,description=L.REMOTE_ZONES_DESCRIPTION})
+					externalMapHeader.SortType = "Global";
+					NestObjects(externalMapHeader, externalMaps)
+					MergeObject(groups, externalMapHeader)
 				end
 
 				if #rootGroups == 0 then
@@ -3828,7 +3844,7 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 				-- check to expand groups after they have been built and updated
 				-- dont re-expand if the user has previously full-collapsed the minilist
 				-- need to force expand if so since the groups haven't been updated yet
-				if not expanded and not self.fullCollapsed then
+				if not expanded and not self.fullCollapsed and app.Settings:GetTooltipSetting("Expand:MiniList") then
 					self.ExpandInfo = { Expand = true };
 				end
 				self.CurrentMaps = currentMaps;
@@ -4329,6 +4345,9 @@ customWindowUpdates.RaidAssistant = function(self)
 			-- Define the different window configurations that the mini list will switch to based on context.
 			local raidassistant, lootspecialization, dungeondifficulty, raiddifficulty, legacyraiddifficulty;
 			local GetDifficultyInfo, GetInstanceInfo = GetDifficultyInfo, GetInstanceInfo;
+
+			local GetSpecialization = app.WOWAPI.GetSpecialization
+			local GetSpecializationInfo = app.WOWAPI.GetSpecializationInfo
 
 			-- Raid Assistant
 			local switchDungeonDifficulty = function(row, button)

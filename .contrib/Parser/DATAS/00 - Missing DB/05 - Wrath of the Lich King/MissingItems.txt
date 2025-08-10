@@ -45,10 +45,7 @@ i(33164),	-- -Burning Torches \\ Ever-Burning Torches \\ Ever-burning Torches
 i(33187),	-- per Gulch Gem \\ Whisper Gulch Gem
 i(33188),	-- per Gulch Ore Fragment \\ Whisper Gulch Ore Fragment
 i(33190),	-- lring's Foolproof Dynamite \\ Steelring's Foolproof Dynamite
-i(33221),	-- uehound Cage \\ Plaguehound Cage
 i(33227),	-- Test Tabard of Stat Modding
-i(33238),	-- Meat \\ Crow Meat
-i(33278),	-- ing Torch \\ Burning Torch
 i(33282),	-- caller's Horn \\ Wyrmcaller's Horn
 i(33284),	-- erbron Cage Key \\ Gjalerbron Cage Key
 i(33289),	-- erbron Attack Plans \\ Gjalerbron Attack Plans
@@ -62,11 +59,9 @@ i(33316),	-- of Arcane Brilliance \\ Tome of Arcane Brilliance \\ Tome of Arcane
 i(33321),	-- eant's Torch \\ Sergeant's Torch
 i(33323),	-- eant's Flare \\ Sergeant's Flare
 i(33330),	-- ar's Head \\ Ingvar's Head
-i(33335),	-- oneer's Smoke Flare \\ Cannoneer's Smoke Flare
 i(33336),	-- eant's Spyglass \\ Sergeant's Spyglass
 i(33337),	-- t Toxin Gland \\ Giant Toxin Gland
 i(33339),	-- ul Scroll of Ascension \\ Vrykul Scroll of Ascension
-i(33340),	-- erhoof Emblem \\ Winterhoof Emblem
 i(33341),	-- e's Spyglass \\ Brave's Spyglass
 i(33342),	-- Brave's Machete \\ The Brave's Machete
 i(33343),	-- e's Torch \\ Brave's Torch
@@ -75,21 +70,16 @@ i(33345),	-- ul Scroll of Ascension \\ Vrykul Scroll of Ascension
 i(33346),	-- ul Scroll of Ascension \\ Vrykul Scroll of Ascension
 i(33347),	-- erbron Attack Plans \\ Gjalerbron Attack Plans
 i(33348),	-- ted Hippogryph Down \\ Spotted Hippogryph Down
-i(33349),	-- ue Vials \\ Plague Vials
 i(33350),	-- Frostmourne Art Demo
 i(33351),	-- maged Ram Horn \\ Undamaged Ram Horn
 i(33352),	-- h Ram Meat \\ Tough Ram Meat
 i(33355),	-- skull Tablet \\ Wyrmskull Tablet
 i(33387),	-- enfeld's Package \\ Glorenfeld's Package
-i(33411),	-- onskin Map \\ Dragonskin Map
-i(33418),	-- inghast's Plague Canister \\ Tillinghast's Plague Canister
 i(33420),	-- ued Proto-Whelp Specimen \\ Plagued Proto-Whelp Specimen
-i(33441),	-- inghast's Plagued Meat \\ Tillinghast's Plagued Meat
 i(33443),	-- Goat Cheese \\ Sour Goat Cheese
 i(33444),	-- ent Seal Whey \\ Pungent Seal Whey
 i(33445),	-- ymint Tea \\ Honeymint Tea
 i(33449),	-- ty Flatbread \\ Crusty Flatbread
-i(33450),	-- ed Horn \\ Carved Horn
 i(33451),	-- et of Icefin \\ Fillet of Icefin
 i(33452),	-- y-Spiced Lichen \\ Honey-Spiced Lichen
 i(33454),	-- ed Venison \\ Salted Venison
@@ -100,7 +90,6 @@ i(33459),	-- ll of Protection VI \\ Scroll of Protection VI
 i(33460),	-- Scroll of Versatility VI \\ ll of Versatility VI \\ Scroll of Spirit VI
 i(33461),	-- ll of Stamina VI \\ Scroll of Stamina VI
 i(33462),	-- ll of Strength VI \\ Scroll of Strength VI
-i(33472),	-- h's Torch \\ Gorth's Torch
 i(33477),	-- t Yeti Meal \\ Giant Yeti Meal
 i(33485),	-- ed Artifact \\ Sacred Artifact
 i(33486),	-- uehound Leash \\ Plaguehound Leash
@@ -115,36 +104,27 @@ i(33549),	-- k Tail Hair \\ Thick Tail Hair
 i(33550),	-- k Carapace \\ Thick Carapace
 i(33551),	-- r Pincer \\ Razor Pincer
 i(33553),	-- ated Pincer \\ Serrated Pincer
-i(33554),	-- k's Bonesaw \\ Grick's Bonesaw
 i(33555),	-- red Carapace \\ Armored Carapace
 i(33556),	-- ly Seashell Fragment \\ Pearly Seashell Fragment
-i(33558),	-- nged Explorer Brain \\ Deranged Explorer Brain
 i(33560),	-- Jaws \\ Huge Jaws
 i(33561),	-- ened Flipper \\ Hardened Flipper
 i(33562),	-- mous Jaws \\ Enormous Jaws
-i(33563),	-- aken Banner \\ Forsaken Banner
 i(33569),	-- ed Fang \\ Barbed Fang
 i(33571),	-- ing Talon \\ Rending Talon
 i(33575),	-- le Claw \\ Icicle Claw
 i(33576),	-- led Horn \\ Gnarled Horn
-i(33581),	-- ul Insult \\ Vrykul Insult
 i(33599),	-- onflayer Blood Sample \\ Dragonflayer Blood Sample
 i(33604),	-- ue Shooter \\ Plague Shooter
 i(33605),	-- Core \\ Icy Core
-i(33606),	-- elle's Pendant \\ Lurielle's Pendant
 i(33607),	-- anted Ice Core \\ Enchanted Ice Core
 i(33610),	-- hide Boar Heart \\ Shaghide Boar Heart
 i(33611),	-- eltusk Ligament \\ Shoveltusk Ligament
 i(33612),	-- h Pound of Flesh \\ Fresh Pound of Flesh
-i(33613),	-- ination Assembly Kit \\ Abomination Assembly Kit
 i(33614),	-- y Apothecary's Flask \\ Empty Apothecary's Flask
 i(33615),	-- k of Vrykul Blood \\ Flask of Vrykul Blood
 i(33616),	-- able Mix \\ Unstable Mix
-i(33617),	-- nced Concoction \\ Balanced Concoction
 i(33618),	-- Disguise \\ Worg Disguise
-i(33619),	-- nder's Strain \\ Lysander's Strain
 i(33620),	-- hecary's Package \\ Apothecary's Package
-i(33621),	-- ue Spray \\ Plague Spray
 i(33627),	-- y's Special Mix \\ Peppy's Special Mix
 i(33628),	-- hern Barbfish \\ Northern Barbfish
 i(33629),	-- ty Spinneret \\ Frosty Spinneret
@@ -164,14 +144,10 @@ i(33781),	-- Book of Runes \\ The Book of Runes
 i(33794),	-- Rune Carving Tools \\ Iron Rune Carving Tools
 i(33796),	-- of Command \\ Rune of Command
 i(33802),	-- Stone Giant Rune Sample
-i(33806),	-- seeking Pick \\ Runeseeking Pick
 i(33819),	-- Sample \\ Rune Sample
-i(33960),	-- rging Crystal Controller \\ Scourging Crystal Controller
 i(33961),	-- rge Device \\ Scourge Device
 i(33962),	-- rge Device \\ Scourge Device
 i(34013),	-- h Barbfish Bait \\ Fresh Barbfish Bait
-i(34023),	-- y Apothecary's Flask \\ Empty Apothecary's Flask
-i(34024),	-- k of Vrykul Blood \\ Flask of Vrykul Blood
 i(34025),	-- Clayton's Test Item
 i(34026),	-- hered Charm \\ Feathered Charm
 i(34027),	-- of the Eagle \\ Eyes of the Eagle
@@ -182,7 +158,6 @@ i(34035),	-- ill's Trident \\ Rotgill's Trident
 i(34040),	-- of the Twins \\ Saga of the Twins
 i(34041),	-- of the Winter Curse \\ Saga of the Winter Curse
 i(34042),	-- of the Val'kyr \\ Saga of the Val'kyr
-i(34043),	-- ent Vrykul Bone \\ Ancient Vrykul Bone
 i(34051),	-- ance Banner \\ Alliance Banner
 i(34069),	-- i Vase \\ Amani Vase
 i(34070),	-- e Figurine \\ Eagle Figurine
@@ -286,7 +261,6 @@ i(34732),	-- Northrend Fish 10
 i(34733),	-- Northrend Fish 11
 i(34734),	-- Northrend Fish 12
 i(34735),	-- Northrend Meat 01
-i(34736),	-- k o' Mammoth \\ Chunk o' Mammoth
 i(34737),	-- Northrend Meat 03
 i(34738),	-- Northrend Meat 04
 i(34739),	-- Northrend Meat 05
@@ -484,8 +458,6 @@ i(35943),	-- miah's Tools \\ Jeremiah's Tools
 i(35944),	-- d's Bones \\ Lurid's Bones
 i(35946),	-- crank Practice Parachute \\ Fizzcrank Practice Parachute
 i(35947),	-- kling Frostcap \\ Sparkling Frostcap
-i(35948),	-- ry Snowplum \\ Savory Snowplum
-i(35949),	-- ra Berries \\ Tundra Berries
 i(35950),	-- t Potato Bread \\ Sweet Potato Bread
 i(35951),	-- hed Emperor Salmon \\ Poached Emperor Salmon
 i(35952),	-- y Hardcheese \\ Briny Hardcheese
@@ -538,8 +510,6 @@ i(36776),	-- nd Shoveltusk Meat \\ Island Shoveltusk Meat
 i(36777),	-- of Kamagua \\ Horn of Kamagua
 i(36779),	-- Line Focus Control Amulet \\ Ley Line Focus Control Amulet
 i(36780),	-- tenant Ta'zinni's Letter \\ Lieutenant Ta'zinni's Letter
-i(36781),	-- water Clam \\ Darkwater Clam
-i(36782),	-- ulent Clam Meat \\ Succulent Clam Meat
 i(36786),	-- of the Walkers \\ Bark of the Walkers
 i(36787),	-- d of Gavrock \\ Shard of Gavrock
 i(36788),	-- ed Fur \\ Matted Fur
@@ -623,12 +593,6 @@ i(36902),	-- trictor Grass \\ Constrictor Grass
 i(36911),	-- Azurite Ore
 i(36914),	-- Azurite Bar
 i(36915),	-- Froststeel Bar
-i(36917),	-- dstone \\ Bloodstone
-i(36920),	-- Crystal \\ Sun Crystal
-i(36923),	-- cedony \\ Chalcedony
-i(36926),	-- ow Crystal \\ Shadow Crystal
-i(36929),	-- Citrine \\ Huge Citrine
-i(36932),	-- Jade \\ Dark Jade
 i(36940),	-- ail's Journal \\ Mikhail's Journal
 i(36955),	-- Grimoire of Firebolt (Rank 9)
 i(36956),	-- id Fire of Elune \\ Liquid Fire of Elune
@@ -649,7 +613,6 @@ i(37006),	-- Line Attunement Crystal \\ Ley Line Attunement Crystal
 i(37010),	-- Worg Hide \\ Gray Worg Hide
 i(37013),	-- Argol Cage Key \\ Dun Argol Cage Key
 i(37020),	-- zly Hide \\ Grizzly Hide
-i(37027),	-- ht Specimen \\ Blight Specimen
 i(37035),	-- seer's Uniform \\ Overseer's Uniform
 i(37045),	-- an's Camera \\ Kilian's Camera
 i(37063),	-- sed Drakkari Offering \\ Infused Drakkari Offering
@@ -986,7 +949,6 @@ i(38395),	-- Scaling Stat Test Bow
 i(38396),	-- y Herring Head \\ Hairy Herring Head
 i(38397),	-- id Pirate Perspiration \\ Putrid Pirate Perspiration
 i(38398),	-- rown Bottled Water \\ Icecrown Bottled Water
-i(38426),	-- nium Thread \\ Eternium Thread
 i(38442),	-- Mail Melee Leatherworking Chest
 i(38443),	-- Mail Melee Leatherworking Shoulders
 i(38444),	-- Mail Melee Leatherworking Bracer
@@ -1235,8 +1197,6 @@ i(39326),	-- Chain \\ Iron Chain
 i(39327),	-- 's Special Brew \\ Noth's Special Brew
 i(39328),	-- ader Skull \\ Crusader Skull
 i(39329),	-- of Crusader Skulls \\ Pile of Crusader Skulls
-i(39342),	-- er Pigment \\ Nether Pigment
-i(39343),	-- e Pigment \\ Azure Pigment
 i(39349),	-- ed Vellum \\ Ruined Vellum \\ Weapon Vellum
 i(39350),	-- ed Vellum \\ Ruined Vellum \\ Weapon Vellum II
 i(39351),	-- ly Appointed Pipe \\ Richly Appointed Pipe
@@ -1561,7 +1521,6 @@ i(40179),	-- gized Eye of Zul \\ Energized Eye of Zul
 i(40180),	-- ant Eye of Zul \\ Radiant Eye of Zul
 i(40181),	-- ant Eye of Zul \\ Radiant Eye of Zul \\ Tense Eye of Zul
 i(40182),	-- tered Eye of Zul \\ Shattered Eye of Zul
-i(40199),	-- y Suckerfish \\ Pygmy Suckerfish
 i(40202),	-- ling Grizzly Flank \\ Sizzling Grizzly Flank
 i(40218),	-- CRobinson Plate Helm
 i(40219),	-- CRobinson Plate Shoulders
@@ -1602,7 +1561,6 @@ i(40393),	-- n Sparkly \\ Green Sparkly
 i(40394),	-- neck Grazer Steak \\ Longneck Grazer Steak
 i(40397),	-- blood Gem \\ Lifeblood Gem
 i(40404),	-- ure of Pure Mojo \\ Mixture of Pure Mojo
-i(40411),	-- tered Vial \\ Shattered Vial \\ Enchanted Vial
 i(40413),	-- Deprecated Elixir of Mighty Nothing
 i(40425),	-- uru's Skull \\ Drakuru's Skull
 i(40479),	-- SUNWELL TEST GOD BP
@@ -1956,7 +1914,6 @@ i(42241),	-- ful Gladiator's Shanker \\ Hateful Gladiator's Shanker
 i(42246),	-- nce of Ice \\ Essence of Ice
 i(42247),	-- ful Gladiator's Shiv \\ Hateful Gladiator's Shiv
 i(42252),	-- en Iron Scrap \\ Frozen Iron Scrap
-i(42253),	-- eb Spider Silk \\ Iceweb Spider Silk
 i(42254),	-- ful Gladiator's Mutilator \\ Hateful Gladiator's Mutilator
 i(42259),	-- ful Gladiator's Ripper \\ Hateful Gladiator's Ripper \\ Hateful Gladiator's Right Ripper
 i(42264),	-- ful Gladiator's Slasher \\ Hateful Gladiator's Slasher \\ Hateful Gladiator's Left Render
@@ -2196,11 +2153,6 @@ i(42986),	-- RP-GG \\ The RP-GG
 i(43002),	-- Inflatable Land Mines
 i(43003),	-- Marcus' Special Coin [PH] \\ Marcus's Special Coin [PH]
 i(43006),	-- ald Acorn \\ Emerald Acorn
-i(43009),	-- eltusk Flank \\ Shoveltusk Flank
-i(43010),	-- Meat \\ Worm Meat
-i(43011),	-- Haunch \\ Worg Haunch
-i(43012),	-- o Meat \\ Rhino Meat
-i(43013),	-- led Meat \\ Chilled Meat
 i(43038),	-- Naked Bomb \\ The Naked Bomb
 i(43039),	-- es Deck \\ Rogues Deck
 i(43059),	-- uru's Last Wish \\ Drakuru's Last Wish
@@ -2215,8 +2167,6 @@ i(43097),	-- Lining - Attack Power \\ Fur Lining - Attack Power
 i(43098),	-- Ochre Pigment [PH]
 i(43099),	-- sed Mushroom Meatloaf \\ Infused Mushroom Meatloaf
 i(43101),	-- loaf Pan \\ Meatloaf Pan
-i(43108),	-- Pigment \\ Ebon Pigment
-i(43109),	-- Pigment \\ Icy Pigment
 i(43124),	-- real Ink \\ Ethereal Ink
 i(43125),	-- flame Ink \\ Darkflame Ink
 i(43126),	-- of the Sea \\ Ink of the Sea
@@ -2324,7 +2274,6 @@ i(43486),	-- wk Mask \\ Mohawk Mask
 i(43489),	-- wk Grenade \\ Mohawk Grenade
 i(43493),	-- her's Corpse Dust \\ Watcher's Corpse Dust
 i(43494),	-- kahar Watcher's Corpse \\ Ahn'kahar Watcher's Corpse
-i(43501),	-- hern Egg \\ Northern Egg
 i(43503),	-- Deprecated Earthgiving Belt
 i(43504),	-- er Veil Gift \\ Winter Veil Gift
 i(43511),	-- esque Fungus \\ Grotesque Fungus
@@ -2674,7 +2623,6 @@ i(44680),	-- rted Writings \\ Assorted Writings
 i(44684),	-- Charred Glyph \\ red Glyph \\ Glyph of Frostfire Bolt \\ Glyph of Frostfire
 i(44698),	-- avenous Healing Potion \\ Intravenous Healing Potion
 i(44699),	-- Broken Voice Modulator
-i(44700),	-- ding Darkwater Clam \\ Brooding Darkwater Clam
 i(44701),	-- num of the Savage Gladiator \\ Arcanum of the Savage Gladiator
 i(44702),	-- num of the Savage Gladiator \\ Arcanum of the Savage Gladiator
 i(44704),	-- ged Disk \\ Charged Disk
@@ -2758,7 +2706,6 @@ i(44924),	-- Lute of the Phoenix King \\ Sun-Lute of the Phoenix King \\ Arcanit
 i(44926),	-- Titansteel Deflector
 i(44928),	-- Charred Glyph \\ red Glyph \\ Glyph of Master Shapeshifter \\ Glyph of Focus
 i(44936),	-- nium Plating \\ Titanium Plating
-i(44943),	-- Prism \\ Icy Prism
 i(44945),	-- Formula: Enchant Weapon - Titanguard
 i(44946),	-- ant Weapon - Titanguard \\ Enchant Weapon - Titanguard \\ Scroll of Enchant Weapon - Titanguard
 i(44948),	-- Titansteel Defender
@@ -2906,7 +2853,6 @@ i(45897),	-- rged Hammer of Ancient Kings \\ Reforged Hammer of Ancient Kings
 i(45901),	-- made Fish Fry \\ Homemade Fish Fry
 i(45907),	-- ly-Eaten Bonescale Snapper \\ Mostly-Eaten Bonescale Snapper \\ Mostly-eaten Bonescale Snapper
 i(45908),	-- zzOLDGlyph of Envenom \\ Glyph of Envenom
-i(45909),	-- t Darkwater Clam \\ Giant Darkwater Clam
 i(45977),	-- elain Bell \\ Porcelain Bell
 i(45978),	-- d Gold Coin \\ Solid Gold Coin
 i(45979),	-- r Key \\ Tower Key
@@ -3237,12 +3183,102 @@ i(211262),	-- Signet of the Sunreaver
 3.4.3.51831
 i(92553),	-- ish X-Ray Specs Visual \\ Gnomish X-Ray Specs Visual
 3.4.3.52237
+i(209515),	-- Secondhand Faceguard
+i(209516),	-- Secondhand Plate Vambraces
+i(209517),	-- Secondhand Plate Gauntlets
+i(209518),	-- Secondhand Chestguard
+i(209519),	-- Secondhand Plate Greaves
+i(209521),	-- Secondhand Plate Girdle
+i(209522),	-- Secondhand Plate Leggings
+i(209556),	-- Secondhand Necklace
+i(209557),	-- Secondhand Necklace
+i(209558),	-- Secondhand Necklace
+i(209583),	-- Secondhand Spaulders
+i(209584),	-- Secondhand Pads
+i(209585),	-- Secondhand Spaulders
+i(209586),	-- Secondhand Pauldrons
+i(209587),	-- Secondhand Pads
+i(209588),	-- Secondhand Pauldrons
+i(209589),	-- Secondhand Mantle
+i(209599),	-- Secondhand Cloak
+i(209600),	-- Secondhand Cloak
+i(209602),	-- Secondhand Cloak
+i(209603),	-- Secondhand Cloak
+i(209606),	-- Secondhand Armor
+i(209607),	-- Secondhand Tunic
+i(209627),	-- Secondhand Tunic
+i(209628),	-- Secondhand Armor
+i(209629),	-- Secondhand Armor
+i(209630),	-- Secondhand Chestguard
+i(209631),	-- Secondhand Bracers
+i(209632),	-- Secondhand Bindings
+i(209633),	-- Secondhand Bindings
+i(209634),	-- Secondhand Armguards
+i(209635),	-- Secondhand Armguards
+i(209636),	-- Secondhand Plate Vambraces
+i(209637),	-- Secondhand Gloves
+i(209638),	-- Secondhand Gloves
+i(209639),	-- Secondhand Gloves
+i(209640),	-- Secondhand Gauntlets
+i(209641),	-- Secondhand Gauntlets
+i(209642),	-- Secondhand Plate Gauntlets
+i(209644),	-- Secondhand Sash
+i(209645),	-- Secondhand Belt
+i(209646),	-- Secondhand Belt
+i(209647),	-- Secondhand Belt
+i(209648),	-- Secondhand Belt
+i(209649),	-- Secondhand Plate Girdle
+i(209650),	-- Secondhand Pants
+i(209651),	-- Secondhand Legguards
+i(209652),	-- Secondhand Legguards
+i(209653),	-- Secondhand Leggings
+i(209654),	-- Secondhand Leggings
+i(209655),	-- Secondhand Plate Leggings
+i(209656),	-- Secondhand Boots
+i(209657),	-- Secondhand Boots
+i(209658),	-- Secondhand Boots
+i(209659),	-- Secondhand Boots
+i(209660),	-- Secondhand Boots
+i(209661),	-- Secondhand Plate Greaves
+i(209662),	-- Secondhand Band of Devastation
+i(209663),	-- Secondhand Band of Durability
+i(209664),	-- Secondhand Band of Wisdom
+i(209665),	-- Secondhand Band of Defense
+i(209695),	-- Secondhand Stone of Durability
+i(209696),	-- Secondhand Stone of Wisdom
+i(209697),	-- Secondhand Stone of Stoicism
+i(209780),	-- Secondhand Stone of Onslaught
+i(209782),	-- Secondhand Guardian
+i(209783),	-- Secondhand Shiv
+i(209784),	-- Secondhand Sword
+i(209785),	-- Secondhand Blade
 i(209786),	-- Secondhand Shield
+i(209787),	-- Secondhand Buckler
+i(209789),	-- Secondhand Bow
+i(209790),	-- Secondhand Warmaul
+i(209791),	-- Secondhand Stave
+i(209792),	-- Secondhand Staff
+i(209793),	-- Secondhand Right Claw
+i(209794),	-- Secondhand Smasher
+i(209796),	-- Secondhand Dagger
+i(209801),	-- Secondhand Left Claw
+i(209803),	-- Secondhand Knives
+i(209804),	-- Secondhand Wand
+i(209807),	-- Secondhand Book of Healing
+i(209808),	-- Secondhand Book of Righteousness
+i(209809),	-- Secondhand Idol of Wrath
+i(209810),	-- Secondhand Book of Protection
+i(209811),	-- Secondhand Totem of Restoration
+i(209812),	-- Secondhand Totem of the Storm
+i(209813),	-- Secondhand Idol of the Wild
+i(209814),	-- Secondhand Idol of Life
+i(209815),	-- Secondhand Totem of Lightning
 i(209826),	-- Secondhand Sigil of Arthritic Binding
 i(209827),	-- Secondhand Sigil of the Frozen Conscience
 i(209829),	-- Secondhand Sigil of the Wild Buck
 i(210046),	-- Teleport Scroll: Northrend
 i(210047),	-- Teleport Scroll: Northrend
+i(210135),	-- Secondhand Rose
 3.4.3.54948
 i(134017),	-- Carlos' Famous Hat \\ Don Carlos' Famous Hat
 i(225921),	-- Icebound Cloak

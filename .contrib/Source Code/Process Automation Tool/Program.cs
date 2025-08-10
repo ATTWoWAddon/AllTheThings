@@ -7,48 +7,47 @@ namespace ATT
 {
     class Program
     {
-        static void Main(string[] args)
+        static readonly char[] PRE_CONSTRUCTOR_BREAKS = new char[] { '\n', ' ', '(', '{', '\t' };
+
+        static int Main(string[] args)
         {
-            // Gather a list of files linked to the program
-            var allFiles = new List<string>();
-            if (args != null && args.Length > 0)
+            try
             {
-                foreach (var path in args)
+                // Gather a list of files linked to the program
+                var allFiles = new List<string>();
+                if (args != null && args.Length > 0)
                 {
-                    FileAttributes attr = File.GetAttributes(path);
-                    if (attr.HasFlag(FileAttributes.Directory))
+                    foreach (var path in args)
                     {
-                        allFiles.AddRange(Directory.GetFiles(path, "*.lua", SearchOption.AllDirectories));
+                        FileAttributes attr = File.GetAttributes(path);
+                        if (attr.HasFlag(FileAttributes.Directory))
+                        {
+                            allFiles.AddRange(Directory.GetFiles(path, "*.lua", SearchOption.AllDirectories));
+                        }
+                        else if (File.Exists(path)) allFiles.Add(path);
                     }
-                    else if (File.Exists(path)) allFiles.Add(path);
                 }
-            }
-            else
-            {
-                // We want to parse the whole Parser folder.
-                allFiles.AddRange(Directory.GetFiles("../Parser/", "*.lua", SearchOption.AllDirectories));
-            }
-
-            // Step 1: Clean the files before processing them.
-            foreach (var filename in allFiles) CleanFile(filename);
-
-            // Step 2: Process the Files
-            foreach (var filename in allFiles)
-            {
-                try
+                else
                 {
-                    ProcessFile(filename);
+                    // We want to parse the whole Parser folder.
+                    allFiles.AddRange(Directory.GetFiles("../Parser/", "*.lua", SearchOption.AllDirectories));
                 }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex.ToString());
-                    Console.ReadLine();
-                }
+
+                // Step 1: Clean the files before processing them.
+                foreach (var filename in allFiles) CleanFile(filename);
+
+                // Step 2: Process the Files
+                foreach (var filename in allFiles) ProcessFile(filename);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+                return -1;
             }
 
             // Step 3: Report Success
             Console.WriteLine("JOBS DONE!");
-            System.Threading.Thread.Sleep(2000);
+            return 0;
         }
 
         class PriorityField
@@ -95,7 +94,7 @@ namespace ATT
             return 0;
         }
 
-        static int CheckForMultilinedData(string[] lines, string line, int lineIndex, PriorityField property)
+        static int CheckForMultilinedData(string[] lines, string line, int lineIndex, PriorityField property, string nestedType)
         {
             // Check for a comma at the end of the line. (this will account for 99% of entries)
             string trimmedLine = line.Trim();
@@ -113,7 +112,7 @@ namespace ATT
             if (nextLine.StartsWith("-- #if"))
             {
                 var originalPriority = property.Priority;
-                lineIndex = ProcessPreprocessor(lines, lineIndex, property);
+                lineIndex = ProcessPreprocessor(lines, lineIndex, property, nestedType);
                 var list = new List<string>(property.Lines);
                 list.Insert(0, line);
                 property.Priority = originalPriority;
@@ -121,9 +120,10 @@ namespace ATT
             }
             else
             {
-                Console.WriteLine("UNHANDLED MULTILINE DATA:");
-                Console.WriteLine(lines[lineIndex]);
-                Console.ReadLine();
+                var errorBuilder = new StringBuilder();
+                errorBuilder.AppendLine("UNHANDLED MULTILINE DATA:");
+                errorBuilder.AppendLine(lines[lineIndex]);
+                throw new InvalidOperationException(errorBuilder.ToString());
             }
             return lineIndex;
         }
@@ -139,13 +139,13 @@ namespace ATT
                 if (endDepth == depth) break;
                 else if (endDepth > 0 && endDepth < depth && !string.IsNullOrWhiteSpace(line) && !line.TrimStart().StartsWith("--"))
                 {
-                    Console.WriteLine($"Malformed syntax, quest at line {startIndex} does not have an ender at the same depth {depth} vs {endDepth}");
+                    var errorBuilder = new StringBuilder();
+                    errorBuilder.AppendLine($"Malformed syntax, quest at line {startIndex} does not have an ender at the same depth {depth} vs {endDepth}");
                     for (int i = startIndex; i < endIndex; ++i)
                     {
-                        Console.WriteLine(lines[i]);
+                        errorBuilder.AppendLine(lines[i]);
                     }
-                    Console.ReadLine();
-                    break;
+                    throw new InvalidOperationException(errorBuilder.ToString());
                 }
                 ++endIndex;
             }
@@ -239,7 +239,7 @@ namespace ATT
 
         static bool NestedWithinComment = false;
 
-        static int ProcessBulkComment(string[] lines, int lineIndex, PriorityField property)
+        static int ProcessBulkComment(string[] lines, int lineIndex, PriorityField property, string nestedType)
         {
             // Find the end of the bulk comment
             int endIndex = FindEndLineIndexForBulkComment(lines, lineIndex);
@@ -262,7 +262,7 @@ namespace ATT
                         NestedWithinComment = true;
 
                         // Preprocessors use the priority of their highest nested property, if they have any
-                        var properties = ProcessPropertiesForLines(content.ToArray(), 1, content.Count - 2);
+                        var properties = ProcessPropertiesForLines(content.ToArray(), 1, content.Count - 2, nestedType);
                         if (properties.Count > 0)
                         {
                             property.Priority = properties[0].Priority;
@@ -298,7 +298,7 @@ namespace ATT
                             */
 
                             // Preprocessors use the priority of their highest nested property, if they have any
-                            var properties = ProcessPropertiesForLines(content.ToArray(), 0, content.Count);
+                            var properties = ProcessPropertiesForLines(content.ToArray(), 0, content.Count, nestedType);
                             if (properties.Count > 0)
                             {
                                 property.Priority = properties[0].Priority;
@@ -337,340 +337,76 @@ namespace ATT
 
         static int ProcessBrackets(string[] lines, int lineIndex, PriorityField property)
         {
-            string line = lines[lineIndex];
-            if (!HasOpenBracket(line, 0)) return lineIndex;
-
-            // We have a multiline situation here... ugh.
-            // Find the end of the declaration
-            var startIndex = lineIndex + 1;
-            int endIndex = FindEndLineIndex(lines, startIndex, property.Depth);
-            if (!lines[endIndex].Trim().StartsWith("}"))
-            {
-                Console.WriteLine("MALFORMED BRACKETS");
-                for (int i = startIndex; i <= endIndex; ++i)
-                {
-                    Console.WriteLine(lines[i]);
-                }
-                Console.ReadLine();
-            }
-
-            // Build a new lines container only containing the group content
-            var content = new List<string>();
-            for (int i = startIndex; i < endIndex; ++i) content.Add(lines[i]);
-            property.Lines = new string[] {
-                line,
-                ProcessLines(content.ToArray()).TrimEnd(),
-                lines[endIndex]
-            };
-            return endIndex;
-        }
-
-        static int ProcessFunction(string[] lines, int lineIndex, PriorityField property)
-        {
-            string line = lines[lineIndex];
-            string trimmedLine = line.Substring(line.IndexOf('=') + 1).Trim();
-            if (!trimmedLine.StartsWith("[[") || trimmedLine.EndsWith("]],")) return lineIndex;
-
-            // We have a multiline situation here... ugh.
-            // Find the end of the declaration
-            var startIndex = lineIndex + 1;
-            int endIndex = FindEndLineIndex(lines, startIndex, property.Depth);
-            if (!lines[endIndex].Trim().EndsWith("]],"))
-            {
-                Console.WriteLine("MALFORMED FUNCTION");
-                for (int i = startIndex; i <= endIndex; ++i)
-                {
-                    Console.WriteLine(lines[i]);
-                }
-                Console.ReadLine();
-            }
-
-            // Build a new lines container only containing the group content
-            var content = new List<string>();
-            for (int i = startIndex; i < endIndex; ++i) content.Add(lines[i]);
-            property.Lines = new string[] {
-                line,
-                ProcessLines(content.ToArray()).TrimEnd(),
-                lines[endIndex]
-            };
-            return endIndex;
-        }
-
-        static int ProcessGroups(string[] lines, int lineIndex, PriorityField property)
-        {
-            // Force "groups" over "g"
-            string line = lines[lineIndex];
-            if (HasOpenBracket(line, line.IndexOf('='))) return ProcessObjects(lines, lineIndex, property);
-            return lineIndex;
-        }
-
-        static int ProcessLuaString(string[] lines, string line, int lineIndex, PriorityField property)
-        {
-            int equalsIndex = line.IndexOf('=');
-            if (equalsIndex >= 0)
-            {
-                // Check for a multiline string (a string encased in [[STRING DATA]])
-                string trimmedLine = line.Substring(equalsIndex + 1).Trim();
-                if (trimmedLine.StartsWith("[["))
-                {
-                    // This is a multiline string. Let's find the end of it...
-                    for (int endIndex = lineIndex; endIndex < lines.Length; ++endIndex)
-                    {
-                        if (lines[endIndex].Contains("]],"))
-                        {
-                            // Build a new lines container only containing the group content
-                            var content = new List<string>();
-                            for (int i = lineIndex; i <= endIndex; ++i)
-                            {
-                                content.Add(lines[i]);
-                            }
-                            property.Lines = content.ToArray();
-                            return endIndex;
-                        }
-                    }
-                }
-            }
-            return CheckForMultilinedData(lines, line, lineIndex, property);
-        }
-
-        static string ProcessLines(string[] lines)
-        {
-            var builder = new StringBuilder();
-            for (int lineIndex = 0; lineIndex < lines.Length; ++lineIndex)
+            int brackets = 0;
+            int startingIndex = lineIndex;
+            while (lineIndex < lines.Length)
             {
                 string line = lines[lineIndex];
-                int questContructorIndex = line.IndexOf("q(");
-                if (questContructorIndex >= 0 && HasOpenBracket(line, questContructorIndex)) lineIndex = ProcessQuest(builder, lines, lineIndex, CalculateDepth(line));
-                else builder.AppendLine(line);
-            }
-            return builder.ToString();
-        }
-
-        static int ProcessObjects(string[] lines, int lineIndex, PriorityField property)
-        {
-            string line = lines[lineIndex];
-
-            // Find the end of the quest declaration
-            var startIndex = lineIndex + 1;
-            int endIndex = FindEndLineIndex(lines, startIndex, property.Depth);
-            if (!lines[endIndex].Trim().StartsWith("}"))
-            {
-                Console.WriteLine("MALFORMED GROUPS");
-                for (int i = startIndex; i <= endIndex; ++i)
+                int currentDepth = CalculateDepth(line);
+                if (currentDepth == property.Depth)
                 {
-                    Console.WriteLine(lines[i]);
-                }
-                Console.ReadLine();
-            }
-
-            // Build a new lines container only containing the group content
-            var content = new List<string>();
-            for (int i = startIndex; i < endIndex; ++i) content.Add(lines[i]);
-            property.Lines = new string[] {
-                line,
-                ProcessLines(content.ToArray()).TrimEnd(),
-                lines[endIndex]
-            };
-            return endIndex;
-        }
-
-        static int ProcessPreprocessor(string[] lines, int lineIndex, PriorityField property)
-        {
-            // Find the end of the pre-processor
-            int endIndex = FindEndLineIndexForPreprocessor(lines, lineIndex);
-
-            // Build a new lines container only containing the group content
-            var content = new List<string>();
-            for (int i = lineIndex; i <= endIndex; ++i) content.Add(lines[i]);
-            property.Lines = content.ToArray();
-
-            // Preprocessors use the priority of their highest nested property, if they have any
-            var properties = ProcessPropertiesForLines(lines, lineIndex + 1, endIndex);
-            if (properties.Count > 0)
-            {
-                property.Priority = properties[0].Priority;
-            }
-            /*
-            Console.WriteLine($"FOUND PREPROCESSOR: {property.Priority} Priority ({properties.Count} Properties)");
-            foreach (var prop in properties)
-            {
-                Console.WriteLine($" {prop.Priority}");
-                foreach (var l in prop.Lines)
-                {
-                    Console.WriteLine($"  {l}");
-                }
-            }
-            for (int i = lineIndex; i <= endIndex; ++i)
-            {
-                Console.WriteLine(lines[i]);
-            }
-            Console.ReadLine();
-            */
-            return endIndex;
-        }
-
-        static Provider ProcessProvider(string line, int equalsIndex)
-        {
-            int openIndex = line.IndexOf('{', equalsIndex);
-            if (openIndex >= 0)
-            {
-                ++openIndex;
-                int closeIndex = line.IndexOf('}', openIndex);
-                if (closeIndex > openIndex)
-                {
-                    --closeIndex;
-                    var split = line.Substring(openIndex, closeIndex - openIndex).Split(',');
-                    if (split.Length > 1)
+                    for (int index = 0; index < line.Length; ++index)
                     {
-                        var provider = new Provider()
+                        switch (line[index])
                         {
-                            Type = split[0].Trim().ToLower(),
-                            ID = split[1].Trim(),
-                        };
-                        if (provider.Type.StartsWith("\"")) provider.Type = provider.Type.Substring(1, provider.Type.Length - 2);
-
-                        int commentIndex = line.IndexOf("--", closeIndex);
-                        if (commentIndex >= 0) provider.Name = line.Substring(commentIndex + 2).Trim();
-                        return provider;
+                            case '(':
+                            case '{':
+                            case '[':
+                                ++brackets;
+                                break;
+                            case ')':
+                            case '}':
+                            case ']':
+                                --brackets;
+                                break;
+                            case '-':
+                                if (index > 0 && line[index - 1] == '-' && index < line.Length - 1 && line[index + 1] != '[') index = line.Length;
+                                break;
+                            default: break;
+                        }
                     }
-                }
-            }
-            return null;
-        }
-
-        static int ProcessProviders(string[] lines, int lineIndex, PriorityField property)
-        {
-            // Find the end of the declaration
-            var startIndex = lineIndex + 1;
-            int endIndex = FindEndLineIndex(lines, startIndex, property.Depth);
-            if (!lines[endIndex].Trim().StartsWith("}"))
-            {
-                Console.WriteLine("MALFORMED PROVIDERS");
-                for (int i = startIndex; i <= endIndex; ++i)
-                {
-                    Console.WriteLine(lines[i]);
-                }
-                Console.ReadLine();
-            }
-
-            // Determine if all of the providers are npcs, if so, convert to qgs
-            var providers = new List<Provider>();
-            bool success = true;
-            for (int i = startIndex; i < endIndex;++i)
-            {
-                string line = lines[i];
-                int openBracketIndex = line.IndexOf('{');
-                if (openBracketIndex < 0)
-                {
-                    success = false;
-                    break;
-                }
-                var provider = ProcessProvider(line, openBracketIndex - 1);
-                if (provider == null || provider.Type != "n")
-                {
-                    success = false;
-                    break;
-                }
-                providers.Add(provider);
-            }
-
-            if (success)
-            {
-                // Cool. We're dealing with Quest Givers, let's clean this up.
-                string firstLine = lines[lineIndex];
-                string indent = firstLine.Substring(0, firstLine.IndexOf('['));
-                var builder = new StringBuilder($"{indent}[\"qgs\"] = {{").AppendLine();
-                foreach(var provider in providers)
-                {
-                    builder.Append(indent).Append('\t').AppendLine(provider.LineFormat);
-                }
-                property.Lines = new string[] { builder.Append(indent).Append("},").ToString() };
-            }
-            else
-            {
-                // Not cool. Mixed type, let's keep it as is.
-                var includedLines = new List<string>();
-                for (int i = lineIndex; i <= endIndex; ++i)
-                {
-                    includedLines.Add(lines[i]);
-                }
-                property.Lines = includedLines.ToArray();
-            }
-            return endIndex;
-        }
-
-        static string ProcessProperties(string[] lines, int startIndex, int endIndex)
-        {
-            var properties = ProcessPropertiesForLines(lines, startIndex, endIndex);
-            var subBuilder = new StringBuilder();
-            foreach (var property in properties)
-            {
-                var propertyLines = property.Lines;
-                if (propertyLines == null || propertyLines.Length == 0)
-                {
-                    Console.WriteLine("A NULL PROPERTY FIELD?!");
-                    Console.ReadLine();
-                    continue;
-                }
-                if (propertyLines.Length == 1)
-                {
-                    string line = propertyLines[0];
-                    if (string.IsNullOrWhiteSpace(line)) continue;
-                    subBuilder.AppendLine(line);
-                }
-                else
-                {
-                    for (var i = 0; i < propertyLines.Length; ++i)
+                    if (brackets == 0)
                     {
-                        subBuilder.AppendLine(propertyLines[i]);
-                    }
-                }
-            }
-            /*
-            Console.WriteLine("UPDATED FORMAT:");
-            Console.WriteLine(lines[startIndex - 1]);
-            Console.Write(subBuilder.ToString());
-            Console.WriteLine(lines[endIndex]);
-            //Console.ReadLine();
-            */
-            /*
-            if (subBuilder.ToString().Contains("-- [\"provider"))
-            {
-                int count = 0;
-                foreach (var property in properties)
-                {
-                    Console.Write(++count);
-                    Console.WriteLine(": ");
-                    var propertyLines = property.Lines;
-                    if (propertyLines == null || propertyLines.Length == 0)
-                    {
-                        Console.WriteLine("A NULL PROPERTY FIELD?!");
-                        Console.ReadLine();
-                        continue;
-                    }
-                    if (propertyLines.Length == 1)
-                    {
-                        string line = propertyLines[0];
-                        if (string.IsNullOrWhiteSpace(line)) continue;
-                        Console.Write(" ONE LINE: ");
-                        Console.WriteLine(line);
+                        if (startingIndex == lineIndex) return lineIndex;
+                        break;
                     }
                     else
                     {
-                        for (var i = 0; i < propertyLines.Length; ++i)
-                        {
-                            Console.Write($"  LINE {i}: ");
-                            Console.WriteLine(propertyLines[i]);
-                        }
+                        ++lineIndex;
                     }
                 }
-                Console.ReadLine();
+                else
+                {
+                    ++lineIndex;
+                }
             }
-            */
-            return subBuilder.ToString();
+
+            // We have a multiline situation here... ugh.
+            // Find the end of the declaration
+            int endIndex = lineIndex;// FindEndLineIndex(lines, startingIndex, property.Depth);
+            if (!lines[endIndex].Trim().StartsWith("}"))
+            {
+                var errorBuilder = new StringBuilder();
+                errorBuilder.AppendLine("MALFORMED BRACKETS");
+                for (int i = startingIndex; i <= endIndex; ++i)
+                {
+                    errorBuilder.AppendLine(lines[i]);
+                }
+                throw new InvalidOperationException(errorBuilder.ToString());
+            }
+
+            // Build a new lines container only containing the group content
+            var content = new List<string>();
+            for (int i = startingIndex; i < endIndex; ++i) content.Add(lines[i]);
+            property.Lines = new string[] {
+                //lines[startingIndex],
+                ProcessLines(content.ToArray()).TrimEnd(),
+                lines[endIndex]
+            };
+            return endIndex;
         }
 
-        static int ProcessField(string[] lines, string line, int lineIndex, int offset, PriorityField property)
+        static int ProcessField(string[] lines, string line, int lineIndex, int offset, PriorityField property, string nestedType)
         {
             string field = line.Substring(0, offset).Trim();
             switch (field)
@@ -698,7 +434,7 @@ namespace ATT
                     {
                         property.Priority = -499;
                         if (line.Contains("{")) lineIndex = ProcessBrackets(lines, lineIndex, property);
-                        else lineIndex = CheckForMultilinedData(lines, line, lineIndex, property);
+                        else lineIndex = CheckForMultilinedData(lines, line, lineIndex, property, nestedType);
                         break;
                     }
 
@@ -706,7 +442,7 @@ namespace ATT
                 case "[\"description\"]":
                     {
                         property.Priority = -498;
-                        lineIndex = ProcessLuaString(lines, line, lineIndex, property);
+                        lineIndex = ProcessLuaString(lines, line, lineIndex, property, nestedType);
                         break;
                     }
 
@@ -714,7 +450,7 @@ namespace ATT
                 case "[\"icon\"]":
                     {
                         property.Priority = -497;
-                        lineIndex = CheckForMultilinedData(lines, line, lineIndex, property);
+                        lineIndex = CheckForMultilinedData(lines, line, lineIndex, property, nestedType);
                         break;
                     }
 
@@ -788,7 +524,7 @@ namespace ATT
                 case "[\"providers\"]":
                     {
                         property.Priority = 1;
-                        lineIndex = ProcessProviders(lines, lineIndex, property);
+                        lineIndex = ProcessProviders(lines, lineIndex, property, nestedType);
                         break;
                     }
 
@@ -855,7 +591,7 @@ namespace ATT
                 case "[\"requireSkill\"]":
                     {
                         property.Priority = 25;
-                        lineIndex = CheckForMultilinedData(lines, line, lineIndex, property);
+                        lineIndex = CheckForMultilinedData(lines, line, lineIndex, property, nestedType);
                         break;
                     }
                 case "[\"learnedAt\"]":
@@ -1048,7 +784,7 @@ namespace ATT
                 case "[\"sharedDescription\"]":
                     {
                         property.Priority = 5000;
-                        lineIndex = ProcessLuaString(lines, line, lineIndex, property);
+                        lineIndex = ProcessLuaString(lines, line, lineIndex, property, nestedType);
                         break;
                     }
 
@@ -1057,7 +793,8 @@ namespace ATT
                 case "[\"g\"]":
                     {
                         property.Priority = int.MaxValue;  // DEAD LAST
-                        lineIndex = ProcessGroups(lines, lineIndex, property);
+                        lineIndex = ProcessBrackets(lines, lineIndex, property);
+                        //lineIndex = ProcessGroups(lines, lineIndex, property);
                         break;
                     }
 
@@ -1067,10 +804,10 @@ namespace ATT
                         // Commented fields should use the field's base priority
                         var commentedProperty = new PriorityField() { Depth = property.Depth };
                         var uncommentedLine = line.Substring(line.IndexOf("--") + 2);
-                        ProcessField(lines, uncommentedLine, lineIndex, uncommentedLine.IndexOf('='), commentedProperty);
+                        ProcessField(lines, uncommentedLine, lineIndex, uncommentedLine.IndexOf('='), commentedProperty, nestedType);
                         property.Priority = commentedProperty.Priority;
                     }
-                    else if(field.StartsWith("["))
+                    else if (field.StartsWith("["))
                     {
                         Console.WriteLine("UNPRIORITIZED PROPERTY");
                         Console.WriteLine(field);
@@ -1082,7 +819,296 @@ namespace ATT
             return lineIndex;
         }
 
-        static List<PriorityField> ProcessPropertiesForLines(string[] lines, int startIndex, int endIndex)
+        static int ProcessFunction(string[] lines, int lineIndex, PriorityField property)
+        {
+            string line = lines[lineIndex];
+            string trimmedLine = line.Substring(line.IndexOf('=') + 1).Trim();
+            if (!trimmedLine.StartsWith("[[") || trimmedLine.EndsWith("]],")) return lineIndex;
+
+            // We have a multiline situation here... ugh.
+            // Find the end of the declaration
+            var startIndex = lineIndex + 1;
+            int endIndex = FindEndLineIndex(lines, startIndex, property.Depth);
+            if (!lines[endIndex].Trim().EndsWith("]],"))
+            {
+                var errorBuilder = new StringBuilder();
+                errorBuilder.AppendLine("MALFORMED FUNCTION");
+                for (int i = startIndex; i <= endIndex; ++i)
+                {
+                    errorBuilder.AppendLine(lines[i]);
+                }
+                throw new InvalidOperationException(errorBuilder.ToString());
+            }
+
+            // Build a new lines container only containing the group content
+            var content = new List<string>();
+            for (int i = startIndex; i < endIndex; ++i) content.Add(lines[i]);
+            property.Lines = new string[] {
+                line,
+                ProcessLines(content.ToArray()).TrimEnd(),
+                lines[endIndex]
+            };
+            return endIndex;
+        }
+
+        static int ProcessLuaString(string[] lines, string line, int lineIndex, PriorityField property, string nestedType)
+        {
+            int equalsIndex = line.IndexOf('=');
+            if (equalsIndex >= 0)
+            {
+                // Check for a multiline string (a string encased in [[STRING DATA]])
+                string trimmedLine = line.Substring(equalsIndex + 1).Trim();
+                if (trimmedLine.StartsWith("[["))
+                {
+                    // This is a multiline string. Let's find the end of it...
+                    for (int endIndex = lineIndex; endIndex < lines.Length; ++endIndex)
+                    {
+                        if (lines[endIndex].Contains("]],"))
+                        {
+                            // Build a new lines container only containing the group content
+                            var content = new List<string>();
+                            for (int i = lineIndex; i <= endIndex; ++i)
+                            {
+                                content.Add(lines[i]);
+                            }
+                            property.Lines = content.ToArray();
+                            return endIndex;
+                        }
+                    }
+                }
+            }
+            return CheckForMultilinedData(lines, line, lineIndex, property, nestedType);
+        }
+
+        static string ProcessLines(string[] lines)
+        {
+            var builder = new StringBuilder();
+            for (int lineIndex = 0; lineIndex < lines.Length; ++lineIndex)
+            {
+                string line = lines[lineIndex];
+                int questContructorIndex = line.IndexOf("q(");
+                if (questContructorIndex >= 0 && HasOpenBracket(line, questContructorIndex)) lineIndex = ProcessObjectType(builder, lines, lineIndex, CalculateDepth(line));
+                else builder.AppendLine(line);
+            }
+            return builder.ToString();
+        }
+
+        static int ProcessPreprocessor(string[] lines, int lineIndex, PriorityField property, string nestedType)
+        {
+            // Find the end of the pre-processor
+            int endIndex = FindEndLineIndexForPreprocessor(lines, lineIndex);
+
+            // Build a new lines container only containing the group content
+            var content = new List<string>();
+            for (int i = lineIndex; i <= endIndex; ++i) content.Add(lines[i]);
+            property.Lines = content.ToArray();
+
+            // Preprocessors use the priority of their highest nested property, if they have any
+            var properties = ProcessPropertiesForLines(lines, lineIndex + 1, endIndex, nestedType);
+            if (properties.Count > 0)
+            {
+                property.Priority = properties[0].Priority;
+            }
+            /*
+            Console.WriteLine($"FOUND PREPROCESSOR: {property.Priority} Priority ({properties.Count} Properties)");
+            foreach (var prop in properties)
+            {
+                Console.WriteLine($" {prop.Priority}");
+                foreach (var l in prop.Lines)
+                {
+                    Console.WriteLine($"  {l}");
+                }
+            }
+            for (int i = lineIndex; i <= endIndex; ++i)
+            {
+                Console.WriteLine(lines[i]);
+            }
+            Console.ReadLine();
+            */
+            return endIndex;
+        }
+
+        static Provider ProcessProvider(string line, int equalsIndex)
+        {
+            int openIndex = line.IndexOf('{', equalsIndex);
+            if (openIndex >= 0)
+            {
+                ++openIndex;
+                int closeIndex = line.IndexOf('}', openIndex);
+                if (closeIndex > openIndex)
+                {
+                    --closeIndex;
+                    var split = line.Substring(openIndex, closeIndex - openIndex).Split(',');
+                    if (split.Length > 1)
+                    {
+                        var provider = new Provider()
+                        {
+                            Type = split[0].Trim().ToLower(),
+                            ID = split[1].Trim(),
+                        };
+                        if (provider.Type.StartsWith("\"")) provider.Type = provider.Type.Substring(1, provider.Type.Length - 2);
+
+                        int commentIndex = line.IndexOf("--", closeIndex);
+                        if (commentIndex >= 0) provider.Name = line.Substring(commentIndex + 2).Trim();
+                        return provider;
+                    }
+                }
+            }
+            return null;
+        }
+
+        static int ProcessProviders(string[] lines, int lineIndex, PriorityField property, string nestedType)
+        {
+            // Find the end of the declaration
+            var startIndex = lineIndex + 1;
+            int endIndex = FindEndLineIndex(lines, startIndex, property.Depth);
+            if (!lines[endIndex].Trim().StartsWith("}"))
+            {
+                Console.WriteLine("MALFORMED PROVIDERS");
+                for (int i = startIndex; i <= endIndex; ++i)
+                {
+                    Console.WriteLine(lines[i]);
+                }
+                Console.ReadLine();
+            }
+
+            // Determine if all of the providers are npcs, if so, convert to qgs
+            var providers = new List<Provider>();
+            bool success = true;
+            for (int i = startIndex; i < endIndex;++i)
+            {
+                string line = lines[i];
+                int openBracketIndex = line.IndexOf('{');
+                if (openBracketIndex < 0)
+                {
+                    success = false;
+                    break;
+                }
+                var provider = ProcessProvider(line, openBracketIndex - 1);
+                if (provider == null || provider.Type != "n")
+                {
+                    success = false;
+                    break;
+                }
+                providers.Add(provider);
+            }
+
+            if (success && nestedType == "q")
+            {
+                // Cool. We're dealing with Quest Givers, let's clean this up.
+                string firstLine = lines[lineIndex];
+                string indent = firstLine.Substring(0, firstLine.IndexOf('['));
+                var builder = new StringBuilder($"{indent}[\"qgs\"] = {{").AppendLine();
+                foreach(var provider in providers)
+                {
+                    builder.Append(indent).Append('\t').AppendLine(provider.LineFormat);
+                }
+                property.Lines = new string[] { builder.Append(indent).Append("},").ToString() };
+            }
+            else
+            {
+                // Not cool. Mixed type, let's keep it as is.
+                var includedLines = new List<string>();
+                for (int i = lineIndex; i <= endIndex; ++i)
+                {
+                    includedLines.Add(lines[i]);
+                }
+                property.Lines = includedLines.ToArray();
+            }
+            return endIndex;
+        }
+
+        static int ProcessObjectType(StringBuilder builder, string[] lines, int lineIndex, int depth, string nestedType = "q")
+        {
+            // Find the end of the quest declaration
+            var startIndex = lineIndex + 1;
+            int endIndex = FindEndLineIndex(lines, startIndex, depth);
+            /*
+            for (int i = startIndex - 1; i <= endIndex; ++i)
+            {
+                Console.WriteLine(lines[i]);
+            }
+            */
+
+            // Append the quest data to the builder
+            builder.AppendLine(lines[lineIndex]);
+            builder.Append(ProcessProperties(lines, startIndex, endIndex, nestedType));
+            builder.AppendLine(lines[endIndex]);
+            return endIndex;
+        }
+
+        static string ProcessProperties(string[] lines, int startIndex, int endIndex, string nestedType)
+        {
+            var properties = ProcessPropertiesForLines(lines, startIndex, endIndex, nestedType);
+            var subBuilder = new StringBuilder();
+            foreach (var property in properties)
+            {
+                var propertyLines = property.Lines;
+                if (propertyLines == null || propertyLines.Length == 0)
+                {
+                    Console.WriteLine("A NULL PROPERTY FIELD?!");
+                    Console.ReadLine();
+                    continue;
+                }
+                if (propertyLines.Length == 1)
+                {
+                    string line = propertyLines[0];
+                    if (string.IsNullOrWhiteSpace(line)) continue;
+                    subBuilder.AppendLine(line);
+                }
+                else
+                {
+                    for (var i = 0; i < propertyLines.Length; ++i)
+                    {
+                        subBuilder.AppendLine(propertyLines[i]);
+                    }
+                }
+            }
+            /*
+            Console.WriteLine("UPDATED FORMAT:");
+            Console.WriteLine(lines[startIndex - 1]);
+            Console.Write(subBuilder.ToString());
+            Console.WriteLine(lines[endIndex]);
+            //Console.ReadLine();
+            */
+            /*
+            if (subBuilder.ToString().Contains("-- [\"provider"))
+            {
+                int count = 0;
+                foreach (var property in properties)
+                {
+                    Console.Write(++count);
+                    Console.WriteLine(": ");
+                    var propertyLines = property.Lines;
+                    if (propertyLines == null || propertyLines.Length == 0)
+                    {
+                        Console.WriteLine("A NULL PROPERTY FIELD?!");
+                        Console.ReadLine();
+                        continue;
+                    }
+                    if (propertyLines.Length == 1)
+                    {
+                        string line = propertyLines[0];
+                        if (string.IsNullOrWhiteSpace(line)) continue;
+                        Console.Write(" ONE LINE: ");
+                        Console.WriteLine(line);
+                    }
+                    else
+                    {
+                        for (var i = 0; i < propertyLines.Length; ++i)
+                        {
+                            Console.Write($"  LINE {i}: ");
+                            Console.WriteLine(propertyLines[i]);
+                        }
+                    }
+                }
+                Console.ReadLine();
+            }
+            */
+            return subBuilder.ToString();
+        }
+
+        static List<PriorityField> ProcessPropertiesForLines(string[] lines, int startIndex, int endIndex, string nestedType)
         {
             var properties = new List<PriorityField>();
             for (int lineIndex = startIndex; lineIndex < endIndex; ++lineIndex)
@@ -1100,16 +1126,16 @@ namespace ATT
                     if (trimmedLine.StartsWith("-- #"))
                     {
                         trimmedLine = trimmedLine.ToLower();
-                        if (trimmedLine.StartsWith("-- #if")) lineIndex = ProcessPreprocessor(lines, lineIndex, property);
+                        if (trimmedLine.StartsWith("-- #if")) lineIndex = ProcessPreprocessor(lines, lineIndex, property, nestedType);
                     }
-                    else lineIndex = ProcessBulkComment(lines, lineIndex, property);
+                    else lineIndex = ProcessBulkComment(lines, lineIndex, property, nestedType);
                 }
                 else
                 {
                     int equalsIndex = line.IndexOf('=');
                     if (equalsIndex > 0)
                     {
-                        lineIndex = ProcessField(lines, line, lineIndex, equalsIndex, property);
+                        lineIndex = ProcessField(lines, line, lineIndex, equalsIndex, property, nestedType);
                     }
                     else if (trimmedLine.StartsWith("ach("))
                     {
@@ -1118,7 +1144,7 @@ namespace ATT
                         if (questContructorIndex >= 0 && HasOpenBracket(line, questContructorIndex))
                         {
                             var builder = new StringBuilder();
-                            lineIndex = ProcessQuest(builder, lines, lineIndex, CalculateDepth(line));
+                            lineIndex = ProcessObjectType(builder, lines, lineIndex, CalculateDepth(line), "ach");
                             property.Lines = new string[] { builder.ToString().TrimEnd() };
                         }
                         property.Priority = 4000 + properties.Count;
@@ -1130,7 +1156,7 @@ namespace ATT
                         if (questContructorIndex >= 0 && HasOpenBracket(line, questContructorIndex))
                         {
                             var builder = new StringBuilder();
-                            lineIndex = ProcessQuest(builder, lines, lineIndex, CalculateDepth(line));
+                            lineIndex = ProcessObjectType(builder, lines, lineIndex, CalculateDepth(line), "crit");
                             property.Lines = new string[] { builder.ToString().TrimEnd() };
                         }
                         property.Priority = 4500 + properties.Count;
@@ -1142,7 +1168,7 @@ namespace ATT
                         if (questContructorIndex >= 0 && HasOpenBracket(line, questContructorIndex))
                         {
                             var builder = new StringBuilder();
-                            lineIndex = ProcessQuest(builder, lines, lineIndex, CalculateDepth(line));
+                            lineIndex = ProcessObjectType(builder, lines, lineIndex, CalculateDepth(line), "o");
                             property.Lines = new string[] { builder.ToString().TrimEnd() };
                         }
                         property.Priority = 5000 + properties.Count;
@@ -1154,19 +1180,19 @@ namespace ATT
                         if (questContructorIndex >= 0 && HasOpenBracket(line, questContructorIndex))
                         {
                             var builder = new StringBuilder();
-                            lineIndex = ProcessQuest(builder, lines, lineIndex, CalculateDepth(line));
+                            lineIndex = ProcessObjectType(builder, lines, lineIndex, CalculateDepth(line), "q");
                             property.Lines = new string[] { builder.ToString().TrimEnd() };
                         }
                         property.Priority = 9000 + properties.Count;
                     }
-                    else if (trimmedLine.StartsWith("i(") || trimmedLine.StartsWith("un("))
+                    else if (trimmedLine.StartsWith("i("))
                     {
                         // There's an item nested directly in the quest... Why!
                         int questContructorIndex = line.IndexOf("(") - 1;
                         if (questContructorIndex >= 0 && HasOpenBracket(line, questContructorIndex))
                         {
                             var builder = new StringBuilder();
-                            lineIndex = ProcessQuest(builder, lines, lineIndex, CalculateDepth(line));
+                            lineIndex = ProcessObjectType(builder, lines, lineIndex, CalculateDepth(line), "i");
                             property.Lines = new string[] { builder.ToString().TrimEnd() };
                         }
                         property.Priority = 10000 + properties.Count;
@@ -1174,12 +1200,21 @@ namespace ATT
                     else if (trimmedLine.Contains("("))
                     {
                         // There's an Boss nested directly in the quest... Why!
-                        int questContructorIndex = line.IndexOf("(") - 1;
-                        if (questContructorIndex >= 0 && HasOpenBracket(line, questContructorIndex))
+                        int questContructorIndex = line.IndexOf("(");
+                        if (questContructorIndex >= 0 && HasOpenBracket(line, questContructorIndex - 1))
                         {
                             var builder = new StringBuilder();
-                            lineIndex = ProcessQuest(builder, lines, lineIndex, CalculateDepth(line));
+                            var preConstructorIndex = line.Substring(0, questContructorIndex).LastIndexOfAny(PRE_CONSTRUCTOR_BREAKS);
+                            if (preConstructorIndex < 0) preConstructorIndex = 0;
+                            var constructorType = line.Substring(preConstructorIndex + 1, questContructorIndex - preConstructorIndex - 1).Trim();
+                            lineIndex = ProcessObjectType(builder, lines, lineIndex, CalculateDepth(line), constructorType);
                             property.Lines = new string[] { builder.ToString().TrimEnd() };
+                            /*
+                            Console.Write("FOUND CONSTRUCTOR: ");
+                            Console.WriteLine(constructorType);
+                            Console.WriteLine(line);
+                            Console.ReadLine();
+                            */
                         }
                         property.Priority = 6000 + properties.Count;
                     }
@@ -1195,25 +1230,6 @@ namespace ATT
             // Sort the properties by priority and write them back to the builder.
             properties.Sort((a, b) => a.Priority.CompareTo(b.Priority));
             return properties;
-        }
-
-        static int ProcessQuest(StringBuilder builder, string[] lines, int lineIndex, int depth)
-        {
-            // Find the end of the quest declaration
-            var startIndex = lineIndex + 1;
-            int endIndex = FindEndLineIndex(lines, startIndex, depth);
-            /*
-            for (int i = startIndex - 1; i <= endIndex; ++i)
-            {
-                Console.WriteLine(lines[i]);
-            }
-            */
-
-            // Append the quest data to the builder
-            builder.AppendLine(lines[lineIndex]);
-            builder.Append(ProcessProperties(lines, startIndex, endIndex));
-            builder.AppendLine(lines[endIndex]);
-            return endIndex;
         }
 
         /// <summary>

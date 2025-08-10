@@ -226,6 +226,10 @@ do
 			local results = SearchForObject(field, id, "field", true)
 			return results
 		end,
+		achievementID = function(field, id)
+			local results = SearchForObject(field, id, "key", true)
+			return results
+		end,
 		LinkSources = function(link)
 			local cleanlink = CleanLink(link)
 			local kind, id = (":"):split(cleanlink)

@@ -68,13 +68,13 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 						i(152650, {	-- Scuffed Krokul Cache
 							["u"] = REMOVED_FROM_GAME,
 							["sym"] = {{"select","itemID",
-								157831,    -- Scuffed Krokul Cache
+								157831,	-- Scuffed Krokul Cache
 							}},
 						}),
 						i(154911, {	-- Scuffed Krokul Cache
 							["u"] = REMOVED_FROM_GAME,
 							["sym"] = {{"select","itemID",
-								157831,    -- Scuffed Krokul Cache
+								157831,	-- Scuffed Krokul Cache
 							}},
 						}),
 					},
@@ -127,13 +127,13 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 						i(154912, {	-- Gilded Trunk
 							["u"] = REMOVED_FROM_GAME,
 							["sym"] = {{"select","itemID",
-								157829,    -- Gilded Trunk
+								157829,	-- Gilded Trunk
 							}},
 						}),
 						i(152652, {	-- Gilded Trunk
 							["u"] = REMOVED_FROM_GAME,
 							["sym"] = {{"select","itemID",
-								157829,    -- Gilded Trunk
+								157829,	-- Gilded Trunk
 							}},
 						}),
 					},

@@ -52,9 +52,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					},
 					["races"] = HORDE_ONLY,
 				}),
-				q(36162, {    -- A Stolen Heart
-					["sourceQuests"] = { 36161 },    -- Where There Is Smoke... (A)
-					["provider"] = { "n", 84511 },    -- Lieutenant Thorn
+				q(36162, {	-- A Stolen Heart
+					["sourceQuests"] = { 36161 },	-- Where There Is Smoke... (A)
+					["provider"] = { "n", 84511 },	-- Lieutenant Thorn
 					["coord"] = { 31.6, 33.6, LUNARFALL },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -2365,7 +2365,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["sym"] = {{"select","itemID",
-					122191,    -- Bloody Sack of Invitations
+					122191,	-- Bloody Sack of Invitations
 				}},
 			}),
 			q(37813, {	-- Death to Amethon!
@@ -2375,7 +2375,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["sym"] = {{"select","itemID",
-					122191,    -- Bloody Sack of Invitations
+					122191,	-- Bloody Sack of Invitations
 				}},
 			}),
 			q(37774, {	-- Death to Gor'thul!
@@ -2385,7 +2385,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["sym"] = {{"select","itemID",
-					122191,    -- Bloody Sack of Invitations
+					122191,	-- Bloody Sack of Invitations
 				}},
 			}),
 			q(37814, {	-- Death to Gor'thul!
@@ -2395,7 +2395,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["sym"] = {{"select","itemID",
-					122191,    -- Bloody Sack of Invitations
+					122191,	-- Bloody Sack of Invitations
 				}},
 			}),
 			q(37778, {	-- Death to Hivelord Ik'rix!
@@ -2405,7 +2405,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["sym"] = {{"select","itemID",
-					122191,    -- Bloody Sack of Invitations
+					122191,	-- Bloody Sack of Invitations
 				}},
 			}),
 			q(37818, {	-- Death to Hivelord Ik'rix!
@@ -2415,7 +2415,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["sym"] = {{"select","itemID",
-					122191,    -- Bloody Sack of Invitations
+					122191,	-- Bloody Sack of Invitations
 				}},
 			}),
 			q(37775, {	-- Death to Nullifier Darkoor!
@@ -2425,7 +2425,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["sym"] = {{"select","itemID",
-					122191,    -- Bloody Sack of Invitations
+					122191,	-- Bloody Sack of Invitations
 				}},
 			}),
 			q(37815, {	-- Death to Nullifier Darkoor!
@@ -2435,7 +2435,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["sym"] = {{"select","itemID",
-					122191,    -- Bloody Sack of Invitations
+					122191,	-- Bloody Sack of Invitations
 				}},
 			}),
 			q(37948, {	-- Death to Nullifier Darkoor!
@@ -2445,7 +2445,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["sym"] = {{"select","itemID",
-					122191,    -- Bloody Sack of Invitations
+					122191,	-- Bloody Sack of Invitations
 				}},
 			}),
 			q(37949, {	-- Death to Nullifier Darkoor!
@@ -2455,7 +2455,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["sym"] = {{"select","itemID",
-					122191,    -- Bloody Sack of Invitations
+					122191,	-- Bloody Sack of Invitations
 				}},
 			}),
 			q(37777, {	-- Death to Tremor!
@@ -2465,7 +2465,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["sym"] = {{"select","itemID",
-					122191,    -- Bloody Sack of Invitations
+					122191,	-- Bloody Sack of Invitations
 				}},
 			}),
 			q(37817, {	-- Death to Tremor!
@@ -2475,7 +2475,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["sym"] = {{"select","itemID",
-					122191,    -- Bloody Sack of Invitations
+					122191,	-- Bloody Sack of Invitations
 				}},
 			}),
 			q(37776, {	-- Death to Undertow!
@@ -2485,7 +2485,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["sym"] = {{"select","itemID",
-					122191,    -- Bloody Sack of Invitations
+					122191,	-- Bloody Sack of Invitations
 				}},
 			}),
 			q(37816, {	-- Death to Undertow!
@@ -2495,7 +2495,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["sym"] = {{"select","itemID",
-					122191,    -- Bloody Sack of Invitations
+					122191,	-- Bloody Sack of Invitations
 				}},
 			}),
 			q(34692, {	-- Delegating on Draenor
@@ -2966,7 +2966,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 			--	i had also just received my first outpost notes before finding this quest
 			--	gorgrond is a level 92 zone, so that's possible
 			}),
-			q(34733, {    -- Services of Dagg
+			q(34733, {	-- Services of Dagg
 				["aqd"] = {
 					["coord"] = { 61.6, 74.8, LUNARFALL },
 				},
@@ -2976,7 +2976,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				["sourceQuests"] = { 34651 },	-- Dagg
 				["provider"] = { "n", 79492 },	-- Dagg
 				["groups"] = {
-					follower(32),    -- Follower: Dagg
+					follower(32),	-- Follower: Dagg
 				},
 			}),
 			q(37289, {	-- Shadowmoon Invasion!

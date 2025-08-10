@@ -304,14 +304,30 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 				ach(8510),	-- Siege of Orgrimmar Guild Run
 			}),
 			n(QUESTS, {
-				q(33147, {    -- The Last Gasp of Y'Shaarj
-					["provider"] = { "n", 73335 },    -- Fading Breath
-					--["coord"] = { <coords>, <mapID> },    -- Siege of Orgrimmar
+				q(33147, {	-- The Last Gasp of Y'Shaarj
+					["provider"] = { "n", 73335 },	-- Fading Breath
+					--["coord"] = { <coords>, <mapID> },	-- Siege of Orgrimmar
 				}),
-				q(33138, {    -- Why Do We Fight?
-					["sourceQuests"] = { 33147 },    -- The Last Gasp of Y'Shaarj
-					["provider"] = { "n", 73318 },    -- Lorewalker Cho
-					--["coord"] = { <coords>, <mapID> },    -- Siege of Orgrimmar
+				{
+					["aqd"] = q(33134, {	-- Warforged Seals (A)
+						["qg"] = 64029,	-- Elder Lin
+						["coord"] = { 85.2, 62.6, VALE_OF_ETERNAL_BLOSSOMS },
+					}),
+					["hqd"] = q(33133, {	-- Warforged Seals (H)
+						["qg"] = 63996,	-- Elder Liao
+						["coord"] = { 62.0, 20.6, VALE_OF_ETERNAL_BLOSSOMS },
+					}),
+					["timeline"] = { ADDED_5_4_0 },
+					["cost"] = {{ "c", 738, 50 }},	-- Lesser Charms of Good Fortune
+					["repeatable"] = true,
+					["groups"] = {
+						currency(776),	-- Warforged Seal
+					},
+				},
+				q(33138, {	-- Why Do We Fight?
+					["sourceQuests"] = { 33147 },	-- The Last Gasp of Y'Shaarj
+					["provider"] = { "n", 73318 },	-- Lorewalker Cho
+					--["coord"] = { <coords>, <mapID> },	-- Siege of Orgrimmar
 				}),
 			}),
 			n(VENDORS, {
@@ -335,10 +351,10 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 				}),
 				n(SOO_RAID_FINDER_VENDOR, {
 					["aqd"] = n(74020, {	-- Welbiz Cheerwhistle <Raid Finder Vendor> [A]
-						["coord"] = { 41.0, 42.5, 394 },
+						["coord"] = { 41.0, 42.5, SHRINE_OF_SEVEN_STARS_THE_IMPERIAL_EXCHANGE },
 					}),
 					["hqd"] = n(73674, {	-- Blizzix Sparkshiv <Raid Finder Vendor> [H]
-						["coord"] = { 42.9, 74.7, 392 },
+						["coord"] = { 42.9, 74.7, SHRINE_OF_TWO_MOONS_THE_IMPERIAL_MERCANTILE },
 					}),
 					["groups"] = {
 						cl(WARRIOR, {
@@ -348,7 +364,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(99047)),		-- Battleplate of the Prehistoric Marauder
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.GAUNTLETS, i(99034)),	-- Gauntlets of the Prehistoric Marauder
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(99035)),		-- Legplates of the Prehistoric Marauder
-							
+
 							-- Tank
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(99032)),		-- Faceguard of the Prehistoric Marauder
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.SHOULDERS, i(99030)),	-- Shoulderguards of the Prehistoric Marauder
@@ -363,14 +379,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.CHEST, i(99052)),		-- Battleplate of Winged Triumph
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.GAUNTLETS, i(99002)),	-- Gauntlets of Winged Triumph
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.LEGS, i(98986)),		-- Legplates of Winged Triumph
-							
+
 							-- Healer
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.HELM, i(98979)),		-- Headguard of Winged Triumph
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.SHOULDERS, i(99076)),	-- Mantle of Winged Triumph
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.CHEST, i(99003)),		-- Breastplate of Winged Triumph
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.GAUNTLETS, i(98982)),	-- Gloves of Winged Triumph
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.LEGS, i(98980)),		-- Greaves of Winged Triumph
-							
+
 							-- Tank
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.HELM, i(99029)),		-- Faceguard of Winged Triumph
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.SHOULDERS, i(99027)),	-- Shoulderguards of Winged Triumph
@@ -385,7 +401,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.CHEST, i(99066)),		-- Breastplate of Cyclopean Dread
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.GAUNTLETS, i(99067)),	-- Gauntlets of Cyclopean Dread
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.LEGS, i(99058)),			-- Greaves of Cyclopean Dread
-							
+
 							-- Tank
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.HELM, i(99049)),			-- Faceguard of Cyclopean Dread
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.SHOULDERS, i(99040)),	-- Shoulderguards of Cyclopean Dread
@@ -414,7 +430,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.CHEST, i(99004)),		-- Raiment of the Ternion Glory
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.GAUNTLETS, i(99019)),	-- Gloves of the Ternion Glory
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.LEGS, i(99021)),		-- Leggings of Ternion Glory
-							
+
 							-- Healer
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.HELM, i(99024)),		-- Cowl of the Ternion Glory
 							tokencost(TOKENS.RAIDFINDER.CONQUEROR.SHOULDERS, i(99018)),	-- Mantle of the Ternion Glory
@@ -429,14 +445,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(98992)),		-- Cuirass of Celestial Harmony
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.GAUNTLETS, i(98993)),	-- Grips of Celestial Harmony
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(98984)),		-- Legguards of Celestial Harmony
-							
+
 							-- DPS (Elemental)
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(99089)),		-- Headpiece of Celestial Harmony
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.SHOULDERS, i(99091)),	-- Shoulderwraps of Celestial Harmony
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(99087)),		-- Hauberk of Celestial Harmony
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.GAUNTLETS, i(99088)),	-- Gloves of Celestial Harmony
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(99090)),		-- Leggings of Celestial Harmony
-							
+
 							-- Healer
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(98989)),		-- Faceguard of Celestial Harmony
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.SHOULDERS, i(98991)),	-- Mantle of Celestial Harmony
@@ -458,14 +474,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(99071)),		-- Tunic of Seven Sacred Seals
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.GAUNTLETS, i(99072)),	-- Grips of Seven Sacred Seals
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(99074)),		-- Leggings of Seven Sacred Seals
-							
+
 							-- Healer
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(99069)),		-- Helm of Seven Sacred Seals
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.SHOULDERS, i(99062)),	-- Mantle of Seven Sacred Seals
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.CHEST, i(99061)),		-- Vest of Seven Sacred Seals
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.GAUNTLETS, i(99068)),	-- Handwraps of Seven Sacred Seals
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.LEGS, i(99070)),		-- Legwraps of Seven Sacred Seals
-							
+
 							-- Tank
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.HELM, i(99065)),		-- Crown of Seven Sacred Seals
 							tokencost(TOKENS.RAIDFINDER.PROTECTOR.SHOULDERS, i(99051)),	-- Shoulderguards of Seven Sacred Seals
@@ -487,21 +503,21 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.CHEST, i(98997)),		-- Vestment of the Shattered Vale
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.GAUNTLETS, i(98994)),	-- Gloves of the Shattered Vale
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.LEGS, i(98996)),			-- Leggings of the Shattered Vale
-							
+
 							-- DPS (Feral)
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.HELM, i(99043)),			-- Headpiece of the Shattered Vale
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.SHOULDERS, i(99022)),	-- Spaulders of the Shattered Vale
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.CHEST, i(99041)),		-- Raiment of the Shattered Vale
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.GAUNTLETS, i(99042)),	-- Grips of the Shattered Vale
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.LEGS, i(99044)),			-- Legguards of the Shattered Vale
-							
+
 							-- Healer
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.HELM, i(99013)),			-- Helm of the Shattered Vale
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.SHOULDERS, i(99016)),	-- Mantle of the Shattered Vale
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.CHEST, i(99015)),		-- Robes of the Shattered Vale
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.GAUNTLETS, i(99012)),	-- Handwraps of the Shattered Vale
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.LEGS, i(99014)),			-- Legwraps of the Shattered Vale
-							
+
 							-- Tank
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.HELM, i(99001)),			-- Headguard of the Shattered Vale
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.SHOULDERS, i(98978)),	-- Shoulderguards of the Shattered Vale
@@ -509,7 +525,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.GAUNTLETS, i(99000)),	-- Handguards of the Shattered Vale
 							tokencost(TOKENS.RAIDFINDER.VANQUISHER.LEGS, i(98981)),			-- Breeches of the Shattered Vale
 						}),
-						
+
 						-- Tokens
 						tokencost(TOKENS.RAIDFINDER.CONQUEROR.ESSENCE, i(99672)),	-- Helm of the Cursed Conquerer
 						tokencost(TOKENS.RAIDFINDER.PROTECTOR.ESSENCE, i(99673)),	-- Helm of the Cursed Protector
@@ -530,10 +546,10 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 				}),
 				n(SOO_RAID_NORMAL_VENDOR, {
 					["aqd"] = n(74022, {	-- Thelett Shaleheart <Raid Vendor> [A]
-						["coord"] = { 41.9, 42.9, 394 },
+						["coord"] = { 41.9, 42.9, SHRINE_OF_SEVEN_STARS_THE_IMPERIAL_EXCHANGE },
 					}),
 					["hqd"] = n(74010, {	-- Nadina Stargem <Raid Vendor> [H]
-						["coord"] = { 43.3, 76.0, 392 },
+						["coord"] = { 43.3, 76.0, SHRINE_OF_TWO_MOONS_THE_IMPERIAL_MERCANTILE },
 					}),
 					["groups"] = {
 						cl(WARRIOR, {
@@ -543,7 +559,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(99603)),		-- Battleplate of the Prehistoric Marauder
 							tokencost(TOKENS.NORMAL.PROTECTOR.GAUNTLETS, i(99559)),	-- Gauntlets of the Prehistoric Marauder
 							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(99560)),		-- Legplates of the Prehistoric Marauder
-							
+
 							-- Tank
 							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(99557)),		-- Faceguard of the Prehistoric Marauder
 							tokencost(TOKENS.NORMAL.PROTECTOR.SHOULDERS, i(99597)),	-- Shoulderguards of the Prehistoric Marauder
@@ -558,14 +574,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							tokencost(TOKENS.NORMAL.CONQUEROR.CHEST, i(99566)),		-- Battleplate of Winged Triumph
 							tokencost(TOKENS.NORMAL.CONQUEROR.GAUNTLETS, i(99625)),	-- Gauntlets of Winged Triumph
 							tokencost(TOKENS.NORMAL.CONQUEROR.LEGS, i(99661)),		-- Legplates of Winged Triumph
-							
+
 							-- Healer
 							tokencost(TOKENS.NORMAL.CONQUEROR.HELM, i(99665)),		-- Headguard of Winged Triumph
 							tokencost(TOKENS.NORMAL.CONQUEROR.SHOULDERS, i(99656)),	-- Mantle of Winged Triumph
 							tokencost(TOKENS.NORMAL.CONQUEROR.CHEST, i(99626)),		-- Breastplate of Winged Triumph
 							tokencost(TOKENS.NORMAL.CONQUEROR.GAUNTLETS, i(99648)),	-- Gloves of Winged Triumph
 							tokencost(TOKENS.NORMAL.CONQUEROR.LEGS, i(99666)),		-- Greaves of Winged Triumph
-							
+
 							-- Tank
 							tokencost(TOKENS.NORMAL.CONQUEROR.HELM, i(99596)),		-- Faceguard of Winged Triumph
 							tokencost(TOKENS.NORMAL.CONQUEROR.SHOULDERS, i(99594)),	-- Shoulderguards of Winged Triumph
@@ -580,7 +596,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							tokencost(TOKENS.NORMAL.VANQUISHER.CHEST, i(99608)),		-- Breastplate of Cyclopean Dread
 							tokencost(TOKENS.NORMAL.VANQUISHER.GAUNTLETS, i(99609)),	-- Gauntlets of Cyclopean Dread
 							tokencost(TOKENS.NORMAL.VANQUISHER.LEGS, i(99572)),			-- Greaves of Cyclopean Dread
-							
+
 							-- Tank
 							tokencost(TOKENS.NORMAL.VANQUISHER.HELM, i(99605)),			-- Faceguard of Cyclopean Dread
 							tokencost(TOKENS.NORMAL.VANQUISHER.SHOULDERS, i(99652)),	-- Shoulderguards of Cyclopean Dread
@@ -609,7 +625,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							tokencost(TOKENS.NORMAL.CONQUEROR.CHEST, i(99627)),		-- Raiment of the Ternion Glory
 							tokencost(TOKENS.NORMAL.CONQUEROR.GAUNTLETS, i(99586)),	-- Gloves of the Ternion Glory
 							tokencost(TOKENS.NORMAL.CONQUEROR.LEGS, i(99588)),		-- Leggings of Ternion Glory
-							
+
 							-- Healer
 							tokencost(TOKENS.NORMAL.CONQUEROR.HELM, i(99591)),		-- Cowl of the Ternion Glory
 							tokencost(TOKENS.NORMAL.CONQUEROR.SHOULDERS, i(99585)),	-- Mantle of the Ternion Glory
@@ -624,14 +640,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(99615)),		-- Cuirass of Celestial Harmony
 							tokencost(TOKENS.NORMAL.PROTECTOR.GAUNTLETS, i(99616)),	-- Grips of Celestial Harmony
 							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(99650)),		-- Legguards of Celestial Harmony
-							
+
 							-- DPS (Elemental)
 							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(99645)),		-- Headpiece of Celestial Harmony
 							tokencost(TOKENS.NORMAL.PROTECTOR.SHOULDERS, i(99647)),	-- Shoulderwraps of Celestial Harmony
 							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(99579)),		-- Hauberk of Celestial Harmony
 							tokencost(TOKENS.NORMAL.PROTECTOR.GAUNTLETS, i(99580)),	-- Gloves of Celestial Harmony
 							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(99646)),		-- Leggings of Celestial Harmony
-							
+
 							-- Healer
 							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(99612)),		-- Faceguard of Celestial Harmony
 							tokencost(TOKENS.NORMAL.PROTECTOR.SHOULDERS, i(99614)),	-- Mantle of Celestial Harmony
@@ -653,14 +669,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(99555)),		-- Tunic of Seven Sacred Seals
 							tokencost(TOKENS.NORMAL.PROTECTOR.GAUNTLETS, i(99556)),	-- Grips of Seven Sacred Seals
 							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(99654)),		-- Leggings of Seven Sacred Seals
-							
+
 							-- Healer
 							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(99553)),		-- Helm of Seven Sacred Seals
 							tokencost(TOKENS.NORMAL.PROTECTOR.SHOULDERS, i(99642)),	-- Mantle of Seven Sacred Seals
 							tokencost(TOKENS.NORMAL.PROTECTOR.CHEST, i(99641)),		-- Vest of Seven Sacred Seals
 							tokencost(TOKENS.NORMAL.PROTECTOR.GAUNTLETS, i(99552)),	-- Handwraps of Seven Sacred Seals
 							tokencost(TOKENS.NORMAL.PROTECTOR.LEGS, i(99554)),		-- Legwraps of Seven Sacred Seals
-							
+
 							-- Tank
 							tokencost(TOKENS.NORMAL.PROTECTOR.HELM, i(99607)),		-- Crown of Seven Sacred Seals
 							tokencost(TOKENS.NORMAL.PROTECTOR.SHOULDERS, i(99565)),	-- Shoulderguards of Seven Sacred Seals
@@ -682,21 +698,21 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							tokencost(TOKENS.NORMAL.VANQUISHER.CHEST, i(99620)),		-- Vestment of the Shattered Vale
 							tokencost(TOKENS.NORMAL.VANQUISHER.GAUNTLETS, i(99617)),	-- Gloves of the Shattered Vale
 							tokencost(TOKENS.NORMAL.VANQUISHER.LEGS, i(99619)),			-- Leggings of the Shattered Vale
-							
+
 							-- DPS (Feral)
 							tokencost(TOKENS.NORMAL.VANQUISHER.HELM, i(99599)),			-- Headpiece of the Shattered Vale
 							tokencost(TOKENS.NORMAL.VANQUISHER.SHOULDERS, i(99589)),	-- Spaulders of the Shattered Vale
 							tokencost(TOKENS.NORMAL.VANQUISHER.CHEST, i(99632)),		-- Raiment of the Shattered Vale
 							tokencost(TOKENS.NORMAL.VANQUISHER.GAUNTLETS, i(99633)),	-- Grips of the Shattered Vale
 							tokencost(TOKENS.NORMAL.VANQUISHER.LEGS, i(99600)),			-- Legguards of the Shattered Vale
-							
+
 							-- Healer
 							tokencost(TOKENS.NORMAL.VANQUISHER.HELM, i(99638)),			-- Helm of the Shattered Vale
 							tokencost(TOKENS.NORMAL.VANQUISHER.SHOULDERS, i(99583)),	-- Mantle of the Shattered Vale
 							tokencost(TOKENS.NORMAL.VANQUISHER.CHEST, i(99582)),		-- Robes of the Shattered Vale
 							tokencost(TOKENS.NORMAL.VANQUISHER.GAUNTLETS, i(99637)),	-- Handwraps of the Shattered Vale
 							tokencost(TOKENS.NORMAL.VANQUISHER.LEGS, i(99581)),			-- Legwraps of the Shattered Vale
-							
+
 							-- Tank
 							tokencost(TOKENS.NORMAL.VANQUISHER.HELM, i(99624)),			-- Headguard of the Shattered Vale
 							tokencost(TOKENS.NORMAL.VANQUISHER.SHOULDERS, i(99664)),	-- Shoulderguards of the Shattered Vale
@@ -704,7 +720,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							tokencost(TOKENS.NORMAL.VANQUISHER.GAUNTLETS, i(99623)),	-- Handguards of the Shattered Vale
 							tokencost(TOKENS.NORMAL.VANQUISHER.LEGS, i(99610)),			-- Breeches of the Shattered Vale
 						}),
-						
+
 						-- Tokens
 						tokencost(TOKENS.NORMAL.CONQUEROR.ESSENCE, i(99749)),	-- Helm of the Cursed Conquerer
 						tokencost(TOKENS.NORMAL.PROTECTOR.ESSENCE, i(99750)),	-- Helm of the Cursed Protector
@@ -725,10 +741,10 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 				}),
 				n(SOO_RAID_HEROIC_VENDOR, {
 					["aqd"] = n(74021, {	-- Clarice Chapmann <Heroic Vendor> [A]
-						["coord"] = { 43.0, 45.5, 394 },
+						["coord"] = { 43.0, 45.5, SHRINE_OF_SEVEN_STARS_THE_IMPERIAL_EXCHANGE },
 					}),
 					["hqd"] = n(74012, {	-- Ki'agnuu <Heroic Vendor> [H]
-						["coord"] = { 43.1, 78.7, 392 },
+						["coord"] = { 43.1, 78.7, SHRINE_OF_TWO_MOONS_THE_IMPERIAL_MERCANTILE },
 					}),
 					["groups"] = {
 						cl(WARRIOR, {
@@ -738,7 +754,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(99197)),		-- Battleplate of the Prehistoric Marauder
 							tokencost(TOKENS.HEROIC.PROTECTOR.GAUNTLETS, i(99198)),	-- Gauntlets of the Prehistoric Marauder
 							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(99199)),		-- Legplates of the Prehistoric Marauder
-							
+
 							-- Tank
 							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(99203)),		-- Faceguard of the Prehistoric Marauder
 							tokencost(TOKENS.HEROIC.PROTECTOR.SHOULDERS, i(99196)),	-- Shoulderguards of the Prehistoric Marauder
@@ -753,14 +769,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							tokencost(TOKENS.HEROIC.CONQUEROR.CHEST, i(99136)),		-- Battleplate of Winged Triumph
 							tokencost(TOKENS.HEROIC.CONQUEROR.GAUNTLETS, i(99137)),	-- Gauntlets of Winged Triumph
 							tokencost(TOKENS.HEROIC.CONQUEROR.LEGS, i(99139)),		-- Legplates of Winged Triumph
-							
+
 							-- Healer
 							tokencost(TOKENS.HEROIC.CONQUEROR.HELM, i(99135)),		-- Headguard of Winged Triumph
 							tokencost(TOKENS.HEROIC.CONQUEROR.SHOULDERS, i(99125)),	-- Mantle of Winged Triumph
 							tokencost(TOKENS.HEROIC.CONQUEROR.CHEST, i(99133)),		-- Breastplate of Winged Triumph
 							tokencost(TOKENS.HEROIC.CONQUEROR.GAUNTLETS, i(99134)),	-- Gloves of Winged Triumph
 							tokencost(TOKENS.HEROIC.CONQUEROR.LEGS, i(99124)),		-- Greaves of Winged Triumph
-							
+
 							-- Tank
 							tokencost(TOKENS.HEROIC.CONQUEROR.HELM, i(99128)),		-- Faceguard of Winged Triumph
 							tokencost(TOKENS.HEROIC.CONQUEROR.SHOULDERS, i(99130)),	-- Shoulderguards of Winged Triumph
@@ -775,7 +791,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							tokencost(TOKENS.HEROIC.VANQUISHER.CHEST, i(99192)),		-- Breastplate of Cyclopean Dread
 							tokencost(TOKENS.HEROIC.VANQUISHER.GAUNTLETS, i(99193)),	-- Gauntlets of Cyclopean Dread
 							tokencost(TOKENS.HEROIC.VANQUISHER.LEGS, i(99186)),			-- Greaves of Cyclopean Dread
-							
+
 							-- Tank
 							tokencost(TOKENS.HEROIC.VANQUISHER.HELM, i(99190)),			-- Faceguard of Cyclopean Dread
 							tokencost(TOKENS.HEROIC.VANQUISHER.SHOULDERS, i(99179)),	-- Shoulderguards of Cyclopean Dread
@@ -804,7 +820,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							tokencost(TOKENS.HEROIC.CONQUEROR.CHEST, i(99110)),	-- Raiment of the Ternion Glory
 							tokencost(TOKENS.HEROIC.CONQUEROR.GAUNTLETS, i(99121)),	-- Gloves of the Ternion Glory
 							tokencost(TOKENS.HEROIC.CONQUEROR.LEGS, i(99123)),	-- Leggings of Ternion Glory
-							
+
 							-- Healer
 							tokencost(TOKENS.HEROIC.CONQUEROR.HELM, i(99117)),	-- Cowl of the Ternion Glory
 							tokencost(TOKENS.HEROIC.CONQUEROR.SHOULDERS, i(99120)),	-- Mantle of the Ternion Glory
@@ -819,14 +835,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(99101)),		-- Cuirass of Celestial Harmony
 							tokencost(TOKENS.HEROIC.PROTECTOR.GAUNTLETS, i(99102)),	-- Grips of Celestial Harmony
 							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(99104)),		-- Legguards of Celestial Harmony
-							
+
 							-- DPS (Elemental)
 							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(99093)),		-- Headpiece of Celestial Harmony
 							tokencost(TOKENS.HEROIC.PROTECTOR.SHOULDERS, i(99095)),	-- Shoulderwraps of Celestial Harmony
 							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(99106)),		-- Hauberk of Celestial Harmony
 							tokencost(TOKENS.HEROIC.PROTECTOR.GAUNTLETS, i(99092)),	-- Gloves of Celestial Harmony
 							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(99094)),		-- Leggings of Celestial Harmony
-							
+
 							-- Healer
 							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(99109)),		-- Faceguard of Celestial Harmony
 							tokencost(TOKENS.HEROIC.PROTECTOR.SHOULDERS, i(99100)),	-- Mantle of Celestial Harmony
@@ -848,14 +864,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(99154)),		-- Tunic of Seven Sacred Seals
 							tokencost(TOKENS.HEROIC.PROTECTOR.GAUNTLETS, i(99155)),	-- Grips of Seven Sacred Seals
 							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(99145)),		-- Leggings of Seven Sacred Seals
-							
+
 							-- Healer
 							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(99148)),		-- Helm of Seven Sacred Seals
 							tokencost(TOKENS.HEROIC.PROTECTOR.SHOULDERS, i(99151)),	-- Mantle of Seven Sacred Seals
 							tokencost(TOKENS.HEROIC.PROTECTOR.CHEST, i(99150)),		-- Vest of Seven Sacred Seals
 							tokencost(TOKENS.HEROIC.PROTECTOR.GAUNTLETS, i(99147)),	-- Handwraps of Seven Sacred Seals
 							tokencost(TOKENS.HEROIC.PROTECTOR.LEGS, i(99149)),		-- Legwraps of Seven Sacred Seals
-							
+
 							-- Tank
 							tokencost(TOKENS.HEROIC.PROTECTOR.HELM, i(99142)),		-- Crown of Seven Sacred Seals
 							tokencost(TOKENS.HEROIC.PROTECTOR.SHOULDERS, i(99144)),	-- Shoulderguards of Seven Sacred Seals
@@ -877,21 +893,21 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							tokencost(TOKENS.HEROIC.VANQUISHER.CHEST, i(99177)),		-- Vestment of the Shattered Vale
 							tokencost(TOKENS.HEROIC.VANQUISHER.GAUNTLETS, i(99174)),	-- Gloves of the Shattered Vale
 							tokencost(TOKENS.HEROIC.VANQUISHER.LEGS, i(99176)),			-- Leggings of the Shattered Vale
-							
+
 							-- DPS (Feral)
 							tokencost(TOKENS.HEROIC.VANQUISHER.HELM, i(99182)),			-- Headpiece of the Shattered Vale
 							tokencost(TOKENS.HEROIC.VANQUISHER.SHOULDERS, i(99184)),	-- Spaulders of the Shattered Vale
 							tokencost(TOKENS.HEROIC.VANQUISHER.CHEST, i(99180)),		-- Raiment of the Shattered Vale
 							tokencost(TOKENS.HEROIC.VANQUISHER.GAUNTLETS, i(99181)),	-- Grips of the Shattered Vale
 							tokencost(TOKENS.HEROIC.VANQUISHER.LEGS, i(99183)),			-- Legguards of the Shattered Vale
-							
+
 							-- Healer
 							tokencost(TOKENS.HEROIC.VANQUISHER.HELM, i(99178)),			-- Helm of the Shattered Vale
 							tokencost(TOKENS.HEROIC.VANQUISHER.SHOULDERS, i(99173)),	-- Mantle of the Shattered Vale
 							tokencost(TOKENS.HEROIC.VANQUISHER.CHEST, i(99172)),		-- Robes of the Shattered Vale
 							tokencost(TOKENS.HEROIC.VANQUISHER.GAUNTLETS, i(99185)),	-- Handwraps of the Shattered Vale
 							tokencost(TOKENS.HEROIC.VANQUISHER.LEGS, i(99171)),			-- Legwraps of the Shattered Vale
-							
+
 							-- Tank
 							tokencost(TOKENS.HEROIC.VANQUISHER.HELM, i(99164)),			-- Headguard of the Shattered Vale
 							tokencost(TOKENS.HEROIC.VANQUISHER.SHOULDERS, i(99166)),	-- Shoulderguards of the Shattered Vale
@@ -899,7 +915,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							tokencost(TOKENS.HEROIC.VANQUISHER.GAUNTLETS, i(99163)),	-- Handguards of the Shattered Vale
 							tokencost(TOKENS.HEROIC.VANQUISHER.LEGS, i(99165)),			-- Breeches of the Shattered Vale
 						}),
-						
+
 						-- Tokens
 						tokencost(TOKENS.HEROIC.CONQUEROR.ESSENCE, i(99689)),	-- Helm of the Cursed Conquerer
 						tokencost(TOKENS.HEROIC.PROTECTOR.ESSENCE, i(99694)),	-- Helm of the Cursed Protector
@@ -920,10 +936,10 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 				}),
 				n(SOO_RAID_MYTHIC_VENDOR, {
 					["aqd"] = n(74027, {	-- Lorry Warmheart <Mythic Vendor> [A]
-						["coord"] = { 43.1, 46.8, 394 },
+						["coord"] = { 43.1, 46.8, SHRINE_OF_SEVEN_STARS_THE_IMPERIAL_EXCHANGE },
 					}),
 					["hqd"] = n(74019, {	-- Tu'aho Pathcutter <Mythic Vendor> [H]
-						["coord"] = { 43.4, 80.4, 392 },
+						["coord"] = { 43.4, 80.4, SHRINE_OF_TWO_MOONS_THE_IMPERIAL_MERCANTILE },
 					}),
 					["groups"] = {
 						cl(WARRIOR, {
@@ -933,7 +949,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							tokencost(TOKENS.MYTHIC.PROTECTOR.CHEST, i(99411)),		-- Battleplate of the Prehistoric Marauder
 							tokencost(TOKENS.MYTHIC.PROTECTOR.GAUNTLETS, i(99412)),	-- Gauntlets of the Prehistoric Marauder
 							tokencost(TOKENS.MYTHIC.PROTECTOR.LEGS, i(99413)),		-- Legplates of the Prehistoric Marauder
-							
+
 							-- Tank
 							tokencost(TOKENS.MYTHIC.PROTECTOR.HELM, i(99409)),		-- Faceguard of the Prehistoric Marauder
 							tokencost(TOKENS.MYTHIC.PROTECTOR.SHOULDERS, i(99407)),	-- Shoulderguards of the Prehistoric Marauder
@@ -948,14 +964,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							tokencost(TOKENS.MYTHIC.CONQUEROR.CHEST, i(99387)),		-- Battleplate of Winged Triumph
 							tokencost(TOKENS.MYTHIC.CONQUEROR.GAUNTLETS, i(99380)),	-- Gauntlets of Winged Triumph
 							tokencost(TOKENS.MYTHIC.CONQUEROR.LEGS, i(99372)),		-- Legplates of Winged Triumph
-							
+
 							-- Healer
 							tokencost(TOKENS.MYTHIC.CONQUEROR.HELM, i(99376)),		-- Headguard of Winged Triumph
 							tokencost(TOKENS.MYTHIC.CONQUEROR.SHOULDERS, i(99378)),	-- Mantle of Winged Triumph
 							tokencost(TOKENS.MYTHIC.CONQUEROR.CHEST, i(99374)),		-- Breastplate of Winged Triumph
 							tokencost(TOKENS.MYTHIC.CONQUEROR.GAUNTLETS, i(99375)),	-- Gloves of Winged Triumph
 							tokencost(TOKENS.MYTHIC.CONQUEROR.LEGS, i(99377)),		-- Greaves of Winged Triumph
-							
+
 							-- Tank
 							tokencost(TOKENS.MYTHIC.CONQUEROR.HELM, i(99370)),		-- Faceguard of Winged Triumph
 							tokencost(TOKENS.MYTHIC.CONQUEROR.SHOULDERS, i(99364)),	-- Shoulderguards of Winged Triumph
@@ -970,7 +986,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							tokencost(TOKENS.MYTHIC.VANQUISHER.CHEST, i(99335)),		-- Breastplate of Cyclopean Dread
 							tokencost(TOKENS.MYTHIC.VANQUISHER.GAUNTLETS, i(99336)),	-- Gauntlets of Cyclopean Dread
 							tokencost(TOKENS.MYTHIC.VANQUISHER.LEGS, i(99338)),			-- Greaves of Cyclopean Dread
-							
+
 							-- Tank
 							tokencost(TOKENS.MYTHIC.VANQUISHER.HELM, i(99323)),			-- Faceguard of Cyclopean Dread
 							tokencost(TOKENS.MYTHIC.VANQUISHER.SHOULDERS, i(99325)),	-- Shoulderguards of Cyclopean Dread
@@ -999,7 +1015,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							tokencost(TOKENS.MYTHIC.CONQUEROR.CHEST, i(99362)),		-- Raiment of the Ternion Glory
 							tokencost(TOKENS.MYTHIC.CONQUEROR.GAUNTLETS, i(99359)),	-- Gloves of the Ternion Glory
 							tokencost(TOKENS.MYTHIC.CONQUEROR.LEGS, i(99361)),		-- Leggings of Ternion Glory
-							
+
 							-- Healer
 							tokencost(TOKENS.MYTHIC.CONQUEROR.HELM, i(99366)),		-- Cowl of the Ternion Glory
 							tokencost(TOKENS.MYTHIC.CONQUEROR.SHOULDERS, i(99358)),	-- Mantle of the Ternion Glory
@@ -1014,14 +1030,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							tokencost(TOKENS.MYTHIC.PROTECTOR.CHEST, i(99347)),		-- Cuirass of Celestial Harmony
 							tokencost(TOKENS.MYTHIC.PROTECTOR.GAUNTLETS, i(99340)),	-- Grips of Celestial Harmony
 							tokencost(TOKENS.MYTHIC.PROTECTOR.LEGS, i(99342)),		-- Legguards of Celestial Harmony
-							
+
 							-- DPS (Elemental)
 							tokencost(TOKENS.MYTHIC.PROTECTOR.HELM, i(99332)),		-- Headpiece of Celestial Harmony
 							tokencost(TOKENS.MYTHIC.PROTECTOR.SHOULDERS, i(99334)),	-- Shoulderwraps of Celestial Harmony
 							tokencost(TOKENS.MYTHIC.PROTECTOR.CHEST, i(99344)),		-- Hauberk of Celestial Harmony
 							tokencost(TOKENS.MYTHIC.PROTECTOR.GAUNTLETS, i(99345)),	-- Gloves of Celestial Harmony
 							tokencost(TOKENS.MYTHIC.PROTECTOR.LEGS, i(99333)),		-- Leggings of Celestial Harmony
-							
+
 							-- Healer
 							tokencost(TOKENS.MYTHIC.PROTECTOR.HELM, i(99353)),		-- Faceguard of Celestial Harmony
 							tokencost(TOKENS.MYTHIC.PROTECTOR.SHOULDERS, i(99346)),	-- Mantle of Celestial Harmony
@@ -1043,14 +1059,14 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							tokencost(TOKENS.MYTHIC.PROTECTOR.CHEST, i(99396)),		-- Tunic of Seven Sacred Seals
 							tokencost(TOKENS.MYTHIC.PROTECTOR.GAUNTLETS, i(99392)),	-- Grips of Seven Sacred Seals
 							tokencost(TOKENS.MYTHIC.PROTECTOR.LEGS, i(99394)),		-- Leggings of Seven Sacred Seals
-							
+
 							-- Healer
 							tokencost(TOKENS.MYTHIC.PROTECTOR.HELM, i(99389)),		-- Helm of Seven Sacred Seals
 							tokencost(TOKENS.MYTHIC.PROTECTOR.SHOULDERS, i(99381)),	-- Mantle of Seven Sacred Seals
 							tokencost(TOKENS.MYTHIC.PROTECTOR.CHEST, i(99391)),		-- Vest of Seven Sacred Seals
 							tokencost(TOKENS.MYTHIC.PROTECTOR.GAUNTLETS, i(99388)),	-- Handwraps of Seven Sacred Seals
 							tokencost(TOKENS.MYTHIC.PROTECTOR.LEGS, i(99390)),		-- Legwraps of Seven Sacred Seals
-							
+
 							-- Tank
 							tokencost(TOKENS.MYTHIC.PROTECTOR.HELM, i(99384)),		-- Crown of Seven Sacred Seals
 							tokencost(TOKENS.MYTHIC.PROTECTOR.SHOULDERS, i(99386)),	-- Shoulderguards of Seven Sacred Seals
@@ -1072,21 +1088,21 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							tokencost(TOKENS.MYTHIC.VANQUISHER.CHEST, i(99427)),		-- Vestment of the Shattered Vale
 							tokencost(TOKENS.MYTHIC.VANQUISHER.GAUNTLETS, i(99432)),	-- Gloves of the Shattered Vale
 							tokencost(TOKENS.MYTHIC.VANQUISHER.LEGS, i(99434)),			-- Leggings of the Shattered Vale
-							
+
 							-- DPS (Feral)
 							tokencost(TOKENS.MYTHIC.VANQUISHER.HELM, i(99328)),			-- Headpiece of the Shattered Vale
 							tokencost(TOKENS.MYTHIC.VANQUISHER.SHOULDERS, i(99322)),	-- Spaulders of the Shattered Vale
 							tokencost(TOKENS.MYTHIC.VANQUISHER.CHEST, i(99326)),		-- Raiment of the Shattered Vale
 							tokencost(TOKENS.MYTHIC.VANQUISHER.GAUNTLETS, i(99327)),	-- Grips of the Shattered Vale
 							tokencost(TOKENS.MYTHIC.VANQUISHER.LEGS, i(99329)),			-- Legguards of the Shattered Vale
-							
+
 							-- Healer
 							tokencost(TOKENS.MYTHIC.VANQUISHER.HELM, i(99436)),			-- Helm of the Shattered Vale
 							tokencost(TOKENS.MYTHIC.VANQUISHER.SHOULDERS, i(99431)),	-- Mantle of the Shattered Vale
 							tokencost(TOKENS.MYTHIC.VANQUISHER.CHEST, i(99430)),		-- Robes of the Shattered Vale
 							tokencost(TOKENS.MYTHIC.VANQUISHER.GAUNTLETS, i(99435)),	-- Handwraps of the Shattered Vale
 							tokencost(TOKENS.MYTHIC.VANQUISHER.LEGS, i(99429)),			-- Legwraps of the Shattered Vale
-							
+
 							-- Tank
 							tokencost(TOKENS.MYTHIC.VANQUISHER.HELM, i(99421)),			-- Headguard of the Shattered Vale
 							tokencost(TOKENS.MYTHIC.VANQUISHER.SHOULDERS, i(99423)),	-- Shoulderguards of the Shattered Vale
@@ -1094,7 +1110,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							tokencost(TOKENS.MYTHIC.VANQUISHER.GAUNTLETS, i(99420)),	-- Handguards of the Shattered Vale
 							tokencost(TOKENS.MYTHIC.VANQUISHER.LEGS, i(99422)),			-- Breeches of the Shattered Vale
 						}),
-						
+
 						-- Tokens
 						tokencost(TOKENS.MYTHIC.CONQUEROR.ESSENCE, i(99724)),	-- Helm of the Cursed Conquerer
 						tokencost(TOKENS.MYTHIC.PROTECTOR.ESSENCE, i(99725)),	-- Helm of the Cursed Protector
@@ -1123,7 +1139,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 			}),
 			d(CURRENT_ALL_DIFFICULTIES, {				-- All Difficulties (Also placeholders for achievement criteria, do not delete!)
 				cr(71543, e(852, {	-- Immerseus
-					
+
 				})),
 				e(849, {	-- The Fallen Protectors
 					["crs"] = {
@@ -1143,7 +1159,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					i(104163),	-- Gooey Sha-ling (PET!)
 				})),
 				cr(72249, e(881, {	-- Galakras
-					
+
 				})),
 				cr(71466, e(864, {	-- Iron Juggernaut
 					i(140783, {	-- Predictive Combat Operations Databank
@@ -1151,19 +1167,19 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					}),
 				})),
 				cr(71859, e(856, {	-- Kor'kron Dark Shaman (Earthbreaker Haromm)
-					
+
 				})),
 				cr(71515, e(850, {	-- General Nazgrim
-					
+
 				})),
 				cr(71454, e(846, {	-- Malkorok
-					
+
 				})),
 				cr(71889, e(870, {	-- Spoils of Pandaria (Secured Stockpile of Pandaren Spoils)
-					
+
 				})),
 				cr(71529, e(851, {	-- Thok the Bloodthirsty
-					
+
 				})),
 				cr(71504, e(865, {	-- Siegecrafter Blackfuse
 					i(104158),	-- Blackfuse Bombling (PET!)
@@ -1212,7 +1228,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					},
 				}),
 				cr(71865, e(869, {	-- Garrosh Hellscream
-					
+
 				})),
 			}),
 			-- #if NOT ANYCLASSIC
@@ -1731,7 +1747,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 							i(112750),	-- Treads of Autonomic Motion
 							i(112747),	-- Laser-Slice Signet
 							i(112729),	-- Juggernaut's Focusing Crystal
-							
+
 						})),
 						cr(71859, e(856, {	-- Kor'kron Dark Shaman (Earthbreaker Haromm)
 							i(112759),	-- Haromm's Frozen Crescent

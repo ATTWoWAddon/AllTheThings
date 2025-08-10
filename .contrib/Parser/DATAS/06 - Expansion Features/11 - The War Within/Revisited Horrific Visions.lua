@@ -224,7 +224,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				["groups"] = {
 					currency(3149),	-- Displaced Corrupted Mementos
 					i(239106, {	-- Shadow Infused Onyx
-						["description"] = "Chance to drop from any Horrific Vision reward chest if at least one mask is active.",
+						["description"] = "Chance to drop from any Horrific Vision reward chest with an active Mask.",
 					}),
 					n(ARMOR, {
 						filter(BACK_F, {
@@ -355,7 +355,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					},
 				}),
 				header(HEADERS.Item, 211089, {	-- Voidfire Deathcycle
-					["description"] = "Collect each reagent and craft them together into cycle parts, return the parts to the bike in Dornogal to earn your own.\n\nEach special reagent is available from Visions with at least one mask active.",
+					["description"] = "Collect each reagent and craft them together into cycle parts, return the parts to the bike in Dornogal to earn your own.\n\nEach special reagent is available from Visions with an active Mask.",
 					["sourceQuest"] = 90129,	-- Voidfire Deathcycle Frame Tagged For Extraction
 					["coord"] = { 34.0, 68.2, DORNOGAL },
 					["groups"] = {
@@ -933,7 +933,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							["groups"] = { i(239158) },	-- Nemesis Shard (GAMON)
 						}),
 						n(238836, {	-- Void-Scarred Wolf
-							["description"] = "Interact with Wolf Rider gear in the Valleys of Honor and Wisdom to gain a stacking buff, then interact with a wolf rug at the Drag's leatherworking shop to spawn the rare.\n\nWolf rider packs are only visible with at least one mask active.",
+							["description"] = "Interact with Wolf Rider gear in the Valleys of Honor and Wisdom to gain a stacking buff, then interact with a wolf rug at the Drag's leatherworking shop to spawn the rare.\n\nWolf rider packs are only visible with an active Mask.",
 							["providers"] = {
 								{ "o", 519487 },	-- Wolf Saddle (Honor)
 								{ "o", 519559 },	-- Wolf Tack (Wisdom)
@@ -1006,7 +1006,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 								i(242648),	-- Black Blood Coagulate
 								i(240186),	-- Depleted Void Crystal
 								i(232919, {	-- Faceless Mask of Dark Imagination (QI!/QS!)
-									["description"] = "Granted by completing Mage Quarter, with at least one mask active.",
+									["description"] = "Granted by completing Mage Quarter, with an active Mask.",
 								}),
 								i(174458),	-- Void-Scarred Hare (PET!)
 							},
@@ -1018,12 +1018,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 								i(242648),	-- Black Blood Coagulate
 								i(235794),	-- Eye of Chaos (PET!)
 								i(232920, {	-- Faceless Mask of the Pained (QI!/QS!)
-									["description"] = "Granted by completing Old Town, with at least one mask active.",
+									["description"] = "Granted by completing Old Town, with an active Mask.",
 								}),
 								i(174932),	-- Illusion: Void Edge (ILLUSION!)
 								i(240183),	-- Twisted Skull-Scythe Handlebars
 								i(239105, {	-- Unusual Gems
-									["description"] = "Can only drop if you have at least 1 mask active.",
+									["description"] = "Can only drop if you have an active Mask and Void-Bound Orb of Mystery in your inventory!",
+									["provider"] = { "i", 238924 },	-- Void-Bound Orb of Mystery
 								}),
 							},
 						}),
@@ -1035,7 +1036,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 									["description"] = "Granted by completing all five districts within a single visit.",
 								}),
 								i(235414, {	-- Faceless Mask of Multitudes (QS!/QI!)
-									["description"] = "Granted by completing all five districts and killing every last NPC, with at least one mask active.",
+									["description"] = "Granted by completing all five districts and killing every last NPC, with an active Mask.",
 								}),
 								i(174459),	-- Void-Scarred Cat (PET!)
 							},

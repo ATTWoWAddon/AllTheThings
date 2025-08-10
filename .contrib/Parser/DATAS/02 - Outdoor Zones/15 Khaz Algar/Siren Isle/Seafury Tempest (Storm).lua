@@ -6,7 +6,7 @@ local function bo(questID, isDaily)
 end
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_7 } }, {
 	m(SIREN_ISLE, {
-		header(HEADERS.Spell, 458069, {    -- Seafury Tempest (Storm)
+		header(HEADERS.Spell, 458069, {	-- Seafury Tempest (Storm)
 			petbattle(filter(BATTLE_PETS, {
 				pet(4732),	-- Scavenging Snapdragon (storm phase)
 				pet(4731),	-- Storminfused Snapdragon (storm phase)

@@ -296,38 +296,38 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 		["lvl"] = 110,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(11787, {    -- The Gates of Hell
-                    crit(36469, {    -- Goroth
+				ach(11787, {	-- The Gates of Hell
+                    crit(36469, {	-- Goroth
                         ["_encounter"] = { 1862, DIFFICULTY.RAID.MULTI.ALL },
                     }),
-                    crit(36470, {    -- Harjatan
+                    crit(36470, {	-- Harjatan
                         ["_encounter"] = { 1856, DIFFICULTY.RAID.MULTI.ALL },
                     }),
-                    crit(36471, {    -- Mistress Sassz'ine
+                    crit(36471, {	-- Mistress Sassz'ine
                         ["_encounter"] = { 1861, DIFFICULTY.RAID.MULTI.ALL },
                     }),
                 }),
-				ach(11788, {    -- Wailing Halls
-                    crit(36472, {    -- Demonic Inquisition
+				ach(11788, {	-- Wailing Halls
+                    crit(36472, {	-- Demonic Inquisition
                         ["_encounter"] = { 1867, DIFFICULTY.RAID.MULTI.ALL },
                     }),
-                    crit(36473, {    -- Sisters of the Moon
+                    crit(36473, {	-- Sisters of the Moon
                         ["_encounter"] = { 1903, DIFFICULTY.RAID.MULTI.ALL },
                     }),
-                    crit(36474, {    -- The Desolate Host
+                    crit(36474, {	-- The Desolate Host
                         ["_encounter"] = { 1896, DIFFICULTY.RAID.MULTI.ALL },
                     }),
                 }),
-				ach(11789, {    -- Chamber of the Avatar
-                    crit(36475, {    -- Maiden of Vigilance
+				ach(11789, {	-- Chamber of the Avatar
+                    crit(36475, {	-- Maiden of Vigilance
                         ["_encounter"] = { 1897, DIFFICULTY.RAID.MULTI.ALL },
                     }),
-                    crit(36476, {    -- Fallen Avatar
+                    crit(36476, {	-- Fallen Avatar
                         ["_encounter"] = { 1873, DIFFICULTY.RAID.MULTI.ALL },
                     }),
                 }),
-				ach(11790, {    -- Deceiver's Fall
-                    crit(36477, {    -- Kil'jaeden
+				ach(11790, {	-- Deceiver's Fall
+                    crit(36477, {	-- Kil'jaeden
                         ["_encounter"] = { 1898, DIFFICULTY.RAID.MULTI.ALL },
                     }),
                 }),

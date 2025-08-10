@@ -54,7 +54,6 @@ root(ROOTS.Zones, {
 					}),
 					ach(8120),	-- Direhorn in a China Shop
 					ach(8117),	-- For the Ward!
-					ach(8051),	-- Gods and Monsters (automated)
 					ach(8099),	-- Isle of Thunder [TODO: This looks weird]
 					ach(8101, {	-- It Was Worth Every Ritual Stone [TODO: This looks weird]
 						crit(22814),	-- Spirit of Warlord Teng
@@ -74,9 +73,7 @@ root(ROOTS.Zones, {
 					ach(8100),	-- Pay to Slay [TODO: This looks weird]
 					ach(8114),	-- Platform Hero
 					ach(8107),	-- Ready for RAAAAIIIIDDD?!?ing
-					ach(8050),	-- Rumbles of Thunder (automated)
 					ach(8115),	-- Speed Metal
-					ach(8049),	-- The Zandalari Prophecy (automated)
 					ach(8109, {	-- The Mogu Below-gu
 						["_noautomation"] = true,	-- Glorious! shows them all anyways
 						["sym"] = {{"partial_achievement",8110}},	-- These Mogu Have Gotta Go-gu
@@ -183,9 +180,9 @@ root(ROOTS.Zones, {
 									},
 									["coord"] = { 34.7, 89.5, ISLE_OF_THUNDER },
 								}),
-								q(32599, {    -- Securing A Future
+								q(32599, {	-- Securing A Future
 									["qg"] = 67992,	-- Lady Jaina Proudmoore
-									["minReputation"] = { FACTION_KIRIN_TOR_OFFENSIVE, EXALTED },    -- Kirin Tor Offensive
+									["minReputation"] = { FACTION_KIRIN_TOR_OFFENSIVE, EXALTED },	-- Kirin Tor Offensive
 									["groups"] = {
 										i(95589),	-- Glorious Standard of the Kirin Tor Offensive (TOY!)
 									},

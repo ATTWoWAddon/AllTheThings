@@ -1447,11 +1447,11 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 			q(91451, {	-- Stalk Market
 				["description"] = "Obtained the first time you harvest Phantom Bloom.",
 				["providers"] = {
-					{ "i", 246582 },	-- Inscrutable Flora
 					{ "o", 527489 },	-- Lush Phantom Bloom
 					{ "o", 527488 },	-- Phantom Bloom
 				},
-				["timeline"] = { ADDED_11_2_0 }
+				["timeline"] = { ADDED_11_2_0 },
+				["groups"] = { i(246582), },	-- Inscrutable Flora (QS!)
 			}),
 		}),
 		n(TREASURES, {

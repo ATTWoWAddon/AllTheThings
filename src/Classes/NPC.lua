@@ -220,18 +220,7 @@ do
 			return t.isDaily or t.isWeekly or t.isMonthly or t.isYearly
 		end,
 	}, (function(t) return t.questID end),
-	"WithEvent", app.CloneDictionary(app.Modules.Events.Fields, {
-		trackable = function(t)
-			-- raw repeatable quests can't really be tracked since they immediately unflag
-			return not rawget(t, "repeatable")
-		end,
-		saved = function(t)
-			return IsQuestFlaggedCompleted(t.questID)
-		end,
-		repeatable = function(t)
-			return t.isDaily or t.isWeekly or t.isMonthly or t.isYearly
-		end,
-	}), (function(t) return HeaderEventIDs[t[KEY]] end))
+	"WithEvent", app.CloneDictionary(app.Modules.Events.Fields, {}), (function(t) return HeaderEventIDs[t[KEY]] end))
 	app.CreateCustomHeader = CreateCustomHeader
 end
 
@@ -256,6 +245,7 @@ local BlockedDisplayID = {
 	[56187] = 0,	-- generic bunny
 	[64062] = 0,	-- generic bunny
 	[110046] = 0,	-- nothing
+	[111386] = 0,	-- nothing
 	[112684] = 0,	-- nothing
 }
 local AllowedDisplayID = setmetatable({}, {

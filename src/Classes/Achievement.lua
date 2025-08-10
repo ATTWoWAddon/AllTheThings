@@ -374,7 +374,7 @@ app.AddEventHandler("OnNewPopoutGroup", BuildSourceAchievements)
 -- Achievement Criteria Lib
 do
 	-- Returns expected criteria data for either criteriaIndex or criteriaID
-	local function GetCriteriaInfo(t, achievementID)
+	local function GetCriteriaInfo(t, achievementID, field)
 		-- prioritize the correct id
 		local critUID = t.uid or t.criteriaID
 		local critID = t.id or critUID
@@ -384,7 +384,7 @@ do
 		local criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, criteriaID, eligible
 			= GetAchievementCriteriaInfoByID(achievementID, critUID)
 		-- criteriaType will exist even when criteriaString is empty, so don't need to check retrieving and stuff
-		if criteriaType then
+		if criteriaType and field ~= "name" then
 			return criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, criteriaID, eligible
 		end
 		if critID <= GetAchievementNumCriteria(achievementID) then
@@ -422,7 +422,7 @@ do
 			local criteriaID = t.criteriaID;
 			if criteriaID then
 				-- typical criteria name lookup
-				name = GetCriteriaInfo(t, achievementID)
+				name = GetCriteriaInfo(t, achievementID, "name")
 				if not IsRetrieving(name) then return name; end
 
 				-- app.PrintDebug("fallback crit name",achievementID,criteriaID,t.uid,t.id)

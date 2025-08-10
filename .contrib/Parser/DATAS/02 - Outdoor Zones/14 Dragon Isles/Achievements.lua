@@ -3,12 +3,12 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(ACHIEVEMENTS, {
-		ach(17560, {    -- Ancient Stones of the Dragon Isles
+		ach(17560, {	-- Ancient Stones of the Dragon Isles
 			["sym"] = {{"meta_achievement",
-				17561,    -- Ancient Stones of the Waking Shores
-				17562,    -- Ancient Stones of the Ohn'ahran Plains
-				17563,    -- Ancient Stones of the Azure Span
-				17564,    -- Ancient Stones of Thaldraszus
+				17561,	-- Ancient Stones of the Waking Shores
+				17562,	-- Ancient Stones of the Ohn'ahran Plains
+				17563,	-- Ancient Stones of the Azure Span
+				17564,	-- Ancient Stones of Thaldraszus
 			}},
 			["timeline"] = { ADDED_10_1_0 },
 		}),

@@ -2261,7 +2261,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27578, {	-- Morgan's Fruition
 					["sourceQuest"] = 27573,	-- The Dark Iron Pact [Alliance]
-					["qg"] = 45890,   -- Marshal Maxwell
+					["qg"] = 45890,	-- Marshal Maxwell
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -2627,7 +2627,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				n(45843, {	-- Yuka Screwspigot <Engineering Supplies>
 					["timeline"] = { ADDED_4_0_1 },
 					["groups"] = {
-						i(10602),   -- Schematic: Deadly Scope (RECIPE!)
+						i(10602),	-- Schematic: Deadly Scope (RECIPE!)
 					},
 				}),
 			}),
@@ -2681,7 +2681,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				i(16049, {	-- Schematic: Dark Iron Bomb (RECIPE!)
-					["cr"] = 8920,   -- Weapon Technician
+					["cr"] = 8920,	-- Weapon Technician
 				}),
 				i(16048, {	-- Schematic: Dark Iron Rifle (RECIPE!)
 					["cr"] = 8897,	-- Doomforge Craftsman

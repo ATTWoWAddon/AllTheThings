@@ -2357,12 +2357,14 @@ root(ROOTS.Zones, {
 							{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR },{"merge"},	-- Merciless Gladiator's Set
 							{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_VENGEFUL, PVP_GLADIATOR },{"merge"},	-- Vengeful Gladiator's Set
 							-- #else
-							{ "pop" },
-							-- #endif
 							{"exclude","itemID",
 								28379,	-- Sergeant's Heavy Cape (A)
 								28378,	-- Sergeant's Heavy Cape (H)
+								28380,	-- Sergeant's Heavy Cloak (A)
+								28377,	-- Sergeant's Heavy Cloak (H)
 							},
+							{ "pop" },
+							-- #endif
 						},
 						["timeline"] = { ADDED_4_3_0 },
 					}),
@@ -2489,14 +2491,19 @@ root(ROOTS.Zones, {
 							i(77622),	-- Replica Knight-Lieutenant's Lamellar Gauntlets
 							i(77621),	-- Replica Lieutenant Commander's Lamellar Shoulders
 							i(77612),	-- Replica Sergeant Major's Chain Armguards
-							i(77613),	-- Replica Sergeant Major's Chain Armguards
+							i(77613, {	-- Replica Sergeant Major's Chain Armguards
+								["description"] = "Horde appearance is learned when buying the Alliance version.",
+								["races"] = ALLIANCE_ONLY,
+								["groups"] = { h(i(77836)) },	-- Replica First Sergeant's Mail Wristguards
+							}),
 							i(77611),	-- Replica Knight-Captain's Chain Leggings
 							i(77610),	-- Replica Knight-Lieutenant's Chain Gauntlets
 							i(77609),	-- Replica Lieutenant Commander's Chain Helmet
 							i(77606),	-- Replica Knight-Lieutenant's Chain Boots
 							i(77660, {	-- Replica Sergeant Major's Plate Wristguards
-								["description"] = "This item has to be purchased on Alliance as there is no matching Horde Version.",
+								["description"] = "Horde appearance is learned when buying the Alliance version.",
 								["races"] = ALLIANCE_ONLY,
+								["groups"] = { h(i(77870)) },	-- Replica First Sergeant's Plate Bracers
 							}),
 						}))),
 						-- #endif

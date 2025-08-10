@@ -13,7 +13,7 @@ createLocalizationString({
 		-- it = "",
 		-- ko = "",
 		-- pt = "",
-		-- ru = "",
+		ru = "Модификации транспорта",
 		-- ko = "",
 		cn = "坐骑定制",
 		-- tw = "",

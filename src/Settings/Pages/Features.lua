@@ -16,6 +16,12 @@ local textChatCommands = child:CreateTextLabel(L.CHAT_COMMANDS_TEXT)
 textChatCommands:SetPoint("TOPLEFT", headerChatCommands, "BOTTOMLEFT", 0, -4)
 textChatCommands:SetWidth(320)
 
+local headerKeybindings = child:CreateHeaderLabel(L.KEYBINDINGS)
+headerKeybindings:SetPoint("TOPLEFT", textChatCommands, "BOTTOMLEFT", 0, -15)
+
+local textKeybindings = child:CreateTextLabel(app.Modules.Color.Colorize(L.KEYBINDINGS_TEXT, app.Colors.White))
+textKeybindings:SetPoint("TOPLEFT", headerKeybindings, "BOTTOMLEFT", 0, -4)
+textKeybindings:SetWidth(320)
 
 -- Column 2
 local headerIconLegendStatus = child:CreateHeaderLabel(L.ICON_LEGEND_STATUS_LABEL)
@@ -32,18 +38,8 @@ local textIconLegendMisc = child:CreateTextLabel(L.ICON_LEGEND_MISC_TEXT)
 textIconLegendMisc:SetPoint("TOPLEFT", headerIconLegendMisc, "BOTTOMLEFT", 0, -4)
 textIconLegendMisc:SetWidth(320)
 
-local headerKeybindings = child:CreateHeaderLabel(L.KEYBINDINGS)
-headerKeybindings:SetPoint("TOPLEFT", textIconLegendMisc, "BOTTOMLEFT", 0, -15)
-
-local textKeybindings = child:CreateTextLabel(app.Modules.Color.Colorize(L.KEYBINDINGS_TEXT, app.Colors.White))
-textKeybindings:SetPoint("TOPLEFT", headerKeybindings, "BOTTOMLEFT", 0, -4)
-textKeybindings:SetWidth(320)
-
-
-
-
 local headerMinimapButton = child:CreateHeaderLabel(L.MINIMAP_LABEL)
-headerMinimapButton:SetPoint("TOPLEFT", textKeybindings, "BOTTOMLEFT", 0, -15)
+headerMinimapButton:SetPoint("TOPLEFT", textIconLegendMisc, "BOTTOMLEFT", 0, -15)
 
 
 local checkboxShowMinimapButton = child:CreateCheckBox(L.MINIMAP_BUTTON_CHECKBOX,

@@ -25,22 +25,22 @@ root(ROOTS.Zones, {
 						}),
 						un(REMOVED_FROM_GAME, i(154903, {	-- Dreamweaver Provisions
 							["sym"] = {{"select","itemID",
-								157822,    -- Dreamweaver Provisions
+								157822,	-- Dreamweaver Provisions
 							}},
 						})),
 						un(REMOVED_FROM_GAME, i(151464, {	-- Dreamweaver Provisions
 							["sym"] = {{"select","itemID",
-								157822,    -- Dreamweaver Provisions
+								157822,	-- Dreamweaver Provisions
 							}},
 						})),
 						un(REMOVED_FROM_GAME, i(146747, {	-- Dreamweaver Provisions
 							["sym"] = {{"select","itemID",
-								157822,    -- Dreamweaver Provisions
+								157822,	-- Dreamweaver Provisions
 							}},
 						})),
 						un(REMOVED_FROM_GAME, i(137560, {	-- Dreamweaver Provisions
 							["sym"] = {{"select","itemID",
-								157822,    -- Dreamweaver Provisions
+								157822,	-- Dreamweaver Provisions
 							}},
 						})),
 					},

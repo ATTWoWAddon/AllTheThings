@@ -112,9 +112,9 @@ local function GetSourceID(itemLink, quick)
 		if sourceID then return sourceID, true; end
 	end
 
+	-- app.PrintDebug("Failed to directly retrieve SourceID",itemLink)
 	if quick then return end
 
-	-- app.PrintDebug("Failed to directly retrieve SourceID",itemLink)
 	local itemID, _, _, slotName = GetItemInfoInstant(itemLink);
 	if slotName then
 		local slots = inventorySlotsMap[slotName];

@@ -1056,21 +1056,21 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				n(37936, {	-- Morgan Dayblaze
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select","itemID",
-						3422,    -- Beautiful Wildflowers
-						3420,    -- Black Rose
-						3424,    -- Bouquet Of Black Roses
-						3423,    -- Bouquet Of White Roses
-						30749,    -- Draenic Sparring Blade
-						30750,    -- Draenic Warblade
-						3419,    -- Red Rose
-						3421,    -- Simple Wildflowers
+						3422,	-- Beautiful Wildflowers
+						3420,	-- Black Rose
+						3424,	-- Bouquet Of Black Roses
+						3423,	-- Bouquet Of White Roses
+						30749,	-- Draenic Sparring Blade
+						30750,	-- Draenic Warblade
+						3419,	-- Red Rose
+						3421,	-- Simple Wildflowers
 					}},
 				}),
 				n(37903, {	-- Shely Steelbowels
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
-						30749,    -- Draenic Sparring Blade
-						30750,    -- Draenic Warblade
+						30749,	-- Draenic Sparring Blade
+						30750,	-- Draenic Warblade
 					}},
 				}),
 				n(37184, {	-- Zafod Boombox
@@ -1115,7 +1115,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					currency(341),	-- Emblem of Frost
 					-- #endif
 					i(49908, {	-- Primordial Saronite
-						["description"] = "Can drop on all difficulties other than 10 Man Normal.",
+						["description"] = "Can drop from all bosses in Icecrown Citadel except in 10 player raid size on Normal difficulty.",
 					}),
 				},
 			}),
@@ -1181,8 +1181,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							{ "o", 202180 },	-- Gunship Armory (H)
 						},
 						["crs"] = {
-							36939,    -- High Overlord Saurfang
-							36948,    -- Muradin Bronzebeard
+							36939,	-- High Overlord Saurfang
+							36948,	-- Muradin Bronzebeard
 						},
 						["OnInit"] = [[function(t)
 							t.objectID = t.providers[_.FactionID == Enum.FlightPathFaction.Horde and 2 or 1][2];
@@ -1508,8 +1508,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							{ "o", 202180 },	-- Gunship Armory (H)
 						},
 						["crs"] = {
-							36939,    -- High Overlord Saurfang
-							36948,    -- Muradin Bronzebeard
+							36939,	-- High Overlord Saurfang
+							36948,	-- Muradin Bronzebeard
 						},
 						["OnInit"] = [[function(t)
 							t.objectID = t.providers[_.FactionID == Enum.FlightPathFaction.Horde and 2 or 1][2];
@@ -1879,8 +1879,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							{ "o", 202180 },	-- Gunship Armory (H)
 						},
 						["crs"] = {
-							36939,    -- High Overlord Saurfang
-							36948,    -- Muradin Bronzebeard
+							36939,	-- High Overlord Saurfang
+							36948,	-- Muradin Bronzebeard
 						},
 						["OnInit"] = [[function(t)
 							t.objectID = t.providers[_.FactionID == Enum.FlightPathFaction.Horde and 2 or 1][2];
@@ -2246,8 +2246,8 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							{ "o", 202180 },	-- Gunship Armory (H)
 						},
 						["crs"] = {
-							36939,    -- High Overlord Saurfang
-							36948,    -- Muradin Bronzebeard
+							36939,	-- High Overlord Saurfang
+							36948,	-- Muradin Bronzebeard
 						},
 						["OnInit"] = [[function(t)
 							t.objectID = t.providers[_.FactionID == Enum.FlightPathFaction.Horde and 2 or 1][2];

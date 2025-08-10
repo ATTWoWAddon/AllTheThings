@@ -10,7 +10,7 @@ createLocalizationString({
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",
-		-- TODO: ru = "",
+		ru = "Чат-команды для просмотра любых штучек",
 		-- TODO: ko = "",
 		cn = "查看任意内容的聊天命令行",
 		-- TODO: tw = "",

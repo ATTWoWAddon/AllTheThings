@@ -6,18 +6,16 @@ local HARVESTING = createHeader({
 	icon = 134427,
 	text = {
 		en = "Harvesting",
-		--[[
-		es = "",
-		mx = "",
-		de = "",
-		fr = "",
-		it = "",
-		pt = "",
-		ru = "",
-		ko = "",
-		cn = "",
-		tw = "",
-		]]--
+		de = "Abbauen",
+		es = "Cosecha",
+		mx = "Cosechando",
+		fr = "Récolte",
+		it = "Raccolta",
+		pt = "Colhendo",
+		ru = "Сбор",
+		ko = "채취",
+		cn = "收获",
+		tw = "採集",
 	},
 	description = {
 		en = "The following goods can be harvested by planting seeds in Tilled Soil at Sunsong Ranch. You will earn Tillers reputation for harvesting crops and a chance to obtain replacement seeds from the crop.\n\nFUN FACT: Priests may cast Levitate on their crops, making them float.",
@@ -28,7 +26,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 		["description"] = "The Tillers are a group of pandaren farmers who harvest and produce crops to feed their people. They were seemingly founded by a man only referred to as \"the Tiller\".",
 		["maps"] = { VALLEY_OF_THE_FOUR_WINDS },
 		["icon"] = 645198,
-		["lvl"] = lvlsquish(90, 90, 10),
+		["lvl"] = lvlsquish(85, 85, 10),
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(6551, {	-- Friend on the Farm
@@ -487,17 +485,24 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						}),
 					},
 				}),
-				q(32189, {	-- A Shabby New Face
+				applyclassicphase(MOP_PHASE_LANDFALL, q(32189, {	-- A Shabby New Face
 					["description"] = "Only available on days that Barnaby Fletcher is visiting the Market.",
 					["qg"] = 58718,	-- Merchant Greenfield
 					["coord"] = { 52.8, 52.0, VALLEY_OF_THE_FOUR_WINDS },
-				}),
+					["timeline"] = { ADDED_5_1_0 },
+				})),
 				q(31341, {	-- A Wolf In Sheep's Clothing
 					["sourceQuest"] = 31340,	-- Oh Sheepie....
 					["qg"] = 58709,	-- Chee Chee
 					["coord"] = { 53.0, 52.0, VALLEY_OF_THE_FOUR_WINDS },
 					["groups"] = {
-						i(86465),	-- Old Sheepskin (QI!)
+						objective(1, {	-- 0/1 Krungko Fingerlicker slain
+							["providers"] = {
+								{ "n", 64389 },	-- Krungko Fingerlicker
+								{ "i", 86465 },	-- Old Sheepskin (QI!)
+							},
+							["coord"] = { 29.8, 42.4, VALLEY_OF_THE_FOUR_WINDS },
+						}),
 					},
 				}),
 				q(31538, {	-- A Worthy Brew
@@ -692,7 +697,14 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["coord"] = { 38.7, 51.7, VALLEY_OF_THE_FOUR_WINDS },
 					["minReputation"] = { FACTION_THE_TILLERS, HONORED },
 					["groups"] = {
-						i(80122),	-- Spideroot (QI!)
+						objective(1, {	-- 0/6 Spideroot
+							["providers"] = {
+								{ "i",  80122 },	-- Spideroot (QI!)
+								{ "o", 211117 },	-- Spideroot
+								{ "o", 210945 },	-- Spideroot
+							},
+							["coord"] = { 36.2, 53.3, VALLEY_OF_THE_FOUR_WINDS },
+						}),
 					},
 				}),
 				q(30260, {	-- Growing the Farm I: The Weeds
@@ -705,7 +717,15 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["qg"] = 58705,	-- Fish Fellreed
 					["coord"] = { 41.7, 30.1, VALLEY_OF_THE_FOUR_WINDS },
 					["groups"] = {
-						i(80136),	-- Waxed Plank (QI!)
+						objective(1, {	-- 0/100 Waxed Plank
+							["providers"] = {
+								{ "i",  80136 },	-- Waxed Plank (QI!)
+								{ "o", 211122 },	-- Boat Planks
+								{ "o", 211120 },	-- Boat Planks
+								{ "o", 210961 },	-- Boat Planks
+							},
+							["coord"] = { 43.1, 29.6, VALLEY_OF_THE_FOUR_WINDS },
+						}),
 					},
 				}),
 				q(30523, {	-- Growing the Farm II: The Broken Wagon
@@ -716,10 +736,10 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				}),
 				q(30529, {	-- Growing the Farm III: The Mossy Boulder
 					["description"] = "Must have all Tillers votes collected to start this quest.",
+					["sourceQuest"] = 30528,	-- Haohan's Vote V: Chief Yip-Yip
 					["qg"] = 58646,	-- Farmer Yoon
 					["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
 					["minReputation"] = { FACTION_THE_TILLERS, EXALTED },	-- The Tillers
-					-- TODO: source quests??
 				}),
 				q(30521, {	-- Haohan's Vote I: Bungalow Break-In
 					["qg"] = 58646,	-- Farmer Yoon
@@ -730,30 +750,87 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["sourceQuest"] = 30521,	-- Haohan's Vote I: Bungalow Break-In
 					["qg"] = 57402,	-- Haohan Mudclaw
 					["coord"] = { 44.7, 34.1, VALLEY_OF_THE_FOUR_WINDS },
+					["groups"] = {
+						objective(1, {	-- 0/8 Suspicious Footprints found
+							["provider"] = { "n", 59505 },	-- Suspicious Footprint
+							["coord"] = { 38, 43, VALLEY_OF_THE_FOUR_WINDS },
+						}),
+					},
 				}),
 				q(30525, {	-- Haohan's Vote III: Pure Poison
 					["sourceQuest"] = 30522,	-- Haohan's Vote II: The Real Culprits
 					["qg"] = 58646,	-- Farmer Yoon
 					["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
 					["groups"] = {
-						i(80140),	-- Bloodbloom (QI!)
-						i(80141),	-- Cave Lily (QI!)
-						i(80142),	-- Ghostcap (QI!)
-						i(80143),	-- Violet Lichen (QI!)
+						objective(1, {	-- 0/1 Bloodbloom
+							["providers"] = {
+								{ "i",  80140 },	-- Bloodbloom (QI!)
+								{ "o", 210968 },	-- Bloodbloom
+							},
+							["coord"] = { 44.7, 20.6, VALLEY_OF_THE_FOUR_WINDS },
+						}),
+						objective(2, {	-- 0/1 Cave Lily
+							["providers"] = {
+								{ "i",  80141 },	-- Cave Lily (QI!)
+								{ "o", 210969 },	-- Cave Lily
+							},
+							["coord"] = { 48.4, 18.4, VALLEY_OF_THE_FOUR_WINDS },
+						}),
+						objective(3, {	-- 0/1 Ghostcap
+							["providers"] = {
+								{ "i",  80142 },	-- Ghostcap (QI!)
+								{ "o", 210970 },	-- Ghostcap
+							},
+							["coord"] = { 39.3, 18.2, VALLEY_OF_THE_FOUR_WINDS },
+						}),
+						objective(4, {	-- 0/1 Violet Lichen
+							["providers"] = {
+								{ "i",  80143 },	-- Violet Lichen (QI!)
+								{ "o", 210971 },	-- Violet Lichen
+							},
+							["coord"] = { 42.5, 22.5, VALLEY_OF_THE_FOUR_WINDS },
+						}),
 					},
 				}),
 				q(30527, {	-- Haohan's Vote IV: Melons For Felons
 					["sourceQuest"] = 30525,	-- Haohan's Vote III: Pure Poison
 					["qg"] = 58646,	-- Farmer Yoon
 					["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
+					["groups"] = {
+						objective(1, {	-- 0/4 Plant Striped Melons
+							["providers"] = {
+								{ "i", 89329 },	-- Striped Melon Seeds
+								{ "n", 59990 },	-- Tilled Soil
+							},
+							["coord"] = { 52.0, 48.6, VALLEY_OF_THE_FOUR_WINDS },
+						}),
+						objective(2, {	-- 0/4 Harvest Striped Melons
+							["providers"] = {
+								{ "n", 66129 },	-- Ripe Striped Melon
+								{ "n", 66123 },	-- Bursting Striped Melon
+								{ "n", 66128 },	-- Plump Striped Melon
+							},
+							["coord"] = { 52.0, 48.6, VALLEY_OF_THE_FOUR_WINDS },
+						}),
+						objective(3, {	-- 0/20 Striped Melon
+							["provider"] = { "i", 74848 },	-- Striped Melon
+						}),
+					},
 				}),
 				q(30528, {	-- Haohan's Vote V: Chief Yip-Yip
 					["sourceQuest"] = 30527,	-- Haohan's Vote IV: Melons For Felons
 					["qg"] = 58646,	-- Farmer Yoon
 					["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
+					["groups"] = {
+						objective(1, {	-- 0/1 Chief Yip-Yip slain
+							["provider"] = { "n", 59567 },	-- Chief Yip-Yip
+							["coord"] = { 32.4, 20.4, VALLEY_OF_THE_FOUR_WINDS },
+						}),
+					},
 				}),
 				q(32682, {	-- Inherit the Earth
-					["description"] = "Must have a fully unlocked farm.",
+					["description"] = "Must also have a fully unlocked farm.",
+					["sourceQuest"] = 30529,	-- Growing the Farm III: The Mossy Boulder
 					["qg"] = 64597,	-- Nana Mudclaw
 					["coord"] = { 54.6, 47.0, VALLEY_OF_THE_FOUR_WINDS },
 					["minReputation"] = { FACTION_THE_TILLERS, EXALTED },	-- The Tillers, Exalted.
@@ -761,6 +838,25 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				q(31313, {	-- Just A Folk Story
 					["sourceQuest"] = 31312,	-- The Old Map
 					["qg"] = 58705,	-- Fish Fellreed
+					["coord"] = { 52.8, 51.8, VALLEY_OF_THE_FOUR_WINDS },
+					["groups"] = {
+						objective(1, {	-- Speak to Grainsorter Pei
+							["provider"] = { "n", 64312 },	-- Grainsorter Pei
+							["coord"] = { 54.2, 44.6, VALLEY_OF_THE_FOUR_WINDS },
+						}),
+						objective(2, {	-- Speak to Stonecarver Mac
+							["provider"] = { "n", 64315 },	-- Stonecarver Mac
+							["coord"] = { 55.2, 47.4, VALLEY_OF_THE_FOUR_WINDS },
+						}),
+						objective(3, {	-- Speak to Mama Min
+							["provider"] = { "n", 64313 },	-- Mama Min
+							["coord"] = { 56.2, 45.2, VALLEY_OF_THE_FOUR_WINDS },
+						}),
+						objective(4, {	-- Speak to Old Man Whitewhiskers
+							["provider"] = { "n", 64327 },	-- Old Man Whitewhiskers
+							["coord"] = { 54.6, 47.0, VALLEY_OF_THE_FOUR_WINDS },
+						}),
+					},
 				}),
 				q(30535, {	-- Learn and Grow I: Seeds
 					["sourceQuest"] = 30252,	-- A Helping Hand
@@ -859,12 +955,32 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						}),
 					},
 				}),
+				-- Wouter NOTE: part of a quest chain to get a pet in DF, but that's not relevant for Classic yet
+				-- #if ANYCLASSIC
+				-- #if BEFORE DF
+				q(30526, {	-- Lost and Lonely
+					["provider"] = { "n", 59533 },	-- Lost Dog
+					["coord"] = { 42.4, 50.2, VALLEY_OF_THE_FOUR_WINDS },
+					["minReputation"] = { FACTION_THE_TILLERS, REVERED+600 },	-- The Tillers, 12600 Rep
+					["timeline"] = { ADDED_5_0_4 },
+					["groups"] = {
+						i(80144),	-- Tasty T-Bone (QI!)
+					},
+				}),
+				-- #endif
+				-- #endif
 				q(31338, {	-- Lost Sheepie
 					["qg"] = 58709,	-- Chee Chee
 					["coord"] = { 53.0, 52.0, VALLEY_OF_THE_FOUR_WINDS },
 					["minReputation"] = { FACTION_CHEE_CHEE, 3 },	-- Buddy
 					["groups"] = {
-						i(86446),	-- Sheepie (QI!)
+						objective(1, {	-- 0/1 Sheepie
+							["providers"] = {
+								{ "i", 86446 },	-- Sheepie (QI!)
+								{ "n", 64386 },	-- Sheepie
+							},
+							["coord"] = { 34.91, 38.34, VALLEY_OF_THE_FOUR_WINDS },
+						}),
 					},
 				}),
 				q(31339, {	-- Lost Sheepie... Again
@@ -873,7 +989,13 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["coord"] = { 53.0, 52.0, VALLEY_OF_THE_FOUR_WINDS },
 					["minReputation"] = { FACTION_CHEE_CHEE, 4 },	-- Friend
 					["groups"] = {
-						i(86446),	-- Sheepie (QI!)
+						objective(1, {	-- 0/1 Sheepie
+							["providers"] = {
+								{ "i", 86446 },	-- Sheepie (QI!)
+								{ "n", 64385 },	-- Sheepie
+							},
+							["coord"] = { 35.0, 38.6, VALLEY_OF_THE_FOUR_WINDS },
+						}),
 					},
 				}),
 				q(31531, {	-- Mission: Aerial Threat
@@ -925,13 +1047,40 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["qg"] = 57401,	-- Mung-Mung
 					["coord"] = { 44.2, 34.2, VALLEY_OF_THE_FOUR_WINDS },
 					["groups"] = {
-						i(80116),	-- Partially Chewed Carrot (QI!)
+						objective(1, {	-- 0/10 Partially Chewed Carrot
+							["providers"] = {
+								{ "i",  80116 },	-- Partially Chewed Carrot (QI!)
+								{ "o", 210942 },	-- Partially Chewed Carrot
+								{ "o", 210938 },	-- Partially Chewed Carrot
+							},
+							["coord"] = { 43.2, 39.4, VALLEY_OF_THE_FOUR_WINDS },
+						}),
 					},
 				}),
 				q(31946, {	-- Mung-Mung's Vote III: The Great Carrot Caper
 					["sourceQuest"] = 30258,	-- Mung-Mung's Vote II: Rotten to the Core
 					["qg"] = 57401,	-- Mung-Mung
 					["coord"] = { 44.2, 34.2, VALLEY_OF_THE_FOUR_WINDS },
+					["groups"] = {
+						objective(1, {	-- 0/2 Plant Juicycrunch Carrot Seeds
+							["providers"] = {
+								{ "i", 80590 },	-- Juicycrunch Carrot Seeds
+								{ "n", 59990 },	-- Tilled Soil
+							},
+							["coord"] = { 52.0, 48.6, VALLEY_OF_THE_FOUR_WINDS },
+						}),
+						objective(2, {	-- 0/2 Harvest Juicycrunch Carrots
+							["providers"] = {
+								{ "n", 63154 },	-- Ripe Juicycrunch Carrot
+								{ "n", 63158 },	-- Bursting Juicycrunch Carrot
+								{ "n", 63156 },	-- Plump Juicycrunch Carrot
+							},
+							["coord"] = { 52.0, 48.6, VALLEY_OF_THE_FOUR_WINDS },
+						}),
+						objective(3, {	-- 0/10 Juicycrunch Carrot
+							["provider"] = { "i", 74841 },	-- Juicycrunch Carrot
+						}),
+					},
 				}),
 				q(30519, {	-- Nana's Vote I: Nana's Secret Recipe
 					["qg"] = 58646,	-- Farmer Yoon
@@ -943,34 +1092,72 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["qg"] = 64597,	-- Nana Mudclaw
 					["coord"] = { 54.7, 47.0, VALLEY_OF_THE_FOUR_WINDS },
 					["groups"] = {
-						i(89902),	-- Empty Pitcher (QI!)
-						i(89903),	-- Thousand-Year Water (QI!)
+						objective(1, {	-- 0/1 Thousand-Year Water
+							["providers"] = {
+								{ "i", 89903 },	-- Thousand-Year Water (QI!)
+								{ "i", 89902 },	-- Empty Pitcher (QI!)
+							},
+							["coord"] = { 56.6, 22.0, VALLEY_OF_THE_FOUR_WINDS },
+						}),
 					},
 				}),
 				q(31949, {	-- Nana's Vote III: Witchberry Julep
 					["sourceQuest"] = 31948,	-- Nana's Vote II: The Sacred Springs
 					["qg"] = 64597,	-- Nana Mudclaw
 					["coord"] = { 54.7, 47.0, VALLEY_OF_THE_FOUR_WINDS },
+					["groups"] = {
+						objective(1, {	-- 0/3 Plant Juicycrunch Carrot Seeds
+							["providers"] = {
+								{ "i", 80590 },	-- Juicycrunch Carrot Seeds
+								{ "n", 59990 },	-- Tilled Soil
+							},
+							["coord"] = { 52.0, 48.6, VALLEY_OF_THE_FOUR_WINDS },
+						}),
+						objective(2, {	-- 0/3 Harvest Juicycrunch Carrots
+							["providers"] = {
+								{ "n", 63154 },	-- Ripe Juicycrunch Carrot
+								{ "n", 63158 },	-- Bursting Juicycrunch Carrot
+								{ "n", 63156 },	-- Plump Juicycrunch Carrot
+							},
+							["coord"] = { 52.0, 48.6, VALLEY_OF_THE_FOUR_WINDS },
+						}),
+						objective(3, {	-- 0/15 Juicycrunch Carrot
+							["provider"] = { "i", 74841 },	-- Juicycrunch Carrot
+						}),
+					},
 				}),
 				q(31340, {	-- Oh Sheepie...
 					["sourceQuest"] = 31339,	-- Lost Sheepie... Again
 					["qg"] = 58709,	-- Chee Chee
 					["coord"] = { 53.0, 52.0, VALLEY_OF_THE_FOUR_WINDS },
 					["minReputation"] = { FACTION_CHEE_CHEE, 5 },	-- Good Friend
+					["groups"] = {
+						objective(1, {	-- Sheepie found
+							["provider"] = { "n", 64391 },	-- Sheepie
+							["coord"] = { 30.2, 43.6, VALLEY_OF_THE_FOUR_WINDS },
+						}),
+					},
 				}),
 				q(31314, {	-- Old Man Thistle's Treasure
 					["sourceQuest"] = 31313,	-- Just a Folk Story
 					["qg"] = 58705,	-- Fish Fellreed
+					["coord"] = { 52.8, 51.8, VALLEY_OF_THE_FOUR_WINDS },
 					["groups"] = {
-						i(86428),	-- Old Man Thistle's Treasure
+						i(86428, {	-- Old Man Thistle's Treasure
+							["description"] = "Contains a number of Pandarian rare quality Gems.",
+						}),
 					},
 				}),
-				q(32198, {	-- One Magical, Flying Kingdom's Trash...
+				applyclassicphase(MOP_PHASE_LANDFALL, q(32198, {	-- One Magical, Flying Kingdom's Trash...
 					["description"] = "Available only on days where Barnaby Fletcher is in Halfhill.",
 					["sourceQuest"] = 32189,	-- A Shabby New Face
 					["qg"] = 67565,	-- Barnaby Fletcher
 					["coord"] = { 53.2, 51.4, VALLEY_OF_THE_FOUR_WINDS },
-				}),
+					["timeline"] = { ADDED_5_1_0 },
+					["groups"] = {
+						i(91806),	-- Unstable Portal Shard
+					},
+				})),
 				q(31938, {	-- The "Earth-Slasher" Master Plow
 					["sourceQuest"] = 30529,	-- Growing the Farm III: The Mossy Boulder
 					["provider"] = { "i", 89814 },	-- "Earth-Slasher" Master Plow
@@ -1023,7 +1210,10 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				}),
 				q(31315, {	-- The Heartland Legacy
 					["sourceQuest"] = 31314,	-- Old Man Thistle's Treasure
-					["provider"] = { "o", 213767 },	-- Hidden Treasure
+					["providers"] = {
+						{ "o", 213767 },	-- Hidden Treasure
+						{ "i",  86421 },	-- Old Man Thistle's Almanac
+					},
 					["coord"] = { 31.5, 53.3, VALLEY_OF_THE_FOUR_WINDS_CAVERN_OF_ENDLESS_ECHOES },
 					["groups"] = {
 						ach(7296),	-- Ain't Lost No More
@@ -1034,6 +1224,21 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["provider"] = { "i", 86404 },	-- Old Map
 					["minReputation"] = { FACTION_THE_TILLERS, EXALTED },	-- The Tillers
 					["crs"] = { 59639 },	-- Enormous Cattail Grouper
+				}),
+				-- Wouter TODO: check these quests
+				q(31372, {	-- The Tillers (A)
+					["qg"] = 64036,	-- Tang Ironhoe
+					["coord"] = { 87.0, 60.8, VALE_OF_ETERNAL_BLOSSOMS },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(31374, {	-- The Tillers (H)
+					["qg"] = 64011,	-- Farmhand Dooka
+					["coord"] = { 60.4, 22.8, VALE_OF_ETERNAL_BLOSSOMS },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(31326, {	-- Tina's Tasteful Tiara
 					["provider"] = { "i", 86434 },	-- Tasteful Tiara
@@ -1502,13 +1707,13 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							},
 							["cr"] = 58717,	-- Bobo Ironpaw <Master of the Brew>
 						}),
-						i(80234, {	-- Yoon's Apple (QI!)
-							["provider"] = { "o", 211020 },	-- Yoon's Apples
+						o(211020, {	-- Yoon's Apples
 							["coord"] = { 52.7, 47.9, VALLEY_OF_THE_FOUR_WINDS },
+							["groups"] = { i(80234) },	-- Yoon's Apple (QI!)
 						}),
-						i(80235, {	-- Yoon's Craneberry (QI!)
-							["provider"] = { "o", 211022 },	-- Yoon's Craneberries
+						o(211022, {	-- Yoon's Craneberries
 							["coord"] = { 52.8, 47.9, VALLEY_OF_THE_FOUR_WINDS },
+							["groups"] = { i(80235) },	-- Yoon's Craneberry (QI!)
 						}),
 					},
 				}),
@@ -2282,6 +2487,14 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				}),
 			}),
 			n(VENDORS, {
+				applyclassicphase(MOP_PHASE_LANDFALL, n(67565, {	-- Barnaby Fletcher <Washed-Up Mage>
+					["sourceQuest"] = 32198,	-- One Magical, Flying Kingdom's Trash...
+					["coord"] = { 53.2, 51.6, VALLEY_OF_THE_FOUR_WINDS },
+					["timeline"] = { ADDED_5_1_0 },
+					["groups"] = {
+						i(91806),	-- Unstable Portal Shard
+					},
+				})),
 				n(58706, {	-- Gina Mudclaw <Tillers Quartermaster>
 					["coord"] = { 53.2, 51.6, VALLEY_OF_THE_FOUR_WINDS },
 					["groups"] = bubbleDownClassicRep(FACTION_THE_TILLERS, {

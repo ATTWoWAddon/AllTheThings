@@ -22,9 +22,22 @@ end
 i(226500);	-- Chipped Drakefire Amulet
 -- #endif
 
+-- MOP 
 -- #if ANYCLASSIC
 i(247497);	-- Order of the Cloud Serpent Flight Log
 -- #endif
+i(93231);	-- Grand Commendation of Operation: Shieldwall
+i(93225);	-- Grand Commendation of the Anglers
+i(93224);	-- Grand Commendation of the August Celestials
+i(93232);	-- Grand Commendation of the Dominance Offensive
+i(93215);	-- Grand Commendation of the Golden Lotus
+i(95545);	-- Grand Commendation of the Kirin Tor Offensive
+i(92522);	-- Grand Commendation of the Klaxxi
+i(93230);	-- Grand Commendation of the Lorewalkers
+i(93229);	-- Grand Commendation of the Order of the Cloud Serpent
+i(93220);	-- Grand Commendation of the Shado-Pan
+i(95548);	-- Grand Commendation of the Sunreaver Onslaught
+i(93226);	-- Grand Commendation of the Tillers
 
 -- BoA Cost Items
 i(137642);	-- Mark of Honor

@@ -10,6 +10,7 @@ mount(142910),	-- Ironbound Wraithcharger \\ Iron Warhorse
 mount(146615),	-- Vicious Kaldorei Warsaber \\ Vicious Warsaber
 mount(146622),	-- Vicious Skeletal Warhorse
 mount(148417),	-- Kor'kron Juggernaut
+mount(155741),	-- Dread Raven
 mount(163024),	-- Warforged Nightmare
 mount(163025),	-- Grinning Reaver
 mount(473739),	-- Meeksi Rufflefur

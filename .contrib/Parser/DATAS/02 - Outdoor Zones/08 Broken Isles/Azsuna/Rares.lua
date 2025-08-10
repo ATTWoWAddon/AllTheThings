@@ -10,7 +10,7 @@ root(ROOTS.Zones, {
 					n(109028, {	-- Horkus
 						["questID"] = 42825,
 						["coord"] = { 56.2, 59.6, AZSUNA },
-						["crs"] = { 109029 },    -- Horkus
+						["crs"] = { 109029 },	-- Horkus
 					}),
                 })),
 				n(107657, {	-- Arcanist Shal'iman

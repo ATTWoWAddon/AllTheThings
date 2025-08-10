@@ -2832,87 +2832,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 		n(GROUP_FINDER, sharedData({
 			["maps"] = { 2354 },	-- Silithus
 		},{
-			i(229355, {	-- Chromie's Premium Goodie Bag
-				i(226046),	-- Timely Tourist's Band
-				i(226064),	-- Timely Tourist's Beacon Staff
-				i(226082),	-- Timely Tourist's Belt
-				i(226091),	-- Timely Tourist's Bindings
-				i(226056),	-- Timely Tourist's Blade
-				i(226167),	-- Timely Tourist's Bolthrower
-				i(226085),	-- Timely Tourist's Boots
-				i(226083),	-- Timely Tourist's Bracers
-				i(226068),	-- Timely Tourist's Breastplate
-				i(226076),	-- Timely Tourist's Chainmail
-				i(226169),	-- Timely Tourist's Chisel
-				i(226171),	-- Timely Tourist's Cleaver
-				i(226051),	-- Timely Tourist's Cloak
-				i(226079),	-- Timely Tourist's Coif
-				i(226098),	-- Timely Tourist's Cord
-				i(226095),	-- Timely Tourist's Cowl
-				i(226099),	-- Timely Tourist's Cuffs
-				i(226063),	-- Timely Tourist's Drill-Tipped Stave
-				i(226089),	-- Timely Tourist's Epaulets
-				i(226070),	-- Timely Tourist's Gauntlets
-				i(226074),	-- Timely Tourist's Girdle
-				i(226086),	-- Timely Tourist's Gloves
-				i(226080),	-- Timely Tourist's Greaves
-				i(226078),	-- Timely Tourist's Grips
-				i(226055),	-- Timely Tourist's Hammer
-				i(226094),	-- Timely Tourist's Handwraps
-				i(226170),	-- Timely Tourist's Hatchet
-				i(226087),	-- Timely Tourist's Headgear
-				i(226071),	-- Timely Tourist's Helm
-				i(226072),	-- Timely Tourist's Legguards
-				i(226065),	-- Timely Tourist's Lantern
-				i(226096),	-- Timely Tourist's Leggings
-				i(226088),	-- Timely Tourist's Pants
-				i(226073),	-- Timely Tourist's Pauldrons
-				i(226049),	-- Timely Tourist's Pendant
-				i(226062),	-- Timely Tourist's Polearm
-				i(226054),	-- Timely Tourist's Pummeler
-				i(226048),	-- Timely Tourist's Ring
-				i(226053),	-- Timely Tourist's Ritual Knife
-				i(226092),	-- Timely Tourist's Robes
-				i(226069),	-- Timely Tourist's Sabatons
-				i(226093),	-- Timely Tourist's Sandals
-				i(226090),	-- Timely Tourist's Sash
-				i(226052),	-- Timely Tourist's Shank
-				i(226058),	-- Timely Tourist's Sharpshooter
-				i(226050),	-- Timely Tourist's Shawl
-				i(226066),	-- Timely Tourist's Shield
-				i(226081),	-- Timely Tourist's Shoulderguards
-				i(226097),	-- Timely Tourist's Shoulderpads
-				i(226047),	-- Timely Tourist's Signet
-				i(226061),	-- Timely Tourist's Spade
-				i(226168),	-- Timely Tourist's Spellblade
-				i(226077),	-- Timely Tourist's Striders
-				i(226057),	-- Timely Tourist's Sword
-				i(226059),	-- Timely Tourist's Torch
-				i(226075),	-- Timely Tourist's Vambraces
-				i(226084),	-- Timely Tourist's Vest
-				i(226060),	-- Timely Tourist's Waraxe
-			}),
-			i(226102, {	-- Chromie's Tour Goodie Bag
-				["sym"] = {
-					{ "select", "itemID", 229355},	-- Chromie's Premium Goodie Bag
-					{ "pop" },
-				},
-				["skipFill"] = true,
-			}),
-			i(229359, {	-- Chromie's Goodie Bag
-				["sym"] = {
-					{ "select", "itemID", 229355},	-- Chromie's Premium Goodie Bag
-					{ "pop" },
-				},
-				["skipFill"] = true,
-			}),
-			i(232877, {	-- Timely Goodie Bag
-				["sym"] = {
-					{ "select", "itemID", 229355},	-- Chromie's Premium Goodie Bag
-					{ "pop" },
-				},
-				["skipFill"] = true,
-			}),
+			i(229355),	-- Chromie's Premium Goodie Bag
+			i(226102),	-- Chromie's Tour Goodie Bag
+			i(229359),	-- Chromie's Goodie Bag
+			i(232877,{["modID"]=22}),	-- Timely Goodie Bag (force same modID as TW version so it doesn't appear removed)
 			-- Satchel when under level 80 for Celebration Raid Finder (possibly codex?)
 			i(234413, {	-- Satchel of Exotic Mysteries
 				i(224572),	-- Crystallized Augment Rune

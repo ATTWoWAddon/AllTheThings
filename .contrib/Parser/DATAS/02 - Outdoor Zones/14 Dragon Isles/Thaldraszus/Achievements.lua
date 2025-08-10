@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			ach(16679, {	-- Adventurer of Thaldraszus
 				["sym"] = {{ "achievement_criteria" }},
 			}),
-			ach(17564, {    -- Ancient Stones of Thaldraszus (automated)
+			ach(17564, {	-- Ancient Stones of Thaldraszus (automated)
 				["timeline"] = { ADDED_10_1_0 },
 			}),
 			ach(16104, {	-- Dragon Glyphs: Algeth'ar Academy
@@ -85,7 +85,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			ach(16363, {	-- Just Don't Ask Me to Spell It
 				["sym"] = {{ "achievement_criteria" }},
 			}),
-			ach(16621, {    -- One of Everything, Please
+			ach(16621, {	-- One of Everything, Please
 				["sym"] = {{ "achievement_criteria" }},
             }),
 			ach(16398, {	-- Sojourner of Thaldraszus

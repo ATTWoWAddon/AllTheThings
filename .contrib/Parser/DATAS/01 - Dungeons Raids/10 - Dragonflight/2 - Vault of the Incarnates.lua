@@ -528,7 +528,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, {
 				ach(16357),		-- Heroic: Vault of the Incarnates Guild Run
 			}),
 			o(382621, {	-- Revival Catalyst Console
-				["description"] = "The Revival Catalyst is a system that lets you convert LFR Mode Non-set items from the Vault of the Incarnates Raid into your class' LFR Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
+				["description"] = "The Revival Catalyst is a system that lets you convert non-set items from the Vault of the Incarnates Raid into your class' Tier Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
 				["coord"] = { 60.6, 53.8, THALDRASZUS },
 				["modelScale"] = 4,
 				["catalystID"] = 3,	-- ItemBonus.Value_0 DF:S1

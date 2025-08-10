@@ -158,55 +158,82 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 		i(109584),	-- Ogre Missive
 		i(87399),	-- Restored Artifact
 		header(HEADERS.Currency, ARCH_CURRENCY_ARAKKOA, sharedData({["cost"]={{"c",ARCH_CURRENCY_ARAKKOA,50}}},{ -- TODO: someone can add different fragment costs within as needed
-			i(117354),	-- Ancient Nest Guardian (PET!)
-			i(114204),	-- Apexis Crystal
-			i(114205),	-- Apexis Hieroglyph
-			i(114206),	-- Apexis Scroll
-			i(117382),	-- Beakbreaker of Terokk
-			i(114198),	-- Burial Urn
-			i(114199),	-- Decree Scrolls
-			i(114197),	-- Dreamcatcher
-			i(114203),	-- Outcast Dreamcatcher
-			i(114200),	-- Solar Orb
-			i(114201),	-- Sundial
-			i(114202),	-- Talonpriest Mask
+			["provider"] = { "o", 234105 },	-- Arakkoa Archaeology Find
+			["maps"] = {
+				DRAENOR_SHADOWMOON_VALLEY,
+				SPIRES_OF_ARAK,
+				TALADOR,
+			},
+			["groups"] = {
+				i(117354),	-- Ancient Nest Guardian (PET!)
+				i(114204),	-- Apexis Crystal
+				i(114205),	-- Apexis Hieroglyph
+				i(114206),	-- Apexis Scroll
+				i(117382),	-- Beakbreaker of Terokk
+				i(114198),	-- Burial Urn
+				i(114199),	-- Decree Scrolls
+				i(114197),	-- Dreamcatcher
+				i(114203),	-- Outcast Dreamcatcher
+				i(114200),	-- Solar Orb
+				i(114201),	-- Sundial
+				i(114202),	-- Talonpriest Mask
+			},
 		})),
 		header(HEADERS.Currency, ARCH_CURRENCY_DRAENORCLANS, sharedData({["cost"]={{"c",ARCH_CURRENCY_DRAENORCLANS,50}}},{ -- TODO: someone can add different fragment costs within as needed
-			i(114171),	-- Ancestral Talisman
-			i(114163),	-- Barbed Fishing Hook
-			i(114157),	-- Blackrock Razor
-			i(114165),	-- Calcified Eye in a Jar
-			i(114167),	-- Ceremonial Tattoo Needles
-			i(114169),	-- Cracked Ivory Idol
-			i(114177),	-- Doomsday Prophecy
-			i(114155),	-- Elemental Bellows
-			i(114141),	-- Fang-Scarred Frostwolf Axe
-			i(114173),	-- Flask of Blazegrease
-			i(114143),	-- Frostwolf Ancestry Scrimshaw
-			i(117380),	-- Frostwolf Ghostpup (PET!)
-			i(114175),	-- Gronn-Tooth Necklace
-			i(116985),	-- Headdress of the First Shaman
-			i(114161),	-- Hooked Dagger
-			i(114153),	-- Metalworker's Hammer
-			i(114149),	-- Screaming Bullroarer
-			i(114147),	-- Warsinger's Drums
-			i(114151),	-- Warsong Ceremonial Pike
-			i(114159),	-- Weighted Chopping Axe
-			i(114145),	-- Wolfskin Snowshoes
+			["provider"] = { "o", 226521 },	-- Draenor Clans Archaeology Find
+			["maps"] = {
+				DRAENOR_SHADOWMOON_VALLEY,
+				DRAENOR_NAGRAND,
+				FROSTFIRE_RIDGE,
+				GORGROND,
+			},
+			["groups"] = {
+				i(114171),	-- Ancestral Talisman
+				i(114163),	-- Barbed Fishing Hook
+				i(114157),	-- Blackrock Razor
+				i(114165),	-- Calcified Eye in a Jar
+				i(114167),	-- Ceremonial Tattoo Needles
+				i(114169),	-- Cracked Ivory Idol
+				i(114177),	-- Doomsday Prophecy
+				i(114155),	-- Elemental Bellows
+				i(114141),	-- Fang-Scarred Frostwolf Axe
+				i(114173),	-- Flask of Blazegrease
+				i(114143),	-- Frostwolf Ancestry Scrimshaw
+				i(117380),	-- Frostwolf Ghostpup (PET!)
+				i(114175),	-- Gronn-Tooth Necklace
+				i(116985),	-- Headdress of the First Shaman
+				i(114161),	-- Hooked Dagger
+				i(114153),	-- Metalworker's Hammer
+				i(114149),	-- Screaming Bullroarer
+				i(114147),	-- Warsinger's Drums
+				i(114151),	-- Warsong Ceremonial Pike
+				i(114159),	-- Weighted Chopping Axe
+				i(114145),	-- Wolfskin Snowshoes
+			},
 		})),
 		header(HEADERS.Currency, ARCH_CURRENCY_OGRE, sharedData({["cost"]={{"c",ARCH_CURRENCY_OGRE,50}}},{ -- TODO: someone can add different fragment costs within as needed
-			i(114191),	-- Eye of Har'gunn the Blind
-			i(114189),	-- Gladiator's Shield
-			i(114194),	-- Imperial Decree Stele
-			i(114190),	-- Mortar and Pestle
-			i(114185),	-- Ogre Figurine
-			i(114187),	-- Pictogram Carving
-			i(114193),	-- Rylak Riding Harness
-			i(117385),	-- Sorcerer-King Toe Ring
-			i(114192),	-- Stone Dentures
-			i(114183),	-- Stone Manacles
-			i(114181),	-- Stonemaul Succession Stone
-			i(117384),	-- Warmaul of the Warmaul Chieftain
+			["provider"] = { "o", 234106 },	-- Ogre Archaeology Find
+			["maps"] = {
+				DRAENOR_SHADOWMOON_VALLEY,
+				DRAENOR_NAGRAND,
+				GORGROND,
+				SPIRES_OF_ARAK,
+				TALADOR,
+			},
+			["groups"] = {
+				i(114191),	-- Eye of Har'gunn the Blind
+				i(114189),	-- Gladiator's Shield
+				i(114194),	-- Imperial Decree Stele
+				i(114190),	-- Mortar and Pestle
+				i(114185),	-- Ogre Figurine
+				i(114187),	-- Pictogram Carving
+				i(114193),	-- Rylak Riding Harness
+				i(117385),	-- Sorcerer-King Toe Ring
+				i(114192),	-- Stone Dentures
+				i(114183),	-- Stone Manacles
+				i(114181),	-- Stonemaul Succession Stone
+				i(117384),	-- Warmaul of the Warmaul Chieftain
+			},
 		})),
 	}),
 	prof(BLACKSMITHING, {

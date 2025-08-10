@@ -590,7 +590,11 @@ local MADAME_RUBY_GROUPS = {
 		["isLimited"] = true,
 	}),
 };
+-- #if AFTER BFA
+local ZURII_YURIAL_GROUPS = appendGroups(ENCHANTING_SUPPLIES, RUNED_COPPER_ROD_REAGENTS, {});
+-- #else
 local ZURII_YURIAL_GROUPS = ENCHANTING_SUPPLIES;
+-- #endif
 -- #if AFTER CATA
 local EPIC_GEM_COSTS = { { "c", 395, 78 } };	-- 78x Justice Points
 -- #elseif AFTER WRATH
@@ -1633,7 +1637,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 38.6, 71.8, SHATTRATH_CITY },
 						-- #if AFTER MOP
 						["sym"] = {{"select","itemID",
-							4565,    -- Simple Dagger
+							4565,	-- Simple Dagger
 						}},
 						-- #endif
 					}),
@@ -1654,7 +1658,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 38.6, 30.0, SHATTRATH_CITY },
 						-- #if AFTER MOP
 						["sym"] = {{"select","itemID",
-							4565,    -- Simple Dagger
+							4565,	-- Simple Dagger
 						}},
 						-- #endif
 					}),
@@ -2179,7 +2183,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 45.6, 19.8, SHATTRATH_CITY },
 						-- #if AFTER MOP
 						["sym"] = {{"select","itemID",
-							4565,    -- Simple Dagger
+							4565,	-- Simple Dagger
 						}},
 						-- #endif
 					}),

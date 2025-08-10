@@ -147,7 +147,7 @@ root(ROOTS.Zones, {
 					exploration(3688),	-- Auchindoun
 					visit_exploration(3917,{coord={35.1,70.1,TEROKKAR_FOREST}}),	-- Auchindoun
 					exploration(3690),	-- Blackwind Lake
-					visit_exploration(3973,{coord={63.4,66.1,TEROKKAR_FOREST}}),    -- Blackwind Landing
+					visit_exploration(3973,{coord={63.4,66.1,TEROKKAR_FOREST}}),	-- Blackwind Landing
 					exploration(3680),	-- Blackwind Valley
 					exploration(3719),	-- Bleeding Hollow Ruins
 					visit_exploration(3685,{coord={64.2,55.2,TEROKKAR_FOREST}}),	-- Bonechewer Ruins

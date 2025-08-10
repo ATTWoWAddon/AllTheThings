@@ -379,3 +379,10 @@ i(0, 442328);		-- Refine Bismuth++
 i(0, 442329);		-- Refine Bismuth+++
 i(0, 442332);		-- Refine Ironclaw Ore++
 i(0, 442333);		-- Refine Ironclaw Ore+++
+
+------------------
+-- PATCH 11.2.0 --
+------------------
+--- DISCOVERY ---
+i(0, 1250351);		-- Desolate Deposit
+i(0, 1250356);		-- Rich Desolate Deposit

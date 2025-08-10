@@ -1693,6 +1693,25 @@ i(211578, 430075);	-- Draconic Combatant's Wildercloth Treads
 i(211579, 430074);	-- Draconic Combatant's Wildercloth Tunic
 
 ------------------
+-- PATCH 11.0.0 --
+------------------
+--- NYI ---
+i(0, 446936);		-- Adaptive Delver's Shawl
+i(0, 446980);		-- Satchel of the Long Day
+i(0, 446981);		-- Satchel of the Long Night
+i(0, 446949);		-- Vicious Combatant's Weavercloth Cloak
+i(0, 446947);		-- Vicious Combatant's Weavercloth Cord
+i(0, 446954);		-- Vicious Combatant's Weavercloth Gloves
+i(0, 446950);		-- Vicious Combatant's Weavercloth Hood
+i(0, 446953);		-- Vicious Combatant's Weavercloth Mantle
+i(0, 446952);		-- Vicious Combatant's Weavercloth Pants
+i(0, 446951);		-- Vicious Combatant's Weavercloth Robe
+i(0, 446946);		-- Vicious Combatant's Weavercloth Slippers
+i(0, 446948);		-- Vicious Combatant's Weavercloth Wrists
+i(224436, 446993);	-- Reinforced Wrap Kit
+i(224437, 446994);	-- Weaverthread Parachute Kit
+
+------------------
 -- PATCH 11.0.2 --
 ------------------
 --- TRAINER ---
@@ -1778,20 +1797,9 @@ i(0, 446997);		-- Weavercloth Embroidery Thread
 i(0, 446999);		-- Weavercloth Spellthread
 
 ------------------
--- PATCH 11.0.0 --
+-- PATCH 11.2.0 --
 ------------------
---- NYI ---
-i(0, 446936);		-- Adaptive Delver's Shawl
-i(0, 446980);		-- Satchel of the Long Day
-i(0, 446981);		-- Satchel of the Long Night
-i(0, 446949);		-- Vicious Combatant's Weavercloth Cloak
-i(0, 446947);		-- Vicious Combatant's Weavercloth Cord
-i(0, 446954);		-- Vicious Combatant's Weavercloth Gloves
-i(0, 446950);		-- Vicious Combatant's Weavercloth Hood
-i(0, 446953);		-- Vicious Combatant's Weavercloth Mantle
-i(0, 446952);		-- Vicious Combatant's Weavercloth Pants
-i(0, 446951);		-- Vicious Combatant's Weavercloth Robe
-i(0, 446946);		-- Vicious Combatant's Weavercloth Slippers
-i(0, 446948);		-- Vicious Combatant's Weavercloth Wrists
-i(224436, 446993);	-- Reinforced Wrap Kit
-i(224437, 446994);	-- Weaverthread Parachute Kit
+i(239486, 1228344);	-- Pure Chronomatic Fiber
+i(239487, 1228343);	-- Pure Dexterous Fiber
+i(239485, 1228338);	-- Pure Energizing Fiber
+i(239488, 1228342);	-- Pure Precise Fiber

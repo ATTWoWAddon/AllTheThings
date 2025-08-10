@@ -61,10 +61,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					-- All seasons
 					i(226814, {	-- Chest of Gold
 						["cost"] = {
-							-- #if BEFORE 11.1.0
-							{"i", ALGARI_TOKEN_OF_MERIT_S1, 2},
-							-- #else
+							-- #if AFTER 11.2.0
+							{"i", ALGARI_TOKEN_OF_MERIT_S3, 2},
+							-- #elseif AFTER 11.1
 							{"i", ALGARI_TOKEN_OF_MERIT_S2, 2},
+							-- #else
+							{"i", ALGARI_TOKEN_OF_MERIT_S1, 2},
 							-- #endif
 						},
 					}),
@@ -119,7 +121,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(240481, {	-- Consultant Wrexxle <Undermine Dealer>
 				["coord"] = { 52.0, 46.0, DORNOGAL },
-				["timeline"] = { ADDED_11_1_5 },
+				["timeline"] = { ADDED_11_1_5, REMOVED_11_2_0 },
 				["groups"] = appendAllGroups(
 					sharedData({	-- Mythic
 						["cost"] = {{ "i", 237502, 3 }},	-- 3x Puzzling Cartel Chip

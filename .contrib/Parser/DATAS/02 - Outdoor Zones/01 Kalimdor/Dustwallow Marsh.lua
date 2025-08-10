@@ -2170,8 +2170,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(27292, {	-- Return to Krog
-					["sourceQuest"] = 27258,    -- The Black Shield (5/5) [H]
-					["qg"] = 4943,    -- Mosarn
+					["sourceQuest"] = 27258,	-- The Black Shield (5/5) [H]
+					["qg"] = 4943,	-- Mosarn
 					["coord"] = { 54.3, 80.3, THUNDER_BLUFF },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,

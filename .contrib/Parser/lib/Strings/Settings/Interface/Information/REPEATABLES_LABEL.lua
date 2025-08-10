@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Repeatables",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Repetibles",
+		mx = "Repetibles",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",

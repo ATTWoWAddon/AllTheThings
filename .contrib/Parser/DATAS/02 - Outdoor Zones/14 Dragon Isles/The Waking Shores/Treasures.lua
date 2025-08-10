@@ -248,8 +248,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			o(381336, {	-- One Small Part
 				["coords"] = {
-					{ 27.2, 60.9, THE_WAKING_SHORES },    -- entrance
-					{ 24.2, 53.4, THE_WAKING_SHORES },    -- stone
+					{ 27.2, 60.9, THE_WAKING_SHORES },	-- entrance
+					{ 24.2, 53.4, THE_WAKING_SHORES },	-- stone
 				}
 			}),
 			o(382325, {	-- Onyx Gem Cluster

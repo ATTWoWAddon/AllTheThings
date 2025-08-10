@@ -249,6 +249,9 @@ VANILLA_COMMON_LEATHERWORKING_TAILORING_SUPPLIES = sharedData({
 		{ "n", 16767},	-- Neii <Tailoring Supplies>
 		{ "n", 16689},	-- Zaralda <Leatherworking Supplies>
 		-- #endif
+		-- #if AFTER WRATH
+		{ "n", 28726},	-- Dominique Stefano <Tailoring Supplies>
+		-- #endif
 		-- #if AFTER CATA
 		{ "n", 3008},	-- Mak <Leatherworking Supplies> [CATA+] / <Journeyman Leatherworker>
 		-- #endif
@@ -631,6 +634,10 @@ CATA_LEATHERWORKING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"
 	r(330199, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV [Cataclysm]
 	r(330200, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V [Cataclysm]
 	n(ARMOR, {
+		-- #if ANYCLASSIC
+		r(1216335, {["timeline"] = {ADDED_4_4_1, REMOVED_5_5_0}}),	-- Bloodthirsty Fur Cloak
+		r(1216336, {["timeline"] = {ADDED_4_4_1, REMOVED_5_5_0}}),	-- Bloodthirsty Hide Cloak
+		-- #endif
 		r(78438),	-- Cloak of Beasts
 		r(78439),	-- Cloak of War
 		r(78428),	-- Darkbrand Chestguard
@@ -867,6 +874,7 @@ MOP_LEATHERWORKING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeli
 		r(124580),	-- Stormscale Shoulders
 	}),
 	filter(MISC, {
+		r(124127),	-- Angerhide Leg Armor
 		r(124126),	-- Brutal Leg Armor
 		r(124569, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Draconic Leg Reinforcements [Rank 1]
 		r(124566, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Draconic Leg Reinforcements [Rank 2]
@@ -879,6 +887,7 @@ MOP_LEATHERWORKING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeli
 		r(124568, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Heavy Leg Reinforcements [Rank 1]
 		r(124565, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Heavy Leg Reinforcements [Rank 2]
 		r(124563),	-- Heavy Leg Reinforcements [Rank 3]
+		r(124128),	-- Ironscale Leg Armor
 		r(131865, {["timeline"] = {ADDED_5_2_0}}),	-- Magnificent Hide
 		r(124627),	-- Mist-Touched Leather
 		r(124567, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Primal Leg Reinforcements [Rank 1]
@@ -887,10 +896,11 @@ MOP_LEATHERWORKING = applyclassicphase(MOP_PHASE_LANDFALL, bubbleDown({ ["timeli
 		r(163220, {["timeline"] = {ADDED_6_0_2}}),	-- Prismatic Scale
 		r(124628),	-- Sha Armor Kit
 		r(124124),	-- Sha-Touched Leg Armor
+		r(124129),	-- Shadowleather Leg Armor
 		r(124125),	-- Toughened Leg Armor
 	}),
 }));
-COMMON_MOP_LEATHERWORKING_RECIPES = applyclassicphase(MOP_PHASE_LANDFALL, sharedData({ ["cost"] = {{ "i", SPIRIT_OF_HARMONY, 1 }}, ["timeline"] = { ADDED_5_0_4 } }, {
+COMMON_MOP_LEATHERWORKING_RECIPES = sharedData({ ["cost"] = {{ "i", SPIRIT_OF_HARMONY, 1 }}, ["timeline"] = { ADDED_5_0_4 } }, {
 	i(86240),	-- Pattern: Contender's Dragonscale Belt (RECIPE!)
 	i(86241),	-- Pattern: Contender's Dragonscale Boots (RECIPE!)
 	i(86242),	-- Pattern: Contender's Dragonscale Bracers (RECIPE!)
@@ -923,7 +933,7 @@ COMMON_MOP_LEATHERWORKING_RECIPES = applyclassicphase(MOP_PHASE_LANDFALL, shared
 	i(86269),	-- Pattern: Contender's Wyrmhide Helm (RECIPE!)
 	i(86270),	-- Pattern: Contender's Wyrmhide Leggings (RECIPE!)
 	i(86271),	-- Pattern: Contender's Wyrmhide Shoulders (RECIPE!)
-}));
+});
 DRAENOR_LEATHERWORKING = applyclassicphase(WOD_PHASE_ONE, i(115358, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
 	["description"] = "This is a reward for completing the introductory Leaterworking questline that can drop from any Draenor mob.",
 	["groups"] = {

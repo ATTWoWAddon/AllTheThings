@@ -30,7 +30,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_1_0 } }, 
 						["groups"] = {
 							i(238208, {	-- Nanny's Surge Dividends (S2)
 								["sym"] = {{"select","itemID",235639},{"pop"}},	-- Seasoned Adventurer's Cache [Undermine Zone Rewards content]
-								["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
+								["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0_SEASONSTART },
 							}),
 							i(250764, {	-- Nanny's Surge Dividends (S3)
 								["sym"] = {{"select","itemID",235639},{"pop"}},	-- Seasoned Adventurer's Cache [Undermine Zone Rewards content]

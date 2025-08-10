@@ -261,17 +261,17 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 							i(185814),	-- Auctioneer's Counting Bracers
 							i(185777),	-- Fang of Alcruux
 							i(185794, {	-- Gavel Pounders
-								["timeline"] = { ADDED_9_1_0, REMOVED_11_2_0 },
+								["timeline"] = { ADDED_9_1_0, REMOVED_11_2_0_SEASONSTART },
 							}),
 							i(185821),	-- Gluttonous Rondel
 							i(246282, {	-- Order Bashers
-								["timeline"] = { ADDED_11_2_0 },
+								["timeline"] = { ADDED_11_2_0_SEASONSTART },
 							}),
 							i(246281, {	-- Ring of the Panoply
-								["timeline"] = { ADDED_11_2_0 },
+								["timeline"] = { ADDED_11_2_0_SEASONSTART },
 							}),
 							i(185840, {	-- Seal of the Panoply
-								["timeline"] = { ADDED_9_1_0, REMOVED_11_2_0 },
+								["timeline"] = { ADDED_9_1_0, REMOVED_11_2_0_SEASONSTART },
 							}),
 							i(185809),	-- Venza's Powderbelt
 						},
@@ -316,10 +316,10 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 							i(185802),	-- Breakbeat Shoulderguards
 							i(185804),	-- Harmonious Spaulders
 							i(185806, {	-- Improvisational Cinch
-								["timeline"] = { ADDED_9_1_0, REMOVED_11_2_0 },
+								["timeline"] = { ADDED_9_1_0, REMOVED_11_2_0_SEASONSTART },
 							}),
 							i(246287, {	-- Improvisational Girdle
-								["timeline"] = { ADDED_11_2_0 },
+								["timeline"] = { ADDED_11_2_0_SEASONSTART },
 							}),
 							i(185842),	-- Ornately Engraved Amplifier
 							i(185789),	-- Sabatons of Measured Time
@@ -341,10 +341,10 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 							i(185843),	-- Duplicating Drape
 							i(185778),	-- First Fist of the So Cartel
 							i(246285, {	-- Fluxphase Culottes
-								["timeline"] = { ADDED_11_2_0 },
+								["timeline"] = { ADDED_11_2_0_SEASONSTART },
 							}),
 							i(185800, {	-- Orbitwarp Culottes
-								["timeline"] = { ADDED_9_1_0, REMOVED_11_2_0 },
+								["timeline"] = { ADDED_9_1_0, REMOVED_11_2_0_SEASONSTART },
 							}),
 							i(185798),	-- Quantum Leapers
 							i(185782),	-- Robes of Midnight Bargains
@@ -363,13 +363,13 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 							i(183467),	-- Tireless Pursuit
 							-- Items
 							i(246280, {	-- Boots of Titanic Deconversion
-								["timeline"] = { ADDED_11_2_0 },
+								["timeline"] = { ADDED_11_2_0_SEASONSTART },
 							}),
 							i(246275, {	-- Codebreaker's Cunning Handwraps
-								["timeline"] = { ADDED_11_2_0 },
+								["timeline"] = { ADDED_11_2_0_SEASONSTART },
 							}),
 							i(185788, {	-- Codebreaker's Cunning Sandals
-								["timeline"] = { ADDED_9_1_0, REMOVED_11_2_0 },
+								["timeline"] = { ADDED_9_1_0, REMOVED_11_2_0_SEASONSTART },
 							}),
 							i(185781),	-- Drape of Titanic Dreams
 							i(185805),	-- Hyldebrande's Retrofitted Shoulderguards
@@ -377,7 +377,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 							i(185779),	-- Spire of Expurgation
 							i(185803),	-- Stoneflesh Spaulders
 							i(185790, {	-- Treads of Titanic Deconversion
-								["timeline"] = { ADDED_9_1_0, REMOVED_11_2_0 },
+								["timeline"] = { ADDED_9_1_0, REMOVED_11_2_0_SEASONSTART },
 							}),
 						},
 					}),
@@ -395,12 +395,12 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 							i(185820),	-- Cabochon of the Infinite Flight
 							i(185795),	-- Cowl of Branching
 							i(246283, {	-- Crown of Absolute Command
-								["timeline"] = { ADDED_11_2_0 },
+								["timeline"] = { ADDED_11_2_0_SEASONSTART },
 							}),
 							i(185796),	-- Dragonbane Diadem
 							i(185823),	-- Fatebreaker, Destroyer of Futures
 							i(185776, {	-- Hooktail's Commanding Gaze
-								["timeline"] = { ADDED_9_1_0, REMOVED_11_2_0 },
+								["timeline"] = { ADDED_9_1_0, REMOVED_11_2_0_SEASONSTART },
 							}),
 							i(185797),	-- Rakishly Tipped Tricorne
 							i(185841),	-- Timetwister Tulwar
@@ -421,12 +421,12 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 							-- Items
 							i(185801),	-- Anomalous Starlit Breeches
 							i(185785, {	-- Embrace of the Relicbinder
-								["timeline"] = { ADDED_9_1_0, REMOVED_11_2_0 },
+								["timeline"] = { ADDED_9_1_0, REMOVED_11_2_0_SEASONSTART },
 							}),
 							i(185819),	-- Event Horizon's
 							i(185799),	-- Hyperlight Leggings
 							i(185784, {	-- Novaburst Warplate
-								["timeline"] = { ADDED_9_1_0, REMOVED_11_2_0 },
+								["timeline"] = { ADDED_9_1_0, REMOVED_11_2_0_SEASONSTART },
 							}),
 							i(185813),	-- Signet of Collapsing Stars
 							i(190958),	-- So'leah's Secret Technique

@@ -504,10 +504,6 @@ r(382978),	-- Cataclysm Prospecting
 r(382979),	-- Northrend Prospecting
 r(382980),	-- Outland Prospecting
 r(382995),	-- Classic Prospecting
-11.0.0.54311
-r(434019),	-- Recraft Equipment
-r(435335),	-- Apply Socket
-r(435336),	-- Vicious Jeweler's Setting
 
 
 
@@ -983,7 +979,3 @@ r(248937),	-- Empyrial Circlet
 r(248938),	-- Empyrial Hesselian Setting
 r(248939),	-- Empyrial Florid Malachite Setting
 r(248940),	-- Empyrial Crown
-11.0.0.54311
-r(434019),	-- Recraft Equipment
-r(435335),	-- Apply Socket
-r(435336),	-- Vicious Jeweler's Setting

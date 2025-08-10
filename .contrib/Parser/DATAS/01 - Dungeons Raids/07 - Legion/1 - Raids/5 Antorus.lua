@@ -27,43 +27,43 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				}),
 				ach(12020),	-- Argussy Up (Antorus, the Burning Throne)
 				ach(11988, {	-- Light's Breach
-                    crit(37232, {    -- Garothi Worldbreaker
+                    crit(37232, {	-- Garothi Worldbreaker
                         ["_encounter"] = { 1992, DIFFICULTY.RAID.LFR },
                     }),
-                    crit(37233, {    -- Felhounds of Sargeras
+                    crit(37233, {	-- Felhounds of Sargeras
                         ["_encounter"] = { 1987, DIFFICULTY.RAID.LFR },
                     }),
-                    crit(37234, {    -- Antoran High Command
+                    crit(37234, {	-- Antoran High Command
                         ["_encounter"] = { 1997, DIFFICULTY.RAID.LFR },
                     }),
                 }),
 				ach(11989, {	-- Hope's End
-                    crit(37236, {    -- Eonar the Life-Bender
+                    crit(37236, {	-- Eonar the Life-Bender
                         ["_encounter"] = { 2025, DIFFICULTY.RAID.LFR },
                     }),
-                    crit(37235, {    -- Portal Keeper Hasabel
+                    crit(37235, {	-- Portal Keeper Hasabel
                         ["_encounter"] = { 1985, DIFFICULTY.RAID.LFR },
                     }),
-                    crit(37237, {    -- Imonar the Soulhunter
+                    crit(37237, {	-- Imonar the Soulhunter
                         ["_encounter"] = { 2009, DIFFICULTY.RAID.LFR },
                     }),
                 }),
 				ach(11990, {	-- Forbidden Descent
-                    crit(37238, {    -- Kin'garoth
+                    crit(37238, {	-- Kin'garoth
                         ["_encounter"] = { 2004, DIFFICULTY.RAID.LFR },
                     }),
-                    crit(37239, {    -- Varimathras
+                    crit(37239, {	-- Varimathras
                         ["_encounter"] = { 1983, DIFFICULTY.RAID.LFR },
                     }),
-                    crit(37240, {    -- The Coven of Shivarra
+                    crit(37240, {	-- The Coven of Shivarra
                         ["_encounter"] = { 1986, DIFFICULTY.RAID.LFR },
                     }),
                 }),
 				ach(11991, {	-- Seat of the Pantheon
-                    crit(37241, {    -- Aggramar
+                    crit(37241, {	-- Aggramar
                         ["_encounter"] = { 1984, DIFFICULTY.RAID.LFR },
                     }),
-                    crit(37242, {    -- Argus the Unmaker
+                    crit(37242, {	-- Argus the Unmaker
                         ["_encounter"] = { 2031, DIFFICULTY.RAID.LFR },
                     }),
                 }),

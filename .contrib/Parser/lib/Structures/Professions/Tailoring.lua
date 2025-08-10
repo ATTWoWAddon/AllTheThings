@@ -231,6 +231,9 @@ VANILLA_TAILORING_SUPPLIES = sharedData({
 		{ "n", 18772},	-- Hama <Tailoring Trainer>
 		{ "n", 16767},	-- Neii <Tailoring Supplies>
 		-- #endif
+		-- #if AFTER WRATH
+		{ "n", 28726},	-- Dominique Stefano <Tailoring Supplies>
+		-- #endif
 	},
 }, {
 	i(2324),	-- Bleach (Only sold by Tailoring Suppliers)
@@ -367,6 +370,23 @@ WRATH_TAILORING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] =
 		r(56003),	-- Spellweave
 	}),
 }));
+ETERNIUM_THREAD = applyclassicphase(WRATH_PHASE_ONE, {
+	i(38426, {	-- Eternium Thread
+		-- #if AFTER CATA
+		["description"] = "Can be bought from Leatherworking- and Tailoring Suppliers, as well as some Trade vendors around the world.",
+		-- #else
+		["description"] = "Can be bought from Tailoring Suppliers, as well as some Trade vendors around the world.",
+		-- #endif
+		["providers"] = {
+			{ "n", 24341},	-- Barnabas Frye <Trade Goods>
+			{ "n", 27012},	-- Beem Goldsprocket <Trade Goods>
+			{ "n", 26941},	-- Brokkan Bear-Arms <Trade Goods>
+			{ "n", 28726},	-- Dominique Stefano <Tailoring Supplies>
+			{ "n", 23802},	-- Wink Sprinklesprankle <General Goods & Trade Supplies>
+		},
+		["timeline"] = { ADDED_3_0_3 },
+	})
+})
 CATA_TAILORING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
 	r(75156, {	-- Tailoring (Illustrious)
 		["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },

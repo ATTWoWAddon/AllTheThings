@@ -777,19 +777,21 @@ end
 local checkboxExpandDifficulty = child:CreateCheckBox(L.EXPAND_DIFFICULTY_CHECKBOX,
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Expand:Difficulty"))
-	if not settings:GetTooltipSetting("Expand:MiniList") then
-		self:Disable()
-		self:SetAlpha(0.4)
-	else
-		self:Enable()
-		self:SetAlpha(1)
+	if app.IsClassic then
+		if not settings:GetTooltipSetting("Expand:MiniList") then
+			self:Disable()
+			self:SetAlpha(0.4)
+		else
+			self:Enable()
+			self:SetAlpha(1)
+		end
 	end
 end,
 function(self)
 	settings:SetTooltipSetting("Expand:Difficulty", self:GetChecked())
 end)
 checkboxExpandDifficulty:SetATTTooltip(L.EXPAND_DIFFICULTY_CHECKBOX_TOOLTIP)
-checkboxExpandDifficulty:AlignBelow(checkboxExpandMiniList, 1)
+checkboxExpandDifficulty:AlignBelow(checkboxExpandMiniList, app.IsClassic and 1 or nil)
 
 local checkboxIconPortrait = child:CreateCheckBox(L.SHOW_ICON_PORTRAIT_CHECKBOX,
 function(self)
@@ -800,7 +802,7 @@ function(self)
 	app.CallbackEvent("OnRenderDirty")
 end)
 checkboxIconPortrait:SetATTTooltip(L.SHOW_ICON_PORTRAIT_CHECKBOX_TOOLTIP)
-checkboxIconPortrait:AlignBelow(checkboxExpandDifficulty, -1)
+checkboxIconPortrait:AlignBelow(checkboxExpandDifficulty, app.IsClassic and -1 or nil)
 
 local checkboxIconPortraitForQuests = child:CreateCheckBox(L.SHOW_ICON_PORTRAIT_FOR_QUESTS_CHECKBOX,
 function(self)

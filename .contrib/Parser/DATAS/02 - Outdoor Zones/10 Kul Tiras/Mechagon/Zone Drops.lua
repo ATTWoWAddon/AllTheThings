@@ -19,6 +19,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 			i(168215),	-- Machined Gear Assembly
 			i(169873),	-- Mechanized Supply Key
 			i(169218),	-- Old Rusty Key
+			i(168632),	-- Slipstream Generator
 			i(166846),	-- Spare Parts
 			i(168216),	-- Tempered Plating
 		}),

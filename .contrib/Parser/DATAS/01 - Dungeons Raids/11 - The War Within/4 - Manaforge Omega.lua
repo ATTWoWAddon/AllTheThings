@@ -266,15 +266,22 @@ local Boss, BossOnly, Difficulty, CommonBossDrops, ZoneDrops =
 InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops, InstanceHelper.ZoneDrops
 
 InstanceHelper.UpgradeMapping = {
+	-- #IF AFTER 11.3
+	[DIFFICULTY.RAID.LFR] = 0,
+	[DIFFICULTY.RAID.NORMAL] = 0,
+	[DIFFICULTY.RAID.HEROIC] = 0,
+	-- #ELSE
 	[DIFFICULTY.RAID.LFR] = 3,
 	[DIFFICULTY.RAID.NORMAL] = 5,
 	[DIFFICULTY.RAID.HEROIC] = 6,
+	-- #ENDIF
 };
 
-root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_2_0_SEASONSTART } }, {
+root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 	inst(1302, {	-- Manaforge Omega
 		["isRaid"] = true,
 		["coord"] = { 41.9, 21.5, KARESH },
+		["timeline"] = { ADDED_11_2_0_SEASONSTART },
 		["maps"] = {
 			2460,	-- The Forge Core
 			2461,	-- The Unbound Vault
@@ -391,7 +398,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 					["coord"] = { 42.0, 22.1, KARESH },
 				},bubbleDownRep(FACTION_MANAFORGE_VANDALS, {
 					{		-- RENOWN 1 --
-						q(92031), -- Meet the Vandals
+						q(92031, {	-- Meet the Vandals
+							["timeline"] = { ADDED_11_2_0 },
+						}),
 					}, {	-- RENOWN 2 --
 					}, {	-- RENOWN 3 --
 					}, {	-- RENOWN 4 --
@@ -399,12 +408,18 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 					}, {	-- RENOWN 6 --
 					}, {	-- RENOWN 7 --
 					}, {	-- RENOWN 8 --
+						i(249709),	-- Formula: Gleeful Glamour - Ethereal (RECIPE!)
+						i(249703),	-- Technique: Deal: Cartel Ba (RECIPE!)
+						i(249705),	-- Technique: Deal: Cartel Om (RECIPE!)
+						i(249701),	-- Technique: Deal: Cartel Zo (RECIPE!)
 						i(186640),	-- Vandal's Gearglider (MOUNT!)
+						i(246694),	-- Zo'ya (PET!)
 					}, {	-- RENOWN 9 --
 					}, {	-- RENOWN 10 --
 					}, {	-- RENOWN 11 --
 					}, {	-- RENOWN 12 --
 					}, {	-- RENOWN 13 --
+						i(244913),	-- Looker Gaz'kreth Jr. (PET!)
 					}, {	-- RENOWN 14 --
 						i(242728),	-- The Bone Freezer (MOUNT!)
 						title(640),	-- Star Savior <Name>
@@ -522,7 +537,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 				["description"] = "This allows converting certain pieces of gear into Tier items for your Class.\n\nMake sure to equip your item first before converting it.",
 				["coord"] = { 50.0, 54.2, DORNOGAL },
 				["modelScale"] = 4,
-				["catalystID"] = 10,	-- ItemBonus.Value_0 TWW:S2 -- Ask Runaway if this need change?
+				["catalystID"] = 11,	-- ItemBonus.Value_0 TWW:S3
 				["groups"] = {
 					Difficulty(DIFFICULTY.RAID.LFR, {["upgradeTrackID"]=UPGRADETRACKS.VETERAN}).AddGroups(
 						ALL_CLASS_TIERS_HELPER(MANAFORGE_OMEGA_TIER, DIFFICULTY.RAID.LFR)
@@ -543,7 +558,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 				BossOnly(LOOMITHAR, {
 					i(224435),	-- Pattern: Duskthread Lining (RECIPE!)
 				}),
-				BossOnly(NAAZINDHRI),
+				BossOnly(NAAZINDHRI, {
+					i(250104),	-- Soulbinder's Nethermantle (COSMETIC!)
+				}),
 				BossOnly(ARAZ, {
 					i(223048),	-- Plans: Siphoning Stiletto (RECIPE!)
 				}),
@@ -569,7 +586,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 				}),
 				CommonBossDrops({
 					currency(WEATHERED_ETHEREAL_CREST, {
-						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+						["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
 					}),
 				}),
 				header(HEADERS.LFGDungeon, 2799, {	-- Might of the Shadowguard
@@ -621,7 +638,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(CARVED_ETHEREAL_CREST, {
-						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+						["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
 					}),
 				}),
 				n(QUESTS, {
@@ -660,7 +677,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(RUNED_ETHEREAL_CREST, {
-						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+						["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
 					}),
 				}),
 				n(QUESTS, {
@@ -684,7 +701,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
 				CommonBossDrops({
 					currency(GILDED_ETHEREAL_CREST, {
-						["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 },
+						["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
 					}),
 				}),
 				n(QUESTS, {
@@ -717,7 +734,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 						title(615),	-- Void Vanquisher <Name>
 					}),
 					ach(41625, {["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 }}),	-- Cutting Edge: Dimensius, the All-Devouring
-					ach(41623, bubbleDownSelf({["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 } }, {	-- Hall of Fame: Dimensius, the All-Devouring
+					ach(41623, applyDataSelf({["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 } }, {	-- Hall of Fame: Dimensius, the All-Devouring
 						title(614),	-- <Name>, Famed Slayer of Dimensius
 					})),
 					ach(41622),	-- Mythic: Dimensius, the All-Devouring Guild Run
@@ -730,79 +747,37 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 			}),
 		},
 	}),
-})));
---[[
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0_SEASONSTART } }, {
+}));
+
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	inst(1302, {	-- Manaforge Omega
-		n(FACTIONS, {
-			header(HEADERS.Faction, FACTION_MANAFORGE_VANDALS, {
-				n(QUESTS, {
-					q(92032),	-- Triggered with Meet the Vandals (92031)
-					q(92033),	-- Triggered with Meet the Vandals (92031)
+		["timeline"] = { ADDED_11_2_0_SEASONSTART },
+		["groups"] = {
+			n(FACTIONS, {
+				header(HEADERS.Faction, FACTION_MANAFORGE_VANDALS, {
+					n(QUESTS, {
+						q(92032, {	-- Triggered with Meet the Vandals (92031)
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+						q(92033, {	-- Triggered with Meet the Vandals (92031)
+							["timeline"] = { ADDED_11_2_0 },
+						}),
+					}),
 				}),
 			}),
-		}),
-		inst(1302, bubbleDown({	-- Manaforge Omega
-			["isWeekly"] = true,
-		},{
-			-- LFR
-			q(88835, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash
-			q(88838, name(HEADERS.NPC, 229287)),	-- Professor Boomspark Trash
-			q(88842, name(HEADERS.NPC, 229288)),	-- King Flamespite Trash
-			q(88846, name(HEADERS.NPC, 229433)),	-- Skiggy Muckheimer Trash
-			q(88867, name(HEADERS.NPC, 238011)),	-- Trashmaster Blazedump Trash
-			q(88829, name(HEADERS.NPC, 229283)),	-- Scraps Trash
-			q(88859, name(HEADERS.NPC, 234640)),	-- Globikus Trash
-			q(88850, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash
-			q(88854, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash
-			-- Normal
-			q(88833, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash
-			q(88840),	-- King Flamespite/Professor Boomspark Trash
-			q(88844),	-- King Flamespite/Professor Boomspark Trash
-			q(88848, name(HEADERS.NPC, 229433)),	-- Skiggy Muckheimer Trash
-			q(88869, name(HEADERS.NPC, 238011)),	-- Trashmaster Blazedump Trash
-			q(88830, name(HEADERS.NPC, 229283)),	-- Scraps Trash
-			q(88861, name(HEADERS.NPC, 234640)),	-- Globikus Trash
-			q(88852, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash
-			q(88856, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash
-			-- Heroic
-			q(88836, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash
-			q(88837, name(HEADERS.NPC, 229287)),	-- Professor Boomspark Trash
-			q(88841, name(HEADERS.NPC, 229288)),	-- King Flamespite Trash
-			q(88845, name(HEADERS.NPC, 229433)),	-- Skiggy Muckheimer Trash
-			q(88866, name(HEADERS.NPC, 238011)),	-- Trashmaster Blazedump Trash
-			q(88831, name(HEADERS.NPC, 229283)),	-- Scraps Trash
-			q(88858, name(HEADERS.NPC, 234640)),	-- Globikus Trash
-			q(88849, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash
-			q(88853, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash
-			-- Mythic
-			q(88834, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash
-			q(88839),	-- King Flamespite/Professor Boomspark Trash
-			q(88843),	-- King Flamespite/Professor Boomspark Trash
-			q(88847, name(HEADERS.NPC, 229433)),	-- Skiggy Muckheimer Trash
-			q(88868, name(HEADERS.NPC, 238011)),	-- Trashmaster Blazedump Trash
-			q(88832, name(HEADERS.NPC, 229283)),	-- Scraps Trash
-			q(88860, name(HEADERS.NPC, 234640)),	-- Globikus Trash
-			q(88851, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash
-			q(88855, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash
-			-- All
-			q(89478, name(HEADERS.NPC, 229284)),	-- Guk Boomdog Trash first per week any difficulty
-			q(89479, name(HEADERS.NPC, 229433)),	-- Skiggy Muckheimer Trash first per week any difficulty
-			q(89484, name(HEADERS.NPC, 238011)),	-- Trashmaster Blazedump Trash first per week any difficulty
-			q(89477, name(HEADERS.NPC, 229283)),	-- Scraps Trash first per week any difficulty
-			q(89482, name(HEADERS.NPC, 234640)),	-- Globikus Trash first per week any difficulty
-			q(89480, name(HEADERS.NPC, 229434)),	-- Melbo The Magnificent Trash first per week any difficulty
-			q(89481, name(HEADERS.NPC, 233306)),	-- The Junkmaker Trash first per week any difficulty
-
-			q(89452),	-- Vexie Fullthrottle
-			q(89453),	-- Cauldron of Carnage
-			q(89454),	-- Rik Reverb
-			q(89455),	-- Stix Bunkjunker
-			q(89456),	-- Sprocketmonger Lockenstock
-			q(89457),	-- One-Armed Bandit
-			q(89458),	-- Mug'Zee
-			q(89459),	-- Chrome King Gallywix
-		})),
+		},
 	}),
-})));
---]]
+	inst(1302, bubbleDown({	-- Manaforge Omega
+		["isWeekly"] = true,
+	},{
+		-- LFR
+
+		-- Normal
+
+		-- Heroic
+
+		-- Mythic
+
+		-- All
+	})),
+}));

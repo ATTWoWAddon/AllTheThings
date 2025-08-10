@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			ach(17783, {	-- Adventurer of Zaralek Cavern
 				["sym"] = {{ "achievement_criteria" }},
 			}),
-			ach(17567),    -- Ancient Stones of Zaralek (automated)
+			ach(17567),	-- Ancient Stones of Zaralek (automated)
 			petbattle(ach(17880, {	-- Battle in Zaralek Cavern
 				crit(59352, {	-- To a Land Down Under
 					["_quests"] = { 75680 },	-- To a Land Down Under

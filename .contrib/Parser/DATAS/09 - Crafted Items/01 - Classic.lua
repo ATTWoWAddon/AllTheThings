@@ -178,7 +178,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		i(63127),	-- Highborne Scroll
 		i(87399, {["timeline"] = { ADDED_5_0_4 }}),	-- Restored Artifact
 		i(63128),	-- Troll Tablet
-		header(HEADERS.Currency, ARCH_CURRENCY_DWARF, sharedData({["cost"]={{"c",ARCH_CURRENCY_DWARF,50}}},{ -- TODO: someone can add different fragment costs within as needed
+		header(HEADERS.Currency, ARCH_CURRENCY_DWARF, {
 			["provider"] = { "o", 204282 },	-- Dwarf Archaeology Find
 			["maps"] = {
 				ARATHI_HIGHLANDS,
@@ -193,40 +193,40 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				WETLANDS,
 			},
 			["groups"] = {
-				i(63113),	-- Belt Buckle with Anvilmar Crest
-				i(64339),	-- Bodacious Door Knocker
-				i(63112),	-- Bone Gaming Dice
-				i(64340),	-- Boot Heel with Scrollwork
-				i(63409),	-- Ceramic Funeral Urn
-				i(64373),	-- Chalice of the Mountain Kings (TOY!)
-				i(64372),	-- Clockwork Gnome (PET!)
-				i(64362),	-- Dented Shield of Horuz Killcrow
-				i(66054),	-- Dwarven Baby Socks
-				i(64342),	-- Golden Chamber Pot
-				i(64344),	-- Ironstar's Petrified Shield
-				i(64368),	-- Mithril Chain of Angerforge
-				i(63414),	-- Moltenfist's Jeweled Goblet
-				i(64337),	-- Notched Sword of Tunadil the Redeemer
-				i(63408),	-- Pewter Drinking Cup
-				i(64659),	-- Pipe of Franclorn Forgewright
-				i(64487),	-- Scepter of Bronzebeard
-				i(64367),	-- Scepter of Charlga Razorflank
-				i(64366),	-- Scorched Staff of Shadow Priest Anund
-				i(64483),	-- Silver Kris of Korl
-				i(63411),	-- Silver Neck Torc
-				i(64371),	-- Skull Staff of Shadowforge
-				i(64485),	-- Spiked Gauntlets of Anvilrage
-				i(64489),	-- Staff of Sorcerer-Thane Thaurissan
-				i(63410),	-- Stone Gryphon
-				i(64488),	-- The Innkeeper's Daughter (TOY!)
-				i(64484),	-- Warmaul of Burningeye
-				i(64343),	-- Winged Helm of Corehammer
-				i(63111),	-- Wooden Whistle
-				i(64486),	-- Word of Empress Zoe
-				i(63110),	-- Worn Hunting Knife
+				i(63113, {["cost"]={{"c",ARCH_CURRENCY_DWARF,34}}}),	-- Belt Buckle with Anvilmar Crest
+				i(64339, {["cost"]={{"c",ARCH_CURRENCY_DWARF,35}}}),	-- Bodacious Door Knocker
+				i(63112, {["cost"]={{"c",ARCH_CURRENCY_DWARF,32}}}),	-- Bone Gaming Dice
+				i(64340, {["cost"]={{"c",ARCH_CURRENCY_DWARF,34}}}),	-- Boot Heel with Scrollwork
+				i(63409, {["cost"]={{"c",ARCH_CURRENCY_DWARF,35}}}),	-- Ceramic Funeral Urn
+				i(64373, {["cost"]={{"c",ARCH_CURRENCY_DWARF,100}}}),	-- Chalice of the Mountain Kings (TOY!)
+				i(64372, {["cost"]={{"c",ARCH_CURRENCY_DWARF,100}}}),	-- Clockwork Gnome (PET!)
+				i(64362, {["cost"]={{"c",ARCH_CURRENCY_DWARF,35}}}),	-- Dented Shield of Horuz Killcrow
+				i(66054, {["cost"]={{"c",ARCH_CURRENCY_DWARF,30}}}),	-- Dwarven Baby Socks
+				i(64342, {["cost"]={{"c",ARCH_CURRENCY_DWARF,35}}}),	-- Golden Chamber Pot
+				i(64344, {["cost"]={{"c",ARCH_CURRENCY_DWARF,36}}}),	-- Ironstar's Petrified Shield
+				i(64368, {["cost"]={{"c",ARCH_CURRENCY_DWARF,35}}}),	-- Mithril Chain of Angerforge
+				i(63414, {["cost"]={{"c",ARCH_CURRENCY_DWARF,34}}}),	-- Moltenfist's Jeweled Goblet
+				i(64337, {["cost"]={{"c",ARCH_CURRENCY_DWARF,35}}}),	-- Notched Sword of Tunadil the Redeemer
+				i(63408, {["cost"]={{"c",ARCH_CURRENCY_DWARF,35}}}),	-- Pewter Drinking Cup
+				i(64659, {["cost"]={{"c",ARCH_CURRENCY_DWARF,45}}}),	-- Pipe of Franclorn Forgewright
+				i(64487, {["cost"]={{"c",ARCH_CURRENCY_DWARF,45}}}),	-- Scepter of Bronzebeard
+				i(64367, {["cost"]={{"c",ARCH_CURRENCY_DWARF,35}}}),	-- Scepter of Charlga Razorflank
+				i(64366, {["cost"]={{"c",ARCH_CURRENCY_DWARF,35}}}),	-- Scorched Staff of Shadow Priest Anund
+				i(64483, {["cost"]={{"c",ARCH_CURRENCY_DWARF,45}}}),	-- Silver Kris of Korl
+				i(63411, {["cost"]={{"c",ARCH_CURRENCY_DWARF,34}}}),	-- Silver Neck Torc
+				i(64371, {["cost"]={{"c",ARCH_CURRENCY_DWARF,35}}}),	-- Skull Staff of Shadowforge
+				i(64485, {["cost"]={{"c",ARCH_CURRENCY_DWARF,45}}}),	-- Spiked Gauntlets of Anvilrage
+				i(64489, {["cost"]={{"c",ARCH_CURRENCY_DWARF,150}}}),	-- Staff of Sorcerer-Thane Thaurissan
+				i(63410, {["cost"]={{"c",ARCH_CURRENCY_DWARF,35}}}),	-- Stone Gryphon
+				i(64488, {["cost"]={{"c",ARCH_CURRENCY_DWARF,150}}}),	-- The Innkeeper's Daughter (TOY!)
+				i(64484, {["cost"]={{"c",ARCH_CURRENCY_DWARF,45}}}),	-- Warmaul of Burningeye
+				i(64343, {["cost"]={{"c",ARCH_CURRENCY_DWARF,35}}}),	-- Winged Helm of Corehammer
+				i(63111, {["cost"]={{"c",ARCH_CURRENCY_DWARF,28}}}),	-- Wooden Whistle
+				i(64486, {["cost"]={{"c",ARCH_CURRENCY_DWARF,45}}}),	-- Word of Empress Zoe
+				i(63110, {["cost"]={{"c",ARCH_CURRENCY_DWARF,30}}}),	-- Worn Hunting Knife
 			},
-		})),
-		header(HEADERS.Currency, ARCH_CURRENCY_FOSSIL, sharedData({["cost"]={{"c",ARCH_CURRENCY_FOSSIL,50}}},{ -- TODO: someone can add different fragment costs within as needed
+		}),
+		header(HEADERS.Currency, ARCH_CURRENCY_FOSSIL, {
 			["provider"] = { "o", 206836 },	-- Fossil Archaeology Find
 			["maps"] = {
 				BLASTED_LANDS,
@@ -247,26 +247,26 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				WETLANDS,
 			},
 			["groups"] = {
-				i(69776, {["timeline"] = {ADDED_4_1_0}}),	-- Ancient Amber (TOY!)
-				i(64355),	-- Ancient Shark Jaws
-				i(63121),	-- Beautiful Preserved Fern
-				i(63109),	-- Black Trilobite
-				i(64349),	-- Devilsaur Tooth
-				i(69764, {["timeline"] = {ADDED_4_1_0}}),	-- Extinct Turtle Shell
-				i(64385),	-- Feathered Raptor Arm
-				i(60955),	-- Fossilized Hatchling (PET!)
-				i(60954),	-- Fossilized Raptor (MOUNT!)
-				i(64473),	-- Imprint of a Kraken Tentacle
-				i(64350),	-- Insect in Amber
-				i(64468),	-- Proto-Drake Skeleton
-				i(69821, {["timeline"] = {ADDED_4_1_0}}),	-- Pterrordax Hatchling (PET!)
-				i(66056),	-- Shared of Petrified Wood
-				i(66057),	-- Strange Velvet Worm
-				i(63527),	-- Twisted Ammonite Shell
-				i(64387),	-- Vicious Ancient Fish
+				i(69776, {["cost"]={{"c",ARCH_CURRENCY_FOSSIL,100}},["timeline"] = {ADDED_4_1_0}}),	-- Ancient Amber (TOY!)
+				i(64355, {["cost"]={{"c",ARCH_CURRENCY_FOSSIL,35}}}),	-- Ancient Shark Jaws
+				i(63121, {["cost"]={{"c",ARCH_CURRENCY_FOSSIL,25}}}),	-- Beautiful Preserved Fern
+				i(63109, {["cost"]={{"c",ARCH_CURRENCY_FOSSIL,31}}}),	-- Black Trilobite
+				i(64349, {["cost"]={{"c",ARCH_CURRENCY_FOSSIL,35}}}),	-- Devilsaur Tooth
+				i(69764, {["cost"]={{"c",ARCH_CURRENCY_FOSSIL,150}},["timeline"] = {ADDED_4_1_0}}),	-- Extinct Turtle Shell
+				i(64385, {["cost"]={{"c",ARCH_CURRENCY_FOSSIL,33}}}),	-- Feathered Raptor Arm
+				i(60955, {["cost"]={{"c",ARCH_CURRENCY_FOSSIL,85}}}),	-- Fossilized Hatchling (PET!)
+				i(60954, {["cost"]={{"c",ARCH_CURRENCY_FOSSIL,100}}}),	-- Fossilized Raptor (MOUNT!)
+				i(64473, {["cost"]={{"c",ARCH_CURRENCY_FOSSIL,45}}}),	-- Imprint of a Kraken Tentacle
+				i(64350, {["cost"]={{"c",ARCH_CURRENCY_FOSSIL,35}}}),	-- Insect in Amber
+				i(64468, {["cost"]={{"c",ARCH_CURRENCY_FOSSIL,45}}}),	-- Proto-Drake Skeleton
+				i(69821, {["cost"]={{"c",ARCH_CURRENCY_FOSSIL,120}},["timeline"] = {ADDED_4_1_0}}),	-- Pterrordax Hatchling (PET!)
+				i(66056, {["cost"]={{"c",ARCH_CURRENCY_FOSSIL,30}}}),	-- Shared of Petrified Wood
+				i(66057, {["cost"]={{"c",ARCH_CURRENCY_FOSSIL,35}}}),	-- Strange Velvet Worm
+				i(63527, {["cost"]={{"c",ARCH_CURRENCY_FOSSIL,35}}}),	-- Twisted Ammonite Shell
+				i(64387, {["cost"]={{"c",ARCH_CURRENCY_FOSSIL,35}}}),	-- Vicious Ancient Fish
 			},
-		})),
-		header(HEADERS.Currency, ARCH_CURRENCY_NIGHTELF, sharedData({["cost"]={{"c",ARCH_CURRENCY_NIGHTELF,50}}},{ -- TODO: someone can add different fragment costs within as needed
+		}),
+		header(HEADERS.Currency, ARCH_CURRENCY_NIGHTELF, {
 			["provider"] = { "o", 203071 },	-- Night Elf Archaeology Find
 			["maps"] = {
 				ASHENVALE,
@@ -288,34 +288,34 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				WINTERSPRING,
 			},
 			["groups"] = {
-				i(64646),	-- Bones of Transformation (TOY!)
-				i(64647),	-- Carcanet of the Hundred Magi
-				i(64379),	-- Chest of Tiny Glass Animals
-				i(63407),	-- Cloak Clasp with Antlers
-				i(63525),	-- Coin from Eldre'Thalas
-				i(64381),	-- Cracked Crystal Vial
-				i(64357),	-- Delicate Music Box
-				i(64361),	-- Druid and Priest Statue Set (TOY!)
-				i(63528),	-- Green Dragon Ring
-				i(64356),	-- Hairpin of Silver and Malachite
-				i(63129),	-- Highborne Pyxis
-				i(64358),	-- Highborne Soul Mirror (TOY!)
-				i(63130),	-- Inlaid Ivory Comb
-				i(64354),	-- Kaldorei Amphora
-				i(64383),	-- Kaldorei Wind Chimes (TOY!)
-				i(66055),	-- Necklace with Elune Pendant
-				i(64643),	-- Queen Azshara's Dressing Gown
-				i(63131),	-- Scandalous Silk Nightgown
-				i(64382),	-- Scepter of Xavius
-				i(63526),	-- Shattered Glaive
-				i(64648),	-- Silver Scroll Case
-				i(64378),	-- String of Small Pink Pearls
-				i(64645),	-- Tyrande's Favorite Doll
-				i(64650),	-- Umbra Crescent
-				i(64651),	-- Wisp Amulet (TOY!)
+				i(64646, {["cost"]={{"c",ARCH_CURRENCY_NIGHTELF,150}}}),	-- Bones of Transformation (TOY!)
+				i(64647, {["cost"]={{"c",ARCH_CURRENCY_NIGHTELF,45}}}),	-- Carcanet of the Hundred Magi
+				i(64379, {["cost"]={{"c",ARCH_CURRENCY_NIGHTELF,34}}}),	-- Chest of Tiny Glass Animals
+				i(63407, {["cost"]={{"c",ARCH_CURRENCY_NIGHTELF,35}}}),	-- Cloak Clasp with Antlers
+				i(63525, {["cost"]={{"c",ARCH_CURRENCY_NIGHTELF,35}}}),	-- Coin from Eldre'Thalas
+				i(64381, {["cost"]={{"c",ARCH_CURRENCY_NIGHTELF,35}}}),	-- Cracked Crystal Vial
+				i(64357, {["cost"]={{"c",ARCH_CURRENCY_NIGHTELF,35}}}),	-- Delicate Music Box
+				i(64361, {["cost"]={{"c",ARCH_CURRENCY_NIGHTELF,100}}}),	-- Druid and Priest Statue Set (TOY!)
+				i(63528, {["cost"]={{"c",ARCH_CURRENCY_NIGHTELF,35}}}),	-- Green Dragon Ring
+				i(64356, {["cost"]={{"c",ARCH_CURRENCY_NIGHTELF,35}}}),	-- Hairpin of Silver and Malachite
+				i(63129, {["cost"]={{"c",ARCH_CURRENCY_NIGHTELF,30}}}),	-- Highborne Pyxis
+				i(64358, {["cost"]={{"c",ARCH_CURRENCY_NIGHTELF,100}}}),	-- Highborne Soul Mirror (TOY!)
+				i(63130, {["cost"]={{"c",ARCH_CURRENCY_NIGHTELF,30}}}),	-- Inlaid Ivory Comb
+				i(64354, {["cost"]={{"c",ARCH_CURRENCY_NIGHTELF,35}}}),	-- Kaldorei Amphora
+				i(64383, {["cost"]={{"c",ARCH_CURRENCY_NIGHTELF,98}}}),	-- Kaldorei Wind Chimes (TOY!)
+				i(66055, {["cost"]={{"c",ARCH_CURRENCY_NIGHTELF,30}}}),	-- Necklace with Elune Pendant
+				i(64643, {["cost"]={{"c",ARCH_CURRENCY_NIGHTELF,100}}}),	-- Queen Azshara's Dressing Gown
+				i(63131, {["cost"]={{"c",ARCH_CURRENCY_NIGHTELF,30}}}),	-- Scandalous Silk Nightgown
+				i(64382, {["cost"]={{"c",ARCH_CURRENCY_NIGHTELF,35}}}),	-- Scepter of Xavius
+				i(63526, {["cost"]={{"c",ARCH_CURRENCY_NIGHTELF,35}}}),	-- Shattered Glaive
+				i(64648, {["cost"]={{"c",ARCH_CURRENCY_NIGHTELF,45}}}),	-- Silver Scroll Case
+				i(64378, {["cost"]={{"c",ARCH_CURRENCY_NIGHTELF,35}}}),	-- String of Small Pink Pearls
+				i(64645, {["cost"]={{"c",ARCH_CURRENCY_NIGHTELF,150}}}),	-- Tyrande's Favorite Doll
+				i(64650, {["cost"]={{"c",ARCH_CURRENCY_NIGHTELF,45}}}),	-- Umbra Crescent
+				i(64651, {["cost"]={{"c",ARCH_CURRENCY_NIGHTELF,150}}}),	-- Wisp Amulet (TOY!)
 			},
-		})),
-		header(HEADERS.Currency, ARCH_CURRENCY_TROLL, sharedData({["cost"]={{"c",ARCH_CURRENCY_TROLL,50}}},{ -- TODO: someone can add different fragment costs within as needed
+		}),
+		header(HEADERS.Currency, ARCH_CURRENCY_TROLL, {
 			["provider"] = { "o", 202655 },	-- Troll Archaeology Find
 			["maps"] = {
 				ARATHI_HIGHLANDS,
@@ -329,25 +329,25 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				ZULDRAK,
 			},
 			["groups"] = {
-				i(64348),	-- Atal'ai Scepter
-				i(64346),	-- Bracelet of Jade and Coins
-				i(63524),	-- Cinnabar Bijou
-				i(64375),	-- Drakkari Sacrificial Knife
-				i(63523),	-- Eerie Smolderthorn Idol
-				i(63413),	-- Feathered Gold Earring
-				i(63120),	-- Fetish of Hireek
-				i(66058),	-- Fine Bloodscalp Dinnerware
-				i(64347),	-- Gahz'rilla Figurine
-				i(69777, {["timeline"] = {ADDED_4_1_0}}),	-- Haunted War Drum (TOY!)
-				i(63412),	-- Jade Asp with Ruby Eyes
-				i(63118),	-- Lizard Foot Charm
-				i(64345),	-- Skull-Shaped Planter
-				i(64374),	-- Tooth with Gold Filling
-				i(69824, {["timeline"] = {ADDED_4_1_0}}),	-- Voodoo Figurine (PET!)
-				i(63115),	-- Zandalari Voodoo Doll
-				i(64377),	-- Zin'rokh, Destroyer of Worlds
+				i(64348, {["cost"]={{"c",ARCH_CURRENCY_TROLL,35}}}),	-- Atal'ai Scepter
+				i(64346, {["cost"]={{"c",ARCH_CURRENCY_TROLL,35}}}),	-- Bracelet of Jade and Coins
+				i(63524, {["cost"]={{"c",ARCH_CURRENCY_TROLL,35}}}),	-- Cinnabar Bijou
+				i(64375, {["cost"]={{"c",ARCH_CURRENCY_TROLL,35}}}),	-- Drakkari Sacrificial Knife
+				i(63523, {["cost"]={{"c",ARCH_CURRENCY_TROLL,35}}}),	-- Eerie Smolderthorn Idol
+				i(63413, {["cost"]={{"c",ARCH_CURRENCY_TROLL,34}}}),	-- Feathered Gold Earring
+				i(63120, {["cost"]={{"c",ARCH_CURRENCY_TROLL,30}}}),	-- Fetish of Hireek
+				i(66058, {["cost"]={{"c",ARCH_CURRENCY_TROLL,32}}}),	-- Fine Bloodscalp Dinnerware
+				i(64347, {["cost"]={{"c",ARCH_CURRENCY_TROLL,35}}}),	-- Gahz'rilla Figurine
+				i(69777, {["cost"]={{"c",ARCH_CURRENCY_TROLL,100}},["timeline"] = {ADDED_4_1_0}}),	-- Haunted War Drum (TOY!)
+				i(63412, {["cost"]={{"c",ARCH_CURRENCY_TROLL,35}}}),	-- Jade Asp with Ruby Eyes
+				i(63118, {["cost"]={{"c",ARCH_CURRENCY_TROLL,32}}}),	-- Lizard Foot Charm
+				i(64345, {["cost"]={{"c",ARCH_CURRENCY_TROLL,35}}}),	-- Skull-Shaped Planter
+				i(64374, {["cost"]={{"c",ARCH_CURRENCY_TROLL,35}}}),	-- Tooth with Gold Filling
+				i(69824, {["cost"]={{"c",ARCH_CURRENCY_TROLL,100}},["timeline"] = {ADDED_4_1_0}}),	-- Voodoo Figurine (PET!)
+				i(63115, {["cost"]={{"c",ARCH_CURRENCY_TROLL,27}}}),	-- Zandalari Voodoo Doll
+				i(64377, {["cost"]={{"c",ARCH_CURRENCY_TROLL,150}}}),	-- Zin'rokh, Destroyer of Worlds
 			},
-		})),
+		}),
 	})),
 	prof(BLACKSMITHING, {
 		-- #if BEFORE TBC
@@ -1085,6 +1085,27 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		}),
 	}),
 	prof(COOKING, {
+		-- #if AFTER CATA
+		n(COMMON_VENDOR_ITEMS, {	-- Experimental
+			i(2595, {	-- Jug of Badlands Bourbon (Cataclysm cooking)
+				["coords"] = {
+					{ 18.6, 51.9, IRONFORGE },	-- The Stonefire Tavern
+					{ 79.5, 58.5, SILVERMOON_CITY },
+					-- #if AFTER WRATH
+					{ 76.0, 53.4, STORMWIND_CITY },	-- Pig and Whistle Tavern
+					-- #else
+					{ 73.0, 37.0, STORMWIND_CITY },	-- Pig and Whistle Tavern
+					-- #endif
+				},
+				["description"] = "Coordinates are for select vendors.",
+				["providers"] = {
+					{ "n", 1328 },	-- Elly Langston <Barmaid>
+					{ "n", 5112 },	-- Gwenna Firebrew <Barmaid>
+					{ "n", 16442 },	-- Vinemaster Suntouched <Wine & Spirits Merchant>
+				},
+			}),
+		}),
+		-- #endif
 		i(13935),	-- Baked Salmon
 		i(4457),	-- Barbecued Buzzard Wing
 		applyclassicphase(TBC_PHASE_ONE, i(27636, {["timeline"] = { ADDED_2_0_5 }})),	-- Bat Bites
@@ -1523,11 +1544,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			applyclassicphase(PHASE_FIVE, i(20750)),	-- Wizard Oil
 		}),
 		filter(PROFESSION_EQUIPMENT, {
-			i(16207, {["timeline"] = {REMOVED_5_0_4}}),	-- Runed Arcanite Rod
+			i(16207, {["timeline"] = { REMOVED_5_0_4 }}),	-- Runed Arcanite Rod
 			i(6218),	-- Runed Copper Rod
-			i(11130, {["timeline"] = {REMOVED_5_0_4}}),	-- Runed Gold Rod
-			i(6339, {["timeline"] = {REMOVED_5_0_4}}),	-- Runed Silver Rod
-			i(11145, {["timeline"] = {REMOVED_5_0_4}}),	-- Runed Truesilver Rod
+			i(11130, {["timeline"] = { REMOVED_5_0_4 }}),	-- Runed Gold Rod
+			i(6339, {["timeline"] = { REMOVED_5_0_4 }}),	-- Runed Silver Rod
+			i(11145, {["timeline"] = { REMOVED_5_0_4 }}),	-- Runed Truesilver Rod
 		}),
 		filter(TRINKET_F, {
 			-- #if SEASON_OF_DISCOVERY
@@ -4232,7 +4253,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				})),
 			}),
 			-- #if AFTER MOP
-			n(PROFESSION_EQUIPMENT, {
+			filter(PROFESSION_EQUIPMENT, {
 				i(85663, {	-- Herbalist's Spade
 					-- Danny Donkey: For some Blizzard reason Herbalism Suppliers does not sell this equipment.
 					["collectible"] = false,
@@ -4272,6 +4293,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(87393, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),				-- Glyph of Fetch
 			i(80581, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),				-- Glyph of Focused Wrath
 			i(87893, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),				-- Glyph of Fortifying Brew
+			i(93202, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),				-- Glyph of Gateway Attunement
 			i(85691, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),				-- Glyph of Guard
 			i(41097, {["timeline"]={ ADDED_3_0_2, REMOVED_6_0_2 }}),				-- Glyph of Hammer of Wrath / Glyph of Templar's Verdict [MOP]
 			i(87276, {["timeline"]={ ADDED_5_0_4, REMOVED_7_0_3 }}),				-- Glyph of Holy Resurrection
@@ -6797,44 +6819,44 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				}),
 			}),
 			header(HEADERS.Spell, 2656, {	-- Smelting
-				i(2841, {    -- Bronze Bar
+				i(2841, {	-- Bronze Bar
 					["cost"] = ClassicCost({
-						{ "i", 2840, 1 },    -- Copper Bar
-						{ "i", 3576, 1 },    -- Tin Bar
+						{ "i", 2840, 1 },	-- Copper Bar
+						{ "i", 3576, 1 },	-- Tin Bar
 					}),
 				}),
-				i(2840, {    -- Copper Bar
-					["cost"] = ClassicCost({ { "i", 2770, 1 } }),    -- Copper Ore
+				i(2840, {	-- Copper Bar
+					["cost"] = ClassicCost({ { "i", 2770, 1 } }),	-- Copper Ore
 				}),
-				i(11371, {    -- Dark Iron Bar
-					["cost"] = ClassicCost({ { "i", 11370, 8 } }),    -- Dark Iron Ore
+				i(11371, {	-- Dark Iron Bar
+					["cost"] = ClassicCost({ { "i", 11370, 8 } }),	-- Dark Iron Ore
 					["description"] = "Learning how to melt Dark Iron Ore from Gloom'rel costs 2 Star Ruby, 20 Gold Bars, and 10 Truesilver Bars.\n\nThe Black Forge can be found in Blackrock Depths, just past the Summoner's Tomb. Head right into The Molten Bridge, and the forge will be on the left side.\nThe Black Anvil can be found by Lord Incendius in the same dungeon.",
 				}),
-				applyclassicphase(PHASE_THREE, i(17771, {    -- Enchanted / Elementium Bar
+				applyclassicphase(PHASE_THREE, i(17771, {	-- Enchanted / Elementium Bar
 					["cost"] = ClassicCost({
-						{ "i", 18562, 1 },    -- Elementium Ore
-						{ "i", 12360, 10 },    -- Arcanite Bar
-						{ "i", 17010, 1 },    -- Fiery Core
-						{ "i", 18567, 3 },    -- Elemental Flux
+						{ "i", 18562, 1 },	-- Elementium Ore
+						{ "i", 12360, 10 },	-- Arcanite Bar
+						{ "i", 17010, 1 },	-- Fiery Core
+						{ "i", 18567, 3 },	-- Elemental Flux
 					}),
 				})),
 				-- #if AFTER 3.3.0
-				i(12655, {    -- Enchanted Thorium Bar
+				i(12655, {	-- Enchanted Thorium Bar
 					["timeline"] = { ADDED_3_3_3 },
 					["cost"] = ClassicCost({
-						{ "i", 12359, 1 },    -- Thorium Bar
-						{ "i", 11176, 3 },    -- Dream Dust
+						{ "i", 12359, 1 },	-- Thorium Bar
+						{ "i", 11176, 3 },	-- Dream Dust
 					}),
 				}),
 				-- #endif
-				i(3577, {    -- Gold Bar
-					["cost"] = ClassicCost({ { "i", 2776, 1 } }),    -- Gold Ore
+				i(3577, {	-- Gold Bar
+					["cost"] = ClassicCost({ { "i", 2776, 1 } }),	-- Gold Ore
 				}),
-				i(3575, {    -- Iron Bar
-					["cost"] = ClassicCost({ { "i", 2772, 1 } }),    -- Iron Ore
+				i(3575, {	-- Iron Bar
+					["cost"] = ClassicCost({ { "i", 2772, 1 } }),	-- Iron Ore
 				}),
-				i(3860, {    -- Mithril Bar
-					["cost"] = ClassicCost({ { "i", 3858, 1 } }),    -- Mithril Ore
+				i(3860, {	-- Mithril Bar
+					["cost"] = ClassicCost({ { "i", 3858, 1 } }),	-- Mithril Ore
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_SIX, i(234003, {	-- Obsidian-Infused Thorium Bar
@@ -6845,23 +6867,23 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					}),
 				})),
 				-- #endif
-				i(2842, {    -- Silver Bar
-					["cost"] = ClassicCost({ { "i", 2775, 1 } }),    -- Silver Ore
+				i(2842, {	-- Silver Bar
+					["cost"] = ClassicCost({ { "i", 2775, 1 } }),	-- Silver Ore
 				}),
-				i(3859, {    -- Steel Bar
+				i(3859, {	-- Steel Bar
 					["cost"] = ClassicCost({
-						{ "i", 3575, 1 },    -- Iron Bar
-						{ "i", 3857, 1 },    -- Coal
+						{ "i", 3575, 1 },	-- Iron Bar
+						{ "i", 3857, 1 },	-- Coal
 					}),
 				}),
-				i(12359, {    -- Thorium Bar
-					["cost"] = ClassicCost({ { "i", 10620, 1 } }),    -- Thorium Ore
+				i(12359, {	-- Thorium Bar
+					["cost"] = ClassicCost({ { "i", 10620, 1 } }),	-- Thorium Ore
 				}),
-				i(3576, {    -- Tin Bar
-					["cost"] = ClassicCost({ { "i", 2771, 1 } }),    -- Tin Ore
+				i(3576, {	-- Tin Bar
+					["cost"] = ClassicCost({ { "i", 2771, 1 } }),	-- Tin Ore
 				}),
-				i(6037, {    -- Truesilver Bar
-					["cost"] = ClassicCost({ { "i", 7911, 1 } }),    -- Truesilver Ore
+				i(6037, {	-- Truesilver Bar
+					["cost"] = ClassicCost({ { "i", 7911, 1 } }),	-- Truesilver Ore
 				}),
 			}),
 		},
@@ -6904,7 +6926,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 	})),
 	prof(SKINNING, {
 		-- #if NOT ANYCLASSIC
-		["description"] = "The following items can be gathered by skinning creatures out in the world.\n\nNote that although Light-/Medium-/Heavy-/Thick-/Rugged Leather is most common to get from skinning, which one you get is dependng on two factors:\n\n* Your skill level in Skinning\n\n*The historic level bracket of the creature.\n\nYou will never be able to obtain Heavy Leather from skinning in Dun Morogh, and if you get Light Leather from skinning in Uldaman your skill level is way too low.",
+		["description"] = "The following items can be gathered by skinning creatures out in the world.\n\nNote that although Light-/Medium-/Heavy-/Thick-/Rugged Leather is most common to get from skinning, which one you get is depending on two factors:\n\n* Your skill level in Skinning\n\n*The historic level bracket of the creature.\n\nYou will never be able to obtain Heavy Leather from skinning in Dun Morogh, and if you get Light Leather from skinning in Uldaman your skill level is way too low.",
 		-- #else
 		["description"] = "The following items can be gathered by skinning creatures out in the world.",
 		-- #endif

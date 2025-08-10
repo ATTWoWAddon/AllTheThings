@@ -630,7 +630,7 @@ do
 		-- if we're adding a specific amount, then we ignore the duplicate prevention
 		if not amount then
 			if not o.visible or o.saved or o.collected then return end
-			if not o.collectible then return end
+			if not o.collectible and not o.g then return end
 			-- only add costs once per hash in case it is duplicated
 			local hash = o.hash
 			if not hash or Collector.Hashes[hash] then return end

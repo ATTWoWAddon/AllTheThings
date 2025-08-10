@@ -10,16 +10,14 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 			n(TREASURES, {
 				o(277384, {	-- Abandoned Treasure
 					["isRepeatable"] = true,
-					["groups"] = {
-						i(152854),	-- Nethershorn Lantern
-					},
+					["groups"] = { i(152854) },	-- Nethershorn Lantern
 				}),
 			}),
 			n(QUESTS, {
 				q(48230, {	-- Fragment of the Past
 					["description"] = "You must complete |cffffff00Seat of the Triumvirate: The Crest of Knowledge|r before this item will drop.",
 					["sourceQuest"] = 47654,	-- Seat of the Triumvirate: The Crest of Knowledge
-					["provider"] = {"i",152204},	-- Glowing Key Fragment
+					["provider"] = { "i", 152204 },	-- Glowing Key Fragment
 					["maps"] = { EREDATH },
 					["crs"] = {
 						122316,	-- Saprish
@@ -40,54 +38,43 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 				}),
 				q(48864, {	-- The Broken Blacksmith
 					["sourceQuest"] = 48230,	-- Fragment of the Past
-					["provider"] = { "n", 123668 },	-- Captain Fareeya <The Crescent Glaive>
+					["qg"] = 123668,	-- Captain Fareeya <The Crescent Glaive>
 					["coords"] = {
 						{ 51.5, 69.0, THE_VINDICAAR_EREDATH_UPPER },
+						{ 51.7, 74.4, THE_VINDICAAR_KROKUUN_UPPER },
 						{ 62.6, 39.4, EREDATH },
 					},
 					["groups"] = { i(152205) },	-- Glowing key Fragment (QI!)
 				}),
 				q(48271, {	-- Recovering the Pieces
 					["sourceQuest"] = 48864,	-- The Broken Blacksmith
-					["provider"] = { "n", 125246 },	-- Gaal <Blacksmith>
+					["qg"] = 125246,	-- Gaal <Blacksmith>
 					["coord"] = { 56.9, 68.6, KROKUUN },
-					["groups"] = {
-						i(152201),	-- Armory Key Fragment (QI!)
-					},
+					["groups"] = { i(152201) },	-- Armory Key Fragment (QI!)
 				}),
 				q(48261, {	-- The Power to Reforge
 					["sourceQuest"] = 48864,	-- The Broken Blacksmith
-					["provider"] = { "n", 125246 },	-- Gaal <Blacksmith>
+					["qg"] = 125246,	-- Gaal <Blacksmith>
 					["coord"] = { 56.9, 68.6, KROKUUN },
-					["groups"] = {
-						i(152200),	-- Dendrite Cluster (QI!)
-					},
+					["groups"] = { i(152200) },	-- Dendrite Cluster (QI!)
 				}),
 				q(48803, {	-- Forging a Key to the Past
 					["sourceQuests"] = {
 						48271,	-- Recovering the Pieces
 						48261,	-- The Power to Reforge
 					},
-					["provider"] = { "n", 125246 },	-- Gaal <Blacksmith>
+					["qg"] = 125246,	-- Gaal <Blacksmith>
 					["coord"] = { 56.9, 68.6, KROKUUN },
 				}),
 				q(48231, {	-- The Seat of the Triumvirate: Armor of the Triumvirate
 					["sourceQuest"] = 48803,	-- Forging a Key to the Past
-					["provider"] = { "n", 125246 },	-- Gaal <Blacksmith>
+					["qg"] = 125246,	-- Gaal <Blacksmith>
 					["coord"] = { 56.9, 68.6, KROKUUN },
 					["groups"] = {
-						iensemble(152241, {	-- Ensemble: Light-Woven Triumvirate Regalia
-							["description"] = "May require relogging to gain all appearances.",
-						}),
-						iensemble(152242, {	-- Ensemble: Burnished Triumvirate Armor
-							["description"] = "May require relogging to gain all appearances.",
-						}),
-						iensemble(152243, {	-- Ensemble: Sterling Triumvirate Chainmail
-							["description"] = "May require relogging to gain all appearances.",
-						}),
-						iensemble(152244, {	-- Ensemble: Venerated Triumvirate Battleplate
-							["description"] = "May require relogging to gain all appearances.",
-						}),
+						iensemble(152241),	-- Ensemble: Light-Woven Triumvirate Regalia
+						iensemble(152242),	-- Ensemble: Burnished Triumvirate Armor
+						iensemble(152243),	-- Ensemble: Sterling Triumvirate Chainmail
+						iensemble(152244),	-- Ensemble: Venerated Triumvirate Battleplate
 						i(152202),	-- Armor of the Triumvirate (QI!)
 						i(152203),	-- Reforged Armory Key (QI!)
 					},

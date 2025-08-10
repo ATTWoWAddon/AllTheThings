@@ -15,39 +15,24 @@ root(ROOTS.Unsorted, {
 				i(238002),	-- Wanderer's Projectile Accelerator
 				i(238003),	-- Wyrmhunter's Skewer
 				i(238004),	-- Exile's Beacon
-				i(238005),	-- Void-Steeped Falchion
 				i(238006),	-- Soulbearer's Censer
 				i(238008),	-- Wastelander's Folly
 
 				-- Epic wep
 				i(246071),	-- Mana-Seamster's Arcane-Needle
 				-- Delve Armor?
-				i(246825),	-- Chaotic Nethergate
-				i(246939),	-- Essence-Hunter's Eyeglass
 				i(246940),	-- Manaforged Aethercell
 				i(246941),	-- Symbiotic Ethergauze
-				i(246944),	-- Mind-Fracturing Odium
-				i(246945),	-- Incorporeal Essence-Gorger
 				i(246947),	-- Twisted Mana Sprite
 				-- Mechagon Junkyard?
 				i(241239),	-- Epaulets of Arcing Power
 				i(241240),	-- Type II Bomber Jacket
 			}),
 			filter(BATTLE_PETS, {
-				i(244467),	-- Veridian Thorntail
-				i(244468),	-- Scrappy Thorntail
-				i(244914),	-- Xanthous Siphonmite
-				i(244916),	-- Cyan Siphonmite
-				i(245215),	-- Shimmering Inchshifter
-				i(245256),	-- Sao'rhon
-				i(245273),	-- Copper Lapbug
-				i(245274),	-- Cerulean Lapbug
 				i(246337),	-- Rustyroot Fel Snooter
 				i(246339),	-- Duskytooth Fel Snooter
 				i(246342),	-- Mustyfur Fel Snooter
 				i(246343),	-- Scruffyhorn Fel Snooter
-				i(246451),	-- Shadefur Brewthief
-				i(246694),	-- Zo'ya
 				i(246723),	-- Unfazed Diver
 			}),
 			filter(COSMETIC, {
@@ -82,8 +67,6 @@ root(ROOTS.Unsorted, {
 				i(246915),	-- Arsenal: Ethereal Weaponry
 				i(245523),	-- Shadowguard Credentials
 				i(245526),	-- Bloodmarked Phasebound Visor
-				i(245527),	-- Consortium's Phasebound Visor
-				i(245528),	-- Wastlander's Phasebound Visor
 				i(244806),	-- Renowned Explorer's Versatile Vest
 
 				-- Trading Post?
@@ -407,14 +390,10 @@ root(ROOTS.Unsorted, {
 				--]]
 			}),
 			filter(MISC, {
-				i(238808),	-- Celeste-Touched Fin
-				i(238810),	-- Mana-Blessed Fin
-				i(238849),	-- Ominous Unblinking Eye
 				i(238851),	-- Fractured Dragon Scale
 				i(238853),	-- Netherbound Heart
 				i(238856),	-- Nightpiercer Feather
 				i(238879),	-- Cracked Void Carapace
-				i(238885),	-- Unstable Power Source
 				i(238888),	-- Essence of Ephemeral Knowledge
 				i(239109),	-- [NYI] Outdoor Voidforged Container - Ruins of Yaathron
 				i(239129),	-- Questionable Tentacle
@@ -427,10 +406,6 @@ root(ROOTS.Unsorted, {
 				i(244141),	-- Barley Soup
 				i(244142),	-- Brew Keg
 				i(244421),	-- Set Keystone Map: Eco-Dome Al'dani
-				i(245746),	-- Energy Barrel
-				i(245747),	-- Energy Urn
-				i(245884),	-- Energy Pyramid
-				i(246053),	-- Waygate Piece
 				i(246492),	-- Soulgorged Augment Rune
 				i(246837),	-- Mysterious Notebook
 				i(246839),	-- Multiversal Energy Dynamics and the Murmuration Paradox
@@ -443,7 +418,6 @@ root(ROOTS.Unsorted, {
 				i(246906),	-- Locus Console
 				i(247926),	-- Muted Mana-Stone
 				i(247927),	-- Humming Mana-Stone
-				i(248970),	-- Nexus-Princess Ky'veza
 				-- Box/Weekly Box
 				i(230032),	-- Overflowing K'aresh Trust Trove
 				i(238921),	-- Containment Canister
@@ -451,9 +425,7 @@ root(ROOTS.Unsorted, {
 				i(244300),	-- Phase-Sealed Box
 				i(244354),	-- Ethereal Equipment Chest
 				-- Delve
-				i(245885),	-- Lil Wheel of Cheese=
 				i(248126),	-- Delver's Starter Kit
-				i(248127),	-- Delver's Cosmetic Surprise Bag
 				i(248142),	-- Delver's Bounty
 				-- Curios
 				i(239580),	-- Nether Overlay Matrix
@@ -484,22 +456,11 @@ root(ROOTS.Unsorted, {
 				i(243344),	-- Chef's Hat
 				i(243347),	-- Keg of Curiosities
 				i(243479),	-- Bag of Brewfest Ingredients
-				-- Devs having fun?
-				i(244854),	-- Purloined Artifact
-				i(244855),	-- Martin Fury
-				i(244856),	-- Deck of Several Things
-				i(244857),	-- The 1 Ring
-				i(244859),	-- Armoire of Invincibility
-				i(244860),	-- Knee Seeking Arrow
-				i(244861),	-- Boots of Speedy Blinding
-				i(244886),	-- Jug of Endless Mayonnaise
 			}),
 			filter(MOUNTS, {
 				i(186639),	-- Xy Trustee's Gearglider
 				i(242713),	-- Resplendent K'arroc
-				i(246067),	-- Pearlescent Krolusk
 				i(246159),	-- Translocated Gorger
-				i(246160),	-- Sthaarbs's Last Lunch
 				i(246698),	-- Sunwarmed Furline
 				i(246917),	-- Thunder-ridged Elekk
 				i(246919),	-- Cinder-seared Elekk
@@ -534,7 +495,7 @@ root(ROOTS.Unsorted, {
 				i(246821),	-- A Steamy Romance Novel: The Lusty Draconian Mage
 				i(246822),	-- A Steamy Romance Novel: Devouring Love
 				i(246823),	-- A Steamy Romance Novel: Got Milk?
-				i(244849),	-- Fleeting Invigorating Healing Potion+++
+
 			}),
 			n(PVP, {
 				i(232600),	-- Astral Gladiator's Weapon Token
@@ -630,53 +591,20 @@ root(ROOTS.Unsorted, {
 				i(233005),	-- Om'taha's Toolkit[DNT]
 				i(233012),	-- Flamethrower
 				i(233287),	-- Barrel of Swirling Energy
-				i(235866),	-- Calculation Container
-				i(235898),	-- Containment Trap
-				i(235913),	-- Marking Matrix
-				i(235917),	-- Pile of Voidbane Gems
-				i(235918),	-- Corrupted Granules
-				i(235982),	-- Void Fused Resin
 				i(235983),	-- Warrant: Shatterpulse
-				i(236353),	-- Shatterpulse Cell Key
-				i(236407),	-- Voidbane Gem
-				i(236679),	-- Essence Scanner
-				i(236688),	-- Umbral Facade
-				i(236957),	-- Hollowbane Portal Key
-				i(237353),	-- Om'sto's Veilshards
-				i(237354),	-- A Bag of Veilshards
-				i(237356),	-- Vermin Attuned Optic-Visualizer
-				i(237572),	-- Smooth Stone
-				i(237601),	-- Nagrand Snake
-				i(237604),	-- Fragrant Dreaming Glory
-				i(237757),	-- Marsh Moss
-				i(237898),	-- Hemet's Waterin' Can
-				i(238216),	-- Hemet's Soothin' Flute
-				i(238242),	-- K'arroc Egg
 				i(238296),	-- Phase Disruptor
 				i(238903),	-- Appropriated Azerothian Camera
 				i(238906),	-- Appropriated Azerothian Camera
 				i(238907),	-- Anima Orb
-				i(238908),	-- Appropriated Azerothian Camera
 				i(238910),	-- Lasso
 				i(238913),	-- Condenser Disc
 				i(238914),	-- Hemet's Soothin' Flute
 				i(238933),	-- Appropriated S.E.L.F.I.E. Camera
-				i(239314),	-- Arcane Lure
-				i(239446),	-- Uncharged Cyrstal
-				i(239484),	-- Smuggler's Mark
-				i(239495),	-- Missing Voidband
-				i(239497),	-- Hidden Tokens
-				i(239500),	-- Stolen Apparel
-				i(239501),	-- Shadowed Scrolls
-				i(239510),	-- Misplaced Shipment
-				i(239564),	-- Arcane Runed Sigil
 				i(239566),	-- Arcane Runed Signet
-				i(239607),	-- Charged Cyrstal
 				i(241353),	-- Hydrobite
 				i(242547),	-- Cracked Keystone
 				i(242654),	-- Shadowtrade Overstock
 				i(244064),	-- Pretzel
-				i(245740),	-- Etched Fragment
 				i(245743),	-- A Curious Crystalline Fragment
 				i(246041),	-- Brew Keg
 				i(246042),	-- Pretzel
@@ -687,14 +615,13 @@ root(ROOTS.Unsorted, {
 				i(246593),	-- Shadowguard Credentials
 			}),
 			filter(TOYS, {
+				-- PvP
 				i(242636),	-- Astral Legend's Pennant
+				-- Brewfest
 				i(245946),	-- Brewer's Balloon
 			}),
-			i(246504),	-- Inscrutable Ore
-			i(246582),	-- Inscrutable Flora
 			i(248916),	-- Untethered Seer's Capelet
 			i(249028),	-- Perfectly Preserved Kaja'Classic Original Taste
-			i(249029),	-- Ultimate Orange O-pocalypse
 			i(249030),	-- Omega Oyster Outbreak
 			i(249235),	-- Bottomless Bag of Entropy
 			i(249560),	-- Skymaster's Silver Mantle
@@ -704,10 +631,8 @@ root(ROOTS.Unsorted, {
 			i(249564),	-- Skymaster's Sapphire Shoulderguards
 			i(249565),	-- Skymaster's Sapphire Epaulets
 			i(249699),	-- Shadowguard Translocator
-			i(249701),	-- Technique: Deal: Cartel Zo
-			i(249703),	-- Technique: Deal: Cartel Ba
-			i(249705),	-- Technique: Deal: Cartel Om
-			i(249709),	-- Formula: Gleeful Glamour - Ethereal
+
+
 			i(249710),	-- Cartel Zo Cypher
 			i(249711),	-- Cartel Ba Cypher
 			i(249712),	-- Cartel Om Cypher
@@ -717,8 +642,6 @@ root(ROOTS.Unsorted, {
 			i(249859),	-- Brewer's Green Belt
 			i(249860),	-- Brewer's Black Belt
 			i(250082),	-- T'uure, Remnant of the Naaru
-			i(250104),	-- Soulbinder's Nethermantle
-			i(244913),	-- Looker Gaz'kreth Jr.
 			i(250706),	-- The Horseman's Hallowed Cowl
 			i(250707),	-- The Horseman's Burning Cowl
 			i(250708),	-- The Horseman's Ghoulish Cowl
@@ -1956,7 +1879,6 @@ root(ROOTS.Unsorted, {
 				i(161324),	-- Zeth'jir Tidespear
 				i(161345),	-- Abhorrent Essence of the Abyss
 				i(161878),	-- Tiny Coin Purse
-				i(162025),	-- Sermon of the High Exarch
 			}),
 			filter(MISC, {	-- Grey
 				i(150755),	-- Bone Dust
@@ -2038,7 +1960,6 @@ root(ROOTS.Unsorted, {
 				i(158805),	-- Soft Turtle Shell \\ PH Flavor - Beast  - Raven - Bird
 				i(158807),	-- PH Flavor - Unused \\ PH Flavor - Doe / Gazelle
 				i(158809),	-- PH Flavor - Unused \\ PH Flavor - Flesh Beast
-				i(158810),	-- Humming Dew \\ PH Flavor - Earth Elemental
 				i(158812),	-- Glowfly Abdomen \\ PH Flavor - Ettin
 				i(158813),	-- Sausage Casing \\ PH Flavor - Lightning Elemental
 				i(158814),	-- Bulging Coin Purse \\ PH Flavor - Unused \\ PH Flavor - Swamp Plant
@@ -2065,7 +1986,6 @@ root(ROOTS.Unsorted, {
 				i(158847),	-- PH Flavor - Unused \\ PH Flavor - Bog Plant
 				i(158850),	-- Vibrant Plumage \\ PH Flavor - Pig
 				i(158852),	-- PH Flavor - Unused \\ PH Flavor - Fox
-				i(158853),	-- Bony Skullplate \\ PH Flavor - Naga Brute
 				i(158854),	-- PH Flavor - Unused \\ PH Flavor - Goat
 				i(158867),	-- Needlepoint Bill \\ PH Flavor - Ranishu
 				i(158873),	-- Crystalline Honeymead \\ PH Flavor - Dire Troll Female - Blood Troll
@@ -2577,7 +2497,6 @@ root(ROOTS.Unsorted, {
 		})),
 		-- 8.1.0
 		expansion(EXPANSION.BFA, patch(1,0), bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {
-			i(164380),	-- Binding Stone
 			i(164641),	-- Pile of Weapons
 			i(164735),	-- Fallen Defender's Blade
 			i(164745),	-- Pile of Weapons
@@ -3033,8 +2952,6 @@ root(ROOTS.Unsorted, {
 			i(170034),	-- Overloaded Capacitor
 			i(170035),	-- Corroded Gauge
 			i(170036),	-- Cracked Display
-			i(170037),	-- Cracked Lattice
-			i(170038),	-- Torn Mesh
 			i(170039),	-- Shredded Grid
 			i(170040),	-- Unraveling Web
 			i(170041),	-- Cracked Skull
@@ -3110,7 +3027,6 @@ root(ROOTS.Unsorted, {
 			i(167916),	-- Dirty Murloc Sock
 			i(167923),	-- Clean Murloc Sock
 			i(168013),	-- Roo'li's Remains
-			i(168099),	-- Deepcoral Pod
 			i(168213),	-- Tensile Driveshaft
 			i(168949),	-- Tensile Driveshaft
 			i(168950),	-- Machined Gear Assembly

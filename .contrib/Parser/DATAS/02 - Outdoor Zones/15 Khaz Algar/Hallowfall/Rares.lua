@@ -10,6 +10,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(207802, {	-- Beledar's Spawn
 				["description"] = "Spawns immediately somewhere in the zone the moment Beledar shifts into its Void state.",
 				["questID"] = 81763,
+				["crs"] = {
+					225404,	-- Beledar's Spawn [Vignette]
+				},
 				["coords"] = {
 					{ 54.7, 36.9, HALLOWFALL },
 					{ 48.9, 32.0, HALLOWFALL },

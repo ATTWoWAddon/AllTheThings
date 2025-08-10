@@ -4,14 +4,16 @@ local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 		model = 1331239,
 		text = {
 			en = "Overly-Sealed Letter",
-			es = "Carta muy lacrada",
 			de = "Übermäßig versiegelter Brief",
+			es = "Carta muy lacrada",
+			mx = "Carta exageradamente lacrada",
 			fr = "Lettre lourdement scellée",
 			it = "Lettera Sigillata con Troppa Cura",
 			pt = "Carta Bem Selada",
 			ru = "Запечатанное-перезапечатанное письмо",
 			ko = "지나치게 봉인된 편지",
 			cn = "几乎密封的信函",
+			tw = "過度密封的信",
 		},
 	},
 })

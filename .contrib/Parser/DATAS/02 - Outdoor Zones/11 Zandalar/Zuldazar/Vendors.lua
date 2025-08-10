@@ -194,59 +194,47 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 51.6, 58.2, ZULDAZAR },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
-					i(168920, {	-- Azerite-Encrusted Timequartz (Rank 1)
+					moh(5, i(168920, {	-- Azerite-Encrusted Timequartz (Rank 1)
 						["sourceQuests"] = { 56500 },	-- Storming the Battlefields
-						["cost"] = { { "i", 137642, 5 }, },		-- 5x Mark of Honor
-					}),
-					i(168921, {	-- Azerite-Infused Timequartz [Rank 2]
+					})),
+					moh(10, i(168921, {	-- Azerite-Infused Timequartz [Rank 2]
 						["description"] = "Requires completing the achievement |cffffff00Battlefield Brawler|r.\n",
-						["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
-					}),
-					i(168922, {	-- Azerite-Fueled Timequartz [Rank 3]
+					})),
+					moh(10, i(168922, {	-- Azerite-Fueled Timequartz [Rank 3]
 						["description"] = "Requires completing the achievement |cffffff00Battlefield Tactician|r.\n",
-						["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
-					}),
-					i(168923, {	-- Unburdened Azerite Timequartz (Rank 4)
+					})),
+					moh(25, i(168923, {	-- Unburdened Azerite Timequartz (Rank 4)
 						["u"] = REMOVED_FROM_GAME,
 						["description"] = "Requires completing the achievement |cffffff00Battlefield Master|r.\n",
 						["classes"] = HEALERS,
-						["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
-					}),
-					i(168442, {	-- Roiling Blood of the Vanquished (Rank 1)
+					})),
+					moh(5, i(168442, {	-- Roiling Blood of the Vanquished (Rank 1)
 						["sourceQuests"] = { 56500 },	-- Storming the Battlefields
-						["cost"] = { { "i", 137642, 5 }, },		-- 5x Mark of Honor
-					}),
-					i(168443, {	-- Agitated Blood of the Dominated [Rank 2]
+					})),
+					moh(25, i(168443, {	-- Agitated Blood of the Dominated [Rank 2]
 						["description"] = "Requires completing the achievement |cffffff00Battlefield Brawler|r.\n",
-						["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
-					}),
-					i(168444, {	-- Churning Blood of the Conquered [Rank 3]
+					})),
+					moh(25, i(168444, {	-- Churning Blood of the Conquered [Rank 3]
 						["description"] = "Requires completing the achievement |cffffff00Battlefield Tactician|r.\n",
-						["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
-					}),
-					i(168814, {	-- Animated Blood of the Decimated (Rank 4)
+					})),
+					moh(25, i(168814, {	-- Animated Blood of the Decimated (Rank 4)
 						["u"] = REMOVED_FROM_GAME,
 						["description"] = "Requires completing the achievement |cffffff00Battlefield Master|r.\n",
-						["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
-					}),
-					i(168578, {	-- Sphere of Suppressed Force (Rank 1)
+					})),
+					moh(5, i(168578, {	-- Sphere of Suppressed Force (Rank 1)
 						["sourceQuests"] = { 56500 },	-- Storming the Battlefields
-						["cost"] = { { "i", 137642, 5 }, },		-- 5x Mark of Honor
-					}),
-					i(168579, {	-- Sphere of Unrestrained Fury [Rank 2]
+					})),
+					moh(10, i(168579, {	-- Sphere of Unrestrained Fury [Rank 2]
 						["description"] = "Requires completing the achievement |cffffff00Battlefield Brawler|r.\n",
-						["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
-					}),
-					i(168580, {	-- Sphere of Leeched Mobility [Rank 3]
+					})),
+					moh(25, i(168580, {	-- Sphere of Leeched Mobility [Rank 3]
 						["description"] = "Requires completing the achievement |cffffff00Battlefield Tactician|r.\n",
-						["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
-					}),
-					i(168581, {	-- Sphere of Incandescent Neutralization (Rank 4)
+					})),
+					moh(25, i(168581, {	-- Sphere of Incandescent Neutralization (Rank 4)
 						["u"] = REMOVED_FROM_GAME,
 						["description"] = "Requires completing the achievement |cffffff00Battlefield Master|r.\n",
 						["classes"] = TANKS,
-						["cost"] = { { "i", 137642, 25 }, },	-- 25x Mark of Honor
-					}),
+					})),
 				},
 			}),
 		}),

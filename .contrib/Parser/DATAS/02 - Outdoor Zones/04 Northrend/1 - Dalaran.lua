@@ -1627,6 +1627,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 36.1, 33.5, NORTHREND_DALARAN },
 						["requireSkill"] = TAILORING,
 						["lockCriteria"] = { 1,
+							-- "questID", 13272,	-- Cloth Scavenging (N, Dalaran)
 							"questID", 13268,	-- Cloth Scavenging (A, Howling Fjord)
 							"questID", 13269,	-- Cloth Scavenging (H, Howling Fjord)
 							"questID", 13265,	-- Cloth Scavenging (A, Borean Tundra)
@@ -3124,6 +3125,10 @@ root(ROOTS.Zones, {
 							i(30817),	-- Simple Flour
 						},
 					}),
+					n(28726, {	-- Dominique Stefano <Tailoring Supplies>
+						["coord"] = { 35.6, 34.4, NORTHREND_DALARAN },
+						["groups"] = appendGroups(ETERNIUM_THREAD, VANILLA_COMMON_LEATHERWORKING_TAILORING_SUPPLIES, VANILLA_TAILORING_SUPPLIES, {}),
+					}),
 					n(34252, {	-- Dubin Clay <Plate Armor Merchant>
 						["coord"] = { 46.2, 27.2, NORTHREND_DALARAN },
 						["groups"] = {
@@ -3472,16 +3477,15 @@ root(ROOTS.Zones, {
 								TIER_NINE_GROUPS.WARRIOR_H, {})),
 						},
 					}),
-					-- Danny Donkey: This is an irrelevant source for vanilla recipes. Might add things to this vendor later.
-					--[[n(28714, {	-- Ildine Sorrowspear
+					-- #if AFTER CATA
+					n(28714, {	-- Ildine Sorrowspear <Enchanting Supplies>
 						["coord"] = { 38.78, 41.56, NORTHREND_DALARAN },
-						["groups"] = {
-							i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
-							i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
-							i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
-							i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
-						},
-					}),]]
+						["sym"] = {{ "select","itemID", 38682 }},	-- Enchanting Vellum
+						-- #if AFTER BFA
+						["groups"] = RUNED_COPPER_ROD_REAGENTS,
+						-- #endif
+					}),
+					-- #endif
 					n(28682, {	-- Inzi Charmlight <Barmaid>
 						["coord"] = { 44.2, 62.3, NORTHREND_DALARAN },
 						["description"] = "Inzi is walking around in the Tavern.",
@@ -3607,10 +3611,10 @@ root(ROOTS.Zones, {
 							i(21910),	-- Pattern: Spellfire Robe (RECIPE!)
 						},
 					}),
-					-- #if BEFORE 7.0.3
 					n(28723, {	-- Larana Drome <Inscription Supplies>
 						["coord"] = { 41.8, 36.8, NORTHREND_DALARAN },
-						["groups"] = {
+						["groups"] = appendGroups(INSCRIPTION_SUPPLIES, {
+							-- #if BEFORE 7.0.3
 							i(50166, {	-- Technique: Glyph of Eternal Water / Technique: Glyph of Mana Shield [CATA+] / Technique: Glyph of Counterspell [MOP+]
 								["timeline"] = { ADDED_3_3_0, DELETED_7_0_3 },
 							}),
@@ -3620,9 +3624,9 @@ root(ROOTS.Zones, {
 							i(50167, {	-- Technique: Glyph of Rapid Rejuvenation
 								["timeline"] = { DELETED_4_0_1 },
 							}),
-						},
+							-- #endif
+						}),
 					}),
-					-- #endif
 					n(29510, {	-- Linna Bruder <Shadoweave Tailoring Specialist>
 						["coord"] = { 34.6, 34.4, NORTHREND_DALARAN },
 						["groups"] = {
@@ -3858,7 +3862,7 @@ root(ROOTS.Zones, {
 							emov(40, i(40750)),	-- Xintor's Expeditionary Boots
 						},
 					}),
-					n(28714, {	-- Patricia Egan <Alchemy Supplies>
+					n(28725, {	-- Patricia Egan <Alchemy Supplies>
 						["coord"] = { 41.54, 33.32, NORTHREND_DALARAN },
 						-- #if AFTER CATA
 						["groups"] = CRYSTAL_VIAL,
@@ -3934,7 +3938,7 @@ root(ROOTS.Zones, {
 					-- #endif
 					n(28721, {	-- Tiffany Cartier <Jewelcrafting Supplies>
 						["coord"] = { 40.4, 34.6, NORTHREND_DALARAN },
-						["groups"] = {
+						["groups"] = appendGroups(JEWELCRAFTING_SUPPLIES, {
 							daljewelcraftingtoken(2, i(42298)),	-- Design: Bold Dragon's Eye
 							daljewelcraftingtoken(3, i(41576)),	-- Design: Bold Scarlet Ruby
 							-- #if BEFORE CATA
@@ -4140,7 +4144,7 @@ root(ROOTS.Zones, {
 							-- #endif
 							daljewelcraftingtoken(4, i(43319)),	-- Design: Windfire Band
 							daljewelcraftingtoken(1, i(42225)),	-- Dragon's Eye
-						},
+						}),
 					}),
 					n(28701, {	-- Timothy Jones <Jewelcrafting Trainer>
 						["description"] = "Daily Jewelcrafting quests:\n\nShipment: Blood Jade Amulet - Vrykul can be found on Ymirheim, in the middle of Icecrown.\n\nShipment: Bright Armor Relic - Revenants/Elementals can be found in Dragonblight, following the mountainside from the Crystal Vice towards Wrathgate.\n\nShipment: Glowing Ivory Figurine - Mammoth can be found in southernmost Storm Peaks, by the road towards K3.\n\nShipment: Intricate Bone Figurine - Proto Dragons can be found in Storm Peaks, in the valley above Brunnhildar Village.\n\nShipment:Shifting Sun Curio - Scourge/Undead can be found as neutral ghosts in Crystalsong Forest, by the Violet Stand beneath Dalaran.\n\nShipment: Wicked Armour Relic - Iron Dwarfs can be found in the Storm Peaks, in a cave between Frosthold and Valkyrion.",

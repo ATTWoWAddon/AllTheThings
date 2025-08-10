@@ -2148,8 +2148,11 @@ root(ROOTS.NeverImplemented, {
 				i(91200),	-- Tyrannical Gladiator's Shiv
 			}),
 			n(SEASON_MALEVOLENT, {
+				-- #if NOT ANYCLASSIC
 				i(84714),	-- Dreadful Gladiator's Barrier
+				-- #endif
 				i(84704),	-- Dreadful Gladiator's Baton of Light
+				-- #if NOT ANYCLASSIC
 				i(84723),	-- Dreadful Gladiator's Battle Staff
 				i(84719),	-- Dreadful Gladiator's Bonecracker
 				i(84721),	-- Dreadful Gladiator's Bonegrinder
@@ -2157,11 +2160,15 @@ root(ROOTS.NeverImplemented, {
 				i(84707),	-- Dreadful Gladiator's Decapitator
 				i(84711),	-- Dreadful Gladiator's Endgame
 				i(84724),	-- Dreadful Gladiator's Energy Staff
+				-- #endif
 				i(84697),	-- Dreadful Gladiator's Fleshslicer
+				-- #if NOT ANYCLASSIC
 				i(84720),	-- Dreadful Gladiator's Gavel
 				i(84717),	-- Dreadful Gladiator's Greatsword
 				i(84702),	-- Dreadful Gladiator's Hacker
+				-- #endif
 				i(84718),	-- Dreadful Gladiator's Heavy Crossbow
+				-- #if NOT ANYCLASSIC
 				i(84705),	-- Dreadful Gladiator's Longbow
 				i(84722),	-- Dreadful Gladiator's Pike
 				i(84700),	-- Dreadful Gladiator's Pummeler
@@ -2173,11 +2180,14 @@ root(ROOTS.NeverImplemented, {
 				i(84696),	-- Dreadful Gladiator's Ripper
 				i(84708),	-- Dreadful Gladiator's Shanker
 				i(84713),	-- Dreadful Gladiator's Shield Wall
+				-- #endif
 				i(84709),	-- Dreadful Gladiator's Shiv
 				i(84698),	-- Dreadful Gladiator's Slasher
+				-- #if NOT ANYCLASSIC
 				i(84710),	-- Dreadful Gladiator's Slicer
 				i(84695),	-- Dreadful Gladiator's Spellblade
 				i(84725),	-- Dreadful Gladiator's Staff
+				-- #endif
 				i(84703),	-- Dreadful Gladiator's Touch of Defeat
 				i(84899),	-- Malevolent Gladiator's Baton of Light
 				i(84897),	-- Malevolent Gladiator's Heavy Crossbow

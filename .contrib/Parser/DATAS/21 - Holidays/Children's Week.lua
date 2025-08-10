@@ -215,7 +215,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				["provider"] = { "i", 42438 },	-- Lovely Cake
 				-- #if AFTER MOP
 				["cr"] = 64099,	-- Pink Peony [TODO: Remove, add vendor to zone]
-				["coord"] = { 46.88, 34.02, 393 },	-- Pink Peony [Shrine of Seven Stars]
+				["coord"] = { 46.88, 34.02, SHRINE_OF_SEVEN_STARS },	-- Pink Peony [Shrine of Seven Stars]
 				-- #endif
 				["maps"] = {
 					NORTHREND_DALARAN,
@@ -228,7 +228,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				["provider"] = { "i", 42429 },	-- Red Velvet Cupcake
 				-- #if AFTER MOP
 				["cr"] = 64099,	-- Pink Peony [TODO: Remove, add vendor to zone]
-				["coord"] = { 46.88, 34.02, 393 },	-- Pink Peony [Shrine of Seven Stars]
+				["coord"] = { 46.88, 34.02, SHRINE_OF_SEVEN_STARS },	-- Pink Peony [Shrine of Seven Stars]
 				-- #endif
 				["maps"] = {
 					NORTHREND_DALARAN,

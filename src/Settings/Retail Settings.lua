@@ -415,12 +415,12 @@ settings.ApplyProfile = function()
 			end
 
 			-- when applying a profile, clean out any 'false' Unobtainable keys for cleaner settings storage
-			-- since there are no situations where Unobtainables are included by default
+			-- for non-defaulted fields
 			local unobCopy = app.CloneDictionary(RawSettings.Unobtainable)
 			-- this key is no longer used
 			unobCopy.DoFiltering = false
 			for unobID,set in pairs(unobCopy) do
-				if not set then
+				if not set and not UnobtainableSettingsBase.__index[unobID] then
 					RawSettings.Unobtainable[unobID] = nil
 				end
 			end

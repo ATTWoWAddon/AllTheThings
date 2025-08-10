@@ -11,7 +11,6 @@ root(ROOTS.Zones, {
 					ach(7312),	-- Amber is the Color of My Energy
 					ach(6540),	-- Dread Haste Makes Dread Waste
 					ach(6978),	-- Explore Dread Wastes
-					ach(6857),	-- Heart of the Mantid Swarm (automated)
 					ach(7316, {	-- Over Their Heads
 						crit(20511, {		-- Garalon
 							["crs"] = { 63667 },
@@ -79,6 +78,19 @@ root(ROOTS.Zones, {
 					}),
 					ach(7321),	-- Spreading the Warmth
 					ach(7314),	-- Test Drive
+					ach(6545),	-- The Klaxxi
+					ach(7313, {	-- Stay Klaxxi
+						crit(20951),	-- Angel of Death
+						crit(20952),	-- Master of Puppets
+						crit(20953),	-- Painkiller
+						crit(20954),	-- Seek and Destroy
+						crit(20955),	-- Raining Blood
+						crit(20956),	-- Iron Mantid
+						crit(20957),	-- Silent Lucidity
+						crit(20958),	-- Speed
+						crit(20959),	-- Children of the Grave
+						crit(20960),	-- Battle Hymn
+					}),
 					ach(8023, {		-- Wakener
 						title(218),		-- <Name> the Wakener
 					}),
@@ -136,21 +148,7 @@ root(ROOTS.Zones, {
 				}),
 				n(FACTIONS, {
 					faction(FACTION_THE_KLAXXI, {	-- The Klaxxi
-						n(ACHIEVEMENTS, {
-							ach(6545),	-- The Klaxxi
-							ach(7313, {	-- Stay Klaxxi
-								crit(20951),	-- Angel of Death
-								crit(20952),	-- Master of Puppets
-								crit(20953),	-- Painkiller
-								crit(20954),	-- Seek and Destroy
-								crit(20955),	-- Raining Blood
-								crit(20956),	-- Iron Mantid
-								crit(20957),	-- Silent Lucidity
-								crit(20958),	-- Speed
-								crit(20959),	-- Children of the Grave
-								crit(20960),	-- Battle Hymn
-							}),
-						}),
+						["icon"] = 646377,
 					}),
 				}),
 				n(FLIGHT_PATHS, {
@@ -1380,6 +1378,18 @@ root(ROOTS.Zones, {
 							i(90077),	-- Oracle's Blade
 						},
 					}),
+					q(31390, {	-- The Klaxxi [A]
+						["qg"] = 64488,	-- Riki the Shifting Shadow
+						["coord"] = { 84.4, 61.6, VALE_OF_ETERNAL_BLOSSOMS },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
+					}),
+					q(31391, {	-- The Klaxxi [H]
+						["qg"] = 64534,	-- Bowmaster Ku
+						["coord"] = { 63.2, 20.8, VALE_OF_ETERNAL_BLOSSOMS },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+					}),
 					q(31006, {	-- The Klaxxi Council
 						["sourceQuests"] = {
 							31676,	-- Ancient Vengeance
@@ -1487,6 +1497,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "i", 88715 },	-- Ashes of Warlord Gurthan
 						["coord"] = { 66.3, 31.7, DREAD_WASTES },
 						["isDaily"] = true,
+						["cr"] = 65502,	-- Warlord Gurthan
 					}),
 					q(31609, {	-- The Wrath of Shek'zeer
 						["sourceQuest"] = 31959,	-- The Empress' Gambit
@@ -1762,15 +1773,18 @@ root(ROOTS.Zones, {
 						["coord"] = { 55.0, 35.5, DREAD_WASTES },
 						["groups"] = bubbleDownClassicRep(FACTION_THE_KLAXXI, {
 							{		-- Neutral
-								i(89094),	-- Ambersmith Legplates
-								i(89064),	-- Bloodseeker's Solitaire
 								i(89671),	-- Chestplate of the Stone Lion
-								i(89065),	-- Choker of the Klaxxi'va
 								i(89645),	-- Cruel Mercy Bracers
-								i(89090),	-- Dreadsworn Slayer Legs
 								i(89650),	-- Emperor's Riding Gloves
 								i(89647),	-- Entombed Traitor's Wristguards
 								i(89670),	-- Inner Serenity Chestplate
+								i(89651),	-- Krompf's Fine-Tuning Gloves
+								i(89646),	-- Runoff Wristguards
+								i(89644),	-- Sudden Insight Bracers
+								-- #if AFTER WOD
+								-- Honored (pre-5.4.0)
+								i(89064),	-- Bloodseeker's Solitaire
+								i(89065),	-- Choker of the Klaxxi'va
 								i(89060),	-- Klaxxi Lash of the Borrower
 								i(89056),	-- Klaxxi Lash of the Consumer
 								i(89057),	-- Klaxxi Lash of the Doubter
@@ -1780,23 +1794,25 @@ root(ROOTS.Zones, {
 								i(89055),	-- Klaxxi Lash of the Rescinder
 								i(89063),	-- Klaxxi Lash of the Seeker
 								i(89058),	-- Klaxxi Lash of the Winnower
+								i(89067),	-- Links of the Lucid
+								i(89066),	-- Paragon's Pale Pendant
+								i(89068),	-- Wire of the Wakener
+								
+								-- Revered (pre-5.4.0)
+								i(89094),	-- Ambersmith Legplates
+								i(89090),	-- Dreadsworn Slayer Legs
 								i(89093, {	-- Kovok's Riven Legguards
 									["cost"] = 5019100,	-- 501g 91s
 								}),
-								i(89651),	-- Krompf's Fine-Tuning Gloves
 								i(89088),	-- Leggings of the Poisoned Soul
 								i(89095),	-- Legguards of the Unscathed
-								i(89067),	-- Links of the Lucid
 								i(89092, {	-- Locust Swarm Legguards
 									["cost"] = 5001400,	-- 500g 14s
 								}),
-								i(89066),	-- Paragon's Pale Pendant
 								i(89087),	-- Poisoncrafter's Kilt
-								i(89646),	-- Runoff Wristguards
-								i(89644),	-- Sudden Insight Bracers
 								i(89091),	-- Swarmkeeper's Leggings
 								i(89089),	-- Wind-Reaver Greaves
-								i(89068),	-- Wire of the Wakener
+								-- #endif
 							}, {	-- Friendly
 							}, {	-- Honored
 								i(83791, {	-- Plans: Breastplate of Ancient Steel (RECIPE!)
@@ -1842,8 +1858,41 @@ root(ROOTS.Zones, {
 									["cost"] = { { "i", 72093, 20 }, },	-- 20x Kyparite
 								}),
 								i(89230),	-- Restorative Amber
+								-- #if BEFORE WOD
+								-- Honored (pre-5.4.0)
+								i(89064),	-- Bloodseeker's Solitaire
+								i(89065),	-- Choker of the Klaxxi'va
+								i(89060),	-- Klaxxi Lash of the Borrower
+								i(89056),	-- Klaxxi Lash of the Consumer
+								i(89057),	-- Klaxxi Lash of the Doubter
+								i(89061),	-- Klaxxi Lash of the Harbinger
+								i(89062),	-- Klaxxi Lash of the Orator
+								i(89059),	-- Klaxxi Lash of the Precursor
+								i(89055),	-- Klaxxi Lash of the Rescinder
+								i(89063),	-- Klaxxi Lash of the Seeker
+								i(89058),	-- Klaxxi Lash of the Winnower
+								i(89067),	-- Links of the Lucid
+								i(89066),	-- Paragon's Pale Pendant
+								i(89068),	-- Wire of the Wakener
+								-- #endif
 							}, {	-- Revered
 								i(92522),	-- Grand Commendation of the Klaxxi
+								-- #if BEFORE WOD
+								-- Revered (pre-5.4.0)
+								i(89094),	-- Ambersmith Legplates
+								i(89090),	-- Dreadsworn Slayer Legs
+								i(89093, {	-- Kovok's Riven Legguards
+									["cost"] = 5019100,	-- 501g 91s
+								}),
+								i(89088),	-- Leggings of the Poisoned Soul
+								i(89095),	-- Legguards of the Unscathed
+								i(89092, {	-- Locust Swarm Legguards
+									["cost"] = 5001400,	-- 500g 14s
+								}),
+								i(89087),	-- Poisoncrafter's Kilt
+								i(89091),	-- Swarmkeeper's Leggings
+								i(89089),	-- Wind-Reaver Greaves
+								-- #endif
 							}, {	-- Exalted
 								i(89396),	-- Amber Espada of Klaxxi'vess
 								i(89398),	-- Amber Flammard of Klaxxi'vess
@@ -1862,12 +1911,14 @@ root(ROOTS.Zones, {
 						}),
 					}),
 				}),
+				-- #if AFTER 6.0.2
 				n(ZONE_DROPS, {
 					i(120140, {	-- Tome of Polymorph: Porcupine (CI!)
 						["crs"] = { 65118 },	-- Needleback Porcupine
 						["timeline"] = { ADDED_6_0_2 },
 					}),
 				}),
+				-- #endif
 			},
 		}),
 	}),
@@ -1876,24 +1927,18 @@ root(ROOTS.Zones, {
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
 	m(PANDARIA, {
 		m(DREAD_WASTES, {
-			n(FACTIONS, {
-				header(HEADERS.Faction, FACTION_THE_KLAXXI, {
-					q(31992),	-- [FLAG] Dread Wastes Buff Bitflag - Enhancement 01 - Angel of Death
-					q(31993),	-- [FLAG] Dread Wastes Buff Bitflag - Enhancement 02 - Iron Mantid
-					q(31994),	-- [FLAG] Dread Wastes Buff Bitflag - Enhancement 03 - Raining Blood
-					q(31995),	-- [FLAG] Dread Wastes Buff Bitflag - Augmentation 01 - Speed King
-					q(31996),	-- [FLAG] Dread Wastes Buff Bitflag - Augmentation 02 - Seek and Destroy
-					q(31997),	-- [FLAG] Dread Wastes Buff Bitflag - Augmentation 03 - Speed King
-					n(QUESTS, {
-						q(31484),	-- Hisek Tracking Quest
-						q(31282),	-- Kaz'tik Tracking Quest - triggers after freeing Kaz'tik from amber
-						q(31343),	-- Kovok Tracking - triggers after turning in "Reunited" (questID 31091), allows Kovok to follow you
-						q(32012),	-- Kovok tracking [GROWING]
-					}),
-				}),
-			}),
 			n(QUESTS, {
 				q(31115),	-- FLAG - Freed Han
+				q(31992),	-- [FLAG] Dread Wastes Buff Bitflag - Enhancement 01 - Angel of Death
+				q(31993),	-- [FLAG] Dread Wastes Buff Bitflag - Enhancement 02 - Iron Mantid
+				q(31994),	-- [FLAG] Dread Wastes Buff Bitflag - Enhancement 03 - Raining Blood
+				q(31995),	-- [FLAG] Dread Wastes Buff Bitflag - Augmentation 01 - Speed King
+				q(31996),	-- [FLAG] Dread Wastes Buff Bitflag - Augmentation 02 - Seek and Destroy
+				q(31997),	-- [FLAG] Dread Wastes Buff Bitflag - Augmentation 03 - Speed King
+				q(31484),	-- Hisek Tracking Quest
+				q(31282),	-- Kaz'tik Tracking Quest - triggers after freeing Kaz'tik from amber
+				q(31343),	-- Kovok Tracking - triggers after turning in "Reunited" (questID 31091), allows Kovok to follow you
+				q(32012),	-- Kovok tracking [GROWING]
 			}),
 			n(TREASURES, {
 				q(31666),	-- FLAG - Wind-Reaver's Dagger - second trigger for Wind-Reaver's Dagger of Quick Strikes treasure

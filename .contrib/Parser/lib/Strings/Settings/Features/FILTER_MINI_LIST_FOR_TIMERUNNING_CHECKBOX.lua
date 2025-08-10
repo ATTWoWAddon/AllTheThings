@@ -10,7 +10,7 @@ createLocalizationString({
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",
-		-- TODO: ru = "",
+		ru = "Фильтровать Мини Список для Путешествий во времени",
 		-- TODO: ko = "",
 		cn = "为时空漫游筛选迷你列表",
 		-- TODO: tw = "",

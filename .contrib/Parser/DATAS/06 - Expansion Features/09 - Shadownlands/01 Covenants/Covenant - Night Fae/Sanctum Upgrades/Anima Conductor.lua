@@ -192,31 +192,31 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									},
 								}),
 								q(61950, {	-- Hunting the Wilds
-									["provider"] = { "n", 173282 },    -- Guardian Dazzlewing
+									["provider"] = { "n", 173282 },	-- Guardian Dazzlewing
 									["groups"] = {
 										i(182387),	-- Feral Anima (QI!)
 									},
 								}),
 								q(61968, {	-- Just Wing It
-									["provider"] = { "n", 173282 },    -- Guardian Dazzlewing
+									["provider"] = { "n", 173282 },	-- Guardian Dazzlewing
 									["groups"] = {
 										i(182450),	-- Perfect Ardenmoth Wing Scale (QI!)
 									},
 								}),
 								q(62081, {	-- Return Those Animacones!
-									["provider"] = { "n", 173282 },    -- Guardian Dazzlewing
+									["provider"] = { "n", 173282 },	-- Guardian Dazzlewing
 									["groups"] = {
 										i(182619),	-- Looted Animacone (QI!)
 									},
 								}),
 								q(62155, {	-- Runestone Roundup
-									["provider"] = { "n", 173282 },    -- Guardian Dazzlewing
+									["provider"] = { "n", 173282 },	-- Guardian Dazzlewing
 									["groups"] = {
 										i(182647),	-- Runestone Spike (QI!)
 									},
 								}),
 								q(62057, {	-- Those Who Hunger
-									["provider"] = { "n", 173282 },    -- Guardian Dazzlewing
+									["provider"] = { "n", 173282 },	-- Guardian Dazzlewing
 								}),
 								q(61985, {	-- Wake the Sleepers
 									["provider"] = { "n", 173277 },	-- Teendynneetll

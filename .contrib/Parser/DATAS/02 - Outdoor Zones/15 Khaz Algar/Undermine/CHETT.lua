@@ -7,6 +7,16 @@ local CHETT = createHeader({
 	icon = 134391,
 	text = {
 		en = "C.H.E.T.T.",
+		de = "C.H.E.T.T.",
+		es = "T.C.E.H.T.",
+		mx = "T.A.R.E.A.S.",
+		fr = "C.H.E.T.T.",
+		it = "C.I.H.T.T.",
+		pt = "C.H.A.T.A.",
+		ru = "КРОТ",
+		ko = "안.녕.거.기.",
+		cn = "C.H.E.T.T.",
+		tw = "C.H.E.T.T.",
 	},
 });
 

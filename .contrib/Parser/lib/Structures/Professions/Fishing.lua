@@ -154,9 +154,11 @@ DF_FISHING = applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED
 }));
 TWW_FISHING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	r(423336),	-- Khaz Algar Fishing
+	r(471368, {["timeline"] = {ADDED_11_1_0}}),	-- Blair's "Gold" Fish Exchange
 	r(271990),	-- Fishing Journal
 	r(7738),	-- Fishing Poles
 	r(454441),	-- Becoming an Algari Angler
 	r(456588),	-- Isle of Dorn
+	r(471365, {["timeline"] = {ADDED_11_1_0}}),	-- Undermine
 	r(456150),	-- What is an Algari Weaverline?
 });

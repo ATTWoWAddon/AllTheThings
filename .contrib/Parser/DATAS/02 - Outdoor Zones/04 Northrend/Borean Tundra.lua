@@ -594,26 +594,36 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(13265, {	-- Cloth Scavenging (A)
-						["altQuests"] = {
-							13268,	-- Cloth Scavenging (A, Howling Fjord)
-							13272,	-- Cloth Scavenging (Neutral)
-						},
 						["qg"] = 27001,	-- Darin Goodstitch
 						["coord"] = { 57.4, 72.2, BOREAN_TUNDRA },
 						["requireSkill"] = TAILORING,
 						["races"] = ALLIANCE_ONLY,
-						["isBreadcrumb"] = true,	-- if you learn the recipe from the book (which will drop from the first handful of mobs you kill upon entering Northrend) the Cloth Scavenging quests become unobtainable
+						["lockCriteria"] = { 1,
+							"questID", 13272,	-- Cloth Scavenging (N, Dalaran)
+							"questID", 13268,	-- Cloth Scavenging (A, Howling Fjord)
+							"questID", 13269,	-- Cloth Scavenging (H, Howling Fjord)
+							-- "questID", 13265,	-- Cloth Scavenging (A, Borean Tundra)
+							"questID", 13270,	-- Cloth Scavenging (H, Borean Tundra)
+							"spellID", 59390,	-- Cloth Scavenging
+							"spellID", 343634,	-- Shadowlands Cloth Scavenging
+							"spellID", 392396,	-- Dragon Isles Cloth Scavenging
+						},
 					}),
 					q(13270, {	-- Cloth Scavenging (H)
-						["altQuests"] = {
-							13269,	-- Cloth Scavenging (H, Howling Fjord)
-							13272,	-- Cloth Scavenging (Neutral)
-						},
 						["qg"] = 26969,	-- Raenah
 						["coord"] = { 41.6, 53.4, BOREAN_TUNDRA },
 						["requireSkill"] = TAILORING,
 						["races"] = HORDE_ONLY,
-						["isBreadcrumb"] = true,	-- if you learn the recipe from the book (which will drop from the first handful of mobs you kill upon entering Northrend) the Cloth Scavenging quests become unobtainable
+						["lockCriteria"] = { 1,
+							"questID", 13272,	-- Cloth Scavenging (N, Dalaran)
+							"questID", 13268,	-- Cloth Scavenging (A, Howling Fjord)
+							"questID", 13269,	-- Cloth Scavenging (H, Howling Fjord)
+							"questID", 13265,	-- Cloth Scavenging (A, Borean Tundra)
+							-- "questID", 13270,	-- Cloth Scavenging (H, Borean Tundra)
+							"spellID", 59390,	-- Cloth Scavenging
+							"spellID", 343634,	-- Shadowlands Cloth Scavenging
+							"spellID", 392396,	-- Dragon Isles Cloth Scavenging
+						},
 					}),
 					q(13412, {	-- Corastrasza
 						["qg"] = 26110,	-- Librarian Serrah
@@ -3015,15 +3025,37 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
+					n(26977, {	-- Adelene Sunlance <Inscription Trainer>
+						["coord"] = { 57.6, 71.64, BOREAN_TUNDRA },
+						["races"] = HORDE_ONLY, 
+						["sym"] = {
+							{ "select","itemID",
+								39354,	-- Light Parchment
+								-- #if BEFORE MOP
+								10648,	-- Common Parchment
+								39501,	-- Heavy Parchment
+								39502,	-- Resilient Parchment
+								-- #endif
+								39489,	-- Scribe's Satchel
+								39505,	-- Virtuoso Inking Set
+							},
+						},
+					}),
 					n(27012, {	-- Beem Goldsprocket <Trade Goods>
 						["coord"] = { 57.7, 72.32, BOREAN_TUNDRA },
 						["sym"] = {
 							{ "select","itemID",
+								38426,	-- Eternium Thread
 								-- #if AFTER CATA
 								3371,	-- Crystal Vial
 								-- #else
 								40411,	-- Enchanted Vial
 								18256,	-- Imbued Vial
+								-- #endif
+								-- Danny Donkey: The following got added at an unknown point between MoP and TWW.
+								-- #if NOT ANYCLASSIC
+								52188,	-- Jeweler's Setting
+								20815,	-- Jeweler's Toolset/-Kit
 								-- #endif
 							},
 						},
@@ -3032,11 +3064,17 @@ root(ROOTS.Zones, {
 						["coord"] = { 41.34, 34.61, BOREAN_TUNDRA },
 						["sym"] = {
 							{ "select","itemID",
+								38426,	-- Eternium Thread
 								-- #if AFTER CATA
 								3371,	-- Crystal Vial
 								-- #else
 								40411,	-- Enchanted Vial
 								18256,	-- Imbued Vial
+								-- #endif
+								-- Danny Donkey: The following got added at an unknown point between MoP and TWW.
+								-- #if NOT ANYCLASSIC
+								52188,	-- Jeweler's Setting
+								20815,	-- Jeweler's Toolset/-Kit
 								-- #endif
 							},
 						},
@@ -3081,16 +3119,35 @@ root(ROOTS.Zones, {
 							},
 						}),
 					})),
-					-- Danny Donkey: This is an irrelevant source for vanilla recipes. Might add things to this vendor later.
-					--[[n(27147, {	-- Librarian Erickson <Enchanting Supplies>
+					-- #if AFTER CATA
+					n(27147, {	-- Librarian Erickson <Enchanting Supplies>
 						["coord"] = { 46.7, 32.5, BOREAN_TUNDRA },
-						["groups"] = {
-							i(20753),	-- Formula: Lesser Wizard Oil (RECIPE!)
-							i(20752),	-- Formula: Minor Mana Oil (RECIPE!)
-							i(20758),	-- Formula: Minor Wizard Oil (RECIPE!)
-							i(22307),	-- Pattern: Enchanted Mageweave Pouch (RECIPE!)
+						["sym"] = {
+							{ "select","itemID",
+								38682,	-- Enchanting Vellum
+								-- #if AFTER BFA
+								6217,	-- Copper Rod
+								10938,	-- Lesser Magic Essence
+								10940,	-- Strange Dust
+								-- #endif
+							},
 						},
-					}),]]
+					}),
+					-- #endif
+					n(27142, {	-- Librarian Jeffers <Jewelcrafting Supplies>
+						["coord"] = { 46.26, 32.84, BOREAN_TUNDRA },
+						["sym"] = {
+							{ "select","itemID",
+							-- #if AFTER CATA
+							52188,	-- Jeweler's Setting
+							-- #endif
+							20815,	-- Jeweler's Toolset/-Kit
+							-- #if BEFORE MOP
+							20824,	-- Simple Grinder
+							-- #endif
+							},
+						},
+					}),
 					n(27139, {	-- Librarian Whitley <Wands>
 						["coord"] = { 46.4, 32.6, BOREAN_TUNDRA },
 						["groups"] = {
@@ -3137,6 +3194,22 @@ root(ROOTS.Zones, {
 							i(42097),	-- Snowhide Mitts
 							i(42098),	-- Snowhide Pants
 							i(42099),	-- Snowhide Vest
+						},
+					}),
+					n(26995, {	-- Tink Brightbolt <Inscription Trainer>
+						["coord"] = { 57.6, 71.64, BOREAN_TUNDRA },
+						["races"] = ALLIANCE_ONLY, 
+						["sym"] = {
+							{ "select","itemID",
+								39354,	-- Light Parchment
+								-- #if BEFORE MOP
+								10648,	-- Common Parchment
+								39501,	-- Heavy Parchment
+								39502,	-- Resilient Parchment
+								-- #endif
+								39489,	-- Scribe's Satchel
+								39505,	-- Virtuoso Inking Set
+							},
 						},
 					}),
 					n(35132, {	-- Tohfo Skyhoof <Wind Rider Keeper>

@@ -6,5 +6,6 @@ YEAR2025 = createHeader({
 		cn = "2025年",
 		es = "Año 2025",
 		mx = "Año 2025",
+		ru = "2025 год",
 	},
 });

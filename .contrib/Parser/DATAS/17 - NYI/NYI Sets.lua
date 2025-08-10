@@ -1872,12 +1872,6 @@ root(ROOTS.NeverImplemented, n(SETS, {
 			cl(MAGE, {
 				i(77780),	-- Replica Lieutenant Commander's Silk Mantle
 			}),
-			cl(SHAMAN, {
-				i(77836),	-- Replica First Sergeant's Mail Wristguards
-			}),
-			cl(WARRIOR, {
-				i(77870),	-- Replica First Sergeant's Plate Bracers
-			}),
 		})),
 	}),
 	expansion(EXPANSION.MOP, {

@@ -305,7 +305,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							}),
 						},
 						}),
-					i(178876),    -- Sack of Supplies (QI!)
+					i(178876),	-- Sack of Supplies (QI!)
 				},
 			}),
 			q(60609),	-- Who Devours the Devourers?

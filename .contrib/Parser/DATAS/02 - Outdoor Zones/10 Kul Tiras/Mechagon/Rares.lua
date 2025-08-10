@@ -25,7 +25,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 						["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-JD41...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
 						["groups"] = {
 							i(167042),	-- Blueprint: Scrap Trap
-							i(169691),    -- Vinyl: Depths of Ulduar
+							i(169691),	-- Vinyl: Depths of Ulduar
 						},
 					}),
 					n(154739, {	-- Caustic Mechaslime
@@ -55,7 +55,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 						["isDaily"] = true,
 						["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-JD99...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
 						["groups"] = {
-							i(169691),    -- Vinyl: Depths of Ulduar
+							i(169691),	-- Vinyl: Depths of Ulduar
 						},
 					}),
 					n(154701, {	-- Gorged Gear-Cruncher
@@ -77,7 +77,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 						["description"] = "Spawning when you see this message in chat \"|cffe1780cDrill Rig DR-TR28...|r,\" or activate the |cFFFFD700Drill Rig|r.  Only available when the |cFFFFD700Drill Rig|r is a construction project.",
 						["groups"] = {
 							i(167846),	-- Blueprint: Mechano-Treat
-							i(169691),    -- Vinyl: Depths of Ulduar
+							i(169691),	-- Vinyl: Depths of Ulduar
 							i(170466),	-- Junkyard Motivator
 						},
 					}),

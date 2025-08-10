@@ -81,14 +81,6 @@ s(267627)/i(80207),	-- Art Template Plate Chest - Plate_Panda_B_01 - Silver
 s(267628)/i(80208),	-- Art Template Plate Boot - Plate_Panda_B_01 - Silver
 s(267629)/i(80209),	-- Art Template Plate Belt - Plate_Panda_B_01 - Silver
 s(267632)/i(80246),	-- Monster - Serilas Copy
-s(267633)/i(80263),	-- Monster - Knife_1h_PanProg_B_01 - Green
-s(267634)/i(80264),	-- Monster - Knife_1h_PanProg_B_01 - Blue
-s(267635)/i(80265),	-- Monster - Knife_1h_PanProg_B_01 - Gold
-s(267636)/i(80266),	-- Monster - Knife_1h_PanProg_B_01 - Red
-s(267637)/i(80267),	-- Monster - Knife_1h_PanProg_B_02 - Blue
-s(267638)/i(80268),	-- Monster - Knife_1h_PanProg_B_02 - Green
-s(267639)/i(80269),	-- Monster - Knife_1h_PanProg_B_02 - Red
-s(267640)/i(80270),	-- Monster - Knife_1h_PanProg_B_02 - Default
 s(267641)/i(80271),	-- Monster - Firearm 2h Rifle Plague
 s(267642)/i(80272),	-- Monster - Mace_1h_PanProg_B_01 - Blue
 s(267643)/i(80273),	-- Monster - Mace_1h_PanProg_B_01 - Gold
@@ -531,10 +523,6 @@ s(269558)/i(83059),	-- Art Template Leather Legs - Leather_DungeonLeather_C_06 -
 s(269559)/i(83060),	-- Art Template Leather Shoulder - Leather_DungeonLeather_C_06 - Yellow
 s(269560)/i(83061),	-- Art Template Leather Wrist - Leather_DungeonLeather_C_06 - Yellow
 s(269561)/i(83066),	-- Monster - Sword_2h_PanProg_B_01 - Gold (1h)
-s(269562)/i(83071),	-- Monster - Knife_1h_PanDung_C_02
-s(269563)/i(83072),	-- Monster - Knife_1h_PanDung_C_02 - Blue
-s(269564)/i(83073),	-- Monster - Knife_1h_PanDung_C_02 - Purple
-s(269565)/i(83074),	-- Monster - Knife_1h_PanDung_C_02 - Yellow
 s(269569)/i(83082),	-- Monster - Dagger_1h_PandariaTradeskill_C_01
 s(269570)/i(83083),	-- Monster - Dagger_1h_PandariaTradeskill_C_01 - Blue
 s(269571)/i(83084),	-- Monster - Dagger_1h_PandariaTradeskill_C_01 - Dark
@@ -600,8 +588,6 @@ s(270481)/i(84763),	-- Monster - Mace_1h_PanDung_C_01 - Blue
 s(270482)/i(84764),	-- Monster - Mace_1h_PanDung_C_01 - Green
 s(270483)/i(84765),	-- Monster - Mace_1h_PanDung_C_01 - Red
 s(270484)/i(84766),	-- Monster - Mace_1h_PanDung_C_01 - Yellow
-s(270485)/i(84767),	-- Monster - Knife_1H_Mantid_02
-s(270486)/i(84769),	-- Monster - Knife_1H_Mantid_01
 s(270487)/i(84770),	-- Monster - Offhand_1h_PanProg_B_01
 s(270488)/i(84772),	-- Monster - Sword_2h_PanDung_C_01
 s(270489)/i(84773),	-- Monster - Sword_2h_PanDung_C_01 - Orange
@@ -751,28 +737,12 @@ s(271194)/i(85659),	-- Art Template Cloth Cloak - Cape_Pandaria_B_01 - Red
 s(271195)/i(85660),	-- Art Template Cloth Cloak - Cape_Pandaria_B_02
 s(271196)/i(85661),	-- Art Template Cloth Cloak - Cape_Pandaria_B_02 - Dark
 s(271197)/i(85662),	-- Art Template Cloth Cloak - Cape_Pandaria_B_02 - Orange
-s(271199)/i(85667),	-- Monster - Knife_1h_PanDung_C_01 - Gold
-s(271200)/i(85668),	-- Monster - Knife_1h_PanDung_C_01 - Gray
-s(271201)/i(85669),	-- Monster - Knife_1h_PanDung_C_01 - Red
-s(271202)/i(85670),	-- Monster - Knife_1h_PanDung_C_01 - White
-s(271203)/i(85671),	-- Monster - Knife_1h_PanDung_C_03 - Black
-s(271204)/i(85672),	-- Monster - Knife_1h_PanDung_C_03 - Blue
-s(271205)/i(85673),	-- Monster - Knife_1h_PanDung_C_03 - Green
-s(271206)/i(85674),	-- Monster - Knife_1h_PanDung_C_03 - Red
 s(271207)/i(85675),	-- Monster - Staff_2h_PVPPandariaS1_C_02 - Blue
 s(271208)/i(85676),	-- Monster - Staff_2h_PVPPandariaS1_C_02 - Brown
 s(271209)/i(85677),	-- Monster - Staff_2h_PVPPandariaS1_C_02 - Green
 s(271210)/i(85678),	-- Monster - Staff_2h_PVPPandariaS1_C_02 - Red
 s(271211)/i(85679),	-- Monster - Staff_2h_PVPPandariaS1_C_03
 s(271212)/i(85680),	-- Monster - Staff_2h_PVPPandariaS1_C_03 - Green
-s(271214)/i(85724),	-- Monster - Knife_1h_PVPPandariaS1_C_01
-s(271215)/i(85725),	-- Monster - Knife_1h_PVPPandariaS1_C_01 - Green
-s(271216)/i(85726),	-- Monster - Knife_1h_PVPPandariaS1_C_01 - Red
-s(271217)/i(85727),	-- Monster - Knife_1h_PVPPandariaS1_C_01 - Yellow
-s(271218)/i(85728),	-- Monster - Knife_1h_PVPPandariaS1_C_02
-s(271219)/i(85729),	-- Monster - Knife_1h_PVPPandariaS1_C_02 - Blue
-s(271220)/i(85730),	-- Monster - Knife_1h_PVPPandariaS1_C_02 - Green
-s(271221)/i(85731),	-- Monster - Knife_1h_PVPPandariaS1_C_02 - Red
 s(271222)/i(85732),	-- Monster - Mace_2h_PVPPandariaS1_C_01
 s(271223)/i(85733),	-- Monster - Mace_2h_PVPPandariaS1_C_01 - Blue
 s(271224)/i(85734),	-- Monster - Mace_2h_PVPPandariaS1_C_01 - Purple
@@ -870,7 +840,6 @@ s(271395)/i(85945),	-- Monster - Staff, Simple Jeweled Staff D_01 - Yellow
 s(271396)/i(85946),	-- Monster - Staff, Simple Jeweled Staff D_01 - Yellow (HOLY)
 s(271397)/i(85947),	-- Monster - Staff_2H_Mantid_01
 s(271398)/i(85948),	-- Monster - Staff, Northrend D01 Red (Fire)
-s(271399)/i(85949),	-- Monster - Knife_1H_Mantid_02 (Shadow Effect)
 s(271400)/i(85951),	-- Monster - Vrykul - Mace, 1H Spiked (Fire)
 s(271401)/i(85956),	-- Art Template Cloth Cloak - Cape_Pandaria_C_03
 s(271402)/i(85957),	-- Art Template Cloth Cloak - Cape_Pandaria_C_03 - Green
@@ -1134,7 +1103,6 @@ s(272011)/i(86909),	-- il's Crackling Dagger \\ Regail's Crackling Dagger
 s(272012)/i(86910),	-- itsever \\ Spiritsever
 s(272013)/i(86911),	-- s of Torn Nightmares \\ Robes of Torn Nightmares
 s(272014)/i(86912),	-- ches of Dying Hope \\ Clutches of Dying Hope
-s(272268)/i(87203),	-- Monster - Knife_1h_PanProg_B_01 - Green (Poisoned)
 s(272269)/i(87204),	-- Art Template Cloth Cloak - Cape_Pandaria_D_02
 s(272270)/i(87205),	-- Art Template Cloth Cloak - Cape_Pandaria_D_02 - Orange
 s(272271)/i(87206),	-- Art Template Cloth Cloak - Cape_Pandaria_D_02 - Red
@@ -1239,10 +1207,6 @@ s(272637)/i(87966),	-- Art Template Leather Shoulder - Leather_RaidDruid_L_01 - 
 s(272638)/i(87967),	-- Art Template Leather Wrist - Leather_RaidDruid_L_01 - Yellow
 s(272639)/i(87968),	-- Art Template Leather Robe - Leather_RaidDruid_L_01 - Yellow
 s(272667)/i(87996),	-- Monster - Shield_PanProg_B_02
-s(272668)/i(87998),	-- Monster - Knife_1H_PandariaQuest_B_02
-s(272669)/i(87999),	-- Monster - Knife_1H_PandariaQuest_B_02 - Blue
-s(272670)/i(88000),	-- Monster - Knife_1H_PandariaQuest_B_02 - Dark
-s(272671)/i(88001),	-- Monster - Knife_1H_PandariaQuest_B_02 - Grey
 s(272672)/i(88004),	-- Monster - Sword_1H_PandariaQuest_B_02
 s(272673)/i(88005),	-- Monster - Sword_1H_PandariaQuest_B_02 - Blue
 s(272674)/i(88006),	-- Monster - Sword_1H_PandariaQuest_B_02 - Red
@@ -1323,7 +1287,6 @@ s(273028)/i(88464),	-- Monster - Hand_1h_PandaRaid_D_02 (left hand) - Red
 s(273029)/i(88465),	-- Monster - Firearm_2h_Rifle_PandaRaid_D_01 - Blue
 s(273030)/i(88466),	-- Monster - Firearm_2h_Rifle_PandaRaid_D_01 - Green
 s(273031)/i(88468),	-- Monster - Firearm_2h_Rifle_PandaRaid_D_01 - Purple
-s(273032)/i(88469),	-- Monster - Knife_1h_PandaRaid_D_02 - Green
 s(273033)/i(88470),	-- Monster - Staff_2H_PandariaQuest_B_01
 s(273034)/i(88471),	-- Monster - Staff_2H_PandariaQuest_B_01 - Blue
 s(273035)/i(88472),	-- Monster - Staff_2H_PandariaQuest_B_01 - Grey
@@ -1374,9 +1337,6 @@ s(273080)/i(88525),	-- Monster - Shield_PanDung_C_02 - Black
 s(273081)/i(88526),	-- Monster - Shield_PanDung_C_02 - Red
 s(273082)/i(88527),	-- Monster - Shield_PanDung_C_02 - Teal
 s(273083)/i(88528),	-- Monster - Shield_PanDung_C_02 - Yellow
-s(273084)/i(88533),	-- Monster - Knife_1h_PandaRaid_D_02 - Black
-s(273086)/i(88536),	-- Monster - Knife_1h_PandaRaid_D_02 - Blue
-s(273087)/i(88537),	-- Monster - Knife_1h_PandaRaid_D_02 - Purple
 s(273088)/i(88542),	-- Monster - Sword_2h_PandariaQuest_B_01
 s(273089)/i(88543),	-- Monster - Sword_2h_PandariaQuest_B_01 - Blue
 s(273090)/i(88544),	-- Monster - Sword_2h_PandariaQuest_B_01 - Purple
@@ -1670,7 +1630,6 @@ s(273639)/i(89518),	-- Monster - Staff_2h_PandariaTradeskill_C_05 - Blue
 s(273640)/i(89519),	-- Monster - Staff_2h_PandariaTradeskill_C_05 - Green
 s(273641)/i(89520),	-- Monster - Staff_2h_PandariaTradeskill_C_05 - Purple
 s(273642)/i(89521),	-- Monster - Staff_2h_PandariaTradeskill_C_05 - Red
-s(273647)/i(89536),	-- Monster - Knife_1h_PanProg_B_01 - Gold
 s(273649)/i(89538),	-- Monster - Offhand_1h_PandariaTradeskill_C_01
 s(273650)/i(89539),	-- Monster - Offhand_1h_PandariaTradeskill_C_01 - Bronze
 s(273651)/i(89540),	-- Monster - Offhand_1h_PandariaTradeskill_C_01 - Gold
@@ -1698,10 +1657,6 @@ s(273739)/i(89689),	-- Monster - Axe2H_PandariaTradeskill_C_01 - Red
 s(273740)/i(89690),	-- Monster - Axe_1h_PandaRaid_D_01 - Blue
 s(273741)/i(89691),	-- Monster - Axe_1h_PandaRaid_D_01 - Gold
 s(273742)/i(89692),	-- Monster - Axe_1h_PandaRaid_D_01 - Red
-s(273743)/i(89693),	-- Monster - Knife_1H_PandaRaid_D_01
-s(273744)/i(89694),	-- Monster - Knife_1H_PandaRaid_D_01 - Blue
-s(273745)/i(89695),	-- Monster - Knife_1H_PandaRaid_D_01 - Green
-s(273746)/i(89696),	-- Monster - Knife_1H_PandaRaid_D_01 - Silver
 s(273747)/i(89698),	-- Monster - Mace_1h_PandaRaid_D_01
 s(273748)/i(89699),	-- Monster - Mace_1h_PandaRaid_D_01 - Blue
 s(273749)/i(89700),	-- Monster - Mace_1h_PandaRaid_D_01 - Red
@@ -1734,10 +1689,6 @@ s(273809)/i(89774),	-- Monster - Staff_2H_PandariaQuest_B_04
 s(273810)/i(89775),	-- Monster - Staff_2H_PandariaQuest_B_04 - Blue
 s(273811)/i(89776),	-- Monster - Staff_2H_PandariaQuest_B_04 - Red
 s(273812)/i(89777),	-- Monster - Staff_2H_PandariaQuest_B_04 - Yellow
-s(273813)/i(89778),	-- Monster - Knife_1H_PandariaQuest_B_03
-s(273814)/i(89779),	-- Monster - Knife_1H_PandariaQuest_B_03 - Dark
-s(273815)/i(89780),	-- Monster - Knife_1H_PandariaQuest_B_03 - Red
-s(273816)/i(89781),	-- Monster - Knife_1H_PandariaQuest_B_03 - Yellow
 s(273818)/i(89787),	-- Monster - Mace_1H_PandariaQuest_B_03
 s(273819)/i(89788),	-- Monster - Mace_1H_PandariaQuest_B_03 - Blue
 s(273820)/i(89789),	-- Monster - Mace_1H_PandariaQuest_B_03 - Dark
@@ -1748,7 +1699,6 @@ s(273824)/i(89793),	-- Monster - Wand_1h_PandaRaid_D_01 - Red
 s(273825)/i(89794),	-- Monster - Wand_1h_PandaRaid_D_01 - Silver
 s(273833)/i(89805),	-- Monster - Sword_1H_PandariaQuest_B_01
 s(273834)/i(89806),	-- Monster - Sword_1H_PandariaQuest_B_01 - Blue
-s(273836)/i(89811),	-- Monster - Knife_1H_PandariaQuest_B_01
 s(273861)/i(89861),	-- Monster - Axe_2h_PandaRaid_D_01 - Blue
 s(273862)/i(89862),	-- Monster - Axe_2h_PandaRaid_D_01 - Green
 s(273863)/i(89863),	-- Monster - Axe_2h_PandaRaid_D_01 - Purple
@@ -1762,9 +1712,6 @@ s(273870)/i(89876),	-- Monster - Firearm_2h_Rifle_PandariaQuest_B_01 - Red
 s(273871)/i(89877),	-- Monster - Firearm_2h_Rifle_PandariaQuest_B_01 - Silver
 s(273877)/i(89894),	-- Monster - Sword_1H_PandariaQuest_B_01 - Green
 s(273878)/i(89895),	-- Monster - Sword_1H_PandariaQuest_B_01 - Purple
-s(273882)/i(89899),	-- Monster - Knife_1H_PandariaQuest_B_01 - Blue
-s(273883)/i(89900),	-- Monster - Knife_1H_PandariaQuest_B_01 - Green
-s(273884)/i(89901),	-- Monster - Knife_1H_PandariaQuest_B_01 - Purple
 s(273885)/i(89908),	-- Monster - Sword_2h_Mantid_01 (One Hand)
 s(273886)/i(89909),	-- Monster - Sword_2h_Mantid_01 (Fire, One Hand)
 s(273887)/i(89910),	-- Monster - Polearm_2H_Mantid_01 (1-Handed)
@@ -3084,7 +3031,6 @@ s(279067)/i(97871),	-- QA Test Normalized Polearm 85
 s(279068)/i(97872),	-- QA Test Normalized Gun 85
 s(279069)/i(97873),	-- QA Test Normalized Crossbow 85
 s(279070)/i(97875),	-- QA Test Normalized Fist 85
-s(279072)/i(97922),	-- Monster - Knife_1H_Mantid_01 - Garrosh Paragons
 s(279077)/i(97928),	-- Malevolent Gladiator's Cuffs of Accuracy
 s(279082)/i(97944),	-- Malevolent Gladiator's Spellblade
 s(279083)/i(97945),	-- Malevolent Gladiator's Endgame
@@ -3226,230 +3172,7 @@ s(281083)/i(100817),	-- Weapon - Bow_1h_OrgrimmarRaid_D_02 - Yellow
 s(281084)/i(100836),	-- Art Template Cloth Cloak - Cape_Korkron_D_01
 s(281086)/i(100896),	-- Monster - Axe, 1H Special NPC (Herod) - Off Hand
 s(281087)/i(100906),	-- Weapon - Axe_2h_PVPPandariaS2_C_01 - Horde (Shadow Enchanted)
-s(281112)/i(100976),	-- t-Lesion Maul \\ Heart-Lesion Maul
-s(281113)/i(100977),	-- t-Lesion Breastplate \\ Heart-Lesion Breastplate
-s(281114)/i(100978),	-- t-Lesion Sabatons \\ Heart-Lesion Sabatons
-s(281115)/i(100979),	-- t-Lesion Gauntlets \\ Heart-Lesion Gauntlets
-s(281116)/i(100980),	-- t-Lesion Helm \\ Heart-Lesion Helm
-s(281117)/i(100981),	-- t-Lesion Legplates \\ Heart-Lesion Legplates
-s(281118)/i(100982),	-- t-Lesion Pauldrons \\ Heart-Lesion Pauldrons
-s(281119)/i(100983),	-- t-Lesion Girdle \\ Heart-Lesion Girdle
-s(281120)/i(100984),	-- t-Lesion Vambraces \\ Heart-Lesion Vambraces
-s(281121)/i(100985),	-- t-Lesion Blade \\ Heart-Lesion Blade
-s(281122)/i(100986),	-- t-Lesion Cloak of Battle \\ Heart-Lesion Cloak of Battle
-s(281123)/i(100992),	-- t-Lesion Chestguard \\ Heart-Lesion Chestguard
-s(281124)/i(100993),	-- t-Lesion Cloak of Stoicism \\ Heart-Lesion Cloak of Stoicism
-s(281125)/i(100994),	-- t-Lesion Greaves \\ Heart-Lesion Greaves
-s(281126)/i(100995),	-- t-Lesion Handguards \\ Heart-Lesion Handguards
-s(281127)/i(100996),	-- t-Lesion Faceguard \\ Heart-Lesion Faceguard
-s(281128)/i(100997),	-- t-Lesion Legguards \\ Heart-Lesion Legguards
-s(281129)/i(101003),	-- t-Lesion Shoulderguards \\ Heart-Lesion Shoulderguards
-s(281130)/i(101004),	-- t-Lesion Waistband \\ Heart-Lesion Waistband
-s(281131)/i(101005),	-- t-Lesion Armguards \\ Heart-Lesion Armguards
-s(281132)/i(101006),	-- t-Lesion Hammer \\ Heart-Lesion Hammer
-s(281133)/i(101007),	-- ngrain Cloak of Rage \\ Springrain Cloak of Rage
-s(281134)/i(101013),	-- ngrain Tunic \\ Springrain Tunic
-s(281135)/i(101014),	-- ngrain Treads \\ Springrain Treads
-s(281136)/i(101015),	-- ngrain Grips \\ Springrain Grips
-s(281137)/i(101016),	-- ngrain Headpiece \\ Springrain Headpiece
-s(281138)/i(101017),	-- ngrain Leggings \\ Springrain Leggings
-s(281139)/i(101018),	-- ngrain Spaulders \\ Springrain Spaulders
-s(281140)/i(101019),	-- ngrain Stave \\ Springrain Stave
-s(281141)/i(101020),	-- ngrain Belt \\ Springrain Belt
-s(281142)/i(101021),	-- ngrain Bracers \\ Springrain Bracers
-s(281143)/i(101027),	-- ngrain Vest \\ Springrain Vest
-s(281144)/i(101028),	-- ngrain Footpads \\ Springrain Footpads
-s(281145)/i(101029),	-- ngrain Handguards \\ Springrain Handguards
-s(281146)/i(101030),	-- ngrain Helm \\ Springrain Helm
-s(281147)/i(101031),	-- ngrain Legguards \\ Springrain Legguards
-s(281148)/i(101032),	-- ngrain Spear \\ Springrain Spear
-s(281149)/i(101033),	-- ngrain Pauldrons \\ Springrain Pauldrons
-s(281150)/i(101034),	-- ngrain Cord \\ Springrain Cord
-s(281151)/i(101035),	-- ngrain Cuffs \\ Springrain Cuffs
-s(281152)/i(101036),	-- ngrain Cloak of Wisdom \\ Springrain Cloak of Wisdom
-s(281153)/i(101042),	-- ngrain Cloak of Destruction \\ Springrain Cloak of Destruction
-s(281154)/i(101043),	-- ngrain Jerkin \\ Springrain Jerkin
-s(281155)/i(101044),	-- ngrain Boots \\ Springrain Boots
-s(281156)/i(101045),	-- ngrain Gloves \\ Springrain Gloves
-s(281157)/i(101046),	-- ngrain Hood \\ Springrain Hood
-s(281158)/i(101047),	-- ngrain Britches \\ Springrain Britches
-s(281159)/i(101048),	-- ngrain Shoulders \\ Springrain Shoulders
-s(281160)/i(101049),	-- ngrain Waistband \\ Springrain Waistband
-s(281161)/i(101050),	-- ngrain Bindings \\ Springrain Bindings
-s(281162)/i(101051),	-- ngrain Staff \\ Springrain Staff
-s(281163)/i(101052),	-- lseeker Cloak of Rage \\ Trailseeker Cloak of Rage
-s(281164)/i(101058),	-- lseeker Vest \\ Trailseeker Vest
-s(281165)/i(101059),	-- lseeker Greaves \\ Trailseeker Greaves
-s(281166)/i(101060),	-- lseeker Gauntlets \\ Trailseeker Gauntlets
-s(281167)/i(101061),	-- lseeker Helm \\ Trailseeker Helm
-s(281168)/i(101062),	-- lseeker Legguards \\ Trailseeker Legguards
-s(281169)/i(101063),	-- lseeker Spaulders \\ Trailseeker Spaulders
-s(281170)/i(101064),	-- lseeker Belt \\ Trailseeker Belt
-s(281171)/i(101065),	-- lseeker Bracers \\ Trailseeker Bracers
-s(281172)/i(101066),	-- lseeker Rifle \\ Trailseeker Rifle
 s(281173)/i(101067),	-- RENAME  Forestwalker Spear UNUSED
-s(281174)/i(101073),	-- tainsage Sandals \\ Mountainsage Sandals
-s(281175)/i(101074),	-- tainsage Handwraps \\ Mountainsage Handwraps
-s(281176)/i(101075),	-- tainsage Hood \\ Mountainsage Hood
-s(281177)/i(101076),	-- tainsage Leggings \\ Mountainsage Leggings
-s(281178)/i(101077),	-- tainsage Robe \\ Mountainsage Robe
-s(281179)/i(101078),	-- tainsage Shoulderpads \\ Mountainsage Shoulderpads
-s(281180)/i(101079),	-- tainsage Cord \\ Mountainsage Cord
-s(281181)/i(101080),	-- tainsage Wristwraps \\ Mountainsage Wristwraps
-s(281182)/i(101081),	-- tainsage Wand \\ Mountainsage Wand
-s(281183)/i(101082),	-- tainsage Cloak of Destruction \\ Mountainsage Cloak of Destruction
-s(281184)/i(101083),	-- tainsage Staff \\ Mountainsage Staff
-s(281185)/i(101088),	-- dancer Spire \\ Mistdancer Spire
-s(281186)/i(101090),	-- dancer Vest \\ Mistdancer Vest
-s(281187)/i(101091),	-- dancer Footpads \\ Mistdancer Footpads
-s(281188)/i(101092),	-- dancer Handguards \\ Mistdancer Handguards
-s(281189)/i(101093),	-- dancer Helm \\ Mistdancer Helm
-s(281190)/i(101094),	-- dancer Legguards \\ Mistdancer Legguards
-s(281191)/i(101095),	-- dancer Pauldrons \\ Mistdancer Pauldrons
-s(281192)/i(101096),	-- dancer Cord \\ Mistdancer Cord
-s(281193)/i(101097),	-- dancer Cuffs \\ Mistdancer Cuffs
-s(281194)/i(101098),	-- dancer Boots \\ Mistdancer Boots
-s(281195)/i(101099),	-- dancer Gloves \\ Mistdancer Gloves
-s(281196)/i(101100),	-- dancer Hood \\ Mistdancer Hood
-s(281197)/i(101101),	-- dancer Cloak of Wisdom \\ Mistdancer Cloak of Wisdom
-s(281198)/i(101103),	-- dancer Britches \\ Mistdancer Britches
-s(281199)/i(101108),	-- dancer Shoulders \\ Mistdancer Shoulders
-s(281200)/i(101109),	-- dancer Staff \\ Mistdancer Staff
-s(281201)/i(101110),	-- dancer Waistband \\ Mistdancer Waistband
-s(281202)/i(101111),	-- dancer Bindings \\ Mistdancer Bindings
-s(281203)/i(101112),	-- dancer Sword \\ Mistdancer Sword
-s(281204)/i(101118),	-- dancer Cloak of Rage \\ Mistdancer Cloak of Rage
-s(281205)/i(101119),	-- dancer Jerkin \\ Mistdancer Jerkin
-s(281206)/i(101120),	-- oul Battleplate \\ Sunsoul Battleplate
-s(281207)/i(101121),	-- oul Sabatons \\ Sunsoul Sabatons
-s(281208)/i(101122),	-- oul Gauntlets \\ Sunsoul Gauntlets
-s(281209)/i(101123),	-- oul Helm \\ Sunsoul Helm
-s(281210)/i(101124),	-- oul Legplates \\ Sunsoul Legplates
-s(281211)/i(101125),	-- oul Pauldrons \\ Sunsoul Pauldrons
-s(281212)/i(101126),	-- oul Girdle \\ Sunsoul Girdle
-s(281213)/i(101127),	-- oul Vambraces \\ Sunsoul Vambraces
-s(281214)/i(101128),	-- oul Breastplate \\ Sunsoul Breastplate
-s(281215)/i(101129),	-- oul Cloak of Wisdom \\ Sunsoul Cloak of Wisdom
-s(281216)/i(101130),	-- oul Boots \\ Sunsoul Boots
-s(281217)/i(101131),	-- oul Gloves \\ Sunsoul Gloves
-s(281218)/i(101132),	-- oul Headpiece \\ Sunsoul Headpiece
-s(281219)/i(101133),	-- oul Leggings \\ Sunsoul Leggings
-s(281220)/i(101139),	-- oul Spaulders \\ Sunsoul Spaulders
-s(281221)/i(101140),	-- oul Belt \\ Sunsoul Belt
-s(281222)/i(101141),	-- oul Armplates \\ Sunsoul Armplates
-s(281223)/i(101142),	-- oul Scepter \\ Sunsoul Scepter
-s(281224)/i(101143),	-- oul Shield \\ Sunsoul Shield
-s(281225)/i(101144),	-- oul Sword \\ Sunsoul Sword
-s(281226)/i(101145),	-- oul Bulwark \\ Sunsoul Bulwark
-s(281227)/i(101146),	-- oul Greatsword \\ Sunsoul Greatsword
-s(281228)/i(101147),	-- oul Cloak of Battle \\ Sunsoul Cloak of Battle
-s(281229)/i(101153),	-- oul Chestguard \\ Sunsoul Chestguard
-s(281230)/i(101154),	-- oul Cloak of Stoicism \\ Sunsoul Cloak of Stoicism
-s(281231)/i(101155),	-- oul Greaves \\ Sunsoul Greaves
-s(281232)/i(101156),	-- oul Handguards \\ Sunsoul Handguards
-s(281233)/i(101157),	-- oul Faceguard \\ Sunsoul Faceguard
-s(281234)/i(101158),	-- oul Legguards \\ Sunsoul Legguards
-s(281235)/i(101164),	-- oul Shoulderguards \\ Sunsoul Shoulderguards
-s(281236)/i(101165),	-- oul Waistband \\ Sunsoul Waistband
-s(281237)/i(101166),	-- oul Armguards \\ Sunsoul Armguards
-s(281238)/i(101172),	-- unal Wand \\ Communal Wand
-s(281239)/i(101173),	-- unal Cloak of Wisdom \\ Communal Cloak of Wisdom
-s(281240)/i(101174),	-- unal Sandals \\ Communal Sandals
-s(281241)/i(101175),	-- unal Handwraps \\ Communal Handwraps
-s(281242)/i(101176),	-- unal Hood \\ Communal Hood
-s(281243)/i(101177),	-- unal Leggings \\ Communal Leggings
-s(281244)/i(101182),	-- unal Vestments \\ Communal Vestments
-s(281245)/i(101184),	-- unal Shoulderpads \\ Communal Shoulderpads
-s(281246)/i(101185),	-- unal Cord \\ Communal Cord
-s(281247)/i(101186),	-- unal Wristwraps \\ Communal Wristwraps
-s(281248)/i(101187),	-- unal Staff \\ Communal Staff
-s(281249)/i(101188),	-- unal Cloak of Destruction \\ Communal Cloak of Destruction
-s(281250)/i(101189),	-- unal Boots \\ Communal Boots
-s(281251)/i(101190),	-- unal Gloves \\ Communal Gloves
-s(281252)/i(101191),	-- unal Cowl \\ Communal Cowl
-s(281253)/i(101192),	-- unal Pants \\ Communal Pants
-s(281254)/i(101193),	-- unal Robe \\ Communal Robe
-s(281255)/i(101194),	-- unal Mantle \\ Communal Mantle
-s(281256)/i(101195),	-- unal Sash \\ Communal Sash
-s(281257)/i(101196),	-- unal Bindings \\ Communal Bindings
-s(281258)/i(101197),	-- unal Stave \\ Communal Stave
-s(281259)/i(101198),	-- tdrinker Cloak of Rage \\ Lightdrinker Cloak of Rage
-s(281260)/i(101204),	-- tdrinker Jerkin \\ Lightdrinker Jerkin
-s(281261)/i(101205),	-- tdrinker Boots \\ Lightdrinker Boots
-s(281262)/i(101206),	-- tdrinker Gloves \\ Lightdrinker Gloves
-s(281263)/i(101207),	-- tdrinker Hood \\ Lightdrinker Hood
-s(281264)/i(101208),	-- tdrinker Britches \\ Lightdrinker Britches
-s(281265)/i(101209),	-- tdrinker Shoulders \\ Lightdrinker Shoulders
-s(281266)/i(101210),	-- tdrinker Waistband \\ Lightdrinker Waistband
-s(281267)/i(101211),	-- tdrinker Bindings \\ Lightdrinker Bindings
-s(281268)/i(101212),	-- tdrinker Dagger \\ Lightdrinker Dagger
-s(281269)/i(101213),	-- tdrinker Shiv \\ Lightdrinker Shiv
-s(281270)/i(101214),	-- tdrinker Sword \\ Lightdrinker Sword
-s(281271)/i(101215),	-- amtalker Cloak of Rage \\ Streamtalker Cloak of Rage
-s(281272)/i(101226),	-- amtalker Gavel \\ Streamtalker Gavel
-s(281273)/i(101227),	-- amtalker Tunic \\ Streamtalker Tunic
-s(281274)/i(101228),	-- amtalker Boots \\ Streamtalker Boots
-s(281275)/i(101229),	-- amtalker Gloves \\ Streamtalker Gloves
-s(281276)/i(101230),	-- amtalker Coif \\ Streamtalker Coif
-s(281277)/i(101231),	-- amtalker Legwraps \\ Streamtalker Legwraps
-s(281278)/i(101232),	-- amtalker Aegis \\ Streamtalker Aegis
-s(281279)/i(101233),	-- amtalker Pauldrons \\ Streamtalker Pauldrons
-s(281280)/i(101234),	-- amtalker Belt \\ Streamtalker Belt
-s(281281)/i(101235),	-- amtalker Armbands \\ Streamtalker Armbands
-s(281282)/i(101236),	-- amtalker Mace \\ Streamtalker Mace
-s(281283)/i(101237),	-- amtalker Chestguard \\ Streamtalker Chestguard
-s(281284)/i(101238),	-- amtalker Greaves \\ Streamtalker Greaves
-s(281285)/i(101239),	-- amtalker Handguards \\ Streamtalker Handguards
-s(281286)/i(101240),	-- amtalker Helm \\ Streamtalker Helm
-s(281287)/i(101241),	-- amtalker Legguards \\ Streamtalker Legguards
-s(281288)/i(101242),	-- amtalker Shoulderguards \\ Streamtalker Shoulderguards
-s(281289)/i(101243),	-- amtalker Waistguard \\ Streamtalker Waistguard
-s(281290)/i(101244),	-- amtalker Armguard \\ Streamtalker Armguard
-s(281291)/i(101245),	-- amtalker Cloak of Wisdom \\ Streamtalker Cloak of Wisdom
-s(281292)/i(101251),	-- amtalker Cloak of Destruction \\ Streamtalker Cloak of Destruction
-s(281293)/i(101252),	-- amtalker Scepter \\ Streamtalker Scepter
-s(281294)/i(101253),	-- amtalker Vest \\ Streamtalker Vest
-s(281295)/i(101254),	-- amtalker Sabatons \\ Streamtalker Sabatons
-s(281296)/i(101255),	-- amtalker Grips \\ Streamtalker Grips
-s(281297)/i(101256),	-- amtalker Cowl \\ Streamtalker Cowl
-s(281298)/i(101257),	-- amtalker Leggings \\ Streamtalker Leggings
-s(281299)/i(101258),	-- amtalker Shield \\ Streamtalker Shield
-s(281300)/i(101259),	-- amtalker Spaulders \\ Streamtalker Spaulders
-s(281301)/i(101260),	-- amtalker Girdle \\ Streamtalker Girdle
-s(281302)/i(101261),	-- amtalker Bracers \\ Streamtalker Bracers
-s(281303)/i(101267),	-- oul Sandals \\ Felsoul Sandals
-s(281304)/i(101268),	-- oul Handwraps \\ Felsoul Handwraps
-s(281305)/i(101269),	-- oul Cowl \\ Felsoul Cowl
-s(281306)/i(101270),	-- oul Leggings \\ Felsoul Leggings
-s(281307)/i(101271),	-- oul Robe \\ Felsoul Robe
-s(281308)/i(101272),	-- oul Shoulderpads \\ Felsoul Shoulderpads
-s(281309)/i(101273),	-- oul Cord \\ Felsoul Cord
-s(281310)/i(101274),	-- oul Wristwraps \\ Felsoul Wristwraps
-s(281311)/i(101275),	-- oul Wand \\ Felsoul Wand
-s(281312)/i(101276),	-- oul Cloak of Destruction \\ Felsoul Cloak of Destruction
-s(281313)/i(101277),	-- oul Staff \\ Felsoul Staff
-s(281314)/i(101278),	-- sworn Greatsword \\ Oathsworn Greatsword
-s(281315)/i(101279),	-- sworn Breastplate \\ Oathsworn Breastplate
-s(281316)/i(101280),	-- sworn Sabatons \\ Oathsworn Sabatons
-s(281317)/i(101281),	-- sworn Gauntlets \\ Oathsworn Gauntlets
-s(281318)/i(101282),	-- sworn Helm \\ Oathsworn Helm
-s(281319)/i(101283),	-- sworn Legplates \\ Oathsworn Legplates
-s(281320)/i(101284),	-- sworn Pauldrons \\ Oathsworn Pauldrons
-s(281321)/i(101285),	-- sworn Girdle \\ Oathsworn Girdle
-s(281322)/i(101286),	-- sworn Vambraces \\ Oathsworn Vambraces
-s(281323)/i(101287),	-- sworn Maul \\ Oathsworn Maul
-s(281324)/i(101288),	-- sworn Sword \\ Oathsworn Sword
-s(281325)/i(101289),	-- sworn Bulwark \\ Oathsworn Bulwark
-s(281326)/i(101290),	-- sworn Cloak of Battle \\ Oathsworn Cloak of Battle
-s(281327)/i(101296),	-- sworn Chestguard \\ Oathsworn Chestguard
-s(281328)/i(101297),	-- sworn Cloak of Stoicism \\ Oathsworn Cloak of Stoicism
-s(281329)/i(101298),	-- sworn Greaves \\ Oathsworn Greaves
-s(281330)/i(101299),	-- sworn Handguards \\ Oathsworn Handguards
-s(281331)/i(101300),	-- sworn Faceguard \\ Oathsworn Faceguard
-s(281332)/i(101301),	-- sworn Legguards \\ Oathsworn Legguards
-s(281333)/i(101307),	-- sworn Shoulderguards \\ Oathsworn Shoulderguards
-s(281334)/i(101308),	-- sworn Waistband \\ Oathsworn Waistband
-s(281335)/i(101309),	-- sworn Armguards \\ Oathsworn Armguards
 s(281336)/i(101316),	-- Weapon - Axe_2h_OrgrimmarRaid_D_01 - Blue
 s(281337)/i(101317),	-- Weapon - Axe_2h_OrgrimmarRaid_D_01 - Green
 s(281338)/i(101318),	-- Weapon - Axe_2h_OrgrimmarRaid_D_01 - Purple

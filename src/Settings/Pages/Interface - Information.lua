@@ -1262,9 +1262,11 @@ local InformationTypes = {
 					tinsert(tooltipInfo, { left = L.UNSORTED_DESC, wrap = true, color = app.Colors.ChatLinkError });
 				else
 					-- removed BoE seen with a non-generic BonusID, potentially a level-scaled drop made re-obtainable
-					if reference.u == app.PhaseConstants.REMOVED_FROM_GAME and not app.Modules.Filter.Filters.Bind(reference) and (reference.bonusID or 3524) ~= 3524 then
-						tinsert(tooltipInfo, { left = L.RECENTLY_MADE_OBTAINABLE });
-					end
+					-- TODO: this is pretty out-dated, and should be revised for verbiage and qualification
+					-- currently it shows on BoA items which come from removed sources
+					-- if reference.u == app.PhaseConstants.REMOVED_FROM_GAME and not app.Modules.Filter.Filters.Bind(reference) and (reference.bonusID or 3524) ~= 3524 then
+					-- 	tinsert(tooltipInfo, { left = L.RECENTLY_MADE_OBTAINABLE });
+					-- end
 				end
 			end
 

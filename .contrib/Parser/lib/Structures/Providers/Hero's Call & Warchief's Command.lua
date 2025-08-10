@@ -21,11 +21,11 @@ local helper = function(boards, t)	-- Assigns board provider data based on the m
 	-- Pre-Cata, ignore all war board information.
 	if true then return t; end
 	-- #endif
-	
+
 	if not t.questID then
 		error("Hero's Call / Warchief's Command Board providers need to be attached to a Quest Object.");
 	end
-	
+
 	-- Map the IDs into a dictionary for ease of use.
 	local mapsByKey = {};
 	local maps = t.maps;
@@ -67,12 +67,12 @@ local helper = function(boards, t)	-- Assigns board provider data based on the m
 			maps = nil;
 		end
 	end
-	
+
 	-- #if AFTER 7.3.5
 	-- CRIEVE NOTE: Not sure what patch removed the level requirements, but let's purge them just in case they stick around due to cata classic.
 	if t.lvl then t.lvl = nil; end
 	-- #endif
-	
+
 	-- Convert the qg/qgs/provider to providers.
 	local providers = t.providers;
 	if not providers then
@@ -93,10 +93,10 @@ local helper = function(boards, t)	-- Assigns board provider data based on the m
 		table.insert(providers, t.provider);
 		t.provider = nil;
 	end
-	
+
 	-- All of these quests are breadcrumbs
 	if not t.isBreadcrumb then t.isBreadcrumb = true; end
-	
+
 	-- Copy all of the object data for the maps into t.
 	local coords = t.coords;
 	for mapID,data in pairs(mapsByKey) do
@@ -115,7 +115,7 @@ local helper = function(boards, t)	-- Assigns board provider data based on the m
 		if data.races and not t.races then
 			t.races = data.races;
 		end
-		
+
 		if data.coords then
 			if not coords then
 				if t.coord then
@@ -143,7 +143,7 @@ local helper = function(boards, t)	-- Assigns board provider data based on the m
 			end
 		end
 	end
-	
+
 	return t;
 end
 
@@ -291,7 +291,7 @@ local HEROS_CALL_BOARDS = {
 		["timeline"] = { ADDED_4_0_1 },
 		["races"] = ALLIANCE_ONLY,
 	}),
-	[NORTHREND_DALARAN] = o(208316, {    -- Hero's Call Board
+	[NORTHREND_DALARAN] = o(208316, {	-- Hero's Call Board
 		["coords"] = {
 			{ 25.9, 43.1, NORTHREND_DALARAN },
 			{ 47.8, 41.2, NORTHREND_DALARAN },
@@ -306,20 +306,20 @@ local HEROS_CALL_BOARDS = {
 			-------------------------------------------------
 			-- Kalimdor Quests
 			28551,	-- Hero's Call: Southern Barrens!
-			
+
 			-- Eastern Kingdoms Quests
 			28582,	-- Hero's Call: Searing Gorge!
-			
+
 			-- Northrend Quests
 			39207,	-- Hero's Call: Grizzly Hills!
 			49551,	-- Hero's Call: Howling Fjord!
 			49555,	-- Hero's Call: Icecrown!
 			49553,	-- Hero's Call: Sholazar Basin!
 			49552,	-- Hero's Call: Zul'Drak!
-			
+
 			-- Outland Quests
 			49550,	-- Hero's Call: Shadowmoon Valley! (Outland)
-			
+
 			-- MoP Quests
 			49561,	-- Hero's Call: Dread Wastes!
 			49558,	-- Hero's Call: Krasarang Wilds!
@@ -341,7 +341,7 @@ local HEROS_CALL_BOARDS = {
 			28503,	-- Hero's Call: Thousand Needles!
 			28525,	-- Hero's Call: Un'Goro Crater!
 			28544,	-- Hero's Call: Winterspring!
-			
+
 			-- Eastern Kingdoms Quests
 			28579,	-- Hero's Call: Badlands!
 			28564,	-- Hero's Call: Duskwood!
@@ -353,7 +353,7 @@ local HEROS_CALL_BOARDS = {
 			28576,	-- Hero's Call: Western Plaguelands!
 			28562,	-- Hero's Call: Westfall!
 			28565,	-- Hero's Call: Wetlands!
-			
+
 			-- Northrend Quests
 			39204,	-- Hero's Call: Dragonblight!
 			39207,	-- Hero's Call: Grizzly Hills!
@@ -362,20 +362,20 @@ local HEROS_CALL_BOARDS = {
 			49553,	-- Hero's Call: Sholazar Basin!
 			49554,	-- Hero's Call: Storm Peaks!
 			49552,	-- Hero's Call: Zul'Drak!
-			
+
 			-- Outland Quests
 			39199,	-- Hero's Call: Blade's Edge Mountains!
 			39202,	-- Hero's Call: Netherstorm!
 			28708,	-- Hero's Call: Outland! (Hellfire Peninsula)
 			49550,	-- Hero's Call: Shadowmoon Valley! (Outland)
-			
+
 			-- Cata Quests
 			27727,	-- Hero's Call: Deepholm!
 			29386,	-- Hero's Call: Mount Hyjal!
 			28716,	-- Hero's Call: Twilight Highlands!
 			28558,	-- Hero's Call: Uldum!
 			27724,	-- Hero's Call: Vashj'ir!
-			
+
 			-- MoP Quests
 			49561,	-- Hero's Call: Dread Wastes!
 			49556,	-- Hero's Call: Jade Forest!
@@ -383,7 +383,7 @@ local HEROS_CALL_BOARDS = {
 			49559,	-- Hero's Call: Kun-Lai Summit!
 			49560,	-- Hero's Call: Townlong Steppes!
 			49557,	-- Hero's Call: Valley of the Four Winds!
-			
+
 			-- WOD Quests
 			28709,	-- Hero's Call: Borean Tundra!
 			34398,	-- Warlords of Draenor: The Dark Portal [9.0.1] / The Dark Portal
@@ -409,20 +409,20 @@ local HEROS_CALL_BOARDS = {
 			-------------------------------------------------
 			-- Kalimdor Quests
 			28551,	-- Hero's Call: Southern Barrens!
-			
+
 			-- Eastern Kingdoms Quests
 			28582,	-- Hero's Call: Searing Gorge!
-			
+
 			-- Northrend Quests
 			39207,	-- Hero's Call: Grizzly Hills!
 			49551,	-- Hero's Call: Howling Fjord!
 			49555,	-- Hero's Call: Icecrown!
 			49553,	-- Hero's Call: Sholazar Basin!
 			49552,	-- Hero's Call: Zul'Drak!
-			
+
 			-- Outland Quests
 			49550,	-- Hero's Call: Shadowmoon Valley! (Outland)
-			
+
 			-- MoP Quests
 			49561,	-- Hero's Call: Dread Wastes!
 			49558,	-- Hero's Call: Krasarang Wilds!
@@ -575,7 +575,7 @@ local WARCHIEFS_COMMAND_BOARDS = {
 		["timeline"] = { ADDED_4_0_1 },
 		["races"] = HORDE_ONLY,
 	}),
-	[NORTHREND_DALARAN] = o(208317, {    -- Warchief's Command Board
+	[NORTHREND_DALARAN] = o(208317, {	-- Warchief's Command Board
 		["coords"] = {
 			{ 48.7, 39.6, NORTHREND_DALARAN },
 			{ 59.2, 27.4, NORTHREND_DALARAN },

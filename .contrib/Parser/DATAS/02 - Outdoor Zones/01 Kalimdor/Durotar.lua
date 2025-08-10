@@ -2121,7 +2121,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(817),	-- Skull Rock
 				visit_exploration(879,{coord={37.80,20.70,DUROTAR}}),	-- Southfury River
 				exploration(4981),	-- Southfury Watershed
-				visit_exploration(4982),    -- The Dranosh'ar Blockade
+				visit_exploration(4982),	-- The Dranosh'ar Blockade
 				exploration(369),	-- Thunder Ridge
 				exploration(372),	-- Tiragarde Keep
 				exploration(2979),	-- Tor'kren Farm

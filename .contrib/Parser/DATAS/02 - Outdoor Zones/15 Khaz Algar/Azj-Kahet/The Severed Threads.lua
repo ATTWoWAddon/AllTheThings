@@ -8,6 +8,7 @@ SEVERED_THREADS_PACT = createHeader({
 		en = "Severed Threads Pact",
 		cn = "斩离之丝契约",
 		tw = "斷裂絲線合約",
+		ru = "Пакт Отрезанных нитей",
 	},
 });
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
@@ -678,7 +679,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							}),
 							i(250767, {	-- The General's War Chest (S3)
 								["sym"] = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Khaz Algar Zone Rewards content]
-								["timeline"] = { ADDED_11_2_0_SEASONSTART },
+								["timeline"] = { ADDED_11_2_0 },
 								["groups"] = {
 									i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace (RECIPE!)
 									i(223135),	-- Formula: Illusory Adornment: Shadow (RECIPE!)
@@ -719,7 +720,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							}),
 							i(250768, {	-- The Vizier's Capital (S3)
 								["sym"] = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Khaz Algar Zone Rewards content]
-								["timeline"] = { ADDED_11_2_0_SEASONSTART },
+								["timeline"] = { ADDED_11_2_0 },
 								["groups"] = {
 									i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace (RECIPE!)
 									i(223135),	-- Formula: Illusory Adornment: Shadow (RECIPE!)
@@ -760,7 +761,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							}),
 							i(250769, {	-- The Weaver's Gratuity (S3)
 								["sym"] = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Khaz Algar Zone Rewards content]
-								["timeline"] = { ADDED_11_2_0_SEASONSTART },
+								["timeline"] = { ADDED_11_2_0 },
 								["groups"] = {
 									i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace (RECIPE!)
 									i(223135),	-- Formula: Illusory Adornment: Shadow (RECIPE!)
@@ -896,8 +897,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						["provider"] = { "n", 224890 },	-- Thimble // Weave-Rat Cache (vignette)
 						["questID"] = 82857,
 						["coords"] = {
-							{ 65.9, 88.1, AZJ_KAHET_LOWER },    -- Thimble
-							{ 67.5, 83.4, AZJ_KAHET_LOWER },    -- Thimble's Cache
+							{ 65.9, 88.1, AZJ_KAHET_LOWER },	-- Thimble
+							{ 67.5, 83.4, AZJ_KAHET_LOWER },	-- Thimble's Cache
 						},
 					}),
 					o(454337, {	-- Thimble's Cache

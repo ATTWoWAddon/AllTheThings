@@ -44,6 +44,11 @@ local function AssignAPIWrapper(name, ...)
     print("No valid function for", name)  -- If no valid function is found, print an error message.
 end
 
+-- ChatInfo APIs
+local C_ChatInfo = C_ChatInfo
+AssignAPIWrapper("SendChatMessage", C_ChatInfo and C_ChatInfo.SendChatMessage , SendChatMessage);
+AssignAPIWrapper("SendAddonMessage", C_ChatInfo and C_ChatInfo.SendAddonMessage , SendAddonMessage);
+
 -- Faction APIs
 local C_Reputation = C_Reputation;
 local C_GossipInfo = C_GossipInfo;
@@ -117,6 +122,11 @@ local C_TradeSkillUI = C_TradeSkillUI;
 ---@diagnostic disable-next-line: deprecated, undefined-global
 AssignAPIWrapper("GetTradeSkillTexture", C_TradeSkillUI and C_TradeSkillUI.GetTradeSkillTexture, GetTradeSkillTexture);
 
+-- Specialization APIs
+local C_SpecializationInfo = C_SpecializationInfo
+AssignAPIWrapper("GetSpecialization", C_SpecializationInfo and C_SpecializationInfo.GetSpecialization, GetSpecialization);
+AssignAPIWrapper("GetSpecializationInfo", C_SpecializationInfo and C_SpecializationInfo.GetSpecializationInfo, GetSpecializationInfo);
+
 -- Spell APIs
 local C_Spell = C_Spell;
 
@@ -154,4 +164,11 @@ if app.AfterCata then
 else
 	AssignAPIWrapper("GetSpellName", GetSpellInfo);
 end
+
+-- SpellBook APIs
+local C_SpellBook = C_SpellBook
+AssignAPIWrapper("IsSpellKnown", C_SpellBook and C_SpellBook.IsSpellKnown , IsSpellKnown);
+AssignAPIWrapper("IsPlayerSpell", C_SpellBook and C_SpellBook.IsSpellKnown , IsPlayerSpell);
+AssignAPIWrapper("IsSpellKnownOrOverridesKnown", C_SpellBook and C_SpellBook.IsSpellInSpellBook , IsSpellKnownOrOverridesKnown);
+
 ---@diagnostic enable: deprecated

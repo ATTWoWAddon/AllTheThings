@@ -9,6 +9,10 @@ JEWELCRAFTING_SUPPLIES = sharedData({
 		{ "n", 19065},	-- Inessera <Jewelcrafting Supplies>
 		{ "n", 18751},	-- Kalaen <Jewelcrafting Trainer>
 		{ "n", 18774},	-- Tatiana <Jewelcrafting Trainer>
+		-- #if AFTER WRATH
+		{ "n", 27142},	-- Librarian Jeffers <Jewelcrafting Supplies>
+		{ "n", 28721},	-- Tiffany Cartier <Jewelcrafting Supplies>
+		-- #endif
 		-- #if AFTER 3.1.0
 		{ "n", 33637},	-- Kirembri Silvermane <Jewelcrafting Trainer>
 		-- #endif

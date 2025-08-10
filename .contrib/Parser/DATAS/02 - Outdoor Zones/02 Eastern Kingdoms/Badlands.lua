@@ -1974,7 +1974,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 57.6, 26.0, BADLANDS },
 							["cr"] = 46693,	-- Dustbelcher Instructor
 						}),
-						i(63155, {   -- Goat Horn Band
+						i(63155, {	-- Goat Horn Band
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(63154, {	-- Fuselight Chainmail

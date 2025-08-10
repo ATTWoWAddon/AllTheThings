@@ -750,7 +750,7 @@ profession(SKINNING, {
 				},
 				["qg"] = 98720,	-- Ske'rit <Skinning Trainer>
 				["groups"] = {
-					recipe(194163),    -- Stonehide Leather [Rank 3]
+					recipe(194163),	-- Stonehide Leather [Rank 3]
 				},
 			}),
 		}),

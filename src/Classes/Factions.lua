@@ -120,6 +120,12 @@ local function GetFactionStanding(reputationPoints)
 	end
 	return 1, 0
 end
+local function CompareReputation(t, reputation)
+	return t.reputation >= reputation;
+end
+local function CompareStanding(t, standing)
+	return t.standing >= standing;
+end
 
 -- Faction lib
 local KEY, CACHE, SETTING = "factionID", "Factions", "Reputations"
@@ -242,6 +248,9 @@ app.CreateFaction = app.CreateClass("Faction", KEY, {
 	sortProgress = function(t)
 		return ((t.reputation or -42000) + 42000) / 84000;
 	end,
+	CompareReputation = function()
+		return CompareReputation;
+	end,
 },
 C_GossipInfo_GetFriendshipReputation and "AsFriend" or false, {
 	isFriend = app.ReturnTrue,
@@ -292,6 +301,9 @@ C_GossipInfo_GetFriendshipReputation and "AsFriend" or false, {
 	rankText = function(t)
 		local standing, maxstanding = t.rank, t.maxstanding;
 		return Colorize(TRADESKILL_RANK_HEADER:format(standing), GetProgressColor(math_min(standing, maxstanding) / maxstanding));
+	end,
+	CompareReputation = function()
+		return CompareStanding;
 	end,
 },
 function(t) return C_GossipInfo_GetFriendshipReputation(t[KEY]).friendshipFactionID ~= 0; end,

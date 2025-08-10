@@ -245,8 +245,10 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(35868),	-- Grounded Pants
 							i(35869),	-- Hex-Linked Stronghelm
-							i(35870),	-- Stoneground Cleaver
 							i(35867),	-- Nimblefinger Band
+							i(35870),	-- Stoneground Cleaver
+							--
+							i(33563),	-- Forsaken Banner (QI!)
 						},
 					}),
 					q(11568, {	-- A Return to Resting
@@ -296,6 +298,8 @@ root(ROOTS.Zones, {
 							i(35888),	-- Embossed Ermine Girdle
 							i(35890),	-- Magdun Spaulders
 							i(35891),	-- Runeplate Helm
+							--
+							i(33581),	-- Vrykul Insult (QI!)
 						},
 					}),
 					q(12482, {	-- Against Nifflevar
@@ -425,6 +429,11 @@ root(ROOTS.Zones, {
 						["qg"] = 24251,	-- Chief Plaguebringer Harris
 						["coord"] = { 53.5, 66.3, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(33617),	-- Balanced Concoction (QI!)
+							i(34023),	-- Empty Apothecary's Flask (QI!)
+							i(34024),	-- Flask of Vrykul Blood (QI!)
+						}
 					}),
 					q(11457, {	-- Arming Kamagua
 						["sourceQuest"] = 11456,	-- Feeding the Survivors
@@ -474,16 +483,20 @@ root(ROOTS.Zones, {
 						["qg"] = 24027,	-- Sergeant Gorth
 						["coord"] = { 71.1, 39.0, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
+						["groups"] = { i(33472) },	-- Gorth's Torch (QI!)
 					}),
 					q(11301, {	-- Brains! Brains! Brains!
 						["qg"] = 24218,	-- Apothecary Grick
 						["coord"] = { 25.9, 24.4, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							i(35864),	-- Fizznik's Patented Earwarmer
-							i(35863),	-- Earth-Infused Leggings
-							i(35866),	-- Master Artilleryman Boots
 							i(35865),	-- Arcanum Shield
+							i(35863),	-- Earth-Infused Leggings
+							i(35864),	-- Fizznik's Patented Earwarmer
+							i(35866),	-- Master Artilleryman Boots
+							--
+							i(33558),	-- Deranged Explorer Brain (QI!)
+							i(33554),	-- Grick's Bonesaw (QI!)
 						},
 					}),
 					q(11153, {	-- Break the Blockade
@@ -514,9 +527,11 @@ root(ROOTS.Zones, {
 								["provider"] = { "n", 24464 },	-- Scourging Crystal
 							}),
 							i(35932),	-- Earthbinder's Regenerating Band
-							i(35933),	-- Ramshorn Greathelm
 							i(35934),	-- Ghoul-Crushing Stompers
 							i(35935),	-- Infused Coldstone Rune
+							i(35933),	-- Ramshorn Greathelm
+							--
+							i(33960),	-- Scourging Crystal Controller (QI!)
 						},
 					}),
 					q(11399, {	-- Bring Down Those Shields (H)
@@ -529,9 +544,11 @@ root(ROOTS.Zones, {
 								["provider"] = { "n", 24464 },	-- Scourging Crystal
 							}),
 							i(35932),	-- Earthbinder's Regenerating Band
-							i(35933),	-- Ramshorn Greathelm
 							i(35934),	-- Ghoul-Crushing Stompers
 							i(35935),	-- Infused Coldstone Rune
+							i(35933),	-- Ramshorn Greathelm
+							--
+							i(33960),	-- Scourging Crystal Controller (QI!)
 						},
 					}),
 					q(11414, {	-- Brother Betrayers (A)
@@ -582,26 +599,36 @@ root(ROOTS.Zones, {
 						["lockCriteria"] = {1, "questID", 12566},	-- Help for Camp Winterhoof
 					}),
 					q(13268, {	-- Cloth Scavenging (A)
-						["altQuests"] = {
-							13265,	-- Cloth Scavenging (A, Borean Tundra)
-							13272,	-- Cloth Scavenging (Neutral)
-						},
 						["qg"] = 26914,	-- Benjamin Clegg
 						["coord"] = { 58.6, 62.6, HOWLING_FJORD },
 						["requireSkill"] = TAILORING,
 						["races"] = ALLIANCE_ONLY,
-						["isBreadcrumb"] = true,	-- if you learn the recipe from the book (which will drop from the first handful of mobs you kill upon entering Northrend) the Cloth Scavenging quests become unobtainable
+						["lockCriteria"] = { 1,
+							"questID", 13272,	-- Cloth Scavenging (N, Dalaran)
+							-- "questID", 13268,	-- Cloth Scavenging (A, Howling Fjord)
+							"questID", 13269,	-- Cloth Scavenging (H, Howling Fjord)
+							"questID", 13265,	-- Cloth Scavenging (A, Borean Tundra)
+							"questID", 13270,	-- Cloth Scavenging (H, Borean Tundra)
+							"spellID", 59390,	-- Cloth Scavenging
+							"spellID", 343634,	-- Shadowlands Cloth Scavenging
+							"spellID", 392396,	-- Dragon Isles Cloth Scavenging
+						},
 					}),
 					q(13269, {	-- Cloth Scavenging (H)
-						["altQuests"] = {
-							13270,	-- Cloth Scavenging (H, Borean Tundra)
-							13272,	-- Cloth Scavenging (Neutral)
-						},
 						["qg"] = 26964,	-- Alexandra McQueen
 						["coord"] = { 79.4, 30.8, HOWLING_FJORD },
 						["requireSkill"] = TAILORING,
 						["races"] = HORDE_ONLY,
-						["isBreadcrumb"] = true,	-- if you learn the recipe from the book (which will drop from the first handful of mobs you kill upon entering Northrend) the Cloth Scavenging quests become unobtainable
+						["lockCriteria"] = { 1,
+							"questID", 13272,	-- Cloth Scavenging (N, Dalaran)
+							"questID", 13268,	-- Cloth Scavenging (A, Howling Fjord)
+							-- "questID", 13269,	-- Cloth Scavenging (H, Howling Fjord)
+							"questID", 13265,	-- Cloth Scavenging (A, Borean Tundra)
+							"questID", 13270,	-- Cloth Scavenging (H, Borean Tundra)
+							"spellID", 59390,	-- Cloth Scavenging
+							"spellID", 343634,	-- Shadowlands Cloth Scavenging
+							"spellID", 392396,	-- Dragon Isles Cloth Scavenging
+						},
 					}),
 					q(11479, {	-- "Crowleg" Dan
 						["sourceQuest"] = 11476,	-- A Carver and a Croaker
@@ -727,9 +754,9 @@ root(ROOTS.Zones, {
 								},
 							}),
 							i(35926),	-- Artfully Tooled Leggings
-							i(35927),	-- Songscale Breastplate
 							i(35928),	-- Cold-Forged Bronze Legplates
 							i(35925),	-- Shimmering Cold Iron Band
+							i(35927),	-- Songscale Breastplate
 						},
 					}),
 					q(11280, {	-- Draconis Gastritis
@@ -738,10 +765,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 53.0, 66.9, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
+							i(35875),	-- Beneficent Skullcap
 							i(35871),	-- Indigo Robe of Replenishment
 							i(35873),	-- Interlinked Chain Girdle
-							i(35875),	-- Beneficent Skullcap
 							i(35872),	-- Iron-Studded Leggings
+							--
+							i(33441),	-- Tillinghast's Plagued Meat (QI!)
 						},
 					}),
 					q(11290, {	-- Dragonflayer Battle Plans
@@ -827,6 +856,8 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(35857),	-- Munificent Bulwark
 							i(35858),	-- Tome of Alacrity
+							--
+							i(33621),	-- Plague Spray (QI!)
 						},
 					}),
 					q(11287, {	-- Find Sage Mistwalker
@@ -909,6 +940,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 53.5, 66.3, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
+						["groups"] = { i(37027) },	-- Blight Specimen (QI!)
 					}),
 					q(11237, {	-- Gjalerbron Attack Plans (A) -- TODO: Verify if this drops all the time
 						["provider"] = { "i", 33289 },	-- Gjalerbron Attack Plans
@@ -939,6 +971,7 @@ root(ROOTS.Zones, {
 								["provider"] = { "i", 33420 },	-- Plagued Proto-Whelp Specimen
 								["cr"] = 24160,	-- Plagued Proto-Whelp
 							}),
+							i(33418),	-- Tillinghast's Plague Canister (QI!)
 						},
 					}),
 					q(11508, {	-- Grezzix Spindlesnap
@@ -1240,12 +1273,19 @@ root(ROOTS.Zones, {
 						["qg"] = 23938,	-- Pontius
 						["coord"] = { 79.1, 31.2, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(33238),	-- Crow Meat (QI!)
+							i(33221),	-- Plaguehound Cage (QI!)
+						},
 					}),
 					q(11436, {	-- Let's Go Surfing Now
 						["sourceQuest"] = 11421,	-- It Goes to 11...
 						["qg"] = 24634,	-- Lieutenant Icehammer
 						["coord"] = { 64.4, 46.9, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							i(34078)	-- Icehammer's Harpoon Controller
+						},
 					}),
 					q(11494, {	-- Lightning Infused Relics
 						["sourceQuest"] = 11491,	-- Iron Rune Constructs and You: The Bluff
@@ -1295,12 +1335,14 @@ root(ROOTS.Zones, {
 						["qg"] = 24376,	-- Researcher Aderan
 						["coord"] = { 62.5, 16.5, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = { i(33806) },	-- Runeseeking Pick (QI!)
 					}),
 					q(11365, {	-- March of the Giants (H)
 						["sourceQuest"] = 11275,	-- Making the Horn
 						["qg"] = 24390,	-- Sage Edan
 						["coord"] = { 48.0, 10.4, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
+						["groups"] = { i(33806) },	-- Runeseeking Pick (QI!)
 					}),
 					q(11349, {	-- Mastering the Runes (A)
 						["sourceQuest"] = 11346,	-- The Book of Runes
@@ -1347,10 +1389,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 49.3, 11.9, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
+							i(35931),	-- Appointed Scalemail Leggings
 							i(35937),	-- Braxley's Backyard Moonshine
 							i(35929),	-- Gholamcloth Wrap
-							i(35931),	-- Appointed Scalemail Leggings
 							i(35930),	-- Inscribed Worghide Treads
+							--
+							i(33450),	-- Carved Horn (QI!)
 						},
 					}),
 					q(11202, {	-- Mission: Eternal Flame
@@ -1465,6 +1509,7 @@ root(ROOTS.Zones, {
 						["qg"] = 24126,	-- Apothecary Lysander
 						["coord"] = { 78.5, 28.9, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
+						["groups"] = { i(33619) },	-- Lysander's Strain (QI!)
 					}),
 					q(11501, {	-- News From the East
 						["sourceQuests"] = {
@@ -1773,9 +1818,11 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(35893),	-- Coldstone-Inlaid Waistguard
+							i(35895),	-- Emeraldscale Pauldrons
 							i(35892),	-- Flamebinder Handwraps
 							i(35894),	-- Purestrike Bracers
-							i(35895),	-- Emeraldscale Pauldrons
+							--
+							i(34043),	-- Ancient Vrykul Bone (QI!)
 						},
 					}),
 					q(11155, {	-- Shoveltusk Soup Again?
@@ -1799,6 +1846,7 @@ root(ROOTS.Zones, {
 						["qg"] = 24129,	-- Chieftain Ashtotem
 						["coord"] = { 48.0, 10.7, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
+						["groups"] = { i(33340) },	-- Winterhoof Emblem (QI!)
 					}),
 					q(11432, {	-- Sleeping Giants (A)
 						["sourceQuest"] = 11231,	-- Of Keys and Cages
@@ -2009,10 +2057,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 78.5, 28.9, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							i(35841),	-- Frost-Trimmed Gauntlets
 							i(35842),	-- Azure Chain Hauberk
+							i(35841),	-- Frost-Trimmed Gauntlets
 							i(35843),	-- Ramshorn-Inlaid Shoulders
 							i(35839),	-- Runed Clamshell Choker
+							--
+							i(33349),	-- Plague Vials (QI!)
 						},
 					}),
 					q(11303, {	-- The Ambush
@@ -2174,6 +2224,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "o", 186585 },	-- Dragonskin Scroll
 						["coord"] = { 75.9, 19.7, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
+						["groups"] = { i(33411) },	-- Dragonskin Map (QI!)
 					}),
 					q(11343, {	-- The Echo of Ymiron
 						["sourceQuest"] = 11333,	-- Into the World of Spirits
@@ -2226,6 +2277,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 11313,	-- Spirits of the Ice
 						["qg"] = 24117,	-- Lurielle
 						["coord"] = { 61.4, 22.8, HOWLING_FJORD },
+						["groups"] = { i(33606) },	-- Lurielle's Pendant (QI!)
 					}),
 					q(11455, {	-- The Fragrance of Money
 						["sourceQuest"] = 11434,	-- Forgotten Treasure
@@ -2566,6 +2618,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 52.0, 67.3, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
+						["groups"] = { i(37027) },	-- Blight Specimen (QI!)
 					}),
 					q(11291, {	-- To Westguard Keep!
 						["sourceQuest"] = 11290,	-- Dragonflayer Battle Plans
@@ -2606,11 +2659,13 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(35829),	-- Coldspike Longbow
-							i(35827),	-- Regal Sceptre
-							i(35830),	-- Worn Vrykul Smasher
-							i(35826),	-- Whelpling-Skull Zapper
 							i(35823),	-- Ice-Rimed Dagger
+							i(35827),	-- Regal Sceptre
 							i(35824),	-- Stoneblade Slicer
+							i(35826),	-- Whelpling-Skull Zapper
+							i(35830),	-- Worn Vrykul Smasher
+							--
+							i(33335),	-- Cannoneer's Smoke Flare (QI!)
 						},
 					}),
 					q(12118, {	-- Travel to Moa'ki Harbor
@@ -2659,6 +2714,7 @@ root(ROOTS.Zones, {
 						["qg"] = 23780,	-- High Executor Anselm
 						["coord"] = { 78.6, 31.2, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
+						["groups"] = { i(33278) },	-- Burning Torch (QI!)
 					}),
 					warchiefscommand(q(49533, {	-- Warchief's Command: Howling Fjord!
 						["timeline"] = { ADDED_7_3_5 },
@@ -2675,6 +2731,8 @@ root(ROOTS.Zones, {
 							i(35859),	-- Fire-Purifying Tunic
 							i(35861),	-- Inescapable Girdle
 							i(35862),	-- Light-Bound Chestguard
+							--
+							i(33613),	-- Abomination Assembly Kit (QI!)
 						},
 					}),
 					q(11418, {	-- We Call Him Steelfeather
@@ -2829,114 +2887,151 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(VENDORS, {
-					n(24539, {	-- "Silvermoon" Harry
-						["coord"] = { 35.0, 80.8, HOWLING_FJORD },
-						["groups"] = {
-							i(20983),	-- Acolyte's Dagger
-							i(6097),	-- Acolyte's Shirt
-							i(20978),	-- Apprentice's Staff
-							i(20986),	-- Light Cloth Pants
-							i(20918),	-- Unadorned Chain Leggings
-						},
-					}),
-					n(24347, {	-- Alexis Walker
-						["coord"] = { 79.2, 28.8, HOWLING_FJORD },
-						["races"] = HORDE_ONLY,
-						["groups"] = {
-							i(30777),	-- Aldor Heavy Belt
-							i(30771),	-- Heavy Draenic Bracers
-							i(30765),	-- Heavy Draenic Breastplate
-							i(30775),	-- Layered Bone Shield
-							i(30781),	-- Mag'hari Chain Vest
-							i(30784),	-- Worn Mag'hari Gauntlets
-							-- These 6 items could be symlinked to 6 more vendors
-						},
-					}),
-					n(24341, {	-- Barnabas Frye <Trade Goods>
-						["coord"] = { 79.5, 30.47, HOWLING_FJORD },
-						["sym"] = {
-							{ "select","itemID",
-								-- #if AFTER CATA
-								3371,	-- Crystal Vial
-								-- #else
-								40411,	-- Enchanted Vial
-								18256,	-- Imbued Vial
-								-- #endif
+					["description"] = "Howling Fjord does not have any vendors offering enchanting supplies, nor jewelcrafting supplies.",
+					["groups"] = {
+						n(24539, {	-- "Silvermoon" Harry
+							["coord"] = { 35.0, 80.8, HOWLING_FJORD },
+							["groups"] = {
+								i(20983),	-- Acolyte's Dagger
+								i(6097),	-- Acolyte's Shirt
+								i(20978),	-- Apprentice's Staff
+								i(20986),	-- Light Cloth Pants
+								i(20918),	-- Unadorned Chain Leggings
 							},
-						},
-					}),
-					n(23735, {	-- Bartleby Armorfist
-						["coord"] = { 59.6, 63.6, HOWLING_FJORD },
-						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
-							i(30777),	-- Aldor Heavy Belt
-							i(30771),	-- Heavy Draenic Bracers
-							i(30765),	-- Heavy Draenic Breastplate
-							i(30775),	-- Layered Bone Shield
-							i(30781),	-- Mag'hari Chain Vest
-							i(30784),	-- Worn Mag'hari Gauntlets
-							-- These 6 items could be symlinked to 6 more vendors
-						},
-					}),
-					n(27151, {	-- Deniigi <Spearcrafter>
-						["coord"] = { 25.6, 57.6, HOWLING_FJORD },
-						["groups"] = {
-							i(39987),	-- Tuskarr Fishing Spear
-							i(39995, {	-- Tuskarr Javelin
-								["timeline"] = { REMOVED_5_0_4 },
-							}),
-						},
-					}),
-					n(32773, bubbleDownSelf({ ["races"] = ALLIANCE_ONLY, }, {	-- Logistics Officer Brighton <Alliance Vanguard Quartermaster>
-						["coord"] = { 59.6, 63.8, HOWLING_FJORD },
-						["sym"] = {{"sub","common_vendor",32564}},	-- Logistics Officer Silverstone <Alliance Vanguard Quartermaster>
-					})),
-					n(24330, {	-- Orson Locke <Sharp Blades>
-						["coord"] = { 53.8, 66.8, HOWLING_FJORD },
-						["races"] = HORDE_ONLY,
-						["groups"] = {
-							i(40005),	-- Forsaken Blade
-							i(40004),	-- Forsaken Greatsword
-							i(40006),	-- Forsaken Sword
-							i(40007, {	-- Forsaken Throwing Knife
-								["timeline"] = { REMOVED_5_0_4 },
-							}),
-						},
-					}),
-					n(32774, bubbleDownSelf({ ["races"] = HORDE_ONLY, }, {	-- Sebastian Crane <Horde Expedition Quartermaster>
-						["coord"] = { 79.6, 30.6, HOWLING_FJORD },
-						["sym"] = {{"sub","common_vendor",32565}},	-- Gara Skullcrush <Horde Expedition Quartermaster>
-					})),
-					n(24028, {	-- Talu Frosthoof <Bowyer>
-						["coord"] = { 48.2, 11.0, HOWLING_FJORD },
-						["races"] = HORDE_ONLY,
-						["groups"] = {
-							i(11307, {	-- Massive Longbow
-								["isLimited"] = true,
-							}),
-							i(11308, {	-- Sylvan Shortbow
-								["isLimited"] = true,
-							}),
-						},
-					}),
-					n(31916, {	-- Tanaika <Kalu'ak Quartermaster>
-						["coord"] = { 25.4, 58.6, HOWLING_FJORD },
-						["sym"] = {{"sub","common_vendor",32763}},	-- Sairuk <Kalu'ak Quartermaster>
-					}),
-					n(23802, {	-- Wink Sprinklesprankle <General Goods & Trade Supplies>
-						["coord"] = { 58.4, 62.75, HOWLING_FJORD },
-						["description"] = "Walks in a circle inside Valgarde Inn.",
-						["sym"] = {
-							{ "select","itemID",
-								-- #if AFTER CATA
-								3371,	-- Crystal Vial
-								-- #else
-								40411,	-- Enchanted Vial
-								18256,	-- Imbued Vial
-								-- #endif
+						}),
+						n(24347, {	-- Alexis Walker
+							["coord"] = { 79.2, 28.8, HOWLING_FJORD },
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								i(30777),	-- Aldor Heavy Belt
+								i(30771),	-- Heavy Draenic Bracers
+								i(30765),	-- Heavy Draenic Breastplate
+								i(30775),	-- Layered Bone Shield
+								i(30781),	-- Mag'hari Chain Vest
+								i(30784),	-- Worn Mag'hari Gauntlets
+								-- These 6 items could be symlinked to 6 more vendors
 							},
-						},
-					}),
+						}),
+						n(24341, {	-- Barnabas Frye <Trade Goods>
+							["coord"] = { 79.5, 30.47, HOWLING_FJORD },
+							["sym"] = {
+								{ "select","itemID",
+									38426,	-- Eternium Thread
+									-- #if AFTER CATA
+									3371,	-- Crystal Vial
+									-- #else
+									40411,	-- Enchanted Vial
+									18256,	-- Imbued Vial
+									-- #endif
+								},
+							},
+						}),
+						n(23735, {	-- Bartleby Armorfist
+							["coord"] = { 59.6, 63.6, HOWLING_FJORD },
+							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								i(30777),	-- Aldor Heavy Belt
+								i(30771),	-- Heavy Draenic Bracers
+								i(30765),	-- Heavy Draenic Breastplate
+								i(30775),	-- Layered Bone Shield
+								i(30781),	-- Mag'hari Chain Vest
+								i(30784),	-- Worn Mag'hari Gauntlets
+								-- These 6 items could be symlinked to 6 more vendors
+							},
+						}),
+						n(26959, {	-- Booker Kells <Inscription Trainer>
+							["coord"] = { 79.36, 29.25, HOWLING_FJORD },
+							["races"] = HORDE_ONLY,
+							["sym"] = {
+								{ "select","itemID",
+									39354,	-- Light Parchment
+									-- #if BEFORE MOP
+									10648,	-- Common Parchment
+									39501,	-- Heavy Parchment
+									39502,	-- Resilient Parchment
+									-- #endif
+									39489,	-- Scribe's Satchel
+									39505,	-- Virtuoso Inking Set
+								},
+							},
+						}),
+						n(27151, {	-- Deniigi <Spearcrafter>
+							["coord"] = { 25.6, 57.6, HOWLING_FJORD },
+							["groups"] = {
+								i(39987),	-- Tuskarr Fishing Spear
+								i(39995, {	-- Tuskarr Javelin
+									["timeline"] = { REMOVED_5_0_4 },
+								}),
+							},
+						}),
+						n(32773, bubbleDownSelf({ ["races"] = ALLIANCE_ONLY, }, {	-- Logistics Officer Brighton <Alliance Vanguard Quartermaster>
+							["coord"] = { 59.6, 63.8, HOWLING_FJORD },
+							["sym"] = {{"sub","common_vendor",32564}},	-- Logistics Officer Silverstone <Alliance Vanguard Quartermaster>
+						})),
+						n(26916, {	-- Mindri Dinkles <Inscription Trainer>
+							["coord"] = { 58.27, 62.48, HOWLING_FJORD },
+							["races"] = ALLIANCE_ONLY,
+							["sym"] = {
+								{ "select","itemID",
+									39354,	-- Light Parchment
+									-- #if BEFORE MOP
+									10648,	-- Common Parchment
+									39501,	-- Heavy Parchment
+									39502,	-- Resilient Parchment
+									-- #endif
+									39489,	-- Scribe's Satchel
+									39505,	-- Virtuoso Inking Set
+								},
+							},
+						}),
+						n(24330, {	-- Orson Locke <Sharp Blades>
+							["coord"] = { 53.8, 66.8, HOWLING_FJORD },
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								i(40005),	-- Forsaken Blade
+								i(40004),	-- Forsaken Greatsword
+								i(40006),	-- Forsaken Sword
+								i(40007, {	-- Forsaken Throwing Knife
+									["timeline"] = { REMOVED_5_0_4 },
+								}),
+							},
+						}),
+						n(32774, bubbleDownSelf({ ["races"] = HORDE_ONLY, }, {	-- Sebastian Crane <Horde Expedition Quartermaster>
+							["coord"] = { 79.6, 30.6, HOWLING_FJORD },
+							["sym"] = {{"sub","common_vendor",32565}},	-- Gara Skullcrush <Horde Expedition Quartermaster>
+						})),
+						n(24028, {	-- Talu Frosthoof <Bowyer>
+							["coord"] = { 48.2, 11.0, HOWLING_FJORD },
+							["races"] = HORDE_ONLY,
+							["groups"] = {
+								i(11307, {	-- Massive Longbow
+									["isLimited"] = true,
+								}),
+								i(11308, {	-- Sylvan Shortbow
+									["isLimited"] = true,
+								}),
+							},
+						}),
+						n(31916, {	-- Tanaika <Kalu'ak Quartermaster>
+							["coord"] = { 25.4, 58.6, HOWLING_FJORD },
+							["sym"] = {{"sub","common_vendor",32763}},	-- Sairuk <Kalu'ak Quartermaster>
+						}),
+						n(23802, {	-- Wink Sprinklesprankle <General Goods & Trade Supplies>
+							["coord"] = { 58.4, 62.75, HOWLING_FJORD },
+							["description"] = "Walks in a circle inside Valgarde Inn.",
+							["sym"] = {
+								{ "select","itemID",
+									38426,	-- Eternium Thread
+									-- #if AFTER CATA
+									3371,	-- Crystal Vial
+									-- #else
+									40411,	-- Enchanted Vial
+									18256,	-- Imbued Vial
+									-- #endif
+								},
+							},
+						}),
+					},
 				}),
 				n(ZONE_DROPS, {
 					applyclassicphase(WRATH_PHASE_TWO, i(45003, {	-- Winter's Edge

@@ -790,7 +790,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(9642, {	-- More Irradiated Crystal Shards
 					["sourceQuest"] = 9641,	-- Irradiated Crystal Shards
-					["qg"] = 17684,    -- Vindicator Boros
+					["qg"] = 17684,	-- Vindicator Boros
 					["coord"] = { 55.4, 55.2, BLOODMYST_ISLE },
 					["cost"] = { { "i", 23984, 10 } },	-- Irradiated Crystal Shard
 					["races"] = ALLIANCE_ONLY,

@@ -19,7 +19,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8350,	-- Mine! Mine! Mine!
 						8351,	-- Other People's Property
 						8354,	-- Puddle Jumper
-						8355,   -- Weighed Down
+						8355,	-- Weighed Down
 						8359,	-- Capping Spree
 						8358,	-- Deepwind Gorge All-Star
 					}},

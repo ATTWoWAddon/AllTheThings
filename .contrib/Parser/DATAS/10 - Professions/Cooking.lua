@@ -259,9 +259,7 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 				["_factions"] = { 1357 },	-- Nomi
 			}),
 		}),
-		ach(7329, {	-- Pandaren Cuisine
-			["sym"] = {{ "partial_achievement", 7330 }},	-- Pandaren Delicacies
-		}),
+		ach(7329),	-- Pandaren Cuisine
 		ach(7330),	-- Pandaren Delicacies
 		ach(7326, {	-- The Pandaren Gourmet (15)
 			["sym"] = {{ "partial_achievement", 7327 }},	-- The Pandaren Gourmet (30)
@@ -399,7 +397,7 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 				["coord"] = { 53.5, 51.2, VALLEY_OF_THE_FOUR_WINDS },
 				["cost"] = {{ "i", 87658, 1 }},	-- 1x Empty Raw Tiger Steak Container
 			}),
-			header(HEADERS.Spell, 145062, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {
+			header(HEADERS.Spell, 145062, applyclassicphase(MOP_PHASE_SIEGE_OF_ORGRIMMAR, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0 } }, {
 				q(33018, {	-- Noodle Secrets Long Forgotten
 					["sourceQuests"] = {
 						31471,	-- Agile as a Tiger
@@ -462,7 +460,7 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 						r(145062),	-- Pandaren Treasure Noodle Cart Kit
 					},
 				}),
-			})),
+			}))),
 		}),
 	}))),
 	expansion(EXPANSION.WOD, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {

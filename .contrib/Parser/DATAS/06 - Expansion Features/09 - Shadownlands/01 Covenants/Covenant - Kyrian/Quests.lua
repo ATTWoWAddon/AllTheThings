@@ -311,7 +311,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 			}),
 			q(62794, {	-- Enhancing the Hold
 				["sourceQuests"] = { 62837 },	-- Hopeful News
-				["provider"] = { "n", 167745 },    -- Haephus
+				["provider"] = { "n", 167745 },	-- Haephus
 				["coord"] = { 42.6, 53.1, ARCHONS_RISE },
 				-- TODO: verify SQ.  should be this, or It's All Coming Together
 				-- does not rely on 62796 [Return to Adrestes]
@@ -782,8 +782,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["coord"] = { 31.9, 47.7, REVENDRETH },
 			}),
 			q(62238, {	-- Soul Led Astray
-				["sourceQuests"] = { 62237 },    -- Mysterious Soul Mirror
-				["provider"] = { "n", 173771 },    -- Thenios
+				["sourceQuests"] = { 62237 },	-- Mysterious Soul Mirror
+				["provider"] = { "n", 173771 },	-- Thenios
 				["coord"] = { 40.4, 19.9, BASTION },
 			}),
 			q(57898, {	-- Soul Meets Body

@@ -72,67 +72,67 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						n(TIER_TWO, {
 							n(QUESTS, {
 								q(61179, {	-- Forge Ahead
-									["provider"] = { "n", 158773 },    -- Capheus
+									["provider"] = { "n", 158773 },	-- Capheus
 									["coord"] = { 64.2, 20.0, BASTION },
 								}),
 							}),
 							n(QUESTS, sharedData({ ["isDaily"] = true }, {
 								q(61193, {	-- A Light Touch
-									["provider"] = { "n", 171671 },    -- Kofi
+									["provider"] = { "n", 171671 },	-- Kofi
 									["coord"] = { 50.3, 21.4, BASTION },
 									["groups"] = {
 										i(180897),	-- Firstborne's Light (QI!)
 									},
 								}),
 								q(61209, {	-- A Somber Melody
-									["provider"] = { "n", 171677 },    -- Forgelite Selene
+									["provider"] = { "n", 171677 },	-- Forgelite Selene
 									["coord"] = { 50.2, 21.3, BASTION },
 									["groups"] = {
 										i(180990),	-- Eonian Lyre (QI!)
 									},
 								}),
 								q(61199, {	-- Arms Day
-									["provider"] = { "n", 171671 },    -- Kofi
+									["provider"] = { "n", 171671 },	-- Kofi
 									["coord"] = { 50.3, 21.4, BASTION },
 									["groups"] = {
 										i(180946),	-- Blessed Armament (QI!)
 									},
 								}),
 								q(61146, {	-- Manifesting Power
-									["provider"] = { "n", 171677 },    -- Forgelite Selene
+									["provider"] = { "n", 171677 },	-- Forgelite Selene
 									["coord"] = { 50.2, 21.3, BASTION },
 								}),
 								q(61182, {	-- Pollen Your Weight
-									["provider"] = { "n", 171671 },    -- Kofi
+									["provider"] = { "n", 171671 },	-- Kofi
 									["coord"] = { 50.3, 21.4, BASTION },
 									["groups"] = {
 										i(180851),	-- Twirlpetal Pollen (QI!)
 									},
 								}),
 								q(61166, {	-- Reduce, Reuse, Recycle
-									["provider"] = { "n", 171671 },    -- Kofi
+									["provider"] = { "n", 171671 },	-- Kofi
 									["coord"] = { 50.3, 21.4, BASTION },
 									["groups"] = {
 										i(180830),	-- Resonant Alloy (QI!)
 									},
 								}),
 								q(61159, {	-- Signs of Demise
-									["provider"] = { "n", 171676 },    -- Galakamos
+									["provider"] = { "n", 171676 },	-- Galakamos
 									["coord"] = { 50.4, 21.2, BASTION },
 									["groups"] = {
 										i(180816),	-- Forsworn Insignia (QI!)
 									},
 								}),
 								q(61157, {	-- Straight to the Point
-									["provider"] = { "n", 171676 },    -- Galakamos
+									["provider"] = { "n", 171676 },	-- Galakamos
 									["coord"] = { 50.4, 21.2, BASTION },
 								}),
 								q(61196, {	-- The Secret Ingredient
-									["provider"] = { "n", 171677 },    -- Forgelite Selene
+									["provider"] = { "n", 171677 },	-- Forgelite Selene
 									["coord"] = { 50.2, 21.3, BASTION },
 								}),
 								q(61156, {	-- Where There's a Quill...
-									["provider"] = { "n", 171676 },    -- Galakamos
+									["provider"] = { "n", 171676 },	-- Galakamos
 									["coord"] = { 50.4, 21.2, BASTION },
 									["groups"] = {
 										i(180796),	-- Shimmerflight Quill (QI!)

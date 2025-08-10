@@ -1768,13 +1768,13 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 				56156,	-- A Tempered Blade (A)
 				55500,	-- Save A Friend (H)
 			},
-			["providers"] = {
-				{ "n", 154436 },	-- Craftsman Azama
-			--	,	--  (Horde)
+			["qgs"] = {
+				154436,	-- Craftsman Azama (A)
+				151633,	-- Karn Deepweld (H)
 			},
 			["coords"] = {
 				{ 38.0, 53.3, NAZJATAR },	-- Alliance
-			--	{ , , NAZJATAR },	-- Horde
+				{ 49.3, 61.7, NAZJATAR },	-- Horde
 			},
 			["isDaily"] = true,
 		}),

@@ -556,7 +556,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(62165, {	-- Cryptkeeper's Belt
 							["timeline"] = { ADDED_4_0_3 },
 						}),
-						i(62164, {   -- Valorfist Band
+						i(62164, {	-- Valorfist Band
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
@@ -2411,7 +2411,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 44836 },	-- Hearthglen Mustang
 							},
 						}),
-						i(62180, {   -- Band of the Arachnid Wrangler
+						i(62180, {	-- Band of the Arachnid Wrangler
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(62179, {	-- Spider Frier
@@ -2485,7 +2485,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(62190, {	-- Light-Imbued Lantern
 							["timeline"] = { ADDED_4_0_3 },
 						}),
-						i(62189, {   -- Argent Medallion
+						i(62189, {	-- Argent Medallion
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},

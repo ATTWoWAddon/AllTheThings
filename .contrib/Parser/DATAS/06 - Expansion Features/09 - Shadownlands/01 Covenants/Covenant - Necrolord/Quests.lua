@@ -534,24 +534,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 			}),
 			q(63343, {	-- Necrolord Tactician
 				["description"] = "Requires Renown 22.",
-				["provider"] = { "n", 175998 },    -- Elspeth Larink
+				["provider"] = { "n", 175998 },	-- Elspeth Larink
 				["coord"] = { 46.5, 40.2, SEAT_OF_THE_PRIMUS },
 				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_0 },
 			}),
 			q(64084, {	-- Necrolord Tactician
 				["description"] = "Requires Renown 59.",
-				["provider"] = { "n", 175998 },    -- Elspeth Larink
+				["provider"] = { "n", 175998 },	-- Elspeth Larink
 				["coord"] = { 46.5, 40.2, SEAT_OF_THE_PRIMUS },
 			}),
 			q(63342, {	-- Necrolord Veteran
 				["description"] = "Requires Renown 7.",
-				["provider"] = { "n", 175998 },    -- Elspeth Larink
+				["provider"] = { "n", 175998 },	-- Elspeth Larink
 				["coord"] = { 46.5, 40.2, SEAT_OF_THE_PRIMUS },
 				["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_0 },
 			}),
 			q(64324, {	-- Necrolord Veteran #2
 				["description"] = "Requires Renown 43.",
-				["provider"] = { "n", 175998 },    -- Elspeth Larink
+				["provider"] = { "n", 175998 },	-- Elspeth Larink
 				["coord"] = { 46.5, 40.2, SEAT_OF_THE_PRIMUS },
 			}),
 			q(60110, {	-- Never Had A Friend Like Me
