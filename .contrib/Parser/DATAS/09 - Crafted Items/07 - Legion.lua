@@ -750,39 +750,46 @@ root(ROOTS.Craftables, expansion(EXPANSION.LEGION, applyclassicphase(LEGION_PHAS
 		}),
 	}),
 	prof(TAILORING, {
-		filter(BAGS, {
-			i(142075),	-- Imbued Silkweave Bag
-			i(127035),	-- Silkweave Satchel
-		}),
-		n(BACK, {
-			i(127019),	-- Imbued Silkweave Cover
-			i(127020),	-- Imbued Silkweave Drape
-			i(127034),	-- Imbued Silkweave Flourish
-			i(127033),	-- Imbued Silkweave Shade
-			i(127016),	-- Silkweave Cover
-			i(127017),	-- Silkweave Drape
-			i(127032),	-- Silkweave Flourish
-			i(127031),	-- Silkweave Shade
-		}),
-		filter(CLOTH, {
-			i(146666),	-- Celumbra, the Night's Dichotomy
+		n(ARMOR, {
+			i(146666, {["timeline"] = {ADDED_7_2_0}}),	-- Celumbra, the Night's Dichotomy
 			i(127002),	-- Imbued Silkweave Bracers
 			i(127001),	-- Imbued Silkweave Cinch
+			i(127019),	-- Imbued Silkweave Cover
+			i(127020),	-- Imbued Silkweave Drape
 			i(127000),	-- Imbued Silkweave Epaulets
+			i(127034),	-- Imbued Silkweave Flourish
 			i(126997),	-- Imbued Silkweave Gloves
 			i(126998),	-- Imbued Silkweave Hood
 			i(126999),	-- Imbued Silkweave Pantaloons
 			i(126995),	-- Imbued Silkweave Robe
+			i(127033),	-- Imbued Silkweave Shade
 			i(126996),	-- Imbued Silkweave Slippers
-			i(151571),	-- Lightweave Breeches
+			i(151571, {["timeline"] = {ADDED_7_3_0}}),	-- Lightweave Breeches
 			i(126994),	-- Silkweave Bracers
 			i(126993),	-- Silkweave Cinch
+			i(127016),	-- Silkweave Cover
+			i(127017),	-- Silkweave Drape
 			i(126992),	-- Silkweave Epaulets
+			i(127032),	-- Silkweave Flourish
 			i(126989),	-- Silkweave Gloves
 			i(126990),	-- Silkweave Hood
 			i(126991),	-- Silkweave Pantaloons
 			i(126987),	-- Silkweave Robe
 			i(126988),	-- Silkweave Slippers
+			i(127031),	-- Silkweave Shade
+		}),
+		filter(BAGS, {
+			i(142075, {["timeline"] = {ADDED_7_1_0}}),	-- Imbued Silkweave Bag
+			i(127035),	-- Silkweave Satchel
+		}),
+		filter(MISC, {
+			i(139503),	-- Bloodtotem Saddle Blanket
+			i(137556),	-- Clothes Chest: Dalaran Citizens
+			i(137557),	-- Clothes Chest: Karazhan Opera House
+			i(137558),	-- Clothes Chest: Molten Core
+		}),
+		filter(REAGENTS, {
+			i(127004),	-- Imbued Silkweave
 		}),
 	}),
 }))));

@@ -4153,12 +4153,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["groups"] = appendGroups(COMMON_CATACLYSM_JEWELCRAFTING_RECIPES, {}),
 				}),
+				-- #if AFTER MOP
+				-- Danny Donkey: The staves are added to Inscription Suppliers in 5.0.1.
 				n(46718, {	-- Moraka <Inscription Supplies>
 					["coord"] = { 55.3, 56.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["timeline"] = { ADDED_4_0_1 },
-					["sym"] = {{ "sub", "common_vendor", 30729 }},	-- Ickabod Pimlen <Inscription Supplies>
+					["groups"] = {
+						i(79740),	-- Plain Wooden Staff
+						i(1515),	-- Rough Wooden Staff
+					},
 				}),
+				-- #endif
 				n(3321, {	-- Morgum <Leather Armor Merchant>
 					["coords"] = {
 						-- #if AFTER CATA
@@ -5563,21 +5569,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(10360),	-- Black Kingsnake (PET!)
 						i(10361),	-- Brown Snake (PET!)
 						i(10392),	-- Crimson Snake (PET!)
-					},
-				}),
-				n(30723, {	-- Xantili <Inscription Supplies>
-					["coords"] = {
-						-- #if AFTER CATA
-						{ 35.85, 69.5, ORGRIMMAR },
-						-- #else
-						{ 56.0, 46.2, ORGRIMMAR },
-						-- #endif
-					},
-					["races"] = HORDE_ONLY,
-					["timeline"] = { ADDED_3_0_2 },
-					["sym"] = {{ "sub", "common_vendor", 30729 }},	-- Ickabod Pimlen <Inscription Supplies>
-					["groups"] = {
-						i(79740),	-- Plain Wooden Staff
 					},
 				}),
 				n(3400, {	-- Xen'to <Cooking Supplies>

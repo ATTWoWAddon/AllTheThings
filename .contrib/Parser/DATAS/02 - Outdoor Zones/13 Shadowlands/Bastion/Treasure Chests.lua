@@ -94,7 +94,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coords"] = {	-- there might be more
 					{ 24.5, 18.0, BASTION },
 					{ 24.8, 23.3, BASTION },
-				--	{ 25.6, 26.2, BASTION },
+					{ 25.6, 26.2, BASTION },
 					{ 27.5, 21.7, BASTION },
 					{ 28.2, 24.8, BASTION },
 				},

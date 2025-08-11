@@ -148,7 +148,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					},
 				}),
 				cr(103758, e(1732, {	-- Star Augur Etraeus
-					i(142078),	-- Pattern: Imbued Silkweave Bag
+					i(142078),	-- Pattern: Imbued Silkweave Bag [Rank 3] (RECIPE!)
 					i(139649),	-- Vantus Rune Technique: Star Augur Etraeus [Rank 1] (RECIPE!)
 					i(137761),	-- Vantus Rune Technique: Star Augur Etraeus [Rank 2] (RECIPE!)
 				})),

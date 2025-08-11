@@ -199,22 +199,23 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = {
 		}),
 		prof(TAILORING, {
 			i(142077, {	-- Pattern: Imbued Silkweave Bag [Rank 2] (RECIPE!)
-				["description"] = "Drops from ghosts in any Broken Isles zone."
+				["description"] = "Drops from ghosts in any Broken Isles zone.",
+				["timeline"] = { ADDED_7_1_0 },
 			}),
 			i(138006, {	-- Pattern: Imbued Silkweave Cover [Rank 2] (RECIPE!)
-				["description"] = "Drops from furbolgs in any Broken Isles zone."
+				["description"] = "Drops from furbolgs in any Broken Isles zone.",
 			}),
 			i(138007),	-- Pattern: Imbued Silkweave Cover [Rank 3] (RECIPE!)
 			i(138009, {	-- Pattern: Imbued Silkweave Drape [Rank 2] (RECIPE!)
-				["description"] = "Drops from harpies in any Broken Isles zone."
+				["description"] = "Drops from harpies in any Broken Isles zone.",
 			}),
 			i(138010),	-- Pattern: Imbued Silkweave Drape [Rank 3] (RECIPE!)
 			i(138003, {	-- Pattern: Imbued Silkweave Flourish [Rank 2] (RECIPE!)
-				["description"] = "Drops from murlocs in any Broken Isles zone."
+				["description"] = "Drops from murlocs in any Broken Isles zone.",
 			}),
 			i(138004),	-- Pattern: Imbued Silkweave Flourish [Rank 3] (RECIPE!)
 			i(138000, {	-- Pattern: Imbued Silkweave Shade [Rank 2] (RECIPE!)
-				["description"] = "Drops from vrykul in any Broken Isles zone."
+				["description"] = "Drops from vrykul in any Broken Isles zone.",
 			}),
 			i(138001),	-- Pattern: Imbued Silkweave Shade [Rank 3] (RECIPE!)
 		}),

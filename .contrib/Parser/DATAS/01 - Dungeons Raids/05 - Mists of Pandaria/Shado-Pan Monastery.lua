@@ -5,10 +5,10 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 	applyclassicphase(MOP_PHASE_ONE, inst(312, {	-- Shado-Pan Monastery
 		["coord"] = { 36.8 ,47.7, KUN_LAI_SUMMIT},
 		["maps"] = {
-			443,	-- Shado-Pan Monastery
-			444,	-- Cloudstrike Dojo
-			445,	-- Snowdrift Dojo
-			446,	-- Sealed Chambers
+			SHADOPAN_MONASTERY,
+			SHADOPAN_MONASTERY_CLOUDSTRIKE_DOJO,
+			SHADOPAN_MONASTERY_SEALED_CHAMBERS,
+			SHADOPAN_MONASTERY_SNOWDRIFT_DOJO,
 		},
 		["groups"] = {
 			n(QUESTS, {
@@ -431,6 +431,21 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 					spell(131206),	-- Path of the Shado-Pan
 				}),
 			})),
+			-- #if ANYCLASSIC
+			applyclassicphase(MOP_PHASE_ONE, n(CELESTIAL, {
+				-- Wouter TODO: fix
+				--["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(),
+				["timeline"] = { ADDED_5_5_0 },
+				["groups"] = {
+					e(686, {	-- Taran Zhu
+						["creatureID"] = 56884,	-- Taran Zhu
+						["groups"] = {
+							ach(60895),	-- Celestial: Shado-Pan Monastery
+						},
+					}),
+				},
+			})),
+			-- #endif
 		},
 	})),
 })));

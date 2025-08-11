@@ -201,50 +201,6 @@ CLASSIC_INSCRIPTION = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline
 		-- #endif
 	}),
 }));
-INSCRIPTION_SUPPLIES = sharedData({
-	["description"] = "Can be bought from Inscription Suppliers, as well as some Trade vendors around the world.",
-	["providers"] = {
-		{ "n", 30729},	-- Ickabod Pimlen <Inscription Supplies>
-		{ "n", 30731},	-- Illianna Moonscribe <Inscription Supplies>
-		{ "n", 30734},	-- Jezebel Bican <Inscription Supplies>
-		{ "n", 30735},	-- Kul Inkspiller <Inscription Supplies>
-		{ "n", 30727},	-- Lelorian <Inscription Supplies>
-		{ "n", 30724},	-- Mertle Murkpen <Inscription Supplies>
-		{ "n", 30732},	-- Sessoh <Inscription Supplies>
-		{ "n", 30730},	-- Stanly McCormick <Inscription Supplies>
-		{ "n", 30733},	-- Thargen Heavyquilll <Inscription Supplies>
-		{ "n", 30723},	-- Xantili <Inscription Supplies>
-		-- #if AFTER WRATH
-		{ "n", 26977},	-- Adelene Sunlance <Inscription Trainer>
-		{ "n", 26959},	-- Booker Kells <Inscription Trainer>
-		{ "n", 28723},	-- Larana Drome <Inscription Supplies>
-		{ "n", 26916},	-- Mindri Dinkles <Inscription Trainer>
-		{ "n", 26995},	-- Tink Brightbolt <Inscription Trainer>
-		-- #endif
-		-- #if AFTER 3.1.0
-		{ "n", 33679},	-- Recorder Lidio <Inscription Trainer>
-		{ "n", 33638},	-- Scribe Lanloer <Inscription Trainer>
-		-- #endif
-		-- #if AFTER CATA
-		{ "n", 46718},	-- Moraka <Inscription Supplies>
-		-- #endif
-	},
-}, {
-	i(10648, {	-- Common Parchment
-		["timeline"] = { REMOVED_5_0_4 },
-	}),
-	i(39501, {	-- Heavy Parchment
-		["timeline"] = { REMOVED_5_0_4 },
-	}),
-	i(39354),	-- Light Parchment
-	i(39502, {	-- Resilient Parchment
-		["timeline"] = { REMOVED_5_0_4 },
-	}),
-	i(39489, {	-- Scribe's Satchel
-		["isLimited"] = true,
-	}),
-	i(39505),	-- Virtuoso Inking Set
-});
 BFA_INSCRIPTION = applyclassicphase(BFA_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 	r(382984, {["timeline"] = {ADDED_10_0_0}}),	-- Kul Tiras and Zandalar Milling
 	r(256219),	-- Mass Mill Akunda's Bite

@@ -398,9 +398,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					["coord"] = { 42.0, 22.1, KARESH },
 				},bubbleDownRep(FACTION_MANAFORGE_VANDALS, {
 					{		-- RENOWN 1 --
-						q(92031, {	-- Meet the Vandals
-							["timeline"] = { ADDED_11_2_0 },
-						}),
+						q(92031, { ["timeline"] = { ADDED_11_2_0 } }),	--Meet the Vandals
 					}, {	-- RENOWN 2 --
 					}, {	-- RENOWN 3 --
 					}, {	-- RENOWN 4 --
@@ -433,98 +431,98 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 					["cost"] = { { "i", 246727, 1 }, }, },{	-- Ethereal Essence Sliver
 					["coord"] = { 42.0, 22.0, KARESH },
 					["groups"] = {
-						i(249145),	-- Manaforge Raider's Gamma Shockmace (COSMETIC!)
-						i(249164),	-- Manaforge Raider's Cosmic Shockmace (COSMETIC!)
-						i(249165),	-- Manaforge Raider's Umbral Shockmace (COSMETIC!)
-						i(249166),	-- Manaforge Raider's Devouring Shockmace (COSMETIC!)
-						i(249146),	-- Manaforge Raider's Gamma Plexhammer (COSMETIC!)
-						i(249167),	-- Manaforge Raider's Cosmic Plexhammer (COSMETIC!)
-						i(249168),	-- Manaforge Raider's Umbral Plexhammer (COSMETIC!)
-						i(249169),	-- Manaforge Raider's Devouring Plexhammer (COSMETIC!)
-						i(249147),	-- Manaforge Raider's Gamma Beamglaive (COSMETIC!)
-						i(249170),	-- Manaforge Raider's Cosmic Beamglaive (COSMETIC!)
-						i(249171),	-- Manaforge Raider's Umbral Beamglaive (COSMETIC!)
-						i(249172),	-- Manaforge Raider's Devouring Beamglaive (COSMETIC!)
-						i(249148),	-- Manaforge Raider's Gamma Lightshiv (COSMETIC!)
-						i(249173),	-- Manaforge Raider's Cosmic Lightshiv (COSMETIC!)
-						i(249174),	-- Manaforge Raider's Umbral Lightshiv (COSMETIC!)
-						i(249175),	-- Manaforge Raider's Devouring Lightshiv (COSMETIC!)
-						i(249149),	-- Manaforge Raider's Gamma Recurve (COSMETIC!)
-						i(249176),	-- Manaforge Raider's Cosmic Recurve (COSMETIC!)
-						i(249177),	-- Manaforge Raider's Umbral Recurve (COSMETIC!)
-						i(249178),	-- Manaforge Raider's Devouring Recurve (COSMETIC!)
-						i(249150),	-- Manaforge Raider's Gamma Warpblade (COSMETIC!)
-						i(249179),	-- Manaforge Raider's Cosmic Warpblade (COSMETIC!)
-						i(249180),	-- Manaforge Raider's Umbral Warpblade (COSMETIC!)
-						i(249181),	-- Manaforge Raider's Devouring Warpblade (COSMETIC!)
-						i(249151),	-- Manaforge Raider's Gamma Spire (COSMETIC!)
-						i(249182),	-- Manaforge Raider's Cosmic Spire (COSMETIC!)
-						i(249183),	-- Manaforge Raider's Umbral Spire (COSMETIC!)
-						i(249184),	-- Manaforge Raider's Devouring Spire (COSMETIC!)
-						i(249152),	-- Manaforge Raider's Gamma Ward (COSMETIC!)
-						i(249185),	-- Manaforge Raider's Cosmic Ward (COSMETIC!)
-						i(249186),	-- Manaforge Raider's Umbral Ward (COSMETIC!)
-						i(249187),	-- Manaforge Raider's Devouring Ward (COSMETIC!)
-						i(249153),	-- Manaforge Raider's Gamma Staff (COSMETIC!)
-						i(249188),	-- Manaforge Raider's Cosmic Staff (COSMETIC!)
-						i(249189),	-- Manaforge Raider's Umbral Staff (COSMETIC!)
-						i(249190),	-- Manaforge Raider's Devouring Staff (COSMETIC!)
-						i(249154),	-- Manaforge Raider's Gamma Greatsword (COSMETIC!)
-						i(249191),	-- Manaforge Raider's Cosmic Greatsword (COSMETIC!)
-						i(249192),	-- Manaforge Raider's Umbral Greatsword (COSMETIC!)
-						i(249193),	-- Manaforge Raider's Devouring Greatsword (COSMETIC!)
-						i(249155),	-- Manaforge Raider's Gamma Reactor (COSMETIC!)
-						i(249194),	-- Manaforge Raider's Cosmic Reactor (COSMETIC!)
-						i(249195),	-- Manaforge Raider's Umbral Reactor (COSMETIC!)
-						i(249196),	-- Manaforge Raider's Devouring Reactor (COSMETIC!)
-						i(249156),	-- Manaforge Raider's Gamma Phaseblade (COSMETIC!)
-						i(249197),	-- Manaforge Raider's Cosmic Phaseblade (COSMETIC!)
-						i(249198),	-- Manaforge Raider's Umbral Phaseblade (COSMETIC!)
-						i(249199),	-- Manaforge Raider's Devouring Phaseblade (COSMETIC!)
-						i(249157),	-- Manaforge Raider's Gamma Shard (COSMETIC!)
-						i(249200),	-- Manaforge Raider's Cosmic Shard (COSMETIC!)
-						i(249201),	-- Manaforge Raider's Umbral Shard (COSMETIC!)
-						i(249202),	-- Manaforge Raider's Devouring Shard (COSMETIC!)
-						i(249158),	-- Manaforge Raider's Gamma Caster (COSMETIC!)
-						i(249203),	-- Manaforge Raider's Cosmic Caster (COSMETIC!)
-						i(249204),	-- Manaforge Raider's Umbral Caster (COSMETIC!)
-						i(249205),	-- Manaforge Raider's Devouring Caster (COSMETIC!)
-						i(249159),	-- Manaforge Raider's Gamma Baton (COSMETIC!)
 						i(249206),	-- Manaforge Raider's Cosmic Baton (COSMETIC!)
-						i(249207),	-- Manaforge Raider's Umbral Baton (COSMETIC!)
-						i(249208),	-- Manaforge Raider's Devouring Baton (COSMETIC!)
-						i(249160),	-- Manaforge Raider's Gamma Hatchet (COSMETIC!)
-						i(249209),	-- Manaforge Raider's Cosmic Hatchet (COSMETIC!)
-						i(249210),	-- Manaforge Raider's Umbral Hatchet (COSMETIC!)
-						i(249211),	-- Manaforge Raider's Devouring Hatchet (COSMETIC!)
-						i(249161),	-- Manaforge Raider's Gamma Blade (COSMETIC!)
+						i(249170),	-- Manaforge Raider's Cosmic Beamglaive (COSMETIC!)
 						i(249212),	-- Manaforge Raider's Cosmic Blade (COSMETIC!)
-						i(249213),	-- Manaforge Raider's Umbral Blade (COSMETIC!)
-						i(249214),	-- Manaforge Raider's Devouring Blade (COSMETIC!)
-						i(249162),	-- Manaforge Raider's Tyrant Maul (COSMETIC!)
-						i(249163),	-- Manaforge Raider's Gamma Starcrusher (COSMETIC!)
+						i(249203),	-- Manaforge Raider's Cosmic Caster (COSMETIC!)
+						i(249191),	-- Manaforge Raider's Cosmic Greatsword (COSMETIC!)
+						i(249209),	-- Manaforge Raider's Cosmic Hatchet (COSMETIC!)
+						i(249173),	-- Manaforge Raider's Cosmic Lightshiv (COSMETIC!)
+						i(249197),	-- Manaforge Raider's Cosmic Phaseblade (COSMETIC!)
+						i(249167),	-- Manaforge Raider's Cosmic Plexhammer (COSMETIC!)
+						i(249194),	-- Manaforge Raider's Cosmic Reactor (COSMETIC!)
+						i(249176),	-- Manaforge Raider's Cosmic Recurve (COSMETIC!)
+						i(249200),	-- Manaforge Raider's Cosmic Shard (COSMETIC!)
+						i(249164),	-- Manaforge Raider's Cosmic Shockmace (COSMETIC!)
+						i(249182),	-- Manaforge Raider's Cosmic Spire (COSMETIC!)
+						i(249188),	-- Manaforge Raider's Cosmic Staff (COSMETIC!)
 						i(249215),	-- Manaforge Raider's Cosmic Starcrusher (COSMETIC!)
-						i(249216),	-- Manaforge Raider's Umbral Starcrusher (COSMETIC!)
+						i(249185),	-- Manaforge Raider's Cosmic Ward (COSMETIC!)
+						i(249179),	-- Manaforge Raider's Cosmic Warpblade (COSMETIC!)
+						i(249208),	-- Manaforge Raider's Devouring Baton (COSMETIC!)
+						i(249172),	-- Manaforge Raider's Devouring Beamglaive (COSMETIC!)
+						i(249214),	-- Manaforge Raider's Devouring Blade (COSMETIC!)
+						i(249205),	-- Manaforge Raider's Devouring Caster (COSMETIC!)
+						i(249193),	-- Manaforge Raider's Devouring Greatsword (COSMETIC!)
+						i(249211),	-- Manaforge Raider's Devouring Hatchet (COSMETIC!)
+						i(249175),	-- Manaforge Raider's Devouring Lightshiv (COSMETIC!)
+						i(249199),	-- Manaforge Raider's Devouring Phaseblade (COSMETIC!)
+						i(249169),	-- Manaforge Raider's Devouring Plexhammer (COSMETIC!)
+						i(249196),	-- Manaforge Raider's Devouring Reactor (COSMETIC!)
+						i(249178),	-- Manaforge Raider's Devouring Recurve (COSMETIC!)
+						i(249202),	-- Manaforge Raider's Devouring Shard (COSMETIC!)
+						i(249166),	-- Manaforge Raider's Devouring Shockmace (COSMETIC!)
+						i(249184),	-- Manaforge Raider's Devouring Spire (COSMETIC!)
+						i(249190),	-- Manaforge Raider's Devouring Staff (COSMETIC!)
 						i(249217),	-- Manaforge Raider's Devouring Starcrusher (COSMETIC!)
+						i(249187),	-- Manaforge Raider's Devouring Ward (COSMETIC!)
+						i(249181),	-- Manaforge Raider's Devouring Warpblade (COSMETIC!)
+						i(249159),	-- Manaforge Raider's Gamma Baton (COSMETIC!)
+						i(249147),	-- Manaforge Raider's Gamma Beamglaive (COSMETIC!)
+						i(249161),	-- Manaforge Raider's Gamma Blade (COSMETIC!)
+						i(249158),	-- Manaforge Raider's Gamma Caster (COSMETIC!)
+						i(249154),	-- Manaforge Raider's Gamma Greatsword (COSMETIC!)
+						i(249160),	-- Manaforge Raider's Gamma Hatchet (COSMETIC!)
+						i(249148),	-- Manaforge Raider's Gamma Lightshiv (COSMETIC!)
+						i(249156),	-- Manaforge Raider's Gamma Phaseblade (COSMETIC!)
+						i(249146),	-- Manaforge Raider's Gamma Plexhammer (COSMETIC!)
+						i(249155),	-- Manaforge Raider's Gamma Reactor (COSMETIC!)
+						i(249149),	-- Manaforge Raider's Gamma Recurve (COSMETIC!)
+						i(249157),	-- Manaforge Raider's Gamma Shard (COSMETIC!)
+						i(249145),	-- Manaforge Raider's Gamma Shockmace (COSMETIC!)
+						i(249151),	-- Manaforge Raider's Gamma Spire (COSMETIC!)
+						i(249153),	-- Manaforge Raider's Gamma Staff (COSMETIC!)
+						i(249163),	-- Manaforge Raider's Gamma Starcrusher (COSMETIC!)
+						i(249152),	-- Manaforge Raider's Gamma Ward (COSMETIC!)
+						i(249150),	-- Manaforge Raider's Gamma Warpblade (COSMETIC!)
+						i(249162),	-- Manaforge Raider's Tyrant Maul (COSMETIC!)
+						i(249207),	-- Manaforge Raider's Umbral Baton (COSMETIC!)
+						i(249171),	-- Manaforge Raider's Umbral Beamglaive (COSMETIC!)
+						i(249213),	-- Manaforge Raider's Umbral Blade (COSMETIC!)
+						i(249204),	-- Manaforge Raider's Umbral Caster (COSMETIC!)
+						i(249192),	-- Manaforge Raider's Umbral Greatsword (COSMETIC!)
+						i(249210),	-- Manaforge Raider's Umbral Hatchet (COSMETIC!)
+						i(249174),	-- Manaforge Raider's Umbral Lightshiv (COSMETIC!)
+						i(249198),	-- Manaforge Raider's Umbral Phaseblade (COSMETIC!)
+						i(249168),	-- Manaforge Raider's Umbral Plexhammer (COSMETIC!)
+						i(249195),	-- Manaforge Raider's Umbral Reactor (COSMETIC!)
+						i(249177),	-- Manaforge Raider's Umbral Recurve (COSMETIC!)
+						i(249201),	-- Manaforge Raider's Umbral Shard (COSMETIC!)
+						i(249165),	-- Manaforge Raider's Umbral Shockmace (COSMETIC!)
+						i(249183),	-- Manaforge Raider's Umbral Spire (COSMETIC!)
+						i(249189),	-- Manaforge Raider's Umbral Staff (COSMETIC!)
+						i(249216),	-- Manaforge Raider's Umbral Starcrusher (COSMETIC!)
+						i(249186),	-- Manaforge Raider's Umbral Ward (COSMETIC!)
+						i(249180),	-- Manaforge Raider's Umbral Warpblade (COSMETIC!)
 					},
 				})),
 				n(245348, bubbleDownSelf({	-- Ba'choso <Curious Curator>
 					["cost"] = { { "i", 245510, 1 }, }, },{	-- Loombeast Silk
 					["coord"] = { 42.0, 22.4, KARESH },
 					["groups"] = {
-						iensemble(248969),	-- Ensemble: Hollow Sentinel's Wingdrapes
-						iensemble(248971),	-- Ensemble: Vicious Charhound's Felcovers
-						iensemble(248972),	-- Ensemble: Plumes of the Mother Eagle
-						iensemble(248973),	-- Ensemble: Spellweaver's Immaculate Runecloaks
-						iensemble(248976),	-- Ensemble: Midnight Herald's Shrouds
 						iensemble(248977),	-- Ensemble: Augur's Ephemeral Brilliance
 						iensemble(248978),	-- Ensemble: Breeze of Fallen Storms
-						iensemble(248979),	-- Ensemble: Gilded Cloaks of the Lucent Battalion
-						iensemble(248980),	-- Ensemble: Memories of a Dying Star
 						iensemble(248981),	-- Ensemble: Capes of the Sudden Eclipse
-						iensemble(248982),	-- Ensemble: Shawls of Channeled Fury
+						iensemble(248979),	-- Ensemble: Gilded Cloaks of the Lucent Battalion
+						iensemble(248969),	-- Ensemble: Hollow Sentinel's Wingdrapes
 						iensemble(248983),	-- Ensemble: Inquisitor's All-Seeing Madness
 						iensemble(248984),	-- Ensemble: Living Weapon's Capes
+						iensemble(248980),	-- Ensemble: Memories of a Dying Star
+						iensemble(248976),	-- Ensemble: Midnight Herald's Shrouds
+						iensemble(248972),	-- Ensemble: Plumes of the Mother Eagle
+						iensemble(248982),	-- Ensemble: Shawls of Channeled Fury
+						iensemble(248973),	-- Ensemble: Spellweaver's Immaculate Runecloaks
+						iensemble(248971),	-- Ensemble: Vicious Charhound's Felcovers
 					},
 				})),
 				n(248304, {	-- Acquirer Ba'theom <Exotic Armor>
@@ -582,8 +580,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.LFR).AddGroupsWithUpgrades({
-				ZoneDrops({
-				}),
+				ZoneDrops({}),
 				CommonBossDrops({
 					currency(WEATHERED_ETHEREAL_CREST, {
 						["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
@@ -641,10 +638,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 						["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
 					}),
 				}),
-				n(QUESTS, {
-				}),
-				ZoneDrops({
-				}),
+				ZoneDrops({}),
 				Boss(PLEXUS),
 				Boss(LOOMITHAR),
 				Boss(NAAZINDHRI),
@@ -680,10 +674,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, {
 						["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 },
 					}),
 				}),
-				n(QUESTS, {
-				}),
-				ZoneDrops({
-				}),
+				ZoneDrops({}),
 				Boss(PLEXUS),
 				Boss(LOOMITHAR),
 				Boss(NAAZINDHRI),

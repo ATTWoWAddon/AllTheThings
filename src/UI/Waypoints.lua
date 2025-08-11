@@ -252,7 +252,7 @@ local function AddTomTomParentChainWaypoint(group, depth)
 	end
 end
 local function AddTomTomRawSearchResultWaypoints(field, value)
-	if not field or not value or value < 1 then return end
+	if not field or not app.ThingKeys[field] or not tonumber(value) or tonumber(value) < 1 then return end
 
 	for _,o in ipairs(SearchForObject(field, value, "field", true)) do
 		-- app.PrintDebug("WP:Search:",o,field,value,app:RawSearchLink(field, value))

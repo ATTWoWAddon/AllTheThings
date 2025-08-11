@@ -1289,6 +1289,21 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					spell(131229),	-- Path of the Scarlet Mitre
 				}),
 			})),
+			-- #if ANYCLASSIC
+			applyclassicphase(MOP_PHASE_ONE, n(CELESTIAL, {
+				-- Wouter TODO: fix
+				--["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(),
+				["timeline"] = { ADDED_5_5_0 },
+				["groups"] = {
+					e(674, {	-- High Inquisitor Whitemane
+						["creatureID"] = 3977,	-- High Inquisitor Whitemane
+						["groups"] = {
+							ach(60898),	-- Celestial: Scarlet Monastery
+						},
+					}),
+				},
+			})),
+			-- #endif
 		},
 	}),
 }));

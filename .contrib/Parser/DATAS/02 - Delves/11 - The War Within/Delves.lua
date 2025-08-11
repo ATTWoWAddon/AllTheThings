@@ -227,9 +227,12 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 	n(DELVES_TWW_S3, applyDataSelf({ ["timeline"] = { ADDED_11_2_0 } }, {	-- Includes Voidrazor Sanctuary
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 } }, {
 			mapped(ach(42779, {	-- A Flash in the Void
-				title(598),	-- Flickering %s
+				["cr"] = 245938,	-- Flickergate
+				["groups"] = { title(598) },	-- Flickering %s
 			})),
-			mapped(ach(42778)),	-- A Flicker in the Dark
+			mapped(ach(42778, {	-- A Flicker in the Dark
+				["cr"] = 245938,	-- Flickergate
+			})),
 			ach(42801),	-- Journey's End (Season 3)
 			mapped(ach(42799)),	-- Let Her Solo Me
 			mapped(ach(42196)),	-- War Within Delves: Tier 4 (Season 3)
@@ -787,15 +790,17 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			["timeline"] = { ADDED_11_1_0 },
 			["maps"] = ALL_THE_DELVES,
 			["groups"] = {
+				-- #if AFTER 11.2.0
+				--title(650),	-- Delver %s // doesn't load ingame
+				-- #else
 				title(598),	-- Delver %s
+				-- #endif
 			},
 		}),
 		ach(41096, {	-- Delve Infinite (1000)
 			["timeline"] = { ADDED_11_1_0 },
 			["maps"] = ALL_THE_DELVES,
-			["groups"] = {
-				title(599),	-- Infinite Delver %s
-			},
+			["groups"] = { title(599) },	-- Infinite Delver %s
 		}),
 		ach(40537, {	-- Delve Loremaster: War Within
 			-- Meta Achievement
@@ -870,7 +875,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 		}),
 		ach(40452, {	-- Just Keep Swimming
 			["maps"] = KOBYSS_DELVES,
-			["timeline"] = { REMOVED_11_2_0 },
+			["timeline"] = { REMOVED_11_2_0_SEASONSTART },
 		}),
 		ach(40506, {	-- Leave No Treasure Unfound
 			-- Meta Achievement
@@ -1116,7 +1121,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 			i(235615, { ["timeline"] = { ADDED_11_1_0 } }),	-- Rusty Gobjets
 			i(212164),	-- Shallow Nautic Helm
 			i(225067),	-- Shadowlit Haversack
-			i(245528, { ["timeline"] = { ADDED_11_2_0 } }),	-- Wastlander's Phasebound Visor
+			i(245528, { ["timeline"] = { ADDED_11_2_0 } }),	-- Wastelander's Phasebound Visor
 		}),
 		filter(MISC, {
 			i(244465, {	-- Titan Disc Fragments
@@ -1195,7 +1200,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 							i(235423),	-- Expensive Gemstone Ring
 							i(235424),	-- Rich Uncle's Endowment
 						})),
-						n(DELVES_TWW_S3, bubbleDown({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 } }, {
+						n(DELVES_TWW_S3, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, {
 							i(237958),	-- Void-Scarred Circle
 							i(237956),	-- Void-Scarred Band
 							i(237957),	-- Void-Scarred Hoop
@@ -1360,7 +1365,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 						i(235486),	-- Springloaded Kneecap Breaker
 						i(235422),	-- Venture Co Seal
 					})),
-					n(DELVES_TWW_S3, bubbleDown({ ["timeline"] = { ADDED_11_2_0_SEASONSTART, REMOVED_12_0_0 } }, {
+					n(DELVES_TWW_S3, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, {
 						i(238007),	-- Bulwark of the Great Dark
 						i(246086, {	-- Fate Weaver
 							["description"] = "Fly to Fate Weaver's Spool in Azj-Kahet to perform the ritual, coords 64.2, 74.8",
@@ -1369,6 +1374,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 								i(219382),	-- Fateweaved Needle
 							},
 						}),
+						i(238005),	-- Void-Steeped Falchion
 					})),
 				}),
 			},
@@ -1614,7 +1620,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 							["bonusID"] = 12128,
 						}),
 					})),
-					n(DELVES_TWW_S3, bubbleDown({ ["timeline"] = { ADDED_11_2_0, REMOVED_12_0_0 } }, {
+					n(DELVES_TWW_S3, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, {
 						--TODO: only itemID, no bonusIDs for r4
 						i(239568, {	-- Audio Amplification Crystal [Rank 4]
 							--["bonusID"] = xx,
@@ -1631,9 +1637,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 						i(239576, {	-- Mana-Tinted Glasses [Rank 4]
 							--["bonusID"] = xx,
 						}),
-						--i(239580, {	-- Nether Overlay Matrix [Rank 4]
-						--	--["bonusID"] = xx,
-						--}),
+						i(239580, {	-- Nether Overlay Matrix [Rank 4]
+							--["bonusID"] = xx,
+						}),
 						i(239578, {	-- Quizzical Device [Rank 4]
 							--["bonusID"] = xx,
 						}),
@@ -2014,8 +2020,12 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 		q(91026, {	-- Gathering an Upgrade
 			["sourceQuests"] = { 91009 },	-- Durable Information Storage Container
 			["qgs"] = {
-				245191,	-- Dagran Thaurissan II
+				-- #if BEFORE 11.2.0
 				235490,	-- Overcharged Titan Console
+				245191,	-- Dagran Thaurissan II
+				-- #elseif AFTER 11.2.0
+				249592,	-- Titan Console
+				-- #endif
 			},
 			["coord"] = { 48.0, 43.4, DORNOGAL },
 			["timeline"] = { ADDED_11_1_7 },
@@ -2027,9 +2037,13 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 		}),
 		q(91030, {	-- New Titan Directives
 			["sourceQuests"] = { 91026 },	-- Gathering an Upgrade
-			["providers"] = {
-				{ "n", 245191 },	-- Dagran Thaurissan II
-				{ "o", 249592 },	-- Titan Console
+			["qgs"] = {
+				-- #if BEFORE 11.2.0
+				235490,	-- Overcharged Titan Console
+				245191,	-- Dagran Thaurissan II
+				-- #elseif AFTER 11.2.0
+				249592,	-- Titan Console
+				-- #endif
 			},
 			["coord"] = { 48.0, 43.4, DORNOGAL },
 			["timeline"] = { ADDED_11_1_7 },
@@ -2039,9 +2053,13 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 		}),
 		q(91031, {	-- Pushing it to the Limit
 			["sourceQuests"] = { 91030 },	-- New Titan Directives
-			["providers"] = {
-				{ "n", 245191 },	-- Dagran Thaurissan II
-				{ "o", 249592 },	-- Titan Console
+			["qgs"] = {
+				-- #if BEFORE 11.2.0
+				235490,	-- Overcharged Titan Console
+				245191,	-- Dagran Thaurissan II
+				-- #elseif AFTER 11.2.0
+				249592,	-- Titan Console
+				-- #endif
 			},
 			["coord"] = { 48.0, 43.4, DORNOGAL },
 			["timeline"] = { ADDED_11_1_7 },
@@ -2187,6 +2205,44 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 				n(248481),	-- Ky'veza's Shadow Clone (TODO: remove if nothing will be with it)
 			},
 		}),
+		o(506498, {	-- Gilded Stash
+			["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
+			["groups"] = {
+				-- gilded undermine crest x7
+			},
+		}),
+		o(455759, {	-- Hulking Raptorial Claw
+			["description"] = "Left behind by Zekvir when he is defeated in a delve.",
+			["timeline"] = { REMOVED_11_1_0_SEASONSTART },
+			["groups"] = {
+				i(218126),	-- Befouler's Syringe
+				i(219381, {	-- Fate Weaver
+					["description"] = "Fly to Fate Weaver's Spool in Azj-Kahet to perform the ritual, coords 64.2, 74.8",
+					["groups"] = {
+						i(219941),	-- Fateweaved Mallet
+						i(219382),	-- Fateweaved Needle
+					},
+				}),
+				i(218125),	-- Reactive Webbed Escutcheon
+			},
+		}),
+		o(507768, {	-- Jettisoned Pile of Goblin-Bucks
+			["description"] = "Left behind by Underpin when he is defeated in a delve.",
+			["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
+			["cr"] = 236942,	-- The Underpin
+			["groups"] = {
+				i(235813),	-- Machine Gob's Iron Grin
+				--i(233071), -- Delver's Bounty
+			},
+		}),
+		o(547332, {	-- Ky'veza's Etheric Cache
+			["description"] = "Left behind by Ky'veza when she is defeated in a delve.",
+			["timeline"] = { ADDED_11_2_0 },
+			--["cr"] = ,
+			["groups"] = {
+				i(218126),	-- Befouler's Syringe
+			},
+		}),
 		o(567732, {	-- Kaja'6-Pack (Curio Spawned)
 			["timeline"] = { ADDED_11_2_0 },
 			["groups"] = {
@@ -2240,36 +2296,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, applyDataSelf({ ["timeline"] = { ADD
 				i(248755, {	-- Star-in-a-jar
 					["timeline"] = { ADDED_11_2_0 },
 				}),
-			},
-		}),
-		o(455759, {	-- Hulking Raptorial Claw
-			["description"] = "Left behind by Zekvir when he invades a delve.",
-			["timeline"] = { REMOVED_11_1_0_SEASONSTART },
-			["groups"] = {
-				i(218126),	-- Befouler's Syringe
-				i(219381, {	-- Fate Weaver
-					["description"] = "Fly to Fate Weaver's Spool in Azj-Kahet to perform the ritual, coords 64.2, 74.8",
-					["groups"] = {
-						i(219941),	-- Fateweaved Mallet
-						i(219382),	-- Fateweaved Needle
-					},
-				}),
-				i(218125),	-- Reactive Webbed Escutcheon
-			},
-		}),
-		o(506498, {	-- Gilded Stash
-			["timeline"] = { ADDED_11_1_0, REMOVED_11_2_0 },
-			["groups"] = {
-				-- gilded undermine crest x7
-			},
-		}),
-		o(507768, {	-- Jettisoned Pile of Goblin-Bucks
-			["description"] = "Left behind by Underpin when he is defeated in a delve.",
-			["timeline"] = { ADDED_11_1_0_SEASONSTART, REMOVED_11_2_0 },
-			["cr"] = 236942,	-- The Underpin
-			["groups"] = {
-				i(235813),	-- Machine Gob's Iron Grin
-				--i(233071), -- Delver's Bounty
 			},
 		}),
 		o(503871, {	-- Nemesis Strongbox (gray)

@@ -308,7 +308,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 							crit(40224, {	-- Zul, Reborn
 								["achievementID"] = 12522,	-- Crimson Descent
 							}),
-							i(162422),	-- Pattern: Embroidered Deep Sea Bag (Rank 3)
+							i(162422),	-- Pattern: Embroidered Deep Sea Bag [Rank 3] (RECIPE!)
 							i(160684),	-- Pursax, the Backborer
 							i(160691),	-- Tusk of the Reborn Prophet
 							i(160630),	-- Crest of the Undying Visionary
@@ -419,7 +419,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					["crs"] = { 138967 },	-- Zul
 					["groups"] = {
 						ach(12830),	-- Edgelords
-						i(162422),	-- Pattern: Embroidered Deep Sea Bag (Rank 3)
+						i(162422),	-- Pattern: Embroidered Deep Sea Bag [Rank 3] (RECIPE!)
 						i(166502),	-- Blood-Soaked Tome of Dark Whispers (CI!)
 					},
 				}),

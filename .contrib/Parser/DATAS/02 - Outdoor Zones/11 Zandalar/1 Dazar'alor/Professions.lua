@@ -181,6 +181,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH }
 					},
 				}),
 			}),
+			prof(TAILORING, {
+				n(122700, {	-- Pin'jin the Patient <Tailoring Trainer>
+					["coord"] = { 44.4, 33.8, DAZARALOR },
+					["races"] = HORDE_ONLY,
+					["groups"] = appendGroups(BFA_TAILORING, {
+						r(265815),	-- Zandalari Tailoring
+					}),
+				}),
+			}),
 		}),
 	}),
 })));

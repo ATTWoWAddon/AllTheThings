@@ -275,7 +275,20 @@ if C_Heirloom and app.GameBuildVersion >= 30000 then
 		collected = function(t)
 			return C_Heirloom_PlayerHasHeirloom(t.heirloomUnlockID);
 		end,
-	});
+	},
+	"WithFaction", {
+		collectible = function(t)
+			return app.Settings.Collectibles.Reputations;
+		end,
+		collected = function(t)
+			-- This is used for the Grand Commendations unlocking Bonus Reputation
+			if ATTAccountWideData.FactionBonus[t.factionID] then return 1; end
+			if GetFactionBonusReputation(t.factionID) then
+				ATTAccountWideData.FactionBonus[t.factionID] = 1;
+				return 1;
+			end
+		end,
+	}, (function(t) return t.factionID; end));
 
 	-- Clone base item fields and extend the properties.
 	local heirloomFields = {
@@ -287,6 +300,9 @@ if C_Heirloom and app.GameBuildVersion >= 30000 then
 		end,
 		itemID = function(t)
 			return t.heirloomID;
+		end,
+		CreateHeirloomUnlock = function()
+			return CreateHeirloomUnlock;
 		end
 	};
 
@@ -524,8 +540,21 @@ if C_Heirloom and app.GameBuildVersion >= 30000 then
 		end);
 	end
 
-	-- Faction Extension.
-	tinsert(heirloomDefinition, "WithFaction");
+	-- Reputation Extension.
+	tinsert(heirloomDefinition, "WithBonusReputation");
+	tinsert(heirloomDefinition, {
+		collectible = function(t)
+			return false;
+		end,
+		collected = function(t)
+			return 0;
+		end,
+		IsBonusReputation = function()
+			return true;
+		end
+	});
+	tinsert(heirloomDefinition, function(t) return t.factionID and not t.repeatable; end);
+	tinsert(heirloomDefinition, "WithReputation");
 	tinsert(heirloomDefinition, {
 		collectible = function(t)
 			return t.collectibleAsCost or app.Settings.Collectibles.Reputations;
@@ -534,22 +563,28 @@ if C_Heirloom and app.GameBuildVersion >= 30000 then
 			if t.collectedAsCost == false then
 				return 0;
 			end
+			-- This is used by reputation tokens. (turn in items)
 			if app.CurrentCharacter.Factions[t.factionID] then return 1; end
 			if app.Settings.AccountWide.Reputations and ATTAccountWideData.Factions[t.factionID] then return 2; end
 		end,
+		CreateHeirloomUnlock = function()
+			return false;
+		end
 	});
 	tinsert(heirloomDefinition, function(t) return t.factionID; end);
 
 	local CreateHeirloom = app.ExtendClass(unpack(heirloomDefinition));
 	app.CreateHeirloom = function(id, t)
-		t = CreateHeirloom(id, t);
-		--t.b = 2;	-- Heirlooms are always BoA
-
-		-- unlocking the heirloom is the only thing contained in the heirloom
-		local unlock = CreateHeirloomUnlock(id, { e = t.e, u = t.u });
-		unlock.parent = t;
-		t.g = { unlock }
 		tinsert(heirloomIDs, id);
+		t = CreateHeirloom(id, t);
+		if t.CreateHeirloomUnlock then
+			-- unlocking the heirloom is the only thing contained in the heirloom
+			local unlock = { e = t.e, u = t.u };
+			if t.IsBonusReputation and t.factionID then unlock.factionID = t.factionID; end
+			t.CreateHeirloomUnlock(id, unlock);
+			unlock.parent = t;
+			t.g = { unlock }
+		end
 		return t;
 	end
 else

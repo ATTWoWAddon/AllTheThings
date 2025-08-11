@@ -1086,6 +1086,7 @@ MobileDB.GameObject = {
 	[367942] = true,	-- Temel's Egg (Ember Court)
 	[367943] = true,	-- Prince Renathal's Egg (Ember Court)
 	[367944] = true,	-- Lord Garridan's Egg (Ember Court)
+	[368290] = true,	-- Vengeful Soul Prison
 	[368304] = true,	-- Damaged Binding
 	[368604] = true,	-- Mawsworn Cage
 	[368605] = true,	-- Cage (SoD)
@@ -1378,6 +1379,7 @@ MobileDB.GameObject = {
 	[500685] = true,	-- Seafarer's Cache
 	[500686] = true,	-- Seafarer's Cache
 	[500744] = true,	-- Rak-ush Mushroom (q:86188)
+	[502532] = true,	-- Charged Battery
 	[503044] = true,	-- Ultra-Pasteurized Flesh Substitute
 	[503050] = true,	-- Complainer Container 9000
 	[503056] = true,	-- Customer Retrival Harpoons
@@ -1437,6 +1439,7 @@ MobileDB.GameObject = {
 	[529289] = true,	-- Spore Sample (q: 88711)
 	[536867] = true,	-- Swoopwing Eggs (q: 90773)
 	[537690] = true,	-- Prosperity Pebble (q: 90770)
+	[543115] = true,	-- Funny Candle
 	[567732] = true,	-- Kaja'6-Pack
 }
 

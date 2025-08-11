@@ -1312,6 +1312,7 @@ root(ROOTS.Zones, {
 							i(31453),	-- Charged Footwear
 							i(31452),	-- Energized Wristwraps
 							i(31455),	-- Muscle Toning Belt
+							i(31451),	-- Pure Energy
 							i(31454),	-- Scalewing Gloves
 						},
 					}),

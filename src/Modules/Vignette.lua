@@ -64,6 +64,7 @@ local Ignored = setmetatable({
 		[213145] = true,	-- Auralia Steelstrike [Renown Quartermaster - Hallowfall Arathi]
 		[220867] = true,	-- Y'tekhi [Renown Quartermaster - The Severed Threads]
 		[231409] = true,	-- Smaks Topskimmer [Renown Quartermaster - The Cartels of Undermine]
+		[235252] = true,	-- Om'sirik [Renown Quartermaster - The K'aresh Trust]
 	},
 	object = {
 		[503267] = true,	-- Phase Conduit [K'aresh Teleport Node]

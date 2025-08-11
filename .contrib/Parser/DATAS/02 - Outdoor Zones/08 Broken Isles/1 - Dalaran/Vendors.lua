@@ -845,7 +845,7 @@ root(ROOTS.Zones, {
 						i(137958),	-- Pattern: Silkweave Gloves [Rank 2] (RECIPE!)
 						i(137956),	-- Pattern: Silkweave Pantaloons [Rank 2] (RECIPE!)
 						i(137960),	-- Pattern: Silkweave Robe [Rank 2] (RECIPE!)
-						i(138011),	-- Pattern: Silkweave Satchel
+						i(138011),	-- Pattern: Silkweave Satchel (RECIPE!)
 						i(137959),	-- Pattern: Silkweave Slippers [Rank 2] (RECIPE!)
 					},
 				}),
@@ -856,9 +856,7 @@ root(ROOTS.Zones, {
 						filter(RECIPES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
 							moh(3, i(137894)),	-- Pattern: Dreadleather Shoulderguard [Rank 3] (RECIPE!)
 							moh(3, i(137926)),	-- Pattern: Gravenscale Spaulders [Rank 3] (RECIPE!)
-							moh(3, i(137975, {	-- Pattern: Imbued Silkweave Epaulets [Rank 3] (RECIPE!)
-								["requireSkill"] = TAILORING,
-							})),
+							moh(3, i(137975)),	-- Pattern: Imbued Silkweave Epaulets [Rank 3] (RECIPE!)
 							moh(3, i(123950)),	-- Plans: Demonsteel Pauldrons [Rank 3] (RECIPE!)
 						})),
 					},

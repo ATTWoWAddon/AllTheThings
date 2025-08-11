@@ -478,21 +478,21 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["requireSkill"] = TAILORING,
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
-					i(162444),	-- Pattern: Battle Flag: Phalanx Defense (Rank 3)
+					i(162444),	-- Pattern: Battle Flag: Phalanx Defense [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52331, {	-- Work Order: Demitri's Draught of Deception
 				["requireSkill"] = ALCHEMY,
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
-					i(162257),	-- Recipe: Demitri's Draught of Deception (Rank 3)
+					i(162257),	-- Recipe: Demitri's Draught of Deception [Rank 3] (RECIPE!)
 				},
 			}),
 			q(52333, {	-- Work Order: Sea Mist Potion
 				["requireSkill"] = ALCHEMY,
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
-					i(162259),	-- Recipe: Sea Mist Potion (Rank 3)
+					i(162259),	-- Recipe: Sea Mist Potion [Rank 3] (RECIPE!)
 				},
 			}),
 			q(53772, {	-- Zagg Brokeneye (Faction Assault WQ)

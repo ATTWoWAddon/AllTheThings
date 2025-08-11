@@ -180,6 +180,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH 
 					},
 				}),
 			}),
+			prof(TAILORING, {
+				n(136071, {	-- Daniel Brineweaver <Tailoring Trainer>
+					["coord"] = { 76.8, 11.2, BORALUS },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = appendGroups(BFA_TAILORING, {
+						r(264630),	-- Kul Tiran Tailoring
+					}),
+				}),
+			}),
 		}),
 	}),
 })));

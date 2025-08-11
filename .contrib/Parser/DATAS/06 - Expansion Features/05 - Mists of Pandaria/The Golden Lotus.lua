@@ -30,7 +30,8 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 		["description"] = "The Golden Lotus are a mysterious society of pandaren who are guardians of the Vale of Eternal Blossoms. Members of the Golden Lotus are handpicked by the August Celestials to help them keep an eye on the vale, and the pandaren see it as a huge honor to be chosen as a member of the sacred order.",
 		["maps"] = {
 			VALE_OF_ETERNAL_BLOSSOMS,
-			VALE_OF_ETERNAL_BLOSSOMS_GUO_LAI_HALLS
+			VALE_OF_ETERNAL_BLOSSOMS_GUO_LAI_HALLS,
+			VALE_OF_ETERNAL_BLOSSOMS_THE_HALL_OF_THE_SERPENT,
 		},
 		["icon"] = 645218,
 		["lvl"] = lvlsquish(90, 90, 30),
@@ -477,12 +478,34 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					},
 				})),
 				RemovedWithSOO(q(31249, {	-- Mistfall Village (The Golden Pagoda)
-					-- CRIEVE NOTE: Not sure under what conditions this questID is given instead of 31242.
 					["qg"] = 58408,	-- Leven Dawnblade
 					["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
 					["lockCriteria"] = { 1,
 						"questID", 31242,	-- Mistfall Village (The Golden Pagoda)
 						"questID", 31245,	-- Mistfall Village (Whitepetal Lake)
+					},
+					-- CRIEVE NOTE: Not sure under what conditions this questID is given instead of 31242.
+				})),
+				RemovedWithSOO(q(30236, {	-- Aetha
+					["sourceQuests"] = {
+						31242,	-- Mistfall Village
+						31245,	-- Mistfall Village
+						31249,	-- Mistfall Village
+						-- CRIEVE NOTE: This might have a specific breadcrumb like Lao-Fe does?
+					},
+					["qg"] = 59338,	-- Che Wildwalker
+					["coord"] = { 33.8, 72.2, VALE_OF_ETERNAL_BLOSSOMS },
+					["groups"] = {
+						objective(1, {	-- Aetha Subdued
+							["providers"] = {
+								{ "n",  58778 },	-- Aetha <Spirit of the Golden Winds>
+								-- #if ANYCLASSIC
+								{ "n", 244975 },	-- Aetha <Spirit of the Golden Winds>
+								-- #endif
+							},
+							["coord"] = { 35.0, 89.9, VALE_OF_ETERNAL_BLOSSOMS },
+						}),
+						i(90625),	-- Treasures of the Vale
 					},
 				})),
 				RemovedWithSOO(q(30195, {	-- Blooming Blossoms
@@ -546,6 +569,23 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							["provider"] = { "n", 58456 },	-- Thundermaw
 							["coord"] = { 24.2, 77.4, VALE_OF_ETERNAL_BLOSSOMS },
 						}),
+					},
+				})),
+				RemovedWithSOO(q(30239, {	-- Lao-Fe the Slavebinder
+					["sourceQuest"] = 30237,	-- The Pandaren Uprising Relived
+					["qg"] = 59338,	-- Che Wildwalker
+					["coord"] = { 33.9, 72.2, VALE_OF_ETERNAL_BLOSSOMS },
+					["groups"] = {
+						objective(1, {	-- 0/1 Lao-Fe slain
+							["providers"] = {
+								{ "n",  58817 },	-- Spirit of Lao-Fe <The Slavebinder>
+								-- #if ANYCLASSIC
+								{ "n", 246479 },	-- Spirit of Lao-Fe <The Slavebinder>
+								-- #endif
+							},
+							["coord"] = { 47.4, 65.6, VALE_OF_ETERNAL_BLOSSOMS },
+						}),
+						i(90625),	-- Treasures of the Vale
 					},
 				})),
 				RemovedWithSOO(q(30196, {	-- Lushroom Rush
@@ -635,6 +675,29 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 							},
 							["coord"] = { 37.7, 64.6, VALE_OF_ETERNAL_BLOSSOMS },
 						}),
+					},
+				})),
+				RemovedWithSOO(q(30235, {	-- Quid Pro Quo
+					["sourceQuests"] = {
+						31242,	-- Mistfall Village
+						31245,	-- Mistfall Village
+						31249,	-- Mistfall Village
+						-- CRIEVE NOTE: This might have a specific breadcrumb like Lao-Fe does?
+					},
+					["qg"] = 59338,	-- Che Wildwalker
+					["coord"] = { 33.9, 72.2, VALE_OF_ETERNAL_BLOSSOMS },
+					["groups"] = {
+						objective(1, {	-- 0/1 Quid slain
+							["providers"] = {
+								{ "n",  58771 },	-- Quid <Spirit of the Misty Falls>
+								-- #if ANYCLASSIC
+								{ "n", 244995 },	-- Quid <Spirit of the Misty Falls>
+								-- #endif
+								{ "i", 87807 },	-- Stone of the Water Strider (QI!)
+							},
+							["coord"] = { 30.63, 79.24, VALE_OF_ETERNAL_BLOSSOMS },
+						}),
+						i(90625),	-- Treasures of the Vale
 					},
 				})),
 				RemovedWithSOO(q(30238, {	-- Return to Rest
@@ -1355,27 +1418,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 				})),
 			})),
 			n(QUESTS, sharedData({ ["isDaily"] = true, ["maxReputation"] = { FACTION_GOLDEN_LOTUS, EXALTED }, }, {	-- Daily Quests (Unsorted)
-				RemovedWithSOO(q(30236, {	-- Aetha
-					["sourceQuests"] = {
-						31242,	-- Mistfall Village
-						31245,	-- Mistfall Village
-						31249,	-- Mistfall Village
-					},
-					["qg"] = 59338,	-- Che Wildwalker
-					["coord"] = { 33.8, 72.2, VALE_OF_ETERNAL_BLOSSOMS },
-					["groups"] = {
-						objective(1, {	-- Aetha Subdued
-							["providers"] = {
-								{ "n",  58778 },	-- Aetha <Spirit of the Golden Winds>
-								-- #if ANYCLASSIC
-								{ "n", 244975 },	-- Aetha <Spirit of the Golden Winds>
-								-- #endif
-							},
-							["coord"] = { 35.0, 89.9, VALE_OF_ETERNAL_BLOSSOMS },
-						}),
-						i(90625),	-- Treasures of the Vale
-					},
-				})),
+				
 				
 				RemovedWithSOO(q(30283, {	-- A Smashing Impression
 					["qg"] = 58469,	-- Ren Firetongue
@@ -1451,18 +1494,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["qg"] = 58471,	-- Kun Autumnlight
 					["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
 				})),
-				RemovedWithSOO(q(30239, {	-- Lao-Fe the Slavebinder
-					["sourceQuests"] = {
-						31242,	-- Mistfall Village
-						31245,	-- Mistfall Village
-						31249,	-- Mistfall Village
-					},
-					["qg"] = 59338,	-- Che Wildwalker
-					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-					["groups"] = {
-						i(90625),	-- Treasures of the Vale
-					},
-				})),
+				
 				
 				
 				RemovedWithSOO(q(31295, {	-- Mogu within the Ruins of Guo-Lai
@@ -1484,19 +1516,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
 				})),
 				
-				RemovedWithSOO(q(30235, {	-- Quid Pro Quo
-					["sourceQuests"] = {
-						31242,	-- Mistfall Village
-						31245,	-- Mistfall Village
-						31249,	-- Mistfall Village
-					},
-					["qg"] = 59338,	-- Che Wildwalker
-					--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-					["groups"] = {
-						i(87807),	-- Stone of the Water Strider (QI!)
-						i(90625),	-- Treasures of the Vale
-					},
-				})),
+				
 				
 				RemovedWithSOO(q(30292, {	-- Rude Awakenings
 					["qg"] = 58471,	-- Kun Autumnlight
@@ -1638,6 +1658,100 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(90, 90, 30),
 				})),
+				RemovedWithSOO(q(30642, {	-- Battle Axe of the Thunder King
+					["sourceQuest"] = 30641,	-- Battle Helm of the Thunder King
+					["qg"] = 59905,	-- Zhi the Harmonious
+					["coord"] = { 57.25, 43, VALE_OF_ETERNAL_BLOSSOMS },
+					["minReputation"] = { FACTION_GOLDEN_LOTUS, REVERED },
+					["lvl"] = lvlsquish(90, 90, 30),
+					["groups"] = {
+						objective(1, {	-- 0/1 Passed Trial of the Constructs
+							["description"] = "Kill the constructs, the orb in the middle will give you a damage boost and the green orbs will heal you.",
+							["provider"] = { "n", 60403 },	-- Zhi the Harmonious <Caretaker>
+							["coord"] = { 44.79, 76.34, VALE_OF_ETERNAL_BLOSSOMS },
+						}),
+						objective(2, {	-- 0/1 Battle Axe of the Thunder King
+							["providers"] = {
+								{ "i",  80807 },	-- Battle Axe of the Thunder King
+								{ "o", 211396 },	-- Battle Axe of the Thunder King
+							},
+							["coord"] = { 45.3, 76.2, VALE_OF_ETERNAL_BLOSSOMS },
+						}),
+						i(90601),	-- Bonded Plate of the Golden Lotus
+						i(90607),	-- Burning Robes of the Golden Lotus
+						i(90598),	-- Crackling Chain of the Golden Lotus
+						i(90602),	-- Deadeye Chain of the Golden Lotus
+						i(90597),	-- Delicate Chestguard of the Golden Lotus
+						i(90603),	-- Durable Plate of the Golden Lotus
+						i(90600),	-- Ferocious Plate of the Golden Lotus
+						i(90609),	-- Mending Robe of the Golden Lotus
+						i(90599),	-- Warming Chestguard of the Golden Lotus
+					},
+				})),
+				RemovedWithSOO(q(30641, {	-- Battle Helm of the Thunder King
+					["sourceQuest"] = 30640,	-- Battle Spear of the Thunder King
+					["qg"] = 59905,	-- Zhi the Harmonious
+					["coord"] = { 57.25, 43, VALE_OF_ETERNAL_BLOSSOMS },
+					["minReputation"] = { FACTION_GOLDEN_LOTUS, REVERED },
+					["lvl"] = lvlsquish(90, 90, 30),
+					["groups"] = {
+						objective(1, {	-- 0/1 Enter the Hall of Tiles
+							["provider"] = { "n", 64889 },	-- Ren Firetongue
+							["coord"] = { 58.37, 44.45, VALE_OF_ETERNAL_BLOSSOMS_GUO_LAI_HALLS },
+						}),
+						objective(2, {	-- 0/1 Battle Helm of the Thunder King
+							["providers"] = {
+								{ "i",  80222 },	-- Battle Helm of the Thunder King
+								{ "o", 211393 },	-- Battle Helm of the Thunder King
+							},
+							["coord"] = { 51.1, 81.6, VALE_OF_ETERNAL_BLOSSOMS_THE_HALL_OF_THE_SERPENT },
+						}),
+					},
+				})),
+				RemovedWithSOO(q(30640, {	-- Battle Spear of the Thunder King
+					["sourceQuest"] = 30639,	-- The Secrets of Guo-Lai
+					["qg"] = 59905,	-- Zhi the Harmonious
+					["coord"] = { 57.25, 43, VALE_OF_ETERNAL_BLOSSOMS },
+					["minReputation"] = { FACTION_GOLDEN_LOTUS, REVERED },
+					["lvl"] = lvlsquish(90, 90, 30),
+					["groups"] = {
+						objective(1, {	-- 0/1 Battle Spear of the Thunder King
+							["providers"] = {
+								{ "i",  80808 },	-- Battle Spear of the Thunder King
+								{ "o", 211395 },	-- Battle Spear of the Thunder King
+							},
+							["coord"] = { 21.4, 20.1, VALE_OF_ETERNAL_BLOSSOMS },
+						}),
+					},
+				})),
+				RemovedWithSOO(q(30646, {	-- The Final Power
+					["sourceQuests"] = { 30645 },	-- The Might of Three
+					["qg"] = 59906,	-- Sinan the Dreamer
+					["coord"] = { 74.2, 41.8, VALE_OF_ETERNAL_BLOSSOMS },
+					["minReputation"] = { FACTION_GOLDEN_LOTUS, EXALTED },
+					["lvl"] = lvlsquish(90, 90, 30),
+					["groups"] = {
+						i(90596),	-- Burning Necklace of the Golden Lotus
+						i(90593),	-- Delicate Necklace of the Golden Lotus
+						i(90594),	-- Durable Necklace of the Golden Lotus
+						i(90592),	-- Ferocious Necklace of the Golden Lotus
+						i(90595),	-- Mending Necklace of the Golden Lotus
+					},
+				})),
+				RemovedWithSOO(q(30645, {	-- The Might of Three
+					["sourceQuest"] = 30644,	-- What Comes to Pass
+					["qg"] = 58468,	-- Sun Tenderheart
+					["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
+					["minReputation"] = { FACTION_GOLDEN_LOTUS, EXALTED },
+					["lvl"] = lvlsquish(90, 90, 30),
+				})),
+				RemovedWithSOO(q(30643, {	-- The Mogu's Message
+					["sourceQuest"] = 30642,	-- Battle Axe of the Thunder King
+					["qg"] = 58408,	-- Leven Dawnblade
+					["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
+					["minReputation"] = { FACTION_GOLDEN_LOTUS, EXALTED },
+					["lvl"] = lvlsquish(90, 90, 30),
+				})),
 				q(31384, {	-- The Golden Lotus (A)
 					["qg"] = 64031,	-- Xari the Kind
 					["coord"] = { 84.2, 62.4, VALE_OF_ETERNAL_BLOSSOMS },
@@ -1662,6 +1776,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["qg"] = 58408,	-- Leven Dawnblade
 					["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
 					["minReputation"] = { FACTION_GOLDEN_LOTUS, HONORED },
+					["lvl"] = lvlsquish(90, 90, 30),
 					["groups"] = {
 						objective(1, {	-- Catch up with He Softfoot
 							["provider"] = { "n", 64647 },	-- He Softfoot
@@ -1696,6 +1811,13 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(90, 90, 30),
 				}),
+				RemovedWithSOO(q(30644, {	-- What Comes to Pass
+					["sourceQuests"] = { 30643 },	-- The Mogu's Message
+					["qg"] = 59905,	-- Zhi the Harmonious
+					["coord"] = { 57.25, 43, VALE_OF_ETERNAL_BLOSSOMS },
+					["minReputation"] = { FACTION_GOLDEN_LOTUS, EXALTED },
+					["lvl"] = lvlsquish(90, 90, 30),
+				})),
 			}),
 			n(RARES, {
 				["description"] = "These aren't really rares, they're elite quest mobs that are only available on certain days when their respective quest chain is active.",
@@ -1772,7 +1894,10 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 						-- #endif
 					}),
 					n(58771, {	-- Quid <Spirit of the Misty Falls>
-						["coord"] = { 66.4, 39.3, VALE_OF_ETERNAL_BLOSSOMS },
+						["coords"] = {
+							{ 30.63, 79.24, VALE_OF_ETERNAL_BLOSSOMS },
+							{ 66.4, 39.3, VALE_OF_ETERNAL_BLOSSOMS },
+						},
 						-- #if ANYCLASSIC
 						["crs"] = { 244995 },	-- Quid <Spirit of the Misty Falls>
 						-- #endif

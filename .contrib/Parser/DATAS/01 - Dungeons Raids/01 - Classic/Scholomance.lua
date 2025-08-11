@@ -2320,7 +2320,7 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.HEROIC, {
 			},
 		}),
 		e(665, {	-- Rattlegore
-			["creatureID"] = 59153,
+			["creatureID"] = 59153,	-- Rattlegore
 			["timeline"] = { ADDED_5_0_4 },
 			["groups"] = {
 				ach(6394),	-- Rattle No More
@@ -2370,7 +2370,7 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.HEROIC, {
 			},
 		}),
 		e(666, {	-- Lilian Voss
-			["creatureID"] = 58722,
+			["creatureID"] = 58722,	-- Lilian Voss
 			["timeline"] = { ADDED_5_0_4 },
 			["groups"] = {
 				i(144030, {	-- Soulburner Crown
@@ -2487,6 +2487,24 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.CHALLENGE_MODE, bubbleDown
 -- #endif
 -- #endif
 
+-- #if ANYCLASSIC
+-- #if AFTER MOP
+table.insert(SCHOLOMANCE_GROUPS, applyclassicphase(MOP_PHASE_ONE, n(CELESTIAL, {
+		-- Wouter TODO: fix
+		--["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(),
+		["timeline"] = { ADDED_5_5_0 },
+		["groups"] = {
+			e(684, {	-- Darkmaster Gandling
+				["creatureID"] = 59080,	-- Darkmaster Gandling
+				["groups"] = {
+					ach(60899),	-- Celestial: Scholomance
+				},
+			}),
+		},
+})));
+-- #endif
+-- #endif
+
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	inst(246, {	-- Scholomance
 		-- #if BEFORE MOP
@@ -2498,10 +2516,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["coord"] = { 69.07, 72.96, WESTERN_PLAGUELANDS },
 		["mapID"] = SCHOLOMANCE,
 		["maps"] = {
-			-- #if ANYCLASSIC
+			-- #if AFTER MOP
+			SCHOLOMANCE_CHAMBER_OF_SUMMONING, SCHOLOMANCE_THE_UPPER_STUDY, SCHOLOMANCE_HEADMASTERS_STUDY,
+			-- #else
 			306, 307, 308, 309,
 			-- #endif
-			477, 478, 479,
 		},
 		-- #if BEFORE 4.0.3
 		["sourceQuests"] = {

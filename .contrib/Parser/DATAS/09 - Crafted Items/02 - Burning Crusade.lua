@@ -1166,16 +1166,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 	}),
 	-- #if AFTER WRATH
 	prof(INSCRIPTION, {
-		-- #if AFTER WOD
-		filter(GLYPHS, {
-			i(42743, {["timeline"]={ADDED_3_0_2,REMOVED_7_0_3}}),	-- Glyph of Ice Armor / Glyph of Pyroblast[CATA] / Glyph of Momentum[MOP+]
-			i(43316, {["timeline"]={ADDED_3_0_2,REMOVED_7_0_3}}),	-- Glyph of Aquatic Form
-			i(43368, {["timeline"]={ADDED_3_0_2,REMOVED_7_0_3}}),	-- Glyph of Sense Undead / Glyph of Truth[CATA] / Glyph of Seal of Blood[MOP+]
-			i(42461, {["timeline"]={ADDED_3_0_2,REMOVED_7_0_3}}),	-- Glyph of Health Funnel
-			i(42908, {["timeline"]={ADDED_3_0_2,REMOVED_7_0_3}}),	-- Glyph of Immolation Trap / Glyph of Explosive Trap[MOP+]
-			i(43378, {["timeline"]={ADDED_3_0_2,REMOVED_7_0_3}}),	-- Glyph of Safe Fall
-		}),
-		-- #endif
+		-- Inks and reagents:
 		header(HEADERS.Spell, 51005, {	-- Milling
 			i(43108, {	-- Ebon Pigment
 				["providers"] = {
@@ -1199,6 +1190,25 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 					{ "i", 22789 },	-- Terocone
 				},
 			}),
+		}),
+		filter(REAGENTS, {
+			i(43125),	-- Darkflame Ink
+			i(43124),	-- Ethereal Ink
+		}),
+		-- Non-reagent crafts:
+		-- #if AFTER WOD
+		filter(GLYPHS, {
+			i(42743, {["timeline"]={ADDED_3_0_2,REMOVED_7_0_3}}),	-- Glyph of Ice Armor / Glyph of Pyroblast[CATA] / Glyph of Momentum[MOP+]
+			i(43316, {["timeline"]={ADDED_3_0_2,REMOVED_7_0_3}}),	-- Glyph of Aquatic Form
+			i(43368, {["timeline"]={ADDED_3_0_2,REMOVED_7_0_3}}),	-- Glyph of Sense Undead / Glyph of Truth[CATA] / Glyph of Seal of Blood[MOP+]
+			i(42461, {["timeline"]={ADDED_3_0_2,REMOVED_7_0_3}}),	-- Glyph of Health Funnel
+			i(42908, {["timeline"]={ADDED_3_0_2,REMOVED_7_0_3}}),	-- Glyph of Immolation Trap / Glyph of Explosive Trap[MOP+]
+			i(43378, {["timeline"]={ADDED_3_0_2,REMOVED_7_0_3}}),	-- Glyph of Safe Fall
+		}),
+		-- #endif
+		filter(HELD_IN_OFF_HAND, {
+			i(43667),	-- Book of Clever Tricks
+			i(43666),	-- Hellfire Tome
 		}),
 		category(106, {	-- Tarot Cards
 			i(44317, {	-- Greater Darkmoon Card
@@ -1242,10 +1252,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 				i(31896),	-- Seven of Storms
 				i(31893),	-- Eight of Storms
 			}),
-		}),
-		filter(HELD_IN_OFF_HAND, {
-			i(43667),	-- Book of Clever Tricks
-			i(43666),	-- Hellfire Tome
 		}),
 	}),
 	-- #endif

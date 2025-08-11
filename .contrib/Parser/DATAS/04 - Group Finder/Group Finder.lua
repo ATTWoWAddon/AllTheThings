@@ -462,7 +462,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 	}),
 	-- #endif
 	expansion(EXPANSION.MOP, {
-		i(156698, {	-- Tranquil Satchel of Helpful Goods
+		i(156698, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 }, }, {	-- Tranquil Satchel of Helpful Goods
 			-- #if BEFORE 10.1.5
 			["description"] = "Rewarded for completing a random mists of pandaria dungeon during leveling.\nBag contents might be slightly off due to 7.3.5 adjustments and still running for confirmation.",
 			-- #else
@@ -508,9 +508,8 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(113734),	-- Tranquil Breeze Pendant of the Peerless	— 01/14/22
 				i(113756),	-- Loop of Inner Clarity*	— 01/14/22
 			},
-		}),
-		i(114662, {	-- Tranquil Satchel of Helpful Goods 85-87, 88-90
-			["u"] = REMOVED_FROM_GAME,
+		})),
+		i(114662, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2, REMOVED_7_3_5 }, }, {	-- Tranquil Satchel of Helpful Goods 85-87, 88-90
 			["description"] = "Rewarded for completing a random Mists of Pandaria dungeon in the level 85-89 range.",	-- Saying 89, because at level 90 you can no longer queue for this.
 			["groups"] = {
 				i(113788),	-- Blossoming Belt
@@ -536,9 +535,8 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(113728),	-- Kyparite Helm
 				i(113783),	-- Kyparite Stompers
 			},
-		}),
-		i(114669, {	-- Tranquil Satchel of Helpful Goods 88-90
-			["u"] = REMOVED_FROM_GAME,
+		})),
+		i(114669, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2, REMOVED_7_3_5 }, }, {	-- Tranquil Satchel of Helpful Goods 88-90
 			["description"] = "Rewarded for completing a random Mists of Pandaria dungeon in the level 88-89 range.",	-- Again, saying 89 because at level 90 you can no longer queue for this.
 			["groups"] = {
 				i(113757),	-- Band of Directed Fury
@@ -562,32 +560,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 				i(113749),	-- Kyparite Pauldrons
 				i(113750),	-- Kyparite Shoulderguards
 			},
-		}),
-		i(89613, {	-- Cache of Treasures [Looks like this was deprecated in favor of #92813)
-			["timeline"] = {
-				ADDED_5_0_4,
-				REMOVED_5_1_0,
-			},
-		}),
-		i(92813, {	-- Greater Cache of Treasures [Looks like this was deprecated in favor of #98133)
-			["timeline"] = {
-				ADDED_5_1_0,
-				REMOVED_5_3_0,
-			},
-		}),
-		i(98133, {	-- Greater Cache of Treasures
-			["timeline"] = {
-				ADDED_5_3_0,
-				REMOVED_9_0_1,	-- no longer available to queue random scenarios post 9.0 squish
-			},
-		}),
-		i(98134, {	-- Heroic Cache of Treasures
-			["timeline"] = {
-				ADDED_5_3_0,
-				REMOVED_9_0_1,	-- no longer available to queue random scenarios post 9.0 squish
-			},
-			["sym"] = {{"select","itemID",98546},{"pop"}},
-		}),
+		})),
 		i(69903, {	-- Satchel of Exotic Mysteries
 			["timeline"] = { ADDED_4_1_0, REMOVED_6_1_0 },
 			["sym"] = { MOP_SYM_PETS, {"select", "itemID",

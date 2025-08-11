@@ -2259,14 +2259,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(15903),	-- Slicing Claw
 					},
 				}),
-				-- #if AFTER WRATH
-				n(30733, {	-- Thargen Heavyquilll <Inscription Supplies>
-					["coord"] = { 60.55, 43.65, IRONFORGE },
-					["races"] = ALLIANCE_ONLY,
-					["timeline"] = { ADDED_3_0_2 },
-					["sym"] = {{ "sub", "common_vendor", 30730 }},	-- Stanly McCormick <Inscription Supplies>
-				}),
-				-- #endif
 				n(4259, {	-- Thurgrum Deepforge <Blacksmithing Supplies>
 					["coord"] = { 51.8, 41.2, IRONFORGE },
 					-- #if AFTER 4.3.0

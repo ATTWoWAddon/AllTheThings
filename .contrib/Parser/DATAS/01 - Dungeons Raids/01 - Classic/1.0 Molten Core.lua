@@ -794,7 +794,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["description"] = "For this to drop, you must be on the Thunderaan the Windseeker quest.",
 						["classes"] = SWORD_CLASSES,
 					}),
-					i(138018, {	-- Clothes Chest Pattern: Molten Core
+					i(138018, {	-- Clothes Chest Pattern: Molten Core (RECIPE!)
 						["timeline"] = { ADDED_7_0_3 },
 					}),
 					i(138833, {	-- Illusion: Flametongue (ILLUSION!)

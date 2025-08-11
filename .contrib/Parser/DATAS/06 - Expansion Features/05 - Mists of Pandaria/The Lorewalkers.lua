@@ -178,6 +178,19 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["coord"] = { 83.2, 29.6, VALE_OF_ETERNAL_BLOSSOMS },
 					["lvl"] = lvlsquish(90, 90, 30),
 				}),
+				applyclassicphase(MOP_PHASE_ESCALATION, q(32806, {	-- The King and the Council
+					["sourceQuests"] = { 32892 },	-- War is Coming
+					["qgs"] = {
+						61962,	-- Lorewalker Cho
+						63577,	-- Lorewalker Cho
+					},
+					["coord"] = { 83.2, 29.6, VALE_OF_ETERNAL_BLOSSOMS },
+					["timeline"] = { ADDED_5_3_0 },
+					["maps"] = { 523 },	-- Dun Morogh (Blood in the Snow scenario)
+					["groups"] = {
+						i(98133),	-- Greater Cache of Treasures
+					},
+				})),
 				q(31367, {	-- The Lorewalkers [A]
 					["qg"] = 64508,	-- Scrollmaker Resshi
 					["coord"] = { 85.6, 60.2, VALE_OF_ETERNAL_BLOSSOMS },
@@ -192,6 +205,11 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
+				applyclassicphase(MOP_PHASE_ESCALATION, q(32815, {	-- The Old Seer
+					["sourceQuests"] = { 32807 },	-- The Warchief and the Darkness
+					["qg"] = 61962,	-- Lorewalker Cho
+					["timeline"] = { ADDED_5_3_0 },
+				})),
 				q(31102, {	-- The Seven Burdens of Shaohao
 					["providers"] = {
 						{ "i", 83779 },	-- The Seven Burdens of Shaohao
@@ -208,6 +226,16 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 					["coord"] = { 83.2, 29.6, VALE_OF_ETERNAL_BLOSSOMS },
 					["lvl"] = lvlsquish(90, 90, 30),
 				}),
+				applyclassicphase(MOP_PHASE_ESCALATION, q(32807, {	-- The Warchief and the Darkness
+					["sourceQuests"] = { 32806 },	-- The King and the Council
+					["provider"] = { "n", 61962 },	-- Lorewalker Cho
+					["coord"] = { 83.2, 29.6, VALE_OF_ETERNAL_BLOSSOMS },
+					["timeline"] = { ADDED_5_3_0 },
+					["maps"] = { 520, 521 },	-- Vale of Eternal Blossoms (Dark Heart of Pandaria scenario)
+					["groups"] = {
+						i(98133),	-- Greater Cache of Treasures
+					},
+				})),
 				applyclassicphase(MOP_PHASE_RISE_OF_THE_THUNDER_KING, q(32600, {	-- The Zandalari Prophecy
 					["providers"] = {
 						{ "i", 94197 },	-- The Zandalari Prophecy

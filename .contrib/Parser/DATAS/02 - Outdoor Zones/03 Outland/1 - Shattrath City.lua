@@ -2500,13 +2500,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 55.9, 74.34, SHATTRATH_CITY },
 						["timeline"] = { ADDED_3_1_0 },
 						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
-						["groups"] = INSCRIPTION_SUPPLIES,
 					}),
 					n(33638, {	-- Scribe Lanloer <Inscription Trainer>
 						["coord"] = { 36.4, 44.6, SHATTRATH_CITY },
 						["timeline"] = { ADDED_3_1_0 },
 						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
-						["groups"] = INSCRIPTION_SUPPLIES,
 					}),
 					n(20807, {	-- Scribe Saalyn <Aldor Inscriptions>
 						["coord"] = { 48.6, 26.6, SHATTRATH_CITY },

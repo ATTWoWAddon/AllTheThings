@@ -657,12 +657,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["sym"] = {{"sub", "common_vendor", 5188}},	-- Garyl <Tabard Vendor>
 					["races"] = HORDE_ONLY,
 				}),
-				n(30727, {	-- Lelorian <Inscription Supplies>
-					["coord"] = { 69.8, 23.2, SILVERMOON_CITY },
-					["races"] = HORDE_ONLY,
-					["timeline"] = { ADDED_3_0_2 },
-					["sym"] = {{ "sub", "common_vendor", 30729 }},	-- Ickabod Pimlen <Inscription Supplies>
-				}),
 				n(16635, {	-- Lyna <Enchanting Supplies>
 					["coord"] = { 70.0, 24.6, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,

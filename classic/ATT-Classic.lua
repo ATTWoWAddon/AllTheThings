@@ -2263,6 +2263,7 @@ local ADDON_LOADED_HANDLERS = {
 		if not accountWideData.Deaths then accountWideData.Deaths = 0; end
 		if not accountWideData.Exploration then accountWideData.Exploration = {}; end
 		if not accountWideData.Factions then accountWideData.Factions = {}; end
+		if not accountWideData.FactionBonus then accountWideData.FactionBonus = {}; end
 		if not accountWideData.FlightPaths then accountWideData.FlightPaths = {}; end
 		if not accountWideData.Quests then accountWideData.Quests = {}; end
 		if not accountWideData.Spells then accountWideData.Spells = {}; end

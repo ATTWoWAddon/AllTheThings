@@ -146,6 +146,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 					i(246240),	-- Devoured Energy-Pod
 					i(240118),	-- Reshii Brute's Spear
 					i(240112),	-- Reshii Scout's Blade
+					i(240111),	-- Reshii Skirmisher's Axe
+					i(240119),	-- Reshii Skirmisher's Staff
 					i(240120),	-- Reshii Magi's Lantern
 				},
 			}),
@@ -161,6 +163,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_2_0 } }, 
 					}),
 					i(246240),	-- Devoured Energy-Pod
 					i(240121),	-- Reshii Brute's Barrier
+					i(240112),	-- Reshii Scout's Blade
+					i(240111),	-- Reshii Skirmisher's Axe
 					i(240120),	-- Reshii Magi's Lantern
 				},
 			}),

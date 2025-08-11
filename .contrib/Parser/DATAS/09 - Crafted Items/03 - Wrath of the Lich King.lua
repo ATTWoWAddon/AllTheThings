@@ -1168,19 +1168,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 		}),
 	}),
 	prof(INSCRIPTION, {
-		-- #if AFTER WOD
-		filter(GLYPHS, {
-			i(42736, {["timeline"]={ADDED_3_0_2,REMOVED_7_0_3}}),	-- Glyph of Arcane Explosion
-			i(42898, {["timeline"]={ADDED_3_0_2,REMOVED_7_0_3}}),	-- Glyph of Arcane Shot / Glyph of Camouflage[MOP+]
-			i(40919, {	-- Glyph of Insect Swarm / Glyph of the Orca[MOP+] / Mark of the Orca[SL+] (CI!)
-				["timeline"]={ ADDED_3_0_2 },
-			}),
-			i(167539, {["timeline"] = {ADDED_8_1_5}}),	-- Glyph of Dalaran Brilliance
-			i(44922, {	-- Glyph of Typhoon / Glyph of Stars[WOD?+]
-				["timeline"]={ ADDED_3_0_2 },
-			}),
-		}),
-		-- #endif
+		-- Inks and reagents:
 		header(HEADERS.Spell, 51005, {	-- Milling
 			i(39343, {	-- Azure Pigment
 				["providers"] = {
@@ -1206,6 +1194,40 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 					{ "i", 36904 }, -- Tiger Lily
 				},
 			}),
+		}),
+		filter(REAGENTS, {
+			i(43126),	-- Ink of the Sea
+			i(43127),	-- Snowfall Ink
+		}),
+		-- Non-reagent crafts:
+		-- #if AFTER WOD
+		filter(GLYPHS, {
+			i(42736, {["timeline"]={ADDED_3_0_2,REMOVED_7_0_3}}),	-- Glyph of Arcane Explosion
+			i(42898, {["timeline"]={ADDED_3_0_2,REMOVED_7_0_3}}),	-- Glyph of Arcane Shot / Glyph of Camouflage[MOP+]
+			i(40919, {	-- Glyph of Insect Swarm / Glyph of the Orca[MOP+] / Mark of the Orca[SL+] (CI!)
+				["timeline"]={ ADDED_3_0_2 },
+			}),
+			i(167539, {["timeline"] = {ADDED_8_1_5}}),	-- Glyph of Dalaran Brilliance
+			i(44922, {	-- Glyph of Typhoon / Glyph of Stars[WOD?+]
+				["timeline"]={ ADDED_3_0_2 },
+			}),
+		}),
+		-- #endif
+		filter(HELD_IN_OFF_HAND, {
+			i(44210),	-- Faces of Doom
+			i(38322),	-- Iron-Bound Tome
+			i(45854, {	-- Rituals of the New Moon
+				["description"] = "This version of the off-hand is a placeholder for the four available versions of it, and crafting it gives you a random one of the four. The four available versions of the off-hands have the same stats, but offer a different coloured giant wholf.",
+				["timeline"] = { ADDED_3_1_0 },
+				["collectible"] = false,
+				["groups"] = {
+					i(45850),	-- Rituals of the New Moon (red wolf)
+					i(45851),	-- Rituals of the New Moon (white wolf)
+					i(45852),	-- Rituals of the New Moon (grey wolf)
+					i(45853),	-- Rituals of the New Moon (black wolf)
+				},
+			}),
+			i(45849),	-- Twilight Tome
 		}),
 		category(106, {	-- Tarot Cards
 			sp(59504, {	-- Darkmoon Card of the North
@@ -1245,22 +1267,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 				i(44292),	-- 7 of Undeath
 				i(44293),	-- 8 of Undeath
 			}),
-		}),
-		filter(HELD_IN_OFF_HAND, {
-			i(44210),	-- Faces of Doom
-			i(38322),	-- Iron-Bound Tome
-			i(45854, {	-- Rituals of the New Moon
-				["description"] = "This version of the off-hand is a placeholder for the four available versions of it, and crafting it gives you a random one of the four. The four available versions of the off-hands have the same stats, but offer a different coloured giant wholf.",
-				["timeline"] = { ADDED_3_1_0 },
-				["collectible"] = false,
-				["groups"] = {
-					i(45850),	-- Rituals of the New Moon (red wolf)
-					i(45851),	-- Rituals of the New Moon (white wolf)
-					i(45852),	-- Rituals of the New Moon (grey wolf)
-					i(45853),	-- Rituals of the New Moon (black wolf)
-				},
-			}),
-			i(45849),	-- Twilight Tome
 		}),
 	}),
 	prof(JEWELCRAFTING, {

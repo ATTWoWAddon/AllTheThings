@@ -93,6 +93,7 @@ HeaderAssignments = {
 	["Cataclysmic Gladiator"] = -258,
 	["Cataloging"] = -460,
 	["Cathedral"] = -364,
+	["Celestial Dungeons"] = -655,
 	["Cgi.Children's Week"] = -559,
 	["Challenge Appearance"] = -134,
 	["Challenge Mode"] = -65,
@@ -652,4 +653,4 @@ HeaderAssignments = {
 	["Zone Rewards"] = -64,
 	["Zskera Vaults"] = -403,
 };
-NextHeaderID = -655;
+NextHeaderID = -656;

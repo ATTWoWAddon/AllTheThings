@@ -438,100 +438,45 @@ root(ROOTS.Zones, {
 					})),
 				}),
 				n(QUESTS, {
-					q(30634, {	-- Barring Entry
-						["sourceQuests"] = { 30632 },	-- The Ruins of Guo-Lai
+					RemovedWithSOO(q(30634, {	-- Barring Entry
+						["sourceQuest"] = 30632,	-- The Ruins of Guo-Lai
 						["qg"] = 58471,	-- Kun Autumnlight
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
-						-- #if MOP
-						["OnUpdate"] = VALE_SOO_ONUPDATE,
-						-- #endif
 						["groups"] = {
-							i(80484, {
-								-- #if MOP
-								["OnUpdate"] = VALE_SOO_ONUPDATE,
-								-- #endif
-							}),	-- Explosive Keg (QI!)
+							i(80484),	-- Explosive Keg (QI!)
 						},
-					}),
-					q(30642, {	-- Battle Axe of the Thunder King
-						["sourceQuests"] = { 30641 },	-- Battle Helm of the Thunder King
-						["qg"] = 59905,	-- Zhi the Harmonious
-						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["minReputation"] = { FACTION_GOLDEN_LOTUS, REVERED },
-						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
-						-- #if MOP
-						["OnUpdate"] = VALE_SOO_ONUPDATE,
-						-- #endif
-						["groups"] = sharedData({
-							["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
-							-- #if MOP
-							["OnUpdate"] = VALE_SOO_ONUPDATE,
-							-- #endif
-						}, {
-							i(90601),	-- Bonded Plate of the Golden Lotus
-							i(90607),	-- Burning Robes of the Golden Lotus
-							i(90598),	-- Crackling Chain of the Golden Lotus
-							i(90602),	-- Deadeye Chain of the Golden Lotus
-							i(90597),	-- Delicate Chestguard of the Golden Lotus
-							i(90603),	-- Durable Plate of the Golden Lotus
-							i(90600),	-- Ferocious Plate of the Golden Lotus
-							i(90609),	-- Mending Robe of the Golden Lotus
-							i(90599),	-- Warmimng Chestguard of the Golden Lotus
-						}),
-					}),
-					q(30641, {	-- Battle Helm of the Thunder King
-						["sourceQuests"] = { 30640 },	-- Battle Spear of the Thunder King
-						["qg"] = 59905,	-- Zhi the Harmonious
-						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["minReputation"] = { FACTION_GOLDEN_LOTUS, REVERED },
-						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
-						-- #if MOP
-						["OnUpdate"] = VALE_SOO_ONUPDATE,
-						-- #endif
-					}),
-					q(30640, {	-- Battle Spear of the Thunder King
-						["sourceQuests"] = { 30639 },	-- The Secrets of Guo-Lai
-						["qg"] = 59905,	-- Zhi the Harmonious
-						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["minReputation"] = { FACTION_GOLDEN_LOTUS, REVERED },
-						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
-						-- #if MOP
-						["OnUpdate"] = VALE_SOO_ONUPDATE,
-						-- #endif
-					}),
-					q(32016, {	-- Elder Charms of Good Fortune
+					})),
+					RemovedWithTOT(q(32016, {	-- Elder Charms of Good Fortune
 						["qg"] = 64029,	-- Elder Lin
 						["coord"] = { 85.2, 62.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
 						["races"] = ALLIANCE_ONLY,
 						["isWeekly"] = true,
-						-- #if MOP
-						["OnUpdate"] = VALE_TOT_ONUPDATE,
-						-- #endif
 						["groups"] = {
-							currency(697, {	-- Elder Charm of Good Fortune
-								-- #if MOP
-								["OnUpdate"] = VALE_TOT_ONUPDATE,
-								-- #endif
-							}),
+							currency(697),	-- Elder Charm of Good Fortune
 						},
-					}),
-					q(32017, {	-- Elder Charms of Good Fortune
+					})),
+					RemovedWithTOT(q(32017, {	-- Elder Charms of Good Fortune
 						["qg"] = 63996,	-- Elder Lin
 						["coord"] = { 62.0, 20.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
 						["races"] = HORDE_ONLY,
 						["isWeekly"] = true,
-						-- #if MOP
-						["OnUpdate"] = VALE_TOT_ONUPDATE,
-						-- #endif
 						["groups"] = {
-							currency(697, {	-- Elder Charm of Good Fortune
-								-- #if MOP
-								["OnUpdate"] = VALE_TOT_ONUPDATE,
-								-- #endif
-							}),
+							currency(697),	-- Elder Charm of Good Fortune
+						},
+					})),
+					applyclassicphase(MOP_PHASE_ESCALATION, {	-- Heroic Deeds
+						["aqd"] = q(32900, {	-- Heroic Deeds (A)
+							["qg"] = 64101,	-- Taijin the Cyclone
+							["coord"] = { 47.23, 49.71, SHRINE_OF_SEVEN_STARS },
+						}),
+						["hqd"] = q(32901, {	-- Heroic Deeds (H)
+							["qg"] = 66998,	-- Jinho the Wind Breaker
+							["coord"] = { 46.6, 56.5, SHRINE_OF_TWO_MOONS_THE_IMPERIAL_MERCANTILE },
+						}),
+						["description"] = "Quest may only be completed ONCE per character. Items you receive from the Cache of Treasures are class and spec specific. Not all items are available to all classes able to equip them.",
+						["timeline"] = { ADDED_5_3_0 },
+						["groups"] = {
+							i(98546),  -- Bulging Heroic Cache of Treasures
 						},
 					}),
 					-- Wouter NOTE: it's been confirmed by Blizzard that Into the Vale quests will NOT be added to MoP Classic (not deemed important enough to fix)
@@ -547,19 +492,15 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["u"] = REMOVED_FROM_GAME,
 					}),
-					q(30635, {	-- Killing the Quilen
+					RemovedWithSOO(q(30635, {	-- Killing the Quilen
 						["sourceQuests"] = {
 							30633,	-- Out with the Scouts
 							30634,	-- Barring Entry
 						},
 						["qg"] = 58465,	-- Anji Autumnlight
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
-						-- #if MOP
-						["OnUpdate"] = VALE_SOO_ONUPDATE,
-						-- #endif
-					}),
-					q(30638, {	-- Leaving an Opening
+					})),
+					RemovedWithSOO(q(30638, {	-- Leaving an Opening
 						["sourceQuests"] = {
 							30635,	-- Killing the Quilen
 							30636,	-- Stones of Power
@@ -568,32 +509,20 @@ root(ROOTS.Zones, {
 						},
 						["qg"] = 58465,	-- Anji Autumnlight
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
-						-- #if MOP
-						["OnUpdate"] = VALE_SOO_ONUPDATE,
-						-- #endif
-					}),
-					q(30633, {	-- Out with the Scouts
+					})),
+					RemovedWithSOO(q(30633, {	-- Out with the Scouts
 						["sourceQuests"] = { 30632 },	-- The Ruins of Guo-Lai
 						["qg"] = 58465,	-- Anji Autumnlight
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
-						-- #if MOP
-						["OnUpdate"] = VALE_SOO_ONUPDATE,
-						-- #endif
-					}),
-					q(30636, {	-- Stones of Power
+					})),
+					RemovedWithSOO(q(30636, {	-- Stones of Power
 						["sourceQuests"] = {
 							30633,	-- Out with the Scouts
 							30634,	-- Barring Entry
 						},
 						["qg"] = 58465,	-- Anji Autumnlight
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
-						-- #if MOP
-						["OnUpdate"] = VALE_SOO_ONUPDATE,
-						-- #endif
-					}),
+					})),
 					q(31369, {	-- The Anglers [A]
 						["qg"] = 64033,	-- Master Angler Karu
 						["coord"] = { 86.5, 60.2, VALE_OF_ETERNAL_BLOSSOMS },
@@ -608,78 +537,23 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,	-- this wasn't available for me until I party synced, but no follow up quest on turn in... not sure what locks
 					}),
-					q(30646, {	-- The Final Power
-						["sourceQuests"] = { 30645 },	-- The Might of Three
-						["qg"] = 59906,	-- Sinan the Dreamer
-						["coord"] = { 74.2, 41.8, VALE_OF_ETERNAL_BLOSSOMS },
-						["minReputation"] = { FACTION_GOLDEN_LOTUS, EXALTED },
-						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
-						-- #if MOP
-						["OnUpdate"] = VALE_SOO_ONUPDATE,
-						-- #endif
-						["groups"] = sharedData({
-							["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
-							-- #if MOP
-							["OnUpdate"] = VALE_SOO_ONUPDATE,
-							-- #endif
-						}, {
-							i(90596),	-- Burning Necklace of the Golden Lotus
-							i(90593),	-- Delicate Necklace of the Golden Lotus
-							i(90594),	-- Durable Necklace of the Golden Lotus
-							i(90592),	-- Ferocious Necklace of the Golden Lotus
-							i(90595),	-- Mending Necklace of the Golden Lotus
-						}),
-					}),
-					q(30637, {	-- The Guo-Lai Halls
+					RemovedWithSOO(q(30637, {	-- The Guo-Lai Halls
 						["sourceQuests"] = { 30632 },	-- The Ruins of Guo-Lai
 						["qg"] = 58465,	-- Anji Autumnlight
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
-						-- #if MOP
-						["OnUpdate"] = VALE_SOO_ONUPDATE,
-						-- #endif
-					}),
-					q(30654, {	-- The Guo-Lai Halls
+					})),
+					RemovedWithSOO(q(30654, {	-- The Guo-Lai Halls
 						["sourceQuests"] = { 30632 },	-- The Ruins of Guo-Lai
 						["qg"] = 58465,	-- Anji Autumnlight
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
-						-- #if MOP
-						["OnUpdate"] = VALE_SOO_ONUPDATE,
-						-- #endif
-					}),
+					})),
 					q(31876, {	-- The Inkmasters of the Arboretum
 						["qg"] = 64691,	-- Lorewalker Huynh
 						["coord"] = { 82.0, 29.4, VALE_OF_ETERNAL_BLOSSOMS },
 						["requireSkill"] = INSCRIPTION,
 						["isWeekly"] = true,
 					}),
-					q(30645, {	-- The Might of Three
-						["sourceQuests"] = { 30644 },	-- What Comes to Pass
-						["qg"] = 58468,	-- Sun Tenderheart
-						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["minReputation"] = { FACTION_GOLDEN_LOTUS, EXALTED },
-						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
-						-- #if MOP
-						["OnUpdate"] = VALE_SOO_ONUPDATE,
-						-- #endif
-					}),
-					q(30643, {	-- The Mogu's Message
-						["sourceQuests"] = { 30642 },	-- Battle Axe of the Thunder King
-						["qg"] = 58408,	-- Leven Dawnblade
-						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["minReputation"] = { FACTION_GOLDEN_LOTUS, EXALTED },
-						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
-						-- #if MOP
-						["OnUpdate"] = VALE_SOO_ONUPDATE,
-						-- #endif
-					}),
-					applyclassicphase(MOP_PHASE_ESCALATION, q(32815, {	-- The Old Seer
-						["sourceQuests"] = { 32807 },	-- The Warchief and the Darkness
-						["qg"] = 61962,	-- Lorewalker Cho
-						["timeline"] = { ADDED_5_3_0 },
-					})),
-					q(30632, {	-- The Ruins of Guo-Lai
+					RemovedWithSOO(q(30632, {	-- The Ruins of Guo-Lai
 						["sourceQuests"] = {
 							31512,	-- A Witness to History (A)
 							31511,	-- A Witness to History (H)
@@ -688,41 +562,19 @@ root(ROOTS.Zones, {
 						},
 						["qg"] = 58408,	-- Leven Dawnblade
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
-						-- #if MOP
-						["OnUpdate"] = VALE_SOO_ONUPDATE,
-						-- #endif
-					}),
-					q(30631, {	-- The Shrine of Seven Stars
+					})),
+					RemovedWithSOO(q(30631, {	-- The Shrine of Seven Stars
 						["sourceQuests"] = { 30630 },	-- Into the Vale (A)
 						["qg"] = 58468,	-- Sun Tenderheart
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
 						["races"] = ALLIANCE_ONLY,
-						-- #if MOP
-						["OnUpdate"] = VALE_SOO_ONUPDATE,
-						-- #endif
-					}),
-					q(30649, {	-- The Shrine of Two Moons
+					})),
+					RemovedWithSOO(q(30649, {	-- The Shrine of Two Moons
 						["sourceQuests"] = { 33008 },	-- Into the Vale (H)
 						["qg"] = 58468,	-- Sun Tenderheart
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
-						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
 						["races"] = HORDE_ONLY,
-						-- #if MOP
-						["OnUpdate"] = VALE_SOO_ONUPDATE,
-						-- #endif
-					}),
-					q(30644, {	-- What Comes to Pass
-						["sourceQuests"] = { 30643 },	-- The Mogu's Message
-						["qg"] = 59905,	-- Zhi the Harmonious
-						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
-						["minReputation"] = { FACTION_GOLDEN_LOTUS, EXALTED },
-						["timeline"] = { ADDED_5_0_4, REMOVED_5_4_0 },
-						-- #if MOP
-						["OnUpdate"] = VALE_SOO_ONUPDATE,
-						-- #endif
-					}),
+					})),
 				}),
 				n(RARES, {
 					n(COMMON_BOSS_DROPS, {

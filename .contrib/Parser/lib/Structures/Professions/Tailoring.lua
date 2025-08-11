@@ -730,6 +730,87 @@ COMMON_DRAENOR_TAILORING_RECIPES = applyclassicphase(WOD_PHASE_ONE, sharedData({
 		["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_10_0_5 },
 	}),
 }));
+BFA_TAILORING = applyclassicphase(BFA_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+	r(330257, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I [Battle for Azeroth]
+	r(330258, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II [Battle for Azeroth]
+	r(330259, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past III [Battle for Azeroth]
+	r(330260, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past IV [Battle for Azeroth]
+	r(330261, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past V [Battle for Azeroth]
+	n(ARMOR, {
+		r(285077, {["timeline"] = {ADDED_8_1_0}}),	-- Enhanced Deep Sea Breeches
+		r(285078, {["timeline"] = {ADDED_8_1_0}}),	-- Enhanced Deep Sea Gloves
+		r(257122),	-- Embroidered Deep Sea Breeches
+		r(257114),	-- Embroidered Deep Sea Cloak [Rank 1]
+		r(257115),	-- Embroidered Deep Sea Cloak [Rank 2]
+		r(257118),	-- Embroidered Deep Sea Gloves
+		r(272440),	-- Embroidered Deep Sea Satin
+		r(269608),	-- Honorable Combatant's Satin Belt [Rank 1]
+		r(269599),	-- Honorable Combatant's Satin Boots [Rank 1]
+		r(269611),	-- Honorable Combatant's Satin Bracers [Rank 1]
+		r(269596),	-- Honorable Combatant's Satin Cloak [Rank 1]
+		r(269602),	-- Honorable Combatant's Satin Mittens [Rank 1]
+		r(269605),	-- Honorable Combatant's Satin Pants [Rank 1]
+		r(282168, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Satin Belt [Rank 1]
+		r(282194, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Satin Boots [Rank 1]
+		r(282164, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Satin Bracers [Rank 1]
+		r(282204, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Satin Cloak [Rank 1]
+		r(282191, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Satin Mittens [Rank 1]
+		r(282175, {["timeline"] = {ADDED_8_1_0}}),	-- Sinister Combatant's Satin Pants [Rank 1]
+		r(257102),	-- Tidespray Linen Belt
+		r(257103),	-- Tidespray Linen Bracers
+		r(257107),	-- Tidespray Linen Cloak
+		r(257097),	-- Tidespray Linen Hood
+		r(257096),	-- Tidespray Linen Mittens
+		r(268982),	-- Tidespray Linen Net
+		r(257099),	-- Tidespray Linen Pants
+		r(257104),	-- Tidespray Linen Robe
+		r(257095),	-- Tidespray Linen Sandals
+		r(257101),	-- Tidespray Linen Spaulders
+		r(304577, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Satin Belt [Rank 1]
+		r(304568, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Satin Boots [Rank 1]
+		r(304580, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Satin Bracers [Rank 1]
+		r(304565, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Satin Cloak [Rank 1]
+		r(304571, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Satin Mittens [Rank 1]
+		r(304574, {["timeline"] = {ADDED_8_3_0}}),	-- Uncanny Combatant's Satin Pants [Rank 1]
+	}),
+	n(ARMOR_ENCHANTMENTS, {
+		r(279183),	-- Discreet Spellthread
+		r(279184),	-- Feathery Spellthread
+		r(279182),	-- Resilient Spellthread
+	}),
+	filter(BAGS, {
+		r(257125),	-- Deep Sea Bag [Rank 1]
+		r(257126),	-- Deep Sea Bag [Rank 2]
+	}),
+	filter(MISC, {
+		r(287274, {["timeline"] = {ADDED_8_1_0}}),	-- Aqueous Alteration
+		r(257134),	-- Battle Flag: Phalanx Defense [Rank 1]
+		r(257135),	-- Battle Flag: Phalanx Defense [Rank 2]
+		r(257137),	-- Battle Flag: Rallying Swiftness [Rank 1]
+		r(257138),	-- Battle Flag: Rallying Swiftness [Rank 2]
+		r(257131),	-- Battle Flag: Spirit of Freedom [Rank 1]
+		r(257132),	-- Battle Flag: Spirit of Freedom [Rank 2]
+		r(268983),	-- Hooked Deep Sea Net
+		r(278414),	-- Rough-hooked Tidespray Linen
+		r(286654, {["timeline"] = {ADDED_8_1_0}}),	-- Sanguinated Alteration
+	}),
+}));
+NAZJATAR_TAILORING = applyclassicphase(BFA_PHASE_THREE, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
+	n(ARMOR, {
+		r(299034),	-- Gilded Seaweave Breeches
+		r(299031),	-- Gilded Seaweave Gloves
+		r(294841),	-- Notorious Combatant's Satin Belt [Rank 1]
+		r(294832),	-- Notorious Combatant's Satin Boots [Rank 1]
+		r(294844),	-- Notorious Combatant's Satin Bracers [Rank 1]
+		r(294829),	-- Notorious Combatant's Satin Cloak [Rank 1]
+		r(294835),	-- Notorious Combatant's Satin Mittens [Rank 1]
+		r(294838),	-- Notorious Combatant's Satin Pants [Rank 1]
+	}),
+	filter(MISC, {
+		r(301409),	-- Saddlechute
+		r(301403),	-- Seabreeze Saddle Blanket
+	}),
+}));
 SL_TAILORING = applyclassicphase(SL_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	r(310949),	-- Shadowlands Tailoring
 	r(343634, {	-- Shadowlands Cloth Scavenging

@@ -942,6 +942,50 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		}),
 	}),
 	prof(INSCRIPTION, {
+		-- Inks and reagents:
+		n(COMMON_VENDOR_ITEMS, sharedData({
+			["coords"] = {
+				{ 76.6, 49.4, TWILIGHT_HIGHLANDS },	-- Dragonmaw Port
+				{ 78.6, 76.2, TWILIGHT_HIGHLANDS },	-- Highbank
+			},
+			["providers"] = {
+				{ "n", 49703 },	-- Casandra Downs <Alchemy & Inscription Supplies>
+				{ "n", 50248 },	-- Una Kobuna <Alchemy and Inscription Supplies>
+			},
+		}, {
+			i(67348),	-- Bleached Jawbone
+			i(62323),	-- Deathwing Scale Fragment
+			i(67319),	-- Preserved Ogre Eye
+			i(68047),	-- Scavenged Dragon Horn
+			i(67335),	-- Silver Charm Bracelet
+		})),
+		header(HEADERS.Spell, 51005, {	-- Milling
+			i(61979, {	-- Ashen Pigment
+				["providers"] = {
+					{ "o", 202749 },	-- Azshara's Veil
+					{ "o", 202747 },	-- Cinderbloom
+					{ "o", 202750 },	-- Heartblossom
+					{ "o", 202748 },	-- Stormvine
+					{ "o", 202751 },	-- Twilight Jasmine
+					{ "o", 202752 },	-- Whiptail
+				},
+			}),
+			i(61980, {	-- Burning Embers
+				["providers"] = {
+					{ "o", 202749 },	-- Azshara's Veil
+					{ "o", 202747 },	-- Cinderbloom
+					{ "o", 202750 },	-- Heartblossom
+					{ "o", 202748 },	-- Stormvine
+					{ "o", 202751 },	-- Twilight Jasmine
+					{ "o", 202752 },	-- Whiptail
+				},
+			}),
+		}),
+		filter(REAGENTS, {
+			i(61978),	-- Blackfallow Ink
+			i(61981),	-- Inferno Ink
+		}),
+		-- Non-reagent crafts:
 		i(62237, {	-- Adventurer's Journal
 			-- #if CATA
 			["description"] = [[Using this item will provide you with a temporary 1-hour buff. This buff is random, and only applies if you are below level 85.
@@ -975,6 +1019,82 @@ Fire and Water - Damage against Elementals increased by 15%.
 			i(45776, {["timeline"]={ADDED_3_1_0,REMOVED_7_0_3}}),	-- Glyph of Totem of Wrath / Glyph of Shamanistic Rage[CATA+]
 			-- #endif
 		}),
+		filter(HELD_IN_OFF_HAND, {
+			i(62236),	-- Battle Tome
+			i(62231),	-- Book of Blood
+			i(62235),	-- Divine Companion
+			i(62234),	-- Dungeoneering Guide
+			i(62233),	-- Lord Rottington's Pressed Wisp Book
+		}),
+		-- #if BEFORE 5.0.4
+		n(RELICS, {
+			i(62240, {	-- Etched Horn
+				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+			}),
+			i(62241, {	-- Manual of the Planes
+				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+			}),
+			i(62243, {	-- Notched Jawbone
+				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+			}),
+			i(62242, {	-- Runed Dragonscale
+				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+			}),
+			i(62245, {	-- Silver Inlaid Leaf
+				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+			}),
+			i(62244, {	-- Tattooed Eyeball
+				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+			}),
+			-- #if ANYCLASSIC
+			-- Blizzard did a dumb when they implemented Cata Classic
+			i(75079, {	-- Vicious Charm of Triumph
+				["timeline"] = { ADDED_4_0_3, REMOVED_4_2_0, DELETED_5_0_4 },
+			}),
+			applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(226180, {	-- Vicious Charm of Triumph
+				["timeline"] = { ADDED_4_3_0, DELETED_5_0_4 },
+			})),
+			i(75066, {	-- Vicious Eyeball of Dominance
+				["timeline"] = { ADDED_4_0_3, REMOVED_4_2_0, DELETED_5_0_4 },
+			}),
+			applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(226178, {	-- Vicious Eyeball of Dominance
+				["timeline"] = { ADDED_4_3_0, DELETED_5_0_4 },
+			})),
+			i(75069, {	-- Vicious Jawbone of Conquest
+				["timeline"] = { ADDED_4_0_3, REMOVED_4_2_0, DELETED_5_0_4 },
+			}),
+			applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(226179, {	-- Vicious Jawbone of Conquest
+				["timeline"] = { ADDED_4_3_0, DELETED_5_0_4 },
+			})),
+			-- #else
+			i(75079, {	-- Vicious Charm of Triumph
+				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+			}),
+			i(75066, {	-- Vicious Eyeball of Dominance
+				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+			}),
+			i(75069, {	-- Vicious Jawbone of Conquest
+				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+			}),
+			-- #endif
+		}),
+		-- #endif
+		-- #if AFTER 5.0.1
+		filter(STAVES, {
+			i(87565, {	-- Key to the Planes
+				["timeline"] = { ADDED_5_0_4 },
+			}),
+			i(87562, {	-- Rosethorn Staff
+				["timeline"] = { ADDED_5_0_4 },
+			}),
+			i(87566, {	-- Runed Staff
+				["timeline"] = { ADDED_5_0_4 },
+			}),
+			i(87561, {	-- Silver Inlaid Staff
+				["timeline"] = { ADDED_5_0_4 },
+			}),
+		}),
+		-- #endif
 		category(106, {	-- Tarot Cards
 			sp(86615, {	-- Darkmoon Card of Destruction
 				i(61988),	-- Ace of Embers
@@ -1077,82 +1197,6 @@ Fire and Water - Damage against Elementals increased by 15%.
 				},
 			}),
 		}),
-		filter(HELD_IN_OFF_HAND, {
-			i(62236),	-- Battle Tome
-			i(62231),	-- Book of Blood
-			i(62235),	-- Divine Companion
-			i(62234),	-- Dungeoneering Guide
-			i(62233),	-- Lord Rottington's Pressed Wisp Book
-		}),
-		-- #if BEFORE 5.0.4
-		n(RELICS, {
-			i(62240, {	-- Etched Horn
-				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
-			}),
-			i(62241, {	-- Manual of the Planes
-				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
-			}),
-			i(62243, {	-- Notched Jawbone
-				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
-			}),
-			i(62242, {	-- Runed Dragonscale
-				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
-			}),
-			i(62245, {	-- Silver Inlaid Leaf
-				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
-			}),
-			i(62244, {	-- Tattooed Eyeball
-				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
-			}),
-			-- #if ANYCLASSIC
-			-- Blizzard did a dumb when they implemented Cata Classic
-			i(75079, {	-- Vicious Charm of Triumph
-				["timeline"] = { ADDED_4_0_3, REMOVED_4_2_0, DELETED_5_0_4 },
-			}),
-			applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(226180, {	-- Vicious Charm of Triumph
-				["timeline"] = { ADDED_4_3_0, DELETED_5_0_4 },
-			})),
-			i(75066, {	-- Vicious Eyeball of Dominance
-				["timeline"] = { ADDED_4_0_3, REMOVED_4_2_0, DELETED_5_0_4 },
-			}),
-			applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(226178, {	-- Vicious Eyeball of Dominance
-				["timeline"] = { ADDED_4_3_0, DELETED_5_0_4 },
-			})),
-			i(75069, {	-- Vicious Jawbone of Conquest
-				["timeline"] = { ADDED_4_0_3, REMOVED_4_2_0, DELETED_5_0_4 },
-			}),
-			applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(226179, {	-- Vicious Jawbone of Conquest
-				["timeline"] = { ADDED_4_3_0, DELETED_5_0_4 },
-			})),
-			-- #else
-			i(75079, {	-- Vicious Charm of Triumph
-				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
-			}),
-			i(75066, {	-- Vicious Eyeball of Dominance
-				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
-			}),
-			i(75069, {	-- Vicious Jawbone of Conquest
-				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
-			}),
-			-- #endif
-		}),
-		-- #endif
-		-- #if AFTER 5.0.1
-		filter(STAVES, {
-			i(87565, {	-- Key to the Planes
-				["timeline"] = { ADDED_5_0_4 },
-			}),
-			i(87562, {	-- Rosethorn Staff
-				["timeline"] = { ADDED_5_0_4 },
-			}),
-			i(87566, {	-- Runed Staff
-				["timeline"] = { ADDED_5_0_4 },
-			}),
-			i(87561, {	-- Silver Inlaid Staff
-				["timeline"] = { ADDED_5_0_4 },
-			}),
-		}),
-		-- #endif
 	}),
 	prof(JEWELCRAFTING, {
 		filter(FIST_WEAPONS, {

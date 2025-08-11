@@ -5,8 +5,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 	applyclassicphase(MOP_PHASE_ONE, inst(313, {	-- Temple of the Jade Serpent
 		["coord"] = { 56.0, 57.8, THE_JADE_FOREST },
 		["maps"] = {
-			429,	-- Temple of the Jade Serpent
-			430,	-- The Scrollkeeper's Sanctum
+			TEMPLE_OF_THE_JADE_SERPENT,
+			TEMPLE_OF_THE_JADE_SERPENT_THE_SCROLLKEEPERS_SANCTUM,
 		},
 		["groups"] = {
 			n(QUESTS, {
@@ -427,6 +427,21 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 					spell(131204),	-- Path of the Jade Serpent
 				}),
 			})),
+			-- #if ANYCLASSIC
+			applyclassicphase(MOP_PHASE_ONE, n(CELESTIAL, {
+				-- Wouter TODO: fix
+				--["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(),
+				["timeline"] = { ADDED_5_5_0 },
+				["groups"] = {
+					e(335, {	-- Sha of Doubt
+						["creatureID"] = 56439,	-- Sha of Doubt
+						["groups"] = {
+							ach(60892),	-- Celestial: Temple of the Jade Serpent
+						},
+					}),
+				},
+			})),
+			-- #endif
 		},
 	})),
 })));

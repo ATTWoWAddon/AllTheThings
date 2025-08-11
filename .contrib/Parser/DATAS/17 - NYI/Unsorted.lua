@@ -15,7 +15,6 @@ root(ROOTS.Unsorted, {
 				i(238002),	-- Wanderer's Projectile Accelerator
 				i(238003),	-- Wyrmhunter's Skewer
 				i(238004),	-- Exile's Beacon
-				i(238005),	-- Void-Steeped Falchion
 				i(238006),	-- Soulbearer's Censer
 				i(238008),	-- Wastelander's Folly
 
@@ -1717,8 +1716,8 @@ root(ROOTS.Unsorted, {
 				i(159740),	-- Add Keystone Affix: Skittish
 				i(159741),	-- Add Keystone Affix: Teeming
 				i(159783),	-- Kane's Coin Purse
-				i(159791),	-- Tidespray Linen Net \\ Sun-Bleached Linen Net
-				i(159792),	-- Hooked Deep Sea Net
+
+
 				i(159843),	-- Recruit Alliance Troop
 				i(159844),	-- Recruit Horde Troop
 				i(159961),	-- Set Keystone Map: Neltharion's Lair
@@ -2658,7 +2657,7 @@ root(ROOTS.Unsorted, {
 			i(164645),	-- Challenge Card: Zaxx Dreadslice
 			i(164647),	-- Challenge Card: Marcus
 			i(164721),	-- Challenge Card: Robe-Robber Robert
-			i(164733),	-- Synchronous Thread
+
 			i(164772),	-- Kul Tiran Orphan Whistle
 			i(164934),	-- Super Soul Splinter
 			i(164939),	-- Overstuffed Silkweave Purse
@@ -2849,7 +2848,7 @@ root(ROOTS.Unsorted, {
 			i(169443),	-- Shadowmoon Schnapps
 			i(169446),	-- Water Filled Bladder
 			i(169447),	-- Air Filled Bladder \\ Air Filled Bladder - NYI
-			i(169456),	-- Seabreeze Saddle Blanket
+
 			i(169458),	-- Vol'dunshine
 			i(169459),	-- Saurid Sipper
 			i(169460),	-- Really Really Really Old Fashioned

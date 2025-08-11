@@ -331,14 +331,6 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 						i(147906),	-- Fel Heart of Argus (QI!)
 					},
 				}),
-				q(48074, {	-- Looming Over Me
-					["sourceQuests"] = { 46941 },	-- The Path Forward
-					["requireSkill"] = TAILORING,
-					["groups"] = {
-						recipe(247807),	-- Lightweave Breeches [Rank 1]
-						i(151874),	-- Lightweave Loom (QI!)
-					},
-				}),
 				q(46815, {	-- Eredath, Jewel of Argus
 					["sourceQuests"] = { 48081 },	-- A Floating Ruin
 					["provider"] = { "n", 128725 },	-- Prophet Velen

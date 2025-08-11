@@ -173,7 +173,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, bubbleDown({ ["timeline"] = { 
 					i(213014, {	-- Grimoire of the Xorothian Darkglare (CI!)
 						["timeline"] = { ADDED_10_2_5 },
 					}),
-					i(151748),	-- Pattern: Lightweave Breeches (Rank 3)
+					i(151748),	-- Pattern: Lightweave Breeches [Rank 3] (RECIPE!)
 				})),
 				cr(121975, e(1984, {	-- Aggramar
 					i(152094),	-- Taeshalach

@@ -1176,6 +1176,7 @@ root(ROOTS.Zones, {
 						["qg"] = 29799,	-- Thassarian
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
+							i(44480),	-- Alumeth's Remains
 							i(44394),	-- Encrusted Zombie Finger
 							i(44393),	-- Polished Zombie Exterminator
 							i(44395),	-- Touch of Unlife
@@ -1194,6 +1195,7 @@ root(ROOTS.Zones, {
 						["qg"] = 29795,	-- Koltira Deathweaver
 						["races"] = HORDE_ONLY,
 						["groups"] = {
+							i(44480),	-- Alumeth's Remains
 							i(44393),	-- Polished Zombie Exterminator
 							i(44394),	-- Encrusted Zombie Finger
 							i(44395),	-- Touch of Unlife

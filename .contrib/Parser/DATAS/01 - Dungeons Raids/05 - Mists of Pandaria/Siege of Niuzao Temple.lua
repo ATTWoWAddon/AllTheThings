@@ -5,9 +5,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 	applyclassicphase(MOP_PHASE_ONE, inst(324, {	-- Siege of Niuzao Temple
 		["coord"] = { 35, 82, TOWNLONG_STEPPES },
 		["maps"] = {
-			457,	-- Siege of Niuzao Temple
-			458,	-- The Hollowed Out Tree
-			459,	-- Upper Tree Ring
+			SIEGE_OF_NIUZAO_TEMPLE,
+			SIEGE_OF_NIUZAO_TEMPLE_THE_HOLLOWED_OUT_TREE,
+			SIEGE_OF_NIUZAO_TEMPLE_UPPER_TREE_RING,
 		},
 		["groups"] = {
 			n(QUESTS, {
@@ -445,6 +445,21 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 					spell(131228),	-- Path of the Black Ox
 				}),
 			})),
+			-- #if ANYCLASSIC
+			applyclassicphase(MOP_PHASE_ONE, n(CELESTIAL, {
+				-- Wouter TODO: fix
+				--["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(),
+				["timeline"] = { ADDED_5_5_0 },
+				["groups"] = {
+					e(727, {	-- Wing Leader Ner'onok
+						["creatureID"] = 62205,	-- Wing Leader Ner'onok
+						["groups"] = {
+							ach(60900),	-- Celestial: Siege of Niuzao Temple
+						},
+					}),
+				},
+			})),
+			-- #endif
 		},
 	})),
 })));

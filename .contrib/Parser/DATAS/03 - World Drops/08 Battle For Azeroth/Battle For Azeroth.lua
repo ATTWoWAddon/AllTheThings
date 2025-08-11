@@ -256,10 +256,10 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { AD
 			i(166260),	-- Plans: Monel-Hardened Hoofplates [Rank 3] (RECIPE!)
 		}),
 		prof(LEATHERWORKING, {
-			i(166313),	-- Pattern: Coarse Leather Barding (Rank 3)
+			i(166313),	-- Pattern: Coarse Leather Barding [Rank 3] (RECIPE!)
 		}),
 		prof(TAILORING, {
-			i(163027, {	-- Pattern: Embroidered Deep Sea Bag (Rank 1)
+			i(163027, {	-- Pattern: Embroidered Deep Sea Bag [Rank 1] (RECIPE!)
 				["description"] = "Dropped by naga.",
 			}),
 		}),

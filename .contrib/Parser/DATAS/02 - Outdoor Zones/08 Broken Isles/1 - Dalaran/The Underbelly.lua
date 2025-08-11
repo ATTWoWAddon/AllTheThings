@@ -60,7 +60,7 @@ root(ROOTS.Zones, {
 						n(97362, {	-- Dazzik "Proudmoore" <Magical Things>
 							["coord"] = { 66.2, 74.8, LEGION_THE_UNDERBELLY },
 							["groups"] = {
-								i(138016, {	-- Clothes Chest Pattern: Dalaran Citizens
+								i(138016, {	-- Clothes Chest Pattern: Dalaran Citizens (RECIPE!)
 									["cost"] = { { "c", 1149, 250 }, },	-- 250x Sightless Eye
 								}),
 								i(137826, {	-- Design: Sorcerous Shadowruby Pendant [Rank 2]

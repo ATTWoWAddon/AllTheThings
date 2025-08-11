@@ -458,6 +458,7 @@ root(ROOTS.ExpansionFeatures, applyclassicphase(MOP_PHASE_ONE, expansion(EXPANSI
 								{ "i", 77475 },	-- Stack of Mantras (QI!)
 								{ "n", 57400 },	-- Yu'lon Guardian
 								{ "n", 57316 },	-- Yu'lon Adept
+								{ "n", 57326 },	-- Yu'lon Guardian
 							},
 							["coord"] = { 55.2, 57.2, THE_JADE_FOREST },
 						}),

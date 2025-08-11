@@ -1886,12 +1886,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2493,	-- Wooden Mallet
 					}},
 				}),
-				n(30729, {	-- Ickabod Pimlen <Inscription Supplies>
-					["coord"] = { 61.83, 57.53, UNDERCITY },
-					["races"] = HORDE_ONLY,
-					["timeline"] = { ADDED_3_0_2 },
-					["groups"] = INSCRIPTION_SUPPLIES,
-				}),
 				n(8403, {	-- Jeremiah Payson <Cockroach Vendor>
 					["coord"] = { 67.6, 44.1, UNDERCITY },
 					["races"] = HORDE_ONLY,

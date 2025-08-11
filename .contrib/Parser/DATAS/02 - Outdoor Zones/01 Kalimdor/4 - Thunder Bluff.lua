@@ -1265,12 +1265,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						CRYSTAL_VIAL, {
 					}),
 				}),
-				n(30724, {	-- Mertle Murkpen <Inscription Supplies>
-					["coord"] = { 28.63, 20.26, THUNDER_BLUFF },
-					["races"] = HORDE_ONLY,
-					["timeline"] = { ADDED_3_0_2 },
-					["sym"] = {{ "sub", "common_vendor", 30729 }},	-- Ickabod Pimlen <Inscription Supplies>
-				}),
 				n(3027, {	-- Naal Mistrunner <Cooking Supplies>
 					["coord"] = { 51.0, 52.5, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,

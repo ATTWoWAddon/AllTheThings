@@ -557,6 +557,18 @@ root(ROOTS.Zones, {
 						},
 					}),
 				}),
+				prof(TAILORING, {
+					n(93542, {	-- Tanithria <Tailoring Trainer>
+						["coord"] = { 35.2, 34.2, LEGION_DALARAN },
+						["groups"] = {
+							r(239412, {["timeline"] = {ADDED_7_2_0}}),	-- Celumbra, the Night's Dichotomy (RECIPE!)
+							r(186097),	-- Silkweave Cover (RECIPE!)
+							r(186100),	-- Silkweave Drape (RECIPE!)
+							r(186094),	-- Silkweave Flourish (RECIPE!)
+							r(186091),	-- Silkweave Shade (RECIPE!)
+						},
+					}),
+				}),
 			}),
 		}),
 	}),

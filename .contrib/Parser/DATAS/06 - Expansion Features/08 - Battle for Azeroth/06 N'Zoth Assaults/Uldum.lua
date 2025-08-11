@@ -1667,6 +1667,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 								r(307176, {	-- Void Focus
 									["requireSkill"] = LEATHERWORKING,
 								}),
+								r(307175, {	-- Void Focus
+									["requireSkill"] = TAILORING,
+								}),
 							}),
 							TempForceMisc(i(174491, {	-- Tome of Unspeakable Delicacies
 								["description"] = "This item will not drop until you finish the intro quests up to 'Descending Into Madness'.",

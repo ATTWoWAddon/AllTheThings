@@ -3804,16 +3804,16 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(41884),	-- Faceless Mask of Vengeance
 			ach(41885),	-- Faceless Mask of Multitudes
 			ach(41930, {	-- Solo Nightmares - Stormwind - Revisited (Hidden Character Achievement)
-				["timeline"] = { "removed 11.2.0.61476", "added 11.2.0.62493" },
+				["timeline"] = { ADDED_11_1_5, "removed 11.2.0.61476", "added 11.2.0.62438" },
 			}),
 			ach(41938, {	-- Solo Nightmares - Orgrimmar - Revisited (Hidden Character Achievement)
-				["timeline"] = { "removed 11.2.0.61476", "added 11.2.0.62493" },
+				["timeline"] = { ADDED_11_1_5, "removed 11.2.0.61476", "added 11.2.0.62438" },
 			}),
 			ach(41946, {	-- Greater Solo Nightmares - Stormwind - Revisited (Hidden Character Achievement)
-				["timeline"] = { "removed 11.2.0.61476", "added 11.2.0.62493" },
+				["timeline"] = { ADDED_11_1_5, "removed 11.2.0.61476", "added 11.2.0.62438" },
 			}),
 			ach(41947, {	-- Greater Solo Nightmares - Orgrimmar - Revisited (Hidden Character Achievement)
-				["timeline"] = { "removed 11.2.0.61476", "added 11.2.0.62493" },
+				["timeline"] = { ADDED_11_1_5, "removed 11.2.0.61476", "added 11.2.0.62438" },
 			}),
 			ach(41967),	-- Gift of the Titans Unlocked <Hidden>
 			-- 11.1.5.59651

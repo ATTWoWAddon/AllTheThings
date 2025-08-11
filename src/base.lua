@@ -563,7 +563,8 @@ function app:ShowPopupDialogWithEditBox(msg, text, callback, timeout)
 			hasEditBox = true,
 			OnAccept = function(self)
 				if popup.callback and type(popup.callback) == "function" then
-					popup.callback(self.editBox:GetText());
+					local editBox = self.editBox or self.EditBox or (self.GetEditBox and self:GetEditBox())
+					popup.callback(editBox:GetText());
 				end
 			end,
 			preferredIndex = 3,  -- avoid some UI taint, see http://www.wowace.com/announcements/how-to-avoid-some-ui-taint/
@@ -571,11 +572,12 @@ function app:ShowPopupDialogWithEditBox(msg, text, callback, timeout)
 		StaticPopupDialogs.ALL_THE_THINGS_EDITBOX = popup;
 	end
 	popup.OnShow = function (self, data)
-		self.editBox:SetText(text);
-		self.editBox:SetJustifyH("CENTER");
-		self.editBox:SetWidth(240);
-		if self.editBox.HighlightText then
-			self.editBox:HighlightText();
+		local editBox = self.editBox or self.EditBox or (self.GetEditBox and self:GetEditBox())
+		editBox:SetText(text);
+		editBox:SetJustifyH("CENTER");
+		editBox:SetWidth(240);
+		if editBox.HighlightText then
+			editBox:HighlightText();
 		end
 	end;
 	popup.text = msg or "";

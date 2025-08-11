@@ -807,7 +807,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							18168,	-- The Crone
 						},
 						["groups"] = {
-							i(138017, {	-- Clothes Chest Pattern: Karazhan Opera House
+							i(138017, {	-- Clothes Chest Pattern: Karazhan Opera House (RECIPE!)
 								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(122231, {	-- Music Roll: Karazhan Opera House

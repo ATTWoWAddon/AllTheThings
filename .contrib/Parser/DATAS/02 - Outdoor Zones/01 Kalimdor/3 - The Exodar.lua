@@ -709,12 +709,6 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 					["groups"] = appendGroups(PHEA_GROUPS, {}),
 				}),
-				n(30732, {	-- Sessoh <Inscription Supplies>
-					["coord"] = { 39.6, 38.7, THE_EXODAR },
-					["races"] = ALLIANCE_ONLY,
-					["timeline"] = { ADDED_3_0_2 },
-					["sym"] = {{ "sub", "common_vendor", 30730 }},	-- Stanly McCormick <Inscription Supplies>
-				}),
 				n(21019, {	-- Sixx <Moth Keeper>
 					["coord"] = { 30.1, 33.8, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,

@@ -3,9 +3,6 @@ local i = function(itemID, factionID, unlock)
 	local o = { ["factionID"] = factionID };
 	-- #if NOT ANYCLASSIC
 	if not unlock then o.repeatable = true; end
-	-- #else
-	-- Grand Commendations are inherently not collectible, but their Unlock Heirloom level is.
-	if unlock then o.collectible = false; end
 	-- #endif
 	Items[itemID] = o;
 	-- ItemDBConditional uses an internal table when making new assignments into the DB, so we can't return the table used to set the key

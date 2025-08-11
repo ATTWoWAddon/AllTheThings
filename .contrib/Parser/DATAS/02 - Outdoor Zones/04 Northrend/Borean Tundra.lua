@@ -3025,22 +3025,6 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					n(26977, {	-- Adelene Sunlance <Inscription Trainer>
-						["coord"] = { 57.6, 71.64, BOREAN_TUNDRA },
-						["races"] = HORDE_ONLY, 
-						["sym"] = {
-							{ "select","itemID",
-								39354,	-- Light Parchment
-								-- #if BEFORE MOP
-								10648,	-- Common Parchment
-								39501,	-- Heavy Parchment
-								39502,	-- Resilient Parchment
-								-- #endif
-								39489,	-- Scribe's Satchel
-								39505,	-- Virtuoso Inking Set
-							},
-						},
-					}),
 					n(27012, {	-- Beem Goldsprocket <Trade Goods>
 						["coord"] = { 57.7, 72.32, BOREAN_TUNDRA },
 						["sym"] = {
@@ -3194,22 +3178,6 @@ root(ROOTS.Zones, {
 							i(42097),	-- Snowhide Mitts
 							i(42098),	-- Snowhide Pants
 							i(42099),	-- Snowhide Vest
-						},
-					}),
-					n(26995, {	-- Tink Brightbolt <Inscription Trainer>
-						["coord"] = { 57.6, 71.64, BOREAN_TUNDRA },
-						["races"] = ALLIANCE_ONLY, 
-						["sym"] = {
-							{ "select","itemID",
-								39354,	-- Light Parchment
-								-- #if BEFORE MOP
-								10648,	-- Common Parchment
-								39501,	-- Heavy Parchment
-								39502,	-- Resilient Parchment
-								-- #endif
-								39489,	-- Scribe's Satchel
-								39505,	-- Virtuoso Inking Set
-							},
 						},
 					}),
 					n(35132, {	-- Tohfo Skyhoof <Wind Rider Keeper>

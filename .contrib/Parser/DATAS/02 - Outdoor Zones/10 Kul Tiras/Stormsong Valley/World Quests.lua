@@ -600,7 +600,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["requireSkill"] = TAILORING,
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
-					i(162443),	-- Pattern: Battle Flag: Spirit of Freedom
+					i(162443),	-- Pattern: Battle Flag: Spirit of Freedom [Rank 3] (RECIPE!)
 				},
 			}),
 			q(50993, {	-- Work Order: Coarse Leather

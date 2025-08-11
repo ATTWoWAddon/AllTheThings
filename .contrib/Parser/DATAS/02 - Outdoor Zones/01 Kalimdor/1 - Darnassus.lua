@@ -1493,12 +1493,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						},
 					},
 				}),
-				n(30731, {	-- Illianna Moonscribe <Inscription Supplies>
-					["coord"] = { 56.7, 31.8, DARNASSUS },
-					["races"] = ALLIANCE_ONLY,
-					["timeline"] = { ADDED_3_0_2 },
-					["sym"] = {{ "sub", "common_vendor", 30730 }},	-- Stanly McCormick <Inscription Supplies>
-				}),
 				n(6735, {	-- Innkeeper Saelienne <Innkeeper>
 					-- #if AFTER CATA
 					["coord"] = { 62.54, 32.8, DARNASSUS },	-- Craftsmen's Terrace

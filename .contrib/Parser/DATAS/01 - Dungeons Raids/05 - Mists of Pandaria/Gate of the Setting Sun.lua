@@ -5,8 +5,8 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 	applyclassicphase(MOP_PHASE_ONE, inst(303, {	-- Gate of the Setting Sun
 		["coord"] = { 15.8, 74.8, VALE_OF_ETERNAL_BLOSSOMS },
 		["maps"] = {
-			437,	-- Gate of the Setting Sun
-			438,	-- Gate Watch Tower
+			GATE_OF_THE_SETTING_SUN,
+			GATE_OF_THE_SETTING_SUN_GATE_WATCH_TOWER,
 		},
 		["groups"] = {
 			n(QUESTS, {
@@ -411,6 +411,21 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 					spell(131225),	-- Path of the Setting Sun
 				}),
 			})),
+			-- #if ANYCLASSIC
+			applyclassicphase(MOP_PHASE_ONE, n(CELESTIAL, {
+				-- Wouter TODO: fix
+				--["OnInit"] = FUNCTION_TEMPLATES.OnInit.GenerateShouldExcludeFromTooltipForBuffs(),
+				["timeline"] = { ADDED_5_5_0 },
+				["groups"] = {
+					e(649, {	-- Raigonn
+						["creatureID"] = 56877,	-- Raigonn
+						["groups"] = {
+							ach(60896),	-- Celestial: Gate of the Setting Sun
+						},
+					}),
+				},
+			})),
+			-- #endif
 		},
 	})),
 })));

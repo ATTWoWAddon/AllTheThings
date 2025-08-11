@@ -3611,10 +3611,10 @@ root(ROOTS.Zones, {
 							i(21910),	-- Pattern: Spellfire Robe (RECIPE!)
 						},
 					}),
+					-- #if BEFORE 7.0.3
 					n(28723, {	-- Larana Drome <Inscription Supplies>
 						["coord"] = { 41.8, 36.8, NORTHREND_DALARAN },
-						["groups"] = appendGroups(INSCRIPTION_SUPPLIES, {
-							-- #if BEFORE 7.0.3
+						["groups"] = {
 							i(50166, {	-- Technique: Glyph of Eternal Water / Technique: Glyph of Mana Shield [CATA+] / Technique: Glyph of Counterspell [MOP+]
 								["timeline"] = { ADDED_3_3_0, DELETED_7_0_3 },
 							}),
@@ -3624,9 +3624,9 @@ root(ROOTS.Zones, {
 							i(50167, {	-- Technique: Glyph of Rapid Rejuvenation
 								["timeline"] = { DELETED_4_0_1 },
 							}),
-							-- #endif
-						}),
+						},
 					}),
+					-- #endif
 					n(29510, {	-- Linna Bruder <Shadoweave Tailoring Specialist>
 						["coord"] = { 34.6, 34.4, NORTHREND_DALARAN },
 						["groups"] = {

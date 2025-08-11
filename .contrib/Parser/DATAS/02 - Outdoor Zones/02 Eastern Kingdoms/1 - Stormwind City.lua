@@ -7518,15 +7518,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				-- #endif
+				-- #if AFTER MOP
+				-- Danny Donkey: The staves are added to Inscription Suppliers in 5.0.1.
 				n(30730, {	-- Stanly McCormick <Inscription Supplies>
-					["coord"] = { 49.6, 74.6, STORMWIND_CITY },
+					["coord"] = { 49.6, 74.9, STORMWIND_CITY },
 					["timeline"] = { ADDED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = appendGroups(INSCRIPTION_SUPPLIES, {
+					["groups"] = {
 						i(79740),	-- Plain Wooden Staff
 						i(1515),	-- Rough Wooden Staff
-					}),
+					},
 				}),
+				-- #endif
 				n(43768, {	-- Tannec Stonebeak <Gryphon Keeper>
 					["coord"] = { 71.4, 72.0, STORMWIND_CITY },
 					["timeline"] = { ADDED_4_0_1 },

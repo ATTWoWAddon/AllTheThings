@@ -3343,36 +3343,20 @@ root(ROOTS.Zones, {
 							},
 						},
 					}),
+					-- #if AFTER WRATH
 					n(30734, {	-- Jezebel Bican <Inscription Supplies>
 						["coord"] = { 54.0, 65.6, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["timeline"] = { ADDED_3_0_2 },
-						-- #if AFTER 3.1.0
-						["sym"] = {
-							{ "select","itemID",
-								39354,	-- Light Parchment
-								-- #if BEFORE MOP
-								10648,	-- Common Parchment
-								39501,	-- Heavy Parchment
-								39502,	-- Resilient Parchment
-								-- #endif
-								39489,	-- Scribe's Satchel
-								39505,	-- Virtuoso Inking Set
-							},
-						},
-						-- #endif
 						-- #if BEFORE 7.0.3
-						["groups"] = appendGroups(
-							-- #if BEFORE 3.1.0
-							INSCRIPTION_SUPPLIES, 
-							-- #endif
-							{
+						["groups"] = {
 							applyclassicphase(WRATH_PHASE_ONE, i(50166, {	-- Technique: Glyph of Eternal Water / Technique: Glyph of Mana Shield [CATA+] / Technique: Glyph of Counterspell [MOP+]
 								["timeline"] = { ADDED_3_3_0, DELETED_7_0_3 },
 							})),
-						}),
+						},
 						-- #endif
 					}),
+					-- #endif
 					n(18773, {	-- Johan Barnes <Enchanting Trainer>
 						["coord"] = { 53.6, 66.0, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
@@ -3419,34 +3403,20 @@ root(ROOTS.Zones, {
 							{}
 						),
 					}),
+					-- #if AFTER WRATH
 					n(30735, {	-- Kul Inkspiller <Inscription Supplies>
-						["coord"] = { 52.4, 36.0, NORTHREND_DALARAN },
+						["coord"] = { 52.4, 36.0, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["timeline"] = { ADDED_3_0_2 },
-						["sym"] = {
-							{ "select","itemID",
-								39354,	-- Light Parchment
-								-- #if BEFORE MOP
-								10648,	-- Common Parchment
-								39501,	-- Heavy Parchment
-								39502,	-- Resilient Parchment
-								-- #endif
-								39489,	-- Scribe's Satchel
-								39505,	-- Virtuoso Inking Set
-							},
-						},
 						-- #if BEFORE 7.0.3
-						["groups"] = appendGroups(
-							-- #if BEFORE 3.1.0
-							INSCRIPTION_SUPPLIES, 
-							-- #endif
-							{
+						["groups"] = {
 							applyclassicphase(WRATH_PHASE_ONE, i(50166, {	-- Technique: Glyph of Eternal Water / Technique: Glyph of Mana Shield [CATA+] / Technique: Glyph of Counterspell [MOP+]
 								["timeline"] = { ADDED_3_3_0, DELETED_7_0_3 },
 							})),
-						}),
+						},
 						-- #endif
 					}),
+					-- #endif
 					n(18775, {	-- Lebowski <Engineering Trainer>
 						["coord"] = { 55.6, 65.6, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,

@@ -4266,6 +4266,179 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 	}),
 	-- #if AFTER WRATH
 	prof(INSCRIPTION, {
+		-- Inks and reagents:
+		n(COMMON_VENDOR_ITEMS, sharedData({
+			["description"] = "Can be bought from Inscription Suppliers, as well as some Trade vendors around the world. Coordinates are for select vendors.",
+			["coords"] = {
+				{ 57.6, 71.64, BOREAN_TUNDRA },
+				{ 57.6, 71.64, BOREAN_TUNDRA },
+				{ 56.7, 31.8, DARNASSUS },
+				{ 54.0, 65.6, HELLFIRE_PENINSULA },
+				{ 52.4, 36.0, HELLFIRE_PENINSULA },
+				{ 79.36, 29.25, HOWLING_FJORD },
+				{ 58.27, 62.48, HOWLING_FJORD },
+				{ 60.55, 43.65, IRONFORGE },
+				{ 41.8, 36.8, NORTHREND_DALARAN },
+				{ 69.8, 23.2, SILVERMOON_CITY },
+				{ 49.6, 74.6, STORMWIND_CITY },
+				{ 39.6, 38.7, THE_EXODAR },
+				{ 28.63, 20.26, THUNDER_BLUFF },
+				{ 61.83, 57.53, UNDERCITY },
+				-- #if AFTER 3.1.0
+				{ 55.9, 74.34, SHATTRATH_CITY },
+				{ 36.4, 44.6, SHATTRATH_CITY },
+				-- #endif
+				-- #if AFTER CATA
+				{ 35.85, 69.5, ORGRIMMAR },
+				{ 55.3, 56.0, ORGRIMMAR },
+				-- #else
+				{ 56.0, 46.2, ORGRIMMAR },
+				-- #endif
+			},
+		}, {
+			i(10648, {	-- Common Parchment
+				["timeline"] = { REMOVED_5_0_4 },
+			}),
+			i(39501, {	-- Heavy Parchment
+				["timeline"] = { REMOVED_5_0_4 },
+			}),
+			i(39354),	-- Light Parchment
+			i(39502, {	-- Resilient Parchment
+				["timeline"] = { REMOVED_5_0_4 },
+			}),
+			i(39489, {	-- Scribe's Satchel
+				["isLimited"] = true,
+			}),
+			i(39505, {	-- Virtuoso Inking Set
+				["collectible"] = false,
+			}),
+		})),
+		header(HEADERS.Spell, 51005, {	-- Milling
+			i(39151, {	-- Alabaster Pigment
+				["providers"] = {
+					{ "i", 2449 },	-- Earthroot
+					{ "i", 2447 },	-- Peacebloom
+					{ "i", 765 },	-- Silverleaf
+				},
+			}),
+			i(43104, {	-- Burnt Pigment
+				["providers"] = {
+					{ "i", 3369 },	-- Grave Moss
+					{ "i", 3356 },	-- Kingsblood
+					{ "i", 3357 },	-- Liferoot
+					{ "i", 3355 },	-- Wild Steelbloom
+				},
+			}),
+			i(39334, {	-- Dusky Pigment
+				["providers"] = {
+					{ "i", 2450 },	-- Briarthorn
+					{ "i", 2453 },	-- Bruiseweed
+					{ "i", 785 },	-- Mageroyal
+					{ "i", 3820 },	-- Stranglekelp
+					{ "i", 2452 },	-- Swiftthistle
+				},
+			}),
+			i(39339, {	-- Emerald Pigment
+				["providers"] = {
+					{ "i", 3819 },	-- Dragon's Teeth [CATA+] / Wintersbite
+					{ "i", 3818 },	-- Fadeleaf
+					{ "i", 3821 },	-- Goldthorn
+					{ "i", 3358 },	-- Khadgar's Whisker
+				},
+			}),
+			i(39338, {	-- Golden Pigment
+				["providers"] = {
+					{ "i", 3369 },	-- Grave Moss
+					{ "i", 3356 },	-- Kingsblood
+					{ "i", 3357 },	-- Liferoot
+					{ "i", 3355 },	-- Wild Steelbloom
+				},
+			}),
+			i(43105, {	-- Indigo Pigment
+				["providers"] = {
+					{ "i", 3819 },	-- Dragon's Teeth [CATA+] / Wintersbite
+					{ "i", 3818 },	-- Fadeleaf
+					{ "i", 3821 },	-- Goldthorn
+					{ "i", 3358 },	-- Khadgar's Whisker
+				},
+			}),
+			i(43106, {	-- Ruby Pigment
+				["providers"] = {
+					{ "i", 8836 },	-- Arthas' Tears
+					{ "i", 8839 },	-- Blindweed
+					{ "i", 4625 },	-- Firebloom
+					{ "i", 8845 },	-- Ghost Mushroom
+					{ "i", 8846 },	-- Gromsblood
+					{ "i", 8831 },	-- Purple Lotus
+					{ "i", 8838 },	-- Sungrass
+				},
+			}),
+			i(43107, {	-- Sapphire Pigment
+				["providers"] = {
+					{ "i", 13463 },	-- Dreamfoil
+					{ "i", 13464 },	-- Golden Sansam
+					{ "i", 13467 },	-- Icecap
+					{ "i", 13465 },	-- Mountain Silversage
+					{ "i", 13466 },	-- Sorrowmoss [CATA+] / Plaguebloom
+				},
+			}),
+			i(39341, {	-- Silvery Pigment
+				["providers"] = {
+					{ "i", 13463 },	-- Dreamfoil
+					{ "i", 13464 },	-- Golden Sansam
+					{ "i", 13467 },	-- Icecap
+					{ "i", 13465 },	-- Mountain Silversage
+					{ "i", 13466 },	-- Sorrowmoss [CATA+] / Plaguebloom
+				},
+			}),
+			i(43103, {	-- Verdant Pigment
+				["providers"] = {
+					{ "i", 2450 },	-- Briarthorn
+					{ "i", 2453 },	-- Bruiseweed
+					{ "i", 785 },	-- Mageroyal
+					{ "i", 3820 },	-- Stranglekelp
+					{ "i", 2452 },	-- Swiftthistle
+				},
+			}),
+			i(39340, {	-- Violet Pigment
+				["providers"] = {
+					{ "i", 8836 },	-- Arthas' Tears
+					{ "i", 8839 },	-- Blindweed
+					{ "i", 4625 },	-- Firebloom
+					{ "i", 8845 },	-- Ghost Mushroom
+					{ "i", 8846 },	-- Gromsblood
+					{ "i", 8831 },	-- Purple Lotus
+					{ "i", 8838 },	-- Sungrass
+				},
+			}),
+		}),
+		filter(REAGENTS, {
+			i(43120),	-- Celestial Ink
+			i(43117),	-- Dawnstar Ink
+			i(43121),	-- Fiery Ink
+			i(43115),	-- Hunter's Ink
+			i(43123),	-- Ink of the Sky
+			i(43118),	-- Jadefire Ink
+			i(43116),	-- Lion's Ink
+			i(43119),	-- Royal Ink
+			i(39774),	-- Midnight Ink
+			i(39469),	-- Moonglow Ink
+			i(43122),	-- Shimmering Ink
+		}),
+		-- Non-reagent crafts:
+		filter(HELD_IN_OFF_HAND, {
+			i(43661),	-- Book of Stars
+			i(43655),	-- Book of Survival
+			i(206501, {["timeline"] = { ADDED_10_1_5 }}),	-- Encased Frigid Heart
+			i(43660),	-- Fire Eater's Guide
+			i(203807, {["timeline"] = { ADDED_10_0_7 }}),	-- Gurubashi Hoodoo Stick
+			i(43664),	-- Manual of Clouds
+			i(43515),	-- Mystic Tome
+			i(43657),	-- Royal Guide of Escape Routes
+			i(43663),	-- Stormbound Tome
+			i(43656),	-- Tome of Kings
+			i(43654),	-- Tome of the Dawn
+		}),
 		filter(GLYPHS, {
 			i(87891, {["timeline"]={ ADDED_5_0_4, REMOVED_6_0_2 }}),				-- Glyph of Afterlife
 			i(44955, {["timeline"]={ ADDED_3_0_2, REMOVED_7_0_3 }}),				-- Glyph of Arcane Blast / Glyph of Arcane Power [MOP+]
@@ -4503,6 +4676,15 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(45776, {["timeline"]={ ADDED_3_1_0, REMOVED_7_0_3 }}),	-- Glyph of Totem of Wrath / Glyph of Shamanistic Rage [CATA+]
 			-- #endif
 		}),
+		-- #if AFTER 10.0.7
+		filter(STAVES, {
+			i(203815, {["timeline"] = { ADDED_10_0_7 }}),	-- Gurubashi Ceremonial Staff
+			i(203795, {["timeline"] = { ADDED_10_0_7 }}),	-- Judgment of the Gurubashi
+			i(206481, {["timeline"] = { ADDED_10_1_5 }}),	-- Shifting Sliver
+			i(206485, {["timeline"] = { ADDED_10_1_5 }}),	-- Soulscryer
+			i(207563, {["timeline"] = { ADDED_10_1_5 }}),	-- Wanderer's Guide
+		}),
+		-- #endif
 		category(106, {	-- Tarot Cards
 			i(44161, {	-- Arcane Tarot
 				i(44165),	-- Ace of Mages
@@ -4564,143 +4746,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				i(37160),	-- Four of Swords
 			}),
 		}),
-		filter(HELD_IN_OFF_HAND, {
-			i(43661),	-- Book of Stars
-			i(43655),	-- Book of Survival
-			i(206501, {["timeline"] = { ADDED_10_1_5 }}),	-- Encased Frigid Heart
-			i(43660),	-- Fire Eater's Guide
-			i(203807, {["timeline"] = { ADDED_10_0_7 }}),	-- Gurubashi Hoodoo Stick
-			i(43664),	-- Manual of Clouds
-			i(43515),	-- Mystic Tome
-			i(43657),	-- Royal Guide of Escape Routes
-			i(43663),	-- Stormbound Tome
-			i(43656),	-- Tome of Kings
-			i(43654),	-- Tome of the Dawn
-		}),
-		header(HEADERS.Spell, 51005, {	-- Milling
-			i(39151, {	-- Alabaster Pigment
-				["providers"] = {
-					{ "i", 2449 },	-- Earthroot
-					{ "i", 2447 },	-- Peacebloom
-					{ "i", 765 },	-- Silverleaf
-				},
-			}),
-			i(43104, {	-- Burnt Pigment
-				["providers"] = {
-					{ "i", 3369 },	-- Grave Moss
-					{ "i", 3356 },	-- Kingsblood
-					{ "i", 3357 },	-- Liferoot
-					{ "i", 3355 },	-- Wild Steelbloom
-				},
-			}),
-			i(39334, {	-- Dusky Pigment
-				["providers"] = {
-					{ "i", 2450 },	-- Briarthorn
-					{ "i", 2453 },	-- Bruiseweed
-					{ "i", 785 },	-- Mageroyal
-					{ "i", 3820 },	-- Stranglekelp
-					{ "i", 2452 },	-- Swiftthistle
-				},
-			}),
-			i(39339, {	-- Emerald Pigment
-				["providers"] = {
-					{ "i", 3819 },	-- Dragon's Teeth [CATA+] / Wintersbite
-					{ "i", 3818 },	-- Fadeleaf
-					{ "i", 3821 },	-- Goldthorn
-					{ "i", 3358 },	-- Khadgar's Whisker
-				},
-			}),
-			i(39338, {	-- Golden Pigment
-				["providers"] = {
-					{ "i", 3369 },	-- Grave Moss
-					{ "i", 3356 },	-- Kingsblood
-					{ "i", 3357 },	-- Liferoot
-					{ "i", 3355 },	-- Wild Steelbloom
-				},
-			}),
-			i(43105, {	-- Indigo Pigment
-				["providers"] = {
-					{ "i", 3819 },	-- Dragon's Teeth [CATA+] / Wintersbite
-					{ "i", 3818 },	-- Fadeleaf
-					{ "i", 3821 },	-- Goldthorn
-					{ "i", 3358 },	-- Khadgar's Whisker
-				},
-			}),
-			i(43106, {	-- Ruby Pigment
-				["providers"] = {
-					{ "i", 8836 },	-- Arthas' Tears
-					{ "i", 8839 },	-- Blindweed
-					{ "i", 4625 },	-- Firebloom
-					{ "i", 8845 },	-- Ghost Mushroom
-					{ "i", 8846 },	-- Gromsblood
-					{ "i", 8831 },	-- Purple Lotus
-					{ "i", 8838 },	-- Sungrass
-				},
-			}),
-			i(43107, {	-- Sapphire Pigment
-				["providers"] = {
-					{ "i", 13463 },	-- Dreamfoil
-					{ "i", 13464 },	-- Golden Sansam
-					{ "i", 13467 },	-- Icecap
-					{ "i", 13465 },	-- Mountain Silversage
-					{ "i", 13466 },	-- Sorrowmoss [CATA+] / Plaguebloom
-				},
-			}),
-			i(39341, {	-- Silvery Pigment
-				["providers"] = {
-					{ "i", 13463 },	-- Dreamfoil
-					{ "i", 13464 },	-- Golden Sansam
-					{ "i", 13467 },	-- Icecap
-					{ "i", 13465 },	-- Mountain Silversage
-					{ "i", 13466 },	-- Sorrowmoss [CATA+] / Plaguebloom
-				},
-			}),
-			i(43103, {	-- Verdant Pigment
-				["providers"] = {
-					{ "i", 2450 },	-- Briarthorn
-					{ "i", 2453 },	-- Bruiseweed
-					{ "i", 785 },	-- Mageroyal
-					{ "i", 3820 },	-- Stranglekelp
-					{ "i", 2452 },	-- Swiftthistle
-				},
-			}),
-			i(39340, {	-- Violet Pigment
-				["providers"] = {
-					{ "i", 8836 },	-- Arthas' Tears
-					{ "i", 8839 },	-- Blindweed
-					{ "i", 4625 },	-- Firebloom
-					{ "i", 8845 },	-- Ghost Mushroom
-					{ "i", 8846 },	-- Gromsblood
-					{ "i", 8831 },	-- Purple Lotus
-					{ "i", 8838 },	-- Sungrass
-				},
-			}),
-		}),
-		filter(PROFESSION_EQUIPMENT, {
-			i(39505, {["collectible"] = false}),	-- Virtuoso Inking Set
-		}),
-		filter(REAGENTS, {
-			i(43120),	-- Celestial Ink
-			i(43117),	-- Dawnstar Ink
-			i(43121),	-- Fiery Ink
-			i(43115),	-- Hunter's Ink
-			i(43123),	-- Ink of the Sky
-			i(43118),	-- Jadefire Ink
-			i(43116),	-- Lion's Ink
-			i(43119),	-- Royal Ink
-			i(39774),	-- Midnight Ink
-			i(39469),	-- Moonglow Ink
-			i(43122),	-- Shimmering Ink
-		}),
-		-- #if AFTER 10.0.7
-		filter(STAVES, {
-			i(203815, {["timeline"] = { ADDED_10_0_7 }}),	-- Gurubashi Ceremonial Staff
-			i(203795, {["timeline"] = { ADDED_10_0_7 }}),	-- Judgment of the Gurubashi
-			i(206481, {["timeline"] = { ADDED_10_1_5 }}),	-- Shifting Sliver
-			i(206485, {["timeline"] = { ADDED_10_1_5 }}),	-- Soulscryer
-			i(207563, {["timeline"] = { ADDED_10_1_5 }}),	-- Wanderer's Guide
-		}),
-		-- #endif
 	}),
 	-- #endif
 	-- #if AFTER TBC

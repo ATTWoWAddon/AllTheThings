@@ -925,6 +925,9 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 10300,	-- Rebuilding the Staff
 						["qg"] = 19217,	-- Ravandwyr
 						["coord"] = { 31.4, 66.1, NETHERSTORM },
+						["groups"] = {
+							i(28455),	-- Archmage Vargoth's Staff
+						},
 					}),
 					q(10418, {	-- Deal With the Saboteurs
 						["sourceQuest"] = 10417,	-- Run a Diagnostic!

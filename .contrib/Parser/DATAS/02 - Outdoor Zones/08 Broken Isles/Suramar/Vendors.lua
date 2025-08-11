@@ -163,13 +163,13 @@ root(ROOTS.Zones, {
 								["cost"] = 5000000,	-- 500g
 							}),
 							i(140575),	-- Nightfallen Tabard
-							i(137973, {	-- Pattern: Imbued Silkweave Bracers [Rank 2] (RECIPE!)
+							i(137973, {	-- Pattern: Imbued Silkweave Bracers [Rank 3] (RECIPE!)
 								["cost"] = 30000000,	-- 3,000g
 							}),
-							i(137976, {	-- Pattern: Imbued Silkweave Pantaloons [Rank 2] (RECIPE!)
+							i(137976, {	-- Pattern: Imbued Silkweave Pantaloons [Rank 3] (RECIPE!)
 								["cost"] = 30000000,	-- 3,000g
 							}),
-							i(137979, {	-- Pattern: Imbued Silkweave Slippers [Rank 2] (RECIPE!)
+							i(137979, {	-- Pattern: Imbued Silkweave Slippers [Rank 3] (RECIPE!)
 								["cost"] = 30000000,	-- 3,000g
 							}),
 							i(139744, {	-- Shoulderblades of the Uncrowned
