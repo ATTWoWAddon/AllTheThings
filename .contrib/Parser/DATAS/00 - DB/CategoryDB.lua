@@ -57,8 +57,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133968,
 		text = {
 			en = "Everyday Cooking",
-			es = "Cocina regular",
-			mx = "Cocina regular",
+			es = "Cocina diaria",
+			mx = "Cocina diaria",
 			ko = "일반 요리",
 		},
 	},
@@ -3620,8 +3620,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		text = {
 			en = "Cataclysm Engineering",
 			de = "Ingenieurskunst des Kataklysmus",
-			es = "Ingeniería de Cataclsym",
-			mx = "Ingeniería de Cataclsym",
+			es = "Ingeniería de Cataclysm",
+			mx = "Ingeniería de Cataclysm",
 			fr = "Ingénierie de Cataclysm",
 			it = "Ingegneria di Cataclysm",
 			pt = "Engenharia de Cataclysm",
@@ -4970,42 +4970,56 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Zandalari Patterns",
 		text = {
 			en = "Zandalari Patterns",
+			es = "Patrones Zandalari",
+			mx = "Patrones Zandalari",
 		},
 	},
 	[876] = {
 		readable = "Pandaria Patterns",
 		text = {
 			en = "Pandaria Patterns",
+			es = "Patrones de Pandaria",
+			mx = "Patrones de Pandaria",
 		},
 	},
 	[878] = {
 		readable = "Cataclysm Patterns",
 		text = {
 			en = "Cataclysm Patterns",
+			es = "Patrones de Cataclysm",
+			mx = "Patrones de Cataclysm",
 		},
 	},
 	[880] = {
 		readable = "Northrend Patterns",
 		text = {
 			en = "Northrend Patterns",
+			es = "Patrones de Rasganorte",
+			mx = "Patrones de Rasganorte",
 		},
 	},
 	[882] = {
 		readable = "Outland Patterns",
 		text = {
 			en = "Outland Patterns",
+			es = "Patrones de Terrallende",
+			mx = "Patrones de Terrallende",
 		},
 	},
 	[883] = {
 		readable = "Leather Armor",
 		text = {
 			en = "Leather Armor",
+			es = "Armadura de cuero",
+			mx = "Armadura de cuero",
 		},
 	},
 	[884] = {
 		readable = "Mail Armor",
 		text = {
 			en = "Mail Armor",
+			es = "Armadura de malla",
+			mx = "Armadura de malla",
 		},
 	},
 	[885] = {
@@ -5019,6 +5033,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Other",
 		text = {
 			en = "Other",
+			es = "Otro",
+			mx = "Otro",
 			ko = "다른",
 		},
 	},
@@ -5026,6 +5042,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Materials",
 		text = {
 			en = "Materials",
+			es = "Materiales",
+			mx = "Materiales",
 			ko = "재료",
 		},
 	},
@@ -5033,6 +5051,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Embossments",
 		text = {
 			en = "Embossments",
+			es = "Estampados",
+			mx = "Estampados",
 		},
 	},
 	[889] = {
@@ -5040,6 +5060,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133611,
 		text = {
 			en = "Armor Kits",
+			es = "Refuerzo para armadura",
+			mx = "Refuerzo para armadura",
 			ko = "방어구 키트",
 		},
 	},
@@ -5048,6 +5070,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133646,
 		text = {
 			en = "Bags",
+			es = "Bolsas",
+			mx = "Bolsas",
 			ko = "가방",
 			tw = "背包",
 		},
@@ -5057,6 +5081,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133076,
 		text = {
 			en = "Helms",
+			es = "Yelmos",
+			mx = "Yelmos",
 			ko = "머리",
 		},
 	},
@@ -5079,6 +5105,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132607,
 		text = {
 			en = "Bracers",
+			es = "Brazales",
+			mx = "Brazales",
 			ko = "손목",
 		},
 	},
@@ -5087,6 +5115,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132939,
 		text = {
 			en = "Gloves",
+			es = "Guantes",
+			mx = "Guantes",
 			ko = "손",
 		},
 	},
@@ -5095,6 +5125,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132513,
 		text = {
 			en = "Belts",
+			es = "Cintura",
+			mx = "Cintura",
 			ko = "허리",
 		},
 	},
@@ -5103,6 +5135,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134592,
 		text = {
 			en = "Pants",
+			es = "Pantalones",
+			mx = "Pantalones",
 			ko = "다리",
 		},
 	},
@@ -5111,6 +5145,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132539,
 		text = {
 			en = "Boots",
+			es = "Botas",
+			mx = "Botas",
 			ko = "발",
 		},
 	},
@@ -5119,6 +5155,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133770,
 		text = {
 			en = "Cloaks",
+			es = "Capas",
+			mx = "Capas",
 			ko = "등",
 		},
 	},
@@ -5127,6 +5165,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133841,
 		text = {
 			en = "Drums",
+			es = "Tambores",
+			mx = "Tambores",
 		},
 	},
 	[901] = {
@@ -5134,12 +5174,16 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134331,
 		text = {
 			en = "Research",
+			es = "Investigación",
+			mx = "Investigación",
 		},
 	},
 	[902] = {
 		readable = "Materials",
 		text = {
 			en = "Materials",
+			es = "Materiales",
+			mx = "Materiales",
 			ko = "재료",
 		},
 	},
@@ -5148,6 +5192,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133611,
 		text = {
 			en = "Armor Kits",
+			es = "Refuerzo para armadura",
+			mx = "Refuerzo para armadura",
 			ko = "방어구 키트",
 		},
 	},
@@ -5156,6 +5202,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133646,
 		text = {
 			en = "Bags",
+			es = "Bolsas",
+			mx = "Bolsas",
 			ko = "가방",
 			tw = "背包",
 		},
@@ -5165,6 +5213,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133076,
 		text = {
 			en = "Helms",
+			es = "Yelmos",
+			mx = "Yelmos",
 			ko = "머리",
 		},
 	},
@@ -5187,6 +5237,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132607,
 		text = {
 			en = "Bracers",
+			es = "Brazales",
+			mx = "Brazales",
 			ko = "손목",
 		},
 	},
@@ -5195,6 +5247,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132939,
 		text = {
 			en = "Gloves",
+			es = "Guantes",
+			mx = "Guantes",
 			ko = "손",
 		},
 	},
@@ -5203,6 +5257,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132513,
 		text = {
 			en = "Belts",
+			es = "Cintura",
+			mx = "Cintura",
 			ko = "허리",
 		},
 	},
@@ -5211,6 +5267,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134592,
 		text = {
 			en = "Pants",
+			es = "Pantalones",
+			mx = "Pantalones",
 			ko = "다리",
 		},
 	},
@@ -5219,6 +5277,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132539,
 		text = {
 			en = "Boots",
+			es = "Botas",
+			mx = "Botas",
 			ko = "발",
 		},
 	},
@@ -5227,6 +5287,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133770,
 		text = {
 			en = "Cloaks",
+			es = "Capas",
+			mx = "Capas",
 			ko = "등",
 		},
 	},
@@ -5234,6 +5296,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Materials",
 		text = {
 			en = "Materials",
+			es = "Materiales",
+			mx = "Materiales",
 			ko = "재료",
 		},
 	},
@@ -5242,6 +5306,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133611,
 		text = {
 			en = "Armor Kits",
+			es = "Refuerzo para armadura",
+			mx = "Refuerzo para armadura",
 			ko = "방어구 키트",
 		},
 	},
@@ -5250,6 +5316,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133646,
 		text = {
 			en = "Bags",
+			es = "Bolsas",
+			mx = "Bolsas",
 			ko = "가방",
 			tw = "背包",
 		},
@@ -5259,6 +5327,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133076,
 		text = {
 			en = "Helms",
+			es = "Yelmos",
+			mx = "Yelmos",
 			ko = "머리",
 		},
 	},
@@ -5273,6 +5343,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Chests",
 		text = {
 			en = "Chests",
+			es = "Pechos",
+			mx = "Pechos",
 			ko = "가슴",
 		},
 	},
@@ -5281,6 +5353,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132607,
 		text = {
 			en = "Bracers",
+			es = "Brazales",
+			mx = "Brazales",
 			ko = "손목",
 		},
 	},
@@ -5289,6 +5363,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132939,
 		text = {
 			en = "Gloves",
+			es = "Guantes",
+			mx = "Guantes",
 			ko = "손",
 		},
 	},
@@ -5297,6 +5373,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132513,
 		text = {
 			en = "Belts",
+			es = "Cintura",
+			mx = "Cintura",
 			ko = "허리",
 		},
 	},
@@ -5305,6 +5383,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134592,
 		text = {
 			en = "Pants",
+			es = "Pantalones",
+			mx = "Pantalones",
 			ko = "다리",
 		},
 	},
@@ -5313,6 +5393,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132539,
 		text = {
 			en = "Boots",
+			es = "Botas",
+			mx = "Botas",
 			ko = "발",
 		},
 	},
@@ -5321,6 +5403,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133770,
 		text = {
 			en = "Cloaks",
+			es = "Capas",
+			mx = "Capas",
 			ko = "등",
 		},
 	},
@@ -5329,12 +5413,16 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133841,
 		text = {
 			en = "Drums",
+			es = "Tambores",
+			mx = "Tambores",
 		},
 	},
 	[927] = {
 		readable = "Materials",
 		text = {
 			en = "Materials",
+			es = "Materiales",
+			mx = "Materiales",
 			ko = "재료",
 		},
 	},
@@ -5343,6 +5431,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133611,
 		text = {
 			en = "Armor Kits",
+			es = "Refuerzo para armadura",
+			mx = "Refuerzo para armadura",
 			ko = "방어구 키트",
 		},
 	},
@@ -5351,6 +5441,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133646,
 		text = {
 			en = "Bags",
+			es = "Bolsas",
+			mx = "Bolsas",
 			ko = "가방",
 			tw = "背包",
 		},
@@ -5360,6 +5452,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133076,
 		text = {
 			en = "Helms",
+			es = "Yelmos",
+			mx = "Yelmos",
 			ko = "머리",
 		},
 	},
@@ -5382,6 +5476,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132607,
 		text = {
 			en = "Bracers",
+			es = "Brazales",
+			mx = "Brazales",
 			ko = "손목",
 		},
 	},
@@ -5390,6 +5486,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132939,
 		text = {
 			en = "Gloves",
+			es = "Guantes",
+			mx = "Guantes",
 			ko = "손",
 		},
 	},
@@ -5398,6 +5496,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132513,
 		text = {
 			en = "Belts",
+			es = "Cintura",
+			mx = "Cintura",
 			ko = "허리",
 		},
 	},
@@ -5406,6 +5506,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134592,
 		text = {
 			en = "Pants",
+			es = "Pantalones",
+			mx = "Pantalones",
 			ko = "다리",
 		},
 	},
@@ -5414,6 +5516,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132539,
 		text = {
 			en = "Boots",
+			es = "Botas",
+			mx = "Botas",
 			ko = "발",
 		},
 	},
@@ -5422,6 +5526,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133770,
 		text = {
 			en = "Cloaks",
+			es = "Capas",
+			mx = "Capas",
 			ko = "등",
 		},
 	},
@@ -5429,6 +5535,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Special",
 		text = {
 			en = "Special",
+			es = "Especial",
+			mx = "Especial",
 		},
 	},
 	[940] = {
@@ -5436,12 +5544,16 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133841,
 		text = {
 			en = "Drums",
+			es = "Tambores",
+			mx = "Tambores",
 		},
 	},
 	[942] = {
 		readable = "Zandalari Patterns",
 		text = {
 			en = "Zandalari Patterns",
+			es = "Patrones Zandalari",
+			mx = "Patrones Zandalari",
 		},
 	},
 	[943] = {
@@ -5449,6 +5561,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133646,
 		text = {
 			en = "Bags",
+			es = "Bolsas",
+			mx = "Bolsas",
 			ko = "가방",
 			tw = "背包",
 		},
@@ -5457,18 +5571,24 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Armor",
 		text = {
 			en = "Armor",
+			es = "Armadura",
+			mx = "Armadura",
 		},
 	},
 	[945] = {
 		readable = "Battle Flags",
 		text = {
 			en = "Battle Flags",
+			es = "Banderas de batalla",
+			mx = "Banderas de batalla",
 		},
 	},
 	[946] = {
 		readable = "Other",
 		text = {
 			en = "Other",
+			es = "Otro",
+			mx = "Otro",
 			ko = "다른",
 		},
 	},
@@ -5476,30 +5596,40 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Pandaria Patterns",
 		text = {
 			en = "Pandaria Patterns",
+			es = "Patrones de Pandaria",
+			mx = "Patrones de Pandaria",
 		},
 	},
 	[952] = {
 		readable = "Cataclysm Patterns",
 		text = {
 			en = "Cataclysm Patterns",
+			es = "Patrones de Cataclysm",
+			mx = "Patrones de Cataclysm",
 		},
 	},
 	[954] = {
 		readable = "Northrend Patterns",
 		text = {
 			en = "Northrend Patterns",
+			es = "Patrones de Rasganorte",
+			mx = "Patrones de Rasganorte",
 		},
 	},
 	[956] = {
 		readable = "Outland Patterns",
 		text = {
 			en = "Outland Patterns",
+			es = "Patrones de Terrallende",
+			mx = "Patrones de Terrallende",
 		},
 	},
 	[958] = {
 		readable = "Materials",
 		text = {
 			en = "Materials",
+			es = "Materiales",
+			mx = "Materiales",
 			ko = "재료",
 		},
 	},
@@ -5507,12 +5637,32 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Embroidery",
 		text = {
 			en = "Embroidery",
+			de = "Stickerei",
+			es = "Bordados",
+			mx = "Bordado",
+			fr = "Broderie",
+			it = "Ricami",
+			pt = "Bordados",
+			ru = "Вышивка",
+			ko = "자수",
+			cn = "刺绣",
+			tw = "刺繡",
 		},
 	},
 	[960] = {
 		readable = "Spellthreads",
 		text = {
 			en = "Spellthreads",
+			de = "Zauberfaden",
+			es = "Hilos de hechizo",
+			mx = "Hilos de hechizo",
+			fr = "Fils ensorcelés",
+			it = "Ornamenti Magici",
+			pt = "Magilinha",
+			ru = "Чародейская нить",
+			ko = "마법실타래",
+			cn = "魔线",
+			tw = "法術絲線",
 		},
 	},
 	[961] = {
@@ -5520,6 +5670,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133646,
 		text = {
 			en = "Bags",
+			es = "Bolsas",
+			mx = "Bolsas",
 			ko = "가방",
 			tw = "背包",
 		},
@@ -5529,6 +5681,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133133,
 		text = {
 			en = "Hats & Hoods",
+			es = "Sombreros y capuchas",
+			mx = "Sombreros y capuchas",
 			ko = "머리",
 		},
 	},
@@ -5544,6 +5698,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132659,
 		text = {
 			en = "Robes & Tunics",
+			es = "Togas y túnicas",
+			mx = "Togas y túnicas",
 			ko = "가슴",
 		},
 	},
@@ -5552,6 +5708,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132616,
 		text = {
 			en = "Bracers",
+			es = "Brazales",
+			mx = "Brazales",
 			ko = "손목",
 		},
 	},
@@ -5560,6 +5718,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132516,
 		text = {
 			en = "Belts",
+			es = "Cintura",
+			mx = "Cintura",
 			ko = "허리",
 		},
 	},
@@ -5568,6 +5728,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132940,
 		text = {
 			en = "Gloves",
+			es = "Guantes",
+			mx = "Guantes",
 			ko = "손",
 		},
 	},
@@ -5576,6 +5738,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134586,
 		text = {
 			en = "Pants",
+			es = "Pantalones",
+			mx = "Pantalones",
 			ko = "다리",
 		},
 	},
@@ -5584,6 +5748,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132535,
 		text = {
 			en = "Boots",
+			es = "Botas",
+			mx = "Botas",
 			ko = "발",
 		},
 	},
@@ -5592,6 +5758,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133770,
 		text = {
 			en = "Cloaks",
+			es = "Capas",
+			mx = "Capas",
 			ko = "등",
 		},
 	},
@@ -5599,6 +5767,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Materials",
 		text = {
 			en = "Materials",
+			es = "Materiales",
+			mx = "Materiales",
 			ko = "재료",
 		},
 	},
@@ -5606,6 +5776,16 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Spellthreads",
 		text = {
 			en = "Spellthreads",
+			de = "Zauberfaden",
+			es = "Hilos de hechizo",
+			mx = "Hilos de hechizo",
+			fr = "Fils ensorcelés",
+			it = "Ornamenti Magici",
+			pt = "Magilinha",
+			ru = "Чародейская нить",
+			ko = "마법실타래",
+			cn = "魔线",
+			tw = "法術絲線",
 		},
 	},
 	[974] = {
@@ -5613,6 +5793,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133646,
 		text = {
 			en = "Bags",
+			es = "Bolsas",
+			mx = "Bolsas",
 			ko = "가방",
 			tw = "背包",
 		},
@@ -5622,6 +5804,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133133,
 		text = {
 			en = "Hats & Hoods",
+			es = "Sombreros y capuchas",
+			mx = "Sombreros y capuchas",
 			ko = "머리",
 		},
 	},
@@ -5637,6 +5821,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132659,
 		text = {
 			en = "Robes & Tunics",
+			es = "Togas y túnicas",
+			mx = "Togas y túnicas",
 			ko = "가슴",
 		},
 	},
@@ -5645,6 +5831,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132616,
 		text = {
 			en = "Bracers",
+			es = "Brazales",
+			mx = "Brazales",
 			ko = "손목",
 		},
 	},
@@ -5653,6 +5841,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132516,
 		text = {
 			en = "Belts",
+			es = "Cintura",
+			mx = "Cintura",
 			ko = "허리",
 		},
 	},
@@ -5661,6 +5851,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132940,
 		text = {
 			en = "Gloves",
+			es = "Guantes",
+			mx = "Guantes",
 			ko = "손",
 		},
 	},
@@ -5669,6 +5861,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134586,
 		text = {
 			en = "Pants",
+			es = "Pantalones",
+			mx = "Pantalones",
 			ko = "다리",
 		},
 	},
@@ -5677,6 +5871,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132535,
 		text = {
 			en = "Boots",
+			es = "Botas",
+			mx = "Botas",
 			ko = "발",
 		},
 	},
@@ -5685,6 +5881,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133770,
 		text = {
 			en = "Cloaks",
+			es = "Capas",
+			mx = "Capas",
 			ko = "등",
 		},
 	},
@@ -5692,12 +5890,16 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Nets",
 		text = {
 			en = "Nets",
+			es = "Redes",
+			mx = "Redes",
 		},
 	},
 	[985] = {
 		readable = "Materials",
 		text = {
 			en = "Materials",
+			es = "Materiales",
+			mx = "Materiales",
 			ko = "재료",
 		},
 	},
@@ -5705,6 +5907,16 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Spellthread",
 		text = {
 			en = "Spellthread",
+			de = "Zauberfaden",
+			es = "Hilo de hechizo",
+			mx = "Hilo de hechizo",
+			fr = "Fils ensorcelés",
+			it = "Ornamenti Magici",
+			pt = "Magilinha",
+			ru = "Чародейская нить",
+			ko = "마법실타래",
+			cn = "魔线",
+			tw = "法術絲線",
 		},
 	},
 	[987] = {
@@ -5712,6 +5924,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133646,
 		text = {
 			en = "Bags",
+			es = "Bolsas",
+			mx = "Bolsas",
 			ko = "가방",
 			tw = "背包",
 		},
@@ -5721,6 +5935,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133133,
 		text = {
 			en = "Hats & Hoods",
+			es = "Sombreros y capuchas",
+			mx = "Sombreros y capuchas",
 			ko = "머리",
 		},
 	},
@@ -5736,6 +5952,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132659,
 		text = {
 			en = "Robes & Tunics",
+			es = "Togas y túnicas",
+			mx = "Togas y túnicas",
 			ko = "가슴",
 		},
 	},
@@ -5744,6 +5962,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132616,
 		text = {
 			en = "Bracers",
+			es = "Brazales",
+			mx = "Brazales",
 			ko = "손목",
 		},
 	},
@@ -5752,6 +5972,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132516,
 		text = {
 			en = "Belts",
+			es = "Cintura",
+			mx = "Cintura",
 			ko = "허리",
 		},
 	},
@@ -5760,6 +5982,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132940,
 		text = {
 			en = "Gloves",
+			es = "Guantes",
+			mx = "Guantes",
 			ko = "손",
 		},
 	},
@@ -5768,6 +5992,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134586,
 		text = {
 			en = "Pants",
+			es = "Pantalones",
+			mx = "Pantalones",
 			ko = "다리",
 		},
 	},
@@ -5776,6 +6002,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132535,
 		text = {
 			en = "Boots",
+			es = "Botas",
+			mx = "Botas",
 			ko = "발",
 		},
 	},
@@ -5784,6 +6012,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133770,
 		text = {
 			en = "Cloaks",
+			es = "Capas",
+			mx = "Capas",
 			ko = "등",
 		},
 	},
@@ -5791,6 +6021,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Shirts",
 		text = {
 			en = "Shirts",
+			es = "Camisas",
+			mx = "Camisas",
 			ko = "속옷",
 		},
 	},
@@ -5799,18 +6031,24 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133236,
 		text = {
 			en = "Mounts",
+			es = "Monturas",
+			mx = "Monturas",
 		},
 	},
 	[999] = {
 		readable = "Nets",
 		text = {
 			en = "Nets",
+			es = "Redes",
+			mx = "Redes",
 		},
 	},
 	[1000] = {
 		readable = "Materials",
 		text = {
 			en = "Materials",
+			es = "Materiales",
+			mx = "Materiales",
 			ko = "재료",
 		},
 	},
@@ -5818,6 +6056,16 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Spellthreads",
 		text = {
 			en = "Spellthreads",
+			de = "Zauberfaden",
+			es = "Hilos de hechizo",
+			mx = "Hilos de hechizo",
+			fr = "Fils ensorcelés",
+			it = "Ornamenti Magici",
+			pt = "Magilinha",
+			ru = "Чародейская нить",
+			ko = "마법실타래",
+			cn = "魔线",
+			tw = "法術絲線",
 		},
 	},
 	[1002] = {
@@ -5825,6 +6073,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133646,
 		text = {
 			en = "Bags",
+			es = "Bolsas",
+			mx = "Bolsas",
 			ko = "가방",
 			tw = "背包",
 		},
@@ -5834,6 +6084,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133133,
 		text = {
 			en = "Hats & Hoods",
+			es = "Sombreros y capuchas",
+			mx = "Sombreros y capuchas",
 			ko = "머리",
 		},
 	},
@@ -5849,6 +6101,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132659,
 		text = {
 			en = "Robes & Tunics",
+			es = "Togas y túnicas",
+			mx = "Togas y túnicas",
 			ko = "가슴",
 		},
 	},
@@ -5857,6 +6111,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132616,
 		text = {
 			en = "Bracers",
+			es = "Brazales",
+			mx = "Brazales",
 			ko = "손목",
 		},
 	},
@@ -5865,6 +6121,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132516,
 		text = {
 			en = "Belts",
+			es = "Cintura",
+			mx = "Cintura",
 			ko = "허리",
 		},
 	},
@@ -5873,6 +6131,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132940,
 		text = {
 			en = "Gloves",
+			es = "Guantes",
+			mx = "Guantes",
 			ko = "손",
 		},
 	},
@@ -5881,6 +6141,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134586,
 		text = {
 			en = "Pants",
+			es = "Pantalones",
+			mx = "Pantalones",
 			ko = "다리",
 		},
 	},
@@ -5889,6 +6151,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132535,
 		text = {
 			en = "Boots",
+			es = "Botas",
+			mx = "Botas",
 			ko = "발",
 		},
 	},
@@ -5897,6 +6161,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133770,
 		text = {
 			en = "Cloaks",
+			es = "Capas",
+			mx = "Capas",
 			ko = "등",
 		},
 	},
@@ -5904,12 +6170,16 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Nets",
 		text = {
 			en = "Nets",
+			es = "Redes",
+			mx = "Redes",
 		},
 	},
 	[1013] = {
-		readable = "Food of Draenor - Header",
+		readable = "Food of Draenor",	-- Header
 		text = {
-			en = "Food of Draenor - Header",
+			en = "Food of Draenor",
+			es = "Comida de Draenor",
+			mx = "Comida de Draenor",
 		},
 	},
 	[1020] = {
@@ -5917,6 +6187,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133968,
 		text = {
 			en = "Everyday Cooking",
+			es = "Cocina diaria",
+			mx = "Cocina diaria",
 			ko = "일반 요리",
 		},
 	},
@@ -5924,6 +6196,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Delightful Drinks",
 		text = {
 			en = "Delightful Drinks",
+			es = "Bebidas deliciosas",
+			mx = "Bebidas deliciosas",
 		},
 	},
 	[1022] = {
@@ -5932,6 +6206,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		text = {
 			en = "Lures",
 			es = "Señuelos",
+			mx = "Señuelos",
 			de = "Köder",
 			fr = "Appâts",
 			it = "Esche",
@@ -5946,6 +6221,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133968,
 		text = {
 			en = "Everyday Cooking",
+			es = "Cocina diaria",
+			mx = "Cocina diaria",
 			ko = "일반 요리",
 		},
 	},
@@ -5954,6 +6231,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133968,
 		text = {
 			en = "Everyday Cooking",
+			es = "Cocina diaria",
+			mx = "Cocina diaria",
 			ko = "일반 요리",
 		},
 	},
@@ -5962,6 +6241,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133968,
 		text = {
 			en = "Everyday Cooking",
+			es = "Cocina diaria",
+			mx = "Cocina diaria",
 			ko = "일반 요리",
 		},
 	},
@@ -5970,6 +6251,14 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 237070,
 		text = {
 			en = "Inks",
+			de = "Tinte",
+			es = "Tintas",
+			mx = "Tintas",
+			fr = "Encre",
+			it = "Tinta",
+			pt = "Tinta",
+			ru = "Чернила",
+			ko = "잉크",
 		},
 	},
 	[1027] = {
@@ -5977,6 +6266,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134442,
 		text = {
 			en = "Scopes & Ammo",
+			es = "Miras y munición",
+			mx = "Miras y munición",
 			ko = "범위 및 탄약",
 		},
 	},
@@ -5984,192 +6275,452 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Zandalari Herbalism",
 		text = {
 			en = "Zandalari Herbalism",
+			de = "Kräuterkunde von Zandalar",
+			es = "Herboristería Zandalari",
+			mx = "Herboristería Zandalari",
+			fr = "Herboristerie de Zandalar",
+			it = "Erbalismo di Zandalar",
+			pt = "Herborismo de Zandalar",
+			ru = "Зандаларское травничество",
+			ko = "잔달라 약초채집",
+			cn = "赞达拉草药学",
+			tw = "贊達拉草藥學",
 		},
 	},
 	[1030] = {
 		readable = "Gathering Techniques",
 		text = {
 			en = "Gathering Techniques",
+			es = "Técnicas de recolección",
+			mx = "Técnicas de recolección",
 		},
 	},
 	[1032] = {
 		readable = "Gathering Techniques",
 		text = {
 			en = "Gathering Techniques",
+			es = "Técnicas de recolección",
+			mx = "Técnicas de recolección",
 		},
 	},
 	[1034] = {
 		readable = "Draenor Herbalism",
 		text = {
 			en = "Draenor Herbalism",
+			de = "Kräuterkunde von Draenor",
+			es = "Herboristería de Draenor",
+			mx = "Herboristería de Draenor",
+			fr = "Herboristerie de Draenor",
+			it = "Erbalismo di Draenor",
+			pt = "Herborismo de Draenor",
+			ru = "Травничество Дренора",
+			ko = "드레노어 약초채집",
+			cn = "德拉诺草药学",
+			tw = "德拉諾草藥學",
 		},
 	},
 	[1036] = {
 		readable = "Pandaria Herbalism",
 		text = {
 			en = "Pandaria Herbalism",
+			de = "Kräuterkunde von Pandaria",
+			es = "Herboristería de Pandaria",
+			mx = "Herboristería de Pandaria",
+			fr = "Herboristerie de Pandarie",
+			it = "Erbalismo di Pandaria",
+			pt = "Herborismo de Pandária",
+			ru = "Травничество Пандарии",
+			ko = "판다리아 약초채집",
+			cn = "潘达利亚草药学",
+			tw = "潘達利亞草藥學",
 		},
 	},
 	[1038] = {
 		readable = "Cataclysm Herbalism",
 		text = {
 			en = "Cataclysm Herbalism",
+			de = "Kräuterkunde des Kataklysmus",
+			es = "Herboristería de Cataclysm",
+			mx = "Herboristería de Cataclysm",
+			fr = "Herboristerie de Cataclysm",
+			it = "Erbalismo di Cataclysm",
+			pt = "Herborismo de Cataclysm",
+			ru = "Травничество времен Катаклизма",
+			ko = "대격변 약초채집",
+			cn = "大地的裂变草药学",
+			tw = "大災變草藥學",
 		},
 	},
 	[1040] = {
 		readable = "Northrend Herbalism",
 		text = {
 			en = "Northrend Herbalism",
+			de = "Kräuterkunde von Nordend",
+			es = "Herboristería de Rasganorte",
+			mx = "Herboristería de Rasganorte",
+			fr = "Herboristerie du Norfendre",
+			it = "Erbalismo di Nordania",
+			pt = "Herborismo de Nortúndria",
+			ru = "Травничество Нордскола",
+			ko = "노스렌드 약초채집",
+			cn = "诺森德草药学",
+			tw = "北裂境草藥學",
 		},
 	},
 	[1042] = {
 		readable = "Outland Herbalism",
 		text = {
 			en = "Outland Herbalism",
+			de = "Kräuterkunde der Scherbenwelt",
+			es = "Herboristería de Terrallende",
+			mx = "Herboristería de Terrallende",
+			fr = "Herboristerie de l’Outreterre",
+			it = "Erbalismo delle Terre Esterne",
+			pt = "Herborismo de Terralém",
+			ru = "Травничество Запределья",
+			ko = "아웃랜드 약초채집",
+			cn = "外域草药学",
+			tw = "外域草藥學",
 		},
 	},
 	[1044] = {
 		readable = "Herbalism",
 		text = {
 			en = "Herbalism",
+			de = "Kräuterkunde",
+			es = "Herboristería",
+			mx = "Herboristería",
+			fr = "Herboristerie",
+			it = "Erbalismo",
+			pt = "Herborismo",
+			ru = "Травничество",
+			ko = "약초채집",
+			cn = "草药学",
+			tw = "草藥學",
 		},
 	},
 	[1046] = {
 		readable = "Zandalari Skinning",
 		text = {
 			en = "Zandalari Skinning",
+			de = "Kürschnerei von Zandalar",
+			es = "Desuello Zandalari",
+			mx = "Desuello Zandalari",
+			fr = "Dépeçage de Zandalar",
+			it = "Scuoiatura di Zandalar",
+			pt = "Esfolamento de Zandalar",
+			ru = "Зандаларское снятие шкур",
+			ko = "잔달라 무두질",
+			cn = "赞达拉剥皮",
+			tw = "贊達拉剝皮",
 		},
 	},
 	[1050] = {
 		readable = "Draenor Skinning",
 		text = {
 			en = "Draenor Skinning",
+			de = "Kürschnerei von Draenor",
+			es = "Desuello de Draenor",
+			mx = "Desuello de Draenor",
+			fr = "Dépeçage de Draenor",
+			it = "Scuoiatura di Draenor",
+			pt = "Esfolamento de Draenor",
+			ru = "Снятие шкур на Дреноре",
+			ko = "드레노어 무두질",
+			cn = "德拉诺剥皮",
+			tw = "德拉諾剝皮",
 		},
 	},
 	[1052] = {
 		readable = "Pandaria Skinning",
 		text = {
 			en = "Pandaria Skinning",
+			de = "Kürschnerei von Pandaria",
+			es = "Desuello de Pandaria",
+			mx = "Desuello de Pandaria",
+			fr = "Dépeçage de Pandarie",
+			it = "Scuoiatura di Pandaria",
+			pt = "Esfolamento de Pandária",
+			ru = "Снятие шкур в Пандарии",
+			ko = "판다리아 무두질",
+			cn = "潘达利亚剥皮",
+			tw = "潘達利亞剝皮",
 		},
 	},
 	[1054] = {
 		readable = "Cataclysm Skinning",
 		text = {
 			en = "Cataclysm Skinning",
+			de = "Kürschnerei des Kataklysmus",
+			es = "Desuello de Cataclysm",
+			mx = "Desuello de Cataclysm",
+			fr = "Dépeçage de Cataclysm",
+			it = "Scuoiatura di Cataclysm",
+			pt = "Esfolamento de Cataclysm",
+			ru = "Снятие шкур времен Катаклизма",
+			ko = "대격변 무두질",
+			cn = "大地的裂变剥皮",
+			tw = "大災變剝皮",
 		},
 	},
 	[1056] = {
 		readable = "Northrend Skinning",
 		text = {
 			en = "Northrend Skinning",
+			de = "Kürschnerei von Nordend",
+			es = "Desuello de Rasganorte",
+			mx = "Desuello de Rasganorte",
+			fr = "Dépeçage du Norfendre",
+			it = "Scuoiatura di Nordania",
+			pt = "Esfolamento de Nortúndria",
+			ru = "Снятие шкур в Нордсколе",
+			ko = "노스렌드 무두질",
+			cn = "诺森德剥皮",
+			tw = "北裂境剝皮",
 		},
 	},
 	[1058] = {
 		readable = "Outland Skinning",
 		text = {
 			en = "Outland Skinning",
+			de = "Kürschnerei der Scherbenwelt",
+			es = "Desuello de Terrallende",
+			mx = "Desuello de Terrallende",
+			fr = "Dépeçage d’Outreterre",
+			it = "Scuoiatura delle Terre Esterne",
+			pt = "Esfolamento de Terralém",
+			ru = "Снятие шкур в Запределье",
+			ko = "아웃랜드 무두질",
+			cn = "外域剥皮",
+			tw = "外域剝皮",
 		},
 	},
 	[1060] = {
 		readable = "Skinning",
 		text = {
 			en = "Skinning",
+			de = "Kürschnerei",
+			es = "Desuello",
+			mx = "Desuello",
+			fr = "Dépeçage",
+			it = "Scuoiatura",
+			pt = "Esfolamento",
+			ru = "Снятие шкур",
+			ko = "무두질",
+			cn = "剥皮",
+			tw = "剝皮",
 		},
 	},
 	[1061] = {
 		readable = "Skinning Techniques",
 		text = {
 			en = "Skinning Techniques",
+			es = "Técnicas de desuello",
+			mx = "Técnicas de desuello",
 		},
 	},
 	[1062] = {
 		readable = "Skinning Techniques",
 		text = {
 			en = "Skinning Techniques",
+			es = "Técnicas de desuello",
+			mx = "Técnicas de desuello",
 		},
 	},
 	[1065] = {
 		readable = "Zandalari Mining",
 		text = {
 			en = "Zandalari Mining",
+			de = "Bergbau von Zandalar",
+			es = "Minería Zandalari",
+			mx = "Minería Zandalari",
+			fr = "Minage de Zandalar",
+			it = "Estrazione di Zandalar",
+			pt = "Mineração de Zandalar",
+			ru = "Зандаларское горное дело",
+			ko = "잔달라 채광",
+			cn = "赞达拉采矿",
+			tw = "贊達拉採礦",
 		},
 	},
 	[1068] = {
 		readable = "Draenor Mining",
 		text = {
 			en = "Draenor Mining",
+			de = "Bergbau von Draenor",
+			es = "Minería de Draenor",
+			mx = "Minería de Draenor",
+			fr = "Minage de Draenor",
+			it = "Estrazione di Draenor",
+			pt = "Mineração de Draenor",
+			ru = "Горное дело Дренора",
+			ko = "드레노어 채광",
+			cn = "德拉诺采矿",
+			tw = "德拉諾採礦",
 		},
 	},
 	[1070] = {
 		readable = "Pandaria Mining",
 		text = {
 			en = "Pandaria Mining",
+			de = "Bergbau von Pandaria",
+			es = "Minería de Pandaria",
+			mx = "Minería de Pandaria",
+			fr = "Minage de Pandarie",
+			it = "Estrazione di Pandaria",
+			pt = "Mineração de Pandária",
+			ru = "Горное дело Пандарии",
+			ko = "판다리아 채광",
+			cn = "潘达利亚采矿",
+			tw = "潘達利亞採礦",
 		},
 	},
 	[1072] = {
 		readable = "Cataclysm Mining",
 		text = {
 			en = "Cataclysm Mining",
+			de = "Bergbau des Kataklysmus",
+			es = "Minería de Cataclysm",
+			mx = "Minería de Cataclysm",
+			fr = "Minage de Cataclysm",
+			it = "Estrazione di Cataclysm",
+			pt = "Mineração de Cataclysm",
+			ru = "Горное дело времен Катаклизма",
+			ko = "대격변 채광",
+			cn = "大地的裂变采矿",
+			tw = "大災變採礦",
 		},
 	},
 	[1074] = {
 		readable = "Northrend Mining",
 		text = {
 			en = "Northrend Mining",
+			de = "Bergbau von Nordend",
+			es = "Minería de Rasganorte",
+			mx = "Minería de Rasganorte",
+			fr = "Minage du Norfendre",
+			it = "Estrazione di Nordania",
+			pt = "Mineração de Nortúndria",
+			ru = "Горное дело Нордскола",
+			ko = "노스렌드 채광",
+			cn = "诺森德采矿",
+			tw = "北裂境採礦",
 		},
 	},
 	[1076] = {
 		readable = "Outland Mining",
 		text = {
 			en = "Outland Mining",
+			de = "Bergbau der Scherbenwelt",
+			es = "Minería de Terrallende",
+			mx = "Minería de Terrallende",
+			fr = "Minage d’Outreterre",
+			it = "Estrazione delle Terre Esterne",
+			pt = "Mineração de Terralém",
+			ru = "Горное дело Запределья",
+			ko = "아웃랜드 채광",
+			cn = "外域采矿",
+			tw = "外域採礦",
 		},
 	},
 	[1078] = {
 		readable = "Mining",
 		text = {
 			en = "Mining",
+			de = "Bergbau",
+			es = "Minería",
+			mx = "Minería",
+			fr = "Minage",
+			it = "Estrazione",
+			pt = "Mineração",
+			ru = "Горное дело",
+			ko = "채광",
+			cn = "采矿",
+			tw = "採礦",
 		},
 	},
 	[1079] = {
 		readable = "Mining Techniques",
 		text = {
 			en = "Mining Techniques",
+			es = "Técnicas de minería",
+			mx = "Técnicas de minería",
 		},
 	},
 	[1080] = {
 		readable = "Mining Techniques",
 		text = {
 			en = "Mining Techniques",
+			es = "Técnicas de minería",
+			mx = "Técnicas de minería",
 		},
 	},
 	[1081] = {
 		readable = "Smelting",
 		text = {
 			en = "Smelting",
+			de = "Verhüttung",
+			es = "Fundiendo",
+			mx = "Fundición",
+			fr = "Fondre",
+			pt = "Fundição",
+			ru = "Выплавка металлов",
+			ko = "제련술",
+			cn = "熔炼",
+			tw = "熔煉",
 		},
 	},
 	[1082] = {
 		readable = "Smelting",
 		text = {
 			en = "Smelting",
+			de = "Verhüttung",
+			es = "Fundiendo",
+			mx = "Fundición",
+			fr = "Fondre",
+			pt = "Fundição",
+			ru = "Выплавка металлов",
+			ko = "제련술",
+			cn = "熔炼",
+			tw = "熔煉",
 		},
 	},
 	[1083] = {
 		readable = "Smelting",
 		text = {
 			en = "Smelting",
+			de = "Verhüttung",
+			es = "Fundiendo",
+			mx = "Fundición",
+			fr = "Fondre",
+			pt = "Fundição",
+			ru = "Выплавка металлов",
+			ko = "제련술",
+			cn = "熔炼",
+			tw = "熔煉",
 		},
 	},
 	[1084] = {
 		readable = "Smelting",
 		text = {
 			en = "Smelting",
+			de = "Verhüttung",
+			es = "Fundiendo",
+			mx = "Fundición",
+			fr = "Fondre",
+			pt = "Fundição",
+			ru = "Выплавка металлов",
+			ko = "제련술",
+			cn = "熔炼",
+			tw = "熔煉",
 		},
 	},
 	[1085] = {
 		readable = "Mount Equipment",
 		text = {
 			en = "Mount Equipment",
+			es = "Equipamiento de montura",
+			mx = "Equipamiento de montura",
 		},
 	},
 	[1086] = {
@@ -6177,18 +6728,24 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133690,
 		text = {
 			en = "Bandages",
+			es = "Vendas",
+			mx = "Vendas",
 		},
 	},
 	[1087] = {
 		readable = "Cures of Draenor",
 		text = {
 			en = "Cures of Draenor",
+			es = "Curas de Draenor",
+			mx = "Curas de Draenor",
 		},
 	},
 	[1088] = {
 		readable = "Cures of the Broken Isles",
 		text = {
 			en = "Cures of the Broken Isles",
+			es = "Curas de las Islas abruptas",
+			mx = "Curas de las Islas quebradas",
 		},
 	},
 	[1089] = {
@@ -6196,6 +6753,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133690,
 		text = {
 			en = "Bandages",
+			es = "Vendas",
+			mx = "Vendas",
 		},
 	},
 	[1090] = {
@@ -6203,6 +6762,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133690,
 		text = {
 			en = "Bandages",
+			es = "Vendas",
+			mx = "Vendas",
 		},
 	},
 	[1091] = {
@@ -6210,6 +6771,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133690,
 		text = {
 			en = "Bandages",
+			es = "Vendas",
+			mx = "Vendas",
 		},
 	},
 	[1092] = {
@@ -6217,6 +6780,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133690,
 		text = {
 			en = "Bandages",
+			es = "Vendas",
+			mx = "Vendas",
 		},
 	},
 	[1093] = {
@@ -6224,12 +6789,16 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133690,
 		text = {
 			en = "Bandages",
+			es = "Vendas",
+			mx = "Vendas",
 		},
 	},
 	[1096] = {
 		readable = "Belt Attachments",
 		text = {
 			en = "Belt Attachments",
+			es = "Hebilla",
+			mx = "Hebilla",
 			ko = "허리 마법부여",
 		},
 	},
@@ -6238,6 +6807,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 135468,
 		text = {
 			en = "Wands",
+			es = "Varitas",
+			mx = "Varitas",
 			ko = "마법봉",
 		},
 	},
@@ -6246,6 +6817,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132616,
 		text = {
 			en = "Wrist Enchantments",
+			es = "Encantamientos de muñecas",
+			mx = "Encantamientos de muñecas",
 			ko = "손목 마법부여",
 		},
 	},
@@ -6253,48 +6826,128 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Fishing",
 		text = {
 			en = "Fishing",
+			de = "Angeln",
+			es = "Pesca",
+			mx = "Pesca",
+			fr = "Pêche",
+			it = "Pesca",
+			pt = "Pesca",
+			ru = "Рыбная ловля",
+			ko = "낚시",
+			cn = "钓鱼",
+			tw = "釣魚",
 		},
 	},
 	[1102] = {
 		readable = "Outland Fishing",
 		text = {
 			en = "Outland Fishing",
+			de = "Angeln der Scherbenwelt",
+			es = "Pesca de Terrallende",
+			mx = "Pesca de Terrallende",
+			fr = "Pêche de l’Outreterre",
+			it = "Pesca delle Terre Esterne",
+			pt = "Pesca de Terralém",
+			ru = "Рыбная ловля в Запределье",
+			ko = "아웃랜드 낚시",
+			cn = "外域钓鱼",
+			tw = "外域釣魚",
 		},
 	},
 	[1104] = {
 		readable = "Northrend Fishing",
 		text = {
 			en = "Northrend Fishing",
+			de = "Angeln von Nordend",
+			es = "Pesca de Rasganorte",
+			mx = "Pesca de Rasganorte",
+			fr = "Pêche du Norfendre",
+			it = "Pesca di Nordania",
+			pt = "Pesca de Nortúndria",
+			ru = "Рыбная ловля Нордскола",
+			ko = "노스렌드 낚시",
+			cn = "诺森德钓鱼",
+			tw = "北裂境釣魚",
 		},
 	},
 	[1106] = {
 		readable = "Cataclysm Fishing",
 		text = {
 			en = "Cataclysm Fishing",
+			de = "Angeln des Kataklysmus",
+			es = "Pesca de Cataclysm",
+			mx = "Pesca de Cataclysm",
+			fr = "Pêche de Cataclysm",
+			it = "Pesca di Cataclysm",
+			pt = "Pesca de Cataclysm",
+			ru = "Рыбная ловля времен Катаклизма",
+			ko = "대격변 낚시",
+			cn = "大地的裂变钓鱼",
+			tw = "大災變釣魚"
 		},
 	},
 	[1108] = {
 		readable = "Pandaria Fishing",
 		text = {
 			en = "Pandaria Fishing",
+			de = "Angeln von Pandaria",
+			es = "Pesca de Pandaria",
+			mx = "Pesca de Pandaria",
+			fr = "Pêche de Pandarie",
+			it = "Pesca di Pandaria",
+			pt = "Pesca de Pandária",
+			ru = "Пандарийская рыбная ловля",
+			ko = "판다리아 낚시",
+			cn = "潘达利亚钓鱼",
+			tw = "潘達利亞釣魚",
 		},
 	},
 	[1110] = {
 		readable = "Draenor Fishing",
 		text = {
 			en = "Draenor Fishing",
+			de = "Angeln von Draenor",
+			es = "Pesca de Draenor",
+			mx = "Pesca de Draenor",
+			fr = "Pêche de Draenor",
+			it = "Pesca di Draenor",
+			pt = "Pesca de Draenor",
+			ru = "Рыбная ловля Дренора",
+			ko = "드레노어 낚시",
+			cn = "德拉诺钓鱼",
+			tw = "德拉諾釣魚",
 		},
 	},
 	[1112] = {
 		readable = "Legion Fishing",
 		text = {
 			en = "Legion Fishing",
+			de = "Angeln der Verheerten Inseln",
+			es = "Pesca de Legion",
+			mx = "Pesca de Legion",
+			fr = "Pêche de la Légion",
+			it = "Pesca di Legion",
+			pt = "Pesca da Legião",
+			ru = "Рыбная ловля Legion",
+			ko = "군단 낚시",
+			cn = "军团钓鱼",
+			tw = "軍團釣魚",
 		},
 	},
 	[1114] = {
 		readable = "Kul Tiran Fishing",
 		text = {
 			en = "Kul Tiran Fishing",
+			de = "Angeln von Kul Tiras",
+			es = "Pesca de Kul Tiras",
+			mx = "Pesca kultirana",
+			fr = "Pêche de Kul Tiras",
+			it = "Pesca di Kul Tiras",
+			pt = "Pesca de Kul Tiraz",
+			ru = "Кул-тирасская рыбная ловля",
+			ko = "쿨 티란 낚시",
+			cn = "库尔提拉斯钓鱼",
+			tw = "庫爾提拉斯釣魚",
 		},
 	},
 	[1115] = {
@@ -6302,6 +6955,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133023,
 		text = {
 			en = "Cloth Goggles",
+			es = "Gafas de tela",
+			mx = "Gafas de tela",
 			ko = "천 고글",
 		},
 	},
@@ -6309,174 +6964,256 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Embroidery",
 		text = {
 			en = "Embroidery",
+			de = "Stickerei",
+			es = "Bordados",
+			mx = "Bordado",
+			fr = "Broderie",
+			it = "Ricami",
+			pt = "Bordados",
+			ru = "Вышивка",
+			ko = "자수",
+			cn = "刺绣",
+			tw = "刺繡",
 		},
 	},
 	[1118] = {
 		readable = "Zandalari Cuisine",
 		text = {
 			en = "Zandalari Cuisine",
+			es = "Cocina de Zandalar",
+			mx = "Cocina Zandalari",
 		},
 	},
 	[1119] = {
 		readable = "Desserts",
 		text = {
 			en = "Desserts",
+			es = "Postres",
+			mx = "Postres",
 		},
 	},
 	[1120] = {
 		readable = "Light Meals",
 		text = {
 			en = "Light Meals",
+			mx = "Comidas livianas",
 		},
 	},
 	[1121] = {
 		readable = "Large Meals",
 		text = {
 			en = "Large Meals",
+			mx = "Comidas grandes",
 		},
 	},
 	[1122] = {
 		readable = "Feasts",
 		text = {
 			en = "Feasts",
+			es = "Festines",
+			mx = "Festines",
 		},
 	},
 	[1123] = {
 		readable = "Cures & Tonics",
 		text = {
 			en = "Cures & Tonics",
+			es = "Curas y tónicos",
+			mx = "Curas y tónicos",
 		},
 	},
 	[1124] = {
 		readable = "Anti-Venoms",
 		text = {
 			en = "Anti-Venoms",
+			es = "Contravenenos",
+			mx = "Contravenenos",
 		},
 	},
 	[1126] = {
 		readable = "Glyphs",
 		text = {
 			en = "Glyphs",
+			de = "Glyphe",
+			es = "Glifos",
+			mx = "Glifos",
+			fr = "Glyphe",
+			it = "Glifo",
+			pt = "Glifo",
+			ru = "Символ",
+			ko = "문양",
 		},
 	},
 	[1127] = {
 		readable = "Glyphs",
 		text = {
 			en = "Glyphs",
+			de = "Glyphe",
+			es = "Glifos",
+			mx = "Glifos",
+			fr = "Glyphe",
+			it = "Glifo",
+			pt = "Glifo",
+			ru = "Символ",
+			ko = "문양",
 		},
 	},
 	[1130] = {
 		readable = "Glyphs",
 		text = {
 			en = "Glyphs",
+			de = "Glyphe",
+			es = "Glifos",
+			mx = "Glifos",
+			fr = "Glyphe",
+			it = "Glifo",
+			pt = "Glifo",
+			ru = "Символ",
+			ko = "문양",
 		},
 	},
 	[1228] = {
 		readable = "Cauldrons",
 		text = {
 			en = "Cauldrons",
+			es = "Calderos",
+			mx = "Calderos",
 		},
 	},
 	[1229] = {
 		readable = "Follower Equipment",
 		text = {
 			en = "Follower Equipment",
+			es = "Equipo de seguidor",
+			mx = "Equipo de seguidor",
 		},
 	},
 	[1230] = {
 		readable = "Follower Equipment",
 		text = {
 			en = "Follower Equipment",
+			es = "Equipo de seguidor",
+			mx = "Equipo de seguidor",
 		},
 	},
 	[1231] = {
 		readable = "Follower Equipment",
 		text = {
 			en = "Follower Equipment",
+			es = "Equipo de seguidor",
+			mx = "Equipo de seguidor",
 		},
 	},
 	[1232] = {
 		readable = "Follower Equipment",
 		text = {
 			en = "Follower Equipment",
+			es = "Equipo de seguidor",
+			mx = "Equipo de seguidor",
 		},
 	},
 	[1233] = {
 		readable = "Follower Equipment",
 		text = {
 			en = "Follower Equipment",
+			es = "Equipo de seguidor",
+			mx = "Equipo de seguidor",
 		},
 	},
 	[1234] = {
 		readable = "Follower Equipment",
 		text = {
 			en = "Follower Equipment",
+			es = "Equipo de seguidor",
+			mx = "Equipo de seguidor",
 		},
 	},
 	[1235] = {
 		readable = "Follower Equipment",
 		text = {
 			en = "Follower Equipment",
+			es = "Equipo de seguidor",
+			mx = "Equipo de seguidor",
 		},
 	},
 	[1236] = {
 		readable = "Follower Equipment",
 		text = {
 			en = "Follower Equipment",
+			es = "Equipo de seguidor",
+			mx = "Equipo de seguidor",
 		},
 	},
 	[1237] = {
 		readable = "Pets",
 		text = {
 			en = "Pets",
+			es = "Mascotas",
+			mx = "Mascotas",
 		},
 	},
 	[1238] = {
 		readable = "Conversions",
 		text = {
 			en = "Conversions",
+			es = "Conversiones",
+			mx = "Conversiones",
 		},
 	},
 	[1239] = {
 		readable = "Conversions",
 		text = {
 			en = "Conversions",
+			es = "Conversiones",
+			mx = "Conversiones",
 		},
 	},
 	[1240] = {
 		readable = "Conversions",
 		text = {
 			en = "Conversions",
+			es = "Conversiones",
+			mx = "Conversiones",
 		},
 	},
 	[1241] = {
 		readable = "Conversions",
 		text = {
 			en = "Conversions",
+			es = "Conversiones",
+			mx = "Conversiones",
 		},
 	},
 	[1242] = {
 		readable = "Conversions",
 		text = {
 			en = "Conversions",
+			es = "Conversiones",
+			mx = "Conversiones",
 		},
 	},
 	[1243] = {
 		readable = "Conversions",
 		text = {
 			en = "Conversions",
+			es = "Conversiones",
+			mx = "Conversiones",
 		},
 	},
 	[1244] = {
 		readable = "Conversions",
 		text = {
 			en = "Conversions",
+			es = "Conversiones",
+			mx = "Conversiones",
 		},
 	},
 	[1245] = {
 		readable = "Conversions",
 		text = {
 			en = "Conversions",
+			es = "Conversiones",
+			mx = "Conversiones",
 		},
 	},
 	[1246] = {
@@ -6484,6 +7221,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133023,
 		text = {
 			en = "Leather Goggles",
+			es = "Gafas de cuero",
+			mx = "Gafas de cuero",
 			ko = "가죽 고글",
 		},
 	},
@@ -6492,6 +7231,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133023,
 		text = {
 			en = "Mail Goggles",
+			es = "Gafas de malla",
+			mx = "Gafas de malla",
 			ko = "메일 고글",
 		},
 	},
@@ -6500,6 +7241,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133023,
 		text = {
 			en = "Plate Goggles",
+			es = "Gafas de placa",
+			mx = "Gafas de placa",
 			ko = "플레이트 고글",
 		},
 	},
@@ -6507,6 +7250,16 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Tool of the Trade",
 		text = {
 			en = "Tool of the Trade",
+			de = "Werkzeuge des Handwerks",
+			es = "Herramientas de trabajo",
+			mx = "Herramientas del oficio",
+			fr = "Outils de travail",
+			it = "Ferri del Mestiere",
+			pt = "Truques do ofício",
+			ru = "Профессиональные инструменты",
+			ko = "전문 기술 도구",
+			cn = "商业工具",
+			tw = "工具",
 		},
 	},
 	[1250] = {
@@ -6514,18 +7267,32 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134331,
 		text = {
 			en = "Training",
+			es = "Entrenamiento",
+			mx = "Entrenamiento",
 		},
 	},
 	[1251] = {
 		readable = "Disenchants",
 		text = {
 			en = "Disenchants",
+			es = "Desencantares",
+			mx = "Desencantares",
 		},
 	},
 	[1254] = {
 		readable = "Tool of the Trade",
 		text = {
 			en = "Tool of the Trade",
+			de = "Werkzeuge des Handwerks",
+			es = "Herramientas de trabajo",
+			mx = "Herramientas del oficio",
+			fr = "Outils de travail",
+			it = "Ferri del Mestiere",
+			pt = "Truques do ofício",
+			ru = "Профессиональные инструменты",
+			ko = "전문 기술 도구",
+			cn = "商业工具",
+			tw = "工具",
 		},
 	},
 	[1255] = {
@@ -6533,6 +7300,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134331,
 		text = {
 			en = "Training",
+			es = "Entrenamiento",
+			mx = "Entrenamiento",
 		},
 	},
 	[1256] = {
@@ -6540,6 +7309,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133711,
 		text = {
 			en = "Explosives",
+			es = "Explosivos",
+			mx = "Explosivos",
 			ko = "폭발물",
 		},
 	},
@@ -6547,12 +7318,24 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Junkyard Tinkering",
 		text = {
 			en = "Junkyard Tinkering",
+			de = "Schrottplatztüfteleien",
+			es = "Manitas de desguace",
+			mx = "Arte de la chatarrería",
+			fr = "Bricolage de la casse",
+			it = "Meccanistica di Discarica",
+			pt = "Sucatrônica",
+			ru = "Кустарная механика",
+			ko = "고철장 땜질",
+			cn = "垃圾场匠技",
+			tw = "廢料場工程",
 		},
 	},
 	[1259] = {
 		readable = "Components & Tools",
 		text = {
 			en = "Components & Tools",
+			es = "Componentes y herramientas",
+			mx = "Componentes y herramientas",
 			ko = "장비",
 		},
 	},
@@ -6560,6 +7343,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Other",
 		text = {
 			en = "Other",
+			es = "Otro",
+			mx = "Otro",
 			ko = "다른",
 		},
 	},
@@ -6567,78 +7352,136 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Tool of the Trade",
 		text = {
 			en = "Tool of the Trade",
+			de = "Werkzeuge des Handwerks",
+			es = "Herramientas de trabajo",
+			mx = "Herramientas del oficio",
+			fr = "Outils de travail",
+			it = "Ferri del Mestiere",
+			pt = "Truques do ofício",
+			ru = "Профессиональные инструменты",
+			ko = "전문 기술 도구",
+			cn = "商业工具",
+			tw = "工具",
 		},
 	},
 	[1266] = {
 		readable = "Tool of the Trade",
 		text = {
 			en = "Tool of the Trade",
+			de = "Werkzeuge des Handwerks",
+			es = "Herramientas de trabajo",
+			mx = "Herramientas del oficio",
+			fr = "Outils de travail",
+			it = "Ferri del Mestiere",
+			pt = "Truques do ofício",
+			ru = "Профессиональные инструменты",
+			ko = "전문 기술 도구",
+			cn = "商业工具",
+			tw = "工具",
 		},
 	},
 	[1267] = {
 		readable = "Tool of the Trade",
 		text = {
 			en = "Tool of the Trade",
+			de = "Werkzeuge des Handwerks",
+			es = "Herramientas de trabajo",
+			mx = "Herramientas del oficio",
+			fr = "Outils de travail",
+			it = "Ferri del Mestiere",
+			pt = "Truques do ofício",
+			ru = "Профессиональные инструменты",
+			ko = "전문 기술 도구",
+			cn = "商业工具",
+			tw = "工具",
 		},
 	},
 	[1276] = {
 		readable = "Blood Contracts",
 		text = {
 			en = "Blood Contracts",
+			es = "Contratos de sangre",
+			mx = "Contratos de sangre",
 		},
 	},
 	[1278] = {
 		readable = "Tool of the Trade",
 		text = {
 			en = "Tool of the Trade",
+			de = "Werkzeuge des Handwerks",
+			es = "Herramientas de trabajo",
+			mx = "Herramientas del oficio",
+			fr = "Outils de travail",
+			it = "Ferri del Mestiere",
+			pt = "Truques do ofício",
+			ru = "Профессиональные инструменты",
+			ko = "전문 기술 도구",
+			cn = "商业工具",
+			tw = "工具",
 		},
 	},
 	[1280] = {
 		readable = "Gadgets",
 		text = {
 			en = "Gadgets",
+			es = "Artilugios",
+			mx = "Artilugios",
 		},
 	},
 	[1281] = {
 		readable = "Resources",
 		text = {
 			en = "Resources",
+			es = "Recursos",
+			mx = "Recursos",
 		},
 	},
 	[1282] = {
 		readable = "***[UNAUTHORIZED ACCESS]***",
 		text = {
 			en = "***[UNAUTHORIZED ACCESS]***",
+			es = "***[ACCESO NO AUTORIZADO]***",
+			mx = "***[ACCESO NO AUTORIZADO]***",
 		},
 	},
 	[1283] = {
 		readable = "Equipment",
 		text = {
 			en = "Equipment",
+			es = "Equipo",
+			mx = "Equipo",
 		},
 	},
 	[1285] = {
 		readable = "Transportation",
 		text = {
 			en = "Transportation",
+			es = "Transporte",
+			mx = "Transporte",
 		},
 	},
 	[1288] = {
 		readable = "Mount Equipment",
 		text = {
 			en = "Mount Equipment",
+			es = "Equipamiento de montura",
+			mx = "Equipamiento de montura",
 		},
 	},
 	[1289] = {
 		readable = "Mounts Equipment",
 		text = {
 			en = "Mounts Equipment",
+			es = "Equipamiento de montura",
+			mx = "Equipamiento de montura",
 		},
 	},
 	[1290] = {
 		readable = "Mount Equipment",
 		text = {
 			en = "Mount Equipment",
+			es = "Equipamiento de montura",
+			mx = "Equipamiento de montura",
 		},
 	},
 	[1291] = {
@@ -6651,18 +7494,32 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Shadowlands Alchemy",
 		text = {
 			en = "Shadowlands Alchemy",
+			de = "Alchemie der Schattenlande",
+			es = "Alquimia de Shadowlands",
+			mx = "Alquimia de Shadowlands",
+			fr = "Alchimie d’Ombreterre",
+			it = "Alchimia di Shadowlands",
+			pt = "Alquimia de Shadowlands",
+			ru = "Алхимия Темных Земель",
+			ko = "어둠땅 연금술",
+			cn = "暗影界炼金术",
+			tw = "暗影之境鍊金術",
 		},
 	},
 	[1295] = {
 		readable = "Cauldrons",
 		text = {
 			en = "Cauldrons",
+			es = "Calderos",
+			mx = "Calderos",
 		},
 	},
 	[1296] = {
 		readable = "Combat Potions",
 		text = {
 			en = "Combat Potions",
+			es = "Pociones de combate",
+			mx = "Pociones de combate",
 			ko = "전투 물약",
 		},
 	},
@@ -6670,6 +7527,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Oils and Extracts",
 		text = {
 			en = "Oils and Extracts",
+			es = "Aceites y extractos",
+			mx = "Aceites y extractos",
 		},
 	},
 	[1298] = {
@@ -6677,6 +7536,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134821,
 		text = {
 			en = "Flasks",
+			es = "Frascos",
+			mx = "Frascos",
 			ko = "영약",
 		},
 	},
@@ -6684,6 +7545,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Optional Reagents",
 		text = {
 			en = "Optional Reagents",
+			es = "Componentes opcionales",
+			mx = "Componentes opcionales",
 			ko = "선택적 시약",
 		},
 	},
@@ -6692,7 +7555,16 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 135830,
 		text = {
 			en = "Transmutation",
+			de = "Transmutation",
+			es = "Transmutación",
+			mx = "Transmutación",
+			fr = "Transmutation",
+			it = "Trasmutazione",
+			pt = "Transmutação",
+			ru = "Трансмутация",
 			ko = "변환식",
+			cn = "转化",
+			tw = "轉化",
 		},
 	},
 	[1301] = {
@@ -6700,6 +7572,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 135443,
 		text = {
 			en = "Trinkets",
+			es = "Abalorios",
+			mx = "Abalorios",
 			ko = "장비",
 		},
 	},
@@ -6707,6 +7581,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Utility Potions",
 		text = {
 			en = "Utility Potions",
+			es = "Pociones de utilidad",
+			mx = "Pociones de utilidad",
 			ko = "유틸리티 물약",
 		},
 	},
@@ -6714,60 +7590,80 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Anti-Venoms",
 		text = {
 			en = "Anti-Venoms",
+			es = "Contravenenos",
+			mx = "Contravenenos",
 		},
 	},
 	[1304] = {
 		readable = "Focus",
 		text = {
 			en = "Focus",
+			es = "Enfoque",
+			mx = "Enfoque",
 		},
 	},
 	[1305] = {
 		readable = "Focus",
 		text = {
 			en = "Focus",
+			es = "Enfoque",
+			mx = "Enfoque",
 		},
 	},
 	[1306] = {
 		readable = "Focus",
 		text = {
 			en = "Focus",
+			es = "Enfoque",
+			mx = "Enfoque",
 		},
 	},
 	[1307] = {
 		readable = "Focus",
 		text = {
 			en = "Focus",
+			es = "Enfoque",
+			mx = "Enfoque",
 		},
 	},
 	[1308] = {
 		readable = "Focus",
 		text = {
 			en = "Focus",
+			es = "Enfoque",
+			mx = "Enfoque",
 		},
 	},
 	[1309] = {
 		readable = "Focus",
 		text = {
 			en = "Focus",
+			es = "Enfoque",
+			mx = "Enfoque",
 		},
 	},
 	[1311] = {
 		readable = "Shadowlands Plans",
 		text = {
 			en = "Shadowlands Plans",
+			es = "Planos de Shadowlands",
+			mx = "Planos de Shadowlands",
 		},
 	},
 	[1312] = {
 		readable = "Armor",
 		text = {
 			en = "Armor",
+			es = "Armadura",
+			mx = "Armadura",
 		},
 	},
 	[1313] = {
 		readable = "Other",
 		text = {
 			en = "Other",
+			es = "Otro",
+			mx = "Otro",
 			ko = "다른",
 		},
 	},
@@ -6775,6 +7671,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Specialized Armor",
 		text = {
 			en = "Specialized Armor",
+			es = "Armadura especializada",
+			mx = "Armadura especializada",
 		},
 	},
 	[1315] = {
@@ -6788,12 +7686,16 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Weapons Mods",
 		text = {
 			en = "Weapons Mods",
+			es = "Modificadores de armas",
+			mx = "Modificadores de armas",
 		},
 	},
 	[1317] = {
 		readable = "Reagents",
 		text = {
 			en = "Reagents",
+			es = "Componentes",
+			mx = "Componentes",
 			ko = "재료",
 		},
 	},
@@ -6801,6 +7703,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Optional Reagents",
 		text = {
 			en = "Optional Reagents",
+			es = "Componentes opcionales",
+			mx = "Componentes opcionales",
 			ko = "선택적 시약",
 		},
 	},
@@ -6808,42 +7712,53 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Shadowlands Cuisine",
 		text = {
 			en = "Shadowlands Cuisine",
+			es = "Cocina de Shadowlands",
+			mx = "Cocina de Shadowlands",
 		},
 	},
 	[1324] = {
 		readable = "Light Meals",
 		text = {
 			en = "Light Meals",
+			mx = "Comidas livianas",
 		},
 	},
 	[1325] = {
 		readable = "Large Meals",
 		text = {
 			en = "Large Meals",
+			mx = "Comidas completas",
 		},
 	},
 	[1326] = {
 		readable = "Feasts",
 		text = {
 			en = "Feasts",
+			es = "Festines",
+			mx = "Festines",
 		},
 	},
 	[1327] = {
 		readable = "Soul Food",
 		text = {
 			en = "Soul Food",
+			mx = "Cocina para el alma",
 		},
 	},
 	[1334] = {
 		readable = "Shadowlands Patterns",
 		text = {
 			en = "Shadowlands Patterns",
+			es = "Patrones de Shadowlands",
+			mx = "Patrones de Shadowlands",
 		},
 	},
 	[1335] = {
 		readable = "Other",
 		text = {
 			en = "Other",
+			es = "Otro",
+			mx = "Otro",
 			ko = "다른",
 		},
 	},
@@ -6851,6 +7766,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Leather Armor",
 		text = {
 			en = "Leather Armor",
+			es = "Armadura de cuero",
+			mx = "Armadura de cuero",
 		},
 	},
 	[1337] = {
@@ -6864,6 +7781,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Materials",
 		text = {
 			en = "Materials",
+			es = "Materiales",
+			mx = "Materiales",
 			ko = "재료",
 		},
 	},
@@ -6871,12 +7790,24 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Mail Armor",
 		text = {
 			en = "Mail Armor",
+			es = "Armadura de malla",
+			mx = "Armadura de malla",
 		},
 	},
 	[1364] = {
 		readable = "Shadowlands Enchanting",
 		text = {
 			en = "Shadowlands Enchanting",
+			de = "Verzauberkunst der Schattenlande",
+			es = "Encantamiento de Shadowlands",
+			mx = "Encantamiento de Shadowlands",
+			fr = "Enchantement d’Ombreterre",
+			it = "Incantamento di Shadowlands",
+			pt = "Encantamento de Shadowlands",
+			ru = "Наложение чар Темных Земель",
+			ko = "어둠땅 마법부여",
+			cn = "暗影界附魔",
+			tw = "暗影之境附魔",
 		},
 	},
 	[1365] = {
@@ -6884,6 +7815,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132535,
 		text = {
 			en = "Boot Enchantments",
+			es = "Encantamientos de botas",
+			mx = "Encantamientos de botas",
 			ko = "장화 마법부여",
 		},
 	},
@@ -6892,6 +7825,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132624,
 		text = {
 			en = "Chest Enchantments",
+			es = "Encantamientos de pecho",
+			mx = "Encantamientos de pecho",
 			ko = "가슴 마법부여",
 		},
 	},
@@ -6900,6 +7835,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133770,
 		text = {
 			en = "Cloak Enchantments",
+			es = "Encantamientos de capa",
+			mx = "Encantamientos de capa",
 			ko = "망토 마법부여",
 		},
 	},
@@ -6908,6 +7845,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132938,
 		text = {
 			en = "Glove Enchantments",
+			es = "Encantamientos de guantes",
+			mx = "Encantamientos de guantes",
 			ko = "장갑 마법부여",
 		},
 	},
@@ -6915,6 +7854,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Optional Reagents",
 		text = {
 			en = "Optional Reagents",
+			es = "Componentes opcionales",
+			mx = "Componentes opcionales",
 			ko = "선택적 시약",
 		},
 	},
@@ -6923,6 +7864,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 132616,
 		text = {
 			en = "Bracer Enchantments",
+			es = "Encantamientos de brazales",
+			mx = "Encantamientos de brazales",
 			ko = "손목 마법부여",
 		},
 	},
@@ -6930,6 +7873,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Reagents",
 		text = {
 			en = "Reagents",
+			es = "Componentes",
+			mx = "Componentes",
 			ko = "재료",
 		},
 	},
@@ -6938,6 +7883,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133397,
 		text = {
 			en = "Ring Enchantments",
+			es = "Encantamientos de anillo",
+			mx = "Encantamientos de anillo",
 			ko = "손가락 마법부여",
 		},
 	},
@@ -6945,6 +7892,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Shatters",
 		text = {
 			en = "Shatters",
+			es = "Romper",
+			mx = "Romper",
 		},
 	},
 	[1374] = {
@@ -6952,6 +7901,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 135468,
 		text = {
 			en = "Wands",
+			es = "Varitas",
+			mx = "Varitas",
 			ko = "마법봉",
 		},
 	},
@@ -6960,6 +7911,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 135792,
 		text = {
 			en = "Weapon Enchantments",
+			es = "Encantamientos de arma",
+			mx = "Encantamientos de arma",
 			ko = "무기 마법부여",
 		},
 	},
@@ -6967,12 +7920,24 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Shadowlands Engineering",
 		text = {
 			en = "Shadowlands Engineering",
+			de = "Ingenieurskunst der Schattenlande",
+			es = "Ingeniería de Shadowlands",
+			mx = "Ingeniería de Shadowlands",
+			fr = "Ingénierie d’Ombreterre",
+			it = "Ingegneria di Shadowlands",
+			pt = "Engenharia de Shadowlands",
+			ru = "Инженерное дело Темных Земель",
+			ko = "어둠땅 기계공학",
+			cn = "暗影界工程学",
+			tw = "暗影之境工程學",
 		},
 	},
 	[1382] = {
 		readable = "Belt Attachments",
 		text = {
 			en = "Belt Attachments",
+			es = "Hebilla",
+			mx = "Hebilla",
 			ko = "허리 마법부여",
 		},
 	},
@@ -6980,12 +7945,16 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Bombs",
 		text = {
 			en = "Bombs",
+			es = "Bombas",
+			mx = "Bombas",
 		},
 	},
 	[1384] = {
 		readable = "Devices",
 		text = {
 			en = "Devices",
+			es = "Dispositivos",
+			mx = "Dispositivos",
 			ko = "장치",
 		},
 	},
@@ -6994,6 +7963,13 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133023,
 		text = {
 			en = "Goggles",
+			de = "Schutzbrille",
+			es = "Gafas",
+			mx = "Lentes",
+			fr = "Lunettes",
+			it = "Visori",
+			pt = "Tecnóculos",
+			ru = "очки",
 			ko = "고글",
 		},
 	},
@@ -7001,6 +7977,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Optional Reagents",
 		text = {
 			en = "Optional Reagents",
+			es = "Componentes opcionales",
+			mx = "Componentes opcionales",
 			ko = "선택적 시약",
 		},
 	},
@@ -7008,6 +7986,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Parts",
 		text = {
 			en = "Parts",
+			es = "Partes",
+			mx = "Partes",
 			ko = "부품",
 		},
 	},
@@ -7016,6 +7996,11 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134442,
 		text = {
 			en = "Scopes",
+			es = "Miras",
+			mx = "Miras",
+			fr = "Lunette",
+			it = "Mirino",
+			ru = "Прицел",
 			ko = "조준경",
 		},
 	},
@@ -7030,18 +8015,24 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Shadowlands Patterns",
 		text = {
 			en = "Shadowlands Patterns",
+			es = "Patrones de Shadowlands",
+			mx = "Patrones de Shadowlands",
 		},
 	},
 	[1396] = {
 		readable = "Armor",
 		text = {
 			en = "Armor",
+			es = "Armadura",
+			mx = "Armadura",
 		},
 	},
 	[1401] = {
 		readable = "Optional Reagents",
 		text = {
 			en = "Optional Reagents",
+			es = "Componentes opcionales",
+			mx = "Componentes opcionales",
 			ko = "선택적 시약",
 		},
 	},
@@ -7050,18 +8041,32 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133690,
 		text = {
 			en = "Bandages",
+			es = "Vendas",
+			mx = "Vendas",
 		},
 	},
 	[1406] = {
 		readable = "Shadowlands Inscription",
 		text = {
 			en = "Shadowlands Inscription",
+			de = "Inschriftenkunde der Schattenlande",
+			es = "Inscripción de Shadowlands",
+			mx = "Inscripción de Shadowlands",
+			fr = "Calligraphie d’Ombreterre",
+			it = "Runografia di Shadowlands",
+			pt = "Escrivania de Shadowlands",
+			ru = "Начертание Темных Земель",
+			ko = "어둠땅 주문각인",
+			cn = "暗影界铭文",
+			tw = "暗影之境銘文學",
 		},
 	},
 	[1407] = {
 		readable = "Off-Hands",
 		text = {
 			en = "Off-Hands",
+			es = "Mano izquierda",
+			mx = "Mano izquierda",
 		},
 	},
 	[1408] = {
@@ -7069,6 +8074,14 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 237070,
 		text = {
 			en = "Ink",
+			de = "Tinte",
+			es = "Tinta",
+			mx = "Tinta",
+			fr = "Encre",
+			it = "Tinta",
+			pt = "Tinta",
+			ru = "Чернила",
+			ko = "잉크",
 		},
 	},
 	[1409] = {
@@ -7076,30 +8089,40 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134939,
 		text = {
 			en = "Books & Scrolls",
+			es = "Libros y pergaminos",
+			mx = "Libros y pergaminos",
 		},
 	},
 	[1410] = {
 		readable = "Contracts",
 		text = {
 			en = "Contracts",
+			es = "Contratos",
+			mx = "Contratos",
 		},
 	},
 	[1411] = {
 		readable = "Cards",
 		text = {
 			en = "Cards",
+			es = "Cartas",
+			mx = "Cartas",
 		},
 	},
 	[1412] = {
 		readable = "Mass Milling",
 		text = {
 			en = "Mass Milling",
+			es = "Moler a granel",
+			mx = "Molido en masa",
 		},
 	},
 	[1415] = {
 		readable = "Staves",
 		text = {
 			en = "Staves",
+			es = "Bastones",
+			mx = "Bastones",
 		},
 	},
 	[1416] = {
@@ -7107,30 +8130,47 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 1392953,
 		text = {
 			en = "Vantus Runes",
+			de = "Vantusrunen",
+			es = "Runas vantus",
+			mx = "Runas vantus",
+			fr = "Runes de Vantus",
+			it = "Rune Vantus",
+			pt = "Runas Vantus",
+			ru = "Вантийские руны",
+			ko = "반투스 룬",
+			cn = "凡图斯符文",
+			tw = "梵陀符文",
 		},
 	},
 	[1418] = {
 		readable = "Shadowlands Designs",
 		text = {
 			en = "Shadowlands Designs",
+			es = "Diseños de Shadowlands",
+			mx = "Diseños de Shadowlands",
 		},
 	},
 	[1419] = {
 		readable = "Gems",
 		text = {
 			en = "Gems",
+			es = "Gemas",
+			mx = "Gemas",
 		},
 	},
 	[1420] = {
 		readable = "Mass Prospecting",
 		text = {
 			en = "Mass Prospecting",
+			mx = "Exploracion en masa",
 		},
 	},
 	[1421] = {
 		readable = "Optional Reagents",
 		text = {
 			en = "Optional Reagents",
+			es = "Componentes opcionales",
+			mx = "Componentes opcionales",
 			ko = "선택적 시약",
 		},
 	},
@@ -7139,6 +8179,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133294,
 		text = {
 			en = "Necklaces",
+			es = "Collares",
+			mx = "Collares",
 			ko = "목",
 		},
 	},
@@ -7147,6 +8189,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133397,
 		text = {
 			en = "Rings",
+			es = "Anillos",
+			mx = "Anillos",
 			ko = "손가락",
 		},
 	},
@@ -7154,6 +8198,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Delicacies",
 		text = {
 			en = "Delicacies",
+			es = "Delicias",
+			mx = "Delicias",
 		},
 	},
 	[1471] = {
@@ -7161,6 +8207,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133611,
 		text = {
 			en = "Armor Kits",
+			es = "Refuerzo para armadura",
+			mx = "Refuerzo para armadura",
 			ko = "방어구 키트",
 		},
 	},
@@ -7168,12 +8216,16 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Specialized Armor",
 		text = {
 			en = "Specialized Armor",
+			es = "Armadura especializada",
+			mx = "Armadura especializada",
 		},
 	},
 	[1474] = {
 		readable = "Optional Reagents",
 		text = {
 			en = "Optional Reagents",
+			es = "Componentes opcionales",
+			mx = "Componentes opcionales",
 			ko = "선택적 시약",
 		},
 	},
@@ -7181,12 +8233,16 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Mount Equipment",
 		text = {
 			en = "Mount Equipment",
+			es = "Equipamiento de montura",
+			mx = "Equipamiento de montura",
 		},
 	},
 	[1484] = {
 		readable = "Specialized Jewelry",
 		text = {
 			en = "Specialized Jewelry",
+			es = "Joyería especializada",
+			mx = "Joyería especializada",
 		},
 	},
 	[1487] = {
@@ -7194,6 +8250,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 134952,
 		text = {
 			en = "Shields",
+			es = "Escudos",
+			mx = "Escudos",
 			ko = "방패",
 		},
 	},
@@ -7201,6 +8259,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Optional Reagents",
 		text = {
 			en = "Optional Reagents",
+			es = "Componentes opcionales",
+			mx = "Componentes opcionales",
 			ko = "선택적 시약",
 		},
 	},
@@ -7208,6 +8268,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Optional Reagents",
 		text = {
 			en = "Optional Reagents",
+			es = "Componentes opcionales",
+			mx = "Componentes opcionales",
 			ko = "선택적 시약",
 		},
 	},
@@ -7215,6 +8277,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Optional Reagents",
 		text = {
 			en = "Optional Reagents",
+			es = "Componentes opcionales",
+			mx = "Componentes opcionales",
 			ko = "선택적 시약",
 		},
 	},
@@ -7222,6 +8286,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Optional Reagents",
 		text = {
 			en = "Optional Reagents",
+			es = "Componentes opcionales",
+			mx = "Componentes opcionales",
 			ko = "선택적 시약",
 		},
 	},
@@ -7229,6 +8295,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Optional Reagents",
 		text = {
 			en = "Optional Reagents",
+			es = "Componentes opcionales",
+			mx = "Componentes opcionales",
 			ko = "선택적 시약",
 		},
 	},
@@ -7236,6 +8304,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Optional Reagents",
 		text = {
 			en = "Optional Reagents",
+			es = "Componentes opcionales",
+			mx = "Componentes opcionales",
 			ko = "선택적 시약",
 		},
 	},
@@ -7243,6 +8313,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Optional Reagents",
 		text = {
 			en = "Optional Reagents",
+			es = "Componentes opcionales",
+			mx = "Componentes opcionales",
 			ko = "선택적 시약",
 		},
 	},
@@ -7250,6 +8322,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Optional Reagents",
 		text = {
 			en = "Optional Reagents",
+			es = "Componentes opcionales",
+			mx = "Componentes opcionales",
 			ko = "선택적 시약",
 		},
 	},
@@ -7257,6 +8331,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Optional Reagents",
 		text = {
 			en = "Optional Reagents",
+			es = "Componentes opcionales",
+			mx = "Componentes opcionales",
 			ko = "선택적 시약",
 		},
 	},
@@ -7264,6 +8340,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Optional Reagents",
 		text = {
 			en = "Optional Reagents",
+			es = "Componentes opcionales",
+			mx = "Componentes opcionales",
 			ko = "선택적 시약",
 		},
 	},
@@ -7271,6 +8349,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Optional Reagents",
 		text = {
 			en = "Optional Reagents",
+			es = "Componentes opcionales",
+			mx = "Componentes opcionales",
 			ko = "선택적 시약",
 		},
 	},
@@ -7278,6 +8358,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Optional Reagents",
 		text = {
 			en = "Optional Reagents",
+			es = "Componentes opcionales",
+			mx = "Componentes opcionales",
 			ko = "선택적 시약",
 		},
 	},
@@ -7285,6 +8367,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Optional Reagents",
 		text = {
 			en = "Optional Reagents",
+			es = "Componentes opcionales",
+			mx = "Componentes opcionales",
 			ko = "선택적 시약",
 		},
 	},
@@ -7292,6 +8376,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Optional Reagents",
 		text = {
 			en = "Optional Reagents",
+			es = "Componentes opcionales",
+			mx = "Componentes opcionales",
 			ko = "선택적 시약",
 		},
 	},
@@ -7299,6 +8385,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Optional Reagents",
 		text = {
 			en = "Optional Reagents",
+			es = "Componentes opcionales",
+			mx = "Componentes opcionales",
 			ko = "선택적 시약",
 		},
 	},
@@ -7306,6 +8394,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Optional Reagents",
 		text = {
 			en = "Optional Reagents",
+			es = "Componentes opcionales",
+			mx = "Componentes opcionales",
 			ko = "선택적 시약",
 		},
 	},
@@ -7313,6 +8403,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Optional Reagents",
 		text = {
 			en = "Optional Reagents",
+			es = "Componentes opcionales",
+			mx = "Componentes opcionales",
 			ko = "선택적 시약",
 		},
 	},
@@ -7320,6 +8412,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Optional Reagents",
 		text = {
 			en = "Optional Reagents",
+			es = "Componentes opcionales",
+			mx = "Componentes opcionales",
 			ko = "선택적 시약",
 		},
 	},
@@ -7327,6 +8421,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Optional Reagents",
 		text = {
 			en = "Optional Reagents",
+			es = "Componentes opcionales",
+			mx = "Componentes opcionales",
 			ko = "선택적 시약",
 		},
 	},
@@ -7334,6 +8430,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Optional Reagents",
 		text = {
 			en = "Optional Reagents",
+			es = "Componentes opcionales",
+			mx = "Componentes opcionales",
 			ko = "선택적 시약",
 		},
 	},
@@ -7341,6 +8439,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Optional Reagents",
 		text = {
 			en = "Optional Reagents",
+			es = "Componentes opcionales",
+			mx = "Componentes opcionales",
 			ko = "선택적 시약",
 		},
 	},
@@ -7348,6 +8448,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Optional Reagents",
 		text = {
 			en = "Optional Reagents",
+			es = "Componentes opcionales",
+			mx = "Componentes opcionales",
 			ko = "선택적 시약",
 		},
 	},
@@ -7355,6 +8457,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Optional Reagents",
 		text = {
 			en = "Optional Reagents",
+			es = "Componentes opcionales",
+			mx = "Componentes opcionales",
 			ko = "선택적 시약",
 		},
 	},
@@ -7362,6 +8466,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Optional Reagents",
 		text = {
 			en = "Optional Reagents",
+			es = "Componentes opcionales",
+			mx = "Componentes opcionales",
 			ko = "선택적 시약",
 		},
 	},
@@ -7369,18 +8475,24 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Robotics",
 		text = {
 			en = "Robotics",
+			es = "Robóticos",
+			mx = "Robots",
 		},
 	},
 	[1513] = {
 		readable = "Specialized Armor",
 		text = {
 			en = "Specialized Armor",
+			es = "Armadura especializada",
+			mx = "Armadura especializada",
 		},
 	},
 	[1517] = {
 		readable = "Other",
 		text = {
 			en = "Other",
+			es = "Otro",
+			mx = "Otro",
 			ko = "다른",
 		},
 	},
@@ -7388,6 +8500,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Hats",
 		text = {
 			en = "Hats",
+			es = "Sombreros",
+			mx = "Sombreros",
 			ko = "머리",
 		},
 	},
@@ -7395,6 +8509,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Hats",
 		text = {
 			en = "Hats",
+			es = "Sombreros",
+			mx = "Sombreros",
 			ko = "머리",
 		},
 	},
@@ -7402,6 +8518,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Optional Reagents",
 		text = {
 			en = "Optional Reagents",
+			es = "Componentes opcionales",
+			mx = "Componentes opcionales",
 			ko = "선택적 시약",
 		},
 	},
@@ -7409,6 +8527,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Quest Recipes",
 		text = {
 			en = "Quest Recipes",
+			es = "Recetas de misión",
+			es = "Recetas de misión",
 			ko = "퀘스트 레시피",
 		},
 	},
@@ -7416,6 +8536,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Quest Recipes",
 		text = {
 			en = "Quest Recipes",
+			es = "Recetas de misión",
+			es = "Recetas de misión",
 			ko = "퀘스트 레시피",
 		},
 	},
@@ -7423,6 +8545,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Quest Recipes",
 		text = {
 			en = "Quest Recipes",
+			es = "Recetas de misión",
+			es = "Recetas de misión",
 			ko = "퀘스트 레시피",
 		},
 	},
@@ -7430,6 +8554,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Quest Recipes",
 		text = {
 			en = "Quest Recipes",
+			es = "Recetas de misión",
+			es = "Recetas de misión",
 			ko = "퀘스트 레시피",
 		},
 	},
@@ -7437,6 +8563,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Quest Recipes",
 		text = {
 			en = "Quest Recipes",
+			es = "Recetas de misión",
+			es = "Recetas de misión",
 			ko = "퀘스트 레시피",
 		},
 	},
@@ -7444,6 +8572,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Quest Recipes",
 		text = {
 			en = "Quest Recipes",
+			es = "Recetas de misión",
+			es = "Recetas de misión",
 			ko = "퀘스트 레시피",
 		},
 	},
@@ -7451,6 +8581,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Quest Recipes",
 		text = {
 			en = "Quest Recipes",
+			es = "Recetas de misión",
+			es = "Recetas de misión",
 			ko = "퀘스트 레시피",
 		},
 	},
@@ -7458,6 +8590,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Quest Recipes",
 		text = {
 			en = "Quest Recipes",
+			es = "Recetas de misión",
+			es = "Recetas de misión",
 			ko = "퀘스트 레시피",
 		},
 	},
@@ -7465,6 +8599,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		readable = "Quest Recipes",
 		text = {
 			en = "Quest Recipes",
+			es = "Recetas de misión",
+			es = "Recetas de misión",
 			ko = "퀘스트 레시피",
 		},
 	},
@@ -7473,6 +8609,8 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 		icon = 133646,
 		text = {
 			en = "Bags",
+			es = "Bolsas",
+			mx = "Bolsas",
 			ko = "가방",
 			tw = "背包",
 		},
