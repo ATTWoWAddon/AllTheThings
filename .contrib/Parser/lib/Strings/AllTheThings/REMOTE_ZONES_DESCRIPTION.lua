@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Contains content which is available in the current Zone, but is directly Sourced in another Zone.",
 		-- TODO: de = "",
-		-- TODO: es = "",
-		-- TODO: mx = "",
+		es = "Contiene contenido que está disponible en la Zona actual, pero que se obtiene directamente de otra Zona.",
+		mx = "Contiene contenido que está disponible en la Zona actual, pero que se obtiene directamente de otra Zona.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",
