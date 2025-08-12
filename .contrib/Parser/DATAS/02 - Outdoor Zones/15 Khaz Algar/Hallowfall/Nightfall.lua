@@ -6,8 +6,16 @@ NIGHTFALL = createHeader({
 	icon = 6694197,
 	text = {
 		en = "Nightfall",
-		cn = "夜幕激斗",
+		de = "Nachtsturz",
+		es = "Ocaso",
+		mx = "Ocaso",
+		fr = "Noctechute",
+		it = "Tramonto"
+		pt = "Ocaso",
 		ru = "Сумерки",
+		ko = "일몰",
+		cn = "夜幕激斗",
+		tw = "夜暮激戰​事件",
 	},
 });
 
