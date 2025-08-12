@@ -6,9 +6,11 @@ SEVERED_THREADS_PACT = createHeader({
 	icon = 5409320,
 	text = {
 		en = "Severed Threads Pact",
+		es = "Pacto de Los Hilos Cortados",
+		mx = "Pacto de Los Hilos Cortados",
+		ru = "Пакт Отрезанных нитей",
 		cn = "斩离之丝契约",
 		tw = "斷裂絲線合約",
-		ru = "Пакт Отрезанных нитей",
 	},
 });
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
