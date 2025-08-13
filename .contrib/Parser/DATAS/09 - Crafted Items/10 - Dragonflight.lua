@@ -1390,7 +1390,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(198263),	-- Bottomless Mireslush Ore Satchel
 			i(198262),	-- Bottomless Stonecrust Ore Satchel
 			i(198550),	-- Bronze Fireflight
-			i(198172),	-- Bundle of Fireworks
+			i(198172, {	-- Bundle of Fireworks
+				i(41427, {["timeline"] = {ADDED_3_0_2}}),		-- Dalaran Firework
+				}),
 			i(198253),	-- Calibrated Safety Switch+
 			i(198254),	-- Calibrated Safety Switch++
 			i(198255),	-- Calibrated Safety Switch+++
