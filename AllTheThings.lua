@@ -2835,7 +2835,7 @@ function app:GetDataCache()
 
 			-- Character Unlocks
 			app.CreateDynamicHeader("characterUnlock", {
-				name = CHARACTER.." "..UNLOCK.."s",
+				name = L.CHARACTERUNLOCKS_CHECKBOX,
 				icon = app.asset("Category_ItemSets")
 			}),
 
