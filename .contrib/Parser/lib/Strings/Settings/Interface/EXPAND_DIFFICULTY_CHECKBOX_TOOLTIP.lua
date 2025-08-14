@@ -5,8 +5,8 @@ createLocalizationString({
 	text = {
 		en = "Enable this option if you want to automatically expand only the matching difficulty header(s) in the mini list which correspond to the active difficulty when entering a dungeon or raid.\n\nExample: Expand only the Heroic header when entering a Heroic difficulty dungeon.",
 		-- TODO: de = "",
-		-- TODO: es = "Activa esta opción si quieres minimizar automáticamente en la Mini Lista las cabeceras de dificultad que no están activas cuando entras a una mazmorra o banda.\n\nEjemplo: Minimiza la cabecera de Heroico en una mazmorra de dificultad Normal.",
-		-- TODO: mx = "Activa esta opción si quieres minimizar automáticamente en la Mini Lista las cabeceras de dificultad que no están activas cuando entras a un calabozo o banda.\n\nEjemplo: Minimiza la cabecera de Heroico en un calabozo de dificultad Normal.",
+		es = "Activa esta opción si deseas expandir automáticamente solo los encabezados de dificultad coincidentes en la mini lista que corresponden a la dificultad activa al ingresar a una mazmorra o banda.\n\nEjemplo: expande solo el encabezado Heroico al ingresar a una mazmorra de dificultad Heroica.",
+		mx = "Activa esta opción si deseas expandir automáticamente solo los encabezados de dificultad coincidentes en la mini lista que corresponden a la dificultad activa al ingresar a un calabozo o banda.\n\nEjemplo: expande solo el encabezado Heroico al ingresar a un calabozo de dificultad Heroica.",
 		-- TODO: fr = "",
 		-- TODO: it = "",
 		-- TODO: pt = "",
