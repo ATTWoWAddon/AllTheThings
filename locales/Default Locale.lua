@@ -297,34 +297,12 @@ if localeString == "esES" or localeString == "esMX" then
 	L.EXPANSION_DATA[13].lore = "The Last Titan es la duodécima expansión de World of Warcraft y la última entrega de la saga Alma del Mundo.";
 	
 	for key,value in pairs({
-		["ALL THE THINGS"] = "ATT",
-		["Expansion Pre"] = "Pre",
 		["Expansion Features"] = "CE",
 		[GROUP_FINDER] = "BdG",
 		["Dungeons & Raids"] = "MyB",
-		["Player vs Player"] = STAT_CATEGORY_PVP,
-		["Player vs. Player"] = STAT_CATEGORY_PVP,
-		["Outdoor Zones"] = LFG_TYPE_ZONE,
 		-- Expansion sorted
-		["Classic %> "] = "",
-		["The Burning Crusade"] = "BC",
-		["Burning Crusade"] = "BC",
-		["The BC"] = "BC",
 		["Wrath of the Lich King"] = "Lich",
-		["Cataclysm %>"] = "Cata >",
-		["Cataclysm "] = "Cata ",
-		["Mists of Pandaria"] = "MoP",
-		["Warlords of Draenor"] = "WoD",
-		["Battle for Azeroth"] = "BFA",
-		["The Shadowlands"] = "SL",
-		["Shadowlands"] = "SL",
-		["Dragonflight"] = "DF",
-		["The War Within"] = "TWW",
 		-- Dungeon & Raid
-		["Normal"] = "N",
-		["Heroic"] = "H",
-		["Mythic"] = "M",
-		["M Keystone"] = "M+",
 		["Raid Finder"] = "BdB",
 		["Looking For Raid"] = "BdB",
 		["10 Player"] = "10",
@@ -336,38 +314,18 @@ if localeString == "esES" or localeString == "esMX" then
 		-- Classic
 		["Scarlet Monastery of Old"] = "ME: Viejo",
 		-- Cata
-		["Baleroc, the Gatekeeper"] = "Baleroc",
-		["The Conclave of Wind"] = "Conclave",
-		["Hagara the Stormbinder"] = "Hagara",
 		["Majordomo Staghelm"] = "Mayordomo",
 		["Omnotron Defense System"] = "Omnitron",
 		["Theralion and Valiona"] = "TheralionyValiona",
-		["Yor'sahj the Unsleeping"] = "Yor'sahj",
 		-- DF
-		["Aberrus, the Shadowed Crucible"] = "Aberrus",
-		["Amirdrassil, the Dream's Hope"] = "Amirdrassil",
-		["Kazzara, the Hellforged"] = "Kazzara",
-		["Larodar, Keeper of the Flame"] = "Larodar",
-		["Nymue, Weaver of the Cycle"] = "Nymue",
 		["Tindral Sageswift, Seer of the Flame"] = "Tindral Sabioveloz",
-		-- Legion
-		["Il'gynoth, The Heart of Corruption"] = "Il'gynoth",
-		["Antorus, the Burning Throne"] = "Antorus",
-		-- BFA
-		["Ny'alotha, the Waking City"] = "Ny'alotha",
-		-- SL
-		["Tazavesh, the Veiled Market"] = "Tazavesh",
 		-- TWW
-		["Ara-Kara, City of Echoes"] = "Ara-Kara",
 		["Enterprising Hero: The War Within Season Two"] = "Héroe Emprendedor: TWW T2",
 		["The War Within Keystone Legend: SeasonTwo"] = "TWW Leyenda de la piedra angular: T2",
-		["Mug'Zee, Heads of Security"] = "Mug'Zee",
-		["Sikran, Captain of the Sureki"] = "Sikran",
 		["Vexie and the Geargrinders"] = "Vexie y los Cadenas",
 		-- Outdoor Zones
 		["Quartermaster Miranda Breechlock"] = "Intendente Miranda",
-		["Season "] = "T",
-		["Sanctum Upgrades %> "] = "",
+		["Season "] = "T ",
 		["The Azure Span"] = "Tierras Azures",
 		["The Forbidden Reach"] = "Confín Olvidado",
 		["The Superbloom"] = "Superfloración",
@@ -375,28 +333,11 @@ if localeString == "esES" or localeString == "esMX" then
 		["The Primalist Future"] = "Futuro primalista",
 		["The Storm's Fury"] = "Furia de la tormenta",
 		["WoW Anniversary"] = "Aniversario",
-		["Dragonriding Challenge: Dragon Isles: Gold > "] = "",
-		["Dragon Racing Completionist: Gold > "] = "",
-		["Emerald Dream Challenge Racing Completionist: Gold > "] = "",
-		["Emerald Dream Racing Completionist: Gold > "] = "",
-		["Forbidden Reach Challenge Racing Completionist: Gold > "] = "",
-		["Forbidden Reach Racing Completionist: Gold > "] = "",
-		["Zaralek Cavern Racing Completionist: Gold > "] = "",
 
-		["WoW's Anniversary %> "] = "",
 		[BLACK_MARKET_AUCTION_HOUSE] = "CSMN",
 		["Emissary Quests"] = "Emisario",
-		["Item Sets"] = WARDROBE_SETS,
-		["Zone Wide"] = LFG_TYPE_ZONE,
-		["Mini World Events"] = "Mini",
-		["Monthly World Events"] = CALENDAR_REPEAT_MONTHLY,
 		[TRACKER_HEADER_WORLD_QUESTS] = "MM",
-		["Weekly World Events"] = CALENDAR_REPEAT_WEEKLY,
 		["Covenant:"] = "Curia:",
-		[CLASS.." %> "] = "",
-
-		["Pet Journal"] = PETS,
-		["Toy Box"] = TOY,
 	})
 	do ABBREVIATIONS[key] = value; end
 	
@@ -416,34 +357,12 @@ if localeString == "esES" or localeString == "esMX" then
 		L.EXPANSION_DATA[13].lore = "The Last Titan es la duodécima expansión de World of Warcraft y la última entrega de la saga Worldsoul.";
 		
 		for key,value in pairs({
-			["ALL THE THINGS"] = "ATT",
-			["Expansion Pre"] = "Pre",
 			["Expansion Features"] = "CE",
 			[GROUP_FINDER] = "BdG",
 			["Dungeons & Raids"] = "CyB",
-			["Player vs Player"] = STAT_CATEGORY_PVP,
-			["Player vs. Player"] = STAT_CATEGORY_PVP,
-			["Outdoor Zones"] = LFG_TYPE_ZONE,
 			-- Expansion sorted
-			["Classic %> "] = "",
-			["The Burning Crusade"] = "BC",
-			["Burning Crusade"] = "BC",
-			["The BC"] = "BC",
 			["Wrath of the Lich King"] = "Lich",
-			["Cataclysm %>"] = "Cata >",
-			["Cataclysm "] = "Cata ",
-			["Mists of Pandaria"] = "MoP",
-			["Warlords of Draenor"] = "WoD",
-			["Battle for Azeroth"] = "BFA",
-			["The Shadowlands"] = "SL",
-			["Shadowlands"] = "SL",
-			["Dragonflight"] = "DF",
-			["The War Within"] = "TWW",
 			-- Dungeon & Raid
-			["Normal"] = "N",
-			["Heroic"] = "H",
-			["Mythic"] = "M",
-			["M Keystone"] = "M+",
 			["Raid Finder"] = "BdB",
 			["Looking For Raid"] = "BdB",
 			["10 Player"] = "10",
@@ -455,38 +374,18 @@ if localeString == "esES" or localeString == "esMX" then
 			-- Classic
 			["Scarlet Monastery of Old"] = "ME: Viejo",
 			-- Cata
-			["Baleroc, the Gatekeeper"] = "Baleroc",
-			["The Conclave of Wind"] = "Conclave",
-			["Hagara the Stormbinder"] = "Hagara",
 			["Majordomo Staghelm"] = "Mayordomo",
 			["Omnotron Defense System"] = "Omnitron",
 			["Theralion and Valiona"] = "TheralionyValiona",
-			["Yor'sahj the Unsleeping"] = "Yor'sahj",
 			-- DF
-			["Aberrus, the Shadowed Crucible"] = "Aberrus",
-			["Amirdrassil, the Dream's Hope"] = "Amirdrassil",
-			["Kazzara, the Hellforged"] = "Kazzara",
-			["Larodar, Keeper of the Flame"] = "Larodar",
-			["Nymue, Weaver of the Cycle"] = "Nymue",
 			["Tindral Sageswift, Seer of the Flame"] = "Yescal Sabioveloz",
-			-- Legion
-			["Il'gynoth, The Heart of Corruption"] = "Il'gynoth",
-			["Antorus, the Burning Throne"] = "Antorus",
-			-- BFA
-			["Ny'alotha, the Waking City"] = "Ny'alotha",
-			-- SL
-			["Tazavesh, the Veiled Market"] = "Tazavesh",
 			-- TWW
-			["Ara-Kara, City of Echoes"] = "Ara-Kara",
 			["Enterprising Hero: The War Within Season Two"] = "Héroe Emprendedor: TWW T2",
 			["The War Within Keystone Legend: SeasonTwo"] = "TWW Leyenda de la piedra angular: T2",
-			["Mug'Zee, Heads of Security"] = "Mug'Zee",
-			["Sikran, Captain of the Sureki"] = "Sikran",
 			["Vexie and the Geargrinders"] = "Vexie y los rugemotores",
 			-- Outdoor Zones
 			["Quartermaster Miranda Breechlock"] = "Intendente Miranda",
-			["Season "] = "T",
-			["Sanctum Upgrades %> "] = "",
+			["Season "] = "T ",
 			["The Azure Span"] = "Trecho Azur",
 			["The Forbidden Reach"] = "Confín Prohibido",
 			["The Superbloom"] = "Superflorecimiento",
@@ -494,28 +393,10 @@ if localeString == "esES" or localeString == "esMX" then
 			["The Primalist Future"] = "Futuro primalista",
 			["The Storm's Fury"] = "Furia de la tormenta",
 			["WoW Anniversary"] = "Aniversario",
-			["Dragonriding Challenge: Dragon Isles: Gold > "] = "",
-			["Dragon Racing Completionist: Gold > "] = "",
-			["Emerald Dream Challenge Racing Completionist: Gold > "] = "",
-			["Emerald Dream Racing Completionist: Gold > "] = "",
-			["Forbidden Reach Challenge Racing Completionist: Gold > "] = "",
-			["Forbidden Reach Racing Completionist: Gold > "] = "",
-			["Zaralek Cavern Racing Completionist: Gold > "] = "",
-
-			["WoW's Anniversary %> "] = "",
 			[BLACK_MARKET_AUCTION_HOUSE] = "CSMN",
 			["Emissary Quests"] = "Emisario",
-			["Item Sets"] = WARDROBE_SETS,
-			["Zone Wide"] = LFG_TYPE_ZONE,
-			["Mini World Events"] = "Mini",
-			["Monthly World Events"] = CALENDAR_REPEAT_MONTHLY,
 			[TRACKER_HEADER_WORLD_QUESTS] = "MM",
-			["Weekly World Events"] = CALENDAR_REPEAT_WEEKLY,
 			["Covenant:"] = "Pacto:",
-			[CLASS.." %> "] = "",
-
-			["Pet Journal"] = PETS,
-			["Toy Box"] = TOY,
 		})
 		do ABBREVIATIONS[key] = value; end
 	end
