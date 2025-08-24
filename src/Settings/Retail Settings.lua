@@ -454,9 +454,13 @@ settings.SetWindowFromProfile = function(suffix)
 		if points then
 			-- only allow setting positions for Windows which are inherently movable
 			if window:IsMovable() then
-				window:ClearAllPoints()
+				local hasClearedPoints = false
 				for _,point in ipairs(points) do
 					if point.Point then
+						if not hasClearedPoints then
+							window:ClearAllPoints()
+							hasClearedPoints = true
+						end
 						window:SetPoint(point.Point, UIParent, point.PointRef, point.X, point.Y)
 						-- print("SetPoint",suffix,point.Point, point.PointRef, point.X, point.Y)
 					end
